@@ -92,7 +92,7 @@ class AwsCrawler(base.Crawler):
 
         return lines
 
-    def get_products(self, output_path, skip_cache):
+    def get_products(self, output_path, skip_cache=False):
         # Scrape seed index page
         (response, seed_soup, loaded_from_cache) = self._scrape_page(
             self.seed_url, output_path, skip_cache
@@ -103,6 +103,6 @@ class AwsCrawler(base.Crawler):
 
         return child_pages
 
-    def get_product(self, page, output_path, skip_cache):
+    def get_product(self, page, output_path, skip_cache=False):
         logging.info(f"Crawling page: {page}")
         return self.crawl_product(page, output_path, skip_cache)

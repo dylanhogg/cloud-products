@@ -31,7 +31,7 @@ class Crawler:
         with open(filename, "w") as f:
             f.write(str(obj))
 
-    def save_product(self, product, output_path, skip_cache):
+    def save_product(self, product, output_path, skip_cache=False):
         lines = self.get_product(product, output_path, skip_cache)
         text = "\n".join(lines)
         url = product.abs_href

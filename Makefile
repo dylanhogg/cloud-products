@@ -29,6 +29,10 @@ dist: venv-publish
 publish-test: dist
 	source venv_publish/bin/activate ; python -m twine upload --repository testpypi dist/* -u __token__
 
+## Package distribution and publish to pypi
+publish-live: dist
+	source venv_publish/bin/activate ; python -m twine upload dist/* -u __token__
+
 ## Run package locally
 run: venv
 	source venv/bin/activate; PYTHONPATH='cloud_products' python -m scraper
@@ -41,11 +45,11 @@ test: venv
 black:
 	source venv/bin/activate ; black .
 
-## Test installing from pypi (TODO: fix to not use test)
+## Test installing from pypi
 install-test:
 	rm -rf venv_install_test
 	python3 -m venv venv_install_test
-	source venv_install_test/bin/activate ; pip install -i https://test.pypi.org/simple/ cloud-products
+	source venv_install_test/bin/activate ; pip install cloud-products
 	source venv_install_test/bin/activate ; pip list
 
 
