@@ -99,6 +99,10 @@ class AwsCrawler(base.Crawler):
 
         return child_pages
 
+    def get_products_matching(self, match, cache_path=None, use_cache=True) -> List[Product]:
+        products = self.get_products(cache_path, use_cache)
+        return [p for p in products if match.lower() in p.name.lower()]
+
     def get_product_text(self, page, cache_path=None, use_cache=True) -> List[str]:
         if cache_path is None:
             cache_path = self.default_cache_path

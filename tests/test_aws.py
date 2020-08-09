@@ -13,6 +13,18 @@ def remove_dirs():
         shutil.rmtree(output_path)
 
 
+def test_aws_get_products_matching():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products_matching("aws glue")
+    assert(len(products) == 1)
+    assert(products[0].name == "AWS Glue")
+
+    lines = crawler.get_product_text(products[0])
+    assert len(lines) > 0
+
+
 def test_aws_crawl_lines():
     remove_dirs()
     crawler = aws.AwsCrawler()

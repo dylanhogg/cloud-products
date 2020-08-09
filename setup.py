@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = "0.2.0"
+version = "0.9.0"
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -19,7 +19,7 @@ setup(
     author_email="dylanhogg@gmail.com",
     # https://pypi.org/classifiers/
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "Topic :: Software Development",
         "License :: OSI Approved :: MIT License",
@@ -27,7 +27,7 @@ setup(
     ],
     keywords="aws, crawler",
     package_dir={"": "cloud_products"},
-    packages=find_packages(where="cloud_products"),  # Required
+    packages=find_packages(where="cloud_products"),
     python_requires=">=3.7, <4",
     install_requires=install_requires,
 )

@@ -9,9 +9,7 @@ if __name__ == "__main__":
 
     if vendor == "aws":
         crawler = aws.AwsCrawler()
-        products = crawler.get_products()
-        logging.info(f"product count: {len(products)}")
-        for product in products:
+        for product in crawler.get_products():
             logging.info(f"Crawling product: {product}")
             crawler.save_product(product, output_path)
 
