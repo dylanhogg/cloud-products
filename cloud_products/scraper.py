@@ -5,7 +5,6 @@ if __name__ == "__main__":
     logging.basicConfig(format="%(asctime)s - %(message)s", level=logging.INFO)
 
     vendor = "aws"
-
     output_path = "./_data/scrape_results/"
 
     if vendor == "aws":

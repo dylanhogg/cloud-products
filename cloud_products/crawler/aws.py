@@ -73,14 +73,10 @@ class AwsCrawler(base.Crawler):
         return results
 
     def crawl_product_text(self, page, cache_path, use_cache):
-        logging.debug(
-            f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}"
-        )
+        logging.debug(f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}")
         url = page.abs_href
         logging.debug(f"Url: {url}")
-        (svc_soup, loaded_from_cache) = self._scrape_page(
-            url, cache_path, use_cache
-        )
+        (svc_soup, loaded_from_cache) = self._scrape_page(url, cache_path, use_cache)
         lines = self._parse_product(svc_soup)
         if len(lines) == 0:
             logging.warning(f"No matching lines for page: {page.std_name}")
@@ -93,9 +89,7 @@ class AwsCrawler(base.Crawler):
             cache_path = self.default_cache_path
 
         # Scrape seed index page
-        (seed_soup, loaded_from_cache) = self._scrape_page(
-            self.seed_url, cache_path, use_cache
-        )
+        (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)
 
         # Parse product links from seed index page
         child_pages = self.get_child_pages(seed_soup, self.base_url, self.seed_url)
