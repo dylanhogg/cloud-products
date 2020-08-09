@@ -1,7 +1,7 @@
 import os
 import logging
-import collections
 from crawler import base
+from crawler.product import Product
 from pathlib import Path
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
@@ -14,7 +14,7 @@ class AwsCrawler(base.Crawler):
         self.seed_url = self.base_url + "/products/"
         super(AwsCrawler, self).__init__()
 
-    def _parse_service(self, soup):
+    def _parse_product(self, soup):
         tags = soup.find("main", attrs={"role": "main"})
         if tags is None:
             return []
@@ -50,10 +50,6 @@ class AwsCrawler(base.Crawler):
         """
         Get child pages from seed url.
         """
-        Service = collections.namedtuple(
-            "Service", "name, std_name, rel_href, abs_href, base_url, seed_url, desc"
-        )
-
         results = []
         tags = soup.find_all("div", attrs={"class": "lb-content-item"})
 
@@ -71,8 +67,8 @@ class AwsCrawler(base.Crawler):
             name = a.contents[0].strip()
             std_name = name.lower().replace("amazon", "aws")
             desc = a.contents[1].text.strip()
-            svc = Service(name, std_name, rel_href, abs_href, base_url, seed_url, desc)
-            results.append(svc)
+            product = Product(name, std_name, rel_href, abs_href, base_url, seed_url, desc)
+            results.append(product)
 
         return results
 
@@ -85,7 +81,7 @@ class AwsCrawler(base.Crawler):
         (svc_soup, loaded_from_cache) = self._scrape_page(
             url, cache_path, use_cache
         )
-        lines = self._parse_service(svc_soup)
+        lines = self._parse_product(svc_soup)
         if len(lines) == 0:
             logging.warning(f"No matching lines for page: {page.std_name}")
             return []
@@ -101,7 +97,7 @@ class AwsCrawler(base.Crawler):
             self.seed_url, cache_path, use_cache
         )
 
-        # Parse service links from seed index page
+        # Parse product links from seed index page
         child_pages = self.get_child_pages(seed_soup, self.base_url, self.seed_url)
 
         return child_pages
