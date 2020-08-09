@@ -7,13 +7,14 @@ if __name__ == "__main__":
     vendor = "aws"
 
     output_path = "./_data/scrape_results/"
-    skip_cache = False
 
     if vendor == "aws":
         crawler = aws.AwsCrawler()
-        products = crawler.get_products(output_path, skip_cache)
+        products = crawler.get_products()
+        logging.info(f"product count: {len(products)}")
         for product in products:
-            crawler.save_product(product, output_path, skip_cache)
+            logging.info(f"Crawling product: {product}")
+            crawler.save_product(product, output_path)
 
     elif vendor == "gcp":
         raise Exception(f"Google Cloud Compute not currently supported")

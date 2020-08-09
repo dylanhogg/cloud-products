@@ -7,10 +7,12 @@ venv-publish:
 venv:
 	python3 -m venv venv
 	source venv/bin/activate ; pip install -r requirements-dev.txt
+	source venv/bin/activate ; pip freeze > requirements_freeze.txt
 
 ## Clean up all environments and publishing artifacts
 clean:
 	rm -rf venv
+	rm -rf .cloud-products-cache
 	rm -rf venv_publish
 	rm -rf venv_install_test
 	rm -rf build
@@ -43,7 +45,7 @@ test: venv
 
 ## Run black code formatter
 black:
-	source venv/bin/activate ; black .
+	source venv/bin/activate ; black --line-length 120 .
 
 ## Test installing from pypi
 install-test:

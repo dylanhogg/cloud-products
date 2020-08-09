@@ -2,6 +2,7 @@
 _data/
 .vscode/
 .idea/
+.cloud-products-cache/
 venv*/
 
 # Byte-compiled / optimized / DLL files

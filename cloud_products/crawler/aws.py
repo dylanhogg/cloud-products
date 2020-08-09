@@ -12,6 +12,7 @@ class AwsCrawler(base.Crawler):
     def __init__(self):
         self.base_url = "https://aws.amazon.com"
         self.seed_url = self.base_url + "/products/"
+        super(AwsCrawler, self).__init__()
 
     def _parse_service(self, soup):
         tags = soup.find("main", attrs={"role": "main"})
@@ -22,29 +23,28 @@ class AwsCrawler(base.Crawler):
         lines = list(l.strip() for l in lines if len(l.split()) > 0)
         return lines
 
-    def _scrape_page(self, url, output_path, skip_cache):
-        cache_filename = f"{output_path}{self.valid_filename(url)}.html"
+    def _scrape_page(self, url, cache_path, use_cache):
+        cache_filename = f"{cache_path}aws-{self.valid_filename(url)}.html"
         cache_filename_exists = Path(cache_filename).is_file()
-        pickle_filename = cache_filename + ".pickle"
         loaded_from_cache = False
 
-        os.makedirs(output_path, exist_ok=True)
+        logging.debug(f"use_cache = {use_cache}")
+        logging.debug(f"cache_filename = {cache_filename}")
+        os.makedirs(cache_path, exist_ok=True)
 
-        if skip_cache or not cache_filename_exists:
+        if not use_cache or not cache_filename_exists:
             logging.info(f"Scraping: {url}")
             response = urlopen(url)
             soup = BeautifulSoup(response, "html.parser")
             if cache_filename is not None:
                 logging.info(f"Saving to cache: {cache_filename}")
                 self.save(soup, cache_filename)
-                self.pickle_dump(response, pickle_filename)
         else:
             logging.debug(f"Loading from cache: {cache_filename}")
             soup = self.load(cache_filename)
-            response = self.pickle_load(pickle_filename)
             loaded_from_cache = True
 
-        return response, soup, loaded_from_cache
+        return soup, loaded_from_cache
 
     def get_child_pages(self, soup, base_url, seed_url):
         """
@@ -76,14 +76,14 @@ class AwsCrawler(base.Crawler):
 
         return results
 
-    def crawl_product(self, page, output_path, skip_cache):
+    def crawl_product_text(self, page, cache_path, use_cache):
         logging.info(
             f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}"
         )
         url = page.abs_href
         logging.info(f"Url: {url}")
-        (response, svc_soup, loaded_from_cache) = self._scrape_page(
-            url, output_path, skip_cache
+        (svc_soup, loaded_from_cache) = self._scrape_page(
+            url, cache_path, use_cache
         )
         lines = self._parse_service(svc_soup)
         if len(lines) == 0:
@@ -92,10 +92,13 @@ class AwsCrawler(base.Crawler):
 
         return lines
 
-    def get_products(self, output_path, skip_cache=False):
+    def get_products(self, cache_path=None, use_cache=True):
+        if cache_path is None:
+            cache_path = self.default_cache_path
+
         # Scrape seed index page
-        (response, seed_soup, loaded_from_cache) = self._scrape_page(
-            self.seed_url, output_path, skip_cache
+        (seed_soup, loaded_from_cache) = self._scrape_page(
+            self.seed_url, cache_path, use_cache
         )
 
         # Parse service links from seed index page
@@ -103,6 +106,9 @@ class AwsCrawler(base.Crawler):
 
         return child_pages
 
-    def get_product(self, page, output_path, skip_cache=False):
+    def get_product_text(self, page, cache_path=None, use_cache=True):
+        if cache_path is None:
+            cache_path = self.default_cache_path
+
         logging.info(f"Crawling page: {page}")
-        return self.crawl_product(page, output_path, skip_cache)
+        return self.crawl_product_text(page, cache_path, use_cache)
