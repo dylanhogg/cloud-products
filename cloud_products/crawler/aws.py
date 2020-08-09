@@ -3,6 +3,7 @@ import logging
 from crawler import base
 from crawler.product import Product
 from pathlib import Path
+from typing import List, Tuple
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
@@ -14,7 +15,8 @@ class AwsCrawler(base.Crawler):
         self.seed_url = self.base_url + "/products/"
         super(AwsCrawler, self).__init__()
 
-    def _parse_product(self, soup):
+    @staticmethod
+    def _parse_product(soup) -> List[str]:
         tags = soup.find("main", attrs={"role": "main"})
         if tags is None:
             return []
@@ -23,7 +25,7 @@ class AwsCrawler(base.Crawler):
         lines = list(l.strip() for l in lines if len(l.split()) > 0)
         return lines
 
-    def _scrape_page(self, url, cache_path, use_cache):
+    def _scrape_page(self, url, cache_path, use_cache) -> Tuple[BeautifulSoup, bool]:
         cache_filename = f"{cache_path}aws-{self.valid_filename(url)}.html"
         cache_filename_exists = Path(cache_filename).is_file()
         loaded_from_cache = False
@@ -46,7 +48,8 @@ class AwsCrawler(base.Crawler):
 
         return soup, loaded_from_cache
 
-    def get_child_pages(self, soup, base_url, seed_url):
+    @staticmethod
+    def get_child_pages(soup, base_url, seed_url) -> List[Product]:
         """
         Get child pages from seed url.
         """
@@ -72,7 +75,7 @@ class AwsCrawler(base.Crawler):
 
         return results
 
-    def crawl_product_text(self, page, cache_path, use_cache):
+    def crawl_product_text(self, page, cache_path, use_cache) -> List[str]:
         logging.debug(f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}")
         url = page.abs_href
         logging.debug(f"Url: {url}")
@@ -84,7 +87,7 @@ class AwsCrawler(base.Crawler):
 
         return lines
 
-    def get_products(self, cache_path=None, use_cache=True):
+    def get_products(self, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
 
@@ -96,7 +99,7 @@ class AwsCrawler(base.Crawler):
 
         return child_pages
 
-    def get_product_text(self, page, cache_path=None, use_cache=True):
+    def get_product_text(self, page, cache_path=None, use_cache=True) -> List[str]:
         if cache_path is None:
             cache_path = self.default_cache_path
 

@@ -1,6 +1,5 @@
 import os
 import string
-import pickle
 from bs4 import BeautifulSoup
 
 
@@ -8,7 +7,7 @@ class Crawler:
     def __init__(self):
         self.default_cache_path = ".cloud-products-cache/"
 
-    def valid_filename(self, url):
+    def valid_filename(self, url) -> str:
         valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
         filename = url.lower()
         filename = filename.replace("https://", "")
@@ -18,24 +17,16 @@ class Crawler:
         filename = filename.replace(" ", "_")
         return filename
 
-    def pickle_dump(self, obj, filename):
-        with open(filename, "wb") as handle:
-            pickle.dump(obj, handle)
-
-    def pickle_load(self, filename):
-        with open(filename, "rb") as handle:
-            return pickle.load(handle)
-
-    def load(self, filename):
+    def load(self, filename) -> BeautifulSoup:
         html = open(filename).read()
         soup = BeautifulSoup(html, "html.parser")
         return soup
 
-    def save(self, obj, filename):
+    def save(self, obj, filename) -> None:
         with open(filename, "w") as f:
             f.write(str(obj))
 
-    def save_product(self, product, output_path, cache_path=None, use_cache=True):
+    def save_product(self, product, output_path, cache_path=None, use_cache=True) -> None:
         if cache_path is None:
             cache_path = self.default_cache_path
 
