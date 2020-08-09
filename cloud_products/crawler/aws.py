@@ -33,11 +33,11 @@ class AwsCrawler(base.Crawler):
         os.makedirs(cache_path, exist_ok=True)
 
         if not use_cache or not cache_filename_exists:
-            logging.info(f"Scraping: {url}")
+            logging.debug(f"Scraping: {url}")
             response = urlopen(url)
             soup = BeautifulSoup(response, "html.parser")
             if cache_filename is not None:
-                logging.info(f"Saving to cache: {cache_filename}")
+                logging.debug(f"Saving to cache: {cache_filename}")
                 self.save(soup, cache_filename)
         else:
             logging.debug(f"Loading from cache: {cache_filename}")
@@ -77,11 +77,11 @@ class AwsCrawler(base.Crawler):
         return results
 
     def crawl_product_text(self, page, cache_path, use_cache):
-        logging.info(
+        logging.debug(
             f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}"
         )
         url = page.abs_href
-        logging.info(f"Url: {url}")
+        logging.debug(f"Url: {url}")
         (svc_soup, loaded_from_cache) = self._scrape_page(
             url, cache_path, use_cache
         )
@@ -110,5 +110,5 @@ class AwsCrawler(base.Crawler):
         if cache_path is None:
             cache_path = self.default_cache_path
 
-        logging.info(f"Crawling page: {page}")
+        logging.debug(f"Crawling page: {page}")
         return self.crawl_product_text(page, cache_path, use_cache)
