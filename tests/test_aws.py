@@ -13,6 +13,15 @@ def remove_dirs():
         shutil.rmtree(output_path)
 
 
+def test_aws_get_products_has_good_rel_href():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products()
+    assert(len([p for p in products if p.rel_href.strip() == "/"]) == 0)
+    assert(len([p for p in products if "?" in p.rel_href]) == 0)
+
+
 def test_aws_get_products_matching():
     remove_dirs()
     crawler = aws.AwsCrawler()
@@ -20,6 +29,8 @@ def test_aws_get_products_matching():
     products = crawler.get_products_matching("aws glue")
     assert(len(products) == 1)
     assert(products[0].name == "AWS Glue")
+    assert(products[0].std_name == "aws glue")
+    assert(products[0].code == "glue")
 
     lines = crawler.get_product_text(products[0])
     assert len(lines) > 0

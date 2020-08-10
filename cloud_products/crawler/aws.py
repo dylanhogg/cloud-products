@@ -63,14 +63,17 @@ class AwsCrawler(base.Crawler):
 
         for tag in tags:
             a = tag.find("a")
-            rel_href = a["href"]
-            abs_href = base_url + rel_href
-            # TODO: remove querystring from abs_href
-            abs_href = urljoin(abs_href, urlparse(abs_href).path)
+            if a["href"].startswith("http"):
+                # Ignore beta products linking to external addresses
+                continue
+
+            rel_href = urlparse(a["href"]).path
+            abs_href = urljoin(base_url, rel_href)
+            code = rel_href.replace("/", "").strip().lower()
             name = a.contents[0].strip()
             std_name = name.lower().replace("amazon", "aws")
             desc = a.contents[1].text.strip()
-            product = Product(name, std_name, rel_href, abs_href, base_url, seed_url, desc)
+            product = Product(name, std_name, code, rel_href, abs_href, base_url, seed_url, desc)
             results.append(product)
 
         return results
@@ -97,7 +100,7 @@ class AwsCrawler(base.Crawler):
         # Parse product links from seed index page
         child_pages = self.get_child_pages(seed_soup, self.base_url, self.seed_url)
 
-        return child_pages
+        return sorted(child_pages)
 
     def get_products_matching(self, match, cache_path=None, use_cache=True) -> List[Product]:
         products = self.get_products(cache_path, use_cache)
