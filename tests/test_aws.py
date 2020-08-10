@@ -1,5 +1,6 @@
 import os
 import shutil
+from itertools import groupby
 from crawler import aws
 
 cache_path = "./_data/test_cache_path/"
@@ -13,13 +14,14 @@ def remove_dirs():
         shutil.rmtree(output_path)
 
 
-def test_aws_get_products_has_good_rel_href():
+def test_aws_get_products_for_duplicates():
     remove_dirs()
     crawler = aws.AwsCrawler()
 
     products = crawler.get_products()
-    assert(len([p for p in products if p.rel_href.strip() == "/"]) == 0)
-    assert(len([p for p in products if "?" in p.rel_href]) == 0)
+    for key, group in groupby(sorted(products), lambda p: p.std_name):
+        count = len(list(group))
+        assert count == 1, f"Group count for '{key}' was {count}, should be 1."
 
 
 def test_aws_get_products_matching():

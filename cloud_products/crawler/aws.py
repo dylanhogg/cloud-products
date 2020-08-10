@@ -61,6 +61,7 @@ class AwsCrawler(base.Crawler):
         # <a href="/cloudsearch/?c=1&amp;pt=2"> Amazon CloudSearch<span>Managed Search Service</span> </a>
         # </div>
 
+        crawled = []
         for tag in tags:
             a = tag.find("a")
             if a["href"].startswith("http"):
@@ -74,6 +75,12 @@ class AwsCrawler(base.Crawler):
             std_name = name.lower().replace("amazon", "aws")
             desc = a.contents[1].text.strip()
             product = Product(name, std_name, code, rel_href, abs_href, base_url, seed_url, desc)
+
+            if std_name in crawled:
+                # Duplicate links can exist in page, skip these
+                continue
+
+            crawled.append(std_name)
             results.append(product)
 
         return results
