@@ -1,5 +1,6 @@
 import os
 import shutil
+from pathlib import Path
 from itertools import groupby
 from crawler import aws
 
@@ -48,13 +49,24 @@ def test_aws_crawl_lines():
         assert len(lines) > 0
 
 
-def test_aws_crawl_save_product():
+def test_aws_crawl_save_product_default_filename():
     remove_dirs()
     crawler = aws.AwsCrawler()
 
     products = crawler.get_products()
     for product in products[:3]:
-        crawler.save_product(product, output_path)
+        filename = crawler.save_product(product, output_path)
+        assert(Path(filename).is_file())
+
+
+def test_aws_crawl_save_product_custom_filename():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products()
+    for product in products[:3]:
+        filename = crawler.save_product(product, output_path, "test_custom_name.txt")
+        assert(Path(filename).is_file())
 
 
 def test_aws_crawl_cached_lines():
@@ -82,11 +94,11 @@ def test_aws_crawl_cached_save_product():
     # Prime cache
     products = crawler.get_products(cache_path, use_cache)
     for product in products[:3]:
-        crawler.save_product(product, output_path, cache_path, use_cache)
+        crawler.save_product(product, output_path, None, cache_path, use_cache)
 
     products = crawler.get_products(cache_path, use_cache)
     for product in products[:3]:
-        crawler.save_product(product, output_path, cache_path, use_cache)
+        crawler.save_product(product, output_path, None, cache_path, use_cache)
 
 
 def test_aws_crawl_nocache_lines():
@@ -107,4 +119,4 @@ def test_aws_crawl_nocache_save_product():
 
     products = crawler.get_products(cache_path, use_cache)
     for product in products[:3]:
-        crawler.save_product(product, output_path, cache_path, use_cache)
+        crawler.save_product(product, output_path, None, cache_path, use_cache)

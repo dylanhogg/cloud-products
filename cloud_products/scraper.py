@@ -23,7 +23,7 @@ def run_aws_crawler():
 
     logging.info("Example 4: Save product descriptions to files:")
     from crawler.aws import AwsCrawler
-    for product in AwsCrawler().get_products():
+    for product in AwsCrawler().get_products()[0:5]:
         print(f"Saving {product.name}")
         crawler.save_product(product, output_path)
 

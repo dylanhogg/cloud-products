@@ -7,7 +7,8 @@ class Crawler:
     def __init__(self):
         self.default_cache_path = ".cloud-products-cache/"
 
-    def valid_filename(self, url) -> str:
+    @staticmethod
+    def valid_filename(url) -> str:
         valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
         filename = url.lower()
         filename = filename.replace("https://", "")
@@ -17,23 +18,30 @@ class Crawler:
         filename = filename.replace(" ", "_")
         return filename
 
-    def load(self, filename) -> BeautifulSoup:
+    @staticmethod
+    def load(filename) -> BeautifulSoup:
         html = open(filename).read()
         soup = BeautifulSoup(html, "html.parser")
         return soup
 
-    def save(self, obj, filename) -> None:
+    @staticmethod
+    def save(obj, filename) -> None:
         with open(filename, "w") as f:
             f.write(str(obj))
 
-    def save_product(self, product, output_path, cache_path=None, use_cache=True) -> None:
+    def save_product(self, product, output_path, output_filename=None, cache_path=None, use_cache=True) -> str:
         if cache_path is None:
             cache_path = self.default_cache_path
 
         lines = self.get_product_text(product, cache_path, use_cache)
         text = "\n".join(lines)
         url = product.abs_href
-        filename = f"{output_path}/{self.valid_filename(url)}_content.txt"
+
+        if output_filename is None:
+            filename = os.path.join(output_path, f"{self.valid_filename(url)}_content.txt")
+        else:
+            filename = os.path.join(output_path, output_filename)
 
         os.makedirs(output_path, exist_ok=True)
         self.save(text, filename)
+        return filename

@@ -49,7 +49,7 @@ class AwsCrawler(base.Crawler):
         return soup, loaded_from_cache
 
     @staticmethod
-    def get_child_pages(soup, base_url, seed_url) -> List[Product]:
+    def _get_child_pages(soup, base_url, seed_url) -> List[Product]:
         """
         Get child pages from seed url.
         """
@@ -85,7 +85,7 @@ class AwsCrawler(base.Crawler):
 
         return results
 
-    def crawl_product_text(self, page, cache_path, use_cache) -> List[str]:
+    def _crawl_product_text(self, page, cache_path, use_cache) -> List[str]:
         logging.debug(f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}")
         url = page.abs_href
         logging.debug(f"Url: {url}")
@@ -105,7 +105,7 @@ class AwsCrawler(base.Crawler):
         (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)
 
         # Parse product links from seed index page
-        child_pages = self.get_child_pages(seed_soup, self.base_url, self.seed_url)
+        child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
 
         return sorted(child_pages)
 
@@ -118,4 +118,4 @@ class AwsCrawler(base.Crawler):
             cache_path = self.default_cache_path
 
         logging.debug(f"Crawling page: {page}")
-        return self.crawl_product_text(page, cache_path, use_cache)
+        return self._crawl_product_text(page, cache_path, use_cache)
