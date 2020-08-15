@@ -2,7 +2,7 @@ import os
 import shutil
 from pathlib import Path
 from itertools import groupby
-from crawler import aws
+from cloud_products import aws
 
 cache_path = "./_data/test_cache_path/"
 output_path = "./_data/test_output_path/"
@@ -13,6 +13,23 @@ def remove_dirs():
         shutil.rmtree(cache_path)
     if os.path.exists(output_path) and os.path.isdir(output_path):
         shutil.rmtree(output_path)
+
+
+def test_product_to_dict():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products()
+    for p in products:
+        d = p.to_dict()
+        assert p.name == d["name"]
+        assert p.std_name == d["std_name"]
+        assert p.code == d["code"]
+        assert p.rel_href == d["rel_href"]
+        assert p.abs_href == d["abs_href"]
+        assert p.base_url == d["base_url"]
+        assert p.seed_url == d["seed_url"]
+        assert p.desc == d["desc"]
 
 
 def test_aws_get_products_for_duplicates():
@@ -30,10 +47,10 @@ def test_aws_get_products_matching():
     crawler = aws.AwsCrawler()
 
     products = crawler.get_products_matching("aws glue")
-    assert(len(products) == 1)
-    assert(products[0].name == "AWS Glue")
-    assert(products[0].std_name == "aws glue")
-    assert(products[0].code == "glue")
+    assert len(products) == 1
+    assert products[0].name == "AWS Glue"
+    assert products[0].std_name == "aws glue"
+    assert products[0].code == "glue"
 
     lines = crawler.get_product_text(products[0])
     assert len(lines) > 0
@@ -56,7 +73,7 @@ def test_aws_crawl_save_product_default_filename():
     products = crawler.get_products()
     for product in products[:3]:
         filename = crawler.save_product(product, output_path)
-        assert(Path(filename).is_file())
+        assert Path(filename).is_file()
 
 
 def test_aws_crawl_save_product_custom_filename():
@@ -66,7 +83,7 @@ def test_aws_crawl_save_product_custom_filename():
     products = crawler.get_products()
     for product in products[:3]:
         filename = crawler.save_product(product, output_path, "test_custom_name.txt")
-        assert(Path(filename).is_file())
+        assert Path(filename).is_file()
 
 
 def test_aws_crawl_cached_lines():

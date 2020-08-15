@@ -14,7 +14,7 @@ pip install cloud-products
 
 ### Example 1: List AWS products
 ```
-from crawler.aws import AwsCrawler
+from cloud_products.aws import AwsCrawler
 for product in AwsCrawler().get_products():
     print(f"{product.code}: {product.name}: {product.desc}")
 ```
@@ -31,10 +31,10 @@ api-gateway: Amazon API Gateway: Build, Deploy, and Manage APIs
 
 ### Example 2: Get product descriptions as a list of lines
 ```
-from crawler.aws import AwsCrawler
-crawler = AwsCrawler()
-product = crawler.get_products()[0]
-lines = crawler.get_product_text(product)
+from cloud_products.aws import AwsCrawler
+cloud_products = AwsCrawler()
+product = cloud_products.get_products()[0]
+lines = cloud_products.get_product_text(product)
 print(lines[4])
 ```
 
@@ -46,10 +46,10 @@ Alexa for Business is a service that enables organizations and employees to use 
 
 ### Example 3: Usage to get matching product(s):
 ```
-from crawler import aws
-crawler = aws.AwsCrawler()
-sagemaker_products = crawler.get_products_matching("sagemaker")
-sagemaker_description = crawler.get_product_text(sagemaker_products[0])
+from cloud_products import aws
+cloud_products = aws.AwsCrawler()
+sagemaker_products = cloud_products.get_products_matching("sagemaker")
+sagemaker_description = cloud_products.get_product_text(sagemaker_products[0])
 print(sagemaker_description[3])
 ```
 
@@ -61,10 +61,10 @@ Amazon SageMaker is a fully managed service that provides every developer and da
 
 ### Example 4: Save product descriptions to files:
 ```
-from crawler.aws import AwsCrawler
+from cloud_products.aws import AwsCrawler
 for product in AwsCrawler().get_products():
     print(f"Saving {product.name}")
-    crawler.save_product(product, output_path)
+    cloud_products.save_product(product, output_path)
 ```
 
 Example output:

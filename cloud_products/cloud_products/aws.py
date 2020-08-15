@@ -1,7 +1,7 @@
 import os
 import logging
-from crawler import base
-from crawler.product import Product
+from cloud_products import base
+from cloud_products.product import Product
 from pathlib import Path
 from typing import List, Tuple
 from urllib.request import urlopen
