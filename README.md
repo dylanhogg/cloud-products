@@ -77,4 +77,13 @@ Saving Amazon API Gateway
 ```
 
 
+### Example 5: Convert list of products to [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) dataframe:
+```
+import pandas as pd
+from cloud_products.aws import AwsCrawler
+products = AwsCrawler().get_products()
+df = pd.DataFrame.from_records([vars(p) for p in products])
+```
+
+
 Cloud Products is distributed under the MIT license.
