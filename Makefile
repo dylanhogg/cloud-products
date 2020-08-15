@@ -31,7 +31,7 @@ dist: venv-publish
 publish-test: dist
 	source venv_publish/bin/activate ; python -m twine upload --repository testpypi dist/* -u __token__
 
-## Package distribution and publish to pypi
+## Package distribution and publish to pypi (then `git tag vX.X.X` and `git push --tags`)
 publish-live: dist
 	source venv_publish/bin/activate ; python -m twine upload dist/* -u __token__
 
