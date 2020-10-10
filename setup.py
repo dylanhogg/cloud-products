@@ -28,6 +28,6 @@ setup(
     keywords="aws, crawler",
     package_dir={"": "cloud_products"},
     packages=find_packages(where="cloud_products"),
-    python_requires=">=3.7, <4",
+    python_requires=">=3.6, <4",
     install_requires=install_requires,
 )
