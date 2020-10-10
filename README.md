@@ -1,9 +1,15 @@
 # cloud-products 
 
+[![pypi Version](https://img.shields.io/pypi/v/cloud-products.svg?logo=pypi)](https://pypi.org/project/cloud-products/)
+![Latest Tag](https://img.shields.io/github/v/tag/dylanhogg/cloud-products)
+![Depenencies](https://img.shields.io/librariesio/github/dylanhogg/cloud-products)
+
 A package for getting cloud products and product descriptions from a cloud provider website with cache support.
 
-Currently supports getting AWS product information from  
+Currently supports getting AWS product information from 
 [https://aws.amazon.com/products](https://aws.amazon.com/products)
+
+GCP and Azure product information will be added in time.
 
 
 ### Install from PyPi
