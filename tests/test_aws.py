@@ -1,5 +1,6 @@
 import os
 import shutil
+import pytest
 from pathlib import Path
 from itertools import groupby
 from cloud_products import aws
@@ -137,3 +138,20 @@ def test_aws_crawl_nocache_save_product():
     products = crawler.get_products(cache_path, use_cache)
     for product in products[:3]:
         crawler.save_product(product, output_path, None, cache_path, use_cache)
+
+
+def test_pandas_functions():
+    crawler = aws.AwsCrawler()
+    try:
+        # TODO: work out how to test this properly for both scenarios of pandas installed/not installed.
+        import pandas as pd
+
+        df = crawler.get_products_as_df(use_cache=True)
+        # If pandas available, assert df has rows.
+        assert len(df) > 0
+    except ModuleNotFoundError:
+        # If pandas not available, assert informative error is raised.
+        with pytest.raises(
+            ModuleNotFoundError, match="pandas must be installed to use this method. Try `pip install pandas`."
+        ):
+            crawler.get_products_as_df()

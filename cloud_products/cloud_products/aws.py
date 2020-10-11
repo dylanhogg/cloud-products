@@ -109,6 +109,23 @@ class AwsCrawler(base.Crawler):
 
         return sorted(child_pages)
 
+    def get_products_as_df(self, cache_path=None, use_cache=True):
+        try:
+            # NOTE: pandas is a soft requirement for this package.
+            #       This method will fail if pandas isn't installed.
+            import pandas as pd
+        except ModuleNotFoundError:
+            raise ModuleNotFoundError("pandas must be installed to use this method. Try `pip install pandas`.")
+
+        products = self.get_products(cache_path=cache_path, use_cache=use_cache)
+        product_text = {}
+        for product in products:
+            product_lines = self.get_product_text(product, use_cache=use_cache)
+            product_text[product.code] = " ".join(product_lines)
+        df = pd.DataFrame.from_records([vars(p) for p in products])
+        df["product_text"] = df["code"].apply(lambda code: product_text[code])
+        return df
+
     def get_products_matching(self, match, cache_path=None, use_cache=True) -> List[Product]:
         products = self.get_products(cache_path, use_cache)
         return [p for p in products if match.lower() in p.name.lower()]

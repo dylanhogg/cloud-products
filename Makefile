@@ -6,7 +6,7 @@ venv-publish:
 ## Set up venv for running locally
 venv:
 	python3 -m venv venv
-	source venv/bin/activate ; pip install -r requirements-dev.txt
+	source venv/bin/activate ; pip install --upgrade pip ; pip install -r requirements-dev.txt
 	source venv/bin/activate ; pip freeze > requirements_freeze.txt
 
 ## Clean up all environments and publishing artifacts
