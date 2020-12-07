@@ -1,0 +1,48 @@
+Nov. 30 – Dec. 18 & Jan. 12 – 14 | Access hundreds of sessions, hear from cloud leaders, and be the first to learn what's new with AWS
+Register for free
+Nov. 30 – Dec. 18 & Jan. 12 – 14 | Access hundreds of sessions, hear from cloud leaders, and be the first to learn what's new with AWS
+Register for free
+AWS Management Console
+Everything you need to access and manage the AWS cloud — in one web interface.
+Create a Free Account
+Already have an account? Sign in
+The AWS Management Console brings the unmatched breadth and depth of AWS right to your computer or mobile phone with a secure, easy-to-access, web-based portal. Discover new services, manage your entire account, build new applications, and learn how to do even more with AWS.
+Get started fast with the AWS Management Console. All you need is an AWS account and a supported web browser.
+Console Overview
+Discover and experiment with over 150 AWS services, many of which have free trials
+Build your cloud-based applications in any AWS data center throughout the world
+Manage and monitor users, service usage, health, and monthly billing
+Get in-console help from AWS Support
+Create a Free Account
+Additional Resources
+Learn about AWS Pricing >>
+Find SDKs, Command Line Tools, and more tools to access AWS >>
+Frequently asked questions >>
+What can you do with the AWS Management Console?
+The console makes it easy to find new AWS services, configure services, view service usage, and so much more. From updating user groups to building applications to troubleshooting issues, with the Console, you can take action quickly.
+Try out any AWS service with just a few clicks
+The Console offers over 150 services you can configure, launch, and test to get hands-on experience with AWS. With the Console’s automated wizards and workflows, it’s even easier to quickly deploy and test common workloads. There’s also a resource library featuring articles and tips from AWS experts, Getting Started tutorials, on-demand webinars, reference deployment templates, and more.
+Learn more >>
+Build and scale powerful applications
+Use the Console and its API, CLI, CloudFormation templates, and other toolkits to build scalable architectures in any AWS data center around the world. You can customize your experience by pinning favorites and organize projects with resource groups and the tag editor. Plus, you’re only one click away from the AWS Marketplace where you’ll find hundreds of popular software products that run on AWS.
+Learn more >>
+Manage and monitor your account
+Oversee all administrative aspects of your AWS account from your desktop or mobile device. You can view your usage and monthly spending by service, set up AWS IAM users and groups, configure permissions, and manage security credentials. You can also quickly troubleshoot issues through visual monitoring. If you need extra help, submit a support ticket right from the Console to connect with an AWS expert.
+Learn more >>
+Accessing the AWS Management Console
+Requirements
+All you need is an existing AWS account and a supported browser. See our FAQs for a complete list of supported browsers and platforms.
+Learn more>>
+Mobile App
+With the AWS Console mobile app, you can quickly and easily view your existing resources, including CloudWatch alarms, and perform operational tasks from your mobile device. Download our mobile app from Amazon Appstore, Google Play, or iTunes.
+Learn more>>
+Get Started
+Sign up for an AWS account
+Creating an AWS account is free and gives you immediate access to the AWS Free Tier
+Enter the Management Console
+Log in to your account with your username and password and access to the management console on any device
+Start building with AWS
+Test out services and build your production solution quickly and easily once you're ready
+Help us make this page better
+Tell us what you love about this page, or what we could be doing better.
+Provide Page Feedback >>

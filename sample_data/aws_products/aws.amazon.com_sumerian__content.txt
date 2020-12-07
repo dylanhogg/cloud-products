@@ -1,0 +1,55 @@
+Amazon Sumerian
+Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications.
+Get started with Amazon Sumerian
+Bring a new dimension to your web and mobile applications with Amazon Sumerian. 3D immersive experiences are breathing new life into user experiences on the web, increasing customer engagement with brands and improving productivity in the workplace. Amazon Sumerian makes it easy to create engaging 3D front-end experiences and is integrated with AWS services to provide easy access to machine learning, chatbots, code execution and more. As a web-based platform, your immersive experiences are accessible via a simple browser URL and are able to run on popular hardware for AR/VR.
+Benefits
+Create a 3D scene in minutes
+Easily create and embed 3D scenes into existing web pages with Amazon Sumerian. The Sumerian editor provides ready-to-use scene templates and intuitive drag-and-drop tools that enable content creators, designers and developers alike to build interactive scenes. Developers with existing HTML, CSS and JavaScript expertise can also write custom scripts to support more complex interactions.
+Easily integrate with AWS Services
+Amazon Sumerian leverages the power of AWS to create smarter and more engaging front-end experiences. Easily embed conversational interfaces into scenes using Amazon Lex and embed scenes in a web application using AWS Amplify. Use the AWS SDK for JavaScript directly in Sumerian to interact with your AWS resources, such as storing data in Amazon DynamoDB or executing business-logic processes with AWS Lambda.
+Deliver anytime, anywhere, on any device
+Amazon Sumerian embraces the latest WebGL and WebXR standards to create immersive experiences directly in a web browser, accessible via a simple URL in seconds, and able to run on major hardware platforms for AR/VR. Build your scene once and deploy it anywhere.
+Use cases
+3D web
+Bring 2D web apps into the third dimension. Embed 3D content into your web page to let end customers interact in a new way with a simple click, tap or swipe.
+E-Commerce & Sales
+Use product configurators to enable 3D product visualization and customization. Help customers feel more confident about their purchasing decisions.
+Online Education
+Leverage a virtual concierge in online education to guide students through the learning process. Increase engagement and improve retention of information.
+Manufacturing
+Create virtual twins of manufacturing facilities and equipment in 3D to provide employees with more in-depth training. Improve comprehension and increase knowledge transfer.
+Augmented reality
+With billions of AR-capable mobile devices in people’s pockets, it's easier than ever to deliver AR experiences that help customers connect with businesses.
+Product & Marketing
+Use AR to enable end customers to visualize products in their own homes before purchasing them, or take part in brand experiences in their own backyards.
+Operations & Field Productivity
+Overlay instructions, diagnostic metrics or repair animation onto a real physical space using AR. Increase speed, effectiveness, error reduction, and safety.
+Retail Merchandising
+Improve merchandising precision and productivity in physical retail by providing AR planograms and shelf placement instructions. Conduct AR shopper research to improve future merchandising plans.
+Virtual reality
+Virtual reality (VR) leverages 3D environments or 360-degree video, combined with VR hardware to provide completely immersive experiences for customers.
+Training Simulations
+Create real world simulations to train employees, such as surgeons or hotel staff. Evoke empathy and elicit real responses to scenarios while reducing training costs.
+Data Visualization
+Visualize inbound and outbound data in a fully immersive environment where users interact directly with their data streams to aid decision-making.
+Travel & Hospitality
+Entice travelers with a new destination. Leverage 360-degree video to provide an immersive real-world experience to help travelers select their destination, accommodation or adventure.
+Case studies
+Electronic Caregiver (ECG)
+AI-driven 3D web virtual care platform, Addison Care
+Read the case study »
+WeatherBug
+AR visualization of Air Quality Index (AQI)
+Fidelity Labs
+Hosted VR experience with data visualization
+Read the case study »
+Customers
+Check out the product features
+Learn more about features of Amazon Sumerian.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Sumerian in the AWS Management Console.
+Sign in

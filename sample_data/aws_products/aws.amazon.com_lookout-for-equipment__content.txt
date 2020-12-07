@@ -1,0 +1,48 @@
+Amazon Lookout for Equipment
+(Preview)
+Detect abnormal equipment behavior by analyzing sensor data
+Sign up for the preview
+Amazon Lookout for Equipment uses the data from your sensors to detect abnormal equipment behavior, so you can take action before machine failures occur and avoid unplanned downtime.
+Installing sensors and the necessary infrastructure for data connectivity, storage, analytics, and alerting are the foundational elements for enabling predictive maintenance. However, many companies use rudimentary data analytics and simple modeling approaches that are often ineffective at detecting issues early enough to avoid downtime. Successfully implementing predictive maintenance depends on you using the data collected from all of your machine sensors, under your unique operating conditions, and then applying sophisticated machine learning (ML) techniques to detect abnormal machine conditions as early as possible.  Amazon Lookout for Equipment analyzes the data from your sensors, such as pressure, flow rate, RPMs, temperature, and power to automatically train a specific ML model based on just your data, for your equipment – with no ML expertise required. Lookout for Equipment uses your unique ML model to analyze incoming sensor data in real-time and accurately identify early warning signs that could lead to machine failures. This means you can detect equipment abnormalities with speed and precision, quickly diagnose issues, take action to reduce expensive downtime, and reduce false alerts.
+Benefits
+High accuracy results
+Amazon Lookout for Equipment uses data from your existing sensors to build a custom ML model specific to your equipment. It handles data from up to 300 sensors in one model, along with historical logs, to give you accurate alerts when your equipment behaves abnormally.
+Respond to issues faster and with precision
+Amazon Lookout for Equipment automatically monitors your equipment and identifies any anomalies compared to healthy operation. Lookout for Equipment can then pinpoint the sensor or sensors indicating anomalies, enabling you to respond quickly.
+Accelerate issue resolution
+You can use data from Amazon Lookout for Equipment to set up automatic actions to be taken when anomalies are detected, such as filing a trouble ticket, or sending an automatic alarm that notifies you immediately of any issues. The data from Lookout for Equipment can be integrated into your existing monitoring software or you can use AWS IoT SiteWise to collect, store, organize and monitor data. Lookout for Equipment can also work with data from common industrial data systems such as OSIsoft.
+Improve accuracy of alerts over time
+Amazon Lookout for Equipment continuously improves model performance and accuracy of alerts by incorporating human review feedback on the anomalies detected and learning expected operational usage trends.
+Use cases
+Amazon Lookout for Equipment can analyze sensor data from a broad range of industrial machinery.
+Generators
+Compressors
+Wind turbines
+Analyze sensor data from generators such as flow rates, temperature, pressure, and oxygen levels data to detect equipment shutdowns before they happen.
+Analyze historical maintenance data and sensor data from compressors such as RPMs, inlet/outlet flow rates, temperature, pressure, and vibration to identify abnormal machinery behavior.
+For equipment like wind turbines, you can analyze sensor data like power, pitch blade angle, RPMs, wind speed, and generator temperature to quickly identify issues before they occur.
+Customers
+OSIsoft
+OSIsoft is a manufacturer of application software for real-time data management, called the PI System.
+"Today, there are more than 2 billion sensor-based data streams inside OSIsoft PI Systems, and thousands of customers relying on the PI System daily to run their operations. These customers are constantly looking for methods to easily serve up insights for improving their competitiveness. OSIsoft products can be integrated with AWS services to help customers unlock additional value from their data. Amazon Lookout for Equipment expands the scope of services and insights available to customers by delivering automated machine learning built specifically for equipment monitoring."
+Michael Graves, Director of Strategic Alliances at OSIsoft
+GS EPS
+GS EPS is a South Korean industrial conglomerate, and a leader in the field of energy, retail, construction, and service.
+“We have been generating data across our assets for over a decade now but have only been using physics and rules based methods to gain insights into our data. Amazon Lookout for Equipment is enabling our plant operation teams to build models on our equipment with no ML expertise required. We are leading the transformation of our organization into a data-driven work culture with AWS and Amazon Lookout for Equipment.”
+Kang Bum Lee, Executive Vice President of GS EPS
+Doosan Infracore
+Doosan Infracore is a leading global manufacturer of heavy duty equipment and engines.
+"Leveraging AI is critical in advancing Doosan’s next generation equipment, so we have partnered with AWS to develop use cases where automated and scalable machine learning could be leveraged. Based on this, we are excited to continue to work with AWS to leverage Amazon Lookout for Equipment analytics in our next generation IOT platform.”
+Cho Jaeyeon, Vice President of Doosan Infracore Strategy
+Choose the cloud provider with proven experience in industrial operations
+From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
+Learn more about AWS for Industrial »
+Check out the product features
+Visit the Amazon Lookout for Equipment features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Lookout for Equipment in the AWS Management Console.
+Sign in

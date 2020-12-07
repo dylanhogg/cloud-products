@@ -1,0 +1,36 @@
+Amazon Elastic Transcoder
+Save Costs and Get More Features with AWS Elemental MediaConvert
+AWS Elemental MediaConvert is a new file-based video transcoding service that provides a comprehensive suite of advanced transcoding features, with on-demand rates starting at $0.0075/minute. Read more.
+Already using Amazon Elastic Transcoder? It's simple to migrate to MediaConvert using this guide which includes step-by-step instructions and a script to convert your presets.
+Amazon Elastic Transcoder is media transcoding in the cloud. It is designed to be a highly scalable, easy to use and a cost effective way for developers and businesses to convert (or “transcode”) media files from their source format into versions that will playback on devices like smartphones, tablets and PCs.
+What's New with Amazon Elastic Transcoder
+Amazon Elastic Transcoder Adds Support For Clip Stitching
+Amazon Elastic Transcoder Available In The Asia Pacific (Mumbai) Region
+Amazon Elastic Transcoder Now Publishes Operational Metrics to Amazon CloudWatch
+Amazon Elastic Transcoder Available In The Asia Pacific (Sydney) Region
+Amazon Elastic Transcoder Adds Support For WAV
+Amazon Elastic Transcoder Now Supports MPEG-DASH
+Amazon Elastic Transcoder Adds Support for VP9
+Get Started with AWS for Free
+Create a Free Account
+Or Sign In to the Console
+Amazon Elastic Transcoder's Free Tier includes up to 20 minutes of transcoding each month.
+View AWS Free Tier Details »
+Amazon Elastic Transcoder manages all aspects of the media transcoding process for you transparently and automatically. There’s no need to administer software, scale hardware, tune performance, or otherwise manage transcoding infrastructure. You simply create a transcoding “job” specifying the location of your source media file and how you want it transcoded. Amazon Elastic Transcoder also provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices. All these features are available via service API, AWS SDKs and the AWS Management Console.
+Like other Amazon Web Services products, there are no contracts or monthly commitments for using Amazon Elastic Transcoder — you simply pay based on the minutes you need to transcode, and resolution of the content transcoded.
+Getting Started with Amazon Elastic Transcoder  (5:28)
+Service Highlights
+Easy to Use
+Amazon Elastic Transcoder is designed to be easy to use. You can get started by using the AWS Management Console, the service API or the SDKs. System transcoding presets make it easy to get transcoding settings right the first time. We provide pre-defined presets to create media files that will play on a wide range of devices (like smartphones or tablets), as well as presets to create media files that are optimized for playback on a specific device (like the Amazon Kindle Fire HD or Apple iPod touch). You can also create segmented files and playlists for delivery using the HLS, Smooth, or MPEG-DASH protocol to compatible devices. Developers building applications that need transcoding can use the AWS SDKs for Java, .NET, Node.js, PHP, Python and Ruby, and the new AWS Command Line Interface.
+Elastically Scalable
+Amazon Elastic Transcoder is designed to scale seamlessly with your media transcoding workload. Amazon Elastic Transcoder is architected to handle large volumes of media files and large file sizes. Transcoding pipelines enable you to perform multiple transcodes in parallel. Amazon Elastic Transcoder leverages other Amazon Web Services like Amazon S3, Amazon EC2, Amazon DynamoDB, Amazon Simple Workflow (SWF) and Amazon Simple Notification Service (SNS) to give scalability and reliability.
+Cost Effective
+Amazon Elastic Transcoder uses a content duration-based pricing model: you pay based on the length of the output, in minutes, of the media you are transcoding. For example, if your video's transcoded output is 30 minutes in duration, you will pay for 30 minutes of transcoding. Similarly, if you create a 20 minute video clip from a 30 minute input file, you will pay for 20 minutes of transcoding. Alternately, if you are stitching together two 5 minute input files to create a single 10 minute output file, you will pay for 10 minutes of transcoding. With Amazon Elastic Transcoder, there are no minimum transcoding volumes, monthly commitments, or long term contracts.
+Managed
+Amazon Elastic Transcoder enables you to focus on your content rather than on managing transcoding software in a distributed cloud-based environment. The service takes care of scaling and operating the system, and manages the process of keeping codecs up to date. Combined with our service API and SDKs, this makes it easy for you to build media solutions that use Amazon Elastic Transcoder.
+Secure
+Your content is under your control: your assets are in your own Amazon S3 buckets, which you give us access to through IAM roles. This makes it simple to fit seamlessly into your current security and identity framework without giving up control. In building Amazon Elastic Transcoder, we made use of security best practices gained by building other Amazon Web Services. For more information about security on AWS, please refer to the AWS Security Center. For more information on compliance, including MPAA best practices, please refer to AWS Compliance.
+Seamless Delivery
+Using Amazon Elastic Transcoder, Amazon S3 and Amazon CloudFront, you can store, transcode and deliver your content. By setting the S3 permissions for your CloudFront distribution in Amazon Elastic Transcoder, it is now a simple one step process to transcode content with Amazon Elastic Transcoder and deliver the multiple output videos via progressive download or adaptive bitrate streaming (HLS, Smooth, or MPEG-DASH) with CloudFront.
+AWS Integration
+Amazon Elastic Transcoder provides an important media building block for creating end-to-end media solutions on AWS. For example, you can use Amazon Glacier to store master content, Amazon Elastic Transcoder to transcode masters to renditions for distribution stored in Amazon S3, stream these renditions at scale over the Internet using Amazon CloudFront, and monitor the health of your transcoding workflow using CloudWatch.

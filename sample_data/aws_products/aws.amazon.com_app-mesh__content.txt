@@ -1,0 +1,34 @@
+AWS App Mesh
+Application-level networking for all your services
+Get started with AWS App Mesh
+AWS App Mesh is a service mesh that provides application-level networking to make it easy for your services to communicate with each other across multiple types of compute infrastructure. App Mesh gives end-to-end visibility and high-availability for your applications.
+Modern applications are typically composed of multiple services. Each service may be built using multiple types of compute infrastructure such as Amazon EC2, Amazon ECS, Amazon EKS, and AWS Fargate. As the number of services grow within an application, it becomes difficult to pinpoint the exact location of errors, re-route traffic after failures, and safely deploy code changes. Previously, this has required you to build monitoring and control logic directly into your code and redeploy your service every time there are changes.
+AWS App Mesh makes it easy to run services by providing consistent visibility and network traffic controls, and helping you deliver secure services. App Mesh removes the need to update application code to change how monitoring data is collected or traffic is routed between services. App Mesh configures each service to export monitoring data and implements consistent communications control logic across your application.  You can use App Mesh with AWS Fargate, Amazon EC2, Amazon ECS, Amazon EKS, and Kubernetes running on AWS, to better run your application at scale. App Mesh also integrates with AWS Outposts for your applications running on-premises. App Mesh uses the open source Envoy proxy, making it compatible with a wide range of AWS partner and open source tools.
+Introduction to AWS App Mesh
+Benefits
+Get end-to-end visibility
+App Mesh captures metrics, logs, and traces from all of your applications. You can combine and export this data to Amazon CloudWatch, AWS X-Ray, and compatible AWS partner and community tools for monitoring and tracing. This lets you quickly identify and isolate issues with any service to optimize your entire application.
+Streamline your operations
+App Mesh provides controls to configure and standardize how traffic flows between your services. You can easily implement custom traffic routing rules so that your service is highly available during deployments, after failures, and as your application scales. This removes the need to configure communication protocols for each service, write custom code, or implement libraries to operate your application.
+Enhance network security (preview)
+App Mesh helps encrypt all requests between services even when they are in your private networks. Further, you can add authentication controls to ensure that only services that you allow interconnect.
+How it works (mTLS preview)
+Blog posts
+date
+date
+1
+…
+…
+What's new posts
+date
+date
+1
+…
+…
+AWS App Mesh partners
+Check out the product features
+Learn more about AWS App Mesh
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier
+Sign up

@@ -1,0 +1,68 @@
+Amazon Simple Notification Service
+Fully managed pub/sub messaging, SMS, email, and mobile push notifications
+Get started for free
+Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
+The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+TUTORIAL:  Learn how to use SNS in minutes
+Benefits
+Modernize and decouple your applications
+Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
+Send messages directly to millions of users
+Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP). Amazon SNS provides redundancy across multiple SMS providers and allows you to push mobile notifications using a single endpoint for all platforms.
+Reliably deliver messages
+Amazon SNS uses cross availability zone message storage to provide high message durability. Running within Amazon’s proven network infrastructure and data centers, Amazon SNS topics are available whenever your applications need them. All messages published to Amazon SNS are stored redundantly across multiple geographically separated servers and data centers. If subscriber endpoints aren’t available, Amazon SNS executes automatic message retry policies and can seamlessly move messages to dead-letter queues.
+Automatically scale your workload
+Amazon SNS leverages the proven AWS cloud to dynamically scale with your application. Amazon SNS is a fully managed service, taking care of the heavy lifting related to capacity planning, provisioning, monitoring, and patching. The service is designed to handle high-throughput, bursty traffic patterns and enables you to send millions of messages per second.
+Ensure accuracy with message ordering and deduplication
+Amazon SNS FIFO topics work with Amazon SQS FIFO queues to ensure messages are delivered in a strictly ordered manner and are only processed once (deduplicated). This enables you to maintain consistency when processing transactions across a single or multiple independent services where it’s critical that messages are in the correct order. It also allows you to offload the effort of writing custom code for ordering and message deduplication.
+Simplify your architecture with Message Filtering
+Amazon SNS helps you simplify your pub/sub messaging architecture by offloading the message filtering logic from your subscriber systems, and message routing logic from your publisher systems. With Amazon SNS message filtering, subscribing endpoints receive only the messages of interest, instead of all messages published to the topic. Amazon CloudWatch gives visibility into your filtering activity, and AWS CloudFormation allows you to deploy subscription filter policies in an automated and secure manner.
+How it works
+Pub/Sub
+SMS
+Mobile Push
+Pub/Sub
+SMS
+Mobile Push
+Case studies
+AWS Services Used: Amazon SNS, AWS Lambda
+AWS Services Used: Amazon SNS, Amazon SQS
+AWS Services Used: Amazon SNS, Amazon SQS, Amazon EC2, Amazon S3.
+AWS Services Used: Amazon SNS, Amazon Route 53, Amazon CloudFront, Amazon S3, Amazon EC2, Amazon CloudWatch, Amazon RDS, AWS CloudFormation
+PlayOn! Sports is one of the leading high school sports media companies in the US. They operate a comprehensive technology platform, enabling high-quality, low-cost productions of live sports events. Their serverless video processing pipeline illustrates the fanout messaging pattern and options for its inclusion in a serverless architecture, using Amazon SNS and AWS Lambda.
+Read the blog >>
+The NASA Image and Video Library provides easy access to more than 140,000 still images, audio recordings, and videos—documenting NASA’s more than half a century of achievements in exploring the vast unknown. The architecture includes Amazon SNS to trigger the processing pipelines when new content is updated, and Amazon SQS to decouple incoming jobs from pipeline processors.
+Read the case study >>
+Change Healthcare uses AWS services, such as Amazon EC2, Amazon S3, Amazon SQS, and Amazon SNS to handle millions of confidential transactions daily from its clients, while maintaining full compliance with healthcare industry regulations, including HIPAA.
+Read the case study >>
+The FCBarcelona web platform boasts over 6,000 pages and over 12,000 digitized photographs. It is available in six languages and consolidates up-to-date information for five elite professional teams. The solution relies on Amazon SNS for several platform notifications.
+Read the case study >>
+Featured blog posts
+Building event-driven architectures with Amazon SNS FIFO
+James Beswick
+Oct 22, 2020
+Designing durable serverless apps with DLQs for Amazon SNS, Amazon SQS, AWS Lambda Rachel Richardson and Otavio Ferreira Nov 15, 2019
+Enriching Event-Driven Architectures with AWS Event Fork Pipelines Rachel Richardson and Otavio Ferreira  Mar 25, 2019
+Encrypting messages published to Amazon SNS with AWS KMS
+Michelle Mercier and Otavio Ferreira
+Nov 15, 2018
+More…
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
+What's new with Amazon SNS
+Date
+Date
+More…
+Get started with AWS
+Enter the Amazon SNS Console
+Instantly get access to the
+AWS Free Tier.
+Learn more with Amazon SNS tutorials
+Quickly set up and use SNS tools.
+Create an Amazon SNS Topic
+Publish and subscribe to topics in minutes.
+Learn more about Amazon SNS
+Visit the features page
+Ready to build?
+Get started with Amazon SNS
+Have more questions?
+Contact us

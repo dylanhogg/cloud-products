@@ -1,0 +1,81 @@
+Amazon WorkDocs
+Secure content collaboration, simplified
+Get started with Amazon WorkDocs
+Amazon WorkDocs is a fully managed, secure content creation, storage, and collaboration service. With Amazon WorkDocs, you can easily create, edit, and share content, and because it’s stored centrally on AWS, access it from anywhere on any device. Amazon WorkDocs makes it easy to collaborate with others, and lets you easily share content, provide rich feedback, and collaboratively edit documents. You can use Amazon WorkDocs to retire legacy file share infrastructure by moving file shares to the cloud. Amazon WorkDocs lets you integrate with your existing systems, and offers a rich API so that you can develop your own content-rich applications. Amazon WorkDocs is built on AWS, where your content is secured on the world's largest cloud infrastructure.
+With Amazon WorkDocs, there are no upfront fees or commitments. You pay only for active user accounts, and the storage you use.
+Introduction to Amazon WorkDocs (2:05)
+Benefits
+Migrate your on premise file servers and reduce costs significantly
+Amazon WorkDocs is a fully managed service that lets you retire expensive network file shares and painlessly move content to the cloud. With Amazon WorkDocs pay-as-you-go pricing, you only pay for the active user accounts on your site. With Amazon WorkDocs Drive, you can launch content directly from Windows File Explorer, Mac Finder, or Amazon WorkSpaces, all without consuming valuable local disk space.
+Securely share with internal teams and external users in real-time
+Amazon WorkDocs allows you to easily share with teams and invite external users for cross-organizational collaboration. You can use real-time Activity Feed to track site-wide collaboration actions by file, folder, or user name. With Amazon WorkDocs you can reduce long email threads with commenting, highlighting, and requesting feedback capabilities. Granular searching helps you find feedback from colleagues across documents as well.
+Secure your content in the cloud
+Amazon WorkDocs lets you store your content on the world’s largest global cloud infrastructure, built to satisfy the requirements of our most security-sensitive customers. Your content is encrypted in transit and at rest. You can review user and admin activity tracking to know who is accessing what. With Amazon WorkDocs, you can also easily maintain compliance: Amazon WorkDocs is HIPAA eligible, GDPR and PCI DSS compliant, evaluated with SOC reports 1-3, and aligned with ISO compliance requirements.
+Bring content into your applications and processes
+Amazon WorkDocs makes it easier for you to add content rich features to your web and mobile applications by using Amazon WorkDocs as a content repository. With Amazon WorkDocs, you can use the user and admin level capabilities of the AWS SDK to integrate with your business tools like anti-virus and malware detection applications as well.
+Route your documents using approval workflow
+Using Amazon WorkDocs approval workflow, you can now route documents and other files stored in WorkDocs for approvals. Approval Workflow automatically routes the files, assigns review tasks to approvers and sends reminders and notifications. You can also track the status of your approval requests as well as those awaiting your approval.
+Extend your desktop to the cloud
+Amazon WorkDocs Drive is a native desktop application that combines the ease of working in Windows File Explorer or Mac Finder with the scale of Amazon WorkDocs. With Amazon WorkDocs Drive, all of your files are available on-demand from your device without having to consume valuable disk space on your PC or macOS. You can use Amazon WorkDocs Drive as your primary user drive, and you don’t need to use network shares to store your content.
+What is Amazon WorkDocs?
+Use cases
+Replace Costly Legacy File Shares
+The legacy network file shares and on premise enterprise content management (ECM) solutions are expensive, complex and monolithic. Many leading enterprises are looking at the ways to adopt modern, secure, efficient and cost effective cloud alternatives. With Amazon WorkDocs, you can easily migrate existing content from legacy network file shares to the cloud and your users can continue to access all their individual and team’s shared content from their native desktop file systems through WorkDocs Drive, or through the web user interface or mobile application.
+Sharing and Collaboration Across Internal and External Teams
+With Amazon WorkDocs, both end-users and teams can easily store their files within WorkDocs and their content can be easily accessed across devices. Amazon WorkDocs provides a secured and auditable end-user and team sharing. You can share your files both inside and outside your organization using AD for AuthN and AuthZ with configurable permissions and strict controls over what content users can and cannot access. Teams can also share comments and request feedback on their various documents and files.
+Approval Workflows
+Content approval workflows are essential to many organizations to help automate business processes by making them consistent, and more efficient. Amazon WorkDocs offers a document approval workflow management that enables users to create an approval workflow and route files stored in WorkDocs to one or more users for their approval. Approval workflow allows users to build workflows to track and manage their document approval processes in an automated manner.
+Application Extensions and Integrated Content Experiences
+Customers often require seamless integration between their existing systems, business applications and content repositories. They want to configure their content experiences through robust APIs. Automation and extensibility: Amazon WorkDocs enables organizations to achieve automation and extensibility through broad SDKs for custom development and access to cloud storage.
+Customer case studies
+Secure, Faster and Integrated Content Sharing for Global Teams
+Samsung Engineering is a global EPC (Engineering, Procurement, and Construction) company that provides comprehensive solutions in all areas of the plant, from feasibility study to finance, design, purchase, construction, and O&M, and develop active businesses in domestic and global plant markets based on accumulated technology, experience and excellent human resources.
+“Our employees must frequently share large files globally and we were looking for a more secure and more efficient option to share between overseas teams. We used the Amazon WorkDocs APIs to build an integrated file-sharing feature that greatly decreased the time our teams spend uploading, sharing, and downloading files. Leveraging Amazon WorkDocs has saved us a lot of time and thus greatly improved our teams’ efficiency.”
+Mr. Seungwoo Ha, Sr. Product Manager, Samsung Engineering
+Agile, Scalable and Cost Effective Cross-group collaboration
+Arizona State University is a leader in higher-education institutions in the United States. The university places special emphasis on research and innovation, a unique student experience, and an elite athletics program. Arizona State University uses AWS services to support nearly 119,000 students attending the school. ASU has integrated Amazon WorkDocs to provide its users with a cloud storage solution to publish content securely.
+“We started using Amazon WorkDocs to securely store and share files such as queries, datasets, and reports. The ability to view historical versions and ease of access make it a great collaboration tool to use when editing documents with multiple people. Amazon WorkDocs makes it is easy to set the permissions for specific users and groups which helps us stay organized and manage permissions. We integrate Amazon WorkDocs when we use Amazon WorkSpaces. Our users get a full cloud desktop with WorkSpaces and can save and share the files in WorkDocs. The two services work well together and help the staff at ASU stay productive.”
+John Rome, Deputy CIO, Arizona State University (ASU)
+Halliburton is one of the world's largest providers of products and services to the energy industry. With approximately 50,000 employees, representing 140 nationalities, and operations in approximately 70 countries, the company serves the upstream oil and gas industry throughout the lifecycle of the reservoir.
+"Each member of the community is provided with private storage to directly access content from their [Amazon] WorkSpaces, laptops and mobile devices. Community members have found [Amazon] WorkDocs to be a valuable solution and use it regularly to share information and collaborate across domains.”
+Deepak Gandhi, Manager of PaaS iEnergy and OEC - Halliburton
+Network File Share Replacement
+Signet Maritime Corporation is a diverse international marine transportation and logistics services company. Signet has specialized in cargo handling, towing and tugboat services, ship management and vessel design, with concentration in the Americas, Africa and the Middle East.
+“Our previous network file share created a lot of issues for our users. Moving to Amazon WorkDocs enabled users to store, share, and collaborate on documents from anywhere on any device, vastly improving their productivity and reducing our overall operational costs.”
+Joshua A. Johnson, IT Manager - Signet Maritime Corporation
+Cloud Content Storage
+Gateway Engineers is a full-service civil engineering and consulting firm that designs and manages a project from concept to completion. The company has been at the forefront of innovation in the engineering industry. Today, the company effectively and efficiently manages thousands of projects a year for a diverse group of clients throughout the country.
+"Our previous network file share created a lot of issues for our users. They had trouble connecting to them, and this slowed teams down because they couldn’t access the files they needed. Amazon WorkDocs makes it easy for everyone to access their files from any device, and collaborate with flexible sharing features and rich feedback."
+Dragan J. Lazic, IT Manager - Gateway Engineers
+Business Systems Integration
+STRATUS Solutions, Inc. provides specialized engineering services to the Department of Defense, the intelligence community, other governmental agencies, and the private sector. STRATUS focuses on designing, developing, deploying, validating and verifying, and technically managing network systems.
+“We were blown away by the performance, security, and usability of [Amazon] WorkDocs. The robust API allowed us to fully automate deployment to our ... customer almost overnight, reducing overall time and labor. … [Amazon] WorkDocs was clearly designed with security in mind, making our jobs much easier.”
+Dede Dascalu, CEO - Stratus Solutions
+Content Repository
+Condé Nast is a premier media company renowned for producing the highest quality content for the world's most influential audiences. Attracting more than 100 million consumers across its industry-leading print, digital and video brands, the company’s portfolio includes some of the most iconic titles in media: Vogue, Vanity Fair, Glamour, BRIDES, SELF, GQ, GQ Style, The New Yorker, Condé Nast Traveler, Allure, AD, Bon Appétit, Epicurious, WIRED, W, Golf Digest, Golf World, Teen Vogue, Ars Technica, The Scene, Pitchfork, and Backchannel.
+"Our users span multiple continents, and we were looking for a solution that enabled them to store and access their files anywhere in the world. [Amazon] WorkDocs enabled our users to store their files on one service, and access their files from anywhere."
+Demetrios Vasiadis, Manager of Digital Asset Technologies - Condé Nast
+Cost Effective and Quick to Adopt and Secure Sharing and Collaboration
+Enabling Digital Commerce – Delhivery’s aim is to become India's largest and most profitable fulfilment company for digital commerce. Delhivery bring reach, speed and the power of their customizable technology toolkit to their customer’s online logistics operations.
+"I really liked the simplicity of WorkDocs, its ease of use all at very reasonable cost. We did not have to spend any time educating our users on how to use the product and were quickly able to use the sharing and collaboration features to meet our needs.
+Kapil Bharati, CTO, Delhivery
+APN Partners
+Availability of information to the right people and right time, agility of business process, interoperability of diverse business functions and conformity of the legal requirements are few of the critical success factors for enterprises to survive in the modern and competing global marketspace. Enterprises while striving to achieve these critical success factors are facing challenges of ever-increasing content of all types and formats in siloed storages exposed to the complexity of massive volumes of variant data and information, which exists. Complex and extended business processes spanning across the business functions and partners around the globe, need for integration and interoperability, fulfillment of compliance to legal and regulatory requirements.
+Wipro’s One Intelligent Content as a Service solution on AWS helps organizations solve the above challenges and offers the capabilities to efficiently and effectively manage the challenges imposed by the demanding business requirements of the modern world. The solution is built to bring together architecture supportive of on-premises and hybrid cloud services, a multi-repository approach to managing content, and intelligent functions like enterprise search to create agile, cost effective solutions.
+TekStream Solutions specializes in addressing the company-wide Enterprise Content Management problems faced by Enterprise businesses. Our certified consultants have led over 250 deployments and take pride in providing pre-packaged solution services as well as customer specific enhancements. Utilizing TekStream’s proven “QuickStream” delivery methodology to analyze and visualize your perfect solution, TekStream is well equipped to streamline your content initiatives and fulfill your implementation needs. TekStream consultants average over 12 years of experience with Enterprise implementations. We understand how to deliver on excellence and use our proven methodologies to ensure your success. TekStream offers QuickStream, Full Life Cycle Deployment Services, and Engineered Solutions. Click
+here to learn more and contact the partner.
+Recent Announcements
+Date
+Date
+1
+…
+…
+Check out Amazon WorkDocs features
+Amazon WorkDocs features for users, admins, and developers
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign up for an account
+Get started with Amazon WorkDocs
+Sign in

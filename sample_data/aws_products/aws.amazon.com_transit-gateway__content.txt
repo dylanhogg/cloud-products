@@ -1,0 +1,56 @@
+AWS Transit Gateway
+Easily connect Amazon VPCs, AWS accounts, and on-premises networks to a single gateway
+Get started with AWS Transit Gateway
+AWS Transit Gateway connects VPCs and on-premises networks through a central hub. This simplifies your network and puts an end to complex peering relationships. It acts as a cloud router – each new connection is only made once.
+As you expand globally, inter-Region peering connects AWS Transit Gateways together using the AWS global network. Your data is automatically encrypted, and never travels over the public internet. And, because of its central position, AWS Transit Gateway Network Manager has a unique view over your entire network, even connecting to Software-Defined Wide Area Network (SD-WAN) devices.
+What is AWS Transit Gateway (01:24)
+Benefits of using AWS Transit Gateway
+Easier connectivity
+AWS Transit Gateway acts as a cloud router to simplify your network architecture. As your network grows, the complexity of managing incremental connections doesn’t slow you down. When building global applications, you can connect AWS Transit Gateways using inter-Region peering.
+Better visibility and control
+With AWS Transit Gateway Network Manager, you can easily monitor your Amazon VPCs and edge connections from a central console. Integrated with popular SD-WAN devices, AWS Transit Gateway Network Manager helps you quickly identify issues and react to events on your global network.
+Improved security
+Traffic between an Amazon VPC and AWS Transit Gateway remains on the AWS global private network and is not exposed to the public internet. AWS Transit Gateway inter-Region peering encrypts all traffic, with no single point of failure or bandwidth bottleneck. This helps protect against distributed denial of service (DDoS) attacks and other common exploits.
+Flexible multicast
+AWS Transit Gateway multicast support distributes the same content to multiple specific destinations. This eliminates the need for expensive on-premises multicast networks and reduces the bandwidth needed for high-throughput applications such as video conferencing, media, or teleconferencing.
+Simplify your network
+Without AWS Transit Gateway
+With AWS Transit Gateway
+Complexity increases with scale. You must maintain routing tables within each VPC and connect to each onsite location using separate network gateways.
+Your network is streamlined and scalable. AWS Transit Gateway routes all traffic to and from each VPC or VPN, and you have one place to manage and monitor it all.
+AWS Transit Gateway use cases
+Deliver applications around the world
+AWS Transit Gateway helps you build applications spanning thousands of Amazon VPCs. This means deploying new applications without updating massive route tables to create peering relationships. Everything is easier to deploy, manage, and troubleshoot.
+Rapidly move to global scale
+With inter-Region peering, everything attached to an AWS Transit Gateway is shared across AWS Regions. This includes VPCs, DNS, Microsoft Active Directory, and IPS/IDS.
+Smoothly respond to spikes in demand
+With AWS Transit Gateway, you can quickly add Amazon VPCs, AWS accounts, VPN capacity, or AWS Direct Connect gateways to meet unexpected demand, without having to wrestle with complex connections or massive routing tables.
+Host multicast applications in the cloud
+With AWS Transit Gateway’s multicast feature, you can host multicast applications without redesigning your application or tweaking your on-premises network. Your multicast applications scale based on demand, without the need to buy and maintain custom hardware to support your peak application loads.
+Guest technical blog:
+Zendesk’s Global Network: How we lowered operational overhead and cost by migrating to AWS Transit Gateway
+"Replacing our EC2 infrastructure with this managed service also helped reduce our overall AWS cross-Region network spend by close to 50%."
+-
+Vicente De Luca, Principal Engineer at Zendesk
+Read about how they did it >>
+More technical blogs
+1
+…
+…
+New features
+Date
+Date
+1
+…
+…
+Customers using AWS Transit Gateway
+Read customer testimonials >>
+Check out the product features
+Discover what you AWS Transit Gateway can do for your network.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Transit Gateway in the AWS Console.
+Sign in

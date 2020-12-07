@@ -1,0 +1,45 @@
+AWS CloudHSM
+Managed hardware security module (HSM) on the AWS Cloud.
+Get started with AWS CloudHSM
+AWS CloudHSM is a cloud-based hardware security module (HSM) that enables you to easily generate and use your own encryption keys on the AWS Cloud. With CloudHSM, you can manage your own encryption keys using FIPS 140-2 Level 3 validated HSMs. CloudHSM offers you the flexibility to integrate with your applications using industry-standard APIs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG) libraries.
+CloudHSM is standards-compliant and enables you to export all of your keys to most other commercially-available HSMs, subject to your configurations. It is a fully-managed service that automates time-consuming administrative tasks for you, such as hardware provisioning, software patching, high-availability, and backups. CloudHSM also enables you to scale quickly by adding and removing HSM capacity on-demand, with no up-front costs.
+Introducing AWS CloudHSM
+Benefits
+Generate and use encryption keys on FIPS 140-2 level 3 validated HSMs
+AWS CloudHSM enables you to generate and use your encryption keys on a FIPS 140-2 Level 3 validated hardware. CloudHSM protects your keys with exclusive, single-tenant access to tamper-resistant HSM instances in your own Amazon Virtual Private Cloud (VPC).
+Deploy secure, compliant workloads
+Utilizing HSMs as the root of trust helps you demonstrate compliance with security, privacy and anti-tamper regulations such as HIPAA, FedRAMP and PCI. AWS CloudHSM enables you to build secure, compliant workloads with high reliability and low latency, using HSM instances in the AWS cloud.
+Use an open HSM built on industry standards
+You can use AWS CloudHSM to integrate with custom applications using industry-standard APIs, such as PKCS#11, Java Cryptography Extensions (JCE), and Microsoft CryptoNG (CNG) libraries. You can also transfer your keys to other commercial HSM solutions to make it easy for you to migrate keys on or off of AWS.
+Keep control of your encryption keys
+AWS CloudHSM provides you access to your HSMs over a secure channel to create users and set HSM policies. The encryption keys that you generate and use with CloudHSM are accessible only by the HSM users that you specify. AWS has no visibility or access to your encryption keys.
+Easy to manage and scale
+AWS CloudHSM automates time-consuming HSM administrative tasks for you, such as hardware provisioning, software patching, high availability, and backups. You can scale your HSM capacity quickly by adding and removing HSMs from your cluster on-demand. AWS CloudHSM automatically load balances requests and securely duplicates keys stored in any HSM to all of the other HSMs in the cluster.
+Control AWS KMS keys
+You can configure AWS Key Management Service (KMS) to use your AWS CloudHSM cluster as a custom key store rather than the default KMS key store. With a KMS custom key store you benefit from the integration between KMS and AWS services that encrypt data while retaining control of the HSMs that protect your KMS master keys. KMS custom key store gives you the best of both worlds, combining single-tenant HSMs under your control with the ease of use and integration of AWS KMS.
+How it works
+AWS CloudHSM runs in your own Amazon Virtual Private Cloud (VPC), enabling you to easily use your HSMs with applications running on your Amazon EC2 instances. With CloudHSM, you can use standard VPC security controls to manage access to your HSMs. Your applications connect to your HSMs using mutually authenticated SSL channels established by your HSM client software. Since your HSMs are located in Amazon datacenters near your EC2 instances, you can reduce the network latency between your applications and HSMs versus an on-premises HSM.
+A: AWS manages the hardware security module (HSM) appliance, but does not have access to your keys
+B: You control and manage your own keys
+C: Application performance improves (due to close proximity with AWS workloads)
+D: Secure key storage in tamper-resistant hardware available in multiple Availability Zones (AZs)
+E: Your HSMs are in your Virtual Private Cloud (VPC) and isolated from other AWS networks.
+Separation of duties and role-based access control is inherent in the design of the AWS CloudHSM. AWS monitors the health and network availability of your HSMs but is not involved in the creation and management of the key material stored within your HSMs. You control the HSMs and the generation and use of your encryption keys.
+Use cases
+Offload the SSL processing for web servers
+Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are used to confirm the identity of web servers and establish secure HTTPS connections over the Internet. You can use AWS CloudHSM to offload SSL/TLS processing for your web servers. Using CloudHSM for this processing reduces the burden on your web server and provides extra security by storing your web server's private key in CloudHSM.
+Protect private keys for an issuing certificate authority (CA)
+In a public key infrastructure (PKI), a certificate authority (CA) is a trusted entity that issues digital certificates. These digital certificates are used to identify a person or organization. You can use AWS CloudHSM to store your private keys and sign certificate requests so that you can securely act as an issuing CA to issue certificates for your organization.
+Enable Transparent Data Encryption (TDE) for Oracle databases
+You can use AWS CloudHSM to store the Transparent Data Encryption (TDE) master encryption key for your Oracle database servers that support TDE. Support for SQL Server is coming soon. With TDE, supported database servers can encrypt data before storing it on disk. Please note Amazon RDS for Oracle does not support TDE with CloudHSM; you should use AWS Key Management Service for this use case.
+Blog posts & articles
+No items returned.
+Check out the product features
+Learn more about our managed hardware security module (HSM) on the AWS Cloud.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS CloudHSM in the AWS Management Console.
+Sign in

@@ -1,0 +1,30 @@
+EKS Anywhere (coming in 2021)
+Create and operate Kubernetes clusters on your own infrastructure
+Register to keep informed
+Amazon EKS Anywhere is a new deployment option for Amazon EKS that enables you to easily create and operate Kubernetes clusters on-premises, including on your own virtual machines (VMs) and bare metal servers. EKS Anywhere provides an installable software package for creating and operating Kubernetes clusters on-premises and automation tooling for cluster lifecycle support.
+EKS Anywhere brings a consistent AWS management experience to your data center, building on the strengths of Amazon EKS Distro (the same Kubernetes that powers EKS on AWS.) EKS Anywhere saves you the complexity of buying or building your own management tooling to create EKS Distro clusters, configure the operating environment, update software, and handle backup and recovery. EKS Anywhere enables you to automate cluster management, reduce support costs, and eliminate the redundant effort of using multiple open source or 3rd party tools for operating Kubernetes clusters. EKS Anywhere is fully supported by AWS. In addition, you can leverage the EKS console to view all your Kubernetes clusters, running anywhere.
+Benefits
+Simplify and automate Kubernetes management
+EKS Anywhere provides you with consistent Kubernetes management tooling optimized to simplify cluster installation with default configurations for OS, container registry, logging, monitoring, networking, and storage.
+Create consistent clusters
+EKS Anywhere can be run on-premises, allowing you to easily create standardized EKS Distro clusters with best practices. EKS Anywhere eliminates the fragmented collection of vendor support agreements and tools required to install and operate Kubernetes clusters on-premises.
+Deliver a more reliable Kubernetes environment
+EKS Anywhere gives you a Kubernetes environment on-premises that is more reliable than self-managed Kubernetes offerings. EKS Anywhere is easier to integrate with existing infrastructure, keeps open source software up to date and patched, and maintains business continuity with cluster backups and recovery.
+How it works
+Use cases
+Train models in the cloud and run inference on premises
+With EKS Anywhere, you can now combine and benefit the best of both worlds: train your ML model in the cloud, using AWS managed services and use the trained ML model in your on-premises setup.
+Workload migration (on-premises to cloud)
+With EKS Anywhere, you can have the same EKS tooling on-premises, and this consistency provides a quicker on-ramp of your Kubernetes-based workloads to the cloud.
+Application modernization
+EKS Anywhere empowers you to finally address the modernization of your applications, removing the heavy lifting of keeping up with upstream Kubernetes and security patches, so you can focus on the business value.
+Data sovereignty
+You may want to keep your large data sets in the data center due to legal requirements concerning the location of the data. Yet EKS Anywhere helps to move the stateless part of the application to the cloud, while keeping data in place.
+Bursting
+Seasonal workloads can require a lot of compute (5x to 10x more than the baseline) for days or weeks. Being able to burst into the cloud provides this temporary capacity. With EKS Anywhere you can now manage your workloads across on-premises and the cloud consistently and cost-effectively.
+Have questions?
+Visit the product FAQs page.
+Learn more
+Register to keep informed
+Learn more about EKS Anywhere.
+Learn more

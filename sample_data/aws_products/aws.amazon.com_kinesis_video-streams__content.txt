@@ -1,0 +1,69 @@
+Amazon Kinesis Video Streams
+Capture, process, and store media streams for playback, analytics, and machine learning
+Get started with Kinesis Video Streams
+Amazon Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), playback, and other processing. Kinesis Video Streams automatically provisions and elastically scales all the infrastructure needed to ingest streaming video data from millions of devices. It durably stores, encrypts, and indexes video data in your streams, and allows you to access your data through easy-to-use APIs. Kinesis Video Streams enables you to playback video for live and on-demand viewing, and quickly build applications that take advantage of computer vision and video analytics through integration with Amazon Rekognition Video, and libraries for ML frameworks such as Apache MxNet, TensorFlow, and OpenCV. Kinesis Video Streams also supports WebRTC, an open-source project that enables real-time media streaming and interaction between web browsers, mobile applications, and connected devices via simple APIs. Typical uses include video chat and peer-to-peer media streaming.
+To get started, create a Kinesis video stream with a few clicks from the AWS Management Console. You can then install the Kinesis Video Streams SDK on your devices and start streaming media to AWS for playback, storage, and analytics. With Kinesis Video Streams, you pay only for what you use. There are no upfront commitments or minimum fees.
+Introducing Amazon Kinesis Video Streams (2:23)
+Benefits
+Stream video from millions of devices
+Amazon Kinesis Video Streams provides SDKs that make it easy for devices to securely stream media to AWS for playback, storage, analytics, machine learning, and other processing. Kinesis Video Streams can ingest data from edge devices, smartphones, security cameras, and other data sources such as RADARs, LIDARs, drones, satellites, dash cams, and depth-sensors.
+Build real-time vision and video-enabled apps
+Easily build applications with real-time computer vision capabilities through integration with Amazon Rekognition Video, and with real-time video analytics capabilities using popular open source machine learning frameworks.
+Playback live and recorded video streams
+Easily stream live and recorded media from your Kinesis video streams to your browser or mobile application using the Kinesis Video Streams HTTP Live Streaming (HLS) capability.
+Build apps with two-way, real-time media streaming
+Amazon Kinesis Video Streams supports the open-source project WebRTC for two-way, real-time media streaming between web browsers, mobile applications, and connected devices. With support for WebRTC, you can use simple APIs to build rich applications like video chat and peer-to-peer data sharing with ultra-low latency and two-way communication between your applications and connected devices.
+Secure
+Amazon Kinesis Video Streams allows you to control access to your streams using AWS Identity and Access Management (IAM). It helps you protect your data by automatically encrypting the data at rest using AWS Key Management Service (KMS) and in transit using the industry-standard Transport Layer Security (TLS) protocol.
+Durable, searchable storage
+Amazon Kinesis Video Streams uses Amazon S3 as the underlying data store, which means your data is stored durably and reliably. Kinesis Video Streams enables you to quickly search and retrieve video fragments based on device and service generated timestamps.
+No infrastructure to manage
+Amazon Kinesis Video Streams manages all the infrastructure for you. You don’t have to worry about configuration, software updates, failures, or scaling infrastructure as the number of streams and consuming applications grows. Kinesis Video Streams handles all the administration and maintenance required to manage your streams, so you can focus your time on building innovative applications.
+How it works
+Capture, process, and store media streams for playback, analytics, and machine learning.
+Build applications with ultra-low latency live streaming and two-way real-time communication.
+Use cases
+Smart home
+With Amazon Kinesis Video Streams, you can easily stream live video and audio from camera-equipped home devices such as doorbells, baby monitors, webcams, and home surveillance systems to AWS. You can then use the streams to build a variety of smart home applications ranging from simple video playback to intelligent lighting, climate control systems, and security monitoring. You can use WebRTC capabilities for two-way, real-time media streaming and interaction for use cases like talking with the person at your doorbell or remotely controlling your camera-enabled robot vacuum from your mobile phone.
+Example: Interact with a camera-enabled doorbell from your mobile phone
+Smart city
+Many cities have installed large numbers of cameras at traffic lights, parking lots, shopping malls, and just about every public venue, capturing video 24/7. You can use Amazon Kinesis Video Streams to securely and cost-effectively ingest, store, and analyze this massive volume of video data to help solve traffic problems, help prevent crime, dispatch emergency responders, and much more.
+Example: Amber alert system
+Industrial automation
+You can use Amazon Kinesis Video Streams to collect a variety of time-encoded data such as RADAR and LIDAR signals, temperature profiles, and depth data from industrial equipment. You can then analyze the data using your favorite machine learning framework including Apache MxNet, TensorFlow, and OpenCV for industrial automation use cases like predictive maintenance. For example, you can predict the lifetime of a gasket or valve and schedule part replacement in advance, reducing downtime and defects in a manufacturing line.
+Example: Equipment preventive maintenance
+Case studies
+Nirovision increases flexibility and agility by using Amazon Kinesis Video Streams.
+Agent Vi extends its AI-driven video analytics solution to any IP camera.
+Veritone brings artificial intelligence to video analytics.
+ABEJA employs real-time video analytics in retail, manufacturing, and healthcare.
+Neosperience Cloud enables frame by frame analysis of live video streams using Kinesis Video Streams and Amazon SageMaker.
+See more details >>
+Blog posts
+Analyze live video at scale in real time using Amazon Kinesis Video Streams and Amazon SageMaker
+by Aditya Krishnan and Jagadeesh Pusapadi
+Video analytics in the cloud and at the edge with AWS DeepLens and Kinesis Video Streams
+by Roy Ben-Alta and Nehal Mehta
+Easily perform facial analysis on live feeds by creating a serverless video analytics environment using Amazon Rekognition Video and Amazon Kinesis Video Streams
+by Ben Snively
+Build automatic analysis of body language using Amazon Kinesis Video Streams and Amazon AI Services by Ned Sahin, Runpeng Liu, Joseph Salisbury, Lillian Bu
+Use facial recognition to deliver high-end consumer experience with Amazon Kinesis Video Streams and Amazon Rekognition Video
+by Nick Corbett
+Amazon Kinesis Video Streams – Serverless Video Ingestion and Storage for Vision-Enabled Apps
+by Jeff Barr
+Get started with Amazon Kinesis Video Streams
+Read the getting started guide
+Learn how to use Kinesis Video Streams in this step-by-step guide.
+Read guide
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building media streaming apps
+Start with one of our examples or stream video from your Raspberry Pi device with this tutorial.
+Start tutorial
+Learn more about Amazon Kinesis Video Streams features
+Visit the features page
+Ready to build?
+Get started with Kinesis Video Streams
+Have more questions?
+Contact us

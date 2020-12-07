@@ -1,0 +1,32 @@
+AWS Data Pipeline
+Easily automate the movement and transformation of data.
+Get started with AWS Data Pipeline
+Product Details
+Pricing
+Developer Resources
+FAQs
+Documentation
+Big Data Blog
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources, at specified intervals. With AWS Data Pipeline, you can regularly access your data where it’s stored, transform and process it at scale, and efficiently transfer the results to AWS services such as Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR.
+AWS Data Pipeline helps you easily create complex data processing workloads that are fault tolerant, repeatable, and highly available. You don’t have to worry about ensuring resource availability, managing inter-task dependencies, retrying transient failures or timeouts in individual tasks, or creating a failure notification system. AWS Data Pipeline also allows you to move and process data that was previously locked up in on-premises data silos.
+Construct your ETL with AW Data Pipeline, Amazon EMR, and Amazon Redshift (41:11)
+Benefits
+Reliable
+AWS Data Pipeline is built on a distributed, highly available infrastructure designed for fault tolerant execution of your activities. If failures occur in your activity logic or data sources, AWS Data Pipeline automatically retries the activity. If the failure persists, AWS Data Pipeline sends you failure notifications via Amazon Simple Notification Service (Amazon SNS). You can configure your notifications for successful runs, delays in planned activities, or failures.
+Easy to Use
+Creating a pipeline is quick and easy via our drag-and-drop console. Common preconditions are built into the service, so you don’t need to write any extra logic to use them. For example, you can check for the existence of an Amazon S3 file by simply providing the name of the Amazon S3 bucket and the path of the file that you want to check for, and AWS Data Pipeline does the rest.
+In addition to its easy visual pipeline creator, AWS Data Pipeline provides a library of pipeline templates. These templates make it simple to create pipelines for a number of more complex use cases, such as regularly processing your log files, archiving data to Amazon S3, or running periodic SQL queries.
+Flexible
+AWS Data Pipeline allows you to take advantage of a variety of features such as scheduling, dependency tracking, and error handling. You can use activities and preconditions that AWS provides and/or write your own custom ones. This means that you can configure an AWS Data Pipeline to take actions like run Amazon EMR jobs, execute SQL queries directly against databases, or execute custom applications running on Amazon EC2 or in your own datacenter. This allows you to create powerful custom pipelines to analyze and process your data without having to deal with the complexities of reliably scheduling and executing your application logic
+Scalable
+AWS Data Pipeline makes it equally easy to dispatch work to one machine or many, in serial or parallel. With AWS Data Pipeline’s flexible design, processing a million files is as easy as processing a single file.
+Low Cost
+AWS Data Pipeline is inexpensive to use and is billed at a low monthly rate. You can try it for free under the AWS Free Usage. Learn more.
+Transparent
+You have full control over the computational resources that execute your business logic, making it easy to enhance or debug your logic. Additionally, full execution logs are automatically delivered to Amazon S3, giving you a persistent, detailed record of what has happened in your pipeline.
+Start Using AWS Data Pipeline
+Get Started
+GET STARTED WITH AWS
+Learn how to start using AWS in minutes
+AWS FREE TIER
+Gain free, hands-on experience with AWS for 12 months

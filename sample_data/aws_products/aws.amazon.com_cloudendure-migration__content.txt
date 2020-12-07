@@ -1,0 +1,53 @@
+CloudEndure Migration
+Automate your migration to the cloud
+Get free CloudEndure Migration licenses
+Take CloudEndure Migration online training
+Cloud migration does not need to be a complex, time consuming, or costly endeavor. CloudEndure Migration simplifies, expedites, and reduces the cost of cloud migration by offering a highly automated lift-and-shift solution.
+Enterprises looking to quickly rehost a large number of machines to AWS can use CloudEndure Migration without worrying about compatibility, performance disruption, or long cutover windows. Any re-architecture that needs to be done can be performed more easily after your machines are running on AWS.
+CloudEndure Migration conducts continuous, block-level data replication of your source machines into a staging area in your AWS account without causing downtime or impacting performance. When you’re ready to launch the production machines, CloudEndure Migration automatically converts your machines from their source infrastructure into the AWS infrastructure so they can boot and run natively in AWS.
+With CloudEndure Migration, an agent-based solution, you can migrate legacy applications as well as all applications and databases that run on supported versions of Windows and Linux OS. This includes Windows Server versions 2003/2008/2012/2016/2019 and Linux distributions, such as CentOS, RHEL, OEL, SUSE, Ubuntu, and Debian. CloudEndure Migration supports common databases, including Oracle and SQL Server, as well as mission-critical applications such as SAP.
+CloudEndure Migration Demo
+Benefits
+Easy migrations
+CloudEndure Migration simplifies the process of migrating applications from physical, virtual, and cloud-based infrastructure, ensuring that they are fully operational in any AWS Region without compatibility issues. Getting started is quick and easy regardless of the application type. This enables customers to rapidly execute complex, large-scale migration projects, while significantly reducing risk.
+Increased uptime
+Maintain normal business operations throughout the replication process. CloudEndure Migration continually copies source machines  – without taking snapshots or writing any data to disks – which means minimal performance impact and no need to reboot machines. Continuous replication also makes it easy to conduct non-disruptive tests and shortens cutover windows.
+Reduced costs
+CloudEndure Migration is a single tool for migrating any application or database from any source infrastructure on supported operating systems to AWS. This includes migrating legacy applications, third-party applications, and line-of-business applications. There is no need to invest in specialized cloud development, OS/application-specific skills, or significant IT resources, resulting in greatly reduced operational costs.
+How it works
+Implementation begins by installing the CloudEndure Agent on the selected source machines. The agent installation does not require a reboot nor does it impact system performance in any noticeable way. The CloudEndure Agent connects to a self-service, web-based CloudEndure User Console, which then issues an API call to the selected target AWS Region to create a staging area in the customer’s account designated to receive the source machine’s replicated data.
+The staging area consists of both lightweight EC2 instances that act as Replication Servers and low-cost staging EBS volumes. Each source disk is mapped to an identically sized, low-cost EBS volume in the staging area. The Replication Servers receive data from the CloudEndure Agent running on the source machine and writes this data onto staging EBS volumes. One Replication Server can handle multiple source machines replicating concurrently.
+After all source disks have been replicated into the staging area, the CloudEndure Agent continues to track and replicate any changes to the source disks. CloudEndure Migration conducts continuous, asynchronous, block-level data replication, which enables replication of any application that runs on supported x86-based Windows and Linux OSs that allow agent installation.
+Customers configure a Target Machine Blueprint in the CloudEndure Console, which defines where each machine should launch and how it should be provisioned at the time of test or cutover.
+When the Target Machines are launched, CloudEndure Migration spins up a temporary Machine Converter responsible for modifying the Target Machine to be able to boot and run natively in AWS. This includes injecting the appropriate AWS drivers, making appropriate bootloader changes, modifying network adapters, activating operating systems using the AWS KMS, and more. The conversion process normally takes under a minute, irrespective of the size of the machine, and is executed on all launched machines in parallel.
+Case studies
+“We would not have finished the migration in time had we not used CloudEndure.”
+-Bob Gelety, Director of Network Engineering at Clark Construction
+Aiming to eliminate the time that its IT staff spent maintaining on-site infrastructure, Clark Construction made a business decision to migrate applications and data to the cloud. The company used CloudEndure Migration to migrate large servers and Oracle-based legacy applications to AWS with a cutover window of minutes and without system disruption. Business ran as usual throughout the migration process, and end-users were completely unaware that the migration had taken place.
+Read more>>
+"CloudEndure Migration was able to provide a cutover window that no one else could."
+-Stuart Lupton, Lead Cloud Architect at DB Systel UK
+DB Systel UK used CloudEndure Migration to perform an accelerated migration of 400 physical and VMware-based machines to AWS. As part of this project, it moved write-intensive Microsoft SQL Server and Oracle databases, as well as business-critical legacy applications that were running on Microsoft Windows, Red Hat, and CentOS operating systems. DB Systel UK completed the project a month ahead of schedule – seamlessly and with minimal business disruption.
+Read more>>
+"By running our platforms on AWS, we can support an always-on strategy that gives our business users the ability to communicate with us at all times.”
+-Gautam Tulsian, Senior Vice President and CIO, Global Finance at Equifax
+Equifax addressed its scalability and performance issues by moving its entire Oracle application suite to AWS, running on hundreds of Amazon EC2 instances and using Amazon EBS for persistent block level storage. Equifax worked with AWS partner Cloudreach during the migration and employed AWS CloudEndure Migration to simplify, expedite, and automate large-scale migration of the Oracle BRM application to AWS.
+Read more>>
+“The performance of the server on AWS was at least twice as fast as it was on our current data center environment, using the same hardware specifications, the same memory, and CPU.”
+-Greg Ward, VP of Information Systems and Technology at Malibu Boats
+Shortly after deploying CloudEndure Disaster Recovery, Malibu Boats experienced a server outage in their primary data center. They immediately failed over to AWS, and within minutes their backend, mission-critical applications and factory were back to normal operations. Malibu Boats discovered significantly better server performance when running on AWS. They decided to expedite migration of their primary data center to AWS using CloudEndure Migration. As a result, Malibu Boats greatly improved their operational efficiency.
+Watch video>>
+Related content
+AWS CloudEndure Migration Factory Solution
+Defense Logistics Agency migrates to AWS GovCloud (US) ahead of schedule
+AWS Online Tech Talk: How to Accelerate Migrations to AWS with CloudEndure
+AWS Online Tech Talk: How a U.S. Government Agency Migrated to GovCloud
+Migrate to AWS
+Get started now with free CloudEndure Migration licenses.
+Sign up
+Accelerate your migration
+Learn how to accelerate your large-scale migration to AWS with the AWS Migration Acceleration Program.
+Learn more
+Take online training
+Learn how to set up and implement a CloudEndure Migration project.
+Get started

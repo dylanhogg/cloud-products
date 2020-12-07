@@ -1,0 +1,32 @@
+AWS Server Migration Service
+Migrate your on-premises workloads to AWS
+Get started with AWS Server Migration Service
+AWS Server Migration Service (SMS) is an agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS. AWS SMS allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations.
+Learn how to migrate applications using AWS Server Migration Service (47:17)
+Benefits
+Easy to get started
+Start and manage server migration with a few clicks via the AWS Management Console. AWS Server Migration Service will automatically replicate live server volumes to AWS and create Amazon Machine Images (AMI) as needed.
+Control
+Create and manage a customized replication schedule designed for large-scale migrations, and track the progress of each migration.
+Agility
+Perform migrations faster while minimizing network bandwidth, by migrating only incremental changes made to on-premises servers.
+Cost-effective
+AWS Server Migration Service is free to use; pay only for the storage resources used during the migration process. Learn more.
+Minimize downtime
+Incremental server replication allows you to reduce server downtime significantly.
+Blog posts & articles
+Read the FAQs
+Learn more about AWS Server Migration Service by reading the FAQs.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Server Migration Service in the AWS Console.
+Sign in
+Learn more about AWS Server Migration Service
+Visit the pricing page
+Ready to build?
+Get started with AWS Server Migration Service
+Have more questions?
+Contact us

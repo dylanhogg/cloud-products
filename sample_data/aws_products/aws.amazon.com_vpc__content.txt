@@ -1,0 +1,82 @@
+Amazon Virtual Private Cloud
+Provision a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define
+Get started with Amazon VPC
+Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.
+You can easily customize the network configuration of your Amazon VPC. For example, you can create a public-facing subnet for your web servers that have access to the internet. You can also place your backend systems, such as databases or application servers, in a private-facing subnet with no internet access. You can use multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+VPC Fundamentals and Connectivity Options (50:50)
+Benefits
+Secure
+Amazon VPC provides advanced security features, such as security groups and network access control lists, to enable inbound and outbound filtering at the instance and subnet level. In addition, you can store data in Amazon S3 and restrict access so that it’s only accessible from instances inside your VPC. For additional security, you can create dedicated instances that are physically isolated from other AWS accounts, at the hardware level.
+Simple
+Create a VPC quickly and easily using the AWS Management Console. Select from common network setups and find the best match for your needs. Subnets, IP ranges, route tables, and security groups are automatically created. You spend less time setting up and managing, so you can concentrate on building the applications that run in your VPCs.
+Customizable
+Control your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. Customize the network configuration, such as by creating a public-facing subnet for your webservers that has access to the internet, and placing your backend systems such as databases or application servers in a private-facing subnet with no internet access.
+Use cases
+Host a simple, public-facing website
+Host a basic web application, such as a blog or simple website in a VPC, and gain the additional layers of privacy and security afforded by Amazon VPC. You can help secure the website by creating security group rules which allow the webserver to respond to inbound HTTP and SSL requests from the Internet while simultaneously prohibiting the webserver from initiating outbound connections to the Internet. You can create a VPC that supports this use case by selecting "VPC with a Single Public Subnet Only" from the Amazon VPC console wizard.
+Host multi-tier web applications
+Host multi-tier web applications and strictly enforce access and security restrictions between your web servers, application servers, and databases. Launch web servers in a publicly accessible subnet while running your application servers and databases in private subnets, so that application servers and databases cannot be directly accessed from the internet. You control access between the servers and subnets using inbound and outbound packet filtering provided by network access control lists and security groups. To create a VPC that supports this use case, you can select "VPC with Public and Private Subnets" in the Amazon VPC console wizard.
+Disaster recovery
+By using Amazon VPC for disaster recovery, you can have all the benefits of a disaster recovery site at a fraction of the cost. You can periodically backup critical data from your datacenter to a small number of Amazon EC2 instances with Amazon Elastic Block Store (EBS) volumes, or import your virtual machine images to Amazon EC2. To ensure business continuity, you can quickly launch replacement compute capacity in AWS. When the disaster is over, you can send your mission critical data back to your datacenter and terminate the Amazon EC2 instances that you no longer need.
+Extend your corporate network into the cloud
+Move corporate applications to the cloud, launch additional web servers, or add more compute capacity to your network by connecting your VPC to your corporate network. Because your VPC can be hosted behind your corporate firewall, you can seamlessly move your IT resources into the cloud without changing how your users access these applications. You can select "VPC with a Private Subnet Only and Hardware VPN Access" from the Amazon VPC console wizard to create a VPC that supports this use case.
+Securely connect cloud applications to your datacenter
+An IPsec VPN connection between your Amazon VPC and your corporate network encrypts all communication between the application servers in the cloud and databases in your data center. Web servers and application servers in your VPC can leverage Amazon EC2 elasticity and Auto Scaling features to grow and shrink as needed. You can create a VPC to support this use case by selecting "VPC with Public and Private Subnets and Hardware VPN Access" in the Amazon VPC console wizard.
+Out-of-band and inline traffic inspection
+Amazon VPC traffic mirroring duplicates the traffic, along with full payload data, from elastic network interfaces (ENIs) of EC2 instances, and delivers it to out-of-band monitoring and security analysis tools.
+Amazon VPC ingress routing allows you to easily deploy network and security appliances, including third-party offerings, inline to the inbound or outbound Amazon VPC traffic. Inline traffic inspection helps you screen and secure traffic to protect your workloads from malicious actors.
+Partners
+"The integration of the VM-Series Virtual Next-Generation Firewall with the new Amazon VPC Ingress Routing feature makes it much easier for customers to ensure that all ingress traffic to their VPC is filtered through our threat prevention services. By inserting a VM-Series virtual firewall as a bump-in-the-wire within their brownfield environments, customers can seamlessly protect inbound traffic from the internet and their data centers."
+- Mukesh Gupta, VP, Product Management, VM-Series
+"Amazon VPC Ingress routing allows Fortinet to offer more confidence to customers by enabling Fortinet network security on any traffic entering their business critical VPC’s. VPC Ingress Routing also allows for much more flexible solutions that help secure different workloads with separate Fortinet Products in a single VPC. Ultimately, a more secure and flexible architecture will help customers to mitigate risks associated with misconfigurations and further expand cloud deployments."
+- Lior Cohen, Sr. Director of cloud security products and solutions, Fortinet
+"Our enterprise customers generally use AWS Transit Gateway for deploying CloudGuard advanced threat prevention, but this isn’t suitable for small and medium enterprises with a limited number of VPCs. The VPC ingress routing enhancement provides customers with smaller deployments with an easier, more efficient and more natural way to redirect traffic flowing into a VPC for advanced security."
+– Zohar Alon, Head of Cloud Products, Check Point Software
+"VPC ingress routing allows our customers to screen all external traffic through Barracuda’s CloudGen Firewall before it reaches its destination. Using VPC ingress routing, customers can now apply customized deep packet inspection policies based on their destination. VPC ingress routing is native with Amazon VPCs and makes it easier for our customers to deploy Barracuda’s in-line cloud security solutions"
+- Klaus Gheri, GM/VP Network Security, Barracuda Networks
+"It’s absolutely critical that organizations secure cloud infrastructure – including the traffic within – as cybercriminals are increasingly targeting and launching advanced attacks against these cloud environments. AWS and Sophos are tackling cloud security head on. With extended support for ingress routing, Sophos UTM provides an added layer of security to ensure traffic flowing in and out of VPCs and other virtual appliances is protected."
+- Andy Miller, Senior Director of Global Public Cloud, Sophos
+"Leveraging the new Amazon VPC Ingress Routing enhancement, customers can now route VPC network traffic through to advanced inline services. Aviatrix cloud-native networking software embraces and extends native AWS services – in this case the new VPC Ingress Routing combined with AWS GuardDuty services to provide ingress and egress enforcement policies via Aviatrix gateways."
+- Sherry Wei, Founder and Chief Product Officer, Aviatrix
+"Users today don’t care where the applications they need to do their jobs are hosted. They just want them to perform in a consistent, dependable way so they can get things done. Through the integration between Citrix® ADC and Amazon VPC ingress routing from AWS, we can bring a proven, enterprise-class solution to the masses in a convenient delivery model and enable a high performance experience that empowers people to do their best work."
+- Mihir Maniar, Vice President of Product Management, Networking, Citrix
+"Trend Micro provides multi-layered hybrid cloud security for thousands of customers on AWS. Amazon VPC ingress routing allows for the broad adoption and enhanced deployment flexibility for our cloud network security solutions, enabling our customers to protect their AWS VPCs quickly and at scale, without disrupting their business applications."
+- Steve Quane, Executive Vice President, Network Defense and Hybrid Cloud Security, Trend Micro
+"FireEye Network Security customers already benefit from the ability to apply advanced threat protection and breach detection to their AWS environments. The announcement of Amazon VPC ingress routing makes deployment of the FireEye Network Security solution in AWS even easier. This new feature will allow customers to redirect North-South traffic flowing in and out of a VPC through internet gateway and virtual private gateway to third-party appliances, eliminating the need for a NAT gateway. This allows customers to direct traffic to specific appliances for specialized scanning. FireEye customers benefit from the ease of deployment and tighter integration with their on-premise, private, and public cloud data centers."
+- Ramesh Gupta, General Manager for Network Security Products, FireEye
+"Versa’s SD-WAN management and orchestration platform offers end-to-end workflow automation including instantiation and enablement of a WAN edge device on AWS. Now, customers can also use Amazon VPC ingress routing to redirect traffic flowing in and out of a VPC, through internet gateway and virtual private gateway, to on-premises Versa’s NGFW security appliances."
+- Chief Marketing Officer, Versa Networks
+"The ShieldX Elastic Security Platform (ESP) is built to secure modern, multi-cloud data centers. ESP is an agentless, cloud-agnostic solution designed to deliver comprehensive and consistent security controls to protect dynamic data centers, cloud infrastructures, applications, and data, no matter where they are or where they are going. As an AWS partner, ShieldX integrates with AWS network functions, such as VPC traffic mirroring and VPC ingress routing, to enable continuous asset discovery, automated network security policy generation and layer 7 inspection. Together, these offer enterprises a comprehensive solution to monitor and prevent network traffic traversing both North/South and East/West inside the AWS public cloud"
+- Ken Levine, CEO, ShieldX
+"Amazon VPC ingress routing allows our customers to screen all external traffic before the traffic reaches the subnets. It is native with Amazon VPCs and makes it easier for our customers to deploy Network Detection and Response for the cloud."
+- Kevin Sheu, Vice President of Product Marketing at Vectra
+"IBM Security helps clients maximize the effectiveness of their AWS native security controls. We help our clients with security architecture design as well as selection and deployment of AWS controls that deliver the highest levels of security. Amazon VPC ingress routing gives us the flexibility to deploy security solutions at the edge of the VPC, allowing the capability to screen and intercept North-South traffic before the traffic reaches workloads contained within the VPC."
+- Mike Sanders Program Director, Offering Strategy for Cloud Security, IBM Security Services
+“With our native cloud network detection and response platform, Lastline is working closely with AWS to deliver security improvements to our customers’ data in AWS. Amazon VPC ingress routing enables us to deliver our customers unmatched flexibility and inline traffic visibility on their AWS network.”
+– Christopher Kruegel, Ph.D., co-founder and chief product officer, Lastline
+"The recently announced Amazon VPC Ingress Routing Enhancement, combined with Amazon VPC Traffic Mirroring, allows NETSCOUT to effectively monitor intra- and inter-VPC traffic in AWS and harness it effectively for delivering Visibility Without Borders across on-prem datacenter, AWS and hybrid cloud."
+- Bruce Kelley, Jr., Senior Vice President, Chief Technology Officer, Service Provider, NETSCOUT
+“Valtix revolutionizes inline cloud network security, by first Discovering apps, then Deploying network security, and Defending those apps continuously across AWS Regions. Amazon VPC ingress routing allows Valtix cloud-native firewall clusters to get in the path of application traffic from the internet and inter-subnet within the VPCs, thus attaining a full network traffic visibility for the enterprise applications running in AWS.”
+- Vijay Chander, CTO, Valtix
+“Enterprises need safer, more reliable connections to their Amazon VPCs from their data center, and 128 Technology’s Session Smart™ Router offers customers superior levels of security, reliability and reduced complexity. With the addition of VPC ingress routing, our customers will have even more control over the traffic into their Amazon VPCs. 128 Technology is pleased to be among the select group of ecosystem collaborators supporting this service.”
+- Andy Ory, CEO, 128 Technology
+"In today’s world of highly mobile workforce and globally distributed business environments Forcepoint’s cloud-enabled NGFW provides secure and unobstructed access to critical data and intellectual property everywhere while reducing risk of zero-day attacks and other emerging threats on an organization’s hybrid IT stack. The addition of the Amazon VPC ingress routing capability allows Forcepoint NGFW customers to enjoy more versatility in their network security segmentation as well as to take optimal advantage of its security features, similarly to the way we use it inside Forcepoint’s Security Platform to deliver Dynamic Edge Protection services."
+- Nicolas Fischbach, Global CTO, Forcepoint
+Get started with Amazon VPC
+You can automatically provision AWS resources in a ready-to-use default VPC. Configure this VPC by adding or removing subnets, attaching network gateways, changing the default route table, and modifying the network ACLs.
+Create additional VPCs from the Amazon VPC page on the AWS Management Console by selecting the "Start VPC Wizard" button. You will be presented with four basic network topologies. Select the one that most closely resembles the network topology that you’d like to create and click the "Create VPC" button. You can then customize the topology further to fit your needs more closely. Shortly after, you can start launching Amazon EC2 instances inside your VPC.
+Blog posts and articles
+Debugging tool for network connectivity from Amazon VPC
+by Bhavin Desai
+January 19, 2019
+Learn more »
+VPC sharing: A new approach to multiple accounts and VPC management
+by Evgeny Vaganov
+January 11, 2019
+Learn more »
+Learn more about Amazon VPC
+Visit the product detail page
+Ready to build?
+Get started with Amazon VPC
+Have more questions?
+Contact us

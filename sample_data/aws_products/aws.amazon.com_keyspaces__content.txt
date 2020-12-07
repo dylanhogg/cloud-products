@@ -1,0 +1,32 @@
+Amazon Keyspaces (for Apache Cassandra)
+A scalable, highly available, and managed Apache Cassandra–compatible database service
+Get started with Amazon Keyspaces
+Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. With Amazon Keyspaces, you can run your Cassandra workloads on AWS using the same Cassandra application code and developer tools that you use today. You don’t have to provision, patch, or manage servers, and you don’t have to install, maintain, or operate software. Amazon Keyspaces is serverless, so you pay for only the resources you use and the service can automatically scale tables up and down in response to application traffic. You can build applications that serve thousands of requests per second with virtually unlimited throughput and storage. Data is encrypted by default and Amazon Keyspaces enables you to back up your table data continuously using point-in-time recovery. Amazon Keyspaces gives you the performance, elasticity, and enterprise features you need to operate business-critical Cassandra workloads at scale.
+Overview of Amazon Keyspaces (for Apache Cassandra) (1:38)
+Benefits
+Compatible with Apache Cassandra
+Amazon Keyspaces enables you to use the Cassandra Query Language (CQL) API code, Cassandra drivers, and developer tools that you already use. Updating applications to use Amazon Keyspaces is as easy as changing the Cassandra hostname to the Amazon Keyspaces service endpoint.
+No servers to manage
+You don’t need to provision, patch, or manage servers, so you can focus on building better applications. Tables can scale up and down automatically, and you can optimize the cost of reads and writes based on your application’s traffic patterns by choosing either on-demand or provisioned capacity mode.
+Performance at scale
+Consistent, single-digit-millisecond response times at any scale. Build applications with virtually unlimited throughput and storage that can serve thousands of requests per second without the need for capacity planning. You can monitor performance by using Amazon CloudWatch to help keep your applications running smoothly.
+Highly available and secure
+Amazon Keyspaces offers a 99.99% availability SLA within an AWS Region. Tables are encrypted by default and replicated three times in multiple AWS Availability Zones for high availability. You can create continuous table backups with hundreds of terabytes of data with no performance impact to your application, and recover to any point in time in the preceding 35 days.
+Use cases
+Build applications that require low latency
+Process data at high speeds for applications that require single-digit-millisecond latency, such as industrial equipment maintenance, trade monitoring, fleet management, and route optimization.
+Build applications using open-source technologies
+Build applications on AWS by using open-source Cassandra APIs and drivers that are available for a wide range of programming languages such as Java, Python, Ruby, .NET, Node.js, PHP, C++, and Perl.
+Move your Cassandra workloads to the cloud
+Managing Cassandra tables yourself can be time consuming and expensive. With Amazon Keyspaces, you can set up, secure, and scale Cassandra tables in the AWS Cloud without managing additional infrastructure.
+Data store for applications
+Use Amazon Keyspaces to store information about devices for Internet of Things (IoT) applications or player profiles for games. You also can use Amazon Keyspaces to store large volumes of time-series data, such as entries in a log file or the message history for a chat application.
+Read the documentation
+Learn more about Amazon Keyspaces by reading the documentation.
+Read the documentation
+Sign up for a free account
+Instantly access the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Keyspaces in the AWS Management Console.
+Sign in

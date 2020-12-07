@@ -1,0 +1,36 @@
+AWS CodeCommit
+Securely host highly scalable private Git repositories. Collaborate on code.
+Get started with AWS CodeCommit
+AWS CodeCommit is a fully-managed source control service that hosts secure Git-based repositories. It makes it easy for teams to collaborate on code in a secure and highly scalable ecosystem. CodeCommit eliminates the need to operate your own source control system or worry about scaling its infrastructure. You can use CodeCommit to securely store anything from source code to binaries, and it works seamlessly with your existing Git tools.
+AWS CodeCommit Overview
+Benefits
+Fully managed
+AWS CodeCommit eliminates the need to host, maintain, back up, and scale your own source control servers. The service automatically scales to meet the growing needs of your project.
+Secure
+AWS CodeCommit automatically encrypts your files in transit and at rest. CodeCommit is integrated with AWS Identity and Access Management (IAM) allowing you to customize user-specific access to your repositories.
+High availability
+AWS CodeCommit has a highly scalable, redundant, and durable architecture. The service is designed to keep your repositories highly available and accessible.
+Collaborate on code
+AWS CodeCommit helps you collaborate on code with teammates via pull requests, branching, and merging. You can implement workflows that include code reviews and feedback by default, and control who can make changes to specific branches.
+Faster development lifecycle
+AWS CodeCommit keeps your repositories close to your build, staging, and production environments in the AWS cloud. You can transfer incremental changes instead of the entire application. This allows you to increase the speed and frequency of your development lifecycle.
+Use your existing tools
+AWS CodeCommit supports all Git commands and works with your existing Git tools. You can keep using your preferred development environment plugins, continuous integration/continuous delivery systems, and graphical clients with CodeCommit.
+Videos
+Introduction to AWS CodeCommit - Part 1: Setting Up Permissions
+Introduction to AWS CodeCommit - Part 2: Creating a Repo
+AWS re:Invent 2018: Continuous Integration Best Practices
+Customers
+With AWS CodeCommit, Edmunds.com, a website that offers detailed, constantly updated information about vehicles to millions of monthly visitors, was able to reduce time spent on administration and maintenance tasks by 95%.
+Learn More >>
+Gett, an Israeli-based company that connects people with taxi drivers, uses AWS CodeCommit and EC2 to scale its mobile app and website to meet a user growth of 300% annually.
+Learn More >>
+Check out the product features
+Learn more about the key features of AWS CodeCommit.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS CodeCommit in the AWS Management Console.
+Sign in

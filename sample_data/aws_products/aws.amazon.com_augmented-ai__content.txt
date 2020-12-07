@@ -1,0 +1,43 @@
+Amazon Augmented AI (Amazon A2I)
+Easily implement human review of machine learning predictions
+Get started with Amazon A2I
+Amazon Augmented AI (Amazon A2I) makes it easy to build the workflows required for human review of ML predictions. Amazon A2I brings human review to all developers, removing the undifferentiated heavy lifting associated with building human review systems or managing large numbers of human reviewers.
+Many machine learning applications require humans to review low confidence predictions to ensure the results are correct. For example, extracting information from scanned mortgage application forms can require human review in some cases due to low-quality scans or poor handwriting. But building human review systems can be time consuming and expensive because it involves implementing complex processes or “workflows”, writing custom software to manage review tasks and results, and in many cases, managing large groups of reviewers.
+Amazon A2I makes it easy to build and manage human reviews for machine learning applications. Amazon A2I provides built-in human review workflows for common machine learning use cases, such as content moderation and text extraction from documents, which allows predictions from Amazon Rekognition and Amazon Textract to be reviewed easily. You can also create your own workflows for ML models built on Amazon SageMaker or any other tools. Using Amazon A2I, you can allow human reviewers to step in when a model is unable to make a high confidence prediction or to audit its predictions on an on-going basis.
+Amazon Augmented AI for human review of ML predictions (40:45)
+Benefits
+Easily implement human review of ML predictions
+Amazon A2I gives you the flexibility to incorporate human review into ML applications based on your specific requirements. Low-confidence predictions are sent to humans to review and take action. If needed, you can also require multiple reviewers to review a prediction to achieve consensus. Additionally, to audit models, you can randomly sample predictions for human review so that you can regularly evaluate if the model is still performing well. Amazon A2I helps people and machines do what they do best.
+Work with your choice of human reviewers
+Amazon A2I provides options to work with reviewers inside and outside of your organization. Using Amazon A2I, you can easily route reviews to the reviewers you provide. You can also access a workforce of over 500,000 independent contractors who are already performing machine learning related tasks through Amazon Mechanical Turk. Alternatively, if your data requires confidentiality or special skills, you can use workforce vendors who are experienced with review projects and pre-screened by AWS for quality and security procedures, including iVision, CapeStart Inc., Cogito, and iMerit.
+Easily integrate with any application
+Amazon A2I makes it easy to integrate human judgement and AI into any ML application, regardless of whether it's run on AWS or on another platform. Amazon A2I is directly integrated into Amazon Textract for document processing and Amazon Rekognition for content moderation, so you can easily add human reviews to these use cases with just a few clicks in the AWS console. You can also use the Amazon A2I APIs to add human reviews to any machine learning application that uses a custom ML model built with Amazon SageMaker or other solutions.
+How it works
+Use cases
+Content moderation
+Content moderation guidelines are nuanced, highly dependent on the context, and vary between countries. This can make it difficult for ML to maintain high accuracy. You can use Amazon A2I with Amazon Rekognition or a custom computer vision model to route content to human reviewers when the model can't make a high-confidence prediction.
+Loan application processing
+Use Amazon Textract or a custom model to extract key information from loan applications. Then use Amazon A2I to send only complex loan requests to human reviewers to avoid turning down qualified applications, while processing all other loans automatically. This allows you to process applications faster and deliver a better customer experience.
+Model accuracy monitoring
+Use Amazon A2I to send a random sample of your custom ML model’s predictions to human reviewers. The results can be used to inform stakeholders about how the model is performing and identify deviations between real world data and the data used to train the model. Any corrected errors can be added to your training data set to improve your model.
+T-Mobile US, Inc. is redefining the way consumers and businesses buy wireless services through leading product and service innovation. Their advanced nationwide network delivers wireless experiences to 84.2 million customers who are unwilling to compromise on quality and value.
+"Providing relevant information, such as account details and available discounts, in real time to our customer care agents while they are in live conversations with customers is one of the ways T-Mobile uses machine learning to improve customer experience. Using A2I, we will be able to ensure that our models continuously deliver top-quality insights by having humans validate random samples of model predictions. Trust is the hardest thing to build when it comes to machine learning, and A2I will allow us to make sure that our models are making the fewest mistakes."
+Heather Nolis, Machine Learning Engineer, T-Mobile
+Vidmob, a video creation and analytics platform, utilizes machine learning to analyze every aspect of a video including people, objects, and messages to help brands understand creative performance and build better creative. However, for dimensions not covered by existing machine learning models, it can be challenging to review the creative from the petabyte-scale data we analyze every day.
+“With our current workforce of highly trained creative evaluators, using Amazon A2I we can more quickly optimize and fine-tune our predictive models. This efficiency exposes us to a large sample of reviewers and increases the speed of models to market by 3x.”
+Joline McGoldrick, SVP, Data & Insights, VidMob
+Ripcord, a robotics digitization company with a mission to make the world paperless, uses Amazon Textract to convert vast amount of paper records into secure, searchable electronic records.
+“Amazon Textract saves us hundreds of hours of human effort in building and maintaining templates for text extraction. For documents that require human review, Amazon A2I’s new built-in integration with Amazon Textract provides the ability to customize reviewer UI templates which drastically reduces the initial set up time for large and complex customer projects.“
+Alex Fielding CEO and Founder, Ripcord
+National Health Service, Business Services Authority (NHS BSA) is part of the UK National Health Service. It provides a range of support services to NHS organizations, NHS contractors and patients. As part of its payment services, they process 54 million paper prescriptions and other healthcare documents per month.
+“The NHS has long been interested in the promise of AI to improve the quality of public healthcare. Human judgement is critical and in fact is often required for decisions involving medical payments. Amazon Textract is compelling because it offers AI powered extraction of text and structured data from virtually any document. We are excited about Amazon Augmented AI because it allows us to take advantage of machine learning while still applying human judgement. That’s a game changer for us.”
+Chris Suter, Head of Cloud Platforms and Innovation, NHS BSA
+Check out the product features
+Learn more about Amazon A2I features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon A2I in the AWS Management Console.
+Sign in

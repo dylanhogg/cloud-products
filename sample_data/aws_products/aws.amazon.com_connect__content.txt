@@ -1,0 +1,70 @@
+Amazon Connect
+Easy to use omnichannel cloud contact center
+Get Started with Amazon Connect
+Amazon Connect is an easy to use omnichannel cloud contact center that helps you provide superior customer service at a lower cost. Over 10 years ago, Amazon’s retail business needed a contact center that would give our customers personal, dynamic, and natural experiences. We couldn’t find one that met our needs, so we built it. We've now made this available for all businesses, and today thousands of companies ranging from 10 to tens of thousands of agents use Amazon Connect to serve millions of customers daily.
+Designed from the ground up to be omnichannel, Amazon Connect provides a seamless experience across voice and chat for your customers and agents. This includes one set of tools for skills-based routing, task management, powerful real-time and historical analytics, and intuitive management tools – all with pay-as-you-go pricing, which means Amazon Connect simplifies contact center operations, improves agent efficiency, and lowers costs. You can set up a contact center in minutes that can scale to support millions of customers from the office or as a virtual contact center.
+What is Amazon Connect?
+Benefits
+Make changes in minutes not months
+Amazon Connect is so simple to set-up and use, you can increase your speed of innovation. With only a few clicks, you can set up an omnichannel contact center and agents can begin talking and messaging with customers right away. Making changes is easy with an intuitive UI that allows you to create voice and chat contact flows, or agent tasks without any coding, rather than custom development that can take months and cost millions of dollars.
+Save up to 80% compared to traditional contact center solutions
+Amazon Connect costs less than legacy contact center systems. With Amazon Connect you pay only for what you use, plus any associated telephony and messaging charges. With Amazon Connect there are no minimum monthly fees, long-term commitments, upfront license charges, and pricing is not based on peak capacity, agent seats, or maintenance. Learn how our customers are saving.
+Easily scale to meet unpredictable demand
+Amazon Connect has the flexibility to scale your contact center up or down to any size, onboarding tens of thousands of agents in response to normal business cycles or unplanned events. As part of the AWS cloud, you can support your customers by accessing Amazon Connect from anywhere in the world on secure, reliable, and highly scalable infrastructure. All you need is a supported web browser and an internet connection to engage with customers from anywhere.
+Amazon Connect drives better experiences for customers, agents, and managers
+Your contact center is at the core of your business, working hard to solve critical issues and improve customer experience with every interaction. Managers set up, configure, and manage the day-to-day operations to enable fast, seamless customer interactions. On your frontline, agents need the right information at the right time to delight customers and solve their issues quickly.
+Capabilities
+Omnichannel customer service
+Amazon Connect provides a seamless omnichannel experience through a single unified contact center for voice, chat, and task management. Amazon Connect offers high-quality audio capabilities, natural interactive voice response (IVR), and interactive chatbots that operate seamlessly with web and mobile chat contact flows. For customer conversations that require additional work (e.g., email, ticket, or claim), follow-up tasks are created in Amazon Connect Tasks without the agent's need to switch between applications.
+Learn about Amazon Connect Voice »
+Learn about Amazon Connect Chat »
+Learn about Amazon Connect Tasks »
+Easy self-service management
+Amazon Connect has the same skills-based contact routing, queuing, analytics, and management tools in a single intuitive UI, making management easy. And adapting to customer needs requires no coding. You can easily create dynamic, personal, and automated customer experiences and reuse those workflows across channels. Once you are up and running, you can also learn from your data with native real time and historical contact center analytics. The visual dashboard provides you with the right data to improve your contact center productivity and efficiency including average queue abandonment time or average handle time, to help you improve customer experience, increase performance, and lower costs.
+Learn about Amazon Connect graphical UI »
+Learn about Amazon Connect analytics »
+Built-in intelligence
+Amazon Connect is AI and ML enabled by default, allows you to automate interactions, understand customer sentiment, and authenticate callers to improve customer service. Natural interactive voice response (IVR) and interactive chatbots make engagement fast and easy for your customers. Contact Lens for Amazon Connect helps you understand your customers better and in real-time with full speech-to-text search, sentiment, trend analysis, and alerts. And Amazon Voice ID uses machine learning to provide real-time caller authentication to make voice interactions faster and more secure.
+Learn about Contact Lens for Amazon Connect »
+Learn about Amazon Connect Voice ID »
+Unified customer data
+Amazon Connect Customer Profiles equips contact center agents with a more unified view of a customers’ current situation to provide more personalized customer service. Customer Profiles automatically brings together customer information from multiple applications into a unified customer profile, delivered to agents at the beginning of the customer interaction. With Amazon Connect Customer Profiles, agents have all the customer information they need in a single place, so they can deliver more personalized customer service.
+Learn about Amazon Connect Customer Profiles »
+Automated agent assist
+Amazon Connect Wisdom uses machine learning (ML) to drastically reduce the time agents spend searching for answers. With Wisdom, agents use ML to search across connected repositories based on phrases and questions exactly as the customer would ask them, in order to quickly find answers quickly. Amazon Connect Wisdom helps customers connect relevant knowledge repositories with built-in connectors for third-party applications like Salesforce and ServiceNow, or other internal wikis, FAQ stores, and file shares. In addition, Wisdom uses real-time speech analytics to detect customer issues during calls and provide agents recommendations and answers.
+Learn about Amazon Connect Wisdom »
+Easy task management
+Amazon Connect Tasks makes it easy to prioritize, assign, and track all contact center agent tasks to completion, ensuring customer issues are quickly resolved. Today, agents often track their tasks and customer follow-up items manually. This is difficult and error-prone, especially when a task spans multiple systems like customer relationship management (CRM) systems, e-commerce, and ticketing systems. Amazon Connect Tasks allows your agents to create and complete tasks, in the same UI they take calls and chats.  Learn about Amazon Connect Tasks »
+Customers stories
+Intuit Improves Customer Experience with an AI-Powered Omnichannel Contact Center.
+Learn more »
+Connecting with citizens during critical times.
+Learn more »
+Morrisons Delivers a Self-Serve Contact Center in 8 Weeks.
+Learn more »
+To learn more, see Amazon Connect customers.
+Quickly set up a virtual contact center for remote agents
+Are you looking for a flexible and secure way for your contact center agents to provide quality customer service from anywhere? Historically agents were required to be physically in the contact center office tethered to a phone at their desk, but today thousands of customers are using Amazon Connect, a cloud-based contact center solution to enable virtual contact centers and address their unique needs.
+Learn more about virtual contact centers
+Blog posts & articles
+AWS announces five new capabilities for Amazon Connect 1 December, 2020
+Amazon Connect – Now Smarter and More Integrated With Third-Party Tools Sébastien Stormacq, 1 December 2020
+Salesforce and Amazon Web Services (AWS) Expand Global Strategic Partnership, 19 November 2019
+Visit the Contact Center Blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+Get started with AWS & Amazon Connect
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn more about Amazon Connect
+Explore and learn with
+getting started video.
+Contact Amazon Connect sales.
+Get started with Amazon Connect
+Visit the
+Amazon Connect console.
+Learn more about Amazon Connect
+Visit the features page
+Ready to build?
+Get started with Amazon Connect
+Have more questions?
+Contact us

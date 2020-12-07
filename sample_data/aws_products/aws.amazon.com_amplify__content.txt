@@ -1,0 +1,80 @@
+AWS Amplify
+Fastest, easiest way to build mobile and web apps that scale
+Get started for free
+AWS Amplify is a set of tools and services that can be used together or on their own, to help front-end web and mobile developers build scalable full stack applications, powered by AWS. With Amplify, you can configure app backends and connect your app in minutes, deploy static web apps in a few clicks, and easily manage app content outside the AWS console.
+Amplify supports popular web frameworks including JavaScript, React, Angular, Vue, Next.js, and mobile platforms including Android, iOS, React Native, Ionic, Flutter (Preview). Get to market faster with AWS Amplify.
+Web & Mobile App Development (1:42)
+Benefits
+Configure backends fast
+Use the Amplify admin UI and CLI's intuitive workflows to set up scalable AWS backends with authentication, storage, data and other common use cases.
+Seamlessly connect frontends
+Use the Amplify libraries in your web, Android, and iOS apps to connect to new and existing AWS resources in just a few lines of code.
+Deploy in a few clicks
+Use the Amplify console to host static websites and single page web apps with a Git-based workflow, simply by connecting your app's repository.
+Easily manage content
+Use the Amplify admin UI to provide non-developers with administrative access to manage app users and app content without an AWS account.
+Features & Tools
+Develop
+Configure backend: CLI, Admin UI Connect backend: Libraries, UI Components
+Authentication
+API (GraphQL, REST)
+Storage
+Interactions
+PubSub
+DataStore
+Functions
+Analytics
+AI/ML Predictions
+Push Notifications
+Deliver
+CLI, Console
+Managed Hosting
+CI/CD
+Branch Deploys
+Atomic Deployments
+Custom Domains
+Manage
+Admin UI
+Manage Users
+Manage Content
+How it works
+Develop
+Deliver
+Manage
+Develop
+Deliver
+Manage
+Use cases
+Onboarding flows
+Create custom onboarding flows allowing users to log in with preferred methods. Features: Auth, UI Components, Analytics
+Real-time collaboration
+Build real-time feeds, chat, and document sharing to facilitate remote scenarios. Features: Interactions, API, DataStore
+AI/ML
+Add voice interactions, translations, and image recognition to enable smarter user experiences. Features: Predictions, API, DataStore,
+Targeted campaigns
+Develop targeted push notifications and campaigns to retain and engage customers. Features: Analytics, Notifications, API
+Community
+Amplify is loved by the community, making it a top 5 fastest growing open source project on GitHub with millions of downloads.
+Join our community »
+“Trying out AWS Amplify... so far looking like pure magic” @thiagoleychr
+“AWS Amplify is an incredible productivity boost. If you're kicking off a new web or mobile app, start here!” @rts_rob
+“I'm a huge fan of Amplify hosting, it's AWS best kept secret.” @mikemacd
+“Big shout out to #AWS #Amplify for making #continuous #delivery and #release of mobile and web #apps so freaking easy it’s unbelievable. Highly recommended.” @thetestlabsio
+“Latest side project, @snapgig, a gig economy marketplace, is up! Happy we utilized the @AWSAmplify CLI/Console, much easier to ramp up on complex backends, perform coordinated deploys, #React/#GraphQL, auth, chat, image upload, etc. Thankful for @dabit3, great tutorials and info!” @ChrisLivdahl
+“This has already saved me a good chunk of time. Thanks to fine-grained auth rules in place, I wasn't able to complete a mutation. I updated the rule and the result was immediate! I didn't have to wait for an `amplify push`! 🔥🔥🔥 Thank you @AWSAmplify team!” @mwarger
+“What a way to end April! A video went viral, @quiznext installs went up by 1400% and our server did not sweat and no developer burnt midnight oil monitoring servers! Thanks to @AWSMobile, @awscloud and @goserverless! #serverless @AWSAmplify @AWSstartups @awsugblr #edtech” @gprasadholla
+“Been using @AWSAmplify in production for few months and have to say that it's pretty much a perfect package. Adding authentication super easy with it, and building a GraphQL API with is such a delight!” @plahteenlahti
+“y’all, AWS Amplify is amazing. Set up a severless app to do whatever the heck you want in no time and with minimal elbow grease, then live your life #100DayOfCode #womenwhocode #webdev” @ohcatwhy
+“I've said it many times but I'll say it again, God bless @AWSAmplify and Appsync, it makes me dev experience incredible. #aws #webdev #react #serverless” @StelseyLesser
+“Digging into AWS Amplify these past few days has really started to shift my perception of how complicated I felt AWS was, into how powerful it can be.” @zslabs
+“Hey, @AWSAmplify - Thank you for the love you show for @reactnative (and to some degree for @expo ). Others should follow (@Firebase , @auth0 , etc)” @oriharel
+“Holy mother of god, AWS Amplify is fricking awesome. GraphQL endpoint in minutes.” @iamgraem_e
+“Oh come on... AWS Amplify is in another league - That thing gives you super powers 🦸♂️” @victorhazbun
+Check out the product features
+Visit the AWS Amplify Features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Have more questions?
+Contact our team directly at aws-amplify-customer@amazon.com

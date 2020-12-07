@@ -1,0 +1,51 @@
+AWS Budgets
+Improve planning and cost control with flexible budgeting and forecasting
+Get started with AWS Budgets
+Businesses and organizations need to plan and set expectations around cloud costs. However, the cloud agility requires you to adapt your forecasting processes and tools to match the dynamic nature of your usage. Set up custom budgets and stay informed of how your cost and usage progress and respond quickly when cost or usage exceeds threshold.
+AWS Budgets allows you to set custom budgets to track your cost and usage from the simplest to the most complex use cases. With AWS Budgets, you can choose to be alerted by email or SNS notification when actual or forecasted cost and usage exceed your budget threshold, or when your actual RI and Savings Plans' utilization or coverage drops below your desired threshold. With AWS Budget Actions, you can also configure specific actions to respond to cost and usage status in your accounts, so that if your cost or usage exceeds or is forecasted to exceed your threshold, actions can be executed automatically or with your approval to reduce unintentional over-spending.
+AWS Budgets integrates with multiple other AWS services, such as AWS Cost Explorer, so you can easily view and analyze your cost and usage drivers, AWS Chatbot, so you can receive Budget alerts in your designated Slack channel or Amazon Chime room, and AWS Service Catalog, so you can track cost on your approved AWS portfolios and products.
+How can I use AWS Budgets?
+Benefits
+Custom budgets that meet your needs
+Track your cost, usage, or coverage and utilization for your Reserved Instances and Savings Plans, across multiple dimensions, such as service, or Cost Categories. Aggregate your costs with an unblended or amortized view and include or exclude certain charges, such as tax and refunds. Configure your Budget Actions with IAM policies, Service Control Policies (SCPs), and targeted running instances.
+Stay informed with alerts and reports
+Set up event-driven alert notifications for when actual or forecasted cost or usage exceeds your budget limit, or when your RI and Savings Plans' coverage or utilization drops below your threshold. You can also choose to be informed on a daily, weekly, or monthly basis with pre-scheduled Budgets Reports.
+Granular budget time periods
+Create annual, quarterly, monthly, or even daily budgets depending on your business needs. This allows you to take timely actions to prevent cost or usage overage, or inefficient utilization or resource coverage of your Reserved Instances and Savings Plans.
+FEATURED RESOURCE
+Getting Started with AWS Budget Actions
+Get started with AWS Budget Actions to respond to cost and usage in your accounts when a budget target has been exceeded.
+Read the blog »
+Use Cases
+Monitor
+Monitor your AWS cost and usage, or RI and Savings Plans’ coverage and utilization. Set up your preferred budget period of day, month, quarter or year, and create specific budget limits that meet your business needs.
+Report
+Stay informed of how actual or forecasted cost and usage, or actual RI and Savings Plans’ coverage and utilization, progresses towards your budget threshold, with scheduled reports without needing to log into the AWS console.
+Respond
+Set up custom actions, such as Identity and Access Management (IAM) policies, Service Control Policies (SCPs), or target running instances (EC2 or RDS) that can be executed automatically or via a workflow approval process, when a budget target has been exceeded.
+Featured Resources
+Blog Post
+Getting Started with AWS Budgets
+Learn how to set custom budgets that alert you when you exceed (or are forecasted to exceed) the thresholds that you set. Read more »
+Blog Post
+AWS Daily Cost and Usage Reports
+The daily budgeting time range allows you to take timely actions to prevent potential cost overruns. Read more »
+Blog Post
+AWS Budgets Reports
+Keep an eye on your cost, usage, coverage and utilization of RIs and Savings Plans by opting in to AWS Budget Reports. Learn more »
+Latest AWS Cost Management Blogs
+1
+…
+…
+No blog posts have been found at this time. Please see AWS Blog for other resources.
+Read more at the AWS Cost Management Blog »
+Ready to get started?
+Check out the product features
+Learn more about features for cost management, cost optimization, and more.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start managing your AWS costs.
+Sign up
+Create and manage budgets
+Set custom budgets that alert you when you exceed your budgeted thresholds.
+Get started

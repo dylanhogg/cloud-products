@@ -1,0 +1,49 @@
+Amazon Lookout for Vision
+(Preview)
+Spot product defects using computer vision to automate quality inspection
+Get Started with Amazon Lookout for Vision
+Amazon Lookout for Vision is a machine learning (ML) service that spots defects and anomalies in visual representations using computer vision (CV). With Amazon Lookout for Vision, manufacturing companies can increase quality and reduce operational costs by quickly identifying differences in images of objects at scale. For example, Amazon Lookout for Vision can be used to identify missing components in products, damage to vehicles or structures, irregularities in production lines, miniscule defects in silicon wafers, and other similar problems. Amazon Lookout for Vision uses ML to see and understand images from any camera as a person would, but with an even higher degree of accuracy and at a much larger scale. Amazon Lookout for Vision allows customers to eliminate the need for costly and inconsistent manual inspection, while improving quality control, defect and damage assessment, and compliance. In minutes, you can begin using Amazon Lookout for Vision to automate inspection of images and objects–with no machine learning expertise required.
+Benefits
+Quickly and easily improve processes
+Amazon Lookout for Vision gives you a fast and easy way to implement computer vision-based inspection in industrial processes at scale. You can get started by providing as few as 30 images for the process you want to visually inspect. Amazon Lookout for Vision automatically creates a model and analyzes images from cameras that monitor the live process line to spot any differences compared with the baseline images.
+Increase production quality, fast
+With Lookout for Vision you can reduce defects in production processes, real-time. It identifies and reports visual anomalies in an easy-to-use dashboard so you can take action quickly to stop more defects from occurring – increasing production quality and reducing costs.
+Reduce operational costs
+Lookout for Vision reports trends in your visual inspection data, such as identifying processes with the highest defect rate or flagging recent variations in defects. This gives you the ability to determine whether to schedule maintenance on the process line or reroute production to another machine before costly, unplanned downtime occurs.
+Low setup costs
+Machine vision systems require purpose-built smart cameras that are expensive and slow to install. Using Lookout for Vision you can enable less costly cameras (that you might even already have installed) to become ML-enabled visual inspection cameras, no ML expertise required.
+Accurate results in challenging conditions
+Machine vision systems usually require highly controlled imaging conditions to deliver accurate results. With Lookout for Vision you can accurately detect defects even when natural lighting variations and other conditions found within industrial environments occur.
+Continuously improve accuracy
+Quality managers or process engineers can view and verify predicted defects in Lookout for Vision. Once verified, the feedback is used to update the ML model, resulting in higher accuracy and improved performance.
+How it works
+Step 1: Collect images that show normal and defective products from your production line and load them in to the Amazon Lookout for Vision console. Step 2: Label images as normal or anomalous and Lookout for Vision will automatically build a model for you in minutes. Tune your model to improve defect detection by adding images to the dataset. Step 3: Use the Amazon Lookout for Vision dashboard to monitor defects and improve processes. Step 4: Automate visual inspection processes real-time or in-batch and receive notifications when defects are detected. Step 5: Make continuous improvements by providing feedback on the identified product defects.
+Use cases
+Detect part damage
+You can detect damage to a product’s surface quality, color, and shape. For example, you can detect dents, scratches, and poorly welded surfaces on an automotive door panel during the fabrication and assembly processes.
+Identify missing components
+You can identify missing components based on the absence, presence, or placement of objects. For example, you can detect a missing capacitor in a printed circuit board or an omitted label on a battery casing.
+Uncover process issues
+You can detect defects with repeating patterns, which can indicate underlying process or machine issues. For example, detecting repeated scratches in the same spot on a silicon wafer, which combined with machine sensor data, can be used to identify an underlying process or mechanical issue.
+Customers
+Dafgards is a household name in Sweden, manufacturing 15 different types of frozen pizzas at over 100 pizzas per minute.
+“To uphold our brand and deliver the freshest and tastiest customer experience, we want to ensure that all our pizzas are adequately covered in cheese and with the correct toppings. Early in our production process we installed a machine vision system to detect proper coverage of cheese across a pizza’s surface. While this system served well for our original inspection requirement, the system is unable to detect defects on new product types that include multiple toppings. Amazon Lookout for Vision automates and scales inspection of diverse product types such as a cheese pizza with vegetables using the same machine vision system. We successfully expanded our quality assurance for new product types with minimal impact to operations.”
+Fredrik Dafgård, Head of Operational Excellence & Industrial IoT
+GE Healthcare manufactures and distributes diagnostic imaging agents, radiopharmaceuticals, and medical diagnostic equipment, including CT and MRI machines.
+"As a leading global medical technology and digital solutions innovator, GE Healthcare develops, manufactures and distributes diagnostic imaging agents, radio, pharmaceuticals, medical diagnostic equipment, including CT and MRI machines, and intelligent devices supported by its Edison intelligence platform. Today, we use human inspection to verify the quality of our medical equipment. To uphold our brand and deliver best-in-class products trusted by healthcare professionals, we're excited about the possibility of using Amazon Lookout for Vision to programmatically improve the speed, consistency, and accuracy of detecting product defects across our factories in Japan and potentially in other plants in global in the near future."
+Kozaburo Fujimoto, Operating Officer, General Manager, Manufacturing Division, Plant Manager, GE Healthcare Japan
+Nukon, a SAGE Group company, is a digital transformation consultancy and delivery company that delivers custom-designed solutions which combine strategy, analysis, and technology to give visibility into key business processes so they can be optimized.
+“We are excited to have implemented a trial of the Amazon Lookout for Vision technology to detect product defects in real-time within the manufacturing facility for our sister company SAGE Automation, in line with their stringent quality control program. We are excited to now apply this technology to other manufacturers and integrate it into their quality systems.”
+Rafael Amaral, Chief Technology Officer, Nukon
+Choose the cloud provider with proven experience in industrial operations
+From accelerating design to optimizing operations to reinventing supply chains, AWS helps leading industrial customers transform their business. AWS has the most comprehensive set of cloud services and solutions, an extensive partner network, and the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
+Learn more about AWS for Industrial »
+Check out the Amazon Lookout for Vision features
+Discover what you Amazon Lookout for Vision can do for you.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Lookout for Vision in the AWS Management Console.
+Sign in

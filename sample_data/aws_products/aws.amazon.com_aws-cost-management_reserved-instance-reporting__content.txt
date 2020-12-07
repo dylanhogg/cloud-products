@@ -1,0 +1,48 @@
+Reserved Instance (RI) Reporting
+Manage and monitor your instance reservations
+Get started with Reserved Instance (RI) Reporting
+The Reserved Instance Utilization and Coverage reports are available out-of-the-box in AWS Cost Explorer. Using these reports, you can set custom RI utilization and coverage targets, visualize how well you are tracking towards your goals, and access information associated with your savings as compared to On-Demand prices. From there, you can refine the underlying data using the available filtering dimensions (e.g. account, instance type, scope, and others) to grain greater insight into your reservations.
+Reserved Instance Utilization and Coverage reports Demo
+Access RI purchase recommendations via AWS Cost Explorer
+Using AWS Cost Explorer, you can access context-aware Reserved Instance (RI) purchase recommendations. These recommendations are based on your past usage and indicate potential opportunities for savings as compared to On-Demand usage.
+To refine the available recommendations, adjust the RI parameters and historical time period of usage over which your recommendations should be calculated.
+Access RI Purchase Recommendations in AWS Cost Explorer
+Using the AWS Cost & Usage Report to understand your RIs
+One of the core benefits of the AWS Cost & Usage Report is the wealth of RI-related data that is made available to you. The AWS Cost & Usage Report can be customized to collect cost and usage data at the daily and monthly levels of detail, and is updated at least once per day. If desired, the AWS Cost & Usage Report can even be ingested directly into Amazon Athena, Amazon QuickSight, or your Amazon Redshift cluster.
+Enable the AWS Cost & Usage Report
+Comprehensive AWS cost and usage dataset
+The AWS Cost & Usage Report is your single location for accessing detailed information about your AWS costs and usage. Using this report, you can dig deeper into the specific AWS service, pricing, tagging, and other information as it applies to your RIs.
+Access detailed reservation-related information
+The AWS Cost & Usage Report contains a wealth of RI-related information, such as the reservation ARN, the number of reservations, the total reserved units, and the number of units per reservation.
+Calculate your RI savings using public on-demand rates
+Each hourly line item of usage contains the discounted RI rate that was charged, as well as the public on-demand rate for that usage type at that time. You can quantify your savings by calculating the delta between the public on-demand rates and the rates you were charged.
+Track the application of your RI discounts
+Each line item of usage that receives an RI discount contains information about where the discount came from. This makes it easier to trace which instances are benefitting from specific reservations. You can learn more about customizing your RI discount sharing preferences here.
+Track your RIs by receiving RI utilization and coverage alerts
+Using AWS Budgets, you can specify custom RI utilization or coverage targets and receive alerts when you drop below the threshold you define. Utilization and coverage alerts can be measured at a daily, monthly, quarterly, or yearly level of detail, and can be used to track your reservations.
+Create RI alerts using AWS Budgets
+Getting Started
+RI Utilization
+The RI Utilization report allows you to visualize your RI utilization (i.e., the percentage of purchased RI hours consumed by instances during a period of time), to identify and act upon opportunities to increase your RI usage efficiency (e.g., by modifying RI types or shifting workloads to match the constraints of active RIs).
+The report shown below displays the daily utilization of c3.large RIs over a customer-defined time period.
+Go to the RI Utilization report »
+RI Coverage
+The RI Coverage report allows you to discover how much of your overall instance usage is covered by RIs, so that you can make informed decisions about when to purchase or modify an RI to ensure maximum coverage. These reports visualize the percentage of running instance hours that are covered by RIs (i.e., RI coverage) in aggregate or in detail (e.g., by account, instance type, region, availability zone, tags, platform). In addition, they allow you to define an RI coverage threshold against which to monitor.
+The report shown above displays an upward RI coverage trend of c3.large instances at a monthly level of detail.
+Go to the RI Coverage report »
+Latest AWS Cost Management Blogs
+1
+…
+…
+No blog posts have been found at this time. Please see AWS Blog for other resources.
+Read more at the AWS Cost Management Blog »
+Ready to get started?
+Check out the product features
+Learn more about features for cost management, cost optimization, and more.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start managing your AWS costs.
+Sign up
+Access RI purchase recommendations
+RI-specific cost management solutions to help you better manage and monitor your Reserved Instances.
+Get started

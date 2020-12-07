@@ -1,0 +1,53 @@
+Amazon Neptune
+Fast, reliable graph database built for the cloud
+Get started with Amazon Neptune
+Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. The core of Amazon Neptune is a purpose-built, high-performance graph database engine optimized for storing billions of relationships and querying the graph with milliseconds latency. Amazon Neptune supports popular graph models Property Graph and W3C's RDF, and their respective query languages Apache TinkerPop Gremlin and SPARQL, allowing you to easily build queries that efficiently navigate highly connected datasets. Neptune powers graph use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security.
+Amazon Neptune is highly available, with read replicas, point-in-time recovery, continuous backup to Amazon S3, and replication across Availability Zones. Neptune is secure with support for HTTPS encrypted client connections and encryption at rest. Neptune is fully managed, so you no longer need to worry about database management tasks such as hardware provisioning, software patching, setup, configuration, or backups.
+Amazon Neptune announcement at AWS re:Invent 2017 (1:05)
+Benefits
+Supports open graph APIs
+Amazon Neptune supports open graph APIs for both Gremlin and SPARQL, and provides high performance for both of these graph models and their query languages. It lets you choose the Property Graph model and its open source query language, Apache TinkerPop Gremlin or the W3C standard Resource Description Framework (RDF) model and its standard query language, SPARQL.
+High performance and scalability
+Amazon Neptune is a purpose-built, high-performance graph database. It is optimized for processing graph queries. Neptune supports up to 15 low latency read replicas across three Availability Zones to scale read capacity and execute more than one-hundred thousand graph queries per second. You can easily scale your database deployment up and down from smaller to larger instance types as your needs change.
+High availability and durability
+Amazon Neptune is highly available, durable, and ACID (Atomicity, Consistency, Isolation, Durability) compliant. Neptune is designed to provide greater than 99.99% availability. It features fault-tolerant and self-healing storage built for the cloud that replicates six copies of your data across three Availability Zones. Neptune continuously backs up your data to Amazon S3, and transparently recovers from physical storage failures. For High Availability, instance failover typically takes less than 30 seconds.
+Highly secure
+Amazon Neptune provides multiple levels of security for your database, including network isolation using Amazon VPC, support for IAM authentication for endpoint access, HTTPS encrypted client connections, encryption at rest using keys you create and control through AWS Key Management Service (KMS). On an encrypted Neptune instance, data in the underlying storage is encrypted, as are the automated backups, snapshots, and replicas in the same cluster.
+Fully managed
+With Amazon Neptune, you don’t need to worry about database management tasks such as hardware provisioning, software patching, setup, configuration, or backups. Neptune automatically and continuously monitors and backs up your database to Amazon S3, enabling granular point-in-time recovery. You can monitor database performance using Amazon CloudWatch.
+Use cases
+Knowledge Graphs
+Amazon Neptune helps you build knowledge graph applications. A knowledge graph allows you to store information in a graph model and use graph queries to enable your users to easily navigate highly connected datasets. Neptune supports open source and open standard APIs to allow you to quickly leverage existing information resources to build your knowledge graphs and host them on a fully managed service. For example, if a user is interested in The Mona Lisa, you can also help them discover other works of art by Leonardo da Vinci, or other works of art located in The Louvre. Using a knowledge graph, you can add topical information to product catalogs, build and query complex models of regulatory rules, or model general information, like Wikidata.
+Learn more about Knowledge Graphs on AWS.
+Identity Graphs
+You can use Neptune to build identity graphs for any identity resolution solutions, including device and social graphs, personalization and recommendations, and pattern detection. Using a graph database for an identity graph enables you to link identifiers and update profiles easily and query at ultra-low latency — enabling faster updates and up-to-date profile data for ad targeting, personalization, analytics, and ad attribution.
+Learn more about Identity Graphs on AWS.
+Fraud Detection
+With Amazon Neptune, you can use relationships to process financial and purchase transactions in near real time to easily detect fraud patterns. Neptune provides a fully managed service to execute fast graph queries to detect that a potential purchaser is using the same email address and credit card as a known fraud case. If you are building a retail fraud detection application, Neptune can help you build graph queries to easily detect relationship patterns like multiple people associated with a personal email address, or multiple people sharing the same IP address but residing in different physical addresses.
+Learn more about Fraud Graphs on AWS.
+Recommendation Engines
+Amazon Neptune allows you to store relationships between information such as customer interests, friends, and purchase history in a graph and quickly query it to make recommendations that are personalized and relevant. For example, with Neptune you can use a highly available graph database to make product recommendations to a user based on which products are purchased by others who follow the same sport and have similar purchase history. Or, you can identify people that have a friend in common, but don’t yet know each other, and make a friendship recommendation.
+Social Networking
+Amazon Neptune can quickly and easily process large sets of user profiles and interactions to build social networking applications. Neptune enables highly interactive graph queries with high throughput to bring social features into your applications. For example, if you are building a social feed into your application, you can use Neptune to provide results that prioritize showing your users the latest updates from their family, from friends whose updates they ‘Like,’ and from friends who live close to them.
+Network / IT Operations
+You can use Amazon Neptune to store a graph of your network and use graph queries to answer questions like how many hosts are running a specific application. Neptune can store and process billions of events to manage and secure your network. If you detect an event that is an anomaly, you can use Neptune to quickly understand how it might affect your network by querying for a graph pattern using the attributes of the event. You can query Neptune to find other hosts or devices that may be compromised. For example, if you detect a malicious file on a host, Neptune can help you to find the connections between the hosts that spread the malicious file, and enable you to trace it to the original host that downloaded it.
+Life Sciences
+Amazon Neptune helps you build applications that store and navigate information in the life sciences, and process sensitive data easily using encryption at rest. For example, you can use Neptune to store models of disease and gene interactions, and search for graph patterns within protein pathways to find other genes that may be associated with a disease. You can model chemical compounds as a graph and query for patterns in molecular structures. Neptune also helps you integrate information to tackle challenges in healthcare and life sciences research. You can use Neptune to create and store data across different systems and topically organize research publications to quickly find relevant information.
+When to use graph databases
+Graph databases, like Amazon Neptune, are purpose-built to store and navigate relationships. They have advantages over relational databases for use cases like social networking, recommendation engines, and fraud detection, where you need to create relationships between data and quickly query these relationships. There are a number of challenges to building these types of applications using a relational database. You would need multiple tables with multiple foreign keys. SQL queries to navigate this data would require nested queries and complex joins that quickly become unwieldy, and the queries would not perform well as your data size grows over time.
+Neptune uses graph structures such as nodes (data entities), edges (relationships), and properties to represent and store data. The relationships are stored as first order citizens of the data model. This allows data in nodes to be directly linked, dramatically improving the performance of queries that navigate relationships in the data. Neptune’s interactive performance at scale effectively enables a broad set of graph use cases.
+Customers
+Related content
+FORRESTER REPORT
+Amazon Neptune is a Leader in The Forrester Wave™: Graph Data Platforms, Q4 2020 report.
+Learn more >>
+How it works
+Check out the product features
+Learn more about Amazon Neptune features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building on the console
+Get started building with Amazon Neptune on the AWS Management Console.
+Sign in

@@ -1,0 +1,44 @@
+AWS Elastic Beanstalk
+Easy to begin, Impossible to outgrow
+Get started with AWS Elastic Beanstalk
+AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.
+You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring. At the same time, you retain full control over the AWS resources powering your application and can access the underlying resources at any time.
+There is no additional charge for Elastic Beanstalk - you pay only for the AWS resources needed to store and run your applications.
+Introduction to AWS Elastic Beanstalk
+Benefits
+Fast and simple to begin
+Elastic Beanstalk is the fastest and simplest way to deploy your application on AWS. You simply use the AWS Management Console, a Git repository, or an integrated development environment (IDE) such as Eclipse or Visual Studio to upload your application, and Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring. Within minutes, your application will be ready to use without any infrastructure or resource configuration work on your part.
+Developer productivity
+Elastic Beanstalk provisions and operates the infrastructure and manages the application stack (platform) for you, so you don't have to spend the time or develop the expertise. It will also keep the underlying platform running your application up-to-date with the latest patches and updates. Instead, you can focus on writing code rather than spending time managing and configuring servers, databases, load balancers, firewalls, and networks.
+Impossible to outgrow
+Elastic Beanstalk automatically scales your application up and down based on your application's specific need using easily adjustable Auto Scaling settings. For example, you can use CPU utilization metrics to trigger Auto Scaling actions. With Elastic Beanstalk, your application can handle peaks in workload or traffic while minimizing your costs.
+Complete resource control
+You have the freedom to select the AWS resources, such as Amazon EC2 instance type, that are optimal for your application. Additionally, Elastic Beanstalk lets you "open the hood" and retain full control over the AWS resources powering your application. If you decide you want to take over some (or all) of the elements of your infrastructure, you can do so seamlessly by using Elastic Beanstalk's management capabilities.
+Featured customers
+"After evaluating various cloud technologies, Zillow chose Amazon Web Services." »
+"Prezi moved two of its most critical back-end services to AWS Elastic Beanstalk." »
+"Using AWS Elastic Beanstalk, the transformation to AWS was incredibly easy." »
+"BMW leveraged Elastic Beanstalk to build its "car-as-a-sensor" service. »
+"For us, the main attraction of Amazon Web Services (AWS) was its scalability." »
+“AWS was exactly what we needed: a hosting solution that scaled seamlessly." »
+"AWS has given Ividata the scalability it requires as it pursues new business." »
+"Deploying the apps on AWS has allowed GeoNet's team to become more efficient." »
+"Ebury can scale to meet the demands of its customer base without increasing the size of its infrastructure team. »
+"Rachio uses AWS Elastic Beanstalk to deploy and manage its website, web apps, and API infrastructure. »
+"AWS has allowed us to build a web app at large scale." »
+"Samsung decided to deploy it's new Samsung Printing Apps center app store on AWS". »
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the AWS Management Console.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS Elastic Beanstalk
+Visit the AWS Elastic Beanstalk Features Page
+Ready to build?
+Get started with AWS Elastic Beanstalk
+Have more questions?
+Contact us

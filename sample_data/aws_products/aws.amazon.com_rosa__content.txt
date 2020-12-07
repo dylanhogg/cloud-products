@@ -1,0 +1,18 @@
+Red Hat OpenShift Service on AWS (Preview)
+Managed OpenShift in the cloud
+Register your interest
+Red Hat OpenShift Service on AWS (ROSA) provides an integrated experience to use OpenShift. If you are already familiar with OpenShift, you can accelerate your application development process by leveraging familiar OpenShift APIs and tools for deployments on AWS. With ROSA, you can use the wide range of AWS compute, database, analytics, machine learning, networking, mobile, and other services to build secure and scalable applications faster. ROSA comes with pay-as-you-go hourly and annual billing, a 99.95% SLA, and joint support from AWS and Red Hat.
+ROSA makes it easier for you to focus on deploying applications and accelerating innovation by moving the cluster lifecycle management to Red Hat and AWS. With ROSA, you can run containerized applications with your existing OpenShift workflows and reduce the complexity of management.
+Benefits
+Clear path to running in the cloud
+ROSA delivers the production-ready OpenShift that many enterprises already use on-premises today, simplifying the ability to shift workloads to the AWS public cloud as business needs change.
+Deliver high-quality applications faster
+Remove barriers to development and build high-quality applications faster with OpenShift's self-service provisioning, automatic security enforcement, and consistent deployment. Accelerate change iterations with automated development pipelines, templates, and performance monitoring.
+Flexible, cost-efficient pricing
+Scale as per your business needs and pay as you go with flexible pricing with an on-demand hourly or annual billing model.
+Visit the OpenShift website to learn more about Red Hat OpenShift Service on AWS
+Blogs and articles
+Announcing Red Hat OpenShift Service on AWS
+Bob Wise and Raja Jadeja 16 NOVEMBER 2020
+AWS and Red Hat extend collaboration: announcing a new managed Red Hat OpenShift service on AWS
+Bob Wise and Massimo Re Ferre 14 MAY 2020

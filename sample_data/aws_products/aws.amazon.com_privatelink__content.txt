@@ -1,0 +1,78 @@
+AWS PrivateLink
+Establish private connectivity between VPCs and services hosted on AWS or on-premises, without exposing data to the internet
+Get started with AWS PrivateLink
+Easily and Securely Access Services with AWS PrivateLink (2:00)
+AWS PrivateLink provides private connectivity between VPCs and services hosted on AWS or on-premises, securely on the Amazon network. By providing a private endpoint to access your services, AWS PrivateLink ensures your traffic is not exposed to the public internet. AWS PrivateLink makes it easy to connect services across different accounts and VPCs to significantly simplify your network architecture.
+Benefits of using AWS PrivateLink
+Secure Your Traffic
+Connect your VPCs to services in AWS in a secure and scalable manner with AWS PrivateLink. Network traffic that uses AWS PrivateLink doesn't traverse the public internet, reducing the exposure to threat vectors such as brute force and distributed denial-of-service attacks. You can use private IP connectivity and security groups so that your services function as though they were hosted directly on your private network. You can also attach an endpoint policy, which allows you to control precisely who has access to a specified service.
+Simplify Network Management
+You can connect services across different accounts and Amazon VPCs, with no need for firewall rules, path definitions, or route tables. There is no need to configure an Internet gateway, VPC peering connection, or manage VPC Classless Inter-Domain Routing (CIDRs). Because AWS PrivateLink simplifies your network architecture, it is easier for you to manage your global network.
+Accelerate Your Cloud Migration
+More easily migrate traditional on-premises applications to SaaS offerings hosted in the cloud with AWS PrivateLink. Since your data does not get exposed to the Internet where it can be compromised, you can migrate and use more cloud services with the confidence that your traffic remains secure. You no longer have to choose between using a service and exposing your critical data to the Internet. You can find the latest controls in place to help customers stay complaint on our AWS Compliance Programs page.
+AWS PrivateLink Use Cases
+Securely Access SaaS Applications
+Many APN partners deliver SaaS services like log analytics and security scans to their customers on AWS. SaaS providers install agents or clients in their customers' VPCs to generate and send data back to the provider. When using SaaS applications, customers have to choose between allowing Internet access from their VPC, which puts the VPC resources at risk, and not using these applications at all. With AWS PrivateLink, you can connect to AWS services and SaaS applications from your VPC in a private, secure, and scalable manner. Since connections to a service can be initiated only by you, you are safeguarded against unwarranted communication by the service provider.
+Maintain Regulatory Compliance
+Preventing your sensitive data, such as customer records, from traversing the Internet helps you maintain compliance with regulations such as HIPAA, EU/US Privacy Shield, and PCI. This is especially critical to customers in the Financial Services, Healthcare, and Government sectors. With AWS PrivateLink, traffic between AWS resources, VPCs, and third-party services stays on the Amazon network where there are robust controls in place to maintain security and compliance. This includes compliance alignment with standard financial regulations such as the SEC Rule 17a-4(f) and the FICS of Japan.
+Migrate To Hybrid Cloud
+On-premises applications can connect to service endpoints in Amazon VPC over AWS Direct Connect or AWS VPN. Service endpoints will direct the traffic to AWS services over AWS PrivateLink, while keeping the network traffic within the Amazon network. AWS PrivateLink enables SaaS providers to offer services that will look and feel like they are hosted directly on a private network. These services are securely accessible both from the cloud and from premises via AWS Direct Connect and AWS VPN, in a highly available and scalable manner.
+Featured customers
+"At Salesforce Heroku, making developers' lives easier is our top priority. AWS PrivateLink is a great way for developers to create secure and private connections between their Heroku apps and resources, and Amazon VPCs on AWS. These options help developers rapidly innovate with trusted business applications that span Salesforce and AWS."
+-Margaret Francis, SVP of Product and GM, Heroku.
+"At Twilio, we care about the security of our customers. As part of our Twilio Interconnect offering, AWS PrivateLink will provide another option for our customers, whether they are running on AWS or on-premises, to establish secure and private connections directly to the Twilio cloud, AWS PrivateLink complements the investments we have made to meet the security and compliance needs of our customers.”
+Richard Seiersen, CISO and Vice President of Trust, Twilio.
+“At Autodesk, we have hundreds of developer teams using their own accounts and VPCs for building products and services. AWS PrivateLink will give our developers an easy, secure, and scalable way to enable private connectivity for shared services and microservices across different accounts and VPCs. We are excited to use a solution that will deliver higher agility in product development and improved security posture at the same time.”
+Reeny Sondhi, Chief of Product Security, Autodesk.
+"This allows [our customer] to tunnel through their system in an extremely secure way as nothing goes over the Internet, but they are still able to leverage our SaaS solution. Now that same customer, who was traditionally constrained to that single on-prem solution, can leverage the full power of our solution. This is game changing for these customers who need this type of optimization but had otherwise no access to it and had to use those very inefficient traditional methods of grid search, random search, and manual tuning. And the nice thing is too that this integrates on top of any underlying framework.”
+Scott Clark, Co-Founder and CEO, SigOpt.
+“We see PrivateLink as a vehicle for us to provide a much better experience for the customer as they traverse the different environments they have in AWS or on premise, and automate a lot of those things. We have customers with tens of thousands of containers compiling various applications. It’s not something that can be managed manually. PrivateLink gives them the feeling that this is all internal, and secure. And it makes things go much faster.”
+Ran Nahmias, Vice President Business Development & Sales, Aqua Security.
+“I think this is critical. PrivateLink is the missing link between delivering on premises, and to the cloud, to SaaS services without using the Internet. Our prediction is that this will be a significant moment where going from on premises to the cloud is no longer a big jump. This should now make this whole migration much easier and the line much more gray.”
+Matthew Glickman, Vice President Product Management, Snowflake
+How it works
+AWS PrivateLink enables you to securely connect your VPCs to supported AWS services: to your own services on AWS, to services hosted by other AWS accounts, and to third-party services on AWS Marketplace. Since traffic between your VPC and any one of these services does not leave the Amazon network, an Internet gateway, NAT device, public IP address, or VPN connection is no longer needed to communicate with the service.
+To use AWS PrivateLink, create an interface VPC endpoint for a service in your VPC. This creates an Elastic Network Interface (ENI) in your subnet with a private IP address that serves as an entry point for traffic destined to the service. Service endpoints available over AWS PrivateLink will appear as ENIs with private IPs in your VPCs.
+To learn more about how PrivateLink works, read the PrivateLink documentation.
+Visibility Through the AWS Service Ready Program
+The AWS Service Ready Program validates and identifies products built by APN Select or Advanced Technology Partners that integrate with AWS PrivateLink.
+Blogs
+How Goldman Sachs builds cross-account connectivity to their Amazon MSK clusters with AWS PrivateLink
+June 1st, 2020
+Robert L. Cossin and Harsha Sharma
+Read now »
+Integrating AWS Transit Gateway with AWS PrivateLink and Amazon Route 53 Resolver
+July 24th, 2019
+James Devine
+Read now »
+Using AWS PrivateLink Integrations to Access SaaS Solutions from APN Partners
+August 2nd, 2019
+Mike Deck
+Read now »
+How to use AWS PrivateLink to secure and scale web filtering using explicit proxy
+August 8th, 2018
+Vinod Madabushi and Sahil Thapar
+Read now »
+date
+date
+1
+…
+…
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS PrivateLink
+Visit the features page
+Find services available over AWS PrivateLink
+Visit AWS Marketplace
+Ready to build?
+Get started with AWS
+Have more questions?
+Contact us

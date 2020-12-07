@@ -1,0 +1,45 @@
+PyTorch on AWS
+Overview
+Getting Started
+Customers
+Deep Learning with PyTorch
+Easy to use, highly performant deep learning on AWS
+Get started with PyTorch on Amazon SageMaker
+PyTorch is an open source deep learning framework that makes it easy to develop machine learning models and deploy them to production. Using TorchServe, PyTorch's model serving library built and maintained by AWS in partnership with Facebook, PyTorch developers can quickly and easily deploy models to production. PyTorch also provides dynamic computation graphs and libraries for distributed training, which are tuned for high performance on AWS.
+You can get started with PyTorch on AWS using Amazon SageMaker, a fully managed machine learning service that makes i easy and cost-effective to build, train, and deploy TensorFlow models at scale. If you prefer to manage the infrastructure yourself, you can use the AWS Deep Learning AMIs or the AWS Deep Learning Containers, which come built from source and optimized for performance with the latest version of PyTorch to quickly deploy custom machine learning environments.
+Benefits
+Easy to use
+PyTorch on AWS is designed to utilize Amazon EC2 instances, Elastic Fabric Adapter, and other storage, network, and infrastructure technologies. Deploy your models easily to production using TorchServe, an open-source PyTorch model serving library built and maintained by AWS in partnership with Facebook. Use TorchScript to easily switch between eager mode (used for iterative model development) and graph mode (used for efficient training once the model is built).
+Built for high performance
+Train your models rapidly using distributed training backends that leverage clusters of powerful GPU instances, and libraries such as TorchElastic that provide fault-tolerance and elasticity so you can iterate faster and bring models to market sooner.
+Rich ecosystem
+A rich ecosystem of tools and models, including torchvision, torchaudio, torchtext, torchelastic, torch_xla, extends PyTorch and supports development in computer vision, natural language processing, privacy preserving ML, model interpretability, and more.
+How it works
+AWS Open-Source Contributions to PyTorch
+TorchServe
+TorchServe is an open-source model serving framework for PyTorch that makes it easy to deploy trained PyTorch models performantly at scale without having to write custom code. TorchServe delivers lightweight serving with low latency, so you can deploy your models for high performance inference. It provides default handlers for the most common applications such as object detection and text classification, so you don’t have to write custom code to deploy your models. With powerful TorchServe features including multi-model serving, model versioning for A/B testing, metrics for monitoring, and RESTful endpoints for application integration, you can take your models from research to production quickly. TorchServe supports any machine learning environment, including Amazon SageMaker, Kubernetes, Amazon EKS, and Amazon EC2. To get started with TorchServe, see the documentation and our blog post.
+TorchElastic Controller for Kubernetes
+TorchElastic is a library for training large-scale deep learning models where it is critical to scale compute resources dynamically based on availability. Elastic and fault-tolerant training with TorchElastic can help you take ML models to production faster and adopt state-of-the-art approaches to model exploration as architectures continue to increase in size and complexity. The TorchElastic Controller for Kubernetes is a native Kubernetes implementation for TorchElastic that automatically manages the lifecycle of the pods and services required for TorchElastic training. It allows you to start training jobs with a portion of the requested compute resources, and dynamically scale later as more resources become available, without having to stop and restart the jobs. In addition, jobs can recover from nodes that are replaced due to node failures or reclamation. With TorchElastic Controller for Kubernetes, you can reduce distributed training time and cost by limiting idle cluster resources and training on Amazon EC2 Spot Instances. To get started with the TorchElastic Controller on your Kubernetes cluster, see the tutorial.
+Customer Testimonials
+Toyota Research Institute Advanced Development, Inc. (TRI-AD) is applying artificial intelligence to help Toyota produce cars in the future that are safer, more accessible, and more environmentally friendly. Using PyTorch on Amazon EC2 P3 instances, TRI-AD reduced ML model training time from days to hours. “We continuously optimize and improve our computer vision models, which are critical to TRI-AD’s mission of achieving safe mobility for all with autonomous driving. Our models are trained with PyTorch on AWS, but until now PyTorch lacked a model serving framework. As a result, we spent significant engineering effort in creating and maintaining software for deploying PyTorch models to our fleet of vehicles and cloud servers. With TorchServe, we now have a performant and lightweight model server that is officially supported and maintained by AWS and the PyTorch community,” Yusuke Yachide, Lead of ML Tools at TRI-AD.
+Matroid, maker of computer vision software that detects objects and events in video footage, develops a rapidly growing number of machine learning models using PyTorch on AWS and on-premise environments. The models are deployed using a custom model server that requires converting the models to a different format, which is time-consuming and burdensome. TorchServe allows Matroid to simplify model deployment using a single servable file that also serves as the single source of truth, and is easy to share and manage.
+Pinterest has 3 billion images and 18 billion associations connecting those images. The company has developed PyTorch deep learning models to contextualize these images and deliver a personalized user experience. Pinterest uses Amazon EC2 P3 instances to speed up model training and deliver low latency inference for an interactive user experience. Read more.
+More customer stories »
+Blogs and articles
+Blog: Serving PyTorch Models in Production with Amazon SageMaker’s Native TorchServe Integration Aug 2020 by Todd Escalona
+Blog: Running TorchServe on Amazon Elastic Kubernetes Service Aug 2020 by Josiah Davis, Charles Frenzel, and Chen Wu
+Blog:
+Deploying PyTorch models for inference at scale using TorchServe
+Apr 2020
+by Shashank Prasanna and Manoj Rao
+Blog: Cinnamon AI saves 70% on ML model training costs with Amazon SageMaker Managed Spot Training Jan 2020 by Sundar Ranganathan and Yoshitaka Haribara
+Article: With deep learning, Disney sorts through a universe of content Dec 2019 The Wired
+Learn how to get started with PyTorch on AWS
+Visit the getting started page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building in the AWS Management Console.
+Sign in

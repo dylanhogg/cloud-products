@@ -1,0 +1,29 @@
+Apache MXNet on AWS
+Build machine learning applications that train quickly and run anywhere
+Try Amazon SageMaker
+Apache MXNet is a fast and scalable training and inference framework with an easy-to-use, concise API for machine learning.
+MXNet includes the Gluon interface that allows developers of all skill levels to get started with deep learning on the cloud, on edge devices, and on mobile apps. In just a few lines of Gluon code, you can build linear regression, convolutional networks and recurrent LSTMs for object detection, speech recognition, recommendation, and personalization.
+You can get started with MxNet on AWS with a fully-managed experience using Amazon SageMaker, a platform to build, train, and deploy machine learning models at scale. Or, you can use the AWS Deep Learning AMIs to build custom environments and workflows with MxNet as well as other frameworks including TensorFlow, PyTorch, Chainer, Keras, Caffe, Caffe2, and Microsoft Cognitive Toolkit.
+Contribute to the Apache MXNet Project
+Get involved at GitHub
+Grab sample code, notebooks, and tutorial content at the GitHub project page.
+Benefits of deep learning using MXNet
+Ease-of-Use with Gluon
+MXNet’s Gluon library provides a high-level interface that makes it easy to prototype, train, and deploy deep learning models without sacrificing training speed. Gluon offers high-level abstractions for predefined layers, loss functions, and optimizers. It also provides a flexible structure that is intuitive to work with and easy to debug.
+Greater Performance
+Deep learning workloads can be distributed across multiple GPUs with near-linear scalability, which means that extremely large projects can be handled in less time. As well, scaling is automatic depending on the number of GPUs in a cluster. Developers also save time and increase productivity by running serverless and batch-based inferencing.
+For IoT & the Edge
+In addition to handling multi-GPU training and deployment of complex models in the cloud, MXNet produces lightweight neural network model representations that can run on lower-powered edge devices like a Raspberry Pi, smartphone, or laptop and process data remotely in real-time.
+Flexibility & Choice
+MXNet supports a broad set of programming languages—including C++, JavaScript, Python, R, Matlab, Julia, Scala, Clojure, and Perl—so you can get started with languages that you already know. On the backend, however, all code is compiled in C++ for the greatest performance regardless of what language is used to build the models.
+Customer momentum
+Case studies
+There are over 500 contributors to the MXNet project including developers from Amazon, NVIDIA, Intel, Samsung, and Microsoft. Learn about how customers are using MXNet for deep learning projects. For more case studies, see the AWS machine learning blog and the MXNet blog.
+Uses deep learning to lower property damage losses from natural disasters
+Celgene advances pharma research and discovery with the help of AI on MXNet
+Curalate makes social sell with AI using Apache MXNet on AWS
+Amazon SageMaker for machine learning
+Learn more about Amazon SageMaker
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
+Have more questions?
+Contact us

@@ -1,0 +1,46 @@
+AWS Elemental MediaPackage
+Easily prepare and protect video for delivery to Internet devices
+Get started with AWS Elemental MediaPackage
+Live Chat
+AWS Elemental MediaPackage reliably prepares and protects your video for delivery over the Internet. From a single video input, AWS Elemental MediaPackage creates video streams formatted to play on connected TVs, mobile phones, computers, tablets, and game consoles. It makes it easy to implement popular video features for viewers (start-over, pause, rewind, etc.), like those commonly found on DVRs. AWS Elemental MediaPackage can also protect your content using Digital Rights Management (DRM). AWS Elemental MediaPackage scales automatically in response to load, so your viewers will always get a great experience without you having to accurately predict in advance the capacity you’ll need.
+AWS Elemental MediaPackage Explained
+Watch Now: AWS Elemental MediaPackage Explained (53 sec)
+How it works
+Live Packaging
+Video On Demand (VOD) Packaging
+Benefits
+Reach a wide range of connected devices
+AWS Elemental MediaPackage makes it easy to package and distribute your content to a broad range of video playback devices, including web players, smart phones, game consoles, tablets, and connected TVs.
+Advanced video experiences and content protection
+AWS Elemental MediaPackage lets you configure a DVR-like experience for viewers of your live stream. It offers support for a range of digital rights management (DRM) providers, supports advanced audio features, and multi-language subtitle tracks.
+Built-in scalability and reliability
+AWS Elemental MediaPackage scales automatically as the audience for your video grows. It automatically manages resources across multiple Availability Zones, and monitors their health, so that any potential issues are detected and resolved without disrupting your live video stream.
+Easy integration with AWS cloud services
+AWS Elemental MediaPackage is built to work with
+Amazon CloudFront CDN for global distribution and with
+AWS Elemental MediaLive for live encoding to form a complete solution for live video processing and delivery. Integration with
+Amazon CloudWatch gives you real-time monitoring and notifications.
+Customer stories
+TVNZ
+BT
+TVNZ
+“We've already seen pretty impressive results from what we have moved to the AWS environment and we're really enjoying all the benefits like scalability, redundancy, and performance that we get from being on the AWS platform.”
+Andrew Blakey, Development Manager, TVNZ
+About TVNZ
+TVNZ is New Zealand’s leading free-to-air TV provider, bringing news and entertainment coverage to more than two million New Zealanders each day.
+Customer Snapshot: TVNZ
+BT
+“The ease of use of these AWS console-based services for end-to-end workflows will provide a level of flexibility and efficiency that will be a game changer for our industry while providing a flexible option that can coexist with legacy on-premises live and on-demand infrastructures deployments.”
+Ian Parr, Director TV and Broadband Infrastructure for BT
+About BT
+BT is one of the world’s leading communications services companies, serving customers in the UK and more than 170 countries.
+Get started with AWS Elemental MediaPackage in the console
+Launch the AWS Elemental MediaPackage console
+Create and set up new channel endpoints, create and configure your outputs
+Send content from AWS Elemental MediaLive to start your live channel
+Have questions?
+Contact us
+Ready to build?
+Get started with AWS Elemental MediaPackage
+Discover more resources
+Visit the Resources page

@@ -1,0 +1,30 @@
+AWS CodeDeploy
+Automate code deployments to maintain application uptime
+Get started with CodeDeploy
+AWS CodeDeploy is a fully managed deployment service that automates software deployments to a variety of compute services such as Amazon EC2, AWS Fargate, AWS Lambda, and your on-premises servers. AWS CodeDeploy makes it easier for you to rapidly release new features, helps you avoid downtime during application deployment, and handles the complexity of updating your applications. You can use AWS CodeDeploy to automate software deployments, eliminating the need for error-prone manual operations. The service scales to match your deployment needs.
+Introduction to AWS CodeDeploy (2:10)
+Benefits
+Automated deployments
+AWS CodeDeploy fully automates your software deployments, allowing you to deploy reliably and rapidly. You can consistently deploy your application across your development, test, and production environments whether deploying to Amazon EC2, AWS Fargate, AWS Lambda, or your on-premises servers. The service scales with your infrastructure.
+Minimize downtime
+AWS CodeDeploy helps maximize your application availability during the software deployment process. It introduces changes incrementally and tracks application health according to configurable rules. Software deployments can easily be stopped and rolled back if there are errors.
+Centralized control
+AWS CodeDeploy allows you to easily launch and track the status of your application deployments through the AWS Management Console or the AWS CLI. CodeDeploy gives you a detailed report allowing you to view when and to where each application revision was deployed. You can also create push notifications to receive live updates about your deployments.
+Easy to adopt
+AWS CodeDeploy is platform and language agnostic, works with any application, and provides the same experience whether you’re deploying to Amazon EC2, AWS Fargate, or AWS Lambda. You can easily reuse your existing setup code. CodeDeploy can also integrate with your existing software release process or continuous delivery toolchain (e.g., AWS CodePipeline, GitHub, Jenkins).
+Case studies
+SmartNews uses CodeDeploy to support a software delivery pipeline that consists of numerous microservices such as a news crawler, content extractor, image analysis engine, and search engine.
+Learn how Gilt uses CodeDeploy to expedite software deployments and to deploy software updates without worrying about infrastructure.
+Instacart uses CodeDeploy to manage hundreds of deployments a day and to ship their code to customers faster and more reliably.
+With CodeDeploy, Burt can automate deployments and eliminate manual operations to perform thousands of upgrades and deploys without impacting services.  Read the case study to learn more.
+3M HIS can easily and quickly build their application environments and manage applications by using AWS CodeDeploy and CodeCommit.
+Learn how CodeDeploy helps Click Travel ensure zero downtime during deployments through rolling updates.
+Check out the product features
+Learn more about the key features of AWS CodeDeploy.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS CodeDeploy in the AWS Management Console.
+Sign in

@@ -1,0 +1,25 @@
+TensorFlow on AWS
+Deep learning in the cloud made simple.
+Try Amazon SageMaker
+TensorFlow™ enables developers to quickly and easily get started with deep learning in the cloud. The framework has broad support in the industry and has become a popular choice for deep learning research and application development, particularly in areas such as computer vision, natural language understanding and speech translation.
+You can get started on AWS with a fully-managed TensorFlow experience with Amazon SageMaker, a platform to build, train, and deploy machine learning models at scale. Or, you can use the AWS Deep Learning AMIs to build custom environments and workflows with TensorFlow and other popular frameworks including Apache MXNet, PyTorch, Caffe, Caffe2, Chainer, Gluon, Keras, and Microsoft Cognitive Toolkit.
+85% of TensorFlow projects in the cloud happen on AWS.
+Learn more
+Benefits
+Visualization
+TensorFlow comes with a full suite of visualization tools that make it easy to understand, debug, and optimize applications. With support for a variety of styles – from images and audio to histograms and graphs – you can train massive deep neural networks quickly and easily.
+Mobile Development
+TensorFlow Mobile features a reduced code footprint and mathematical tools to facilitate smaller model sizes. Suitable for Android, TensorFlow Mobile is also ideal for situations where network access is intermittent or expensive.
+Documentation
+With TensorFlow, you get access to extensive documentation and tutorials that can help accelerate your AI development. TensorFlow also has a large and extremely active community of users who regularly contribute code and resolve issues on GitHub.
+Customers using TensorFlow on AWS
+Many organizations are benefiting from the ease-of-use and flexibility of getting started using TensorFlow on AWS.
+Click to see more customers
+Show less
+Amazon SageMaker for machine learning
+Learn more about Amazon SageMaker
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
+Ready to build?
+Try the AWS Deep Learning AMIs
+Have more questions?
+Contact us

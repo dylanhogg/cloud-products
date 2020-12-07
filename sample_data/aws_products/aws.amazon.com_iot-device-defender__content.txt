@@ -1,0 +1,57 @@
+AWS IoT Device Defender
+Security management for IoT devices
+Get Started with IoT Device Defender
+What is AWS IoT Device Defender
+AWS IoT Device Defender is a fully managed service that helps you secure your fleet of IoT devices. AWS IoT Device Defender continuously audits your IoT configurations to make sure that they aren’t deviating from security best practices. A configuration is a set of technical controls you set to help keep information secure when devices are communicating with each other and the cloud. AWS IoT Device Defender makes it easy to maintain and enforce IoT configurations, such as ensuring device identity, authenticating and authorizing devices, and encrypting device data. AWS IoT Device Defender continuously audits the IoT configurations on your devices against a set of predefined security best practices. AWS IoT Device Defender sends an alert if there are any gaps in your IoT configuration that might create a security risk, such as identity certificates being shared across multiple devices or a device with a revoked identity certificate trying to connect to AWS IoT Core.
+AWS IoT Device Defender also lets you continuously monitor security metrics from devices and AWS IoT Core for deviations from what you have defined as appropriate behavior for each device. If something doesn’t look right, AWS IoT Device Defender sends out an alert so you can take action to remediate the issue. For example, traffic spikes in outbound traffic might indicate that a device is participating in a DDoS attack. AWS IoT Greengrass and FreeRTOS automatically integrate with AWS IoT Device Defender to provide security metrics from the devices for evaluation.
+AWS IoT Device Defender can send alerts to the AWS IoT Console, Amazon CloudWatch, and Amazon SNS. If you determine that you need to take an action based on an alert, you can use AWS IoT Device Management to take mitigating actions such as pushing security fixes.
+To learn more, watch the AWS IoT Device Defender webinar.
+Keeping Connected Devices Secure
+Why is IoT security important
+Connected devices are constantly communicating with each other and the cloud using different kinds of wireless communication protocols. While communication creates responsive IoT applications, it can also expose IoT security vulnerabilities and open up channels for malicious actors or accidental data leaks. To protect users, devices, and companies, IoT devices must be secured and protected. The foundation of IoT security exists within the control, management, and set up of connections between devices. Proper protection helps keep data private, restricts access to devices and cloud resources, offers secure ways to connect to the cloud, and audits device usage. An IoT security strategy reduces vulnerabilities using policies like device identity management, encryption, and access control.
+What are the challenges with IoT security
+A security vulnerability is a weakness which can be exploited to compromise the integrity or availability of your IoT application. IoT devices by nature, are vulnerable. IoT fleets consist of devices that have diverse capabilities, are long-lived, and are geographically distributed. These characteristics, coupled with the growing number of devices, raise questions about how to address security risks posed by IoT devices.  To further amplify security risks, many devices have a low-level of compute, memory, and storage capabilities, which limits opportunities for implementing security on devices. Even if you have implemented best practices for security, new attack vectors are constantly emerging. To detect and mitigate vulnerabilities, organizations should consistently audit device settings and health.
+AWS IoT Device Defender helps you manage IoT security
+Audit device configurations for security vulnerabilities
+AWS IoT Device Defender audits IoT configurations associated with your devices against a set of defined IoT security best practices so you know exactly where you have security gaps. You can run audits on a continuous or ad-hoc basis. AWS IoT Device Defender comes with security best practices that you can select and run as part of the audit. For example, you can create an audit to check for identity certificates that are inactive, revoked, expiring, or pending transfer in less than 7 days. Audits make it possible for you to receive alerts as your IoT configuration is updated.
+Continuously monitor device behavior to identify anomalies
+AWS IoT Device Defender detects anomalies in device behavior that may indicate a compromised device by monitoring high-value security metrics from the cloud and AWS IoT Core and comparing them against expected device behavior that you define. For example, AWS IoT Device Defender lets you define how many ports are open on the device, who the device can talk to, where it is connecting from, and how much data it sends or receives. Then it monitors the device traffic and alerts you if something looks wrong, like traffic from devices to a known malicious IP or unauthorized endpoints.
+Receive alerts and take action
+AWS IoT Device Defender publishes security alerts to the AWS IoT Console, Amazon CloudWatch, and Amazon SNS when an audit fails or when behavior anomalies are detected so you can investigate and determine the root cause. For example, AWS IoT Device Defender can alert you when device identities are accessing sensitive APIs. AWS IoT Device Defender also recommends actions you can take to minimize the impact of security issues such as revoking permissions, rebooting a device, resetting factory defaults, or pushing security fixes to any of your connected devices.
+How does AWS IoT Device Defender work
+AWS IoT Core provides the security building blocks for you to securely connect devices to the cloud and to other devices. The building blocks allow enforcing security controls such as authentication, authorization, audit logging and end-to-end encryption. However, human or systemic errors and authorized actors with bad intentions can introduce configurations with negative security impacts.
+AWS IoT Device Defender helps you to continuously audit security configurations for compliance with security best practices and your own organizational security policies. For example, cryptographic algorithms once known to provide secure digital signatures for device certificates can be weakened by advances in the computing and cryptanalysis methods. Continual auditing allows you to push new firmware updates and redefine certificates to ensure your devices stay ahead of malicious actors.
+When to use AWS IoT Device Defender for IoT security
+IoT security solutions are critical across commercial, industrial, and consumer applications such as connected home and industrial applications.
+Continuous compliance and adoption of security best practices
+The AWS IoT security team is continuously updating a knowledge base of security best practices. AWS IoT Device Defender makes this expertise available in a service and simplifies the process of establishing and auditing best practices within your AWS IoT environment. AWS IoT Device Defender helps you reduce the risk of introducing security issues during the development and deployment of your IoT application by automating the security assessment of your cloud configurations and device fleets so you can proactively manage security issues before they impact production.
+Attack surface evaluation
+With AWS IoT Device Defender, you can identify attack vectors applicable to your specific IoT devices. Having this visibility allows you to prioritize eliminating or hardening the relevant system components based on the operational requirements. For example, you can configure AWS IoT Device Defender to detect use of insecure network services and protocols with known security weaknesses. Upon detection, you can plan the appropriate remediation to prevent unauthorized device access or possible data disclosure.
+Threat impact analysis
+AWS IoT Device Defender can facilitate impact analysis of publicly or privately disclosed attack campaigns on your IoT devices. You can define detection rules in AWS IoT Device Defender based on known indicators of compromise to identify vulnerable devices or devices already compromised. For example, the detection rules can monitor IoT devices for indicators such as network connections to known malicious command and control servers and backdoor service ports open on devices.
+Customers
+“AWS IoT Device Defender provides device behavior monitoring that is a must-have for any IoT company that is building a secure infrastructure.”
+- Franz Garsombke, CTO, Rachio
+"SolarNow’s business reputation and revenue model is built on zero-tolerance of any controllable service disruption. AWS IoT Device Defender and Eseye global AnyNet Secure connectivity is the easiest, quickest, and most cost-effective way for us to achieve and scale a high level of device security and anomaly detection. This protects our customers from service interruptions and SolarNow’s reputation for excellent customer service.”
+- Peter Huisman, CTO, SolarNow
+Blog posts & webinars
+AWS IoT Device Defender Now Available - Keep Your Connected Devices Safe Jeff Barr 2 AUG 2018
+Detect Anomalies on Connected Devices Using AWS IoT Device Defender Atul Bargaje 14 SEPT 2018
+Announcing AWS IoT Device Defender (40:57)
+At AWS, security is a top priority. Join us to discuss how to use AWS IoT services, such as AWS IoT Core, AWS IoT Device Management, and AWS IoT Device Defender, to improve the security of IoT applications. We discuss IoT security best practices and cover how to manage security across IoT fleets, including monitoring and auditing of devices. Hear from AWS IoT experts, AWS customer Rachio, and AWS partner Eseye on their experience in securing devices.
+Get started with AWS IoT Device Defender
+Sign into the console
+Instantly access the AWS IoT Device Defender
+console.
+Learn how to use AWS IoT Device Defender
+Take the online
+training course and explore the technical
+documentation.
+Explore key features
+Visit the features page to explore audit and detect.
+Learn more about AWS IoT Device Defender
+Visit the features page
+Ready to build?
+Get started with AWS IoT Device Defender
+Have more questions?
+Contact us

@@ -1,0 +1,46 @@
+Amazon Braket
+Explore and experiment with quantum computing
+Get Started with Amazon Braket
+Amazon Braket is a fully managed quantum computing service that helps researchers and developers get started with the technology to accelerate research and discovery. Amazon Braket provides a development environment for you to explore and build quantum algorithms, test them on quantum circuit simulators, and run them on different quantum hardware technologies.
+Quantum computing has the potential to solve computational problems that are beyond the reach of classical computers by harnessing the laws of quantum mechanics to process information in new ways. This approach to computing could transform areas such as chemical engineering, material science, drug discovery, financial portfolio optimization, and machine learning. But defining those problems and programming quantum computers to solve them requires new skills, which are difficult to acquire without easy access to quantum computing hardware.
+Amazon Braket overcomes these challenges so you can explore quantum computing. With Amazon Braket you can design and build your own quantum algorithms from scratch or choose from a set of pre-built algorithms. Once you have built your algorithm, Amazon Braket provides a choice of simulators to test, troubleshoot and run your algorithms. When you are ready, you can also run your algorithm on your choice of different quantum computers, including quantum annealers from D-Wave, and gate-based computers from Rigetti and IonQ. With Amazon Braket you can now evaluate the potential of quantum computing for your organization, and build expertise.
+Amazon Braket Launched - Start Exploring Quantum Computing Today with AWS (2:26)
+Benefits
+Get started quickly
+Amazon Braket provides a single environment to build, test, and run quantum algorithms without having to set up and manage infrastructure, negotiate access with multiple quantum hardware providers, and write code to integrate different environments. Amazon Braket provides fully-managed Jupyter notebooks that you can use to explore possible applications, visualize your results, and optimize quantum algorithms. You can choose from notebooks with pre-installed developer tools, sample algorithms, and tutorials that make it easy to get started quickly.
+Experiment with different quantum computing technologies
+Amazon Braket gives you access to a variety of different types of hardware, including quantum annealers and gate-based systems built on superconducting qubits and ion traps. Amazon Braket’s cross-platform developer tools provide a consistent experience so you don’t need to learn multiple development environments. This makes it easy to explore which quantum computing technology is the best fit for your applications.
+Get expert help
+The Amazon Quantum Solutions Lab is a collaborative research and consulting program that connects you with quantum computing experts from AWS and our technology and consulting partners. Its engagements are specifically customized to the needs of your organization, and help you build internal expertise and accelerate the development of new quantum applications.
+Run hybrid quantum and classical algorithms
+With Amazon Braket, you can build and run hybrid quantum algorithms that combine quantum operations with optimization and other processes running on classical computers. Hybrid algorithms use an iterative approach to help mitigate the effect of errors inherent in today's quantum computing systems.
+Integrated cloud experience
+Amazon Braket delivers quantum computing as an AWS Cloud service, so you can apply your organization's cloud best practices, and also tap into elastic compute and machine learning capabilities from the same console. Native support for AWS security and management services simplifies access control, data protection, operational monitoring, and auditing.
+How it works
+Quantum Applications
+Building useful quantum applications requires new skills and potentially radically different approaches to problem solving. Building this expertise will take time and requires access to quantum technologies and programming tools. Amazon Braket helps organizations begin exploring the potential of quantum computers today, and prepare for the future.
+Molecular simulation
+Although many approximation methods have been introduced, simulating quantum systems in physics and chemistry still represents a significant challenge for classical computers. However, the unique features of quantum computers and the ability to natively manipulate quantum mechanical states creates the potential to efficiently solve important problems such as describing the electronic structure of molecules. Simulation of quantum systems will have broad applications including the design of new materials and catalysts, drug discovery, and the exploration of high-temperature superconductors.
+Optimization
+Optimization problems are ubiquitous across many industries including telecommunications, supply chain logistics, and financial services. Finding the optimal approach from a set of alternatives can overwhelm classical computers as the number of possible combinations drives up complexity. Quantum computing can be used to address a wide range of these problems, for instance in the field of combinatorial optimization by accelerating linear programming algorithms and Monte Carlo methods. While future error-corrected quantum computers have provable speed-ups, near-term devices can be used to run heuristic algorithms which might already offer an advantage.
+Quantum Machine Learning
+Machine learning provides methods for systems to learn from data, identify patterns, and make decisions in an autonomous way. Scalable error-corrected quantum computers can improve many widely used tools in machine learning including recommendation systems and support-vector machines for classification. Quantum computing also has the potential of offering a richer class of learning models.
+Quantum Hardware Technologies
+Gate-based superconducting qubits
+Superconducting qubits are built with superconducting electric circuits that operate at cryogenic temperature. Amazon Braket provides access to quantum hardware based on superconducting qubits from Rigetti.
+Gate-based ion traps
+Trapped-ion quantum computers implement qubits using electronic states of charged atoms called Ions. The ions are confined and suspended in free space using electromagnetic fields. Amazon Braket provides access to ion trap quantum computers from IonQ.
+Quantum annealing
+Quantum annealing uses a physical process to find a low energy configuration that encodes the solution of an optimization problem. Amazon Braket provides access to quantum annealing technology based on superconducting qubits from D-Wave.
+Learn more
+Learn more
+Learn more
+Check out the product features
+Learn more about Amazon Braket
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign up to get started
+Sign up or sign into the console to get started
+Sign up

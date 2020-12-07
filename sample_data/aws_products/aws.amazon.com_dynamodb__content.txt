@@ -1,0 +1,140 @@
+Amazon DynamoDB
+Fast and flexible NoSQL database service for any scale
+Get started with Amazon DynamoDB on the AWS Free Tier
+Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multi-region, multi-active, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
+Many of the world's fastest growing businesses such as Lyft, Airbnb, and Redfin as well as enterprises such as Samsung, Toyota, and Capital One depend on the scale and performance of DynamoDB to support their mission-critical workloads.
+Hundreds of thousands of AWS customers have chosen DynamoDB as their key-value and document database for mobile, web, gaming, ad tech, IoT, and other applications that need low-latency data access at any scale. Create a new table for your application and let DynamoDB handle the rest.
+Introduction to Amazon DynamoDB (1:01)
+Benefits
+Performance at scale
+DynamoDB supports some of the world’s largest scale applications by providing consistent, single-digit millisecond response times at any scale. You can build applications with virtually unlimited throughput and storage. DynamoDB global tables replicate your data across multiple AWS Regions to give you fast, local access to data for your globally distributed applications. For use cases that require even faster access with microsecond latency, DynamoDB Accelerator (DAX) provides a fully managed in-memory cache.
+Learn more »
+No servers to manage
+DynamoDB is serverless with no servers to provision, patch, or manage and no software to install, maintain, or operate. DynamoDB automatically scales tables up and down to adjust for capacity and maintain performance. Availability and fault tolerance are built in, eliminating the need to architect your applications for these capabilities. DynamoDB provides both provisioned and on-demand capacity modes so that you can optimize costs by specifying capacity per workload, or paying for only the resources you consume.
+Learn more »
+Enterprise ready
+DynamoDB supports ACID transactions to enable you to build business-critical applications at scale. DynamoDB encrypts all data by default and provides fine-grained identity and access control on all your tables. You can create full backups of hundreds of terabytes of data instantly with no performance impact to your tables, and recover to any point in time in the preceding 35 days with no downtime. You also can export your DynamoDB table data to your data lake in Amazon S3 to perform analytics at any scale. DynamoDB is also backed by a service level agreement for guaranteed availability.
+Learn more »
+Applications
+Serverless Web Apps
+Build powerful web applications that automatically scale up and down. You don't need to maintain servers, and your applications have automated high availability.
+Reference architecture: Sample code
+Mobile Backends
+Use DynamoDB and AWS AppSync to build interactive mobile and web apps with real-time updates, offline data access, and data sync with built-in conflict resolution.
+Reference architecture: Sample code
+Microservices
+Build flexible and reusable microservices using DynamoDB as a serverless data store for consistent and fast performance.
+Reference architecture: Sample code
+Use cases
+Ad Tech
+Companies in the advertising technology (ad tech) vertical use DynamoDB as a key-value store for storing various kinds of marketing data, such as user profiles, user events, clicks, and visited links. Applicable use cases include real-time bidding (RTB), ad targeting, and attribution. These use cases require a high request rate (millions of requests per second), low predictable latency, and reliability. Companies use caching through DynamoDB Accelerator (DAX) when they have high read volumes or need submillisecond read latency. Increasingly, ad tech companies need to deploy their RTB and ad targeting platforms in more than one geographical AWS Region, which requires data replication between Regions.
+Gaming
+Companies in the gaming vertical use DynamoDB in all capabilities of game platforms, including game state, player data, session history, and leaderboards. The main benefits that these companies get from DynamoDB are its ability to scale reliably to millions of concurrent users and requests while ensuring consistently low latency measured in single-digit milliseconds. In addition, as a fully managed service, DynamoDB has no operational overhead, so game developers can focus on developing their games instead of managing databases. Also, as game developers are increasingly looking to expand from a single AWS Region to multiple AWS Regions, they can rely on DynamoDB global tables for multiple-Region, active-active replication of data.
+Common use cases:
+User profile stores in RTB and ad targeting
+User events, clickstreams, and impressions data store
+Metadata stores for assets
+Popular-item caches
+Read this blog post to learn more »
+AdRoll Uses AWS to Serve 50 Billion Daily Ad Impressions
+Common use cases:
+Game states
+Player data stores
+Player session history data stores
+Leaderboards
+Learn more about AWS databases for games »
+The Pokémon Company migrated global configuration and time-to-live (TTL) data to Amazon DynamoDB, resulting in a 90 percent reduction in bot login attempts.
+Read the case study »
+Retail
+Many companies in the retail space use common DynamoDB design patterns to deliver consistently low latency for mission-critical use cases. Being free from scaling concerns and operational burden is a key competitive advantage and an enabler for high-velocity, extreme-scaled events such as Amazon Prime Day, whose magnitudes are difficult to forecast. Scaling up and down allows these customers to pay only for the capacity they need and keeps precious technical resources focused on innovations rather than operations.
+Banking and Finance
+As companies in banking and finance build more cloud-native applications, they seek to use fully managed services to increase agility, reduce time to market, and minimize operational overhead. At the same time, they have to ensure the security, reliability, and high availability of their applications. As these companies expand their existing services that are backed by legacy mainframe systems, they find that legacy systems are unable to meet the scalability demands of their growing user base, new platforms such as mobile applications, and the resulting increases in traffic. To solve this problem, they replicate data from their mainframes to the cloud to offload the traffic.
+Common use cases:
+Shopping carts
+Workflow engines
+Inventory tracking and fulfillment
+Customer profiles and accounts
+Learn more about retail with AWS »
+Nordstrom Goes All in on AWS
+Common use cases:
+User transactions
+Event-driven transaction processing
+Fraud detection
+Mainframe offloading and change data capture
+Learn more about AWS Financial Services »
+Unlocking Innovation at Vanguard with AWS
+Media and entertainment
+Media and entertainment companies use DynamoDB when they require an extreme scale of throughput and concurrency, low latency, and reliability. DynamoDB scales elastically to handle the load and maintains low latency that is critical for real-time scenarios, such as video streaming and interactive content. In such scenarios, the number of concurrent users can reach millions, and no database handles that kind of concurrency as well as DynamoDB. Despite such high concurrency, the latency remains low, affording individual users optimal user experience, whether it involves retrieving their media, or participating in an interactive, real-time event. These companies use DynamoDB to address their scalability challenges and to keep their focus on feature development and not on database management.
+Software and internet
+One key commonality among software companies and many other DynamoDB customers is internet scale. These companies’ use cases require the ability to accommodate extreme concurrency, request rates, and spikes in traffic. This concurrency is measured in millions of users and connections, and request rates can easily reach millions per second. DynamoDB has a proven record of being able to handle internet-scale use cases and their requirements while maintaining consistent, single-digit millisecond latency. With global tables, DynamoDB customers can easily expand their applications to multiple AWS Regions for global reach and business continuity.
+Common use cases:
+Media metadata stores
+User data stores
+Digital rights management data stores
+Learn more about media & entertainment with AWS »
+A+E Networks migrates to AWS, and it costs less than a latte to run their Access app for 1 day on a serverless architecture using Amazon DynamoDB.
+Read the case study »
+Common use cases:
+User content metadata stores
+Relationship graph data stores
+Metadata caches
+Ride-tracking data stores
+User, vehicle, and driver data stores
+User vocabulary data stores
+Watch this video on Twitch to learn more »
+Duolingo Stores 31 Billion Items in DynamoDB to Deliver Lessons Globally
+Read the case study »
+Customers
+Nike
+Nike Digital migrated their large clusters of Cassandra to a fully managed Amazon DynamoDB, allowing more resources for better customer experience.
+Watch the video »
+The U.S. Census Bureau uses DynamoDB to scale response collection on mobile or desktop, allowing people to participate in its decennial count online for the first time.
+Read the case study »
+The Pokémon Company migrated global configuration and Time to Live (TTL) data to Amazon DynamoDB, resulting in a 90 percent reduction in bot login attempts.
+Read the case study »
+Samsung Electronics uses Amazon DynamoDB for their petabyte-sized mobile app backups, resulting in consistent high performance and cost savings.
+Watch the video »
+A+E Networks migrates to AWS, and it costs less than a latte to run their cloud-native Access app for 1 day on a serverless architecture using Amazon DynamoDB.
+Read the case study »
+Netflix uses DynamoDB to run A/B testing that builds personalized streaming experiences for their 125+ million customers.
+Watch the video »
+Capital One uses DynamoDB to reduce latency for their mobile applications by moving their mainframe transactions to a serverless architecture for unbound scale.
+Watch the video »
+FanFight migrated its fantasy sports app to DynamoDB, allowing it to reduce costs by 50%, scale up to 1 million writes per second, and increase per-day revenue 4x.
+Read the case study »
+See more case studies »
+Lyft leverages the scalability of DynamoDB for multiple data stores, including a ride-tracking system that stores GPS coordinates for all rides.
+Read the case study »
+Tinder migrated user data to DynamoDB with zero downtime and leveraged the scalability of DynamoDB to meet the needs of their growing global user base.
+Watch the video »
+Airbnb uses DynamoDB to scale their operations to a global user base, while optimizing their real-time processing workflows to analyze data.
+Watch the video »
+Comcast uses DynamoDB to rapidly innovate and deploy updates to their XFINITY X1 video service running on more than 20 million devices.
+Read the case study »
+Rockset's direct integration with DynamoDB, through DynamoDB Streams, enables them to iterate fast and gain huge time savings that benefit their customers.
+Read the case study »
+Expedia built a rich, high-performance streaming system using DynamoDB to deliver fast, on-demand access to reference data sets for analytics.
+Watch the video »
+Snap migrated their largest storage workload, Snapchat Stories, to DynamoDB and improved performance while reducing costs.
+Watch the video »
+GE Aviation rearchitected their plotting and data-query application for cost savings, scalability, and performance using Amazon DynamoDB.
+Watch the video »
+Amazon workflow engines run on DynamoDB for millisecond response times, allowing customers to get their orders faster.
+Read the case study »
+Oath deployed GDPR compliance for their applications globally and leveraged Amazon DynamoDB global tables to enable data synchronization.
+Watch the video »
+GumGum moved to Amazon DynamoDB from Apache Cassandra for better performance, cost savings, and maintenance reductions.
+See the slides »
+Redfin runs its business analytics operation on AWS, which allows it to innovate quickly with a small staff while managing billions of property records.
+Read the case study »
+Show less
+Get started with Amazon DynamoDB on the AWS Free Tier
+Check out the product features
+Learn more about performance at scale, serverless, and enterprise-ready features.
+Learn more
+Sign up for a free account
+Sign up and access the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon DynamoDB in the AWS Management Console.
+Sign in

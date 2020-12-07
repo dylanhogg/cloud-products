@@ -1,0 +1,31 @@
+AWS Application Discovery Service
+Discover on-premises server inventory and behavior
+Get started with AWS Application Discovery Service
+AWS Application Discovery Service helps enterprise customers plan migration projects by gathering information about their on-premises data centers.
+Planning data center migrations can involve thousands of workloads that are often deeply interdependent. Server utilization data and dependency mapping are important early first steps in the migration process. AWS Application Discovery Service collects and presents configuration, usage, and behavior data from your servers to help you better understand your workloads.
+The collected data is retained in encrypted format in an AWS Application Discovery Service data store. You can export this data as a CSV file and use it to estimate the Total Cost of Ownership (TCO) of running on AWS and to plan your migration to AWS. In addition, this data is also available in AWS Migration Hub, where you can migrate the discovered servers and track their progress as they get migrated to AWS.
+Benefits
+Reliable Discovery for Migration Planning
+AWS Application Discovery Service collects server specification information, performance data, and details of running processes and network connections. This data can be used to perform a detailed cost estimate in advance of migrating to AWS, or to group servers into applications for planning purposes.
+Integrated with Migration Hub
+AWS Application Discovery Service is integrated with AWS Migration Hub, which simplifies your migration tracking. After performing discovery and grouping your servers as applications, you can use Migration Hub to track the status of migrations across your application portfolio.
+Protect Data with Encryption
+AWS Application Discovery Service provides protection for the collected data by encrypting it both in transit to AWS and at rest within the Application Discovery Service data store.
+Engage with Migration Experts
+AWS Professional Services and APN Migration Partners have helped many enterprise customers successfully complete their migration to the cloud. These professionals are trained to analyze Application Discovery Service output and can help you gain further insights about your on-premises environment and recommend appropriate migration strategies.
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS Application Discovery Service
+Visit the features page
+Ready to build?
+Get started with AWS Application Discovery Service
+Have more questions?
+Contact us

@@ -1,0 +1,44 @@
+Amazon EC2 Auto Scaling
+Add or remove compute capacity to meet changes in demand
+Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define. You can use the fleet management features of EC2 Auto Scaling to maintain the health and availability of your fleet. You can also use the dynamic and predictive scaling features of EC2 Auto Scaling to add or remove EC2 instances. Dynamic scaling responds to changing demand and predictive scaling automatically schedules the right number of EC2 instances based on predicted demand. Dynamic scaling and predictive scaling can be used together to scale faster.
+New AWS Blogs
+Automatically scale across purchase options in a single ASG. Read the Blog »
+Proactively respond to changing traffic with Predictive Scaling. Read the Blog>>
+Benefits
+Improve Fault Tolerance
+Amazon EC2 Auto Scaling can detect when an instance is unhealthy, terminate it, and replace it with a new one.
+Increase Application Availability
+Amazon EC2 Auto Scaling ensures that your application always has the right amount of compute, and also proactively provisions capacity with Predictive Scaling.
+Lower Costs
+Amazon EC2 Auto Scaling adds instances only when needed, and can scale across purchase options to optimize performance and cost.
+How it works
+Fleet Management
+Whether you are running one Amazon EC2 instance or thousands, you can use Amazon EC2 Auto Scaling to detect impaired Amazon EC2 instances and unhealthy applications, and replace the instances without your intervention. This ensures that your application is getting the compute capacity that you expect. Amazon EC2 Auto Scaling will perform three main functions to automate fleet management for EC2 instances:
+Monitor the health of running instances Amazon EC2 Auto Scaling ensures that your application is able to receive traffic and that EC2 instances are working properly. Amazon EC2 Auto Scaling periodically performs health checks to identify any instances that are unhealthy.
+Replace impaired instances automatically When an impaired instance fails a health check, Amazon EC2 Auto Scaling automatically terminates it and replaces it with a new one. That means that you don’t need to respond manually when an instance needs replacing.
+Balance capacity across Availability Zones Amazon EC2 Auto Scaling can automatically balance instances across zones, and always launches new instances so that they are balanced between zones as evenly as possible across your entire fleet.
+Learn more by reading our blog
+Automating Management of EC2 Instances
+Scheduled Scaling
+Scaling based on a schedule allows you to scale your application ahead of known load changes. For example, every week the traffic to your web application starts to increase on Wednesday, remains high on Thursday, and starts to decrease on Friday. You can plan your scaling activities based on the known traffic patterns of your web application.
+Dynamic Scaling
+Amazon EC2 Auto Scaling enables you to follow the demand curve for your applications closely, reducing the need to manually provision Amazon EC2 capacity in advance. For example, you can use target tracking scaling policies to select a load metric for your application, such as CPU utilization. Or, you could set a target value using the new “Request Count Per Target” metric from Application Load Balancer, a load balancing option for the Elastic Load Balancing service. Amazon EC2 Auto Scaling will then automatically adjust the number of EC2 instances as needed to maintain your target.
+Auto Scaling Prime Time: Target Tracking Hits the Bullseye at Netflix
+Predictive Scaling
+Predictive Scaling, a feature of AWS Auto Scaling uses machine learning to schedule the right number of EC2 instances in anticipation of approaching traffic changes. Predictive Scaling predicts future traffic, including regularly-occurring spikes, and provisions the right number of EC2 instances in advance. Predictive Scaling’s machine learning algorithms detect changes in daily and weekly patterns, automatically adjusting their forecasts. This removes the need for manual adjustment of Auto Scaling parameters as cyclicality changes over time, making Auto Scaling simpler to configure. Auto Scaling enhanced with Predictive Scaling delivers faster, simpler, and more accurate capacity provisioning resulting in lower cost and more responsive applications.
+Get started with Amazon EC2 Auto Scaling
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Get started with a
+simple tutorial.
+Start building with AWS
+Launch your
+AWS project with step-by-step guides.
+Learn more about Amazon EC2 Auto Scaling features
+Visit the features page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us

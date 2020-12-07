@@ -1,0 +1,78 @@
+Amazon QuickSight
+Scalable, serverless, embeddable, ML-powered BI Service built for the cloud
+Get started for free
+Request a proof-of-concept
+Amazon QuickSight is a scalable, serverless, embeddable, machine leaning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights. QuickSight dashboards can be accessed from any device, and seamlessly embedded into your applications, portals, and websites.
+QuickSight is serverless and can automatically scale to tens of thousands of users without any infrastructure to manage or capacity to plan for. It is also the first BI service to offer pay-per-session pricing, where you only pay when your users access their dashboards or reports, making it cost-effective for large scale deployments.
+With QuickSight, you can ask business questions of your data in plain language and receive answers in seconds.
+2020 Launches Recap »
+Benefits
+Scale from tens to tens of thousands of users
+Amazon QuickSight has a serverless architecture that automatically scales to tens of thousands of users without the need to setup, configure, or manage your own servers. It also ensures that your users don’t have to deal with slow dashboards during peak-hours, when multiple BI users are accessing the same dashboards or datasets. And with a pay-per-session pricing, you only pay when your users access the dashboards or reports, which makes it cost-effective for deployments with lots of users. There are no upfront costs or annual commitments for using QuickSight.
+Embed BI dashboards in your applications
+With QuickSight, you can quickly embed interactive dashboards into your applications, websites, and portals. QuickSight provides a rich set of APIs and SDKs that allow you to easily customize the look and feel of the dashboards to match applications. With QuickSight, you can manage your dashboard versions, grant dashboard authoring privileges, and share usage reports with your end-customers. If your application is used by customers that belong to different teams or organizations, QuickSight ensures that their data is always siloed and secure.
+Access deeper insights with Machine Learning
+QuickSight leverages AWS’s proven machine learning (ML) capabilities , making it easy for BI teams to perform advanced analytics (for e.g., what-if analyses, anomaly detection, ML-based forecasting, churn prediction etc.) without prior data science experience. You can use QuickSight’s pre-built models or bring your own ML models from Amazon SageMaker, which integrate with QuickSight in a few clicks. QuickSight also uses ML to automatically generate a summary of your dashboard in plain language, which interprets and describes key insights from your data, so everyone has a consistent and shared understanding.
+Ask questions of your data, receive answers
+With QuickSight, you can quickly get answers to business questions asked in natural language. Previously, to get answers for such questions, business users relied on BI teams to update data models and dashboards, which would take several weeks to complete. But with QuickSight’s new ML-powered natural language query capability, Q, you simply use plain English and enter the question in the search bar (for e.g., what is the year-over-year sales trend?) and get answers in seconds. Q extracts business terminologies and intent from users’ questions, retrieves the corresponding data from the source, and returns the answer as a number, chart, or table.
+Embedded Analytics
+Seamlessly embed the ability to both view and author dashboards within your applications.
+Embedded Analytics
+Seamlessly embed the ability to both view and author dashboards within your applications.
+ML Insights
+Summarize your business metrics in plain language or use machine learning to predict outcomes such as anomaly detection or forecasting without prior data science experience.
+ML Insights
+Summarize your business metrics in plain language or use machine learning to predict outcomes such as anomaly detection or forecasting without prior data science experience.
+Amazon QuickSight Q
+Ask question using natural language, on all your data, and receive answers in seconds.
+Amazon QuickSight Q
+Ask question using natural language, on all your data, and receive answers in seconds.
+How it works
+Use cases
+Operational Databases (e.g., Amazon RDS)
+Data Warehouses (e.g. Amazon Redshift)
+Data Lakes (e.g. Amazon S3)
+Operational Databases (e.g., Amazon RDS)
+Connecting QuickSight to your data in operational databases (e.g. Amazon RDS)
+Data Warehouses (e.g. Amazon Redshift)
+Connecting QuickSight to your Data Warehouse (e.g. Amazon RedShift)
+Data Lakes (e.g. Amazon S3)
+Connecting QuickSight to your Data Lakes (e.g. Amazon S3)
+Customer stories
+Matt Swensson
+VP of Emerging Products
+"Amazon QuickSight will allow us to quickly build fast, interactive dashboards that will seamlessly integrate with our Next Gen Stats applications. We are able to extend these secure, customized and easy to use dashboards for each Club without having to provision servers or manage infrastructure – all while only paying for actual usage. We look forward to expanding use of Amazon QuickSight."
+Rachel Scherer
+Sr. Director of Data & Analytics
+“We see a need to support learners, teachers, and leaders in education by helping to change their relationship with data and information. A large part of this strategy involves embedding information directly where our users are collaborating, teaching, and learning. We’re particularly interested in making the experience of being informed much more intuitive—favoring insight-informed workflows and/or embedded prose.By removing the step of interpretation, embedded visualizations make insights more useful and actionable. With QuickSight, we were able to deliver on our promise of embedding visualizations quickly, supporting the rapid iteration that we require, at the large scale needed to support our global user community.”
+Joseph Landucci
+Senior Manager, Database and Enterprise Analytics
+“Amazon QuickSight’s pay-per-use pricing and serverless architecture enabled Best Western’s analytics team to deliver increased value to the business, faster and at less than half the cost of our previous analytics architecture. With Amazon QuickSight Q, we look forward to enabling our business partners to self-serve their ad-hoc questions while reducing the operational overhead. This will allow our partners to get answers to their business questions quickly by typing and searching their questions in plain language.”
+Anand Desikan
+Director of Cloud and Data Services
+“We started using Amazon QuickSight to report on in-flight Wi-Fi performance, and with its rich APIs, pay-per-session pricing, and ability to scale, we quickly rolled out Amazon QuickSight dashboards to hundreds of users. The constant evolution of the platform has been impressive, and now with Amazon QuickSight Q our users can consume insights by simply typing their business questions in the search bar and Q interprets the business context, provides synonyms, and shows them an answer with no complex interpretation needed.”
+Massimilliano Ponticelli
+Product Manager
+"The QuickSight pay-per-session dashboard access allows secure, fast and cost-effective access to interactive data. As a cloud-based solution, QuickSight automatically scales to our needs. The combination of being able to connect to data from a private Virtual Private Cloud (VPC) through PrivateLink, authenticate users via SAML, easily author dashboards with drill downs and rich visuals, and allow read-only access to a large audience --without any infrastructure management, and with usage-based pricing--makes it the obvious choice."
+Anders Rahm-Nilzon
+Cloud Manager
+"Amazon QuickSight's native integration with Amazon Athena makes it the ideal serverless analytics solution. With QuickSight we can easily extend access to interactive dashboards across our teams and only pay for what we use. The move from static email reports and ad-hoc analysis to always-available data in QuickSight has been great."
+Anthony Deakin
+Critical Risk Management
+"At Rio Tinto, safety is paramount, and we want to empower everyone to make decisions with the best data available. Amazon QuickSight allows our analysts to create insightful dashboards quickly for our critical risk management program, enabling us to move from static spreadsheets to interactive data. However, rolling out these dashboards at scale to the field was going to be costly and complicated. We asked AWS for a better solution, and they listened. The ability to have ‘read’ access to dashboards in QuickSight, with usage-based pricing, will help us scale the dashboards to more end-users across the world and only pay for what we use."
+Gopal Ramamurthi
+Sr. Director Analytics & Enterprise Data Management
+“In less than two months, we were able to pivot our old BI reporting tool into Amazon QuickSight. We gained so much in terms of ease of management, especially while scaling the tool to support the increase in number of BI users. Now with the launch of Amazon QuickSight Q, we are looking forward to make it easier for our ELT, Sales users in the field & Supervisors in the Manufacturing Plant, to ask their data questions in plain English, providing faster insights that help in making our processes even more efficient”
+Peter Tyson
+Senior Data Engineer
+“With Amazon QuickSight, we have been able to quickly roll out new ML-powered BI dashboards at scale and without any server setup or capacity planning. Now, with the launch of Amazon QuickSight Q, we look forward to making it easy for our users to quickly get answers to their ad-hoc business questions."
+View more Amazon QuickSight customers »
+Check out the product features
+Learn more about Amazon QuickSight.
+Learn more
+Sign up for the newsletter
+Learn about new features, tips, and how-to's
+Sign up
+Get started in the console
+Start building with Amazon QuickSight.
+Sign in

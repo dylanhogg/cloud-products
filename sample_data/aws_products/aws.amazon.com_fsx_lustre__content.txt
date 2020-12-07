@@ -1,0 +1,42 @@
+Amazon FSx for Lustre
+Fast and scalable shared storage to power your compute workloads
+Get started with Amazon FSx for Lustre
+Amazon FSx for Lustre is a fully managed service that provides cost-effective, high-performance, scalable storage for compute workloads. Many workloads such as machine learning, high performance computing (HPC), video rendering, and financial simulations depend on compute instances accessing the same set of data through high-performance shared storage.
+Powered by Lustre, the world's most popular high-performance file system, FSx for Lustre offers sub-millisecond latencies, up to hundreds of gigabytes per second of throughput, and millions of IOPS. It provides multiple deployment options and storage types to optimize cost and performance for your workload requirements.
+FSx for Lustre file systems can also be linked to Amazon S3 buckets, allowing you to access and process data concurrently from both a high-performance file system and from the S3 API.
+Overview: Amazon FSx for Lustre
+Benefits
+Highly-performant and scalable
+Amazon FSx for Lustre delivers the performance to satisfy a wide variety of high-performance workloads. The Lustre file system is optimized for data processing, with sub-millisecond latencies and throughput that scales to hundreds of gigabytes per second. In just a few clicks, you can access high-performance shared storage from tens of thousands of compute instances and scale up storage capacity on-demand.
+Easy to use with S3 data
+Amazon FSx for Lustre makes it easy to process your cloud datasets in S3. When linked to an S3 bucket, FSx for Lustre transparently presents objects as files, allowing you to run your workload without managing data transfer from S3. As the contents of your S3 bucket change, FSx for Lustre automatically updates your file system with the latest data available to run your workload.
+Cost-effective
+Amazon FSx for Lustre offers a range of storage options to optimize price and performance. Solid-State Drive (SSD) storage is optimized for latency-sensitive workloads. Hard Disk Drive (HDD) storage is optimized for throughput-focused workloads. You can also choose unreplicated, scratch file systems to further lower costs for shorter-term processing of data.
+Designed for any Linux workload
+Amazon FSx for Lustre is POSIX-compliant, so you can use your current Linux-based applications without having to make any changes. FSx for Lustre provides a native file system interface and works as any file system does with your Linux operating system. It provides read-after-write consistency and supports file locking. You can access your file systems from Amazon EC2 instances, Amazon EKS clusters, and from on premises using AWS Direct Connect or AWS VPN.
+Simple and fully managed
+Amazon FSx for Lustre makes it easy to launch and run the high-performance Lustre file system in the cloud. You no longer need to worry about hardware provisioning and maintenance, software configuration, backup management, monitoring storage consumption, and complex performance tuning of file systems. In minutes, you can create and scale an Amazon FSx for Lustre file system by using the AWS Management Console, the AWS CLI, or an AWS SDK.
+Secure and compliant
+Amazon FSx for Lustre automatically encrypts your data at-rest and in-transit. FSx for Lustre is PCI-DSS, ISO, and SOC compliant, and is HIPAA eligible. You can control network access with POSIX permissions or with Amazon Virtual Private Cloud (VPC) Security Group rules. To meet data protection requirements, you can also use AWS Backup for centralized backup and compliance management for your persistent FSx for Lustre file systems not linked to an S3 durable data repository.
+Use cases
+Machine learning
+Machine learning workloads use massive amounts of training data. These workloads often use shared file storage because multiple compute instances need to process the training datasets concurrently. FSx for Lustre is optimal for machine learning workloads, because it provides shared file storage with high throughput and consistent, low latencies to process the ML training datasets. FSx for Lustre is also integrated with Amazon SageMaker, allowing you to accelerate your training jobs.
+High performance computing
+High performance computing (HPC) enables scientists and engineers to solve complex, compute-intensive problems. HPC workloads, like oil & gas discovery, and genome analysis, process massive amounts of data that need to be accessed by multiple compute instances with high levels of throughput. FSx for Lustre is ideal for HPC and scientific computing workloads because it provides a file system that’s optimized for the performance and costs of high-performance workloads, with file system access across thousands of EC2 instances. FSx for Lustre also integrates with AWS ParallelCluster and AWS Batch, making it easy to use with your HPC workloads.
+Media processing and transcoding
+Media data processing workflows, like video rendering, visual effects, and media production, need the compute and storage resources to handle the massive amounts of data being created. FSx for Lustre provides the high performance and low latencies needed for processing, distributing, and analyzing digital media files.
+Autonomous vehicles
+Customers developing autonomous vehicle systems often test models by running simulations and training on massive amounts of vehicle sensor and camera data to ensure vehicle safety. FSx for Lustre enables you to access that data simultaneously from thousands of nodes with high levels of performance, allowing you to more easily run simulations at scale and to accelerate model development.
+Big data and financial analytics
+Big data analytics use cases, including SAS Grid workloads and financial analysis, produce massive volumes of data that need high-performance storage to power data-intensive applications. Processing the ever-increasing volume of data can be costly and complicated. Amazon FSx for Lustre can process large amounts of data at scale and is performance and cost-optimized, providing faster time to discovery and value to your organization.
+Electronic design automation
+Electronic design automation (EDA) is a high-performance application used to simulate performance and failures during the design phase of silicon chip production. FSx for Lustre provides the performance and flexibility that enables you to innovate faster, design and verify new products, and scale to meet demand.
+Check out the Amazon FSx for Lustre features
+Learn about the key features of Amazon FSx for Lustre.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon FSx for Lustre in the AWS Console.
+Sign in

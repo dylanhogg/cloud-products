@@ -1,0 +1,36 @@
+Alexa for Business
+Use Alexa for work
+Get Started with Alexa for Business
+Contact Alexa for Business sales
+Alexa for Business is a service that enables organizations and employees to use Alexa to get more work done. With Alexa for Business, employees can use Alexa as their intelligent assistant to be more productive in meeting rooms, at their desks, and even with the Alexa devices they already use at home or on the go. IT and facilities managers can also use Alexa for Business to measure and increase the utilization of the existing meeting rooms in their workplace.
+Alexa for Business: Empower Your Organization to Use Alexa
+Benefits
+Improve meeting rooms experience
+Alexa for Business lets employees reserve meeting rooms and start conference calls using intuitive voice commands. Employees don’t need to use remote controls and manually dial-in to meetings, or look up room availability on the calendar. Employees can just say “Alexa, join the meeting” to start their online meeting, “Alexa, is this room booked?” to find if the meeting room is free, “Alexa, who booked the room”, to find who made the booking and “Alexa, book the room” to quickly book a meeting room. Alexa for Business can also provide end-of-meeting reminders a few minutes prior to the start of the next meeting. This encourages employees to end their meetings on time and allows the next meeting to start in a timely manner.
+Increase meeting rooms utilization
+Often, meeting rooms are reserved but not used, leading to poor utilization of expensive assets and employee frustration. Alexa for Business can automatically release booked yet unattended meeting room reservations after a chosen time period, making meeting rooms available to your employees when they need them. Alexa for Business automatically tracks meeting rooms metrics like attendance rate, recovered bookings, and most and least used rooms, which you can download and analyze to optimize the meeting rooms space at your workplace.
+Enhance employee productivity
+Alexa for Business lets your employees be more productive throughout their day at work, at home or on the go. With a few simple set-up steps, employees can link their email & calendars with Alexa. They can then ask Alexa to join online meetings, schedule or re-schedule calendar meeting events, inform meeting participants if they are running late or get work briefings to prepare for their work day. These are Alexa for Business powered features that are available from personal or workplace enrolled Alexa devices.
+Voice enable applications
+Voice offers a more intuitive way to access business applications. With Alexa for Business, IT teams can build custom skills that add a voice interface to applications such as Salesforce, ServiceNow, or any of your custom apps and services. IT teams can provide rich, personalized voice experiences that redefine the way employees get work done. Custom skills can be selectively enabled in conference rooms or for employees to use on their personal devices.
+How it Works
+Alexa for Business utilizes information about the devices, user accounts, and skills in your organization. When someone in your organization asks Alexa a question, Alexa uses this information to respond or perform the requested action. For example, when a user says “Alexa, start the meeting” in a conference room, Alexa uses the location of the device, the calendar information for the room, and the type of video conferencing equipment available, all stored in your Alexa for Business account, to start the meeting.
+Customer References
+“Our Agency has been searching for simplified tools to inform us on how many meetings are occurring in our office and the associated length used in our conference spaces, but we have never had an easy way to get those kinds of metrics. Now, with Alexa for Business’ room utilization datasets, we are able to retrieve and visualize this data quickly and easily, allowing my business to better understand our meeting room usage and make better real estate planning decisions.”
+– Michael Uccetta, VP, IT Director at EnergyBBDO
+“Employee experience is the true north star for the Glidewell IT team. With Alexa for Business, things just work now, and employees are more productive. They particularly love Alexa’s end of meeting reminder, which has been a huge help in keeping our meetings running on time. My peers that visit our offices leave impressed and inspired by how Alexa makes technology more accessible to employees.”
+- Mike Selberis, Chief Technology Officer at Glidewell Dental
+See testimonials on the Customers page >>
+Additional resources
+Using Alexa for Business to Get More Work Done with Your Personal Alexa Devices (4:22)
+Using Alexa for Business to Simplify & Optimize Your Workplace Meeting Rooms (3:42)
+Visit the Alexa for Business Blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+1
+…
+…
+Learn more about Alexa for Business features
+Visit the features page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us

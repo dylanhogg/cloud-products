@@ -1,0 +1,56 @@
+Amazon Translate
+Fluent and accurate machine translation
+Get Started with Amazon Translate
+Amazon Translate is a neural machine translation service that delivers fast, high-quality, and affordable language translation. Neural machine translation is a form of language translation automation that uses deep learning models to deliver more accurate and more natural sounding translation than traditional statistical and rule-based translation algorithms.
+With Amazon Translate, you can localize content such as websites and applications for your diverse users, easily translate large volumes of text for analysis, and efficiently enable cross-lingual communication between users.
+Intento recently ranked Amazon Translate as the top machine translation provider in 2020 across 14 language pairs, 16 industry sectors and 8 content types.
+Read Intento report »
+Benefits
+Highly Accurate & Continuously Improving
+Amazon Translate is a neural machine translation service. The translation engines are always improving from new and expanded datasets to produce more accurate translations for a wide range of use cases.
+Learn more »
+Easy to Integrate into Your Applications
+Amazon Translate removes the complexity of building real-time and batch translation capabilities into your applications with a simple API call. This makes it easy to localize an application or web site, or process multilingual data within your existing workflows.
+Learn more »
+Customizable
+With Custom Terminology and Active Custom Translation, Amazon Translate lets you customize your machine translated output. Use Custom Terminology to define how your brand names, model names, and other unique terms get translated. Use Active Custom Translation to generate a custom machine translated output that is tailored for your domain specific needs. You don’t need to build a custom translation model, you can update your model as often as you need, and you only pay for the number of characters you translate.
+Learn more »
+Cost effective
+With the power of machine translation, Amazon Translate is about a 1000x cheaper than having your content manually translated by a professional translator.
+Learn more »
+Scalable
+Whether it’s just a few words or large volumes of text, Amazon Translate easily scales to meet your translation needs with fast and reliable translations.
+Learn more »
+Versatile
+Amazon Translate can translate various content formats including Word documents, Powerpoint presentations, and Excel spreadsheets.
+Learn more »
+Use cases
+Language Localization
+It’s very difficult for human translation teams to keep up with dynamic or real-time content. With Amazon Translate, you can easily translate massive volumes of user-generated content in real-time. Websites and applications can automatically make content such as feed stories, profile descriptions, and comments, available in the user's preferred language with a click of a “translate” button.
+Text Analytics
+With Amazon Translate, you are not restricted by language barriers. Understand the social sentiment of your brand, product, or service while monitoring online conversations in different languages. Simply translate the text to English before using a natural language processing (NLP) application like Amazon Comprehend to analyze textual content in a multitude of languages.
+Communication
+Amazon Translate can provide automatic translation to enable cross-lingual communications between users for your applications. By adding real-time translation to chat, email, helpdesk, and ticketing applications, an English-speaking agent or employee can communicate with customers across multiple languages.
+Customer stories
+Hotels.com is a leading online accommodation booking website with with all the information needed to book the perfect stay.
+“At Hotels.com, we are committed to offering all of our customers the most relevant and up to date information about their destination. To achieve that, we operate 90 localized websites in 41 languages. We have more than 25M Customer reviews and more are coming in every day, making a great candidate for machine translation. Having evaluated Amazon Translate and several other solutions, we believe that Amazon Translate presents a quick, efficient and most importantly, accurate solution. We want to take advantage of the latest advances in machine learning and the transition to Neural engines to further personalize and localize our reviews, and generally improve our customer experience. Amazon Translate is a step forward in that direction."
+Matthew Fryer - VP and Chief Data Science Officer, Hotels.com
+Lionbridge is one of world’s largest language services provider offering industry-leading translation and localization services.
+“Today’s digital businesses are pressured to produce ever more content, faster, and with greater relevance. Human translators armed with machine translation help companies localize more content, faster, more affordably and into more languages. Based on our experience, pairing Amazon Translate with a human editor, we believe we can produce cost efficiencies by up to 20 percent."
+Ken Watson - CTO, Lionbridge
+One Hour Translation is one of the world's largest online translation agencies, offering professional translation services business customers worldwide.
+"Using our services and technology, global companies can localize massive amounts of content quickly while maintaining high quality. We’re excited about the initial results we’ve seen with Amazon Translate on a translation project we ran for our customer, iHerb. Overall turnaround time was cut by 67%, while maintaining the same high quality standards. Our total costs were reduced respectively, helping us offer our customers even more competitive pricing.”
+Ofer Shoshan - CEO, One Hour Translation
+Isentia is a leading media-intelligence provider for the Asia-Pacific region.
+“At Isentia, we built our media intelligence software in a single language. To expand our capabilities and address the diverse language needs of our customers, we needed translation support to generate and deliver valuable insights from non-English media content. Having tried multiple Machine Translation services in the past, we are impressed with how easy it is to integrate Amazon Translate into our pipeline and its ability to scale to handle any volume we throw at it. The translations also came out more accurate and nuanced and met our high standards for clients.”
+Andrea Walsh - CIO, Isentia
+View more Amazon Translate customer stories »
+Check out the product features
+Visit Amazon Translate Features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Translate in the AWS Management Console.
+Sign in

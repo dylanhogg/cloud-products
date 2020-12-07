@@ -1,0 +1,53 @@
+Amazon Transcribe
+Automatically convert speech to text
+Get Started with Amazon Transcribe
+Amazon Transcribe makes it easy for developers to add speech to text capabilities to their applications. Audio data is virtually impossible for computers to search and analyze. Therefore, recorded speech needs to be converted to text before it can be used in applications. Historically, customers had to work with transcription providers that required them to sign expensive contracts and were hard to integrate into their technology stacks to accomplish this task. Many of these providers use outdated technology that does not adapt well to different scenarios, like low-fidelity phone audio common in contact centers, which results in poor accuracy.
+Amazon Transcribe uses a deep learning process called automatic speech recognition (ASR) to convert speech to text quickly and accurately. Amazon Transcribe can be used to transcribe customer service calls, to automate closed captioning and subtitling, and to generate metadata for media assets to create a fully searchable archive. You can use Amazon Transcribe Medical to add medical speech to text capabilities to clinical documentation applications.
+Benefits
+Create easy-to-read transcriptions
+Amazon Transcribe automatically adds speaker diarization, punctuation and formatting so that the output closely matches the quality of manual transcription at a fraction of the time and expense. Speech to text processing can be applied to live audio streams or batch audio content for transcription. Learn more »
+Ensure customer privacy
+When instructed, Amazon Transcribe can identify and redact sensitive personally identifiable information (PII) from the supported language transcripts. This allows contact centers to easily review and share the transcripts for customer experience insight and agent training. Learn more »
+Increase accuracy with customized transcriptions
+With custom vocabulary lists and custom language models, you can add new words to the base vocabulary or train your own language model to generate more accurate transcriptions for domain-specific words and phrases like product names, technical terminology, or names of individuals. Learn more »
+Filter specific words
+When needed, Amazon Transcribe enables you to mask or remove words that are profane or unsuitable for your audience from transcription results with vocabulary filtering. Learn more »
+Use Cases
+Customer experience
+Customer contact centers can provide actionable insights to their agents by using Amazon Transcribe to transcribe live customer calls and other AWS services like Amazon Comprehend to extract call intent and sentiment from conversations. These insights can assist agents in real-time and provide supervisors with quality management alerts to create a better customer experience.
+Post call analytics
+With Amazon Transcribe, contact centers can start unlocking value held within unstructured voice call data. By converting these audio calls into text, Amazon Transcribe can be combined with other AWS services like Amazon Comprehend to build post call analytics applications to identify trends and voice of the customer insights.
+Documenting clinical conversations
+Medical doctors and practitioners can use Amazon Transcribe Medical to quickly and efficiently digitize physician-patient conversations into text for entry into electronic health record (EHR) systems or analysis. The service is HIPPA compliant and trained to understand medical terminology. With Transcribe Medical, physicians can focus more patient care than documentation.
+Captioning & subtitling workflows
+Amazon Transcribe can help content producers and media distributors improve reach and accessibility by automatically generating time-stamped subtitles that can be displayed along with the video content. By combining this text with Amazon Translate, you can also easily localize videos.
+Cataloging audio archives
+You can use Amazon Transcribe to transcribe audio and video assets into fully searchable archives for compliance monitoring and risk management. Convert audio to text and use Amazon Elasticsearch to index and search across your audio/video library.
+Digital scribes and court reporters
+Amazon Transcribe can be used as a digital scribe to accurately log work meetings or educational lectures and seminars. In a courtroom, Amazon Transcribe can act as a digital court reporter to capture hearings and trials, depositions, sworn statements and other legal proceedings.
+Customer stories
+Echo360 provides leading video platform technology that helps instructors and students record, stream, manage and share interactive video to improve student engagement before, during and after class.
+“The Echo360 platform fosters active and engaging video-based learning that serves today’s student. We’re excited about Amazon Transcribe because it offers our university partners high-quality transcripts for each video, enabling more powerful search, lower cost captioning of educational video content, and enhanced note-taking, making learning assets more valuable and accessible to students.”
+Fred Singer, CEO - Echo360
+Read Echo360 case study »
+At GE Appliances, we make life better by designing and building the world's best appliances. From design to production to service, our goal is to help people improve their lives at home.
+“GE Appliances processes millions of minutes of customer calls a month. Using Amazon Connect, Amazon Lex, and Amazon Polly, we can automate simple tasks such as looking up product information, taking down customer details, and answering common questions before an agent answers. This in turn helps us give back time, the most precious commodity, to our consumers. We added Amazon Transcribe to create call transcripts for automated analysis to continuously improve the process.”
+Byron Guernsey, Chief Strategist - GE Appliances
+VidMob is a leading video creation platform with a network of professional creatives worldwide who produce the full spectrum of video content for brands and advertisers.
+“Amazon Comprehend and Amazon Transcribe allow VidMob to build high-quality machine learning text analysis into our Agile Creative Suite, enabling us to help brand clients understand content performance in ways never before possible. We are able to transcribe text from video content, and quickly analyze it using Comprehend, allowing us to surface actionable insights to both our creator community and our clients, giving them a strategic edge in the market.”
+Alex Collmer, CEO - VidMob
+Blogs
+Build a custom vocabulary to enhance speech-to-text transcription accuracy with Amazon Transcribe
+by Paul Zhao and Yibin Wang
+Analyzing contact center calls – customer sentiment
+Deenadayaalan Thirugnanasambandam, Revanth Anireddy, Loc Trinh, Paul Zhao, and Piyush Patel
+Performing medical transcription analysis with Amazon Transcribe Medical and Amazon Comprehend Medical
+Simran Baxendale, Alex Chirayath, and Shivani Mehendarge
+Visit the
+Transcribe Blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+Check out the product features
+Visit Amazon Transcribe Features page.
+Learn more
+Start building in the console
+Get started building with Amazon Transcribe in the AWS Management Console.
+Sign in

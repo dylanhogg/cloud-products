@@ -1,0 +1,31 @@
+Amazon Detective
+Analyze and visualize security data to rapidly get to the root cause of potential security issues
+Start your free trial of Amazon Detective
+Amazon Detective makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities. Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations.
+AWS security services like Amazon GuardDuty, Amazon Macie, and AWS Security Hub as well as partner security products can be used to identify potential security issues, or findings. These services are really helpful in alerting you when something is wrong and pointing out where to go to fix it. But sometimes there might be a security finding where you need to dig a lot deeper and analyze more information to isolate the root cause and take action. Determining the root cause of security findings can be a complex process that often involves collecting and combining logs from many separate data sources, using extract, transform, and load (ETL) tools or custom scripting to organize the data, and then security analysts having to analyze the data and conduct lengthy investigations.
+Amazon Detective simplifies this process by enabling your security teams to easily investigate and quickly get to the root cause of a finding. Amazon Detective can analyze trillions of events from multiple data sources such as Virtual Private Cloud (VPC) Flow Logs, AWS CloudTrail, and Amazon GuardDuty, and automatically creates a unified, interactive view of your resources, users, and the interactions between them over time. With this unified view, you can visualize all the details and context in one place to identify the underlying reasons for the findings, drill down into relevant historical activities, and quickly determine the root cause.
+You can get started with Amazon Detective in just a few clicks in the AWS Console. There is no software to deploy, or data sources to enable and maintain.
+Benefits
+Faster and more effective investigations
+Amazon Detective presents a unified view of user and resource interactions over time, with all the context and details in one place to help you quickly analyze and get to the root cause of a security finding. For example, an Amazon GuardDuty finding, like an unusual Console Login API call, can be quickly investigated in Amazon Detective with details about the API call trends over time, and user login attempts on a geolocation map. These details enable you to quickly identify if you think it is legitimate or an indication of a compromised AWS resource.
+Save time and effort with continuous data updates
+Amazon Detective automatically processes terabytes of event data records about IP traffic, AWS management operations, and malicious or unauthorized activity. It organizes the data into a graph model that summarizes all the security-related relationships in your AWS environment. Amazon Detective then queries this model to create visualizations used in investigations. The graph model is continuously updated as new data becomes available from AWS resources, so you spend less time managing constantly changing data.
+Easy to use visualizations
+Amazon Detective produces visualizations with the information you need to investigate and respond to security findings. It helps you answer questions like ‘is this normal for this role to have so many failed API calls?’ or ‘is this spike in traffic from this instance expected?’ without having to organize any data or develop, configure, or tune your own queries and algorithms. Amazon Detective maintains up to a year of aggregated data that shows changes in the type and volume of activity over a selected time window, and links those changes to security findings.
+How it works
+Use cases
+Triage security findings
+Triage is often the first phase of the investigation process that is used to decide whether the finding is a real security issue or a false positive. Using Amazon Detective visualizations, you can see what resource, IP addresses, and AWS accounts are connected to that finding, related findings, and activity that occurred close in time or location to that finding, to quickly determine if the finding is an actual malicious activity or a false positive.
+Incident investigation
+Some security findings require deep investigation to determine the extent of the malicious activity, its impact, and the underlying cause. When findings are identified by AWS Security services such as Amazon GuardDuty, you can go to Amazon Detective and immediately see context and activity related to the finding, drill down into relevant historical activities to identify unusual patterns and quickly determine the nature and extent of root cause and the activity that contributed to the finding.
+Threat hunting
+Threat hunting is a proactive analysis to uncover hidden threats based on certain clues or hypotheses. Amazon Detective helps with threat hunting by enabling you to focus on specific resources such as IP addresses, AWS accounts, VPC, and EC2 instances and providing detailed visualizations of activities associated with those resources. Amazon Detective helps with the hunting process by providing time-based analysis and the ability to drill in, see all the activities during a specific time period, and spot changes from the norm.
+Read the documentation
+Learn more about Amazon Detective capabilities and implementation by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Get started with Amazon Detective
+Get started building with Amazon Detective.
+Get started

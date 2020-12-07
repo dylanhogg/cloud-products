@@ -1,0 +1,32 @@
+Amazon Managed Workflows for Apache Airflow (MWAA)
+Highly available, secure, and managed workflow orchestration for Apache Airflow
+Get Started
+Amazon Managed Workflows for Apache Airflow (MWAA) is a managed orchestration service for Apache Airflow1 that makes it easier to set up and operate end-to-end data pipelines in the cloud at scale. Apache Airflow is an open-source tool used to programmatically author, schedule, and monitor sequences of processes and tasks referred to as “workflows.” With Managed Workflows, you can use Airflow and Python to create workflows without having to manage the underlying infrastructure for scalability, availability, and security. Managed Workflows automatically scales its workflow execution capacity to meet your needs, and is integrated with AWS security services to help provide you with fast and secure access to data.
+Benefits
+Deploy Airflow rapidly at scale
+Get started in minutes from the AWS Management Console, CLI, AWS CloudFormation, or AWS SDK. Create an account and begin deploying Directed Acyclic Graphs (DAGs) to your Airflow environment immediately without reliance on development resources or provisioning infrastructure.
+Run Airflow with built-in security
+With Managed Workflows, your data is secure by default as workloads run in your own isolated and secure cloud environment using Amazon’s Virtual Private Cloud (VPC), and data is automatically encrypted using AWS Key Management Service (KMS). You can control role-based authentication and authorization for Apache Airflow's user interface via AWS Identity and Access Management (IAM), providing users Single Sign-ON (SSO) access for scheduling and viewing workflow executions.
+Reduce operational costs
+Managed Workflows is a managed service, removing the heavy lifting of running open source Apache Airflow at scale. With Managed Workflows, you can reduce operational costs and engineering overhead while meeting the on-demand monitoring needs of end to end data pipeline orchestration.
+Use a pre-existing plugin or use your own
+Connect to any AWS or on-premises resources required for your workflows including Athena, Batch, Cloudwatch, DynamoDB, DataSync, EMR, ECS/Fargate, EKS, Firehose, Glue, Lambda, Redshift, SQS, SNS, Sagemaker, and S3.
+How it works
+Amazon Managed Workflows for Apache Airflow (MWAA) orchestrates and schedules your workflows by using Directed Acyclic Graphs (DAGs) written in Python. You provide Managed Workflows an S3 bucket where your DAGs, plugins, and Python dependencies list reside and upload to it, manually or using a code pipeline, to describe and automate the Extract, Transform, Load (ETL), and Learn process. Then, run and monitor your DAGs from the CLI, SDK or Airflow UI.
+Use Cases
+Enable Complex Workflows
+Big data providers often need complicated data pipelines that connect many internal and external services. To use this data, customers need to first build a workflow that defines the series of sequential tasks that prepare and process the data. Managed Workflows execute these workflows on a schedule or on-demand. Managed Workflows monitor complex workflows using a web user interface or centrally using Cloudwatch.
+Coordinate Extract, Transform, and Load (ETL) Jobs
+You can use Managed Workflows as an open source alternative to orchestrate multiple ETL jobs involving a diverse set of technologies in an arbitrarily complex ETL workflow. For example, you may want to explore the correlations between online user engagement and forecasted sales revenue and opportunities. You can use Managed Workflows to coordinate multiple AWS Glue, Batch, and EMR jobs to blend and prepare the data for analysis.
+Prepare Machine Learning (ML) Data
+In order to enable machine learning, source data must be collected, processed, and normalized so that ML modeling systems like the fully managed service Amazon SageMaker can train on that data. Managed Workflows solve this problem by making it easier to stitch together the steps it takes to automate your ML pipeline.
+1Apache, Apache Airflow, and Airflow are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.
+Learn more about product features
+Visit the Amazon MWAA Features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon MWAA in the AWS Management Console.
+Sign in

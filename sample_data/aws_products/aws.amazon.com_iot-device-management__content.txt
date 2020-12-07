@@ -1,0 +1,58 @@
+AWS IoT Device Management
+Register, organize, monitor, and remotely manage connected devices at scale
+Get Started for Free
+What is AWS IoT Device Management
+As many IoT deployments consist of hundreds of thousands to millions of devices, it is essential to track, monitor, and manage connected device fleets. You need to ensure your IoT devices work properly and securely after they have been deployed. You also need to secure access to your devices, monitor health, detect and remotely troubleshoot problems, and manage software and firmware updates.
+AWS IoT Device Management makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale. With AWS IoT Device Management, you can register your connected devices individually or in bulk, and easily manage permissions so that devices remain secure. You can also organize your devices, monitor and troubleshoot device functionality, query the state of any IoT device in your fleet, and send firmware updates over-the-air (OTA). AWS IoT Device Management is agnostic to device type and OS, so you can manage devices from constrained microcontrollers to connected cars all with the same service. AWS IoT Device Management allows you to scale your fleets and reduce the cost and effort of managing large and diverse IoT device deployments.
+For more information, visit the AWS IoT Device Management documentation page.
+Benefits of using AWS IoT Device Management
+Fast device registration
+With AWS IoT Device Management, you can securely add device attributes like device name, type and manufacturing year, certificates and access policies to the IoT Registry in bulk, assign them to devices, and put large fleets of connected devices into service quickly.
+Simple IoT device organization
+AWS IoT Device Management lets you organize your devices into groups and manage access policies for these groups. This makes it easy to track, operate, and manage your devices according to business and security requirements, such as deploying a firmware update for all devices in a building or defining how devices communicate with each other. You can create a hierarchy for your groups such as grouping multiple sensors within a single vehicle and grouping multiple vehicles in a fleet. Then, your devices will inherit access policies based on the group hierarchy.
+Locate connected devices quickly
+AWS IoT Device Management lets you quickly search and find any IoT device across your entire device fleet in near real-time. You can easily find devices based on a combination of attributes like device ID, device state, and type, so that you can take action or troubleshoot.
+Easy remote device management
+AWS IoT Device Management makes it easy for you to maintain the health of your device fleet. With AWS IoT Device Management, you can remotely update the software running on your devices after they have been deployed in the field – allowing you to ensure that devices are always running on the latest software. You can also remotely execute fleet-wide actions such as reboots, factory resets, and security patches. With secure tunneling, you can easily connect to and troubleshoot individual devices that may be located behind restricted firewalls.
+How AWS IoT Device Management works
+AWS IoT Device Management helps you register, organize, monitor, and remotely manage IoT devices at scale. AWS IoT Device Management integrates with AWS IoT Core to easily connect devices to the cloud and other devices so you can remotely manage your fleet. AWS IoT Device Defender audits and monitors fleets and sends alerts if there are deviations from what you have defined as normal behavior for each device. If you determine that you need to take an action based on an alert, you can use AWS IoT Device Management to take mitigating actions such as pushing security fixes. You can also easily send over-the-air (OTA) updates to your AWS IoT Greengrass or FreeRTOS devices, such as the latest AWS IoT Greengrass software version or a new firmware update for your FreeRTOS device.
+When to use AWS IoT Device Management
+AWS IoT Device Management is critical across a variety of industrial, consumer, and commercial applications. With AWS IoT Device Management, customers can manage large and diverse device fleets such as operational technology systems, machines, cameras, appliances, vehicles, and more.
+Industrial Applications
+AWS IoT Device Management enables you to connect large and diverse industrial device fleets quickly and remotely manage, monitor and troubleshoot connected devices deployed across multiple industrial sites. You can monitor usage and performance metrics for devices across industrial sectors such as manufacturing, oil & gas, and mining. AWS IoT Device Management also allows you to monitor metadata and policy changes with service alerts so you are informed about any adjustments to your devices' configuration. You can use AWS IoT Device Defender to audit and detect any unusual behaviors across your fleet, and use AWS IoT Device Management to take mitigating actions such as deploying a hotfix to your devices.
+Consumer Applications
+With AWS IoT Device Management, you can control the deployment speed of your over-the-air (OTA) updates to consumer devices already in the field such as connected light bulbs or WiFi routers. You can send an update to ensure devices are running the latest software and push bug fixes or firmware updates to patch security vulnerabilities and improve device functionality. You can also create a continuous job that updates your devices to the latest firmware upon first activation.
+Commercial Applications
+AWS IoT Device Management makes it easy to group your device fleet into a hierarchical structure based on function, security requirements, or any other category for your business. You can group all sensors in a room, group all rooms on the same floor, and group all floors within a building. With fleet indexing, you can understand the state of any connected device and perform actions across multiple devices at once. You can use bulk registration to register and quickly register a fleet of devices to be deployed at a new building or worksite.
+Customers
+“AWS IoT Device Management has helped streamline our device onboarding, which has enabled us to meet our planned production throughput for connected devices."
+- Jim Coleman, Engineering Director, Trimble
+“We’re launching new health IoT services that we believe will dramatically improve our scale and capabilities. Part of the Philips solution involves managing connected devices that doctors and hospitals will rely on so they can deliver first class healthcare services. We chose AWS IoT services to ensure we can meet our customers' scale and reliability requirements. We have expanded these services to ensure that data from these devices is appropriately routed, devices are updated to the latest firmware, and are monitored to ensure they function properly in the field. Using AWS IoT Device Management, we were able to quickly develop the capabilities we need in the market.”
+- Dale Wiggins, Vice President and General Manager, Philips HealthSuite Digital Platform
+Blog posts & articles
+Using Dynamic Thing Groups to Continuously Update Software on Devices
+Brian Luong
+20 NOV 2018
+Using Device Jobs for Over-the-Air Updates
+Steve Harris
+13 APR 2018
+Using Continuous Jobs with AWS IoT Device Management
+Amanda Le
+04 JUNE 2018
+Using AWS IoT Device Management in a Retail Scenario to Process Order Requests Gus Liu 23 FEB 2018
+Get started with AWS IoT Device Management
+Sign up for an AWS account
+Getting started is easy – visit the
+AWS IoT Device Management Console to start managing your IoT devices.
+Single click to get started
+Visit AWS IoT Device Management
+documentation for more information.
+Start building with AWS
+Learn more about the AWS IoT Device Management features
+here.
+Learn more about AWS IoT Device Management
+Visit the features page
+Ready to build?
+Get started with IoT Device Management
+Have more questions?
+Contact us

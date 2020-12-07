@@ -1,0 +1,42 @@
+Amazon AppFlow
+Securely integrate apps and automate data flows at any scale, without code
+Get Started with Amazon AppFlow
+Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Marketo, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks. With AppFlow, you can run data flows at nearly any scale at the frequency you choose - on a schedule, in response to a business event, or on demand. You can configure data transformation capabilities like filtering and validation to generate rich, ready-to-use data as part of the flow itself, without additional steps. AppFlow automatically encrypts data in motion, and allows users to restrict data from flowing over the public Internet for SaaS applications that are integrated with AWS PrivateLink, reducing exposure to security threats.
+Intro to Amazon AppFlow (3:33)
+Benefits
+Integrate with a few clicks
+Anyone can use AppFlow to integrate applications in a few minutes – no more waiting days or weeks to code custom connectors. Features like data pagination, error logging, and network connection retries are included by default so there’s no coding or management. With Appflow, data flow quality is built in, and you can enrich the flow of data through mapping, merging, masking, filtering, and validation as part of the flow itself.
+Transfer data at massive scale
+AppFlow easily scales up without the need to plan or provision resources, so you can move large volumes of data without breaking it down into multiple batches. AppFlow can run up to 100 GB per flow, which enables you to easily transfer millions of Salesforce records or Zendesk events or Marketo responses or other data - all while running a single flow.
+Automate data security
+All data flowing through AppFlow is encrypted at rest and in transit, and you can encrypt data with AWS keys, or bring your own custom keys. With AppFlow, you can use your existing Identity and Access Management (IAM) policies to enforce fine-grained permissions, rather than creating new policies. For SaaS integrations with AWS PrivateLink enabled, data is secured from the public internet by default.
+How it works
+You can use AppFlow to set up secure data flows in minutes, without managing complex connectors or writing code.
+Read a blog to learn more about how it works »
+Customer Stories
+"Amazon AppFlow is a great product for simplification and enablement of secure, cost-effective SaaS and AWS integration.”
+Sandeep Garg, Solutions Architect, Expedia Group
+“Amazon AppFlow helps our data analytics team in simplifying configuration, allowing us to accelerate data-driven integrations and build data science applications at a much faster pace, which ultimately helps us enhance our customer satisfaction.”
+Balaji Apparsamy, VP Data and Analytics, Unum Group
+Use cases
+Customer 360
+You can use AppFlow to get 360-degree visibility of customer journey by integrating marketing, customer support, and sales data. For example, analyze the revenue impact of different marketing channels by synchronizing the revenue data from Salesforce with marketing data from Marketo.
+Data Enrichment
+You can use AppFlow to enrich data for different SaaS services. For example, pull Salesforce data into Amazon Sagemaker’s custom machine learning model to generate and feed priority tags of cases back into the Salesforce for routing appropriate sales support.
+Create event-based workflows
+You can use AppFlow to automatically trigger processes in one application based on data from another, rather than doing so manually. For example, create contact records in Salesforce from new Marketo leads.
+Store or sync Salesforce data
+You can use AppFlow to transfer opportunity record data from Salesforce to an Amazon Redshift table so that your dashboards are updated in real time. You can even use AppFlow to synchronize data between two Salesforce orgs, for example to sync up budgeting between your finance and marketing orgs.
+Automate data back ups
+You can use AppFlow to automatically back up data from SaaS applications in Amazon S3. For example, Set up a flow to send high severity Zendesk tickets to Amazon S3 for further analysis of root cause.
+Routinely analyze Slack events
+You can set up a routine analysis of instant messenger conversations by sending events and conversation data to a business intelligence tool. For example, use AppFlow to create a data flow that sends event and conversation data from a Slack Channel to an Amazon Redshift or Snowflake data warehouse for downstream analysis.
+Check out the product features
+Learn more about Amazon App Flow features.
+Learn more
+Learn more in documentation
+Get a deeper understanding of Amazon AppFlow in the Developer Guide.
+Learn more
+Start building in the console
+Get started building with Amazon AppFlow in the AWS Management Console.
+Learn more

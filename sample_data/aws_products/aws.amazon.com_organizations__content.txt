@@ -1,0 +1,43 @@
+AWS Organizations
+Centrally manage and govern your environment as you scale your AWS resources
+Get started with AWS Organizations
+AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources. Using AWS Organizations, you can programmatically create new AWS accounts and allocate resources, group accounts to organize your workflows, apply policies to accounts or groups for governance, and simplify billing by using a single payment method for all of your accounts.
+In addition, AWS Organizations is integrated with other AWS services so you can define central configurations, security mechanisms, audit requirements, and resource sharing across accounts in your organization. AWS Organizations is available to all AWS customers at no additional charge.
+Introducing AWS Organizations (1:56)
+Benefits
+Quickly scale your workloads
+AWS Organizations helps you quickly scale your environment by allowing you to programmatically create new AWS accounts. An AWS account is a container for your resources. Using multiple accounts gives you built-in security boundaries. It also empowers your teams by providing them designated accounts, and you can automatically provision resources and permissions using AWS CloudFormation StackSets.
+Provide custom environments for different workloads
+You can use Organizations to apply policies that give your teams the freedom to build with the resources they need, while staying within the safe boundaries you set. By organizing accounts into organizational units (OUs), which are groups of accounts that serve an application or service, you can apply service control policies (SCPs) to create targeted governance boundaries for your OUs.
+Centrally secure and audit your environment across accounts
+Manage auditing at scale using AWS CloudTrail to create an immutable log of all events from accounts. You can enforce and monitor backup requirements with AWS Backup, or centrally define your recommended configuration criteria across resources, AWS Regions, and accounts with AWS Config. You can also use AWS Control Tower to establish cross-account security audits, or manage and view policies applied across accounts.
+In addition, you can protect your resources by centrally managing security services, such as detecting threats with Amazon GuardDuty, or reviewing unintended access with AWS IAM Access Analyzer.
+Simplify permission management and access control
+Simplify user-based permission management for everyone in your organization with AWS Single Sign-On (SSO) and your Active Directory. You can apply least-privilege practices by creating custom permissions for job categories. You can also control access to AWS services by applying service control policies (SCPs) to users, accounts, or OUs.
+Efficiently provision resources across accounts
+You can reduce resource duplication by sharing critical resources within your organization using AWS Resource Access Manager (RAM). Organizations also helps you meet your software license agreements with AWS License Manager, and maintain a catalog of IT services and custom products with AWS Service Catalog.
+Manage costs and optimize usage
+AWS Organizations enables you to simplify costs and take advantage of quantity discounts with a single bill. In addition, you can optimize usage across your organization with services like AWS Compute Optimizer and AWS Cost Explorer.
+How it Works
+Use cases
+Automate the creation of AWS accounts and categorize workloads using groups
+You can automate the creation of new AWS accounts when you need to quickly launch new workloads, adding them to user-defined groups in your organization for instant security policy application, touchless infrastructure deployments and auditing. For example, you can create separate groups to categorize development and production accounts, and then use AWS CloudFormation StackSets to provision services and permissions to each group.
+Implement and enforce audit and compliance policies
+You can apply SCPs to ensure that users in your accounts only perform actions that meet your security and compliance requirements. Additionally, you can create a central log of all actions performed across your organization using AWS CloudTrail, view and enforce standard resource configurations across accounts and AWS Regions with AWS Config, and automatically apply regular backups with AWS Backup. You can also use AWS Control Tower to apply pre-packaged governance rules for security, operations, and compliance for ongoing governance of your AWS workloads.
+Provide tools and access for your security teams while encouraging development
+You can use AWS Organizations to create a Security group and provide them read-only access to all of your resources to identify and mitigate security concerns. In addition, you can provide them permissions to manage Amazon GuardDuty so they can actively monitor and mitigate threats to your workloads, and IAM Access Analyzer to quickly identify unintended access to your resources.
+Share common resources across accounts
+AWS Organizations makes it easy for you to share critical central resources across your accounts. For example, you can share your central AWS Directory Service Managed Microsoft Active Directory so that applications can access your central identity store. Use AWS Service Catalog to share IT services hosted in designated accounts so users can quickly discover and deploy approved services. Additionally, you can ensure application resources are created on your Amazon Virtual Private Cloud (VPC) subnets by centrally defining them once and sharing them across your organization using AWS Resource Access Manager.
+Recent publications and articles
+Date
+Date
+More…
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
+Discover more on the
+AWS Security Blog.
+Learn more about AWS Organizations
+Visit the features page
+Ready to build?
+Get started with AWS Organizations
+Have more questions?
+Contact us

@@ -1,0 +1,19 @@
+Amazon EKS Distro
+An open source distribution of Kubernetes
+Download EKS Distro now
+Amazon EKS Distro is a Kubernetes distribution used by Amazon EKS to help create reliable and secure clusters. EKS Distro includes binaries and containers of open source Kubernetes, etcd (cluster configuration database), networking, storage plugins, all tested for compatibility. You can deploy EKS Distro wherever your applications need to run.
+You can deploy clusters and let AWS take care of testing and tracking Kubernetes updates, dependencies, and patches. Each EKS Distro verifies new Kubernetes versions for compatibility. The source code, open source tools, and settings are provided for reproducible builds. EKS Distro will provide extended support for Kubernetes, with builds of previous versions updated with the latest security patches. EKS Distro is available as open source on GitHub.
+Benefits
+Get consistent Kubernetes builds
+EKS Distro provides the same installable builds and code of open source Kubernetes that are used by Amazon EKS. You can perform reproducible builds with the provided source code, tooling, and documentation.
+Run Kubernetes on any infrastructure
+You can deploy EKS Distro on your own self-provisioned hardware infrastructure, including bare-metal servers or VMware vSphere virtual machines, or on Amazon EC2 instances.
+Have a more reliable and secure distribution
+EKS Distro will provide extended support for Kubernetes versions in alignment with the Amazon EKS Version Lifecycle Policy, by updating builds of previous versions with the latest critical security patches.
+How it works
+Have questions?
+Visit the product FAQs page.
+Learn more
+Amazon EKS Distro on Github
+Get started building with Amazon EKS Distro on GitHub.
+Learn more

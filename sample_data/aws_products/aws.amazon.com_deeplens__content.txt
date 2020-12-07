@@ -1,0 +1,70 @@
+Start learning right away
+Get hands-on with deep learning
+Learn the basics of deep learning - a machine learning technique that uses neural networks to learn and make predictions - through computer vision projects, tutorials, and real world, hands-on exploration with a physical device. AWS DeepLens lets you run deep learning models locally on the camera to analyze and take action on what it sees.
+Andy Jassy Announcing AWS DeepLens
+AWS DeepLens Demo by Dr. Matt Wood
+A new way to learn machine learning
+AWS DeepLens allows developers of all skill levels to get started with deep learning in less than 10 minutes by providing sample projects with practical, hands-on examples which can start running with a single click.
+Custom built for deep learning
+AWS DeepLens was designed with deep learning in mind. With over 100 GFLOPS of compute power on the device, it can process deep learning predictions on HD video for real time.
+Build custom models with Amazon SageMaker
+Models trained in
+Amazon
+SageMaker
+can be sent to AWS
+DeepLens
+with just a few clicks from the AWS Management Console.
+Broad framework support
+AWS developers can run any deep learning framework, including TensorFlow and Caffe. AWS DeepLens comes pre-installed with a high performance, efficient, optimized inference engine for deep learning using Apache MXNet.
+Integrated with AWS
+AWS DeepLens integrates with Amazon Rekognition for advanced image analysis, Amazon SageMaker for training models, and with Amazon Polly to create speech-enabled projects. The device also connects securely to AWS IoT, Amazon SQS, Amazon SNS, Amazon S3, Amazon DynamoDB, and more.
+Fully programmable
+AWS
+DeepLens
+is easy to customize and is fully programmable using
+AWS Lambda. The deep learning models in
+DeepLens
+even run as part of an
+AWS Lambda function, providing a familiar programming environment to experiment with.
+10 minutes to your first deep learning project
+Choose your deep learning model from the AWS DeepLens pre-trained model library, or your own models trained with Amazon SageMaker.
+Deploy your model to the device with a single click.
+Watch the results in real time in the AWS Management Console.
+What can you build with AWS DeepLens?
+Get started by using the DeepLens sample projects shown below, which cover some of the most popular computer vision use cases. As your skills and ideas develop, you can build custom deep learning models in the cloud using Amazon SageMaker. Check out the collection of projects created by the developer community for inspiration.
+Object detection
+Accurately detect and recognize objects.
+Hot dog not hot dog
+Classify your food as either hot dog or not a hot dog.
+Cat and dog
+Detect a cat or dog using your DeepLens.
+BIRD CLASSIFICATION
+Detect more than 200 species of birds.
+Activity recognition
+Recognize more than 30 kinds of actions such as brushing teeth, applying lipstick, and playing guitar.
+Face Detection
+Detect faces of people.
+HEAD POSE DETECTION
+Detect 9 different head pose angles.
+community projects
+Explore the collection of DeepLens projects created by the developer community.
+Tech Specs
+CPU
+Intel Atom® Processor
+Memory
+8GB RAM
+OS
+Ubuntu OS-16.04 LTS
+Built-In Storage
+16GB Memory (expandable)
+Graphics
+Intel Gen9 Graphics Engine
+Supports
+Intel® Movidius™ Neural Compute Stick and Intel® RealSense™ depth sensor
+Order your AWS DeepLens 2019 Edition Today
+Available to purchase for $249
+Buy Now
+Features
+Getting Started
+Sample Projects
+Tech Specs

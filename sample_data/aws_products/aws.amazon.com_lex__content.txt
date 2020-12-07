@@ -1,0 +1,50 @@
+Amazon Lex
+Conversational AI for Chatbots
+Get started with Amazon Lex
+Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).
+With Amazon Lex, you can build bots to increase contact center productivity, automate simple tasks, and drive operational efficiencies across the enterprise. As a fully managed service, Amazon Lex scales automatically, so you don’t need to worry about managing infrastructure.
+Intro to Lex
+Benefits
+Easy to use
+Amazon Lex provides an easy-to-use console to guide you through the process of creating your own chatbot or conversational interface in minutes. Just supply a few example phrases and Amazon Lex builds a complete natural language model through which your user can interact using voice and text, to ask questions, get answers, and complete sophisticated tasks. Learn more »
+One click deployment
+With Amazon Lex, you can easily build, test, and deploy your chatbot everywhere across all your channels and platforms. This includes mobile devices, web apps, and chat services such as Facebook Messenger, Slack, and Twilio SMS. Amazon Lex is a fully managed service that automatically scales with usage, so you don’t need to worry about provisioning hardware and managing infrastructure to power your bot. Learn more »
+Seamless AWS integrations
+Amazon Lex provides built-in integration with AWS Lambda and Amazon CloudWatch and you can easily integrate with many other services on the AWS platform including Amazon Cognito and Amazon DynamoDB. You can take advantage of the power of the AWS platform for security, monitoring, user authentication, business logic, storage and mobile app development. Learn more »
+Cost effective
+With Amazon Lex, there are no upfront costs or minimum fees. You are only charged for the text or speech requests that are made. Amazon Lex’ pay-as-you-go pricing and low cost per request makes it a cost-effective way to build conversational interfaces anywhere. With the Amazon Lex free tier, you can easily try Amazon Lex without any initial investment. Learn more »
+Use Cases
+Call Center Chatbots and Voice Assistants
+By using an Amazon Lex chatbot in your call center, callers can perform tasks such as changing a password, requesting a balance on an account, or scheduling an appointment, without needing to speak to an agent. These chatbots use automatic speech recognition and natural language understanding to ascertain a caller’s intent, maintain context and fluidly manage the conversation. Amazon Lex uses AWS Lambda functions to query your business applications, provide information back to callers, and make updates as requested.
+QnA Bots and Informational Bots
+You can use Amazon Lex to build chatbots for everyday consumer requests, such as accessing the latest news updates, game scores, or weather. After you build your Amazon Lex bot, you can deploy them on mobile devices, chat services, and IoT devices, with support for rich message formatting.
+Application Bots
+Amazon Lex’s high-quality speech recognition and natural language understanding capabilities make it possible to build powerful interfaces to mobile applications. You can add a voice or text chat interface to create bots on mobile devices that can help customers with many basic tasks, such as accessing their bank account, booking tickets, ordering food, or calling a cab. Amazon Lex integrates with Amazon Cognito so you can control user management, authentication, and sync across all devices
+Enterprise Productivity Bots
+You can use Amazon Lex to build enterprise chatbots that streamline common work activities and improve organizational efficiencies. For example, employees can check sales data from Salesforce, marketing performance from HubSpot, and customer service status from Zendesk, directly from their chatbots within minutes. With Amazon Lex, you can build your bots to connect to a variety of enterprise productivity tools through AWS Lambda functions.
+Customers
+Automate simple tasks and reduce call wait times
+“GE Appliances processes millions of minutes of customer calls a month. Using Amazon Connect, Amazon Lex, and Amazon Polly, we can automate simple tasks such as looking up product information, taking down customer details, and answering common questions before an agent answers. This in turn helps us give back time, the most precious commodity, to our consumers. We added Amazon Transcribe to create call transcripts for automated analysis to continuously improve the process.”
+Byron Guernsey, Chief Strategist – GE Appliances
+Developing complex interactions in a simple UI
+“Amazon Lex allows us to develop very complex user interactions in a simple UI, to focus on the business logic instead of intent classification and data extraction. We migrated to Amazon Lex from our custom-built solution, which has now allowed us to develop new interactions more quickly than we could before. This enables us to be extremely agile, providing us a competitive advantage to quickly adjust to customer feedback.”
+Michael Beemer, Lead Engineer, Dynatrace
+Engage with customer more efficiently
+"Amazon Connect has played a key role in improving both the customer service and sales experiences across Square. Along with Amazon Lex and AWS Lambda, Amazon Connect helped change the way we engage with our customers by more efficiently getting them to the information they seek. We know we can rely on Amazon Connect since it is built on the AWS’ backbone, and it easily integrates with the other Amazon Cloud services we utilize. Since launching Amazon Connect, we've repeatedly heard from both customers and employees that they prefer this experience over our previous platform."
+Kevin Miller, Voice Systems Engineer - Square
+View more Amazon Lex customer stories »
+Blogs
+Building a business intelligence dashboard for your Amazon Lex bots
+by Brian Yost and Michal Marshall
+Smarter FAQ bots with Amazon Kendra
+by Brian Yost, Harshal Pimpalkhute, and Niranjan Hira
+Deriving conversational insights from invoices with Amazon Textract, Amazon Comprehend, and Amazon Lex
+by Mona Mona, Prem Ranga, and Saida Chanda
+Visit the
+Lex Blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+Check out the product features
+Visit Amazon Lex Features page.
+Learn more
+Start building in the console
+Get started building with Amazon Lex in the AWS Management Console.
+Sign in

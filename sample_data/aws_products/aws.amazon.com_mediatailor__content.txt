@@ -1,0 +1,39 @@
+AWS Elemental MediaTailor
+Easily personalize and monetize video content with server-side ad insertion
+Get started with AWS Elemental MediaTailor
+Live Chat
+AWS Elemental MediaTailor lets video providers insert individually targeted advertising into their video streams without sacrificing broadcast-level quality-of-service. With AWS Elemental MediaTailor, viewers of your live or on-demand video each receive a stream that combines your content with ads personalized to them. But unlike other personalized ad solutions, with AWS Elemental MediaTailor your entire stream – video and ads – is delivered with broadcast-grade video quality to improve the experience for your viewers. AWS Elemental MediaTailor delivers automated reporting based on both client and server-side ad delivery metrics, making it easy to accurately measure ad impressions and viewer behavior. You can easily monetize unexpected high-demand viewing events with no up-front costs using AWS Elemental MediaTailor. It also improves ad delivery rates, helping you make more money from every video, and it works with a wider variety of content delivery networks, ad decision servers, and client devices.
+AWS Elemental MediaTailor Explained
+Watch Now: AWS Elemental MediaTailor Explained (45 sec)
+How it works
+Benefits
+Easily deliver targeted ads to any platform
+AWS Elemental MediaTailor makes it easy to personalize ads for users across different devices from a single ad monetization service. Targeting criteria can be set up to fetch personalized ad content from the ad decision server which makes the determination about which ads to send based on viewer, time, and content. Support for popular ad insertion protocols gives you the flexibility to serve individual ads or groups of ads based on your specific business needs.
+Improve viewing experiences
+Inserting advertising into content streams as viewers play them allows you to match the quality and format of your advertising to your video content stream. Unlike other approaches to ad insertion that can cause ads to play with variable quality, AWS Elemental MediaTailor ensures the video quality of both your ads and of your core content are the same. This gives your viewers an experience that is superior to other streaming video ad solutions.
+Increase the accuracy of ad view reporting
+AWS Elemental MediaTailor lets you increase the accuracy of ad tracking by capturing data directly from the viewing device, reducing the effects of ad blocking software and adhering to established advertising industry standards. Other approaches often fail to accurately capture viewing behavior due to ad blocking software, lack of support for certain devices, or dependence on inadequate third-party tools for tracking. With AWS Elemental MediaTailor, ad impressions and viewing behavior are accurately measured across web, iOS, Android, and other connected viewing devices, helping you more effectively measure the revenue impact of every ad delivered.
+Customer stories
+Seven Media West
+Amazon Video
+Seven Media West
+“Working with an agile partner like AWS Elemental that moves as fast as we do and comes up with new technologies and experiments all the time, allows us not only to survive but to lead the market.”
+Darren Kerry, Director Digital Technology and OTT, Seven West Media
+About Seven Media West
+Seven West Media is one of Australia’s leading integrated media companies, with a presence in broadcast television, magazine and newspaper publishing, and online.
+Customer Snapshot: Seven Media West
+Amazon Video
+“We used the AWS Elemental MediaTailor service, which allows us to deliver targeted ads that are seamlessly inserted into the main content, for a great viewer experience. I am confident that AWS Elemental Media Services are the path to use the cloud for live streaming at scale.”
+BA Winston, Global Head of Video Playback and Delivery for Amazon Video
+About Amazon Video
+Amazon Prime Video is streaming 11 NFL games this season—including 10 Thursday Night Football match-ups and a special Christmas Day game—to tens of millions of customers in more than 200 countries and territories.
+Get started with AWS Elemental MediaTailor in the console
+Set up and log into your AWS account
+Launch the AWS Elemental MediaTailor console
+Create a new configuration with your ad decision server, CDN, and content origin details
+Have questions?
+Contact us
+Ready to build?
+Get started with AWS Elemental MediaTailor
+Discover more resources
+Visit the Resources page

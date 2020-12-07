@@ -1,0 +1,37 @@
+AWS CodeArtifact
+Secure, scalable, and cost-effective artifact management for software development
+Get started with AWS CodeArtifact
+AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process. CodeArtifact can be configured to automatically fetch software packages and dependencies from public artifact repositories so developers have access to the latest versions. CodeArtifact works with commonly used package managers and build tools like Maven, Gradle, npm, yarn, twine, pip, and NuGet making it easy to integrate into existing development workflows.
+Development teams often rely on both open-source software packages and those packages built within their organization. IT leaders need to be able to control access to and validate the safety of these software packages. Teams need a way to find up-to-date packages that have been approved for use by their IT leaders. To address these challenges, IT leaders turn to central artifact repository services to store and share packages. However, existing solutions often require teams to purchase licenses for software solutions that are complex to setup, scale, and operate.
+AWS CodeArtifact is a pay-as-you go artifact repository service that scales based on the needs of the organization. With CodeArtifact there is no software to update or servers to manage. In just a few clicks, IT leaders can set-up central repositories that make it easy for development teams to find and use the software packages they need. IT leaders can also approve packages and control distribution across the organization, ensuring development teams consume software packages that are safe for use.
+Introducing AWS CodeArtifact (43:55)
+Benefits
+Securely store and share artifacts
+CodeArtifact integrates with AWS Key Management Service (KMS) to provide encrypted storage. CodeArtifact supports AWS IAM, so IT leaders can grant the appropriate level of access to different teams across their AWS accounts.
+Reduce operational overhead
+CodeArtifact is a fully managed service, eliminating the need to set up and operate the infrastructure required to manage artifact repositories. CodeArtifact is highly available and scales to meet the needs of organizations of all sizes.
+Pay as you go
+With CodeArtifact, there are no upfront fees or licensing costs for features that you don’t use. You pay only for the software packages stored, the number of requests made, and the data transferred out of an AWS Region.
+How it works
+Key Features
+Consume packages from public artifact repositories
+You can configure CodeArtifact to fetch software packages from public repositories such as the npm Registry, Maven Central, PyPI, and NuGet.org with just a few clicks. CodeArtifact automatically downloads and stores application dependencies from these repositories, so recent versions are always available to your developers and CI/CD systems.
+Publish and Share packages
+You can use your existing package managers such as npm, pip, yarn, twine, Maven, and NuGet to publish packages developed within your organization. Development teams can save time by retrieving packages published to and shared in a central organizational repository, rather than creating their own.
+Approve packages for use and audit package usage
+You can approve packages for use by building automated workflows using CodeArtifact APIs and AWS EventBridge. Integration with AWS CloudTrail gives leaders visibility into which packages are in use and where, making it easy to identify packages that need to be updated or removed.
+Customers
+Bio-Rad is a global leader in developing, manufacturing, and marketing a broad range of innovative products for the life science research and clinical diagnostic markets. With a focus on quality and customer service for over 65 years, our products advance the discovery process and improve healthcare. Our customers include university and research institutions, hospitals, public health and commercial laboratories, biotechnology, pharmaceutical, as well as applied laboratories that include food safety and environmental quality.
+“It was easy to adopt AWS CodeArtifact. In a couple of hours, we scripted the creation of the domain and repositories and also changed a couple of IAM roles to add access. With just that, our team and our AWS CodePipeline continuous integration system had access. It also helped that CodeArtifact supports the primary package managers we use. Because access is managed through IAM, there were no additional logins to juggle and no secrets to manage in the pipeline. Just as important is that CodeArtifact is an AWS managed service. There is nothing beyond our own code to manage, no patches, no servers, no networking, and no subscriptions.”
+Stackery’s secure platform enables teams to design, develop, and deliver modern serverless applications.
+"Our platform uses numerous Node.js AWS Lambda functions that have dependencies on open source packages. We find it hard to quickly resolve issues in third-party packages because of our limited control. For example, a defect in one of the open source packages for connection pooling and management caused our application to have intermittent database connection failures. We didn’t have time to wait for the upstream package author to fix it.
+AWS CodeArtifact, as a transparent proxy to the upstream npmjs.org, enabled us to patch the package locally and upload it to our CodeArtifact repository. The beauty of this approach is that it resolved the issue without us needing to update the source of any of our numerous Lambda functions - a huge time saver for serverless and microservice scenarios."
+Read the documentation
+Learn more about AWS CodeArtifact capabilities and implementation by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Get started
+Get started building with AWS CodeArtifact in the AWS Management Console
+Sign in

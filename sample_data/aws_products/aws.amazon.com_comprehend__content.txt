@@ -1,0 +1,64 @@
+Amazon Comprehend
+Discover insights and relationships in text
+Get started with Amazon Comprehend
+Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. No machine learning experience required.
+There is a treasure trove of potential sitting in your unstructured data. Customer emails, support tickets, product reviews, social media, even advertising copy represents insights into customer sentiment that can be put to work for your business. The question is how to get at it? As it turns out, Machine learning is particularly good at accurately identifying specific items of interest inside vast swathes of text (such as finding company names in analyst reports), and can learn the sentiment hidden inside language (identifying negative reviews, or positive customer interactions with customer service agents), at almost limitless scale.
+Amazon Comprehend uses machine learning to help you uncover the insights and relationships in your unstructured data. The service identifies the language of the text; extracts key phrases, places, people, brands, or events; understands how positive or negative the text is; analyzes text using tokenization and parts of speech; and automatically organizes a collection of text files by topic. You can also use AutoML capabilities in Amazon Comprehend to build a custom set of entities or text classification models that are tailored uniquely to your organization’s needs.
+For extracting complex medical information from unstructured text, you can use Amazon Comprehend Medical. The service can identify medical information, such as medical conditions, medications, dosages, strengths, and frequencies from a variety of sources like doctor’s notes, clinical trial reports, and patient health records. Amazon Comprehend Medical also identifies the relationship among the extracted medication and test, treatment and procedure information for easier analysis. For example, the service identifies a particular dosage, strength, and frequency related to a specific medication from unstructured clinical notes.
+Amazon Comprehend is fully managed, so there are no servers to provision, and no machine learning models to build, train, or deploy. You pay only for what you use, and there are no minimum fees and no upfront commitments.
+Introducing Amazon Comprehend
+Benefits
+Get better answers from your text
+Organize documents by topics
+Train models on your own data
+Support for general and industry specific text
+Amazon Comprehend can discover the meaning and relationships in text from customer support incidents, product reviews, social media feeds, news articles, documents, and other sources. For example, you can identify the feature that’s most often mentioned when customers are happy or unhappy about your product.
+Amazon Comprehend can analyze a collection of documents and other text files (such as social media posts) and automatically organize them by relevant terms or topics. You can then use the topics to deliver personalized content to your customers or to provide richer search and navigation. For example, if you have an extensive collection of news articles, you can automatically group them by subject matter to enable your site to suggest new articles to visitors based on what they’ve read previously.
+You can easily extend Amazon Comprehend to identify specific terms, such as policy numbers or part codes. You can also extend Comprehend to classify documents and messages in a way that makes sense for your business, like customer support inquiries by request or social media posts by product. Adding this customization requires no machine learning expertise. You simply provide your labels and a small set of examples for each, and Comprehend takes care of the rest.
+Powered by state-of-the-art machine learning models, Amazon Comprehend can discover insights from unstructured text like social media posts, emails, and web pages. Amazon Comprehend Medical also identifies medical information, such as medication and medical conditions, and determines their relationship to each other (e.g., medicine dosage and strength). For example, Amazon Comprehend Medical extracts “methicillin-resistant Staphylococcus aureus,” often inputted as “MRSA,” and provides context, such as whether a patient has tested positive or negative, to make the extracted term meaningful.
+How it works
+Use cases
+Voice of customer analytics
+You can use Amazon Comprehend to analyze customer interactions in the form of support emails, social media posts, online comments, telephone transcriptions, etc., and discover what factors drive the most positive and negative experiences. You can then use these insights to improve your products and services.
+Example: Call center analytics
+More accurate search
+You can use Amazon Comprehend to provide a better search experience by enabling your search engine to index key phrases, entities, and sentiment. This enables you to focus the search on the intent and the context of the articles instead of basic keywords.
+Example: Index and search product reviews
+Knowledge management and discovery
+You can use Amazon Comprehend to organize and categorize your documents by topic for easier discovery, and then personalize content recommendations for readers by recommending other articles related to the same topic.
+Example: Personalize content on a website
+Classify support tickets for better issue handling
+Use custom classification to automatically categorize inbound customer support documents, such as online feedback forms, support tickets, forum posts, and product reviews based on their content. For example, account cancellation requests, billing problems, change of address, etc. Then, use custom entities to automatically extract relevant information like part numbers, loyalty tiers, and product names to quickly route documents the team best equipped to solve the customer problem and improve overall customer satisfaction.
+Example: Customer support ticket handling
+Perform Medical Cohort Analysis
+In oncology, it is critical that the right selection criteria are quickly discovered to recruit patients for clinical trials. Amazon Comprehend Medical understands and identifies complex medical information found in unstructured text to help make indexing and searching easier. You can use these insights to identify recruit patients to the appropriate clinical trial in a fraction of the time and cost from manual selection processes.
+Example: Clinical trial recruitment
+Customer success
+LexisNexis Legal & Professional is a global provider of content and technology solutions for legal and business professionals, serving customers in more than 175 countries, offering over 2 billion searchable archives.
+“We provide legal professionals with insightful research and analytics to help them make informed decisions. Therefore, we are always looking for better ways to discover insights from legal documents. Thanks to Amazon Comprehend's automatic machine learning (ML), we can now build accurate custom entity recognition models without getting into the complexities associated with ML. The entities that we care about the most, such as judge and attorney, can be identified quickly from over 200 million documents at above 92% accuracy.”
+Rick McFarland, Chief Data Officer - LexisNexis
+Vibes Mobile Engagement Platform enables marketers to engage one on one with today’s hyper-connected mobile consumers at scale.
+"Mobile messaging connects brands and consumers in a way that is direct, personal and authentic. At Vibes, we process billions of mobile messages every month and there are deep insights latent in the vast number of messages we process. Amazon Comprehend enables us to quickly extract key phrases, detect sentiment, and model topics from unstructured message content—providing marketers with a deeper understanding of their performance and actionable insights to deliver rewarding customer experiences."
+Brian Garofola, CTO - Vibes
+FINRA is a not-for-profit organization dedicated to investor protection and market integrity. It regulates one critical part of the securities industry – brokerage firms doing business with the public in the United States.
+"FINRA receives millions of documents with unstructured data to support investigative, examination, and compliance processes. Our investigators and examiners had to manually go through documents page by page or run very targeted searches to find what they needed. With Amazon Comprehend, we can quickly extract individuals and organization, match extracted entities to FINRA records, flag individual of interest, and detect similarities with other documents.”
+Dmytro Dolgopolov, Senior Director of Technology - FINRA
+VidMob is a technology platform that connects marketers with a global network of expert editors, animators, and motion graphic designers.
+“Amazon Comprehend and Amazon Transcribe services allow VidMob to build high-quality machine learning text analysis into our Agile Creative Suite, enabling us to help brand clients understand content performance in ways never before possible. We are able to transcribe text from video content, and quickly analyze it using Comprehend, allowing us to surface actionable insights to both our creator community and our clients, giving them a strategic edge in the market.”
+Alex Collmer, Founder and Chief Executive Officer - VidMob
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about Amazon Comprehend
+Visit the features page
+Ready to build?
+Get started with Amazon Comprehend
+Have more questions?
+Contact us

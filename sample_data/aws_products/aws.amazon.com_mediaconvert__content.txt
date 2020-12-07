@@ -1,0 +1,46 @@
+AWS Elemental MediaConvert
+Process video files and clips to prepare on-demand content for distribution or archiving
+Get started with AWS Elemental MediaConvert
+Live Chat
+AWS Elemental MediaConvert is a file-based video transcoding service with broadcast-grade features. It allows you to easily create video-on-demand (VOD) content for broadcast and multiscreen delivery at scale. The service combines advanced video and audio capabilities with a simple web services interface and pay-as-you-go pricing. With AWS Elemental MediaConvert, you can focus on delivering compelling media experiences without having to worry about the complexity of building and operating your own video processing infrastructure.
+AWS Elemental MediaConvert Explained
+Watch Now: AWS Elemental MediaConvert Explained (47 sec)
+How it works
+Benefits
+Broadcast-grade capabilities
+AWS Elemental MediaConvert lets you use a wide range of internet and professional media formats to produce high-quality video outputs that look great on any device. With support for ultra-high definition resolutions, high dynamic range video, graphic overlays, advanced audio features, content protection, and closed captioning, AWS Elemental MediaConvert offers a full set of tools to deliver high-quality viewing experiences.
+Reliable and easy to manage
+AWS Elemental MediaConvert does not require any set up, management, or maintenance of underlying infrastructure. Simply submit jobs with the video processing settings you want and get started without spending time or resources managing transcoding infrastructure. Not only does AWS Elemental MediaConvert provision the required resources to process your jobs, but it also monitors them automatically, so you don’t need to worry about reliability.
+Simple, predictable pricing
+AWS Elemental MediaConvert lets customers create high-quality, end-to-end video processing workflows in the cloud without upfront investment or capital expenditures for video processing infrastructure. You simply pay based on the duration of video that is processed and the features you use.
+Customer stories
+Arqiva
+Seven West Media
+Imagica
+Arqiva
+“We are thrilled to bring our first suite of virtualised media management services to market with immediate effect, offering a full complement of playout, OTT and VoD solutions to help our customers stay ahead in what is an immensely competitive and challenging environment.”
+-Alex Pannell, Managing Director of Satellite & Media, Arqiva
+About Arqiva
+Arqiva is a UK communications infrastructure and media services provider dedicated to connecting people wherever they are through the delivery of TV, radio, mobile, and the Internet of Things (IoT).
+Customer Snapshot: Arqiva
+Seven West Media
+“Working with an agile partner like AWS Elemental that moves as fast as we do and comes up with new technologies and experiments all the time, allows us not only to survive but to lead the market.”
+Darren Kerry, Director Digital Technology and OTT, Seven West Media
+About Seven Media West
+Seven West Media is one of Australia’s leading integrated media companies, with a presence in broadcast television, magazine and newspaper publishing, and online.
+Customer Snapshot: Seven Media West
+Imagica
+“Now, with AWS Elemental MediaConvert, we can confidently commit to customers’ schedules and deliver content in the multiple formats at high quality at low cost while meeting deadlines. This kind of performance lets us enhance our customers’ production value.”
+- Takaaki Kudo, Manager R&D Group Technology Administration Dept. for IMAGICA
+About Imagica
+IMAGICA Corporation is a Japanese post-production company for movies, television programs and commercials.
+Get started with AWS Elemental MediaConvert in the console
+Set up and log into your AWS account
+Launch the AWS Elemental MediaConvert console
+Create a new job, configure job settings, and start processing
+Have questions?
+Contact us
+Ready to build?
+Get started with AWS Elemental MediaConvert
+Discover more resources
+Visit the Resources page

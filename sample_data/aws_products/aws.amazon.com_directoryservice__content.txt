@@ -1,0 +1,39 @@
+AWS Directory Service
+Managed Microsoft Active Directory in AWS
+Get started with AWS Directory Service
+AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft Active Directory (AD), enables your directory-aware workloads and AWS resources to use managed Active Directory (AD) in AWS. AWS Managed Microsoft AD is built on actual Microsoft AD and does not require you to synchronize or replicate data from your existing Active Directory to the cloud. You can use the standard AD administration tools and take advantage of the built-in AD features, such as Group Policy and single sign-on. With AWS Managed Microsoft AD, you can easily join Amazon EC2 and Amazon RDS for SQL Server instances to your domain, and use AWS End User Computing (EUC) services, such as Amazon WorkSpaces, with AD users and groups.
+Introduction to AWS Directory Service (2:13)
+Benefits
+Easily migrate directory-aware, on-premises workloads
+AWS Managed Microsoft AD makes it easy to migrate AD-dependent applications and Windows workloads to AWS. With AWS Managed Microsoft AD, you can use Group Policies to manage EC2 instances and run AD-dependent applications in the AWS Cloud without the need to deploy your own AD infrastructure.
+Use actual Microsoft Active Directory (AD)
+Take advantage of actual Microsoft Active Directory to manage your users, groups, and devices. Use familiar AD administration tools and features, such as Group Policy objects (GPOs), domain trusts, fine-grain password policies, group Managed Service Account (gMSA), schema extensions, and Kerberos-based single sign-on. You can also delegate administrative tasks and authorize access using AD security groups.
+Share a single directory for cloud workloads
+Share a single directory for all your AD-aware Amazon EC2 instances, Amazon RDS for SQL Server instances, and AWS End User Computing services, such as Amazon WorkSpaces. You can also share your AD with multiple accounts. Using AWS Managed Microsoft AD helps avoid the complexity of replicating and synchronizing data across multiple directories.
+Easily extend existing domains
+AWS Managed Microsoft AD makes it easy to extend your existing Active Directory to AWS. It enables you to leverage your existing on-premises user credentials to access cloud resources such as the AWS Management Console, Amazon Workspaces, Amazon Chime, and Windows workloads in the cloud.
+Centrally manage application access and devices in AWS
+AWS Managed Microsoft AD provides you the option to administer your on-premises users, groups, applications, and systems without the complexity of running and maintaining an on-premises, highly available AD. You can easily join your existing computers, laptops, and printers to an AWS Managed Microsoft AD domain.
+Simplify administration with a managed service
+AWS Managed Microsoft AD is built on highly available, AWS-managed infrastructure. Each directory is deployed across multiple Availability Zones, and monitoring automatically detects and replaces domain controllers that fail. In addition, data replication and automated daily snapshots are configured for you. You do not have to install software, and AWS handles all patching and software updates.
+How it works
+Use cases
+Provide your on-premises AD users quick access to AWS
+Using an AD trust with AWS Managed Microsoft AD keeps your on-premises and cloud directories separated while allowing all your users access to AWS as needed. One and two way (incoming, outgoing and bi-directional) external and forest trusts can be used to establish connectivity for your on-premises users to access the AWS Management Console or AWS managed services such as Amazon RDS for SQL Server, Oracle, PostgreSQL, MySQL, and Amazon FSx. To learn more, see the Admin Guide.
+Leverage integrations with Amazon RDS and Amazon FSx
+AWS Managed Microsoft AD allows your apps and services to better integrate and utilize Amazon FSx for Windows File Server and AWS Managed database services, such as Amazon RDS for SQL Server, Oracle, PostgreSQL, and MySQL. You can also share a single AWS Managed Microsoft AD across AWS accounts and VPCs. To learn more, see the Admin Guide.
+Enable single sign-on experience for AWS End User Computing services
+Providing single sign-on capabilities for AWS End User Computing services such as Amazon Workspaces, Amazon WorkDocs, Amazon WorkLink, and Amazon AppStream 2.0 allows your users to access these service from a computer joined to AWS Managed Microsoft AD without having to enter their credentials separately. To learn more, see the Admin Guide.
+Give your on-premises AD users federated access to the AWS Management Console and AWS CLI quickly
+You can grant your on-premises AD users one-click access to the AWS Management Console and AWS CLI by selecting AWS Managed Microsoft AD as the identity source in AWS Single Sign-On (SSO). This enables your users to sign in with their existing AD credentials, assume one of their assigned roles at sign-in, and to access and take action on the resources according to the permissions defined for the role. An alternative option is using AWS Managed Microsoft AD with AWS Identity and Access Management (IAM) to enable your users to assume an AWS IAM role. To learn more, see the Admin Guide.
+Grant your on-premises AD users single-click access to cloud business applications
+You can use AWS Managed Microsoft AD with AWS SSO to add SAML identity provider (IdP) capabilities to your AWS Managed Microsoft AD or your trusted domains. Your users can benefit from built-in integrations to many business applications, including Salesforce, Box, and Office 365. You can easily configure single sign-on access to these applications by following step-by- step instructions. AWS SSO guides you through entering the required URLs, certificates, and metadata. To learn more, see the Admin Guide.
+Check out the product features
+Learn more about the AWS Managed Microsoft AD features to support directory-aware workloads.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Directory Service in the AWS Console.
+Sign in

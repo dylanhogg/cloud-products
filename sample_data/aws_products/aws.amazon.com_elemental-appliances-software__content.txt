@@ -1,0 +1,45 @@
+AWS Elemental Appliances & Software
+On-premises solutions for video processing and delivery
+Contact Sales
+Live Chat
+FEATURED SERVICE
+Amazon Interactive Video Service
+Build live, interactive viewer experiences with low-latency video streams
+Learn More
+AWS Elemental Appliances and Software solutions bring advanced video processing and delivery technologies into your data center, co-location space, or on-premises facility. You can deploy AWS Elemental Appliances and Software to encode, package, and deliver video assets on-premises and seamlessly connect with cloud-based video infrastructure. Designed for easy integration with AWS Cloud media solutions, AWS Elemental Appliances and Software support video workloads that need to remain on-premises to accommodate physical camera and router interfaces, managed network delivery, or network bandwidth constraints.
+AWS Elemental Live, Server, and Conductor come in two variants: ready-to-deploy appliances, or AWS-licensed software that you install on your own hardware. AWS Elemental Link is a compact hardware device that sends live video to the cloud for encoding and delivery to viewers.
+Watch Now: AWS Elemental Appliances & Software (1min)
+AWS Elemental
+Live
+Convert inputs into live outputs for broadcast and multiscreen video delivery
+Learn more »
+AWS Elemental
+Server
+Prepare file-based content for on-demand broadcast and multiscreen delivery
+Learn more »
+AWS Elemental
+Conductor
+Manage video networks for live and on-demand content
+Learn more »
+AWS Elemental
+Link
+Connect a live video source to AWS Elemental MediaLive
+Learn more »
+AWS Elemental Appliances & Software
+Benefits
+Flexible video solutions
+Deploy video processing and delivery solutions wherever you need them without disrupting existing infrastructures. AWS Elemental Appliances and Software products work with a vast ecosystem of on-premises and cloud-based solutions for content ingest, video processing, media asset management, content protection, advertising and monetization, content distribution, machine learning, and more.
+Easily incorporate new features
+Stay ahead of fast-moving video processing and delivery technologies, industry standards, and new devices. New and updated features, including new and emerging video and audio codecs, are easily introduced through software updates, allowing you to continue to maximize the efficiency, quality, and capabilities of your video solutions with no need to buy new software or hardware.
+Designed to work with AWS Media Services
+AWS Elemental Appliances and Software are designed to work with AWS Media Services, which transport, prepare, process, and deliver broadcast and over-the-top video from the AWS Cloud. They also work with a range of other AWS services to enhance media workflows, including services for media storage, content distribution, and machine learning. For cloud-based media infrastructures, AWS Elemental Appliances and Software let you position on-premises workloads where you need them, when you need them, so you can effectively build workflows on AWS to meet your technology requirements.
+High-quality viewing experiences
+Take advantage of new and proven technologies to deliver broadcast-grade experiences for live or on-demand video. Support for an extensive range of input and output formats, such as MPEG-2, AVC, and HEVC, and adaptive bitrate packaging formats including HLS, Microsoft Smooth Streaming , and DASH, gives you the tools to efficiently deliver high-quality video across a range of devices, at resolutions from standard definition to 4K ultra-high definition. Built-in features such as Quality-Defined Variable Bitrate control (QVBR) let you maximize video quality while saving storage and bandwidth cost.
+Dependable service delivery
+Maintain resilient video infrastructure for your mission-critical streams with built-in high-availability features. You control the level of redundancy you need to achieve continuous signal flow and uninterrupted service delivery. Built-in alerts and performance metrics enable comprehensive, easy-to-use status monitoring, and comprehensive reporting supports best practices for consistent high performance and reliability.
+Maximize your resources
+Process your video content with speed and efficiency for excellent resource utilization. Unique software architectures help maximize performance and optimize compression for live or on-demand content, so you can process more video with fewer resources and less network bandwidth. Built-in resource management and intuitive interfaces simplify workflow integration, job processing, and scheduling so you can get the most out of your hardware.
+Get Started
+Want to learn more? Connect with an AWS media solutions expert.
+Contact Sales
+Live Chat

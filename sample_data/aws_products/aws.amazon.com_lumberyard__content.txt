@@ -1,0 +1,78 @@
+Amazon Lumberyard
+Free. Powerful. Fully Customizable.
+We believe game developers deserve another choice. That’s why we’re building Lumberyard: a game engine with no royalties or seat fees, frictionless integration with Twitch and AWS, plus much more on the horizon.
+Get Lumberyard
+Amazon Lumberyard
+Free. Powerful. Fully Customizable.
+We believe game developers deserve another choice. That’s why we’re building Lumberyard: a game engine with no royalties or seat fees, frictionless integration with Twitch and AWS, plus much more on the horizon.
+Build Bigger.
+Lumberyard is architected for performance, modularity, and productivity. Reduce time to quality and maximize ambition, across PC, console, and mobile.
+Build a Fanbase.
+Engage and grow your community inside and outside of your game, and build games as fun to watch as they are to play, with Lumberyard's Twitch integration.
+Build Free.
+Lumberyard is free and includes full source. There are no seat fees, subscription fees, or requirements to share revenue. Only pay for the AWS services you choose to use.
+Ready to Get Started with Lumberyard?
+Quickly learn essential Lumberyard tools and workflows while building a game prototype in the Getting Started Guide video series.
+Getting Started with Lumberyard
+Quickly learn essential Lumberyard tools and workflows while building a game prototype in the Getting Started Guide video series.
+Watch Now
+More Tutorials
+We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
+Learn how to use the editor and more.
+Community
+Learn from the talented Lumberyard community and get in touch with our community managers. We're here to help.
+Talk with them on our forums.
+Documentation
+Get detailed instructions on how to use Lumberyard, check out release notes, and learn from written tutorials.
+Learn more.
+Download Samples
+Discover a collection of sample projects that showcase the possibilities using the tools and features available in Lumberyard.
+See Available Samples.
+Free Training Course
+Introduction to Building Games on AWS using Amazon Lumberyard
+Learn about Amazon Lumberyard features and explore various AWS solutions that can be integrated into games built with Lumberyard.
+Start Free Training
+From the Blog
+October 5, 2020
+Announcing Amazon Lumberyard 1.26
+Let's usher in a new season of game development with the release of Amazon Lumberyard Beta 1.26! This release brings you improvements to Dynamic Terrain and Landscape Canvas, general availability of the PhysX Gem, updated Amazon GameLift support, usability improvements to the White Box Tool, and more.
+July 17, 2020
+With an updated UI and Starter Game project, Lumberyard 1.25 is better than ever
+Lumberyard 1.25 is available now, bringing you an updated UI, an updated Starter Game project to help you get set up with best practices, and the brand new White Box Tool. Check out some of our favorite updates.
+May 15, 2020
+Chock full of improvements, Lumberyard Beta 1.24.0.0 now brings you updates to Script Canvas, PhysX, the core editor, and more!
+Spring has sprung, and it’s time for a fresh release of Amazon Lumberyard beta! We’re very pleased to bring you version 1.24.0.0, which contains many improvements to the Lumberyard engine and tools, particularly around quality of life with Script Canvas, the core editor, and asset bundling.
+Around the Web
+March 9, 2019
+Carbonated Games teases mobile shooter on Amazon Lumberyard
+In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as GameLift and Amazon Web Services.
+February 21, 2019
+Denis Dyack is coming back from the dead with Deadhaus Sonata
+I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
+Around the Web
+March 9, 2019
+Carbonated Games teases mobile shooter on Amazon Lumberyard
+In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as Gamelift and Amazon Web Services.
+February 21, 2019
+Denis Dyack is coming back from the dead with Deadhaus Sonata
+I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
+Built with Lumberyard
+"As a small team, using Lumberyard along with the support of Amazon, has allowed us to move ahead faster and more smoothly than I have ever done in 20 years of making games."
+Jamie Jackson, SlingShot Cartel
+"We decided that Amazon would be the best partner going forward for the future of Star Citizen."
+Chris Roberts, Cloud Imperium Games
+"Amazon’s vision for the future enables us to make a new type of game never before possible.”
+Leslie Benzies, Everywhere
+Built with Lumberyard
+"As a small team, using Lumberyard along with the support of Amazon, has allowed us to move ahead faster and more smoothly than I have ever done in 20 years of making games."
+Jamie Jackson, SlingShot Cartel
+"We decided that Amazon would be the best partner going forward for the future of Star Citizen."
+Chris Roberts, Cloud Imperium Games
+"Amazon’s vision for the future enables us to make a new type of game never before possible.”
+Leslie Benzies, Everywhere
+Learn more about what makes Lumberyard unique
+Visit the features page
+Ready to build with Lumberyard?
+Download Now
+Have more questions?
+Contact us

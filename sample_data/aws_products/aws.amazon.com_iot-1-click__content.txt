@@ -1,0 +1,34 @@
+AWS IoT 1-Click
+Trigger AWS Lambda functions from simple devices
+Try AWS IoT 1-Click
+AWS IoT 1-Click is a service that enables simple devices to trigger AWS Lambda functions that can execute an action. AWS IoT 1-Click supported devices enable you to easily perform actions such as notifying technical support, tracking assets, and replenishing goods or services. AWS IoT 1-Click supported devices are ready for use right out of the box and eliminate the need for writing your own firmware or configuring them for secure connectivity. AWS IoT 1-Click supported devices can be easily managed. You can easily create device groups and associate them with a Lambda function that executes your desired action when triggered. You can also track device health and activity with the pre-built reports.
+Customers can easily get started using AWS IoT 1-Click with supported devices. Device manufacturers can easily onboard devices on to AWS IoT 1-Click by contacting us.
+Benefits
+Easily trigger Lambda functions from simple devices
+AWS IoT 1-Click supported devices can trigger AWS Lambda functions. Lambda functions can help execute business logic written in languages including Java, Python, and C#, and trigger actions in the AWS cloud or on-premises. To help you get started, AWS IoT 1-Click also provides a set of pre-defined Lambda functions for simple actions such as sending an email or SMS.
+Secure connectivity right out of the box
+AWS IoT 1-Click supported devices are ready for use right out of the box. Devices are pre-provisioned with certificates at the time of manufacturing to securely connect to AWS. This means that you do not have to create, install, or manage certificates on devices. This also eliminates the need to write custom firmware on these devices.
+Easy to manage supported devices
+AWS IoT 1-Click makes it easy to manage supported devices. Using the AWS IoT 1-Click console or iOS or Android mobile app, you can group devices by function, location, or any other desired criteria. These device groups can then be associated with a Lambda function that executes your desired actions when triggered. AWS IoT 1-Click also provides reports to easily monitor your device health, utilization or activity. You can access a pre-built report directly from the AWS IoT 1-Click console, the iOS or Android mobile app, or build a custom report using Amazon CloudWatch.
+How it works
+Use cases
+Hospitality & facilities management
+Simple devices are used in facilities like office buildings, hotels, conference rooms, or airports to request a service, call for fulfilment of goods, and capture customer feedback. As an example, in a hotel guests can request room service by simply clicking an AWS IoT 1-Click enabled device. In an office building, staff can use an AWS IoT 1-Click device to report a broken printer, reserve a conference room, or request refill of food items. At public restrooms, visitors can use AWS IoT 1-Click enabled devices to rate facility cleanliness.
+Reordering goods and services
+Companies can use AWS IoT 1-Click to build solutions that allow their customers to reorder goods like cleaning products or food items in a single click. AWS IoT 1-Click makes it easy to deploy and configure Internet and cellular buttons to automatically reorder goods and services. To set up automatic reordering, you create AWS Lambda functions that execute API calls to place orders with custom procurements systems or online merchants such as amazon.com. With AWS IoT 1-Click, the Lambda functions, which reside in your AWS account, are deployed to your devices it in one click.
+Customer support
+AWS IoT 1-Click makes it easy to deploy and configure connected buttons to email or text customer support when help is needed. AWS IoT 1-Click supported devices are cloud-connected devices that execute prescribed actions when they are pressed. Supported devices built by partners can be found on the AWS IoT 1-Click Devices page. To trigger emails and texts, all you need to do is enter sender and recipient contact details into IoT 1-Click's pre-built Lambda function for calling and texting. You can also build your own Lambda functions for more sophisticated actions like inserting a new case record into your customer service system with relevant information about the request. You can also view reports in AWS IoT 1-Click to understand how your devices are used in the field. You can generate reports for the number of times customer support has been contacted based on users, locations, or any custom-defined parameter.
+Industrial manufacturing
+Operations staff “walk the line” and inspect manufacturing equipment multiple times a day to ensure proper operation. With AWS IoT 1-Click devices, customers don’t need to manually log entries for faulty equipment. In a few simple clicks, they can report and request service for equipment, potentially saving them millions in operational costs.
+Featured customers
+“1-Click allows M3 Health to solve the customer engagement challenges facing many Pharmaceutical & Biotechnology companies with a solution called Ping™. By using 1-Click with Ping™, we are able to setup simple IoT devices for Healthcare providers and patients. Now requests for service or other offerings, such as fulfilment of prescription drug samples, can be performed at the touch of a button, which greatly reduces “friction” in the communication process. 1-Click provides great efficiency in scaling programs to manage hundreds or thousands of devices.”
+- Jennifer Valentine, President, M3 Health
+“StoreroomLogix is able to streamline our customers’ supply chain with help of AWS 1-Click buttons. The buttons are used by industrial distributors and put at their customers’ sites to trigger replenishment requests for maintenance and repair inventory. This has allowed us to transform a complex process, into a click of a button while providing our customers immediate cost savings.”
+“We believe there are many opportunities for AWS IoT 1-Click to deliver higher business value in the energy sector”
+- Fernando Mladineo, ExxonMobil Technology Innovation Advisor
+Learn more about AWS IoT 1-Click features
+Visit the features page
+Ready to build?
+Try AWS IoT 1-Click
+Have more questions?
+Contact us

@@ -1,0 +1,61 @@
+AWS Database Migration Service
+Migrate your databases to AWS with minimal downtime
+More than 350,000 databases migrated using AWS Database Migration Service
+Get started with AWS Database Migration Service
+AWS Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. The AWS Database Migration Service can migrate your data to and from most widely used commercial and open-source databases.
+AWS Database Migration Service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle or Microsoft SQL Server to Amazon Aurora. With AWS Database Migration Service, you can continuously replicate your data with high availability and consolidate databases into a petabyte-scale data warehouse by streaming data to Amazon Redshift and Amazon S3. Learn more about the supported source and target databases.
+When migrating databases to Amazon Aurora, Amazon Redshift, Amazon DynamoDB or Amazon DocumentDB (with MongoDB compatibility) you can use DMS free for six months.
+Introduction to AWS Database Migration Service (1:33)
+Benefits
+Simple to use
+AWS Database Migration Service is simple to use. There is no need to install any drivers or applications, and it does not require changes to the source database in most cases. You can begin a database migration with just a few clicks in the AWS Management Console. Once the migration has started, DMS manages all the complexities of the migration process including automatically replicating data changes that occur in the source database during the migration process. You can also use this service for continuous data replication with the same simplicity.
+Minimal downtime
+AWS Database Migration Service helps you migrate your databases to AWS with virtually no downtime. All data changes to the source database that occur during the migration are continuously replicated to the target, allowing the source database to be fully operational during the migration process. After the database migration is complete, the target database will remain synchronized with the source for as long as you choose, allowing you to switchover the database at a convenient time.
+Supports widely used databases
+AWS Database Migration Service can migrate your data to and from most of the widely used commercial and open source databases. It supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle to Amazon Aurora. Migrations can be from on-premises databases to Amazon RDS or Amazon EC2, databases running on EC2 to RDS, or vice versa, as well as from one RDS database to another RDS database. It can also move data between SQL, NoSQL, and text based targets.
+Low cost
+AWS Database Migration Service is a low cost service. You only pay for the compute resources used during the migration process and any additional log storage. Migrating a terabyte-size database can be done for as little as $3. This applies to both homogeneous and heterogeneous migrations of any supported databases. This is in stark contrast to conventional database migration methods which can be very expensive.
+Fast and easy to set-up
+You can set up a migration task within minutes in the AWS Management Console. A migration task is where you define the parameters the AWS Database Migration Service uses to execute the migration. This includes setting up connections to the source and target databases, as well as choosing the replication instance used to run the migration process. Once setup, the same task can be used for test runs before performing the actual migration.
+Reliable
+The AWS Database Migration Service is highly resilient and self–healing. It continually monitors source and target databases, network connectivity, and the replication instance. In case of interruption, it automatically restarts the process and continues the migration from where it was halted. Multi-AZ option allows you to have high-availability for database migration and continous data replication by enabling redundant replication instances.
+Use cases
+Homogeneous Database Migrations
+In homogeneous database migrations, the source and target database engines are the same or are compatible like Oracle to Amazon RDS for Oracle, MySQL to Amazon Aurora, MySQL to Amazon RDS for MySQL, or Microsoft SQL Server to Amazon RDS for SQL Server. Since the schema structure, data types, and database code are compatible between the source and target databases, this kind of migration is a one step process. You create a migration task with connections to the source and target databases, then start the migration with the click of a button. AWS Database Migration Service takes care of the rest. The source database can be located in your own premises outside of AWS, running on an Amazon EC2 instance, or it can be an Amazon RDS database. The target can be a database in Amazon EC2 or Amazon RDS.
+Verizon is a global leader delivering innovative communications and technology solutions. “Verizon is helping our customers build a better, more connected life. As part of this journey, we are undergoing a major transformation in our database management approach, moving away from expensive, legacy commercial database solutions to more efficient and cost-effective options. Testing of Amazon Aurora PostgreSQL showed better performance over standard PostgreSQL residing on Amazon EC2 instances, and the AWS Database Migration Service and Schema Conversion Tool were found effective at identifying areas for data-conversion that required special attention during migration.” - Shashidhar Sureban, Associate Director, Database Engineering, Verizon.
+Heterogeneous Database Migrations
+In heterogeneous database migrations the source and target databases engines are different, like in the case of Oracle to Amazon Aurora, Oracle to PostgreSQL, or Microsoft SQL Server to MySQL migrations. In this case, the schema structure, data types, and database code of source and target databases can be quite different, requiring a schema and code transformation before the data migration starts. That makes heterogeneous migrations a two step process. First use the AWS Schema Conversion Tool to convert the source schema and code to match that of the target database, and then use the AWS Database Migration Service to migrate data from the source database to the target database. All the required data type conversions will automatically be done by the AWS Database Migration Service during the migration. The source database can be located in your own premises outside of AWS, running on an Amazon EC2 instance, or it can be an Amazon RDS database. The target can be a database in Amazon EC2 or Amazon RDS.
+Trimble is a global leader in telematics solutions. They had a significant investment in on-premises hardware in North America and Europe running Oracle databases. Rather than refresh the hardware and renew the licenses, they opted to migrate the databases to AWS. They ran the AWS Schema Conversion Tool to analyze the effort, and then migrated their complete database to a managed PostgreSQL service on Amazon RDS. "Our projections are that we will pay about one quarter of what we were paying in our private infrastructure." -Todd Hofert, Director of Infrastructure Operations, Trimble.
+Development and Test
+AWS Database Migration Service can be used to migrate data both into and out of the cloud for development purposes. There are two common scenarios. The first is to deploy development, test or staging systems on AWS, to take advantage of the cloud’s scalability and rapid provisioning. This way, developers and testers can use copies of real production data, and can copy updates back to the on-premises production system. The second scenario is when development systems are on-premises (often on personal laptops), and you migrate a current copy of an AWS Cloud production database to these on-premises systems either once or continuously. This avoids disruption to existing DevOps processes while ensuring the up-to-date representation of your production system.
+Database Consolidation
+You can use AWS Database Migration Service to consolidate multiple source databases into a single target database. This can be done for homogeneous and heterogeneous migrations, and you can use this feature with all supported database engines. The source databases can be located in your own premises outside of AWS, running on an Amazon EC2 instance, or it can be an Amazon RDS database. The sources databases can also be spread across different locations. For example, one of the source databases can be in your own premises outside of AWS, while the second one in Amazon EC2, and the third one is an Amazon RDS database. The target can be a database in Amazon EC2 or Amazon RDS.
+Continuous Data Replication
+You can use AWS Database Migration Service to perform continuous data replication. Continuous data replication has a multitude of use cases including Disaster Recovery instance synchronization, geographic database distribution and Dev/Test environment synchronization. You can use DMS for both homogeneous and heterogeneous data replications for all supported database engines. The source or destination databases can be located in your own premises outside of AWS, running on an Amazon EC2 instance, or it can be an Amazon RDS database. You can replicate data from a single database to one or more target databases or data from multiple source databases can be consolidated and replicated to one or more target databases.
+The US Department of Veterans Affairs (VA) processes hundreds of thousands of Veterans Appeals each year. "Our appeals processing system, VACOLS, includes 20 million records stored in an Oracle 11g database. The system is more than 20 years old and is in the process of being modernized. During this time, we need to ensure that the data is securely replicated into the cloud for safekeeping. We're using AWS DMS to replicate the database into an RDS Oracle database in AWS GovCloud, in a Multi-AZ deployment. This setup ensures that VACOLS data is preserved, secured, and highly available in the cloud, which is a serious win for VA and for our Veterans, who rely on us for the safeguarding of their information." – Alan Ning, Site Reliability Engineer, U.S. Digital Service.
+Featured Partners
+Apps Associate is an APN Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives.
+Contact »
+Onica is an APN Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements.
+Contact »
+We do Oracle on AWS...That’s it! Applications, technique stacks, databases, and migrations to Amazon Aurora.
+Contact »
+DB Best Technologies specializes in providing modernization and data management solutions and developing cross-platform database tools.
+Contact »
+View All AWS Database Migration Service Partners »
+Blog posts & articles
+Migrate Apache Cassandra databases to Amazon DynamoDB more easily
+Arun Thiagarajan and Mahesh Kansara
+20 September 2018
+Load CDC data from relational databases to Amazon Kinesis using Database Migration Service
+Zafar Kapadia and Udayasimha Theepireddy
+July 16, 2018
+Visit the pricing page
+Explore pricing options for AWS Database Migration Service.
+Learn more
+Try DMS for free
+Check out how you can use DMS for free.
+Sign up
+Ready to build?
+Get started with AWS Database Migration Service.
+Sign in

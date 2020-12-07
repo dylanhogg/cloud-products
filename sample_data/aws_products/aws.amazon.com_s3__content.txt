@@ -1,0 +1,98 @@
+Amazon S3
+Object storage built to store and retrieve any amount of data from anywhere
+Get started with Amazon S3
+Request more information
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. This means customers of all sizes and industries can use it to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides easy-to-use management features so you can organize your data and configure finely-tuned access controls to meet your specific business, organizational, and compliance requirements. Amazon S3 is designed for 99.999999999% (11 9's) of durability, and stores data for millions of applications for companies all around the world.
+Introduction to Amazon S3 (4:31)
+Benefits
+Industry-leading performance, scalability, availability, and durability
+Scale your storage resources up and down to meet fluctuating demands, without upfront investments or resource procurement cycles. Amazon S3 is designed for 99.999999999% (11 9’s) of data durability because it automatically creates and stores copies of all S3 objects across multiple systems. This means your data is available when needed and protected against failures, errors, and threats. Amazon S3 also delivers strong read-after-write consistency automatically, at no cost, and without changes to performance or availability.
+Learn about S3 data durability »
+Wide range of cost-effective storage classes
+Save costs without sacrificing performance by storing data across the S3 Storage Classes, which support different data access levels at corresponding rates. You can use S3 Storage Class Analysis to discover data that should move to a lower-cost storage class based on access patterns, and configure an S3 Lifecycle policy to execute the transfer. You can also store data with changing or unknown access patterns in S3 Intelligent-Tiering, which tiers objects based on changing access patterns and automatically delivers cost savings. With the S3 Outposts storage class, you can meet data residency requirements, and store data on-premises in your Outposts environment using S3 on Outposts. Optimize costs using S3 » and learn more about the S3 Storage Classes »
+Unmatched security, compliance, and audit capabilities
+Store your data in Amazon S3 and secure it from unauthorized access with encryption features and access management tools. S3 is the only object storage service that allows you to block public access to all of your objects at the bucket or the account level with S3 Block Public Access. S3 maintains compliance programs, such as PCI-DSS, HIPAA/HITECH, FedRAMP, EU Data Protection Directive, and FISMA, to help you meet regulatory requirements. S3 integrates with Amazon Macie to discover and protect your sensitive data. AWS also supports numerous auditing capabilities to monitor access requests to your S3 resources.
+Learn more about S3 security and compliance »
+Easily manage data and access controls
+S3 gives you robust capabilities to manage access, cost, replication, and data protection. S3 Access Points make it easy to manage data access with specific permissions for your applications using a shared data set. S3 Replication manages data replication within the region or to other regions. S3 Batch Operations helps manage large scale changes across billions of objects. S3 Storage Lens delivers organization-wide visibility into object storage usage and activity trends. Since S3 works with AWS Lambda, you can log activities, define alerts, and automate workflows without managing additional infrastructure.
+Learn more about S3 storage management features »
+Query-in-place services for analytics
+Run big data analytics across your S3 objects (and other data sets in AWS) with our query-in-place services. Use Amazon Athena to query S3 data with standard SQL expressions and Amazon Redshift Spectrum to analyze data that is stored across your AWS data warehouses and S3 resources. You can also use S3 Select to retrieve subsets of object data, instead of the entire object, and improve query performance by up to 400%.
+Learn more about query in place »
+Most supported cloud storage service
+Store and protect your data in Amazon S3 by working with a partner from the AWS Partner Network (APN) — the largest community of technology and consulting cloud services providers. The APN recognizes migration partners that transfer data to Amazon S3 and storage partners that offer S3-integrated solutions for primary storage, backup and restore, archive, and disaster recovery. You can also purchase an AWS-integrated solution directly from the AWS Marketplace, which lists over 250 storage-specific offerings.
+Learn about the APN and AWS Marketplace »
+How it works - S3 features
+S3 Storage Lens
+S3 Intelligent Tiering
+S3 Access Points
+S3 Batch Operations
+S3 Block Public Access
+S3 Storage Lens
+Gain organization-wide visibility into storage usage, activity trends, and receive actionable recommendations
+S3 Storage Lens delivers organization-wide visibility into object storage usage, activity trends, and makes actionable recommendations to improve cost-efficiency and apply data protection best practices. S3 Storage Lens is the first cloud storage analytics solution to provide a single view of object storage usage and activity across hundreds, or even thousands, of accounts in an organization, with drill-downs to generate insights at the account, bucket, or even prefix level. S3 Storage Lens analyzes organization-wide metrics to deliver contextual recommendations to find ways to reduce storage costs and apply best practices on data protection.
+After you activate S3 Storage Lens in the S3 Console, you will receive an interactive dashboard containing pre-configured views to visualize storage usage and activity trends, with contextual recommendations that make it easy to take action. You can also export metrics in CSV or Parquet format to an S3 bucket. You can use the summary view, cost efficiency view, or the data protection view to see metrics related to your intended use case. In addition to the dashboard in the S3 console, you can export metrics in CSV or Parquet format to an S3 bucket of their choice for further use.
+Visit the S3 Storage Lens page to learn more.
+S3 Intelligent Tiering
+Optimize storage costs with S3 Intelligent-Tiering
+S3 Intelligent-Tiering optimizes storage coss by automatically moving objects between four access tiers when access patterns change. There are two low latency access tiers optimized for frequent and infrequent access to help you save up to 40% on storage costs, and two opt-in archive access tiers designed for asynchronous access with cost savings up to 95% for objects that are rarely accessed.
+Objects uploaded or transitioned to S3 Intelligent-Tiering are automatically stored in the Frequent Access tier. S3 Intelligent-Tiering works by monitoring access patterns and then moving the objects that have not been accessed in 30 consecutive days to the Infrequent Access tier. Once you have activated one or both of the archive access tiers, S3 Intelligent-Tiering will move objects that haven’t been accessed for 90 consecutive days to the Archive Access tier and then after 180 consecutive days of no access to the Deep Archive Access tier. If the objects are accessed later, S3 Intelligent-Tiering moves the objects back to the Frequent Access tier.
+There are no retrieval fees, so you won’t see unexpected increases in storage bills when access patterns change. Learn about optimizing storage costs.
+S3 Access Points
+Easily manage access for shared data sets with S3 Access Points
+Amazon S3 Access Points, a feature of S3, simplifies managing data access at scale for applications using shared data sets on S3. Access points are unique hostnames that customers create to enforce distinct permissions and network controls for any request made through the access point.
+Customers with shared data sets including data lakes, media archives, and user-generated content can easily scale access for hundreds of applications by creating individualized access points with names and permissions customized for each application. Any access point can be restricted to a Virtual Private Cloud (VPC) to firewall S3 data access within customers’ private networks, and AWS Service Control Policies can be used to ensure all access points are VPC restricted.
+Visit the S3 Access Points page to learn more.
+S3 Batch Operations
+Manage tens to billions of objects at scale with S3 Batch Operations
+S3 Batch Operations is an Amazon S3 data management feature that lets you manage billions of objects at scale with just a few clicks in the Amazon S3 Management Console or a single API request.
+To perform work in S3 Batch Operations, you create a job. The job consists of the list of objects, the action to perform, and the set of parameters you specify for that type of operation. You can create and run multiple jobs at a time in S3 Batch Operations or use job priorities as needed to define the precedence of each job and ensures the most critical work happens first. S3 Batch Operations also manages retries, tracks progress, sends completion notifications, generates reports, and delivers events to AWS CloudTrail for all changes made and tasks executed.
+Visit the S3 Batch Operations page to learn more.
+S3 Block Public Access
+Block all public access to your S3 data, now and in the future
+S3 Block Public Access provides controls across an entire AWS Account, or at the individual S3 bucket level to ensure that objects never have public access, now and in the future.
+Public access is granted to buckets and objects through access control lists (ACLs), bucket policies, or both. In order to ensure that public access to all your S3 buckets and objects is blocked, turn on block all public access at the account level. These settings apply account-wide for all current and future buckets. S3 Block Public Access settings override S3 permissions that allow public access, making it easy for the account administrator to set up a centralized control to prevent variation in security configuration regardless of how an object is added or a bucket is created.
+In addition to the S3 console, you can enable S3 Block Public Access via the AWS CLI, SDKs, or REST APIs. Detailed instructions for either option are available in the S3 Block Public Access documentation.
+Use cases
+Backup and restore
+Build scalable, durable, and secure backup and restore solutions with Amazon S3 and other AWS services, such as S3 Glacier, Amazon EFS, and Amazon EBS, to augment or replace existing on-premises capabilities. AWS and APN partners can help you meet Recovery Time Objectives (RTO), Recovery Point Objectives (RPO), and compliance requirements. With AWS, you can back up data already in the AWS Cloud or use AWS Storage Gateway, a hybrid storage service, to send backups of on-premises data to AWS.
+Learn more about backup and restore »
+Disaster recovery (DR)
+Protect critical data, applications, and IT systems that are running in the AWS Cloud or in your on-premises environment without incurring the expense of a second physical site. With Amazon S3 storage, S3 Cross-Region Replication, and other AWS compute, networking, and database services, you can create DR architectures in order to quickly and easily recover from outages caused by natural disasters, system failures, and human errors.
+Learn more about DR »
+Archive
+Retire physical infrastructure, and archive data with S3 Glacier and S3 Glacier Deep Archive. These S3 Storage Classes retain objects long-term at the lowest rates. Simply create an S3 Lifecycle policy to archive objects throughout their lifecycles, or upload objects directly to the archival storage classes. With S3 Object Lock, you can apply retention dates to objects to protect them from deletions, and meet compliance requirements. Unlike tape libraries, S3 Glacier lets you restore archived objects in as little as one minute for expedited retrievals and 3-5 hours for standard retrievals. Bulk data restores from S3 Glacier and all restores from S3 Glacier Deep Archive are completed within 12 hours.
+Learn more about archiving »
+Data lakes and big data analytics
+Accelerate innovation by building a data lake on Amazon S3, and extract valuable insights using query-in-place, analytics, and machine learning tools. As your data lake grows, use S3 Access Points to easily configure access to your data, with specific permissions for each application or sets of applications. You can also use AWS Lake Formation to quickly create a data lake, and centrally define and enforce security, governance, and auditing policies. The service collects data across your databases and S3 resources, moves it into a new data lake in Amazon S3, and cleans and classifies it using machine learning algorithms. All AWS resources can be scaled up to accommodate your expanding data stores — without upfront investments.
+Learn more about building a data lake on Amazon S3 and AWS Lake Formation »
+Hybrid cloud storage
+AWS Storage Gateway lets you seamlessly connect and extend your on-premises applications to AWS Storage all while caching data locally for low-latency access. You can also automate data transfers between on-premises storage, including from S3 on Outposts, and Amazon S3 by using AWS DataSync, which can transfer data at speeds up to 10 times faster than open-source tools. You can also transfer files directly into and out of Amazon S3 with the AWS Transfer Family — a fully managed, simple, and seamless service that enables secure file exchanges with third parties using SFTP, FTPS, and FTP. Another way to enable a hybrid cloud storage environment is to work with a gateway provider from the APN.
+Learn more about AWS Storage Gateway » , AWS DataSync » ,  AWS Transfer Family » , S3 on Outposts »
+Cloud-native applications
+Build fast, cost-effective mobile and internet-based applications by using AWS services and Amazon S3 to store development and production data shared by the microservices that make up cloud-native applications. With Amazon S3, you can upload any amount of data and access it anywhere in order to deploy applications faster and reach more end users. Storing data in Amazon S3 means you have access to the latest AWS developer tools, S3 API, and services for machine learning and analytics to innovate and optimize your cloud-native applications.
+Learn more about cloud-native applications »
+Case studies
+Georgia-Pacific builds a central data lake based on Amazon S3, allowing it to efficiently ingest and analyze structured and unstructured data at scale.
+Nasdaq stores up to seven years of data in Amazon S3 Glacier to meet industry regulation and compliance requirements. With AWS, the company is enabled to restore data while optimizing its long-term storage costs.
+Sysco consolidates its data into a single data lake built on Amazon S3 and Amazon S3 Glacier to run analytics on its data and gain business insights.
+Nielsen built a new, cloud-native local television rating platform capable of storing 30 petabytes of data in Amazon S3 and leveraging Amazon Redshift, AWS Lambda, and Amazon EMR.
+What's new with S3
+date
+date
+1
+…
+…
+S3 blog posts
+There are no Amazon S3 blogs available at this time, please visit AWS blogs to view all storage blog content.
+To read more Amazon S3 blogs, please visit AWS storage blogs.
+Ready to get started?
+Check out S3 features
+Learn more about features for data management, security, access management, analytics, and more.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start experimenting with Amazon S3.
+Sign up
+Start building in the console
+Get started building with Amazon S3 in the AWS Console.
+Get started

@@ -1,0 +1,33 @@
+Amazon Chime
+Working together, simplified
+Sign up for Amazon Chime
+Attend a meeting
+Amazon Chime is a communications service that lets you meet, chat, and place business calls inside and outside your organization, all using a single application. Developers can use the same communications infrastructure and services that power Amazon Chime, and add audio calling, video calling, and screen sharing capabilities directly to their applications using the Amazon Chime SDK.
+Amazon Chime Voice Connector is a service that enables enterprises to migrate their telephony workloads to AWS. IT professionals can use Voice Connector for low-cost SIP trunking from on-premises or cloud-based phone systems. Voice Connector supports inbound calling, outbound calling, or both. Developers can also use Voice Connector to build PSTN calling in their own applications using the Amazon Chime SDK or stream audio for phone call analytics and machine learning.
+Amazon Chime: Frustration-Free Meetings
+Why Amazon Chime?
+Choose how you communicate
+Amazon Chime lets you choose the communication options that are best suited for your business. You have the option to choose from meetings, chat, and business calling or use Voice Connector to direct your voice traffic over the internet. With Amazon Chime, you have the flexibility to choose the communication option that fits with your business needs, and the freedom to scale up or down as needed.
+Use one app for all your communication
+Amazon Chime lets you meet, chat, and place business phone calls with a single, secure application. You don’t need to switch between applications to collaborate and can instantly go from a chat to a call, share your screen, and even invite more people to join your meeting. When it’s time for your meeting, Amazon Chime will call you on all your devices to help ensure you are never late, and that your meetings start on time.
+Pay only for what you use
+Amazon Chime offers pay-per-use pricing which lets you pay for features you use, on the days that you use them. With pay-per-use pricing there’s no upfront investment or long-term contracts. You can switch between Basic features that don’t include a charge, and Pro features that do include a charge. You can use the right features for your business without worrying about overspending.
+Amazon Chime APN Partners
+Nextiva offers Amazon Chime video conferencing and screen sharing as part of its suite of connected communications solutions, allowing businesses to stay connected while working from anywhere.
+Lumen offers Amazon Chime as part of their Unified Communications and Collaboration Services portfolio, providing enterprise customers the reliability and security of Lumen global network, and the benefit of consolidated billing.
+T2M Works is a market leading Unified Communications and Collaboration company focused on providing the right business outcomes for customers. Helping clients get the most out of Amazon Chime, Amazon Voice Connector, and Amazon Connect is what separates T2M from all other telecom partners. T2M Works develops business communications solutions using the Chime SDK and advanced AWS services like Lex, Lambda, and Kinesis. As an Amazon Managed Service Provider, T2M Works does the heavy lifting to help you maximize the return on your AWS investment.
+Blog posts & articles
+date
+date
+1
+…
+…
+Sign up for free
+Use all Amazon Chime Pro features for your organization.
+Sign up
+Attend a meeting or download clients
+Join a meeting or sign up for Amazon Chime Basic for 1:1 meetings and chat.
+Attend a meeting or download clients
+Contact Sales
+Fill and submit a contact us form to request sales support.
+Contact us

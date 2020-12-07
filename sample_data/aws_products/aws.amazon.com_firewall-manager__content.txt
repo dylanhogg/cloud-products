@@ -1,0 +1,25 @@
+AWS Firewall Manager
+Centrally configure and manage firewall rules across accounts and applications
+Get started with AWS Firewall Manager
+AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure, from a central administrator account.
+Using AWS Firewall Manager, you can easily roll out AWS WAF rules for your Application Load Balancers, API Gateways, and Amazon CloudFront distributions. You can create AWS Shield Advanced protections for your Application Load Balancers, ELB Classic Load Balancers, Elastic IP Addresses and CloudFront distributions. You can also configure new Amazon Virtual Private Cloud (VPC) security groups and audit any existing VPC security groups for your Amazon EC2, Application Load Balancer (ALB) and ENI resource types. Finally, with AWS Firewall Manager, you can also centrally deploy AWS Network Firewalls across accounts and VPCs in your organization.
+Benefits
+Simplify management of firewall rules across your accounts
+AWS Firewall Manager is integrated with AWS Organizations so you can enable AWS WAF rules, AWS Shield Advanced protections, security groups, and AWS Network Firewall rules for your Amazon VPC across multiple AWS accounts and resources from a single place. You can group rules, build policies, and centrally apply those policies across your entire infrastructure. For example, you can delegate the creation of application-specific rules within an account while retaining the ability to enforce global security policies across accounts.
+Ensure compliance of existing and new applications
+AWS Firewall Manager automatically enforces mandatory security policies that you define across existing and newly created resources. The service discovers new resources as they are created across accounts. For example, if you are required to meet US Department of Treasury’s Office of Foreign Assets Control (OFAC) regulations, you can use Firewall Manager to deploy an AWS WAF rule to block traffic from embargoed countries across your Application Load Balancer, API Gateway, and Amazon CloudFront accounts. As new resources are created, they will automatically be brought under the policy scope.
+Easily deploy managed rules across accounts
+AWS Firewall Manager integrates with Managed Rules for AWS WAF, which gives you an easy way to deploy pre-configured WAF rules on your applications. You can choose a Managed Rule from an AWS Marketplace Seller and deploy it consistently across your Application Load Balancer, API Gateway, and Amazon CloudFront infrastructure with just a few clicks in the console. For example, you can easily protect your entire organization from zero-day vulnerabilities by subscribing to a Managed Rule for WAF from the AWS Marketplace that provides CVE patch updates. For Advanced Shield protections, you can use AWS Firewall Manager to automatically protect against various types of DDoS attacks such as UDP reflection attacks, SYN flood, DNS query flood and HTTP flood attacks across accounts.
+Centrally deploy protections for your VPCs
+With Firewall Manager, your security administrator can deploy baseline set of VPC security group rules for EC2 instances, Application Load Balancers (ALBs) and Elastic Network Interfaces (ENIs) in your Amazon VPCs. At the same time, you can also audit any existing security groups in your VPCs for over permissive rules and remediate them from a single place. You can also leverage Firewall Manager to deploy rules for AWS Network Firewalls across your VPCs in your organization, to control traffic leaving and entering your network.
+Blog posts & articles
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
+Learn more about Firewall Manager
+Learn more about AWS Firewall Manager by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Firewall Manager in the console.
+Sign in

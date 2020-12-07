@@ -1,0 +1,59 @@
+AWS IoT Analytics
+Analytics for IoT devices
+Get started for free
+AWS IoT Analytics is a fully-managed service that makes it easy to run and operationalize sophisticated analytics on massive volumes of IoT data without having to worry about the cost and complexity typically required to build an IoT analytics platform. It is the easiest way to run analytics on IoT data and get insights to make better and more accurate decisions for IoT applications and machine learning use cases.
+IoT data is highly unstructured which makes it difficult to analyze with traditional analytics and business intelligence tools that are designed to process structured data. IoT data comes from devices that often record fairly noisy processes (such as temperature, motion, or sound). The data from these devices can frequently have significant gaps, corrupted messages, and false readings that must be cleaned up before analysis can occur. Also, IoT data is often only meaningful in the context of additional, third party data inputs. For example, to help farmers determine when to water their crops, vineyard irrigation systems often enrich moisture sensor data with rainfall data from the vineyard, allowing for more efficient water usage while maximizing harvest yield.
+AWS IoT Analytics automates each of the difficult steps that are required to analyze data from IoT devices. AWS IoT Analytics filters, transforms, and enriches IoT data before storing it in a time-series data store for analysis. You can setup the service to collect only the data you need from your devices, apply mathematical transforms to process the data, and enrich the data with device-specific metadata such as device type and location before storing the processed data. Then, you can analyze your data by running ad hoc or scheduled queries using the built-in SQL query engine, or perform more complex analytics and machine learning inference. AWS IoT Analytics makes it easy to get started with machine learning by including pre-built models for common IoT use cases.
+You can also use your own custom analysis, packaged in a container, to execute on AWS IoT Analytics. AWS IoT Analytics automates the execution of your custom analyses created in Jupyter Notebook or your own tools (such as Matlab, Octave, etc.) to be executed on your schedule.
+AWS IoT Analytics is a fully managed service that operationalizes analyses and scales automatically to support up to petabytes of IoT data. With AWS IoT Analytics, you can analyze data from millions of devices and build fast, responsive IoT applications without managing hardware or infrastructure.
+For more information, visit the AWS IoT Analytics documentation page.
+AWS IoT Analytics - How it works (3:01)
+AWS IoT Analytics benefits
+Operationalize your analytical workflows
+You supply the analysis, AWS IoT Analytics automates the execution of your analysis when and where you need it. AWS IoT Analytics will import your custom authored code containers, built in external tools such as Matlab, Octave, etc, and execute them on your schedule to generate operational insights, giving you more time to focus on what you do best.
+Easily run queries on IoT data
+With AWS IoT Analytics, you can run simple, ad-hoc queries using the built-in SQL query engine. Using standard SQL queries to extract data from the data store, you can calculate the average distance traveled of a fleet of vehicles or number of doors locked in a smart building, for example. Also, AWS IoT Analytics provides a series of non-overlapping, contiguous time windows to perform analysis on new, incremental data. You can improve analysis efficiency and lower costs by scanning only the data you need.
+Data storage optimized for IoT
+AWS IoT Analytics stores the processed device data in a time-series data store that is optimized to deliver fast response times on IoT queries. The raw data is also automatically stored for later processing or reprocessing for another use case.
+Prepares your IoT data for analysis
+AWS IoT Analytics includes data preparation techniques that make it easy to prepare and process your data for analysis. AWS IoT Analytics also supports time-series analyses so you can analyze the performance of devices over time and understand how and where they are being used, continuously monitor device data to predict maintenance issues, and monitor sensors to predict and react to environmental conditions. AWS IoT Analytics is integrated with AWS IoT Core to easily ingest device data directly from connected devices. It cleans false readings, fills gaps in the data, and performs mathematical transformations of message data. As the data is ingested, AWS IoT Analytics can process it using conditional statements, filter data to collect just the data you want to analyze, and enrich it with information from the AWS IoT registry. You can also use AWS Lambda functions to enrich your device data from external sources like the Weather Service, HERE Maps, Salesforce, or Amazon DynamoDB.
+Tools for machine learning
+AWS IoT Analytics makes it easy to apply machine learning to your IoT data with hosted Jupyter notebooks. You can directly connect your IoT data to the notebook and build, train, and execute models right from the AWS IoT Analytics console without having to manage any of the underlying infrastructure. Using AWS IoT Analytics, you can apply machine learning algorithms to your device data to produce a health score for each device in your fleet. For example, an auto manufacturer can detect which of their customers have worn brake pads and alert them to seek maintenance for their vehicles. With just the click of a button, you can also package your Jupyter Notebook code into an executable container image and execute that container on AWS IoT Analytics as needed.
+Automated scaling with pay as you go pricing
+AWS IoT Analytics is a fully managed and pay-as-you go service that scales automatically to support up to petabytes of IoT data. With IoT Analytics, you can analyze your entire fleet of connected devices without managing hardware or infrastructure. As your needs change, compute power and the data store automatically scale up or down so you always have the right capacity for your IoT applications and you only pay for the resources that you use.
+How it works
+Use cases
+Smart agriculture
+AWS IoT Analytics can automatically enrich IoT device data with contextual metadata using the AWS IoT Registry and other public data sources so that you can perform analysis that factors in time, location, temperature, altitude, and other environmental conditions. With that analysis, you can write models delivering recommended actions your devices can take in the field. For example, operators of connected agriculture equipment can use AWS IoT Analytics to enrich moisture sensor data with expected rainfall to optimize the water-efficiency of their automated irrigation equipment.
+Predictive maintenance
+AWS IoT Analytics provides pre-built templates to help you easily build powerful predictive maintenance models and apply them to your fleet. For example, you could use AWS IoT Analytics to better predict when heating and cooling systems will fail on connected cargo vehicles and service accordingly to prevent shipment damage.
+Proactive replenishing of supplies
+AWS IoT Analytics lets you build IoT applications that can monitor inventories in real time. For example, a food and drink company can use AWS IoT Analytics to analyze data from their food vending machines and proactively reorder merchandise for the correct machine and item whenever the food supply is running low.
+Process efficiency scoring
+With AWS IoT Analytics, companies can build applications that constantly monitor the efficiency of different processes and take action to improve the process. For example, a mining company can increase the efficiency of its ore trucks by maximizing the load for each trip. With AWS IoT Analytics, the company can identify the most efficient load for a location or truck over time, and then compare any deviations from the target load in real time, and better plan loading guidelines to improve efficiency.
+Mini user guides
+AWS IoT Analytics mini user guide: Channels
+AWS IoT Analytics mini user guide: Pipelines
+AWS IoT Analytics mini user guide: Data stores & data sets
+AWS IoT Analytics mini user guide: Analytics & visualization
+Blog posts & webinars
+IoT Analytics Now Generally Available
+Randall Hunt
+1 MAY 2018
+Learn step by step how iDevices uses AWS IoT Analytics (32:04)
+Get started with AWS
+Sign into the console
+Instantly access
+AWS IoT Analytics
+Learn how to use AWS IoT Analytics
+Read the technical
+documentation
+Explore key features
+Explore AWS IoT Analytics
+features
+Learn more about AWS IoT Analytics
+Visit the features page
+Ready to build?
+Get started for free
+Have more questions?
+Contact us

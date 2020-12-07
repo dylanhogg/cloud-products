@@ -1,0 +1,66 @@
+Amazon WorkLink
+Provide secure mobile access to your internal websites and web apps
+Get started with Amazon WorkLink
+Amazon WorkLink is a fully managed service that lets you provide your employees with secure, easy access to your internal corporate websites and web apps using their mobile phones. Traditional solutions such as Virtual Private Networks (VPNs) and device management software are inconvenient to use on the go, and often require the use of custom browsers that have a poor user experience. As a result, employees often forgo using them altogether.
+With Amazon WorkLink, employees can access internal web content as easily as they access any public website, without the hassle of connecting to their corporate network. When a user accesses an internal website, the page is first rendered in a browser running in a secure container in AWS. Amazon WorkLink then sends the contents of that page to employee phones as vector graphics while preserving the functionality and interactivity of the page. This approach is more secure than traditional solutions because internal content is never stored or cached by the browser on employee phones, and employee devices never connect directly to your corporate network.
+With Amazon WorkLink, there are no minimum fees or long-term commitments. You pay only for users that connect to the service each month, and there is no additional charge for bandwidth consumption.
+Introducing Amazon WorkLink
+Benefits
+Seamless Mobile Access
+Amazon WorkLink helps your employees instantly access internal websites without requiring them to log into a VPN client or open an app.
+Seamless Mobile Access
+Amazon WorkLink helps your employees instantly access internal websites without requiring them to log into a VPN client or open an app. Employees can simply type the URL in the preferred browser on their phones or click on a link in their email. Amazon WorkLink handles the authentication, and delivers this internal web content as vector graphics. Employees experience fast navigation and fluid responses to common actions such as scrolling, zooming, or typing. Amazon WorkLink has no visibility into personal browsing activity, and only requests for internal web traffic are routed through AWS.
+Enhanced Security
+Amazon WorkLink renders the content of your websites in a browser running in a secure container in AWS, before sending the contents of that page to employee phones as vector graphics.
+Enhanced Security
+Amazon WorkLink renders the content of your websites in a browser running in a secure container in AWS, before sending the contents of that page to employee phones as vector graphics. This makes it harder for device-born malware to reach your internal resources because phones connect to the WorkLink service in AWS and not your corporate network. Because content is not stored or cached by browsers on employee phones, WorkLink reduces the risk of data loss or theft. When employees end their browsing session, no content remains in their browser or AWS.
+Easy for IT
+Amazon WorkLink enables secure, one-click access to internal web content regardless of where it is hosted. Amazon WorkLink does not require you to migrate your content to AWS, and works with your existing infrastructure.
+Easy for IT
+Amazon WorkLink enables secure, one-click access to internal web content regardless of where it is hosted. Amazon WorkLink does not require you to migrate your content to AWS, and works with your existing infrastructure. You can use your existing on-premises VPN hardware to create a point-to-point connection with your AWS Virtual Private Cloud (VPC). You can forego your VPN altogether if you use AWS Direct Connect, a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Amazon WorkLink works with SAML 2.0 identity providers, which makes it easy to manage user access and enforce your existing security policies. As a fully managed service, Amazon WorkLink automatically handles the deployment, capacity provisioning, scaling, and updates to the resources you need.
+Learn more
+Seamless Mobile Access
+Amazon WorkLink helps your employees instantly access internal websites without requiring them to log into a VPN client or open an app. Employees can simply type the URL in Chrome or Safari, or click on a link in their email. WorkLink handles the authentication, and delivers this internal web content as vector graphics. Employees experience fast navigation and fluid responses to common actions such as scrolling, zooming, or typing. Amazon WorkLink has no visibility into personal device activity, and only requests for internal web traffic are routed through AWS.
+Learn more
+Enhanced Security
+Amazon WorkLink renders the content of your websites in a browser running in a secure container in AWS, before sending the contents of that page to employee phones as vector graphics. This makes it harder for device-born malware to reach your internal resources because phones connect to the WorkLink service in AWS and not your corporate network. Because content is not stored or cached by browsers on employee phones, WorkLink reduces the risk of data loss or theft. When employees end their browsing session, no content remains in their browser or AWS.
+Learn more
+Easy for IT
+Amazon WorkLink enables secure, one-click access to internal web content regardless of where it is hosted. Amazon WorkLink does not require you to migrate your content to AWS, and works with your existing infrastructure. You can use your existing on-premises VPN hardware to create a point-to-point connection with your AWS Virtual Private Cloud (VPC). You can forego your VPN altogether if you use AWS Direct Connect, a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Amazon WorkLink works with SAML 2.0 identity providers, which makes it easy to manage user access and enforce your existing security policies. As a fully managed service, Amazon WorkLink automatically handles the deployment, capacity provisioning, scaling, and updates to the resources you need.
+How it works
+Use cases
+Protect highly regulated and sensitive data
+Financial Services, Healthcare and Life Sciences, and Public Sector organizations often need to protect sensitive data to adhere to government regulations. For these organizations, it is critical that no internal company information resides on employee phones. Amazon WorkLink helps achieve this because no data is stored or cached by browsers on employee phones. Amazon WorkLink does not allow text selection or content downloads, and all content disappears from personal phones and from AWS when the browsing session ends.
+Enable Bring Your Own Device (BYOD)
+Amazon WorkLink lets your employees use their personal phones to securely access internal corporate websites and web apps. Because Amazon WorkLink has no visibility into personal browsing activity or data, your employees will not hesitate to install and use this service on their phones. You no longer need to purchase expensive software to manage these devices, or provide employees with company-purchased mobile phones.
+Enable access to project management tools like JIRA and Confluence
+With Amazon WorkLink, developers, product managers, and program managers can securely access web apps for tools such as Jira, Jenkins, and Confluence. Your employees can quickly provide input on tickets on the go from their phones and keep projects moving forward.
+Enable Secure Access to Internal Web Apps for Remote and Mobile Workers
+Amazon WorkLink lets your employees use their personal phones to securely access internal corporate websites and web apps. Because Amazon WorkLink has no visibility into personal browsing activity or data, your employees will install and use this service on their phones without any privacy concerns. You no longer need to purchase expensive software to manage these devices, or provide employees with company-purchased mobile phones.
+Provide secure access to partners, contractors, and suppliers
+With Amazon WorkLink, developers, product managers, and program managers can securely access web apps for tools such as Jira, Jenkins, and Confluence. Your employees can quickly provide input on tickets on the go from their phones and keep projects moving forward.
+Partners
+Unisys is a global information technology company that builds high-performance, security-centric solutions for the most demanding businesses and governments on Earth.
+Learn more ≫
+Brillio is a global technology consulting and business solutions company dedicated towards modernizing IT infrastructures to facilitate agility for enterprises in the consumer goods, financial, manufacturing, and healthcare industries.
+Learn more ≫
+8K Miles is one of the leaders in providing a wide range of expertise ranging from Enterprise Cloud Transformation, Big Data Analytics, Identity Access Management and other Managed Services to maintain continuous compliance regulations and security of the enterprise.
+Learn more ≫
+Privo is an an AWS Advanced Consulting Partner with practices across a wide range of services including DevOps, End User Computing, and Cost Optimization.
+Learn more ≫
+Eplexity is a cloud services provider focused on cloud acceleration, devops as a service, managed cloud services and cloud security, all designed to accelerate customers’ AWS journeys.
+Learn more ≫
+Related content
+DOCUMENTATION
+Learn more »
+Secure, One-Click Mobile Access to Internal Websites and Applications
+Read Jeff Barr's blog »
+Learn about features
+Learn more about Amazon WorkLink features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon WorkLink in the AWS Console.
+Sign in

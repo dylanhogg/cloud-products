@@ -1,0 +1,41 @@
+AWS Elemental MediaStore
+Store and deliver video assets for live streaming media workflows
+Get started with AWS Elemental MediaStore
+Live Chat
+AWS Elemental MediaStore is an AWS storage service optimized for media. It gives you the performance, consistency, and low latency required to deliver live streaming video content. AWS Elemental MediaStore acts as the origin store in your video workflow. Its high performance capabilities meet the needs of the most demanding media delivery workloads, combined with long-term, cost-effective storage.
+AWS Elemental MediaStore Explained
+Watch Now: AWS Elemental MediaStore Explained (50 sec)
+How it works
+Benefits
+High performance, optimized for video
+AWS Elemental MediaStore is optimized to deliver performance to meet the unique requirements of high-scale, high-quality media workloads (delivering low-latency reads and writes concurrently). This means you can deliver consistent quality-of-service to your viewers, lowering the risk of buffering video and reducing end-to-end latency.
+Scale with your audience
+AWS Elemental MediaStore scales automatically with the volume of requests you receive. Increases in load don’t negatively impact the quality of the viewing experience. This automatic scalability eliminates the expense and complexity of pre-provisioning capacity. If your audience size goes down, there is no need to de-scale - the service automatically sizes to varied capacity while you pay only for what you use.
+Familiar management tools for access control
+AWS Elemental MediaStore integrates with AWS features for access control, using AWS Identity and
+Access Management (IAM) policies and roles, with support for resource policies, allowing you to specify granular access controls.
+Customer stories
+Pac-12 Network
+Fuji Television
+Pac-12 Network
+“To stay ahead of technology at a fraction of the traditional cost, we are excited to turn to the cloud with AWS which offers end-to-end ingest-to-delivery workflow support. We plan to leverage these latest services to provide live and on-demand Pac-12 networks content for millions of viewers.”
+Mark Kramer, Vice President, Engineering & Technology for Pac-12 Network
+About Pac-12 Networks
+The sports media production arm of the Pac-12 Conference, is on a mission to connect fans to the universities and sports they love. Learn how Pac-12 Networks is going all-in on AWS to transform the fan experience with high-quality, personalized live and on-demand sports
+Customer Snapshot: Pac-12 Networks
+Fuji Television
+“AWS Elemental MediaStore and Amazon CloudFront provide support for CMAF ultra-low latency and large-scale video distribution. As managed services, they provide a usable environment immediately, scaling to meet distribution needs, and allow freedom from complex operational overhead, including support for switchovers when trouble happens."
+Masashi Ito, Principal Architect and R&D Engineer at Fuji Television
+About Fuji Television Network, Inc.
+Fuji Television Network, Inc. had its first broadcast in 1959 and is one of largest media companies in Japan.
+CASE STUDY  Fuji Television Network Gives Viewers a Different Angle on Live Sports
+Get started with AWS Elemental MediaStore in the console
+Set up and log into your AWS account
+Launch the AWS Elemental MediaStore console
+Create and configure a container, configure access rules, and start sending and originating content
+Have questions?
+Contact us
+Ready to build?
+Get started with AWS Elemental MediaStore
+Discover more resources
+Visit the Resources page

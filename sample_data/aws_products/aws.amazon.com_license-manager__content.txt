@@ -1,0 +1,33 @@
+AWS License Manager
+Set rules to manage, discover, and report software license usage
+Get started with AWS License Manager
+AWS License Manager makes it easier to manage your software licenses from vendors such as Microsoft, SAP, Oracle, and IBM across AWS and on-premises environments. AWS License Manager lets administrators create customized licensing rules that mirror the terms of their licensing agreements. Administrators can use these rules to help prevent licensing violations, such as using more licenses than an agreement stipulates. Rules in AWS License Manager help prevent a licensing breach by stopping the instance from launching or by notifying administrators about the infringement. Administrators gain control and visibility of all their licenses with the AWS License Manager dashboard and reduce the risk of non-compliance, misreporting, and additional costs due to licensing overages. Independent software vendors (ISVs) can also use AWS License Manager to easily distribute and track licenses.
+AWS License Manager also simplifies the management of your software licenses that require Amazon EC2 Dedicated Hosts. In AWS License Manager, administrators can specify their Dedicated Host management preferences for host allocation and host capacity utilization. Once set up, AWS License Manager takes care of these administrative tasks on your behalf, so that you can seamlessly launch instances just like you would launch an EC2 instance with AWS-provided licenses.  AWS License Manager is offered at no additional charge. You only pay for AWS resources you use to run your applications. Visit the AWS License Manager console to start managing your licenses.
+Introduction to AWS License Manager (1:14)
+Benefits
+Gain control over license usage
+The way organizations manage licenses can vary from using simple spreadsheets to highly customized solutions. Often, these approaches require manual and ad-hoc reporting that can be inaccurate and quickly outdated. With AWS License Manager, administrators can create custom licensing rules, provision, and track licenses across multiple accounts on AWS and on-premises environments. AWS License Manager centralizes license usage, providing organizations with greater visibility and control over how software licenses are used and can prevent misuse before it happens.
+Reduce costs
+AWS License Manager provides a centralized view of license usage, so that administrators can determine the right number of licenses required, and not purchase more licenses than needed. With this improved visibility, you can also control overages and avoid penalties from licensing audits. AWS License Manager is easy to use, and helps reduce the time and cost for tracking and managing licenses.
+Reduce the risk of non-compliance
+AWS License Manager gives administrators the ability to set limits for license usage. When license usage exceeds these limits, AWS License Manager sends an alert to administrators. Administrators also have the option to enforce these limits, and block the launch of new instances that require additional licenses. AWS License Manager also helps reduce the risk of non-compliance by providing independent software vendors (ISV) with a centralized AWS account and built-in controls to ensure only approved users and workloads can consume licenses.
+How it works
+Customers
+Xero
+“Managing license deployments for large scale Microsoft SQL Server clusters is a time consuming, and often manual, process to oversee. AWS License Manager allows me to see real time deployments of a license across our infrastructure as well as manage our allocated license budget; which allows upcoming vendor license audits easier to manage.”
+- John Bowker, Product Owner, Xero
+Pearson
+“This new capability will allow us to reduce the amount of time spent on license tracking and reporting. This tool is extremely simple to use and we can now obtain a snapshot of our license utilization in seconds, rather than hours. Having the ability to create custom rules, maintain compliance and keep an eye on spend is also a huge plus.”
+- Ian Wright, VP Cloud & Operations, Pearson
+ArcBlock
+“Managing licenses can be a challenge for any business, and AWS License Manager has delivered tremendous value to our organization. It is easy to use and allows us to quickly see our current state in real-time, as well improving our ability to optimize and reduce our licensing budget and being able to easily set our rules and enforce them.”
+- Matt McKinney, VP of Marketing, ArcBlock
+Check out AWS License Manager features
+You can set up AWS License Manager in different configurations, but in general there are three distinct phases: define rules, enforce them, discover new software.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign in
+Start building in the console
+Get started building with AWS License Manager in the AWS Console.
+Sign in

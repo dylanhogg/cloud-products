@@ -1,0 +1,37 @@
+AWS Cloud Development Kit
+Define cloud infrastructure using familiar programming languages
+Get Started with AWS CDK
+The AWS Cloud Development Kit (AWS CDK) is an open source software development framework to define your cloud application resources using familiar programming languages.
+Provisioning cloud applications can be a challenging process that requires you to perform manual actions, write custom scripts, maintain templates, or learn domain-specific languages. AWS CDK uses the familiarity and expressive power of programming languages for modeling your applications. It provides you with high-level components called constructs that preconfigure cloud resources with proven defaults, so you can build cloud applications without needing to be an expert. AWS CDK provisions your resources in a safe, repeatable manner through AWS CloudFormation. It also enables you to compose and share your own custom constructs that incorporate your organization's requirements, helping you start new projects faster.  For customers who prefer Terraform, cdk tf provides the CDK constructs for defining Terraform HCL state files in TypeScript and Python. For kubernetes users, the cdk8s project enables you to use CDK constructs for defining kubernetes configuration in TypeScript, Python, and Java. cdk8s can be used to define kubernetes infrastructure running anywhere and can be used with the AWS CDK’s Amazon Elastic Kubernetes Service (Amazon EKS) construct library. Both cdk8s and cdk tf are alpha releases.
+Introducing AWS Cloud Development Kit (10:00)
+Benefits
+Easier cloud onboarding
+AWS CDK accelerates your onboarding to AWS because there are few new things to learn. CDK enables you to use your existing skills and tools, and apply those to the task of building cloud infrastructure. It also provides high-level components that preconfigure cloud resources with proven defaults, helping you build on AWS without needing to be an expert.
+Faster development process
+AWS CDK gives you the expressive power of programming languages for defining infrastructure. Familiar features such as objects, loops, and conditions accelerate your development process. You can also use AWS CDK with your integrated development environment (IDE) to take advantage of existing productivity tools and testing frameworks.
+Customizable and shareable
+With AWS CDK you can design your own reusable components that meet your organization’s security, compliance, and governance requirements. Just like with any other software library, you can easily share components around your organization enabling you to rapidly bootstrap new projects with best practices by default.
+No context switching
+AWS CDK enables you to build your cloud application without leaving your IDE. You can write your runtime code and define your AWS resources with the same programming language. You can visualize your CDK application stacks and resources with the AWS Toolkit for VS Code.
+How it works
+Customers
+Culture Amp
+Culture Amp helps to make companies a better place to work by making it easy to collect, understand, and act on employee feedback. Culture Amp enables HR leaders to make better decisions, demonstrate impact, and turn company culture into a competitive edge. Using AWS, Culture Amp built the world’s first on-demand employee feedback platform back in 2012. Since then they have been supporting their fast-growing global customer base from offices in Melbourne, San Francisco, New York, and London. When Culture Amp decided to modernize their single-region monolithic application running on Amazon EC2, to a multi-region, microservices-based architecture primarily running on top of Amazon Elastic Container Service using AWS Fargate, Amazon DynamoDB, and Amazon Relational Database Service, they needed a way for engineers to consume pre-approved AWS architectures without the need to log into restricted environments or have detailed knowledge of AWS and AWS CloudFormation. The Culture Amp team turned to the AWS Cloud Development Kit (AWS CDK) to automate the provisioning of AWS Fargate services with supporting databases and user roles in a shareable and repeatable fashion. Culture Amp built a library of custom AWS CDK constructs that enabled them to programmatically create new microservices for their engineers that were feature rich and enabled increased speed and efficiency among their development teams.
+"Now our engineers can consume pre-approved AWS architecture that are feature rich, including AWS Fargate services that include fine-grained deploy roles, load balancing, certificate validation, autoscaling, AWS Lambda functions to forward logs and a choice of Dynamo or RDS as a storage backend. We can now feasibly do in hours what used to take us up to six weeks”
+Matthew Tapper, Lead SRE Engineer - Culture Amp
+Stedi provides organizations with the ability to quickly connect and transact with trading partners without having to go through painful point-to-point implementations; it does this by providing a completely self-service ‘digital mailbox’ that organizations can use to exchange 300+ different commercial transaction types in standardized formats.
+Stedi has an ambitious goal: help businesses save countless hours of menial tasks by processing every B2B transaction on the planet. To do this, Stedi knew it would have to offload menial tasks of its own – which is why they chose to build with a fully-serverless AWS architecture from day one. However, Stedi's work with AWS goes beyond just serverless infrastructure: they have adopted AWS-native developer tooling – like AWS CDK and AWS Amplify – to help iterate quickly and deploy frequently.
+“CDK has been a gamechanger for us. It has drastically improved our feedback cycle and reduced the time it takes to go from brand-new to fully-deployed infrastructure."
+Tyler van Hensbergen, Engineering - Stedi
+Learn More >>
+CyberArk is a global leader in privileged access management, a critical layer of IT security to protect data, infrastructure, and assets across the enterprise, in the cloud, and throughout the DevOps pipeline. CyberArk delivers solutions to reduce the risk created by privileged credentials and secrets. The company is trusted by the world’s leading organizations, including more than 50 percent of the Fortune 500, to protect against external attackers and malicious insiders.
+Learn More >>
+Check out the product features
+Learn more about AWS CDK's features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Documentation
+Learn more about AWS CDK with the Developer Guide.
+Learn more

@@ -1,0 +1,135 @@
+Amazon Cognito
+Simple and Secure User Sign-Up, Sign-In, and Access Control
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0.
+Sign up now
+Spend your time creating great apps.
+Let Amazon Cognito handle authentication.
+Secure and scalable user directory
+Amazon Cognito User Pools provide a secure user directory that scales to hundreds of millions of users. As a fully managed service, User Pools are easy to set up without any worries about standing up server infrastructure.
+Read more about Cognito User Pools
+Social and enterprise identity federation
+With Amazon Cognito, your users can sign in through social identity providers such as Google, Facebook, and Amazon, and through enterprise identity providers such as Microsoft Active Directory via SAML.
+Read more about federation
+Standards-based authentication
+Amazon Cognito User Pools is a standards-based Identity Provider and supports identity and access management standards, such as Oauth 2.0, SAML 2.0, and OpenID Connect.
+Read more about standards-based authentication
+Security for your apps and users
+Amazon Cognito supports multi-factor authentication and encryption of data-at-rest and in-transit. Amazon Cognito is HIPAA eligible and PCI DSS, SOC, ISO/IEC 27001, ISO/IEC 27017, ISO/IEC 27018, and ISO 9001 compliant.
+Read more about security and compliance
+Access control for AWS resources
+Amazon Cognito provides solutions to control access to backend resources from your app. You can define roles and map users to different roles so your app can access only the resources that are authorized for each user.
+Read more about controlling access to AWS resources
+Easy integration with your app
+With a built-in UI and easy configuration for federating identity providers, you can integrate Amazon Cognito to add user sign-in, sign-up, and access control to your app in minutes. You can customize the UI to put your company branding front and center for all user interactions.
+See how to quickly integrate Amazon Cognito with your app
+It really is this easy
+iOS Objective C
+Android
+iOS Swift
+React Native
+Web Apps
+iOS Objective C
+Sign in users and get back tokens using the SDKs and a few lines of code.
+// iOS Objective-C
+// AppDelegate.m
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+return [[AWSCognitoAuth defaultCognitoAuth] application:app openURL:url options:options];
+}
+// ViewController.m
+AWSCognitoAuth * cognitoAuth = [AWSCognitoAuth defaultCognitoAuth];
+[cognitoAuth getSession:self completion:^(AWSCognitoAuthUserSession * _Nullable session, NSError * _Nullable error) {
+if(error) {
+NSLog(@"Error: %@", error.userInfo[@"error"]);
+} else {
+//Do something with session
+NSLog(@"Claims: %@", t.result.idToken.claims);
+}
+}];
+Android
+Sign in users and get back tokens using the SDKs and a few lines of code.
+//Android
+// 1) -- Create an instance of Auth --
+Auth.Builder builder = new Auth.Builder()
+.setAppClientId(getString(R.string.cognito_client_id));
+.setAppCognitoWebDomain(getString(R.string.cognito_web_domain));
+.setApplicationContext(getApplicationContext());
+.setAuthHandler(new callback());
+.setSignInRedirect(getString(R.string.app_redirect_signin));
+.setSignOutRedirect(getString(R.string.app_redirect_signout));
+.setScopes(userScopes);
+auth = builder.build();
+// 2) – Set up url redirect in your app manifest --
+<intent-filter>
+<data android:host="YOUR_REDIRECT_URI_AUTHORITY"android:scheme="YOUR_REDIRECT_SCHEME"/>
+</intent-filter>
+// 3) -- Get tokens for your user --
+auth.getSession();
+iOS Swift
+Sign in users and get back tokens using the SDKs and a few lines of code.
+// iOS Swift
+// AppDelegate.swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+return AWSCognitoAuth.default().application(app, open: url, options: options)
+}
+// ViewController.swift
+let cognitoAuth = AWSCognitoAuth.default()
+cognitoAuth.getSession(self)  { (session:AWSCognitoAuthUserSession?, error:Error?) in
+if(error != nil) {
+print((error! as NSError).userInfo["error"] as? String)
+}else {
+//Do something with session
+}
+}
+React Native
+Sign in users and get back tokens using the SDKs and a few lines of code.
+// Add 'aws-amplify' and 'aws-amplify-react-native' libraries into your application
+// Configure Auth category with your Amazon Cognito credentials
+Amplify.configure({
+Auth: {
+identityPoolId: 'XX-XXXX-X:XXXXXXXX-XXXX', // Amazon Cognito Identity Pool ID
+region: 'XX-XXXX-X', // Amazon Cognito Region
+}
+});
+// The withAuthenticator component adds Sign Up and Sign In capabilities to your app
+export default withAuthenticator(class App extends React.Component {
+// ... your main component
+});
+Web Apps
+Sign in users and get back tokens using the SDKs and a few lines of code.
+// Add 'aws-amplify' library into your application
+// Configure Auth category with your Amazon Cognito credentials
+Amplify.configure({
+Auth: {
+identityPoolId: 'XX-XXXX-X:XXXXXXXX-XXXX', // Amazon Cognito Identity Pool ID
+region: 'XX-XXXX-X', // Amazon Cognito Region
+}
+});
+// Call Auth.signIn with user credentials
+Auth.signIn(username, password)
+.then(user => console.log(user))
+.catch(err => console.log(err));
+Trusted by developers
+Pay only for what you use. No minimums.
+If you are using Amazon Cognito Identity to create a User Pool, you pay based on your monthly active users (MAUs) only. A user is counted as a MAU if, within a calendar month, there is an identity operation related to that user, such as sign-up, sign-in, token refresh, or password change. You are not charged for subsequent sessions or for inactive users within that calendar month.
+Pricing Tier (MAUs)
+Price per MAU
+First 50,000
+Free
+Next 50,000
+$0.00550
+Next 900,000
+$0.00460
+Next 9,000,000
+$0.00325
+Greater than 10,000,000
+$0.00250
+For users who sign in through SAML or OIDC federation, the price for MAUs above the 50 MAU free tier is $0.015 per MAU. Using the Federated Identities feature to get AWS credentials for authenticated or guest users is always free with Amazon Cognito. Read more about our pricing here.
+Check out the product features
+Learn more about adding user sign-up, sign-in, and access control to your web and mobile apps.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Cognito in the AWS Management Console.
+Sign in

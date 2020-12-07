@@ -1,0 +1,44 @@
+AWS Deep Learning Containers
+Quickly set up deep learning environments with optimized, pre-packaged container images
+Get started with AWS Deep Learning Containers
+AWS Deep Learning Containers (AWS DL Containers) are Docker images pre-installed with deep learning frameworks to make it easy to deploy custom machine learning (ML) environments quickly by letting you skip the complicated process of building and optimizing your environments from scratch. AWS DL Containers support TensorFlow, PyTorch, and Apache MXNet. You can deploy AWS DL Containers on Amazon Sagemaker, Amazon Elastic Kubernetes Service (Amazon EKS), self-managed Kubernetes on Amazon EC2, Amazon Elastic Container Service (Amazon ECS). The containers are available through Amazon Elastic Container Registry (Amazon ECR) and AWS Marketplace at no cost--you pay only for the resources that you use. Get started with this tutorial.
+Docker containers are a popular way to deploy custom ML environments that run consistently in multiple environments. But building and testing container images for deep learning is hard, error-prone, and can take days due to software dependencies and version compatibility issues. These images also need to be optimized to distribute and scale ML workloads efficiently across a cluster of instances, which requires specialized expertise. This process has to be repeated when framework updates are released. All of this is undifferentiated heavy lifting that takes valuable developer time and slows down your pace of innovation.
+AWS DL Containers provide Docker images that are pre-installed and tested with the latest versions of popular deep learning frameworks and the libraries they require. AWS DL Containers come optimized to distribute ML workloads efficiently on clusters of instances on AWS, so that you get high performance and scalability right away.
+Introducing AWS Deep Learning Containers
+Benefits
+Start building immediately
+Use pre-packaged Docker images to deploy deep learning environments in minutes. The images contain the required deep learning framework libraries (currently TensorFlow, PyTorch, and Apache MXNet) and tools and are fully tested. You can easily add your own libraries and tools on top of these images for a higher degree of control over monitoring, compliance, and data processing. For more information, see AWS Deep Learning Container Images.
+Get the best performance automatically
+AWS DL Containers include AWSoptimizations and improvements to the latest versions of popular frameworks, like TensorFlow, PyTorch, and Apache MXNet, and libraries to deliver the highest performance for training and inference in the cloud. For example, AWS TensorFlow optimizations allow models to train up to twice as fast through significantly improved GPU scaling.
+Quickly add machine learning to Kubernetes applications
+AWS DL containers are built to work with Kubernetes on Amazon EC2. If you have applications deployed on Kubernetes with Amazon EC2, you can quickly add machine learning as a microservice to those applications using the AWS DL Containers.
+Easily manage machine learning workflows
+AWS DL Containers are tightly integrated with Amazon Sagemaker, Amazon EKS, and Amazon ECS, giving you choice and flexibility to build custom machine learning workflows for training, validation, and deployment. Through this integration, Amazon EKS and Amazon ECS handle all the container orchestration required to deploy and scale the AWS DL Containers on clusters of virtual machines.
+Support for popular frameworks
+AWS DL Containers support TensorFlow, PyTorch, and Apache MXNet.
+TensorFlow
+PyTorch
+Apache MXNet
+Customers
+“Deep Learning Containers improve our velocity by 20%. Previously, our time-to-market was slowed by the work needed to deploy models developed by data scientists to production. Data scientists typically worked with AWS Deep Learning AMIs and our deployment team used Docker containers in production. Ensuring parity between research and production environments was time-consuming and error-prone. Now with AWS Deep Learning Containers, we can use the same optimized and stable TensorFlow environment throughout our entire pipeline, from research and training to production.”
+“At Accenture, our data scientists innovate on behalf of our clients by building deep learning applications in computer vision and natural language processing across a diverse set of domains such as telecommunications and resource industries. Our team moves fast and we use Docker containers to rapidly train and deploy models. Our velocity is slowed by having to repeatedly create and maintain container images with deep learning frameworks and libraries, costing us precious days when we hit compatibility or dependency issues. Now, with Deep Learning Containers, we have access to container images that work out-of-the-box and give us optimized performance on AWS.”
+“At Patchd, we use deep learning to detect the early onset of sepsis. We see Docker containers as a way to 10X our existing deep learning pipelines, giving us a fast and flexible way to test hundreds of models easily. But we don't want to spend valuable data science and engineering time to setup and optimize Docker environments for deep learning. With Deep Learning Containers, we can setup optimized TensorFlow environments within minutes, at no cost.”
+Blog posts & articles
+New – AWS Deep Learning Containers
+March 27, 2019
+Learn more »
+Best Practices for Optimizing Distributed Deep Learning Performance on Amazon EKS
+May 01, 2019
+Learn more »
+GPU workloads on AWS Batch
+April 04, 2019
+Learn more »
+Check out the product resources
+Learn more about AWS DL Containers.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building with tutorials
+Get started with AWS DL Containers on Amazon EC2.
+Try now

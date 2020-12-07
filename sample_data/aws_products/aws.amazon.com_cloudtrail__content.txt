@@ -1,0 +1,49 @@
+AWS CloudTrail
+Track user activity and API usage
+Get started with AWS CloudTrail
+AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting.
+AWS CloudTrail: Simplify Security Analysis, Resource Change Tracking, and Troubleshooting (1:30)
+Benefits
+Simplified compliance
+With AWS CloudTrail, simplify your compliance audits by automatically recording and storing event logs for actions made within your AWS account. Integration with Amazon CloudWatch Logs provides a convenient way to search through log data, identify out-of-compliance events, accelerate incident investigations, and expedite responses to auditor requests.
+Visibility into user and resource activity
+AWS CloudTrail increases visibility into your user and resource activity by recording AWS Management Console actions and API calls. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred.
+Security analysis and troubleshooting
+With AWS CloudTrail, you can discover and troubleshoot security and operational issues by capturing a comprehensive history of changes that occurred in your AWS account within a specified period of time.
+Security automation
+AWS CloudTrail allows you track and automatically respond to account activity threatening the security of your AWS resources. With Amazon CloudWatch Events integration, you can define workflows that execute when events that can result in security vulnerabilities are detected. For example, you can create a workflow to add a specific policy to an Amazon S3 bucket when CloudTrail logs an API call that makes that bucket public.
+How it works
+Use cases
+Compliance aid
+AWS CloudTrail makes it easier to ensure compliance with internal policies and regulatory standards by providing a history of activity in your AWS account. For more information, download the AWS compliance whitepaper, “Security at Scale: Logging in AWS.”
+Security analysis
+You can perform security analysis and detect user behavior patterns by ingesting AWS CloudTrail events into your log management and analytics solutions.
+Data exfiltration
+You can detect data exfiltration by collecting activity data on S3 objects through object-level API events recorded in CloudTrail. After the activity data is collected, you can use other AWS services, such as Amazon CloudWatch Events and AWS Lambda, to trigger response procedures.
+Operational issue troubleshooting
+You can troubleshoot operational issues by leveraging the AWS API call history produced by AWS CloudTrail. For example, you can quickly identify the most recent changes made to resources in your environment, including creation, modification, and deletion of AWS resources (e.g., Amazon EC2 instances, Amazon VPC security groups, and Amazon EBS volumes).
+Unusual activity detection
+You can detect unusual activity in your AWS accounts by enabling CloudTrail Insights. For example, you can quickly alert and act on operational issues such as erroneous spikes in resource provisioning or services hitting rate limits.
+Case studies
+HTC uses AWS CloudTrail for its IT auditing needs.
+British Gas uses AWS CloudTrail to support its Hive monitoring operations.
+Solinor uses AWS CloudTrail to support its compliance needs.
+2C2P monitors unsuccessful log-in attempts via AWS CloudTrail.
+Blog posts & articles
+Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS CloudTrail
+Visit the features page
+Ready to build?
+Get started with AWS CloudTrail
+Have more questions?
+Contact us

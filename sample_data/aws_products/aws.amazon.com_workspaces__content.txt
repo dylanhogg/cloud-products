@@ -1,0 +1,58 @@
+Amazon WorkSpaces
+Access your desktop anywhere, anytime, from any device
+Get started with Amazon WorkSpaces
+Download the WorkSpaces Client
+Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. You can pay either monthly or hourly, just for the WorkSpaces you launch, which helps you save money when compared to traditional desktops and on-premises VDI solutions. Amazon WorkSpaces helps you eliminate the complexity in managing hardware inventory, OS versions and patches, and Virtual Desktop Infrastructure (VDI), which helps simplify your desktop delivery strategy. With Amazon WorkSpaces, your users get a fast, responsive desktop of their choice that they can access anywhere, anytime, from any supported device.
+Introduction to Amazon WorkSpaces
+Benefits
+Simplify Desktop Delivery
+Amazon WorkSpaces helps you eliminate many administrative tasks associated with managing your desktop lifecycle including provisioning, deploying, maintaining, and recycling desktops. There is less hardware inventory to manage and no need for complex virtual desktop infrastructure (VDI) deployments that don’t scale.
+Reduce Costs
+Amazon WorkSpaces eliminates the need to over-buy desktop and laptop resources by providing on-demand access to cloud desktops that include a range of compute, memory, and storage resources to meet your users' performance needs.
+Keep Your Data Secure
+Amazon WorkSpaces is deployed within an Amazon Virtual Private Network (VPC), provide each user with access to persistent, encrypted storage volumes in the AWS Cloud, and integrate with AWS Key Management Service (KMS). No user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
+Centrally Manage and Scale Your Global Desktop Deployment
+Amazon WorkSpaces is available in 13 AWS Regions and provides access to high performance cloud desktops wherever your teams get work done. You can manage a global deployment of many thousands of WorkSpaces from the AWS console. And you can rapidly provision and de-provision desktops as the needs of your workforce change.
+Use cases
+Provide secure cloud desktops for remote, mobile, and contract employees
+The rapid growth of remote and mobile workers is placing pressure on IT to provide fast, easy access to corporate applications and data from the device of their choice. Amazon WorkSpaces helps mobile and remote employees access the applications users need by delivering a cloud desktop accessible anywhere with an internet connection using any supported device.
+Enable bring your own device
+To deliver on the promise of Bring Your Own Device (BYOD) initiatives, IT must ensure employees can easily and securely access their applications and data across a large and constantly changing number of devices. Amazon WorkSpaces lets you run a cloud desktop directly on a wide range of devices like PC, Mac, iPad, Kindle Fire, Android tablet, Chromebook, and web browsers like Firefox, and Chrome. This gives you the tools to deliver a secure, responsive desktop experience that will delight your users and help make your BYOD initiative a reality.
+Rapidly provision and scale desktops for software test and development
+Developers and test teams need access to a secure, high-performance WorkSpace for completing tasks without the expense and inventory that comes with a lot of over-provisioned physical hardware. You can provision Amazon WorkSpaces that includes all the tools your developers need to build applications quickly. Your source code is not stored on developers’ devices helping ensure the safety of your intellectual property.
+Quickly provision persistent desktops for classroom and lab settings
+Amazon WorkSpaces provides a full, persistent desktop that students can use throughout their education while Amazon AppStream 2.0 lets course instructors quickly deliver specific applications for the unique needs for their class. Used together, you can easily build the learning environment your students need and ensure students have what they need for your class from day one.
+Rapid integration during mergers and acquisitions
+Companies going through M&A activity must support quickly on-boarding or off-loading large numbers of employees with fast, easy, secure access to company applications and data. They must do so across a diverse set of devices without spending much money or going through lengthy complex integrations. With Amazon WorkSpaces, IT teams quickly can provision and decommission secure WorkSpaces to keep up with changing organizational structures.
+Customer stories
+The Amazon Client Engineering team manages and supports IT services within Amazon and is responsible for managing the company's devices. As Amazon brings on new subsidiaries, it saves money that would previously have been used for physical infrastructure.
+“We save millions of dollars for every subsidiary we onboard, because Amazon WorkSpaces can be deployed in many different regions and the solution circumvents the need for physical logistics like shipping hardware and the buildout of network connections. Overall, Amazon WorkSpaces is expected to contribute to an annual savings of more than $17 million for Amazon across all use cases.”
+– Andrew Blackard, Manager, Client Engineering, Amazon IT
+GrubHub, Inc. is a billion dollar food-service online and mobile platform featuring the largest and most comprehensive network of restaurant partners in the US. As an essential business to support local restaurants, GrubHub leveraged Amazon WorkSpaces to ensure business continuity and support the safety of our employees by moving all departments to a Work From Home (WFH) model.
+"Amazon WorkSpaces easily accommodated our real-time customer communication and contact channels allowing 100% of our workforce and new employees to be WFH, accelerating our BYOD (Bring Your Own Device) strategy. GrubHub now has the flexibility to control cost and scale this virtual desktop environment to meet the current needs and future needs of our customers, restaurant partners, and drivers for whatever comes next."
+- Justinian Fortenberry, Chief Information Security Officer
+MAXIMUS partners with state, federal, and local governments to provide communities with critical health and human service programs. MAXIMUS used Amazon WorkSpaces to replace their on-premises VDI infrastructure and accelerate their adoption to the cloud.
+“MAXIMUS uses VDI for several different types of projects, including call centers and for remote users. MAXIMUS is currently going through a move to AWS for all IT services, so it was natural that we utilize WorkSpaces to replace our VDI infrastructure. We were having many issues with VDI backend server support, non-persistent workstations, and many complaints from users about software configurations. With WorkSpaces, we were able to release ourselves from all of the backend maintenance and concentrate on the user experience.”
+- Jason Winters, Principal Architect, MAXIMUS, IT.
+Blog posts & articles
+date
+date
+1
+…
+…
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about Amazon WorkSpaces
+Visit the features page
+Ready to build?
+Get started with Amazon WorkSpaces
+Have more questions?
+Contact us

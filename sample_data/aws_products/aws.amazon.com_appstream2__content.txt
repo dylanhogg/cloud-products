@@ -1,0 +1,62 @@
+Amazon AppStream 2.0
+Securely deliver desktop applications to any computer
+Get started with Amazon AppStream 2.0
+Try sample applications at no cost
+Amazon AppStream 2.0 is a fully managed non-persistent application and desktop streaming service. You centrally manage your desktop applications on AppStream 2.0 and securely deliver them to any computer. You can easily scale to any number of users across the globe without acquiring, provisioning, and operating hardware or infrastructure. AppStream 2.0 is built on AWS, so you benefit from a data center and network architecture designed for the most security-sensitive organizations. Each end user has a fluid and responsive experience because your applications run on virtual machines optimized for specific use cases and each streaming sessions automatically adjust to network conditions.
+Analyst whitepaper
+Accelerate Cloud Adoption  With Application Streaming
+A commissioned study conducted by  Forrester Consulting on behalf of AWS
+Read your whitepaper »
+Benefits
+Deliver desktop applications to any computer
+Users can access the desktop applications they need at any time. AppStream 2.0 streams your applications from AWS to any computer, including Chromebooks, Macs, and PCs.
+Scale without infrastructure
+AppStream 2.0 is fully managed on AWS and globally available with pay-as-you-go pricing. You can easily scale your application streaming to any number of users across the globe without acquiring, provisioning, and operating hardware or infrastructure.
+Secure applications and data
+Applications and data are not stored on users' computers. Your applications are streamed as encrypted pixels and access data secured within your network. AppStream 2.0 runs on AWS, so you benefit from a data center and network architecture built for the most security-sensitive organizations.
+Provide a fluid and responsive user experience
+Applications are highly responsive because they run on virtual machines and the NICE DCV protocol automatically adjust each streaming session to network conditions for a fluid user experience. Your users can run multiple applications and easily switch and interact with them through an application centric view or a standard desktop experience. Users can copy and paste between applications and local machine, quickly upload or download files, and print to local or network printers. They can also listen to audio output from applications, and control the bandwidth and fidelity for the experience.
+Centrally manage applications
+Each user accesses the same version of your applications. You centrally manage your applications on AppStream 2.0 and can stop managing installations and updates on each user's computer.
+Integrate with your IT
+AppStream 2.0 connects to your Active Directory, network, cloud storage, and file shares. Users access applications using their existing credentials and your existing security policies manage access. Extensive APIs integrate AppStream 2.0 with your IT solutions.
+How it works
+Use cases
+3D design and engineering
+Running 3D design and engineering applications on AppStream 2.0 lets users work without workstations and accelerates engineering workflows. Learn more »
+Software vendors
+AppStream 2.0 delivers trials, demos, and training of your applications with no downloads or installations. You can also develop a full software-as-a-service (SaaS) offering without rewriting your application. Learn more »
+Enterprises
+AppStream 2.0 simplifies application delivery by securely running your desktop applications in the cloud and delivering the same version of each application to your users. Learn more »
+Education
+AppStream 2.0 lets students access the applications they need on any computer, whether they're in the classroom, the library, a cafe, or at home. Learn more »
+Customer stories
+GE Renewable Energy harnesses the earth’s most abundant resources to power the world’s biggest economies and the most remote communities. Amazon AppStream 2.0 let GE’s IT team simplify their application management process by giving their global business units the ability to securely manage their own applications.
+"With Amazon AppStream 2.0, we don’t operate any infrastructure, and scale on-demand to any number of users. And, we’re no longer the single team maintaining applications for each business unit. We simply configure a golden image, and let each team manage their application on it. This saves us days of work every month as we grow our deployment from hundreds to thousands of users.“
+- Glorious Gaduang, Principal Cloud Architect, GE Renewable Energy
+Samsung Engineering is a leading engineering, procurement, construction and project management company. Samsung Engineering needed to expand internationally, but their on-premises infrastructure made it difficult to deliver the graphics-intensive applications in the Hexagon engineering software suite to their employees and partners around the world.
+“Our on-premises infrastructure was not set up to collaborate with our international partners, and expanding this infrastructure to meet our needs was cost-prohibitive. With AppStream 2.0, we've been able to build a global collaboration model while also reducing our operating costs by 30%. Delivering these solutions with the scalability and flexibility of AppStream 2.0 are a clear benefit that allow us to operate globally."
+- Jeonghoon Lee, Senior Cloud Architect, Samsung Engineering Co
+Siemens' NX is a powerful CAD software application that helps design and manufacturing customers deliver better products faster and more efficiently. Siemens uses Amazon AppStream 2.0 to provide virtual test drives, demo environments, and deliver training of its NX software.
+“AppStream 2.0 enables us to instantly deliver Siemens’ NX for virtual test drives, software testing, and training. Previously, many hours were being spent on software installation and system setup for these activities. AppStream 2.0 solved this problem. With AppStream 2.0, we can deploy the latest version of NX and provide customers instant access to the application through their browser with no downloads, installs, or configuration required.”
+– George L. Rendell, Senior Director, NX Design, Siemens PLM Software
+Blog posts
+Visit our desktop and application streaming blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+date
+date
+1
+…
+…
+Next steps
+Try sample applications
+Try sample business or 3D design and engineering applications at no cost.
+Learn with our getting started guide
+Learn how to configure, manage, and stream applications to your users.
+Run your applications on AppStream 2.0
+Deploy your apps into production and visit our resources page for tips and tricks.
+Learn more about Amazon AppStream 2.0
+Visit the features page
+Ready to start?
+Get started with Amazon AppStream 2.0
+Have more questions?
+Contact us

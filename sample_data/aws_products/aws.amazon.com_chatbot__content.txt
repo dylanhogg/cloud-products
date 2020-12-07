@@ -1,0 +1,46 @@
+AWS Chatbot
+ChatOps for AWS
+Try AWS Chatbot
+AWS Chatbot is an interactive agent that makes it easy to monitor and interact with your AWS resources in your Slack channels and Amazon Chime chat rooms. With AWS Chatbot you can receive alerts, run commands to return diagnostic information, invoke AWS Lambda functions, and create AWS support cases.  AWS Chatbot manages the integration between AWS services and your Slack channels or Amazon Chime chat rooms helping you to get started with ChatOps fast. With just a few clicks you can start receiving notifications and issuing commands in your chosen channels or chat rooms, so your team doesn’t have to switch contexts to collaborate. AWS Chatbot makes it easier for your team to stay updated, collaborate, and respond faster to operational events, security findings, CI/CD workflows, budget, and other alerts for applications running in your AWS accounts.
+AWS Chatbot Overview
+Benefits
+Notification in real time
+AWS Chatbot sends pre-selected, event-triggered alerts to your Slack channels or Amazon Chime chat rooms, keeping your team informed and aware of the operational incidents or other events that they care most about.
+Faster response
+AWS Chatbot enables you to issue commands from your Slack channels, facilitating collaboration and helping your team quickly respond to events.
+Quick setup
+Setting up AWS Chatbot in your Slack channels or Amazon Chime chat rooms is easy and takes only a few minutes.
+Easily define permissions
+AWS Chatbot enables you to set permissions for individual Slack channels and Amazon Chime chat rooms quickly and pre-defined permission templates make it easy to tailor for your organization’s needs.
+Amazon Lex Build your own voice and text-based chatbots to communicate with your customers.
+Learn More>>
+How it works
+Notifications
+Commands
+Demo Video
+AWS re:Invent 2019 Launchpad | AWS Chatbot
+Customers
+LIFULL
+LIFULL Co., Ltd., is a real estate-related information service and the parent company behind LIFULL HOME’S, one of Japan's largest real estate portal sites. Its businesses cover a range of different services including business support services for real estate developers, customer relationship management assistance for rental operators, local real estate information, and management of search websites for nursing homes. With a wide range of services, it is important for LIFULL’s development teams to be able to collaborate and aggregate information quickly and easily.
+LIFULL chose to integrate AWS Chatbot within its Slack channels because its benefits could be realized immediately, upon setup. LIFULL now uses AWS Chatbot to aggregate various notifications such as application deployments and infrastructure provisioning through its Slack channels. Since notification destinations can be easily specified, LIFULL has been able to ensure that application notifications are distributed to each Slack channel, as appropriate, so that developers get only the information that matters to them.
+“With AWS Chatbot, we’ve aggregated various notifications such as application deployments, infrastructure provisioning, and performance monitoring directly into Slack so our team can quickly take action directly from where they’re already working. Not only does this speed up our development time, but it improves the overall development experience for the team.”
+Kentaro Suzuki, Solution Architect - LIFULL Co., Ltd.
+Blog posts
+Introducing AWS Chatbot: ChatOps for AWS
+Ilya Bezdelev July 24, 2019
+Read now »
+Launch: AWS Budgets Integration with AWS Chatbot
+Erin Carlson and Matt Cowsert July 31, 2019
+Read now »
+Running AWS commands from Slack using AWS Chatbot
+Ilya Bezdelev November, 25 2019
+Read now »
+Check out the product features
+Learn more about the key features of AWS Chatbot.
+Learn more
+Try AWS Chatbot
+Get started with AWS Chatbot.
+Get Started
+Review documentation
+Learn more about AWS Chatbot with the developer guide.
+Learn more

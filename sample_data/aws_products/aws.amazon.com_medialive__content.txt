@@ -1,0 +1,41 @@
+AWS Elemental MediaLive
+Encode live video for broadcast and streaming to any device
+Get started with AWS Elemental MediaLive
+Live Chat
+AWS Elemental MediaLive is a broadcast-grade live video processing service. It lets you create high-quality video streams for delivery to broadcast televisions and internet-connected multiscreen devices, like connected TVs, tablets, smart phones, and set-top boxes. The service works by encoding your live video streams in real-time, taking a larger-sized live video source and compressing it into smaller versions for distribution to your viewers. With AWS Elemental MediaLive, you can easily set up streams for both live events and 24x7 channels with advanced broadcasting features, high availability, and pay-as-you-go pricing. AWS Elemental MediaLive lets you focus on creating compelling live video experiences for your viewers without the complexity of building and operating broadcast-grade video processing infrastructure.
+AWS Elemental MediaLive Explained
+Watch Now: AWS Elemental MediaLive Explained (41 sec)
+How it works
+Benefits
+Simple deployment and management
+AWS Elemental MediaLive automates the provisioning and management of all the infrastructure used for video encoding, letting you deploy a simple live channel in minutes. The service transparently provisions resources and manages all the scaling, failover, monitoring, and reporting needed to power a live video stream. This lets you focus on your live content, not your encoding infrastructure. You can also use AWS Elemental Link, an on-premises device that makes it easy to connect your live video source to MediaLive.
+Broadcast-grade capabilities
+AWS Elemental MediaLive makes it easy for anyone to produce broadcast-quality live streaming video. The service includes support for advanced capabilities such as statistical multiplexing, ad marker support, audio features including audio normalization and Dolby audio, and multiple caption standards. MediaLive works natively with AWS Elemental MediaConnect, providing secure and reliable transport of video to use as inputs to live channels.
+Highly available
+AWS Elemental MediaLive provides built-in reliability and resiliency. The service transparently manages resources across multiple Availability Zones, and automatically monitors their health, so that any potential issues are detected and resolved without disrupting live channels. With AWS Elemental MediaLive, you can exceed the reliability of infrastructure typically used for broadcast workloads with a straightforward pay-as-you-go model based on the hours of content processed.
+Increased efficiency and reduced cost
+With AWS Elemental MediaLive, you only pay for the service as you use it, with no upfront investment in encoding infrastructure and no operational overhead devoted to managing physical resources. Pricing for AWS Elemental MediaLive uses a straightforward model based on the hours of content processed and delivered.
+Customer stories
+TVNZ
+FOX Sports
+TVNZ
+“We've already seen pretty impressive results from what we have moved to the AWS environment and we're really enjoying all the benefits like scalability, redundancy, and performance that we get from being on the AWS platform.”
+Andrew Blakey, Development Manager, TVNZ
+About TVNZ
+TVNZ is New Zealand’s leading free-to-air TV provider, bringing news and entertainment coverage to more than two million New Zealanders each day.
+Customer Snapshot: TVNZ
+FOX Sports
+"FOX SPORTS is at the vanguard of sports broadcast innovation. To deliver live sport of this volume to our subscribers requires scale. We have implemented the AWS Cloud to leverage the end-to-end live event and content monetization workflows only available in the cloud through AWS Elemental Media Services."
+Alastair Robertson, Chief Technology Officer for FOX SPORTS Australia
+About Fox Sports
+FOX SPORTS Australia Pty Limited (FOX SPORTS) is Australia’s leading producer of sports coverage and is home to Australia’s favorite subscription television sports channels as well as Australia’s number one multi-sports website and app.
+Get started with AWS Elemental MediaLive in the console
+Launch the AWS Elemental MediaLive console
+Create and set up an input, then create and configure your live channel
+Send output to AWS Elemental MediaPackage for origination and packaging
+Have questions?
+Contact us
+Ready to build?
+Get started with AWS Elemental MediaLive
+Discover more resources
+Visit the Resources page

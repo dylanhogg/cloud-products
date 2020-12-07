@@ -1,0 +1,52 @@
+AWS Identity and Access Management (IAM)
+Securely manage access to AWS services and resources
+Get started with AWS IAM
+AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources.
+IAM is a feature of your AWS account offered at no additional charge. You will be charged only for use of other AWS services by your users.
+To get started using IAM, or if you have already registered with AWS, go to the AWS Management Console and get started with these IAM Best Practices.
+AWS IAM Overview (2:15)
+Use cases
+Fine-grained access control to AWS resources
+IAM enables your users to control access to AWS service APIs and to specific resources. IAM also enables you to add specific conditions such as time of day to control how a user can use AWS, their originating IP address, whether they are using SSL, or whether they have authenticated with a multi-factor authentication device.
+Multi-factor authentication for highly privileged users
+Protect your AWS environment by using AWS MFA, a security feature available at no extra cost that augments user name and password credentials. MFA requires users to prove physical possession of a hardware MFA token or MFA-enabled mobile device by providing a valid MFA code.
+Analyze access
+IAM helps you analyze access across your AWS environment. Your security teams and administrators can quickly validate that your policies only provide the intended public and cross-account access to your resources. You can also easily identify and refine your policies to allow access to only the services being used. This helps you to better adhere to the principle of least privilege.
+Integrate with your corporate directory
+IAM can be used to grant your employees and applications federated access to the AWS Management Console and AWS service APIs, using your existing identity systems such as Microsoft Active Directory. You can use any identity management solution that supports SAML 2.0, or feel free to use one of our federation samples (AWS Console SSO or API federation).
+How it works
+IAM assists in creating roles and permissions
+AWS IAM allows you to:
+Manage IAM users and their access – You can create users in IAM, assign them individual security credentials (in other words, access keys, passwords, and multi-factor authentication devices), or request temporary security credentials to provide users access to AWS services and resources. You can manage permissions in order to control which operations a user can perform.
+Manage IAM roles and their permissions – You can create roles in IAM and manage permissions to control which operations can be performed by the entity, or AWS service, that assumes the role. You can also define which entity is allowed to assume the role. In addition, you can use service-linked roles to delegate permissions to AWS services that create and manage AWS resources on your behalf.
+Manage federated users and their permissions – You can enable identity federation to allow existing identities (users, groups, and roles) in your enterprise to access the AWS Management Console, call AWS APIs, and access resources, without the need to create an IAM user for each identity. Use any identity management solution that supports SAML 2.0, or use one of our federation samples (AWS Console SSO or API federation).
+Best practices
+AWS has a list of best practices to help IT professionals and developers manage access to AWS resources.
+Users – Create individual users.
+Groups – Manage permissions with groups.
+Permissions – Grant least privilege.
+Auditing – Turn on AWS CloudTrail.
+Password – Configure a strong password policy.
+MFA – Enable MFA for privileged users.
+Roles – Use IAM roles for Amazon EC2 instances.
+Sharing – Use IAM roles to share access.
+Rotate – Rotate security credentials regularly.
+Conditions – Restrict privileged access further with conditions.
+Root – Reduce or remove use of root.
+Become an IAM policy master in 60 minutes or less (55:35)
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS IAM
+Visit the features page
+Ready to build?
+Get started with AWS IAM
+Have more questions?
+Contact us

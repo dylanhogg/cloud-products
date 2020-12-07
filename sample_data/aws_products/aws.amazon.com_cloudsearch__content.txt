@@ -1,0 +1,40 @@
+Amazon CloudSearch
+Amazon CloudSearch is a managed service in the AWS Cloud that makes it simple and cost-effective to set up, manage, and scale a search solution for your website or application.
+Amazon CloudSearch supports 34 languages and popular search features such as highlighting, autocomplete, and geospatial search. For more information, see Benefits.
+2:28
+What is Amazon CloudSearch? (2:28)
+Amazon CloudSearch is a fully-managed search service that's easy to set up, manage, and automatically scales with the demands of your application or website. This video provides a high-level overview of Amazon CloudSearch features and benefits.
+Try Amazon CloudSearch for Free
+Start CloudSearch Free Trial
+Learn More
+Get 750 free hours of fully functional search instances for 30 days. To start:
+Sign in to your AWS account and launch the CloudSearch Console
+Create and configure a search domain with a few clicks
+Upload data and send search/update requests via console, AWS SDK, or CLI
+To learn about the latest new features and announcements for Amazon CloudSearch, see the what's new page.
+Benefits
+With Amazon CloudSearch, you can quickly add rich search capabilities to your website or application. You don't need to become a search expert or worry about hardware provisioning, setup, and maintenance. With a few clicks in the AWS Management Console, you can create a search domain and upload the data that you want to make searchable, and Amazon CloudSearch will automatically provision the required resources and deploy a highly tuned search index.
+You can easily change your search parameters, fine tune search relevance, and apply new settings at any time. As your volume of data and traffic fluctuates, Amazon CloudSearch seamlessly scales to meet your needs.
+Simple
+You can configure and manage an Amazon CloudSearch domain through the AWS Management Console, AWS CLI, and AWS SDKs. Simply point to a sample of your data and Amazon CloudSearch will automatically recommend how to configure your domain's indexing options. You can easily add or delete index fields and customize search options such as faceting and highlighting. Configuration changes do not require you to re-upload your data.
+Scalable
+Amazon CloudSearch offers powerful autoscaling for all search domains. As your data or query volume changes, Amazon CloudSearch can scale your search domain's resources up or down as needed. You can control scaling if you know that you need more capacity for bulk uploads or are expecting a surge in search traffic.
+Reliable
+Amazon CloudSearch provides automatic monitoring and recovery for your search domains. When Multi-AZ is enabled, Amazon CloudSearch provisions and maintains resources for a search domain in two Availability Zones to ensure high availability. Updates are automatically applied to the search instances in both Availability Zones. Search traffic is distributed across both Availability Zones and the instances in either zone are capable of handling the full load in the event of a failure.
+High Performance
+Amazon CloudSearch ensures low latency and high throughput performance, even at large scale through automatic sharding and horizontal and vertical autoscaling.
+Fully Managed
+Amazon CloudSearch is a fully managed custom search service. Hardware and software provisioning, setup and configuration, software patching, data partitioning, node monitoring, scaling, and data durability are handled for you.
+Rich Search Features
+Amazon CloudSearch supports powerful search features such as:
+Free text, Boolean, and Faceted search
+Autocomplete suggestions
+Customizable relevance ranking and query-time rank expressions
+Field weighting
+Geospatial search
+Highlighting
+Support for 34 languages
+Cost-Effective
+Amazon CloudSearch is designed to be cost-effective. You pay low hourly rates, and only for the resources you use. Amazon CloudSearch offers low total cost of ownership for your search applications compared to operating a search environment on your own. For detailed pricing information, see Pricing.
+Secure
+Amazon CloudSearch uses strong cryptographic methods to authenticate users and prevent unauthorized access to your domains. Amazon CloudSearch supports HTTPS and integrates with Identity and Access Management (IAM) to control access to the CloudSearch configuration service and each domain’s document, search, and suggest services.

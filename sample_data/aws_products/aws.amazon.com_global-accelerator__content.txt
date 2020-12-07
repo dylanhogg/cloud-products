@@ -1,0 +1,116 @@
+AWS Global Accelerator
+Improve global application availability and performance using the AWS global network
+Get started with AWS Global Accelerator
+"With AWS Global Accelerator, we've decreased response time from more than 200 milliseconds to less than 4 milliseconds, a 98 percent improvement."
+Skyscanner
+Simply by enabling AWS Global Accelerator, one multinational customer saw a 51.2% reduction in mean end-to-end app load times.
+Lever
+"AWS Global Accelerator dropped the number of network timeouts by 8 times in some countries.”
+JoyCity
+AWS Global Accelerator is a networking service that sends your user’s traffic through Amazon Web Service’s global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, Global Accelerator’s automatic routing optimizations will help keep your packet loss, jitter, and latency consistently low.
+With Global Accelerator, you are provided two global static customer facing IPs to simplify traffic management. On the back end, add or remove your AWS application origins, such as Network Load Balancers, Application Load Balancers, Elastic IPs, and EC2 Instances, without making user facing changes. To mitigate endpoint failure, Global Accelerator automatically re-routes your traffic to your nearest healthy available endpoint.
+Set up your accelerator on the AWS console in minutes with step-by-step documentation or with one click in the Elastic Load Balancing Console. Learn more by following our self-service workshop and test performance benefits from your location with the AWS Global Accelerator speed comparison tool.
+AWS Global Accelerator (1:40)
+AWS Global Accelerator use cases
+Single Region applications
+Multi-Region applications
+Online games
+Real-time communication
+Single Region applications
+Improving latency and availability for single Region applications
+AWS Global Accelerator helps bridge the gap between single and multiple Region deployments by improving the network routing for local and global traffic. If local and global traffic to your application’s single Region is left on the public internet, it can be negatively impacted by internet congestion and local outages. Using Global Accelerator, your user’s traffic is moved off the internet and onto Amazon’s private global network through 80+ global edge locations, then directed to your application origins. AWS Global Accelerator is quick to setup and increases traffic performance by up to 60%.
+Resources
+Documentation
+Create an accelerator
+BLOG POST
+Improve performance by up to 60%
+Blog Post
+Pre-built CloudFormation template
+BLOG POST
+1-click acceleration
+CUSTOMER EXAMPLE
+Lever
+CUSTOMER EXAMPLE
+The Trade Desk
+Multi-Region applications
+Simplified and resilient traffic routing for multi-Region applications
+As your application architecture grows, so does the complexity, with longer user facing IP lists and more nuanced traffic routing logic. AWS Global Accelerator solves for this by providing you with two static IPs that are anycast from our globally distributed edge locations, giving you a single entry point to your application, regardless of how many AWS Regions it’s deployed in. This allows you to add or remove origins, Availably Zones or Regions without reducing your application availability. Your traffic routing is managed manually, or in console with endpoint traffic dials and weights. If your application endpoint has a failure or availability issue, AWS Global Accelerator will automatically redirect your new connections to a healthy endpoint within seconds.
+Resources
+Documentation
+Resilience in AWS Global Accelerator
+Solution Guide
+Endpoint weights
+Customer reference
+Skyscanner
+Customer reference
+Flowplayer
+Blog post
+Traffic management with AWS Global Accelerator
+Blog Post
+Accessing private Application Load Balancers and EC2 instances
+Online games
+Enhanced player-server networking for online games
+Growing and maintaining your online multiplayer gaming community requires a smooth and competitive gaming experience. Using AWS Global Accelerator enhances your player’s online experience by routing player traffic along the private AWS network, reducing in-game latency, jitter, and packet loss. Acceleration is supported for traffic from popular engines, such as Unity and Unreal. AWS edge locations will ingress and route player traffic to game servers in any of the 15+ AWS Global Accelerator supported Regions, providing faster load times and a more consistent in-game experience. Handle your large traffic spikes, such as game launches and in-game events, without interrupting service on the highly available AWS network.
+Resources
+Blog post
+Improve performance by up to 60%
+Blog post
+Traffic management with AWS Global Accelerator
+Blog Post
+Reach more players using AWS Global Accelerator
+Customer testimonial
+JoyCity
+Webinar
+Highly Available and Performant applications using AWS Global Accelerator
+Webinar
+What’s New with AWS Global Accelerator
+Real-time communication
+Running communication as a service and voice over IP on AWS
+AWS Global Accelerator improves your real-time communications (RTCs) by decreasing call setup time, while increasing call success rate and quality. In the telecommunication industry, you provide latency sensitive RTC for applications including Voice over IP and video conferencing across a variety of devices. To support this, using Global Accelerator allows you to run application protocols, such as Session Initiation, Real Time and WebRTC along the AWS network. Connect directly to your Traffic Boarder Controller to reduce the number of network dependencies and hops. This stabilizes your RTC caller traffic during peak internet hours and call traffic spikes.
+Resources
+Documentation
+Resilience in AWS Global Accelerator
+Documentation
+Real-time Communications Whitepaper
+Documentation
+Health Checks
+Blog posts
+CrazyCall
+Blog posts
+Traffic management with AWS Global Accelerator
+Blog posts
+CaaS blog
+Benefits of AWS Global Accelerator
+Accelerate latency sensitive applications
+Your network latency is driven by the number of networks your user data needs to hop and the bandwidth available along the path to your AWS application origins. These network variables create opportunities for internet congestion to delay connections and lose data. AWS Global Accelerator combines advanced networking features with the dedicated AWS Global Network to improve your application network performance by up to 60%. TCP connections are terminated at the AWS Edge location closest to your users, instead of at your endpoint, accelerating data transfers globally. Once on the AWS network, automated routing directs your user traffic to the most performant AWS origins in Regions and/or Availability Zones. For UDP workloads, the AWS network provides the global capacity needed to avoid packet loss and jitter during traffic spikes.
+Improve resiliency and availability
+You need to build your architecture with resiliency and availability in mind. This can mean running your application in a single AWS Region across multiple Availability Zones or across multiple AWS Regions. Wherever you route your traffic on the AWS network, with Global Accelerator, failover between application origins happens automatically and within seconds. If Global Accelerator detects failure of your application endpoint it instantly triggers traffic re-routing to the next available, closest endpoint in another AZ or AWS Region. Your users are redirected without needing to anylist new IP addresses or update their DNS cache.
+Simplified global traffic management
+As your application grows, the number of origins and IP addresses that you need to manage increases and becomes burdensome. Your updates and changes refresh the DNS cache for your application, risking lower availability due to firewalls, hardcoded devices and allow-list requirements. AWS Global Accelerator simplifies global traffic management by providing 2 static anycast IP addresses that only need to be allow-listed by users once. Behind these IP address you can add or remove AWS origins, opening up uses such as endpoint failover, scaling, or testing without any user-side changes. For A/B testing or blue green deployment, use traffic dials or endpoint weights to customize how much traffic is going to each endpoint. You can bring your own IP addresses (BYOIP) to AWS Global Accelerator or use static IP addresses from the Amazon IP address pool.
+Protect your applications
+Exposing your AWS origins, such as Application Load Balancers or EC2 instances, to public internet traffic creates an opportunity for malicious attacks. AWS Global accelerator decreases the risk of attack by masking your origin behind two static entry points. These entry points are protected by default from Distributed Denial of Service (DDoS) attacks with AWS Shield. AWS Global Accelerator creates a peering connection with your Amazon Virtual Private Cloud using private IP addresses, keeping connections to your internal Application Load Balancer or private EC2 instance off the public internet.
+Without AWS Global Accelerator
+It can take many networks to reach the application. Paths to and from the application may differ. Each hop impacts performance and can introduce risks.
+With AWS Global Accelerator
+Adding AWS Global Accelerator removes these inefficiencies. It leverages the Global AWS Network, resulting in improved performance.
+Customers using AWS Global Accelerator
+Read customer testimonials »
+Blog posts
+Date
+Date
+More…
+No blog posts could be found at this time. Please visit AWS Blogs to read more blog content.
+What's new
+Date
+Date
+More…
+No what's new announcements could be found at this time. Please visit AWS What's New to read more announcements.
+Check out the product features
+Discover what AWS Global Accelerator can do for your applications.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Global Accelerator in the AWS Console.
+Get started

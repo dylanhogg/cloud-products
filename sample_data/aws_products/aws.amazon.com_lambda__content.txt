@@ -1,0 +1,68 @@
+AWS Lambda
+Run code without thinking about servers or clusters. Only pay for what you use.
+Get started with AWS Lambda
+AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. You can set up your code to automatically trigger from 140 AWS services or call it directly from any web or mobile app. You can write Lambda functions in your favorite language (Node.js, Python, Go, Java, and more) and use both serverless and container tools, such as AWS SAM or Docker CLI, to build, test, and deploy your functions.
+Getting started with AWS Lambda (3:00)
+Benefits
+No servers to manage
+AWS Lambda automatically runs your code without requiring you to provision or manage infrastructure. Just write the code and upload it to Lambda either as a ZIP file or container image.
+Continuous scaling
+AWS Lambda automatically scales your application by running code in response to each event. Your code runs in parallel and processes each trigger individually, scaling precisely with the size of the workload, from a few requests per day, to hundreds of thousands per second.
+Cost optimized with millisecond metering
+With AWS Lambda, you only pay for the compute time you consume, so you’re never paying for over-provisioned infrastructure. You are charged for every millisecond your code executes and the number of times your code is triggered. With Compute Savings Plan, you can additionally save up to 17%.
+Consistent performance at any scale
+With AWS Lambda, you can optimize your code execution time by choosing the right memory size for your function. You can also keep your functions initialized and hyper-ready to respond within double digit milliseconds by enabling Provisioned Concurrency.
+How it works
+Use cases
+What can you build with AWS Lambda? Learn more about the use cases below:
+Data processing
+You can use AWS Lambda to execute code in response to triggers such as changes in data, shifts in system state, or actions by users. Lambda can be directly triggered by AWS services such as S3, DynamoDB, Kinesis, SNS, and CloudWatch, can connect to existing EFS file systems, or it can be orchestrated into workflows by AWS Step Functions. This allows you to build a variety of real-time serverless data processing systems.
+Real-time file processing
+You can use Amazon S3 to trigger AWS Lambda to process data immediately after an upload. You can also connect to an existing Amazon EFS file system directly, which enables massively parallel shared access for large scale file processing. For example, you can use Lambda to thumbnail images, transcode videos, index files, process logs, validate content, and aggregate and filter data in real-time.
+Reference Architecture: Sample Code
+The Seattle Times uses AWS Lambda to resize images for viewing on different devices such as desktop computers, tablets, and smartphones. Read the case study »
+Real-time stream processing
+You can use AWS Lambda and Amazon Kinesis to process real-time streaming data for application activity tracking, transaction order processing, click stream analysis, data cleansing, metrics generation, log filtering, indexing, social media analysis, and IoT device data telemetry and metering.
+Reference Architecture: Sample code
+Localytics processes billions of data points in real-time, and uses Lambda to process historical and live data stored in S3 or streamed from Kinesis. Read the case study »
+Machine learning
+You can use AWS Lambda to preprocess data before feeding it to your machine learning model. With Lambda access to EFS, you can also serve your model for prediction at scale without having to provision or manage any infrastructure.
+"At Aible we focus on delivering the most powerful AI technologies at the lowest possible operating cost. As such, we use AWS Lambda and Serverless for machine learning training and predictions. With Serverless, we can run a wide variety of machine learning workloads more cost effectively while benefiting from burst compute resources needed for rapid iteration and scaling to create AI for optimal business impact."
+Rod Butters, CTO – Aible
+Backends
+You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests. Take advantage of Lambda’s consistent performance controls, such as multiple memory configurations and Provisioned Concurrency, for building latency-sensitive applications at any scale.
+Web applications
+By combining AWS Lambda with other AWS services, developers can build powerful web applications that automatically scale up and down and run in a highly available configuration across multiple data centers – with zero administrative effort required for scalability, back-ups or multi-data center redundancy.
+Reference Architecture: Sample code
+IoT backends
+You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests.
+Reference Architecture: Sample code
+Mobile backends
+AWS Lambda makes it easy to create rich, personalized app experiences. You can build backends using AWS Lambda and Amazon API Gateway to authenticate and process API requests. Use AWS Amplify to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
+Reference Architecture: Sample code
+Bustle runs a serverless backend for its Bustle iOS app and websites using AWS Lambda and Amazon API Gateway. Serverless architectures allow Bustle to never have to deal with infrastructure management, so every engineer can focus on building out new features and innovating. Read the case study »
+Case studies
+The Coca-Cola Company, an American multinational beverage corporation, used AWS Lambda and AWS Step Functions to build a cost-effective serverless solution.
+Read the blog »
+iRobot, a leading global consumer robot company, is building the next generation of connected devices for the smart home using a serverless architecture.
+Read more »
+Benchling, a life science software company, created a technique that researchers use to modify parts of a genome with extreme precision using serverless architecture.
+Read more »
+Thomson Reuters uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
+Read more »
+See more case studies »
+Get started with AWS Lambda
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with step-by-step tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS Lambda
+Visit the AWS Management Console.
+Learn more about AWS Lambda
+Visit the features page
+Ready to build?
+Get started with AWS Lambda
+Have more questions?
+Contact us

@@ -1,0 +1,27 @@
+AWS Personal Health Dashboard
+Technology and tools to monitor, manage, and optimize your AWS environment
+View your dashboard
+Select a support plan
+AWS Personal Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you. While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view into the performance and availability of the AWS services underlying your AWS resources.
+The dashboard displays relevant and timely information to help you manage events in progress, and provides proactive notification to help you plan for scheduled activities. With Personal Health Dashboard, alerts are triggered by changes in the health of AWS resources, giving you event visibility, and guidance to help quickly diagnose and resolve issues.
+Benefits
+Personalized view of service health
+Personal Health Dashboard gives you a personalized view of the status of the AWS services that power your applications, enabling you to quickly see when AWS is experiencing issues that may impact you. For example, in the event of a lost Amazon Elastic Block Store (EBS) volume associated with one of your Amazon EC2 instances, you would gain quick visibility into the status of the specific service you are using, helping save precious time troubleshooting to determine root cause.
+Proactive notifications
+The dashboard also provides forward looking notifications, and you can set up alerts across multiple channels, including email and mobile notifications, so you receive timely and relevant information to help plan for scheduled changes that may affect you. In the event of AWS hardware maintenance activities that may impact one of your Amazon EC2 instances, for example, you would receive an alert with information to help you plan for, and proactively address any issues associated with the upcoming change.
+Detailed troubleshooting guidance
+When you get an alert, it includes remediation details and specific guidance to enable you to take immediate action to address AWS events impacting your resources. For example, in the event of an AWS hardware failure impacting one of your Amazon Elastic Block Store (EBS) volumes, your alert would include a list of your affected resources, a recommendation to restore your volume, and links to the steps to help you restore it from a snapshot. This targeted and actionable information reduces the time needed to resolve issues.
+Integration and automation
+AWS Personal Health Dashboard can integrate with Amazon CloudWatch Events, enabling you to build custom rules and select targets such as AWS Lambda functions to define automated remediation actions. The AWS Health API, the underlying service powering Personal Health Dashboard, allows you to integrate health data and notifications with your existing in-house or third party IT Management tools.
+AWS Personal Health Dashboard is available to all AWS customers, and provides status and notifications for all services across all Regions and Availability Zones. Access to the AWS Health API is included as part of the AWS Business Support and AWS Enterprise Support plans.
+Fine-grained access control via IAM policy conditions
+AWS Personal Health Dashboard gives you fine-grained access control so that you can setup permissions based on event metadata. This allows you to grant or deny access to an AWS Identity and Access Management (IAM) user based on such attributes as event types, event types of a particular service, or other role-based attributes. With fine-grained access control, you can limit access of sensitive alerts, such as those related to security, to only those users that need to see them.
+Aggregate health events across AWS Organizations
+If you use AWS Organizations, AWS Health allows you to aggregate notifications from all accounts in your organization. This provides centralized and real-time access to all AWS Health events posted to individual accounts in your organization, including operational issues, scheduled maintenance, and account notifications.
+Partners
+"More and more enterprises depend on AWS to drive their digital business, and all businesses are digital now. AWS has invested in new technology and services to keep customers aware of the real-time status of the relevant parts of the AWS ecosystem. With PagerDuty's integration with AWS Health, alerts and remediation guidance are immediately actionable, allowing companies to automate incident response and proactively get ahead of any potential customer disruptions."
+Rachel Obstler, VP of Product Management - Pagerduty
+"We are excited to integrate data from the AWS Personal Health Dashboard into our Splunk App for AWS. Our customers love the end-to-end visibility Splunk solutions provide, and the addition of Personal Health Dashboard notifications amplifies the value of managing their AWS resources with the Splunk App for AWS."
+Dave Schwartz, AVP Global Strategic Alliances - Splunk
+"Datadog works to provide AWS users with insight into their cloud infrastructure and applications. By integrating with the AWS Personal Health Dashboard and adding its valuable data to our platform, we'll help our customers troubleshoot issues faster and reduce downtime that affects their business-critical operations."
+Ilan Rabinovitch, Director of Product Management - Datadog

@@ -1,0 +1,45 @@
+AWS Transfer Family
+Simple and seamless file transfer to Amazon S3 using SFTP, FTPS, and FTP
+Get started with AWS Transfer Family
+The AWS Transfer Family provides fully managed support for file transfers directly into and out of Amazon S3. With support for Secure File Transfer Protocol (SFTP), File Transfer Protocol over SSL (FTPS), and File Transfer Protocol (FTP), the AWS Transfer Family helps you seamlessly migrate your file transfer workflows to AWS by integrating with existing authentication systems, and providing DNS routing with Amazon Route 53 so nothing changes for your customers and partners, or their applications. With your data in Amazon S3, you can use it with AWS services for processing, analytics, machine learning, and archiving. Getting started with the AWS Transfer Family is easy; there is no infrastructure to buy and set up.
+AWS Transfer Family (1:49)
+Benefits
+Easily and seamlessly modernize your file transfer workflows. File exchange over SFTP, FTPS, and FTP is deeply embedded in business processes across many industries like financial services, healthcare, telecom, and retail. They use these protocols to securely transfer files like stock transactions, medical records, invoices, software artifacts, and employee records. The AWS Transfer Family lets you preserve your existing data exchange processes while taking advantage of the superior economics, data durability, and security of Amazon S3. With just a few clicks in the AWS Transfer Family console, you can select one or more protocols, configure Amazon S3 buckets to store the transferred data, and set up your end user authentication by importing your existing end user credentials, or integrating an identity provider like Microsoft Active Directory or LDAP. End users can continue to transfer files using existing clients, while files are stored as objects in your Amazon S3 bucket.
+No servers to manage
+You no longer have to purchase and run your own SFTP, FTPS, or FTP servers and storage to securely exchange data with partners and customers. The AWS Transfer Family manages your file infrastructure for you, which includes auto-scaling capacity and maintaining high availability with a multi-AZ architecture.
+Seamless migrations
+The AWS Transfer Family is fully compatible with the SFTP, FTPS, and FTP standards and connects directly with your identity provider systems like Active Directory, LDAP, Okta, and others. For you, this means you can migrate file transfer workflows to AWS without changing your existing authentication systems, domain, and hostnames. Your external customers and partners can continue to exchange files with you, without changing their applications, processes, client software configurations, or behavior.
+Works natively with AWS services
+The service stores the data in S3, making it easily available for you to use AWS services for processing and analytics workflows, unlike third party tools that may keep your files in silos. Native support for AWS management services simplifies your security, monitoring, and auditing operations.
+How it works
+Get a hands-on understanding of how the AWS Transfer Family can help address your file transfer challenges by watching this quick demo.
+AWS Transfer Family - Demo (9:32)
+Use cases
+Sharing and receiving files internally and with third parties
+Exchanging files internally within an organization or externally with third parties are a critical part of many business workflows. This file sharing needs to be done securely, whether you are transferring large technical documents for customers, media files for a marketing agency, research data, or invoices from suppliers. To seamlessly migrate from existing infrastructure, the AWS Transfer Family provides protocol options, integration with existing identity providers, and network access controls, so there are no changes to your end users. The AWS Transfer Family makes it easy to support recurring data sharing processes, as well as one-off secure file transfers, whichever suits your business needs.
+Data distribution made secure and easy
+Providing value added data is a core part of many big data and analytics organizations. This requires being able to easily provide accessibility to your data, while doing it in a secure way. The AWS Transfer Family offers multiple protocols to access data in S3, and provides access control mechanisms and flexible folder structures that help you dynamically decide who gets access to what and how. You also no longer need to worry about managing the scale in growth of your data sharing business as the service provides built-in real-time scaling and high availability capabilities for secure and timely transfers of data.
+Ecosystem data lakes
+Whether you are part of a life sciences organization or an enterprise running business critical analytics workloads in AWS, you may need to rely on third parties to send you structured or unstructured data. With the AWS Transfer Family, you can set up up your partner teams to transfer data securely into your Amazon S3 bucket over the chosen protocols. You can then apply the AWS portfolio of analytics and machine learning capabilities on the data to advance your research projects. You can do all this without buying more hardware to run storage and compute on-premises.
+Customers
+Customers are using AWS Transfer for SFTP, AWS Transfer for FTPS, and AWS Transfer for FTP for a variety of uses cases. Visit the customers page to read about their experiences.
+Hear from AWS Transfer Family customers »
+Transfer Family Blogs
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
+To read more AWS Transfer Family blogs, please visit the AWS Storage blog channel.
+What's New with Transfer Family
+date
+date
+1
+…
+…
+Please see the AWS What's New page for recent launches.
+Check out AWS Transfer Family features
+AWS Transfer Family is designed to simplify file transfer operations for you. These capabilities make it possible.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier,  including S3 storage for your files.
+Sign up
+Start building in the console
+Get started building your SFTP, FTPS, and FTP services in the AWS Management Console.
+Sign in

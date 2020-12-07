@@ -1,0 +1,46 @@
+AWS Single Sign-On
+Centrally manage single sign-on (SSO) access to multiple AWS accounts and business applications.
+Get started with AWS Single Sign-On
+AWS Single Sign-On (SSO) makes it easy to centrally manage access to multiple AWS accounts and business applications and provide users with single sign-on access to all their assigned accounts and applications from one place. With AWS SSO, you can easily manage access and user permissions to all of your accounts in AWS Organizations centrally. AWS SSO configures and maintains all the necessary permissions for your accounts automatically, without requiring any additional setup in the individual accounts. You can assign user permissions based on common job functions and customize these permissions to meet your specific security requirements. AWS SSO also includes built-in integrations to many business applications, such as Salesforce, Box, and Microsoft 365.
+With AWS SSO, you can create and manage user identities in AWS SSO’s identity store, or easily connect to your existing identity source, including Microsoft Active Directory, Okta Universal Directory, and Azure Active Directory (Azure AD). AWS SSO allows you to select user attributes, such as cost center, title, or locale, from your identity source, and then use them for attribute-based access control in AWS.
+It is easy to get started with AWS SSO. With just a few clicks in the AWS SSO management console you can connect AWS SSO to your existing identity source and configure permissions that grant your users access to their assigned AWS Organizations accounts and hundreds of pre-integrated cloud applications, all from a single user portal.
+Benefits
+Centrally manage access permissions to AWS accounts
+With AWS SSO, you can easily manage access and user permissions to all of your accounts in AWS Organizations centrally, with no additional setup within the individual accounts. You can assign user permissions based on common job functions, customize them to meet your specific security requirements, and assign the permissions to users or groups in the specific accounts where they need access. For example, you can give your security team administrative-level access to your AWS accounts running your security tools, but only grant them auditor-level access to your other AWS accounts for monitoring purposes. AWS SSO allows you to utilize user attributes, such as cost center, title, or locale, for fine-grained attribute-based access control. You can use APIs and AWS CloudFormation to automate permissions management in multi-account environments, and retrieve the permissions programmatically for audit and governance purposes.
+Create users in AWS SSO or connect to your existing identities
+AWS SSO gives you the option to create your user identities and groups in AWS SSO. And, if you already use Microsoft Active Directory Domain Services, Okta Universal Directory, Azure AD, or another supported identity provider, your users can access AWS with their existing corporate credentials, and your administrators can continue to manage users and groups in your existing identity source. With AWS SSO, you can enable standards-based strong authentication capabilities for all your users across all identity sources.
+Access accounts and applications from one place
+AWS SSO provides a user portal so users can find and access the roles they can assume in their assigned AWS accounts and business applications in one place. AWS SSO offers pre-configured SAML integrations to many business applications, including Salesforce, Box, and Microsoft 365. AWS monitors these integrations for changes and updates the integration on your behalf automatically. The AWS SSO application configuration wizard helps you extend SSO access to any application that supports Security Assertion Markup Language (SAML) 2.0.
+Easy to use
+With AWS SSO, you can enable a highly available single sign-on service for your organization with just a few clicks. There is no additional infrastructure to deploy or maintain. All administrative and sign-in activity is recorded in AWS CloudTrail, helping you meet your audit and compliance requirements. You can centrally view when users attempt to access accounts and applications, including from what IP address. You can also view when users are granted access to accounts and applications, when their assigned permissions to an AWS account are changed, and when their single sign-on access is removed. Using AWS SSO, you have the visibility to audit single sign-on activity in one place.
+How it works
+Featured customers
+Image API uses AWS Single Sign-On (SSO) to manage its AWS single tenant environments and other critical applications from one dashboard. SSO was so intuitive that it took just a few weeks to implement from the time we learned about it at re:Invent. Without SSO, we would have different usernames and passwords for each VPC and all other applications. This capability not only positions us well to scale, it makes environment management simple – which is how we like to do business.
+- Bill Joy, IT Director, Image API
+Invenia is a cloud-based machine learning platform that uses big, high frequency data to solve complex energy intelligence problems in real-time. As a cloud-based business ourselves, we rely extensively on AWS and a number of SaaS-based applications, but didn't like the security and compliance risks associated with managing end-user credentials to so many independent systems. Deploying AWS SSO allowed us to provide access to those same applications, but using our existing corporate credentials instead, and without any of the hassle of managing a traditional SSO solution - Brilliant!
+- Sascha McDonald, Head of Architecture and Operations, Invenia
+Syncron is a provider of cloud-based after-sales service solutions focused on empowering the world’s leading manufacturers to maximize product uptime and deliver exceptional customer experiences. As a cloud-based business, we're very mindful of the productivity disruptions and security challenges that can arise when users are overloaded with unique credentials. With AWS SSO, we can quickly and easily connect users into AWS using their normal enterprise credentials – allowing us to focus on continuing to deliver exceptional services to our customers instead of managing the lifecycle of users’ credentials in our AWS multi-account structure.
+- Richard Barkestam, CTO, Syncron
+Featured Security Competency Partners
+The AWS Competency Program is designed to identify, validate, and promote AWS Partner Network (APN) Advanced and Premier Tier Partners with demonstrated AWS technical expertise and proven customer success. To learn more, see the AWS Competency Program.
+Okta, Inc.
+Okta is the identity company that stands for trust.
+Learn more »
+OneLogin, Inc.
+OneLogin is a leading cloud identity management company, enabling enterprises to secure connections across all users and all devices.
+Learn more »
+Ping Identity
+Ping Identity provides secure, seamless access to apps and resources from anywhere and is trusted by over half of the Fortune 100.
+Learn more »
+Built-in support for AWS accounts and business applications
+AWS SSO helps manage access to your AWS accounts and business applications. For a full list of business applications pre-integrated with AWS SSO, see AWS SSO Cloud Applications.
+Blog posts & articles
+1
+…
+…
+Learn more about AWS Single Sign-On key features
+Visit the features page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us

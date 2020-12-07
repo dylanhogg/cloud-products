@@ -1,0 +1,30 @@
+AWS IoT Events
+Easily detect and respond to events from IoT sensors and applications
+Start building with IoT Events
+AWS IoT Events is a fully managed service that makes it easy to detect and respond to events from IoT sensors and applications. Events are patterns of data identifying more complicated circumstances than expected, such as changes in equipment when a belt is stuck or motion detectors using movement signals to activate lights and security cameras. Before IoT Events, you had to build costly, custom applications to collect data, apply decision logic to detect an event, and then trigger another application to react to the event. Using IoT Events, it’s simple to detect events across thousands of IoT sensors sending different telemetry data, such as temperature from a freezer, humidity from respiratory equipment, and belt speed on a motor. You simply select the relevant data sources to ingest, define the logic for each event using simple ‘if-then-else’ statements, and select the alert or custom action to trigger when an event occurs. IoT Events continuously monitors data from multiple IoT sensors and applications, and it integrates with other services, such as AWS IoT Core and AWS IoT Analytics, to enable early detection and unique insights into events. IoT Events automatically triggers alerts and actions in response to events based on the logic you define to resolve issues quickly, reduce maintenance costs, and increase operational efficiency.
+Benefits
+Easily ingest operations data
+With AWS IoT Events, you can easily evaluate multiple sources of telemetry data to detect the state of processes, equipment, or products quickly and schedule maintenance and send alarms or alerts to support teams and trigger actions, such as shutting down malfunctioning equipment before more damage is done. For example, you could use IoT Events to quickly build a food spoilage notification system that notifies technicians before spoilage occurs if a freezer is malfunctioning. Faster identification of events can prevent food spoilage and waste, saving thousands of dollars in potential lost revenue.
+Trigger a range of actions
+In IoT Events, you can combine multiple sources of telemetry data like belt speed, motor voltage, amperage, and noise levels, then define conditional logic to apply to that data, to gain full insight into your equipment and processes. This visibility helps you better understand events, such as when a motor might be stuck. You can also select a pre-built action to trigger, such as sending a message to the motor to shut down, before putting equipment at greater risk.
+Easily build rules
+You can write event logic, using simple ‘if-then-else’ statements, to identity critical events using sensor attributes, such as temperature and pressure. These attributes can trigger automatic alerts and pre-defined responses from IoT Events. For example, you can specify events related to a welding robot, such as an arm becoming misaligned. When IoT Events detects the incident, it automatically issues an alert and triggers the appropriate response.
+How it works
+Use cases
+Manufacturing
+Manufacturers manage multiple pieces of equipment with many independent sensors. The number and scale of sensors can make it challenging to detect critical operational events, such as when equipment variability reduces output quality. IoT Events makes it easy and cost effective to detect events system-wide by monitoring telemetry data such as belt speed, motor voltage, amperage, and noise levels. You can apply conditional logic to understand when a motor might be stuck or a device is approaching failure and trigger responses to optimize efficiency and improve production quality.
+Oil and gas
+IoT Events can help identify issues within oil well equipment. By setting up an event detector in IoT Events, you are able to understand the state of your equipment. Add incoming telemetry data and conditional logic to make the right decision at the right time. The event detection service combines telemetry sources, such as pressure, level, and temperature sensors, to gain full insight into equipment and quickly identify issues, such as fuel leaks, which can lead to costly shutdowns. IoT Events evaluates this incoming telemetry data, recognizes patterns, and takes pre-defined actions when it detects events, before loss or failure occurs.
+Commercial and consumer products
+Commercial and consumer producers build products that are purchased and used by millions of customers. Producers are now able to identity events across devices, quickly address issues, and earn customer trust, while gaining greater insight on future design needs. With IoT Events, you can define an event detector for each model of your device, add incoming telemetry data and conditional logic to define and detect events, and define the responses to those events. Any time a new unit comes online, IoT Events launches a new instance of the event detector for that device. IoT Events continues to detect events across the millions of customers using that device model and responds quickly.
+“BAI is improving customer connectivity using IoT Events to enhance experience and outcomes.”
+Alexander Witte, Technology Specialist - BAI Communications
+Check out the product features
+AWS IoT Events is a managed IoT service that makes it easy to detect and respond to events from large numbers of IoT sensors and applications.
+Learn more
+Sign up for an AWS account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started with AWS IoT Events.
+Sign in

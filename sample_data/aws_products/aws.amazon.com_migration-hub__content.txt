@@ -1,0 +1,29 @@
+AWS Migration Hub
+Simplify and accelerate migrations to AWS
+Get started with AWS Migration Hub
+AWS Migration Hub provides a single location to track the progress of application migrations across multiple AWS and partner solutions. Using Migration Hub allows you to choose the AWS and partner migration tools that best fit your needs, while providing visibility into the status of migrations across your portfolio of applications. Migration Hub also provides key metrics and progress for individual applications, regardless of which tools are being used to migrate them. This allows you to quickly get progress updates across all of your migrations, easily identify and troubleshoot any issues, and reduce the overall time and effort spent on your migration projects.
+AWS Migration Hub provides a single place to monitor migrations in any AWS region where your migration tools are available. There is no additional cost for using Migration Hub. You only pay for the cost of the individual migration tools you use, and any resources being consumed on AWS.
+Plan and Monitor Application Migration Using AWS Migration Hub (6:39)
+Benefits
+Centralized tracking
+Migrations involve many components that need to be tracked such as the status of servers or databases being migrated, and these are typically tracked across different tools. AWS Migration Hub helps address this by providing a central location to track the status of all these components, making it easier to view overall migration progress and reducing the time spent determining current status and next steps.
+Migration flexibility
+AWS Migration Hub provides the flexibility to use the migration tools that work best for your organization. Whether you use AWS migration tools like AWS Server Migration Service, AWS Database Migration Service, CloudEndure Migration, or partner tools like ATADATA, Migration Hub makes it easy for you to track migrations from all of those tools.
+Improved visibility
+AWS Migration Hub helps plan your migrations by allowing you to group related servers and resources that should be migrated together. Once grouped into a single application, you can easily track the progress of these resources through their entire migration lifecycle to help ensure they all migrate successfully.
+How it works
+Featured customers that use Migration Hub
+Supported services and tools
+AWS Server Migration Service
+AWS Database Migration Service
+CloudEndure Migration
+ATADATA ATAmotion
+Check out the product features
+Visit the AWS Migration Hub features page to learn more about key features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start migrating today
+Get started migrating with AWS Migration Hub on the AWS Management Console.
+Sign in

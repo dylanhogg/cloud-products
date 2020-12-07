@@ -1,0 +1,58 @@
+AWS Config
+Record and evaluate configurations of your AWS resources
+Get started with AWS Config
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. With Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines. This enables you to simplify compliance auditing, security analysis, change management, and operational troubleshooting.
+AWS Config: Assess, Audit, and Evaluate Your AWS Resources (1:34)
+Benefits
+Continuous monitoring
+With AWS Config, you are able to continuously monitor and record configuration changes of your AWS resources. Config also enables you to inventory your AWS resources, the configurations of your AWS resources, as well as software configurations within EC2 instances at any point in time. Once change from a previous state is detected, an Amazon Simple Notification Service (SNS) notification can be delivered for you to review and take action.
+Continuous assessment
+AWS Config allows you to continuously audit and assess the overall compliance of your AWS resource configurations with your organization’s policies and guidelines. AWS Config provides you with the ability to define rules for provisioning and configuring AWS resources. These rules can be provisioned independently or packaged together with compliance remediation actions inside a pack (known as a conformance pack) that can be deployed across your entire organization with a single click. Resource configurations or configuration changes that deviate from your rules automatically trigger Amazon Simple Notification Service (SNS) notifications and Amazon CloudWatch events so that you can be alerted on a continuous basis. You can also take advantage of the visual dashboard to check your overall compliance status and quickly spot non-compliant resources.
+Change management
+With AWS Config, you are able to track the relationships among resources and review resource dependencies prior to making changes. Once a change occurs, you are able to quickly review the history of the resource's configuration and determine what the resource’s configuration looked like at any point in the past. Config provides you with information to assess how a change to a resource configuration would affect your other resources, which minimizes the impact of change-related incidents.
+Operational troubleshooting
+With AWS Config, you can capture a comprehensive history of your AWS resource configuration changes to simplify troubleshooting of your operational issues. Config helps you identify the root cause of operational issues through its integration with AWS CloudTrail, a service that records events related to API calls for your account. Config leverages CloudTrail records to correlate configuration changes to particular events in your account. You can obtain the details of the event API call that invoked the change (e.g., who made the request, at what time, and from which IP address) from the CloudTrail logs.
+Enterprise-wide compliance monitoring
+With multi-account, multi-region data aggregation in AWS Config, you can view compliance status across your enterprise and identify non-compliant accounts. You can dive deeper to view status for a specific region or a specific account across regions. You can view this data from the Config console in a central account, removing the need to retrieve this information individually from each account, and each region.
+Support for third-party resources
+AWS Config is designed to be your primary tool to perform configuration audit and compliance verification of both your AWS and third party resources. You can publish the configuration of third-party resources such as GitHub repositories, Microsoft Active Directory resources, or any on-premises server into AWS. You can then view and monitor the resource inventory and configuration history using the AWS Config console and APIs, just like you do for AWS resources. You can also create AWS Config rules or conformance packs to evaluate these third-party resources against best practices, internal policies, and regulatory policies.
+How it works
+Use cases
+Discovery
+AWS Config will discover resources that exist in your account, record their current configuration, and capture any changes to these configurations. Config will also retain configuration details for resources that have been deleted. A comprehensive snapshot of all resources and their configuration attributes provides a complete inventory of resources in your account.
+Change management
+When your resources are created, updated, or deleted, AWS Config streams these configuration changes to Amazon Simple Notification Service (SNS), so that you are notified of all the configuration changes. AWS Config represents relationships between resources so that you can assess how a change to one resource may impact other resources.
+Continuous audit and compliance
+AWS Config is designed to help you assess compliance with your internal policies and regulatory standards by providing you visibility into the configuration of your AWS resources as well as third-party resources, and evaluating resource configuration changes against your desired configurations on a continuous basis.
+Compliance-as-code framework
+You can use AWS Config as your framework for creating and deploying governance and compliance rules across your AWS accounts and regions. You can codify your compliance requirements as AWS Config rules and author remediation actions using AWS Systems Manager Automation documents and package them together within a conformance pack that can be easily deployed across an organization. Therefore, using AWS Config, you can automate assessment of your resource configurations and resource changes to help you ensure continuous compliance and self-governance across your AWS infrastructure.
+Troubleshooting
+Using AWS Config, you can quickly troubleshoot operational issues by identifying the recent configuration changes to your resources.
+Security analysis
+Data from AWS Config enables you to continuously monitor the configurations of your resources and evaluate these configurations for potential security weaknesses. Changes to your resource configurations can trigger Amazon Simple Notification Service (SNS) notifications, which can be sent to your security team to review and take action. After a potential security event, Config enables you to review the configuration history of your resources and examine your security posture.
+Case studies
+Learn how Flatiron uses AWS Config and other AWS services to iterate faster and to solve problems that matter in improving cancer care.
+Learn how Prezi has obtained a highly scalable and automated platform that is helping the company keep pace with its explosive growth.
+Read this case study to understand how iZettle leveraged AWS services, including AWS Config, to build and operate their payment solution.
+British Gas uses AWS Config to support its Hive monitoring operations.
+Burt uses AWS Config and other AWS services to keep its operations agile and achieve success in a highly specialized market.
+Autodesk controls cloud resource usage using AWS tools such as AWS Config.
+AWS Config provides FanDuel with a fully managed resource inventory service.
+Blog posts & articles
+Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
+Get started with AWS
+Sign up for an AWS account
+Instantly get access to the
+AWS Free Tier.
+Learn with 10-minute Tutorials
+Explore and learn with
+simple tutorials.
+Start building with AWS
+Begin building with step-by-step guides to help you launch your
+AWS project.
+Learn more about AWS Config
+Visit the features page
+Ready to build?
+Get started with AWS Config
+Have more questions?
+Contact us

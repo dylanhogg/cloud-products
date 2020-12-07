@@ -1,0 +1,61 @@
+AWS Command Line Interface
+The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
+The AWS CLI v2 offers several new features including improved installers, new configuration options such as AWS Single Sign-On (SSO), and various interactive features.
+Getting Started »
+CLI Reference »
+GitHub Project »
+Community Forum »
+Windows Download and run the 64-bit Windows installer.
+MacOS Download and run the MacOS PKG installer.
+Linux  Download, unzip, and then run the Linux installer
+Amazon Linux The AWS CLI comes pre-installed on Amazon Linux AMI.
+Release Notes Check out the Release Notes for more information on the latest version.
+aws-shell (Developer Preview)
+aws-shell is a command-line shell program that provides convenience and productivity features to help both new and advanced users of the AWS Command Line Interface. Key features include the following.
+Fuzzy auto-completion for
+Commands (e.g. ec2, describe-instances, sqs, create-queue)
+Options (e.g. --instance-ids, --queue-url)
+Resource identifiers (e.g. Amazon EC2 instance IDs, Amazon SQS queue URLs, Amazon SNS topic names)
+Dynamic in-line documentation
+Documentation for commands and options are displayed as you type
+Execution of OS shell commands
+Use common OS commands such as cat, ls, and cp and pipe inputs and outputs without leaving the shell
+Export executed commands to a text editor
+To find out more, check out the related blog post on the AWS Command Line Interface blog.
+Usage
+The AWS Command Line Interface User Guide walks you through installing and configuring the tool. After that, you can begin making calls to your AWS services from the command line.
+$ aws ec2 describe-instances
+$ aws ec2 start-instances --instance-ids i-1348636c
+$ aws sns publish --topic-arn arn:aws:sns:us-east-1:546419318123:OperationsError --message "Script Failure"
+$ aws sqs receive-message --queue-url https://queue.amazonaws.com/546419318123/Test
+You can get help on the command line to see the supported services,
+$ aws help
+the operations for a service,
+$ aws autoscaling help
+and the parameters for a service operation.
+$ aws autoscaling create-auto-scaling-group help
+File Commands for Amazon S3
+New file commands make it easy to manage your Amazon S3 objects. Using familiar syntax, you can view the contents of your S3 buckets in a directory-based listing.
+$ aws s3 ls s3://mybucket
+LastWriteTime            Length Name
+------------             ------ ----
+PRE myfolder/
+2013-09-03 10:00:00           1234 myfile.txt
+You can perform recursive uploads and downloads of multiple files in a single folder-level command. The AWS CLI will run these transfers in parallel for increased performance.
+$ aws s3 cp myfolder s3://mybucket/myfolder --recursive
+upload: myfolder/file1.txt to s3://mybucket/myfolder/file1.txt
+upload: myfolder/subfolder/file1.txt to s3://mybucket/myfolder/subfolder/file1.txt
+A sync command makes it easy to synchronize the contents of a local folder with a copy in an S3 bucket.
+$ aws s3 sync myfolder s3://mybucket/myfolder --exclude *.tmp
+upload: myfolder/newfile.txt to s3://mybucket/myfolder/newfile.txt
+Supported Services
+See the AWS CLI command reference for the full list of supported services.
+Additional Resources
+Connect with other developers in the AWS CLI Community Forum »
+Find examples and more in the User Guide »
+Learn the details of the latest CLI tools in the Release Notes »
+Dig through the source code in the GitHub Repository »
+GET STARTED WITH AWS
+Learn how to start using AWS in minutes
+AWS FREE TIER
+Gain free, hands-on experience with AWS for 12 months

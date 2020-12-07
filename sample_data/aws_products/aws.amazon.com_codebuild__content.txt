@@ -1,0 +1,34 @@
+AWS CodeBuild
+Build and test code with continuous scaling. Pay only for the build time you use.
+Get started with AWS CodeBuild
+AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. You can get started quickly by using prepackaged build environments, or you can create custom build environments that use your own build tools. With CodeBuild, you are charged by the minute for the compute resources you use.
+AWS CodeBuild Overview
+Benefits
+Fully managed build service
+AWS CodeBuild eliminates the need to set up, patch, update, and manage your own build servers and software. There is no software to install or manage.
+Continuous scaling
+AWS CodeBuild scales up and down automatically to meet your build volume. It immediately processes each build you submit and can run separate builds concurrently, which means your builds are not left waiting in a queue.
+Pay as you go
+With AWS CodeBuild, you are charged based on the number of minutes it takes to complete your build. This means you no longer have to worry about paying for idle build server capacity.
+Extensible
+You can bring your own build tools and programming runtimes to use with AWS CodeBuild by creating customized build environments in addition to the prepackaged build tools and runtimes supported by CodeBuild.
+Enables continuous integration and delivery
+AWS CodeBuild belongs to a family of AWS Code Services, which you can use to create complete, automated software release workflows for continuous integration and delivery (CI/CD). You can also integrate CodeBuild into your existing CI/CD workflow. For example, you can use CodeBuild as a worker node for your existing Jenkins server setup for distributed builds.
+Secure
+With AWS CodeBuild, your build artifacts are encrypted with customer-specific keys that are managed by the AWS Key Management Service (KMS). CodeBuild is integrated with AWS Identity and Access Management (IAM), so you can assign user-specific permissions to your build projects.
+Customers
+Recruiterbox, an applicant tracking software, runs its continuous integration infrastructure on AWS, which handles approximately 300 builds per week and uses AWS CodeBuild to run tests before deploying software changes to production.
+Learn More >>
+CDSM, a UK-based learning technology company focused on Learning & Development, runs its e-Learning services on AWS. CDSM uses AWS CodeBuild along with Jenkins to support an agile approach to software release.
+Learn More >>
+Progate, an online platform that helps people learn to code, runs its infrastructure entirely on AWS including instances, databases, data analysis, and continuous integration testing.
+Learn More >>
+Check out the product features
+Learn more about the key features of AWS CodeBuild.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS CodeBuild in the AWS Management Console.
+Sign in

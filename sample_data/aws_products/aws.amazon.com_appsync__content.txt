@@ -1,0 +1,57 @@
+AWS AppSync
+Accelerate application development with scalable GraphQL APIs
+Get Started with AWS AppSync
+Organizations choose to build APIs with GraphQL because it helps them develop applications faster, by giving front-end developers the ability to query multiple databases, microservices, and APIs with a single GraphQL endpoint.  AWS AppSync is a fully managed service that makes it easy to develop GraphQL APIs by handling the heavy lifting of securely connecting to data sources like AWS DynamoDB, Lambda, and more. Adding caches to improve performance, subscriptions to support real-time updates, and client-side data stores that keep off-line clients in sync are just as easy. Once deployed, AWS AppSync automatically scales your GraphQL API execution engine up and down to meet API request volumes.
+Simplify Data Access with GraphQL APIs (1:23)
+Benefits
+Simple & secure data access
+Power your applications with the right data, from one or more data sources with a single network request using GraphQL. AWS AppSync makes it easy to secure your app data using multiple concurrent authentication modes and allows you to define security, caching and fine grained access control at the data definition level directly from your GraphQL schema.
+Built-in real-time & offline capabilities
+With managed GraphQL subscriptions, AWS AppSync can push real-time data updates over Websockets to millions of clients. For mobile and web applications, AppSync also provides local data access when devices go offline, and data synchronization with customizable conflict resolution, when they are back online.
+No servers to manage
+AWS AppSync offers fully managed GraphQL API setup, administration, and maintenance, with high-availability serverless infrastructure built in. Create a GraphQL API in seconds via the AWS CLI, console, Amplify CLI or CloudFormation. And, easily monitor and acquire insights via CloudWatch and X-Ray for flawless operation.
+How it works
+GraphQL APIs built with AWS AppSync give front-end developers the ability to query multiple databases, microservices, and APIs from a single GraphQL endpoint.
+Use cases
+Real-time collaboration
+Broadcast data from the backend to all connected clients (one-to-many) or between clients (many-to-many), such as in a second screen scenario where you broadcast the same data to all clients, who can then reply.
+Additional resources: Tutorial
+Real-time chat application
+Build conversational mobile or web applications that support multiple private chat rooms, offer access to conversation history, and queue outbound messages, even when a device is offline.
+Additional resources: Tutorial
+Real-time IoT dashboard
+Access IoT device data sent to AWS IoT to build real-time dashboards in a mobile or web application that visualizes telemetry from a connected IoT device, like a car.
+Additional resources: Tutorial
+Unified microservices access
+Access and combine data from multiple microservices running in containers in a VPC, behind a REST API endpoint, a GraphQL API endpoint, and more, in a single interface.
+Additional resources: Tutorial
+Sample code examples: Airline, E-Commerce
+Unified data access
+Retrieve or modify data from multiple data sources (SQL, NoSQL, search data, REST endpoints, and serverless backends) with a single call. Query and create relations between data sources using GraphQL connections.
+Additional resources: Tutorial
+Offline application sync
+Automatically synchronize data between mobile/web applications and the cloud with AWS AppSync and Amplify DataStore, an on-device persistent storage engine with built-in support for data versioning and conflict detection and resolution.
+Additional resources: Tutorial
+Customers using AWS AppSync
+case study
+Live Location Tracking
+Read about how HyperTrack uses AWS for real-time data processing for live location tracking at scale.
+Learn more »
+case study
+In-Store Customer Service
+ALDO uses AWS AppSync. Learn more about how they improved the shopping experience of footwear customers.
+Learn more »
+case study
+Patient Safety and Care
+Read about how Repp Health uses AWS to track medical assets to within 10 centimeters.
+Learn more »
+case study
+Making the News Actionable
+Learn about how AWS AppSync helps Public Good Software do good by prompting real-time reader action.
+Learn more »
+Learn more about AWS AppSync features
+Visit the features page
+Ready to build?
+Open the AWS AppSync console
+Have more questions?
+Contact us

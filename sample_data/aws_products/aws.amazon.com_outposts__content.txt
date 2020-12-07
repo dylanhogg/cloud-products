@@ -1,0 +1,58 @@
+AWS Outposts
+Run AWS infrastructure and services on premises for a truly consistent hybrid experience
+Get started with AWS Outposts
+Contact Sales
+AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
+AWS compute, storage, database, and other services run locally on Outposts, and you can access the full range of AWS services available in the Region to build, manage, and scale your on-premises applications using familiar AWS services and tools.
+Outposts is available as a 42U rack that can scale from 1 rack to 96 racks to create pools of compute and storage capacity. Coming in 2021, Outposts will be available in two smaller form factors, 1U and 2U rack-mountable servers for locations with limited space or capacity requirements. More information on the smaller Outposts form factors is available here.
+A VMware variant of AWS Outposts will also be available soon. VMware Cloud on AWS Outposts delivers a fully managed VMware Software-Defined Data Center (SDDC) running on AWS Outposts infrastructure on premises.
+AWS Outposts overview and how it works (2:45)
+AWS Outposts Use Cases (0:59)
+Outposts provides a truly consistent hybrid cloud experience
+Common Use Cases
+Industry Examples
+Common Use Cases
+Low-latency compute
+Interactive applications, like real-time, multi-player games require low latency to deliver a high-quality gaming experience wherever players may be located in the world. Business applications, such as manufacturing execution systems (MES), high-frequency trading, and medical diagnostics also require single-digit millisecond latencies to operate effectively. When the nearest public cloud servers are not close enough to meet application latency requirements, Outposts can help you run applications where you need them to be located.
+Local data processing
+Some local datasets can't be easily migrated to the cloud for processing due to cost, size, bandwidth, or timing constraints. Outposts allow you to process data locally, while keeping your data lakes and ML training in a region. With Outposts, you can setup a consistent hybrid cloud architecture to process data on premises and easily move data to the cloud for long-term archival.
+Data residency
+Sometimes, data needs to remain in a particular country, state, or municipality for regulatory, contractual, or information security reasons – as is often the case with financial services, healthcare, oil & gas, and other highly-regulated industries. With Outposts, you can control where your workloads run and where your data resides, while using local operational tooling, for things like monitoring and stability. It also allows low-friction movement of workloads between public cloud and the edge, and vice versa, so you can easily adapt to any regulatory changes.
+Migration & Modernization
+When trying to migrate to the cloud and modernize your stack, some workloads can be challenging – often times, there is a long tail of legacy, on-premises applications that are difficult to move from on-premises to the cloud due to latency-sensitive system interdependencies between the various components of the application. As dependencies arise, segmenting these migrations into smaller pieces requires latency sensitive connectivity between various parts of the application. Outposts eases and accelerates the migration journey by allowing you to modernize applications latency-sensitive interdependencies on premises, and then easily migrate the application to the cloud when ready.
+Industry Examples
+Manufacturing automation
+Use AWS services to run manufacturing process control systems such as MES and SCADA systems and applications that need to run close to factory floor equipment. Seamlessly integrate these on-premises applications with services running in the AWS Region for centralized operations.
+Healthcare
+Easily apply analytics and machine learning AWS services to health management systems that need to remain on premises due to low latency processing requirements. Enable rapid retrieval of medical information by storing data locally on Outposts.
+Telecommunications
+Use cloud services and tools to orchestrate, update, scale, and manage the lifecycle of Virtual Network Functions (VNFs) across cloud and on premises. Build new network services and deploy virtual network functionality wherever you need to, using the same AWS tools you use today.
+Media & entertainment
+Access the latest GPU innovations on premises for graphics processing, audio and video rendering, and for running other media applications. Support live and real-time event streaming applications that require low latency by running those applications in on-premises locations close to end users.
+Financial services
+Build next-generation trading and exchange platforms that serve all participants at low latency using AWS services and programming interfaces. Deliver banking, payments processing, and risk management services to customers and financial clients from in-country locations to meet data locality requirements.
+Online games and game streaming
+Online games and game streaming depend on low latency to preserve the user experience. Outposts allows you to place your game servers closer to your end users – providing better performance for the most demanding games.
+Benefits
+Run AWS Services on premises
+With AWS Outposts you can run Amazon EC2, Amazon EBS, Amazon S3, container-based services such as Amazon EKS, database services such as Amazon RDS on AWS Outposts and analytics services such as Amazon EMR on premises. You can seamlessly extend your Amazon Virtual Private Cloud on premises and run some AWS services locally on Outposts and connect to a broad range of services available in the local AWS Region. You can use the same AWS APIs, tools, and security controls to run, manage, and secure your applications on premises just as in the cloud.
+Store and process data on premises
+AWS Outposts allows you to securely store and process customer data that needs to remain on premises or in countries where there is no AWS region. This may help address requirements of companies in highly regulated industries and or those located in countries with data residency requirements.
+Truly consistent hybrid experience
+AWS Outposts delivers a truly consistent hybrid experience by offering the same hardware infrastructure, services, APIs, management, and operations on premises as in the cloud. Unlike other hybrid solutions that require use of different APIs, manual software updates, and purchase of third-party hardware and support, Outposts provide a truly consistent developer and IT operations experience across on premises and cloud environments.
+Fully managed infrastructure
+AWS Outposts is fully managed and supported by AWS. Your Outpost is delivered, installed, monitored, patched, and updated by AWS. With Outposts you can reduce the time, resources, operational risk, and maintenance downtime required for managing IT infrastructure.
+How it works
+Customer reference
+AWS Outposts allows Philips to extend all of the capabilities that they need to be available all the time on premises, and to make that fit seamlessly into the things that they have already developed to run in the cloud.
+Philips: AWS Outposts Customer Testimonial (1:33)
+Morningstar is a leading provider of independent investment research around the globe. “Our independent data, research, and solutions empower investor success by delivering insights and experiences that are essential to investing,” said James Rhodes, Chief Technology Officer, Morningstar. “As we continue to modernize our data collection and software, we want to create a containerized hybrid infrastructure and easily deploy using AWS services. With AWS Outposts, we can build once and run applications on-premises and easily migrate our applications to an AWS Region where possible. Ultimately, this allows us to accelerate the adoption of cloud technologies within our development teams, keep up with accelerating business and customer needs, and support our long-term journey to the cloud.”
+Contact us
+Learn more about AWS Outposts by contacting us directly
+Contact us
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started with AWS Outposts in the AWS Management Console.
+Sign in

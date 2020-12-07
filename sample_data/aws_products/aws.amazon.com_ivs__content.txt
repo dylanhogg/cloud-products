@@ -1,0 +1,58 @@
+Amazon Interactive Video Service
+Build engaging live stream experiences
+Get started with Amazon Interactive Video Service
+Live Chat
+Amazon Interactive Video Service (Amazon IVS) is a managed live streaming solution that is quick and easy to set up, and ideal for creating interactive video experiences. Send your live streams to Amazon IVS using streaming software and the service does everything you need to make low-latency live video available to any viewer around the world, letting you focus on building interactive experiences alongside the live video. You can easily customize and enhance the audience experience through the Amazon IVS player SDK and timed metadata APIs, allowing you to build a more valuable relationship with your viewers on your own websites and applications.
+Amazon Interactive Video Service Explained
+Watch Now: Amazon IVS Explained (77 sec)
+Benefits
+Simple-to-use live video streaming
+Create and configure live streams with just a few clicks, and start streaming in seconds. Send video to Amazon IVS, and the service manages everything needed to get your live stream to your viewers.
+Build an engaging audience experience
+Amazon IVS streams are designed to provide low-latency live video “out of the box.” Latency that can be less than three seconds means you can build engaging and interactive experiences alongside live video.
+Optimized for live streaming
+Built on the same live streaming technology that powers Twitch, Amazon IVS provides an enhanced quality of service and experience by receiving and delivering streams over managed global infrastructure that is optimized for live video ingest, processing, and delivery.
+Easy integration into websites and apps
+Get live streams into your iOS, Android, and web apps, quickly and easily with the Amazon IVS player SDK. The player SDK gives your audiences a consistent experience and low-latency live streams across different platforms, without compromising video quality or increasing buffering.
+How it works
+Customer stories
+Viacom CBS
+DeNA
+Blackboard
+Panya
+Viacom CBS
+“Amazon IVS is helping us unlock new interactive, low-latency video experiences across the ViacomCBS Digital portfolio faster and with less overhead. It’s incredibly easy to set up and manage and gives us the confidence that we’ll be able to scale as our audience continues to grow."
+Flavio Ribeiro, Director of Engineering, ViacomCBS Digital
+About ViacomCBS
+ViacomCBS is a leading global media and entertainment company that creates premium content and experiences for audiences worldwide.
+DeNA
+“Amazon IVS provides the leading edge of live video technology transformations and maintains high availability systems, all while reducing the operational burden of managing complex, distributed live video networks. With it, we can focus more on enhancing user-oriented functions and interactivity to ensure we're providing an irreplaceable experience."
+Daisuke Mizuta, producer of Pococha at DeNA
+About DeNA
+DeNA's Pococha is a pioneer in the Japanese live streaming market.
+Blackboard
+“Blackboard serves millions of users in countries in every region around the globe. As instructional techniques evolve and we continue to grow, we’re exploring how we can improve our interactive video experiences for all users, which is where Amazon IVS is changing the game. In one day, we were able to quickly integrate IVS into our teaching and learning workflow. It handles a majority of the work on the back end, freeing up more time for our team focus on creating and building standout experiences.”
+Scott Hurrey, Staff Engineering at Blackboard
+About Blackboard
+Blackboard’s mission is to advance learning in partnership with the world’s education community.
+Panya
+"Amazon IVS has allowed us to simplify our product scalability while at the same time delivering innovation to our end users. The ability to use timed metadata now allows us to improvise quickly and build interactive experiences inside our product. For our solution, low latency has always been the key and getting less than 5 seconds of glass to glass latency on a consistent basis makes our product more attractive. Amazon IVS is the perfect fit for our product and users”
+Moinuddin Hyder, VP Product & Commercials at Panya
+About Panya
+Panya, a Thailand based Singaporean company, makes it easy for brands & content creators to gamify interactive experiences to drive user growth and digital sales.
+Use cases
+Amazon Interactive Video Service can make new live video available to viewers in seconds, and is ideal for use cases that need new streams within a moment’s notice. With the low-latency live video so simple to use, you can focus on building engaging interactive experiences and applications.
+Engage your audiences with social chat
+Let your audiences interact with each other by adding a virtual space to chat alongside your live streaming content.
+E-Commerce and alternative revenue
+Synchronize companion promotional elements alongside the live video to let viewers make purchases or donations related to the content being shown.
+Votes and Polls
+Get instant feedback and gauge audience opinions with polling and voting applications built using the timed metadata API.
+Real-time Q & A
+Allow viewers to ask questions via a separate chat space, and answer audience questions in real-time, or build trivia applications with live video.
+Have questions?
+Contact us
+Ready to build?
+Get started with Amazon Interactive Video Service
+Discover more resources
+Visit the Resources page

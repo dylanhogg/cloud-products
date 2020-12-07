@@ -1,0 +1,34 @@
+AWS Network Firewall
+Deploy network security across your Amazon VPCs with just a few clicks
+Get Started with AWS Network Firewall
+AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs). The service can be setup with just a few clicks and scales automatically with your network traffic, so you don't have to worry about deploying and managing any infrastructure. AWS Network Firewall’s flexible rules engine lets you define firewall rules that give you fine-grained control over network traffic, such as blocking outbound Server Message Block (SMB) requests to prevent the spread of malicious activity. You can also import rules you’ve already written in common open source rule formats as well as enable integrations with managed intelligence feeds sourced by AWS partners. AWS Network Firewall works together with AWS Firewall Manager so you can build policies based on AWS Network Firewall rules and then centrally apply those policies across your VPCs and accounts.
+AWS Network Firewall includes features that provide protections from common network threats. AWS Network Firewall’s stateful firewall can incorporate context from traffic flows, like tracking connections and protocol identification, to enforce policies such as preventing your VPCs from accessing domains using an unauthorized protocol. AWS Network Firewall’s intrusion prevention system (IPS) provides active traffic flow inspection so you can identify and block vulnerability exploits using signature-based detection. AWS Network Firewall also offers web filtering that can stop traffic to known bad URLs and monitor fully qualified domain names.
+It’s easy to get started with AWS Network Firewall by visiting the Amazon VPC Console to create or import your firewall rules, group them into policies, and apply them to the VPCs you want to protect. AWS Network Firewall pricing is based on the number of firewalls deployed and the amount of traffic inspected. There are no upfront commitments and you pay only for what you use.
+Benefits
+Managed infrastructure for high availability
+AWS Network Firewall infrastructure is managed by AWS. AWS Network Firewall automatically scales with your network traffic and can support hundreds of thousands of connections, so you don’t have to worry about building and maintaining your own network security infrastructure.
+Flexible protection through fine-grained controls
+AWS Network Firewall has a highly flexible rules engine that supports thousands of custom rules, so you can define firewall rules to protect your unique workloads. AWS Network Firewall rules can be based on IP, port, protocol, domain, and pattern matching and are written in common open source rule formats.
+Consistent policy management across VPCs and accounts
+AWS Network Firewall works with AWS Firewall Manager so you can centrally manage security policies across existing accounts and VPCs. With AWS Firewall Manager, you can also ensure mandatory security policies are automatically enforced on newly created accounts and VPCs. AWS Network Firewall provides real-time firewall activity monitoring through Amazon CloudWatch metrics.
+How it works
+Technical use cases
+Inspect VPC to VPC traffic
+AWS Network Firewall inspects and helps control VPC-to-VPC traffic to logically separate networks hosting sensitive applications or line-of-business workloads. With stateful visibility at the network and application layers, AWS Network Firewall can provide fine-grained network security controls for interconnected VPCs using AWS Transit Gateway.
+Filter outbound traffic
+AWS Network Firewall provides URL/domain name, IP address, and content-based outbound traffic filtering to stop possible data loss, help meet compliance requirements, and block known malware communications. AWS Network Firewall supports thousands of rules that can filter out network traffic destined for known bad IP addresses or known bad domain names.
+Secure AWS Direct Connect and VPN traffic
+AWS Network Firewall secures AWS Direct Connect and VPN traffic from client devices and your on-premises environments supported by AWS Transit Gateway. AWS Network Firewall can restrict this traffic to ensure that only least privilege access is granted to VPC resources.
+Filter internet traffic
+AWS Network Firewall helps prevent intrusion by inspecting all inbound Internet traffic using features such as Access Control Lists (ACL) rules, stateful inspection, protocol detection, and intrusion prevention.
+Partners
+Meet the AWS Partners who have integrated with AWS Network Firewall. APN Partner products complement existing AWS services to enable you to deploy a comprehensive security architecture and a more seamless experience across AWS and your on-premises environment. See a full list of AWS Network Firewall partners
+Explore AWS Network Firewall features
+AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs).
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Network Firewall in the Amazon VPC Console.
+Sign in

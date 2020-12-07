@@ -1,0 +1,36 @@
+AWS Cloud Map
+Service discovery for cloud resources
+Get started with AWS Cloud Map
+AWS Cloud Map is a cloud resource discovery service. With Cloud Map, you can define custom names for your application resources, and it maintains the updated location of these dynamically changing resources. This increases your application availability because your web service always discovers the most up-to-date locations of its resources.
+Modern applications are typically composed of multiple services that are accessible over an API and perform a specific function. Each service interacts with a variety of other resources, such as databases, queues, object stores, and customer-defined microservices, and it needs to be able to find the location of all the infrastructure resources on which it depends in order to function. In most cases, you manage all these resource names and their locations manually within the application code. However, manual resource management becomes time consuming and error-prone as the number of dependent infrastructure resources increases or the number of microservices dynamically scale up and down based on traffic. You can also use third-party service discovery products, but this requires installing and managing additional software and infrastructure.
+Cloud Map allows you to register any application resources, such as databases, queues, microservices, and other cloud resources, with custom names. Cloud Map then constantly checks the health of resources to make sure the location is up-to-date. The application can then query the registry for the location of the resources needed based on the application version and deployment environment.
+Introducing AWS Cloud Map
+Benefits
+Increase application availability
+Cloud Map constantly monitors the health of every IP-based component of your application and dynamically updates the location of each microservice as it is added or removed. This ensures that your applications only discover the most up-to-date location of its resources, increasing the availability of the application.
+Increase developer productivity
+Cloud Map provides a single registry for all your application services which you can define with custom names. This ensures that your development teams don’t have to constantly store, track, and update resource name and location information or make changes directly within the application code.
+How it works
+Use cases
+Service discovery
+Microservices are typically implemented using dynamic resources, such as containers, and can quickly launch and terminate. These resources communicate over API and need to specify the location of their dependent resources from within the application code. However, each of these resources is dynamic with constantly changing locations, making it challenging for individual resources to constantly track and find the locations of all their dependencies. Cloud Map provides a single up-to-date registry of service names and locations, that enables microservices to easily locate one another.
+Continuous integration and delivery
+Deploying application code across multiple environments, regions, and versions requires you to update multiple configuration files with the location of every service. Cloud Map maintains an up-to-date registry of service names and locations. You update the location of the resource based on the environment, region, or application version to which you are deploying, and your application will automatically discover the correct resource.
+Automated health monitoring
+Your applications are typically a combination of AWS services and custom resources. However, it is challenging to reliably obtain up-to-date health statuses of all your application resources. Cloud Map helps you achieve this by keeping an up-to-date registry of only healthy resources through automated health checks. This ensures that traffic is always served to only healthy endpoints.
+Blog posts & articles
+Introducing Cloud Map
+AWS Cloud Map keeps track of all your application components, their locations, attributes, and health status. Now your applications can simply query AWS Cloud Map using AWS SDK, API, or even DNS to discover the locations of its dependencies.
+Keep Reading »
+AWS Cloud Map service discovery for serverless applications
+AWS Cloud Map enables the journey to microservices by acting as the glue that binds all of business logic. At Peak.ai, we use the serverless framework very heavily, so we wanted to look into ways of integrating AWS Cloud Map into the serverless framework workflow.
+Keep Reading »
+Check out the AWS Cloud Map features
+Learn more about Cloud Map
+Cloud Map features
+Sign up for a free account
+Instantly get access to the AWS Free Tier
+Sign up
+Start building in the console
+Get started building with Cloud Map in the AWS Console
+Sign in

@@ -1,0 +1,31 @@
+Amazon MQ
+Fully managed service for open source message brokers
+Get started with Amazon MQ
+Amazon MQ is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS. Amazon MQ reduces your operational responsibilities by managing the provisioning, setup, and maintenance of message brokers for you. Because Amazon MQ connects to your current applications with industry-standard APIs and protocols, you can easily migrate to AWS without having to rewrite code.
+Benefits
+Migrate quickly
+Connecting your current applications to Amazon MQ is easy because it uses industry-standard APIs and protocols for messaging, including JMS, NMS, AMQP 1.0 and 0-9-1, STOMP, MQTT, and WebSocket. This enables you to move from any message broker that uses these standards to Amazon MQ by simply updating the endpoints of your applications to connect to Amazon MQ.
+Offload operational responsibilities
+Amazon MQ manages the administration and maintenance of message brokers and automatically provisions infrastructure for high availability. There is no need to provision hardware or install and maintain software and Amazon MQ automatically manages tasks such as software upgrades, security updates, and failure detection and recovery.
+Durable messaging made easy
+Amazon MQ is automatically provisioned for high availability and message durability when you connect your message brokers. Amazon MQ stores messages redundantly across multiple Availability Zones (AZ) within an AWS region and will continue to be available if a component or AZ fails.
+How it works
+Message brokers allow different software systems – often using different programming languages and on different platforms – to communicate and exchange information.
+With a few clicks in the Amazon MQ Console, Amazon MQ provisions your broker with support for version upgrades, so you can always use the latest version that Amazon MQ supports. Once you configure your broker, your applications can produce and consume messages.
+“Our existing messaging system was difficult to maintain without experts in the maintenance of the servers and client libraries. Amazon MQ provides less than 100-millisecond latency for thousands of persistent events so applications spread across our system have the most recent information possible. Amazon MQ also allows us to focus on the client and application code instead of maintenance of the servers."
+- Braden Schmidt, Principal Architect, SkipTheDishes
+View more customer testimonials »
+What's new
+Date
+Date
+More…
+Get started with Amazon MQ
+Check out the product features
+Learn more about Amazon MQ features.
+Learn more »
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up »
+Start building in the console
+Get started building with Amazon MQ in the AWS Management console.
+Get started »

@@ -1,0 +1,53 @@
+Amazon Lightsail
+Virtual servers, storage, databases, and networking for a low, predictable price.
+Get started with Lightsail for free
+Plans starting at $3.50 per month
+Lightsail is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. Whether you’re new to the cloud or looking to get on the cloud quickly with AWS infrastructure you trust, we’ve got you covered.
+Learn more about Lightsail pricing >>
+Use Amazon Lightsail for…
+Lightsail is ideal for simpler workloads, quick deployments, and getting started on AWS. It’s designed to help you start small, and then scale as you grow.
+Simple web applications
+Easily deploy a web application with a few clicks. With pre-configured development stacks like LAMP, Nginx, MEAN, and Node.js., we make it easy to get your web application online.
+Websites
+Quickly create a website that shines. Create and customize your blog, e-commerce, or personal website with Lightsail's pre-configured applications like WordPress, Magento, Plesk, and Joomla.
+Business software
+Run your open source and commercial software for your business, with ease. Lightsail helps you quickly launch your line-of-business software, like file storage and sharing, backups, financial and accounting software, and much more.
+Dev/test environments
+Spin up a developer or test environment in seconds. Creating dev sandboxes and testing environments outside of your prod environment lets you test without the concern of breaking something. And, once you’re done, you can quickly destroy them.
+Get started with Lightsail for free
+Amazon Lightsail is designed to make your project easier
+Managed environments
+Lightsail automatically configures networking, access, and security environments, taking the guesswork out of launching your server.
+Secure networking
+Lightsail servers run on the AWS network that you trust. Configure your network simply and securely, including your IP addresses, DNS, firewall, and more.
+Powerful API
+Use the simple and flexible Lightsail API to extend your application or integrate it with external applications.
+High availability storage
+Every Lightsail server comes with high-performing, persistent SSD-based storage.
+Easily scale your idea
+As your ideas grow, a Lightsail load balancer can easily handle your increased traffic and heavier workloads. Plus, you can use the full force of AWS by connecting your project to other AWS services.
+Additional benefits
+Lightsail plans always include a static IP address, DNS management, resource monitoring and alerting, remote access via SSH or RDP, and secure key management.
+Click-to-launch OS & applications
+Lightsail offers a number of preconfigured, one-click-to-launch operating systems, development stacks and web applications, including Linux and Windows OS, WordPress, LAMP, CentOS and more.
+WordPress
+Ubuntu
+Windows Server
+LAMP
+Node.js
+CentOS
+See all our one-click-to-launch OS & application stacks >>
+Get on-demand help for Lightsail projects from AWS IQ
+All services provided by third party experts.
+Create a WordPress site using Lightsail
+Business Compass, LLC
+Get started
+Migrate WordPress Site to Lightsail
+Cloud7
+Get started
+Migrate WordPress to Amazon Lightsail (VPS)
+Karim Igeria
+Get started
+Browse more offers
+Try Lightsail free for 1 month!
+Get started with Lightsail

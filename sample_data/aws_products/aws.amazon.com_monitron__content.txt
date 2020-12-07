@@ -1,0 +1,88 @@
+Amazon Monitron
+Detect abnormal machine behavior and enable predictive maintenance
+Get started with Amazon Monitron
+Buy devices
+Amazon Monitron is an end-to-end system that uses machine learning (ML) to detect abnormal behavior in industrial machinery, enabling you to implement predictive maintenance and reduce unplanned downtime.
+Installing sensors and the necessary infrastructure for data connectivity, storage, analytics, and alerting are foundational elements for enabling predictive maintenance. However, in order to make it work, companies have historically needed skilled technicians and data scientists to piece together a complex solution from scratch. This included identifying and procuring the right type of sensors for their use cases and connecting them together with an IoT gateway (a device that aggregates and transmits data). As a result, few companies have been able to successfully implement predictive maintenance.
+Amazon Monitron includes sensors to capture vibration and temperature data from equipment, a gateway device to securely transfer data to AWS, the Monitron service that analyzes the data for abnormal machine patterns using machine learning, and a companion mobile app to set up the devices and receive reports on operating behavior and alerts to potential failures in your machinery. You can start monitoring equipment health in minutes without any development work or ML experience required, and enable predictive maintenance with the same technology used to monitor equipment in Amazon Fulfillment Centers.
+Enabling predictive maintenance for industrial equipment with Amazon Monitron (1:26)
+Amazon Monitron Sensors
+Amazon Monitron Gateway
+Amazon Monitron ML-based service
+Monitron mobile app
+Easily install wireless Amazon Monitron Sensors on rotating equipment, such as motors, gearboxes, fans, and pumps to measure vibration and temperature and securely transfer the data to the AWS Cloud using Amazon Monitron Gateways. You can start tracking equipment health in minutes.
+Buy now on Amazon.com »
+Data from Amazon Monitron Sensors is automatically and securely transferred to AWS using Amazon Monitron Gateways. Amazon Monitron Gateways connect with the sensors over Bluetooth Low Energy (BLE) and with AWS over Wi-Fi. Gateways and sensors are automatically updated over-the-air (OTA), providing system improvements over the life of your installation.
+Buy now on Amazon.com »
+The sensor data is automatically analyzed using machine learning (ML) to detect abnormal equipment conditions that may require maintenance. You can start tracking equipment health in minutes.
+Get started with Amazon Monitron »
+View sensor readings easily on the Monitron mobile app. The app sends you push notifications when abnormal behavior is detected, so you can diagnose the issue, proactively take action on site, and avoid downtime.
+Android and iOS app coming soon.
+Benefits
+Cost-effective equipment monitoring
+Monitron offers a cost-effective way to monitor your equipment, with low upfront hardware investment compared to conventional sensors and a pay-as-you go service.
+Start monitoring equipment in minutes
+You can install Monitron Sensors and Gateways using the Monitron app and start monitoring your equipment in minutes. Monitron automatically analyzes the data and sends you an alert when it detects abnormal machine conditions. No development work or ML experience required.
+Detect machine issues before they occur
+Monitron detects abnormal conditions in your industrial machinery. This helps you take proactive actions and reduce costly and unplanned downtime.
+The highest standards of data security
+Amazon Monitron secures the sensors and gateways, and the communication between them and the Monitron service. It encrypts your data at rest and in transit. This is done either using AWS managed encryption keys or customer provided encryption keys. Amazon Monitron sensors and gateways are also verified for their authenticity using unique identity keys generated at the time of device production. This ensures that malicious devices cannot register and access the service.
+Increase accuracy with continuous improvement
+To increase the accuracy of the system, technicians can enter feedback on the alerts in the mobile app, and Amazon Monitron learns from that feedback to continually improve over time.
+Technical specs
+Amazon Monitron Sensors
+Amazon Monitron Gateway
+Dimensions
+52.8 x 43.0 x 24.9 mm / 2.08 x 1.69 x 0.98 inch
+Weight
+54 grams
+IP Rating
+IP65
+Connectivity
+Wireless protocol: Bluetooth Low Energy 5
+Power
+Lithium Metal Non-Rechargeable Batteries. Estimated 3 year battery life
+Dimensions
+90 x 78 x 38 mm / 3.6 x 3.1 x 1.5 inch
+Weight
+95 grams
+IP Rating
+IP65
+Connectivity
+WiFi, 802.11b/g/n, ISM 2.4GHz only
+Power
+Power 5.0V - 2.0A DC, AC adapter included for USA, UK and EU countries (indoors only)
+Learn more »
+Learn more »
+Amazon Monitron can monitor and detect potential failures in a broad range of rotating equipment.
+Motors
+Gearboxes
+Pumps
+Fans
+Bearings
+Compressors
+Customers
+Fender
+GE Gas Power
+RS Components
+Fender Musical Instruments Corporation is an iconic brand and a leading manufacturer of stringed instruments and amplifiers.
+"Over the past year we worked with AWS to help develop the critical but sometimes overlooked part of running a successful manufacturing business - knowing your equipment condition. For manufacturers worldwide maintaining equipment uptime is the only way to remain competitive in a global market. Unplanned downtime is costly both in loss of production and labor due to the fire-fighting nature of breakdowns. Amazon Monitron can give both large industry manufacturers as well as small ‘mom and pop shops’ the ability to predict equipment failures, giving us the opportunity to preemptively schedule equipment repairs.”
+Bill Holmes, Global Director of Facilities at Fender
+GE Gas Power is a leading provider of power generation equipment, solutions and services. It operates many manufacturing sites around the world, in which much of the manufacturing equipment is not connected nor monitored for health.
+“Using Amazon Monitron, we are now able to quickly retrofit our assets with sensors and connecting them to real-time analytics in AWS cloud. We can do this without having to require deep technical skills or having to configure our own IT and OT networks. From our initial work on vibration-prone tumblers, we are seeing this vision come to life at an amazing speed: the ease-of-use for the operators and maintenance team, the simplicity, and the ability to implement at scale is extremely attractive to GE.”
+Magnus Akesson, CIO at GE Gas Power Manufacturing
+RS Components is a leading player in the industrial components and predictive maintenance space.
+"With the emergence of IoT, we have seen our customers looking to bring real-time condition monitoring capabilities into the factory environment to reduce reactive maintenance and improve asset reliability. We are excited to be working with AWS to bring Amazon Monitron to our customers because it allows them to deploy a cost effective, easy to use, continuously improving condition monitoring solution and enable predictive maintenance across a broader set of equipment in their asset base. Although we stock over 500,000 products from 2,500 different suppliers, this is the first ML powered end-to-end wireless vibration and temperature condition monitoring solution in our portfolio. Working with AWS will enable us to support our customers’ efforts to adopt IoT and machine learning as emerging technologies and accelerate their Industry 4.0 strategies."
+Richard Jeffers, Technical Director at RS Components
+Choose the cloud provider with proven experience in industrial operations
+From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
+Learn more about AWS for Industrial »
+Check out the product features
+Visit the Amazon Monitron features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Monitron in the AWS Management Console.
+Sign in

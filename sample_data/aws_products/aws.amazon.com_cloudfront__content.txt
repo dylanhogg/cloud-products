@@ -1,0 +1,69 @@
+Amazon CloudFront
+Fast, highly secure and programmable content delivery network (CDN)
+Get started with Amazon CloudFront
+Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+CloudFront offers the most advanced security capabilities, including field level encryption and HTTPS support, seamlessly integrated with AWS Shield, AWS Web Application Firewall and Route 53 to protect against multiple types of attacks including network and application layer DDoS attacks. These services co-reside at edge networking locations – globally scaled and connected via the AWS network backbone – providing a more secure, performant, and available experience for your users.
+CloudFront works seamlessly with any AWS origin, such as Amazon S3, Amazon EC2, Elastic Load Balancing, or with any custom HTTP origin. You can customize your content delivery through CloudFront using the secure and programmable edge computing feature AWS Lambda@Edge.
+AWS Free Tier includes 50GB data transfer out, 2,000,000 HTTP and HTTPS Requests with Amazon CloudFront.
+Get started with Amazon CloudFront for free
+Introduction to Amazon CloudFront & Lambda@Edge (1:49)
+Benefits
+Global Scaled Network for Fast Content Delivery
+Amazon CloudFront is massively scaled and globally distributed. The CloudFront network has 225+ points of presence (PoPs) that are interconnected via the AWS backbone delivering ultra-low latency performance and high availability to your end users. The AWS backbone is a private network built on a global, fully redundant, parallel 100 GbE metro fiber network linked via trans-oceanic cables across the Atlantic, Pacific, and Indian Oceans, as well as, the Mediterranean, Red Sea, and South China Seas. Amazon CloudFront automatically maps network conditions and intelligently routes your user’s traffic to the most performant AWS edge location to serve up cached or dynamic content. CloudFront comes default with a multi-tiered caching architecture that offers you improved cache width and origin protection.
+Security at the Edge
+Amazon CloudFront is a highly secure CDN that provides both network and application level protection. All your CloudFront distributions are defended by default against the most frequently occurring network and transport layer DDoS attacks that target your websites or applications with AWS Shield Standard. To defend against more complex attacks, you can add a flexible, layered security perimeter by integrating CloudFront with AWS Shield Advanced and AWS Web Application Firewall (WAF). Firewall rules, curated and managed by Amazon security experts, to protect against common CVEs and OWASP Top 10 security risks are provided to you on AWS WAF with Amazon Managed Rules (AMR). Finally, CloudFront has the most advanced security compliance certifications namely PCI DSS, ISO/IEC, SOC 1/2/3, FedRAMP Moderate, HIPAA, and more.
+Highly Programmable and Secure Edge Computing
+Amazon CloudFront offers the programmable and secure edge CDN computing capabilities through AWS Lambda@Edge. For application logic customizations at the edge, Lambda@Edge provides you a general-purpose compute runtime feature for computationally intensive operations such as dynamic origin load-balancing, custom bot-management, or building serverless origins. Triggered by CloudFront requests, Lambda@Edge extend custom code across AWS locations worldwide, allowing custom application logic to run closer to your end users for improved responsiveness. Lambda@Edge come with advanced, built-in security isolation to protect your data from side-channel attacks such as Spectre and Meltdown.
+Deep Integration with AWS
+Amazon CloudFront is integrated with AWS services such as Amazon S3, Amazon EC2, Elastic Load Balancing, Amazon Route 53, and AWS Elemental Media Services for easy set-up. As a developer, you can use the AWS management console or familiar developer tools such as CloudFormation templates, the AWS Cloud Development Kit, and APIs. CloudFront’s integration with Amazon Cloudwatch and Kinesis offers real-time observability through metrics and logs.
+Cost-Effective
+Amazon CloudFront offers cost-effective content-delivery globally. There is no data transfer fee from any AWS origin to CloudFront for origin fetches. Integration with AWS Certificate Manager (ACM) offers custom TLS certificates, at no charge. CloudFront offers a simple, pay-as-you-go pricing model with no upfront fees or required long-term contracts, and support for the CDN is included in your existing AWS Support subscription. Additional price reductions are available for minimum traffic commitments (typically 10 TB/month or higher).
+Use cases
+Website Delivery and Security
+Amazon CloudFront can speed up the delivery of your websites, whether its static objects (e.g., images, style sheets, JavaScript, etc.) or dynamic content (e.g., videos, audio, motion graphics, etc.), to viewers across the globe. The CDN offers a multi-tier cache by default that improves latency and lowers the load on origin servers when the object is not already cached at the Edge. With granular cache configuration controls, built-in capabilities such as gzip and brotli compression, access to geo-location headers, and edge compute capabilities, customers such as Amazon.com and Reach plc deliver content to millions of viewers. Integration with AWS Shield and WAF secures your website from network and application layer attacks while capabilities such as TLS 1.3 and Field-level Encryption offer improved security and performance.
+Dynamic Content & API Acceleration
+Accelerate and secure your dynamic content with Amazon CloudFront. Amazon CloudFront is used by customers, like Tinder and Slack, to secure and accelerate API calls as well as Websocket connections. CloudFront supports proxy methods (POST, PUT, OPTIONS, DELETE, and PATCH). TLS connections with clients terminate at a nearby edge location, and then CloudFront uses optimized network paths to securely reach your origins, with connection reuse available. If you use an AWS origin, traffic to the origin moves over AWS’s dedicated network backbone. AWS Shield and WAF protect your APIs at the CDN edge. Learn more about API Acceleration with CloudFront.
+Live & On-demand Video Streaming
+CloudFront is designed to handle your live and on-demand video workloads. Benefit from the globally scaled and performant AWS network, private backbone connectivity to your AWS origins, and integration with AWS and Elemental Media Services. Further optimize your content delivery with default mid-tier caching, Origin Shield architecture, and real-time monitoring. CloudFront supports multiple streaming formats, including Microsoft Smooth, HLS, HDS, or MPEG-DASH, to any device. Additionally, integration with Elemental MediaStore offers low-latency streaming for variety of sports, game streaming use cases. Learn more about CloudFront for Media & Entertainment capabilities.
+Software Distribution, Game Delivery and IoT OTA
+Amazon CloudFront scales automatically as your globally distributed clients download software updates. Software can be made available right at the edge in proximity to end-users, via the content delivery network. CloudFront’s high data transfer rates speed up the delivery of binaries, game patches, Internet of Things (IoT), and Over-the-air (OTA) updates - improving your customers experience cost effectively at scale.
+Case studies
+Hulu uses Amazon CloudFront for its VOD delivery. Learn more. »
+Amazon Prime Video uses Amazon CloudFront to deliver solid streaming experience to more than 18 million football fans. Learn more. »
+King uses CloudFront to deliver game content to a global user base. Learn more. »
+Slack Uses Amazon CloudFront for secure API acceleration. Learn more. »
+Rovio uses the CDN for reduced latencies from around the globe for API calls. Learn more. »
+Discovery uses Amazon CloudFront for static, dynamic and API delivery. Learn more. »
+Canon uses the CDN to enable better user experience. Learn more. »
+Dow Jones uses Amazon's CDN to manage spikes in traffic and security. Learn more. »
+Amazon CloudFront delivers a scalable solution to serve up the APIs. Learn more. »
+Bandai Namco uses Amazon CloudFront as its Content Delivery Network (CDN). Learn more. »
+PBS uses Amazon CloudFront for its video streaming. Learn more. »
+The startup uses Amazon CloudFront for fast content delivery and for fast software builds deployments. Learn more. »
+Supercell uses Amazon CloudFront to deliver dynamic web content around the world, using edge locations for improved latency. Learn more. »
+"We selected Amazon CloudFront for the superior performances in terms of video start time, throughput, and the lower rebuffering rate." Yann Verry, System and Network Manager at Groupe M6. Learn more. »
+Seven Networks used Amazon' Content Delivery Network (CDN) for the live video streaming of the Australian Open to millions. Learn more. >>
+'Like the famous song says, CloudFront is "Harder, Better, Faster, Stronger”!' Marco Vigano, Digital CTO at Condé Nast Italia. Learn more. »
+Explore the case studies »
+Blog posts & articles
+Lambda@Edge design best practices
+Achraf Souk
+14 May 2018
+Resizing Images on the fly with Amazon CloudFront & Lambda@Edge
+Jaiganesh Girinathan
+20 Feb 2018
+Learn with CloudFront tutorials
+Deliver content faster with Amazon CloudFront. Explore and learn with this simple tutorial.
+Start tutorial
+Sign up for a free account
+AWS Free Tier includes 50GB data transfer out, 2,000,000 HTTP and HTTPS Requests with Amazon CloudFront.
+Sign up
+Read the getting started guide
+Follow our getting started guide to start your first Amazon CloudFront distribution in a few clicks.
+Read documentation
+Learn more about Amazon CloudFront features
+Visit the features page
+Ready to get started for free?
+Sign up
+Have more questions?
+Contact us

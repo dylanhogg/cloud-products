@@ -1,0 +1,54 @@
+AWS Data Exchange
+Easily find and subscribe to third-party data in the cloud
+Explore available data products
+Learn about becoming a data provider
+AWS Data Exchange makes it easy to find, subscribe to, and use third-party data in the cloud. Qualified data providers include category-leading brands such as Reuters, who curate data from over 2.2 million unique news stories per year in multiple languages; Change Healthcare, who process and anonymize more than 14 billion healthcare transactions and $1 trillion in claims annually; Dun & Bradstreet, who maintain a database of more than 330 million global business records; and Foursquare, whose location data is derived from 220 million unique consumers and includes more than 60 million global commercial venues.
+Once subscribed to a data product, you can use the AWS Data Exchange API to load data directly into Amazon S3 and then analyze it with a wide variety of AWS analytics and machine learning services. For example, property insurers can subscribe to data to analyze historical weather patterns to calibrate insurance coverage requirements in different geographies; restaurants can subscribe to population and location data to identify optimal regions for expansion; academic researchers can conduct studies on climate change by subscribing to data on carbon dioxide emissions; and healthcare professionals can subscribe to aggregated data from historical clinical trials to accelerate their research activities.
+For data providers, AWS Data Exchange makes it easy to reach the millions of AWS customers migrating to the cloud by removing the need to build and maintain infrastructure for data storage, delivery, billing, and entitling.
+Click here to browse the more than 1,000 data products now available from more than 80 qualified data providers in AWS Marketplace. Qualified data providers include category-leading and up-and-coming brands such as Reuters, Foursquare, TransUnion, Change Healthcare, Virtusa, Pitney Bowes, TP ICAP, Vortexa, IMDb, Epsilon, Enigma, TruFactor, ADP, Dun & Bradstreet, Compagnie Financière Tradition, Verisk, Crux Informatics, TSX Inc., Acxiom, Rearc, and many more.
+Introduction to AWS Data Exchange (3:02)
+Benefits
+Quickly find diverse data in one place
+AWS Data Exchange has hundreds of commercial data products from category-leading data providers across industries such as financial services, healthcare, retail, media & entertainment, and more. AWS Data Exchange includes hundreds of free data sets too, including data collected from popular public sources as well as trials for commercial products, so customers can explore before they subscribe. You can easily find and subscribe to data products in AWS Marketplace and stay up-to-date as providers publish new revisions in a consistent and cloud-native way.
+Efficiently access data in the cloud
+AWS Data Exchange removes the friction of finding, licensing, and using data sets. Without AWS Data Exchange, you might spend days or even weeks licensing data and moving it where you need it to power your analytics. AWS Data Exchange simplifies access to data — eliminating the need to receive physical media, manage FTP credentials, or integrate with different APIs from multiple providers. When providers publish updates to their data sets, you will receive a notification so you can automatically consume new data as it’s published.
+Easily analyze new data
+AWS Data Exchange enables you to immediately use data you subscribe to with the full portfolio of AWS analytics services, like big data processing with Amazon EMR, data warehousing with Amazon Redshift, ad-hoc query with Amazon Athena, data integration and ETL with AWS Glue, and building data lakes with AWS Lake Formation. You can quickly copy data to Amazon S3 and immediately transform and process it, analyze it, or build machine learning models on it.
+Use cases
+Financial services
+Banks, insurers, and asset managers can use AWS Data Exchange to subscribe to products containing market data, news archives, compensation benchmarks, industry profiles, company sentiments, and more. These customers can seamlessly integrate the data they subscribe to with their own data to power the portfolio risk modeling, trading strategies, and advisory services they are migrating to the cloud. Customers can also combine these traditional financial data sources with alternative (non-financial) data sets such as places of interest visitation and aggregated demographics data.
+Consumer & retail
+Consumer & retail companies can use AWS Data Exchange to find and subscribe to a range of location, movement, weather, and industry profiling data. They can then combine it with their own data to better understand shopper segmentation, improve channel strategy, expand product offerings, and optimize marketing campaigns. For example, retailers can use aggregated demographics and visitation data to size target market segments and identify where to invest in more retail locations. Retailers can also use weather forecast data to anticipate customer needs and optimize inventory planning. Visitation data can also help retailers adjust staffing levels to meet fluctuations in demand for their retail locations.
+Healthcare & life sciences
+Pharmaceutical companies, healthcare providers, and health insurers can better plan clinical trials, build insurance plans, research new drugs, and improve patient lives by combining their own data with products they subscribe to on AWS Data Exchange. Some relevant products contain data on drug switching patterns, fitness benchmarks, life expectancy benchmarks, aggregated claims data, and more.
+Customers
+“The application of new and ever more powerful technologies across the drug discovery and development continuum is generating and requiring access to unprecedented volumes and variety of data. At Merck we recognize that seamless and effective management of large, complex and diverse data streams is essential to gaining the insights necessary to translate breakthrough science into medicines that deliver meaningful benefit to patients.”
+Michael Klobuchar, Senior Vice President Operations – Merck Research Laboratories
+“By integrating the AWS Data Exchange API into ConvergeHEALTH Miner, we’re giving our customers a quick and easy way to find, subscribe to, and use data from third parties alongside the data they’re already generating and analyzing in the cloud. AWS Data Exchange is unlocking a number of data sources that have traditionally been locked in siloes spanning multiple organizations, and gives healthcare stakeholders a scalable and secure service to create new collaborative business models to reimagine how they approach research, clinical trials, pharmacovigilance, population health, and reimbursement.”
+Brett Davis, Principal at Deloitte Consulting & General Manager – ConvergeHEALTH
+“To remain competitive in the future, organizations must innovate and engage their people and consumers in new ways to drive value. We believe AWS Data Exchange is a mechanism to do just that.”
+Steve Patterson, Managing Director, Data Management and Analytics – Huron Consulting
+“AWS Data Exchange is a treasure trove for the System Level Design group. Not only did it help me expand the scope of our group research significantly, but it also made my teaching more engaging and more relevant to addressing societal problems of great interest.”
+Radu Marculescu, Lead of the System Level Design Group – UT Austin
+“Working with AWS Data Exchange has been transformational. Thanks to AWS Data Exchange, it’s even easier for customers to have access to X-Mode’s high quality, privacy-conscious location data. During the COVID-19 pandemic, this ease of access allowed for the University of Texas to help people avoid COVID-19 hot spots, mitigate risk of exposure, and potentially save lives.”
+Jake Ellenburg, CMO & Co-Founder – X-Mode
+"By leveraging AWS Data Exchange and Weather Trends data, we can be confident that our wines will arrive in perfect condition, tasting no different to our customers than when our best-in-class wine team tasted it at the winery."
+Andrew Walleck – COO, Wine Access
+Data product examples
+Reuters Newswire Archive (30 days)
+Insurance Agencies and Brokerages (US) - Industry Marketing File
+Market Insights 2019: Population Report (All US)
+Foursquare Visit Data: McDonald's
+Crux Informatics Inflation (CPI) | OECD
+Epsilon Retail – Consumer Data Insights – Platinum
+Enigma Small Business Administration (SBA) Historical Loans (7a and 504)
+Medisafe Inc. Daily Med Consumption Behavior: Opioids
+Find data products now
+Discover new sources of data
+Learn more
+Become a data provider
+Explore how to list your own data products
+Learn more
+Check out key features
+Learn more about AWS Data Exchange
+Learn more

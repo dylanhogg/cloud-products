@@ -1,0 +1,47 @@
+AWS Cost Explorer
+Visualize, understand, and manage your AWS costs and usage over time
+Get started with AWS Cost Explorer
+AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.
+Get started quickly by creating custom reports that analyze cost and usage data. Analyze your data at a high level (for example, total costs and usage across all accounts) or dive deeper into your cost and usage data to identify trends, pinpoint cost drivers, and detect anomalies.
+How can I use AWS Cost Explorer?
+AWS Cost Explorer Features
+Get started quickly
+A set of default reports are included to help you quickly gain insight into your cost drivers and usage trends.
+Set time interval and granularity
+Set a custom time period, and determine whether you would like to view your data at a monthly or daily level of granularity.
+Filter/Group your data
+Dig deeper into your data by taking advantage of filtering and grouping functionality, using a variety of available dimensions.
+Forecast future costs and usage
+Use forecasting to get a better idea of your what your costs and usage may look like in the future, so that you can plan ahead.
+Save your progress
+Once you arrive at a helpful view, save your progress as a new report that you can refer back to in the future.
+Build custom applications
+Directly access the interactive, ad-hoc analytics engine that powers AWS Cost Explorer.
+Getting Started
+AWS Cost Explorer provides you with a set of default reports that you can use as the starting place for your analysis. From there, use the filtering and grouping capabilities to dive deeper into your cost and usage data and generate custom insights.
+Monthly Costs by AWS Service
+AWS Cost Explorer includes a default report that helps you visualize the costs and usage associated with your top five cost-accruing AWS services, and gives you a detailed breakdown on all services in the table view. The reports let you adjust the time range to view historical data going back up to twelve months to gain an understanding of your cost trends.
+Launch the Monthly Costs by AWS Service report »
+Hourly and Resource Level Granularity
+AWS Cost Explorer helps you visualize, understand, and manage your AWS costs and usage over a daily or monthly granularity. The solution also lets you dive deeper using granular filtering and grouping dimensions such as Usage Type and Tags. You can also access your data with further granularity by enabling hourly and resource level granularity.
+Get started using Hourly and Resource Level Granularity »
+Savings Plans
+Savings Plans is a flexible pricing model that provides savings of up to 72% on your AWS compute usage. This pricing model offers lower prices on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region, and also applies to AWS Fargate usage.
+AWS Cost Explorer will help you to choose a Savings Plan, and will guide you through the purchase process.
+Get started with Savings Plans »
+Latest AWS Cost Management Blogs
+1
+…
+…
+No blog posts have been found at this time. Please see AWS Blog for other resources.
+Read more at the AWS Cost Management Blog »
+Ready to get started?
+Check out the product features
+Learn more about features for cost management, cost optimization, and more.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start managing your AWS costs.
+Sign up
+Manage your costs
+Visualize, understand, and manage your AWS costs and usage.
+Get started

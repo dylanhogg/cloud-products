@@ -1,0 +1,44 @@
+AWS Deep Learning AMIs
+Pre-configured environments to quickly build deep learning applications
+Get started with AWS Deep Learning AMIs
+Try Amazon SageMaker for fully-managed experience
+The AWS Deep Learning AMIs provide machine learning practitioners and researchers with the infrastructure and tools to accelerate deep learning in the cloud, at any scale. You can quickly launch Amazon EC2 instances pre-installed with popular deep learning frameworks and interfaces such as TensorFlow, PyTorch, Apache MXNet, Chainer, Gluon, Horovod, and Keras to train sophisticated, custom AI models, experiment with new algorithms, or to learn new skills and techniques.
+Whether you need Amazon EC2 GPU or CPU instances, there is no additional charge for the Deep Learning AMIs – you only pay for the AWS resources needed to store and run your applications.
+85% of TensorFlow projects in the cloud happen on AWS.
+Learn more
+Choosing an AWS Deep Learning AMI
+Even for experienced machine learning practitioners, getting started with deep learning can be time consuming and cumbersome. The AMIs we offer support the various needs of developers. To help guide you through the getting started process, also visit the AMI selection guide and more deep learning resources.
+Conda AMI
+For developers who want pre-installed pip packages of deep learning frameworks in separate virtual environments, the Conda-based AMI is available in Ubuntu, Amazon Linux and Windows 2016 versions.
+Learn more about the benefits of the Conda AMI and get started with this step-by-step guide.
+Base AMI
+For developers who want a clean slate to set up private deep learning engine repositories or custom builds of deep learning engines, the Base AMI is available in Ubuntu and Amazon Linux versions.
+Learn more about the benefits of the Base AMI and get started with this step-by-step guide.
+Support for deep learning frameworks
+The AWS Deep Learning AMIs support all the popular deep learning frameworks allowing you to define models and then train them at scale. Built for Amazon Linux and Ubuntu, the AMIs come pre-configured with TensorFlow, PyTorch, Apache MXNet, Chainer, Microsoft Cognitive Toolkit, Gluon, Horovod, and Keras, enabling you to quickly deploy and run any of these frameworks and tools at scale.
+Accelerate your model training
+To expedite your development and model training, the AWS Deep Learning AMIs include the latest NVIDIA GPU-acceleration through pre-configured CUDA and cuDNN drivers, as well as the Intel Math Kernel Library (MKL), in addition to installing popular Python packages and the Anaconda Platform.
+GPU Instances
+P3 instances provide up to 14 times better performance than previous-generation Amazon EC2 GPU compute instances. With up to 8 NVIDIA Tesla V100 GPUs, P3 instances provide up to one petaflop of mixed-precision, 125 teraflops of single-precision, and 62 teraflops of double-precision floating point performance.
+Powerful Compute
+C5 instances are powered by 3.0 GHz Intel Xeon Scalable processors, and allow a single core to run up to 3.5 GHz using Intel Turbo Boost Technology. C5 instances offer higher memory to vCPU ratio and deliver 25% improvement in price/performance compared to C4 instances, and are ideal for demanding inference applications.
+Python Packages
+The AWS Deep Learning AMIs come installed with Jupyter notebooks loaded with Python 2.7 and Python 3.5 kernels, along with popular Python packages, including the AWS SDK for Python.
+Anaconda Platform
+To simplify package management and deployment, the AWS Deep Learning AMIs install the Anaconda2 and Anaconda3 Data Science Platform, for large-scale data processing, predictive analytics, and scientific computing.
+Get started with deep learning on AWS
+Sign up for an AWS account
+Instantly get access to
+AWS services.
+Get the AWS Deep Learning AMI
+Select the right AMI and instance type for your project.
+Start building with AWS
+Start building with these
+simple tutorials.
+Amazon SageMaker for machine learning
+Learn more about Amazon SageMaker
+Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
+Ready to build?
+Get started with AWS Deep Learning AMIs
+Have more questions?
+Contact us

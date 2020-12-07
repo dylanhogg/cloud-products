@@ -1,0 +1,92 @@
+AWS Device Qualification Program
+AWS Partners delivering validated hardware for IoT Solutions
+The AWS Device Qualification Program (DQP) is a hardware validation program available to all AWS Partners, at no cost. The AWS DQP enables you to submit your hardware for technical validation for FreeRTOS, AWS IoT Greengrass, AWS IoT Core, and Amazon Kinesis Video Streams.
+Devices qualified under the DQP are listed in the AWS Partner Device Catalog, enabling AWS customers to easily discover qualified devices and build on the solution expertise provided by AWS Partners.
+Learn more about the AWS Device Qualification Program benefits, and how to get started below.
+AWS DQP Benefits
+Business
+The AWS Device Qualification Program offers participating AWS Partners benefits for qualifying their devices:
+Connects hardware partners with AWS customers and creates new business opportunities
+Eligibility for AWS credit benefits for each qualified and listed device
+Eligibility for MDF benefit after approval of first device listing
+Marketing
+Participating partners benefit from marketing opportunities and visibility to AWS customers, AWS sales, and other AWS Partners:
+Customer-facing AWS Partner Device Catalog lists qualified devices
+Exclusive branding using the device qualification badge
+Announcement of newly qualified devices in the APN blog
+Technical
+Qualification of devices offers product differentiation for partners and helps reduce the integration friction for customers:
+AWS IoT Device Tester for FreeRTOS and AWS IoT Greengrass allow partners to validate devices quickly
+Technical validation combines partner and AWS expertise by helping customers discover devices that work with AWS services
+"The demands of managing complex data streams produced by IoT devices are pushing the boundaries of cloud and edge computing. As customers evolve in their digital transformation journey, they are looking for ways to quickly and efficiently move certain workloads to the edge. Collaborating with AWS helps us bring the best of the cloud to the edge on Lenovo infrastructure and devices. Lenovo has qualified industry-leading servers, PCs, and intelligent devices through AWS’s simple and easy to use AWS IoT Device Tester qualification tool found in the AWS Device Qualification Program for AWS IoT Greengrass and listing the hardware in the AWS Partner Device Catalog.”
+- Wilfredo Sotolongo, Vice President and General Manager of IoT at Lenovo Data Center Group
+"In our experience, customers are challenged to connect non-IP devices such as set-top boxes and cable cards to cloud services, as well as to provisioning secure and scalable compute at the IoT edge. Our Smart OmniEdge products, combined with AWS IoT Greengrass, address these problems by extending AWS IoT architecture to the network edge in a well-managed and secure manner. By joining the AWS Device Qualification Program, we are giving our partners and customers the ability to streamline device on-boarding and take advantage of container support in our platforms to build innovative IoT services using AWS.”
+- Eric Broockman, Chief Technology and Engineering Officer, Extreme Networks
+“As technology rapidly changes and expands, we are hyper aware of staying competitive within the security industry with our IP video surveillance solutions for residential, commercial, and enterprise applications. Participating in the AWS Device Qualification Program provides us with an opportunity to bring our hardware solutions to a broader range of users by listing them in the AWS Partner Device Catalog.”
+- David Liu, President, VIVOTEK USA, Inc.
+“We are enthusiastic about participating in the AWS Device Qulification Program. The qualification of GE’s PACSystems Rx3i CPL410, the world’s first outcome-optimizing controller and part of GE’s robust IICS platform, enables our customers, such as machine OEMs and system integrators, to fully realize their Industrial IoT goals with a proven and scalable cloud solution.”
+- Rich Carpenter, Executive Product Manager, GE Intelligent Platforms
+Getting Started
+The AWS DQP Program enables AWS Partners to qualify your device hardware including development boards, embedded modules, SBCs, gateways, sensors, and cameras, etc. The qualified devices are eligible for listing in the AWS Partner Device Catalog, and includes links for customers to purchase listed hardware.
+Qualify devices in 3 easy steps
+Validation
+Submission
+Listing
+To join the AWS Device Qualification Program, simply register as a Partner in the AWS Partner Network (APN) at no cost to you. Already an AWS Partner? Just log in to APN Partner Central with your existing account.
+Learn more below about the steps to list a qualified device in the catalog.
+FreeRTOS: Qualify and list
+FreeRTOS hardware qualification allows AWS Partners, such as silicon vendors, to validate the FreeRTOS port on their microcontroller (MCU) development boards to give OEM/ODM developers confidence that the development platform of their choice behaves correctly and consistently.
+Developers will get a reliable and consistent experience across a wide range of qualified MCU-based development boards, which will allow them to focus on designing the application code for their product. Qualification simplifies the development experience by allowing developers to search for, verify, and select their hardware in the AWS Partner Device Catalog. It enables them to rapidly evaluate, prototype, and productize IoT solutions by abstracting the complexity of embedded development. This approach helps bridge the gap between cloud developers and embedded engineers.
+Follow the three steps below to get started and qualify your hardware for listing in the catalog:
+Validation
+Qualification for the AWS Device Qualifcation Program is based on technical validation of your hardware using the AWS IoT Device Tester for FreeRTOS. AWS IoT Device Tester for FreeRTOS is a test automation tool for microcontrollers running FreeRTOS. With AWS IoT Device Tester, you can easily validate your FreeRTOS port and interoperability with AWS IoT services. AWS IoT Device Tester helps ensure cloud connectivity, over-the-air updates (OTA), and security libraries function correctly on the target devices.
+Learn more about FreeRTOS qualification in the FreeRTOS Documentation.
+Get more information and download AWS IoT Device Tester here.
+Submission
+After successful completion of the technical validation using AWS IoT Device Tester for FreeRTOS, partners submit their hardware for review through the self-service Device Listing Portal in APN Partner Central by providing the AWS IoT Device Tester test results file as qualification evidence.
+The Device Listing Portal allows you to draft, submit, manage, and check the status of your listings in the AWS Partner Device Catalog. Each device submission includes relevant device specific details such as technical information, documentation, marketing content, and optional APN enablement links such as AWS Quick Starts or Solution Space.
+Listing
+Device submissions will be reviewed for content, and after approval are immediately published in the customer-facing AWS Partner Device Catalog.
+AWS IoT Greengrass: Qualify and list
+AWS IoT Greengrass qualification allows partners to validate that their devices run AWS IoT Greengrass and interoperate with AWS IoT services, helping give OEMs and their customers the confidence that IoT Greengrass works correctly and consistently in their local edge intelligence applications.
+The AWS IoT Greengrass Core software runs on a hub, gateway, or other device to automatically sync and interact with the cloud. It provides local services (compute, messaging, state, security), and communicates locally with devices that run the AWS IoT Device SDK. The IoT Greengrass Core runs on MPU-based devices (x86 or ARM) that run a general-purpose OS such as Linux, and typically requires at least 1GHz of compute (either ARM or X86), 128MB of RAM, plus additional resources to accommodate the desired OS, message throughput, and AWS Lambda execution depending on the use case. IoT Greengrass Core can run on devices that range from an ARM-based application processor platform to a highly capable server-level appliance.
+Validation
+Qualification for the AWS Device Qualification Program is based on technical validation of your device using the AWS IoT Device Tester for AWS IoT Greengrass. AWS IoT Device Tester for AWS IoT Greengrass is a test automation tool for your Linux-based IoT devices. With AWS IoT Device Tester, you can easily validate if your devices run AWS IoT Greengrass and interoperate with AWS IoT services. AWS IoT Device Tester tests if the CPU architecture, Linux kernel configuration, and drivers for your device work with AWS IoT Greengrass.
+Get more information and download AWS IoT Device Tester here.
+Submission
+After successful completion of the technical validation using AWS IoT Device Tester for AWS IoT Greengrass, you submit your device for review through the self-service Device Listing Portal in APN Partner Central by providing the AWS IoT Device Tester test results file as qualification evidence.
+The Device Listing Portal allows you to draft, submit, manage, and check the status of your listings in the AWS Partner Device Catalog. Each device submission includes relevant device specific details such as technical information, documentation, marketing content, and optional APN enablement links such as AWS Quick Starts or Solution Space.
+Listing
+Device submissions will be reviewed for content, and after approval are immediately published in the customer-facing AWS Partner Device Catalog.
+AWS IoT Core: Qualify and list
+AWS IoT Core allows you to easily connect devices to the cloud and to other devices. AWS IoT Core supports HTTP, WebSockets, and MQTT, a lightweight communication protocol specifically designed to tolerate intermittent connections, minimize the code footprint on devices, and reduce network bandwidth requirements. AWS IoT Core also supports other industry-standard and custom protocols, and devices can communicate with each other even if they are using different protocols.
+AWS IoT Core connectivity can be integrated in a wide range of devices including sensors, appliances, gateways, or servers. Qualification of devices for AWS IoT Core allows partners to validate that their devices interoperate with AWS IoT Core, implement best practices, and giving OEMs and their customers the confidence that devices interoperate correctly and consistently.
+Validation
+Qualification is based on the technical validation of device-specific AWS IoT Core integration, giving OEMs and customers the confidence that IoT Core works correctly and consistently. This includes the review of capabilities such as connectivity, interoperability, authentication, and security best practices implementations.
+More information about AWS IoT Core and related developer resources are available here.
+Submission
+You submit your AWS IoT Core enabled device for technical validation and review through the self-service Device Listing Portal in APN Partner Central.
+The Device Listing Portal allows you to draft, submit, manage, and check the status of your listings in the AWS Partner Device Catalog. Each device submission includes relevant device specific details such as technical information, documentation, marketing content, and optional APN enablement links such as AWS Quick Starts or Solution Space.
+Listing
+Device submissions go through a technical validation and content review. After successful completion, approved devices are immediately published in the customer-facing AWS Partner Device Catalog.
+Amazon Kinesis video streams: Qualify and list
+Amazon Kinesis Video Streams enables you to securely ingest, process, and store video and time-encoded data from devices such as cameras at any scale for real-time and batch-oriented machine-vision based applications that power smart homes, smart cities, industrial automation, security monitoring, and more. It supports HTTP Live Streaming (HLS) to enable live and on-demand playback of video ingested from devices on any browser or mobile application. Integration with Amazon Rekognition Video enables building computer vision applications that detect and recognize faces in streaming video, including machine learning frameworks such as Apache MxNet, TensorFlow, and OpenCV for custom applications. Kinesis Video Streams automatically provisions and elastically scales all the infrastructure needed to ingest video streams from millions of devices.
+Validation
+Qualification is based on the technical validation of device-specific Amazon Kinesis Video Streams integration, giving OEMs and customers the confidence that Kinesis Video Streams works correctly and consistently. This includes the review of capabilities such as connectivity, interoperability, authentication, and security best practices implementations.
+More information about Amazon Kinesis Video Streams and related developer resources are available here.
+Submission
+You submit your Amazon Kinesis Video Streams enabled device for technical validation and review through the self-service Device Listing Portal in APN Partner Central.
+The Device Listing Portal allows you to draft, submit, manage, and check the status of your listings in the AWS Partner Device Catalog. Each device submission includes relevant device specific details such as technical information, documentation, marketing content, and optional APN enablement links such as AWS Quick Starts or Solution Space.
+Listing
+Device submissions go through a technical validation and content review. After successful completion, approved devices are immediately published in the customer-facing AWS Partner Device Catalog.
+Find AWS Device Qualification Program Partners
+Learn more »
+Learn more about the AWS Device Qualification Program
+AWS IoT Device Tester for AWS IoT Greengrass
+AWS IoT Device Tester for FreeRTOS
+AWS IoT Core Developer Resources
+Amazon Kinesis Video Stream Resources
+AWS Device Listing Portal
+AWS Partner Device Catalog
+AWS Device Qualification Program FAQs
+AWS Device Qualification Program Guide

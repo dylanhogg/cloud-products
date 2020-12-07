@@ -1,0 +1,32 @@
+Amazon SageMaker Data Wrangler
+The fastest and easiest way to prepare data for machine learning
+Get started with SageMaker Data Wrangler
+Amazon SageMaker Data Wrangler reduces the time it takes to aggregate and prepare data for machine learning (ML) from weeks to minutes. With SageMaker Data Wrangler, you can simplify the process of data preparation and feature engineering, and complete each step of the data preparation workflow, including data selection, cleansing, exploration, and visualization from a single visual interface. Using SageMaker Data Wrangler’s data selection tool, you can choose the data you want from various data sources and import it with a single click. SageMaker Data Wrangler contains over 300 built-in data transformations so you can quickly normalize, transform, and combine features without having to write any code. With SageMaker Data Wrangler’s visualization templates, you can quickly preview and inspect that these transformations are completed as you intended by viewing them in Amazon SageMaker Studio, the first fully integrated development environment (IDE) for ML. Once your data is prepared, you can build fully automated ML workflows with Amazon SageMaker Pipelines and save them for reuse in the Amazon SageMaker Feature Store.
+Prepare data for ML in minutes
+Select and query data with just a few clicks
+With SageMaker Data Wrangler’s data selection tool, you can quickly select data from multiple data sources, such as Amazon S3, Amazon Athena, Amazon Redshift, AWS Lake Formation, and Amazon SageMaker Feature Store. You can also write queries for data sources and import data directly into SageMaker from various file formats, such as CSV files, Parquet files, and database tables.
+Click to enlarge
+Easily transform data
+SageMaker Data Wrangler offers a selection of 300+ pre-configured data transformations, such as convert column type, one hot encoding, impute missing data with mean or median, rescale columns, and data/time embeddings, so you can transform your data into formats that can be effectively used for models without writing a single line of code. For example, you can convert a text field column into a numerical column with a single click, or author custom transformations in PySpark, SQL, and Pandas.
+Click to enlarge
+Understand your data with visualizations
+SageMaker Data Wrangler helps you understand your data and identify potential errors and extreme values with a set of robust pre-configured visualization templates. Histograms, scatter plots, box and whisker plots, line plots, and bar charts are all available. Templates such as the histogram make it simple to create and edit your own visualizations without writing code.
+Click to enlarge
+Quickly estimate ML model accuracy
+Diagnose and fix ML data preparation issues faster
+SageMaker Data Wrangler enables you to quickly identify inconsistencies in your data preparation workflow and diagnose issues before models are deployed into production. You can quickly identify if your prepared data will result in an accurate model so you can determine if additional feature engineering is needed to improve performance.
+Click to enlarge
+From preparation to production with a single click
+Automate ML data preparation workflows
+Export your data preparation workflow to a notebook or code script with a single click to bring it into production. SageMaker Data Wrangler seamlessly integrates your data preparation workflow with Amazon SageMaker Pipelines to automate model deployment and management. It also publishes features in Amazon SageMaker Feature Store so you can share features across your team and others can reuse them for their own models and analysis.
+Click to enlarge
+Customers
+“At INVISTA, we are driven by transformation and look to develop products and technologies that benefit customers around the globe. We see machine learning as a way to improve the customer experience, but with datasets that span hundreds of millions of rows, we needed a solution to help us prepare data, and develop, deploy, and manage ML models at scale…With Amazon SageMaker Data Wrangler, we can now interactively select, clean, explore, and understand our data effectively, empowering our data science team to create feature engineering pipelines that can scale effortlessly to datasets that span hundreds of millions of rows… with Amazon SageMaker Data Wrangler, we can operationalize our ML workflows faster.”
+Caleb Wilkinson, Lead Data Scientist - INVISTA
+“Using ML, 3M is improving tried-and-tested products, like sandpaper, and driving innovation in several other spaces, including healthcare. As we plan to scale machine learning to more areas of 3M, we see the amount of data and models growing rapidly – doubling every year. We are enthusiastic about the new SageMaker features because they will help us scale. Amazon SageMaker Data Wrangler makes it much easier to prepare data for model training, and Amazon SageMaker Feature Store will eliminate the need to create the same model features over and over. Finally, Amazon SageMaker Pipelines will help us automate data prep, model building, and model deployment into an end to end workflow so we can speed time to market for our models. Our researchers are looking forward to the taking advantage of the new speed of science at 3M.”
+David Frazee, Technical Director - 3M Corporate Systems Research Lab
+"Amazon SageMaker Data Wrangler enables us to hit the ground running to address our data preparation needs with a rich collection of transformation tools that accelerate the process of machine learning data preparation needed to take new products to market. In turn, our clients benefit from the rate at which we scale deployed models enabling us to deliver measurable, sustainable results that meet the needs of our clients in a matter of days rather than months.”
+Frank Farrall, Principal, AI Ecosystems and Platforms Leader - Deloitte
+Get started with Amazon SageMaker Data Wrangler
+Get started preparing data for machine learning in the AWS Management Console
+Get Started

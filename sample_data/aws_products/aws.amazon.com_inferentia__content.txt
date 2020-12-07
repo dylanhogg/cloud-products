@@ -1,0 +1,44 @@
+AWS Inferentia
+High performance machine learning inference chip, custom designed by AWS
+Learn more about Amazon EC2 Inf1 instances
+AWS’s vision is to make deep learning pervasive for everyday developers and to democratize access to cutting edge infrastructure made available in a low-cost pay-as-you-go usage model. AWS Inferentia is Amazon's first custom silicon designed to accelerate deep learning workloads and is part of a long-term strategy to deliver on this vision. AWS Inferentia is designed to provide high performance inference in the cloud, to drive down the total cost of inference, and to make it easy for developers to integrate machine learning into their business applications. The AWS Neuron software development kit (SDK), consisting of a compiler, run-time, and profiling tools that help optimize the performance of workloads for AWS Inferentia, enables complex neural net models, created and trained in popular frameworks such as Tensorflow, PyTorch, and MXNet, to be executed using AWS Inferentia-based Amazon EC2 Inf1 instances.
+Amazon Alexa adopts AWS Inferentia to cut cost of ML Inference
+Benefits
+High performance
+Each AWS Inferentia chip supports up to 128 TOPS (trillions of operations per second) of performance with up to 16 Inferentia chips per EC2 Inf1 instance. Inferentia is optimized for maximizing throughput for small batch sizes, which is especially beneficial for applications that have strict latency requirements such as voice generation and search.
+Low latency
+AWS Inferentia features a large amount of on-chip memory which can be used for caching large models, instead of storing them off-chip. This has a significant impact in reducing inference latency since Inferentia’s processing cores, called Neuron Cores, have high-speed access to models that are stored in on-chip memory and are not limited by the off-chip memory bandwidth.
+Flexibility
+Developers can train models using popular frameworks such as TensorFlow, PyTorch, and MXNet, and easily deploy them to AWS Inferentia-based Inf1 instances using the AWS Neuron SDK. AWS Inferentia supports FP16, BF16, and INT8 data types. Furthermore, Inferentia can take a 32-bit trained model and automatically run it at the speed of a 16-bit model using BFloat16.
+Amazon EC2 Inf1 Instances Powered by AWS Inferentia
+Amazon EC2 Inf1 instances based on AWS Inferentia chips deliver up to 30% higher throughput and up to 45% lower cost per inference than Amazon EC2 G4 instances, which were already the lowest cost instance for machine learning inference available in the cloud. Inf1 instances feature up to 16 AWS Inferentia chips, latest custom 2nd generation Intel® Xeon® Scalable processors and up to 100 Gbps networking to enable high throughput inference. The easiest and quickest way to get started with Inf1 instances is via Amazon SageMaker, a fully managed service that enables developers to build, train, and deploy machine learning models quickly. Developers using containerized applications can also use Amazon Elastic Kubernetes Service (EKS) to deploy Inf1 instances.
+Learn more »
+AWS Neuron SDK
+AWS Neuron is a software development kit (SDK) for running machine learning inference using AWS Inferentia chips. It consists of a compiler, run-time, and profiling tools that enable developers to run high-performance and low latency inference using AWS Inferentia-based Inf1 instances. AWS Neuron enables flexibility for developers to train their machine learning models on any popular framework such as TensorFlow, PyTorch, and MXNet, and run it optimally on Amazon EC2 Inf1 instances. The AWS Neuron SDK comes pre-installed in AWS Deep Learning AMIs, and will also be available pre-installed in AWS Deep Learning Containers soon.
+Learn More » or Get started »
+Blogs and Articles
+Amazon EKS now supports EC2 Inf1 instances
+Julien Simon, June 15, 2020
+Amazon EC2 Inf1 instances now support Amazon SageMaker Patrick Moorhead, May 13, 2020
+Inf1 instances with AWS Inferentia chips for high-performance cost-effective inferencing
+Jeff Barr, Dec 3, 2019
+AWS Inferentia machine learning processor
+James Hamilton, Nov 28, 2018
+Videos
+AWS re:Invent 2019: Watch Andy Jassy talk about silicon investment and Inf1
+AWS re:Invent 2019: ML Inference with new Amazon EC2 Inf1 Instances, featuring Amazon Alexa
+Lower the Cost of Running ML Applications with New Amazon EC2 Inf1 Instances - AWS Online Tech Talks
+Resources
+Learn how to deploy to Inf1 using Amazon SageMaker with Amazon SageMaker examples on Github
+Getting started with AWS Neuron
+AWS Neuron Feature Roadmap
+Use AWS Neuron from within TensorFlow, PyTorch, or MXNet
+Install AWS Neuron in your own AMI
+AWS Neuron Tutorials
+Get support on the AWS Neuron developer forum
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started with machine learning in the AWS Console.
+Sign in
