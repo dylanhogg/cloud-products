@@ -5,6 +5,7 @@
 1) Run black formatter with `make black`
 1) Run unit tests with `make test`
 1) Merge PR into master / Commit to master
+1) Ensure build is passing at https://github.com/dylanhogg/cloud-products/actions?query=workflow%3Abuild
 1) Tag version in git with `git tag vX.X.X` & `git push --tags`
 1) Clean up previous distribuionts with `make clean`
 1) Publish to testpypi with `make publish-test` (optional)
