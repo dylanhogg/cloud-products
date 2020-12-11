@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 # Original src: https://github.com/actions/starter-workflows/blob/main/ci/python-app.yml
 
-name: ci
+name: build
 
 on:
   push:
