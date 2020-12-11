@@ -51,9 +51,9 @@ def run_aws_crawler_examples():
     print(df)
 
     logging.info("Example 6: Get Pandas dataframe of products:")
-    import pandas as pd
     from cloud_products.aws import AwsCrawler
     df = AwsCrawler().get_products_as_df(use_cache=True)
+    print(df.columns)
     print(df)
 
 
