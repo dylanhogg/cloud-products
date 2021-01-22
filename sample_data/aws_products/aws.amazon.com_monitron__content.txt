@@ -1,32 +1,33 @@
 Amazon Monitron
 Detect abnormal machine behavior and enable predictive maintenance
-Get started with Amazon Monitron
 Buy devices
+Get started with Amazon Monitron
 Amazon Monitron is an end-to-end system that uses machine learning (ML) to detect abnormal behavior in industrial machinery, enabling you to implement predictive maintenance and reduce unplanned downtime.
 Installing sensors and the necessary infrastructure for data connectivity, storage, analytics, and alerting are foundational elements for enabling predictive maintenance. However, in order to make it work, companies have historically needed skilled technicians and data scientists to piece together a complex solution from scratch. This included identifying and procuring the right type of sensors for their use cases and connecting them together with an IoT gateway (a device that aggregates and transmits data). As a result, few companies have been able to successfully implement predictive maintenance.
-Amazon Monitron includes sensors to capture vibration and temperature data from equipment, a gateway device to securely transfer data to AWS, the Monitron service that analyzes the data for abnormal machine patterns using machine learning, and a companion mobile app to set up the devices and receive reports on operating behavior and alerts to potential failures in your machinery. You can start monitoring equipment health in minutes without any development work or ML experience required, and enable predictive maintenance with the same technology used to monitor equipment in Amazon Fulfillment Centers.
+Amazon Monitron includes sensors to capture vibration and temperature data from equipment, a gateway device to securely transfer data to AWS, the Amazon Monitron service that analyzes the data for abnormal machine patterns using machine learning, and a companion mobile app to set up the devices and receive reports on operating behavior and alerts to potential failures in your machinery. You can start monitoring equipment health in minutes without any development work or ML experience required, and enable predictive maintenance with the same technology used to monitor equipment in Amazon Fulfillment Centers.
 Enabling predictive maintenance for industrial equipment with Amazon Monitron (1:26)
 Amazon Monitron Sensors
 Amazon Monitron Gateway
 Amazon Monitron ML-based service
-Monitron mobile app
+Amazon Monitron mobile app
 Easily install wireless Amazon Monitron Sensors on rotating equipment, such as motors, gearboxes, fans, and pumps to measure vibration and temperature and securely transfer the data to the AWS Cloud using Amazon Monitron Gateways. You can start tracking equipment health in minutes.
-Buy now on Amazon.com »
+Amazon Monitron Sensors are currently available for sale in the US, UK, Germany, Spain, France, and Italy.
 Data from Amazon Monitron Sensors is automatically and securely transferred to AWS using Amazon Monitron Gateways. Amazon Monitron Gateways connect with the sensors over Bluetooth Low Energy (BLE) and with AWS over Wi-Fi. Gateways and sensors are automatically updated over-the-air (OTA), providing system improvements over the life of your installation.
-Buy now on Amazon.com »
+Amazon Monitron Gateways are currently available for sale in the US, UK, Germany, Spain, France and Italy.
 The sensor data is automatically analyzed using machine learning (ML) to detect abnormal equipment conditions that may require maintenance. You can start tracking equipment health in minutes.
 Get started with Amazon Monitron »
-View sensor readings easily on the Monitron mobile app. The app sends you push notifications when abnormal behavior is detected, so you can diagnose the issue, proactively take action on site, and avoid downtime.
-Android and iOS app coming soon.
+View sensor readings easily on the Amazon Monitron mobile app. The app sends you push notifications when abnormal behavior is detected, so you can diagnose the issue, proactively take action on site, and avoid downtime.
+Android app is available in the Google Play store »
+iOS app coming soon.
 Benefits
 Cost-effective equipment monitoring
-Monitron offers a cost-effective way to monitor your equipment, with low upfront hardware investment compared to conventional sensors and a pay-as-you go service.
+Amazon Monitron offers a cost-effective way to monitor your equipment, with low upfront hardware investment compared to conventional sensors and a pay-as-you go service.
 Start monitoring equipment in minutes
-You can install Monitron Sensors and Gateways using the Monitron app and start monitoring your equipment in minutes. Monitron automatically analyzes the data and sends you an alert when it detects abnormal machine conditions. No development work or ML experience required.
+You can install Amazon Monitron Sensors and Gateways using the Amazon Monitron app and start monitoring your equipment in minutes. Amazon Monitron automatically analyzes the data and sends you an alert when it detects abnormal machine conditions. No development work or ML experience required.
 Detect machine issues before they occur
-Monitron detects abnormal conditions in your industrial machinery. This helps you take proactive actions and reduce costly and unplanned downtime.
+Amazon Monitron detects abnormal conditions in your industrial machinery. This helps you take proactive actions and reduce costly and unplanned downtime.
 The highest standards of data security
-Amazon Monitron secures the sensors and gateways, and the communication between them and the Monitron service. It encrypts your data at rest and in transit. This is done either using AWS managed encryption keys or customer provided encryption keys. Amazon Monitron sensors and gateways are also verified for their authenticity using unique identity keys generated at the time of device production. This ensures that malicious devices cannot register and access the service.
+Amazon Monitron secures the sensors and gateways, and the communication between them and the Amazon Monitron service. It encrypts your data at rest and in transit. This is done either using AWS managed encryption keys or customer provided encryption keys. Amazon Monitron sensors and gateways are also verified for their authenticity using unique identity keys generated at the time of device production. This ensures that malicious devices cannot register and access the service.
 Increase accuracy with continuous improvement
 To increase the accuracy of the system, technicians can enter feedback on the alerts in the mobile app, and Amazon Monitron learns from that feedback to continually improve over time.
 Technical specs

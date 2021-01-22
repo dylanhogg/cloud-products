@@ -14,21 +14,33 @@ How it works
 GraphQL APIs built with AWS AppSync give front-end developers the ability to query multiple databases, microservices, and APIs from a single GraphQL endpoint.
 Use cases
 Real-time collaboration
+Real-time chat application
+Real-time IoT dashboard
+Unified microservices access
+Unified data access
+Offline application sync
+Real-time collaboration
+Real-time collaboration
 Broadcast data from the backend to all connected clients (one-to-many) or between clients (many-to-many), such as in a second screen scenario where you broadcast the same data to all clients, who can then reply.
 Additional resources: Tutorial
+Real-time chat application
 Real-time chat application
 Build conversational mobile or web applications that support multiple private chat rooms, offer access to conversation history, and queue outbound messages, even when a device is offline.
 Additional resources: Tutorial
 Real-time IoT dashboard
+Real-time IoT dashboard
 Access IoT device data sent to AWS IoT to build real-time dashboards in a mobile or web application that visualizes telemetry from a connected IoT device, like a car.
 Additional resources: Tutorial
+Unified microservices access
 Unified microservices access
 Access and combine data from multiple microservices running in containers in a VPC, behind a REST API endpoint, a GraphQL API endpoint, and more, in a single interface.
 Additional resources: Tutorial
 Sample code examples: Airline, E-Commerce
 Unified data access
+Unified data access
 Retrieve or modify data from multiple data sources (SQL, NoSQL, search data, REST endpoints, and serverless backends) with a single call. Query and create relations between data sources using GraphQL connections.
 Additional resources: Tutorial
+Offline application sync
 Offline application sync
 Automatically synchronize data between mobile/web applications and the cloud with AWS AppSync and Amplify DataStore, an on-device persistent storage engine with built-in support for data versioning and conflict detection and resolution.
 Additional resources: Tutorial

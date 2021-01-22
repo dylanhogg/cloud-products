@@ -1,0 +1,37 @@
+AWS Audit Manager
+Continuously audit your AWS usage to simplify how you assess risk and compliance
+Start your free trial of AWS Audit Manager
+AWS Audit Manager helps you continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards. Audit Manager automates evidence collection to reduce the “all hands on deck” manual effort that often happens for audits and enable you to scale your audit capability in the cloud as your business grows. With Audit Manager, it is easy to assess if your policies, procedures, and activities – also known as controls – are operating effectively. When it is time for an audit, AWS Audit Manager helps you manage stakeholder reviews of your controls and enables you to build audit-ready reports with much less manual effort.
+AWS Audit Manager’s prebuilt frameworks help translate evidence from cloud services into auditor-friendly reports by mapping your AWS resources to the requirements in industry standards or regulations, such as CIS AWS Foundations Benchmark, the General Data Protection Regulation (GDPR), and the Payment Card Industry Data Security Standard (PCI DSS). You can also fully customize a framework and its controls for your unique business requirements. Based on the framework you select, Audit Manager launches an assessment that continuously collects and organizes relevant evidence from your AWS accounts and resources, such as resource configuration snapshots, user activity, and compliance check results.
+You can get started quickly in the AWS Management Console. Just select a prebuilt framework to launch an assessment and begin automatically collecting and organizing evidence.
+Benefits
+Easily map your AWS usage to controls
+AWS Audit Manager provides prebuilt frameworks that map your AWS resources to control requirements, which are grouped in accordance to the requirements of an industry standard or regulation, such as CIS AWS Foundations Benchmarks, GDPR, or PCI DSS. You can fully customize these prebuilt frameworks and controls to tailor them to your unique needs.
+Save time with automated collection of evidence
+AWS Audit Manager saves you time by automatically collecting and organizing evidence as defined by each control requirement. Instead of manually collecting evidence, you can focus on reviewing the relevant evidence to ensure your controls are working as intended. For example, you can configure an Audit Manager assessment to automatically collect resource configuration snapshots on a daily, weekly, or monthly basis, subject to underlying AWS service configurations.
+Streamline collaboration across teams
+You can assign controls in your assessment to a subject matter expert to review. For example, you might delegate a security control to a network security engineer to confirm the evidence properly demonstrates compliance. Audit Manager also allows team members to comment on evidence, upload manual evidence, and update the status of each control.
+Always be prepared to produce audit-ready reports
+An audit-ready report includes a report summary file that contains links to the relevant evidence folders, which are named and organized according to the controls that are specified in your assessment. The evidence Audit Manager continuously collects from the AWS services you use becomes a record containing the information needed to demonstrate compliance with control requirements. You can review and select the relevant evidence to include in your final audit report.
+Ensure assessment report and evidence integrity
+AWS Audit Manager securely stores evidence in its own managed storage repository with read-only permissions to your end-users. When you generate audit-ready reports, Audit Manager produces a report file checksum so you can validate that the report evidence remains unaltered. Both the summary report and evidence can be downloaded to share with your auditors.
+How it works
+Use cases
+Transition from manual to automated evidence collection
+AWS Audit Manager enables you to move from manually collecting, reviewing, and managing evidence to a solution that automates evidence collection and helps to manage evidence security and integrity.
+Continuous auditing and compliance
+With AWS Audit Manager, you have an increased level of transparency into usage activity and changes in the environment. You can continuously collect evidence, monitor your compliance posture, and proactively reduce risk by fine-tuning your controls.
+Internal risk assessments
+You can customize a prebuilt framework or build your own framework from scratch. Then, launch an assessment to automatically collect evidence helping you validate if your internal controls are working as intended.
+Featured customer stories
+"At Tangoe, we have a large customer base in the Fortune 500 and government space that expects similar or better data protection standards compared to their internal policies. With that expectation comes regular audits and security assessments from customers and 3rd party independent firms. AWS Audit Manager helps immensely to streamline, simplify and in many cases, automate the evidence gathering."
+"Maintaining a robust compliance posture is a complex and time-consuming activity for our team and AWS makes it easy. Using AWS Audit Manager, we have now enabled continuous digital compliance that helps us meet the most stringent industry standards.“
+Explore AWS Audit Manager features
+Visit the Product Features page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Audit Manager in the AWS Management Console.
+Sign in

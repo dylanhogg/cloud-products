@@ -1,7 +1,7 @@
 FreeRTOS
 Real-time operating system for microcontrollers
 Get started with FreeRTOS
-FreeRTOS is an open source, real-time operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. Distributed freely under the MIT open source license, FreeRTOS includes a kernel and a growing set of software libraries suitable for use across industry sectors and applications. This includes securely connecting your small, low-power devices to AWS cloud services like AWS IoT Core or to more powerful edge devices running AWS IoT Greengrass. FreeRTOS is built with an emphasis on reliability and ease of use.
+FreeRTOS is an open source, real-time operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. Distributed freely under the MIT open source license, FreeRTOS includes a kernel and a growing set of software libraries suitable for use across industry sectors and applications. This includes securely connecting your small, low-power devices to AWS Cloud services like AWS IoT Core or to more powerful edge devices running AWS IoT Greengrass. FreeRTOS is built with an emphasis on reliability and ease of use, and offers the predictability of long term support releases.
 A microcontroller contains a simple, resource-constrained processor that can be found in many devices, including appliances, sensors, fitness trackers, industrial automation, and automobiles. Many of these small devices can benefit from connecting to the cloud or locally to other devices, but have limited compute power and memory capacity and typically perform simple, functional tasks. Microcontrollers frequently run operating systems that may not have built-in functionality to connect to local networks or the cloud, making IoT applications a challenge. FreeRTOS helps solve this problem by providing the kernel to run low-power devices as well as software libraries that make it easy to securely connect to the cloud or other edge devices, so you can collect data from them for IoT applications and take action.
 Benefits
 Open source
@@ -9,13 +9,13 @@ FreeRTOS is released under the MIT open source license, a permissive license wit
 Trusted kernel
 The FreeRTOS kernel is trusted by world-leading companies as the de facto standard for microcontrollers and small microprocessors with proven robustness, tiny footprint, and wide device support.
 Accelerate time to market
-FreeRTOS includes IoT reference integrations, which are pre-integrated FreeRTOS projects ported to microcontroller-based evaluation boards that demonstrate end to end connectivity to the cloud, and pre-configured demos that can help you quickly get started with a project. You can instantly download code and compile to accelerate time to market.
+FreeRTOS includes IoT reference integrations, which are pre-integrated FreeRTOS projects ported to microcontroller-based evaluation boards that demonstrate end to end connectivity to the cloud, and pre-configured demos that can help you quickly get started with a project. You can instantly download code and compile to accelerate time to market. You can also use AWS IoT Device Tester to confidently self-test if your devices will run FreeRTOS and interoperate with AWS IoT services.
 Securely connect, program, deploy, and manage low-power devices
-FreeRTOS includes support for Transport Layer Security (TLS v1.2) to help your devices connect securely to AWS. You can also easily program commonly needed IoT capabilities into your device, including software libraries that help configure devices to a local network using common connectivity options like Wi-Fi or Ethernet, or connect to a mobile device using Bluetooth Low Energy. FreeRTOS also includes an over-the-air (OTA) update library to remotely update devices with feature enhancements or security patches and a code signing feature to ensure your device code is not compromised during deployment and OTA updates.
+FreeRTOS includes support for Transport Layer Security (TLS v1.2) and PKCS #11 to help your devices connect securely to AWS. You can also easily program commonly needed IoT capabilities into your device, including software libraries that help configure devices to a local network using common connectivity options like Wi-Fi or Ethernet, or connect to a mobile device using Bluetooth Low Energy. FreeRTOS also includes an over-the-air (OTA) update library to remotely update devices with feature enhancements or security patches and a code signing feature to ensure your device code is not compromised during deployment and OTA updates.
 Broad ecosystem support
 Our partner ecosystem provides a breadth of options including community contributions, professional support, as well as integrated development and productivity tools. FreeRTOS gives you the flexibility to easily build IoT solutions on a variety of chipsets and supports over 40 architectures. You can find devices that have been qualified to work with FreeRTOS and AWS IoT on the AWS Partner Device Catalog.
-Validate your FreeRTOS devices
-AWS IoT Device Tester for FreeRTOS is a test automation tool that makes testing your choice of devices easy. You can use the AWS IoT Device Tester to confidently self-test if your devices will run FreeRTOS and interoperate with AWS IoT services. You can also use the AWS Partner Device Catalog to browse and buy devices that have been qualified by AWS to work optimally with FreeRTOS.
+Predictability of long term support
+FreeRTOS offers feature stability with long term support (LTS) releases. FreeRTOS LTS libraries come with security updates and critical bug fixes for two years. Maintained by AWS for the benefit of the FreeRTOS community. To learn more about FreeRTOS LTS libraries, please click here.
 How it works
 FreeRTOS provides everything you need to easily program connected microcontroller-based devices and collect data from them for IoT applications. You can get started by choosing a FreeRTOS-qualified microcontroller from the AWS Partner Device Catalog. Then, you can use the AWS console or GitHub to select and download relevant FreeRTOS libraries or pre-validated IoT reference integrations. Visit our getting started page to learn more about all the options.
 You can securely connect FreeRTOS devices to cloud services like AWS IoT Core, to a local edge device, or to a mobile device via Bluetooth Low Energy, and update them remotely using the OTA update feature available with AWS IoT Device Management. An integration with AWS IoT Device Defender makes it easy to report on device-side metrics to detect anomalies when these metrics deviate from expected behavior.
@@ -33,21 +33,63 @@ Hannes Kirchhoff, CTO - SOLshare
 FreeRTOS helps Shimadzu reliably and intelligently monitor hydraulic lifts on commercial trucks to reduce failures reported in the field, equipment downtime, and maintenance expenses.
 "We came to AWS seeking a cost-effective solution to help outfitters monitor the use of hydraulic lifts on commercial trucks to avoid unexpected failures. AWS showed us the reliability of FreeRTOS to meet our needs, converting MCU-based modules into truly intelligent IoT devices and using AWS IoT Core to manage and collect data from tens of thousands of hydraulic devices. Not only did we achieve a lower cost solution with AWS, but we saved 10 months of development time building with FreeRTOS and have seen a reduction of failures reported in the field, equipment downtime, and maintenance expenses."
 Yutaro Nakatsu, Manager of Technology Design Unit - Shimadzu
-Hardware partners
-View qualified Cypress development boards >>
-View qualified Espressif development boards >>
-View qualified Infineon development boards >>
-View qualified Marvell development boards >>
-View qualified MediaTek development boards >>
-View qualified Microchip development boards >>
-View qualified Nordic development boards >>
-View qualified Nuvoton development boards >>
-View qualified NXP development boards >>
-View qualified Renesas development boards >>
-View qualified STMicroelectronics development boards >>
-View qualified Texas Instruments development boards >>
-View qualified Xilinx development boards >>
-Ecosystem and technology partners
+Work with an AWS Partner
+Simplify the implementation of your IoT projects with the dependable IoT hardware that is qualified to work with FreeRTOS on AWS. Select from the AWS Partners below to view their AWS qualified devices from the AWS Partner Device Catalog to find hardware that works with FreeRTOS for immediate IoT project integration. AWS-enabled hardware from AWS Partners can help make the rollout of your IoT projects easier. All devices are available for purchase from our Partners to help you get started.
+STMicroelectronics
+“To speed up the design of objects connected to AWS Cloud services and make the STM32 microcontrollers the best choice for developers, our X-CUBE-AWS STM32Cube Expansion package leverages the rich features and ease of use of FreeRTOS. The FreeRTOS LTS release and its integration in our STM32Cube software package ensures long-term stability and guaranteed maintenance, enabling our customers to focus on quality and added value in building their AWS connectivity solutions."
+- Laurent Desseignes, Microcontroller Ecosystem Marketing Manager, STMicroelectronics
+Device Catalog | Partner Profile | Contact
+Espressif
+“Espressif is about building the best user experience. To this end, we have built the most comprehensive IoT development framework with application frameworks for AI-enabled, offline, and voice-command engines as well as face-recognition solutions, development boards, and modules. We are delighted at the introduction of FreeRTOS Long Term Support because our customers will benefit both from the stability and security updates that long term support releases offer.”
+- Teo Swee Ann, Founder and CEO, Espressif Systems
+Device Catalog | Partner Profile | Contact
+Renesas
+“Our customers face big challenges with increasingly complex software designs problems, while still meeting demands for shorter development time, sustained quality, and reliability. Through our partnership with AWS and FreeRTOS, qualified with Renesas MCUs, we can offer our customers the greatest flexibility to meet industrial and IoT customer demands for a secured and reliable chip-to-cloud connection. Furthermore, with the FreeRTOS LTS release, we believe our customers can benefit from even higher quality and reliability, address security vulnerabilities quickly, and be able to focus more on adding value to their development than before.”
+- Daryl Khoo, Vice President, Marketing, IoT Platform Business Division, IoT Infrastructure Business Unit, Renesas
+Device Catalog | Partner Profile | Contact
+Infineon
+“Infineon strives to help customers bring high-quality, differentiated IoT products to market on time, on budget, and with low risk. Many of our customers seek a complete cloud-to-node solution that will last the duration of their product’s lifecycle. FreeRTOS LTS libraries, coupled with long-term semiconductor support, give our customers the stability and longevity assurance they need when choosing a solution for their IoT product.”
+- Rob Conant, VP of Software and Ecosystem, IoT Compute and Wireless Business Unit, Infineon
+Device Catalog | Partner Profile | Contact
+NXP Semiconductors
+"As a trusted supplier of edge processing solutions for the industrial and IoT markets, NXP has an ongoing investment and commitment to product longevity. Our customers rely on us to provide software drivers and enable software technologies based on FreeRTOS, delivered in our MCUXpresso SDK, as a foundation by which they can rapidly develop differentiated products. Integrating the FreeRTOS LTS libraries further extends our commitment to our MCU customers who develop secure edge devices that are connected to AWS Cloud services and need to be able to depend on critical software updates.”
+- Joe Yu, VP and GM of IoT Product Line, NXP Semiconductors
+Device Catalog | Partner Profile | Contact
+A-F
+G-K
+L-M
+N-R
+S-Z
+A-F
+View qualified Andes Technology development boards »
+View qualified Beken Corporation development boards »
+View qualified Browan development boards »
+View qualified Cypress development boards »
+View qualified Espressif development boards »
+G-K
+View qualified GigaDevice development boards »
+View qualified Good Way Technology development boards »
+View qualified Goodix Technology development boards »
+View qualified ICTK development boards »
+View qualified Infineon development boards »
+L-M
+View qualified Libra Wireless development boards »
+View qualified M5Stack Technology development boards »
+View qualified Mediatek development boards »
+View qualified Microchip development boards »
+View qualified Murata development boards »
+N-R
+View qualified Nordic Semiconductor development boards »
+View qualified Nuvoton development boards »
+View qualified NXP development boards »
+View qualified Realtek development boards »
+View qualified Renesas development boards »
+S-Z
+View qualified SiFive development boards »
+View qualified STMicroelectronics development boards »
+View qualified Texas Instruments development boards »
+View qualified Winner Micro development boards »
+View qualified Xilinx development boards »
 Get started with FreeRTOS
 Sign up for an AWS account
 Getting started is easy – visit the

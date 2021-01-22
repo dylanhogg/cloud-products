@@ -30,8 +30,6 @@ Brett Davis, Principal at Deloitte Consulting & General Manager – ConvergeHEAL
 Steve Patterson, Managing Director, Data Management and Analytics – Huron Consulting
 “AWS Data Exchange is a treasure trove for the System Level Design group. Not only did it help me expand the scope of our group research significantly, but it also made my teaching more engaging and more relevant to addressing societal problems of great interest.”
 Radu Marculescu, Lead of the System Level Design Group – UT Austin
-“Working with AWS Data Exchange has been transformational. Thanks to AWS Data Exchange, it’s even easier for customers to have access to X-Mode’s high quality, privacy-conscious location data. During the COVID-19 pandemic, this ease of access allowed for the University of Texas to help people avoid COVID-19 hot spots, mitigate risk of exposure, and potentially save lives.”
-Jake Ellenburg, CMO & Co-Founder – X-Mode
 "By leveraging AWS Data Exchange and Weather Trends data, we can be confident that our wines will arrive in perfect condition, tasting no different to our customers than when our best-in-class wine team tasted it at the winery."
 Andrew Walleck – COO, Wine Access
 Data product examples

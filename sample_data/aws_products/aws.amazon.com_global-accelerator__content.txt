@@ -14,7 +14,7 @@ AWS Global Accelerator (1:40)
 AWS Global Accelerator use cases
 Single Region applications
 Multi-Region applications
-Online games
+Gaming
 Real-time communication
 Single Region applications
 Improving latency and availability for single Region applications
@@ -48,14 +48,14 @@ Blog post
 Traffic management with AWS Global Accelerator
 Blog Post
 Accessing private Application Load Balancers and EC2 instances
-Online games
-Enhanced player-server networking for online games
-Growing and maintaining your online multiplayer gaming community requires a smooth and competitive gaming experience. Using AWS Global Accelerator enhances your player’s online experience by routing player traffic along the private AWS network, reducing in-game latency, jitter, and packet loss. Acceleration is supported for traffic from popular engines, such as Unity and Unreal. AWS edge locations will ingress and route player traffic to game servers in any of the 15+ AWS Global Accelerator supported Regions, providing faster load times and a more consistent in-game experience. Handle your large traffic spikes, such as game launches and in-game events, without interrupting service on the highly available AWS network.
+Gaming
+Enhanced network performance for gaming
+Growing and maintaining your online multiplayer gaming community requires a smooth and competitive gaming experience. Using AWS Global Accelerator enhances your players' online experience by routing player traffic along the private AWS global network, reducing in-game latency, jitter, and packet loss. Acceleration is supported for the UDP protocol traffic used by popular engines, such as Amazon Lumberyard, Unity, and Unreal Engine. AWS edge locations can ingress and route player traffic to game servers in any of the 20 AWS Global Accelerator supported Regions that AWS Global Accelerator supports, providing faster load times and a more consistent in-game experience. Handle your large traffic spikes, such as game launches and in-game events, without interrupting service on the highly available AWS global network.
 Resources
 Blog post
 Improve performance by up to 60%
 Blog post
-Traffic management with AWS Global Accelerator
+Introducing AWS Global Accelerator custom routing accelerators
 Blog Post
 Reach more players using AWS Global Accelerator
 Customer testimonial
@@ -66,14 +66,14 @@ Webinar
 What’s New with AWS Global Accelerator
 Real-time communication
 Running communication as a service and voice over IP on AWS
-AWS Global Accelerator improves your real-time communications (RTCs) by decreasing call setup time, while increasing call success rate and quality. In the telecommunication industry, you provide latency sensitive RTC for applications including Voice over IP and video conferencing across a variety of devices. To support this, using Global Accelerator allows you to run application protocols, such as Session Initiation, Real Time and WebRTC along the AWS network. Connect directly to your Traffic Boarder Controller to reduce the number of network dependencies and hops. This stabilizes your RTC caller traffic during peak internet hours and call traffic spikes.
+AWS Global Accelerator improves your real-time communications (RTCs) by decreasing call setup time while increasing call success rate and quality. As a telecommunications industry service, you provide latency-sensitive RTC for applications including Voice over IP and video conferencing, across a variety of devices. To support this, use Global Accelerator so you can run application protocols, such as Session Initiation, Real Time, and WebRTC, on the AWS global network. Connect directly to your Session Border Controller to reduce the number of network dependencies and hops. This can stabilize your RTC caller traffic during peak internet hours and call traffic spikes.
 Resources
 Documentation
 Resilience in AWS Global Accelerator
 Documentation
 Real-time Communications Whitepaper
-Documentation
-Health Checks
+Blog Posts
+Introducing AWS Global Accelerator custom routing accelerators
 Blog posts
 CrazyCall
 Blog posts

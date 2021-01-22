@@ -43,6 +43,8 @@ Enhance marketing communication
 Personalize push notifications and marketing emails with individualized product recommendations.
 Boost upsell and cross-sell
 Combine Amazon Personalize with business logic to create high quality cart upsell and cross-sell recommendations.
+Pomelo Fashion is a leading omnichannel fashion brand based in Bangkok, Thailand, with a global customer base.
+Pomelo Fashion Betters Customer Experience with Amazon Personalize
 Learn how StockX is using Amazon Personalize to create pioneering customized experiences for their customers, with no prior machine learning experience.
 "We’re quickly learning the potency of integrating ML into all facets of the company. Our success led to key decision-makers requesting we integrate Amazon Personalize into more of the StockX experience and expand our ML endeavors. It’s safe to say that personalization is now a first-class citizen here."
 Read blog»

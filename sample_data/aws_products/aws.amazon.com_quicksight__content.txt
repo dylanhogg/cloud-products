@@ -2,7 +2,7 @@ Amazon QuickSight
 Scalable, serverless, embeddable, ML-powered BI Service built for the cloud
 Get started for free
 Request a proof-of-concept
-Amazon QuickSight is a scalable, serverless, embeddable, machine leaning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights. QuickSight dashboards can be accessed from any device, and seamlessly embedded into your applications, portals, and websites.
+Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud. QuickSight lets you easily create and publish interactive BI dashboards that include Machine Learning-powered insights. QuickSight dashboards can be accessed from any device, and seamlessly embedded into your applications, portals, and websites.
 QuickSight is serverless and can automatically scale to tens of thousands of users without any infrastructure to manage or capacity to plan for. It is also the first BI service to offer pay-per-session pricing, where you only pay when your users access their dashboards or reports, making it cost-effective for large scale deployments.
 With QuickSight, you can ask business questions of your data in plain language and receive answers in seconds.
 2020 Launches Recap »

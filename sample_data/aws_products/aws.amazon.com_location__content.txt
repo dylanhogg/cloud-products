@@ -1,0 +1,39 @@
+Amazon Location Service (Preview)
+Securely and easily add location data to applications
+Get Started with Amazon Location Service
+Amazon Location Service makes it easy for developers to add location data to applications without sacrificing data security and user privacy.
+Location data is a vital ingredient in today’s applications, enabling capabilities ranging from asset tracking to location-based marketing. However, developers face significant barriers when integrating location data into their applications. This includes cost, privacy and security compromises, and tedious and slow integration work.
+With Amazon Location Service, you can easily add capabilities such as maps, points of interest, geocoding, routing, geofences, and tracking to applications. You retain control of your location data with Amazon Location, so you can combine proprietary data with data from the service. Amazon Location provides cost-effective location-based services (LBS) using high-quality data from global, trusted providers Esri and HERE Technologies. With Amazon Location’s affordable data, tracking and geofencing capabilities, and built-in metrics for health monitoring, you can bring sophisticated location-enabled applications to production quickly, without the high cost of custom development.
+Benefits
+Privacy and security
+With Amazon Location Service, you retain control of your organization’s data. Amazon Location Service anonymizes all queries sent to data providers by removing customer metadata and account information. Additionally, sensitive tracking and geofencing location information, such as facility, asset, and personnel locations, never leaves your AWS account at all. This helps you shield sensitive information from third parties, protect user privacy, and reduce your application’s security risks. With Amazon Location, neither Amazon nor third parties have rights to sell your data or use it for advertising.
+High-quality and cost-effective
+Amazon Location Service provides high-quality geospatial data from established, global providers Esri and HERE. Application developers trust Esri and HERE’s data to route millions of vehicles and power hundreds of thousands of mobile applications and websites today. Now you can affordably build applications using their data through Amazon Location, along with tracking and geofencing capabilities that you don’t have to build in-house. Please visit our data providers' page and pricing page to learn more.
+Simple access to location data
+With the fully managed Amazon Location Service, integrating geospatial information into your application is as easy as calling the Amazon Location application programming interface (API). The API is consistent across LBS data providers, so you don’t need to learn and integrate multiple APIs to get the data you want for different use cases or geographies. To help you explore and try geolocation functions, the Amazon Location console includes a visual, interactive learning tool. You can get started quickly with the Amazon Location back-end and front-end software development kits (SDKs), sample code for tasks such as data visualization, and solution guides for asset tracking, geomarketing, and delivery.
+Shorter time to production
+Amazon Location Service helps you move applications from experimentation to production faster by providing built-in Amazon CloudWatch metrics including requests, latency, and faults, and Amazon CloudWatch integration for logging. This helps you pinpoint functional and performance problems in your application when they arise, so you don’t need to build your own health monitoring tools. You can apply your organization's cloud best practices for monitoring and management to location capabilities, and avoid establishing new standards for additional vendors.
+How it works
+Use cases
+User engagement & geomarketing
+Businesses can use location data to better engage and market to their customers. For instance, Amazon Location Service can trigger an event that prompts a notification to a café when a customer who ordered a coffee on their mobile app is nearby. The café staff can then prepare the order in time. Similarly, retailers can use geomarketing to send discount codes or digital flyers to customers who are near stores. See the geomarketing solution guide.
+Asset tracking
+Asset tracking helps businesses understand the current and historical locations of their products, personnel, and infrastructure. Enterprises can use Amazon Location Service for asset tracking to optimize remote staffing, secure en-route shipment, maximize dispatch efficiency, and more. See the asset tracking solution guide. See the asset tracking solution guide.
+Delivery
+Location-based services help delivery applications store, track, and coordinate the source locations, delivery vehicles, and the destinations. For instance, a food delivery application built with Amazon Location Service can use location tracking and geofencing to automatically notify a restaurant when its designated delivery driver is nearby, to reduce the wait time of the driver, and help assure the freshness of the food when delivered. See the delivery solution guide. See the delivery solution guide.
+Customer stories
+“If we can improve the fill rate of our truck loads by just 1%, we estimate that we can harvest significant savings every year,” said Martijn Weenink, Product Owner at PostNL. “To do this, we need to know where every roller cage is, whether it is in use, what its destination is and what it is carrying. Amazon Location Service and AWS IoT will play a big role in gathering location and activity data from the roller cages.”
+Learn more »
+“When we evaluated Amazon Location Service, we realized we can get the tracking capabilities we need, and also consolidate location-related infrastructure we were hosting on Google,” said Dejan Milosavljevic, CEO and Co-Founder of MobileLog.
+Learn more »
+"Our DoD and intelligence community partners rely on us to deliver technologies that integrate cutting-edge AWS capabilities to enable mission success,” said Kevin Heald, VP, Information Exploitation at Novetta. “Amazon Location is a great example of a service that can be applied to accelerate and simplify solution development."
+Learn more »
+Check out product features
+Learn more about Amazon Location Service
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Location Service in the AWS Management Console.
+Sign in

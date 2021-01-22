@@ -2,7 +2,7 @@ Amazon Simple Notification Service
 Fully managed pub/sub messaging, SMS, email, and mobile push notifications
 Get started for free
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
-The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing, and Amazon Kinesis Data Firehose. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 TUTORIAL:  Learn how to use SNS in minutes
 Benefits
 Modernize and decouple your applications
@@ -10,7 +10,7 @@ Amazon SNS enables you to modernize your applications and decouple them into sma
 Send messages directly to millions of users
 Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP). Amazon SNS provides redundancy across multiple SMS providers and allows you to push mobile notifications using a single endpoint for all platforms.
 Reliably deliver messages
-Amazon SNS uses cross availability zone message storage to provide high message durability. Running within Amazon’s proven network infrastructure and data centers, Amazon SNS topics are available whenever your applications need them. All messages published to Amazon SNS are stored redundantly across multiple geographically separated servers and data centers. If subscriber endpoints aren’t available, Amazon SNS executes automatic message retry policies and can seamlessly move messages to dead-letter queues.
+Amazon SNS uses a number of strategies that work together to provide message durability. To start, published messages are stored across multiple, geographically-separated servers and data centers. If a subscribed endpoint isn't available, Amazon SNS executes a message delivery retry policy. To preserve any messages that aren't delivered before the delivery retry policy ends, you can create a dead-letter queue. You can also subscribe Amazon Kinesis Data Firehose delivery streams to SNS topics, which allows messages to be sent to durable endpoints such as Amazon S3 buckets or Amazon Redshift tables.
 Automatically scale your workload
 Amazon SNS leverages the proven AWS cloud to dynamically scale with your application. Amazon SNS is a fully managed service, taking care of the heavy lifting related to capacity planning, provisioning, monitoring, and patching. The service is designed to handle high-throughput, bursty traffic patterns and enables you to send millions of messages per second.
 Ensure accuracy with message ordering and deduplication

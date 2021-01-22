@@ -3,7 +3,7 @@ Machine learning for every data scientist and developer
 Get Started with SageMaker
 Amazon SageMaker helps data scientists and developers to prepare, build, train, and deploy high-quality machine learning (ML) models quickly by bringing together a broad set of capabilities purpose-built for ML.
 The most comprehensive ML service
-Accelerate innovation with purpose-built tools for every step of ML development, including labeling, data preparation, feature engineering, auto-ML, training, tuning, hosting, monitoring, and workflows.
+Accelerate innovation with purpose-built tools for every step of ML development, including labeling, data preparation, feature engineering, statistical bias detection, auto-ML, training, tuning, hosting, explainability, monitoring, and workflows.
 The first integrated development environment (IDE) for ML
 Boost your productivity using Amazon SageMaker Studio, the first fully integrated development environment designed specifically for ML that brings everything you need for ML under one unified, visual user interface.
 Functionality designed from the ground up to work together
@@ -14,11 +14,13 @@ Details
 Overview
 Details
 SageMaker Capability
-Descriptor
+Description
 Automatic Model Tuning
 Hyperparameter optimization
 Built-in and Bring-your-own Algorithms
 Dozens of optimized algorithms or bring your own
+Distributed Training - NEW
+Training for large datasets and models
 Kubernetes & Kubeflow Integration
 Simplify Kubernetes-based machine learning
 Local Mode
@@ -33,16 +35,22 @@ One-click Training
 Distributed infrastructure management
 SageMaker Autopilot
 Automatically create machine learning models with full visibility
+SageMaker Clarify - NEW
+Detect bias and understand model predictions
 SageMaker Data Wrangler - NEW
 Aggregate and prepare data for machine learning
 SageMaker Debugger
-Debug training runs
+Debug and profile training runs
+SageMaker Edge Manager - NEW
+Manage and monitor models on edge devices
 SageMaker Experiments
 Capture, organize, and compare every step
 SageMaker Feature Store - NEW
 Store, update, retrieve, and share features
 SageMaker Ground Truth
 Label training data for machine learning
+SageMaker JumpStart - NEW
+Pre-built solutions for common use cases
 SageMaker Model Monitor
 Maintain accuracy of deployed models
 SageMaker Pipelines - NEW
@@ -86,12 +94,31 @@ Learn more »
 Purpose-built feature store for ML
 Amazon SageMaker Feature Store provides a repository to store, update, retrieve, and share ML features. SageMaker Feature Store offers one consistent view of features for ML models to use so it becomes significantly easier to generate models that produce highly accurate predictions.
 Learn more »
+Train high-quality models faster
+Amazon SageMaker provides a built-in debugger and a profiler so you can identify and reduce training errors and performance bottlenecks from your models before pushing them to production.
+Learn more »
 One-click deployment to the cloud
 Amazon SageMaker makes it easy to deploy your trained model to production with a single click, so you can start generating predictions for real-time or batch data.
+Learn more »
+Improve quality of models on edge devices
+Amazon SageMaker Edge Manager helps you optimize, secure, monitor, and maintain machine learning models on fleets of edge devices to ensure that models deployed on edge devices are operating correctly.
 Learn more »
 Essential features for ML in production
 Automate machine learning workflows
 Amazon SageMaker Pipelines is the first purpose-built, easy-to-use continuous integration and continuous delivery (CI/CD) service for machine learning. Workflows can be shared and re-used between teams.
+Learn more »
+Detect bias and understand predictions
+Amazon SageMaker Clarify provides bias detection across the ML workflow, enabling you to build greater fairness and transparency into your ML model. SageMaker Clarify also includes feature importance graphs that help you explain model predictions and produces reports which can be used to support internal presentations or to identify issues with your model that you can take steps to correct.
+Learn more »
+Secure your data and code throughout the ML lifecycle
+Amazon SageMaker offers a comprehensive set of security features, including encryption, private network connectivity, authorization, authentication, monitoring, and auditability to help your organization with security requirements that may apply to machine learning workloads.
+Learn more »
+Essential features for ML in production
+Automate machine learning workflows
+Amazon SageMaker Pipelines is the first purpose-built, easy-to-use continuous integration and continuous delivery (CI/CD) service for machine learning. Workflows can be shared and re-used between teams.
+Learn more »
+Improve transparency
+Amazon SageMaker Clarify provides bias detection across the ML workflow, enabling you to build greater fairness and transparency into your ML model. SageMaker Clarify also includes feature importance graphs that help you explain model predictions and produces reports which can be used to support internal presentations or to identify issues with your model that you can take steps to correct.
 Learn more »
 Secure your data and code throughout the ML lifecycle
 Amazon SageMaker offers a comprehensive set of security features, including encryption, private network connectivity, authorization, authentication, monitoring, and auditability to help your organization with security requirements that may apply to machine learning workloads.
@@ -99,10 +126,10 @@ Learn more »
 Amazon SageMaker customers
 Amazon SageMaker is used by tens of thousands of customers across a wide range of industries.
 See more customer stories »
-Get started with Amazon SageMaker
-Amazon SageMaker is a machine learning service that you can use to build, train, and deploy ML models for virtually any use case. For a quick technical introduction, see the SageMaker step-by-step guide. To help you get started with your ML project, AWS offers a set of pre-built solutions for the most common use cases that you can deploy with just a few clicks. These solutions are fully customizable so you can modify them to suit the needs of your specific use case and datasets.
-Pre-built solutions »
+Get started with Amazon SageMaker JumpStart
+Amazon SageMaker is a machine learning service that you can use to build, train, and deploy ML models for virtually any use case. For a quick technical introduction, see the SageMaker step-by-step guide. To help you get started with your ML project, Amazon SageMaker JumpStart offers a set of pre-built solutions for the most common use cases that you can deploy with just a few clicks. These solutions are fully customizable so you can modify them to suit the needs of your specific use case and datasets.
 SageMaker step-by-step guide »
+SageMaker JumpStart »
 Predictive maintenance
 Georgia Pacific uses SageMaker to develop ML models that detect machine issues early.
 Learn more »

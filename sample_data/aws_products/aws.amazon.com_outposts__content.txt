@@ -46,7 +46,10 @@ How it works
 Customer reference
 AWS Outposts allows Philips to extend all of the capabilities that they need to be available all the time on premises, and to make that fit seamlessly into the things that they have already developed to run in the cloud.
 Philips: AWS Outposts Customer Testimonial (1:33)
-Morningstar is a leading provider of independent investment research around the globe. “Our independent data, research, and solutions empower investor success by delivering insights and experiences that are essential to investing,” said James Rhodes, Chief Technology Officer, Morningstar. “As we continue to modernize our data collection and software, we want to create a containerized hybrid infrastructure and easily deploy using AWS services. With AWS Outposts, we can build once and run applications on-premises and easily migrate our applications to an AWS Region where possible. Ultimately, this allows us to accelerate the adoption of cloud technologies within our development teams, keep up with accelerating business and customer needs, and support our long-term journey to the cloud.”
+Morningstar is a leading provider of independent investment research around the globe.
+“Our independent data, research, and solutions empower investor success by delivering insights and experiences that are essential to investing. As we continue to modernize our data collection and software, we want to create a containerized hybrid infrastructure and easily deploy using AWS services. With AWS Outposts, we can build once and run applications on-premises and easily migrate our applications to an AWS Region where possible. Ultimately, this allows us to accelerate the adoption of cloud technologies within our development teams, keep up with accelerating business and customer needs, and support our long-term journey to the cloud.”
+James Rhodes, Chief Technology Officer, Morningstar.
+Morningstar: AWS Outposts Customer Testimonial (2:28)
 Contact us
 Learn more about AWS Outposts by contacting us directly
 Contact us

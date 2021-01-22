@@ -1,0 +1,40 @@
+Amazon Managed Service for Grafana
+Powerful, interactive data visualizations for builders, operators, and business leaders
+Get started with Amazon Managed Service for Grafana (Preview)
+Amazon Managed Service for Grafana is a fully managed rich, interactive data visualization service that is scalable, secure, and highly available. Using Amazon Managed Service for Grafana, you can analyze, monitor, and alarm on metrics, logs, and traces across multiple data sources, including AWS, third-party ISVs, databases, and other resources across your IT portfolio. Amazon Managed Service for Grafana offloads the operational management of Grafana by automatically scaling compute and database infrastructure as usage demands increase, with automated version updates and security patching. Amazon Managed Service for Grafana also integrates with AWS Single Sign-On to ensure that your corporate directory users can seamlessly access the dashboards and data sources for which they have permissions. Amazon Managed Service for Grafana natively integrates with AWS services to ensure that you can securely add, query, visualize, and analyze your AWS data across multiple accounts and Regions with a few clicks in the AWS Console.
+Benefits
+Enjoy the power of Grafana at scale
+Use the powerful data visualizations you love from Grafana, with a few simple clicks. You don’t need to worry about maintaining software or infrastructure – Amazon Managed Service for Grafana automatically scales compute and database resources in a highly available configuration, and takes care of software upgrades and security patching for you.
+Visualize, analyze, and correlate securely across multiple data sources
+Amazon Managed Service for Grafana securely and natively integrates with AWS services, via private VPC connections. Query AWS data sources across multiple accounts and multiple regions by discovering the resources in your account or across your Organizational Units, and automatically provisioning the right AWS Identity and Access Management (IAM) policies to access your data.
+Manage access to data and dashboards
+Integration with AWS Single Sign-On lets you easily grant users access without having to manage multiple user identity pools. You can restrict read and write access to your data sources and dashboards so that the right users and teams can view their relevant data. Amazon Managed Service for Grafana integrates with popular corporate directory services such as Microsoft Active Directory.
+Upgrade to Grafana Enterprise
+With one click, upgrade to Grafana Enterprise, giving you access to a wide variety of third-party ISV plugins – AppDynamics, Datadog, Dynatrace, New Relic, Oracle Database, ServiceNow, Splunk, Wavefront, Snowflake, and MongoDB. You can also access consultation, support, and on-demand training content directly from Grafana Labs.
+Get started quickly with pre-built dashboards
+Start visualizing and analyzing metrics, logs, and traces from multiple data sources without having to build from scratch. Or, in Explore mode, focus on data queries without creating and saving dashboards, and even view historical queries to jumpstart on-demand troubleshooting and help reduce mean time to resolution.
+Migrate from self-managed Grafana, easily
+No need to start from scratch when migrating from your existing Grafana environment. Use the Amazon Managed Service for Grafana APIs to easily import existing queries and dashboards – you don’t have to re-create dashboard definitions that you’ve already built and perfected (available at GA).
+How it works
+Use cases
+Unified observability
+Teams can use the instrumentation, data collection, and storage tools of their choice, while using Amazon Managed Service for Grafana to centralize and correlate data into a single dashboard. Sharing the right information at the right time from a centralized location helps reduce the time to detection, and improves application availability and customer experience.
+Container monitoring
+Amazon Managed Service for Grafana connects to Amazon Managed Service for Prometheus, self-managed Prometheus, Amazon CloudWatch, and other popular data sources. These data sources collect and store container metrics from Amazon Elastic Kubernetes Service, Amazon Elastic Container Service, and self-managed Kubernetes running on Amazon Elastic Compute Cloud.
+One dashboard for all
+Amazon Managed Service for Grafana supports a wide variety of data sources that enable users of all types to layer operational and business data into a consolidated view. Builders and developers can track their application logs alongside an operator’s infrastructure health metrics, as well as business metrics for key stakeholders, all displayed in a single dashboard using a rich library of interactive visualizations.
+Troubleshoot operational issues collaboratively
+Teams and users can view and edit dashboards in real time, track dashboard version changes, and share dashboards with related teams or executive stakeholders to ensure that everyone is viewing the same data while troubleshooting operational issues. Amazon Managed Service for Grafana allows flexible dashboard sharing, from creating snapshots that can be shared publicly, to inviting team members to a shared dashboard.
+IoT monitoring
+Grafana’s extensible data plugin architecture and flexible graphing options make it popular for monitoring IoT and edge device data, such as earthquake sensor battery levels, manufacturing robot metrics, or energy utility status checks. Amazon Managed Service for Grafana natively integrates with Amazon IoT SiteWise and Amazon Timestream as data sources for IoT data visualization.
+Software development lifecycle monitoring
+By upgrading to Grafana Enterprise, customers can leverage Enterprise plugins such as ServiceNow and Atlassian Jira to pull in incident details and software development lifecycle artifacts. They can then track incident status, pull requests and code commits, as well as monitor software releases alongside their application health and performance data all in one place.
+Check out the product features
+Learn more about Amazon Managed Service for Grafana data visualization service features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign up for the preview
+Get started building with Amazon Managed Service for Grafana.
+Sign up

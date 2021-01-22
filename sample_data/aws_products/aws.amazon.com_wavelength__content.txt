@@ -2,6 +2,7 @@ AWS Wavelength
 Deliver ultra-low latency applications for 5G devices
 Request Access to Wavelength Zones
 AWS Wavelength is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength Zones are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers’ (CSP) datacenters at the edge of the 5G network, so application traffic from 5G devices can reach application servers running in Wavelength Zones without leaving the telecommunications network. This avoids the latency that would result from application traffic having to traverse multiple hops across the Internet to reach their destination, enabling customers to take full advantage of the latency and bandwidth benefits offered by modern 5G networks.
+AWS Wavelength Zones are available in ten cities across the U.S. with Verizon, in Tokyo, Japan with KDDI, and in Daejeon, South Korea with SKT.
 AWS Wavelength - Edge Computing for 5G Networks (2:09)
 Benefits
 New business opportunities
@@ -29,43 +30,21 @@ With AWS Wavelength, the most demanding games can be made available on end devic
 ML-assisted Diagnostics for Healthcare
 AI/ML driven video analytics and image matching applications executed on compute resources in Wavelength Zones help doctors speed up diagnosis of observed conditions, such as recognizing polyps during procedures.
 Customer stories
-“AWS Wavelength on Verizon’s 5G Edge provides that intelligence to doctors during the exam improving the patient experience and potential outcomes, and fundamentally changing the diagnostic process.”
-Raj Nair, Acting CEO
-Watch the customer case study »
-“The combination of AWS Wavelength and the Broadpeak content delivery network (CDN) at the very edge of the mobile network brings us closer to consumers than ever, resulting in superior experiences. With network congestion being avoided and more bandwidth being available in the mobile network, the viewing experiences are free of rebuffering, delivered with a fast start-time, and with nearly no latency compared to the broadcast stream. Using AWS Wavelength to host the Broadpeak CDN allows video service providers to dynamically manage and adjust their CDN resources based on localised spikes in consumer demand. Deploying the Broadpeak software in Wavelength Zones is easy, and we did it in just one day. We believe Wavelength and Broadpeak will soon deliver new immersive experiences that are difficult to scale to large audiences today, like 4K video and virtual, augmented, and mixed reality.”
-Jacques Le Mancq, CEO and President Broadpeak
-“One of the biggest challenges to getting our product installed is the vast infrastructure requirement. Typically, we require miles of Ethernet cable, racks of servers, and things. Being able to use Verizon 5G and AWS Wavelength to do that processing and that backbone significantly opens up the opportunities of the places and the locations that you might place that equipment. So far, we’ve seen some really great results using the 5G technology combined with using AWS Wavelength. We see a bright future where we are deploying at venues around the country and using our data to help the venues open safely.”
-Ray Gibson, VP of Engineering
-Watch the customer case study »
-"Dedrone has integrated its airspace security platform into Vodafone Business’s distributed multi-access edge computing powered by AWS Wavelength, allowing rapid drone detection, enabling quick installation and keep everyone safer. Sites of critical importance now can seamlessly upgrade their security programs to protect their lower airspace. Dedrone detects, classifies and locates drones in real time and empower customers with vital security alerts, so they have the advantage when faced with malicious or unauthorized drone interference. When it comes to responding to drone incursions, advanced sensor connectivity makes an incredible difference.”
-Aaditya Devarakonda, CEO
-Watch the customer case study »
-“With AWS Wavelength on the Verizon 5G edge, we get the ultra-low latency and proximity needed to reduce the distance between servers and end users with a single, elegant solution. By tightly integrating game studio backends and edge computing infrastructures with AWS Wavelength, Edgegap can reduce lag by more than half, increase fairness, improve total player experiences, and help reduce churn and increase revenue for studios.”
-Mathieu Duperré, Edgegap founder and CEO
-“Groopview is a unique mobile platform where social media meets TV. Groopview lets consumers watch licensed and free video content in sessions that combine video streaming, video chat, texting, and response capture all in real time. Groopview app automatically synchronizes video delivery across different types of devices and network connections, using a breakthrough technology for synchronization. Groopview uses AWS Wavelength at the Verizon 5G network edge to enhance the user experience. Leveraging ultra-low latency connections to AWS cloud compute and storage very close to mobile devices enables us to make sure everyone is watching the same frame of content at the same time. Using AWS Wavelength, EC2 and Elastic Block Storage, we have seen an order of magnitude reduction in latency. Wavelength along with AWS Regions can enable us to scale quickly and globally as demand increases.”
-Delmond Newton, Founder and CEO, Groopview
 "What's critical is the ability to quickly scale computational resources with low latency and high throughput for timely delivery of security services while preserving the privacy of the system. Our C-V2X pilot with ultra-low latency access to AWS Wavelength allows for timely message filtering that only shares relevant and trusted information for improved road safety and enhanced mobility among vehicles.”
 Rick Kreifeldt, Senior Vice President, LG America R&D Lab
-“With Amazon Wavelength’s ultra-low latency and high throughput, we can immediately access AWS Services to perform inference at the edge and use predictive analytic logic using data streamed from local sources to notify drivers about hazards and help prevent collisions.”
-Ravi Puvvala, CEO
-”In sports, seconds matter – it can be the difference between winning and losing – that’s why we are excited about the potential of ultra-low latency provided by AWS Wavelength and Verizon 5G Edge.”
-Davyeon Ross, co-founder and president of ShotTracker
-Watch the customer case study »
-“By combining AWS Wavelength with our Solution at the edge of telco providers’ 5G networks, we can optimize video quality, instantly deliver high-quality of service experiences on a by-customer basis, and create more immersive content with much less reliance on end users’ hardware. AWS and Wavelength are also giving us a much faster path to market.”
-Alido Di Giovanni, Co-founder and President of Summit Tech
-Watch the customer case study »
 “With critical GPU workloads rendered from AWS Wavelength coupled with 5G’s bandwidth, we can achieve the low latency and increased connectivity to deliver a pathway to truly connected factories, where data flows seamlessly between machines and cloud to enable AI powered real time decisioning at the edge.”
 Shanky Viswanathan,  CTO Communication, Media and Information Service Business Group
 Watch the customer case study »
-“For us it’s really a privilege to be able to work together with two such amazing companies as AWS and Verizon. Our entire infrastructure was already working on AWS. So porting that from AWS to Verizon MEC, which is based on Wavelength was really simple. One of the great things about edge computing is that you can offload computing from your device to the edge, so your device can become smaller, can be lighter, and can have longer battery times. The ideal device that we foresee is going to be something pretty much indistinguishable from your sun glasses. And that will be a device that will cover both VR and AR. It will change the way it you watch sports and live events. We really think it’s going to change the world.”
-Sebastian Amengual, Co-founder and CTO
-Watch the customer case study »
+“The superior experiences we provide require ultra-low latency connections to users and their devices. Only AWS Wavelength on carrier’s 5G edge can provide us that,” said Wesley Kuo, CEO of Ubitus. “Our GameCloud platform recently used GPU instances on Wavelength to render and stream game titles directly to end-users with ultra-low latency. As a result, users can instantly play games, interact real-time with continuous game experiences without any downloads or installation, and users can pick up exactly where they left off as they move from device to device.”
+Wesley Kuo, CEO
 “Today the business of live events is very cumbersome, very infrastructure intensive, and high cost. What we’re doing with Verizon 5G and AWS Wavelength Zone is streamlining that process, we’re changing the economics, we’re changing how you go about doing it, and how you go about experiencing it. This is the first time in the world that anybody has tested 4K workflows or even lower bitrate media workflows live on 5G. The latency benefit from 5G MEC is amazing. Typical satellite workflows are plus seven seconds plus. To get sub-second and very, very low second latency changes how you do live events, changes sports betting, changes news, it really changes everything.”
 Gordon Brooks, Executive Chairman and CEO
 Watch the customer case study »
-“Sony is using AWS Wavelength to improve how consumers live stream the world’s most memorable live news, sports, and entertainment. AWS Wavelength and the 5G network provide Sony the ultra-low latency needed to live stream high-resolution video and high-fidelity audio, as well as to embed interactive experiences into live video streams.”
-Hisashi Tamai, Senior Vice President in charge of System and Platform Technology Development, Fundamental Technology Research and Development, R&D Center
+See more customer stories here »
 Partners
+KDDI's au 5G network combined with AWS cloud services enables customers to realize real-time feedback by leveraging our high speed, large volume and low latency capabilities and to create new value for their businesses.
+SKT's 5GX Edge service provides an environment for implementing ultra-high-speed, ultra-low-latency, and ultra-wideband services with complete security by introducing AWS' cloud services into the communication infrastructure based on SKT's nationwide 5G coverage.
+Learn more »
 Verizon 5G Edge brings together Verizon’s 5G Ultra-Wideband network and AWS cloud services to enable developers and enterprise customers to build large-scale, latency-sensitive applications at the edge.
 Learn more »
 Vodafone Business Distributed Edge brings together the power of AWS Cloud and Vodafone’s 4G and 5G network, making incredible next-generation user experiences a reality.

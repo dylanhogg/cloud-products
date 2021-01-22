@@ -2,6 +2,7 @@ Amazon Managed Workflows for Apache Airflow (MWAA)
 Highly available, secure, and managed workflow orchestration for Apache Airflow
 Get Started
 Amazon Managed Workflows for Apache Airflow (MWAA) is a managed orchestration service for Apache Airflow1 that makes it easier to set up and operate end-to-end data pipelines in the cloud at scale. Apache Airflow is an open-source tool used to programmatically author, schedule, and monitor sequences of processes and tasks referred to as “workflows.” With Managed Workflows, you can use Airflow and Python to create workflows without having to manage the underlying infrastructure for scalability, availability, and security. Managed Workflows automatically scales its workflow execution capacity to meet your needs, and is integrated with AWS security services to help provide you with fast and secure access to data.
+Amazon Managed Workflows for Apache Airflow: Getting Started (6:48)
 Benefits
 Deploy Airflow rapidly at scale
 Get started in minutes from the AWS Management Console, CLI, AWS CloudFormation, or AWS SDK. Create an account and begin deploying Directed Acyclic Graphs (DAGs) to your Airflow environment immediately without reliance on development resources or provisioning infrastructure.

@@ -1,0 +1,24 @@
+AWS Fault Injection Simulator (coming in 2021)
+Improve resiliency and performance with controlled chaos engineering
+AWS Fault Injection Simulator is a fully managed chaos engineering service that makes it easier for teams to discover an application’s weaknesses at scale in order to improve performance, observability, and resiliency. Chaos engineering is the process of stressing an application in testing or production environments by creating disruptive events, such as server outages or API throttling, observing how the system responds, and implementing improvements. Chaos engineering helps teams create the real-world conditions needed to uncover the hidden issues, monitoring blind spots, and performance bottlenecks that are difficult to find in distributed systems.
+Fault Injection Simulator simplifies the process of setting up and running controlled chaos engineering experiments across a range of AWS services so teams can build confidence in their application behavior. With Fault Injection Simulator, teams can quickly set up experiments using pre-built templates that generate the desired disruptions, such as server latency or database error. Fault Injection Simulator provides the controls and guardrails that teams need to run experiments in production, such as automatically rolling back or stopping the experiment if specific conditions are met. With a few clicks in the console, teams can run complex scenarios with common distributed system failures happening in parallel or building sequentially over time, enabling them to create the real world conditions necessary to find hidden weaknesses.
+Benefits
+Improve application performance, resiliency, and observability
+AWS Fault Injection Simulator makes it easy for teams to run and observe their experiments from end-to-end, making it easier to find their monitoring blind spots, performance bottlenecks, or other “unknown” weaknesses missed by traditional software tests.
+Validate how your application performs on AWS
+AWS Fault Injection Simulator supports creating disruptive events across a range of AWS services, such as Amazon EC2, Amazon EKS, Amazon ECS, and Amazon RDS. Teams can run GameDay scenarios or stress test their most critical applications on AWS at scale, helping them ensure their application will behave as expected.
+Safeguard chaos experiments
+AWS Fault Injection Simulator provides the fine-grained controls that teams need to define the specific conditions under which they want to stop an experiment or roll back to the pre-experiment state.
+A fast and easy way to get started with chaos engineering
+AWS Fault Injection Simulator provides prebuilt templates that enable teams to set up and run high quality experiments in minutes. Fault Injection Simulator structures the chaos engineering process so that teams can quickly run chaos engineering experiments by following the step-by-step process in the console and selecting from a predefined list of actions.
+Get superior insights by generating real-world failure conditions
+AWS Fault Injection Simulator is designed to run disruptive real-world scenarios on AWS that are very difficult for teams to accomplish on their own. With Fault Injection Simulator, teams can take actions such as gradually or simultaneously impairing the performance of different resources in a production environment at scale, enabling them to better validate their application behavior.
+How it works
+Use cases
+Periodic Game Days
+A game day is the process of rehearsing ahead of an event by creating the anticipated conditions and observing how effectively the team and system respond. An event could be an unusually high traffic day, a new launch, a failure, or something else. You can use AWS Fault Injection Simulator to run a game day by creating the event conditions and monitoring the performance of your system.
+Continuous Delivery Pipeline Integration
+You can integrate AWS Fault Injection Simulator into your continuous delivery pipeline. This will enable you to repeatedly test the impact of fault actions as part of your software delivery process.
+Explore product features
+Visit AWS Fault Injection Simulator Features page.
+Learn more

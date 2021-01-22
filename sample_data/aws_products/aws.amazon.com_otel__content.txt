@@ -1,10 +1,11 @@
 AWS Distro for OpenTelemetry (Preview)
 Secure, production-ready open source distribution with predictable performance
 Get Started with AWS Distro for OpenTelemetry in Preview
-AWS Distro for OpenTelemetry is a secure, production-ready, AWS-supported distribution of the OpenTelemetry project. Part of the Cloud Native Computing Foundation, OpenTelemetry provides open source APIs , libraries, and agents to collect distributed traces and metrics for application monitoring. With AWS Distro for OpenTelemetry, you can instrument your applications just once to send correlated metrics and traces to multiple monitoring solutions. Use auto-instrumentation agents to collect traces without changing your code. AWS Distro for OpenTelemetry also collects metadata from your AWS resources and managed services, so you can correlate application performance data with underlying infrastructure data, reducing the mean time to problem resolution. Use AWS Distro for OpenTelemetry to instrument your applications running on Amazon Elastic Compute Cloud (EC2), Amazon Elastic Container Service (ECS), and Amazon Elastic Kubernetes Service (EKS) on EC2, and AWS Fargate, as well as on-premises.
+AWS Distro for OpenTelemetry is a secure, production-ready, AWS-supported distribution of the OpenTelemetry project. Part of the Cloud Native Computing Foundation, OpenTelemetry provides open source APIs, libraries, and agents to collect distributed traces and metrics for application monitoring. With AWS Distro for OpenTelemetry, you can instrument your applications just once to send correlated metrics and traces to multiple AWS and Partner monitoring solutions. Use auto-instrumentation agents to collect traces without changing your code. AWS Distro for OpenTelemetry also collects metadata from your AWS resources and managed services, so you can correlate application performance data with underlying infrastructure data, reducing the mean time to problem resolution. Use AWS Distro for OpenTelemetry to instrument your applications running on Amazon Elastic Compute Cloud (EC2), Amazon Elastic Container Service (ECS), and Amazon Elastic Kubernetes Service (EKS) on EC2, AWS Fargate, and AWS Lambda, as well as on-premises.
+Capturing trace data with the AWS Distro for OpenTelemetry (7:00)
 Benefits
 Instrument once for multiple monitoring destinations
-AWS Distro for OpenTelemetry lets you instrument your applications just once, instead of running multiple SDKs and agents to collect metrics and traces. You can then send those metrics and traces to multiple monitoring solutions including Amazon CloudWatch and AWS X-Ray.
+AWS Distro for OpenTelemetry lets you instrument your applications just once, instead of running multiple SDKs and agents to collect metrics and traces. You can then send those metrics and traces to multiple AWS monitoring solutions including Amazon CloudWatch and AWS X-Ray, as well as third-party monitoring solutions from AWS Partners.
 Extend visibility and triage faster
 AWS Distro for OpenTelemetry lets you collect and correlate metrics and traces, along with contextual information and metadata about where the application is running. Increased visibility into your AWS resources speeds up performance troubleshooting and reduces mean time to resolution.
 Run OpenTelemetry with predictable performance
@@ -17,26 +18,20 @@ Rely on AWS support
 AWS Support tools and technology, people and programs, help you optimize performance, lower costs, and innovate faster. Leverage AWS Premium Support for proactive guidance on how to scale your workloads and optimize the health of your cloud operations in addition to break-fix and problem resolution.
 How it works
 Use cases
-Send metrics and traces to AWS monitoring services
-Instrument applications once, then collect and send correlated metrics and traces to one or more AWS monitoring services such as Amazon CloudWatch, AWS X-Ray, and Amazon Elasticsearch Service. Add or update a monitoring destination with simple configuration changes, without having to re-instrument code. Supported languages include Java and JavaScript, with more planned.
+Send metrics and traces to AWS and third-party Partner monitoring services
+Instrument applications once, then collect and send correlated metrics and traces to one or more AWS monitoring services such as Amazon CloudWatch, AWS X-Ray, and Amazon Elasticsearch Service, as well as third-party Partner monitoring solutions. Add or update a monitoring destination with simple configuration changes, without having to re-instrument code. Supported languages include Java, JavaScript, Go, and Python, with more planned.
 Automate collection of traces
 Automatically collect trace data for Java applications such as web applications built with Spring Boot, and servlet-based microservices. The auto-instrumentation agent in AWS Distro for OpenTelemetry captures all downstream requests made with Apache HTTP clients, AWS SDK clients, and JDBC-based SQL clients. It also works automatically in multi-threaded applications.
 Collect metadata on application resources
 AWS Distro for OpenTelemetry automatically collects metadata about the underlying AWS resources where the application code is running. This metadata can be used in monitoring services to correlate application monitoring data with the infrastructure monitoring data needed to reduce mean time to resolution.
 Collect, analyze, and alarm on application metrics in CloudWatch
 Use OpenTelemetry APIs to collect custom application metrics, then analyze and view them using Amazon CloudWatch. Visualize metric trends, create dashboards, and create alarms to proactively monitor your applications using CloudWatch.
-Partners
-“We believe in a vendor-neutral way to collect application and supporting infrastructure telemetry. That's why we're partnering with AWS on AWS Distro for OpenTelemetry to further simplify the adoption and use of OpenTelemetry."
-Rajesh Kumar Easwaramoorthy, Director of Product Management, Cisco AppDynamics
-“Datadog is excited to support the launch of AWS Distro for OpenTelemetry. By embracing open standards, centralizing collection of all telemetry, and providing data portability, AWS and Datadog will help mutual customers ship faster, scale more quickly, and meet the needs of their business, regardless of their architectures.”
-Michael Gerstenhaber, Sr. Director of Product Management, Datadog
-"As a partner of AWS and as a technology leader in observability, we are excited to see increased adoption of open observability standards, particularly the new AWS Distro for OpenTelemetry. With offerings such as Grafana Metrics Enterprise, Grafana Loki, and more, we continue to shape this space, and with AWS-specific integrations for X-Ray, Timestream, and CloudWatch, we continue to increase interoperability across the whole observability space wherever our customers and users need us."
-Raj Dutt, CEO & Cofounder of Grafana Labs
-“New Relic is excited to partner with AWS on its OpenTelemetry integration. OpenTelemetry will provide an easy path for AWS customers to capture their traces and metrics and consolidate that telemetry into New Relic. Using New Relic, customers can better understand their systems, and more quickly troubleshoot and resolve incidents. AWS and New Relic’s commitment to OpenTelemetry is an important signal that this new standard is being adopted quickly, promising ubiquitous instrumentation with unprecedented interoperability.”
-Chris Hansen, Director of Product Management, New Relic
-“We are excited to partner with AWS in bringing a production-ready, AWS-supported OpenTelemetry distribution to our joint customers. Using the Splunk exporter for OpenTelemetry, our customers can seamlessly export observability data to Splunk’s industry-leading comprehensive observability solution. As co-founders of OpenTelemetry and the most active contributor to the project, we are pleased that AWS is adopting OpenTelemetry as the standard way to instrument applications and infrastructure for observability.”
-Spiros Xanthos, VP Product Management, Splunk
-Featured posts
+Latest blog posts
+Date
+Date
+1
+…
+…
 Public Preview – AWS Distro for OpenTelemetry
 by Jeff Barr
 What is OpenTelemetry and Why Should You Care?

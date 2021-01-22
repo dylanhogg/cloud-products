@@ -1,21 +1,21 @@
 AWS Cost & Usage Report
 Dive deeper into your AWS costs and usage
 Enable the AWS Cost & Usage Report
-The AWS Cost & Usage Report contains the most comprehensive set of AWS cost and usage data available, including additional metadata about AWS services, pricing, and reservations (e.g., Amazon EC2 Reserved Instances (RIs)).
-The AWS Cost & Usage Report lists AWS usage for each service category used by an account and its IAM users in hourly or daily line items, as well as any tags that you have activated for cost allocation purposes. You can also customize the AWS Cost & Usage Report to aggregate your usage data to the hourly, daily or monthly level.
+The AWS Cost & Usage Report contains the most comprehensive set of AWS cost and usage data available, including additional metadata about AWS services, pricing, Reserved Instances, and Savings Plans.
+The AWS Cost & Usage Report itemizes usage at the account or Organization level by product code, usage type and operation. These costs can be further organized by enabling Cost Allocation tags and Cost Categories. The AWS Cost & Usage Report is available at an hourly, daily, or monthly level of granularity.
 AWS Cost & Usage Report Demo
 AWS Cost & Usage Report Features
 Access comprehensive AWS cost and usage information
-The AWS Cost & Usage Report gives you the ability to delve deeply into your AWS cost and usage data, understand how you are using your AWS implementation, and identify opportunities for optimization. View the full data dictionary here.
-Track your Amazon EC2 Reserved Instance (RI) usage
-Each line item of usage that receives an RI discount contains information about where the discount was allocated. This makes it easier to trace which instances are benefitting from specific reservations.
+The AWS Cost & Usage Report gives you the ability to delve deeply into your AWS cost and usage data, understand resource-level drivers of your costs, and identify opportunities for optimization. View the full data dictionary here.
+Track your Reserved Instances (RI) and Savings Plans usage
+The AWS Cost & Usage Report can track down to the instance-level where purchase options such as RIs and Savings Plans are being applied. It further amortizes associated fees and provides calculations to enable internal cost allocation and showbacks based on your organization’s internal reporting needs.
 Leverage strategic data integrations with AWS services
 Using the Amazon Athena data integration feature, you can quickly query your cost and usage information using standard SQL queries. You can also upload your data directly into Amazon Redshift or Amazon QuickSight.
 Getting Started
 How does the AWS Cost & Usage Report work?
-AWS delivers the AWS Cost & Usage Report (in CSV format) to whichever Amazon Simple Storage Service (S3) bucket you specify, and updates the reports at least once per day. You can download any of the reports using the Amazon S3 console, or you can retrieve the reports programmatically using the Amazon S3 APIs.
-You can configure your Cost & Usage Reports to integrate with Amazon Athena. Once Amazon Athena integration has been enabled for your Cost & Usage Report, your data will be delivered in compressed Apache Parquet files to an Amazon S3 bucket of your choice. Your AWS Cost & Usage Report can also be ingested directly into Amazon Redshift or uploaded to Amazon QuickSight.
-Get started with AWS Cost & Usage Report »
+AWS delivers the AWS Cost & Usage Report to whichever Amazon Simple Storage Service (S3) bucket you specify during setup, and updates the reports at least once per day. You can download the reports using the Amazon S3 console.
+You can also configure your Cost & Usage Reports to integrate with Amazon Athena. Once Amazon Athena integration has been enabled for your Cost & Usage Report, your data will be delivered in compressed Apache Parquet files to an Amazon S3 bucket of your choice. Your AWS Cost & Usage Report can also be integrated directly with Amazon Redshift or Amazon QuickSight.
+Get started with AWS Cost & Usage Report »
 Latest AWS Cost Management Blogs
 1
 …

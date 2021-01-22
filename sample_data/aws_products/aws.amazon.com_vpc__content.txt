@@ -1,30 +1,27 @@
 Amazon Virtual Private Cloud
-Provision a logically isolated section of the AWS cloud where you can launch AWS resources in a virtual network that you define
+Build on a logically isolated virtual network in the AWS cloud.
 Get started with Amazon VPC
-Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 in your VPC for secure and easy access to resources and applications.
-You can easily customize the network configuration of your Amazon VPC. For example, you can create a public-facing subnet for your web servers that have access to the internet. You can also place your backend systems, such as databases or application servers, in a private-facing subnet with no internet access. You can use multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
-VPC Fundamentals and Connectivity Options (50:50)
-Benefits
-Secure
-Amazon VPC provides advanced security features, such as security groups and network access control lists, to enable inbound and outbound filtering at the instance and subnet level. In addition, you can store data in Amazon S3 and restrict access so that it’s only accessible from instances inside your VPC. For additional security, you can create dedicated instances that are physically isolated from other AWS accounts, at the hardware level.
-Simple
-Create a VPC quickly and easily using the AWS Management Console. Select from common network setups and find the best match for your needs. Subnets, IP ranges, route tables, and security groups are automatically created. You spend less time setting up and managing, so you can concentrate on building the applications that run in your VPCs.
-Customizable
-Control your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. Customize the network configuration, such as by creating a public-facing subnet for your webservers that has access to the internet, and placing your backend systems such as databases or application servers in a private-facing subnet with no internet access.
+Amazon Virtual Private Cloud (Amazon VPC) is a service that lets you launch AWS resources in a logically isolated virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways. You can use both IPv4 and IPv6 for most resources in your virtual private cloud, helping to ensure secure and easy access to resources and applications.
+As one of AWS's foundational services, Amazon VPC makes it easy to customize your VPC's network configuration. You can create a public-facing subnet for your web servers that have access to the internet. It also lets you place your backend systems, such as databases or application servers, in a private-facing subnet with no internet access. Amazon VPC lets you to use multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+2019 AWS Summit video about AWS Networking fundamentals focused on VPC (40:08)
+Benefits of Using Amazon Virtual Private Cloud (Amazon VPC)
+Secure and monitored network connections
+Amazon VPC provides advanced security features that allow you to perform inbound and outbound filtering at the instance and subnet level. Additionally, you can store data in Amazon S3 and restrict access so that it’s only accessible from instances inside your VPC. Amazon VPC also has monitoring features that let you perform functions like out-of-band monitoring and inline traffic inspection, which help you screen and secure traffic.
+Simple set-up and use
+With Amazon VPC's simple set-up, you spend less time setting up, managing, and validating, so you can concentrate on building the applications that run in your VPCs. You can create a VPC easily using the AWS Management Console or Command Line Interface (CLI). Once you select from common network setups and find the best match for your needs, VPC automatically creates the subnets, IP ranges, route tables, and security groups you need. After configuring your network, you can easily validate it with Reachability Analyzer.
+Customizable virtual network
+Amazon VPC helps you control your virtual networking environment by letting you choose your own IP Address range, create your own subnets, and configure route tables to any available gateways. You can customize the network configuration by creating a public-facing subnet for your web servers that has access to the internet. Place your backend systems, such as databases or application servers, in a private-facing subnet. With Amazon VPC, you can ensure that your virtual private cloud is configured to fit your specific business needs.
 Use cases
 Host a simple, public-facing website
-Host a basic web application, such as a blog or simple website in a VPC, and gain the additional layers of privacy and security afforded by Amazon VPC. You can help secure the website by creating security group rules which allow the webserver to respond to inbound HTTP and SSL requests from the Internet while simultaneously prohibiting the webserver from initiating outbound connections to the Internet. You can create a VPC that supports this use case by selecting "VPC with a Single Public Subnet Only" from the Amazon VPC console wizard.
+Host a basic web application, such as a blog or simple website, in a VPC and gain the additional layers of privacy and security afforded by Amazon VPC. You can help secure the website by creating security group rules which allow the web server to respond to inbound HTTP and SSL requests from the internet while simultaneously prohibiting the web server from initiating outbound connections to the internet. Create a VPC that supports this use case by selecting "VPC with a Single Public Subnet Only" from the Amazon VPC console wizard.
 Host multi-tier web applications
-Host multi-tier web applications and strictly enforce access and security restrictions between your web servers, application servers, and databases. Launch web servers in a publicly accessible subnet while running your application servers and databases in private subnets, so that application servers and databases cannot be directly accessed from the internet. You control access between the servers and subnets using inbound and outbound packet filtering provided by network access control lists and security groups. To create a VPC that supports this use case, you can select "VPC with Public and Private Subnets" in the Amazon VPC console wizard.
-Disaster recovery
-By using Amazon VPC for disaster recovery, you can have all the benefits of a disaster recovery site at a fraction of the cost. You can periodically backup critical data from your datacenter to a small number of Amazon EC2 instances with Amazon Elastic Block Store (EBS) volumes, or import your virtual machine images to Amazon EC2. To ensure business continuity, you can quickly launch replacement compute capacity in AWS. When the disaster is over, you can send your mission critical data back to your datacenter and terminate the Amazon EC2 instances that you no longer need.
+Host multi-tier web applications and strictly enforce access and security restrictions between your web servers, application servers, and databases. Launch web servers in a publicly accessible subnet while running your application servers and databases in private subnets. This will ensure that application servers and databases cannot be directly accessed from the internet. You control access between the servers and subnets using inbound and outbound packet filtering provided by network access control lists and security groups. To create a VPC that supports this use case, you can select "VPC with Public and Private Subnets" in the Amazon VPC console wizard.
+Back up and recover your data after a disaster
+By using Amazon VPC for disaster recovery, you receive all the benefits of a disaster recovery site at a fraction of the cost. You can periodically back up critical data from your data center to a small number of Amazon EC2 instances with Amazon Elastic Block Store (EBS) volumes, or import your virtual machine images to Amazon EC2. To ensure business continuity, Amazon VPC allows you to quickly launch replacement compute capacity in AWS. When the disaster is over, you can send your mission critical data back to your data center and terminate the Amazon EC2 instances that you no longer need.
 Extend your corporate network into the cloud
-Move corporate applications to the cloud, launch additional web servers, or add more compute capacity to your network by connecting your VPC to your corporate network. Because your VPC can be hosted behind your corporate firewall, you can seamlessly move your IT resources into the cloud without changing how your users access these applications. You can select "VPC with a Private Subnet Only and Hardware VPN Access" from the Amazon VPC console wizard to create a VPC that supports this use case.
+Move corporate applications to the cloud, launch additional web servers, or add more compute capacity to your network by connecting your VPC to your corporate network. Because your VPC can be hosted behind your corporate firewall, you can seamlessly move your IT resources into the cloud without changing how your users access these applications. Furthermore, you can host your VPC subnets in AWS Outposts, a service that brings native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility. Select "VPC with a Private Subnet Only and Hardware VPN Access" from the Amazon VPC console wizard to create a VPC that supports this use case.
 Securely connect cloud applications to your datacenter
-An IPsec VPN connection between your Amazon VPC and your corporate network encrypts all communication between the application servers in the cloud and databases in your data center. Web servers and application servers in your VPC can leverage Amazon EC2 elasticity and Auto Scaling features to grow and shrink as needed. You can create a VPC to support this use case by selecting "VPC with Public and Private Subnets and Hardware VPN Access" in the Amazon VPC console wizard.
-Out-of-band and inline traffic inspection
-Amazon VPC traffic mirroring duplicates the traffic, along with full payload data, from elastic network interfaces (ENIs) of EC2 instances, and delivers it to out-of-band monitoring and security analysis tools.
-Amazon VPC ingress routing allows you to easily deploy network and security appliances, including third-party offerings, inline to the inbound or outbound Amazon VPC traffic. Inline traffic inspection helps you screen and secure traffic to protect your workloads from malicious actors.
+An IPsec VPN connection between your Amazon VPC and your corporate network encrypts all communication between the application servers in the cloud and databases in your data center. Web servers and application servers in your VPC can leverage Amazon EC2 elasticity and Auto Scaling features to grow and shrink as needed. Create a VPC to support this use case by selecting "VPC with Public and Private Subnets and Hardware VPN Access" in the Amazon VPC console wizard.
 Partners
 "The integration of the VM-Series Virtual Next-Generation Firewall with the new Amazon VPC Ingress Routing feature makes it much easier for customers to ensure that all ingress traffic to their VPC is filtered through our threat prevention services. By inserting a VM-Series virtual firewall as a bump-in-the-wire within their brownfield environments, customers can seamlessly protect inbound traffic from the internet and their data centers."
 - Mukesh Gupta, VP, Product Management, VM-Series
@@ -66,14 +63,11 @@ Get started with Amazon VPC
 You can automatically provision AWS resources in a ready-to-use default VPC. Configure this VPC by adding or removing subnets, attaching network gateways, changing the default route table, and modifying the network ACLs.
 Create additional VPCs from the Amazon VPC page on the AWS Management Console by selecting the "Start VPC Wizard" button. You will be presented with four basic network topologies. Select the one that most closely resembles the network topology that you’d like to create and click the "Create VPC" button. You can then customize the topology further to fit your needs more closely. Shortly after, you can start launching Amazon EC2 instances inside your VPC.
 Blog posts and articles
-Debugging tool for network connectivity from Amazon VPC
-by Bhavin Desai
-January 19, 2019
-Learn more »
-VPC sharing: A new approach to multiple accounts and VPC management
-by Evgeny Vaganov
-January 11, 2019
-Learn more »
+date
+date
+1
+…
+…
 Learn more about Amazon VPC
 Visit the product detail page
 Ready to build?

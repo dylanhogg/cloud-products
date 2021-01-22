@@ -3,10 +3,11 @@ Secure and resizable compute capacity to support virtually any workload
 Get started with Amazon EC2
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
 Amazon EC2 offers the broadest and deepest compute platform with choice of processor, storage, networking, operating system, and purchase model. We offer the fastest processors in the cloud and we are the only cloud with 400 Gbps ethernet networking. We have the most powerful GPU instances for machine learning training and graphics workloads, as well as the lowest cost-per-inference instances in the cloud. More SAP, HPC, Machine Learning, and Windows workloads run on AWS than any other cloud. Click here to learn What's New with Amazon EC2.
-Millions of customers ranging from enterprises to startups
-350+ instances for virtually every business need
+Nearly
+400 instances for virtually every business need
+Only cloud provider that supports macOS
 24 regions and
-76 availability zones globally
+77 availability zones globally
 Choice of Intel, AMD, and Arm-based processors
 Reliable, scalable, infrastructure on demand
 Increase or decrease capacity within minutes, not hours or days
@@ -34,7 +35,7 @@ Director of Performance and Operating Systems, Netflix
 Flexible options to optimize cost
 With On Demand, pay for only the compute you need. Gain up to 40% better price performance with AWS Graviton2-based instances or 10% lower costs with AMD-based instances.
 Amazon EC2 Spot can reduce costs up to 90% or accelerate performance for fault-tolerant workloads such as big data, containers, web services, and CI/CD.
-AWS Savings Plans offers savings of up to 72% on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region
+AWS Savings Plans offers savings of up to 72% on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region.
 Easy to migrate and build apps
 Get started quickly through AWS Migration Tools, AWS Managed Services, or Amazon Lightsail
 AWS Professional Services, AWS Support, and AWS Training and Certification help you along the way
