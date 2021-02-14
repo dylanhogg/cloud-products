@@ -14,6 +14,16 @@ AWS Step Functions manages state, checkpoints and restarts for you to make sure 
 Write less code
 AWS Step Functions manages the logic of your application for you, and implements basic primitives such as branching, parallel execution, and timeouts. This removes extra code that may be repeated in your microservices and functions.
 How it works
+Overview
+Error-Handing Pattern
+Branching & Human Interaction Patterns
+Chaining Pattern
+Saga Pattern
+Overview
+Error-Handing Pattern
+Branching & Human Interaction Patterns
+Chaining Pattern
+Saga Pattern
 Use cases
 Data processing
 Step Functions can help ensure that long-running, multiple ETL jobs execute in order and complete successfully, instead of manually orchestrating those jobs or maintaining a separate application. You can also use Step Functions to standardize a machine learning training workflow to improve the accuracy of machine learning models.

@@ -19,7 +19,7 @@ Automatic Model Tuning
 Hyperparameter optimization
 Built-in and Bring-your-own Algorithms
 Dozens of optimized algorithms or bring your own
-Distributed Training - NEW
+Distributed training libraries - NEW
 Training for large datasets and models
 Kubernetes & Kubeflow Integration
 Simplify Kubernetes-based machine learning

@@ -4,7 +4,9 @@ Get started with Amazon Polly
 Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk, and build entirely new categories of speech-enabled products. Polly's Text-to-Speech (TTS) service uses advanced deep learning technologies to synthesize natural sounding human speech. With dozens of lifelike voices across a broad set of languages, you can build speech-enabled applications that work in many different countries.  In addition to Standard TTS voices, Amazon Polly offers Neural Text-to-Speech (NTTS) voices that deliver advanced improvements in speech quality through a new machine learning approach. Polly’s Neural TTS technology also supports two speaking styles that allow you to better match the delivery style of the speaker to the application: a Newscaster reading style that is tailored to news narration use cases, and a Conversational speaking style that is ideal for two-way communication like telephony applications.  Finally, Amazon Polly Brand Voice can create a custom voice for your organization. This is a custom engagement where you will work with the Amazon Polly team to build an NTTS voice for the exclusive use of your organization. Learn more here.
 Listen to Amazon Polly’s Newscaster voice »
 Listen to Amazon Polly’s Conversational voice »
-Intro to Amazon Polly (2:08)
+5 million characters free
+per month for 12 months with the AWS Free Tier
+Create an Account to Get Started with Amazon Polly »
 Language
 Female
 Male

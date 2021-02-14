@@ -3,7 +3,9 @@ Automatically convert speech to text
 Get Started with Amazon Transcribe
 Amazon Transcribe makes it easy for developers to add speech to text capabilities to their applications. Audio data is virtually impossible for computers to search and analyze. Therefore, recorded speech needs to be converted to text before it can be used in applications. Historically, customers had to work with transcription providers that required them to sign expensive contracts and were hard to integrate into their technology stacks to accomplish this task. Many of these providers use outdated technology that does not adapt well to different scenarios, like low-fidelity phone audio common in contact centers, which results in poor accuracy.
 Amazon Transcribe uses a deep learning process called automatic speech recognition (ASR) to convert speech to text quickly and accurately. Amazon Transcribe can be used to transcribe customer service calls, automate subtitling, and generate metadata for media assets to create a fully searchable archive. You can use Amazon Transcribe Medical to add medical speech to text capabilities to clinical documentation applications.
-What is Amazon Transcribe? (1:43)
+60 minutes free
+per month for 12 months with the AWS Free Tier
+Create an Account to Get Started with Amazon Transcribe »
 Benefits
 Create easy-to-read transcriptions
 Amazon Transcribe automatically adds speaker diarization, punctuation and formatting so that the output closely matches the quality of manual transcription at a fraction of the time and expense. Speech to text processing can be applied to live audio streams or batch audio content for transcription. Learn more »

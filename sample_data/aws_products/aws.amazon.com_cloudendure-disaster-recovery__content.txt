@@ -2,7 +2,7 @@ CloudEndure Disaster Recovery
 Scalable, cost-effective business continuity for physical, virtual, and cloud servers
 Try it on AWS Marketplace
 Take free online technical training
-IT disasters such as data center failures, server corruptions, or cyber attacks can not only disrupt your business, but also cause data loss, impact your revenue, and damage your reputation. CloudEndure Disaster Recovery minimizes downtime and data loss by providing fast, reliable recovery of physical, virtual, and cloud-based servers into AWS.
+IT disasters such as data center failures, server corruptions, or cyber attacks can not only disrupt your business, but also cause data loss, impact your revenue, and damage your reputation. CloudEndure Disaster Recovery minimizes downtime and data loss by providing fast, reliable recovery of physical, virtual, and cloud-based servers into AWS Cloud, including public regions, AWS GovCloud (US), and AWS Outposts.
 You can use CloudEndure Disaster Recovery to protect your most critical databases, including Oracle, MySQL, and SQL Server, as well as enterprise applications such as SAP.
 CloudEndure Disaster Recovery continuously replicates your machines (including operating system, system state configuration, databases, applications, and files) into a low-cost staging area in your target AWS account and preferred Region. In the case of a disaster, you can instruct CloudEndure Disaster Recovery to automatically launch thousands of your machines in their fully provisioned state in minutes.
 By replicating your machines into a low-cost staging area while still being able to launch fully provisioned machines within minutes, CloudEndure Disaster Recovery can significantly reduce the cost of your disaster recovery infrastructure.
@@ -19,6 +19,8 @@ Decrease your total cost of ownership
 Traditional disaster recovery solutions require a costly set of duplicate IT resources, including hardware, compute, storage, networking, and software licenses. CloudEndure Disaster Recovery replicates your workloads into a low-cost staging area in your preferred AWS Region, which reduces compute costs by 95% and eliminates the need to pay for duplicate OS and third-party application licenses. You pay for fully provisioned workloads only in an actual disaster or drill.
 Accelerate your migration to the cloud
 Implementing disaster recovery on AWS can be an effective first step in your cloud journey. When you set up CloudEndure Disaster Recovery, your source machines are replicated to AWS, kept up-to-date with all application changes, and ready to run on your target AWS Region. When you decide to migrate and run your workloads full time on AWS, you can easily cutover operations using CloudEndure Migration. Whether or not you plan to set up disaster recovery on AWS, you can use CloudEndure Migration to migrate to AWS. If you choose to migrate to AWS, you can use CloudEndure Disaster Recovery to easily implement cross-region disaster recovery.
+Protect your data from ransomware attacks
+In the event of a ransomware attack, use CloudEndure Disaster Recovery to launch an unencrypted, uncorrupted version of your servers on your target AWS Region. CloudEndure Disaster Recovery provides point-in-time recovery, which enables failback to a recovery point from before the attack. This minimizes data loss and enables the quick return to normal operations. Learn more about ransomware recovery. Learn more about ransomware recovery.
 How it works
 Learn more »
 Use cases
@@ -26,6 +28,8 @@ On-Premises to Cloud Disaster Recovery
 Organizations with workloads on-premises can significantly reduce disaster recovery TCO by shifting their secondary data center to AWS. Cloud-based disaster recovery can provide better reliability, availability, and security than on-premises secondary data centers without requiring duplicate hardware, compute, networking, and software. CloudEndure Disaster Recovery enables customers to shift their secondary site to AWS without downtime or performance impact.
 Cross-Region Disaster Recovery
 Whether you have built your applications on AWS or migrated to AWS, you can protect your workloads with cross-region disaster recovery. This is a cost-effective way to achieve business continuity. CloudEndure Disaster Recovery enables geographic redundancy between AWS Regions or Availability Zones while still providing continuous replication with stringent RPOs and RTOs.
+On-Premises to On-Premises Disaster Recovery
+Customers with workloads on-premises can replicate and recover them directly into AWS Outposts or between Outposts devices. This provides customers with the benefits of AWS Cloud services, including lower latency, greater performance and security, and reduced costs, without the need to access the internet or public cloud. Recovery from on-premises to Outposts can also serve as a mid-point before moving to the public cloud.
 Cross-Cloud Disaster Recovery
 Customers running workloads on other clouds can increase resilience and meet compliance requirements by using AWS as their disaster recovery site. CloudEndure Disaster Recovery provides an easy solution for replicating and recovering workloads from other cloud providers to AWS. It automatically converts your source machines so that they boot and run natively on AWS.
 Related content

@@ -7,7 +7,7 @@ Benefits
 Integrate quickly
 Using either the Amazon SES console, APIs, or SMTP, you can configure email sending in minutes. Amazon SES also supports email receiving, enabling you to interact with your customers at scale. Regardless of use case or sending volume, you only pay for what you use with Amazon SES.
 Optimize your deliverability
-Use the reputation dashboard, which includes account performance insights and anti-spam feedback, to maximize your deliverability. You have flexible deployment options that range from shared, dedicated, and customer-owned IPs that helps you influence your sending reputation. Amazon SES has relationships with experts like M3AAG to improve delivery to your customers through industry best practices.
+Use the reputation dashboard, which includes account performance insights and anti-spam feedback, to maximize your deliverability. You have flexible deployment options that range from shared, dedicated, and customer-owned IPs that helps you influence your sending reputation. Amazon SES has relationships with experts like M3AAWG to improve delivery to your customers through industry best practices.
 Send messages efficiently
 Email sending statistics, including email deliveries, bounces, and feedback loop results, help you to measure the effectiveness of each email outreach. Additional insights like email open or click-through rates measure how engaged your customers are in your email communications.
 Scale securely

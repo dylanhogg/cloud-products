@@ -32,7 +32,7 @@ Zendesk’s Global Network: How we lowered operational overhead and cost by migr
 "Replacing our EC2 infrastructure with this managed service also helped reduce our overall AWS cross-Region network spend by close to 50%."
 -
 Vicente De Luca, Principal Engineer at Zendesk
-Read about how they did it »
+Learn how they did it »
 More technical blogs
 1
 …

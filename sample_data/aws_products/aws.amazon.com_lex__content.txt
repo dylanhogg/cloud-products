@@ -3,7 +3,9 @@ Conversational AI for Chatbots
 Get started with Amazon Lex
 Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”).
 With Amazon Lex, you can build bots to increase contact center productivity, automate simple tasks, and drive operational efficiencies across the enterprise. As a fully managed service, Amazon Lex scales automatically, so you don’t need to worry about managing infrastructure.
-Intro to Lex
+10,000 text requests & 5,000 speech requests free
+per month for 12 months with the AWS Free Tier
+Create an Account to Get Started with Amazon Lex »
 Benefits
 Easy to use
 Amazon Lex provides an easy-to-use console to guide you through the process of creating your own chatbot or conversational interface in minutes. Just supply a few example phrases and Amazon Lex builds a complete natural language model through which your user can interact using voice and text, to ask questions, get answers, and complete sophisticated tasks. Learn more »

@@ -14,9 +14,19 @@ Amazon EC2 Inf1 Instances Powered by AWS Inferentia
 Amazon EC2 Inf1 instances based on AWS Inferentia chips deliver up to 30% higher throughput and up to 45% lower cost per inference than Amazon EC2 G4 instances, which were already the lowest cost instance for machine learning inference available in the cloud. Inf1 instances feature up to 16 AWS Inferentia chips, latest custom 2nd generation Intel® Xeon® Scalable processors and up to 100 Gbps networking to enable high throughput inference. The easiest and quickest way to get started with Inf1 instances is via Amazon SageMaker, a fully managed service that enables developers to build, train, and deploy machine learning models quickly. Developers using containerized applications can also use Amazon Elastic Kubernetes Service (EKS) to deploy Inf1 instances.
 Learn more »
 AWS Neuron SDK
-AWS Neuron is a software development kit (SDK) for running machine learning inference using AWS Inferentia chips. It consists of a compiler, run-time, and profiling tools that enable developers to run high-performance and low latency inference using AWS Inferentia-based Inf1 instances. AWS Neuron enables flexibility for developers to train their machine learning models on any popular framework such as TensorFlow, PyTorch, and MXNet, and run it optimally on Amazon EC2 Inf1 instances. The AWS Neuron SDK comes pre-installed in AWS Deep Learning AMIs, and will also be available pre-installed in AWS Deep Learning Containers soon.
+AWS Neuron is a software development kit (SDK) for running machine learning inference using AWS Inferentia chips. It consists of a compiler, run-time, and profiling tools that enable developers to run high-performance and low latency inference using AWS Inferentia-based Inf1 instances. AWS Neuron enables flexibility for developers to train their machine learning models on any popular framework such as TensorFlow, PyTorch, and MXNet, and run it optimally on Amazon EC2 Inf1 instances. The AWS Neuron SDK comes pre-installed in AWS Deep Learning AMIs, as well as in AWS Deep Learning Containers.
 Learn More » or Get started »
 Blogs and Articles
+Majority of Alexa now running on faster, more cost-effective Amazon EC2 Inf1 instances
+by Sébastien Stormacq, 11/12/2020
+Achieving 1.85x higher performance for deep learning based object detection with AWS Neuron compiled YOLOv4 model on AWS Inferentia
+by Fabio Nonato de Paula, Haichen Li, and Samuel Jacob, 10/06/2020
+AWS Inferentia is now available in 11 AWS Regions, with best-in-class performance for running object detection models at scale
+by Gadi Hutt, 09/28/2020
+Amazon ECS Now Supports EC2 Inf1 Instances
+by Julien Simon, 08/14/2020
+Deploying TensorFlow OpenPose on AWS Inferentia-based Inf1 instances for significant price performance improvements
+By Fabio Nonato De Paula and Haichen Li, 07/22/2020
 Amazon EKS now supports EC2 Inf1 instances
 Julien Simon, June 15, 2020
 Amazon EC2 Inf1 instances now support Amazon SageMaker Patrick Moorhead, May 13, 2020
@@ -33,8 +43,6 @@ Learn how to deploy to Inf1 using Amazon SageMaker with Amazon SageMaker example
 Getting started with AWS Neuron
 AWS Neuron Feature Roadmap
 Use AWS Neuron from within TensorFlow, PyTorch, or MXNet
-Install AWS Neuron in your own AMI
-AWS Neuron Tutorials
 Get support on the AWS Neuron developer forum
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

@@ -33,8 +33,8 @@ Industrial automation
 You can use Amazon Kinesis Video Streams to collect a variety of time-encoded data such as RADAR and LIDAR signals, temperature profiles, and depth data from industrial equipment. You can then analyze the data using your favorite machine learning framework including Apache MxNet, TensorFlow, and OpenCV for industrial automation use cases like predictive maintenance. For example, you can predict the lifetime of a gasket or valve and schedule part replacement in advance, reducing downtime and defects in a manufacturing line.
 Example: Equipment preventive maintenance
 Case studies
-Abode improves service quality and reliability by using Kinesis Video Streams.
 Wyze Scales to Support Millions of Connected-Home Devices with Kinesis Video Streams.
+Abode improves service quality and reliability by using Kinesis Video Streams.
 Ecomott shortens time-to-market of a new streaming service with Kinesis Video Streams.
 ABEJA employs real-time video analytics in retail, manufacturing, and healthcare.
 Neosperience Cloud enables frame by frame analysis of live video streams using Kinesis Video Streams and Amazon SageMaker.
@@ -54,6 +54,7 @@ Use facial recognition to deliver high-end consumer experience with Amazon Kines
 by Nick Corbett
 Amazon Kinesis Video Streams – Serverless Video Ingestion and Storage for Vision-Enabled Apps
 by Jeff Barr
+Read more blogs
 Get started with Amazon Kinesis Video Streams
 Read the getting started guide
 Learn how to use Kinesis Video Streams in this step-by-step guide.

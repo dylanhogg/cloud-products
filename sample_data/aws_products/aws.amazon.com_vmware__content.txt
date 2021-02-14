@@ -1,5 +1,5 @@
 VMware Cloud on AWS
-Innovate faster, rapidly transition to the cloud, and work securely from any location with the full range of 175+ AWS services
+Innovate faster, rapidly transition to the cloud, and work securely from any location with the full range of 200+ AWS services
 AWS is VMware's preferred public cloud partner for all vSphere-based workloads. The VMware and AWS partnership delivers a faster, easier, and cost-effective path to the hybrid cloud while allowing customers to modernize applications enabling faster time-to-market and increased innovation. Use your current skills, processes, and governance to deliver secure virtual apps and desktops with our Virtual Desktop Infrastructure (VDI) solutions to enable employees to work securely from any location. New Amazon EC2 i3en.metal instances for VMware Cloud™ on AWS, powered by Intel® Xeon® Scalable processors, deliver high networking throughput and lower latency so you can migrate data centers to the cloud for rapid data center evacuation, disaster recovery, and application modernization.
 With over 4 years of joint engineering, VMware and AWS provide organizations with enhanced VMware functionalities integrated in the solution and a single point of contact for support and service integration. This is why VMware Cloud on AWS is our preferred service for all vSphere workloads.
 Now available, Amazon EC2 i3en.metal Instances for VMware Cloud™ on AWS, powered by Intel® Xeon® Scalable processors, deliver high networking throughput and lower latency. You can read more here <link will be live on July 15: https://cloud.vmware.com/community/2020/07/15/2-host-i3en-instance > and view the recent interview by theCUBE <live on July 15: https://youtu.be/NPM9yTmjrh4> to learn how these instances optimize data-intensive workloads requiring high random I/O access such as relational databases and workloads that require end to end security.
@@ -22,25 +22,22 @@ Modernize Your SQL Server Environment with VMware Cloud on AWS
 View On-Demand »
 Automate Desktop Management and Streamline Access
 View On-Demand »
-Videos On-Demand
-Enabling Business Continuity with VMware Cloud™ on AWS
-View On-Demand »
-Customer Cloud Stories: Leveraging VMware Cloud™ on AWS for Agility & Speed
-View On-Demand »
-VMware Cloud™ on AWS Architectural Best Practices
-View On-Demand »
-Modernize Critical Data Storage Using Native AWS Storage Services
-View On-Demand »
-Manage Your Data on vSphere with Amazon Relational Database Services
-View On-Demand »
 The Power of VMware and AWS
 VMware Cloud on AWS brings VMware’s enterprise-class Software-Defined Data Center software to the AWS Cloud, and enables customers to run production applications across VMware vSphere®-based private, public, and hybrid cloud environments, with optimized access to AWS services.
+VMware Cloud on AWS was awarded CRN's 2020 Products of The Year for Hybrid Cloud - Customer Demand sub category.
 View Brief »
-What Does the AWS and VMware Partnership Mean for You?
 Benefits
-According to a 2021 IDC business value study, VMware Cloud on AWS customers saw an average of 46% faster migration, 43% reduction in total cost of operations, and can expect a 479% ROI over 5 years. Learn more about the business value of VMware Cloud on AWS.
+Customer benefits were reported in the 2021 IDC Report, The Business Value of VMware Cloud on AWS for Supporting Business-Critical Applications. Learn more about the business value of VMware Cloud on AWS.
+46%
+faster migration
+43%
+reduction in total cost of operation
+479%
+5 year ROI
+$9.6M
+total new revenue gained per year
 Increased innovation
-VMware workloads running on AWS have access to a broad and rich set of over 175+ AWS services including compute, database, analytics, IoT, AI/ML, security, and more. Latency-sensitive applications hosted in VMware can directly access databases on Aurora, Dynamo, or Redshift for petabyte-scale data analysis, as well as direct and secure access to low-cost S3 buckets, objects, and API functions.
+VMware workloads running on AWS have access to a broad and rich set of over 200+ AWS services including compute, database, analytics, IoT, AI/ML, security, and more. Latency-sensitive applications hosted in VMware can directly access databases on Aurora, Dynamo, or Redshift for petabyte-scale data analysis, as well as direct and secure access to low-cost S3 buckets, objects, and API functions.
 Simplified operations
 Organizations can simplify their Hybrid IT operations by using the same VMware Cloud Foundation technologies including vSphere, vSAN, NSX, and vCenter Server across both their on-premises data center environments and the AWS Cloud. You can keep the same VMware provisioning, storage, and lifecycle policies you use today. This means you can easily move applications between their on-premises environments and AWS without having to purchase any new hardware, rewrite applications, or modify your operations.
 Reduced costs

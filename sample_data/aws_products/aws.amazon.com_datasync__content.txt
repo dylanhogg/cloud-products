@@ -1,5 +1,5 @@
 AWS DataSync
-Simplify, automate, and accelerate moving data to and from AWS Storage
+Simplify, automate, and accelerate moving data to and from AWS Storage, as well as between AWS Storage services
 Get started with AWS DataSync
 AWS DataSync is an online data transfer service that simplifies, automates, and accelerates moving data between on-premises storage systems and AWS Storage services, as well as between AWS Storage services. You can use DataSync to migrate active datasets to AWS, archive data to free up on-premises storage capacity, replicate data to AWS for business continuity, or transfer data to the cloud for analysis and processing.
 Writing, maintaining, monitoring, and troubleshooting scripts to move large amounts of data can burden your IT operations and slow migration projects. DataSync eliminates or automatically handles this work for you. DataSync provides built-in security capabilities such as encryption of data in-transit, and data integrity verification in-transit and at-rest. It optimizes use of network bandwidth, and automatically recovers from network connectivity failures. In addition, DataSync provides control and monitoring capabilities such as data transfer scheduling and granular visibility into the transfer process through Amazon CloudWatch metrics, logs, and events.
@@ -15,7 +15,8 @@ DataSync enables you to transfer data rapidly over the network into AWS. It uses
 Reduce operational costs
 You can move data cost-effectively with DataSync’s flat, per-gigabyte pricing. You’ll save on script development, deployment and maintenance costs, and avoid the need for costly commercial transfer tools.
 How it works
-AWS DataSync Demo - Easily Transfer Data to and From AWS Up to 10x Faster (5:30)
+Transfer data between on premises and AWS with AWS DataSync
+Transfer data between AWS Storage services with AWS DataSync
 Use cases
 Data migration
 If you are closing data centers or retiring storage arrays, you can use DataSync to move active datasets rapidly over the network into Amazon S3, Amazon EFS, or Amazon FSx for Windows File Server. Use DataSync to make an initial copy of your entire dataset, and to schedule subsequent incremental transfers of changing data until the final cut-over to AWS. DataSync preserves metadata between storage systems that have similar metadata structures, enabling a smooth transition of end users and applications to your target AWS Storage service.

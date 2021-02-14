@@ -10,7 +10,6 @@ Amazon EFS is well suited to support a broad spectrum of use cases from home dir
 Amazon EFS is a regional service storing data within and across multiple Availability Zones (AZs) for high availability and durability. Amazon EC2 instances can access your file system across AZs, regions, and VPCs, while on-premises servers can access using AWS Direct Connect or AWS VPN.
 *pricing in US East (N. Virginia) region, assumes 80% of your storage in EFS IA
 Amazon EFS overview (2:13)
-View Infographic
 What is Cloud File Storage?
 Learn more about cloud file storage and how it compares to other cloud storage solutions.
 When to Choose Amazon EFS

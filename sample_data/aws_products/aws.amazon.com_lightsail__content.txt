@@ -1,8 +1,8 @@
 Amazon Lightsail
-Virtual servers, storage, databases, and networking for a low, predictable price.
+Virtual private server for a low, predictable price
 Get started with Lightsail for free
 Plans starting at $3.50 per month
-Lightsail is an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. Whether you’re new to the cloud or looking to get on the cloud quickly with AWS infrastructure you trust, we’ve got you covered.
+Lightsail is an easy-to-use virtual private server (VPS) that offers you everything needed to build an application or website, plus a cost-effective, monthly plan. Whether you’re new to the cloud or looking to get on the cloud quickly with AWS infrastructure you trust, we’ve got you covered.
 Learn more about Lightsail pricing >>
 Use Amazon Lightsail for…
 Lightsail is ideal for simpler workloads, quick deployments, and getting started on AWS. It’s designed to help you start small, and then scale as you grow.

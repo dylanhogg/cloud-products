@@ -56,7 +56,6 @@ date
 …
 Case studies
 Learn how Adobe uses EBS for their enterprise products.
-Learn how BazaarVoice uses larger and faster EBS volumes.
 Learn how Infor saved 75% on their monthly backup costs.
 Learn how Unilever uses Amazon EBS Snapshot copy to move snapshots between regions.
 Blog posts & articles

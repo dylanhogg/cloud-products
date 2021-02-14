@@ -9,13 +9,13 @@ Learn more about taking the lake house approach by integrating with your Amazon 
 - Elliott Cordo
 VP of Data Analytics, Equinox Fitness
 3X
-BETTER PRICE PERFORMANCE THAN OTHER CLOUD DATA WAREHOUSES
+FASTER THAN OTHER CLOUD DATA WAREHOUSES
 Performance at any scale
 Redshift delivers fast query performance on gigabytes to petabytes of data, and from a few users to thousands. And you get consistently fast results as your workload grows over time.
 Use RA3 instances with managed storage to get up to 3x better price performance than other cloud data warehouses.
 Learn more about the performance benchmarks »
-Preview the next generation of Redshift with AQUA (Advanced Query Accelerator)
-AQUA is a new distributed and hardware accelerated cache that allows Redshift queries to run up to 10x faster than other cloud data warehouses.
+Experience the next generation of Redshift with AQUA (Advanced Query Accelerator)
+AQUA is a new distributed and hardware accelerated cache that allows Redshift queries to run up to 10x faster than other cloud data warehouses by automatically boosting certain types of queries.
 Learn more about AQUA »
 Join tens of thousands of Amazon Redshift customers
 Redshift powers analytical workloads for Fortune 500 companies, startups, and everything in between. Learn more about Redshift customers »
@@ -24,11 +24,11 @@ of customers use Amazon Redshift
 "Because of the performance and scale Redshift provides, we have increased our manufacturing efficiency and reduced the time needed to gather and prepare data for regulatory submissions by a factor of five."
 - Jim Silva
 Director Business Partner, Pfizer Inc.
-Half the cost
-OF OTHER CLOUD DATA WAREHOUSES
+50%
+LESS EXPENSIVE THAN OTHER CLOUD DATA WAREHOUSES
 Lower your costs with Amazon Redshift
-Start small at $0.25 per hour, pay only for what you use, and know how much you'll spend with predictable monthly costs. Amazon Redshift is half the cost of other cloud data warehouses.
-Scale and pay for storage and compute separately and get the optimal amount of storage and compute for diverse workloads. Choose the size of your Redshift cluster based on your performance requirements. Redshift managed storage automatically scales your data warehouse storage capacity without you having to add and pay for additional compute instances.
+Start small at $0.25 per hour and scale up to petabytes for under $1000 per terabyte per year. Pay only for what you use and know how much you'll spend with predictable monthly costs. Amazon Redshift is at least 50% less expensive than all other cloud data warehouses.
+Scale and pay for storage and compute separately and get the optimal amount of storage and compute for diverse workloads. Choose the size of your Redshift cluster based on your performance requirements, and only pay for the storage that you use. The new managed storage automatically scales your data warehouse storage capacity without you having to add and pay for additional compute instances.
 Migrate your on-premises data warehouse to Amazon Redshift
 Learn more about modernizing your data warehouse.
 Jack in the Box migrated off of Oracle and Microsoft SQL Server to Amazon Relational Database Service (RDS) and Amazon Redshift

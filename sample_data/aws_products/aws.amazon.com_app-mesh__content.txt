@@ -10,9 +10,9 @@ Get end-to-end visibility
 App Mesh captures metrics, logs, and traces from all of your applications. You can combine and export this data to Amazon CloudWatch, AWS X-Ray, and compatible AWS partner and community tools for monitoring and tracing. This lets you quickly identify and isolate issues with any service to optimize your entire application.
 Streamline your operations
 App Mesh provides controls to configure and standardize how traffic flows between your services. You can easily implement custom traffic routing rules so that your service is highly available during deployments, after failures, and as your application scales. This removes the need to configure communication protocols for each service, write custom code, or implement libraries to operate your application.
-Enhance network security (preview)
+Enhance network security
 App Mesh helps encrypt all requests between services even when they are in your private networks. Further, you can add authentication controls to ensure that only services that you allow interconnect.
-How it works (mTLS preview)
+How it works
 Blog posts
 date
 date
