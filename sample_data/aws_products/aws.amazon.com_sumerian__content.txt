@@ -42,7 +42,6 @@ WeatherBug
 AR visualization of Air Quality Index (AQI)
 Fidelity Labs
 Hosted VR experience with data visualization
-Read the case study »
 Customers
 Check out the product features
 Learn more about features of Amazon Sumerian.

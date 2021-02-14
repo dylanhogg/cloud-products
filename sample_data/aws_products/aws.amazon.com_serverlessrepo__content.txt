@@ -76,14 +76,10 @@ A starter AWS Lambda function
 Published by: AWS
 Greengrass Hello World - Node.js
 Deploy this Lambda function to a Greengrass core where it will send a hello world message to a topic
-Published by: AWS
 Simple Mobile Backend
 A simple mobile backend (read/write to DynamoDB)
-Published by: AWS
 Lambda Test Harness
 Provides a simple framework for conducting various tests of your Lambda functions
-Published by: AWS
-Browse all applications
 Want to see your applications in the AWS Serverless Application Repository?
 Learn how to publish an app
 Have more questions?

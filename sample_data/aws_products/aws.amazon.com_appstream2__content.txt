@@ -43,9 +43,7 @@ Siemens' NX is a powerful CAD software application that helps design and manufac
 Blog posts
 Visit our desktop and application streaming blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
 date
-date
 1
-…
 …
 Next steps
 Try sample applications
@@ -57,6 +55,5 @@ Deploy your apps into production and visit our resources page for tips and trick
 Learn more about Amazon AppStream 2.0
 Visit the features page
 Ready to start?
-Get started with Amazon AppStream 2.0
 Have more questions?
 Contact us

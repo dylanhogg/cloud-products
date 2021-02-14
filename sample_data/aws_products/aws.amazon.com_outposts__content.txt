@@ -11,7 +11,6 @@ AWS Outposts Use Cases (0:59)
 Outposts provides a truly consistent hybrid cloud experience
 Common Use Cases
 Industry Examples
-Common Use Cases
 Low-latency compute
 Interactive applications, like real-time, multi-player games require low latency to deliver a high-quality gaming experience wherever players may be located in the world. Business applications, such as manufacturing execution systems (MES), high-frequency trading, and medical diagnostics also require single-digit millisecond latencies to operate effectively. When the nearest public cloud servers are not close enough to meet application latency requirements, Outposts can help you run applications where you need them to be located.
 Local data processing
@@ -20,7 +19,6 @@ Data residency
 Sometimes, data needs to remain in a particular country, state, or municipality for regulatory, contractual, or information security reasons – as is often the case with financial services, healthcare, oil & gas, and other highly-regulated industries. With Outposts, you can control where your workloads run and where your data resides, while using local operational tooling, for things like monitoring and stability. It also allows low-friction movement of workloads between public cloud and the edge, and vice versa, so you can easily adapt to any regulatory changes.
 Migration & Modernization
 When trying to migrate to the cloud and modernize your stack, some workloads can be challenging – often times, there is a long tail of legacy, on-premises applications that are difficult to move from on-premises to the cloud due to latency-sensitive system interdependencies between the various components of the application. As dependencies arise, segmenting these migrations into smaller pieces requires latency sensitive connectivity between various parts of the application. Outposts eases and accelerates the migration journey by allowing you to modernize applications latency-sensitive interdependencies on premises, and then easily migrate the application to the cloud when ready.
-Industry Examples
 Manufacturing automation
 Use AWS services to run manufacturing process control systems such as MES and SCADA systems and applications that need to run close to factory floor equipment. Seamlessly integrate these on-premises applications with services running in the AWS Region for centralized operations.
 Healthcare
@@ -68,7 +66,6 @@ Walton Smith, Director, WWT
 Read case study »
 Contact us
 Learn more about AWS Outposts by contacting us directly
-Contact us
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

@@ -24,10 +24,8 @@ You can deploy EMR on Amazon EC2 and take advantage of On-Demand, Reserved, and 
 Learn more »
 Amazon EMR on Amazon EKS
 You can run big data jobs on demand on Amazon Elastic Kubernetes Service (EKS), without needing to provision EMR clusters, to improve resource utilization and simplify infrastructure management. Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. With Amazon EMR on EKS, you can share compute and memory resources across all of your applications and use a single set of Kubernetes tools to centrally monitor and manage your infrastructure.
-Learn more »
 Amazon EMR on AWS Outposts
 Amazon EMR is available on AWS Outposts, allowing you to set up, deploy, manage, and scale EMR in your on-premises environments, just as you would in the cloud. AWS Outposts brings AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
-Learn more »
 Use cases
 Machine learning
 Use EMR's built-in machine learning tools, including Apache Spark MLlib, TensorFlow, and Apache MXNet for scalable machine learning algorithms, and use custom AMIs and bootstrap actions to easily add your preferred libraries and tools to create your own predictive analytics toolset.
@@ -50,9 +48,7 @@ More…
 Read more
 What's New
 date
-date
 1
-…
 …
 Get started with AWS
 Read the migration guide

@@ -18,13 +18,9 @@ Case studies
 Wiley is using AWS to give developers self-service capabilities, launch new applications in minutes instead of weeks, and enable the creation of new digital publishing platforms.
 Read case study >>
 “Using reliable, HIPAA-compliant services deployed from AWS Service Catalog, we can accelerate our time to market while continuing to lead conversations around security.”
-Read case study >>
 Cloudticity runs its Oxygen managed services platform on AWS and uses AWS Service Catalog to create and manage catalogs of IT services.
-Read case study >>
 TechnipFMC enhances security, provisions IT services quickly, and creates a repeatable foundation for future application migrations using the AWS Service Catalog.
-Read case study >>
 Blog posts & articles
-Date
 Date
 More…
 Additional AWS Service Catalog blog posts are available in the
@@ -41,6 +37,5 @@ Sign in
 Learn more about AWS Service Catalog
 Visit the features page
 Ready to build?
-Get started with AWS Service Catalog
 Have more questions?
 Contact us

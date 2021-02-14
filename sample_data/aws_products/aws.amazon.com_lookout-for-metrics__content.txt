@@ -46,4 +46,3 @@ Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
 Sign up for the preview of Amazon Lookout for Metrics
-Sign up for the preview

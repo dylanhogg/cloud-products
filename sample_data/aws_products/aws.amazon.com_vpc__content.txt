@@ -59,18 +59,14 @@ Partners
 - Andy Ory, CEO, 128 Technology
 "In today’s world of highly mobile workforce and globally distributed business environments Forcepoint’s cloud-enabled NGFW provides secure and unobstructed access to critical data and intellectual property everywhere while reducing risk of zero-day attacks and other emerging threats on an organization’s hybrid IT stack. The addition of the Amazon VPC ingress routing capability allows Forcepoint NGFW customers to enjoy more versatility in their network security segmentation as well as to take optimal advantage of its security features, similarly to the way we use it inside Forcepoint’s Security Platform to deliver Dynamic Edge Protection services."
 - Nicolas Fischbach, Global CTO, Forcepoint
-Get started with Amazon VPC
 You can automatically provision AWS resources in a ready-to-use default VPC. Configure this VPC by adding or removing subnets, attaching network gateways, changing the default route table, and modifying the network ACLs.
 Create additional VPCs from the Amazon VPC page on the AWS Management Console by selecting the "Start VPC Wizard" button. You will be presented with four basic network topologies. Select the one that most closely resembles the network topology that you’d like to create and click the "Create VPC" button. You can then customize the topology further to fit your needs more closely. Shortly after, you can start launching Amazon EC2 instances inside your VPC.
 Blog posts and articles
 date
-date
 1
-…
 …
 Learn more about Amazon VPC
 Visit the product detail page
 Ready to build?
-Get started with Amazon VPC
 Have more questions?
 Contact us

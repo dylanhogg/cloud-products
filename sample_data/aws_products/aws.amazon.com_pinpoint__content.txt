@@ -25,16 +25,13 @@ Customers
 Snaq.me used Amazon Pinpoint for customer outreach through push and resulted in increased sales revenue.
 Learn more
 Gametime used Amazon Pinpoint to increase campaign capacity and customer conversions.
-Learn more
 Coinbase used Amazon Pinpoint to scale push notifications and decrease time to market.
-Learn more
 Top blog posts
 Template personalization using Amazon Pinpoint
 April 23, 2020
 Learn more »
 Using Amazon Pinpoint to send SMS messages in Amazon Connect
 May 15, 2019
-Learn more »
 Create an SMS chatbot with Amazon Pinpoint and Lex
 Sept 3, 2019
 Learn more »

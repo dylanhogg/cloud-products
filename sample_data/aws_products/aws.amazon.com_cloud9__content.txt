@@ -27,6 +27,5 @@ AWS re:Invent 2017 - Introducing AWS Cloud9: Werner Vogels Keynote
 Learn more about AWS Cloud9 features
 Visit the details page
 Ready to build?
-Get started with AWS Cloud9
 Have more questions?
 Contact us

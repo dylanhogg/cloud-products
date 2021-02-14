@@ -18,16 +18,13 @@ Lumen offers Amazon Chime as part of their Unified Communications and Collaborat
 T2M Works is a market leading Unified Communications and Collaboration company focused on providing the right business outcomes for customers. Helping clients get the most out of Amazon Chime, Amazon Voice Connector, and Amazon Connect is what separates T2M from all other telecom partners. T2M Works develops business communications solutions using the Chime SDK and advanced AWS services like Lex, Lambda, and Kinesis. As an Amazon Managed Service Provider, T2M Works does the heavy lifting to help you maximize the return on your AWS investment.
 Blog posts & articles
 date
-date
 1
-…
 …
 Sign up for free
 Use all Amazon Chime Pro features for your organization.
 Sign up
 Attend a meeting or download clients
 Join a meeting or sign up for Amazon Chime Basic for 1:1 meetings and chat.
-Attend a meeting or download clients
 Contact Sales
 Fill and submit a contact us form to request sales support.
 Contact us

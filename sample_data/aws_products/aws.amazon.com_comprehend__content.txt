@@ -59,6 +59,5 @@ AWS project.
 Learn more about Amazon Comprehend
 Visit the features page
 Ready to build?
-Get started with Amazon Comprehend
 Have more questions?
 Contact us

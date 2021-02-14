@@ -46,11 +46,8 @@ December 2020
 Harunobu Kameda
 Read blog
 Easily configure Amazon DevOps Guru across multiple accounts and Regions using AWS CloudFormation StackSets
-December 2020
 Nikunj Vaidya & Nuatu Tseggai
-Read blog
 AWS re:Invent 2020: Improve application availability w ML-powered insights using Amazon DevOps Guru
-December 2020
 Jacob Sullivan
 Watch the webinar
 Amazon DevOps Guru is powered by pre-trained ML models that encode operational excellence

@@ -31,8 +31,6 @@ Amazon Monitron secures the sensors and gateways, and the communication between 
 Increase accuracy with continuous improvement
 To increase the accuracy of the system, technicians can enter feedback on the alerts in the mobile app, and Amazon Monitron learns from that feedback to continually improve over time.
 Technical specs
-Amazon Monitron Sensors
-Amazon Monitron Gateway
 Dimensions
 52.8 x 43.0 x 24.9 mm / 2.08 x 1.69 x 0.98 inch
 Weight
@@ -43,17 +41,10 @@ Connectivity
 Wireless protocol: Bluetooth Low Energy 5
 Power
 Lithium Metal Non-Rechargeable Batteries. Estimated 3 year battery life
-Dimensions
 90 x 78 x 38 mm / 3.6 x 3.1 x 1.5 inch
-Weight
 95 grams
-IP Rating
-IP65
-Connectivity
 WiFi, 802.11b/g/n, ISM 2.4GHz only
-Power
 Power 5.0V - 2.0A DC, AC adapter included for USA, UK and EU countries (indoors only)
-Learn more »
 Learn more »
 Amazon Monitron can monitor and detect potential failures in a broad range of rotating equipment.
 Motors

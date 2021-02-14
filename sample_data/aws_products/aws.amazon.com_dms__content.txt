@@ -37,11 +37,8 @@ Featured Partners
 Apps Associate is an APN Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives.
 Contact »
 Onica is an APN Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements.
-Contact »
 We do Oracle on AWS...That’s it! Applications, technique stacks, databases, and migrations to Amazon Aurora.
-Contact »
 DB Best Technologies specializes in providing modernization and data management solutions and developing cross-platform database tools.
-Contact »
 View All AWS Database Migration Service Partners »
 Blog posts & articles
 Migrate Apache Cassandra databases to Amazon DynamoDB more easily

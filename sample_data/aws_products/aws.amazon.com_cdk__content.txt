@@ -25,7 +25,6 @@ Stedi has an ambitious goal: help businesses save countless hours of menial task
 Tyler van Hensbergen, Engineering - Stedi
 Learn More >>
 CyberArk is a global leader in privileged access management, a critical layer of IT security to protect data, infrastructure, and assets across the enterprise, in the cloud, and throughout the DevOps pipeline. CyberArk delivers solutions to reduce the risk created by privileged credentials and secrets. The company is trusted by the world’s leading organizations, including more than 50 percent of the Fortune 500, to protect against external attackers and malicious insiders.
-Learn More >>
 Check out the product features
 Learn more about AWS CDK's features.
 Learn more
@@ -34,4 +33,3 @@ Instantly get access to the AWS Free Tier.
 Sign up
 Documentation
 Learn more about AWS CDK with the Developer Guide.
-Learn more

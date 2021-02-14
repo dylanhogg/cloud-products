@@ -26,32 +26,24 @@ Caching
 Session store
 Machine Learning (AI/ML)
 Real-time analytics
-Caching
 Amazon ElastiCache can be used as a highly available in-memory cache to decrease access latency, increase throughput and ease the load off your relational or NoSQL database, with sub-millisecond response times for either Redis or Memcached engines. Additionally, ElastiCache for Redis can deliver query results caching, persistent session caching, and full-page caching.
 Learn how to build a caching application with ElastiCache for Redis »
-Session store
 Amazon ElastiCache can be used as a session store to manage session information for both Redis and Memcached. This session management is commonly required for online applications, including games, e-commerce websites and social media platforms.
 Learn how to use ElastiCache for Redis as a session store »
-Machine Learning (AI/ML)
 Amazon ElastiCache for Redis gives you a fast in-memory data store to help you build and deploy machine learning models quickly. Use ElastiCache for Redis in use cases such as fraud detection in gaming and financial services, real-time bidding in Ad tech, and matchmaking in dating and ride sharing to process live data and make decisions within tens of milliseconds.
 Learn how Coffee Meets Bagel uses ElastiCache for real-time machine learning-based recommendations »
-Real-time analytics
 Use Amazon ElastiCache for Redis with streaming solutions such as Apache Kafka and Amazon Kinesis as an in-memory data store to ingest, process, and analyze real-time data with sub-millisecond latency. ElastiCache can be used for real-time analytics uses cases such as social media, ad targeting, personalization, IoT and time-series data analytics.
 Learn how you can design an IoT solution that captures sensor information and persists in Amazon ElastiCache for Redis »
 Customers
 Learn how The Pokémon Company moved user caching to Amazon ElastiCache, taking advantage of both Redis and Memcached. Redis queues tasks for new users, so they can be prompted to complete post-authentication tasks such as accepting terms and conditions. Memcached helps keep tickets live so that existing users’ sessions are not interrupted when new users join.
 Learn more »
 In-home fitness company Peloton relies on Amazon ElastiCache for Redis to power its on-demand, live leaderboard. Peloton’s leaderboard requires high elasticity, low latency, and real-time processing to deliver customizable rider data for the community of users riding together virtually from the comfort of their home.
-Learn more »
 "Managed services like ElastiCache let us focus on the core of our business. Our operations team consists of only two full time engineers. Running a site like Airbnb with such a small team would be impossible without services like ElastiCache. Spinning up and maintaining nodes in our cluster is fast and easy."
 Tobi Knaup, Technical Lead – Airbnb
 Watch Airbnb's journey from self-managed Redis to ElastiCache for Redis »
 "ElastiCache for Redis online resharding will allow us to easily scale our Redis clusters horizontally as we grow, greatly simplifying the management of our many Redis clusters, empowering us to scale quickly while also reducing cost across our caching layers, and continue to grow with minimal changes to our current services”.
 Max Blaze, Staff Operations Engineer - Duolingo
-Learn more »
 MLBAM uses Amazon ElastiCache to temporarily store game information in memory caches instead of on hard drives, which enables fast retrieval of the data for analysis tasks.
-Learn more »
-Get started with Amazon ElastiCache
 Sign up
 Get access to the
 Amazon ElastiCache Free Tier.
@@ -62,14 +54,11 @@ Start building
 Begin building with help from the
 user guide.
 More ElastiCache resources
-Amazon ElastiCache for Redis
-Amazon ElastiCache for Memcached
 Amazon ElastiCache FAQs
 Amazon ElastiCache Maintenance
 Amazon ElastiCache Resources
 Amazon ElastiCache Blog
 Take the free Introduction to Amazon ElastiCache course
 Ready to build?
-Get started with Amazon ElastiCache
 Have more questions?
 Contact us

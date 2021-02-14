@@ -66,7 +66,6 @@ Enhance genre based recommendations
 Add individualized recommendations to genre based on content carousels and lists.
 Learn how Pulselive use Amazon Personalize to increase video views by 20%, highlight new content offerings, and build subscriber base.
 "We were thrilled by our first foray into the world of ML with Amazon Personalize. We found the entire process of integrating a trained model into our workflow was incredibly simple"
-Read blog»
 "With Amazon Personalize, we were able to deliver the best possible contests recommendations based on user's playing history and also used it to upsell and cross other similar contests. This feature helped us
 improve the average number of contest joins per user by 12% and also improved the average transaction value of gameplay by 8%.”
 Learn more about Amazon Personalize customer success >>
@@ -77,7 +76,6 @@ Read blog »
 Selecting the right metadata to build high-performing recommendation models with Amazon Personalize
 September, 2020
 Andrew Hood and Ion Kleopas
-Read blog »
 Amazon Personalize Github samples
 Notebooks and examples on how to onboard and use various features of Amazon Personalize
 Go to Github »

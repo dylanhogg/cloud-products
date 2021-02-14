@@ -51,4 +51,3 @@ Sign up quickly for an AWS account today.
 Sign up
 Start building
 Get started with Amazon Managed Blockchain on AWS Management Console.
-Sign up

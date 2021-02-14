@@ -46,7 +46,6 @@ Feb 7, 2019
 Amazon SQS now Supports Amazon VPC Endpoints using AWS PrivateLink
 Dec 13, 2018
 AWS Lambda Supports Amazon SQS as an Event Source
-June 28, 2018
 Amazon Simple Queue Service Server-Side Encryption is Now Available in 13 Additional Regions
 May 24, 2018
 Amazon CloudWatch Events Adds Amazon SQS FIFO as an Event Target
@@ -65,11 +64,6 @@ Amazon Simple Queue Service (SQS) Introduces Server-Side Encryption for Queues
 April 28, 2017
 The Amazon SQS Java Messaging Library for JMS now supports FIFO Queues
 April 24, 2017
-Manage Amazon Simple Queue Service costs using Cost Allocation Tags
-Manage Amazon Simple Queue Service costs using Cost Allocation Tags
-Amazon Simple Queue Service (SQS) is Now a HIPAA Eligible Service
-The Amazon SQS Java Messaging Library for JMS now supports FIFO Queues
-The Amazon SQS Java Messaging Library for JMS now supports FIFO Queues
 Get started with AWS
 Enter the Amazon SQS Console
 Instantly get access to the

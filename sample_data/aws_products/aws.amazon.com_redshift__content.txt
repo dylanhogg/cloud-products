@@ -41,26 +41,18 @@ Use cases
 Business intelligence
 Redshift makes it simple and cost effective to run high performance queries on petabytes of semi-structured and structured data so that you can build powerful reports and dashboards using QuickSight or other business intelligence tools.
 Intuit uses Redshift for business intelligence.
-Learn more »
 Operational analytics on events
 Bring together structured data from your data warehouse and semi-structured data such as application logs from your S3 data lake to get real-time operational insights on your applications and systems.
 Euclid uses Redshift for analytics.
-Learn more »
 Data as a service
 Share data inside and outside your organization for secure and governed collaboration on live data with Redshift data sharing (preview).
-Learn more »
 Predictive analytics
 Use SQL to automatically create, train, and deploy Amazon SageMaker models on the data in your data warehouse with Redshift Machine Learning (preview).
-Learn more »
 What's New
 date
-date
 1
-…
 …
 Learn more about pricing
 Learn more
 See what's new
-Learn more
 Visit our resources page
-Learn more

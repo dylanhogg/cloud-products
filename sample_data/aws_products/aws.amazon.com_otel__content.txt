@@ -28,9 +28,7 @@ Collect, analyze, and alarm on application metrics in CloudWatch
 Use OpenTelemetry APIs to collect custom application metrics, then analyze and view them using Amazon CloudWatch. Visualize metric trends, create dashboards, and create alarms to proactively monitor your applications using CloudWatch.
 Latest blog posts
 Date
-Date
 1
-…
 …
 Public Preview – AWS Distro for OpenTelemetry
 by Jeff Barr
@@ -47,6 +45,4 @@ by Amit Sharma, 10/21/2020
 Have questions?
 Visit the AWS Distro for OpenTelemetry FAQs page.
 Learn more
-Get Started with AWS Distro for OpenTelemetry in Preview
 Visit the GitHub page to download.
-Learn more

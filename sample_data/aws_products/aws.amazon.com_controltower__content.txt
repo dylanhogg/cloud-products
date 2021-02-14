@@ -16,4 +16,3 @@ Learn more
 Check out AWS Control Tower Pricing
 See pricing
 Discover solutions for AWS Control Tower on AWS Marketplace
-Learn more

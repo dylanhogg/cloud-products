@@ -20,10 +20,8 @@ Integrated with AWS
 AWS DeepLens integrates with Amazon Rekognition for advanced image analysis, Amazon SageMaker for training models, and with Amazon Polly to create speech-enabled projects. The device also connects securely to AWS IoT, Amazon SQS, Amazon SNS, Amazon S3, Amazon DynamoDB, and more.
 Fully programmable
 AWS
-DeepLens
 is easy to customize and is fully programmable using
 AWS Lambda. The deep learning models in
-DeepLens
 even run as part of an
 AWS Lambda function, providing a familiar programming environment to experiment with.
 10 minutes to your first deep learning project
@@ -67,4 +65,3 @@ Buy Now
 Features
 Getting Started
 Sample Projects
-Tech Specs

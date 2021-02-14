@@ -41,4 +41,3 @@ Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
 Get started building with Amazon Textract in the AWS Management Console.
-Sign up

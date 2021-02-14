@@ -27,15 +27,12 @@ Featured Resources
 Blog Post
 Getting Started with AWS Budgets
 Learn how to set custom budgets that alert you when you exceed (or are forecasted to exceed) the thresholds that you set. Read more »
-Blog Post
 AWS Daily Cost and Usage Reports
 The daily budgeting time range allows you to take timely actions to prevent potential cost overruns. Read more »
-Blog Post
 AWS Budgets Reports
 Keep an eye on your cost, usage, coverage and utilization of RIs and Savings Plans by opting in to AWS Budget Reports. Learn more »
 Latest AWS Cost Management Blogs
 1
-…
 …
 No blog posts have been found at this time. Please see AWS Blog for other resources.
 Read more at the AWS Cost Management Blog »

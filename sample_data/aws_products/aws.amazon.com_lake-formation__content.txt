@@ -58,9 +58,7 @@ Curvo is a Software-as-a-Service company focused exclusively on the healthcare s
 Nic Sagez, CTO - Curvo
 What's New
 date
-date
 1
-…
 …
 Learn more about AWS Lake Formation features
 Learn more about the features of AWS Lake Formation by visiting the features page.

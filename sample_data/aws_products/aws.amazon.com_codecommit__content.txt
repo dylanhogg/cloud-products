@@ -24,7 +24,6 @@ Customers
 With AWS CodeCommit, Edmunds.com, a website that offers detailed, constantly updated information about vehicles to millions of monthly visitors, was able to reduce time spent on administration and maintenance tasks by 95%.
 Learn More >>
 Gett, an Israeli-based company that connects people with taxi drivers, uses AWS CodeCommit and EC2 to scale its mobile app and website to meet a user growth of 300% annually.
-Learn More >>
 Check out the product features
 Learn more about the key features of AWS CodeCommit.
 Learn more

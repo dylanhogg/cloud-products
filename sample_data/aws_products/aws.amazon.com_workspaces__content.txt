@@ -36,9 +36,7 @@ MAXIMUS partners with state, federal, and local governments to provide communiti
 - Jason Winters, Principal Architect, MAXIMUS, IT.
 Blog posts & articles
 date
-date
 1
-…
 …
 Get started with AWS
 Sign up for an AWS account
@@ -53,6 +51,5 @@ AWS project.
 Learn more about Amazon WorkSpaces
 Visit the features page
 Ready to build?
-Get started with Amazon WorkSpaces
 Have more questions?
 Contact us

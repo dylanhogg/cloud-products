@@ -33,14 +33,10 @@ Trapped ion quantum computers implement qubits using electronic states of charge
 Quantum annealing
 Quantum annealing uses a physical process to find a low energy configuration that encodes the solution of an optimization problem. Amazon Braket provides access to quantum annealing technology based on superconducting qubits from D-Wave.
 Learn more
-Learn more
-Learn more
 Check out the product features
 Learn more about Amazon Braket
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Sign up to get started
 Sign up or sign into the console to get started
-Sign up

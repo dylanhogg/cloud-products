@@ -19,11 +19,6 @@ Error-Handing Pattern
 Branching & Human Interaction Patterns
 Chaining Pattern
 Saga Pattern
-Overview
-Error-Handing Pattern
-Branching & Human Interaction Patterns
-Chaining Pattern
-Saga Pattern
 Use cases
 Data processing
 Step Functions can help ensure that long-running, multiple ETL jobs execute in order and complete successfully, instead of manually orchestrating those jobs or maintaining a separate application. You can also use Step Functions to standardize a machine learning training workflow to improve the accuracy of machine learning models.
@@ -77,9 +72,7 @@ Agronomy on the cloud
 Encirca Services by DuPont Pioneer partners with farmers in the field to help them deliver optimal crop yields. They built a cloud based collaborative platform for farmers to simulate crop growth and manage soil nitrogen levels.
 What's new
 date
-date
 1
-…
 …
 December 3, 2019
 Introducing AWS Step Functions Express Workflows
@@ -88,11 +81,9 @@ Learn more
 September 18, 2019
 AWS Step Functions Adds Support for Dynamic Parallelism in Workflows
 AWS Step Functions now supports dynamic parallelism, so you can optimize the performance and efficiency of application workflows.
-Learn more
 August 12, 2019
 AWS Step Functions Adds Support for Nested Workflows
 AWS Step Functions now allows you to orchestrate more complex processes by composing modular, reusable workflows.
-Learn more
 See all announcements »
 Recent blog posts
 New—Compute, Database, Messaging, Analytics and Machine Learning Integration for AWS Step Functions
@@ -100,7 +91,6 @@ Jeff Barr
 November 29, 2018
 Building Simpler Genomics Workflows on AWS Step Functions
 Ryan Ulaszek and Aaron Friedman
-November 29, 2018
 Implementing Serverless Subtitles
 Maxime Thomas
 October 19, 2018

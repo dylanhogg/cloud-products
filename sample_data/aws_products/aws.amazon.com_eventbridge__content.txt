@@ -38,4 +38,3 @@ Get started building with Amazon EventBridge in the AWS Management Console.
 Sign in
 Learn more in documentation
 Get a deeper understanding of EventBridge in the Developer Guide.
-Learn more

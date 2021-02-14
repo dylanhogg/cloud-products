@@ -35,9 +35,7 @@ No blog posts have been found at this time. Please see AWS Blog for other resour
 To read more AWS DataSync blogs, please visit the AWS Storage blog channel.
 What's New with DataSync
 Date
-Date
 1
-…
 …
 Check out the product features
 Learn what makes AWS DataSync fast, secure, and easy to use as part of your AWS architecture.

@@ -26,6 +26,5 @@ AWS project.
 Learn more about AWS Application Discovery Service
 Visit the features page
 Ready to build?
-Get started with AWS Application Discovery Service
 Have more questions?
 Contact us

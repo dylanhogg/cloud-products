@@ -39,19 +39,11 @@ Remind improved their service response time using Amazon ECS
 See all customer stories »
 What's new
 date
-date
 1
-…
 …
 Blog posts & articles
-date
-date
-1
-…
-…
 Learn more about Amazon ECS
 Visit the features page
 Ready to build?
-Get started with Amazon ECS
 Have more questions?
 Contact us

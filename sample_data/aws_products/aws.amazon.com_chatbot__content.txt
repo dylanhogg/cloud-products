@@ -31,16 +31,12 @@ Ilya Bezdelev July 24, 2019
 Read now »
 Launch: AWS Budgets Integration with AWS Chatbot
 Erin Carlson and Matt Cowsert July 31, 2019
-Read now »
 Running AWS commands from Slack using AWS Chatbot
 Ilya Bezdelev November, 25 2019
-Read now »
 Check out the product features
 Learn more about the key features of AWS Chatbot.
 Learn more
-Try AWS Chatbot
 Get started with AWS Chatbot.
 Get Started
 Review documentation
 Learn more about AWS Chatbot with the developer guide.
-Learn more

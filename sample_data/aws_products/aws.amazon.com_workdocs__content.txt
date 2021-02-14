@@ -66,9 +66,7 @@ TekStream Solutions specializes in addressing the company-wide Enterprise Conten
 here to learn more and contact the partner.
 Recent Announcements
 Date
-Date
 1
-…
 …
 Check out Amazon WorkDocs features
 Amazon WorkDocs features for users, admins, and developers
@@ -77,5 +75,4 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Sign up for an account
-Get started with Amazon WorkDocs
 Sign in

@@ -24,7 +24,6 @@ AWS Cloud Map keeps track of all your application components, their locations, a
 Keep Reading »
 AWS Cloud Map service discovery for serverless applications
 AWS Cloud Map enables the journey to microservices by acting as the glue that binds all of business logic. At Peak.ai, we use the serverless framework very heavily, so we wanted to look into ways of integrating AWS Cloud Map into the serverless framework workflow.
-Keep Reading »
 Check out the AWS Cloud Map features
 Learn more about Cloud Map
 Cloud Map features

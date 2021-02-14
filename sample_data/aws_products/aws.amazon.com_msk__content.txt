@@ -21,7 +21,6 @@ How it works
 Apache Kafka is a streaming data store that decouples applications producing streaming data (producers) into its data store from applications consuming streaming data (consumers) from its data store. Organizations use Apache Kafka as a data source for applications that continuously analyze and react to streaming data.
 With a few clicks in the Amazon MSK Console Amazon MSK provisions your Apache Kafka cluster and with support for version upgrades you can always be using the latest version of Apache Kafka that Amazon MSK supports. Once you configure your clusters, your applications can stream data from producers to a topic, where this data is read in real-time by consumers.
 Download the webinar slides to learn more about Amazon MSK.
-Get started with Amazon MSK
 Get set up for an Amazon MSK cluster
 Sign up for AWS and download libraries and tools.
 Review the getting-started guide

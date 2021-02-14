@@ -39,19 +39,15 @@ Watch the customer case study »
 Wesley Kuo, CEO
 “Today the business of live events is very cumbersome, very infrastructure intensive, and high cost. What we’re doing with Verizon 5G and AWS Wavelength Zone is streamlining that process, we’re changing the economics, we’re changing how you go about doing it, and how you go about experiencing it. This is the first time in the world that anybody has tested 4K workflows or even lower bitrate media workflows live on 5G. The latency benefit from 5G MEC is amazing. Typical satellite workflows are plus seven seconds plus. To get sub-second and very, very low second latency changes how you do live events, changes sports betting, changes news, it really changes everything.”
 Gordon Brooks, Executive Chairman and CEO
-Watch the customer case study »
 See more customer stories here »
 Partners
 KDDI's au 5G network combined with AWS cloud services enables customers to realize real-time feedback by leveraging our high speed, large volume and low latency capabilities and to create new value for their businesses.
 SKT's 5GX Edge service provides an environment for implementing ultra-high-speed, ultra-low-latency, and ultra-wideband services with complete security by introducing AWS' cloud services into the communication infrastructure based on SKT's nationwide 5G coverage.
 Learn more »
 Verizon 5G Edge brings together Verizon’s 5G Ultra-Wideband network and AWS cloud services to enable developers and enterprise customers to build large-scale, latency-sensitive applications at the edge.
-Learn more »
 Vodafone Business Distributed Edge brings together the power of AWS Cloud and Vodafone’s 4G and 5G network, making incredible next-generation user experiences a reality.
-Learn more »
 Check out the product features
 Learn more
 Sign up to learn more
 Sign up
 Check out the FAQs
-Learn more

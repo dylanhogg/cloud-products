@@ -2,9 +2,6 @@ Amazon Lumberyard
 Free. Powerful. Fully Customizable.
 We believe game developers deserve another choice. That’s why we’re building Lumberyard: a game engine with no royalties or seat fees, frictionless integration with Twitch and AWS, plus much more on the horizon.
 Get Lumberyard
-Amazon Lumberyard
-Free. Powerful. Fully Customizable.
-We believe game developers deserve another choice. That’s why we’re building Lumberyard: a game engine with no royalties or seat fees, frictionless integration with Twitch and AWS, plus much more on the horizon.
 Build Bigger.
 Lumberyard is architected for performance, modularity, and productivity. Reduce time to quality and maximize ambition, across PC, console, and mobile.
 Build a Fanbase.
@@ -14,7 +11,6 @@ Lumberyard is free and includes full source. There are no seat fees, subscriptio
 Ready to Get Started with Lumberyard?
 Quickly learn essential Lumberyard tools and workflows while building a game prototype in the Getting Started Guide video series.
 Getting Started with Lumberyard
-Quickly learn essential Lumberyard tools and workflows while building a game prototype in the Getting Started Guide video series.
 Watch Now
 More Tutorials
 We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
@@ -49,20 +45,7 @@ In an interview with GamesBeat, Boatman said that the El Segundo, California-bas
 February 21, 2019
 Denis Dyack is coming back from the dead with Deadhaus Sonata
 I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
-Around the Web
-March 9, 2019
-Carbonated Games teases mobile shooter on Amazon Lumberyard
 In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as Gamelift and Amazon Web Services.
-February 21, 2019
-Denis Dyack is coming back from the dead with Deadhaus Sonata
-I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
-Built with Lumberyard
-"As a small team, using Lumberyard along with the support of Amazon, has allowed us to move ahead faster and more smoothly than I have ever done in 20 years of making games."
-Jamie Jackson, SlingShot Cartel
-"We decided that Amazon would be the best partner going forward for the future of Star Citizen."
-Chris Roberts, Cloud Imperium Games
-"Amazon’s vision for the future enables us to make a new type of game never before possible.”
-Leslie Benzies, Everywhere
 Built with Lumberyard
 "As a small team, using Lumberyard along with the support of Amazon, has allowed us to move ahead faster and more smoothly than I have ever done in 20 years of making games."
 Jamie Jackson, SlingShot Cartel

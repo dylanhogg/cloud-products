@@ -20,9 +20,7 @@ Customers
 Recruiterbox, an applicant tracking software, runs its continuous integration infrastructure on AWS, which handles approximately 300 builds per week and uses AWS CodeBuild to run tests before deploying software changes to production.
 Learn More >>
 CDSM, a UK-based learning technology company focused on Learning & Development, runs its e-Learning services on AWS. CDSM uses AWS CodeBuild along with Jenkins to support an agile approach to software release.
-Learn More >>
 Progate, an online platform that helps people learn to code, runs its infrastructure entirely on AWS including instances, databases, data analysis, and continuous integration testing.
-Learn More >>
 Check out the product features
 Learn more about the key features of AWS CodeBuild.
 Learn more

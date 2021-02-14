@@ -14,16 +14,12 @@ Amazon Translate removes the complexity of building real-time and batch translat
 Learn more »
 Customizable
 With Custom Terminology and Active Custom Translation, Amazon Translate lets you customize your machine translated output. Use Custom Terminology to define how your brand names, model names, and other unique terms get translated. Use Active Custom Translation to generate a custom machine translated output that is tailored for your domain specific needs. You don’t need to build a custom translation model, you can update your model as often as you need, and you only pay for the number of characters you translate.
-Learn more »
 Cost effective
 With the power of machine translation, Amazon Translate is about a 1000x cheaper than having your content manually translated by a professional translator.
-Learn more »
 Scalable
 Whether it’s just a few words or large volumes of text, Amazon Translate easily scales to meet your translation needs with fast and reliable translations.
-Learn more »
 Versatile
 Amazon Translate can translate various content formats including Word documents, Powerpoint presentations, and Excel spreadsheets.
-Learn more »
 Use cases
 Language Localization
 It’s very difficult for human translation teams to keep up with dynamic or real-time content. With Amazon Translate, you can easily translate massive volumes of user-generated content in real-time. Websites and applications can automatically make content such as feed stories, profile descriptions, and comments, available in the user's preferred language with a click of a “translate” button.

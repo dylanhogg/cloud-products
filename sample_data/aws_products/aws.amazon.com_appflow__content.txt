@@ -36,7 +36,5 @@ Learn more about Amazon App Flow features.
 Learn more
 Learn more in documentation
 Get a deeper understanding of Amazon AppFlow in the Developer Guide.
-Learn more
 Start building in the console
 Get started building with Amazon AppFlow in the AWS Management Console.
-Learn more

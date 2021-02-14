@@ -37,7 +37,6 @@ AWS IoT SiteWise makes it easy to collect, organize, and analyze industrial data
 Learn more
 Learn with documentation
 Refer to the AWS IoT SiteWise user guide, API reference and application guide for more information.
-Learn more
 Start building in the console
 Access the AWS IoT SiteWise Console.
 Sign in

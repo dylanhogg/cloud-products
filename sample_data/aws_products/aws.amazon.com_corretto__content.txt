@@ -21,9 +21,6 @@ Microsoft Windows
 macOS
 Docker
 Installation Guides for Corretto 11
-Linux
-Microsoft Windows
-macOS
 Blog posts
 Amazon Corretto 8 Now Generally Available
 Arun Gupta

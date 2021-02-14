@@ -23,19 +23,15 @@ Featured customers
 Learn about how Reddit uses Amazon SES to drive end-user engagement across millions of global users.
 Learn more
 Hear about how Netflix increased email deliverability, inbox placement and sender scores using Amazon SES.
-Learn more
 Learn about how Duolingo uses Amazon SES to help over 300 million users learn a new language.
-Learn more
 Top blog posts
 Handling bounces and complaints April 23, 2020
 Learn more »
 Forward incoming email to an external destination Oct 8, 2019
 Learn more »
 Introducing email templates and bulk sending Oct 11, 2017
-Learn more »
 Check out the product features
 Visits the Amazon SES features page.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

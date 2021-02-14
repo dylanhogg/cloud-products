@@ -33,13 +33,10 @@ Backends
 You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests. Take advantage of Lambda’s consistent performance controls, such as multiple memory configurations and Provisioned Concurrency, for building latency-sensitive applications at any scale.
 Web applications
 By combining AWS Lambda with other AWS services, developers can build powerful web applications that automatically scale up and down and run in a highly available configuration across multiple data centers – with zero administrative effort required for scalability, back-ups or multi-data center redundancy.
-Reference Architecture: Sample code
 IoT backends
 You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests.
-Reference Architecture: Sample code
 Mobile backends
 AWS Lambda makes it easy to create rich, personalized app experiences. You can build backends using AWS Lambda and Amazon API Gateway to authenticate and process API requests. Use AWS Amplify to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
-Reference Architecture: Sample code
 Bustle runs a serverless backend for its Bustle iOS app and websites using AWS Lambda and Amazon API Gateway. Serverless architectures allow Bustle to never have to deal with infrastructure management, so every engineer can focus on building out new features and innovating. Read the case study »
 Case studies
 The Coca-Cola Company, an American multinational beverage corporation, used AWS Lambda and AWS Step Functions to build a cost-effective serverless solution.
@@ -47,11 +44,8 @@ Read the blog »
 iRobot, a leading global consumer robot company, is building the next generation of connected devices for the smart home using a serverless architecture.
 Read more »
 Benchling, a life science software company, created a technique that researchers use to modify parts of a genome with extreme precision using serverless architecture.
-Read more »
 Thomson Reuters uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
-Read more »
 See more case studies »
-Get started with AWS Lambda
 Sign up for an AWS account
 Instantly get access to the
 AWS Free Tier.
@@ -63,6 +57,5 @@ Visit the AWS Management Console.
 Learn more about AWS Lambda
 Visit the features page
 Ready to build?
-Get started with AWS Lambda
 Have more questions?
 Contact us

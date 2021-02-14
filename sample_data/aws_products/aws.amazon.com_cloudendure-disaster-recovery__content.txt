@@ -38,18 +38,15 @@ Read the eBook »
 How CloudEndure Disaster Recovery Works
 Read the technology brief »
 Leveraging the Cloud for Your Disaster Recovery Strategy
-Read the eBook »
 Follow Best Practices: IT Disaster Recovery Plan Checklist
 Read the checklist »
 Featured customers
 “With CloudEndure and AWS, being able to virtually recover something in minutes, as opposed to hours and hours, is a real lifesaver. If we hadn’t had the ability to recover as quickly as we did, we would have been dead in the water.”
 – Greg Ward, VP of Information Systems and Technology at Malibu Boats
 CloudEndure Disaster Recovery saved the day for Malibu Boats when their primary data center suffered a server outage. Rather than having to shut down their factory for hours or days, they were able to spin up their backend applications to AWS in minutes. As a result, their factory returned to normal operations and there were no production delays or financial losses. Malibu Boats was so impressed with how well their applications performed on AWS during the failover, that they decided to expedite the migration of their primary on-premises data center to AWS using CloudEndure Migration. As a result, Malibu Boats greatly improved their operational efficiency and IT resilience.
-Learn more »
 “We estimate that building our disaster recovery in the cloud was 73% cheaper than if we built the same solution on-prem.”
 – Matthieu Traverse, Lead IT Architect at Transdev
 Transdev used CloudEndure Disaster Recovery to protect business-critical workloads and reduce their disaster recovery costs by 73%. Rather than refreshing their previous disaster recovery infrastructure, Transdev decided that shifting their recovery site to AWS would save IT resources and align well with their AWS migration strategy. The team began testing disaster recovery solutions on a wide range of complex, write-intensive workloads. Transdev was close to giving up on cloud-based disaster recovery until they tested CloudEndure Disaster Recovery, which worked exactly as expected. Transdev now uses CloudEndure Disaster Recovery to protect a range of business-critical workloads, including Microsoft Active Directory, SQL Servers, MSCS clustered SAP workloads, and niche applications.
-Learn more »
 Check out the product features
 CloudEndure Disaster Recovery offers a range of features that minimize downtime and data loss.
 Learn more

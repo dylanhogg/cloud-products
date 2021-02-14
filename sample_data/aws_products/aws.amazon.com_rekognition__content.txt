@@ -52,9 +52,7 @@ Identify products, landmarks and brands
 App developers can use Amazon Rekognition Custom Labels to identify specific items in social media and photo apps. For example, you could train a custom model to identify famous landmarks in a city to provide tourists with information about its history, operating hours, and ticket prices by simply taking a photo.
 Blogs
 date
-date
 1
-…
 …
 Learn more about Amazon Rekognition
 Visit the features page

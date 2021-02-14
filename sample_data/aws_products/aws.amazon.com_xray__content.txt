@@ -28,6 +28,5 @@ AWS project.
 Learn more about AWS X-Ray
 Visit the features page
 Ready to build?
-Get started with AWS X-Ray
 Have more questions?
 Contact us

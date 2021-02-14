@@ -22,6 +22,5 @@ Brian Nutt, Senior Software Engineer, Snowflake
 Learn more about Amazon ECR
 Visit the features page
 Ready to build?
-Get started with Amazon ECR
 Have more questions?
 Contact us

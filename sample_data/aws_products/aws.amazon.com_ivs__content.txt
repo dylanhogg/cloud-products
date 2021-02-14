@@ -20,22 +20,18 @@ Viacom CBS
 DeNA
 Blackboard
 Panya
-Viacom CBS
 “Amazon IVS is helping us unlock new interactive, low-latency video experiences across the ViacomCBS Digital portfolio faster and with less overhead. It’s incredibly easy to set up and manage and gives us the confidence that we’ll be able to scale as our audience continues to grow."
 Flavio Ribeiro, Director of Engineering, ViacomCBS Digital
 About ViacomCBS
 ViacomCBS is a leading global media and entertainment company that creates premium content and experiences for audiences worldwide.
-DeNA
 “Amazon IVS provides the leading edge of live video technology transformations and maintains high availability systems, all while reducing the operational burden of managing complex, distributed live video networks. With it, we can focus more on enhancing user-oriented functions and interactivity to ensure we're providing an irreplaceable experience."
 Daisuke Mizuta, producer of Pococha at DeNA
 About DeNA
 DeNA's Pococha is a pioneer in the Japanese live streaming market.
-Blackboard
 “Blackboard serves millions of users in countries in every region around the globe. As instructional techniques evolve and we continue to grow, we’re exploring how we can improve our interactive video experiences for all users, which is where Amazon IVS is changing the game. In one day, we were able to quickly integrate IVS into our teaching and learning workflow. It handles a majority of the work on the back end, freeing up more time for our team focus on creating and building standout experiences.”
 Scott Hurrey, Staff Engineering at Blackboard
 About Blackboard
 Blackboard’s mission is to advance learning in partnership with the world’s education community.
-Panya
 "Amazon IVS has allowed us to simplify our product scalability while at the same time delivering innovation to our end users. The ability to use timed metadata now allows us to improvise quickly and build interactive experiences inside our product. For our solution, low latency has always been the key and getting less than 5 seconds of glass to glass latency on a consistent basis makes our product more attractive. Amazon IVS is the perfect fit for our product and users”
 Moinuddin Hyder, VP Product & Commercials at Panya
 About Panya
@@ -53,6 +49,5 @@ Allow viewers to ask questions via a separate chat space, and answer audience qu
 Have questions?
 Contact us
 Ready to build?
-Get started with Amazon Interactive Video Service
 Discover more resources
 Visit the Resources page

@@ -29,6 +29,5 @@ AWS project.
 Learn more about Amazon WorkMail
 Visit the features page
 Ready to build?
-Get started with Amazon WorkMail
 Have more questions?
 Contact us

@@ -30,6 +30,5 @@ AWS project.
 Learn more about AWS Batch
 Visit the features page
 Ready to build?
-Get started with AWS Batch
 Have more questions?
 Contact us

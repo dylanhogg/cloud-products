@@ -16,13 +16,11 @@ AWS Elemental MediaTailor lets you increase the accuracy of ad tracking by captu
 Customer stories
 Seven Media West
 Amazon Video
-Seven Media West
 “Working with an agile partner like AWS Elemental that moves as fast as we do and comes up with new technologies and experiments all the time, allows us not only to survive but to lead the market.”
 Darren Kerry, Director Digital Technology and OTT, Seven West Media
 About Seven Media West
 Seven West Media is one of Australia’s leading integrated media companies, with a presence in broadcast television, magazine and newspaper publishing, and online.
 Customer Snapshot: Seven Media West
-Amazon Video
 “We used the AWS Elemental MediaTailor service, which allows us to deliver targeted ads that are seamlessly inserted into the main content, for a great viewer experience. I am confident that AWS Elemental Media Services are the path to use the cloud for live streaming at scale.”
 BA Winston, Global Head of Video Playback and Delivery for Amazon Video
 About Amazon Video
@@ -34,6 +32,5 @@ Create a new configuration with your ad decision server, CDN, and content origin
 Have questions?
 Contact us
 Ready to build?
-Get started with AWS Elemental MediaTailor
 Discover more resources
 Visit the Resources page

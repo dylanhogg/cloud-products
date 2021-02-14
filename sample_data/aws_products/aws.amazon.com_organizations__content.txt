@@ -30,7 +30,6 @@ Share common resources across accounts
 AWS Organizations makes it easy for you to share critical central resources across your accounts. For example, you can share your central AWS Directory Service Managed Microsoft Active Directory so that applications can access your central identity store. Use AWS Service Catalog to share IT services hosted in designated accounts so users can quickly discover and deploy approved services. Additionally, you can ensure application resources are created on your Amazon Virtual Private Cloud (VPC) subnets by centrally defining them once and sharing them across your organization using AWS Resource Access Manager.
 Recent publications and articles
 Date
-Date
 More…
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 Discover more on the
@@ -38,6 +37,5 @@ AWS Security Blog.
 Learn more about AWS Organizations
 Visit the features page
 Ready to build?
-Get started with AWS Organizations
 Have more questions?
 Contact us

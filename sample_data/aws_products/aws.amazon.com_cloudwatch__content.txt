@@ -34,15 +34,10 @@ Customers use Amazon CloudWatch to improve operational performance, optimize res
 Mapbox uses Amazon CloudWatch to ingest multiple data sources and monitor key workloads.
 Read customer reference >>
 Pushpay uses Amazon CloudWatch Logs Insights to query logs and reduce operational complexity.
-Read customer reference >>
 Rackspace uses Amazon CloudWatch Agent to monitor their virtual machines.
-Read customer reference >>
 SendGrid uses Amazon CloudWatch natively without needing a self-managed stack or third-party vendor.
-Read customer reference >>
 CloudPassage uses Amazon CloudWatch for its microservices-based architecture to reduce mean time to repair.
-Read customer reference >>
 ConnectWise uses Amazon CloudWatch to monitor containers, latency, web server requests, and incoming load-balancer requests.
-Read customer reference >>
 Latest blog posts
 More…
 There are no Amazon CloudWatch blogs available at this time, please visit the AWS Blog page.
@@ -53,11 +48,8 @@ Read more »
 How to better monitor your custom application metrics using Amazon CloudWatch Agent
 by Helen Lin
 Oct 15, 2018
-Read more »
 Building an Amazon CloudWatch dashboard outside of the AWS Management Console by Stephen McCurry Oct 2, 2018
-Read more »
 Building serverless pipelines with Amazon CloudWatch Events by Forrest Brazeal May 02, 2019
-Read more »
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

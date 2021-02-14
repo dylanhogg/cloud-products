@@ -43,19 +43,14 @@ Read now »
 Integrating AWS Transit Gateway with AWS PrivateLink and Amazon Route 53 Resolver
 July 24th, 2019
 James Devine
-Read now »
 Using AWS PrivateLink Integrations to Access SaaS Solutions from APN Partners
 August 2nd, 2019
 Mike Deck
-Read now »
 How to use AWS PrivateLink to secure and scale web filtering using explicit proxy
 August 8th, 2018
 Vinod Madabushi and Sahil Thapar
-Read now »
-date
 date
 1
-…
 …
 Get started with AWS
 Sign up for an AWS account
@@ -72,6 +67,5 @@ Visit the features page
 Find services available over AWS PrivateLink
 Visit AWS Marketplace
 Ready to build?
-Get started with AWS
 Have more questions?
 Contact us

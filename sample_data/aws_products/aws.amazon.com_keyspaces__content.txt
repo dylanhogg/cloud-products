@@ -23,7 +23,6 @@ Data store for applications
 Use Amazon Keyspaces to store information about devices for Internet of Things (IoT) applications or player profiles for games. You also can use Amazon Keyspaces to store large volumes of time-series data, such as entries in a log file or the message history for a chat application.
 Read the documentation
 Learn more about Amazon Keyspaces by reading the documentation.
-Read the documentation
 Sign up for a free account
 Instantly access the AWS Free Tier.
 Sign up

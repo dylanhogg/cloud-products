@@ -20,6 +20,5 @@ How it works
 Learn more about AWS Direct Connect
 Visit the features page
 Ready to build?
-Get started with AWS Direct Connect
 Have more questions?
 Contact us

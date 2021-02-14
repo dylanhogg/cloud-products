@@ -20,7 +20,6 @@ How it works
 Use cases
 Discovery
 AWS Config will discover resources that exist in your account, record their current configuration, and capture any changes to these configurations. Config will also retain configuration details for resources that have been deleted. A comprehensive snapshot of all resources and their configuration attributes provides a complete inventory of resources in your account.
-Change management
 When your resources are created, updated, or deleted, AWS Config streams these configuration changes to Amazon Simple Notification Service (SNS), so that you are notified of all the configuration changes. AWS Config represents relationships between resources so that you can assess how a change to one resource may impact other resources.
 Continuous audit and compliance
 AWS Config is designed to help you assess compliance with your internal policies and regulatory standards by providing you visibility into the configuration of your AWS resources as well as third-party resources, and evaluating resource configuration changes against your desired configurations on a continuous basis.
@@ -53,6 +52,5 @@ AWS project.
 Learn more about AWS Config
 Visit the features page
 Ready to build?
-Get started with AWS Config
 Have more questions?
 Contact us

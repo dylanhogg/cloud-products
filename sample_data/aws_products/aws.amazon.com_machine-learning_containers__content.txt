@@ -29,10 +29,8 @@ March 27, 2019
 Learn more »
 Best Practices for Optimizing Distributed Deep Learning Performance on Amazon EKS
 May 01, 2019
-Learn more »
 GPU workloads on AWS Batch
 April 04, 2019
-Learn more »
 Check out the product resources
 Learn more about AWS DL Containers.
 Learn more

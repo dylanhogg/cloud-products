@@ -37,6 +37,5 @@ AWS project with step-by-step guides.
 Learn more about AWS Auto Scaling
 Visit the features page
 Ready to build?
-Get started with AWS Auto Scaling
 Have more questions?
 Contact us

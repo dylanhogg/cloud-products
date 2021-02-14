@@ -33,7 +33,6 @@ Read the case study >>
 DoorDash uses Amazon Aurora to help it make over 800,000 deliveries a day, managing billions of rows and nearly 10 TB of data in a single Aurora cluster.
 Watch the video >>
 Amazon Aurora enables Pokemon to support 300+ million users, including 300 login requests per second, while automating administrative tasks.
-Read the case study >>
 Dow Jones migrated its market data service from an on-premises database to Amazon Aurora ahead of schedule and with no disruption to service.
 Read the blog post >>
 View all Amazon Aurora case studies >>
@@ -51,12 +50,9 @@ The AWS Schema Conversion Tool simplifies migration from Oracle and Microsoft SQ
 Migrating data from Oracle and Microsoft SQL Server databases to Amazon Aurora can be easily done using AWS Database Migration Service. You can begin a data migration with just a few clicks, and your source database remains fully operational during the migration, minimizing downtime to applications using that database. Learn more about AWS Database Migration Service »
 Blog posts & articles
 Date
-Date
 1
 …
-…
 Learn more on the AWS Database blog >>
-Get started with Amazon Aurora
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
@@ -69,6 +65,5 @@ Read documentation
 Learn more about Amazon Aurora
 Select a features page: MySQL |  PostgreSQL
 Ready to build?
-Get started with Amazon Aurora
 Have more questions?
 Contact us

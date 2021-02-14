@@ -71,10 +71,8 @@ With Amazon Polly, your contact centers can engage customers with natural soundi
 Example: Text-to-speech for telephony systems
 “Bandwidth built a small, reliable, and fast TTS application that is backed by Amazon Polly. We are now using high-quality voices at low cost. The developer effort required to build this new service was surprisingly minimal.”
 – Yiannis Philipopoulos, Sr. Software Developer, Bandwidth
-Read their blog post >>
 Learn more about Amazon Polly
 Visit the features page
 Ready to build?
-Get started with Amazon Polly
 Have more questions?
 Contact us

@@ -56,7 +56,6 @@ Learn with CloudFront tutorials
 Deliver content faster with Amazon CloudFront. Explore and learn with this simple tutorial.
 Start tutorial
 Sign up for a free account
-AWS Free Tier includes 50GB data transfer out, 2,000,000 HTTP and HTTPS Requests with Amazon CloudFront.
 Sign up
 Read the getting started guide
 Follow our getting started guide to start your first Amazon CloudFront distribution in a few clicks.
@@ -64,6 +63,5 @@ Read documentation
 Learn more about Amazon CloudFront features
 Visit the features page
 Ready to get started for free?
-Sign up
 Have more questions?
 Contact us

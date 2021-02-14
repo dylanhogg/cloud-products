@@ -17,14 +17,8 @@ Ask questions of your data, receive answers
 With QuickSight, you can quickly get answers to business questions asked in natural language. Previously, to get answers for such questions, business users relied on BI teams to update data models and dashboards, which would take several weeks to complete. But with QuickSight’s new ML-powered natural language query capability, Q, you simply use plain English and enter the question in the search bar (for e.g., what is the year-over-year sales trend?) and get answers in seconds. Q extracts business terminologies and intent from users’ questions, retrieves the corresponding data from the source, and returns the answer as a number, chart, or table.
 Embedded Analytics
 Seamlessly embed the ability to both view and author dashboards within your applications.
-Embedded Analytics
-Seamlessly embed the ability to both view and author dashboards within your applications.
 ML Insights
 Summarize your business metrics in plain language or use machine learning to predict outcomes such as anomaly detection or forecasting without prior data science experience.
-ML Insights
-Summarize your business metrics in plain language or use machine learning to predict outcomes such as anomaly detection or forecasting without prior data science experience.
-Amazon QuickSight Q
-Ask question using natural language, on all your data, and receive answers in seconds.
 Amazon QuickSight Q
 Ask question using natural language, on all your data, and receive answers in seconds.
 How it works
@@ -32,11 +26,8 @@ Use cases
 Operational Databases (e.g., Amazon RDS)
 Data Warehouses (e.g. Amazon Redshift)
 Data Lakes (e.g. Amazon S3)
-Operational Databases (e.g., Amazon RDS)
 Connecting QuickSight to your data in operational databases (e.g. Amazon RDS)
-Data Warehouses (e.g. Amazon Redshift)
 Connecting QuickSight to your Data Warehouse (e.g. Amazon RedShift)
-Data Lakes (e.g. Amazon S3)
 Connecting QuickSight to your Data Lakes (e.g. Amazon S3)
 Customer stories
 Matt Swensson

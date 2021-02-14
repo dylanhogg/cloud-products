@@ -39,6 +39,5 @@ AWS project.
 Learn more about AWS Elastic Beanstalk
 Visit the AWS Elastic Beanstalk Features Page
 Ready to build?
-Get started with AWS Elastic Beanstalk
 Have more questions?
 Contact us

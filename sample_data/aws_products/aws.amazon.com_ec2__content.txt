@@ -29,13 +29,6 @@ AWS Savings Plans offers savings of up to 72% on Amazon EC2 instances usage, reg
 "We tested the new M6g instances using industry standard LMbench and certain Java benchmarks and saw up to 50% improvement over M5 instances. We’re excited about the introduction of AWS Graviton2-based Amazon EC2 instances."
 Ed Hunter
 Director of Performance and Operating Systems, Netflix
-"We tested the new M6g instances using industry standard LMbench and certain Java benchmarks and saw up to 50% improvement over M5 instances. We’re excited about the introduction of AWS Graviton2-based Amazon EC2 instances."
-Ed Hunter
-Director of Performance and Operating Systems, Netflix
-Flexible options to optimize cost
-With On Demand, pay for only the compute you need. Gain up to 40% better price performance with AWS Graviton2-based instances or 10% lower costs with AMD-based instances.
-Amazon EC2 Spot can reduce costs up to 90% or accelerate performance for fault-tolerant workloads such as big data, containers, web services, and CI/CD.
-AWS Savings Plans offers savings of up to 72% on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region.
 Easy to migrate and build apps
 Get started quickly through AWS Migration Tools, AWS Managed Services, or Amazon Lightsail
 AWS Professional Services, AWS Support, and AWS Training and Certification help you along the way
@@ -57,16 +50,12 @@ We offer a choice of multiple purchasing models with On-Demand, Spot Instances, 
 Case Studies
 What’s New
 date
-date
 1
-…
 …
 Check out the EC2 product features
 Learn more about features for instance security, storage, networking, autoscaling, and more
 Learn more »
 Get started with EC2
 Follow these steps to to get started with Amazon EC2.
-Learn more »
 Dive deep into EC2 resources and tools
 Learn tips and techniques to get the most out of your experience with Amazon EC2.
-Learn more »

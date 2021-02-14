@@ -44,6 +44,5 @@ AWS project.
 Learn more about AWS CloudTrail
 Visit the features page
 Ready to build?
-Get started with AWS CloudTrail
 Have more questions?
 Contact us

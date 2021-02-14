@@ -28,15 +28,12 @@ Okta is the identity company that stands for trust.
 Learn more »
 OneLogin, Inc.
 OneLogin is a leading cloud identity management company, enabling enterprises to secure connections across all users and all devices.
-Learn more »
 Ping Identity
 Ping Identity provides secure, seamless access to apps and resources from anywhere and is trusted by over half of the Fortune 100.
-Learn more »
 Built-in support for AWS accounts and business applications
 AWS SSO helps manage access to your AWS accounts and business applications. For a full list of business applications pre-integrated with AWS SSO, see AWS SSO Cloud Applications.
 Blog posts & articles
 1
-…
 …
 Learn more about AWS Single Sign-On key features
 Visit the features page

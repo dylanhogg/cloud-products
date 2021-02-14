@@ -18,13 +18,11 @@ With AWS Elemental MediaLive, you only pay for the service as you use it, with n
 Customer stories
 TVNZ
 FOX Sports
-TVNZ
 “We've already seen pretty impressive results from what we have moved to the AWS environment and we're really enjoying all the benefits like scalability, redundancy, and performance that we get from being on the AWS platform.”
 Andrew Blakey, Development Manager, TVNZ
 About TVNZ
 TVNZ is New Zealand’s leading free-to-air TV provider, bringing news and entertainment coverage to more than two million New Zealanders each day.
 Customer Snapshot: TVNZ
-FOX Sports
 "FOX SPORTS is at the vanguard of sports broadcast innovation. To deliver live sport of this volume to our subscribers requires scale. We have implemented the AWS Cloud to leverage the end-to-end live event and content monetization workflows only available in the cloud through AWS Elemental Media Services."
 Alastair Robertson, Chief Technology Officer for FOX SPORTS Australia
 About Fox Sports
@@ -36,6 +34,5 @@ Send output to AWS Elemental MediaPackage for origination and packaging
 Have questions?
 Contact us
 Ready to build?
-Get started with AWS Elemental MediaLive
 Discover more resources
 Visit the Resources page

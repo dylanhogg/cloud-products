@@ -38,12 +38,6 @@ Admin UI
 Manage Users
 Manage Content
 How it works
-Develop
-Deliver
-Manage
-Develop
-Deliver
-Manage
 Use cases
 Onboarding flows
 Create custom onboarding flows allowing users to log in with preferred methods. Features: Auth, UI Components, Analytics

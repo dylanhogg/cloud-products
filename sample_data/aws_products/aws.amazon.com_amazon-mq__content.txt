@@ -17,9 +17,7 @@ With a few clicks in the Amazon MQ Console, Amazon MQ provisions your broker wit
 View more customer testimonials »
 What's new
 Date
-Date
 More…
-Get started with Amazon MQ
 Check out the product features
 Learn more about Amazon MQ features.
 Learn more »

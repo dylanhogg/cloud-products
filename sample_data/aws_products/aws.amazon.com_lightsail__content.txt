@@ -14,7 +14,6 @@ Business software
 Run your open source and commercial software for your business, with ease. Lightsail helps you quickly launch your line-of-business software, like file storage and sharing, backups, financial and accounting software, and much more.
 Dev/test environments
 Spin up a developer or test environment in seconds. Creating dev sandboxes and testing environments outside of your prod environment lets you test without the concern of breaking something. And, once you’re done, you can quickly destroy them.
-Get started with Lightsail for free
 Amazon Lightsail is designed to make your project easier
 Managed environments
 Lightsail automatically configures networking, access, and security environments, taking the guesswork out of launching your server.
@@ -44,10 +43,8 @@ Business Compass, LLC
 Get started
 Migrate WordPress Site to Lightsail
 Cloud7
-Get started
 Migrate WordPress to Amazon Lightsail (VPS)
 Karim Igeria
-Get started
 Browse more offers
 Try Lightsail free for 1 month!
 Get started with Lightsail

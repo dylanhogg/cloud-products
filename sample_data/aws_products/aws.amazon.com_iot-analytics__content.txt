@@ -44,7 +44,6 @@ Learn step by step how iDevices uses AWS IoT Analytics (32:04)
 Get started with AWS
 Sign into the console
 Instantly access
-AWS IoT Analytics
 Learn how to use AWS IoT Analytics
 Read the technical
 documentation
@@ -54,6 +53,5 @@ features
 Learn more about AWS IoT Analytics
 Visit the features page
 Ready to build?
-Get started for free
 Have more questions?
 Contact us

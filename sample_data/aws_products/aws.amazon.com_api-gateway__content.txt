@@ -22,7 +22,6 @@ Flexible security controls
 Authorize access to your APIs with AWS Identity and Access Management (IAM) and Amazon Cognito. If you use OAuth tokens, API Gateway offers native OIDC and OAuth2 support. To support custom authorization requirements, you can execute a Lambda authorizer from AWS Lambda.
 RESTful API options
 Create RESTful APIs using HTTP APIs or REST APIs. HTTP APIs are the best way to build APIs for a majority of use cases—they're up to 71% cheaper than REST APIs. If your use case requires API proxy functionality and management features in a single solution, you can use REST APIs.
-Get started with Amazon API Gateway
 Sign up for an AWS account
 Instantly get access to the
 AWS Free Tier.
@@ -34,6 +33,5 @@ Visit the AWS Management Console.
 Learn more about Amazon API Gateway
 Visit the features page
 Ready to build?
-Get started with Amazon API Gateway
 Have more questions?
 Contact us

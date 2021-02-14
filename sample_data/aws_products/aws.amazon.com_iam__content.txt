@@ -47,6 +47,5 @@ AWS project.
 Learn more about AWS IAM
 Visit the features page
 Ready to build?
-Get started with AWS IAM
 Have more questions?
 Contact us

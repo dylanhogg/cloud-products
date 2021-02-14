@@ -12,36 +12,28 @@ Say goodbye to sifting through long lists of links and scanning documents hoping
 Learn more »
 Centralize access to knowledge
 Using Kendra you can easily aggregate content from content repositories like SharePoint, Amazon S3, ServiceNow, Salesforce, and Amazon RDS into a centralized index which enables you to quickly search all of your enterprise data and find the most accurate answer.
-Learn more »
 Fine-tune search results
 Kendra’s deep learning models come pre-trained across 14 industry domains, allowing it to extract more accurate answers across a wide range of business use cases from the get-go. You can also fine-tune search results by manually adjusting the importance of data sources, authors, freshness, or using custom tags.
-Learn more »
 Deploy with just a few clicks
 Setup is quick, giving you faster access to Kendra’s intelligent search capabilities compared to setup times associated with conventional search solutions. With just a few clicks, you can easily configure an index, connect relevant data sources, and begin using Amazon Kendra to search for answers across your organization.
-Learn more »
 Use cases
 Improve customer interactions
 Whether it’s through QnA chatbots, agent-assist, or customer web serach, Amazon Kendra better understands what your customers are asking to provide more relevant answers and better experiences.
-Learn more »
 Accelerate research and development
 Scientists and developers leading new research and innovation need access to information from prior work that’s buried within their corporate data stores. With faster, more accurate search, these groups waste less time searching and more time innovating.
 Learn more »
 Minimize regulatory and compliance risks
 Use machine learning to quickly identify and interpret regulatory policies published across hundreds of diverse regulatory websites so you can improve policy enforcement and compliance processes.
-Learn more »
 Equip employees with the data they need
 By unifying and indexing content from diverse, disparate, and multi-structure information silos across the organization, enterprises build and maintain an active knowledge catalog. With this centralized view, users can quickly see what information is available and become more informed.
-Learn more »
 Customers
 Accelerating material science research
 “When our material scientists lead new research, they need access to information from prior relevant research—information that’s buried in the many patents we hold in our huge knowledge base… Kendra lets our scientists find the information they need by handling natural language queries quickly and accurately.”
 View customer story »
 Enhanced access to regulatory and compliance information
 "Our goal is to help our customers get to the answers they need faster - even when the right answers may be buried within documents over 100 pages long - so they can understand regulatory information faster and make decisions more quickly and confidently"
-View customer story »
 Faster access to information in our knowledge base
 Kendra finds the answer to questions like ‘What is the length of the pipeline at Pluto?’ quickly and accurately. This step-change in cognitive capability will enable even better, faster decision making to improve our operations and the working lives of our people.”
-View customer story »
 Get started with Kendra today
 Reimagine search for yourself. With Amazon Kendra, you can now connect your own data sources and start testing the search experience on your own content in minutes.
 Start your Amazon Kendra journey in the AWS Console »

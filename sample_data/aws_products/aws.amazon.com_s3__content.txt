@@ -28,27 +28,22 @@ S3 Intelligent Tiering
 S3 Access Points
 S3 Batch Operations
 S3 Block Public Access
-S3 Storage Lens
 Gain organization-wide visibility into storage usage, activity trends, and receive actionable recommendations
 S3 Storage Lens delivers organization-wide visibility into object storage usage, activity trends, and makes actionable recommendations to improve cost-efficiency and apply data protection best practices. S3 Storage Lens is the first cloud storage analytics solution to provide a single view of object storage usage and activity across hundreds, or even thousands, of accounts in an organization, with drill-downs to generate insights at the account, bucket, or even prefix level. S3 Storage Lens analyzes organization-wide metrics to deliver contextual recommendations to find ways to reduce storage costs and apply best practices on data protection.
 After you activate S3 Storage Lens in the S3 Console, you will receive an interactive dashboard containing pre-configured views to visualize storage usage and activity trends, with contextual recommendations that make it easy to take action. You can also export metrics in CSV or Parquet format to an S3 bucket. You can use the summary view, cost efficiency view, or the data protection view to see metrics related to your intended use case. In addition to the dashboard in the S3 console, you can export metrics in CSV or Parquet format to an S3 bucket of their choice for further use.
 Visit the S3 Storage Lens page to learn more.
-S3 Intelligent Tiering
 Optimize storage costs with S3 Intelligent-Tiering
 S3 Intelligent-Tiering optimizes storage costs by automatically moving objects between four access tiers when access patterns change. There are two low latency access tiers optimized for frequent and infrequent access to help you save up to 40% on storage costs, and two opt-in archive access tiers designed for asynchronous access with cost savings up to 95% for objects that are rarely accessed.
 Objects uploaded or transitioned to S3 Intelligent-Tiering are automatically stored in the Frequent Access tier. S3 Intelligent-Tiering works by monitoring access patterns and then moving the objects that have not been accessed in 30 consecutive days to the Infrequent Access tier. Once you have activated one or both of the archive access tiers, S3 Intelligent-Tiering will move objects that haven’t been accessed for 90 consecutive days to the Archive Access tier and then after 180 consecutive days of no access to the Deep Archive Access tier. If the objects are accessed later, S3 Intelligent-Tiering moves the objects back to the Frequent Access tier.
 There are no retrieval fees, so you won’t see unexpected increases in storage bills when access patterns change. Learn about optimizing storage costs.
-S3 Access Points
 Easily manage access for shared data sets with S3 Access Points
 Amazon S3 Access Points, a feature of S3, simplifies managing data access at scale for applications using shared data sets on S3. Access points are unique hostnames that customers create to enforce distinct permissions and network controls for any request made through the access point.
 Customers with shared data sets including data lakes, media archives, and user-generated content can easily scale access for hundreds of applications by creating individualized access points with names and permissions customized for each application. Any access point can be restricted to a Virtual Private Cloud (VPC) to firewall S3 data access within customers’ private networks, and AWS Service Control Policies can be used to ensure all access points are VPC restricted.
 Visit the S3 Access Points page to learn more.
-S3 Batch Operations
 Manage tens to billions of objects at scale with S3 Batch Operations
 S3 Batch Operations is an Amazon S3 data management feature that lets you manage billions of objects at scale with just a few clicks in the Amazon S3 Management Console or a single API request.
 To perform work in S3 Batch Operations, you create a job. The job consists of the list of objects, the action to perform, and the set of parameters you specify for that type of operation. You can create and run multiple jobs at a time in S3 Batch Operations or use job priorities as needed to define the precedence of each job and ensures the most critical work happens first. S3 Batch Operations also manages retries, tracks progress, sends completion notifications, generates reports, and delivers events to AWS CloudTrail for all changes made and tasks executed.
 Visit the S3 Batch Operations page to learn more.
-S3 Block Public Access
 Block all public access to your S3 data, now and in the future
 S3 Block Public Access provides controls across an entire AWS Account, or at the individual S3 bucket level to ensure that objects never have public access, now and in the future.
 Public access is granted to buckets and objects through access control lists (ACLs), bucket policies, or both. In order to ensure that public access to all your S3 buckets and objects is blocked, turn on block all public access at the account level. These settings apply account-wide for all current and future buckets. S3 Block Public Access settings override S3 permissions that allow public access, making it easy for the account administrator to set up a centralized control to prevent variation in security configuration regardless of how an object is added or a bucket is created.
@@ -79,9 +74,7 @@ Sysco consolidates its data into a single data lake built on Amazon S3 and Amazo
 Nielsen built a new, cloud-native local television rating platform capable of storing 30 petabytes of data in Amazon S3 and leveraging Amazon Redshift, AWS Lambda, and Amazon EMR.
 What's new with S3
 date
-date
 1
-…
 …
 S3 blog posts
 There are no Amazon S3 blogs available at this time, please visit AWS blogs to view all storage blog content.

@@ -9,7 +9,6 @@ Discover and experiment with over 150 AWS services, many of which have free tria
 Build your cloud-based applications in any AWS data center throughout the world
 Manage and monitor users, service usage, health, and monthly billing
 Get in-console help from AWS Support
-Create a Free Account
 Additional Resources
 Learn about AWS Pricing »
 Find SDKs, Command Line Tools, and more tools to access AWS »
@@ -21,17 +20,13 @@ The Console offers over 180 services you can configure, test, and launch to get 
 Learn more »
 Build and scale powerful applications
 Use the Console and its API, CLI, CloudFormation templates, and other toolkits to build scalable architectures in any AWS data center around the world. You can customize your experience by pinning favorites and organize projects with resource groups and the tag editor. Plus, you’re only one click away from the AWS Marketplace where you’ll find hundreds of popular software products that run on AWS.
-Learn more »
 Manage and monitor your account
 Oversee all administrative aspects of your AWS account from your desktop or mobile device. You can view your usage and monthly spending by service, set up AWS IAM users and groups, configure permissions, and manage security credentials. You can also quickly troubleshoot issues through visual monitoring. If you need extra help, submit a support ticket right from the Console to connect with an AWS expert.
-Learn more »
 Accessing the AWS Management Console
 Requirements
 All you need is an existing AWS account and a supported browser. See our FAQs for a complete list of supported browsers and platforms.
-Learn more »
 Mobile App
 With the AWS Console mobile app, you can quickly and easily view your existing resources, including CloudWatch alarms, and perform operational tasks from your mobile device. Download our mobile app from Amazon Appstore, Google Play, or iTunes.
-Learn more »
 Get Started
 Sign up for an AWS account
 Creating an AWS account is free and gives you immediate access to the AWS Free Tier

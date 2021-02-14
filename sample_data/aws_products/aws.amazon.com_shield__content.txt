@@ -18,9 +18,7 @@ Learn more about AWS Shield Standard and Advanced Features >>
 Featured Customers
 What's new
 date
-date
 1
-…
 …
 Please see the AWS What's New page for recent launches.
 Protection use cases
@@ -57,6 +55,5 @@ AWS project.
 Learn more about AWS Shield
 Visit the features page
 Ready to build?
-Get started with AWS Shield
 Have more questions?
 Contact us

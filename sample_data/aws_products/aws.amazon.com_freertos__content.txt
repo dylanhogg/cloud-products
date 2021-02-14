@@ -42,55 +42,45 @@ Device Catalog | Partner Profile | Contact
 Espressif
 “Espressif is about building the best user experience. To this end, we have built the most comprehensive IoT development framework with application frameworks for AI-enabled, offline, and voice-command engines as well as face-recognition solutions, development boards, and modules. We are delighted at the introduction of FreeRTOS Long Term Support because our customers will benefit both from the stability and security updates that long term support releases offer.”
 - Teo Swee Ann, Founder and CEO, Espressif Systems
-Device Catalog | Partner Profile | Contact
 Renesas
 “Our customers face big challenges with increasingly complex software designs problems, while still meeting demands for shorter development time, sustained quality, and reliability. Through our partnership with AWS and FreeRTOS, qualified with Renesas MCUs, we can offer our customers the greatest flexibility to meet industrial and IoT customer demands for a secured and reliable chip-to-cloud connection. Furthermore, with the FreeRTOS LTS release, we believe our customers can benefit from even higher quality and reliability, address security vulnerabilities quickly, and be able to focus more on adding value to their development than before.”
 - Daryl Khoo, Vice President, Marketing, IoT Platform Business Division, IoT Infrastructure Business Unit, Renesas
-Device Catalog | Partner Profile | Contact
 Infineon
 “Infineon strives to help customers bring high-quality, differentiated IoT products to market on time, on budget, and with low risk. Many of our customers seek a complete cloud-to-node solution that will last the duration of their product’s lifecycle. FreeRTOS LTS libraries, coupled with long-term semiconductor support, give our customers the stability and longevity assurance they need when choosing a solution for their IoT product.”
 - Rob Conant, VP of Software and Ecosystem, IoT Compute and Wireless Business Unit, Infineon
-Device Catalog | Partner Profile | Contact
 NXP Semiconductors
 "As a trusted supplier of edge processing solutions for the industrial and IoT markets, NXP has an ongoing investment and commitment to product longevity. Our customers rely on us to provide software drivers and enable software technologies based on FreeRTOS, delivered in our MCUXpresso SDK, as a foundation by which they can rapidly develop differentiated products. Integrating the FreeRTOS LTS libraries further extends our commitment to our MCU customers who develop secure edge devices that are connected to AWS Cloud services and need to be able to depend on critical software updates.”
 - Joe Yu, VP and GM of IoT Product Line, NXP Semiconductors
-Device Catalog | Partner Profile | Contact
 A-F
 G-K
 L-M
 N-R
 S-Z
-A-F
 View qualified Andes Technology development boards »
 View qualified Beken Corporation development boards »
 View qualified Browan development boards »
 View qualified Cypress development boards »
 View qualified Espressif development boards »
-G-K
 View qualified GigaDevice development boards »
 View qualified Good Way Technology development boards »
 View qualified Goodix Technology development boards »
 View qualified ICTK development boards »
 View qualified Infineon development boards »
-L-M
 View qualified Libra Wireless development boards »
 View qualified M5Stack Technology development boards »
 View qualified Mediatek development boards »
 View qualified Microchip development boards »
 View qualified Murata development boards »
-N-R
 View qualified Nordic Semiconductor development boards »
 View qualified Nuvoton development boards »
 View qualified NXP development boards »
 View qualified Realtek development boards »
 View qualified Renesas development boards »
-S-Z
 View qualified SiFive development boards »
 View qualified STMicroelectronics development boards »
 View qualified Texas Instruments development boards »
 View qualified Winner Micro development boards »
 View qualified Xilinx development boards »
-Get started with FreeRTOS
 Sign up for an AWS account
 Getting started is easy – visit the
 FreeRTOS console.
@@ -103,6 +93,5 @@ FreeRTOS features.
 Learn more about FreeRTOS features
 Visit the features page
 Ready to build?
-Get started with FreeRTOS
 Have more questions?
 Contact us

@@ -22,14 +22,9 @@ Are you an APN Partner interested in joining the AWS Well-Architected Partner Pr
 Blogs
 1
 …
-…
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 What's New
 date
-date
-1
-…
-…
 Please see the AWS What's New page for recent launches.
 Have questions?
 Visit the AWS Well-Architected Tool faqs page.

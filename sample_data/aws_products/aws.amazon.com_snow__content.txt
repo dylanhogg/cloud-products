@@ -22,10 +22,8 @@ AWS Snowmobile
 AWS Snowmobile moves up to 100 PB of data in a 45-foot long ruggedized shipping container and is ideal for multi-petabyte or Exabyte-scale digital media migrations and data center shutdowns. A Snowmobile arrives at the customer site and appears as a network-attached data store for more secure, high-speed data transfer. After data is transferred to Snowmobile, it is driven back to an AWS Region where the data is loaded into Amazon S3.  Snowmobile is tamper-resistant, waterproof, and temperature controlled with multiple layers of logical and physical security -- including encryption, fire suppression, dedicated security personnel, GPS tracking, alarm monitoring, 24/7 video surveillance, and an escort security vehicle during transit.
 Learn more about Snowmobile »
 Feature comparison
-AWS Snowcone
 AWS Snowball Edge Storage Optimized
 AWS Snowball Edge Compute Optimized
-AWS Snowmobile
 Usage Scenario
 Edge computing, Data transfer, Edge storage
 Data transfer, Edge storage
@@ -40,7 +38,6 @@ Usable SSD Storage
 No
 1 TB
 7.68 TB
-No
 Usable vCPUs
 2 vCPUs
 40 vCPUs
@@ -50,32 +47,14 @@ Usable Memory
 4 GB
 80 GB
 208 GB
-N/A
 GPU
-No
-No
 nVidia V100 (optional)
-No
 Onboard Computing Options
 AWS IoT Greengrass   Amazon EC2 AMIs
-AWS IoT Greengrass   Amazon EC2 AMIs
-AWS IoT Greengrass   Amazon EC2 AMIs
-N/A
 DataSync
 Yes
-No
-No
-No
 Transfers via NFS
-Yes
-Yes
-Yes
-Yes
 Transfers via S3 API
-No
-Yes
-Yes
-No
 Network Interfaces
 2x 1/10 Gbit - RJ45
 2x 10 Gbit – RJ45  1x 25 Gbit – SFP+  1x 100 Gbit – QSFP28
@@ -84,38 +63,19 @@ Network Interfaces
 Device Size
 9 inches long, 6 inches wide, and 3 inches tall (227 mm x 148.6 mm x 82.65 mm)
 28.3 inches long, 10.6 inches wide, and 15.5 inches tall (548 mm x 320 mm x 501 mm)
-28.3 inches long, 10.6 inches wide, and 15.5 inches tall (548 mm x 320 mm x 501 mm)
-N/A
 Device Weight
 4.5 lbs. (2.1 kg)
 49.7 lbs. (22.3 kg)
-49.7 lbs. (22.3 kg)
-N/A
 Encryption
-Yes, 256-bit
-Yes, 256-bit
-Yes, 256-bit
 Yes, 256-bit
 Portability
 Battery-based Operation
-No
-No
-No
 Wireless
 Wi-Fi
-No
-No
-No
 Storage Clustering
-No
 Yes, 5-10 nodes
-Yes, 5-10 nodes
-N/A
 HIPAA Compliant
 Yes, eligible
-Yes, eligible
-Yes, eligible
-No
 Typical Job Lifetime
 Offline or Online Data Transfer: Days-Weeks Edge Compute: Weeks-Years
 Offline Data Transfer: Days-Weeks
@@ -124,10 +84,6 @@ Data Migration: Months
 Pricing and availability
 Snow Family devices and vehicles are owned and managed by AWS, so customers do not need to invest in new hardware. Customers pay varying startup fees plus shipping per device. Multiple devices can be requested in parallel if more capacity is needed. AWS monitors the health and utilization of Snowcones and Snowballs, and provides replacement devices when needed. For region availability, view the Regional Service Availability page for more information.
 Learn more about each member of the AWS Snow Family
-AWS Snowcone
-AWS Snowball
-AWS Snowmobile
 Ready to build?
-Get started with AWS Snow Family
 Have more questions?
 Contact us

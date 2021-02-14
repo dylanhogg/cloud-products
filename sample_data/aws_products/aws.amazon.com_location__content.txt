@@ -25,9 +25,7 @@ Customer stories
 “If we can improve the fill rate of our truck loads by just 1%, we estimate that we can harvest significant savings every year,” said Martijn Weenink, Product Owner at PostNL. “To do this, we need to know where every roller cage is, whether it is in use, what its destination is and what it is carrying. Amazon Location Service and AWS IoT will play a big role in gathering location and activity data from the roller cages.”
 Learn more »
 “When we evaluated Amazon Location Service, we realized we can get the tracking capabilities we need, and also consolidate location-related infrastructure we were hosting on Google,” said Dejan Milosavljevic, CEO and Co-Founder of MobileLog.
-Learn more »
 "Our DoD and intelligence community partners rely on us to deliver technologies that integrate cutting-edge AWS capabilities to enable mission success,” said Kevin Heald, VP, Information Exploitation at Novetta. “Amazon Location is a great example of a service that can be applied to accelerate and simplify solution development."
-Learn more »
 Check out product features
 Learn more about Amazon Location Service
 Learn more

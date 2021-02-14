@@ -39,4 +39,3 @@ Instantly get access to the AWS Free Tier.
 Sign up
 Sign up for the preview
 Get started building with Amazon Managed Service for Grafana.
-Sign up

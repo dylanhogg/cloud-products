@@ -27,6 +27,5 @@ Sign in
 Learn more about AWS Server Migration Service
 Visit the pricing page
 Ready to build?
-Get started with AWS Server Migration Service
 Have more questions?
 Contact us

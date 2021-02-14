@@ -49,6 +49,5 @@ Visit the features page to explore audit and detect.
 Learn more about AWS IoT Device Defender
 Visit the features page
 Ready to build?
-Get started with AWS IoT Device Defender
 Have more questions?
 Contact us

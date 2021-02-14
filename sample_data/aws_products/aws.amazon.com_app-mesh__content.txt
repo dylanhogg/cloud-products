@@ -15,16 +15,9 @@ App Mesh helps encrypt all requests between services even when they are in your 
 How it works
 Blog posts
 date
-date
 1
-…
 …
 What's new posts
-date
-date
-1
-…
-…
 AWS App Mesh partners
 Check out the product features
 Learn more about AWS App Mesh

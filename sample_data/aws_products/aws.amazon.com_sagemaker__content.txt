@@ -11,8 +11,6 @@ Use Amazon SageMaker’s integrated capabilities for ML development, so you can 
 How it works
 Overview
 Details
-Overview
-Details
 SageMaker Capability
 Description
 Automatic Model Tuning
@@ -84,45 +82,26 @@ Amazon SageMaker Studio provides a single, web-based visual interface where you 
 Learn more »
 Build, train, and tune models automatically
 Amazon SageMaker Autopilot selects the best algorithm for the prediction, and automatically builds, trains, and tunes machine learning models without any loss of visibility or control.
-Learn more »
 Reduce data labeling costs by up to 70%
 Amazon SageMaker Ground Truth makes it easy to more accurately label training datasets for a variety of use cases including 3D point clouds, video, images, and text.
-Learn more »
 The fastest and easiest way to prepare data for ML
 Amazon SageMaker Data Wrangler reduces the time it takes to prepare data for ML from weeks to minutes. With a few clicks, you can complete each step of the data preparation workflow, including data selection, cleansing, exploration, and visualization.
-Learn more »
 Purpose-built feature store for ML
 Amazon SageMaker Feature Store provides a repository to store, update, retrieve, and share ML features. SageMaker Feature Store offers one consistent view of features for ML models to use so it becomes significantly easier to generate models that produce highly accurate predictions.
-Learn more »
 Train high-quality models faster
 Amazon SageMaker provides a built-in debugger and a profiler so you can identify and reduce training errors and performance bottlenecks from your models before pushing them to production.
-Learn more »
 One-click deployment to the cloud
 Amazon SageMaker makes it easy to deploy your trained model to production with a single click, so you can start generating predictions for real-time or batch data.
-Learn more »
 Improve quality of models on edge devices
 Amazon SageMaker Edge Manager helps you optimize, secure, monitor, and maintain machine learning models on fleets of edge devices to ensure that models deployed on edge devices are operating correctly.
-Learn more »
 Essential features for ML in production
 Automate machine learning workflows
 Amazon SageMaker Pipelines is the first purpose-built, easy-to-use continuous integration and continuous delivery (CI/CD) service for machine learning. Workflows can be shared and re-used between teams.
-Learn more »
 Detect bias and understand predictions
 Amazon SageMaker Clarify provides bias detection across the ML workflow, enabling you to build greater fairness and transparency into your ML model. SageMaker Clarify also includes feature importance graphs that help you explain model predictions and produces reports which can be used to support internal presentations or to identify issues with your model that you can take steps to correct.
-Learn more »
 Secure your data and code throughout the ML lifecycle
 Amazon SageMaker offers a comprehensive set of security features, including encryption, private network connectivity, authorization, authentication, monitoring, and auditability to help your organization with security requirements that may apply to machine learning workloads.
-Learn more »
-Essential features for ML in production
-Automate machine learning workflows
-Amazon SageMaker Pipelines is the first purpose-built, easy-to-use continuous integration and continuous delivery (CI/CD) service for machine learning. Workflows can be shared and re-used between teams.
-Learn more »
 Improve transparency
-Amazon SageMaker Clarify provides bias detection across the ML workflow, enabling you to build greater fairness and transparency into your ML model. SageMaker Clarify also includes feature importance graphs that help you explain model predictions and produces reports which can be used to support internal presentations or to identify issues with your model that you can take steps to correct.
-Learn more »
-Secure your data and code throughout the ML lifecycle
-Amazon SageMaker offers a comprehensive set of security features, including encryption, private network connectivity, authorization, authentication, monitoring, and auditability to help your organization with security requirements that may apply to machine learning workloads.
-Learn more »
 Amazon SageMaker customers
 Amazon SageMaker is used by tens of thousands of customers across a wide range of industries.
 See more customer stories »
@@ -132,11 +111,8 @@ SageMaker step-by-step guide »
 SageMaker JumpStart »
 Predictive maintenance
 Georgia Pacific uses SageMaker to develop ML models that detect machine issues early.
-Learn more »
 Computer vision
 3M is using defect detection models built on SageMaker to improve the effectiveness of its quality control processes.
-Learn more »
 Autonomous driving
 Lyft Level 5 standardized on SageMaker for training and reduced model training times from days to under a couple of hours.
-Learn more »
 Get started with Amazon SageMaker

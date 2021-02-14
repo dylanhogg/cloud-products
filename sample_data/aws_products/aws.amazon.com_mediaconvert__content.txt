@@ -17,19 +17,16 @@ Customer stories
 Arqiva
 Seven West Media
 Imagica
-Arqiva
 “We are thrilled to bring our first suite of virtualised media management services to market with immediate effect, offering a full complement of playout, OTT and VoD solutions to help our customers stay ahead in what is an immensely competitive and challenging environment.”
 -Alex Pannell, Managing Director of Satellite & Media, Arqiva
 About Arqiva
 Arqiva is a UK communications infrastructure and media services provider dedicated to connecting people wherever they are through the delivery of TV, radio, mobile, and the Internet of Things (IoT).
 Customer Snapshot: Arqiva
-Seven West Media
 “Working with an agile partner like AWS Elemental that moves as fast as we do and comes up with new technologies and experiments all the time, allows us not only to survive but to lead the market.”
 Darren Kerry, Director Digital Technology and OTT, Seven West Media
 About Seven Media West
 Seven West Media is one of Australia’s leading integrated media companies, with a presence in broadcast television, magazine and newspaper publishing, and online.
 Customer Snapshot: Seven Media West
-Imagica
 “Now, with AWS Elemental MediaConvert, we can confidently commit to customers’ schedules and deliver content in the multiple formats at high quality at low cost while meeting deadlines. This kind of performance lets us enhance our customers’ production value.”
 - Takaaki Kudo, Manager R&D Group Technology Administration Dept. for IMAGICA
 About Imagica
@@ -41,6 +38,5 @@ Create a new job, configure job settings, and start processing
 Have questions?
 Contact us
 Ready to build?
-Get started with AWS Elemental MediaConvert
 Discover more resources
 Visit the Resources page

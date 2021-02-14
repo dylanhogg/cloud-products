@@ -20,6 +20,5 @@ How it works
 Learn more about AWS Systems Manager features
 Visit the features page
 Ready to build?
-Get started with AWS Systems Manager
 Have more questions?
 Contact us

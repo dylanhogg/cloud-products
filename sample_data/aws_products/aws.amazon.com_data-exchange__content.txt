@@ -46,7 +46,5 @@ Discover new sources of data
 Learn more
 Become a data provider
 Explore how to list your own data products
-Learn more
 Check out key features
 Learn more about AWS Data Exchange
-Learn more

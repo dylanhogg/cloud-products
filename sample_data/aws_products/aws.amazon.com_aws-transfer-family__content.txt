@@ -29,9 +29,7 @@ No blog posts have been found at this time. Please see the AWS Blog for other re
 To read more AWS Transfer Family blogs, please visit the AWS Storage blog channel.
 What's New with Transfer Family
 date
-date
 1
-…
 …
 Please see the AWS What's New page for recent launches.
 Check out AWS Transfer Family features

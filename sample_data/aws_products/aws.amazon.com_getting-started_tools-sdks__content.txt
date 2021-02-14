@@ -17,11 +17,7 @@ Unity
 Xamarin
 IoT Device SDKs
 Embedded C
-JavaScript
 Arduino Yún
-Java
-Python
-C++
 IDE and IDE Toolkits
 AWS Cloud9
 Eclipse
@@ -52,10 +48,3 @@ Additional Resources
 Forums
 Developer Center
 On this page
-SDKs
-Mobile SDKs
-IoT Device SDKs
-IDE and IDE Toolkits
-Command Line Tools
-AWS Developer Tools
-Additional Resources

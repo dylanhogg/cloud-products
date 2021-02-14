@@ -3,7 +3,6 @@ Centrally view and manage security alerts and automate security checks
 Start your free trial of AWS Security Hub
 AWS Security Hub gives you a comprehensive view of your security alerts and security posture across your AWS accounts. There are a range of powerful security tools at your disposal, from firewalls and endpoint protection to vulnerability and compliance scanners. But oftentimes this leaves your team switching back-and-forth between these tools to deal with hundreds, and sometimes thousands, of security alerts every day. With Security Hub, you now have a single place that aggregates, organizes, and prioritizes your security alerts, or findings, from multiple AWS services, such as Amazon GuardDuty, Amazon Inspector, Amazon Macie, AWS Identity and Access Management (IAM) Access Analyzer, AWS Systems Manager, and AWS Firewall Manager, as well as from AWS Partner Network (APN) solutions. AWS Security Hub continuously monitors your environment using automated security checks based on the AWS best practices and industry standards that your organization follows. You can also take action on these security findings by investigating them in Amazon Detective or by using Amazon CloudWatch Event rules to send the findings to ticketing, chat, Security Information and Event Management (SIEM), Security Orchestration Automation and Response (SOAR), and incident management tools or to custom remediation playbooks. Get started with AWS Security Hub in just a few clicks in the Management Console and once enabled, Security Hub will begin aggregating and prioritizing findings and conducting security checks.
 Introduction to AWS Security Hub (2:34)
-Start your free trial of AWS Security Hub
 Benefits
 Save time with aggregated findings
 AWS Security Hub reduces the effort of collecting and prioritizing security findings across accounts, from AWS services, and AWS partner tools. The service ingests data using a standard findings format, eliminating the need for time-consuming data conversion efforts. It then correlates findings across providers to prioritize the most important findings.
@@ -14,13 +13,10 @@ Integrated dashboards bring together your security findings across accounts to s
 How it works
 Blog posts and articles
 Date
-Date
 More…
 Featured customers
 Partners
 Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps. See a full list of AWS Security Hub integration partners
-Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
-Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
 Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
 Explore AWS Security Hub features
 Security Hub offers aggregated findings across AWS services and partner solutions, pre-configured and custom security insights, and multi-account support.

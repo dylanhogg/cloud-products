@@ -9,22 +9,14 @@ Close
 Click to enlarge
 Easily transform data
 SageMaker Data Wrangler offers a selection of 300+ pre-configured data transformations, such as convert column type, one hot encoding, impute missing data with mean or median, rescale columns, and data/time embeddings, so you can transform your data into formats that can be effectively used for models without writing a single line of code. For example, you can convert a text field column into a numerical column with a single click, or author custom transformations in PySpark, SQL, and Pandas.
-Close
-Click to enlarge
 Understand your data with visualizations
 SageMaker Data Wrangler helps you understand your data and identify potential errors and extreme values with a set of robust pre-configured visualization templates. Histograms, scatter plots, box and whisker plots, line plots, and bar charts are all available. Templates such as the histogram make it simple to create and edit your own visualizations without writing code.
-Close
-Click to enlarge
 Quickly estimate ML model accuracy
 Diagnose and fix ML data preparation issues faster
 SageMaker Data Wrangler enables you to quickly identify inconsistencies in your data preparation workflow and diagnose issues before models are deployed into production. You can quickly identify if your prepared data will result in an accurate model so you can determine if additional feature engineering is needed to improve performance.
-Close
-Click to enlarge
 From preparation to production with a single click
 Automate ML data preparation workflows
 Export your data preparation workflow to a notebook or code script with a single click to bring it into production. SageMaker Data Wrangler seamlessly integrates your data preparation workflow with Amazon SageMaker Pipelines to automate model deployment and management. It also publishes features in Amazon SageMaker Feature Store so you can share features across your team and others can reuse them for their own models and analysis.
-Close
-Click to enlarge
 Customers
 “At INVISTA, we are driven by transformation and look to develop products and technologies that benefit customers around the globe. We see machine learning as a way to improve the customer experience, but with datasets that span hundreds of millions of rows, we needed a solution to help us prepare data, and develop, deploy, and manage ML models at scale…With Amazon SageMaker Data Wrangler, we can now interactively select, clean, explore, and understand our data effectively, empowering our data science team to create feature engineering pipelines that can scale effortlessly to datasets that span hundreds of millions of rows… with Amazon SageMaker Data Wrangler, we can operationalize our ML workflows faster.”
 Caleb Wilkinson, Lead Data Scientist - INVISTA

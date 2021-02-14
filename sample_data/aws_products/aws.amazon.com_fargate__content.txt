@@ -18,9 +18,7 @@ With Fargate, you get out-of-box observability through built-in integrations wit
 How it works
 What's New
 date
-date
 1
-…
 …
 See all announcements »
 Customers using AWS Fargate
@@ -39,14 +37,8 @@ Veritone built real-time AI with AWS Fargate
 Skywatch uses Fargate to process satellite data
 Other customers using AWS Fargate
 Blog posts & articles
-date
-date
-1
-…
-…
 Learn more about AWS Fargate pricing
 Visit the pricing page
 Ready to build?
-Get started with AWS Fargate
 Have more questions?
 Contact us

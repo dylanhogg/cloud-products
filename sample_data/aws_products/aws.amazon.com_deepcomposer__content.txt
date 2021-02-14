@@ -11,10 +11,8 @@ Input a melody by connecting the AWS DeepComposer keyboard to your computer, or 
 Learn more »
 Console
 Generate an original musical composition using the pre-trained genre models in the AWS DeepComposer console. Choose from rock, pop, jazz, classical, or build your own custom genre.
-Learn more »
 Chartbusters
 Share your creations by publishing your tracks to SoundCloud from the AWS DeepComposer console to enter monthly challenges for a chance to top the charts and win prizes.
-Learn more »
 Learning at your fingertips
 A creative way to learn ML
 AWS DeepComposer allows developers of all skill levels to get started with Generative AI by providing hands-on tutorials to quickly start training models and test them in a fun, musical experience.
@@ -27,11 +25,9 @@ Explore the pre-trained sample models available in the AWS DeepComposer console,
 Tweak the model hyperparameters such as epochs and learning rate in the AWS DeepComposer console or for advanced learning build your own custom GAN architecture with Amazon SageMaker.
 Get creative and customize your AI-generated music using your favorite Digital Audio Workstation (DAW).
 Upload your finished AI-generated compositions directly from AWS DeepComposer into SoundCloud to share your tracks with the world. Enter monthly AWS DeepComposer Charbusters challenges for a chance to win prizes and glory.
-Start Composing
 Tune in to learning capsules
 Learning capsules provide developers with tutorials to learn Generative AI in easy-to-consume, bite-size modules. With learning capsules, developers can now get hands-on with Generative AI techniques in addition to ML concepts. Developers looking to dive deep will be provided with sample Amazon SageMaker notebooks for step-by-step code walk through in each learning capsule. Log on to the AWS DeepComposer console and tune in to learning.
 The keys to machine learning
 Get started by using the MIDI-compatible AWS DeepComposer keyboard to compose melodies as input for your ML generated compositions. Use the hardware buttons on the keyboard to control the volume, playback, and recording flow, as well as use the built-in functions to create more complex inputs. You can also export the MIDI files to your favorite Digital Audio Workstation (DAW) and get even more creative.
-Buy Now
 More hands-on learning
 Explore the portfolio of educational devices designed for developers of all skill levels to learn ML in fun, practical ways. Get started with reinforcement learning with AWS DeepRacer and learn how to build deep learning-based computer vision apps with AWS DeepLens.

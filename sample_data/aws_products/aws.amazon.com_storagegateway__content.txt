@@ -30,10 +30,8 @@ Learn more about Tape Gateway »
 Learn more about File Gateway »
 Use on-premises file shares backed by cloud storage
 File Gateway helps you access virtually unlimited cloud backed file shares from on-premises, reduces your costs of storing data locally, and provides you with additional flexibility by allowing you to access your data in the cloud. Nearly all enterprises, regardless of industry, have to store files, whether they are backups, media content, or specialized vertical application datasets. Managing and scaling on-premises infrastructure to provide online storage and distribution of such backup or content files is often burdensome and costly, requiring expensive hardware refreshes, expansion, and software licensing. File Gateway helps you reduce these on-premises costs and physical hardare footprints giving you more freedom to make the best decisions for your business.
-Learn more about File Gateway »
 Low latency access for on-premises applications to cloud
 Storage Gateway enables on-premises applications to use cloud storage by providing low-latency data access over standard storage protocols. A local cache stores your most recently used data on-premises, and the cloud provides scalability as well as industry-leading data protection, durability, availability, security, and performance. Storage Gateway provides a simple first step into the cloud and is designed to be easy to deploy, easy to activate, and easy for your applications to access.
-Learn more about File Gateway »
 Data protection and disaster recovery
 With a Volume Gateway configuration, you can take snapshots of your local volumes and store those snapshots in Amazon EBS. Those snapshots can be the starting point for an Amazon EBS volume, which you can then attach to an Amazon EC2 instance. In the event of a local site disaster, simply set up your applications in the cloud or in a different data center, and restore your snapshot to get back up and running.
 Learn more about Volume Gateway »
@@ -47,9 +45,7 @@ No blog posts have been found at this time. Please see AWS Blog for other resour
 To read more AWS Storage Gateway blogs, please visit the AWS Storage blog channel.
 What's New with Storage Gateway
 Date
-Date
 1
-…
 …
 Ready to get started?
 Check out Storage Gateway features
@@ -64,6 +60,5 @@ Get started
 Learn more about AWS Storage Gateway
 Visit the features page
 Ready to build?
-Get started with AWS Storage Gateway
 Have more questions?
 Contact us

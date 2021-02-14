@@ -17,13 +17,11 @@ Access Management (IAM) policies and roles, with support for resource policies, 
 Customer stories
 Pac-12 Network
 Fuji Television
-Pac-12 Network
 “To stay ahead of technology at a fraction of the traditional cost, we are excited to turn to the cloud with AWS which offers end-to-end ingest-to-delivery workflow support. We plan to leverage these latest services to provide live and on-demand Pac-12 networks content for millions of viewers.”
 Mark Kramer, Vice President, Engineering & Technology for Pac-12 Network
 About Pac-12 Networks
 The sports media production arm of the Pac-12 Conference, is on a mission to connect fans to the universities and sports they love. Learn how Pac-12 Networks is going all-in on AWS to transform the fan experience with high-quality, personalized live and on-demand sports
 Customer Snapshot: Pac-12 Networks
-Fuji Television
 “AWS Elemental MediaStore and Amazon CloudFront provide support for CMAF ultra-low latency and large-scale video distribution. As managed services, they provide a usable environment immediately, scaling to meet distribution needs, and allow freedom from complex operational overhead, including support for switchovers when trouble happens."
 Masashi Ito, Principal Architect and R&D Engineer at Fuji Television
 About Fuji Television Network, Inc.
@@ -36,6 +34,5 @@ Create and configure a container, configure access rules, and start sending and 
 Have questions?
 Contact us
 Ready to build?
-Get started with AWS Elemental MediaStore
 Discover more resources
 Visit the Resources page

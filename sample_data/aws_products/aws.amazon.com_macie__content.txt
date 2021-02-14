@@ -24,6 +24,5 @@ Read documentation
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
-Get started with Amazon Macie
 Get started building with Amazon Macie.
 Get started

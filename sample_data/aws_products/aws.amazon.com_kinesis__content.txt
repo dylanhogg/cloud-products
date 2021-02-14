@@ -18,20 +18,13 @@ Learn more »
 Kinesis Data Streams
 Capture, process, and store data streams
 Amazon Kinesis Data Streams is a scalable and durable real-time data streaming service that can continuously capture gigabytes of data per second from hundreds of thousands of sources.
-Learn more »
 Kinesis Data Firehose
 Load data streams into AWS data stores
 Amazon Kinesis Data Firehose is the easiest way to capture, transform, and load data streams into AWS data stores for near real-time analytics with existing business intelligence tools.
-Learn more »
 Kinesis Data Analytics
 Analyze data streams with SQL or Apache Flink
 Amazon Kinesis Data Analytics is the easiest way to process data streams in real time with SQL or Apache Flink without having to learn new programming languages or processing frameworks.
-Learn more »
 How it works
-Amazon Kinesis Video Streams
-Amazon Kinesis Data Streams
-Amazon Kinesis Data Firehose
-Amazon Kinesis Data Analytics
 Amazon Kinesis Video Streams
 Amazon Kinesis Data Streams
 Amazon Kinesis Data Firehose
@@ -52,7 +45,6 @@ You can use Amazon Kinesis for real-time applications such as application monito
 Read the whitepaper »
 Example: Analysis of streaming social media data
 Netflix uses Amazon Kinesis to monitor the communications between all of its applications so it can detect and fix issues quickly, ensuring high service uptime and availability to its customers.
-Read the case study »
 Analyze IoT device data
 You can use Amazon Kinesis to process streaming data from IoT devices such as consumer appliances, embedded sensors, and TV set-top boxes. You can then use the data to send real-time alerts or take other actions programmatically when a sensor exceeds certain operating thresholds. Use our sample IoT analytics code to build your application. No need to start from scratch.
 Download sample code »
@@ -74,7 +66,6 @@ by Jeff Barr
 Read Amazon Kinesis articles on the AWS News Blog.
 Learn about best practices, feature capabilities, and customer use cases on the AWS Big Data Blog.
 Read more blog articles about Amazon Kinesis on the AWS Databases Blog.
-Get started with Amazon Kinesis
 Read the whitepaper
 Learn how to use Amazon Kinesis capabilities in this whitepaper.
 Read whitepaper
@@ -87,6 +78,5 @@ Start tutorial
 Learn more about Amazon Kinesis
 Visit the getting started page
 Ready to build?
-Get started with Amazon Kinesis
 Have more questions?
 Contact us

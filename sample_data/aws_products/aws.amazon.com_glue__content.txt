@@ -25,9 +25,7 @@ Build materialized views to combine and replicate data (in preview)
 AWS Glue Elastic Views enables you to use familiar SQL to create materialized views. Use these views to access and combine data from multiple source data stores, and keep that combined data up-to-date and accessible from a target data store. The AWS Glue Elastic Views preview currently supports Amazon DynamoDB as a source, with support for Amazon Aurora and Amazon RDS to follow. Currently supported targets are Amazon Redshift, Amazon S3, and Amazon Elasticsearch Service, with support for Amazon Aurora, Amazon RDS, and Amazon DynamoDB to follow. Learn more about AWS Glue Elastic Views here.
 What's New
 date
-date
 1
-…
 …
 Check out the AWS Glue features
 Learn more about the key features of AWS Glue.

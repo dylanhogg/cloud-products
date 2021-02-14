@@ -77,4 +77,3 @@ PORTS
 SENSORS
 Integrated accelerometer and gyroscope
 Order your AWS DeepRacer Evo today.
-Buy Now

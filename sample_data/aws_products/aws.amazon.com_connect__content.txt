@@ -41,7 +41,6 @@ Learn more »
 Connecting with citizens during critical times.
 Learn more »
 Morrisons Delivers a Self-Serve Contact Center in 8 Weeks.
-Learn more »
 To learn more, see Amazon Connect customers.
 Quickly set up a virtual contact center for remote agents
 Are you looking for a flexible and secure way for your contact center agents to provide quality customer service from anywhere? Historically agents were required to be physically in the contact center office tethered to a phone at their desk, but today thousands of customers are using Amazon Connect, a cloud-based contact center solution to enable virtual contact centers and address their unique needs.
@@ -62,9 +61,7 @@ Contact Amazon Connect sales.
 Get started with Amazon Connect
 Visit the
 Amazon Connect console.
-Learn more about Amazon Connect
 Visit the features page
 Ready to build?
-Get started with Amazon Connect
 Have more questions?
 Contact us

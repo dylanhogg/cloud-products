@@ -68,6 +68,5 @@ Start tutorial
 Learn more about Amazon Kinesis Video Streams features
 Visit the features page
 Ready to build?
-Get started with Kinesis Video Streams
 Have more questions?
 Contact us

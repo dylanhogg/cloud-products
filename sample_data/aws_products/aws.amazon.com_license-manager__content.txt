@@ -30,4 +30,3 @@ Instantly get access to the AWS Free Tier.
 Sign in
 Start building in the console
 Get started building with AWS License Manager in the AWS Console.
-Sign in

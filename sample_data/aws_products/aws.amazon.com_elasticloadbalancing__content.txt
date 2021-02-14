@@ -8,13 +8,10 @@ Application Load Balancer is best suited for load balancing of HTTP and HTTPS tr
 Learn more
 Network Load Balancer
 Network Load Balancer is best suited for load balancing of Transmission Control Protocol (TCP), User Datagram Protocol (UDP), and Transport Layer Security (TLS) traffic where extreme performance is required. Network Load Balancer routes traffic to targets within Amazon VPC and is capable of handling millions of requests per second while maintaining ultra-low latencies.
-Learn more
 Gateway Load Balancer
 Gateway Load Balancer makes it easy to deploy, scale, and run third-party virtual networking appliances. Providing load balancing and auto scaling for fleets of third-party appliances, Gateway Load Balancer is transparent to the source and destination of traffic. This capability makes it well suited for working with third-party appliances for security, network analytics, and other use cases.
-Learn more
 Classic Load Balancer
 Classic Load Balancer provides basic load balancing across multiple Amazon EC2 instances and operates at both the request level and the connection level. Classic Load Balancer is intended for applications that were built within the EC2-Classic network.
-Learn more
 Benefits
 Highly availability and elasticity
 Elastic Load Balancing is part of the AWS network, with native awareness of failure boundaries like AZs to keep your applications available across a region, without requiring Global Server Load Balancing (GSLB). ELB is also a fully managed service, meaning you can focus on delivering applications and not installing fleets of load balancers. Capacity is automatically added and removed based on the utilization of the underlying application servers.
@@ -38,23 +35,15 @@ When migrating to the cloud, some customers look to retain their existing applia
 Customers
 Blog posts and articles
 Date
-Date
 1
-…
 …
 New – Advanced Request Routing for AWS Application Load Balancers
 by Jeff Barr
 March 27, 2019
 Learn more »
 What's new in Elastic Load Balancing
-Date
-Date
-1
-…
-…
 Discover more about Elastic Load Balancing
 Visit the features page.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

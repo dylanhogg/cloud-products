@@ -39,6 +39,5 @@ Amazon SageMaker for machine learning
 Learn more about Amazon SageMaker
 Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
 Ready to build?
-Get started with AWS Deep Learning AMIs
 Have more questions?
 Contact us

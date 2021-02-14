@@ -31,6 +31,5 @@ AWS project.
 Learn more about AWS WAF
 Visit the features page
 Ready to build?
-Get started with AWS WAF
 Have more questions?
 Contact us

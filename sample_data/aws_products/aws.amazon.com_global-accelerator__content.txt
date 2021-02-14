@@ -16,7 +16,6 @@ Single Region applications
 Multi-Region applications
 Gaming
 Real-time communication
-Single Region applications
 Improving latency and availability for single Region applications
 AWS Global Accelerator helps bridge the gap between single and multiple Region deployments by improving the network routing for local and global traffic. If local and global traffic to your application’s single Region is left on the public internet, it can be negatively impacted by internet congestion and local outages. Using Global Accelerator, your user’s traffic is moved off the internet and onto Amazon’s private global network through 80+ global edge locations, then directed to your application origins. AWS Global Accelerator is quick to setup and increases traffic performance by up to 60%.
 Resources
@@ -26,59 +25,33 @@ BLOG POST
 Improve performance by up to 60%
 Blog Post
 Pre-built CloudFormation template
-BLOG POST
 1-click acceleration
 CUSTOMER EXAMPLE
-Lever
-CUSTOMER EXAMPLE
 The Trade Desk
-Multi-Region applications
 Simplified and resilient traffic routing for multi-Region applications
 As your application architecture grows, so does the complexity, with longer user facing IP lists and more nuanced traffic routing logic. AWS Global Accelerator solves for this by providing you with two static IPs that are anycast from our globally distributed edge locations, giving you a single entry point to your application, regardless of how many AWS Regions it’s deployed in. This allows you to add or remove origins, Availably Zones or Regions without reducing your application availability. Your traffic routing is managed manually, or in console with endpoint traffic dials and weights. If your application endpoint has a failure or availability issue, AWS Global Accelerator will automatically redirect your new connections to a healthy endpoint within seconds.
-Resources
-Documentation
 Resilience in AWS Global Accelerator
 Solution Guide
 Endpoint weights
 Customer reference
-Skyscanner
-Customer reference
 Flowplayer
 Blog post
 Traffic management with AWS Global Accelerator
-Blog Post
 Accessing private Application Load Balancers and EC2 instances
-Gaming
 Enhanced network performance for gaming
 Growing and maintaining your online multiplayer gaming community requires a smooth and competitive gaming experience. Using AWS Global Accelerator enhances your players' online experience by routing player traffic along the private AWS global network, reducing in-game latency, jitter, and packet loss. Acceleration is supported for the UDP protocol traffic used by popular engines, such as Amazon Lumberyard, Unity, and Unreal Engine. AWS edge locations can ingress and route player traffic to game servers in any of the 20 AWS Global Accelerator supported Regions that AWS Global Accelerator supports, providing faster load times and a more consistent in-game experience. Handle your large traffic spikes, such as game launches and in-game events, without interrupting service on the highly available AWS global network.
-Resources
-Blog post
-Improve performance by up to 60%
-Blog post
 Introducing AWS Global Accelerator custom routing accelerators
-Blog Post
 Reach more players using AWS Global Accelerator
 Customer testimonial
-JoyCity
 Webinar
 Highly Available and Performant applications using AWS Global Accelerator
-Webinar
 What’s New with AWS Global Accelerator
-Real-time communication
 Running communication as a service and voice over IP on AWS
 AWS Global Accelerator improves your real-time communications (RTCs) by decreasing call setup time while increasing call success rate and quality. As a telecommunications industry service, you provide latency-sensitive RTC for applications including Voice over IP and video conferencing, across a variety of devices. To support this, use Global Accelerator so you can run application protocols, such as Session Initiation, Real Time, and WebRTC, on the AWS global network. Connect directly to your Session Border Controller to reduce the number of network dependencies and hops. This can stabilize your RTC caller traffic during peak internet hours and call traffic spikes.
-Resources
-Documentation
-Resilience in AWS Global Accelerator
-Documentation
 Real-time Communications Whitepaper
 Blog Posts
-Introducing AWS Global Accelerator custom routing accelerators
 Blog posts
 CrazyCall
-Blog posts
-Traffic management with AWS Global Accelerator
-Blog posts
 CaaS blog
 Benefits of AWS Global Accelerator
 Accelerate latency sensitive applications
@@ -95,15 +68,10 @@ With AWS Global Accelerator
 Adding AWS Global Accelerator removes these inefficiencies. It leverages the Global AWS Network, resulting in improved performance.
 Customers using AWS Global Accelerator
 Read customer testimonials »
-Blog posts
-Date
 Date
 More…
 No blog posts could be found at this time. Please visit AWS Blogs to read more blog content.
 What's new
-Date
-Date
-More…
 No what's new announcements could be found at this time. Please visit AWS What's New to read more announcements.
 Check out the product features
 Discover what AWS Global Accelerator can do for your applications.

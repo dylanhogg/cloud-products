@@ -13,19 +13,12 @@ AWS Elemental
 Live
 Convert inputs into live outputs for broadcast and multiscreen video delivery
 Learn more »
-AWS Elemental
 Server
 Prepare file-based content for on-demand broadcast and multiscreen delivery
-Learn more »
-AWS Elemental
 Conductor
 Manage video networks for live and on-demand content
-Learn more »
-AWS Elemental
 Link
 Connect a live video source to AWS Elemental MediaLive
-Learn more »
-AWS Elemental Appliances & Software
 Benefits
 Flexible video solutions
 Deploy video processing and delivery solutions wherever you need them without disrupting existing infrastructures. AWS Elemental Appliances and Software products work with a vast ecosystem of on-premises and cloud-based solutions for content ingest, video processing, media asset management, content protection, advertising and monetization, content distribution, machine learning, and more.
@@ -41,5 +34,3 @@ Maximize your resources
 Process your video content with speed and efficiency for excellent resource utilization. Unique software architectures help maximize performance and optimize compression for live or on-demand content, so you can process more video with fewer resources and less network bandwidth. Built-in resource management and intuitive interfaces simplify workflow integration, job processing, and scheduling so you can get the most out of your hardware.
 Get Started
 Want to learn more? Connect with an AWS media solutions expert.
-Contact Sales
-Live Chat

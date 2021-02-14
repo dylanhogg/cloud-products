@@ -7,19 +7,14 @@ We regularly release updates with new features. Tell us what features you need a
 Operating systems
 Console Mobile Application for iOS
 Console Mobile Application for Android
-Console Mobile Application for iOS
 New features
 iOS users can now use Amazon API Gateway, AWS CloudTrail, AWS Identity and Access Management, AWS Lambda, and Amazon Simple Queue Service features on the Console mobile app. In addition, we have expanded Amazon CloudWatch capabilities to include logs.
 Services
 The Console Mobile Application for iOS supports Amazon API Gateway, AWS Billing and Cost Management, AWS CloudFormation, AWS CloudTrail, Amazon CloudWatch, Amazon DynamoDB, AWS Elastic Beanstalk, Amazon Elastic Compute Cloud (Amazon EC2), Elastic Load Balancing, AWS Identity and Access Management, AWS Lambda, AWS OpsWorks, AWS Personal Health Dashboard, Amazon Relational Database Service (Amazon RDS), Amazon Route 53, Amazon Simple Queue Service features, Amazon Simple Storage Service (Amazon S3), Amazon Virtual Private Cloud (Amazon VPC).
 Regions
 The Console Mobile Application for iOS supports US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), EU (Frankfurt), EU (Ireland), EU (London), EU (Paris), EU (Stockholm), South America (Sao Paulo), Asia Pacific (Hong Kong), Middle East (Bahrain), Europe (Milan), and Africa (Cape Town).
-Console Mobile Application for Android
-New features
 Android users can now use Amazon API Gateway, AWS CloudTrail, AWS Identity and Access Management, AWS Lambda, and Amazon Simple Queue Service features on the Console mobile app. In addition, we have expanded Amazon CloudWatch capabilities to include logs.
-Services
 The Console Mobile Application for Android supports Amazon API Gateway, AWS Billing and Cost Management, AWS CloudFormation, AWS CloudTrail, Amazon CloudWatch, Amazon DynamoDB, AWS Elastic Beanstalk, Amazon Elastic Compute Cloud (Amazon EC2), Elastic Load Balancing, AWS Identity and Access Management, AWS Lambda, AWS OpsWorks, AWS Personal Health Dashboard, Amazon Relational Database Service (Amazon RDS), Amazon Route 53, Amazon Simple Queue Service features, Amazon Simple Storage Service (Amazon S3), Amazon Virtual Private Cloud (Amazon VPC).
-Regions
 The Console Mobile Application for Android supports US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), EU (Frankfurt), EU (Ireland), EU (London), EU (Paris), EU (Stockholm), South America (Sao Paulo), Asia Pacific (Hong Kong), Middle East (Bahrain), Europe (Milan), and Africa (Cape Town).
 Requirements and recommendations
 Requires an existing AWS account.
