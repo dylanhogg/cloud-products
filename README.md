@@ -1,9 +1,9 @@
 # cloud-products 
 
 [![pypi Version](https://img.shields.io/pypi/v/cloud-products.svg?logo=pypi)](https://pypi.org/project/cloud-products/)
-![Latest Tag](https://img.shields.io/github/v/tag/dylanhogg/cloud-products)
-![Dependencies](https://img.shields.io/librariesio/github/dylanhogg/cloud-products)
-![Build](https://github.com/dylanhogg/cloud-products/workflows/build/badge.svg)
+[![Latest Tag](https://img.shields.io/github/v/tag/dylanhogg/cloud-products)](https://github.com/dylanhogg/cloud-products/tags)
+[![Build](https://github.com/dylanhogg/cloud-products/workflows/build/badge.svg)](https://github.com/dylanhogg/cloud-products/actions)
+[![Dependencies](https://img.shields.io/librariesio/github/dylanhogg/cloud-products)](https://libraries.io/github/dylanhogg/cloud-products)
 
 A package for getting cloud products and product descriptions from a cloud provider website with cache support.
 
