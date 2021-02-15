@@ -38,7 +38,9 @@ class AwsCrawler(base.Crawler):
 
         text = tags.text
         lines = text.splitlines()
-        lines = list(AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length)
+        lines = list(
+            AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length
+        )
         return lines
 
     def _scrape_page(self, url, cache_path, use_cache) -> Tuple[BeautifulSoup, bool]:
@@ -184,7 +186,9 @@ class AwsCrawler(base.Crawler):
                 if "/faqs/" in page.abs_href_faq:
                     # HACK: Fix AWS products that have an inconsistent faq url.
                     page.abs_href_faq = page.abs_href_faq.replace("/faqs", "/faq")
-                    logging.debug(f"FAQ page did not exist for {page.code}. Trying new abs_href_faq: {page.abs_href_faq}")
+                    logging.debug(
+                        f"FAQ page did not exist for {page.code}. Trying new abs_href_faq: {page.abs_href_faq}"
+                    )
                     return self.get_faq_text(page, cache_path, use_cache)
                 else:
                     logging.warning(f"FAQ page did not exist for page (or alternatives): {page.abs_href_faq}")
