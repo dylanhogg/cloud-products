@@ -6,10 +6,14 @@ def run_full_aws_crawler():
     from cloud_products.aws import AwsCrawler
 
     crawler = AwsCrawler()
+    products = AwsCrawler().get_products()
+    print(f"Found {len(products)} products.")
 
-    for product in AwsCrawler().get_products():
-        print(f"Saving {product.name}...")
-        crawler.save_product(product, output_path)
+    for product in products:
+        print(f"Saving {product.name} from {product.abs_href}...")
+        crawler.save_product(product, output_path, use_cache=False)
+        print(f"Saving {product.name} FAQ from {product.abs_href_faq}...")
+        crawler.save_faq(product, output_path, use_cache=False)
 
     print(f"Finished.")
 
@@ -37,12 +41,13 @@ def run_aws_crawler_examples():
     sagemaker_description = crawler.get_product_text(sagemaker_products[0])
     print(sagemaker_description[3])
 
-    logging.info("Example 4: Save product descriptions to files:")
+    logging.info("Example 4: Save product descriptions and FAQ pages to files:")
     from cloud_products.aws import AwsCrawler
 
     for product in AwsCrawler().get_products()[0:5]:
-        print(f"Saving {product.name}...")
+        print(f"Saving {product.name} from {product.abs_href}...")
         crawler.save_product(product, output_path)
+        crawler.save_faq(product, output_path)
 
     logging.info("Example 5: Convert list of products to Pandas dataframe")
     import pandas as pd

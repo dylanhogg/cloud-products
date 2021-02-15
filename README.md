@@ -66,13 +66,14 @@ Amazon SageMaker is a fully managed service that provides every developer and da
 ```
 
 
-### Example 4: Save product descriptions to files:
+### Example 4: Save product descriptions and FAQ pages to files:
 ```python
 from cloud_products import aws
 cloud_products = aws.AwsCrawler()
 for product in cloud_products.get_products():
     print(f"Saving {product.name}")
     cloud_products.save_product(product, output_path)
+    cloud_products.save_faq(product, output_path)
 ```
 
 Example output:

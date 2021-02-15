@@ -1,10 +1,13 @@
 import os
 import logging
+import re
+import unicodedata
 from cloud_products import base
 from cloud_products.product import Product
 from pathlib import Path
 from typing import List, Tuple
 from urllib.request import urlopen
+from urllib.error import HTTPError
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 
@@ -16,13 +19,26 @@ class AwsCrawler(base.Crawler):
         super(AwsCrawler, self).__init__()
 
     @staticmethod
-    def _parse_product(soup) -> List[str]:
+    def normalise_chars(line, remove_chars) -> str:
+        new_line = line
+        new_line = unicodedata.normalize("NFKD", new_line)  # Normalise &nbsp etc.
+        new_line = re.sub(r"^Q\.", "Q:", new_line.strip())  # Some AWS faq pages are inconsistent with Qn prefix.
+        new_line = re.sub(r"^Q\:[ ]+", "Q: ", new_line.strip())  # Normalise spacing.
+        new_line = new_line.translate({ord(i): None for i in remove_chars})  # Remove chars using translate().
+        return new_line.strip()
+
+    @staticmethod
+    def _parse_product(soup, min_line_length=1, remove_chars=None) -> List[str]:
+        if remove_chars is None:
+            remove_chars = ["»", "\n", "\r"]
+
         tags = soup.find("main", attrs={"role": "main"})
         if tags is None:
             return []
+
         text = tags.text
         lines = text.splitlines()
-        lines = list(l.strip() for l in lines if len(l.split()) > 0)
+        lines = list(AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length)
         return lines
 
     def _scrape_page(self, url, cache_path, use_cache) -> Tuple[BeautifulSoup, bool]:
@@ -70,11 +86,12 @@ class AwsCrawler(base.Crawler):
 
             rel_href = urlparse(a["href"]).path
             abs_href = urljoin(base_url, rel_href)
+            abs_href_faq = urljoin(base_url, rel_href + "faqs/")
             code = rel_href.replace("/", "").strip().lower()
             name = a.contents[0].strip()
             std_name = name.lower().replace("amazon", "aws")
             desc = a.contents[1].text.strip()
-            product = Product(name, std_name, code, rel_href, abs_href, base_url, seed_url, desc)
+            product = Product(name, std_name, code, rel_href, abs_href, abs_href_faq, base_url, seed_url, desc)
 
             if std_name in crawled:
                 # Duplicate links can exist in page, skip these
@@ -85,17 +102,31 @@ class AwsCrawler(base.Crawler):
 
         return results
 
-    def _crawl_product_text(self, page, cache_path, use_cache) -> List[str]:
+    def _crawl_product_text(self, page, cache_path, use_cache, dedupe=True) -> List[str]:
         logging.debug(f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}")
         url = page.abs_href
         logging.debug(f"Url: {url}")
         (svc_soup, loaded_from_cache) = self._scrape_page(url, cache_path, use_cache)
         lines = self._parse_product(svc_soup)
+
         if len(lines) == 0:
-            logging.warning(f"No matching lines for page: {page.std_name}")
+            logging.warning(f"No matching lines for product page: {page.std_name}")
             return []
 
-        return lines
+        return self.dedupe_list(lines) if dedupe else lines
+
+    def _crawl_faq_text(self, page, cache_path, use_cache, dedupe=True) -> List[str]:
+        logging.debug(f"Child: {page.std_name}, {page.name}, {page.desc}, {page.rel_href}")
+        url = page.abs_href_faq
+        logging.debug(f"Url: {url}")
+        (svc_soup, loaded_from_cache) = self._scrape_page(url, cache_path, use_cache)
+        lines = self._parse_product(svc_soup)
+
+        if len(lines) == 0:
+            logging.warning(f"No matching lines for faq page: {page.std_name}")
+            return []
+
+        return self.dedupe_list(lines) if dedupe else lines
 
     def get_products(self, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
@@ -134,5 +165,29 @@ class AwsCrawler(base.Crawler):
         if cache_path is None:
             cache_path = self.default_cache_path
 
-        logging.debug(f"Crawling page: {page}")
+        logging.debug(f"Crawling product page: {page}")
         return self._crawl_product_text(page, cache_path, use_cache)
+
+    def get_faq_text(self, page, cache_path=None, use_cache=True) -> List[str]:
+        if cache_path is None:
+            cache_path = self.default_cache_path
+
+        logging.debug(f"Crawling faq page: {page}")
+        try:
+            return self._crawl_faq_text(page, cache_path, use_cache)
+        except HTTPError as err:
+            if err.code == 404:
+                # TODO: get real faq link from page.abs_href and propagate this back to caller.
+                #       E.g. https://aws.amazon.com/elastic-inference/ points to
+                #       https://aws.amazon.com/machine-learning/elastic-inference/
+                #       E.g. https://aws.amazon.com/rds/aurora/serverless/ links to parent page.
+                if "/faqs/" in page.abs_href_faq:
+                    # HACK: Fix AWS products that have an inconsistent faq url.
+                    page.abs_href_faq = page.abs_href_faq.replace("/faqs", "/faq")
+                    logging.debug(f"FAQ page did not exist for {page.code}. Trying new abs_href_faq: {page.abs_href_faq}")
+                    return self.get_faq_text(page, cache_path, use_cache)
+                else:
+                    logging.warning(f"FAQ page did not exist for page (or alternatives): {page.abs_href_faq}")
+                    return None
+            else:
+                raise err

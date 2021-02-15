@@ -67,6 +67,26 @@ def test_aws_crawl_lines():
         assert len(lines) > 0
 
 
+def test_aws_crawl_save_faq_default_filename():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products()
+    for product in products[:3]:
+        filename = crawler.save_faq(product, output_path)
+        assert Path(filename).is_file()
+
+
+def test_aws_crawl_save_faq_custom_filename():
+    remove_dirs()
+    crawler = aws.AwsCrawler()
+
+    products = crawler.get_products()
+    for product in products[:3]:
+        filename = crawler.save_faq(product, output_path, "test_custom_faq_name.txt")
+        assert Path(filename).is_file()
+
+
 def test_aws_crawl_save_product_default_filename():
     remove_dirs()
     crawler = aws.AwsCrawler()

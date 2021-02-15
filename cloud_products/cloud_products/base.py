@@ -1,5 +1,6 @@
 import os
 import string
+from typing import List
 from bs4 import BeautifulSoup
 
 
@@ -29,6 +30,10 @@ class Crawler:
         with open(filename, "w") as f:
             f.write(str(obj))
 
+    @staticmethod
+    def dedupe_list(lst) -> List[str]:
+        return list(dict.fromkeys(lst))
+
     def save_product(self, product, output_path, output_filename=None, cache_path=None, use_cache=True) -> str:
         if cache_path is None:
             cache_path = self.default_cache_path
@@ -39,6 +44,26 @@ class Crawler:
 
         if output_filename is None:
             filename = os.path.join(output_path, f"{self.valid_filename(url)}_content.txt")
+        else:
+            filename = os.path.join(output_path, output_filename)
+
+        os.makedirs(output_path, exist_ok=True)
+        self.save(text, filename)
+        return filename
+
+    def save_faq(self, product, output_path, output_filename=None, cache_path=None, use_cache=True) -> str:
+        if cache_path is None:
+            cache_path = self.default_cache_path
+
+        lines = self.get_faq_text(product, cache_path, use_cache)
+        if lines is None:
+            return None
+
+        text = "\n".join(lines)
+        url = product.abs_href_faq
+
+        if output_filename is None:
+            filename = os.path.join(output_path, f"{self.valid_filename(url)}_faqs.txt")
         else:
             filename = os.path.join(output_path, output_filename)
 
