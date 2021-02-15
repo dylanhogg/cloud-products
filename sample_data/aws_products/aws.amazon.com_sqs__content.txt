@@ -21,7 +21,7 @@ Petroleum retailers in Australia are improving the performance and safety of the
 The NASA Image and Video Library provides easy access to more than 140,000 still images, audio recordings, and videos—documenting NASA’s more than half a century of achievements in exploring the vast unknown. The architecture includes Amazon SQS to decouple incoming jobs from pipeline processes and Amazon Simple Notification Service to trigger the processing pipeline when new content is updated.
 The BMW Group is using AWS for its connected car application that collects sensor data from BMW 7 Series cars to give drivers dynamically updated map information. BMW built its new car-as-a-sensor (CARASSO) service in only six months leveraging Amazon SQS, Amazon S3, Amazon DynamoDB, Amazon RDS, and AWS Elastic Beanstalk.
 Capital One is modernizing their retail message queuing by migrating from self-managed message-oriented middleware systems to Amazon SQS. Capital One is using SQS to migrate several core banking applications to the cloud to ensure high availability and cost efficiency while simplifying administrative complexity and overhead.
-AWS Services Used: Amazon EC2, Amazon S3, Amazon SQS, Amazon SNS & more.
+AWS Services Used: Amazon EC2, Amazon S3, Amazon SQS, Amazon SNS & more.
 AWS Services Used: Amazon SQS & Amazon SNS.
 AWS Services Used: Amazon EC2 & Amazon SQS.
 Change Healthcare uses AWS services like Amazon EC2, Amazon S3, Amazon SQS, and Amazon SNS to handle millions of confidential transactions daily from its clients while maintaining with full compliance with healthcare industry regulations, including HIPAA.

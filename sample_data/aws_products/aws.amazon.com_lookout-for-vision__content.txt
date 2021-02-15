@@ -28,7 +28,7 @@ You can detect defects with repeating patterns, which can indicate underlying pr
 Customers
 Dafgards is a household name in Sweden, manufacturing 15 different types of frozen pizzas at over 100 pizzas per minute.
 “To uphold our brand and deliver the freshest and tastiest customer experience, we want to ensure that all our pizzas are adequately covered in cheese and with the correct toppings. Early in our production process we installed a machine vision system to detect proper coverage of cheese across a pizza’s surface. While this system served well for our original inspection requirement, the system is unable to detect defects on new product types that include multiple toppings. Amazon Lookout for Vision automates and scales inspection of diverse product types such as a cheese pizza with vegetables using the same machine vision system. We successfully expanded our quality assurance for new product types with minimal impact to operations.”
-Fredrik Dafgård, Head of Operational Excellence & Industrial IoT
+Fredrik Dafgård, Head of Operational Excellence & Industrial IoT
 GE Healthcare manufactures and distributes diagnostic imaging agents, radiopharmaceuticals, and medical diagnostic equipment, including CT and MRI machines.
 "As a leading global medical technology and digital solutions innovator, GE Healthcare develops, manufactures and distributes diagnostic imaging agents, radio, pharmaceuticals, medical diagnostic equipment, including CT and MRI machines, and intelligent devices supported by its Edison intelligence platform. Today, we use human inspection to verify the quality of our medical equipment. To uphold our brand and deliver best-in-class products trusted by healthcare professionals, we're excited about the possibility of using Amazon Lookout for Vision to programmatically improve the speed, consistency, and accuracy of detecting product defects across our factories in Japan and potentially in other plants in global in the near future."
 Kozaburo Fujimoto, Operating Officer, General Manager, Manufacturing Division, Plant Manager, GE Healthcare Japan
@@ -37,7 +37,7 @@ Nukon, a SAGE Group company, is a digital transformation consultancy and deliver
 Rafael Amaral, Chief Technology Officer, Nukon
 Choose the cloud provider with proven experience in industrial operations
 From accelerating design to optimizing operations to reinventing supply chains, AWS helps leading industrial customers transform their business. AWS has the most comprehensive set of cloud services and solutions, an extensive partner network, and the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
-Learn more about AWS for Industrial »
+Learn more about AWS for Industrial
 Check out the Amazon Lookout for Vision features
 Discover what you Amazon Lookout for Vision can do for you.
 Learn more

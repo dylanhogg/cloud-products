@@ -9,10 +9,10 @@ Anyone can use AppFlow to integrate applications in a few minutes – no more wa
 Transfer data at massive scale
 AppFlow easily scales up without the need to plan or provision resources, so you can move large volumes of data without breaking it down into multiple batches. AppFlow can run up to 100 GB per flow, which enables you to easily transfer millions of Salesforce records or Zendesk events or Marketo responses or other data - all while running a single flow.
 Automate data security
-All data flowing through AppFlow is encrypted at rest and in transit, and you can encrypt data with AWS keys, or bring your own custom keys. With AppFlow, you can use your existing Identity and Access Management (IAM) policies to enforce fine-grained permissions, rather than creating new policies. For SaaS integrations with AWS PrivateLink enabled, data is secured from the public internet by default.
+All data flowing through AppFlow is encrypted at rest and in transit, and you can encrypt data with AWS keys, or bring your own custom keys. With AppFlow, you can use your existing Identity and Access Management (IAM) policies to enforce fine-grained permissions, rather than creating new policies. For SaaS integrations with AWS PrivateLink enabled, data is secured from the public internet by default.
 How it works
 You can use AppFlow to set up secure data flows in minutes, without managing complex connectors or writing code.
-Read a blog to learn more about how it works »
+Read a blog to learn more about how it works
 Customer Stories
 "Amazon AppFlow is a great product for simplification and enablement of secure, cost-effective SaaS and AWS integration.”
 Sandeep Garg, Solutions Architect, Expedia Group

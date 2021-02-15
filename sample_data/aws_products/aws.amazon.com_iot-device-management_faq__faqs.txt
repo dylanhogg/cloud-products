@@ -1,0 +1,54 @@
+Products
+Internet of Things
+AWS IoT Device Management
+AWS IoT Device Management FAQs
+Q: What is AWS IoT Device Management?
+AWS IoT Device Management is a service that makes it easy to securely register, organize, monitor, and remotely manage IoT devices at scale throughout their lifecycle. You can use IoT Device Management to upload and view device information and configuration, organize your device inventory, monitor your fleet of devices, troubleshoot individual devices, and remotely manage devices deployed across many locations including updating device software over-the-air (OTA). With IoT Device Management, you can scale your device fleets and reduce the cost and effort of managing large IoT device deployments.
+Q: In which regions is AWS IoT Device Management available?
+See the AWS Region Table for the current list of regions for AWS IoT Device Management.
+You can use AWS IoT Device Management regardless of your geographic region, as long as you have access to one of the above AWS regions.
+Q: What are the components of IoT Device Management?
+IoT Device Management includes six (6) main components (Bulk Registration, Fleet Indexing and Search, Fine-grained logging, Device Jobs, Secure Tunneling, and Fleet Hub).
+Bulk Registration: Allows the bulk registration of device identity, manages device authorization, credential management, and policy-based access for devices.
+Fleet Indexing and Search: Fleet Indexing and Search provides attribute-based search on a customer’s Registry and Device Shadow. It allows customers to quickly find devices based on a combination of attributes and state.
+Fine-grained Logging: This allows customers to configure the log levels for device groups so that they only monitor the information that they need. A customer can set one device group to record all logs, and set another group to only log errors.
+Device Jobs: Device Jobs runs and monitors software updates and other remote operations such as device reboots. It lets you manage updates to a single device or to your entire fleet. You can control the pace of deployment (e.g. deploy to 10 devices per second), and receive real-time information about the status of your jobs as they’re deployed to your devices.
+Secure Tunneling: Secure Tunneling allows the creation of a device tunnel - a secure communications session to a device. You can develop remote access solutions that provide secure connectivity to individual devices that are deployed behind restricted firewalls or on isolated control networks, without the need to adjust firewall configurations.
+Fleet Hub: Fleet Hub allows you to easily view and interact with your device fleets. You can monitor fleet and device level health, be alerted to unusual behavior through rule-based alarms, and use built-in integrations with other AWS IoT Device Management features and AWS IoT capabilities to further troubleshoot an identified issue or take corrective actions.
+Q: How does IoT Device Management help with device organization?
+IoT Device Management simplifies device organization by allowing you to group your device fleet into a hierarchical structure based on function, security requirements, or any other category. You can group one device in a room, group devices together that operate on the same floor, or group all the devices that operate within a building. Then, you can use these groups to manage access policies, view operational metrics, or perform actions on your devices across the entire group.
+Q: How does IoT Device Management help with device updates?
+IoT Device Management allows customers to push remote actions such as software and firmware updates to patch security vulnerabilities and improve device functionality. Customers can create jobs on groups of things and can configure the rollout speed across things. To execute a device job, you choose your targets, provide a job document that details the action for your devices to take, and choose the type of job (snapshot or continuous). Snapshot jobs will end after all targets have received the job, while continuous jobs will never end until canceled – the advantage of this is that any new devices added to a continuous job will be automatically sent the job file.
+Q: What is Fleet Indexing and Search?
+Fleet Indexing and search allows you to find your devices based upon any combination of device attribute or state. For example, you can search for the location of all temperature sensors made by a specific manufacturer that detect a given temperature range. You can choose to opt-in for Fleet Indexing and search in your Settings within the console.
+Q: What type of devices does IoT Device Management support?
+AWS IoT Device Management can support any device that connects to AWS IoT Core. Devices may either connect directly to IoT Core or connect indirectly via an AWS Greengrass powered gateway. This includes a broad range of devices, from constrained devices like wireless sensors for temperature, motion, and pressure; to more complicated devices like BLE enabled beacons and wearables; to complex systems such as robots and CT scanners.
+Q: How does Secure Tunneling help with troubleshooting devices?
+With secure connectivity to an individual device, you can remotely validate device operation and diagnose device problems by running on-device tests, reviewing device logs and checking configuration settings. You can also remotely take action to solve device issues, such as restarting a device application or the device itself, updating configuration settings or deploying a new configuration file or a software version update.
+Q: Are there any pre-requisites before using Secure Tunneling?
+You must download the local proxy source code from GitHub, and build the local proxy application for each device platform. You must also implement an on-device agent that is responsible for subscribing to a Secure Tunneling MQTT topic to receive an access token. This token will then be used by the local proxy application to create a WebSocket connection to the Secure Tunneling feature within AWS IoT Device Management. To use Secure Tunneling, the device network firewall must be configured with unrestricted outbound access through a TCP-supported port (port 443 is commonly used). This will allow the local proxy application on each device to establish an outbound connection with the Secure Tunneling feature within AWS IoT Device Management.
+Q: What are the pre-requisites for Fleet Hub?
+Before using Fleet Hub, customers must register and connect devices to AWS IoT Core, enable logging through AWS IoT Core to view message logs, and enable the fleet indexing feature of AWS IoT Device Management. Administrators should enable AWS Organizations for their existing AWS account(s) and connect their user identity provider to AWS Single Sign-On to map device and region(s) access for end users. To use Fleet Hub’s built-in integrations with Jobs, customers must deploy an agent on-device and configure those services through AWS IoT APIs or AWS IoT Core console.
+Q: How do I set up Fleet Hub?
+To create a Fleet Hub application, administrators will login to the AWS Management Console and then open the AWS IoT Core Console. They will then navigate to the Getting Started page under the Fleet Hub menu. This pages walks the administrator through a simple, step-by-step process to set up their web application for their organizations’ teams: 1/ add users, 2/ map user permissions to AWS resources, and 3/ extend user permissions to resources in other AWS regions. Each individual user who has been added by the administrator will receive an email link to log in and activate their Fleet Hub account. Once a Fleet Hub web application is created, end users, like support technicians and operators, can further customize their views and alarms on their Spyglass application to show specific device state and health data.
+Q: How is device state and health data secured within Fleet Hub?
+Web applications created through Fleet Hub integrate with existing enterprise identity providers, and Administrators can control access to operational data from devices and equipment for different end users by adding users from their corporate directory and defining permissions through AWS Single-Sign On (SSO), Active Directory, and AWS Organizations, which enables SSO for these users to sign in with their corporate credentials.
+Q: How can I view data logs and take corrective action?
+Once in the application, end users can search their device fleets and view near real-time device state information such as connection status, firmware version, country code, or battery level. They can also set customizable views of a specific device or fleet to interactively view real-time state information including: 1/ key information gathered from logs, 2/ key device properties (e.g. device type, installed application versions, last connection status), and 3/ end user account overview for a specific device. Once an issue is identified, users can take corrective actions through one of the many AWS IoT Device Management features and AWS IoT service capabilities, such as to push an OTA (“over the air”) update via Jobs or opening a Secure Tunnel to reconfigure a device.
+Q: In which regions is Fleet Hub available?
+Fleet Hub is available in US East (Northern Virginia) during preview. However, you will be able to access devices in any AWS region by enabling Fleet Indexing for that region.
+Q: How do I get started?
+Getting started is easy – visit https://console.aws.amazon.com/iotdm and start managing your IoT devices via our console today. Upload your IoT devices with a single click, query your devices based upon device properties, and manage your firmware updates all in a single location.
+Q: How much does AWS IoT Device Management cost?
+Please visit our pricing page for more information.
+Q: Is AWS IoT Device Management available in AWS Free Tier?
+Yes, as a part of the AWS Free Tier, you will receive 50 remote actions per month at no charge, for the first 12 months.
+Q: What is the AWS IoT Device Management SLA?
+The AWS IoT Device Management SLA stipulates that you may be eligible for a credit towards a portion of your monthly service fees if AWS IoT Device Management fails to achieve a Monthly Uptime Percentage of at least 99.9% for AWS IoT Device Management.
+For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the AWS IoT Device Management SLA details page.
+Discover more AWS IoT Device Management features
+Visit the features page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us

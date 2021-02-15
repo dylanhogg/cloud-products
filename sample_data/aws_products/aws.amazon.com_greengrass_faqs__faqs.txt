@@ -1,0 +1,167 @@
+General Questions
+What is AWS IoT Greengrass?
+AWS IoT Greengrass is an Internet of Things (IoT) open source edge runtime and cloud service that helps you build, deploy, and manage device software. Customers use AWS IoT Greengrass for their IoT applications on millions of devices in homes, factories, vehicles, and businesses. You can program your devices to act locally on the data they generate, execute predictions based on machine learning models, filter and aggregate device data, and only transmit necessary information to the cloud.
+AWS IoT Greengrass lets you quickly and easily build intelligent device software. AWS IoT Greengrass enables local processing, messaging, data management, ML inference, and offers pre-built components to accelerate application development. AWS IoT Greengrass also provides a secure way to seamlessly connect your edge devices to any AWS service as well as to third-party services.
+Once software development is complete, AWS IoT Greengrass enables you to remotely manage and operate software on your devices in the field without needing a firmware update. AWS IoT Greengrass helps keep your devices up-to-date and makes them smarter over time.
+How do I get started using AWS IoT Greengrass?
+Click here to see the AWS IoT Greengrass getting started guide. You can review the list of qualified devices in the AWS IoT Partner Device Catalog.
+Which AWS regions is AWS IoT Greengrass service available in?
+Please refer to the AWS Regions Table for the most up to date information regarding region availability of AWS IoT Greengrass.
+What are the major components of AWS IoT Greengrass? What does each component do?
+AWS IoT Greengrass consists of a cloud service and two software distribution for IoT devices: AWS IoT Greengrass Core, AWS IoT Device SDK, and the AWS IoT Greengrass SDK. Once the software distribution is installed on your device, you can further add or remove features, components, and manage your IoT device applications using AWS IoT Greengrass.
+The chart below describes the major components. AWS IoT Greengrass also works together with FreeRTOS. For more information about AWS IoT Greengrass and FreeRTOS, see the FAQ section: Connecting FreeRTOS and other Devices to AWS IoT Greengrass.
+Purpose
+Where it Runs
+AWS IoT Greengrass Core
+Provides local services (compute, messaging, state, security), and communicates locally with devices that run the AWS IoT Device SDK
+64-bit CPU-based devices (x86 or Arm) that run a general-purpose OS such as Linux.
+AWS IoT Device SDK
+Allows devices to interact locally with AWS IoT Greengrass Cores
+Almost any device that supports C++, Node.js, Java, or Python 2.7, 3.7, and 3.8.
+AWS IoT Greengrass SDK*
+Allows Lambda functions to interact with local services inside an AWS IoT Greengrass Core
+Inside a Lambda function deployed to AWS IoT Greengrass Core
+*Required for AWS IoT Greengrass version 1 only
+What are AWS IoT Greengrass Core devices? What minimum hardware specifications are required?
+The AWS IoT Greengrass Core software runs on an IoT device, hub, or gateway to automatically sync and interact with the cloud. AWS IoT Greengrass Core is designed to run on devices with a general-purpose processor that are powerful enough to run a general-purpose operating system, such as Linux. AWS IoT Greengrass requires at least 1GHz of compute (either Arm or x86), 96MB* of RAM (v2.0 edge runtime or higher), plus additional resources to accommodate the desired OS, message throughput, and AWS Lambda execution depending on the use case. AWS IoT Greengrass Core can run on devices that range from a Raspberry Pi to a server-level appliance.
+*Based on an AWS study that used the following JDK: JDK version used for the tests: openjdk version "1.8.0_275", OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~18.04-b01), and OpenJDK 64-Bit Server VM (build 25.275-b01, mixed mode). Memory usage may be higher using different inputs.
+What AWS Lambda development languages are supported by AWS IoT Greengrass?
+AWS IoT Greengrass supports Lambda functions authored in the following languages:
+Python 2.7, 3.7, and 3.8
+Node v8.10 and v12.x
+Java 8 or higher
+C
+C++
+Any language that supports importing C libraries
+Which Lambdas can be deployed to AWS IoT Greengrass?
+Any Lambda that uses the Python 2.7, 3.7, or 3.8, Node v8.10 or v12.x, or Java 8 Lambda Runtime can be deployed to AWS IoT Greengrass Core. Lambdas that get deployed to AWS IoT Greengrass must be packaged together with the AWS IoT Greengrass Core SDK. In addition, you can choose to also add the AWS SDK to your Lambda’s package in order to easily interact with AWS services such as Amazon DynamoDB.
+Please note: Some cloud services that your Lambda relies upon (e.g. DynamoDB) will not be available to your Lambda functions when AWS IoT Greengrass Core is in offline mode, and API calls to those services will fail in offline mode. In addition, your Lambda functions need to use the appropriate namespace for each AWS IoT Greengrass Core SDK and AWS SDK, if you include both in the same package.
+Can I use AWS IoT Greengrass with a Docker container?
+Yes, you can run Docker containers on an AWS IoT Greengrass device or run AWS IoT Greengrass in a Docker container environment.
+You can deploy, run, and manage Docker containers with AWS IoT Greengrass. You can use any third-party tool to build Docker/Open Container Initiative (OCI) images, and your Docker images can be stored in Docker container registries, such as Amazon Elastic Container Registry (Amazon ECR), Docker Hub, or private Docker Trusted Registries (DTRs).
+You can run AWS IoT Greengrass in a Docker container by configuring your AWS IoT Greengrass group to run with no Lambda containerization. To get started, you can access an AWS IoT Greengrass Docker file here and you can find documentation about how you can pull the AWS IoT Greengrass Docker image from Amazon ECR here. You can also deploy AWS IoT Greengrass as a snap, a containerized software package that can run on a variety of Linux distributions. To get started, you can access the AWS IoT Greengrass snap here and get started here.
+Can I run AWS IoT Greengrass on Mac OS or Windows?
+Yes, by running AWS IoT Greengrass with no Greengrass Lambda containerization at the group level in a Docker container, you’ll be able to run AWS IoT Greengrass on Mac OS or Windows. You can learn more about this capability in our documentation.
+What is the AWS IoT Greengrass SLA?
+The AWS IoT Greengrass SLA for cloud management stipulates that you may be eligible for a credit towards a portion of your monthly service fees if AWS IoT Greengrass fails to achieve a Monthly Uptime Percentage of at least 99.9% for AWS IoT Greengrass cloud service.
+For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the AWS IoT Greengrass SLA details page.
+What components of AWS IoT Greengrass are open source?
+Beginning with AWS IoT Greengrass 2.0, the edge runtime and several components are now open source, and published in GitHub. For more details, see the list of open source components.
+Can I make changes to the AWS IoT Greengrass edge runtime source code for my project?
+Yes. The AWS IoT Greengrass open source edge runtime is distributed under the Apache 2.0 license, so it can be modified to fit any specific needs of your application or project without the permission of AWS.
+Is there different pricing when I use different versions of AWS IoT Greengrass?
+No. There is no difference in pricing between versions. For more information on pricing, see pricing page.
+Local Resource Access
+What is an AWS IoT Greengrass local resource?
+“Local resource” refers to buses and peripherals that are physically present on the AWS IoT Greengrass host, or a file system volume on the AWS IoT Greengrass host OS. For example, to communicate with devices connected via Modbus / CANBUS, an AWS IoT Greengrass Lambda function would need to access the serial port on the device. A local resource is defined at AWS IoT Greengrass group scope, and all Lambdas in the AWS IoT Greengrass group can use the defined local resources.
+When would I access a local resource?
+AWS IoT Greengrass local resource allows your Lambda functions to securely interact with hardware such as sensors and actuators. For example, your Lambda function can read video streams from the camera on the device or send command and control to GPIO.
+Security
+What is a hardware root of trust and why might I want one?
+Hardware roots of trust provide tamper-protected trusted execution environments where a true random number generator can produce the private keys used for encryption functions. These hardware “secure elements” are resistant to malware tampering and are physically tied to a given IoT device, establishing a strong root of trust upon which software can be deployed safely.
+How do I introduce hardware root of trust security to my AWS IoT Greengrass architecture?
+First, you must run your AWS IoT Greengrass Core software on an edge device with a secure element. Following the hardware vendor’s directions, generate a private key on that secure element. Next, follow our documentation to update the config.json file settings to use the secure element private key.
+Which partners offer hardware with a secure element?
+For a current list of integrated hardware, visit the AWS Partner Device Catalog.
+How are secure elements qualified to work with the Hardware Security Integration feature?
+Secure element vendors have configured their secure elements to use a set of PKCS#11 standard APIs to integrate with AWS IoT Greengrass. Vendors use a set of testing tools to qualify that their hardware is configured correctly.
+ML Inference
+How can I use a ML model compiled with Amazon SageMaker Neo?
+On AWS IoT Greengrass devices, you can perform ML inference on locally-generated data using models optimized with Amazon SageMaker Neo. To prepare your device for inference, you can follow the instructions on installing the Neo DLR runtime on your device. For more information, see Installing DLR.
+You can compile a model in Amazon SageMaker Neo for your target hardware platform and store it in an Amazon Simple Storage Service (Amazon S3) bucket. Then you can configure AWS IoT Greengrass to use the S3 bucket to deploy the Neo optimized model for local inference on the device.
+How can I use a ML model not trained in Amazon SageMaker?
+You can bring your ML model trained elsewhere by placing it in .tar.gz and .zip format in Amazon S3. You will then let AWS IoT Greengrass know the S3 URI and AWS IoT Greengrass will deploy to target devices.
+Which AWS regions is AWS IoT Greengrass ML Inference available in?
+AWS IoT Greengrass ML Inference is currently available in all the regions AWS IoT Greengrass is available in. Please refer to the AWS Regions Table for the most up to date information regarding region availability of AWS IoT Greengrass.
+You can use AWS IoT Greengrass ML Inference regardless of your geographic location, as long as you have access to one of these AWS regions.
+AWS IoT Greengrass Components
+What are AWS IoT Greengrass components?
+AWS IoT Greengrass components are building blocks that enable easy creation of complex workflows such as machine learning inference, local processing, messaging, and data management. AWS IoT Greengrass also offers pre-built components such as Stream Manager that supports data export to local and cloud targets. These components help accelerate application development so you don't have to worry about understanding device protocols, managing credentials, or interacting with external APIs, and you can interact with AWS services and third-party applications without writing code. In addition, you can also build your own components on top of AWS IoT Greengrass. All components are designed to enable ease of use, as they can configured and managed through the AWS Greengrass console. These components enable you to re-use common business logic from one AWS IoT Greengrass device to another, as you can easily discover, import, configure, and deploy components at the edge.
+How can I add an AWS IoT Greengrass component to my device configuration, or to my device?
+AWS IoT Greengrass components can be added via the “components” section for each group in the AWS IoT Greengrass console. Once added, you can configure the AWS IoT Greengrass components parameters and deploy the group to add them to your AWS IoT Greengrass Core device.
+Who can use AWS IoT Greengrass components?
+Any AWS IoT Greengrass customer can use AWS IoT Greengrass components from within the AWS IoT Greengrass Console, which is accessible through the AWS Management Console.
+What AWS IoT Greengrass components are available?
+You can find available AWS IoT Greengrass components in our documentation.
+Protocol Adapters
+How can I use AWS IoT Greengrass to implement alternative protocols?
+Since Lambda functions running on AWS IoT Greengrass Cores have access to network resources, you can use Lambda to implement support for any protocol that is implemented on top of TCP/IP. In addition, you can also take advantage of AWS IoT Greengrass Local Resource Access to implement support for protocols that need access to hardware adapter/drivers.
+AWS IoT Greengrass also provides Modbus-RTU, Modbus-TCP, and EtherNet/IP Protocol Adapter connectors that can help you connect to edge devices. For more information, refer to the connector documentation here.
+How can I ingest industrial device data into AWS IoT Greengrass?
+You can use the IoT SiteWise connector to ingest device data from OPC UA servers, the Modbus-TCP connector to ingest device data from Modbus-TCP servers, and the EtherNet/IP connector to ingest device data from EtherNet/IP servers. Data export to AWS IoT SiteWise is enabled by default and you can use custom streams to export data to AWS IoT Analytics, Amazon Kinesis, and Amazon S3. You can also use custom streams to send data to Lambda functions to conduct local processing before you export the data. Alternatively, you can create a custom implementation that uses locally deployed Lambda functions to ingest and process device data and then deliver the data to local or cloud targets.
+Over the Air (OTA) Updates
+What are AWS IoT Greengrass Over the Air (OTA) Updates?
+From time to time, AWS will publish updated versions of the AWS IoT Greengrass Core software to provide the following benefits:
+Introduce new or improved features
+Bug fixes
+Security improvements
+With AWS IoT Greengrass Over the Air Updates (OTA), customers can get all these benefits without having to manually download and reinstall the AWS IoT Greengrass Core software.
+Do I have to use AWS IoT Greengrass OTA Updates?
+No. You can always choose to download and install updates manually or follow a different software deployment process.
+How will I be notified that new versions of AWS IoT Greengrass Core are available?
+When new versions of AWS IoT Greengrass Core become available, we will announce it on the AWS IoT Greengrass software developer forum. You can find a link to that forum here.
+AWS IoT Device Tester for AWS IoT Greengrass
+What is AWS IoT Device Tester for AWS IoT Greengrass?
+AWS IoT Device Tester for AWS IoT Greengrass is a test automation tool that lets you self-test and qualify AWS IoT Greengrass on your Linux-based devices. AWS IoT Device Tester provides a collection of automated tests that enable you to verify whether devices can run AWS IoT Greengrass and be authenticated by and interoperate with AWS IoT services.
+Where do I get AWS IoT Device Tester for AWS IoT Greengrass?
+You can get AWS IoT Device Tester for AWS IoT Greengrass here.
+What does AWS IoT Device Tester for AWS IoT Greengrass test?
+AWS IoT Device Tester for AWS IoT Greengrass verifies that the combination of a device’s CPU architecture, Linux kernel configuration, and drivers work with AWS IoT Greengrass by testing the following:
+Required software packages have been installed
+Linux kernel containing AWS IoT Greengrass required kernel configuration (e.g. kernel configured for cgroups)
+Over the air updates
+Device can connect with AWS IoT services and is able to run AWS Lambda functions
+Local resource access functionality
+Device shadow functionality
+How do I get technical support for AWS IoT Device Tester for AWS IoT Greengrass?
+Use any of the following channels to get support:
+AWS Forum for AWS IoT Greengrass
+Premium Support
+Customer Support
+How do I get my device listed in the AWS Partner Device Catalog?
+If you are an AWS partner, the AWS Device Qualification Program defines the process to get your device listed in the catalog. A high level overview of the process is as follows:
+Pass the AWS IoT Device Tester for AWS IoT Greengrass test
+Log into the AWS Partner Network Portal
+Upload the AWS IoT Device Tester report. Once the report is verified by AWS, and other device related artifacts such as picture and data sheet have been submitted, the device is listed in the AWS Partner Device Catalog.
+In which regions is AWS IoT Device Tester for AWS IoT Greengrass available?
+AWS IoT Device Tester for AWS IoT Greengrass is available in all the regions where AWS IoT Greengrass is available.
+How much does AWS IoT Device Tester for AWS IoT Greengrass cost?
+AWS IoT Device Tester for AWS IoT Greengrass is free to use. However, you will be responsible for any costs associated with AWS usage as part of testing. A single run of AWS IoT Device Tester that tests on a single AWS IoT Greengrass device will cost less than 20 cents.
+Which CPU architectures and operating systems is AWS IoT Greengrass compatible with?
+Operating systems and CPU architectures supported by AWS IoT Greengrass Core and tested for compatibility by AWS are listed here. Other Linux variants that have not have been validated by the AWS IoT Greengrass team can also successfully run AWS IoT Greengrass. You can validate these variants for compatibility using the IoT Greengrass dependency checker on GitHub. Alternatively, you can run IoT Greengrass in “process mode” which lowers the compatibility threshold, but removes support for Linux containers.
+What devices are compatible with AWS IoT Greengrass Core, and how can I get started quickly?
+You can run AWS IoT Greengrass Core on a device that meets the minimum hardware and software requirements. You can also self-test your devices to see if they will run optimally with AWS IoT Greengrass and other AWS services using AWS IoT Device Tester. You can also discover and evaluate devices that are compatible with AWS IoT Greengrass in the AWS Partner Device Catalog.
+How can I validate that my device will run AWS IoT Greengrass Core?
+To ensure your devices work with AWS IoT Greengrass Core, you can test it using the AWS IoT Device Tester for AWS IoT Greengrass. You can download the tool and read the documentation.
+Connecting FreeRTOS and Other Devices to AWS IoT Greengrass
+How can I connect devices locally to AWS IoT Greengrass Core?
+You can connect devices locally to AWS IoT Greengrass Core using FreeRTOS or the AWS IoT Device SDK. AWS IoT Greengrass discovery is available on the AWS IoT Device SDK via C++, Node.js, Java, and Python 2.7, 3.7, and 3.8. For more information, refer to the AWS IoT Greengrass developer guide. You can use the AWS IoT Greengrass discovery library in your FreeRTOS source code to find and connect to an AWS IoT Greengrass Core device.
+What languages support AWS IoT Greengrass via the AWS IoT Device SDK?
+AWS IoT Greengrass discovery is available on the AWS IoT Device SDK via C++, Node.js, Java, and Python 2.7, 3.7, and 3.8. For more information, refer to the AWS IoT Greengrass developer guide.
+Does FreeRTOS work with AWS IoT Greengrass?
+Yes. FreeRTOS devices can connect directly to the cloud or connect to AWS IoT Greengrass. FreeRTOS runs on IoT endpoints and is often responsible for the ‘sensing’ and ‘acting’ in an IoT topology.
+What is the difference between AWS IoT Greengrass and FreeRTOS?
+AWS IoT Greengrass is software that lets you run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way. With AWS IoT Greengrass, connected devices can run AWS Lambda functions, Docker containers, or both, keep device data in sync, and communicate with other devices securely – even when not connected to the Internet. Using AWS Lambda, AWS IoT Greengrass ensures your IoT devices can respond quickly to local events, use Lambda functions running on AWS IoT Greengrass Core to interact with local resources, operate with intermittent connections, stay updated with over the air updates, and minimize the cost of transmitting IoT data to the cloud.
+FreeRTOS is an open source, real-time operating system for microcontrollers that operates on the edge and does not generally support chipsets that could run AWS IoT Greengrass. These microcontroller devices are found on a variety of IoT endpoints such as fitness trackers, pacemakers, electricity meters, automotive transmissions, and sensor networks. FreeRTOS devices cannot run AWS IoT Greengrass Core but can connect, send, and receive messages to and from an AWS IoT Greengrass Core device for local processing at the edge.
+The hardware requirements and operating systems are different on both devices.
+FreeRTOS
+AWS IoT Greengrass
+Software
+Real-time operating system, runs on a microcontroller
+Runtime for Linux devices and SDK for AWS IoT Greengrass aware devices
+Hardware Requirements
+>64KB of RAM
+>96MB* of RAM (v2.0 edge runtime or higher) >128MB of RAM (v1.11 edge runtime or lower)
+Category
+Embedded systems, IoT endpoints
+Edge devices, local gateways
+Use Cases
+Microcontroller-based devices
+Industrial automation systems, wireless routers, video cameras, gateways
+Learn more about AWS IoT Greengrass pricing
+Visit the pricing page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content

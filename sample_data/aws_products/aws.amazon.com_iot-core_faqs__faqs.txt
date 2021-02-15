@@ -1,0 +1,187 @@
+General
+Q: What is AWS IoT Core?
+AWS IoT Core is a managed cloud platform that lets connected devices easily and securely interact with cloud applications and other devices. AWS IoT Core can support billions of devices and trillions of messages, and can process and route those messages to AWS endpoints and to other devices reliably and securely. With AWS IoT Core, your applications can keep track of and communicate with all your devices, all the time, even when they aren’t connected.
+Q: What does AWS IoT Core offer?
+Connectivity between devices and the AWS cloud. First, with AWS IoT Core you can communicate with connected devices securely, with low latency and with low overhead. The communication can scale to as many devices as you want. AWS IoT Core supports standard communication protocols (HTTP, MQTT, and WebSockets and LoRaWAN are supported currently). Communication is secured using TLS.
+Processing data sent from connected devices. Secondly, with AWS IoT Core you can continuously ingest, filter, transform, and route the data streamed from connected devices. You can take actions based on the data and route it for further processing and analytics.
+Application interaction with connected devices. Finally, AWS IoT Core accelerates IoT application development. It serves as an easy to use interface for applications running in the cloud and on mobile devices to access data sent from connected devices, and send data and commands back to the devices.
+Q: How does AWS IoT Core work?
+Connected devices, such as sensors, actuators, embedded devices, smart appliances, and wearable devices, connect to AWS IoT Core over HTTPS, WebSockets, or secure MQTT or LoRaWAN. Included in AWS IoT Core is a Device Gateway that allows secure, low-latency, low-overhead, bi-directional communication between connected devices and your cloud and mobile applications.
+AWS IoT Core also contains a Rules Engine which enables continuous processing of data sent by connected devices. You can configure rules to filter and transform the data. You also configure rules to route the data to other AWS services such as DynamoDB, Kinesis, Lambda, SNS, SQS, CloudWatch, Elasticsearch Service with built-in Kibana integration, as well as to non-AWS services, via Lambda for further processing, storage, or analytics.
+There is also a Registry where you can register and keep track of devices connected to AWS IoT Core, or devices that may connect in the future. The Device Shadow in AWS IoT Core enables cloud and mobile applications to query data sent from devices and send commands to devices, using a simple REST API, while letting AWS IoT Core handle the underlying communication with the devices. The Device Shadow accelerates application development by providing a uniform interface to devices, even when they use one of the several IoT communication and security protocols with which the applications may not be compatible. The Device Shadow also accelerates application development by providing an always available interface to devices even when the connected devices are constrained by intermittent connectivity, limited bandwidth, limited computing ability or limited power.
+Communication with AWS IoT Core is secure. The service requires all of its clients (connected devices, server applications, mobile applications, or human users) to use strong authentication (X.509 certificates, AWS IAM credentials, or 3rd party authentication via AWS Cognito). All communication is encrypted. AWS IoT Core also offers fine-grained authorization to isolate and secure communication among authenticated clients.
+Q: What is 2lemetry and how does it relate to AWS IoT?
+2lemetry was acquired by AWS in 2015, and their capabilities provided foundational elements such as the MQTT Message Broker and the Rules Engine for AWS IoT Core.
+Q: In which regions is AWS IoT Core available?
+See the AWS Region Table for the current list of regions for AWS IoT Core.
+You can use AWS IoT Core regardless of your geographic location, as long as you have access to one of the above AWS regions.
+Q: How do I get started with using AWS IoT Core?
+Use the AWS IoT Console or refer to the Quickstart section of our developer guide to test drive the AWS IoT Core in minutes.
+Also, take a look at the AWS-powered Starter Kits provided by our partners.
+Refer to the AWS IoT Core documentation for further details.
+Q: Which languages does the AWS IoT Console support?
+​The AWS IoT Console supports English, French, Japanese, Korean, Simplified Chinese, German, Portuguese, Spanish, Italian and Traditional Chinese.
+Q: How can I switch the console's language?
+Click on the language at the bottom left corner of the console to pick the language. The language selection will persist throughout the consoles of different AWS services.
+Q: What are the ways for accessing AWS IoT Core?
+You can use the AWS Management Console, the AWS SDKs, the AWS CLI, and the AWS IoT Core APIs. Connected devices can use the AWS IoT Device SDKs to simplify the communication with AWS IoT Core.
+The AWS IoT Core APIs and commands are largely divided into control plane operations and data plane operations. The control plane operations enable you to do tasks such as configuring security, registering devices, configuring rules for routing data, and setting up logging. The data plane operations enable you to ingest data from connected devices into AWS IoT Core with low latency and high throughput rate at a large scale.
+Q: What communication and authentication protocols does AWS IoT Core support?
+For control plane operations, AWS IoT Core supports HTTPS. For data plane operations, AWS IoT Core supports HTTPS, WebSockets, and secure MQTT – a protocol often used in IoT scenarios.
+HTTPS and WebSockets requests sent to AWS IoT Core are authenticated using AWS IAM or AWS Cognito, both of which support the AWS SigV4 authentication. If you are using the AWS SDKs or the AWS CLI, the SigV4 authentication is taken care of for you under the hood. HTTPS requests can also be authenticated using X.509 certificates. MQTT messages to AWS IoT Core are authenticated using X.509 certificates.
+With AWS IoT Core you can use AWS IoT Core generated certificates, as well as those signed by your preferred Certificate Authority (CA).
+Q: Can devices that are NOT directly connected to the Internet access AWS IoT Core?
+Yes, via a physical hub. Devices connected to a private IP network and devices using non-IP radio protocols such as ZigBee or Bluetooth LE can access AWS IoT Core as long as they have a physical hub as an intermediary between them and AWS IoT Core for communication and security.
+Q: How should applications access AWS IoT Core?
+Applications connecting to AWS IoT Core largely fall in two categories: 1. companion apps and 2. server applications. Companion apps are mobile or client-side browser applications that interact with connected devices via the cloud. A mobile app that lets a consumer remotely unlock a smart lock in the consumer’s house is an example of a companion app. Server applications are designed to monitor and control a large number of connected devices at once. An example of a server application would be a fleet management website that plots thousands of trucks on a map in real-time.
+AWS IoT Core enables both companion apps and server applications to access connected devices via uniform, RESTful APIs. Applications also have the option to use pub/sub to communicate directly with the connected devices.
+Typically the companion apps would authenticate using end-user identities which are managed either by your own identity store or a third party identity provider such as Facebook and Login with Amazon. For companion apps, use Amazon Cognito, which integrates with several identity providers. Cognito identities can be authorized to access AWS IoT Core, and their access can be restricted only to the resources relevant to them. For example, as a connected washing machine manufacturer, you can authorize your consumers to access your AWS IoT Core information pertaining only to their individual washing machines.
+Server applications (such as a mapping application running on Amazon EC2) can use IAM roles to access AWS IoT Core.
+Q: Can I get a history of AWS IoT Core API calls made on my account for security analysis and operational troubleshooting purposes?
+Yes, to receive a history of AWS IoT Core API calls made on your account, you simply turn on CloudTrail in the AWS Management Console.
+Q: How do I send feedback?
+To send feedback, click on the “Feedback” link in the footer bar of the console.
+Features
+Q: What is the Device Gateway?
+The Device Gateway forms the backbone of communication between connected devices and the cloud capabilities such as the Rules Engine, Device Shadow, and other AWS and 3rd-party services.
+The Device Gateway supports the pub/sub messaging pattern, which enables scalable, low-latency, and low-overhead communication. It is particularly useful for IoT scenarios where billions of devices are expected to communicate frequently and with minimal delay. Pub/sub involves clients publishing messages on logical communication channels called ‘topics’ and clients subscribing to topics to receive messages. The device gateway enables the communication between publishers and subscribers. Traditionally, organizations have had to provision, operate, scale, and maintain their own servers as device gateways to take advantage of pub/sub. AWS IoT Core has eliminated this barrier by providing the Device Gateway.
+The Device Gateway scales automatically with your usage, without any operational overhead for you. AWS IoT Core supports secure communication with the device gateway, AWS-account level isolation, as well as fine-grained authorization within an AWS account. The device gateway currently supports publish and subscribe over secure MQTT and WebSockets, as well as publish over HTTPS.
+Q: What is MQTT?
+MQTT is a lightweight pub/sub protocol, designed to minimize network bandwidth and device resource requirements. MQTT also supports secure communication using TLS. MQTT is often used in IoT use cases. MQTT v3.1.1 is an OASIS standard, and the Device Gateway supports most of the MQTT specification.
+Q: What is the Rules Engine?
+The Rules Engine enables continuous processing of inbound data from devices connected to AWS IoT Core. You can configure rules in the Rules Engine in an intuitive, SQL-like syntax to automatically filter and transform inbound data. You can further configure rules to route data from AWS IoT Core to several other AWS services as well as your own or 3rd party services.
+Here are just a few example use cases of rules:
+Filtering and transforming incoming messages and storing them as time series data in DynamoDB.
+Sending a push notification via SNS when the data from a sensor crosses a certain threshold.
+Saving a firmware file to S3
+Processing messages simultaneously from a multitude of devices using Kinesis
+Invoke Lambda to do custom processing on incoming data
+Sending a command to a group of devices with an automated republish
+Q: How are the rules defined and triggered?
+An AWS IoT Core rule consists of two main parts:
+A SQL statement that specifies the pub/sub topics to apply the rule on, data transformation to perform, if any, and the condition under which the rule should be executed. The rule is applied on every message published on the specified topics.
+An actions list that defines the actions to take when the rule is executed, that is, when an incoming message matches the condition specified in the rule.
+Rule definitions use a JSON-based schema. You can directly edit the JSON or use the rules editor in the AWS Management Console.
+As an example, here is a rule for saving temperature data from a sensor to DynamoDB whenever the temperature is above 50:
+{
+"sql": "SELECT * from 'iot/tempSensors/#' WHERE temp > 50",
+"description": "Rule to save sensor data when temperature is about 50",
+"actions": [
+"dynamoDB": {
+"tableName": "HighTempTable",
+"roleArn": "arn:aws:iam::your-aws-account-id:role/dynamoPut",
+"hashKeyField": "key",
+"hashKeyValue": "${topic(3)}",
+"rangeKeyField": "timestamp",
+"rangeKeyValue": "${timestamp()}"
+}
+]
+Sensors in this example are publishing on their topics under “iot/tempSensors/”. The first line of the rule defines the SQL SELECT statement used to query on the “iot/tempSensors/#” topic. It contains a WHERE clause that extracts the value of a ‘temp’ field in the message’s payload and checks if it passes the condition ‘greater than 50’. If the condition is met, the data is stored in the specified DynamoDB table. The example uses built-in functions for tasks such as traversing the message payload and getting current time.
+Q: Where can I learn more about rules?
+You can learn more about rule here Core Rules documentation
+Q: What is the Registry and what should I use it for?
+IoT scenarios can range from a small number of mission-critical devices to large fleets of devices. The Registry allows you to organize and track those devices. You can maintain a logical handle in the Registry for every device you are connecting to AWS IoT Core. Each device in the Registry can be uniquely identified and can have metadata such as model numbers, support contact, and certificates associated with it. You can search for connected devices in the Registry based on the metadata.
+Q: What is a Thing Type?
+Thing Types allow you to effectively manage your catalogue of devices by defining common characteristics for devices that belong to the same device category. In addition, a Thing associated with a Thing Type can now have up to 50 attributes including 3 searchable attributes.
+Q: What is Simplified Permission Management?
+This feature allows you to easily manage permission policies for a large number of devices by using variables that reference Registry or X.509 certificate properties. The integration of Registry and Certificate properties with device policies offers the benefits listed below:
+You can now reference Registry properties in device permission policies. Referencing device properties defined in the Registry allows your policies to reflect any changes made in the Registry. For example, by referencing the Thing Attribute named “building-address” as a variable in the policy, devices will automatically inherit a new set of permissions when they move buildings.
+You can share a single generic policy for multiple devices. A generic policy can be shared among the same category of devices instead of creating a unique policy per device. For example, a policy that references the “serial-number” as a variable, can be attached to all the devices of the same model. When devices of the same serial number connect, policy variables will be automatically substituted by their serial-number.
+Q: What is the Device Shadow?
+The Device Shadow enables cloud and mobile applications to easily interact with the connected devices registered in AWS IoT Core. The Device Shadow in AWS IoT Core contains properties of a connected device. You can define any set of properties applicable to your use case. For example, for a smart light bulb, you might define ‘on-or-off’, ‘color’, and ‘brightness’ as the properties. The connected device is expected to report the actual values of those properties, which are stored in the Device Shadow. Applications get and update the properties simply by using a RESTful API provided by AWS IoT Core. AWS IoT Core and the Device SDKs take care of synchronizing property values between the connected device and its Device Shadow in AWS IoT Core.
+Q: Do I have to use the Registry and the Device Shadow?
+You can have applications communicate directly to the connected devices using the Device Gateway and/or the Rules Engine in AWS IoT Core. However, we recommend using the Registry and the Device Shadow since they offer richer and more structured development and management experience that lets you focus on the unique value you want to create for your customers rather than having to focus on the underlying communication and synchronization between the connected devices and the cloud.
+Q: What is the lifecycle of a device and its Device Shadow in AWS IoT Core?
+You register a device (such as a light bulb) in the Registry.
+You program connected device to publish a set of its property values or ‘state (“I am ON and my color is RED”) to the AWS IoT Core service.
+The last reported state is stored in the Device Shadow in AWS IoT Core.
+An application (such as a mobile app controlling the light bulb) uses a RESTful API to query AWS IoT Core for the last reported state of the light bulb, without the complexity of communicating directly with the light bulb.
+When a user wants to change the state (such as turning the light bulb from ON to OFF), the application uses a RESTful API to request an update, i.e. sets a ‘desired’ state for the device in AWS IoT Core. AWS IoT Core takes care of synchronizing the desired state to the device.
+The application gets notified when the connected device updates its state to the desired state.
+Q: Where can I learn more about the Registry and the Device Shadow?
+For more information on the Registry, see the Registry documentation. For more information on the Device Shadow, see the Device Shadow documentation.
+Q: Can I configure fine-grained authorization in AWS IoT Core?
+Yes. Similar to other AWS services, in AWS IoT Core you have fine-grained control over the set of API actions each identity is authorized to invoke. In addition, you have fine-grained control over the pub/sub topics that an identity can publish or subscribe to, as well as over the devices and the Device Shadow in the Registry that an identity can access.
+Q: Where can I learn more about Security and Access Control in AWS IoT Core?
+For more information, see AWS IoT Core Security and Identity.
+Q: What is Just-in-time registration of certificates?
+Just-in-time registration (JITR) of device certificates expands on the "Use Your Own Certificate" feature launched in April 2016 by simplifying the process of enrolling devices with AWS IoT Core. Prior to support for JITR, the device enrollment process required two steps: first, registering the Certificate Authority (CA) certificate to AWS IoT Core, then individually registering the device certificates that were signed by the CA. Now, with JITR you can complete the second step by auto-registering device certificates when devices connect to AWS IoT Core for the first time. This saves time spent on registering device certificates and allows devices to remain off-line during the manufacturing process. To further automate IoT device provisioning, you can create an AWS IoT Core rule with a Lambda action that activates the certificates and attaches policies. For more information, visit the Internet of Things Blog on AWS or Developer Documentation.
+Q: What is the AWS IoT Device SDK?
+The AWS IoT Device SDKs simplify and accelerate the development of code running on connected devices (micro-controllers, sensors, actuators, smart appliances, wearable devices, etc.). First, devices can optimize the memory, power, and network bandwidth consumption by using the Device SDKs. At the same time, Device SDKs enable highly secure, low-latency, and low-overhead communication with built-in TLS, WebSockets, and MQTT support. The Device SDKs also accelerate IoT application development by supporting higher level abstractions such as synchronizing the state of a device with its Device Shadow in AWS IoT Core.
+AWS IoT Device SDKs are freely available as open-source projects. For more details visit our Device SDK page.
+Q: Which programming languages and hardware platforms does the AWS IoT Device SDK support?
+AWS currently offers the AWS IoT Device SDKs for C and Node.js languages, as well as for the Arduino Yún platform.
+In addition, several hardware manufacturers have partnered with AWS to make the AWS IoT Device SDKs available on their respective platforms. You can find out more about the hardware platforms on our Getting Started page.
+Lastly, AWS IoT Device SDKs are open-source. You can port them to the languages and hardware platforms of your choice if they are not supported already.
+Q: Should I use AWS IoT Device SDK or the AWS SDKs?
+The AWS IoT Device SDK complements the AWS SDKs. IoT projects often involve code running on micro-controllers and other resource-constrained devices. However, IoT projects often include application running in the cloud and on mobile devices that interact with the micro-controllers/resource-constrained devices. AWS IoT Device SDKs are designed to be used on the micro-controllers/resource-constrained devices, while the AWS SDKs are designed for cloud and mobile applications.
+For more information on the AWS IoT Device SDKs, see AWS Device SDKs.
+Pricing & SLAs
+Q: Is AWS IoT Core available in AWS Free Tier?
+Yes. Please visit our pricing page for more information.
+Q: How much does AWS IoT Core cost?
+Please visit our pricing page for information.
+Q: What is the AWS IoT Core SLA?
+The AWS IoT Core SLA stipulates that you may be eligible for a credit towards a portion of your monthly service fees if AWS IoT Core fails to achieve a Monthly Uptime Percentage of at least 99.9% for AWS IoT Core.
+For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the AWS IoT Core SLA details page.
+Alexa Voice Service Integration
+Q: Why should I use the AVS Integration for AWS IoT?
+Until now, producing an Alexa Built-in device required on-device memory and compute to be at least 50MB RAM and ARM Cortex 'A' class microprocessors, increasing the engineering bill of materials (eBOM) and MSRP. Additionally, retrieving, buffering, decoding, and mixing audio on devices can be complex and time consuming. The high production cost and complexity makes it difficult for device makers to quickly go to market with differentiated, voice-enabled experiences on resource-constrained IoT devices.
+The AVS Integration lowers the Alexa Built-in cost by up to 50% by offloading compute & memory intensive workloads to the cloud. This reduces the hardware requirements of integrating AVS on a device from 50MB to 1MB of RAM and from ARM Cortex ‘A’ class microprocessors to ARM Cortex ‘M’ class microcontrollers and brings Alexa to ubiquitous products such as light switches, thermostats, and small appliances. In addition to the simplified device side AVS integration, device makers using the AVS Integration also have access to simple and cost-effective ongoing device maintenance and management, enhanced device security, and analytics services via the scalable AWS IoT Core infrastructure.
+With new categories of low-price Alexa Built-in devices available on the market, end users can now experience Alexa in new parts of their home, office, or hotel rooms for a truly ambient experience, where they talk directly to their surroundings rather than to an Alexa Family of Devices.
+Q: How do I use the Alexa Voice Service (AVS) Integration?
+Learn how to create low-cost Alexa Built-in devices with the AVS Integration for AWS IoT Core Getting Started Guide.
+Q: How is AVS for IoT different from traditional AVS?
+AVS Integration supports Device arbitration, Dialog, Multi-turn dialog, Timers, Alarms, Reminders, Flash Briefing, Routines, Alexa Announce, eBooks, and Skills. It does not support high-quality music playback, Whole Home Audio, Alexa Calling, Spotify, Bluetooth, and rich multi-modal displays.
+Q: What types of devices can I build with AVS?
+The AVS Integration for AWS IoT is a great solution for device makers producing low-cost, resource-constrained devices (including light switches, light bulbs, home hubs, home appliances and more) that want to allow their customers to talk to these products directly with the wake word “Alexa,” and receive voice responses and content instantly. These devices will have Built-in microphones and speakers that are capable of playing back dialog, alerts, and the news but are not adequate to support high-quality music playback. Device makers who want full music playback with richer Alexa Music Playback capabilities such as high fidelity (>128kbps) music streaming, Spotify, synchronized music streaming over multiple speakers, should continue to build these devices using the existing Alexa Built-in solutions.
+Q: Do I get the Alexa Built-in badge using the AVS Integration for AWS IoT Core?
+Similar to other Alexa Built in products, products built with the AVS Integration will need to pass the Alexa Voice Service product certification process comprising of Amazon-managed testing of security, acoustic performance, user experience, and functional testing to earn the Amazon Certified Alexa Built-in badge.
+Q: What AWS regions will AVS Integration for IoT Core be available in at launch?
+The AVS Integration for AWS IoT Core is available in all AWS regions where AWS IoT Core is available other than China (Beijing and Ningxia), Asia Pacific (Hong Kong) and Middle East (Bahrain). See the AWS Region Table for the current list of regions for AWS IoT Core.
+AWS IoT Core for LoRaWAN
+Q: Where can I find the Basic Station source code, if required for AWS IoT Core for LoRaWAN?
+Basic Station software is maintained and distributed by Semtech via their Github repository.
+Q: Which private LoRaWAN network components are owned and managed by AWS IoT Core vs the customer?
+Devices: You own and connect your choice of LoRaWAN devices to AWS IoT Core. You can buy any LoRa device or sensor compliant with LoRa 1.0.3 or 1.1 specification (without any need to develop or update software).
+Gateways: You own and connect your choice of LoRaWAN gateways to AWS IoT Core. AWS IoT Core enables two choices: you can easily select and purchase AWS qualified gateways from Amazon Partner Device Catalog that connect with AWS IoT Core out of the box. Otherwise, you can connect a brownfield (legacy) or off-the-shelf (e.g., Raspberry Pi) gateway by updating its firmware to support open source Basic Station protocol. You can find instructions to update the firmware in our getting started guide.
+LoRaWAN Network Server (LNS): AWS IoT Core owns and provides a fully-managed LNS. With a few simple steps on the AWS IoT console, you can register your chosen hardware and visualize messages from your connected LoRaWAN devices.
+Cloud Application: You own and develop your cloud application. Once your devices are connected to AWS IoT Core, you can start developing an application or solution by routing device messages to AWS services.
+Network management: AWS IoT Core provides the network management features that customers use and configure to operate their LoRaWAN networks. Using AWS IoT Management Console, you can query the connected/disconnected devices and gateways, device traffic attributes and gateway stats of the last message received. In addition, using APIs, you can remotely update the LoRaWAN gateway firmware.
+Amazon Sidewalk Integration
+Q: What is Amazon Sidewalk?  Amazon Sidewalk is a shared network that helps devices work better. Operated by Amazon at no charge to customers, Sidewalk can help simplify new device setup, extend the low-bandwidth working range of devices, and help devices stay online even if they are outside the range of their home Wi-Fi. In the future, Sidewalk will support a range of experiences from using Sidewalk-enabled devices to help find pets or valuables, to smart security and lighting, to diagnostics for home appliances and tools.
+Q: What is Sidewalk Developer Service (SDS)?  SDS is a collection of approved silicon chipsets along with reference development boards, device software development kits (SDKs), device provisioning tools, technical documentation, and a cloud integration (see Amazon Sidewalk Integration). Together these tools help device manufacturers develop, and easily launch devices that work on Amazon Sidewalk. See SDS Console for more info.
+Q: What is Amazon Sidewalk Integration for AWS IoT Core?  Amazon Sidewalk Integration enables you to easily onboard your Sidewalk device fleet to AWS IoT Core. Amazon Sidewalk Integration ensures your devices are authenticated properly to work on Amazon Sidewalk, and that your device data will automatically route to AWS IoT Core so that you can further develop your business application(s) using AWS services.
+LoRaWAN is a mark used under license from the LoRa Alliance.
+AWS IoT Core Device Advisor (Preview)
+Q: Who should use Device Advisor?
+Developers at device manufacturers should use Device Advisor to test their devices against pre-built test scenarios to verify reliable and secure connectivity to AWS IoT Core. Device Advisor provides a test endpoint in the AWS cloud, which device manufacturers can immediately use to test their devices, saving time and cost of development and testing. The test setup also provides detailed logs for each test, enabling faster troubleshooting of device software issues. Device Advisor also provides test coverage for complex test scenarios, enabling customers to discover and fix issues during their device software development. This results in more reliable performance and lower maintenance costs for device fleets after deployment.
+Also, with IoT Device Advisor, hardware partners can self-test their devices, download signed qualification reports and submit the reports to APN to get their devices listed in the AWS Partner Device Catalog.
+Q: How do I use the Device Advisor?
+Any device that has been built to connect to AWS IoT Core can take advantage of Device Advisor. Developers at device manufacturers can access Device Advisor from the AWS IoT Core console or by using the AWS SDK. Once developers are ready to test their devices, they can register the devices with AWS IoT Core and configure the device software with the Device Advisor end point. They can then choose and execute the pre-built tests with a few simple clicks in the IoT Core Console and instantly get the test results along with detailed logs.
+Q: What tests are provided by Device Advisor?
+See the test cases section in the Device Advisor for details on the pre-built tests supported.
+Q: Is there a cost to use Device Advisor?
+Device Advisor is free to use. However, developers will be responsible for any costs associated with AWS usage as part of the testing (e.g. AWS IoT Core, Amazon CloudWatch usage). The AWS resource usage as part of testing will be visible to developers in their AWS account and charges for these will apply to the developers’ AWS bill.
+AWS IoT Device Client
+Q: What is the AWS IoT Device Client?
+The AWS IoT Device Client is a free, open-source, and modular device-side reference implementation. It allows you to easily connect your devices to AWS IoT Core, and access AWS IoT Device Management and AWS IoT Device Defender features by default. It is written in C++ and can be compiled and installed on Embedded Linux-based IoT devices.
+Q: What AWS IoT features does the AWS IoT Device Client enable on my device?
+The current release of the AWS IoT Device Client enables you to connect your IoT device to AWS IoT Core, access the Jobs and Secure Tunneling features of AWS IoT Device Management, and access the Rules Detect feature of AWS IoT Device Defender.
+Q: How do I use the AWS IoT Device Client?
+To get started on your device, download the AWS IoT Device Client source code from
+GitHub and learn more using the
+readme.
+Q: What hardware and software environments are currently supported in the AWS IoT Device Client?
+The IoT Device Client currently works by default with microprocessor based IoT devices running an x86_64 or ARM architectures, and common Linux software environments (Debian, Ubuntu, RHEL). This covers most commonly available devices including for example, the latest Raspberry Pi. If you are looking for a different device, visit the
+AWS Partner Device Catalog.
+Q: What are the minimum hardware specifications to run the AWS IoT Device Client?
+We recommend using the IoT Device Client on a microprocessor based device with 100MHz+ compute and 64MB+ memory. If you wish to write your own purpose-built device code for more constrained devices, or microcontroller based devices, we offer updated feature libraries for Fleet Provisioning, Jobs, and AWS IoT Device Defender in the latest version of the AWS IoT Device SDK for Embedded C on
+GitHub.
+Discover more AWS IoT Core resources
+Visit the resources page
+Ready to get started?
+Sign Up
+Have more questions?
+Contact us
+AWS IoT Core FAQ Topics

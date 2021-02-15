@@ -4,7 +4,7 @@ Get started with AWS Outposts
 Contact Sales
 AWS Outposts is a fully managed service that offers the same AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience. AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
 AWS compute, storage, database, and other services run locally on Outposts, and you can access the full range of AWS services available in the Region to build, manage, and scale your on-premises applications using familiar AWS services and tools.
-Outposts is available as a 42U rack that can scale from 1 rack to 96 racks to create pools of compute and storage capacity. Coming in 2021, Outposts will be available in two smaller form factors, 1U and 2U rack-mountable servers for locations with limited space or capacity requirements. More information on the smaller Outposts form factors is available here.
+Outposts is available as a 42U rack that can scale from 1 rack to 96 racks to create pools of compute and storage capacity. Coming in 2021, Outposts will be available in two smaller form factors, 1U and 2U rack-mountable servers for locations with limited space or capacity requirements. More information on the smaller Outposts form factors is available here.
 A VMware variant of AWS Outposts will also be available soon. VMware Cloud on AWS Outposts delivers a fully managed VMware Software-Defined Data Center (SDDC) running on AWS Outposts infrastructure on premises.
 AWS Outposts overview and how it works (2:45)
 AWS Outposts Use Cases (0:59)
@@ -59,11 +59,11 @@ DXC Technology, the number one provider of core insurance systems, helps insurer
 “At DXC, we pride ourselves in delivering innovative insurance solutions. We tested DXC’s Assure Digital Platform on AWS Outposts and are pleased with the consistent performance results for managed on-premises workloads. DXC is excited to bring a truly consistent hybrid cloud experience on-premises with AWS Outposts for our customers who need to meet stringent data residency requirements and a more flexible cloud journey."
 Brian Bacsu, Digital Insurance Platform Engineering and Operations, DXC Technology
 NOS is the biggest communications and entertainment group in Portugal.
-“This relationship reflects NOS’ commitment to offer the most innovative and advanced services to the Portuguese business community. No one has any doubt that cloud computing is one of the main drivers of the digital transformation of companies. This is the start of a range of initiatives with AWS that will allow NOS to develop and consolidate its positioning as a benchmark supplier of Cloud and Edge Computing solutions to the B2B market.”
+“This relationship reflects NOS’ commitment to offer the most innovative and advanced services to the Portuguese business community. No one has any doubt that cloud computing is one of the main drivers of the digital transformation of companies. This is the start of a range of initiatives with AWS that will allow NOS to develop and consolidate its positioning as a benchmark supplier of Cloud and Edge Computing solutions to the B2B market.”
 Manuel Ramalho Eanes, Board Director of NOS
 "WWT is a technology solutions provider serving the needs of enterprise, public sector, and global service providers , including many of the world's best-known brands. Many of our customers require hybrid cloud as part of their overall cloud strategy. AWS Outposts allows us to build solutions for these customers as it addresses their specific use case requirements around data residency, application latency, local processing, and application modernization. Utilizing our highly adaptable Advanced Technology Center (ATC), customers can quickly test different solution architectures using AWS Outposts, to validate their designs before implementing in production."
 Walton Smith, Director, WWT
-Read case study »
+Read case study
 Contact us
 Learn more about AWS Outposts by contacting us directly
 Sign up for a free account

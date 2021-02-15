@@ -32,14 +32,14 @@ Zendesk’s Global Network: How we lowered operational overhead and cost by migr
 "Replacing our EC2 infrastructure with this managed service also helped reduce our overall AWS cross-Region network spend by close to 50%."
 -
 Vicente De Luca, Principal Engineer at Zendesk
-Learn how they did it »
+Learn how they did it
 More technical blogs
 1
-…
+...
 New features
 Date
 Customers using AWS Transit Gateway
-Read customer testimonials »
+Read customer testimonials
 Check out the product features
 Discover what you AWS Transit Gateway can do for your network.
 Learn more

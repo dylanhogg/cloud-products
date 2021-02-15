@@ -29,7 +29,7 @@ Use OpenTelemetry APIs to collect custom application metrics, then analyze and v
 Latest blog posts
 Date
 1
-…
+...
 Public Preview – AWS Distro for OpenTelemetry
 by Jeff Barr
 What is OpenTelemetry and Why Should You Care?
@@ -41,7 +41,7 @@ by Richard Hartmann
 New Relic, AWS, and OpenTelemetry: Cloud Observability, Simplified
 by Lavanya Chockalingam, 10/21/2020
 Splunk and AWS: Partnering to Accelerate Production-Ready OpenTelemetry
-by Amit Sharma, 10/21/2020
+by Amit Sharma, 10/21/2020
 Have questions?
 Visit the AWS Distro for OpenTelemetry FAQs page.
 Learn more

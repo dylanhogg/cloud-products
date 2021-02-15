@@ -1,0 +1,40 @@
+Web console
+Q: What is the AWS Management Console?
+The AWS Management Console provides a simple web interface for Amazon Web Services. You can log in using your AWS account name and password. If you’ve enabled AWS Multi-Factor Authentication, you will be prompted for your device’s authentication code.
+Q: How do I sign into the Management Console?
+You can sign in to the management console using your AWS or IAM account credentials at https://console.aws.amazon.com/console/home. For the AWS GovCloud (US) region, you can sign in to the management console using your IAM account credentials at https://console.amazonaws-us-gov.com.
+Q: How can I find a service in the AWS Management Console?
+There are several ways for you to locate and navigate to the services you need. At any time, you can select the Services menu in the top level navigation bar to see the list of all services grouped by category or search for services using Unified Search. On Console Home, you can select services from the Favorites, or Recently visited sections, or expand the All services section to browse through the list of all the services offered by AWS.
+Q: Can I create favorites for the services I use?
+Yes. You can add or remove the services you use to favorites in the Console. On desktop, once you hover over any service name, you can add or remove the service to the favorite section by clicking on the star next to the service name. On mobile or tablet, you can add or remove the service to the favorite section by clicking on the star next to the service name.
+Q: What can I expect to find under "Build a solution"?
+The Build a Solution section on the AWS Console Home page features various simplified and automated workflows and wizards that utilize and introduce you to different AWS services. You can use these tools to create the resources required to build your intended solution.
+Q: What can I expect to find under "Learn to Build"?
+The Learn to Build section on the AWS Console Home page presents training and learning resources for various solutions and use cases that might interest you. Selecting one of the categories presented in this section, you can find introduction videos, webinar recordings, simple tutorials, project guides, self-paced labs, documentation, and other resources.
+Q: Can I provide feedback?
+Yes! Choose Feedback at the bottom of the Console. We’re eager to hear about your experience with the Console.
+Q: When does my session expire?
+For security purposes, a login session will expire 12 hours after you sign in to the AWS Management Console with your AWS or IAM account credentials. To resume your work after the session expires, choose Click login to continue and log in again. The duration of federated sessions varies depending on the federation API (GetFederationToken or AssumeRole) and the administrator’s preference. Please go to our Security Blog to learn more about building a secure delegation solution to grant temporary access to your AWS account.
+Q: What browsers does the Management Console support?
+Explore any AWS service with your choice of browsers. The Console supports the three latest versions of Google Chrome, Mozilla Firefox, Microsoft Edge, and Apple Safari as well as Microsoft Internet Explorer 11. See the table below for details.
+Browser Support
+Browser
+Version
+Services
+Google Chrome
+Latest 3 Versions
+All Services
+Mozilla Firefox
+Microsoft Internet Explorer
+11
+Microsoft Edge
+Apple Safari
+Important: As of May 1, 2016, the AWS Management Console no longer supports versions of Internet Explorer older than version 11. We recommend migrating to a more recent browser version to ensure the best possible experience and security.
+Please contact us if you have any questions.
+Q: Does the Management Console share the same functions as the AWS CLI and APIs?
+All IaaS AWS administration, management, and access functions in the AWS Console are available in the AWS API and CLI. New AWS IaaS features and services provide full AWS Console functionality through the API and CLI at launch or within 180 days of launch.
+Resource groups
+Resource Groups content has moved. Click here to access it.
+Tag editor
+Tag Editor content has moved. Click here to access it.
+Page Content

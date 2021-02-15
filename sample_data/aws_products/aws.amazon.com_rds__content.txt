@@ -2,13 +2,13 @@ Amazon Relational Database Service (RDS)
 Set up, operate, and scale a relational database in the cloud with just a few clicks.
 Get started with Amazon RDS
 Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.
-Amazon RDS is available on several database instance types - optimized for memory, performance or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. You can use the AWS Database Migration Service to easily migrate or replicate your existing databases to Amazon RDS.
+Amazon RDS is available on several database instance types - optimized for memory, performance or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. You can use the AWS Database Migration Service to easily migrate or replicate your existing databases to Amazon RDS.
 Understanding Amazon Relational Database Service (1:53)
 Amazon RDS database engines
 Benefits
 Easy to administer
 Amazon RDS makes it easy to go from project conception to deployment. Use the Amazon RDS Management Console, the AWS RDS Command-Line Interface, or simple API calls to access the capabilities of a production-ready relational database in minutes. No need for infrastructure provisioning, and no need for installing and maintaining database software.
-Learn more »
+Learn more
 Highly scalable
 You can scale your database's compute and storage resources with only a few mouse clicks or an API call, often with no downtime. Many Amazon RDS engine types allow you to launch one or more Read Replicas to offload read traffic from your primary database instance.
 Available and durable
@@ -36,10 +36,9 @@ Mobile and Online games need a database platform with high throughput and availa
 Bandai Namco Studios uses Amazon RDS to provide better performance, lower costs, better security, and greater availability for their arcade, social and mobile games. Bandai Namco saw the benefit in terms of reductions in overhead, especially when it came to adding, modifying, and removing server resources.
 Check out the product features
 Explore key features of Amazon RDS
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started with the  Amazon RDS Management Console.
+Get started with the  Amazon RDS Management Console.
 Sign in

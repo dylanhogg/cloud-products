@@ -1,0 +1,154 @@
+Testing on real mobile devices
+General | Set Up | Devices | Testing | Results | Pricing
+General
+Q: What is AWS Device Farm?
+AWS Device Farm allows developers to increase application quality, time to market, and customer satisfaction by testing and interacting with real Android and iOS devices in the AWS Cloud. Developers can upload their app and test scripts and run automated tests in parallel across 100s of real devices, getting results, screenshots, video, and performance data in minutes. They can also debug and reproduce customer issues by swiping, gesturing, and interacting with a device through their web browser.
+Q: Who should use AWS Device Farm and why?
+AWS Device Farm is designed for developers, QA teams, and customer support representatives who are building, testing, and supporting mobile apps to increase the quality of their apps. Application quality is increasingly important, and also getting complex due to the number of device models, variations in firmware and OS versions, carrier and manufacturer customizations, and dependencies on remote services and other apps. AWS Device Farm accelerates the development process by executing tests on multiple devices, giving developers, QA and support professionals the ability to perform automated tests and manual tasks like reproducing customer issues, exploratory testing of new functionality, and executing manual test plans. AWS Device Farm also offers significant savings by eliminating the need for internal device labs, lab managers, and automation infrastructure development.
+Q: What types of apps does AWS Device Farm support?
+AWS Device Farm supports native and hybrid Android, iOS, and web apps, and cross-platform apps including those created with PhoneGap, Titanium, Xamarin, Unity, and other frameworks.
+Q: Does AWS Device Farm use simulators or emulators?
+AWS Device Farm tests are run on real, non-rooted devices. The devices are a mixture of OEM and carrier-branded devices.
+Setting up tests & remote access sessions
+Q: How do I get started with AWS Device Farm?
+Please see our getting started guide.
+Q: Which browsers does the AWS Device Farm console support?
+AWS Device Farm works on Internet Explorer 9 or later and the latest versions of Chrome, Firefox, and Safari.
+Q: Which browsers are supported for testing web applications?
+Your web applications will be tested in Chrome on Android and Safari on iOS.
+Q: What is the maximum file size for apps and tests?
+AWS Device Farm supports files up to 4 GB.
+Q: Do I need to instrument my app or supply source code?
+No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with “iOS Device” as the target instead of a simulator.
+Q: Do you store my app, tests, and other files on your servers? For how long?
+Apps and files you upload are automatically removed after 30 days. Test results, screenshots, and videos are stored for 15 months. You can also choose to delete files and results at any time through the AWS Device Farm console or API.
+Q: How do you clean up devices after my testing is completed?
+After test execution completes, we perform a series of cleanup tasks on each device, including uninstallation of your app. If we cannot verify uninstallation of your app or any of the other cleanup steps, the device will be removed and will no longer be available.
+While we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions in some cases, especially if you make use of the device system outside the context of your app. For this reason, and because AWS Device Farm captures video and logs of activity taking place during your use of each device, it is recommended that you avoid providing or entering sensitive information such as account info (E.g., Google Account, Apple ID), personal information, and other security-sensitive details during your automated test and remote access sessions.
+Q: Do you modify my app?
+On iOS, we replace the embedded provisioning profile with a wildcard profile and resign the app. If you provide it, we will add auxiliary data to the application package before installation so the data will be present in your app’s sandbox. Resigning the iOS app results in the removal of certain entitlements. This includes App Group, Associated Domains, Game Center, HealthKit, HomeKit, Wireless Accessory Configuration, In-App Purchase, Inter-App Audio, Apple Pay, Push Notifications, and VPN Configuration & Control.
+On Android, we resign the app. This may break functionality that depends on the app signature, such as the Google Maps Android API. It may also trigger anti-piracy and anti-tamper detection available from products such as DexGuard. For built-in tests, we may modify the manifest to include permissions required to capture and save screenshots.
+Selecting devices
+Q: Which devices are available in AWS Device Farm? How do you select the devices in your fleet?
+AWS Device Farm has a large (and growing) selection of Android, iOS, and Fire OS devices. We add popular new devices as they are released by manufacturers. We also add new devices as new OS versions are released. See the list of available devices.
+Q: Does AWS Device Farm have international devices from markets like Europe, China, and India?
+We currently have international devices from India. We use market data and customer feedback to continuously update the fleet. If you would like to see a device that isn’t in our fleet, please let us know.
+Q: How do I select devices? Can I retest on the same device?
+For Automated Testing, devices are selected through a collection called a device pool. Some curated device pools are provided automatically, but you can create your own pools, too. During execution, tests will be run against all devices in the specified pool that are compatible with your application and tests. For Remote Access, you select the desired device based on make, model, carrier variant, and operating system version. You can then optionally upload apps and other data as well as configure other device settings. Device Farm then locates an available device matching your request and displays the device’s display in your browser. You can then interact with the device and capture screenshots and video.
+Q: Are any apps pre-installed on AWS Device Farm test devices?
+Yes, test devices will have a number of apps pre-installed by the device manufacturer or carrier.
+Q: Are devices able to communicate with other services or systems that are available on the Internet?
+Yes. All devices have a WiFi connection with Internet access. If your systems are internal (that is, behind a corporate firewall), you can whitelist the IP range 54.244.50.32-54.244.50.63. All device traffic will come from those IPs.
+Q: Can I test different carrier connections and conditions?
+While you can't test actual carrier connections, you can simulate connection types and conditions using the network shaping functionality. When scheduling a run, you can select a curated network profile like "3G" or "Lossy LTE," or you can create your own, controlling parameters like throughput, jitter, and loss. All WiFi traffic from the device will be shaped and manipulated for the duration of your tests according to the profile you choose. You can also simulate dynamic environments by changing network parameters from your test scripts.
+Q: Can I make phone calls or send SMS from the devices?
+No, devices do not have carrier connections and cannot make phone calls or send SMS messages.
+Q: Can I use the device camera?
+Yes, you can use the device cameras, both front- and rear-facing. Due to the way the devices are mounted, images and videos may look dark and blurry.
+Testing your app
+Q: I don’t have any automated test scripts yet. What do the built-in tests do?
+The built-in compatibility test suite allows you to install, uninstall, launch, and run Fuzz on the app.
+Q: What does Fuzz do?
+Fuzz will perform fuzz testing on your UI immediately after launch. It streams random user input (touches, swipes, keyboard input) in a rapid fashion to your app. You can configure the number of events, the delay between events, and the seed used to randomize events. Using the same seed across test runs will result in the same sequence of events.
+Q: I test using an automation framework. Which frameworks do you support?
+For testing iOS, Android, and FireOS apps, we currently support Appium Java JUnit, Appium Java TestNG, Appium Python, Calabash, Instrumentation (Including JUnit, Espresso, Robotium, and any instrumentation-based tests), UI Automation, UI Automator, and XCTest (Including XCUI and KIF). For more information and updated list, visit our documentation.
+Q: Which test frameworks do you support for web applications?
+You can run tests written in Appium Java JUnit, Appium Java TestNG, or Appium Python.
+Q: Can you add support for a modified framework or one I designed myself?
+We’re always evaluating frameworks to support. Please contact us.
+Q: How does AWS Device Farm decide when to take a screenshot during a test?
+If you use one of the supported automation frameworks, you are in full control and can decide when to take screenshots. Those screenshots are included in your reports automatically.
+Q: Android: Is Google Play Services available on your devices? Which version is installed?
+Yes, Google Play Services is installed on devices that support it. The services are updated as new versions become available.
+Q: Android: Is there a default Google account on the devices?
+No, devices do not have an active Google account.
+Q: Does AWS Device Farm support record and playback automation or do I have to write my scripts?
+AWS Device Farm supports frameworks like Espresso and Robotium that have record and playback scripting tools.
+Q: iOS: Do I need to add your UDIDs to my provisioning profile?
+No, AWS Device Farm will automatically replace a provisioning profile and resign your app so it can be deployed on our devices.
+Q: iOS: My app does not contain debug symbols. Can I supply a dSYM file to AWS Device Farm?
+No, but you can download the logs and symbolicate the stack traces locally.
+Q: Android: My app is obfuscated. Can I still test my app on AWS Device Farm?
+Yes, if you use ProGuard. If you use DexGuard with anti-piracy measures, we are unable to re-sign the app and run tests against it.
+Q: My app serves ads. Will they be displayed on your devices? Will my ad provider flag this as abuse and ban my account?
+Although devices have access to the Internet, we make no guarantee that ads will be displayed. We recommend that you remove ads from the builds tested on AWS Device Farm.
+Q: Can I access the machine hosting the device or access its shell as part of my tests? Can I reach the Internet from it?
+Yes. If you’re using a client-server framework like Calabash, Appium, or UI Automation, you can access the Internet and execute limited shell commands from the host.
+Q: I’d like to supply media or other data for my app to consume. How do I do that?
+You can provide a .zip archive up to 4 GB in size. On Android, it will be extracted to the root of external memory; on iOS, to your app’s sandbox. For Android expansion files (OBB), we will automatically place the file into the location appropriate to the OS version. For more information, see the Developer Guide.
+Q: My app requires dependencies to test all functionality. Can I install other apps?
+Yes, you can select multiple apps and the order in which to install them. These dependent apps will be installed before your tests begin.
+Q: Can I test upgrade flows for my app? How do I install an old version of my app?
+Yes, in order to test your upgrade flow, you can upload and install an old version of your app before the new version is installed and tested.
+Q: My app makes use of location services. Can I specify the physical location of the device?
+Yes, you can supply latitude and longitude coordinates that will be used to override a device’s GPS.
+Q: Can I run localization tests? How do I change the language of the device?
+Yes, you can provide a locale (for example, “en_US”) to override the default locale setting on a device.
+Q: How long does it take before my test starts?
+Tests are immediately queued for execution and usually start within minutes. If one or more devices are not available, test execution for those devices will remain queued until they become available. Testing on the other devices in your test run will continue.
+Q: What is the maximum test time allowed?
+The maximum time allowed is 60 minutes. If you need a longer timeout, please contact us.
+Q: Does AWS Device Farm provide a way to run tests and get results through an API?
+Yes. We have a plug-in for the Jenkins continuous integration environment and a Gradle plugin compatible with Android Studio. AWS Device Farm also provides programmatic support for all console features, including setting up a test and downloading test results through an API. For more information, see the AWS Device Farm API Reference. In addition to the API, you can access AWS Device Farm from the AWS SDKs.
+Reviewing results
+Q: What’s in an AWS Device Farm test report?
+AWS Device Farm test reports contain pass/fail information, crash reports, test logs, device logs, screenshots, videos, and performance data. Reports include both detailed per-device data and high-level results like the number of occurrences of a given error. Remote Access results contain logs and a video of the session.
+Q: Which device logs are included in an AWS Device Farm report?
+AWS Device Farm reports include complete logcat (Android) and device logs (iOS), as well as logs from the device host and specified test framework.
+Q: My tests generate and save additional log files. Will I see them in my AWS Device Farm reports?
+If you write data to logcat (Android) or the device log (iOS), those log entries will be included in the report. AWS Device Farm does not collect any non-standard logs or other artifacts, although you may transfer files via your test script using the device's or device host's Internet connection.
+Pricing
+Q: How much does AWS Device Farm cost?
+Pricing is based on device minutes, which are determined by the duration of tests on each selected device. AWS Device Farm comes with a free trial of 1000 device minutes.* After that, customers are charged $0.17 per device minute. As your testing needs grow, you can opt for an unmetered testing plan, which allows unlimited testing for a flat monthly fee of $250 per device.
+Q: How does the free trial work?
+Your first 1000 device minutes are provided free of charge. This is a one-time trial and does not renew. Once your trial allocation is depleted, you will be billed at the standard rate of $0.17 per device minute.
+Q: What is a device minute?
+A device minute is the billing unit. Device minutes are a measurement of the time it takes (in minutes) to install, execute, and uninstall your app and tests on every device you have selected for your test run. The unit price is constant regardless of the device, test, or application type. Device minutes are only billed for tests that complete without any device or system errors. Similarly, for Remote Access sessions, device minutes are measured from the time it takes to prepare a device to your specification to completely removing any apps and data you placed on the device.
+You can dynamically grow and shrink your usage according to your business needs without any upper limits or up-front commitments.
+Your first 1000 device minutes are provided free of charge.* This is a one-time trial and does not renew. Once your trial allocation is depleted, you will be billed at the standard rate of $0.17 per device minute.
+Q: What is the unmetered plan and how do device slots work?
+Unmetered plans allow unlimited testing and remote access starting at $250 per month. Unmetered pricing is based on the number of device slots you purchase for each usage type (i.e. automated test or remote access) and device family (i.e. Android or iOS) and are priced at $250 per slot per month. Device slots correspond to concurrency.
+For instance, if you purchase ten automated test Android device slots and schedule a run on 100 Android devices, Device Farm will execute your tests on up to ten devices at a time until all tests are completed on your selected devices. Purchasing more slots would enable you to get your results faster. Regardless of how many tests or remote access sessions you have in a month, you are billed at the flat rate of $250 per device slot per month. You can cancel your subscription for one or more device slots at any time and the cancellation will take effect at your next renewal date (the day of the month that you purchased your first active device slot). You can purchase slots from the AWS Device Farm console, AWS Command Line Interface (AWS CLI), or AWS Device Farm API. To learn more see our docs.
+Q: What if my testing needs change and I need to add or remove device slots?
+You can add device slots at any time and they will be available to you immediately. You can also cancel your subscription for one or more device slots at any time and the cancellation will take effect at your next renewal date (the day of the month that you purchased your first active device slot).
+Q: If I'm on an unmetered plan, can I still make use of metered billing?
+Yes. When creating a run, you can choose to make use of your unmetered device slots or use metered device minutes instead. Because concurrency is not limited on metered billing, this gives you the flexibility of running tests faster than would otherwise happen using your device slots.
+Q: What is a private device?
+A private device is a physical instance of a phone or tablet that is exclusive to your account. Private devices can have custom, static configurations and run custom OS images. Each device is deployed on your behalf and removed at the end of your subscription.
+Q: How do private device subscriptions work and how are they priced?
+Each private device under your account is considered a private device subscription. The monthly subscription price is tiered on the cost of the device and starts at $200/month. After the minimum subscription period, you can choose to cancel your subscription at any time. Please contact us for more information.
+Q: Can I use both private devices and public devices?
+Yes. When selecting devices for a test run or remote access session you will see your private devices as well as public devices. You can also create device pools comprised of both private and public devices. For more information about private devices, please contact us.
+Testing on desktop browsers
+Q: What is Selenium?
+Selenium is an open-source framework that automates web browser interaction. You can learn more about Selenium here.
+Q: What is Desktop Browser Testing on AWS Device Farm?
+Device Farm enables you to execute your Selenium tests on different desktop browsers and browser versions that are hosted in the AWS Cloud. Device Farm follows a client-side execution model for Selenium testing i.e., your tests execute on your own local machine but will interact with browsers hosted on AWS Device Farm through the Selenium API.
+Q: How do I get started with Desktop Browser Testing on AWS Device Farm?
+To get started, please see our getting started guide here.
+Q: What operating system are the browsers hosted on?
+All browsers are hosted on EC2 Windows instances which run on Microsoft Windows Server.
+Q: What desktop browsers does AWS Device Farm support?
+You can see the list of desktop browsers and browser versions supported here.
+Q: What desired capabilities does AWS Device Farm support?
+You can see the list of Selenium desired capabilities that Device Farm supports here.
+Q: What artifacts are available for troubleshooting test failures?
+Device Farm generates console logs, web driver logs, action logs, and video recordings of the entire test to help you troubleshoot test failures.
+Q: Can I use AWS Device Farm to test my web app on real mobile devices?
+Yes. Device Farm supports testing web apps on real mobile devices using Appium. Visit our developer guide for Appium Web Testing to learn more. Please note that for testing on real mobile devices, Device Farm follows a server-side execution model and hence you will need to upload your tests to the service.
+Q: What are limits of Desktop Browser Testing on AWS Device Farm?
+You can find all limits for this feature here.
+Q: How much does Desktop Browser Testing on AWS Device Farm cost?
+Pricing is based on instance minutes, which are determined by the duration of tests on each selected browser instance. You will be charged $0.005 per browser instance minute.
+Q: What is instance minute?
+An instance minute is the billing unit for Desktop Browser Testing on Device Farm. Instance minutes are a measurement of the time it takes (in minutes) to execute your tests on every browser instance you have selected for your test run. The unit price of $0.005 is constant regardless of the browser or browser version you have selected. We do not charge you for the time it takes to launch, initialize, or teardown the EC2 instance that host the browser.
+Learn more about product pricing
+Find information about AWS Device Farm pricing options.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Device Farm in the AWS Console.
+Get started
+FAQs

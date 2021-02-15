@@ -1,0 +1,49 @@
+General
+Q: What is AWS Distro for OpenTelemetry?
+The Cloud Native Computing Foundation (CNCF) OpenTelemetry project provides a single set of open source APIs, libraries, and agents to collect and correlate distributed traces and metrics. AWS contributes to OpenTelemetry in an upstream-first model: our enhancements to the project are first contributed to the upstream project, then we build the AWS Distro for OpenTelemetry from upstream OpenTelemetry components. These components include SDKs, auto-instrumentation agents, and collectors that are tested, optimized, secured, and supported by AWS. The initial release includes support for Java, JavaScript, Go, and Python. Additional language support will be provided in upcoming releases.
+Q: What are the components of AWS Distro for OpenTelemetry and how do they compare to those in the OpenTelemetry upstream?
+AWS Distro for OpenTelemetry consists of SDKs, auto-instrumentation agents, collectors and exporters to send data to back-end services. AWS has contributed code to the upstream project for OpenTelemetry components including:
+OpenTelemetry SDK: We have contributed code upstream to enable the collection of AWS resource-specific metadata, such as container ID, Lambda function version, Task and Pod ID. We have added support to the OpenTelemetry SDKs for the X-Ray trace format and context. OpenTelemetry SDKs now correlate ingested trace and metrics data from AWS X-Ray and CloudWatch.
+Auto-instrumentation agent: We have added support in the OpenTelemetry Java auto-instrumentation agent for AWS SDK and AWS X-Ray trace data.
+OpenTelemetry Collector: The collector in our distro is built using the upstream OpenTelemetry collector. We have added AWS-specific exporters to the upstream collector to send data to AWS services including AWS X-Ray, Amazon CloudWatch and Amazon Managed Service for Prometheus. We have also included the OTLP (OpenTelemetry Protocol) exporter. Refer to our documentation to learn about different exporters supported in AWS Distro for OpenTelemetry.
+These components have all been contributed back to the upstream project, as future work will also be.
+Q: Is there a cost for using AWS Distro for OpenTelemetry?
+No, there is no cost for using AWS Distro for OpenTelemetry. You pay for traces, logs, and metrics sent to AWS. Refer to individual services for their pricing details.
+Q: What do you mean by “predictable performance”?
+To gain end-to-end visibility, OpenTelemetry agents are commonly deployed on every host or container and OpenTelemetry SDKs are integrated into every application binary. An unexpected performance degradation in an OpenTelemetry component such as a memory leak or excessive CPU usage can significantly hurt the performance and stability of monitored systems. AWS applies a comprehensive testing framework before each AWS Distro for OpenTelemetry release to ensure that the overhead of OpenTelemetry components shipped as part of AWS Distro for OpenTelemetry are quantifiable and predictable.
+Instrumentation
+Q: How do I get started with AWS Distro for OpenTelemetry when using container services like Amazon ECS and Amazon EKS running on Amazon EC2 and AWS Fargate?
+You can use AWS CloudFormation templates when using Amazon ECS, and KubeCtl commands when using Amazon EKS to deploy the Collector as a sidecar. To gain additional data from your applications, you can instrument using language-specific OpenTelemetry SDKs, and also use the Java auto-instrumentation agent.
+Q: How do I get started with the AWS Distro for OpenTelemetry when using AWS Lambda?
+You can include the OpenTelemetry Lambda Layer as part of your function using the AWS console or AWS CloudFormation templates. The layer will be available in Python and can be configured to send trace data to AWS X-Ray using environment variables. Refer to the Getting started guide when using AWS Distro for OpenTelemetry with AWS Lambda.
+Q: I am currently using the Amazon CloudWatch agent. Should I switch to AWS Distro for OpenTelemetry?
+No, you should continue to use the CloudWatch agent. AWS Distro for OpenTelemetry works side-by-side with the CloudWatch agent to collect data needed for application monitoring. The CloudWatch agent can be used to collect logs and infrastructure metrics. AWS Distro for OpenTelemetry can be used to collect traces and application metrics.
+Q: How should I use AWS Distro for OpenTelemetry for my applications running on Amazon EC2?
+You can deploy and configure the AWS Distro for OpenTelemetry Collector in Amazon EC2 using the getting started guide. You can then instrument your applications using language-specific OpenTelemetry SDKs to gather additional data. You can also collect the trace data using the OpenTelemetry Java auto-instrumentation agent.
+Q: I am currently using FireLens for logs in my container workload. Do I need to change anything for AWS Distro for OpenTelemetry?
+No, you don’t need to change anything. FireLens can be used for logs for any workloads on container services. FireLens works in conjunction with AWS Distro for OpenTelemetry. You can deploy the AWS Distro for OpenTelemetry Collector to run along with FireLens. To learn more about FireLens, see the documentation on Custom log routing.
+Q: I am an existing AWS X-Ray customer. I have instrumented my application using the X-Ray SDK. Do I need to change anything?
+No, you can continue using the AWS X-Ray SDK and daemon/agent for applications already instrumented. We recommend using AWS Distro for OpenTelemetry if you aim to standardize with open source APIs from upstream OpenTelemetry, or want to send traces to multiple monitoring solutions simultaneously. In order to migrate to AWS Distro for OpenTelemetry, you can use the auto-instrumentation agent for Java or instrument your application using OpenTelemetry APIs and SDKs.
+Q: Can I collect only metrics and disable tracing when using AWS Distro for OpenTelemetry?
+Yes. All you need to do is enable the metrics exporters in AWS Distro for OpenTelemetry’s Collector configuration file.
+Q: What is trace sampling and how is sampling supported in AWS Distro for OpenTelemetry?
+Sampling is used to control the percentage of traces you will be collecting. Sampling is the primary mechanism used to control cost and amount of data sent across the network. In AWS Distro for OpenTelemetry, you can use a sampling rate to set a percentage of requests to be traced. The sampling rate can be set at the SDK level.
+Q: Can I use the upstream OpenTelemetry collector which contains exporters from AWS and other third-party solutions?
+Yes. You can compile the upstream OpenTelemetry collector source code with all the necessary exporters from AWS and other third-party solutions.
+Releases and Open Source Contribution
+Q: Are you creating a fork of the OpenTelemetry project?
+No, we not creating a fork of the OpenTelemetry project. We are creating an “upstream first” distribution of the upstream code. All enhancements we make to AWS Distro for OpenTelemetry are contributed upstream to the OpenTelemetry project, and we consume and redistribute only changes that have been made upstream.
+Q: How often do you plan to add new features into AWS Distro for OpenTelemetry from the upstream OpenTelemetry project?
+We plan to stay current with the upstream OpenTelemetry version, packaging new functionality from upstream regularly into this AWS distribution. New releases of AWS Distro for OpenTelemetry will use the latest versions of OpenTelemetry components.
+Q: How do I request new features in AWS Distro for OpenTelemetry?
+Our roadmap is public. Please create a feature request and vote for features you want to see in AWS Distro for OpenTelemetry on the public roadmap.
+Q: Can we contribute to the AWS Distro for OpenTelemetry distribution?
+Yes, AWS Distro for OpenTelemetry is open source with an Apache 2.0 License. You can contribute to all components of the AWS Distro for OpenTelemetry distribution. If the component is upstream, please contribute to the OpenTelemetry project. If the component is AWS specific, please contribute through our GitHub repositories.
+Q: How do I report issues in AWS Distro for OpenTelemetry impacting my environment and applications?
+For critical issues affecting your production environment, you can use AWS Support to open issues related to AWS Distro for OpenTelemetry. For feature requests and minor bug fixes, you can open an issue in the GitHub repositories for any specific component of AWS Distro for OpenTelemetry.
+Learn more about AWS Distro for OpenTelemetry
+Visit the AWS Distro for OpenTelemetry Overview page.
+Learn more
+Get Started with AWS Distro for OpenTelemetry in Preview
+Visit the GitHub page to download.
+Page Content

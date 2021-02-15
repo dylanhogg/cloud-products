@@ -3,7 +3,7 @@ Migrate your databases to AWS with minimal downtime
 More than 350,000 databases migrated using AWS Database Migration Service
 Get started with AWS Database Migration Service
 AWS Database Migration Service helps you migrate databases to AWS quickly and securely. The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database. The AWS Database Migration Service can migrate your data to and from most widely used commercial and open-source databases.
-AWS Database Migration Service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle or Microsoft SQL Server to Amazon Aurora. With AWS Database Migration Service, you can continuously replicate your data with high availability and consolidate databases into a petabyte-scale data warehouse by streaming data to Amazon Redshift and Amazon S3. Learn more about the supported source and target databases.
+AWS Database Migration Service supports homogeneous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle or Microsoft SQL Server to Amazon Aurora. With AWS Database Migration Service, you can continuously replicate your data with high availability and consolidate databases into a petabyte-scale data warehouse by streaming data to Amazon Redshift and Amazon S3. Learn more about the supported source and target databases.
 When migrating databases to Amazon Aurora, Amazon Redshift, Amazon DynamoDB or Amazon DocumentDB (with MongoDB compatibility) you can use DMS free for six months.
 Introduction to AWS Database Migration Service (1:33)
 Benefits
@@ -35,11 +35,11 @@ You can use AWS Database Migration Service to perform continuous data replicatio
 The US Department of Veterans Affairs (VA) processes hundreds of thousands of Veterans Appeals each year. "Our appeals processing system, VACOLS, includes 20 million records stored in an Oracle 11g database. The system is more than 20 years old and is in the process of being modernized. During this time, we need to ensure that the data is securely replicated into the cloud for safekeeping. We're using AWS DMS to replicate the database into an RDS Oracle database in AWS GovCloud, in a Multi-AZ deployment. This setup ensures that VACOLS data is preserved, secured, and highly available in the cloud, which is a serious win for VA and for our Veterans, who rely on us for the safeguarding of their information." – Alan Ning, Site Reliability Engineer, U.S. Digital Service.
 Featured Partners
 Apps Associate is an APN Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives.
-Contact »
+Contact
 Onica is an APN Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements.
 We do Oracle on AWS...That’s it! Applications, technique stacks, databases, and migrations to Amazon Aurora.
 DB Best Technologies specializes in providing modernization and data management solutions and developing cross-platform database tools.
-View All AWS Database Migration Service Partners »
+View All AWS Database Migration Service Partners
 Blog posts & articles
 Migrate Apache Cassandra databases to Amazon DynamoDB more easily
 Arun Thiagarajan and Mahesh Kansara

@@ -1,0 +1,90 @@
+General
+Q: What is AWS Audit Manager?
+AWS Audit Manager helps you continuously audit your AWS usage to simplify how you assess risk and compliance with regulations and industry standards. Audit Manager automates evidence collection to make it easier to assess if your policies, procedures, and activities, also known as controls, are operating effectively. When it is time for an audit, AWS Audit Manager helps you manage stakeholder reviews of your controls and enables you to build audit-ready reports with much less manual effort.
+Q: What are the key benefits of AWS Audit Manager?
+Easily map your AWS usage to controls - AWS Audit Manager provides prebuilt frameworks that include mappings of AWS resources to control requirements for well-known industry standards and regulations, such as the Health Insurance Portability and Accountability Act (HIPAA), the General Data Protection Regulation (GDPR), and the Payment Card Industry Data Security Standard (PCI DSS).
+Save time with automated collection of evidence - AWS Audit Manager saves you time by automatically collecting and organizing evidence as defined by each control requirement.
+Streamline collaboration across teams - AWS Audit Manager helps you streamline audit stakeholder collaboration. For example, the delegation feature enables you to assign controls in your assessment to a subject matter expert to review.
+Be continually prepared to produce audit-ready reports - The evidence Audit Manager continuously collects and securely stores becomes a record containing the information needed to demonstrate compliance with the requirements specified by a control.
+Ensure assessment report and evidence integrity - AWS Audit Manager stores evidence in its own managed storage repository with read-only permissions to your end-users. When you generate audit-ready reports, Audit Manager produces a report file checksum so you can validate that the report evidence remains unaltered.
+Q: How does AWS Audit Manager help me audit my usage of AWS?
+AWS Audit Manager’s prebuilt frameworks help map your AWS resource usage to the requirements in industry standards or regulations, such as CIS AWS Foundations Benchmark, the General Data Protection Regulation (GDPR), and the Payment Card Industry Data Security Standard (PCI DSS). You can also fully customize a framework and its controls to help meet your unique business requirements.
+Q: When should I use AWS Audit Manager?
+AWS Audit Manager enables you to move from manually collecting, reviewing, and managing evidence to a solution that automates evidence collection, provides an easy way to track the chain custody of evidence, enables teamwork collaboration, and helps to manage evidence security and integrity. You can also use Audit Manager to support continuous auditing and compliance as well as for your internal risk assessments.
+Q: What is the pricing structure of AWS Audit Manager?
+AWS Audit Manager is priced based on the number of resource assessments executed per account per region. When you define and launch an assessment based on a framework, Audit Manager will execute a resource assessment for each individual resource, such as your Amazon EC2 instances, Amazon RDS instances, Amazon S3 buckets, or Amazon VPC subnets. A resource assessment is a process that collects, stores, and manages evidence, which you can use to assess risk and compliance with industry standards and regulations. Please also see AWS Audit Manager pricing.
+Q: Does AWS Audit Manager absolve my liability under compliance standards or regulations, such as PCI DSS and GDPR?
+No. AWS Audit Manager assists you in gathering and preparing evidence for audits. Although AWS is not providing legal or compliance advice, we help you save thousands of hours needed in manually producing and collecting audit evidence and allows you to focus more on risk remediation and audit planning.
+Q: Is AWS Audit Manager a regional or global service?
+AWS Audit Manager is a regional service. This ensures all evidence collected is regionally based and doesn’t cross AWS regional boundaries. Customer must enable Audit Manager in each region to view evidence in that region.
+Q: What regions does AWS Audit Manager support?
+The regional availability of AWS Audit Manager is listed here: AWS Regional Services List
+Q: What is the list of prebuilt frameworks offered by AWS Audit Manager?
+AWS Audit Manager provides prebuilt standard frameworks based on AWS best practices for various regulations and industry standards. Prebuilt frameworks in AWS Audit Manager include AWS Control Tower, AWS License Manager, AWS Operational Best Practices (OBP), CIS Benchmark for CIS AWS Foundations Benchmark v1.2.0, Level 1 & 2; CIS Controls v7.1 Implementation Group 1, FedRAMP Moderate Baseline by Allgress, the General Data Protection Regulation (GDPR), GxP 21 CFR part 11, the Health Insurance Privacy and Portability Act (HIPAA), HITRUST v9.4 Level 1, the Payment Card Industry Data Security Standard (PCI DSS) v3.2.1, the Service Organization Control 2 (SOC 2), and an AWS Audit Manager Sample Framework.
+Q: Where does AWS Audit Manager store evidence data?
+AWS Audit Manager stores evidence in its own managed storage repository with read-only permissions to your end-users. AWS Audit Manager allows you to generate assessment reports, which contain a summary document and evidence folders, in your S3 buckets.
+Q: How long does AWS Audit Manager store evidence data?
+Currently, AWS Audit Manager stores evidence data up to one year in its own managed storage repository and the evidence data will be deleted after one year.
+Q: What are the service quotas for AWS Audit Manager?
+Number of active assessments per account: 100
+Number of custom controls per account: 500
+Number of custom frameworks per account: 100
+Core Concepts
+Q: What is a framework?
+A framework can be a collection of pre-built and/or customer-defined controls. These controls are organized and grouped in accordance to the requirements of a specified compliance or industry standard such as PCI DSS, HIPAA, GDPR, or internal risk governance guiding principles.
+Q: What is a control?
+A control is a prescriptive description that explains how to implement a procedure to conform to a given rule, such as a compliance requirement. It provides a reasonable assurance that the resources used by your organization operate as intended, that data is reliable, and that your organization is in compliance with applicable laws and regulations.
+Q: What is a custom control?
+AWS Audit Manager enables you to define your own controls to collect evidence from specific data sources to help you meet unique compliance requirements.
+Q: What is an assessment?
+An AWS Audit Manager assessment is an implementation of an AWS Audit Manager framework. Using a framework as a starting point, you can create an assessment and define the AWS accounts and services that you want to include in the scope of your audit. After your assessment is created, AWS Audit Manager begins to automatically assess resources in your AWS accounts and services based on the controls defined in the framework. Next, it collects the relevant evidence and converts it into an auditor-friendly format, and then attaches it to the controls in your assessment.
+Q: What is a resource assessment?
+A resource assessment is a process that collects, stores, and manages evidence, which you can use to assess risk and compliance with industry standards and regulations. When you define and launch an assessment based on an assessment framework, Audit Manager will execute a resource assessment for each individual resource, such as your Amazon EC2 instances, Amazon RDS instances, Amazon S3 buckets, or Amazon VPC subnets.
+Q: What is evidence?
+Evidence is a record that contains the information needed to demonstrate compliance with the requirements specified by a control. Examples of evidence could be a change activity triggered by a user, or a system configuration snapshot.
+Q: What is an assessment report?
+An assessment report is a finalized document generated from an AWS Audit Manager assessment. The report summarizes the relevant evidence collected for your audit. The report links to the relevant evidence folders, which are named and organized according to the controls that are specified in your assessment.
+Getting started
+Q: How do I get started with AWS Audit Manager?
+You can get started by setting up AWS Audit Manager in the AWS Management Console, AWS CLI, or via API. AWS Audit Manager documentation contains a getting started tutorial, which provides a hands-on introduction to AWS Audit Manager. In this tutorial, you can create an assessment using a standard framework and begin the automated collection of evidence.
+Q: Does AWS Audit Manager help manage evidence across multiple AWS accounts?
+Yes, AWS Audit Manager supports multiple accounts via integration with AWS Organizations. AWS Audit Manager and AWS Organizations integration enables you to run an AWS Audit Manager assessment over multiple accounts and consolidate evidence into a delegated administrator account.
+Q: How do I specify the scope of an assessment for my audit?
+You can specify the scope by selecting the AWS accounts and AWS services when you launch an assessment from a framework. The framework used defines the AWS services from which AWS Audit Manager collects evidence. From there, you then add the AWS services in scope during the creation of the assessment based on that framework.
+Working in AWS Audit Manager
+Q: How does AWS Audit Manager help me manage audits?
+AWS Audit Manager saves you time by automatically collecting and organizing evidence as defined by each control requirement. With Audit Manager, you can focus on reviewing the relevant evidence to ensure your controls are working as intended. When it is time for an audit, AWS Audit Manager helps you manage stakeholder reviews of your controls and enables you to build audit-ready reports with much less manual effort. For example, the delegation feature enables you to assign controls in your assessment to a subject matter expert to review. After reviewing and selecting the relevant evidence, you are ready to build an audit-ready report that includes a report summary and a set of folders containing the detailed evidence.
+Q: How can I review an assessment?
+In Audit Manager, you can get a summarized view of your assessment that you can review any time. The summary contains your assessment details, controls, assessment report(s), AWS accounts in scope, AWS services in scope, audit owner(s), tags, and changelog. You can also click on each control listed inside an assessment to review and update detailed information related to each control, including reviewing the collected evidence, adding comments, uploading manual evidence, checking change logs, updating the control status, or delegating to a team member.
+Q: How do I delegate to a domain expert to review controls on my behalf?
+AWS Audit Manager allows you to delegate a control set which contains a collection of controls to another user for review. The delegate would be able to review evidence, add comments, upload manual evidence, and update the control status for each of the controls in the control set. The delegate can submit the review back to you so you can check the control set and related comments and finally completed the review of that control set.
+Q: How do I create a custom framework?
+The framework library is the central place from which you can access and manage frameworks in AWS Audit Manager. It contains a catalog of standard frameworks pre-built by Audit Manager such as PCI DSS, CIS Foundation Benchmark, and HIPAA and custom frameworks you define. There are two ways to create a custom framework. You can customize an existing framework, or you can create a new framework from scratch. When creating a custom framework, you can add controls from Audit Manager control library and organize controls into control sets in a way that suits your unique requirements.
+Q: How do I create a custom control?
+The control library is the central place from which you can access and manage controls in AWS Audit Manager. It contains a catalog of standard controls pre-built by Audit Manager and custom controls you define. There are two ways to create a custom control. You can customize an existing control, or you can create a new control from scratch. When creating a custom control, you can specify the control name, description, testing information, and up to ten data sources on AWS that you want Audit Manager to automatically collect evidence from. You can also create a custom control that only asks for manual evidence to support those controls that require non-system evidence such as people organization and operation procedures.
+Q: What are the control data sources from which I can automatically collect evidence?
+When you configure a custom control in AWS Audit Manager, you can choose to collect automated evidence for that control. You can select one of the following four types of control data sources for automated evidence:
+User activity from AWS CloudTrail - Examples of user activities are a route table update, an RDS instance backup setting change, and an S3 bucket encryption policy change.
+Compliance check from AWS Security Hub – Examples of compliance checks are Security Hub checks for PCI DSS
+Compliance check from AWS Config - Examples of compliance checks are Config rule evaluations for GDPR.
+Configuration data from AWS API calls - Examples of configuration data are a VPC route table’s list of routes, a list of IAM policies, and an EC2 instance configuration.
+Q: What is the frequency of evidence collection in Audit Manager?
+In AWS Audit Manager, the frequency of evidence collection depends on the type of the evidence, explained as below:
+The configuration data evidence type, which includes snapshots of the resource configuration, is captured directly from AWS services (e.g. EC2, S3, RDS, VPC, etc.) on a daily, weekly, or monthly frequency. Customers can configure this frequency in Audit Manager.
+The user activity evidence type is captured from AWS CloudTrail logs when triggered by changes to resource configurations.
+The compliance check evidence type, which includes results from AWS Security Hub and/or AWS Config, is captured on a frequency defined in those two services. It can be a periodic basis or triggered by changes to resource configurations.
+Q: How does Audit Manager work with other services?
+AWS Security Hub monitors your environment using automated security checks based on AWS best practices and industry standards, so that you can take corrective action on findings. AWS Audit Manager imports Security Hub findings for supported compliance standards, such as the CIS Foundations Benchmark and PCI. AWS Audit Manager automatically performs additional analysis and adds annotations to the collected Security Hub findings to generate evidence for the AWS services that are monitored by AWS Security Hub
+AWS CloudTrail allows you to log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. Audit Manager collect log data from CloudTrail directly and performs additional analysis. Audit Manager annotates the data to generate evidence automatically for over 175 AWS services that feed logs into AWS CloudTrail.
+AWS Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. AWS Audit Manager collects log data from AWS Config and performs additional analysis. Audit Manager annotates that data to generate evidence automatically for the AWS services that are monitored by AWS Config.
+AWS Control Tower provides the easiest way to set up and govern a new, secure, multi-account AWS environment based on best practices established through AWS’ experience working with thousands of enterprises as they move to the cloud. AWS Audit Manager imports guardrail logs from Control Tower, and performs additional analysis. Audit Manager annotates that data to generate evidence automatically for the AWS services that are tracked by Control Tower guardrail logs.
+Learn more about product pricing
+Visit the AWS Audit Manager Pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Audit Manager in the AWS Management Console.
+Sign in
+FAQs

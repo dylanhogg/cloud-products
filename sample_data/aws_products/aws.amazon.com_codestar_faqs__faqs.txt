@@ -1,0 +1,44 @@
+General
+Q: What is AWS CodeStar?
+AWS CodeStar is a cloud‐based development service that provides the tools you need to quickly develop, build, and deploy applications on AWS. With AWS CodeStar, you can set up your entire continuous delivery toolchain in minutes, allowing you to start releasing code faster. AWS CodeStar makes it easy for your whole team to work together securely, with built-in role-based policies that allow you to easily manage access and add owners, contributors, and viewers to your projects. Each AWS CodeStar project comes with a unified project dashboard and integration with Atlassian JIRA software, a third-party issue tracking and project management tool. With the AWS CodeStar project dashboard, you can easily track your entire software development process, from a backlog work item to production code deployment.
+Q: Why should I use AWS CodeStar?
+You should use CodeStar whenever you want to quickly set up a software development project on AWS, whether you’re starting with a full set of tools for a team-based project or only setting up a trial project with a source repository. AWS CodeStar can also be used by anyone interested in learning more about continuous delivery by starting with a full tool chain for a sample project. AWS CodeStar guides you through the setup experience with project templates that set up real applications and be modified at any point in the future to suit your needs.
+Q: What can I do with AWS CodeStar?
+Start developing on AWS in minutes. AWS CodeStar makes it easy for you to set up your entire development and continuous delivery toolchain for coding, building, testing, and deploying your application code. To start a project, you can choose from a variety of AWS CodeStar templates for Amazon EC2, AWS Lambda, and AWS Elastic Beanstalk. When you choose a project template, the underlying AWS services are provisioned in minutes, allowing you to quickly start coding and deploying your applications.
+Work across your team securely. AWS CodeStar enables you to collaborate across your team in a secure manner. AWS CodeStar simplifies the process of setting up project access for teams because it provides built-in role-based policies that follow AWS security best practices. You can easily manage access for project owners, contributors, and viewers without needing to manually configure your own policy for each service.
+Manage software delivery easily. AWS CodeStar provides an easy way to coordinate your day-to-day development activities through a unified project dashboard. This lets you monitor application activity, and track progress across all stages of your software development process, including code commits, builds, tests, and deployments, from a central place. AWS CodeStar integrates Atlassian JIRA, a third-party issue tracking and project management tool, allowing you to easily manage JIRA issues directly in the AWS CodeStar dashboard.
+Choose from a variety of project templates. With AWS CodeStar project templates, you can easily develop a variety of applications including websites, web applications, web services, and Alexa skills. AWS CodeStar project templates include the code for getting started on supported programming languages including Java, JavaScript, PHP, Ruby, and Python.
+Q: How much does AWS CodeStar cost?
+There is no additional charge for AWS CodeStar. You pay for AWS resources (e.g. EC2 instances, Lambda executions or S3 buckets) used to in your CodeStar projects. You only pay for what you use, as you use it; there are no minimum fees and no upfront commitments.
+Features and functions
+Q: How do I get started with AWS CodeStar?
+Getting started with AWS CodeStar can be done in a few minutes through the AWS CodeStar console. First, select one of the available CodeStar project templates, which will automatically provision all of the resources needed for your project. Once your project has been provisioned, you can see your running application from the “Application endpoints” tile. Use the steps in the CodeStar console to connect to the AWS CodeCommit source repository for your project and begin coding. You can use the project dashboard to track and manage changes in the release process and see the most recent project activity.
+Q: What types of applications can I build with AWS CodeStar?
+CodeStar can be used for building web applications, web services and more. The applications run on Amazon EC2, AWS Elastic Beanstalk or AWS Lambda. Project templates are available in several different programming languages including Java, Node.js (Javascript), PHP, Python and Ruby.
+Q: How do I add, remove, or change users for my AWS CodeStar projects?
+You can add, change or remove users for your CodeStar project through the “Team” section of the CodeStar console. You can choose to grant the users Owner, Contributor or Viewer permissions. You can also remove users or change their roles at any time.
+Q: How do AWS CodeStar users relate to IAM users?
+CodeStar users are IAM users that are managed by CodeStar to provide pre-built, role-based access policies across your development environment; Because CodeStar users are built on IAM, you still get the administrative benefits of IAM. For example, if you add an existing IAM user to a CodeStar project, the existing global account policies in IAM are still enforced.
+Q: Can I work on my AWS CodeStar projects directly from an IDE?
+Yes. By installing the AWS Toolkit for Eclipse or Visual Studio you gain the ability to easily configure your local development environment to work with CodeStar Projects; Once installed, developers can then select from a list of available CodeStar projects and have their development tooling automatically configured to clone and checkout their project’s source code, all from within their IDE.
+Q: How do I configure my project dashboard?
+Project dashboards can be configured to show the tiles you want, where you want them; To add or remove tiles, click on the “Tiles” drop‐down on your project dashboard. To change the layout of your project dashboard, drag the tile to your desired position.
+Q: Are there third party integrations that I can use with AWS CodeStar?
+AWS CodeStar works with Atlassian JIRA to integrate issue management with your projects; In addition, you can add partner actions to your project’s AWS CodePipeline. To see a list of the available CodePipeline actions, see the AWS CodePipeline integrations page.
+Q: I am a third party tools vendors. Can I integrate with AWS CodeStar?
+We are starting to build out an integration program for AWS Partner Network (APN) members. If you are already an APN member and interested in learning more, please contact aws-codestar-request@amazon.com.
+Q: Can I use AWS CodeStar to help manage my existing AWS applications?
+No. AWS CodeStar helps customers quickly start new software projects on AWS. Each CodeStar project includes development tools, including AWS CodePipeline, AWS CodeCommit, AWS CodeBuild and AWS CodeDeploy, that can be used on their own and with existing AWS applications. Customers who are interested in how these tools can help them with their existing AWS applications can visit the respective service pages to learn more.
+Regions
+Q: In what regions is AWS CodeStar available?
+See
+Regional Products and Services for details. The CodeStar console displays all of your development projects across all regions in a single, centralized view; Your CodeStar project will be saved to the region your console is set to.
+Q: Can I use AWS CodeStar to launch applications in other regions?
+No. CodeStar configures and manages Code services resources, like a CodeCommit repository, in the regions that you specify in your CodeStar project configuration.
+Learn more about AWS CodeStar pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS CodeStar
+Have more questions?
+Contact us
+Page Content

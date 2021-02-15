@@ -1,0 +1,36 @@
+General Questions
+Who qualifies the devices listed in the AWS Partner Device Catalog?
+Partners in the AWS Partner Network (APN) are responsible for the qualification of their devices, and AWS reviews the technical validation results of device qualification submissions by Partners before their devices are approved for listing in the catalog.
+What are the benefits offered by qualified devices?
+Qualified devices listed in the AWS Partner Device Catalog have completed the technical validation process and review for the qualification they are supporting. Selecting a qualified device can help you to go to market faster and simplify device integration into your projects by giving you the confidence that the partner device supports AWS best practices, and follows applicable AWS service integration guidelines.
+Are device qualifications tied to specific AWS service/product versions?
+Yes, each device in the catalog has been qualified for the particular AWS service/product version shown in the device listing details.
+Who supports the devices listed in the AWS Partner Device Catalog?
+The listing AWS Partners are providing support for the devices they are listing. If you have questions related to a partner's device, please connect directly with the partner through their website or the AWS partner profile. The corresponding links are provided at the bottom of every device listing in the catalog.
+You may also use AWS support options such as the AWS online forums for help related to AWS services.
+If you have any questions or concerns related to the partner experience with devices listed in the catalog, please let us know by sending an email to the APN Support team.
+Can I buy the listed devices in the AWS Partner Device Catalog?
+Yes. Listing AWS Partners allows customers to purchase devices for evaluation, prototyping, or proof-of-concept needs by providing a link to their preferred fulfillment partner.
+How do I get help for questions related to access and use of the AWS Partner Device Catalog?
+Please contact the APN Support team via email for questions or feedback related to the AWS Partner Device Catalog user experience.
+Partner FAQs
+Who is eligible for listing devices in the AWS Partner Device Catalog?
+Partners in the AWS Partner Network (APN) are eligible to submit devices for validation and listing in the Device Catalog as part of the AWS Device Qualification Program. You can register as an AWS Partner here.
+How much does it cost to qualify a device for listing?
+Participation in the AWS Device Qualification Program is made available to AWS Partners at no additional cost.
+Where can I find more information about the FreeRTOS and AWS IoT Greengrass validation using AWS IoT Device Tester?
+Please visit the Device Tester pages for FreeRTOS or AWS IoT Greengrass for details about AWS IoT Device Tester and the related validation requirements.
+Where can I learn more about using AWS IoT Device Advisor for AWS IoT Core validations?
+You can learn more about how to use AWS IoT Device Advisor here.
+Where can I learn more about the AWS Device Qualification Program?
+Visit the AWS Device Qualification Program page here to learn more about the program.
+How do I get technical support related to the qualification/validation process of my devices?
+For technical questions related to the device validation process, including the AWS IoT Device Tester tool, you may use AWS support options such as the AWS online forums and AWS Support. Additional paid-for support services to assist partners in device qualification related efforts such as porting or validation readiness are also available from third-party service providers.
+How do I provide hardware for device qualification, and will I get the device I provided back?
+If hardware is required to complete a technical validation, we will contact you after you have submitted your device for listing to arrange the shipping details. Unless mutually agreed upon, we will return submitted hardware to you when it is no longer needed for qualification related purposes.
+How do I get help for questions related to access and use of the Device Listing Portal on APN Partner Central?
+Please contact the APN Support team via email for questions related to the Device Listing Portal user experience on APN Partner Central, including issues and general feedback.
+Learn more about the AWS Partner Device Catalog
+Visit the AWS Partner Device Catalog
+Page Content
+Partner Questions

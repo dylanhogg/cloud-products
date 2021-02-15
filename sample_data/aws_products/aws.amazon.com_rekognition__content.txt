@@ -7,21 +7,21 @@ What is Amazon Rekognition? (1:42)
 Customers
 Key features
 Labels
-With Amazon Rekognition, you can identify thousands of objects (such as bike, telephone, building), and scenes (such as parking lot, beach, city). When analyzing video, you can also identify specific activities such as "delivering a package" or "playing soccer". Learn more »
+With Amazon Rekognition, you can identify thousands of objects (such as bike, telephone, building), and scenes (such as parking lot, beach, city). When analyzing video, you can also identify specific activities such as "delivering a package" or "playing soccer". Learn more
 Custom labels
-With Amazon Rekognition Custom Labels, you can extend the detection capabilities of Amazon Rekognition to extract information from images that is uniquely helpful to your business. For example, you can find your corporate logo in social media, identify your products on store shelves, classify your machine parts in an assembly line, or detect your animated characters in videos. Learn more »
+With Amazon Rekognition Custom Labels, you can extend the detection capabilities of Amazon Rekognition to extract information from images that is uniquely helpful to your business. For example, you can find your corporate logo in social media, identify your products on store shelves, classify your machine parts in an assembly line, or detect your animated characters in videos. Learn more
 Content moderation
-Amazon Rekognition helps you identify potentially unsafe or inappropriate content across both image and video assets and provides you with detailed labels that allow you to accurately control what you want to allow based on your needs. Use Amazon A2I to enhance the accuracy of Amazon Rekognition image moderation predictions using human review. Learn more »
+Amazon Rekognition helps you identify potentially unsafe or inappropriate content across both image and video assets and provides you with detailed labels that allow you to accurately control what you want to allow based on your needs. Use Amazon A2I to enhance the accuracy of Amazon Rekognition image moderation predictions using human review. Learn more
 Text detection
-In photos and videos, text appears very differently than neat words on a printed page. Amazon Rekognition can read skewed and distorted text to capture information like store names, forced narratives overlaid on media, street signs, and text on product packaging. Learn more »
+In photos and videos, text appears very differently than neat words on a printed page. Amazon Rekognition can read skewed and distorted text to capture information like store names, forced narratives overlaid on media, street signs, and text on product packaging. Learn more
 Face detection and analysis
-With Amazon Rekognition, you can easily detect when faces appear in images and videos and get attributes such as gender, age range, eyes open, glasses, facial hair for each. In video, you can also measure how these face attributes change over time, such as constructing a timeline of the emotions expressed by an actor. Learn more »
+With Amazon Rekognition, you can easily detect when faces appear in images and videos and get attributes such as gender, age range, eyes open, glasses, facial hair for each. In video, you can also measure how these face attributes change over time, such as constructing a timeline of the emotions expressed by an actor. Learn more
 Face search and verification
-Amazon Rekognition provides fast and accurate face search, allowing you to identify a person in a photo or video using your private repository of face images. You can also verify identity by analyzing a face image against images you have stored for comparison. Learn more »
+Amazon Rekognition provides fast and accurate face search, allowing you to identify a person in a photo or video using your private repository of face images. You can also verify identity by analyzing a face image against images you have stored for comparison. Learn more
 Celebrity recognition
-You can quickly identify well known people in your video and image libraries to catalog footage and photos for marketing, advertising, and media industry use cases. Learn more »
+You can quickly identify well known people in your video and image libraries to catalog footage and photos for marketing, advertising, and media industry use cases. Learn more
 Personal Protective Equipment (PPE) detection
-With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to automatically detect if persons in images are wearing Personal Protective Equipment (PPE) such as face covers (face masks), hand covers (gloves), and head covers (helmets) and whether the protective equipment covers the corresponding body part (nose for face covers, head for head covers, and hands for hand covers). Learn more »
+With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to automatically detect if persons in images are wearing Personal Protective Equipment (PPE) such as face covers (face masks), hand covers (gloves), and head covers (helmets) and whether the protective equipment covers the corresponding body part (nose for face covers, head for head covers, and hands for hand covers). Learn more
 Customer success
 “In today’s media landscape, the volume of unstructured content that organizations manage is growing exponentially. Using traditional tools users can have difficulty in searching through the thousands of media assets in order to locate a specific element they are looking for. By using the new feature in Amazon Rekognition, Custom Labels, we are able to automatically generate metadata tags tailored to specific use cases for our business and provide searchable facets for our content creation teams. This significantly improves the speed in which we can search for content and more importantly it enables us to automatically tag elements that required manual efforts before. These tools allow our production teams to leverage this data directly and provides enhanced products to our customers across all of our media platforms.“
 Brad Boim, Senior Director, Post Production & Asset Management, NFL Media
@@ -43,17 +43,17 @@ Streamline media analysis tasks by automating the detection of black frames, end
 Make content searchable
 Amazon Rekognition automatically extracts metadata from your image and video files, capturing objects, faces, text and more. This metadata can be used to easily search your images and videos with keywords, or to find the right assets for content syndication.
 Flag inappropriate content
-With Amazon Rekognition you can automatically flag inappropriate content, such as nudity, graphic violence or weapons, in images and videos. Using the detailed metadata returned, you can create your own rules based on what is considered appropriate for the culture and demographics of your users. Learn more »
+With Amazon Rekognition you can automatically flag inappropriate content, such as nudity, graphic violence or weapons, in images and videos. Using the detailed metadata returned, you can create your own rules based on what is considered appropriate for the culture and demographics of your users. Learn more
 Enable digital identity verification
 Using Amazon Rekognition, you can create scalable authentication workflows for automated payments and other identity verification scenarios. Amazon Rekognition lets you easily perform face verification for opted-in users by comparing a photo or selfie with an identifying document such a driver's license.
 Workplace Safety
-Automate Personal Protective Equipment (PPE) detection at scale to improve workplace safety practices and to better comply with occupational safety and health regulations. With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to detect if persons in images are wearing PPE such as face covers, hand covers, and head covers. Learn more »
+Automate Personal Protective Equipment (PPE) detection at scale to improve workplace safety practices and to better comply with occupational safety and health regulations. With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to detect if persons in images are wearing PPE such as face covers, hand covers, and head covers. Learn more
 Identify products, landmarks and brands
 App developers can use Amazon Rekognition Custom Labels to identify specific items in social media and photo apps. For example, you could train a custom model to identify famous landmarks in a city to provide tourists with information about its history, operating hours, and ticket prices by simply taking a photo.
 Blogs
 date
 1
-…
+...
 Learn more about Amazon Rekognition
 Visit the features page
 Ready to build?

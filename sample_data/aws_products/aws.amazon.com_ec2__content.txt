@@ -7,13 +7,13 @@ Nearly
 400 instances for virtually every business need
 Only cloud provider that supports macOS
 24 regions and
-77 availability zones globally
+77 availability zones globally
 Choice of Intel, AMD, and Arm-based processors
 Reliable, scalable, infrastructure on demand
 Increase or decrease capacity within minutes, not hours or days
 SLA commitment of 99.99% availability for each Amazon EC2 region. Each region consists of at least 3 availability zones
 The AWS Region/AZ model has been recognized by Gartner as the recommended approach for running enterprise applications that require high availability
-"Since March, we have seen market volumes increase by 2-3x…We automatically turn on and off up to 100,000 compute nodes in a single day. We would have been unable to handle this surge in volume within our on-premises data center."
+"Since March, we have seen market volumes increase by 2-3x...We automatically turn on and off up to 100,000 compute nodes in a single day. We would have been unable to handle this surge in volume within our on-premises data center."
 Steve Randich
 Executive Vice President and Chief Information Officer, FINRA
 Secure compute for your applications
@@ -32,7 +32,7 @@ Director of Performance and Operating Systems, Netflix
 Easy to migrate and build apps
 Get started quickly through AWS Migration Tools, AWS Managed Services, or Amazon Lightsail
 AWS Professional Services, AWS Support, and AWS Training and Certification help you along the way
-Tens of thousands of APN Partners to help companies build, market, and sell their AWS offerings
+Tens of thousands of APN Partners to help companies build, market, and sell their AWS offerings
 "Management was easy—it was very simple to upload a machine to the platform and simply adjust sizing according to need afterwards."
 Sadao Matsuda SAP IT Manager, VWCO
 Building Blocks
@@ -51,10 +51,10 @@ Case Studies
 What’s New
 date
 1
-…
+...
 Check out the EC2 product features
 Learn more about features for instance security, storage, networking, autoscaling, and more
-Learn more »
+Learn more
 Get started with EC2
 Follow these steps to to get started with Amazon EC2.
 Dive deep into EC2 resources and tools

@@ -1,0 +1,38 @@
+Products
+Machine Learning
+Amazon Fraud Detector
+Amazon Fraud Detector FAQs
+Q: What is Amazon Fraud Detector?
+Amazon Fraud Detector is a fully managed service that makes it easy to identify potentially fraudulent online activities such as online payment fraud and the creation of fake accounts. Amazon Fraud Detector uses machine learning (ML) and 20 years of fraud detection expertise from AWS and Amazon.com to automatically identify potential fraudulent activity in milliseconds. There are no up-front payments or long-term commitments and no infrastructure to manage with Amazon Fraud Detector; you pay only for your actual usage.
+Q: How does Amazon Fraud Detector work?
+First, you define the event you want to assess for fraud. Next, you upload your historical event dataset to Amazon S3 and select a fraud detection model type, which specifies a combination of features and algorithms optimized to detect a specific form of fraud. The service then automatically trains, tests, and deploys a customized fraud detection model based on your unique information. During this process, a series of models that have learned patterns of fraud from AWS and Amazon’s own fraud expertise are used to boost the customer’s model performance. The model’s output is a prediction in the form of a score ranging from 0 to 1,000 that predicts the likelihood of fraud risk. At the final stage of the process, you setup decision logic (e.g. rules) to interpret your model’s score and assign outcomes such as pass or send transaction to a human investigator for review.
+After this framework is created, you can integrate the Amazon Fraud Detector API into you website’s transactional functions, such as account sign up or during order checkout. Amazon Fraud Detector will process these activities in real-time and provide fraud predictions in milliseconds. You can then adjust your end-user experience based on this prediction.
+Q: What specific use cases does Amazon Fraud Detector support?
+Amazon Fraud Detector is designed for online fraud use cases that require real-time evaluation using machine learning models and rules. For example:
+New account fraud, within an account sign-up process
+Online identity fraud
+Payment fraud for online orders
+Guest checkout fraud
+Loyalty account protection
+Seller fraud in online marketplaces
+Q: Can I customize Amazon Fraud Detector’s configuration for my use case?
+Yes. You can customize Amazon Fraud Detector for each use case, using a mix of Amazon Fraud Detector ML models, SageMaker models, and rules. You first gather the relevant risk data to be used as inputs for fraud evaluations, such email addresses, phone numbers, and IP addresses. This data will feed into a machine learning model, which outputs a score. You can then use a set of detection rules to interpret the score and other risk data to make decisions, such as approving, or sending orders to fraud analysts for investigation. An example of a simple rule and corresponding outcome could be “IF model_score < 50 & credit_card_country = US THEN approve_order”.
+Q: How do I use Amazon Fraud Detector to tap into Amazon’s fraud detection data and expertise?
+With 20 years of fraud experience, Amazon has seen firsthand how bad actors conduct various forms of online fraud. Amazon Fraud Detector helps you tap into this knowledge. During the automated model training process, Amazon Fraud Detector uses a series of models that have learned patterns of fraud from AWS and Amazon’s own fraud expertise to boost your model’s performance.
+Q: How does Amazon Fraud Detector use ML to improve my fraud detection?
+Amazon Fraud Detector automatically trains, tests, and deploys custom fraud detection machine learning models based on your historical fraud data, with no machine learning experience required. For developers with more machine learning experience, you can add your own models to Amazon Fraud Detector using Amazon SageMaker.
+Q: How do I setup fraud detection rules using Amazon Fraud Detector?
+Amazon Fraud Detector makes it possible to perform rule-based fraud predictions with or without using machine learning. With Amazon Fraud Detector, you can author detection rules (e.g. “IF model_score < 50 & credit_card_country = US THEN approve_order”) using a simple rule writing language. You can also specify the order that rules trigger during an evaluation using an intuitive interface.
+Q: Can my team review fraud evaluations using Amazon Fraud Detector?
+Yes, you can review your past fraud evaluations to audit decision logic using the Amazon Fraud Detector console. In the Amazon Fraud Detector console, you can search for past events based on characteristics of the event and/or the detection logic applied, such as the outcome, models or rules used, or event metadata. You can then drill-down into how the detection logic assessed an event.
+Q: Does Amazon Fraud Detector share my risk data and risk decisions with other companies?
+No. Security and privacy are our top concerns. As a fundamental tenet of earning customer’s trust, AWS will never share customer data.
+Learn more about pricing
+Visit the Amazon Fraud Detector pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Fraud Detector in the AWS Management Console.
+Sign in

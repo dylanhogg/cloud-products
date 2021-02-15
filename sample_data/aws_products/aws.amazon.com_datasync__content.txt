@@ -3,7 +3,7 @@ Simplify, automate, and accelerate moving data to and from AWS Storage, as well 
 Get started with AWS DataSync
 AWS DataSync is an online data transfer service that simplifies, automates, and accelerates moving data between on-premises storage systems and AWS Storage services, as well as between AWS Storage services. You can use DataSync to migrate active datasets to AWS, archive data to free up on-premises storage capacity, replicate data to AWS for business continuity, or transfer data to the cloud for analysis and processing.
 Writing, maintaining, monitoring, and troubleshooting scripts to move large amounts of data can burden your IT operations and slow migration projects. DataSync eliminates or automatically handles this work for you. DataSync provides built-in security capabilities such as encryption of data in-transit, and data integrity verification in-transit and at-rest. It optimizes use of network bandwidth, and automatically recovers from network connectivity failures. In addition, DataSync provides control and monitoring capabilities such as data transfer scheduling and granular visibility into the transfer process through Amazon CloudWatch metrics, logs, and events.
-DataSync can copy data between Network File System (NFS) shares, Server Message Block (SMB) shares, self-managed object storage, AWS Snowcone, Amazon Simple Storage Service (Amazon S3) buckets, Amazon Elastic File System (Amazon EFS) file systems, and Amazon FSx for Windows File Server file systems.
+DataSync can copy data between Network File System (NFS) shares, Server Message Block (SMB) shares, self-managed object storage, AWS Snowcone, Amazon Simple Storage Service (Amazon S3) buckets, Amazon Elastic File System (Amazon EFS) file systems, and Amazon FSx for Windows File Server file systems.
 AWS DataSync - Automate and accelerate online data transfer (1:31)
 Benefits
 Simplify and automate transfers
@@ -29,14 +29,14 @@ If you have on-premises systems generating or using data that needs to move betw
 Customers
 Rapid online data transfer with AWS DataSync - Walt Disney Imagineering (8:56)
 Customers are using AWS DataSync for a variety of uses cases. Visit the customers page to read about their experiences.
-Hear from more AWS DataSync customers »
+Hear from more AWS DataSync customers
 DataSync Blogs
 No blog posts have been found at this time. Please see AWS Blog for other resources.
 To read more AWS DataSync blogs, please visit the AWS Storage blog channel.
 What's New with DataSync
 Date
 1
-…
+...
 Check out the product features
 Learn what makes AWS DataSync fast, secure, and easy to use as part of your AWS architecture.
 Learn more

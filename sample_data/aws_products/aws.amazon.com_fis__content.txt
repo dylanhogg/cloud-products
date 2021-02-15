@@ -20,5 +20,5 @@ A game day is the process of rehearsing ahead of an event by creating the antici
 Continuous Delivery Pipeline Integration
 You can integrate AWS Fault Injection Simulator into your continuous delivery pipeline. This will enable you to repeatedly test the impact of fault actions as part of your software delivery process.
 Explore product features
-Visit AWS Fault Injection Simulator Features page.
+Visit AWS Fault Injection Simulator Features page.
 Learn more

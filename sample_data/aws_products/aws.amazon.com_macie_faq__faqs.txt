@@ -1,0 +1,29 @@
+General
+Q: What is Amazon Macie?
+A: Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+Q: What are the key benefits of Amazon Macie?
+A: Amazon Macie uses machine learning and pattern matching to cost efficiently discover sensitive data at scale. Macie automatically detects a large and growing list of sensitive data types, including personally identifiable information (PII) such as names, addresses, and credit card numbers. It also gives you constant visibility of the data security and data privacy of your data stored in Amazon S3. Macie is easy to setup with one-click in the AWS Management Console or a single API call. Macie provides multi-account support using AWS Organizations, so you can enable Macie across all of your accounts with a few clicks.
+Q: How much does Amazon Macie cost?
+A: With Amazon Macie, you are charged based on two dimensions, the number of Amazon S3 buckets in your account per month and the amount of data processed for sensitive data discovery in a given month. Please see the Amazon Macie pricing page for the latest pricing information.
+Q: Is there a free trial?
+A: Yes, there is a 30-day free trial. Each new account to Amazon Macie can try the service for 30-days at no cost. The free trial includes 30-days of Amazon S3 bucket inventory and bucket-level security and access control assessment at no cost. The AWS Management console provides a cost estimate of the service based on your total number of buckets in the account. If you are in a multi-account configuration, the cost estimate is rolled up across all accounts enabled allowing you to understand what your estimated total Macie monthly spend will be after each account’s free trial ends. Amazon Macie also includes 1 GB of data processed for sensitive data discovery per month at no cost. This free tier offer does not expire and is not bound by the 30-day free trial period.
+Q: Is Amazon Macie a regional or global service?
+A: Amazon Macie is a regional service. Amazon Macie needs to be enabled on a region by region basis and enables you to view findings across all your accounts within each region. This ensures all data analyzed is regionally based and doesn’t cross AWS regional boundaries.
+Q: What regions does Amazon Macie support?
+A: The latest on regional availability of Amazon Macie can be found here: AWS Region Table
+Q: How can I get started with Amazon Macie?
+A: Amazon Macie can be enabled with one-click in the AWS Management Console or a single API call. Macie provides multi-account support using AWS Organizations, so you can enable Macie across all of your accounts with a few clicks.
+Q: How does Amazon Macie support custom data types?
+Amazon Macie provides you the ability to add custom-defined data types using regular expressions to enable Macie to discover proprietary or unique sensitive data for your business. For example, you might have a specific format for your employee IDs. A possible format is to have a capital letter, that defines if this is a full-time or part-time employee, followed by a dash, and then eight numbers. For example, F-12345678 for a full-time employee. These custom sensitive data types defined are unique to each customer and are not shared or exposed to other customers.
+Q: How can I transition to the current Macie service from Macie Classic?
+A: Please refer to this user guide and Macie Classic FAQs to transition to the current Macie service.
+Read the documentation
+Learn more about Amazon Macie capabilities and implementation by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Get started with Amazon Macie
+Get started building with Amazon Macie.
+Get started
+Page Content

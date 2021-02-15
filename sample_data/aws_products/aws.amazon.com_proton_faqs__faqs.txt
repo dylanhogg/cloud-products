@@ -1,0 +1,28 @@
+General
+Q: Why should I use AWS Proton?
+AWS Proton enables platform teams to connect and coordinate all the different tools your development teams need for infrastructure provisioning, code deployments, monitoring, and updates. Because the infrastructure is in your account, you have full capacity to manage, update, and troubleshoot it as required. This gives you complete flexibility to operate your infrastructure as you choose. Developers can use the AWS Proton self-service interface to get their applications deployed with minimal configuration.
+Q: What can platform teams do in AWS Proton?
+AWS Proton enables platform teams to define their infrastructure and deployment tools, while providing developers with a self-service experience to get infrastructure and deploy code. Through AWS Proton, platform teams provision shared resources and define application stacks, including continuous integration/continuous delivery (CI/CD) pipeline and observability tools. You can then manage which of these infrastructure and deployment features are available for developers. On an ongoing basis, AWS Proton provides visibility over your infrastructure and the capacity to make centralized changes.
+Q: What kind of architectural elements can AWS Proton manage?
+You can use AWS Proton to manage and coordinate any element that can be provisioned and described with existing infrastructure-as-code tools including AWS CloudFormation.
+Platform teams
+Q: How do I get started with AWS Proton?
+Start by signing in to your AWS account. To start defining your infrastructure, go to the AWS Proton console, explore the process to upload your infrastructure-as-code template, and register an application stack. Then, you can give access to your developers so they can deploy their first application. They select an application stack from the list, enter the required parameters, and deploy.
+Q: How does AWS Proton help me keep my infrastructure up to date?
+Platform teams use AWS Proton to create a “stack” that is presented as a reusable version-controlled template to their developers. These stacks are defined using infrastructure as code in a simple, declarative style with everything needed to provision, deploy, and manage a service, including compute, networking, code pipeline, security, and monitoring. AWS Proton makes it easy for platform teams to identify and update out-of-date infrastructure when templates are updated.
+Q: How do I define and provision an application template?
+AWS Proton includes a collection of open source templates that you can use as a starting point to define your architecture with infrastructure as code tools. When you define a new template, you can save it in an S3 bucket and register it in AWS Proton. AWS Proton reads the template from the bucket and registers it in the console, from where you can test it, publish it to developers, and update it.
+Developers
+Q: What can developers do in AWS Proton?
+Developers can use AWS Proton as a self-service interface to get infrastructure and deploy their projects without interacting with the underlying resources. AWS Proton provides visibility to the general status of your application, including stacks in use and stack health status. You have access to the CI/CD pipeline, observability tools, and source control for each one.
+Sign in to the AWS Proton console to see which application templates have been made available to you. Enter the configuration parameters for your service, and AWS Proton provisions the infrastructure for you using shared resources that are defined by your platform team. For more information, please visit the AWS Proton Getting Started page.
+Read the documentation
+Learn how to define and provision your infrastructure, set up application templates, and deploy applications.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Proton in the AWS Management Console.
+Sign in
+Page Content

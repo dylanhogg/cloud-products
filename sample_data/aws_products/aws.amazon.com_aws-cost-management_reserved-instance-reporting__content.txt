@@ -25,16 +25,16 @@ Getting Started
 RI Utilization
 The RI Utilization report allows you to visualize your RI utilization (i.e., the percentage of purchased RI hours consumed by instances during a period of time), to identify and act upon opportunities to increase your RI usage efficiency (e.g., by modifying RI types or shifting workloads to match the constraints of active RIs).
 The report shown below displays the daily utilization of c3.large RIs over a customer-defined time period.
-Go to the RI Utilization report »
+Go to the RI Utilization report
 RI Coverage
 The RI Coverage report allows you to discover how much of your overall instance usage is covered by RIs, so that you can make informed decisions about when to purchase or modify an RI to ensure maximum coverage. These reports visualize the percentage of running instance hours that are covered by RIs (i.e., RI coverage) in aggregate or in detail (e.g., by account, instance type, region, availability zone, tags, platform). In addition, they allow you to define an RI coverage threshold against which to monitor.
 The report shown above displays an upward RI coverage trend of c3.large instances at a monthly level of detail.
-Go to the RI Coverage report »
+Go to the RI Coverage report
 Latest AWS Cost Management Blogs
 1
-…
+...
 No blog posts have been found at this time. Please see AWS Blog for other resources.
-Read more at the AWS Cost Management Blog »
+Read more at the AWS Cost Management Blog
 Ready to get started?
 Check out the product features
 Learn more about features for cost management, cost optimization, and more.

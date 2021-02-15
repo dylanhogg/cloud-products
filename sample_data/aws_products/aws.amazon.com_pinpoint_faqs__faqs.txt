@@ -1,0 +1,109 @@
+Getting started
+Q: How can I try Amazon Pinpoint?
+Amazon Pinpoint is self-service so you can try before you buy, without talking to sales, completing RFPs, or hiring for consultants or professional services. Simply log in to the Amazon Pinpoint console using your AWS account and set up an Amazon Pinpoint project. To learn how to set up Amazon Pinpoint, see the Getting Started tutorial.
+Marketing messages
+Q: How can I use Amazon Pinpoint to run and manage my campaigns?
+Amazon Pinpoint makes it easy to run targeted campaigns and drive customer communications across different channels: email, SMS, push notifications, or custom channels. Amazon Pinpoint campaigns enables you define which users to target, determine which messages to send, schedule the best time to deliver the messages, and then track the results of your campaign.
+Amazon Pinpoint is built to scale, enabling you to collect and process billions of events per day, and send billions of targeted messages to your users.
+Q: How will marketers benefit from Amazon Pinpoint?
+The console provides marketers with campaign management tools to create, run, and manage multi-channel campaigns across their applications, user-base and devices. Campaigns can be scheduled or triggered on user changes and actions. For marketers that want to run multi-step campaigns across multiple channels, they can design journeys to orchestrate an end-to-end experience. Marketers can also leverage the templating support to personalize end-user messaging. Marketers can also measure messaging effectiveness using Pinpoint analytics to understand the impact on user behavior.
+Q: What's a standard campaign?
+Standard campaigns include a targeted segment (either static or dynamic), a message, and a schedule for sending the message. You can also reuse previously defined segments or define a new segment when you create a campaign. For every scheduled campaign, Amazon Pinpoint recalculates the current audience size based on the criteria associated with the segment.
+Q: What's an A/B test campaign?
+A/B campaigns are campaigns with more than one treatment. Each treatment differs from the other based on the message or the sending schedule. You can compare the response rates for each treatment to determine which one had a bigger impact on your customers.
+Q: What are my scheduling options for campaigns?
+During campaign set up in Amazon Pinpoint, you can choose when the campaign should be sent. You have two options, you can send the campaign at a specific time, or you can send it when an event occurs. Time-based campaigns can be scheduled to run one time immediately, or at a time you designate in the future. They can also be scheduled with multiple runs—hourly, daily, weekly, or monthly. To define your recurring campaigns, choose a start date and an end date, and specify whether or not to deliver messages based on each recipient's local time zone.
+You can also use Amazon Pinpoint to create campaigns that send messages, such as text messages, push notifications, and emails, to your customers when they take specific actions within your apps. For example, sending a welcome email when a customer creates a profile. You can create event-based campaigns by using the Amazon Pinpoint console, or by using the Amazon Pinpoint API. Event-based campaigns are an effective way to implement both transactional and targeted campaign use cases. Rather than define a time to send your message to customers, you select specific events, attributes, and metric values that you want to use to trigger your campaigns. For more information about event-based campaigns, see our blog post.
+Q: If I use another campaign management service, how does Amazon Pinpoint help me?
+Amazon Pinpoint's architecture is modular. Companies can choose which services to use and integrate with their existing systems and processes. Amazon Pinpoint's core services include: engagement analytics, communication channels, deliverability metrics, audience management and segmentation, template management, and campaign management.
+The platform also supports data integration services to extend Amazon Pinpoint analytics and segmentation data from external data sources such as S3, as well as data exports to feed external marketing systems through Kinesis Event Streams.
+Q: How do campaign limits work?
+On the General Settings page of the Amazon Pinpoint console or in the campaign settings, you can configure the maximum number of messages an endpoint can receive for a campaign. This feature is useful when you want to place strict limits on the number of messages that an endpoint can receive at a specific moment in time. For example, if you create a campaign that's automatically sent to all new customers, you can set the limit to 1. This setting ensures that new customers only receive the message once.
+It's important to note that this feature is based on the number of messages that target an endpoint, as opposed to the number of messages that are actually delivered to an endpoint. If a campaign is configured to automatically send a message when a customer creates a new account, but the endpoint isn't able to receive the message for some reason (for example, if the quiet time setting for your campaign applies to the endpoint), then the endpoint is still counted as having been targeted. In this situation, the endpoint is removed from subsequent runs of the campaign until they are outside the limit period.
+Journeys
+Q: What is an activity in a journey?
+Journeys automate multi-step campaigns. Each activity in a journey is either an action (such as sending an email), a time-based wait, splitting the journey segment based on customer action (such as opening an email vs not opening the email) or enforcing a holdout.
+To learn more about these activities, see Journeys in the Amazon Pinpoint User Guide.
+Q: Can I schedule my journeys?
+You can configure each journey to start and end at a specific time. Each journey can run continuously for up to 18 months.
+You can also schedule how often new participants enter the journey. When you create a journey, you specify a segment of customers that participate in it. You can set up your journey so that this segment is updated on a regular basis—hourly, daily, monthly, quarterly, annually, or not at all.
+Q: What can I do if I make a mistake in my journey?
+Journeys includes a built-in review process that checks for show-stopping errors, while also providing recommendations and best practices. You have to complete this review process before you launch each journey.
+Journeys also includes a test feature, which makes it easy to send a group of test participants through your journey. By testing your journey, you can ensure that it behaves the way that you expect it to behave.
+If you encounter issues with your journey while it's running, you can stop it at any time. When you stop a journey, participants halt on the activity they're currently on, and never proceed to the next activity.
+Pinpoint for developers
+Q: How can developers use Amazon Pinpoint?
+Amazon Pinpoint offers developers a single API layer, CLI support, and client-side SDK support to be able to extend the communication channels through which their applications engage users. These channels include: email, SMS text messaging, and push notifications, voice messages, and custom channels. Amazon Pinpoint also provides developers with an analytics system that tracks app user behavior and user engagement. With this service, developers can learn how each user prefers to engage and can personalize their end-user's experience to increase the value of the developer's applications. Amazon Pinpoint also helps developers address multiple messaging use cases such direct or transactional messaging, targeted, or campaign messaging and event-based messaging.
+Event-based campaigns
+Q: What are event-based campaigns?
+Event-based campaigns send messages, such as text messages, push notifications, and emails, to your customers when they take specific actions within your applications, such as making purchases or watching a video. For example, you can set up a campaign to send a message when a customer creates a new account or when they add an item to their cart but don't purchase it. You can create event-based campaigns by using the Amazon Pinpoint console, or by using the Amazon Pinpoint API. Event-based campaigns are an effective way to implement both transactional use cases, such as one-time-password and order confirmation messages, and targeted uses cases, such as marketing promotions. Rather than define a time to send your message to customers, you select specific events, attributes, and metric values that you want to use to trigger your campaigns. For more information about event-based campaigns, please view this blog post.
+Q: How do I get started with event-based campaigns?
+The first step in setting up an event-based campaign is to create a new campaign. On step 4 of the campaign creation process, you choose when the campaign should be sent. You can choose to send the campaign at a specific time, or you can send it when an event occurs. Choose "When an event occurs", and then choose the events, attributes, and metrics that trigger your campaign.
+Q: What are custom events?
+Custom events are event metrics that you define. They help track user actions specific to your application or game. The Amazon Pinpoint event charts provide a view of how often custom events occur. Custom events can be filtered based on attributes and their associated values.
+You create custom events by naming them, such as "Item Bought" or "Button Pressed," and then adding context by specifying attributes (for qualitative measures) and metrics (for quantitative measures). For example, if your business goal is to track purchases of items from within the app, you can use "Item Bought" as a custom event, "Item XYZ" as an attribute, and "Item Price" as the metric. The custom events report enables you to search and filter for each attribute or metric. For example, you can find how often "Item XYZ" was purchased or how often "Item Price" was $1.99. You can also review the weighted average of metric values (per session) and track minimum, maximum, or average metric values. As a best practice, we recommend that custom event names be broad and attribute names be specific.
+Q: What are the benefits of using custom events?
+Custom events help you understand the actions that users take when using your app. For example, a game developer might want to understand both how often a level is completed and how much health each player has left at the end of a level. With custom events, you can create an event called "level_complete", with "add_level" as an attribute, and "health" as an attribute value. Each time a level is completed, you can record a "level_complete" event with the name of the level and the player's health. By reviewing the events charts, you might discover that a level is too easy because players always finish with maximum health. Using this data, you can adjust the level's difficulty to better challenge and engage players, which might improve retention.
+You can also use custom events to create event-based campaigns that are sent when your customers take specific actions within your applications. For example, you can set up a campaign to send a message when a customer creates a new account, when they spend a certain dollar amount, or when they add an item to their cart but don't purchase it.
+Event-based campaigns help you send messages that are timely, personalized, and relevant to your customers, which ultimately increases their trust in your brand and gives them a reason to return. You can create event-based campaigns by using the Amazon Pinpoint console, or by using the Amazon Pinpoint API.
+Q: Can Amazon Pinpoint tell if a single user uses the same app on more than one device (for example, on their phone and on a tablet device)?
+Amazon Pinpoint distinguishes between endpoints and users. An endpoint is a destination that you can send messages to—such as a user's mobile device, email address, or phone number. A user is an individual who has a unique user ID. This ID can be associated with up to 10 endpoints.
+Some of the Amazon Pinpoint analytics charts report on endpoints, and some report on users. To learn more about the individual charts, see Chart Reference for Amazon Pinpoint Analytics in the Amazon Pinpoint User Guide.
+Q: How is a "session" defined?
+A session begins when an app is launched (or brought to the foreground), and ends when the app is terminated (or goes to the background). To accommodate for brief interruptions, like a text message, an inactivity period of up to 5 seconds is not counted as a new session. Total daily sessions shows the number of sessions your app has each day. Average sessions per daily active user shows the mean number of sessions per user per day.
+Analytics
+Q: What metrics does Amazon Pinpoint track for standard campaigns?
+For standard campaigns, you can track messages sent, messages delivered, delivery rate, open rate, and campaign sessions by time of day.
+Q: Where can I access analytics data?
+You can view analytics data on the Amazon Pinpoint console. For each of your projects, the console provides detailed charts and metrics that provide insight into areas such as customer demographics, application usage, purchase activity, and delivery and engagement rates for campaigns. You can also access a subset of these metrics programmatically by using the Amazon Pinpoint API.
+Q: What types of analytics does Amazon Pinpoint provide on my mobile and web applications?
+Amazon Pinpoint offers several types of standard analytics that provide insight into how your application is performing. Standard analytics include metrics for active users, user activities and demographics, sessions, user retention, campaign efficacy, and transactional messages. Using these metrics in combination with the analytics tools on the console, you can perform in-depth analysis by filtering on certain segments, custom attributes, and more.
+Q: How are daily and weekly retention defined?
+Daily retention is measured by determining the number of users that first used your app on a specific day, came back and used your app in the next 7 days (7-day retention), fourteen days (14-day retention), and thirty days (30-day retention).
+Q: What is "sticky factor," and how is it calculated?
+The sticky factor represents the number of monthly users who used the app on a particular day.
+Sticky factor is calculated by dividing daily active users (DAU) by monthly active users (MAU). For example, if an app has 100,000 DAU and 300,000 MAU, its sticky factor is .33. A high sticky factor can indicate strong engagement, appeal, and opportunities for monetization.
+Q: What are demographics in Amazon Pinpoint?
+The demographics charts provide information about the device attributes for your app users. You can also see custom attributes that you define.
+Q: How long does Amazon Pinpoint store analytics data?
+Amazon Pinpoint automatically stores your analytics data for 90 days. You can see your data on the console or you can query a subset of data programmatically using the Amazon Pinpoint API. To keep the data for a longer period of time, you can export data from the console to comma-separated values (.csv) files or configure Amazon Pinpoint to stream event data to Amazon Kinesis. Kinesis is an AWS service that can collect, process, and analyze data from other AWS services in real-time. Amazon Pinpoint can send event data to Kinesis Data Firehose, which streams data to AWS data stores such as Amazon S3 or Amazon Redshift. Amazon Pinpoint can also stream data to Kinesis Data Streams, which ingests and stores multiple data streams for processing in analytics applications.
+Other AWS services
+Q: I already use Amazon SNS or Amazon Simple Email Service (SES). What do I gain by switching to Amazon Pinpoint?
+In typical Amazon SNS and Amazon SES use cases, you have to set up your application to manage each message's audience, content, and delivery schedule. With Amazon Pinpoint, you can create message templates, delivery schedules, highly-targeted segments, and full campaigns.
+Q: How does Amazon Pinpoint voice channel differ from Amazon Connect?
+With Amazon Pinpoint voice, you can engage with your customers by delivering voice messages over the phone. Pinpoint voice gives customers a great way to deliver transactional messages—such as one-time passwords, appointment reminders, order confirmations, and more. With Pinpoint voice capabilities, you can convert a text script to lifelike speech, and then deliver the personalized voice message to your customer. Call metrics—such as number of calls completed and number of calls failed—help you to optimize future voice engagements. With both Pinpoint voice and SMS channels available to you, you can send SMS messages to customers who prefer text and deliver voice messages to those who are either unable to receive SMS messages. With the addition of the voice channel, you can now use Amazon Pinpoint to seamlessly engage your customers with timely, relevant content through push notifications, email, SMS, and voice calls.
+Amazon Connect is an easy-to-use omnichannel cloud contact center that helps companies provide superior customer service at a lower cost. Over 10 years ago, Amazon’s retail business needed a contact center that would give our customers personal, dynamic, and natural experiences. We couldn’t find one that met our needs, so we built it. We've now made this available for all businesses, and today thousands of companies ranging from 10 to tens of thousands of agents use. To learn more, see Amazon Connect.
+Data privacy
+Q: Does Amazon Pinpoint store my customer data?
+Yes. Amazon Pinpoint stores user, endpoint, and event data. We have to retain this data so that you can create segments, send messages to recipients, and capture application and campaign engagement data.
+Q:Who can access the data stored in Amazon Pinpoint?
+A very limited number of authorized AWS employees have access to the data stored in your Amazon Pinpoint account. Maintaining your trust is our highest priority. We use sophisticated physical and technical controls to help safeguard your privacy and the security of your data. Your data is encrypted at rest and during transit. Our processes are designed to prevent unauthorized access to or disclosure of your content.
+For more information, see the AWS Data Privacy FAQ.
+Q: Do I own my content that is processed and stored by Amazon Pinpoint?
+You always retain ownership of your content. We only use your content with your consent.
+Q: How do I delete the data that Amazon Pinpoint stores?
+You can selectively delete the data stored in your Amazon Pinpoint account. You can also close your entire AWS account, which deletes all of the data stored in Amazon Pinpoint and all other AWS services in every AWS Region. For more information, see Deleting Data from Amazon Pinpoint in the Amazon Pinpoint Developer Guide.
+Contacting us
+Q: I received spam or other unsolicited email messages from an Amazon Pinpoint user. How do I report these messages?
+You can report email abuse by sending an email to email-abuse@amazon.com.
+To help us handle the issue as quickly and effectively as possible, please include the full headers of the original email. For procedures for obtaining email headers for several common email clients, see “How to Get Email Headers” on the MxToolbox.com website.
+Q: How can I submit feature requests or send other product feedback about Amazon Pinpoint?
+Your AWS Account Manager can send your feature requests and feedback directly to the appropriate team. If you don't currently have an AWS Account Manager, you can also provide your feedback on the Amazon Pinpoint forum.
+Q: How can I get technical support for Amazon Pinpoint?
+If you have an AWS Support plan, you can create a new support case directly from the web-based AWS management console. AWS Support plans begin at $29 per month. For more information about AWS Support plans, visit https://aws.amazon.com/premiumsupport/.
+To open a new technical support case:
+In the console, on the Support menu, choose Support Center.
+Choose Create case.
+On the Create case page, choose Technical support.
+Provide information about the issue you're experiencing, and then submit the ticket.
+If you don't have an AWS Support plan, you can also ask questions and get answers on the Amazon Pinpoint forum.
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Talk to an expert
+Contact us to learn more about Amazon Pinpoint and how it can help your organization.
+Contact us
+Get started with a tutorial
+Learn how to send an email campaign to a segment of customers by using the Amazon Pinpoint console.
+Get started
+Page Content

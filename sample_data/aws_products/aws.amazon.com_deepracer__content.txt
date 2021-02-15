@@ -5,18 +5,18 @@ Buy Now
 In pole position to learn reinforcement learning
 AWS DeepRacer gives you an interesting and fun way to get started with reinforcement learning (RL). RL is an advanced machine learning (ML) technique that takes a very different approach to training models than other machine learning methods. Its super power is that it learns very complex behaviors without requiring any labeled training data, and can make short term decisions while optimizing for a longer term goal.
 Simulator
-Build models in Amazon SageMaker and train, test, and iterate quickly and easily on the track in the AWS DeepRacer 3D racing simulator. Learn more »
+Build models in Amazon SageMaker and train, test, and iterate quickly and easily on the track in the AWS DeepRacer 3D racing simulator. Learn more
 Car
-Experience the thrill of the race in the real-world when you deploy your reinforcement learning model onto AWS DeepRacer. Learn more »
+Experience the thrill of the race in the real-world when you deploy your reinforcement learning model onto AWS DeepRacer. Learn more
 League
-Compete in the world’s first global, autonomous racing league, to race for prizes and glory and a chance to advance to the Championship Cup. Learn more »
+Compete in the world’s first global, autonomous racing league, to race for prizes and glory and a chance to advance to the Championship Cup. Learn more
 Get rolling with machine learning
 Start Racing
 Learn More
 A fun way to learn machine learning
 Get started with machine learning quickly with hands-on tutorials that help you learn the basics of machine learning, start training reinforcement learning models and test them in an exciting, autonomous car racing experience.
 Experiment and grow
-Test these new found skills in either a single-car time-trial format or dual-car head-to-head racing in the AWS DeepRacer 3D racing simulator.  Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulation to-real domain transfer methods.
+Test these new found skills in either a single-car time-trial format or dual-car head-to-head racing in the AWS DeepRacer 3D racing simulator.  Experiment with multiple sensor inputs, the latest reinforcement learning algorithms, neural network configurations and simulation to-real domain transfer methods.
 Community and competition
 The AWS DeepRacer League provides an opportunity for you to compete for prizes and meet fellow machine learning enthusiasts, online and in person. Share ideas and insights on how to succeed and create your own private virtual race.
 The rubber meets the road
@@ -31,7 +31,7 @@ Developers who already own a DeepRacer can upgrade their cars to have the same c
 Buy Sensor Kit
 Getting started with AWS DeepRacer
 Build an RL model
-Create, train and tune your reinforcement learning model in the AWS DeepRacer 3D racing simulator. Start your journey for free »
+Create, train and tune your reinforcement learning model in the AWS DeepRacer 3D racing simulator. Start your journey for free
 Master the basics with time-trial racing
 Develop your first RL model quickly and easily in the AWS DeepRacer console, using getting started tutorials. Experiment and grow your skills by tuning and retraining your model, to successfully navigate around the track and achieve the fastest lap time!
 Expand your skills with head-to-head racing
@@ -41,21 +41,21 @@ Once you have built your model, it’s time to race! The AWS DeepRacer League is
 AWS Virtual Circuit
 Race online
 Join the AWS DeepRacer League, from anywhere in the world. Compete in time trial races and take on new challenges such as head-to-head racing from via the AWS DeepRacer console.
-Start Racing for Free »
+Start Racing for Free
 Virtual Community Races
 Race in a league of your own
-With newly updated community races you can host your own time trial, object avoidance, or head-to-head races to challenge your colleagues; or share publicly with other ML enthusiasts around the globe. Create a race in minutes and race online in the AWS DeepRacer console.
-Create your own race now »
+With newly updated community races you can host your own time trial, object avoidance, or head-to-head races to challenge your colleagues; or share publicly with other ML enthusiasts around the globe. Create a race in minutes and race online in the AWS DeepRacer console.
+Create your own race now
 AWS Summit Circuit
 Race in person
 Summit Circuit races have concluded for the 2020 season. Stay tuned for updates regarding the AWS DeepRacer League championships at re:Invent Online, and news regarding the 2021 Summit Circuit!
-Find an AWS Summit near you »
+Find an AWS Summit near you
 Under the hood
 The AWS DeepRacer Evo car includes the original AWS DeepRacer car, an additional 4 megapixel camera module that forms stereo vision with the original one, a scanning LiDAR, a shell that can fit both the stereo camera and LiDAR, and a few accessories and easy-to-use tools for a quick installation.
 CAR
 18th scale 4WD with monster truck chassis
 CPU
-Intel Atom™ Processor
+Intel AtomTM Processor
 MEMORY
 4GB RAM
 STORAGE
@@ -67,7 +67,7 @@ Stereo 4 MP cameras with MJPEG
 LIDAR Sensor
 360 Degree 12 Meters Scanning Radius LIDAR Sensor
 SOFTWARE
-Ubuntu OS 16.04.3 LTS, Intel® OpenVINO™ toolkit, ROS Kinetic
+Ubuntu OS 16.04.3 LTS, Intel® OpenVINOTM toolkit, ROS Kinetic
 DRIVE BATTERY
 7.4V/1100mAh lithium polymer
 COMPUTE BATTERY

@@ -10,7 +10,7 @@ With instant access to a broad range of cloud services at the 5G edge, startups,
 Consistent AWS experience
 Wavelength offers a consistent experience across multiple 5G networks around the world. Developers can build the next generation of ultra-low latency applications using the same familiar, and powerful, AWS services, APIs, and tools they already use today, and get the same AWS benefits, like elasticity, high-availability, and pay-as-you-go pricing.
 Flexible and scalable
-Applications can be deployed to multiple Wavelength Zones across different CSPs with no additional changes or service agreements – simplifying the operations and management processes and enabling large scale deployments.  A high-bandwidth, secure connection to the parent AWS Region allows developers to seamlessly connect to the full range of services in the AWS Region through the same APIs and tool sets.
+Applications can be deployed to multiple Wavelength Zones across different CSPs with no additional changes or service agreements – simplifying the operations and management processes and enabling large scale deployments.  A high-bandwidth, secure connection to the parent AWS Region allows developers to seamlessly connect to the full range of services in the AWS Region through the same APIs and tool sets.
 Global 5G network
 Wavelength will be available within CSP networks such as Verizon, Vodafone, KDDI, and SK Telecom in places like the United States, Europe, Japan, and Korea to enable you to deliver ultra-low latency applications to your global base of end-users and connected devices.
 How it works
@@ -33,21 +33,20 @@ Customer stories
 "What's critical is the ability to quickly scale computational resources with low latency and high throughput for timely delivery of security services while preserving the privacy of the system. Our C-V2X pilot with ultra-low latency access to AWS Wavelength allows for timely message filtering that only shares relevant and trusted information for improved road safety and enhanced mobility among vehicles.”
 Rick Kreifeldt, Senior Vice President, LG America R&D Lab
 “With critical GPU workloads rendered from AWS Wavelength coupled with 5G’s bandwidth, we can achieve the low latency and increased connectivity to deliver a pathway to truly connected factories, where data flows seamlessly between machines and cloud to enable AI powered real time decisioning at the edge.”
-Shanky Viswanathan,  CTO Communication, Media and Information Service Business Group
-Watch the customer case study »
+Shanky Viswanathan,  CTO Communication, Media and Information Service Business Group
+Watch the customer case study
 “The superior experiences we provide require ultra-low latency connections to users and their devices. Only AWS Wavelength on carrier’s 5G edge can provide us that,” said Wesley Kuo, CEO of Ubitus. “Our GameCloud platform recently used GPU instances on Wavelength to render and stream game titles directly to end-users with ultra-low latency. As a result, users can instantly play games, interact real-time with continuous game experiences without any downloads or installation, and users can pick up exactly where they left off as they move from device to device.”
 Wesley Kuo, CEO
 “Today the business of live events is very cumbersome, very infrastructure intensive, and high cost. What we’re doing with Verizon 5G and AWS Wavelength Zone is streamlining that process, we’re changing the economics, we’re changing how you go about doing it, and how you go about experiencing it. This is the first time in the world that anybody has tested 4K workflows or even lower bitrate media workflows live on 5G. The latency benefit from 5G MEC is amazing. Typical satellite workflows are plus seven seconds plus. To get sub-second and very, very low second latency changes how you do live events, changes sports betting, changes news, it really changes everything.”
 Gordon Brooks, Executive Chairman and CEO
-See more customer stories here »
+See more customer stories here
 Partners
 KDDI's au 5G network combined with AWS cloud services enables customers to realize real-time feedback by leveraging our high speed, large volume and low latency capabilities and to create new value for their businesses.
 SKT's 5GX Edge service provides an environment for implementing ultra-high-speed, ultra-low-latency, and ultra-wideband services with complete security by introducing AWS' cloud services into the communication infrastructure based on SKT's nationwide 5G coverage.
-Learn more »
+Learn more
 Verizon 5G Edge brings together Verizon’s 5G Ultra-Wideband network and AWS cloud services to enable developers and enterprise customers to build large-scale, latency-sensitive applications at the edge.
 Vodafone Business Distributed Edge brings together the power of AWS Cloud and Vodafone’s 4G and 5G network, making incredible next-generation user experiences a reality.
 Check out the product features
-Learn more
 Sign up to learn more
 Sign up
 Check out the FAQs

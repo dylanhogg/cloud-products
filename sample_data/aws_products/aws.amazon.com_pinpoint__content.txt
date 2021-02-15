@@ -2,11 +2,11 @@ Amazon Pinpoint
 Multichannel marketing communication service
 Get started with Amazon Pinpoint
 Contact sales for more information
-Amazon Pinpoint is a flexible and scalable outbound and inbound marketing communications service. You can connect with customers over channels like email, SMS, push, or voice. Amazon Pinpoint is easy to set up, easy to use, and is flexible for all marketing communication scenarios. Segment your campaign audience for the right customer and personalize your messages with the right content. Delivery and campaign metrics in Amazon Pinpoint measure the success of your communications. Amazon Pinpoint can grow with you and scales globally to billions of messages per day across channels.
+Amazon Pinpoint is a flexible and scalable outbound and inbound marketing communications service. You can connect with customers over channels like email, SMS, push, or voice. Amazon Pinpoint is easy to set up, easy to use, and is flexible for all marketing communication scenarios. Segment your campaign audience for the right customer and personalize your messages with the right content. Delivery and campaign metrics in Amazon Pinpoint measure the success of your communications. Amazon Pinpoint can grow with you and scales globally to billions of messages per day across channels.
 Introducing Amazon Pinpoint (1:14)
 Benefits
 Get started quickly
-Whether you are a marketer or a developer, Amazon Pinpoint is flexible for marketing, bulk, or transactional communications use cases. Marketers can design, orchestrate, and run campaigns visually through the console. Developers can leverage the Amazon Pinpoint APIs for message sending, scheduling campaigns, or tracking web and mobile activities. Send across channels like email, SMS, or push notifications.
+Whether you are a marketer or a developer, Amazon Pinpoint is flexible for marketing, bulk, or transactional communications use cases. Marketers can design, orchestrate, and run campaigns visually through the console. Developers can leverage the Amazon Pinpoint APIs for message sending, scheduling campaigns, or tracking web and mobile activities. Send across channels like email, SMS, or push notifications.
 Segment and personalize for impact
 Segment your audience for the right group of customers based on existing customer lists, attributes or use Amazon Pinpoint to create segments from mobile and web application data. Personalize the right message content to engage and delight your customers using both static and dynamic attributes. Marketers can also visually create a customer journey that automates multi-step campaigns.
 Measure your efficiency
@@ -29,13 +29,11 @@ Coinbase used Amazon Pinpoint to scale push notifications and decrease time to m
 Top blog posts
 Template personalization using Amazon Pinpoint
 April 23, 2020
-Learn more »
 Using Amazon Pinpoint to send SMS messages in Amazon Connect
 May 15, 2019
 Create an SMS chatbot with Amazon Pinpoint and Lex
 Sept 3, 2019
-Learn more »
-Visit the Messaging and Targeting blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
+Visit the Messaging and Targeting blog to learn about unique use cases, best practices, technical deep dives, and new feature launches.
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

@@ -12,26 +12,25 @@ Amazon Location Service provides high-quality geospatial data from established, 
 Simple access to location data
 With the fully managed Amazon Location Service, integrating geospatial information into your application is as easy as calling the Amazon Location application programming interface (API). The API is consistent across LBS data providers, so you don’t need to learn and integrate multiple APIs to get the data you want for different use cases or geographies. To help you explore and try geolocation functions, the Amazon Location console includes a visual, interactive learning tool. You can get started quickly with the Amazon Location back-end and front-end software development kits (SDKs), sample code for tasks such as data visualization, and solution guides for asset tracking, geomarketing, and delivery.
 Shorter time to production
-Amazon Location Service helps you move applications from experimentation to production faster by providing built-in Amazon CloudWatch metrics including requests, latency, and faults, and Amazon CloudWatch integration for logging. This helps you pinpoint functional and performance problems in your application when they arise, so you don’t need to build your own health monitoring tools. You can apply your organization's cloud best practices for monitoring and management to location capabilities, and avoid establishing new standards for additional vendors.
+Amazon Location Service helps you move applications from experimentation to production faster by providing built-in Amazon CloudWatch metrics including requests, latency, and faults, and Amazon CloudWatch integration for logging. This helps you pinpoint functional and performance problems in your application when they arise, so you don’t need to build your own health monitoring tools. You can apply your organization's cloud best practices for monitoring and management to location capabilities, and avoid establishing new standards for additional vendors.
 How it works
 Use cases
 User engagement & geomarketing
-Businesses can use location data to better engage and market to their customers. For instance, Amazon Location Service can trigger an event that prompts a notification to a café when a customer who ordered a coffee on their mobile app is nearby. The café staff can then prepare the order in time. Similarly, retailers can use geomarketing to send discount codes or digital flyers to customers who are near stores. See the geomarketing solution guide.
+Businesses can use location data to better engage and market to their customers. For instance, Amazon Location Service can trigger an event that prompts a notification to a café when a customer who ordered a coffee on their mobile app is nearby. The café staff can then prepare the order in time. Similarly, retailers can use geomarketing to send discount codes or digital flyers to customers who are near stores. See the geomarketing solution guide.
 Asset tracking
-Asset tracking helps businesses understand the current and historical locations of their products, personnel, and infrastructure. Enterprises can use Amazon Location Service for asset tracking to optimize remote staffing, secure en-route shipment, maximize dispatch efficiency, and more. See the asset tracking solution guide. See the asset tracking solution guide.
+Asset tracking helps businesses understand the current and historical locations of their products, personnel, and infrastructure. Enterprises can use Amazon Location Service for asset tracking to optimize remote staffing, secure en-route shipment, maximize dispatch efficiency, and more. See the asset tracking solution guide. See the asset tracking solution guide.
 Delivery
-Location-based services help delivery applications store, track, and coordinate the source locations, delivery vehicles, and the destinations. For instance, a food delivery application built with Amazon Location Service can use location tracking and geofencing to automatically notify a restaurant when its designated delivery driver is nearby, to reduce the wait time of the driver, and help assure the freshness of the food when delivered. See the delivery solution guide. See the delivery solution guide.
+Location-based services help delivery applications store, track, and coordinate the source locations, delivery vehicles, and the destinations. For instance, a food delivery application built with Amazon Location Service can use location tracking and geofencing to automatically notify a restaurant when its designated delivery driver is nearby, to reduce the wait time of the driver, and help assure the freshness of the food when delivered. See the delivery solution guide. See the delivery solution guide.
 Customer stories
 “If we can improve the fill rate of our truck loads by just 1%, we estimate that we can harvest significant savings every year,” said Martijn Weenink, Product Owner at PostNL. “To do this, we need to know where every roller cage is, whether it is in use, what its destination is and what it is carrying. Amazon Location Service and AWS IoT will play a big role in gathering location and activity data from the roller cages.”
-Learn more »
+Learn more
 “When we evaluated Amazon Location Service, we realized we can get the tracking capabilities we need, and also consolidate location-related infrastructure we were hosting on Google,” said Dejan Milosavljevic, CEO and Co-Founder of MobileLog.
 "Our DoD and intelligence community partners rely on us to deliver technologies that integrate cutting-edge AWS capabilities to enable mission success,” said Kevin Heald, VP, Information Exploitation at Novetta. “Amazon Location is a great example of a service that can be applied to accelerate and simplify solution development."
 Check out product features
-Learn more about Amazon Location Service
-Learn more
+Learn more about Amazon Location Service
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with Amazon Location Service in the AWS Management Console.
+Get started building with Amazon Location Service in the AWS Management Console.
 Sign in

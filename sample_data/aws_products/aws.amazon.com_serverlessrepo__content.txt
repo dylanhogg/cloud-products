@@ -16,13 +16,13 @@ Find and distribute serverless applications for common use cases. Build organiza
 Featured Apps: Alexa Skills, IoT, Machine Learning
 Alexa Anagram
 Ask Alexa to list anagrams for a word. It will respond with the count and anagrams for the requested word
-Published by: evanchiu
+Published by: evanchiu
 Alexa Salesforce Notes - Sample
 Demonstrates how to build a private Alexa skill to access Salesforce data
 Published by: Alexa for Business
 Rekognition - SQS
 Trigger a Lambda function to perform image analysis using SQS as an event source
-Published by: Kashif Imran & Ganesh Shankaran
+Published by: Kashif Imran & Ganesh Shankaran
 IoT Twilio Bridge
 A bridge between AWS IoT and Twilio for your devices to send messages to Twilio
 Published by: TensorIoT
@@ -31,7 +31,7 @@ Connect with developers and customers everywhere by publishing your serverless a
 Featured Apps: Data Transformation and Media Processing
 Image Moderation Chatbot
 Automatically remove messages containing inappropriate images from channels of popular chat apps
-Published by: robperc
+Published by: robperc
 Document Generator
 Create and modify documents, PDFs, and books
 Published by: ryfeus
@@ -47,7 +47,7 @@ Automatically log the body of a web result at a set frequency
 Published by: Ranek Kiil
 API Save Lambda DynamoDB
 A Lambda function with API Gateway integration that saves request data to a DynamoDB table. Written in CORS
-Published by: Aleksandar Simovic
+Published by: Aleksandar Simovic
 FunctionShield - Protected Function
 Enforce strict security controls on your Lambda function runtime
 Published by: PureSec
@@ -57,13 +57,13 @@ Published by: ServerlessOps
 Featured Apps: Notification, Authentication, and Location
 Contact Us Form
 Use API Gateway, Lambda, and SNS to create a Serverless "Contact Us" form for a static website
-Published by: Randy Findley
+Published by: Randy Findley
 Billing Reports
 Deliver the latest AWS costs breakdown to your Slack channel
-Published by: Octo Technology Australia
+Published by: Octo Technology Australia
 Serverless Cognito
 Authenticate your users through Cognito, Lambda, and API Gateway
-Published by: Marek Kuczynski
+Published by: Marek Kuczynski
 Toll Cost
 Calculate tolls for international driving routes
 Published by: HERE Technologies

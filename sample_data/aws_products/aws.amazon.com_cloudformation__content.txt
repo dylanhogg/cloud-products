@@ -17,14 +17,14 @@ The AWS CloudFormation GitHub organization offers open source projects that exte
 How it works
 Featured customers
 Deloitte’s ConvergeHEALTH Miner solution is a suite of tools and services that help accelerate data gathering, analysis, and management across the healthcare research lifecycle... Miner leverages a wide range of AWS services. They used AWS CloudFormation and AWS Service Catalog to get Miner to clients faster using infrastructure as code. Deloitte chose AWS CloudFormation templates to code the infrastructure, which it can then deploy in one click using AWS Service Catalog.
-Learn more »
+Learn more
 All of the company’s networks are designed, built, and maintained through AWS CloudFormation templates. “This gives us the luxury of version-controlling our network, and it allows for seamless, exact network duplication for on-demand development and staging environments,” says Witoff.
 Expedia uses AWS CloudFormation with Chef to deploy its entire front and backend stack into its AWS environment.
 “We are very happy with AWS CloudFormation, because it means we are able to use ‘one-click’ deployment of our whole infrastructure.”
 Featured Blog posts & articles
 Write preventive compliance rules for AWS CloudFormation templates the cfn-guard way
 Aug 04, 2020 Luis Colon, Raisa Hashem, and Josh Joy
-Read more »
+Read more
 Automated CloudFormation Testing Pipeline with TaskCat and CodePipeline
 Sep 04, 2020
 Raleigh Hansen and Dan Le
@@ -33,19 +33,18 @@ Jul 27, 2020
 Sebastian Doell
 New: Use AWS CloudFormation StackSets for Multiple Accounts in an AWS Organization
 Feb 12, 2020
-Sébastien Stormacq
+Sébastien Stormacq
 Using AWS CloudFormation to deploy software into Amazon EKS clusters
 Feb 20, 2020
 Troy Ameigh
 1
-…
-No blog posts have been found at this time. Please see the AWS Blog for other resources.
+...
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
 Visit the Management & Governance Blog to read more about CloudFormation and other AWS Management & Governance services.
 What's new
 See all announcements
 Check out the product features
 Learn more about the modeling and provisioning capabilities of AWS CloudFormation.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

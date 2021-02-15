@@ -1,0 +1,84 @@
+General
+Q: What is Amazon Monitron?
+A: Amazon Monitron is an end-to-end system that detects abnormal behavior in industrial machinery, enabling you to implement predictive maintenance and reduce unplanned downtime. Amazon Monitron includes sensors to capture vibration and temperature data from equipment, a gateway device to securely transfer data to AWS, the Amazon Monitron service that analyzes the data for abnormal machine patterns using machine learning, and a companion mobile app to set up the devices and track potential failures in your machinery. With Amazon Monitron, you can start tracking equipment condition in minutes without any development work or ML experience.
+Q: How can I get started with Amazon Monitron?
+A: To get started with Amazon Monitron, purchase sensors and gateways on amazon.com (US, UK, Germany, Spain, France, and Italy) or Amazon Business. You can create a project by visiting the AWS console, and then using the Amazon Monitron mobile app, you can commission Amazon Monitron Gateways, register the equipment that you would like to monitor, and pair Amazon Monitron Sensors to one or more positions on the equipment. No special training is required to do this. Once the sensors and gateways are set up, the sensors automatically connect to AWS via the gateway, and Amazon Monitron starts monitoring the equipment. You can get alerted via push notifications when Amazon Monitron detects potential failures, and visualize sensor measurements inside the app. Amazon Monitron offers a Starter Kit that includes 5 Sensors and 1 Gateway so that you can get started in an easy and cost-effective way.
+Q: How does Monitron relate to/work with other AWS products?
+A: Amazon Monitron is built on AWS Internet-of-Things (IOT) and machine learning (ML) technologies. No development or integration effort is required to use Amazon Monitron. Behind the scenes, Amazon Monitron uses multiple AWS services such as Lambda, S3, and DynamoDB.
+Q: In which AWS regions is Amazon Monitron available?
+A: Amazon Monitron is available in US East (N. Virginia) and will be available in additional regions soon. You can buy Amazon Monitron Starter Kits, Sensors and Gateways on amazon.com and Amazon Business. These devices are available for purchase in US, UK and EU.
+Q: Are there restrictions on the number of sites or sensors I can deploy with Amazon Monitron?
+A: No, there are no restrictions on the number of sites or sensors. Like every AWS service, Amazon Monitron has limits which can be found here.
+Q: Does Amazon Monitron get more accurate over time?
+A: Yes, Amazon Monitron uses machine learning to improve over time.
+Q: Is data processed by Amazon Monitron stored, and how is it used by AWS?
+A: Amazon Monitron may store and use data processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Monitron and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is important for continuous improvement of your Amazon Monitron customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services, or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority, and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. You may opt out of having your content used to improve and develop the quality of Amazon Monitron and other Amazon machine-learning/artificial-intelligence technologies by contacting AWS Support and following the process provided to you.
+Q: Is the content processed by Amazon Monitron moved outside the AWS region where I am using Amazon Monitron?
+A: Any content processed by Amazon Monitron is encrypted and stored at rest in the AWS region where you are using Amazon Monitron. Some portion of content processed by Amazon Monitron may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Monitron customer experience and other Amazon machine-learning/artificial-intelligence technologies. If you opt out of having your content used to develop the quality of Amazon Monitron and other Amazon machine-learning/artificial-intelligence technologies by contacting AWS Support, your content will not be stored in another AWS region. You can request deletion of data processed by Amazon Monitron associated with your account by contacting AWS Support. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Is Amazon Monitron secure?
+A: Yes. Amazon Monitron encrypts data at rest and in transit. Content that has been encrypted is rendered useless without the applicable decryption keys.
+Q: What code changes do I need to make to use Amazon Monitron?
+A: Amazon Monitron can be used out of the box to monitor the condition of an equipment. No development work is required to use Amazon Monitron.
+Q: Do I have to be a machine learning expert to use Amazon Monitron?
+A: No. Amazon Monitron automatically analyzes sensor data using machine learning (ML) to detect potential failures in industrial equipment. It also automatically improves the ML model performance based on the feedback provided by the technicians in Monitron mobile app. No knowledge of ML is required to use Amazon Monitron.
+Q: How does Amazon Monitron train models?
+A: Once the sensor is installed on an equipment and connected, Amazon Monitron captures temperature and vibration data from that equipment and sends it to AWS, where the Amazon Monitron service analyzes the data, assesses normal or healthy patterns, and trains a model specific to that equipment based on it. Over time, the model continually improves based on the feedback provided by the technicians in the Amazon Monitron mobile app.
+Q: Can Monitron be used with third party sensors?
+A: No. At this time, Amazon Monitron does not support third party sensors. If you have data from existing machinery sensors, Amazon Lookout for Equipment can help you quickly and easily unlock critical insights and enable predictive maintenance using the equipment data you already collect. Learn more
+Q: What kind of factory machines does Amazon Monitron support?
+A: Amazon Monitron can be used to monitor a variety of rotating machinery in production lines and warehouses. Gearboxes, motors, pumps, compressors and fans are common examples of equipment, or machine parts, that Amazon Monitron supports.
+Q: What kind of predictive maintenance use cases does Amazon Monitron not support?
+A: Amazon Monitron is designed for factory equipment and safe indoor operating environments. We do not recommend using Amazon Monitron to enable predictive maintenance for non-factory use cases such as machinery used in outdoor power generation plants, equipment in off-shore oil and gas stations, and consumer appliances. These use cases have different environmental and connectivity requirements which Amazon Monitron devices may not support.
+Q: Do I need to enable AWS Single Sign On (AWS SSO) to use Amazon Monitron?
+A: Yes. Amazon Monitron uses AWS SSO to authenticate users to the Amazon Monitron app. Your organization must have AWS SSO set up in the same region where you want to use Amazon Monitron. If you don’t have AWS SSO set up, Amazon Monitron will automatically set it up for you during service onboarding.
+Devices
+Q: Where can I buy Amazon Monitron devices?
+A: To get started with Amazon Monitron, purchase sensors and gateways on amazon.com (US, UK, Germany, Spain, France, and Italy) or Amazon Business.
+Q: How long do the Amazon Monitron Sensors last?
+A: The typical battery life of the Amazon Monitron sensor will be at least 3 years at the default measurement frequency of once an hour. The battery is not rechargeable or replaceable. Customers will have to buy a new sensor once the battery is depleted.
+Q: How frequently does the sensor take vibration and temperature measurements? Can I adjust this measurement frequency?
+A: The sensor automatically takes vibration and temperature measurements once an hour and you cannot adjust this frequency. Customers can however, take a manual, out-of-cycle measurement easily by tapping their smartphone on the sensor device, utilizing near-field communication (NFC) technology.
+Q: What are the technical specifications of vibration sensor?
+A: The vibration sensor is a 3-axis MEMS (micro-electromechanical systems) accelerometer with a range of +/-16g, frequency response of up to 6kHz, and is sampled at 26.7kHz. You can find the full technical specifications here.
+Q: How do the sensors connect with the gateway?
+A: The sensors connect with the gateway using Bluetooth Low Energy (BLE).
+Q: What kind of network connectivity does Amazon Monitron Gateway support?
+A: Amazon Monitron Gateway supports Bluetooth Low Energy (BLE) connectivity to the sensors and WiFi connectivity to the internet.
+Q: What TCP (Transmission Control Protocol) port does Amazon Monitron Gateway use?
+A: Amazon Monitron Gateway uses the TCP port 8883.
+Q: What are the best practices to provide firewall access to Amazon Monitron Gateway?
+A: Allow connections to TCP port 8883 for amazonaws.com subdomains in order to provide firewall access to Amazon Monitron Gateway.
+Q: Does Amazon Monitron Gateway support Static IPs?
+A: No, Amazon Monitron Gateway does not support static IPs right now. It only supports Dynamic Host Configuration Protocol (DHCP). You can configure your network to always assign the same IP address to the same device.
+Q: How much internet bandwidth is required for Amazon Monitron?
+A: Amazon Monitron does not require high bandwidth. Typically, it will exchange about 100 KB of data per sensor per hour at the default measurement frequency of once an hour.
+Installation
+Q: How can I attach the sensors to my equipment?
+A: Amazon Monitron Sensors can be attached to the equipment using adhesive, which you need to purchase separately. We suggest you check the surface before selecting the adhesive. For surfaces up to 5mm roughness/gaps, you can buy an adhesive that fills the gap, for example, LOCTITE® 3090. For flat surfaces (<0.1mm roughness), you can buy a more generic adhesive, for example, LOCTITE® 454. Always check and follow the processing guidelines outlined by the adhesive vendor.
+Q: How many sensors can 1 gateway connect with?
+A: Amazon Monitron sensors connect with Amazon Monitron gateway over Bluetooth Low Energy (BLE). Practically, the number of sensors that can connect with 1 gateway will be mainly determined by the range of BLE. The expected BLE range is 20-30 meters. Based on our experience, 10-20 sensors on average can connect with 1 gateway in an industrial setup.
+Q: Can I order Amazon Monitron to a country where Amazon Monitron is not available and connect it to a supported Region?
+A: Amazon Monitron Starter Kits, Sensors, and Gateways are certified for use in US, UK and EU. You can use Amazon Monitron devices in these geographies together with the supported cloud region of US East (N. Virginia). We do not deliver Amazon Monitron devices outside of these geographies.
+Q: Can I use Amazon Monitron when it is not connected to the AWS Region or in a disconnected environment?
+A: Amazon Monitron Sensors and Gateways, and their use with the Amazon Monitron cloud service rely on connectivity over internet to the AWS Region. Amazon Monitron Sensors and Gateways are not designed for disconnected operations or environments with no connectivity. We recommend that customers have highly available internet connectivity.
+Q: Can I reuse my existing servers to run Amazon Monitron on premises?
+A: No, Amazon Monitron can only be run on AWS. Amazon Monitron leverages AWS-designed infrastructure, and is only supported on AWS-designed hardware, which is optimized for secure, high-performance, and reliable operations.
+Q: Is there a software-only version of Amazon Monitron?
+A: No, Amazon Monitron Service, including the App, can only be used with Amazon Monitron Sensors and Gateways.
+Q: Are there any prerequisites for installing Amazon Monitron Sensors and Gateways at my location?
+A: Your site must support the basic power, networking, and space requirements to install Amazon Monitron Sensors and Gateways. As Amazon Monitron requires reliable WiFi internet connectivity, you should plan for a public secure Wi-Fi internet connection.
+Security & compliance
+Q: Who is responsible for the physical security of the Amazon Monitron Sensors and Gateways at my location?
+A: Customers are responsible for the physical security and access controls around Amazon Monitron Sensors and Gateways as part of a shared responsibility model.
+Q: What happens when my facility's network connection goes down?
+A: When your facility’s internet connection goes down, Amazon Monitron Gateways will lose connection with AWS. Because of this, Amazon Monitron Sensors won’t be able to send the data they captured in that period to AWS and, if that period extends, that data will not be persisted. End users that are trying to access Amazon Monitron App using the facility’s internet will also be not able to access App in that period.
+Learn more about pricing
+Visit the Amazon Monitron pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Monitron in the AWS Management Console.
+Sign in
+Page Content

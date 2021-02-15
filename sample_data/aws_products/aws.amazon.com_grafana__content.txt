@@ -1,7 +1,7 @@
 Amazon Managed Service for Grafana (Preview)
 Scalable, secure, and highly available data visualization for your operational metrics
 Get started with Amazon Managed Service for Grafana (Preview)
-Amazon Managed Service for Grafana (AMG) is a fully managed service that is developed together with Grafana Labs and based on open source Grafana. Enhanced with enterprise capabilities, AMG makes it easy for you to visualize and analyze your operational data at scale. Grafana is a popular open source analytics platform that enables you to query, visualize, alert on and understand your metrics no matter where they are stored.
+Amazon Managed Service for Grafana (AMG) is a fully managed service that is developed together with Grafana Labs and based on open source Grafana. Enhanced with enterprise capabilities, AMG makes it easy for you to visualize and analyze your operational data at scale. Grafana is a popular open source analytics platform that enables you to query, visualize, alert on and understand your metrics no matter where they are stored.
 With AMG, you can analyze your metrics, logs, and traces without having to provision servers, configure and update software, or do the heavy lifting involved in securing and scaling Grafana in production. You can create, explore, and share observability dashboards with your team, and spend less time managing your Grafana infrastructure and more time improving the health, performance, and availability of your applications. Connect AMG to multiple data sources in your observability stack, including AWS data sources like Amazon Managed Service for Prometheus, Amazon CloudWatch, and Amazon Elasticsearch Service, third-party ISVs like Datadog and Splunk, and self-managed data sources like InfluxDB. AMG natively integrates with AWS services so you can securely add, query, visualize, and analyze your AWS data across multiple accounts and Regions with a few clicks in the AWS Console.
 How to use Amazon Managed Service for Grafana with Amazon Managed Service for Prometheus (3:54)
 Benefits
@@ -14,19 +14,19 @@ AMG integrates with multiple AWS security services to meet your corporate securi
 Migrate from self-managed Grafana, easily
 No need to start from scratch when migrating from your existing Grafana environment. Use AMG APIs to easily import existing queries and dashboards – you don’t have to re-create dashboard definitions that you’ve already built and perfected (available at GA).
 Get started quickly with pre-built dashboards
-After selecting your data source, you can choose from a variety of pre-built visualizations to quickly start analyzing metrics, logs, and traces without having to build a dashboard from scratch. AMG offers a variety of visualizations across a broad set of data sources.
+After selecting your data source, you can choose from a variety of pre-built visualizations to quickly start analyzing metrics, logs, and traces without having to build a dashboard from scratch. AMG offers a variety of visualizations across a broad set of data sources.
 Upgrade to Grafana Enterprise for more third-party plugins
 With one click, you can upgrade to Grafana Enterprise and gain access to a variety of third-party ISV plugins, including AppDynamics, Datadog, Dynatrace, New Relic, Oracle Database, ServiceNow, Splunk, Wavefront, Snowflake, and MongoDB. You also get access to consultation, support, and on-demand training content directly from Grafana Labs.
 How it works
 Use cases
 Unified observability
-AMG enables you to query and correlate metrics, logs, and traces that are collected and stored in different tools and then view and analyze them in a single visualization or dashboard. This makes it easier to monitor your applications and troubleshoot operational issues. You can query, correlate, and build a single dashboard with container metrics from Amazon Managed Service for Prometheus, logs and traces from Amazon Elasticsearch Service, observability data from Amazon CloudWatch, and operational data from third-party and other cloud vendors.
+AMG enables you to query and correlate metrics, logs, and traces that are collected and stored in different tools and then view and analyze them in a single visualization or dashboard. This makes it easier to monitor your applications and troubleshoot operational issues. You can query, correlate, and build a single dashboard with container metrics from Amazon Managed Service for Prometheus, logs and traces from Amazon Elasticsearch Service, observability data from Amazon CloudWatch, and operational data from third-party and other cloud vendors.
 Container monitoring
 Using AMG, you can query, correlate, and visualize container metrics from Amazon Elastic Kubernetes Service, Amazon Elastic Container Service, and self-managed Kubernetes running on Amazon Elastic Compute Cloud. Simply use AMG to connect to container metrics data sources such as Amazon Managed Service for Prometheus, open source Prometheus, Amazon CloudWatch, as well as other self-managed and third-party ISV data sources.
 One dashboard, multiple users
 AMG supports a wide variety of data sources that enable users of all types to layer operational and business data into a consolidated view. Builders and developers can track their application logs alongside an operator’s infrastructure health metrics, as well as business metrics for key stakeholders, all displayed in a single dashboard using a rich library of interactive visualizations.
 Troubleshoot operational issues collaboratively
-Teams and users can view and edit dashboards in real time, track dashboard version changes, and share dashboards with related teams and executive stakeholders to ensure that everyone is viewing the same data while troubleshooting operational issues. AMG allows flexible dashboard sharing, from creating snapshots that can be shared publicly, to inviting team members to a shared dashboard.
+Teams and users can view and edit dashboards in real time, track dashboard version changes, and share dashboards with related teams and executive stakeholders to ensure that everyone is viewing the same data while troubleshooting operational issues. AMG allows flexible dashboard sharing, from creating snapshots that can be shared publicly, to inviting team members to a shared dashboard.
 IoT monitoring
 Grafana’s extensible data plugin architecture and flexible graphing options make it popular for monitoring IoT and edge device data, such as earthquake sensor battery levels, manufacturing robot metrics, or energy utility status checks. AMG natively integrates with Amazon IoT SiteWise and Amazon Timestream as data sources for IoT data visualization.
 Software development lifecycle monitoring
@@ -38,4 +38,4 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Sign up for the preview
-Get started building with Amazon Managed Service for Grafana.
+Get started building with Amazon Managed Service for Grafana.

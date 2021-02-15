@@ -1,0 +1,150 @@
+General
+Q: What is Amazon FSx for Windows File Server?
+A: Amazon FSx for Windows File Server provides fully managed, highly reliable, and scalable file storage that is accessible over the industry-standard Service Message Block (SMB) protocol. It is built on Windows Server, delivering a wide range of administrative features such as user quotas, end-user file restore, and Microsoft Active Directory (AD) integration.
+To support a wide spectrum of workloads, Amazon FSx provides high levels of throughput and IOPS, and consistent sub-millisecond latencies.
+Amazon FSx is accessible from Windows, Linux, and MacOS compute instances and devices. Thousands of compute instances and devices can access a file system concurrently.
+Q: What is an Amazon FSx for Windows File Server file system, and what is a file share?
+A: A file system is the primary resource in Amazon FSx. It’s where you store and access your files and folders. It is associated with a storage amount and a throughput capacity, as well as a DNS name for accessing it.
+A file share is a specific folder (and its subfolders) within your file system that you make accessible to your compute instances – every file system comes with a default Windows file share, named “share” and you can create and manage as many other Windows file shares as you’d like.
+Q: How do I get started with FSx for Windows File Server?
+A: To use Amazon FSx, you must have an AWS account. If you do not already have an AWS account, you can sign up for an AWS account.
+Once you have created an AWS account, you can create a file system via the AWS Management Console, the AWS Command Line Interface (AWS CLI), and Amazon FSx API (and various language-specific SDKs).
+Q: What instance types and OS versions can I access my file system from?
+A: By supporting the SMB protocol, Amazon FSx can connect your file system to Amazon EC2, Amazon ECS, VMware Cloud on AWS, Amazon WorkSpaces, and Amazon AppStream 2.0 instances. To ensure compatibility with your applications, Amazon FSx supports all Windows versions starting from Windows Server 2008 and Windows 7, and current versions of Linux (using the cifs-utils tool).
+Q: How do I access Amazon FSx for Windows File Server from Amazon Elastic Container Service (Amazon ECS) containers?
+A: You can use Amazon FSx to enable persistent, shared storage for your containerized applications running on Amazon ECS. You can easily access Amazon FSx for Windows Server file systems on Amazon ECS by referencing your file systems in your task definition. Getting started instructions can be found in the Amazon ECS documentation.
+Q: How do I access data on my Amazon FSx file system?
+A: From within Windows, use the “Map Network Drive” feature to map a drive letter (e.g., Z:) to a file share on your Amazon FSx file system. You can also access your file system from Linux using the cifs-utils tool to mount your file share. Once you've done this, you can work with the files and folders in your Amazon FSx file system just like you would with a local file system.
+Q: How do I manage a file system?
+A: Amazon FSx is a fully-managed service, so all of the file storage infrastructure is managed for you. When you use Amazon FSx, you avoid the complexity of deploying and maintaining complex file system infrastructure.
+To create, view, tag, and delete file systems and backups, you can use the AWS Management Console, the AWS command-line interface (CLI), or the Amazon FSx API (and various language-specific SDKs). To administer file systems, including managing file shares, active user sessions and open files, shadow copies, user quotas, and Data Deduplication, you can use the Amazon FSx remote management CLI via PowerShell.
+Q: How do I migrate my existing file data into an Amazon FSx file system?
+A: If you’d like to migrate your existing files to Amazon FSx for Windows File Server file systems, we recommend the use of AWS DataSync, an online data transfer service designed to simplify, automate, and accelerate copying large amounts of data to and from AWS storage services. DataSync copies data over the internet or AWS Direct Connect. As a fully managed service, DataSync removes much of the need to modify applications, develop scripts, or manage infrastructure. For more information, see Migrating Existing Files to Amazon FSx for Windows File Server Using AWS DataSync guide.
+A secondary option is Windows’s Robust File Copy (RoboCopy) to copy your files (both the data and the full set of metadata like ownership and Access Control Lists) directly to Amazon FSx. The RoboCopy tool performs the copy in entirety (including all metadata like ACLs, ownership, and time stamps), efficiently (with parallel copy) and reliably (by recovering from interruptions like network outages).
+Once you have moved your file and folder data, Amazon FSx offers programmatic share management support to help you easily migrate your file share configuration. Learn more about migrating your existing file shares in the documentation guide.
+Q: How do I monitor my file system’s activity?
+A: You can monitor storage capacity and file system activity using Amazon CloudWatch, and monitor all Amazon FSx API calls using AWS CloudTrail.
+Q: What workloads is Amazon FSx for Windows File Server designed for?
+A: Amazon FSx was designed for a broad set of use cases that require Windows shared file storage, like CRM, ERP, custom or .NET applications, home directories, data analytics, media and entertainment workflows, web serving and content management, software build environments, and Microsoft SQL Server.
+Q: How do I use Amazon FSx with Microsoft SQL Server?
+High availability (HA) Microsoft SQL Server is typically deployed across multiple database nodes in a Windows Server Failover Cluster (WSFC), with each node having access to shared file storage. Amazon FSx for Windows File Server can be used as shared storage for High Availability (HA) Microsoft SQL Server deployments in two ways: as storage for active data files and as an SMB file share witness. For more information, see Using Amazon FSx with Microsoft SQL Server or read the Simplify Your Microsoft SQL Server High Availability deployments blog.
+Q: When should I use Amazon FSx Windows File Servers vs. Amazon EFS vs. Amazon FSx for Lustre?
+A: For Windows-based applications, Amazon FSx provides fully managed Windows file servers with features and performance optimized for "lift-and-shift" business-critical application workloads including home directories (user shares), media workflows, and ERP applications. It is accessible from Windows and Linux instances via the SMB protocol. If you have Linux-based applications, Amazon EFS is a cloud-native fully managed file system that provides simple, scalable, elastic file storage accessible from Linux instances via the NFS protocol.
+For compute-intensive and fast processing workloads, like high performance computing (HPC), machine learning, EDA, and media processing, Amazon FSx for Lustre, provides a file system that’s optimized for performance, with input and output stored on Amazon S3.
+Q: Does Amazon FSx support access from my on-premises environment?
+A: Yes, you can access Amazon FSx file systems from your on-premises environment using an AWS Direct Connect or AWS VPN connection between your on-premises datacenter and your Amazon VPC. With support for AWS Direct Connect, Amazon FSx allows you to access your file system over a dedicated network connection from your on-premises environment. With support for AWS VPN, Amazon FSx allows you to access your file system from your on-premises devices over a secure and private tunnel.
+With on-premises access, you can use Amazon FSx for hosting user shares accessible by on-premises end-users, for cloud bursting workloads to offload your application processing to the cloud, and for backup and disaster recovery solutions. For more information, see Accessing Amazon FSx from on-premises.
+Q: Does Amazon FSx support access from multiple VPCs, accounts, and regions?
+A: Yes, you can access your Amazon FSx file systems from multiple Amazon VPCs, AWS accounts, and AWS Regions using VPC Peering connections or AWS Transit Gateway. A VPC Peering connection is a networking connection between two VPCs that enables you to route traffic between them. A transit gateway is a network transit hub that you can use to interconnect your VPCs. With VPC Peering and AWS Transit Gateway, you can even interconnect VPCs across AWS accounts and AWS Regions.
+With access to your file systems via VPC Peering and Transit Gateway, you can share your file data sets across users and applications in multiple VPCs, AWS accounts, and/or AWS Regions. For more information, see Accessing Amazon FSx from multiple VPCs, accounts or regions.
+Q: Does Amazon FSx support shared VPCs?
+A: Yes, with Amazon FSx, you can create and use file systems in shared Amazon Virtual Private Clouds (VPCs) from both owner accounts and participant accounts with which the VPC has been shared. VPC sharing enables you to reduce the number of VPCs that you need to create and manage, while you still benefit from using separate accounts for billing and access control.
+Q: What regions is Amazon FSx for Windows File Server available in?
+A: Please refer to Regional Products and Services for details of Amazon FSx for Windows File Server service availability by region.
+Q: Does Amazon FSx offer a Service Level Agreement (SLA)?
+A: Yes. The Amazon FSx SLA provides for a service credit if a customer's monthly uptime percentage is below our service commitment in any billing cycle.
+Scale and performance
+Q: What performance does FSx for Windows File Server provide?
+A: Amazon FSx provides consistent sub-millisecond latencies with SSD storage, and single-digit millisecond latencies with HDD storage for file operations. For all file systems, including those with HDD storage, Amazon FSx provides a fast (in-memory) cache on the file server, so you can get high performance and sub-millisecond latencies for actively accessed data irrespective of storage type.
+Every Amazon FSx file system has a throughput capacity that you configure when the file system is created and that you can change at any time. This throughput capacity determines the baseline and burst network speeds at which the Windows File Server hosting your file system can serve file data.
+When creating a file system in the Amazon FSx console, it automatically recommends a throughput capacity for your file system. If you want to select a specific throughput capacity, you can pick between 8 MBps and 2 GBps.
+Throughput capacity specified (MBps)
+8
+16
+32
+64
+128
+256
+512
+1,024
+2,048
+Baseline throughput (MBps)
+Burst throughput (MBps)
+260
+350
+600
+-
+Depending on your workload’s access patterns, you may observe even higher levels of throughput (between 600 MBps and 3 GBps) by benefiting from in-memory caching on the Windows file server. For more information, please read the documentation guide.
+Q: How much data can I store on Amazon FSx for Windows File Server?
+A: You can run up to thousands of Amazon FSx for Windows File Server file systems in your account, with each file system having up to 64 TB of data. To unify your data from multiple file systems into one common folder structure, Amazon FSx supports the use of Microsoft’s Distributed File System (DFS) to organize shares into a single folder structure up to hundreds of PB in size.
+Q: Can I change my file system’s storage capacity and throughput capacity?
+A: Yes, you can increase the storage capacity, and increase or decrease the throughput capacity of your file system – while continuing to use it – at any time by clicking “Update storage" or "Update throughput” in the Amazon FSx Console, or by calling “update-file-system” in the AWS CLI/API and specifying the desired level.
+Q: How does Amazon FSx grow the storage capacity of my file system? How long does it take?
+A: Amazon FSx grows the storage capacity of your existing file system without any downtime impact to your applications and users by adding larger disks, transparently migrating your data in the background from the original disks to the new ones, and then removing the original disks from your file system – the standard process for growing storage on a Windows File Server.
+When you request an update of your file system’s storage capacity, the larger, desired storage capacity becomes available within a few minutes. Afterwards, the transparent data migration process running in the background can take between a few hours and a few days depending on the amount of storage being migrated. The background migration process has minimal noticeable impact on your workload performance. You can track the progress of the data migration at any time using the Amazon FSx Console or AWS CLI/API. See the Managing Storage Capacity documentation for more information.
+Q: How does Amazon FSx change the throughput capacity of my file system? How long does it take?
+A: Amazon FSx updates the throughput capacity of your file system by switching out the file servers powering your file system to meet the new throughput capacity configuration. This update process typically takes a few minutes to complete. Multi-AZ file systems will experience an automatic failover and failback during this process, and single-AZ file systems will be offline for a brief period of time.
+Q: How do I scale out performance across multiple file systems?
+A: Amazon FSx supports the use of Microsoft’s Distributed File System (DFS) Namespaces to scale out performance across multiple file systems in the same namespace up to tens of GBps and millions of IOPs.
+Security and compliance
+Q: How does Amazon FSx integrate with Microsoft Active Directory (AD)?
+A: Amazon FSx works with Microsoft Active Directory (AD) to integrate with your existing Windows environments. When creating a file system with Amazon FSx, you join it to your Microsoft AD -- either an AWS Managed Microsoft AD or your self-managed Microsoft AD. Your users can then use their existing AD-based user identities to authenticate themselves and access the Amazon FSx file system, and to control access to individual files and folders.
+Q: What access control capabilities does Amazon FSx provide?
+A: Amazon FSx provides standard Windows permissions (full support for Windows Access Controls ACLS) for files and folders.
+You specify the Amazon Virtual Private Cloud (VPC) in which your file system is made accessible, and you control which resources within the VPC have access to your file system using VPC Security Groups.
+You control who can administer your file system and backup resources (create, delete, etc.) using AWS IAM.
+Q: Does Amazon FSx for Windows File Server support data encryption?
+A: Yes. Amazon FSx for Windows File Server always encrypts your file system data and your backups at-rest using keys you manage through AWS Key Management Service (KMS). Amazon FSx encrypts data-in-transit using SMB Kerberos session keys, when you access your file system from clients that support SMB 3.0 (and higher). You can also choose to enforce in-transit encryption on all connections to your file system by limiting access to only those clients that support SMB 3.0 and higher to help meet compliance needs.
+Q: What compliance programs does Amazon FSx support?
+A: AWS has the longest-running compliance program in the cloud and is committed to helping customers navigate their requirements. Amazon FSx has been assessed to meet global and industry security standards. It complies with PCI DSS, ISO 9001, 27001, 27017, and 27018), and SOC 1, 2, and 3, in addition to being HIPAA eligible. That makes it easier for you to verify our security and meet your own obligations. For more information and resources, visit our compliance pages. You can also go to the Services in Scope by Compliance Program page to see a full list of services and certifications.
+Availability and durability
+Q: What does Amazon FSx for Windows File Server do to ensure high availability and durability?
+A: To ensure high availability and durability, Amazon FSx automatically replicates your data within an Availability Zone (AZ) to protect it from component failure, continuously monitors for hardware failures, and automatically replaces infrastructure components in the event of a failure. You can also create a Multi-AZ file system, which provides redundancy across multiple AZs. Amazon FSx also takes highly durable backups (stored in S3) of your file system daily using Windows’s Volume Shadow Copy Service, and allows you to take additional backups at any point.
+Q: What is the difference between Single-AZ and Multi-AZ file systems?
+Single-AZ file systems are designed to be highly available and durable within an AZ by replicating data within an AZ and automatically replacing infrastructure components in the event of a failure.
+Multi-AZ file systems support all the availability and durability features of Single-AZ file systems, and in addition, are designed to provide continuous availability to data even in the event that an AZ is unavailable. In a Multi-AZ deployment, Amazon FSx automatically provisions and maintains a standby file server in a different Availability Zone. Any changes written to disk in your file system are synchronously replicated across AZs to the standby. Using Amazon FSx Multi-AZ deployments can enhance availability during planned system maintenance, and help protect your data against instance failure and Availability Zone disruption. In the event of planned file system maintenance or unplanned service disruption, Amazon FSx automatically fails over to the secondary file server, allowing you to continue accessing your data without manual intervention.
+Q: What events would cause a Multi-AZ Amazon FSx file system to initiate a failover to the standby file server?
+Amazon FSx automatically performs a failover in the event of a loss of availability to the active file server. This can be caused by a failure in the active Availability Zone, or by a failure of the active file server itself. Amazon FSx will also temporarily fail over to the standby file server during planned maintenance.
+Q: What happens during a failover in a Multi-AZ file system and how long does a failover take?
+A: Amazon FSx detects and automatically recovers from failures so that you can resume file system operations as quickly as possible without administrative intervention. When failing over from one file server to another, the new active file server will automatically begin serving all file system reads and write requests. Failovers, as defined by the interval between the detection of the failure on the active and promotion of the other file server to active, typically complete within 30 seconds. Failback will occur once the file server in the preferred subnet is fully recovered (typically under 20 minutes), and also completes within 30 seconds.
+Windows clients accessing Multi-AZ file systems automatically fail over and fail back with the file system, meaning that users or applications running on Windows clients automatically benefit from the enhanced availability of Multi-AZ file systems. Linux clients don’t automatically connect to the standby file server upon a failover, and will automatically resume file system operations once failback to the preferred file server is complete.
+Q: How does Amazon FSx keep Windows Server software up to date?
+A: Amazon FSx performs routine software updates for the Windows Server software it manages. The maintenance window is your opportunity to control what day and time of the week this software patching occurs. Patching occurs infrequently, typically once every several weeks, and should require only a fraction of your 30-minute maintenance window.
+Data protection
+Q: How does Amazon FSx enable me to protect my data?
+A: Beyond automatically replicating your file system's data to ensure high durability, Amazon FSx provides you with two options to further protect the data stored on your file systems: Windows shadow copies to enable your end-users to easily undo file changes and compare file versions by restoring files to previous versions, and backups to support your backup retention and compliance needs.
+Q: How do my end-users restore files to previous versions?
+A: Amazon FSx supports file- or folder-level restores to previous versions by supporting Windows shadow copies, which are snapshots of your file system at a point in time. With shadow copies enabled, your end-users can view and restore individual files or folders from a prior snapshot with the click of a button in Windows File Explorer. Storage administrators using Amazon FSx can easily schedule shadow copies to be taken periodically using Windows PowerShell commands.
+Q: How do I take backups on Amazon FSx for Windows File Server?
+A: Creating regular backups for your file system is a best practice that complements the replication that Amazon FSx performs for your file system. Working with Amazon FSx backups is easy, whether it's creating backups, restoring a file system from a backup, or deleting a backup.
+Amazon FSx takes daily automatic backups of your file systems, and allows you to take additional backups at any point. Amazon FSx backups are incremental, which means that only the changes after your most recent backup are saved, thus saving on backup storage costs by not duplicating data.
+Q: What durability and consistency does Amazon FSx provide for backups?
+A: With Amazon FSx, backups are file-system-consistent and highly durable. To ensure file-system-consistency, Amazon FSx uses Windows’s Volume Shadow Copy Service, allowing you to restore to a point in time snapshot of your file system. To ensure high durability, Amazon FSx stores backups in Amazon S3.
+Q: What is the daily backup window?
+A: The daily backup window is a 30-minute window that you specify when creating a file system. Amazon FSx takes the daily automatic backup of your file system during this window. At some point during the daily backup window, storage I/O might be suspended briefly while the backup process initializes (typically under a few seconds).
+Q: What is the daily backup retention period?
+A: The daily backup retention period specified for your file system (7 days by default) determines the number of days your daily automatic backups are kept.
+Q: What happens to my backups if I delete my file system?
+A: When you delete your file system, all automatic daily backups associated with the file system are deleted. Any user-initiated backups you created will remain.
+Q: How do I protect Amazon FSx resources using AWS Backup?
+A: You first enable Amazon FSx as a protected service in AWS Backup. You can then configure backups of your Amazon FSx resources via the AWS Backup console, API or CLI. You can create both scheduled and on-demand backups of Amazon FSx resources via AWS Backup and restore these backups as new Amazon FSx file systems. Amazon FSx file systems can be added to backup plans in the same way as other AWS resources, either by specifying the ARN or by tagging the Amazon FSx file system for protection in the backup plan. To learn more, visit the AWS Backup documentation.
+Optimizing Total Cost of Ownership (TCO)
+Q: What storage options does Amazon FSx support for my file system? How should I choose?
+A: Amazon FSx provides two types of storage – Hard Disk Drives (HDD) and Solid State Drives (SSD) – to allow you to optimize cost/performance to meet your workload needs. HDD storage is designed for a broad spectrum of workloads, including home directories, user and departmental shares, and content management systems. SSD storage is designed for the highest-performance and most latency-sensitive workloads, including databases, media processing workloads, and data analytics applications.
+Q: Can I change the storage type (SSD/HDD) of my file system?
+A: While you cannot change the storage type on your existing file system, you can take a backup and restore that backup to a new file system with a different storage type.
+Q: What is Data Deduplication?
+A: Large datasets often have redundant data. For example, with user file shares, multiple users tend to have files that are similar or identical. As another example, with software development shares, most binaries remain largely unchanged from build to build. Data Deduplication is a feature in Windows Server that reduces costs that are associated with redundant data by storing duplicated portions of files only once. It optimizes files transparently such that users and applications accessing the data are unaware of deduplication.
+Q: How much storage savings can I expect with Data Deduplication?
+A: The storage savings you can achieve with Data Deduplication depends on the nature of your data set, including how much duplication exists across files. Typical savings average 50-60% for general-purpose file shares, with savings ranging 30-50% for user documents, and 70-80% for software development data sets.
+Q: How do I enable Data Deduplication on my file system?
+A: You can enable Data Deduplication on your file system by running a single command (Enable-FSxDedup) on the Amazon FSx remote management CLI via PowerShell. Once enabled, Data Deduplication continually and automatically scans and optimizes your files in the background.
+Q: How do I monitor and control individual users' storage consumption on my file system?
+You can enable and configure user storage quotas on your file system to monitor usage and allocate storage costs to individual teams, and to impose restrictions at a user-level in order to prevent any one user from storing a lot of data.
+Pricing and billing
+Q: How will I be charged and billed for my use of Amazon FSx for Windows File Server?
+A: You pay only for the resources you use. You are billed hourly for your file systems, based on their deployment type (Single-AZ or Multi-AZ), storage type (SSD or HDD), storage capacity (priced per GB-month), and throughput capacity (priced per MBps-month). You are billed hourly for your backup storage (priced per GB-month). For pricing information, please visit the Amazon FSx pricing page.
+Q: Do your prices include taxes?
+A: Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Q: How am I billed when scaling the storage capacity or throughput capacity of my file system?
+A: Scaling storage capacity and throughput capacity is available at no additional cost. Once storage capacity scaling is complete (typically within 1-2 minutes of you requesting a storage capacity increase), you will be billed for that storage capacity moving forward. Once throughput capacity scaling is complete (i.e., the new throughput capacity is available), you will be billed for the new throughput capacity from that point forward.
+Learn more about pricing
+Amazon FSx for Windows File Server has simple pricing; you pay only for the resources you use.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start moving data in the console
+Get started building with Amazon FSx in the AWS Console.
+Sign in
+Page Content

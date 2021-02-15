@@ -22,7 +22,7 @@ Elastic Load Balancing offers the breadth of features needed by businesses of al
 Robust monitoring & visibility
 Elastic Load Balancing allows you to monitor the health of your applications and their performance in real time with Amazon CloudWatch metrics, logging, and request tracing. This improves visibility into the behavior of your applications, uncovering issues and identifying performance bottlenecks in your application stack. ELB helps ensure compliance with application Service Level Agreements (SLAs).
 Integration and global reach
-As a native AWS service, ELB is tightly integrated with other AWS services like EC2, ECS/EKS, Global Accelerator and operational tools such as AWS CloudFormation and AWS Billing. Across the Amazon Global Infrastructure and customer data centers with AWS Outposts and on-premises target support, ELB is available everywhere you run your AWS workloads.
+As a native AWS service, ELB is tightly integrated with other AWS services like EC2, ECS/EKS, Global Accelerator and operational tools such as AWS CloudFormation and AWS Billing. Across the Amazon Global Infrastructure and customer data centers with AWS Outposts and on-premises target support, ELB is available everywhere you run your AWS workloads.
 Use cases
 Migrating to AWS
 ELB supports the load balancing capabilities critical for you to migrate to AWS. ELB is well positioned to load balance both traditional as well as cloud native applications with auto scaling capabilities that eliminate the guess work in capacity planning. ELB is easy to configure and use, which makes your migration experience simple. The managed experience of ELB means that you can focus on the most critical part of a successful migration - migrating applications - instead of configuring load balancers. ELB also integrates well with the common management tools that you are familiar with such as Terraform and Ansible.
@@ -36,11 +36,10 @@ Customers
 Blog posts and articles
 Date
 1
-…
+...
 New – Advanced Request Routing for AWS Application Load Balancers
 by Jeff Barr
 March 27, 2019
-Learn more »
 What's new in Elastic Load Balancing
 Discover more about Elastic Load Balancing
 Visit the features page.

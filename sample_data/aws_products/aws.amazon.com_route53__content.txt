@@ -16,7 +16,7 @@ With self-service sign-up, Amazon Route 53 can start to answer your DNS queries 
 Fast
 Using a global anycast network of DNS servers around the world, Amazon Route 53 is designed to automatically route your users to the optimal location depending on network conditions. As a result, the service offers low query latency for your end users, as well as low update latency for your DNS record management needs. Amazon Route 53 Traffic Flow lets you further improve your customers’ experience by running your application in multiple locations around the world and using traffic policies to ensure your end users are routed to the closest healthy endpoint for your application.
 Cost-effective
-Amazon Route 53 passes on the benefits of AWS’s scale to you.  You pay only for the resources you use, such as the number of queries that the service answers for each of your domains, hosted zones for managing domains through the service, and optional features such as traffic policies and health checks, all at a low cost and without minimum usage commitments or any up-front fees.
+Amazon Route 53 passes on the benefits of AWS’s scale to you.  You pay only for the resources you use, such as the number of queries that the service answers for each of your domains, hosted zones for managing domains through the service, and optional features such as traffic policies and health checks, all at a low cost and without minimum usage commitments or any up-front fees.
 Secure
 By integrating Amazon Route 53 with AWS Identity and Access Management (IAM), you can grant unique credentials and manage permissions for every user within your AWS account and specify who has access to which parts of the Amazon Route 53 service.
 Scalable
@@ -37,10 +37,9 @@ Blog posts and articles
 Centralized DNS management of hybrid cloud with Amazon Route 53 and AWS Transit Gateway
 by Bhavin Desai
 May 3, 2019
-Learn more »
+Learn more
 Check out the product features
 Discover what Amazon Route 53 does to route end users to your applications
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

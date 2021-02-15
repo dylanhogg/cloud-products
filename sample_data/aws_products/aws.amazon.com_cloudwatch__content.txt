@@ -5,7 +5,7 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 Amazon CloudWatch: Complete visibility of your cloud resources and applications (2:02)
 Benefits
 Observability on a single platform across applications and infrastructure
-Modern applications such as those running on microservices architectures generate large volumes of data in the form of metrics, logs, and events. Amazon CloudWatch enables you to collect, access, and correlate this data on a single platform from across all your AWS resources, applications, and services that run on AWS and on-premises servers, helping you break down data silos so you can easily gain system-wide visibility and quickly resolve issues.
+Modern applications such as those running on microservices architectures generate large volumes of data in the form of metrics, logs, and events. Amazon CloudWatch enables you to collect, access, and correlate this data on a single platform from across all your AWS resources, applications, and services that run on AWS and on-premises servers, helping you break down data silos so you can easily gain system-wide visibility and quickly resolve issues.
 Easiest way to collect metrics in AWS and on-premises
 Monitoring your AWS resources and applications is easy with CloudWatch. It natively integrates with more than 70 AWS services such as Amazon EC2, Amazon DynamoDB, Amazon S3, Amazon ECS, Amazon EKS, and AWS Lambda, and automatically publishes detailed 1-minute metrics and custom metrics with up to 1-second granularity so you can dive deep into your logs for additional context. You can also use CloudWatch in hybrid cloud architectures by using the CloudWatch Agent or API to monitor your on-premises resources.
 Improve operational performance and resource optimization
@@ -39,17 +39,17 @@ SendGrid uses Amazon CloudWatch natively without needing a self-managed stack or
 CloudPassage uses Amazon CloudWatch for its microservices-based architecture to reduce mean time to repair.
 ConnectWise uses Amazon CloudWatch to monitor containers, latency, web server requests, and incoming load-balancer requests.
 Latest blog posts
-More…
-There are no Amazon CloudWatch blogs available at this time, please visit the AWS Blog page.
+More...
+There are no Amazon CloudWatch blogs available at this time, please visit the AWS Blog page.
 New - Amazon CloudWatch Logs Insights - Fast, Interactive Log Analytics
 by Jeff Bar
 Nov 27, 2018
-Read more »
+Read more
 How to better monitor your custom application metrics using Amazon CloudWatch Agent
 by Helen Lin
 Oct 15, 2018
 Building an Amazon CloudWatch dashboard outside of the AWS Management Console by Stephen McCurry Oct 2, 2018
-Building serverless pipelines with Amazon CloudWatch Events by Forrest Brazeal May 02, 2019
+Building serverless pipelines with Amazon CloudWatch Events by Forrest Brazeal May 02, 2019
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

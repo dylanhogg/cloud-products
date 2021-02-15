@@ -2,7 +2,7 @@ Amazon Kinesis
 Easily collect, process, and analyze video and data streams in real time
 Get started with Amazon Kinesis
 Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis offers key capabilities to cost-effectively process streaming data at any scale, along with the flexibility to choose the tools that best suit the requirements of your application. With Amazon Kinesis, you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications. Amazon Kinesis enables you to process and analyze data as it arrives and respond instantly instead of having to wait until all your data is collected before the processing can begin.
-Request support for your proof-of-concept or evaluation »
+Request support for your proof-of-concept or evaluation
 Benefits
 Real-time
 Amazon Kinesis enables you to ingest, buffer, and process streaming data in real-time, so you can derive insights in seconds or minutes instead of hours or days.
@@ -14,7 +14,7 @@ Amazon Kinesis capabilities
 Kinesis Video Streams
 Capture, process, and store video streams
 Amazon Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing.
-Learn more »
+Learn more
 Kinesis Data Streams
 Capture, process, and store data streams
 Amazon Kinesis Data Streams is a scalable and durable real-time data streaming service that can continuously capture gigabytes of data per second from hundreds of thousands of sources.
@@ -33,24 +33,24 @@ Use cases
 Build video analytics applications
 You can use Amazon Kinesis to securely stream video from camera-equipped devices in homes, offices, factories, and public places to AWS. You can then use these video streams for video playback, security monitoring, face detection, machine learning, and other analytics.
 Example: Amber alert system
-Veritone Inc. (NASDAQ: VERI), a leading artificial intelligence (AI) and cognitive solutions provider, combines a powerful suite of applications with over 120 best-in-class cognitive engines including facial and object recognition, transcription, geolocation, sentiment detection, and translation. With Amazon Kinesis Video Streams, customers can easily stream their content to AWS, where Veritone processes and enriches their content with AI, in near real-time and at scale. Within seconds of capture, Kinesis Video Streams and Veritone make every frame of video or second of audio searchable for objects, faces, brands, keywords and more.
+Veritone Inc. (NASDAQ: VERI), a leading artificial intelligence (AI) and cognitive solutions provider, combines a powerful suite of applications with over 120 best-in-class cognitive engines including facial and object recognition, transcription, geolocation, sentiment detection, and translation. With Amazon Kinesis Video Streams, customers can easily stream their content to AWS, where Veritone processes and enriches their content with AI, in near real-time and at scale. Within seconds of capture, Kinesis Video Streams and Veritone make every frame of video or second of audio searchable for objects, faces, brands, keywords and more.
 Evolve from batch to real-time analytics
 With Amazon Kinesis, you can perform real-time analytics on data that has been traditionally analyzed using batch processing. Common streaming use cases include sharing data between different applications, streaming extract-transform-load, and real-time analytics. For example, you can use Kinesis Data Firehose to continuously load streaming data into your S3 data lake or analytics services.
-Try a hands-on tutorial »
+Try a hands-on tutorial
 Example: Clickstream analytics
 Zillow uses Kinesis Data Streams to collect public record data and MLS listings, and then update home value estimates in near real-time so home buyers and sellers can get the most up to date home value estimates. Zillow also sends the same data to its Amazon S3 data lake using Kinesis Data Firehose, so that all the applications can work with the most recent information.
-Read the case study »
+Read the case study
 Build real-time applications
 You can use Amazon Kinesis for real-time applications such as application monitoring, fraud detection, and live leader-boards. You can ingest streaming data using Kinesis Data Streams, process it using Kinesis Data Analytics, and emit the results to any data store or application using Kinesis Data Streams with millisecond end-to-end latency. This can help you learn about what your customers, applications, and products are doing right now and react promptly.
-Read the whitepaper »
+Read the whitepaper
 Example: Analysis of streaming social media data
 Netflix uses Amazon Kinesis to monitor the communications between all of its applications so it can detect and fix issues quickly, ensuring high service uptime and availability to its customers.
 Analyze IoT device data
 You can use Amazon Kinesis to process streaming data from IoT devices such as consumer appliances, embedded sensors, and TV set-top boxes. You can then use the data to send real-time alerts or take other actions programmatically when a sensor exceeds certain operating thresholds. Use our sample IoT analytics code to build your application. No need to start from scratch.
-Download sample code »
+Download sample code
 Example: Sensors in tractor detect need for a spare part and automatically place order
 Sonos uses Amazon Kinesis to monitor 1 billion events per week from wireless hi-fi audio devices, and delivers better listening experience to its customers.
-Watch re:Invent session »
+Watch re:Invent session
 Blog posts & articles
 We have a rich set of blog articles that provide use case and best practices guidance to help you get the most out of Amazon Kinesis. Access our full list of blog articles through the resources below.
 New - Amazon Kinesis Data Analytics for Java (Apache Flink)
@@ -66,7 +66,6 @@ by Jeff Barr
 Read Amazon Kinesis articles on the AWS News Blog.
 Learn about best practices, feature capabilities, and customer use cases on the AWS Big Data Blog.
 Read more blog articles about Amazon Kinesis on the AWS Databases Blog.
-Read the whitepaper
 Learn how to use Amazon Kinesis capabilities in this whitepaper.
 Read whitepaper
 Sign up for a free account

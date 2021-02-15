@@ -16,7 +16,7 @@ How it works
 Blog posts
 date
 1
-…
+...
 What's new posts
 AWS App Mesh partners
 Check out the product features

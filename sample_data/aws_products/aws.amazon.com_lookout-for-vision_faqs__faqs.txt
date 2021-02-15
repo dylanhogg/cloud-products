@@ -1,0 +1,54 @@
+General
+Q: What is Amazon Lookout for Vision?
+Amazon Lookout for Vision is a machine learning (ML) service that helps increase industrial production quality and reduce operational costs by identifying visual defects in objects. With Amazon Lookout for Vision you can identify visual defects at scale and decrease dependency on manual inspection.
+Q: What can I do with Amazon Lookout for Vision?
+With Amazon Lookout for Vision, you can spot product defects using computer vision to automate quality inspection process in your manufacturing lines.
+Q: How do I get started with Amazon Lookout for Vision?
+If you are not already signed up for Amazon Lookout for Vision, choose Try Amazon Lookout for Vision on the Amazon Lookout for Vision page and complete the sign-up process. You must have an Amazon Web Services account. If you don’t already have an AWS account, you’ll be prompted to create one during the sign-up process. After you’re signed up, try out Amazon Lookout for Vision with your own images using the Amazon Lookout for Vision console or download the Amazon Lookout for Vision SDKs (coming soon) to start creating your own applications. For more information, see the Getting Started Guide (coming soon).
+Q: What are the most common use cases for Amazon Lookout for Vision?
+The most common use cases include:
+•  Detect damages to parts: You can detect defects related to welds, dents, cracks, bubbles, surface color, and shape of objects. •  Identify missing components: You can identify missing components or parts related to absence, presence, placement of objects within a certain tolerance. •  Uncover process issues: You can detect a defect that has a repeating pattern, which can indicate a process issue.
+Q: Do I need any machine learning expertise to use Amazon Lookout for Vision?
+No. With Amazon Lookout for Vision, you don’t have to build, maintain, or understand machine learning or deep learning pipelines.
+To achieve accurate results on a complex computer vision task such as anomaly detection, deep learning systems need to be tuned properly and trained with labeled ground truth data. Sourcing, cleaning, and labeling data accurately is a time-consuming and expensive task. Moreover, training a deep neural network is expensive and often requires custom hardware built using Graphics Processing Units (GPU).
+Amazon Lookout for Vision is fully managed and comes with pre-trained anomaly detection techniques for defect detection tasks so that you don’t have invest your time and resources on creating a deep learning pipeline. Amazon Lookout for Vision continues to improve the accuracy of its models by building on the latest research and sourcing new training data. This enables you to focus on maximizing your business value instead.
+Q: How many images are needed to train a defect detection model?
+The number of images required to train an anomaly detection model depends on the variability in the production line where you want the model to predict defects and the quality of the training data. For example, if the lighting, zoom level, focus on the region of interest, and alignment are constant you can get started with as few as 30 images, whereas a more complex use case with many variations (lighting, alignment, viewpoint), may need hundreds of training examples with high quality annotations. If you already have a high number of labeled images, we recommend training a model with as many images as you have available. For limits on maximum training dataset size, see the documentation.
+Although hundreds of images may be required to train a defect detection model with high accuracy, initially Lookout for Vision you can train a model with fewer images, review your test results so that you understand where it doesn’t work and add new training images, and then train the model again to iteratively improve your model.
+Q: My training has failed. Will I be charged?
+No. You will not be charged for the compute resources if your training fails.
+Q: How many inference compute resources should I provision for my defect detection model?
+The number of parallel inference compute resources needed depends on how many images you need to process at a given point in time. The throughput of a single resource depends on factors including the size of the images, the complexity of those images, and the complexity of the defect detection model. We recommend that you monitor the frequency at which you need to provision your model, and the number of images that need to be processed at a single time, in order to schedule provisioning of your model most efficiently. After you complete your production line integration, you should start provisioning your model at a scheduled time, process all your images, and then stop provisioning. If you don’t stop provisioning, you will be charged even if no images are processed.
+Q: What image formats does Amazon Lookout for Vision support?
+Amazon Lookout for Vision currently supports the JPEG and PNG image formats. You can submit images as a byte array.
+Q: What file sizes can I use with Amazon Lookout for Vision?
+Amazon Lookout for Vision supports image file sizes up to 5MB.
+Q: How can I get Amazon Lookout for Vision predictions reviewed by process engineers or operators?
+You can use Amazon Lookout for Vision with Amazon Augmented AI (Amazon A2I) so you can route low confidence predictions from Amazon Lookout for Vision to human reviewers (process engineers, quality managers, or operators). You can specify the conditions under which Amazon A2I routes predictions to reviewers, which can be either a confidence score threshold, or a random sampling percentage. You can adjust these thresholds to achieve the right balance between accuracy and cost-effectiveness. This can help you implement audits to monitor the prediction accuracy regularly. Amazon A2I also provides reviewers with a web interface consisting of all the instructions and tools they need to complete their review tasks. For more information about implementing human review with Amazon Lookout for Vision, see the Amazon A2I webpage.
+Pricing and Availability
+Q: How is Amazon Lookout for Vision priced?
+For current pricing information, see the Amazon Lookout for Vision Pricing Page.
+Q: Does Amazon Lookout for Vision participate in the AWS Free Tier?
+Yes. As part of the AWS Free Tier, you can get started with Amazon Lookout for Vision for free. The Free Tier lasts 3 months and includes 10 free training hours per month, up to 4 free inference hours per month. For more details, see the pricing page.
+Q: Which APIs does Amazon Lookout for Vision charge for?
+Amazon Lookout for Vision charges for the following APIs: CreateModel API for training operation, and the total elapsed minutes between the StartModel API and the StopModel API usage. Amazon Lookout for Vision charges are based on the duration of training and inference minutes.
+Q: In which AWS regions is Amazon Lookout for Vision available?
+The AWS Regions Table lists all the AWS Regions where Amazon Lookout for Vision is currently available.
+Access Control
+Q: How do I control use access for Amazon Lookout for Vision?
+Amazon Lookout for Vision is integrated with AWS Identity and Access Management (IAM). IAM policies can be used to ensure that only authorized users have access to Amazon Lookout for Vision APIs. For more details, please see the Amazon Lookout for Vision Authentication and Access Control page.
+Data Privacy
+Q: Are the image inputs process by Amazon Lookout for Vision stored, and how are they used by AWS?
+Amazon Lookout for Vision may store and use image inputs processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Lookout for Vision and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is necessary for continuous improvement of your Amazon Lookout for Vision customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. For more information, see https://aws.amazon.com/compliance/data-privacy-faq/. You may opt out of having your image inputs used to improve or develop the quality of Amazon Lookout for Vision and other Amazon machine-learning/artificial-intelligence technologies using an AWS Organizations opt-out policy. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Is the content processed by Amazon Lookout for Vision moved outside the AWS region where I am using Amazon Lookout for Vision?
+Any content processed by Amazon Lookout for Vision is encrypted and stored at rest in the AWS region where you are using Amazon Lookout for Vision Some portion of content processed by Amazon Lookout for Vision may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Lookout for Vision customer experience and other Amazon machine-learning/artificial-intelligence technologies. If you opt out of having your content used to develop the quality of Amazon Lookout for Vision and other Amazon machine-learning/artificial-intelligence technologies by contacting AWS Support, your content will not be stored in another AWS region. You can request deletion of content associated with your account by contacting AWS Support. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Check out the Amazon Lookout for Vision resources
+Visit the Amazon Lookout for Vision resources page to learn more about available resources.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Lookout for Vision in the AWS Management Console.
+Sign in
+Page Content

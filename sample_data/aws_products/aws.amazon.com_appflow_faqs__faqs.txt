@@ -1,0 +1,67 @@
+General
+Q: What is Amazon AppFlow?
+Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Marketo, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks. With AppFlow, you can run data flows at nearly any scale at the frequency you choose - on a schedule, in response to a business event, or on demand. You can configure powerful data transformation capabilities like filtering and validation to generate rich, ready-to-use data as part of the flow itself, without additional steps. AppFlow automatically encrypts data in motion, and allows users to restrict data from flowing over the public Internet for SaaS applications that are integrated with AWS PrivateLink, reducing exposure to security threats.
+Q: What are the benefits of AppFlow?
+AppFlow relieves you from investing significant time and highly-skilled developer staff to build and maintain custom API connectors for AWS services to exchange data with SaaS applications. SaaS application administrators and business analysts can quickly implement most of the integrations they need without waiting months for IT to finish integration projects. Specifically, the benefits include:
+Speed and agility: Amazon AppFlow enables you to integrate applications in a few minutes – no more waiting days or weeks to code custom connectors. Features like data pagination, error logging, and network connection retries are included by default so there’s no coding or management. With Amazon Appflow, data flow quality is built in, and you can enrich the flow of data through masking, mapping, merging, filtering, and validation as part of the flow itself.
+Privacy and security: AppFlow encrypts data at rest and in motion. You can encrypt data with AWS managed keys or bring your own custom keys. It also allows users to restrict data from flowing over the public Internet using Amazon VPC endpoints enabled by AWS PrivateLink. This minimizes the threat from Internet based attacks and the risk of sensitive data leakage.
+Scalability: AppFlow easily scales up without the need to plan or provision resources, so you can move large volumes of data without breaking it down into multiple batches. Using Amazon AppFlow, you can easily transfer millions of Salesforce records or Zendesk tickets - all while running a single flow.
+Reliability: AppFlow uses a highly available architecture with redundant, isolated resources to prevent any single points of failure while running within the resilient AWS infrastructure.
+Q: How do I get started with AppFlow?
+Go to the AWS Management Console and select AppFlow from the Services menu. This will launch the AppFlow home page. An authorized IAM user can create and configure a Flow using the following steps:
+Connect your data source and destination - Name your flow and choose from the list of integrated application sources and destinations to get started.
+Choose your data flow trigger - On demand flows run once immediately, scheduled flows run at a specified interval, and event-based flows run in response to business events like the creation of a sales opportunity or a status change in a support ticket.
+Map source fields to destination - Configure field mapping within AppFlow, or for data sets with a large number of fields, upload a csv file with bulk field mappings. Optionally, add data field transformations, like masking sensitive financial information or combining first and last names.
+Add data filters and validations - Add optional data filters like only including new or selected data fields in your flow, and validations, like ensuring numerical fields contain numbers.
+Finish - Click Create Flow and your data will begin to flow based on the triggers you set. You can review and troubleshoot data flows any time by looking back at your dashboard.
+AppFlow transfers data between the data source and the data target, runs the selected transformations, and monitors the processing. AppFlow integrates with underlying AWS services for automation, security, and monitoring, including AWS PrivateLink, AWS KMS, and Amazon CloudTrail.
+Q: Which AWS services are supported by Amazon AppFlow?
+Supported services at launch include Amazon S3 and Amazon RedShift and we’re continuing to add more all the time.
+Q: What are some examples of Flows that I can configure using Amazon AppFlow?
+AppFlow gives you the flexibility to configure their own Flows. Some examples of flows include:
+Create a copy of a Salesforce object (i.e. opportunity, case, campaign) in Amazon S3.
+Send case tickets from Zendesk into an Amazon Redshift table
+Push records from a CSV file in Amazon S3 into a Salesforce account, contact, or lead object.
+Transfer results such as lead scores and account churn risk scores from Amazon S3 to Salesforce
+Q: What are the trigger mechanisms available for flows?
+You can run flows on demand, based on business events, or on a schedule:
+On Demand: Run data flows on demand, as soon as you click “Run Flow” to do bulk transfers or tests,
+Event-based: Run data flows in response to business events like the creation of a sales opportunity, the status change of a support ticket, or the completion of a registration form.
+Scheduled: Run data flows at a routine schedule at the time interval you choose to keep data in sync, or run flows routinely.
+Q: Does AppFlow have a Service Level Agreement?
+A: Yes. AWS will use commercially reasonable efforts to make AppFlow available with a Monthly Uptime Percentage for each AWS region, during any monthly billing cycle, of at least 99.9%. For details, please review the
+AppFlow Service Level Agreement.
+SaaS Integrations
+Q: Public APIs are available for my SaaS application today; what additional value does AppFlow bring?
+While developers can use public APIs from SaaS applications to pull or push data, AppFlow helps customers to save time by allowing anyone who prefers not to write code and learn the API documentation of all the different SaaS applications to implement a range of common integration tasks. AppFlow is a fully managed API integration service that replaces custom connectors. It provisions compute, storage, and networking resources to orchestrate and execute the flows; manages API authorization with the SaaS application and manages the life-cycle of access tokens and API keys; and processes data as part of the flow.
+Q: Which SaaS integrations are supported as sources and destinations?
+AppFlow supports sources such as Amazon S3, Salesforce, Marketo, Zendesk, and Slack, as well as many others. It supports Amazon S3, Amazon RedShift, Salesforce, and Snowflake as destinations for flows. To learn more, visit the AppFlow integrations page.
+Q: I’d like AppFlow to support another SaaS integration. How can I make that request?
+Please contact us to let us know the name of the SaaS vendor as well as your use case.
+Q: I’m a SaaS vendor and I’d like to integrate with AppFlow. What do I do next?
+We’re always interested in adding support for new SaaS vendors. Please contact us to let us know the use case your customers are asking for and we’ll start the process.
+Privacy and Security
+Q: Is AWS PrivateLink required for AppFlow to connect with a SaaS application?
+No. AppFlow will integrate with public API endpoints of SaaS applications that are not AWS PrivateLink enabled.
+Q: How do I set up encryption keys?
+With AppFlow, your data is always encrypted at rest and in transit. By default, AppFlow will use your AWS managed customer master key (CMK) for encryption. You can also choose your own managed keys - customer managed CMKs for encryption. Create your custom keys in AWS Key Management Service (KMS). Once set up, your custom key is automatically available for use in flow creation.
+AWS Services
+Q: When should I use AppFlow or AWS Glue?
+AWS Glue provides a managed ETL service that makes it easy for data engineers to prepare and load data stored on AWS for analytics. It creates a data catalog from JDBC-compliant data sources (i.e. databases) that makes metadata available for ETL as well as querying via Amazon Athena, Amazon EMR, and Amazon Redshift Spectrum. AppFlow connects to API-based data sources and enables users in lines of business to build data integration without writing code.
+Q: When should I use AppFlow or AWS DataSync?
+AWS DataSync is intended to move large amounts of data between on-premises data sources and AWS Cloud for bulk data migration, processing, and backup or disaster recovery. AWS DataSync is the ideal choice when one-time or periodic transfers of tens or hundreds of terabytes are routine. At this scale, the need is to make effective use of network bandwidth and achieving high throughput. On the other hand, AppFlow is used to exchange data between SaaS applications and AWS services. AppFlow is designed for operational data flows which may be triggered by a person, an event, or a schedule.
+Q: When should I use AppFlow or Amazon EventBridge?
+Amazon EventBridge enables developers to build event driven applications that interact with SaaS applications and AWS services. SaaS applications that have integrated with EventBridge emit events to the customer’s event bus, which can then be routed to targets such as Amazon EC2 instances or Lambda functions for processing. AppFlow supports bi-directional transfer of data between SaaS applications and AWS services that may be initiated by humans using a UI, a schedule, or events - all with a point and click interface.
+Q: Can AppFlow be deployed through CloudFormation templates?
+No, but support is planned.
+Q: Does AppFlow support CloudTrail?
+Yes. To receive a history of AppFlow API calls made on your account, you simply turn on CloudTrail in the AWS Management Console.
+Learn more about pricing
+Visit the Amazon Appflow pricing page.
+Learn more
+Learn more in documentation
+Get a deeper understanding of Amazon AppFlow in the Developer Guide.
+Start building in the console
+Get started building with Amazon AppFlow in the AWS Management Console.
+Sign in
+Page Content

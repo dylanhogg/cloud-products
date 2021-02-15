@@ -9,7 +9,7 @@ Amazon Fraud Detector is a fully managed Machine Learning (ML) fraud detection s
 Fraud detection in minutes
 Amazon Fraud Detector automates the complicated steps of creating machine learning models for fraud detection. Everything from data validation to model deployment can be done with no machine learning or coding experience required. The result is machine learning based fraud detection models that can be deployed in minutes instead of months.
 Customized for your unique business needs
-Amazon Fraud Detector builds the only machine learning models that combine fraud patterns learned from your business' historical data with 20+ years of insights from fraud detection at Amazon. The result is a unique, customized fraud detection model that is optimized for each specific business scenario. This approach delivers customers highly accurate fraud detection with a very low false positive rate.
+Amazon Fraud Detector builds the only machine learning models that combine fraud patterns learned from your business' historical data with 20+ years of insights from fraud detection at Amazon. The result is a unique, customized fraud detection model that is optimized for each specific business scenario. This approach delivers customers highly accurate fraud detection with a very low false positive rate.
 Detect common types of online fraud
 New account
 Accurately distinguish between legitimate and high-risk customer account registrations so you can selectively introduce additional steps or checks based on risk. For example, you can setup your customer account registration workflow to require additional email and phone verification steps only for account registrations that exhibit high risk characteristics.
@@ -32,7 +32,7 @@ Duda is a professional web design platform for all companies that offer web desi
 Amir Glatt, Co-Founder and CTO at Duda
 GoDaddy is the world’s largest services platform for entrepreneurs around the globe and is on a mission to empower their worldwide community of 19+ million customers and entrepreneurs everywhere by giving them all the help and tools they need to grow online.
 “GoDaddy is committed to preventing fraudulent accounts and we’re continually bolstering our capabilities to automatically detect such accounts during sign-up. We recently began using Amazon Fraud Detector and we’re pleased that it offers low cost of implementation and a self-service approach to building a machine learning model that is customized to our business. The model can be easily deployed and used in our new account process without impacting the signup experience for legitimate customers. The model we built with Amazon Fraud Detector is able to detect likely fraudulent sign-ups immediately, so we’re very pleased with the results and look forward to accomplishing more.”
-ActiveCampaign is a marketing automation provider supporting over 100,000 SMBs around the globe. Our mission is to help growing businesses make meaningful connections and engage with their customers. That's why we built ActiveCampaign—so that growing businesses could have the tools they need to save time, connect with customers, and grow. Our specialties are email marketing, marketing automation, and sales automation.
+ActiveCampaign is a marketing automation provider supporting over 100,000 SMBs around the globe. Our mission is to help growing businesses make meaningful connections and engage with their customers. That's why we built ActiveCampaign—so that growing businesses could have the tools they need to save time, connect with customers, and grow. Our specialties are email marketing, marketing automation, and sales automation.
 "In Q1/Q2 2020 we experienced a spike in accounts being used for phishing attacks. As a result, we needed to supplement our existing homegrown solution with stronger transaction data and signals to identify bad actors sooner. A scalable solution based on predictive machine-learning was important to us as a growing business ourselves. Amazon Fraud Detector made it easy to build a model using our own data that accurately identifies account signups that result in phishing attacks. More importantly, we were able to get these results with a very low false positive rate, which means no additional work for our operations staff. Amazon Fraud Detector has a competitive pricing model and we can easily integrate the model into our existing workflow."
 Alex Burch, Senior Email Operations Engineer, ActiveCampaign
 Truevo makes simple, intuitive and user-friendly payment products that allow their clients to receive payments effortlessly, so they can focus on growing their businesses.
@@ -47,17 +47,16 @@ Intelligent Call Routing Using Amazon Fraud Detector and Amazon Connect
 by Deenadayaalan Thirugnanasambandam and Madhan Kandaswamy
 Tech Talk
 Bring the Power of Machine Learning to Your Fight Against Online Fraud
-Watch now »
+Watch now
 Fraud: How to detect and prevent it using ML
 Documentation
 What is Amazon Fraud Detector
-Learn more »
+Learn more
 Code Samples
 Amazon Fraud Detector Sample Notebooks
 by Mike Ames
 Check out the product features
 Learn more about Amazon Fraud Detector features.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

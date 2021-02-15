@@ -36,7 +36,7 @@ Doosan Infracore is a leading global manufacturer of heavy duty equipment and en
 Cho Jaeyeon, Vice President of Doosan Infracore Strategy
 Choose the cloud provider with proven experience in industrial operations
 From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
-Learn more about AWS for Industrial »
+Learn more about AWS for Industrial
 Check out the product features
 Visit the Amazon Lookout for Equipment features page.
 Learn more

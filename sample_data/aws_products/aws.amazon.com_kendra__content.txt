@@ -9,7 +9,7 @@ Use natural language questions in addition to just simple keywords to get the an
 Benefits
 Find relevant answers, quickly
 Say goodbye to sifting through long lists of links and scanning documents hoping one has the information you need. Unlike conventional search technology, natural language search capabilities return the answers you’re looking for quickly and accurately, no matter where the information lives within your organization.
-Learn more »
+Learn more
 Centralize access to knowledge
 Using Kendra you can easily aggregate content from content repositories like SharePoint, Amazon S3, ServiceNow, Salesforce, and Amazon RDS into a centralized index which enables you to quickly search all of your enterprise data and find the most accurate answer.
 Fine-tune search results
@@ -21,22 +21,21 @@ Improve customer interactions
 Whether it’s through QnA chatbots, agent-assist, or customer web serach, Amazon Kendra better understands what your customers are asking to provide more relevant answers and better experiences.
 Accelerate research and development
 Scientists and developers leading new research and innovation need access to information from prior work that’s buried within their corporate data stores. With faster, more accurate search, these groups waste less time searching and more time innovating.
-Learn more »
 Minimize regulatory and compliance risks
 Use machine learning to quickly identify and interpret regulatory policies published across hundreds of diverse regulatory websites so you can improve policy enforcement and compliance processes.
 Equip employees with the data they need
 By unifying and indexing content from diverse, disparate, and multi-structure information silos across the organization, enterprises build and maintain an active knowledge catalog. With this centralized view, users can quickly see what information is available and become more informed.
 Customers
 Accelerating material science research
-“When our material scientists lead new research, they need access to information from prior relevant research—information that’s buried in the many patents we hold in our huge knowledge base… Kendra lets our scientists find the information they need by handling natural language queries quickly and accurately.”
-View customer story »
+“When our material scientists lead new research, they need access to information from prior relevant research—information that’s buried in the many patents we hold in our huge knowledge base... Kendra lets our scientists find the information they need by handling natural language queries quickly and accurately.”
+View customer story
 Enhanced access to regulatory and compliance information
 "Our goal is to help our customers get to the answers they need faster - even when the right answers may be buried within documents over 100 pages long - so they can understand regulatory information faster and make decisions more quickly and confidently"
 Faster access to information in our knowledge base
 Kendra finds the answer to questions like ‘What is the length of the pipeline at Pluto?’ quickly and accurately. This step-change in cognitive capability will enable even better, faster decision making to improve our operations and the working lives of our people.”
 Get started with Kendra today
 Reimagine search for yourself. With Amazon Kendra, you can now connect your own data sources and start testing the search experience on your own content in minutes.
-Start your Amazon Kendra journey in the AWS Console »
+Start your Amazon Kendra journey in the AWS Console
 Step 1: Create an index
 Create an index where you'll add your data sources.
 Step 2: Add data sources

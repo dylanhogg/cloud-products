@@ -1,0 +1,58 @@
+General
+What is AWS Firewall Manager?
+AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organization. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure.
+Show less
+What are the key benefits of AWS Firewall Manager?
+AWS Firewall Manager is integrated with AWS Organizations so you can enable AWS WAF rules, AWS Shield Advanced protections, VPC security groups, and AWS Network Firewalls across multiple AWS accounts and resources from a single place. Firewall Manager monitors for new resources or accounts created to ensure they comply with a mandatory set of security policies from day one. You can group rules, build policies, and centrally apply those policies across your entire infrastructure. For example, you can delegate the creation of application-specific rules within an account while retaining the ability to enforce global security policies across accounts. Your security team can be notified of threats to the organization so they can respond and rapidly mitigate an attack.
+Firewall Manager also integrates with Managed Rules for AWS WAF, which gives you an easy way to deploy pre-configured WAF rules in front of your applications.
+Security administrators can leverage Firewall Manager to apply a baseline set of security group rules for EC2 instances, Application Load Balancers and Elastic Network Interfaces (ENIs) in your Amazon VPCs. At the same time, you can also audit any existing security groups in your VPCs for over permissive rules and remediate them from a single place.
+You can also leverage Firewall Manager to centrally deploy rules for AWS Network Firewalls across your VPCs in your organization, to control traffic leaving and entering your network.
+What does AWS Firewall Manager configure?
+Using AWS Firewall Manager, you can centrally configure AWS WAF rules, AWS Shield Advanced protections, Amazon Virtual Private Cloud (VPC) security groups, and AWS Network Firewalls across accounts and resources in your organization.
+Does AWS Firewall Manager configure VPC security groups or Network ACLs?
+Yes, AWS Firewall Manager does support configuration of VPC security groups. However, it does not support Network ACLs today.
+Which AWS resources can AWS Firewall Manager configure rules on?
+Using AWS Firewall Manager, you can centrally easily roll out AWS WAF rules across Application Load Balancer, API Gateways and Amazon CloudFront distributions. You can create AWS Shield Advanced protections for your Application Load Balancers, ELB Classic Load Balancers, Elastic IP Addresses and CloudFront distributions. You can also configure new Amazon Virtual Private Cloud (VPC) security groups and audit any existing security groups for your Amazon EC2, Application Load Balancers (ALBs) and ENI resource types. Finally, with AWS Firewall Manager, you can also centrally deploy AWS Network Firewalls across accounts and VPCs in your organization.
+How much does AWS Firewall Manager cost?
+AWS Firewall Manager pricing is available here.
+In which regions is AWS Firewall Manager available?
+Please visit the AWS Region Table to see the current region availability for AWS Firewall Manager.
+Enabling AWS Firewall Manager
+What are the prerequisites for AWS Firewall Manager?
+There are three mandatory pre-requisites and one optional pre-requisite to use AWS Firewall Manager.
+AWS Organizations - Your accounts must be part of AWS Organizations and have enabled all features. See AWS Organizations documentation for more details.
+Set the AWS Firewall Manager Administrator Account - Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. See the documentation guide for more information.
+Enable AWS Config on accounts - Enable AWS Config for each member account in your organization. See AWS Config documentation.
+Enable AWS Resource Access Manager (Optional) - To enable Firewall Manager to centrally configure AWS Network Firewall across accounts, you must first enable sharing of resources using AWS Resource Access Manager.
+How do I use AWS Firewall Manager?
+First, complete the prerequisites mentioned above.
+Second, create a policy type for AWS WAF, AWS Shield Advanced, VPC security group, or AWS Network Firewall.
+Third, depending on the policy, specify the set of rules or protections. For example, for a policy for AWS WAF specify the rule groups (custom or managed) that you want to deploy across accounts. Similarly, for a VPC security group policy, reference the security group you want replicated in each resource within accounts. For AWS Network Firewall, specify the rule groups (stateful and stateless) that you want to deploy across VPCs in your accounts.
+Fourth, specify the scope of the policy by choosing the accounts, resource type and, optionally, resource tags, where you want the policy to be deployed.
+Finally, you can review and create the policy. Firewall Manager will automatically apply the rules and protections to all resources across accounts. Once complete, Firewall Manager also shows a compliance dashboard indicating any accounts/resources that are non-compliant and those that are compliant.
+Can I create a Firewall Manager policy but not remediate automatically?
+Yes, you can configure a Firewall Manager policy in two modes –
+Automatic remediation, which allows you to automatically monitor for drift in policy and apply rules on non-compliant resources
+Manual remediation, which creates a new policy and the associated rules/protections in each account but does not enforce the rules on the resources in the account. After the policy is created with manual remediation, you can choose to take manual action for each local account, or at any point you can edit the policy to automatically remediate.
+How many accounts can AWS Firewall Manager manage?
+Each Firewall Manager policy can be scoped to have at most 2,500 accounts, which is the default limit for number of accounts in AWS Organizations.
+How many resources can AWS Firewall Manager manage?
+There is not a limit on the number of resources managed by Firewall Manager at this time.
+Can I create protection policies across regions?
+No, AWS Firewall Manager protection policies are region specific. Each Firewall Manager policy can only include resources available in that specified AWS Region. You can create a new policy for each region where you operate.
+Can I exclude accounts or resources from the scope of the policy?
+Yes. You can exclude accounts. You can also use tags to specify the resources that should be excluded from the policy scope.
+Dashboard and Visibility
+How can I view the compliance status to a particular policy?
+With Firewall Manager you can quickly view the compliance status for each policy by looking at how many accounts are included in the scope of the policy and how many out of those are compliant. Further, for each policy configured on Firewall Manager, you get a compliance dashboard. The central compliance dashboard allows you to view which accounts are non-compliant to a given policy, which specific resources are non-compliant, and also provides information about the reason why a particular resource is not compliant. You can also view non-compliant events for each account on AWS Security Hub.
+Does AWS Firewall Manager provide notifications when a resource is non-compliant?
+Yes, you can create new SNS notification channels to receive real-time notifications when new non-compliant resources are discovered. Similarly, each account scoped as part of a Firewall Manager policy is notified for non-compliant events on AWS Security Hub.
+How can I view all threats across my organization?
+For each Firewall Manager policy created, you can aggregate CloudWatch metrics for each Rule in the Rule Group, indicating how many requests were allowed or blocked across the entire organization. This gives you a central place to set up alerts for threats across your organization.
+Learn more about AWS Firewall Manager pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS Firewall Manager
+Have more questions?
+Contact us
+Page Content

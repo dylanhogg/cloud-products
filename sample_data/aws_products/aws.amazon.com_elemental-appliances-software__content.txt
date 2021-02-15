@@ -12,7 +12,7 @@ Watch Now: AWS Elemental Appliances & Software (1min)
 AWS Elemental
 Live
 Convert inputs into live outputs for broadcast and multiscreen video delivery
-Learn more »
+Learn more
 Server
 Prepare file-based content for on-demand broadcast and multiscreen delivery
 Conductor
@@ -27,7 +27,7 @@ Stay ahead of fast-moving video processing and delivery technologies, industry s
 Designed to work with AWS Media Services
 AWS Elemental Appliances and Software are designed to work with AWS Media Services, which transport, prepare, process, and deliver broadcast and over-the-top video from the AWS Cloud. They also work with a range of other AWS services to enhance media workflows, including services for media storage, content distribution, and machine learning. For cloud-based media infrastructures, AWS Elemental Appliances and Software let you position on-premises workloads where you need them, when you need them, so you can effectively build workflows on AWS to meet your technology requirements.
 High-quality viewing experiences
-Take advantage of new and proven technologies to deliver broadcast-grade experiences for live or on-demand video. Support for an extensive range of input and output formats, such as MPEG-2, AVC, and HEVC, and adaptive bitrate packaging formats including HLS, Microsoft Smooth Streaming , and DASH, gives you the tools to efficiently deliver high-quality video across a range of devices, at resolutions from standard definition to 4K ultra-high definition. Built-in features such as Quality-Defined Variable Bitrate control (QVBR) let you maximize video quality while saving storage and bandwidth cost.
+Take advantage of new and proven technologies to deliver broadcast-grade experiences for live or on-demand video. Support for an extensive range of input and output formats, such as MPEG-2, AVC, and HEVC, and adaptive bitrate packaging formats including HLS, Microsoft Smooth Streaming , and DASH, gives you the tools to efficiently deliver high-quality video across a range of devices, at resolutions from standard definition to 4K ultra-high definition. Built-in features such as Quality-Defined Variable Bitrate control (QVBR) let you maximize video quality while saving storage and bandwidth cost.
 Dependable service delivery
 Maintain resilient video infrastructure for your mission-critical streams with built-in high-availability features. You control the level of redundancy you need to achieve continuous signal flow and uninterrupted service delivery. Built-in alerts and performance metrics enable comprehensive, easy-to-use status monitoring, and comprehensive reporting supports best practices for consistent high performance and reliability.
 Maximize your resources

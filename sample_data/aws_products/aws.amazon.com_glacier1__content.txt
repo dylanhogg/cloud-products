@@ -5,22 +5,22 @@ Amazon S3 Glacier and S3 Glacier Deep Archive are a secure, durable, and extreme
 Introduction to Amazon S3 Glacier - 2:29
 Benefits
 RETRIEVALS AS QUICK AS 1-5 MINUTES
-The Amazon S3 Glacier storage class provides three retrieval options to fit your use case. Expedited retrievals typically return data in 1-5 minutes, and are great for Active Archive use cases. Standard retrievals typically complete between 3-5 hours, and work well for less time-sensitive needs like backup data, media editing, or long-term analytics. Bulk retrievals are the lowest-cost retrieval option, returning large amounts of data within 5-12 hours. The Amazon S3 Glacier Deep Archive storage class provides two retrieval options ranging from 12-48 hours.
-Learn More About the Amazon S3 Glacier Retrieval Options »
-Learn More about Amazon S3 Glacier Deep Archive Retrieval Options »
+The Amazon S3 Glacier storage class provides three retrieval options to fit your use case. Expedited retrievals typically return data in 1-5 minutes, and are great for Active Archive use cases. Standard retrievals typically complete between 3-5 hours, and work well for less time-sensitive needs like backup data, media editing, or long-term analytics. Bulk retrievals are the lowest-cost retrieval option, returning large amounts of data within 5-12 hours. The Amazon S3 Glacier Deep Archive storage class provides two retrieval options ranging from 12-48 hours.
+Learn More About the Amazon S3 Glacier Retrieval Options
+Learn More about Amazon S3 Glacier Deep Archive Retrieval Options
 UNMATCHED DURABILITY & SCALABILITY
 The Amazon S3 Glacier and S3 Glacier Deep Archive storage classes run on the world’s largest global cloud infrastructure, and were designed for 99.999999999% of durability. Data is automatically distributed across a minimum of three physical Availability Zones that are geographically separated within an AWS Region.
-Learn More About the AWS Global Cloud Infrastructure »
+Learn More About the AWS Global Cloud Infrastructure
 MOST COMPREHENSIVE SECURITY & COMPLIANCE CAPABILITIES
 The Amazon S3 Glacier and S3 Glacier Deep Archive storage classes offer sophisticated integration with AWS CloudTrail to log, monitor and retain storage API call activities for auditing, and supports three different forms of encryption. These storage classes also support security standards and compliance certifications including SEC Rule 17a-4, PCI-DSS, HIPAA/HITECH, FedRAMP, EU GDPR, and FISMA, and Amazon S3 Object Lock enables WORM storage capabilities, helping satisfy compliance requirements for virtually every regulatory agency around the globe.
-Learn More About Security »
-Learn More About Compliance »
+Learn More About Security
+Learn More About Compliance
 LOW COST
 Amazon S3 Glacier and S3 Glacier Deep Archive are designed to be the lowest cost Amazon S3 storage classes, allowing you to archive large amounts of data at a very low cost. This makes it feasible to retain all the data you want for use cases like data lakes, analytics, IoT, machine learning, compliance, and media asset archiving. You pay only for what you need, with no minimum commitments or up-front fees.
-Amazon S3 Pricing Details »
+Amazon S3 Pricing Details
 MOST SUPPORTED BY PARTNERS, VENDORS, & AWS SERVICES
 In addition to integration with most AWS services, Amazon S3 object storage services include tens of thousands of consulting, systems integrator and independent software vendor partners, with more joining every month. AWS Partner Network partners have adapted their services and software to work with Amazon S3 storage classes for solutions like Backup & Recovery, Archiving, and Disaster Recovery. No other cloud provider has more partners with solutions that are pre-integrated to work with their service.
-Learn More About AWS Storage Partners »
+Learn More About AWS Storage Partners
 Use cases
 MEDIA ASSET WORKFLOWS
 Media assets such as video and news footage require durable storage and can grow to many petabytes over time. The Amazon S3 Glacier and S3 Glacier Deep Archive storage classes allow you to archive older media content affordably then move it to Amazon S3 for distribution when needed.
@@ -42,7 +42,7 @@ King County saved $1M in the first year after replacing tapes with Amazon S3.
 Illumina uploads and stores massive genomics datasets in Amazon S3 cloud archive storage.
 Blog posts & articles
 WHAT'S NEW AWS Announces the General Availability of the Amazon S3 Glacier Deep Archive Storage Class in all Commercial AWS Regions and AWS GovCloud (US) 27 MAR 2019
-Learn more »
+Learn more
 AWS ARCHITECTURE BLOG S3 & S3 Glacier Launch Announcements for Archival Workloads by Matt Sidley | 26 NOV 2018
 Get started with the Amazon S3
 Sign up for an AWS account

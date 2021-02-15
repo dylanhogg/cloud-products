@@ -7,7 +7,7 @@ Creating a data lake with Lake Formation is as simple as defining data sources a
 AWS re:Invent 2018 - Announcing AWS Lake Formation (2:44)
 Coming soon: New capabilities in AWS Lake Formation
 Sign up to preview three new capabilities in AWS Lake Formation - Transactions, Row-level Security, and Acceleration.
-Request info »
+Request info
 Benefits
 Build data lakes quickly
 With Lake Formation, you can move, store, catalog, and clean your data faster. You simply point Lake Formation at your data sources, and Lake Formation crawls those sources and moves the data into your new Amazon S3 data lake. Lake Formation organizes data in S3 around frequently used query terms and into right-sized chunks to increase efficiency. Lake Formation also changes data into formats like Apache Parquet and ORC for faster analytics. In addition, Lake Formation has built-in machine learning to deduplicate and find matching records (two entries that refer to the same thing) to increase data quality.
@@ -59,7 +59,7 @@ Nic Sagez, CTO - Curvo
 What's New
 date
 1
-…
+...
 Learn more about AWS Lake Formation features
 Learn more about the features of AWS Lake Formation by visiting the features page.
 Learn more

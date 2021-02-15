@@ -31,7 +31,7 @@ Customers using AWS AppSync
 case study
 Live Location Tracking
 Read about how HyperTrack uses AWS for real-time data processing for live location tracking at scale.
-Learn more »
+Learn more
 In-Store Customer Service
 ALDO uses AWS AppSync. Learn more about how they improved the shopping experience of footwear customers.
 Patient Safety and Care

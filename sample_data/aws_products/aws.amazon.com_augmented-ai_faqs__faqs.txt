@@ -1,0 +1,53 @@
+General
+Q: What is Amazon Augmented AI (Amazon A2I)?
+A: Amazon Augmented AI (Amazon A2I) is a service that makes it easy to build the workflows required for human review of ML predictions. Amazon A2I brings human review to all developers, removing the undifferentiated heavy lifting associated with building human review systems or managing large numbers of human reviewers.
+Using Amazon A2I
+Q: Why should I use Amazon A2I?
+A: Many machine learning applications require humans to review low confidence predictions to ensure the results are correct. For example, extracting information from scanned mortgage application forms can require human review in some cases due to low-quality scans or poor handwriting. But building human review systems can be time consuming and expensive because it involves implementing complex processes or “workflows”, writing custom software to manage review tasks and results, and in many cases, managing large groups of reviewers.
+Amazon A2I makes it easy to build and manage human reviews for machine learning applications. Amazon A2I provides built-in human review workflows for common machine learning use cases, such as content moderation and text extraction from documents, which allows predictions from Amazon Rekognition and Amazon Textract to be reviewed easily. You can also create your own workflows for ML models built on Amazon SageMaker or any other tools. Using Amazon A2I, you can allow human reviewers to step in when a model is unable to make a high confidence prediction or to audit its predictions on an ongoing basis.
+Q: How do I get started with Amazon A2I?
+A: Amazon A2I provides a managed experience where you can set up an entire human review workflow in a few easy steps. To get started with Amazon A2I, sign in to your AWS Console, and navigate to the Amazon SageMaker console. From there, select Human review workflows under Augmented AI. First, as a part of the human review workflow, you provide a pointer to the S3 bucket where the review results should be stored. Next, you select the appropriate task type and define conditions when a human review should be triggered. Amazon A2I provides pre-built workflows where you only need to enter a few choices and provide instructions on how your objects should be reviewed by humans. Alternatively, you can create your own custom workflow and use your own custom review templates. Once created, the workflow can be used directly in your applications using a generated unique identifier for this workflow.
+Q: How can I decide what objects are sent for human review?
+A: With A2I, you can define what is an acceptable prediction confidence for your business problem. You can define business rules for the machine learning predictions, based on which a human review is triggered. For Amazon Rekognition image moderation tasks, you can use the confidence score that Amazon Rekognition provides for each label it outputs to trigger human review. For Amazon Textract tasks, you can trigger a human review when specific form keys are missing or when form key detection confidence is low. You can also trigger a human review if, after evaluating all form keys in the text, confidence is lower than your required threshold for any form key. For your own custom workflow, you can write the code for business conditions in AWS Lambda or directly in your client application.
+Q: How do I access a human workforce using Amazon A2I?
+A: With Amazon A2I, you can choose from three workforce options: (1) Amazon Mechanical Turk; (2) Third party data labeling service providers available through the AWS Marketplace; and (3) Your own employees. See the Amazon A2I developer guide for more information.
+Pricing and Availability
+Q: How much does A2I cost?
+A: Please see the Amazon A2I pricing page for the current pricing information.
+Q: In which AWS regions is Amazon A2I available?
+A: The AWS Region Table lists all the AWS regions where Amazon A2I is currently available.
+Using third party human review service providers
+Q: Can Amazon Augmented AI third-party service providers process customer confidential data?
+A: Yes, Amazon Augmented AI service providers can process customer confidential data. The Standard Service Agreement between AWS customers and the third-party service provider contains clauses to protect your confidential information. Please review those terms before sharing any confidential information with the service provider. The terms are located on the listing page for the service provider on AWS Marketplace.
+Q: I am working with a third-party service provider through AWS Marketplace. What changes are service providers implementing in light of COVID-19 that I need to be aware of?
+A: In light of the rapidly evolving impact of COVID-19, some service providers have implemented a remote work policy for the health and safety of their employees temporarily. During this time, security standards including SOC 2 compliance and additional security controls outlined in the below FAQ may not be applicable to the affected service providers. Impacted service providers have updated their AWS Marketplace listings to reflect this, and will not process customer data from remote work environments without explicit customer consent.
+Q: What security standards are Amazon Augmented AI third-party service providers required to meet?
+A: Human review service providers are required to go through SOC 2 compliance and certification on an annual basis. The SOC 2 report is a description of the service provider’s control environment based on the American Institute of Certified Public Accountants (AICPA) Trust Services Criteria - Security, Availability, Processing Integrity, Confidentiality, and Privacy.
+In addition to SOC 2, service providers are required to maintain these additional security controls to secure customer data in their environments.
+Technology Controls: Service providers are required to utilize the appropriate software to block any attempts to download or copy files/data from their system and prevent unauthorized access to their systems. Service providers are also required to prohibit their workforce from storing or copying customer task-related data outside of service provider secure environments.
+Network Security Controls: Service providers must prohibit remote access to customer's task-related data. Further, peer-to-peer file sharing software is blocked on the provider's network.
+Employee Controls: Service providers are required to ensure they have Non-Disclosure Agreements (NDAs) with their employees. Service providers are required to adopt stringent policies to prevent prevent employees from copying or moving customer task related data from providers secure environment including controls for paper, USBs, mobile phones, or other media.
+Physical Access Controls: Service providers are required to maintain physical access control measures to prevent unauthorized access to their production site. These may include bio-metric authentication, employee badge identification, visual verification of employees by security guards, etc.
+Q: How does AWS help ensure service providers meet these security standards?
+A: AWS requests that service providers furnish their SOC 2 certification reports prior to being listed in the marketplace and confirms:
+Authenticity (if service provider auditor is certified by the AICPA);
+Report period (SOC 2 certification validity date); and
+Production site verification (the physical site where the service provider workforce will work on Amazon Augmented AI tasks).
+Q: What is the frequency of review of service provider security standards?
+A: The security standards from every service provider are reviewed annually to ensure they meet the mandatory requirements.
+Q: Are there any exceptions to the AWS review?
+A: No. If the service provider fails to meet security standards, then their listing will be removed from the AWS Marketplace. De-listing will be completed within 24 hours and all affected customers will be notified by email.
+Q: If the service provider offers human review services through multiple production sites, do all sites need to go through the review process?
+A: Yes, all sites need to meet the required security standards.
+Q: What happens if there is unauthorized data access at the service provider production site?
+A: The service provider will inform AWS and affected customers within 24 hours of detecting any actual or suspected unauthorized access, collection, acquisition, use, transmission, disclosure, corruption, or loss of customer information. The service provider will remedy each security incident promptly and provide AWS and affected customers written details describing the internal investigation.
+Learn more about pricing
+Visit Amazon A2I pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon A2I in the AWS Management Console.
+Sign in
+Page Content

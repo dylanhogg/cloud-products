@@ -1,0 +1,80 @@
+AWS Data Pipeline FAQs
+General
+Functionality
+Getting Started
+Limits
+Billing
+Get Started with AWS for Free
+Create a Free Account
+Or Sign In to the Console
+AWS Free Tier includes 750hrs of Micro Cache Node with Amazon ElastiCache.
+View AWS Free Tier Details
+Q: What is AWS Data Pipeline?
+AWS Data Pipeline is a web service that makes it easy to schedule regular data movement and data processing activities in the AWS cloud. AWS Data Pipeline integrates with on-premise and cloud-based storage systems to allow developers to use their data when they need it, where they want it, and in the required format. AWS Data Pipeline allows you to quickly define a dependent chain of data sources, destinations, and predefined or custom data processing activities called a pipeline. Based on a schedule you define, your pipeline regularly performs processing activities such as distributed data copy, SQL transforms, MapReduce applications, or custom scripts against destinations such as Amazon S3, Amazon RDS, or Amazon DynamoDB. By executing the scheduling, retry, and failure logic for these workflows as a highly scalable and fully managed service, Data Pipeline ensures that your pipelines are robust and highly available.
+Q: What can I do with AWS Data Pipeline?
+Using AWS Data Pipeline, you can quickly and easily provision pipelines that remove the development and maintenance effort required to manage your daily data operations, letting you focus on generating insights from that data. Simply specify the data sources, schedule, and processing activities required for your data pipeline. AWS Data Pipeline handles running and monitoring your processing activities on a highly reliable, fault-tolerant infrastructure. Additionally, to further ease your development process, AWS Data Pipeline provides built-in activities for common actions such as copying data between Amazon Amazon S3 and Amazon RDS, or running a query against Amazon S3 log data.
+Q: How is AWS Data Pipeline different from Amazon Simple Workflow Service?
+While both services provide execution tracking, handling retries and exceptions, and running arbitrary actions, AWS Data Pipeline is specifically designed to facilitate the specific steps that are common across a majority of data-driven workflows. For example: executing activities after their input data meets specific readiness criteria, easily copying data between different data stores, and scheduling chained transforms. This highly specific focus means that Data Pipeline workflow definitions can be created rapidly, and with no code or programming knowledge.
+Q: What is a pipeline?
+A pipeline is the AWS Data Pipeline resource that contains the definition of the dependent chain of data sources, destinations, and predefined or custom data processing activities required to execute your business logic.
+Q: What is a data node?
+A data node is a representation of your business data. For example, a data node can reference a specific Amazon S3 path. AWS Data Pipeline supports an expression language that makes it easy to reference data which is generated on a regular basis. For example, you could specify that your Amazon S3 data format is s3://example-bucket/my-logs/logdata-#{scheduledStartTime('YYYY-MM-dd-HH')}.tgz.
+Q: What is an activity?
+An activity is an action that AWS Data Pipeline initiates on your behalf as part of a pipeline. Example activities are EMR or Hive jobs, copies, SQL queries, or command-line scripts.
+Q: What is a precondition?
+A precondition is a readiness check that can be optionally associated with a data source or activity. If a data source has a precondition check, then that check must complete successfully before any activities consuming the data source are launched. If an activity has a precondition, then the precondition check must complete successfully before the activity is run. This can be useful if you are running an activity that is expensive to compute, and should not run until specific criteria are met.
+Q: What is a schedule?
+Schedules define when your pipeline activities run and the frequency with which the service expects your data to be available. All schedules must have a start date and a frequency; for example, every day starting Jan 1, 2013, at 3pm. Schedules can optionally have an end date, after which time the AWS Data Pipeline service does not execute any activities. When you associate a schedule with an activity, the activity runs on it. When you associate a schedule with a data source, you are telling the AWS Data Pipeline service that you expect the data to be updated on that schedule. For example, if you define an Amazon S3 data source with an hourly schedule, the service expects that the data source contains new files every hour.
+Back to top
+Q: Does Data Pipeline supply any standard Activities?
+Yes, AWS Data Pipeline provides built-in support for the following activities:
+CopyActivity: This activity can copy data between Amazon S3 and JDBC data sources, or run a SQL query and copy its output into Amazon S3.
+HiveActivity: This activity allows you to execute Hive queries easily.
+EMRActivity: This activity allows you to run arbitrary Amazon EMR jobs.
+ShellCommandActivity: This activity allows you to run arbitrary Linux shell commands or programs.
+Q: Does AWS Data Pipeline supply any standard preconditions?
+Yes, AWS Data Pipeline provides built-in support for the following preconditions:
+DynamoDBDataExists: This precondition checks for the existence of data inside a DynamoDB table.
+DynamoDBTableExists: This precondition checks for the existence of a DynamoDB table.
+S3KeyExists: This precondition checks for the existence of a specific AmazonS3 path.
+S3PrefixExists: This precondition checks for at least one file existing within a specific path.
+ShellCommandPrecondition: This precondition runs an arbitrary script on your resources and checks that the script succeeds.
+Q: Can I supply my own custom activities?
+Yes, you can use the ShellCommandActivity to run arbitrary Activity logic.
+Q: Can I supply my own custom preconditions?
+Yes, you can use the ShellCommandPrecondition to run arbitrary precondition logic.
+Q: Can you define multiple schedules for different activities in the same pipeline?
+Yes, simply define multiple schedule objects in your pipeline definition file and associate the desired schedule to the correct activity via its schedule field. This allows you to define a pipeline in which, for example, log files are stored in Amazon S3 each hour to drive generation of an aggregate report one time per day.
+Q: What happens if an activity fails?
+An activity fails if all of its activity attempts return with a failed state. By default, an activity retries three times before entering a hard failure state. You can increase the number of automatic retries to 10; however, the system does not allow indefinite retries. After an activity exhausts its attempts, it triggers any configured onFailure alarm and will not try to run again unless you manually issue a rerun command via the CLI, API, or console button.
+Q: How do I add alarms to an activity?
+You can define Amazon SNS alarms to trigger on activity success, failure, or delay. Create an alarm object and reference it in the onFail,onSuccess, or onLate slots of the activity object.
+Q: Can I manually rerun activities that have failed?
+Yes. You can rerun a set of completed or failed activities by resetting their state to SCHEDULED. This can be done by using the Rerun button in the UI or modifying their state in the command line or API. This will immediately schedule a of re-check all activity dependencies, followed by the execution of additional activity attempts. Upon subsequent failures, the Activity will perform the original number of retry attempts.
+Q: On what resources are activities run?
+AWS Data Pipeline activities are run on compute resources that you own. There are two types of compute resources: AWS Data Pipeline–managed and self-managed. AWS Data Pipeline–managed resources are Amazon EMR clusters or Amazon EC2 instances that the AWS Data Pipeline service launches only when they're needed. Resources that you manage are longer running and can be any resource capable of running the AWS Data Pipeline Java-based Task Runner (on-premise hardware, a customer-managed Amazon EC2 instance, etc.).
+Q: Will AWS Data Pipeline provision and terminate AWS Data Pipeline-managed compute resources for me?
+Yes, compute resources will be provisioned when the first activity for a scheduled time that uses those resources is ready to run and those instances will be terminated when the final activity that uses the resources has completed successfully or failed.
+Q: Can multiple compute resources be used on the same pipeline?
+Yes, simply define multiple cluster objects in your definition file and associate the cluster to use for each activity via its runsOn field. This allows pipelines to combine AWS and on-premise resources, or to use a mix of instance types for their activities – for example, you may want to use a t1.micro to execute a quick script cheaply, but later on the pipeline may have an Amazon EMR job that requires the power of a cluster of larger instances.
+Q: Can I execute activities on on-premise resources, or AWS resources that I manage?
+Yes. To enable running activities using on-premise resources, AWS Data Pipeline supplies a Task Runner package that can be installed on your on-premise hosts. This package continuously polls the AWS Data Pipeline service for work to perform. When it’s time to run a particular activity on your on-premise resources, for example, executing a DB stored procedure or a database dump, AWS Data Pipeline will issue the appropriate command to the Task Runner. In order to ensure that your pipeline activities are highly available, you can optionally assign multiple Task Runners to poll for a given job. This way, if one Task Runner becomes unavailable, the others will simply pick up its work.
+Q: How do I install a Task Runner on my on-premise hosts?
+You can install the Task Runner package on your on-premise hosts using the following steps:
+Download the AWS Task Runner package.
+Create a configuration file that includes your AWS credentials.
+Start the Task Runner agent via the following command: java -jar TaskRunner-1.0.jar --config ~/credentials.json --workerGroup=[myWorkerGroup]
+When defining activities, set the activity to run on [myWorkerGroup] in order to dispatch them to the previously installed hosts.
+Q: How can I get started with AWS Data Pipeline?
+To get started with AWS Data Pipeline, simply visit the AWS Management Console and go to the AWS Data Pipeline tab. From there, you can create a pipeline using a simple graphical editor.
+With AWS Data Pipeline, you can schedule and manage periodic data-processing jobs. You can use this to replace simple systems which are current managed by brittle, cron-based solutions, or you can use it to build complex, multi-stage data processing jobs.
+Q: Are there Sample Pipelines that I can use to try out AWS Data Pipeline?
+Yes, there are sample pipelines in our documentation. Additionally, the console has several pipeline templates that you can use to get started.
+Q: How many pipelines can I create in AWS Data Pipeline?
+By default, your account can have 100 pipelines.
+Q: Are there limits on what I can put inside a single pipeline?
+By default, each pipeline you create can have 100 objects.
+Q: Can my limits be changed?
+Yes. If you would like to increase your limits, simply contact us.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.

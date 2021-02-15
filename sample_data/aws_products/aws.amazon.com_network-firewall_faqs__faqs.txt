@@ -1,0 +1,53 @@
+General
+Q: What is AWS Network Firewall?
+AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs). The service can be set up with just a few clicks and scales automatically with your network traffic so you don't have to worry about deploying and managing any infrastructure. Network Firewall’s flexible rules engine lets you define firewall rules that give you fine-grained control over network traffic, such as blocking outbound Server Message Block (SMB) requests to prevent the spread of malicious activity. You can also import rules you’ve already written in common open source rule formats or import compatible rules sourced from AWS partners. AWS Network Firewall works together with AWS Firewall Manager so you can build policies based on AWS Network Firewall rules and then centrally apply those policies across your VPCs and accounts.
+Q: What are the key benefits of AWS Network Firewall?
+The AWS Network Firewall infrastructure is managed by AWS, so you don’t have to worry about building and maintaining your own network security infrastructure. AWS Network Firewall works with AWS Firewall Manager, so you can centrally manage security policies and automatically enforce mandatory security policies across existing and newly created accounts and VPCs. AWS Network Firewall has a highly flexible rules engine, so you can build custom firewall rules to protect your unique workloads. AWS Network Firewall supports thousands of rules, and the rules can be based on domain, port, protocol, IP addresses, and pattern matching.
+Q: How does AWS Network Firewall protect my VPC?
+AWS Network Firewall includes features that protect from common network threats. AWS Network Firewall’s stateful firewall can incorporate context from traffic flows, like tracking connections and protocol identification, to enforce policies such as preventing your VPCs from accessing domains using an unauthorized protocol. AWS Network Firewall’s intrusion prevention system (IPS) provides active traffic flow inspection so you can identify and block vulnerability exploits using signature-based detection. AWS Network Firewall also offers web filtering that can stop traffic to known-bad URLs and monitor fully qualified domain names.
+Q: When should I use AWS Network Firewall?
+AWS Network Firewall gives you control and visibility of VPC-to-VPC traffic to logically separate networks hosting sensitive applications or line-of-business resources. AWS Network Firewall provides URL, IP address, and domain-based outbound traffic filtering to help you meet compliance requirements, stop potential data leaks, and block communication with known malware hosts. AWS Network Firewall secures AWS Direct Connect and AWS VPN traffic running through AWS Transit Gateway from client devices and your on-premises environments. AWS Network Firewall protects application availability by filtering inbound Internet traffic using features such as Access Control List (ACL) rules, stateful inspection, protocol detection, and intrusion prevention.
+Q: How is AWS Network Firewall different from other firewall offerings on AWS and the AWS Marketplace?
+AWS Network Firewall complements existing network and application security services on AWS by providing control and visibility to Layer 3-7 network traffic for your entire VPC. Depending on your use case, you may choose to implement AWS Network Firewall along your existing security controls, such as Amazon VPC Security Groups, AWS Web Application Firewall rules, or AWS Marketplace appliances.
+Q: How much does AWS Network Firewall cost?
+AWS Network Firewall pricing is based on the number of firewalls deployed and the amount of traffic inspected. Please visit AWS Network Firewall Pricing for more information.
+Q: In which AWS regions is AWS Network Firewall available?
+AWS Network Firewall is available in the US East (N. Virginia), US West (Oregon), Europe (Ireland), and Asia Pacific (Sydney) regions.
+Q: Which partners have solutions that work with AWS Network Firewall?
+A number of AWS Partner Network (APN) Partners offer products that complement existing AWS services to enable you to deploy a seamless and comprehensive security architecture across AWS and your on-premises environment. For a current list of APN Partners offering products that complement AWS Network Firewall, see AWS Network Firewall partners.
+Q: Does AWS Network Firewall offer a Service Level Agreement?
+AWS Network Firewall offers a Service Level Agreement with an uptime commitment of 99.99%. AWS Network Firewall enables you to automatically scale your firewall capacity up or down based on traffic load to maintain steady, predictable performance to minimize costs.
+Q: What are the service quotas for AWS Network Firewall?
+AWS Network Firewall is subject to service quotas for the number of firewalls, firewall policies, and rules groups that you can create and for other settings, such as the number of stateless or stateful rule groups you can have in a single firewall policy. For additional details about service quotas, including information about how to request a service quota increase, see the AWS Network Firewall quotas page.
+Getting started with AWS Network Firewall
+Q: What is the typical deployment model for AWS Network Firewall?
+AWS Network Firewall supports two primary deployment types: centralized and distributed. When distributed, the AWS Network Firewall can be deployed within each of your Amazon VPCs for enforcement closer to the applications. AWS Network Firewall also supports a centralized deployment as a VPC attachment to your AWS Transit Gateway. With the Network Firewall in Transit Gateway mode, which maintains symmetric routing to the same zonal firewall, you can filter a variety of inbound and outbound traffic to or from Internet Gateways, Direct Connect gateways, VPN Site-to-Site and Client gateways, NAT gateways, and even between other attached VPCs.
+Q: How do I enable AWS Network Firewall?
+AWS Network Firewall is deployed as an endpoint service, similar to other network services such as AWS PrivateLink. Your AWS Network Firewall endpoint must be deployed in a dedicated subnet within your Amazon VPC, with a minimum size of /28. AWS Network Firewall inspects all traffic that is routed to the endpoint, which is the mechanism for path insertion and filtering. Through the AWS Firewall Manager Console, or through partner solutions that integrate with AWS Firewall Manager, you can centrally build configurations and policies using various rule types, such as stateless access control lists (ACLs), stateful inspection, and intrusion prevention systems (IPSs). Because AWS Network Firewall is an AWS managed service, AWS takes care of scaling, availability, resiliency, and software updates.
+Q: Can AWS Network Firewall manage security across multiple AWS accounts?
+Yes. AWS Network Firewall is a regional service and secures network traffic at an organization and account level. For maintaining policy and governance across multiple accounts, you may want to use AWS Firewall Manager.
+Q: What’s a firewall policy?
+An AWS Network Firewall policy defines the monitoring and protection behavior of a firewall. The details of that behavior are defined in the rule groups that you add to your policy or in certain default policy settings. To use a firewall policy, you associate the policy with one or more firewalls.
+Q: What types of firewall rules are supported?
+AWS Network Firewall supports both stateless and stateful rules. Stateless rules consist of network access control lists (ACLs), which can be based on source and destination IP addresses, ports, or protocols. Stateful, or Layer-4, rules are also defined by source and destination IP addresses, ports, and protocols but differ from stateless rules in that they maintain and secure connections or sessions throughout the life of the connection or session.
+Q: What’s a rule group?
+A rule group is a reusable set of firewall rules for inspecting and filtering network traffic. You can use stateless or stateful rule groups to configure the traffic inspection criteria for your firewall policies. You can create your own rule groups or you can use rule groups that are managed by AWS Marketplace Sellers. For more information, please refer to the AWS Network Firewall Developer Guide.
+Working with AWS Network Firewall
+Q: Which AWS tools can I use to log and monitor my AWS Network Firewall activity?
+You can log your AWS Network Firewall activity to an Amazon S3 bucket for further analysis and investigation. You can also use Amazon Kinesis Firehose to port your logs to a third-party provider.
+Q: Can I use AWS Network Firewall with my Transit Gateway (TGW)?
+Yes. You can deploy AWS Network Firewall within your VPC and then attach that VPC to a TGW. For more information about this configuration, see the Deployment models for AWS Network Firewall blog post.
+Q: Which types of outbound traffic control does AWS Network Firewall support?
+AWS Network Firewall supports the following types of outbound traffic control: HTTPS (SNI)/HTTP protocol URL filtering, Access Control Lists (ACLs), DNS query, and protocol detection.
+Q: Can AWS Network Firewall inspect encrypted traffic?
+AWS Network Firewall does not currently support deep packet inspection for encrypted traffic. To work around this limitation, you can decrypt traffic using a Network Load Balancer (NLB) before sending it to an AWS Network Firewall endpoint. Also, for HTTPS traffic, AWS Network Firewall can inspect the domain name provided by the Server Name Indicator (SNI) during the TLS handshake
+Learn more about product pricing
+Visit the AWS Network Firewall Pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Network Firewall in the Amazon VPC Console.
+Sign in
+Page Content

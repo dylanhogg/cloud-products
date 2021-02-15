@@ -1,0 +1,65 @@
+General
+Q: What is AWS DeepComposer?
+AWS DeepComposer is the world’s first musical keyboard powered by machine learning to enable developers of all skill levels to learn Generative AI while creating original music outputs. DeepComposer consists of a USB keyboard that connects to the developer’s computer, and the DeepComposer service, accessed through the AWS Management Console. DeepComposer includes tutorials, sample code, and training data that can be used to start building generative models.
+Q: How is AWS DeepComposer different from other musical keyboards in the market?
+AWS DeepComposer is the world’s first musical keyboard designed specifically to work with the DeepComposer service to teach developers Generative AI. AWS DeepComposer gives developers a simple way to learn and experiment with Generative AI algorithms, train models, and compose musical outputs.
+Q: What level of musical knowledge do I need?
+No musical knowledge is required to use DeepComposer. DeepComposer provides you a quick and easy way to get started by providing sample melodies such as Twinkle, Twinkle, Little Star, or Ode to Joy. You can use these sample melodies as an input to generate an entirely new musical output, with a 4 part accompaniment.
+Q: What are Generative AI algorithms?
+Viewed by some as the most interesting machine learning idea in a decade, Generative AI allows computers to learn the underlying pattern of a given problem and use this knowledge to generate new content from input (such as image, music, and text). In contrast to more commonly used machine learning models that learn to differentiate, for example between images of cats and dogs (by identifying traits that set them apart), a Generative AI model based on cat images would learn the features that are common across cats, and use that knowledge to generate all-new images of what it believes are cats. This difference is significant because with the advancement in Generative AI algorithms, machines can automatically discover and learn the patterns in data and generate new data based on the data they were trained on.
+Q: How can I get an AWS DeepComposer keyboard?
+AWS DeepComposer keyboard is now available for order on
+amazon.com.
+Q: Do I have to purchase the DeepComposer keyboard to use the AWS DeepComposer Service?
+You will have the best experience with the DeepComposer keyboard, through integration with keyboard buttons that can control recording of musical phrases and generation of new musical outputs when working with the DeepComposer cloud service. For those without the DeepComposer keyboard, the management console includes an on-screen virtual keyboard that allows developers to input musical notes in a similar fashion.
+Q: Which geographic regions will AWS DeepComposer be available in?
+The musical keyboard is available only in the US. However, you can use the virtual keyboard DeepComposer management console provides from anywhere in the world by signing into US East (N. Virginia) Region.
+Q: Which AWS regions will AWS DeepComposer be available in?
+Customers can access the AWS DeepComposer console from the US East (N. Virginia) Region.
+Product Details
+Q: What are the product specifications of the AWS DeepComposer keyboard?
+• Item weight: 1.68 pounds • Product dimensions: 18.1x4.9x1.2 inches • Shipping weight: 2.3 pound • Features: 32 velocity-sensitive keys, 1 endless encoder, 3 rotary knobs and 11 function buttons with LED back lit, USB powered
+Q: What pre-trained genre models are available at launch?
+DeepComposer will come with four pre-trained genre models: rock, pop, jazz, and classical.
+Getting Started
+Q: How do I get started with AWS DeepComposer?
+The AWS DeepComposer getting started page provides a tutorial to get you started with Generative AI and training your first model. The AWS DeepComposer documentation provides additional details on training your model, composing music with trained models, and evaluating your trained models.
+Q: Do I need to be connected to internet to run the models?
+Yes. DeepComposer is a cloud service, connection to the internet is required to run inference against models for musical creations.
+Q: Will I have to bring my own dataset in order to train models?
+No. DeepComposer comes with pre-trained genre models to help you get started with Generative AI technologies.
+Q: Can I bring my own dataset?
+Yes. You can bring your own music dataset in MIDI format and create your own custom models in SageMaker.
+Q: How can I run my own custom models?
+You can run your custom models within DeepComposer console where you’ll be able to optimize for hyperparameters and select your dataset.
+Q: Can I save and export my musical outputs (such as generated compositions) or share them with the community?
+Yes, you can save and export your musical creations in MIDI for additional processing using external tools, or in wav or mp3 format for sharing. Choose either the ‘Download MIDI’ or ‘Submit to SoundCloud’ button on DeepComposer console to export and save your creations.
+Q: Can I save and export my input melodies?
+Yes, you can download your input melody from the music studio in AWS DeepComposer console.
+Q: How do I submit my creations to SoundCloud?
+You can submit your creations to SoundCloud by choosing the Submit to SoundCloud button on the DeepComposer console. You will be required to log into your SoundCloud account for permissions.
+AWS DeepComposer Chartbusters
+Q: What is AWS DeepComposer Chartbusters?
+AWS DeepComposer Chartbusters is a competition for developers to create compositions using AWS DeepComposer and compete in a monthly challenge to top the charts and win prizes.
+Q: How are the winners selected?
+We determine the top 20 finalists using an aggregate of customer ‘likes’ and count of ‘plays’. A panel of human and AI judges will evaluate the shortlist for musical quality and creativity to select the top 10 ranked compositions. We will announce the top 10 compositions in an AWS ML blog post, and feature them in an exclusive AWS top 10 playlist on SoundCloud and in the AWS DeepComposer console. Developers whose composition ranks in the top 10 will receive an AWS DeepComposer Chartbusters trophy award mailed to their physical address and the top 5 on this list will also receive an AWS DeepLens device worth $249. We will interview the winner of each month’s challenge and feature them in an AWS ML blog post.
+Q: What happens when a developer submits a composition?
+When developers submit their composition, it appears on a dedicated playlist (example, Bach to the Future playlist) on SoundCloud. Developers in the community can view and listen to all submissions for the Bach to the Future challenge in the playlist. They ‘heart’ for their favorite compositions and can like several compositions.
+Q: What happens when multiple compositions by the same developer make it to the top 10?
+While we will feature only their best trending composition in the AWS Top-10 playlist.
+Q: What happens when developers do not make it to the top 10?
+Developers can participate in multiple challenges. If they don’t make it to the top 10 in one challenge, they can participate in the next challenge for a chance to top the charts.
+Q: What happens when developers win the challenge?
+We will announce the top 10 compositions in an AWS ML blog post, and feature them in an exclusive AWS top 10 playlist on SoundCloud and in the AWS DeepComposer console. Developers whose composition ranks in the top 10 will receive an AWS DeepComposer Chartbusters trophy award mailed to their physical address and the top 5 on this list will also receive an AWS DeepLens device worth $249. We will interview the winner of each month’s challenge and feature them in an AWS ML blog post.
+Q: Is there a final culmination?
+No, each challenge stands independent. There is no final culmination of the monthly winners.
+Q: Are developers allowed to share their compositions with friends and family?
+Yes, developers can share their compositions with friends and family using the social sharing buttons available on SoundCloud and invite them to “like” their compositions.
+Q: How are we preventing abuse of customer ‘likes’ and count of “plays”?
+Customer “likes” and count of “plays” will only get the compositions to Top-20. We have implemented manual evaluation by a panel of judges comprising musical and technical expertise. The judging panel will listen to the top 20 compositions and evaluate on a scoring matrix.
+Q: What is the judging process and timeline for the Bach to the Future challenge?
+The first challenge Bach to the Future opens on June 17th, 2020, and ends on July 16th, 2020. Top 20 compositions based on an aggregate of customer ‘likes’ and count of ‘plays’ will proceed for manual evaluation on July 16th. We will announce the top 10 compositions on July 21st in an AWS ML blogpost and announce the next challenge. We will feature the top 10 compositions in a separate playlist titled AWS top 10 for Bach to the Future in SoundCloud and the AWS DeepComposer console.
+Press play on Machine Learning
+Buy now
+Page Content
+Chartbusters

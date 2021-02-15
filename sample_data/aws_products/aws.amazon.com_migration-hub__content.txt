@@ -8,7 +8,7 @@ Benefits
 Centralized tracking
 Migrations involve many components that need to be tracked such as the status of servers or databases being migrated, and these are typically tracked across different tools. AWS Migration Hub helps address this by providing a central location to track the status of all these components, making it easier to view overall migration progress and reducing the time spent determining current status and next steps.
 Migration flexibility
-AWS Migration Hub provides the flexibility to use the migration tools that work best for your organization. Whether you use AWS migration tools like AWS Server Migration Service, AWS Database Migration Service, CloudEndure Migration, or partner tools like ATADATA, Migration Hub makes it easy for you to track migrations from all of those tools.
+AWS Migration Hub provides the flexibility to use the migration tools that work best for your organization. Whether you use AWS migration tools like AWS Server Migration Service, AWS Database Migration Service, CloudEndure Migration, or partner tools like ATADATA, Migration Hub makes it easy for you to track migrations from all of those tools.
 Improved visibility
 AWS Migration Hub helps plan your migrations by allowing you to group related servers and resources that should be migrated together. Once grouped into a single application, you can easily track the progress of these resources through their entire migration lifecycle to help ensure they all migrate successfully.
 How it works

@@ -1,0 +1,35 @@
+Products
+Machine Learning
+Amazon Lookout for Metrics
+Amazon Lookout for Metrics FAQs
+Q: What does Amazon Lookout for Metrics do?
+A: Amazon Lookout for Metrics uses machine learning (ML) to make it easier for customers to accurately detect anomalies in their metrics. After a customer uploads their data, Lookout for Metrics will automatically inspect it and uses ML to create accurate anomaly detection models. When anomalies are detected, Lookout for Metrics will group related anomalies together and provide a severity score so customers can diagnose issues quickly or maximize opportunities.
+Q: How is Amazon Lookout for Metrics different from other anomaly detection services?
+A: Amazon Lookout for Metrics has four key differentiated capabilities.
+Automates anomaly detection on data using ML: Lookout for Metrics supports a collection of machine learning algorithms. No one algorithm works for all kinds of data, so Lookout for Metrics inspects the data and applies the right ML algorithm to the right data to detect anomalies accurately. Because Lookout for Metrics takes care of the heavy lifting associated with selecting, training, building, and deploying the models, customers do not need any machine learning experience to get started quickly.
+Helps customers get started with little to no data: Customers can provide historical data for training the models if they choose. In the event customers choose not to or don’t have historical data, Lookout for Metrics can learn as it goes. The amount of time for Lookout for Metrics to learn and detect anomalies will vary based on the customer’s data.
+Provides actionable results: Lookout for Metrics will group concurrent anomalies into logical groups and send a single alert for the anomaly group rather than separate alerts, enabling customers to see the full-picture. The anomalies are also ranked in order of severity so that customers know which ones to focus on immediately.
+Continuously improves via human-in-the-loop feedback: Lookout for Metrics allows customers to provide feedback on the detected anomalies, which is used to improve the accuracy and performance of the models continuously.
+Q: What are the key use cases supported by Amazon Lookout for Metrics?
+A: Lookout for Metrics supports anomaly detection use cases across a wide variety of business metrics related to customer engagement, operations, sales, and marketing in industries like retail, gaming, ad tech, and telecom.
+Q: Do customers need historical data to use Amazon Lookout for Metrics?
+A: Customers don’t need historical data to use Lookout for Metrics. Customers only need their continuous data to get started as Lookout for Metrics learns from customer’s live data and will start showing results after an initialization period (when the models are learning from the data). The length of the initialization period will depend on the frequency of data, for example 5 min, 10 min, 1 hour, every 24 hours.
+Q: What format does my data need to be in to use Amazon Lookout for Metrics?
+A: Lookout for Metrics uses data in a CSV or JSON format.
+Q: What data sources are supported by Amazon Lookout for Metrics?
+A: Amazon Lookout for Metrics easily connects to popular data stores such as Amazon Simple Storage (S3), Amazon Redshift, AWS CloudWatch, Amazon RDS (all supported database engines), and commonly use SaaS applications including Salesforce, Marketo, Zendesk, ServiceNow, Infor Nexus, Google Analytics, Dynatrace, Datadog, Amplitude, Veeva Systems, Singular, Amazon Simple Notification Service (SNS) AWS Lambda, Slack, PagerDuty, Datadog, Webhooks.
+Q: What regions is Amazon Lookout for Metrics available in?
+A: Lookout for Metrics is available in US East (N. Virginia), US West (Oregon), US East (Ohio), EU (Ireland), Asia Pacific (Tokyo).
+Q: How is Amazon Lookout for Metrics priced?
+A: There is no cost to participating in the preview.
+Q: How do customers get started with Amazon Lookout for Metrics?
+A: Click here to sign up for the preview and provide the requested information.
+Check out the product pricing
+Explore the pricing of Amazon Lookout for Metrics
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier
+Sign up
+Start building in the console
+Sign up for the preview of Amazon Lookout for Metrics
+Sign up for the preview

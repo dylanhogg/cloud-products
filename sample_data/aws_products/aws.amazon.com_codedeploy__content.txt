@@ -16,7 +16,7 @@ Case studies
 SmartNews uses CodeDeploy to support a software delivery pipeline that consists of numerous microservices such as a news crawler, content extractor, image analysis engine, and search engine.
 Learn how Gilt uses CodeDeploy to expedite software deployments and to deploy software updates without worrying about infrastructure.
 Instacart uses CodeDeploy to manage hundreds of deployments a day and to ship their code to customers faster and more reliably.
-With CodeDeploy, Burt can automate deployments and eliminate manual operations to perform thousands of upgrades and deploys without impacting services.  Read the case study to learn more.
+With CodeDeploy, Burt can automate deployments and eliminate manual operations to perform thousands of upgrades and deploys without impacting services.  Read the case study to learn more.
 3M HIS can easily and quickly build their application environments and manage applications by using AWS CodeDeploy and CodeCommit.
 Learn how CodeDeploy helps Click Travel ensure zero downtime during deployments through rolling updates.
 Check out the product features
@@ -26,5 +26,5 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with AWS CodeDeploy in the AWS Management Console.
+Get started building with AWS CodeDeploy in the AWS Management Console.
 Sign in

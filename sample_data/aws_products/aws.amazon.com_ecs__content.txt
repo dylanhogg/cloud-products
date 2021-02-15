@@ -6,8 +6,8 @@ ECS is a great choice to run containers for several reasons. First, you can choo
 Additionally, because ECS has been a foundational pillar for key Amazon services, it can natively integrate with other services such as Amazon Route 53, Secrets Manager, AWS Identity and Access Management (IAM), and Amazon CloudWatch providing you a familiar experience to deploy and scale your containers. ECS is also able to quickly integrate with other AWS services to bring new capabilities to ECS. For example, ECS allows your applications the flexibility to use a mix of Amazon EC2 and AWS Fargate with Spot and On-Demand pricing options. ECS also integrates with AWS App Mesh, which is a service mesh, to bring rich observability, traffic controls and security features to your applications. ECS has grown rapidly since launch and is currently launching 5X more containers every hour than EC2 launches instances.
 Coming soon: Amazon ECS Anywhere
 Amazon ECS Anywhere will enable you to run containers on-premises using your own infrastructure.
-How it works »
-Request info »
+How it works
+Request info
 Benefits
 Serverless option
 ECS supports Fargate to provide serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
@@ -36,11 +36,11 @@ Ubisoft uses Amazon ECS to provide seamless multiplayer gaming
 GoPro uses Amazon ECS to reduce its compute footprint by 70%
 TIBCO uses ECS to reduce deployment time & its compute footprint by 40%
 Remind improved their service response time using Amazon ECS
-See all customer stories »
+See all customer stories
 What's new
 date
 1
-…
+...
 Blog posts & articles
 Learn more about Amazon ECS
 Visit the features page

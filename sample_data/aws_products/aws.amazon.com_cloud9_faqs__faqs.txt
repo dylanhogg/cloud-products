@@ -1,0 +1,71 @@
+General
+Q: What is AWS Cloud9?
+AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It combines the rich code editing features of an IDE such as code completion, hinting, and step-through debugging, with access to a full Linux server for running and storing code. For more information see our AWS Cloud9 User Guide.
+Q: Who should use AWS Cloud9?
+Anybody who writes code can use AWS Cloud9. Those developing applications using Node.js (JavaScript), Python, PHP, Ruby, Go, and C++ can use Cloud9 and have immediate access to a fully configured development environment in their browsers with preinstalled runtimes, package managers, and debugging tools. With Cloud9, you are no longer tied to a single development machine and can access your development environment from any internet-connected computer.
+AWS developers and those evaluating new AWS services can use AWS Cloud9 for easy access to their AWS resources through a preconfigured AWS Command Line Iinterface (AWS CLI), ready to run commands against AWS services. Those developing serverless applications on AWS Lambda using Node.js or Python can use the built-in tools in Cloud9 to create, edit, run, debug, and deploy their Lambda functions from within the IDE.
+Q: Which programming languages are supported?
+AWS Cloud9 supports over 40 programming languages, including Node.js (JavaScript), Python, PHP, Ruby, Go, and C++. It includes features such as syntax highlighting, outline view, code hinting, code completion, application runners, and step-through debugging for many popular programming languages. To learn more about the language features supported in Cloud9, please visit the Language Support topic of our user guide.
+Q: What web browsers can I use to access AWS Cloud9?
+AWS Cloud9 is fully supported on the recent versions of Google Chrome, Safari, Firefox, and Microsoft Edge.
+Q: What is the pricing for AWS Cloud9?
+There is no additional charge for AWS Cloud9. If you use an Amazon EC2 instance for your AWS Cloud9 development environment, you pay only for the compute and storage resources (i.e., an EC2 instance, an EBS volume) that are used to run and store your code. You can also connect your Cloud9 development environment to an existing Linux server (e.g., on-premises server) via SSH for no additional charge. See the AWS Cloud9 pricing page for more details.
+Q: What are the other IDEs supported by AWS?
+AWS offers a broad selection of IDE support to facilitate development of applications for AWS. To learn more about the IDE toolkits supported by AWS, visit the IDE Toolkits section on the AWS Tools page.
+Q: What if I see an error when working with AWS Cloud9?
+You can find some of the errors you might encounter and their possible solutions in the Troubleshooting topic of our user guide.
+Using AWS Cloud9
+Q: How do I get started with AWS Cloud9?
+You can sign in to the AWS Management Console, and select AWS Cloud9. The console will guide you through the options to select the Linux server that you want to connect with Cloud9. You can either launch a new Amazon EC2 instance (AWS Cloud9 EC2 environment) or connect your existing Linux server (AWS Cloud9 SSH environment) in a few simple steps. Once you’ve created a Cloud9 environment, you can access your IDE and write code in a fully configured development environment. For more information, see our documentation about setting up AWS Cloud9 and then complete a basic tutorial.
+Q: What is an AWS Cloud9 development environment?
+An AWS Cloud9 development environment is where the project code files are stored and the tools used to develop the application are run. Each environment has unique IDE settings stored with it. This enables you to easily create and switch between many different development environments, each one customized with the tools, runtimes, files, and IDE settings required for a specific project.
+Q: What are the types of AWS Cloud9 development environments?
+There are two types of AWS Cloud9 environments that you can use.
+AWS Cloud9 EC2 environment – Enables you to launch a new Amazon EC2 instance that Cloud9 connects to. By default, these instances stop 30 minutes after you close the IDE and start automatically when you open the IDE.
+AWS Cloud9 SSH environment – Enables you to connect an existing Linux server with Cloud9. There are certain dependencies that are required on the Linux server that you want to use with Cloud9 SSH environments. Please visit our documentation for more details.
+Q: Can I use my existing Amazon EC2 or Amazon Lightsail instance with AWS Cloud9?
+Yes. You can use SSH environments to connect an existing Linux-based EC2 or Lightsail instance with AWS Cloud9.
+Q: How do I edit my code?
+The AWS Cloud9 IDE has an advanced code editor with features such as auto-completion, code folding, hinting, syntax highlighting, and line manipulation. The code editor enables you to choose from over 30 color schemes that control syntax highlighting and the UI. You can also fully customize the Cloud9 UI by editing your stylesheet.
+Q: What tools and packages are preinstalled on AWS Cloud9 EC2 environments?
+AWS Cloud9 EC2 environments come preinstalled with commonly used development tools such as Git and Docker. They also include language runtimes and package managers for many popular programming languages such as Node.js and Python. To view the full list of tools and packages preinstalled on Cloud9 EC2 environments, please visit our documentation.
+Q: How do I run my code?
+The AWS Cloud9 IDE has a run button in the toolbar and built-in runners for over 10 different languages that will automatically start your application with the latest code changes. For full control over how you run your software, you can also customize existing runners, create your own runners, or run your code from the terminal.
+Q: How do I run CLI commands?
+The AWS Cloud9 IDE has a built-in terminal window that can interactively run CLI commands. You also have full administrative privileges on the instance (sudo rights), allowing you to install any additional tools required for development or to host your application.
+Q: How do I connect to source control management systems?
+You can open the terminal window within the IDE and access your source control system using the same command line tools that you would use on your local machine. AWS Cloud9 EC2 environments come preinstalled with Git to enable easy access to your source code.
+Q: Which AWS Regions does AWS Cloud9 support?
+See Regional Products and Services for details.
+Q: Where does AWS Cloud9 store my code?
+Any data that you store in your AWS Cloud9 environment such as code files, packages, or dependencies is always stored in your resources. If you use an EC2 environment, your data is stored in the associated Amazon Elastic Block Store (EBS) volume that exists in your AWS account. If you use an SSH environment, your data is stored in local storage on your Linux server.
+AWS Cloud9 Associated Resources
+Q: What are the resources created by AWS Cloud9 for Amazon EC2 environments?
+When you create an Amazon EC2 environment, AWS Cloud9 creates the required compute and storage resources in your AWS account. These resources include an Amazon EC2 instance, an 8-GB Amazon Elastic Block Store (EBS) volume, an Amazon EC2 security group, and an AWS CloudFormation stack. You have access to these resources through the individual AWS service consoles. When you delete your environment, Cloud9 automatically deletes these resources for you.
+Q: Does AWS Cloud9 manage resources created in AWS Cloud9 for Amazon EC2 environments?
+In addition to creating and deleting your AWS Cloud9 EC2 environment resources on your behalf, Cloud9 can also automatically start and stop the EC2 instances to reduce your costs. You are responsible for all other administrative tasks on these resources, such as installing software patches on your EC2 instances and performing backup of your EBS volumes.
+Q: Are my Amazon EC2 instances in AWS Cloud9 environments always running?
+No. AWS Cloud9 provides a default auto-hibernation setting of 30 minutes for your Amazon EC2 instances created through Cloud9. With this setting, your EC2 instances automatically stop 30 minutes after you close the IDE and restart only when you reopen the IDE. As a result, you typically only incur EC2 instance charges for when you are actively working. When your instance requires a restart, you lose any active terminal sessions in the IDE and can experience some wait time while opening your IDE. Depending on your use case, you can configure the auto-hibernation setting and even elect to keep your EC2 instance “always on”.
+Q: Can I change my Amazon EC2 instance type for an existing EC2 environment?
+Yes. You can change the Amazon EC2 instance type that you initially selected with your AWS Cloud9 environment. To do this, you navigate to the instance in the EC2 console, locate your instance, and follow the instructions in Amazon EC2 documentation.
+Environment Sharing
+Q: How do I share my AWS Cloud9 environment with other people?
+You can share your AWS Cloud9 environment by clicking the Share button in the top right of your IDE. You are prompted for the AWS Identity and Access Management (IAM) user name and the desired access levels for the person you want to collaborate with. Once you enter these details, the environment is available to both the participants for real-time collaboration on IDE features and command line sessions.
+Q: Can I share an AWS Cloud9 environment with IAM users in a different AWS account?
+No. AWS Cloud9 environments can currently be shared only with the IAM users within the same AWS account. If you want to invite a new user that doesn’t have an IAM user access, you can follow the link to create a new IAM user in the Share dialog box.
+Using AWS Cloud9 with AWS Services
+Q: How do I access AWS services from AWS Cloud9?
+AWS Cloud9 EC2 environments come preinstalled with the AWS CLI, which is authenticated with the permissions of the logged-in AWS user automatically. This enables you to run interactive CLI commands against AWS services from the built-in terminal window in Cloud9 without any additional configuration.
+Q: How can I develop serverless applications for AWS Lambda using AWS Cloud9?
+You can access the built-in tools for AWS Lambda from the AWS Resources panel in the IDE. You can use these tools to import existing or create new Lambda functions in Node.js and Python. You can easily run, preview, debug, and deploy these functions directly from the IDE. AWS Cloud9 also provides support for the AWS Serverless Application Model (AWS SAM) framework. This enables you to easily manage multiple Lambda functions and serverless resources in your application. If you provisioned your project using AWS CodeStar, any changes committed to the application will be built and deployed directly to Lambda on git push.
+Q: Can I locally test my AWS Lambda functions using AWS Cloud9?
+Yes. AWS Cloud9 can simulate the AWS Lambda execution environment for Node.js and Python to run your functions locally in the IDE. This enables you to test your serverless applications with step-through debugging without uploading your application changes to Lambda. Once tested, you can also deploy your application changes to Lambda directly from the IDE.
+Q: How do I use AWS Cloud9 with AWS CodeStar?
+You can launch AWS Cloud9 environments directly from AWS CodeStar and immediately start editing and committing your CodeStar project code in the Cloud9 IDE. Any code changes that you commit to your project source repository from Cloud9 are automatically built and deployed using the tools provisioned by CodeStar. To learn more about using this integration, please visit the AWS CodeStar documentation.
+Get Started with AWS Cloud9
+Visit the Getting Started page
+Ready to use AWS Cloud9?
+Sign up
+Have more questions?
+Contact us
+Page Content

@@ -1,0 +1,87 @@
+General
+Q: What is Amazon Braket?
+Amazon Braket is a fully managed service that helps you get started with quantum computing.
+Q: What can I do with Amazon Braket?
+With Amazon Braket, you can learn how to program quantum computers and explore potential applications. You can design your own quantum algorithms from scratch or choose from a set of pre-built algorithms. Amazon Braket provides fully managed circuit simulators that allow you to run your algorithms on classical High Performance Computing (HPC) infrastructure to validate and test your implementation. When you are ready, you can run your algorithm on your choice of different quantum computers, or quantum processing units (QPUs), from our hardware providers.
+Q: How does Amazon Braket integrate with other AWS services?
+Amazon Braket provides integrations with Amazon CloudWatch, Amazon EventBridge, AWS Identity and Access Management (IAM), and AWS CloudTrail for monitoring, event-based processing, user access management, and logs. Your simulation and quantum compute results will be stored in Amazon S3 in your account.
+Q: Why should our company be thinking about quantum computing today?
+Quantum computing is an early stage technology but its long-term impact promises to be transformational for many industries. Developing quantum algorithms and designing useful quantum applications require new skills and potentially radically different approaches. Building this expertise will take time and requires access to quantum technologies and programming tools. Amazon Braket and the Amazon Quantum Solutions Lab help organizations assess the state of current technologies, identify how they might impact their business, and prepare for the future.
+Q: Why is the service named “Braket”?
+We named our service after the bra-ket notation, a standard notation in quantum mechanics. It was introduced by Paul Dirac in 1939 to describe the state of quantum systems, and it is also known as the Dirac notation.
+Developer Tools
+Q: What is the Amazon Braket SDK?
+The Amazon Braket Software Development Kit (SDK) is a technology-agnostic developer framework that allows you to develop quantum algorithms and run them on different quantum computing hardware and simulators. The SDK helps you track and monitor quantum tasks submitted to Amazon Braket and evaluate the results.
+Q: How can I access the Amazon Braket SDK?
+Amazon Braket provides fully managed Jupyter notebooks that come pre-installed with the Amazon Braket SDK and example tutorials that help you get started quickly. The Amazon Braket SDK is open sourced so you can use Amazon Braket from any local integrated development environment (IDE) of your choice.
+Q: Does the Amazon Braket SDK support annealing?
+Yes. Amazon Braket provides a plugin that allows you to program natively in Ocean, D-Wave's programming framework for annealing. Alternatively, you can program directly in the Amazon Braket SDK. To get started, please visit the service documentation.
+Q: What is PennyLane?
+PennyLane is an open source software library for variational quantum computing, a paradigm that utilizes hybrid quantum-classical algorithms to iteratively find the solutions to computational problems in a variety of domains, such as chemistry, optimization, and machine learning. Built around the concept of quantum differentiable programming, PennyLane allows you to train quantum circuits the same way as neural networks. It provides interfaces to popular machine learning libraries, including PyTorch and TensorFlow, to make training your quantum algorithms easy and intuitive. You can learn more about PennyLane at https://pennylane.ai, and read our developer guide here.
+Q: Why should I use PennyLane on Amazon Braket?
+Near-term quantum computing applications in chemistry, optimization and machine learning are based on variational quantum algorithms that utilize iterative processing between classical and quantum computers. PennyLane makes it easy to get started and build variational quantum algorithms on Amazon Braket. It allows you to use familiar tools from machine learning to build and train your algorithms, and its chemistry library, qchem, with which you can map a computational chemistry problem to a quantum computing formulation with a few lines of code.
+Amazon Braket helps you to innovate faster with PennyLane. When testing and fine tuning your algorithms, our fully managed, high-performance simulators speed up training by 10x or more compared to simulating your algorithms locally.
+Q: How can I access PennyLane?
+Amazon Braket notebooks come pre-configured with PennyLane, and our tutorial notebooks help you get started quickly. Alternatively, you can install the Amazon Braket PennyLane plugin for any IDE of your choice. The plugin is open source and can be downloaded from here. You can find the PennyLane documentation at https://pennylane.ai.
+Simulators
+Q: Why do I want to simulate my algorithm?
+Quantum circuit simulators run on classical computers. With simulators, you can test your quantum algorithms at a lower cost than using quantum hardware, and without having to wait to access specific quantum machines. Simulation is a convenient way to quickly debug quantum circuits and to troubleshoot and optimize algorithms before progressing to run them on quantum hardware. Classical simulation is also essential to verify the results of near-term quantum computing hardware and study the effects of noise.
+Q: What simulators does Amazon Braket offer?
+Amazon Braket offers different ways to simulate your quantum algorithms, and you can choose the approach that best suits your requirements. For quick validation of circuit designs, you can run small-scale simulations directly in your local environment or a Jupyter notebook using the Amazon Braket SDK. To run larger, more complex circuits Amazon Braket provides two fully managed simulators on high-performance compute infrastructure. Depending on your use case, you can use SV1, a state vector simulator or TN1, a tensor network simulator.
+Q: Do I have to pick an instance type to run a simulation?
+No, if you are using an Amazon Braket managed simulator. The fully managed simulators, SV1 and TN1, take away the burden of managing the software and infrastructure stack to simulate large circuits. Amazon Braket automatically determines the optimal compute instance type for your simulation and manages those resources on your behalf. If you are running the local simulator in the SDK on your Amazon Braket managed notebook, it will run on the Amazon instance you have already specified for your notebook.
+Q: How do I choose between the two managed simulators on Amazon Braket, SV1 and TN1?
+The Amazon Braket state vector simulator (SV1) provides predictable execution and high performance for universal circuits up to 34 qubits. With the Amazon Braket tensor network simulator (TN1), you can simulate circuits with up to 50 qubits. TN1 is particularly powerful for sparse circuits, circuits with local gates and other circuits with inherent structure. Other circuit types in contrast, e.g., those with all-to-all connectivity, are often better suited for SV1.
+To learn more about circuit classes suitable for TN1, please visit our tutorial notebooks.
+Q: How do I know if I can run a circuit on the Amazon Braket tensor network simulator (TN1)?
+As long as your circuit is within the qubit number and circuit depth limits described here, TN1 will attempt to simulate it. In contrast to SV1, however, it is not possible to give an accurate estimate of the runtime based on the qubit number and circuit depth alone. During the so-called “rehearsal phase”, TN1 will first try to identify an efficient computational path for your circuit, and estimate the runtime of the next stage, the “contraction phase”. If the estimated contraction time exceeds the TN1 limit, TN1 will not attempt contraction and you pay only for the time spent in the rehearsal phase. To learn more, visit the technical documentation.
+Q: Do I have to program or design algorithms differently to use a simulator?
+No, with Amazon Braket, you can direct the same quantum circuit to run on any simulators and gate-based quantum hardware available on the service by changing a few lines of code.
+Q: Do you offer simulators for annealing problems?
+On the AWS Marketplace you can find offerings that use the state-of-the-art classical approaches to combinatorial optimization problems, such as Meta Analytics and the Toshiba SBM.
+Quantum Computers
+Q: How do I access quantum computers with Amazon Braket?
+Running your circuit design or appealing problem on an actual quantum processing unit (QPU) is easy. Once you have created your circuit or problem graph in the Amazon Braket SDK, you can submit your task from within a managed Jupyter notebook or any IDE of your choice, such as PyCharm.
+Q: How is running a task on a QPU different from running on a simulator?
+The steps to run a quantum task on a QPU are the same as running on a simulator, you simply chose the back-end, or device, when making API calls within the Amazon Braket SDK. They are both compute operations for which you can request different back-ends, or devices through API calls within the Amazon Braket SDK. The choice of device includes the various simulators and quantum computers that are available through the service. Switching from one device to another is as easy as changing a single line of code. Nonetheless, simulators are always available, whereas QPU resources might require wait time.
+Q: How do I choose which quantum computers to use?
+Some types of quantum computers are particularly well suited to solving specific sets of problems. For example, quantum annealers are typically used to solve combinatorial optimization problems, whereas universal quantum computers can be used to solve many types of problems. There are many factors that determine which type of machine will meet your needs, such as qubit count, qubit fidelity (error rate), qubit connectivity, coherence time, and cost. Full specifications of the quantum computers are provided in the Amazon Braket console.
+Q: What quantum computers does Amazon Braket support?
+Please click here to learn more about the hardware providers of Amazon Braket.
+Q: Do my quantum tasks start running immediately on a QPU, or do I have to wait?
+Quantum computing is a nascent technology, and quantum computers remain a scarce resource. Different types of quantum computers have different operational characteristics and levels of availability and so process tasks at different rates. If the QPU you select is online and not currently being used, your task will be processed immediately otherwise it will be put in queue. As the QPU becomes available the tasks in the queue are processed in the order they were received. To notify you when your task has been completed Amazon Braket sends status change events to Amazon EventBridge. You can create a rule in EventBridge to specify an action to take, such as using the Amazon Simple Notification Service (SNS) which can send alerts to you through SMS, or other methods such as email, HTTPs, AWS Lambda or Amazon SQS.
+Pricing
+Q: How am I charged for using the Amazon Braket?
+With Amazon Braket there are no upfront charges and you only pay for the AWS resources you use. You will be billed separately for each Amazon Braket capability, including access to quantum computing hardware and managed simulators. You will also be billed separately for AWS services provided through Amazon Braket such as Amazon Braket managed notebooks. Please visit our pricing page to learn more about pricing.
+Q: How do I track my Amazon Braket usage and spending across different projects?
+A: You can use tags to organize your AWS resources by logical groupings that make sense for your team or business, such as cost center, department, or project. In Amazon Braket, you can apply tags to the quantum tasks you create. After creating and applying user-defined tags, you can activate them for cost allocation tracking on the AWS Billing and Cost Management dashboard. AWS uses the tags to categorize your costs and deliver a monthly cost allocation report to you so you can track your AWS costs. Your cost allocation report displays the tag keys as additional columns with the applicable values for each row, so it's easier to track your costs if you use a consistent set of tag keys.
+Security
+Q: Does my data leave the AWS environment when I am using the Amazon Braket Services?
+Yes, QPUs on Amazon Braket are hosted by our third-party quantum hardware providers. If you use Amazon Braket to access quantum computers, your circuit or annealing problem and associated metadata will be sent to and processed by the hardware providers outside of facilities operated by AWS. Your content is anonymized so that only content necessary to process the quantum task is sent to the quantum hardware providers. AWS account information is not transmitted to them. All data is encrypted at rest and in transit, and is only decrypted for processing. In addition, Amazon Braket hardware providers are not permitted to store or use your content for purposes other than processing your task. Once the circuit completes, the results are returned to Amazon Braket and stored in your Amazon S3 bucket. The security of Amazon Braket third-party quantum hardware providers is periodically audited to ensure standards of network security, access control, data protection, and physical security are met.
+Q: Where will my results be stored?
+Your results will be stored in Amazon S3. In addition to providing the results of the execution, Amazon Braket also publishes event logs and performance metrics such as completion status and execution time to Amazon CloudWatch.
+Q: Can I use Amazon Braket in my Amazon Virtual Private cloud (Amazon VPC)?
+Amazon Braket is integrated with AWS PrivateLink, so you can access Amazon Braket from within your Amazon Virtual Private Cloud (Amazon VPC) without requiring the traffic to traverse across the Internet. This reduces exposure to security threats from Internet-based attacks and the risk of sensitive data leakage.
+Quantum Solutions Lab
+Q: What’s the Quantum Solutions Lab (QSL)?
+The Amazon Quantum Solutions Lab is a collaborative research and professional services program staffed with quantum computing experts who can assist you to more effectively explore quantum computing and work to overcome the challenges that arise with this nascent technology. Please visit the Quantum Solutions Lab webpage to get started.
+Q: How can I engage with the QSL?
+You can request information about engagements with the QSL and our partners by submitting this form, and by working through your AWS account manager.
+Q: What is the cost of a QSL engagement?
+The cost of QSL engagements vary depending on the length of the engagement and nature of your needs. Please reach out to your account manager for more details.
+Q: What's the typical duration of a QSL engagement?
+Quantum Solutions Lab engagements typically last from 6 to 12 months.
+Q: Do I need to travel to the Lab to participate?
+The entire process can be done remotely, if needed, which is likely during the current pandemic. However, typically we meet in person to kick off the engagements and determine a working cadence. After that, we will visit your site as needed and have regular checkpoints using video conferencing, while collaborating remotely on a regular basis.
+AWS Center for Quantum Computing
+Q: What’s AWS Center for Quantum Computing?
+The AWS Center for Quantum Computing is a research program that brings together researchers and engineers from Amazon and academic institutions that are leaders in the field of quantum computing. Together they collaborate on near-term applications, error-correction schemes, hardware architectures, and programming models to explore the development of quantum technologies. We established the AWS Center for Quantum Computing on the campus of California Institute of Technology (Caltech). Today, the Center collaborates with researchers at Caltech, Stanford University, Harvard University, Massachusetts Institute of Technology, and the University of Chicago through the Amazon Scholars program.
+Check out the product features
+Learn more about Amazon Braket
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign up to get started
+Sign up or sign into the console to get started
+Page Content

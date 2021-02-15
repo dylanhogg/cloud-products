@@ -1,0 +1,214 @@
+General
+Q: What is Amazon Athena?
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to setup or manage, and you can start analyzing data immediately. You don’t even need to load your data into Athena, it works directly with data stored in S3. To get started, just log into the Athena Management Console, define your schema, and start querying. Amazon Athena uses Presto with full standard SQL support and works with a variety of standard data formats, including CSV, JSON, ORC, Apache Parquet and Avro. While Amazon Athena is ideal for quick, ad-hoc querying and integrates with Amazon QuickSight for easy visualization, it can also handle complex analysis, including large joins, window functions, and arrays.
+Q: What can I do with Amazon Athena?
+Amazon Athena helps you analyze data stored in Amazon S3. You can use Athena to run ad-hoc queries using ANSI SQL, without the need to aggregate or load the data into Athena. Amazon Athena can process unstructured, semi-structured, and structured data sets. Examples include CSV, JSON, Avro or columnar data formats such as Apache Parquet and Apache ORC. Amazon Athena integrates with Amazon QuickSight for easy visualization. You can also use Amazon Athena to generate reports or to explore data with business intelligence tools or SQL clients, connected via an
+ODBC or
+JDBC driver.
+Q: How do I get started with Amazon Athena?
+To get started with Amazon Athena, simply log into the AWS Management Console for Athena and create your schema by writing DDL statements on the console or by using a create table wizard. You can then start querying data using a built-in query editor. Athena queries data directly from Amazon S3 so there’s no loading required.
+Q: How do you access Amazon Athena?
+Amazon Athena can be accessed via the AWS Management Console, an API, or an ODBC or JDBC driver. You can programmatically run queries, add tables or partitions using the
+Q: What are the service limits associated with Amazon Athena?
+Please
+click here to learn more about service limits.
+Q: What is the underlying technology behind Amazon Athena?
+Amazon Athena uses
+Presto with full standard SQL support and works with a variety of standard data formats, including CSV, JSON, ORC, Avro, and Parquet. Athena can handle complex analysis, including large joins, window functions, and arrays. Because Amazon Athena uses Amazon S3 as the underlying data store, it is highly available and durable with data redundantly stored across multiple facilities and multiple devices in each facility. Learn more about Presto
+here.
+Q: How does Amazon Athena store table definitions and schema?
+Amazon Athena uses a managed Data Catalog to store information and schemas about the databases and tables that you create for your data stored in Amazon S3. In regions where AWS Glue is available, you can upgrade to using the AWS Glue Data Catalog with Amazon Athena. In regions where AWS Glue is not available, Athena uses an internal Catalog.
+You can modify the catalog using DDL statements or via the AWS Management Console. Any schemas you define are automatically saved unless you explicitly delete them. Athena uses schema-on-read technology, which means that your table definitions applied to your data in S3 when queries are being executed. There’s no data loading or transformation required. You can delete table definitions and schema without impacting the underlying data stored on Amazon S3.
+Q: Why should I upgrade to AWS Glue Data Catalog?
+AWS Glue is a fully managed ETL service. Glue has three main components: 1) a crawler that automatically scans your data sources, identifies data formats and infers schemas, 2) a fully managed ETL service that allows you to transform and move data to various destinations, and 3) a Data Catalog that stores metadata information about databases & tables either stored in S3 or an ODBC- or JDBC-compliant data store. To use the benefits of Glue, you must upgrade from using Athena’s internal Data Catalog to the Glue Data Catalog.
+The benefits of upgrading to the Glue Data Catalog are:
+Unified Metadata Repository: AWS Glue is integrated across a wide range of AWS services. AWS Glue supports data stored in Amazon Aurora, Amazon RDS MySQL, Amazon RDS PostreSQL, Amazon Redshift, and Amazon S3, as well as MySQL and PostgreSQL databases in your Virtual Private Cloud (Amazon VPC) running on Amazon EC2. AWS Glue provides out-of-the-box integration with Amazon Athena, Amazon EMR, Amazon Redshift Spectrum, and any Apache Hive Metastore-compatible application.
+Automatic schema and partition recognition: AWS Glue automatically crawls your data sources, identifies data formats, and suggests schemas and transformations. Crawlers can help automate table creation and automatic loading of partitions.
+Easy to build pipelines: AWS Glue’s ETL engine generates Python code that is customizable, reusable, and portable. You can edit the code using your favorite IDE or notebook and share it with others using GitHub. Once your ETL job is ready, you can schedule it to run on AWS Glue's fully managed, scale-out Spark infrastructure. AWS Glue is serverless, so it handles provisioning, configuration, and scaling of the resources required to run your ETL jobs, allowing you to tightly integrate ETL in your workflow.
+Click
+here to learn more about the Glue Data Catalog.
+Q: Is there a step-by-step to upgrade to the AWS Data Catalog?
+Yes. Step-by-Step guide can be found
+Q: What regions is Amazon Athena available in?
+Please refer to
+Regional Products and Services for details of Amazon Athena service availability by region.
+Preview features
+Q: What preview features are available in Athena?
+You can now invoke your SageMaker machine learning (ML) models in an Athena SQL query to run inference. The ability to use ML models in SQL queries makes complex tasks such anomaly detection, customer cohort analysis and sales predictions as simple as writing a SQL query.
+Learn more.
+With User-Defined Functions (UDFs), you can now write your own functions in Java and invoke them in your Athena SQL query.
+Q: How do I test the preview features?
+All Athena queries originating from the Workgroup
+AmazonAthenaPreviewFunctionality will be considered preview test queries. You can create and set up a new Workgroup
+AmazonAthenaPreviewFunctionality using Athena APIs or Athena UX. To create the new Workgroup,
+follow the steps here.
+The following notes are important for using preview features. Please do not edit the Workgroup name. You can edit other Workgroup properties such as Enable CloudWatch metrics and Enable Requester Pays. You can use the Athena Console, JDBC/ODBC drivers or APIs to submit your test queries. Please make sure to specify the Workgroup:
+AmazonAthenaPreviewFunctionality when you submit test queries. Preview functionality is available only in us-east-1 region, us-west-2, ap-south-1, eu-west-1 regions. If you use Athena in any other region and submit queries using Workgroup:
+AmazonAthenaPreviewFunctionality, your query will fail. Cross AWS region calls are not supported in the preview mode.
+Q: Is it safe to use Athena preview features in my production account?
+We recommend to not onboard your production workload to the preview Workgroup
+AmazonAthenaPreviewFunctionality. Query performance may vary between the preview Workgroup and the other workgroups in your account. Additionally, we may add new features and bug fixes to the preview Workgroup that may not be backwards compatible.
+Q: How can I submit my queries?
+You can submit your queries using the Athena Console,
+Athena APIs, or using the
+Athena preview JDBC driver with any off-the-shelf query and result visualization tools such as SQL WorkBench.
+Q: How do I provide feedback on preview feature functionality?
+Your feedback is important to us. Please email us your feedback to athena-feedback@amazon.com.
+Q: Are there any charges to test preview features?
+During the preview, you are not charged for the data scanned from federated data sources. However, you are charged standard Athena rates for data scanned from Amazon S3. Additionally, you are charged standard rates for the AWS services that you use with Athena, such as Amazon S3, AWS Lambda, AWS Glue, Amazon SageMaker, and AWS Serverless Application Repository. For example, you are charged S3 rates for storage, requests, and inter-region data transfer. By default, query results are stored in an S3 bucket of your choice and are also billed at standard Amazon S3 rates. If you use AWS Lambda, you are charged based on the number of requests for your functions and the duration, the time it takes for your code to execute.
+Q: What happens when the preview ends?
+All queries submitted using the Workgroup
+AmazonAthenaPreviewFunctionality will fail. You can continue to submit queries from other Workgroups. If you do not specify any workgroup, the query automatically executes using the default Primary Workgroup. Please note that the preview of any feature may end at any time.
+When to use Athena vs other big data services
+Q: What is the difference between Amazon Athena, Amazon EMR, and Amazon Redshift?
+Query services like Amazon Athena, data warehouses like Amazon Redshift, and sophisticated data processing frameworks like Amazon EMR, all address different needs and use cases. You just need to choose the right tool for the job. Amazon Redshift provides the fastest query performance for enterprise reporting and business intelligence workloads, particularly those involving extremely complex SQL with multiple joins and sub-queries. Amazon EMR makes it simple and cost effective to run highly distributed processing frameworks such as Hadoop, Spark, and Presto when compared to on-premises deployments. Amazon EMR is flexible - you can run custom applications and code, and define specific compute, memory, storage, and application parameters to optimize your analytic requirements. Amazon Athena provides the easiest way to run ad-hoc queries for data in S3 without the need to setup or manage any servers.
+Q: When should you use a full featured enterprise data warehouse, like Amazon Redshift vs. a query service like Amazon Athena?
+A data warehouse like Amazon Redshift is your best choice when you need to pull together data from many different sources – like inventory systems, financial systems, and retail sales systems – into a common format, and store it for long periods of time, to build sophisticated business reports from historical data; then a data warehouse like Amazon Redshift is the best choice.
+Data warehouses collect data from across the company and act as the “single source of truth” for report generation and analysis. Data warehouses pull data from many sources, format and organize it, store it, and support complex, high speed queries that produce business reports. The query engine in Amazon Redshift has been optimized to perform especially well on this use case - where you need to run complex queries that join large numbers of very large database tables. TPC-DS is a standard benchmark designed to replicate this use case, and Redshift runs these queries up to 20x faster than query services that are optimized for unstructured data. When you need to run queries against highly structured data with lots of joins across lots of very large tables, you should choose Amazon Redshift.
+By comparison, query services like Amazon Athena make it easy to run interactive queries against data directly in Amazon S3 without worrying about formatting data or managing infrastructure. For example, Athena is great if you just need to run a quick query on some web logs to troubleshoot a performance issue on your site. With query services, you can get started fast. You just define a table for your data and start querying using standard SQL.
+You can also use both services together. If you stage your data on Amazon S3 before loading it into Amazon Redshift, that data can also be registered with and queried by Amazon Athena.
+Q: When should I use Amazon EMR vs. Amazon Athena?
+Amazon EMR goes far beyond just running SQL queries. With EMR you can run a wide variety of scale-out data processing tasks for applications such as machine learning, graph analytics, data transformation, streaming data, and virtually anything you can code. You should use Amazon EMR if you use custom code to process and analyze extremely large datasets with the latest big data processing frameworks such as Spark, Hadoop, Presto, or Hbase. Amazon EMR gives you full control over the configuration of your clusters and the software installed on them.
+You should use Amazon Athena if you want to run interactive ad hoc SQL queries against data on Amazon S3, without having to manage any infrastructure or clusters.
+Q: Can I use Amazon Athena to query data that I process using Amazon EMR?
+Yes, Amazon Athena supports many of the same data formats as Amazon EMR. Athena’s data catalog is Hive metastore compatible. If you're using EMR and already have a Hive metastore, you simply execute your DDL statements on Amazon Athena, and then you can start querying your data right away without impacting your Amazon EMR jobs.
+Q: How does federated query in Athena relate to other AWS services?
+Federated query in Athena allows you to run SQL queries across variety of relational, non-relational, and custom data sources. You get a unified way to run SQL queries across various data stores.
+Q: How does machine learning in Athena relate to other AWS services? [preview]
+Athena SQL queries can invoke ML models deployed on Amazon SageMaker. You can specify the Amazon S3 location where they want to store results of these Athena SQL queries.
+Creating tables, data formats and partitions
+Q: How do I create tables and schemas for my data on Amazon S3?
+Amazon Athena uses Apache Hive DDL to define tables. You can run DDL statements using the Athena console, via an
+ODBC or JDBC driver, via the API, or using the Athena create table wizard. If you use the AWS Glue Data Catalog with Athena, you can also use Glue crawlers to automatically infer schemas and partitions. An AWS Glue crawler connects to a data store, progresses through a prioritized list of classifiers to extract the schema of your data and other statistics, and then populates the Glue Data Catalog with this metadata. Crawlers can run periodically to detect the availability of new data as well as changes to existing data, including table definition changes. Crawlers automatically add new tables, new partitions to existing table, and new versions of table definitions. You can customize Glue crawlers to classify your own file types.
+When you create a new table schema in Amazon Athena the schema is stored in the Data Catalog and used when executing queries, but it does not modify your data in S3. Athena uses an approach known as schema-on-read, which allows you to project your schema onto your data at the time you execute a query. This eliminates the need for any data loading or transformation. Learn more about
+creating tables.
+Q: What data formats does Amazon Athena support?
+Amazon Athena supports a wide variety of data formats like CSV, TSV, JSON, or Textfiles and also supports open source columnar formats such as Apache ORC and Apache Parquet. Athena also supports compressed data in Snappy, Zlib, LZO, and GZIP formats. By compressing, partitioning, and using columnar formats you can improve performance and reduce your costs.
+Q: What kind of data types does Amazon Athena support?
+Amazon Athena supports both simple data types such as INTEGER, DOUBLE, VARCHAR and complex data types such as MAPS, ARRAY and STRUCT.
+Q: Can I run any Hive Query on Athena?
+Amazon Athena uses Hive only for DDL (Data Definition Language) and for creation/modification and deletion of tables and/or partitions. Please
+click here for a complete list of statements supported. Athena uses Presto when you run SQL queries on Amazon S3. You can run ANSI-Compliant SQL SELECT statements to query your data in Amazon S3.
+Q: What is a SerDe?
+SerDe stands for Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats. Hive DLL statements require you to specify a SerDe, so that the system knows how to interpret the data that you’re pointing to. Amazon Athena uses SerDes to interpret the data read from Amazon S3. The concept of SerDes in Athena is the same as the concept used in Hive. Amazon Athena supports the following SerDes:
+Apache Web Logs: "org.apache.hadoop.hive.serde2.RegexSerDe"
+CSV: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
+TSV: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
+Custom Delimiters: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
+Parquet: "org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe"
+Orc: "org.apache.hadoop.hive.ql.io.orc.OrcSerde"
+JSON: “org.apache.hive.hcatalog.data.JsonSerDe” OR org.openx.data.jsonserde.JsonSerDe
+Q: Can I add my own SerDe (Serializer/Deserializer) to Amazon Athena?
+Currently, you cannot add your own SerDe to Amazon Athena. We appreciate your feedback, so if there are any SerDes you would like to see added, please contact the Athena team at
+Athena-feedback@amazon.com
+Q: I created Parquet/ORC files using Spark/Hive. Will I be able to query them via Athena?
+Yes, Parquet and ORC files created via Spark can be read in Athena.
+Q: I have data coming from Kinesis Firehose. How can I query it using Athena?
+If your Kinesis Firehose data is stored in Amazon S3, you can query it using Amazon Athena. Simply create a schema for your data in Athena and start querying. We recommend that you organize the data into partitions to optimize performance. You can add partitions created by Kinesis Firehose using ALTER TABLE DDL statements. Learn more about
+partitions.
+Q: Does Amazon Athena support data partitioning?
+Yes. Amazon Athena allows you to partition your data on any column. Partitions allow you to limit the amount of data each query scans, leading to cost savings and faster performance. You can specify your partitioning scheme using the PARTITIONED BY clause in the CREATE TABLE statement. Learn more about
+partitioning data.
+Q: How do I add new data to an existing table in Amazon Athena?
+If your data is partitioned, you will need to run a metadata query (ALTER TABLE ADD PARTITION) to add the partition to Athena once new data becomes available on Amazon S3. If your data is not partitioned, just adding the new data (or files) to the existing prefix automatically adds the data to Athena. Learn more about
+Q: I already have large quantities of log data in Amazon S3. Can I use Amazon Athena to query it?
+Yes, Amazon Athena makes it easy to run standard SQL queries on your existing log data. Athena queries data directly from Amazon S3 so there’s no data movement or loading required. Simply define your schema using DDL statements and start querying your data right away.
+Querying and data formats
+Q: What kinds of queries does Amazon Athena support?
+Amazon Athena supports ANSI SQL queries. Amazon Athena uses Presto, an open source, in-memory, distributed SQL engine, and can handle complex analysis, including large joins, window functions, and arrays.
+Q: Can I use Amazon QuickSight with Amazon Athena?
+Yes. Amazon Athena integrates with Amazon QuickSight, allowing you to easily visualize your data stored in Amazon S3.
+Q: Does Athena support other BI Tools and SQL Clients?
+Yes. Amazon Athena comes with an ODBC and JDBC driver that you can use with other business intelligence tools and SQL clients. Learn more about using an
+JDBC driver with Athena.
+Q: How do I access the functions supported by Amazon Athena?
+here to learn more about functions supported by Amazon Athena.
+Q: How do I improve the performance of my query?
+You can improve the performance of your query by compressing, partitioning, or converting your data into columnar formats. Amazon Athena supports open source columnar data formats such as Apache Parquet and Apache ORC. Converting your data into a compressed, columnar format lowers your cost and improves query performance by enabling Athena to scan less data from S3 when executing your query.
+Q: Does Athena support User Defined Functions (UDFs)? [preview]
+Amazon Athena now supports user-defined functions (UDFs) to enable you to write custom scalar functions and invoke them in SQL queries. While Athena provides built-in functions, UDFs enables you to perform custom processing such as compressing and decompressing data, redacting sensitive data, or applying customized decryption.
+You can write their UDFs in Java using the Athena Query Federation SDK. When a UDF is used in a SQL query submitted to Athena, it is invoked and executed on AWS Lambda. UDFs can be used in both SELECT and FILTER clauses of a SQL query. You can invoke multiple UDFs in the same query.
+Q: What is the user experience when writing a UDF? [preview]
+You can use the Athena Query Federation SDK to write your UDF. UDF examples are
+provided here. You can upload your function to AWS Lambda and then invoke it in your Athena query.
+Click here to get started.
+Athena will invoke your UDF on a batch of dataset rows to optimize performance.
+Federated query
+Q: Why should you use federated queries in Athena?
+Developers often pick relational, key-value, document, in-memory, search, graph, time-series and ledger databases along with storing their data on S3. Running analytics on data spread across wide variety of data sources can be complex and time consuming. Analysts often have to learn new programming languages and database constructs, and build complex pipelines that extract, transform, and create copies of data before they can analyze them. Similarly, data scientists often need to extract data from multiple data sources to create a data set fit for feature extraction and training. This process is time consuming and inhibits building self-service platforms where analysts and data scientists can easily build pipelines that can extract data from multiple source. Analysts typically have to depend on data engineering teams to build such pipelines, introducing delays and complexity. Federated query eliminates this complexity by providing a simple to use, pay-per-query, serverless service that allows you to run SQL queries across a variety of such data stores. You can use well-known SQL constructs to query data across multiple data sources for quick analysis, or use scheduled SQL queries to extract and transform data from multiple data sources, and store them in S3 for further analysis.
+In addition, you may also have proprietary or custom databases and catalogs. Athena federated queries are extensible because they allow you to write your own or use community-developed connectors to run SQL queries against to any data source or custom catalog of your choice. There are open source reference implementations for several such data sources that can be used as baselines for developing new ones.
+Q: What use cases do Athena federated queries support?
+Athena federated queries supports a wide variety of use-cases. One example is ad-hoc analysis, where you often have data stored in variety of data stores. Consider an e-commerce company that uses Amazon ElasticCache Redis to store active orders, Amazon DocumentDB or MongoDB to store customer-specific information such as email address, shipping address, Amazon CloudWatch Logs (e.g. of custom data store) to store order processing application log events. You may want to understand what happened with a specific order that was reported as delayed. You can use a simple query to join data across the multiple data stores to quickly run analysis.
+Another example is ETL from multiple data sources. Running analytics often requires assembling data from multiple data sources, so that it can be further published in a data warehouse or queried using engines such as Athena, Apache Spark, or Apache Presto. Such assembly requires building data pipelines that can extract and transform data from multiple sources on a schedule. Building data pipelines often requires learning new programming languages such as Python and Java, or using large-scale distributed systems such as Apache Spark. Analysts often have to rely on data engineering teams to build such pipelines. With Athena federated queries, anyone can express their pipelines as SQL statements and schedule them to run on schedule.
+A third example is machine learning extracts: data scientists often need to extract data from multiple data sources to create a data set fit for feature extraction and training. This process is time consuming and inhibits building self-service platforms.
+Q: How do Athena data source connectors work?
+You can run SQL queries against new data stores by registering the data store with Athena. To register a data source, you use an Athena Data Source Connector specific to the data source. A connector can be used to extend Athena’s querying capability to new data sources. You can use AWS provided open source connectors, build your own or contribute to existing connectors, or use community or marketplace-built connectors. Depending on the type of data source, a connector manages metadata information, identifies specific parts of the tables that need to be scanned, read or filtered, and manages parallelism.
+Connectors run as AWS Lambda functions in the customer account. Each connector is composed of two Lambda functions specific to a data source – one for metadata, and one for record reading. You can deploy Lambda functions using code in the Github repository or can use pre-deployed Lambda functions from AWS Serverless Application Repository. Once the Lambda functions are deployed, they produce a unique Amazon Resource Name or ARN. You must register these ARNs with Athena. Registering an ARN allows Athena to understand which Lambda function to talk to during query execution. Once both the ARN is registered, you can query the registered data source. The process needs to be repeated for each data source.
+When a query runs on a federated data source, Athena will fan out the Lambda invocations reading metadata and data in parallel. The number of parallel invocations depend on the Lambda concurrency limits in your account. For example, if you have a limit of 300 concurrent Lambda invocations, Athena can run invoke 300 parallel Lambda functions for record reading. For two queries running in parallel, Athena will invoke twice the number of concurrent executions. You can define their own limit allowing them to control cost and throughput to data source.
+Q: What connectors are available for Athena federated query?
+Athena has open sourced data source connectors to Apache HBase, Amazon DocumentDB, Amazon DynamoDB, and Amazon CloudWatch Logs and CloudWatch Metrics. Athena also has a generic JDBC connector that connect to any JDBC-compliant data source and an AWS Configuration Management Database (CMDB) connector that allows customers to run queries on AWS resource metadata.
+Q: How do I use the Query Federation SDK?
+You can use the Query Federation SDK to create your own connector to use when querying a data source using Athena. Template implementations are provided for each of the connectors. You can use the templates as baseline. Get started by visiting
+our documentation.
+Q: Can I use federated query capabilities for ETL? What is the workflow?
+All Athena query results are stored in an Amazon S3 location that you set. You can use Athena’s federated query capabilities to execute a query that scans data sources of your choice and store the result in S3 in one SQL query. Common SQL constructs such as JOINs, Filter clauses, etc. are supported. Additionally, you can also define your own functions using Athena’s UDF functionality to pre- or post-process your result dataset.
+Q: Are you going to release SDK support in programming languages other than JAVA?
+Please let us know what programming languages you want support for by emailing athena-feedback@amazon.com
+Q: What are the known limitations of the Query Federation SDK?
+At the Preview launch, Query Federation SDK only supports Reads and JAVA-based Lambda functions.
+Machine learning (in preview)
+Q: What use cases does Athena support for embedded ML? (preview)
+Athena use-cases for ML span across different industries, as in the following examples. Financial risk data analysts can run what-if analysis and Monte Carlo simulations. Business analysts might run linear regression or forecasting models to predict future values to help them create richer and forward-looking business dashboards that forecast revenues. Marketing analysts could use k-means clustering models to help determine their different customer segments. Security analysts could use logistic regression models (bivariant and multivariant) to find anomalies and detect security incidents from various logs.
+Q: What ML models can be used with Athena? (preview)
+Athena can invoke any ML model that is deployed on Amazon SageMaker. You have the flexibility to train your own model using your proprietary data, or use a model that is pre-trained and deployed on SageMaker. For example, cluster analysis would likely be trained on your own data, because you want to categorize new records into the same categories you used for previous records. On the other hand, for predicting real world sports events, you could use a publicly available model, since the training data used would be in the public domain already. Domain-specific or industry-specific predictions will typically be trained on your own data in SageMaker, while undifferentiated ML needs may use external models.
+Q: Can I train my ML model using Athena? (preview)
+You cannot train and deploy your ML models on SageMaker using Athena. You can train your ML model, or use an existing pre-trained model that is deployed on SageMaker using Athena. Documentation detailing
+training steps on SageMaker is here.
+Q: Can I run inference on models deployed on other services such as Comprehend, Forecasting or Models deployed on my own EC2 cluster? (preview)
+Athena only supports invoking ML models deployed on SageMaker. We welcome feedback on what other services you want to use with Athena. Please email us your feedback to: athena-feedback@amazon.com.
+Q: What are the performance implications of using Athena queries for SageMaker inference? (preview)
+We are constantly adding operational performance improvements to our features and services. To optimize performance of your Athena ML queries, we batch rows when invoking your SageMaker ML model for inference. At this time, we do not support user provided row batch size overrides.
+Q: What features does Athena ML support? (preview)
+Athena offers ML inference (prediction) capabilities wrapped by a SQL interface. You can also call an Athena user-defined function (UDFs, also included in the Preview) to invoke pre- or post-processing logic on your result set. Inputs can include any column, record or table, and multiple calls can be batched together for higher scalability. You can run inference in the Select phase or in the Filter phase. To learn more, please
+visit our documentation.
+Q: What ML models can I use? (preview)
+Amazon SageMaker supports a variety of ML algorithms. You can also create your proprietary ML model and deploy it on Amazon SageMaker. For example, cluster analysis would likely be trained on your own data, because you want to categorize new records into the same categories you used for previous records. On the other hand, for predicting real world sports events, you could use a publicly available model, since the training data used would be in the public domain.
+We expect that domain-specific or industry-specific predictions will typically be trained on your own data in SageMaker, while undifferentiated ML needs such as machine translation will use external models.
+Security & availability
+Q: How do I control access to my data?
+Amazon Athena allows you to control access to your data by using AWS Identity and Access Management (IAM) policies, Access Control Lists (ACLs), and Amazon S3 bucket policies. With IAM policies, you can grant IAM users fine-grained control to your S3 buckets. By controlling access to data in S3, you can restrict users from querying it using Athena.
+Q: Can Athena query encrypted data in Amazon S3?
+Yes, you can query data that’s encrypted using Server-Side Encryption with Amazon S3-Managed Encryption Keys, Server-Side Encryption with AWS Key Management Service (KMS) – Managed Keys, and Client-Side Encryption with keys managed by KMS. Amazon Athena also integrates with KMS and provides you an option to encrypt your result sets.
+Q: Is Athena highly available?
+Yes. Amazon Athena is highly available and executes queries using compute resources across multiple facilities, automatically routing queries appropriately if a particular facility is unreachable. Athena uses Amazon S3 as its underlying data store, making your data highly available and durable. Amazon S3 provides durable infrastructure to store important data and is designed for durability of 99.999999999% of objects. Your data is redundantly stored across multiple facilities and multiple devices in each facility.
+Q: Can I provide cross-account access to someone else’s S3 bucket?
+Yes, you can provide cross-account access to Amazon S3.
+Pricing & billing
+Q: How is Amazon Athena priced?
+Amazon Athena is priced per query and charges based on the amount of data scanned by the query. You can store data in a variety of formats on Amazon S3. If you compress your data, partition, or convert it to columnar storage formats, you pay less because you scan less data. Converting data to the columnar format allows Athena to read only the columns it needs to process the query. Please see the Athena
+pricing page for more details
+Q: Why do I get charged less when I use a columnar format?
+Amazon Athena charges you for the amount of data scanned per query. Compressing your data allows Amazon Athena to scan less data. Converting your data to columnar formats allows Athena to selectively read only required columns to process the data. Partitioning your data also allows Athena to restrict the amount of data scanned. This leads to cost savings and improved performance. See
+pricing example for details.
+Q: How do I lower my costs?
+You can save 30%-90% on your query costs and get better performance by compressing, partitioning, and converting your data into columnar formats. Each of these operations reduces the amount of data Amazon Athena needs to scan to execute a query. Amazon Athena supports Apache Parquet and ORC, two of the most popular open-source columnar formats. You can see the amount of data scanned per query, on the Athena console.
+Q: Does Amazon Athena charge me for failed queries?
+No, you are not charged for failed queries.
+Q: Does Amazon Athena charge me for cancelled queries?
+Yes, if you cancel a query manually, you are charged for the amount of data scanned up to the point at which you cancelled the query.
+Q: Are there any additional charges associated with Amazon Athena?
+Amazon Athena queries data directly from Amazon S3, so your source data is billed at S3 rates. When Amazon Athena runs a query, it stores the results in an S3 bucket of your choice and you are billed at standard S3 rates for these result sets. We recommend you monitor these buckets and use lifecycle policies to control how much data gets retained.
+Q: Will I be charged for using AWS Glue Data Catalog?
+Yes, you are charged separately for using the AWS Glue Data Catalog. Click
+here to learn more about Glue Data Catalog pricing.
+Learn more about Amazon Athena pricing
+Explore all pricing options offered by Amazon Athena.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building on the console
+Get started building with Amazon Athena on the AWS Management Console.
+Sign in
+Page Content
+When to use Athena

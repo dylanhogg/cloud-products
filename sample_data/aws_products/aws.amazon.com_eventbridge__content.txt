@@ -7,7 +7,7 @@ Intro to Amazon EventBridge (9:13)
 Get started with EventBridge demo videos
 Benefits
 Connect data from SaaS apps
-EventBridge ingests data from supported SaaS applications and routes it to AWS service targets through native integration in the AWS management console. With EventBridge, you can use data from your SaaS apps to trigger workflows for customer support, business operations and more. Learn more about integrated SaaS partners.
+EventBridge ingests data from supported SaaS applications and routes it to AWS service targets through native integration in the AWS management console. With EventBridge, you can use data from your SaaS apps to trigger workflows for customer support, business operations and more. Learn more about integrated SaaS partners.
 Write less code
 EventBridge makes it easy to connect applications together because you can ingest, filter and deliver events without writing custom code. The EventBridge schema registry stores a collection of easy-to-find event schemas and enables you to download code bindings for those schemas in your IDE so you can represent the event as an strongly-typed object in your code. Schema from your event bus can also be automatically added to the registry through the schema discovery feature.
 Easily build event-driven architectures
@@ -19,7 +19,7 @@ EventBridge connects applications using events. An event is a signal that a syst
 Use cases
 Customer support
 You can send status changes in customer support tickets to EventBridge and trigger an automated workflow, or use machine learning to train and deploy a sentiment analysis model. For example, you can use Amazon Sagemaker to attach a customer satisfaction score on an original Zendesk ticket.
-Learn more »
+Learn more
 Security operations
 You can send security events to EventBridge for communication to relevant user groups across multiple channels. For example, you can include threat detection events in a Whispir communications workflow, or automate the delivery of security system reports with event-based rules.
 Business operations
@@ -31,8 +31,7 @@ You can automate directory registration processes by sending user information to
 Customer data updates
 You can use changes in customer data in your customer relationship management (CRM) system to trigger workflows in other systems. For example, you can send an event to EventBridge when the status of a SugarCRM opportunity changes to “Closed Won,” and trigger a workflow that will provision billing records in an accounting system.
 Check out the product features
-Learn more about Amazon EventBridge features.
-Learn more
+Learn more about Amazon EventBridge features.
 Start building in the console
 Get started building with Amazon EventBridge in the AWS Management Console.
 Sign in

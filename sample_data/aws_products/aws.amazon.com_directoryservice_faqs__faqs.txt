@@ -1,0 +1,119 @@
+General
+Q: What is AWS Directory Service?
+AWS Directory Service is a managed service offering, providing directories that contain information about your organization, including users, groups, computers, and other resources. As a managed offering, AWS Directory Service is designed to reduce management tasks, thereby allowing you to focus more of your time and resources on your business. There is no need to build out your own complex, highly-available directory topology because each directory is deployed across multiple Availability Zones, and monitoring automatically detects and replaces domain controllers that fail. In addition, data replication and automated daily snapshots are configured for you. There is no software to install and AWS handles all of the patching and software updates.
+Q: What can I do with AWS Directory Service?
+AWS Directory Service makes it easy for you to setup and run directories in the AWS cloud, or connect your AWS resources with an existing on-premises Microsoft Active Directory. Once your directory is created, you can use it to manage users and groups, provide single sign-on to applications and services, create and apply group policy, join Amazon EC2 instances to a domain, as well as simplify the deployment and management of cloud-based Linux and Microsoft Windows workloads. AWS Directory Service enables your end users to use their existing corporate credentials when accessing AWS applications, such as Amazon WorkSpaces, Amazon WorkDocs and Amazon WorkMail, as well as directory-aware Microsoft workloads, including custom .NET and SQL Server-based applications. Finally, you can use your existing corporate credentials to administer AWS resources via AWS Identity and Access Management (IAM) role-based access to the AWS Management Console, so you do not need to build out more identity federation infrastructure.
+Q: How do I create a directory?
+You can use the AWS Management Console or the API to create a directory. All you need to provide is some basic information such as a fully qualified domain name (FQDN) for your directory, Administrator account name and password, and the VPC you want the directory to be attached to.
+Q: Can I join an existing Amazon EC2 instance to an AWS Directory Service directory?
+Yes, you can use the AWS Management Console or the API to add existing EC2 instances running Linux or Windows to an AWS Managed Microsoft AD directory.
+Q: Are APIs supported for AWS Directory Service?
+Public APIs are supported for creating and managing directories. You can now programmatically manage directories using public APIs. The APIs are available via the AWS CLI and SDK. Learn more about the APIs in the AWS Directory Service documentation.
+Q: Does AWS Directory Service support CloudTrail logging?
+Yes. Actions performed via the AWS Directory Service APIs or management console will be included in your CloudTrail audit logs.
+Q: Can I receive notifications when the status of my directory changes?
+Yes. You can configure Amazon Simple Notification Service (SNS) to receive email and text messages when the status of your AWS Directory Service changes. Amazon SNS uses topics to collect and distribute messages to subscribers. When AWS Directory Service detects a change in your directory’s status, it will publish a message to the associated topic, which is then sent to topic subscribers. Visit the documentation to learn more.
+Q: How much does AWS Directory Service cost?
+See the pricing page for more information.
+Q: Can I tag my directory?
+Yes. AWS Directory Service supports cost allocation tagging. Tags make it easier for you to allocate costs and optimize spending by categorizing and grouping AWS resources. For example, you can use tags to group resources by administrator, application name, cost center, or a specific project.
+Q: In which AWS regions is AWS Directory Service available?
+Refer to Regional Products and Services for details of AWS Directory Service availability by region.
+Q: What versions of Server Message Block (SMB) protocol does AWS Managed Microsoft AD support?
+Effective 05/31/2020, client computers can use only SMB version 2.0 (SMBv2) or newer to access files stored on the SYSVOL and NETLOGON shares of the domain controllers for their AWS Managed Microsoft AD directories. However, AWS recommends customers use only SMBv2 or newer on all SMB-based file services.
+AWS Managed Microsoft AD
+Q: How do I create an AWS Managed Microsoft AD directory?
+You can launch the AWS Directory Service console from the AWS Management Console to create an AWS Managed Microsoft AD directory. Alternatively, you can use the AWS SDK or AWS CLI.
+Q: How are AWS Managed Microsoft AD directories deployed?
+AWS Managed Microsoft AD directories are deployed across two Availability Zones in a region by default and connected to your Amazon Virtual Private Cloud (VPC). Backups are automatically taken once per day, and the Amazon Elastic Block Store (EBS) volumes are encrypted to ensure that data is secured at rest. Domain controllers that fail are automatically replaced in the same Availability Zone using the same IP address, and a full disaster recovery can be performed using the latest backup.
+Q: Can I configure the storage, CPU, or memory parameters of my AWS Managed Microsoft AD directory?
+No. This functionality is not supported at this time.
+Q: How do I manage users and groups for AWS Managed Microsoft AD?
+You can use your existing Active Directory tools—running on Windows computers that are joined to the AWS Managed Microsoft AD domain—to manage users and groups in AWS Managed Microsoft AD directories. No special tools, policies, or behavior changes are required.
+Q: How are my administrative permissions different between AWS Managed Microsoft AD and running Active Directory in my own Amazon EC2 Windows instances?
+In order to deliver a managed-service experience, AWS Managed Microsoft AD must disallow operations by customers that would interfere with managing the service. Therefore, AWS does not provide Windows PowerShell access to directory instances, and it restricts access to directory objects, roles, and groups that require elevated privileges. AWS Managed Microsoft AD does not allow direct host access to domain controllers via Telnet, Secure Shell (SSH), or Windows Remote Desktop Connection. When you create an AWS Managed Microsoft AD directory, you are assigned an organizational unit (OU) and an administrative account with delegated administrative rights for the OU. You can create user accounts, groups, and policies within the OU by using standard Remote Server Administration Tools such as Active Directory Users and Groups.
+Q: Can I use Microsoft Network Policy Server (NPS) with AWS Managed Microsoft AD?
+Yes. The administrative account created for you when AWS Managed Microsoft AD is set up has delegated management rights over the Remote Access Service (RAS) and Internet Authentication Service (IAS) security group. This enables you to register NPS with AWS Managed Microsoft AD and manage network access policies for accounts in your domain.
+Q: Does AWS Managed Microsoft AD support schema extensions?
+Yes. AWS Managed Microsoft AD supports schema extensions that you submit to the service in the form of a LDAP Data Interchange Format (LDIF) file. You may extend but not modify the core Active Directory schema.
+Q: Which applications are compatible with AWS Managed Microsoft AD?
+Amazon Chime Amazon Connect Amazon EC2 Instances Amazon FSx for Windows File Server Amazon QuickSight Amazon RDS for MySQL Amazon RDS for Oracle Amazon RDS for PostgreSQL Amazon RDS for SQL Server Amazon Single Sign On Amazon WorkDocs Amazon WorkMail Amazon WorkSpaces AWS Client VPN AWS Management Console
+Note that not all configurations of these applications may be supported.
+Q: Which third party software is compatible with AWS Managed Microsoft AD?
+AWS Managed Microsoft AD is based on actual Active Directory and provides the broadest range of native AD tools and third party apps support such as:
+Active Directory-Based Activation (ADBA) Active Directory Certificate Services (AD CS): Enterprise Certificate Authority Active Directory Federation Services (AD FS) Active Directory Users and Computers (ADUC) Application Server (.NET) Azure Active Directory (Azure AD) Azure Active Directory (AD) Connect Distributed File System Replication (DFSR) Distributed File System Namespaces (DFSN) Microsoft Remote Desktop Services Licensing Server Microsoft SharePoint Server Microsoft SQL Server (including SQL Server Always On Availability Groups) Microsoft System Center Configuration Manager (SCCM) Microsoft Windows and Windows Server OS Office 365
+Q: Which third party software is NOT compatible with AWS Managed Microsoft AD?
+Active Directory Certificate Services (AD CS): Certificate Enrollment Web Service  Active Directory Certificate Services (AD CS): Certificate Enrollment Policy Web Service  Microsoft Exchange Server Microsoft Skype for Business Server
+Q: Can I migrate my existing, on-premises Microsoft Active Directory to AWS Managed Microsoft AD?
+AWS does not provide any migration tools to migrate a self-managed Active Directory to AWS Managed Microsoft AD. You must establish a strategy for performing migration including password resets, and implement the plans using Remote Server Administration Tools.
+Q: Can I configure conditional forwarders and trusts in the Directory Service console?
+Yes. You can configure conditional forwarders and trusts for AWS Managed Microsoft AD using the Directory Service console as well as the API.
+Q: Can I add additional domain controllers manually to my AWS Managed Microsoft AD?
+Yes. You can add additional domain controllers to your managed domain using the AWS Directory Service console or API. Note that promoting Amazon EC2 instances to domain controllers manually is not supported.
+Q: Can I use Microsoft Office 365 with user accounts managed in AWS Managed Microsoft AD?
+Yes. You can synchronize identities from AWS Managed Microsoft AD to Azure AD using Azure AD Connect and use Microsoft Active Directory Federation Services (AD FS) for Windows 2016 with AWS Managed Microsoft AD to authenticate Office 365 users. For step-by-step instructions, see How to Enable Your Users to Access Office 365 with AWS Microsoft Active Directory Credentials.
+Q: Can I use Security Assertion Markup Language (SAML) 2.0–based authentication with cloud applications using AWS Managed Microsoft AD?
+Yes. You can use Microsoft Active Directory Federation Services (AD FS) for Windows 2016 with your AWS Managed Microsoft AD managed domain to authenticate users to cloud applications that support SAML.
+Q: Can I encrypt communication between my applications and AWS Managed Microsoft AD using LDAPS?
+Yes. AWS Managed Microsoft AD supports Lightweight Directory Access Protocol (LDAP) over Secure Socket Layer (SSL) / Transport Layer Security (TLS), also known as LDAPS, in both client and server roles. When acting as a server, AWS Managed Microsoft AD supports LDAPS over ports 636 (SSL) and 389 (TLS). You enable server-side LDAPS communication by installing a certificate on your AWS Managed Microsoft AD domain controllers from an AWS-based Active Directory Certificate Services certificate authority (CA). To learn more, see Enable Secure LDAP (LDAPS).
+Q: Can I encrypt LDAP communications between AWS applications and my self-managed AD using AWS Managed Microsoft AD?
+Yes. AWS Managed Microsoft AD supports Lightweight Directory Access Protocol (LDAP) over Secure Socket Layer (SSL) / Transport Layer Security (TLS), also known as LDAPS, in both client and server roles. When acting as a client, AWS Managed Microsoft AD supports LDAPS over ports 636 (SSL). You enable client-side LDAPS communication by registering certification authority (CA) certificates from your server certificate issuer into AWS. To learn more, see Enable Secure LDAP (LDAPS).
+Q: How does AWS Managed Microsoft AD address Microsoft advisory ADV190023, which describes changes to default LDAP security settings on AD domain controllers?
+AWS Managed Microsoft AD supports both LDAP signing and LDAP over SSL/TLS (LDAPS) when acting as LDAP clients communicating with self-managed Active Directory. Client-side LDAP signing requires no customer action to enable, and provides data integrity. Client-side LDAPS requires configuration, and provides data integrity and confidentiality. For more information, see this AWS Forums post.
+Q: How many users, groups, computers, and total objects does AWS Managed Microsoft AD support?
+AWS Managed Microsoft AD (Standard Edition) includes 1 GB of directory object storage. This capacity can support up to 5,000 users or 30,000 directory objects, including users, groups, and computers. AWS Managed Microsoft AD (Enterprise Edition) includes 17 GB of directory object storage, which can support up to 100,000 users or 500,000 objects.
+Q: Can I use AWS Managed Microsoft AD as a primary directory?
+Yes. You can use it as a primary directory to manage users, groups, computers, and Group Policy objects (GPOs) in the cloud. You can manage access and provide single sign-on (SSO) to AWS applications and services, and to third-party directory-aware applications running on Amazon EC2 instances in the AWS Cloud. In addition, you can use Azure AD Connect and AD FS to support SSO to cloud applications, including Office 365.
+Q: Can I use AWS Managed Microsoft AD as a resource forest?
+Yes. You can use AWS Managed Microsoft AD as a resource forest that contains primarily computers and groups with trust relationships to your on-premises directory. This enables your users to access AWS applications and resources with their on-premises AD credentials.
+Multi-region replication
+Q: What is multi-region replication?
+Multi-region replication is a feature that enables you to deploy and use a single AWS Managed Microsoft AD directory across multiple AWS Regions. This makes it easier and more cost-effective for you to deploy and manage your Microsoft Windows and Linux workloads globally. With the automated multi-region replication capability you get higher resiliency, while your applications use a local directory for optimal performance. This feature is available in AWS Managed Microsoft AD (Enterprise Edition) only. You can use the feature for new and existing directories.
+Q: How do I add an AWS Region to my directory?
+First, you open the AWS Directory Service console in the region where your directory is already up and running (primary region). Select the directory you want to expand and choose Add Region. Then, select the Region into which you want to expand, provide the Amazon Virtual Private Cloud (VPC), and the subnets into which you want to deploy your directory. You can also use APIs to expand your directory. To learn more, see the documentation.
+Q: How does multi-region replication work when I add a new AWS Region?
+AWS Managed Microsoft AD automatically configures inter-region networking connectivity, deploys domain controllers, and replicates all your directory data, including users, groups, Group Policy Objects (GPOs), and schema, across your selected regions. In addition, AWS Managed Microsoft AD configures a new AD site per region which improves user authentication and domain controller replication performance within the region while lowering costs by minimizing data transfers between regions. Your directory identifier (directory_id) remains the same in the new region and is deployed in the same AWS account as your primary Region.
+Q: Can I share my directory with other AWS accounts in the new AWS Region?
+Yes, with multi-region replication you have the flexibility to share your directory with other AWS accounts per Region. Directory sharing configurations are not automatically replicated from the primary region. To learn how to share your directory with other AWS accounts, see the documentation.
+Q: Can I add more domain controllers do my directory in the new AWS Region?
+Yes, with multi-region replication you have the flexibility to define the number of domain controllers per region. To learn how to add a domain controller, see the documentation.
+Q: How do I monitor the directory status across multiple AWS Regions?
+With multi-region replication, you monitor your directory status per Region independently. You must enable Amazon Simple Notification Service (SNS) in each region where you deployed your directory, using the AWS Directory Service console or API. To learn more, see the documentation.
+Q: How do I monitor the directory security logs across multiple AWS Regions?
+With multi-region replication, you monitor your directory security logs per Region independently. You must enable Amazon CloudWatch Logs forwarding in each region where you deployed your directory, using the AWS Directory Service console or API. To learn more, see the documentation.
+Q: Can I rename my directory’s AD site name?
+Yes, you can rename your directory’s AD site name per region using standard AD tools. To learn more, see the documentation.
+Q: Can I remove an AWS Region from my directory?
+Yes. If you do not have any AWS applications registered to your directory and you have not shared the directory with any AWS account in the Region, AWS Managed Microsoft AD allows you to remove an AWS Region from your directory. You cannot remove the primary Region, unless you delete the directory.
+Q: What AWS applications and services are compatible with multi-region application?
+Multi-region replication is compatible with Amazon EC2, Amazon RDS (SQL Server, Oracle, MySQL, PostgreSQL, and MariaDB), Amazon Aurora (MySQL and PostgreSQL), and Amazon FSx for Windows File Server natively. You can also integrate other AWS Applications such as Amazon WorkSpaces, AWS Single Sign-On, AWS Client VPN, Amazon QuickSight, Amazon Connect, Amazon WorkDocs, Amazon WorkMail, and Amazon Chime with your directory in new Regions by configuring AD Connector against your AWS Managed Microsoft AD directory per Region.
+Seamless domain join
+Q: What is seamless domain join?
+Seamless domain join is a feature that allows you to join your Amazon EC2 for Windows Server and Amazon EC2 for Linux instances seamlessly to a domain, at the time of launch and from the AWS Management Console. You can join instances to AWS Managed Microsoft AD that you launch in the AWS Cloud.
+Q: How do I join an instance seamlessly to a domain?
+When you create and launch an EC2 for Windows or an EC2 for Linux instance from the AWS Management Console, you have the option to select which domain your instance will join. To learn more, see the documentation.
+Q: Can I join existing EC2 for Windows Server instances seamlessly to a domain?
+You cannot use the seamless domain join feature from the AWS Management Console for existing EC2 for Windows Server and EC2 for Linux instances, but you can join existing instances to a domain using the EC2 API or by using PowerShell on the instance. To learn more, see the documentation.
+Which distributions and versions of Linux does the seamless domain join feature support?
+The seamless domain join feature is currently available for Amazon Linux, Amazon Linux 2, CentOS 7 or newer, RHEL 7.5 or newer, and Ubuntu 14 to 18.
+IAM integration
+Q: How does AWS Directory Service enable single sign-on (SSO) to the AWS Management Console?
+AWS Directory Service allows you to assign IAM roles to AWS Manage Microsoft AD or Simple AD users and groups in the AWS cloud, as well as an existing, on-premises Microsoft Active Directory users and groups using AD Connector. These roles will control users’ access to AWS services based on IAM policies assigned to the roles. AWS Directory Service will provide a customer-specific URL for the AWS Management Console which users can use to sign in with their existing corporate credentials. See our documentation for more information on this feature.
+Compliance
+Q: Can I use AWS Managed Microsoft AD for AWS Cloud workloads that are subject to compliance standards?
+Yes. AWS Managed Microsoft AD has implemented the controls necessary to enable you to meet the U.S. Health Insurance Portability and Accountability Act (HIPAA) requirements and is included as an in-scope service in the Payment Card Industry Data Security Standard (PCI DSS) Attestation of Compliance and Responsibility Summary.
+Q: How can I access compliance and security reports?
+To access a comprehensive list of documents relevant to compliance and security in the AWS Cloud, see AWS Artifact.
+Q: What is the AWS Shared Responsibility Model?
+Security, including HIPAA and PCI DSS compliance, is a shared responsibility between AWS and you. For example, it is your responsibility to configure your AWS Managed Microsoft AD password policies to meet PCI DSS requirements when using AWS Managed Microsoft AD. To learn more about the actions you may need to take to meet HIPAA and PCI DSS compliance requirements, see the compliance documentation for AWS Managed Microsoft AD, read the Architecting for HIPPA Security and Compliance on Amazon Web Services whitepaper, and see the AWS Cloud Compliance, HIPAA Compliance, and PCI DSS Compliance.
+For questions about AD Connector or Simple AD, please see AWS Directory Service, Other Directory Options.
+Learn more about Directory Service pricing
+See pricing examples and calculate your costs.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Directory Service in the AWS Console.
+Sign in
+Page Content

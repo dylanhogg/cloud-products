@@ -15,12 +15,12 @@ Getting Started
 How does the AWS Cost & Usage Report work?
 AWS delivers the AWS Cost & Usage Report to whichever Amazon Simple Storage Service (S3) bucket you specify during setup, and updates the reports at least once per day. You can download the reports using the Amazon S3 console.
 You can also configure your Cost & Usage Reports to integrate with Amazon Athena. Once Amazon Athena integration has been enabled for your Cost & Usage Report, your data will be delivered in compressed Apache Parquet files to an Amazon S3 bucket of your choice. Your AWS Cost & Usage Report can also be integrated directly with Amazon Redshift or Amazon QuickSight.
-Get started with AWS Cost & Usage Report »
+Get started with AWS Cost & Usage Report
 Latest AWS Cost Management Blogs
 1
-…
+...
 No blog posts have been found at this time. Please see AWS Blog for other resources.
-Read more at the AWS Cost Management Blog »
+Read more at the AWS Cost Management Blog
 Ready to get started?
 Check out the product features
 Learn more about features for cost management, cost optimization, and more.

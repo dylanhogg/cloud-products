@@ -1,0 +1,99 @@
+General
+What is AWS Single Sign-On (AWS SSO)?
+AWS SSO is an AWS service that enables you to makes it easy to centrally manage access to multiple AWS accounts and business applications and provide users with single sign-on access to all their assigned accounts and applications from one place. With AWS SSO, you can easily manage SSO access and user permissions to all of your accounts in AWS Organizations centrally. AWS SSO allows you to create and manage user identities in AWS SSO’s identity store, or easily connect to your existing identity source, including Microsoft Active Directory, Okta Universal Directory, and Azure Active Directory (Azure AD).
+What are the benefits of AWS SSO?
+You can use AWS SSO to quickly and easily assign and manage your employees’ access to multiple AWS accounts, SAML-enabled cloud applications (such as Salesforce, Microsoft 365, and Box), and custom-built in-house applications, all from a central place. Employees can be more productive by signing in with their existing corporate Active Directory credentials or credentials that you configure in AWS SSO to access their applications from their personalized user portal. Now, employees won’t need to remember multiple sets of credentials and access URLs to cloud applications, and new employees can be productive starting on day one. After you’ve added users to the appropriate group in your directory, they will automatically gain access to accounts and applications that are enabled for members of that group. You'll get better visibility into cloud application use because you can monitor and audit sign-in activity centrally from AWS CloudTrail.
+What problems does AWS SSO solve?
+AWS SSO eliminates the administrative complexity of custom SSO solutions you use to provision and manage identities across AWS accounts and business applications. As you use multiple AWS accounts and add accounts regularly, setting up SSO with Active Directory Federation Services (AD FS) to access these accounts requires learning the custom AD FS claims programming language. You also need to prepare the AWS accounts with necessary permissions to access these accounts. AWS SSO is available at no additional cost, and it reduces the complexity of repetitive setup and disparate management by tightly integrating with AWS. If you use separate passwords to access different AWS accounts or cloud applications, AWS SSO simplifies the user experience and improves security by eliminating individual passwords needed for each AWS account or cloud business application. AWS SSO also solves the problem of limited visibility of the access to your cloud applications by integrating with AWS CloudTrail and providing a central place for you to audit SSO access to AWS accounts and SAML-enabled cloud applications, such as Microsoft 365, Salesforce, and Box.
+Why should I use AWS SSO?
+You should use AWS SSO to help your employees become productive quickly by granting them access to AWS accounts and business cloud applications, without writing custom scripts or investing in general-purpose SSO solutions. You should also use AWS SSO to reduce the administrative complexity and cost of setting up and managing SSO access.
+AWS SSO is the place where your employees can access your AWS accounts and the applications they need in the course of their work from the AWS SSO user portal, regardless of where these applications were built or are hosted.
+What can I do with AWS SSO?
+You can use AWS SSO to quickly and easily assign your employees access to AWS accounts managed with AWS Organizations, business cloud applications (such as Salesforce, Microsoft 365, and Box), and custom applications that support Security Assertion Markup Language (SAML) 2.0. Employees can sign in with their existing corporate credentials or credentials they configure in AWS SSO to access their business applications from a single user portal. AWS SSO also allows you to audit users’ access to cloud services by using AWS CloudTrail.
+Who should use AWS SSO?
+AWS SSO is for administrators who manage multiple AWS accounts and business applications, want to centralize user access management to these cloud services, and want to provide employees a single location to access these accounts and applications without them having to remember yet another password.
+How do I start using AWS SSO?
+As a new AWS SSO customer, you:
+Sign in to the AWS Management Console of the master account in your AWS account and navigate to the AWS SSO console.
+Select the directory you use for storing the identities of your users and groups from the AWS SSO console. AWS SSO provides you a directory by default that you can use to manage users and groups in AWS SSO. You can also change directory to connect to a Microsoft AD directory by clicking through a list of Managed Microsoft AD and AD Connector instances that AWS SSO discovers in your account automatically. If you want to connect to a Microsoft AD directory, see Getting Started with AWS Directory Service.
+Grant users SSO access to AWS accounts in your organization by selecting the AWS accounts from a list populated by AWS SSO, and then selecting users or groups from your directory and the permissions you want to grant them.
+Give users access to business cloud applications by:
+Selecting one of the applications from the list of pre-integrated applications supported in AWS SSO.
+Configuring the application by following the configuration instructions.
+Selecting the users or groups that should be able to access this application.
+Give your users the AWS SSO sign-in web address that was generated when you configured the directory so that they can sign in to AWS SSO and access accounts and business applications.
+How much does AWS SSO cost?
+AWS SSO is offered at no extra charge.
+In which AWS regions is AWS SSO is available?
+See the AWS Region Table for AWS SSO availability by Region.
+Identity Sources and Applications Support
+What identity sources can I use with AWS SSO?
+With AWS SSO, you can create and manage user identities in AWS SSO’s identity store, or easily connect to your existing identity source including Microsoft Active Directory, Okta Universal Directory, Azure Active Directory (Azure AD), or another supported IdP. See the AWS SSO User Guide to learn more.
+Can I connect more than one identity source to AWS SSO?
+No. At any given time, you can have only one directory or one SAML 2.0 identity provider connected to AWS SSO. But, you can change the identity source that is connected to a different one.
+What SAML 2.0 IdPs can I use with AWS SSO?
+You can connect AWS SSO to most SAML 2.0 IdPs, such as Okta Universal Directory or Azure Active Directory. See the AWS SSO User Guide to learn more.
+How can I provision identities from my existing IdP into AWS SSO?
+Identities from your existing IdP must be provisioned into AWS SSO before you can assign permissions. You can synchronize user and group information from Okta Universal Directory, Azure AD, OneLogin, and PingFederate automatically using the System for Cross-domain Identity Management (SCIM) standard. For other IdPs, you can provision users from your IdP using the AWS SSO console. See the AWS SSO User Guide to learn more.
+Can I automate identity synchronization from my IdP into AWS SSO?
+Yes. If you use Okta Universal Directory, Azure AD, OneLogin, or PingFederate, you can use SCIM to synchronize user and group information from your IdP to AWS SSO automatically. See the AWS SSO User Guide to learn more.
+How do I connect AWS SSO to my Microsoft Active Directory?
+You can connect AWS SSO to your on-premises Active Directory (AD) or to an AWS Managed Microsoft AD directory using AWS Directory Service. See the AWS SSO User Guide to learn more.
+I manage my users and groups in Active Directory on-premises. How can I leverage these users and groups in AWS SSO?
+You have two options for connecting Active Directory–hosted on-premises to AWS SSO: (1) use AD Connector, or (2) use an AWS Managed Microsoft AD trust relationship.
+AD Connector simply connects your existing on-premises Active Directory to AWS. AD Connector is a directory gateway with which you can redirect directory requests to your on-premises Microsoft Active Directory without caching any information in the cloud. To connect an on-premises directory using AD Connector, see the AWS Directory Service Administration Guide.
+AWS Managed Microsoft AD makes it easy to set up and run Microsoft Active Directory in AWS. It can be used to set up a forest trust relationship between your on-premises directory and AWS Managed Microsoft AD. To set up a trust relationship, see the AWS Directory Service Administration Guide.
+I manage users and groups in AWS Identity and Access Management (IAM). Can I use my IAM users and groups in AWS SSO?
+AWS SSO does not support AWS IAM users and groups at this time.
+Can I use my Amazon Cognito User Pools as the identity source in AWS SSO?
+Amazon Cognito is a service that helps you manage identities for your customer facing applications; it is not a supported identity source in AWS SSO. You can create and manage your workforce identities in AWS SSO or in your external identity source including Microsoft Active Directory, Okta Universal Directory, Azure Active Directory (Azure AD), or another supported IdP.
+Does AWS SSO support the browser, command line, and mobile interfaces?
+Yes, you can use AWS SSO to control access to the AWS Management Console and CLI v2. AWS SSO enables your users to access the CLI and AWS Management Console through a single sign-on experience. The AWS Mobile Console app also supports AWS SSO so you get a consistent sign-in experience across browser, mobile, and command line interfaces.
+Which cloud applications can I connect to AWS SSO?
+You can connect the following applications to AWS SSO:
+AWS SSO-integrated applications: AWS SSO-integrated applications such as SageMaker Studio and IoT SiteWise use AWS SSO for authentication and work with the identities you have in AWS SSO. There is no need for additional configuration to synchronize identities into these applications or to set up federation to separately.
+Pre-integrated SAML applications: AWS SSO comes preintegrated with commonly used business applications. For a comprehensive list, see the AWS SSO console.
+Custom SAML applications: AWS SSO supports applications that allow identity federation using SAML 2.0. You can enable AWS SSO to support these applications by using the custom application wizard.
+Single Sign-On Access to AWS Accounts
+Which AWS accounts can I connect to AWS SSO?
+You can add any AWS account managed using AWS Organizations to AWS SSO. You need to enable all features in your organizations to manage your accounts SSO.
+How do I set up SSO to AWS accounts in an organizational unit (OU) within my organization?
+You can pick accounts within the organization or filter accounts by OU.
+How do I control what permissions my users get when they use AWS SSO to access their accounts?
+When granting access to your users, you can limit the users’ permissions by picking a permission set. Permission sets are a collection of permissions that you can create in AWS SSO, modelling them based on AWS managed policies for job functions or any AWS managed policies. AWS managed policies for job functions are designed to closely align to common job functions in the IT industry. If required, you can also fully customize the permission set to meet your security requirements. AWS SSO applies these permissions to the selected accounts automatically. As you change the permission sets, AWS SSO enables you to apply the changes to the relevant accounts easily. When your users access the accounts through the AWS SSO user portal, these permissions restrict what they can do within those accounts. You can also grant multiple permission sets to your users. When they access the account through the user portal, they can pick which permission set they want to assume for that session.
+How do I automate permissions management across multiple accounts?
+AWS SSO provides APIs and AWS CloudFormation support to automate permissions management in multi-account environments, and retrieve the permissions programmatically for audit and governance purposes.
+Can I implement attribute-based access control in AWS SSO?
+Yes. AWS SSO allows you to select user attributes, such as cost center, title, or locale, from your identity source, and then use them for attribute-based access control (ABAC) in AWS. You can define permissions once, and then grant, revoke, or modify AWS access by simply changing the attributes in your identity source.
+How do I select which user attributes to use for ABAC?
+To implement ABAC, you can select attributes from the AWS SSO’s identity store for AWS SSO users and users synchronized from Microsoft AD or external SAML 2.0 IdPs including Okta Universal Directory, Azure AD, OneLogin, or PingFederate. When using an IdP as your identity source, you can optionally send the attributes as a part of a SAML 2.0 assertion.
+For which AWS accounts can I get AWS Command Line Interface (CLI) credentials?
+You can get AWS CLI credentials for any AWS account and user permissions that your AWS SSO administrator has assigned to you. These CLI credentials can be used for programmatic access to the AWS account.
+How long are the AWS Command Line Interface credentials from the AWS SSO user portal valid?
+AWS CLI Credentials fetched through the AWS SSO user portal are valid for 60 minutes. You can get a fresh set of credentials as often as needed.
+SSO Access to Business Applications
+How do I set up SSO to business applications, such as Salesforce?
+From the AWS SSO console, navigate to the applications pane, choose Configure new application, and choose an application from the list of cloud applications that are preintegrated with AWS SSO. Follow the on-screen instructions to configure the application. Your application is now configured and you may assign access to it. Choose the groups or users that you want to provide with access to the application and Choose Assign Access to complete the process.
+My company uses business applications that are not in AWS SSO’s preintegrated application list. Can I still use AWS SSO?
+Yes. If your application supports SAML 2.0, you can configure your application as a custom SAML 2.0 application. From the AWS SSO console, navigate to the applications pane, choose Configure new application, and choose Custom SAML 2.0 application. Follow the instructions to configure the application. Your application is now configured and you may assign access to it. Choose the groups or users that you want to provide with access to the application, and choose Assign Access to complete the process.
+My application supports OpenID Connect (OIDC) only. Can I use it with AWS SSO?
+No. AWS SSO supports only SAML 2.0–based applications.
+Does AWS SSO support single sign-on to native mobile and desktop applications?
+No. AWS SSO supports single sign-on to business applications through web browsers only.
+Miscellaneous
+What data will AWS SSO store on my behalf?
+AWS SSO will store data about which AWS accounts and cloud applications are assigned to which users and groups, as well as what permissions have been granted for accessing AWS accounts. AWS SSO will also create and manage IAM roles in individual AWS accounts for each permission set you grant access for your users.
+What multi-factor authentication (MFA) capabilities can I use with AWS SSO?
+With AWS SSO, you can enable standard-based strong authentication capabilities for all your users across all identity sources. If you use a supported SAML 2.0 IdP as your identity source, you can enable multi-factor authentication capabilities of your provider. When using AWS SSO or Active Directory as your identity source, AWS SSO supports the Web Authentication specification to help you secure user access to AWS accounts and business applications with FIDO-enabled security keys, such as YubiKey, and built-in biometric authenticators, such as Touch ID on Apple MacBooks and facial recognition on PCs. You can also enable one-time-passwords (TOTPs) using authenticator apps such as Google Authenticator or Twilio Authy.
+You can also use your existing Remote Authentication Dial-In User Service (RADIUS) MFA configuration with AWS SSO and AWS Directory Services to authenticate your users as a secondary form of verification. To learn more about configuring MFA with AWS SSO, visit the AWS SSO User Guide.
+Does AWS SSO support the Web Authentication specification?
+Yes. For user identities in AWS SSO’s identity store and Active Directory, AWS SSO supports the Web Authentication (WebAuthn) specification to help you secure user access to AWS accounts and business applications with FIDO-enabled security keys, such as YubiKey, and built-in biometric authenticators, such as Touch ID on Apple MacBooks and facial recognition on PCs. You can also enable one-time-passwords (TOTPs) using authenticator apps such as Google Authenticator or Twilio Authy.
+How do my employees get started using AWS SSO?
+Employees can get started with AWS SSO by visiting the AWS SSO user portal that is generated when you configure your identity source in AWS SSO. If you manage your users in AWS SSO, your employees can use their email address and password they configured with AWS SSO to sign into the user portal. If you connect AWS SSO to a Microsoft Active Directory or a SAML 2.0 identity provider, your employees can sign in to user portal with their existing corporate credentials and then view the accounts and applications assigned to them. To access an account or application, employees choose the associated icon from the AWS SSO user portal.
+Is there an API available for AWS SSO?
+Yes. AWS SSO provides account assignment APIs to help you automate permissions management in multi-account environments, and retrieve the permissions programmatically for audit and governance purposes.
+Ready to get started?
+Sign Up for AWS Single Sign-On
+Have more questions?
+Contact us
+Page Content

@@ -8,7 +8,7 @@ Introduction to Amazon DocumentDB (with MongoDB compatibility)
 Benefits
 MongoDB-compatible
 Amazon DocumentDB implements the Apache 2.0 open source MongoDB 3.6 and 4.0 APIs by emulating the responses that a MongoDB client expects from a MongoDB server, allowing you to use your existing MongoDB drivers and tools with Amazon DocumentDB. Updating the application is as easy as changing the database endpoint to the new Amazon DocumentDB cluster. Learn more about supported MongoDB APIs.
-Learn more »
+Learn more
 Fully managed
 With Amazon DocumentDB, you don’t need to worry about database management tasks, such as hardware provisioning, patching, setup, configuration, backups, or scaling. Amazon DocumentDB automatically and continuously monitors and backs up your cloud database to Amazon S3, enabling point-in-time recovery (up to the second for the last 35 days).
 Performance at scale
@@ -19,18 +19,17 @@ Shopping sites, online publications, digital archives, point-of-sale terminals, 
 Profile management
 User profile management enables online transactions, user preferences, and user authentication. With the growth in users, increasingly complex user profile data, and growing user experience expectations, the demand for scalability, data flexibility, and performance too has grown. With Amazon DocumentDB’s document data model, you can manage profiles & preferences of millions of users & scale to process millions of user requests per second with millisecond latency with a fully-managed non-relational database service.
 Mobile and web applications
-Build high-performance mobile and web applications that scale to process millions of user requests per second with millisecond latency. As a website database or database for mobile applications, Amazon DocumentDB lowers your operational burden, allowing you to focus on building unique experiences for your customers. Amazon DocumentDB’s flexible document model, data types, and indexing allow you to adapt and iterate on your applications quickly, cutting down development time.
+Build high-performance mobile and web applications that scale to process millions of user requests per second with millisecond latency. As a website database or database for mobile applications, Amazon DocumentDB lowers your operational burden, allowing you to focus on building unique experiences for your customers. Amazon DocumentDB’s flexible document model, data types, and indexing allow you to adapt and iterate on your applications quickly, cutting down development time.
 How it works
 Migrate your self-managed MongoDB workloads to Amazon DocumentDB
 Self-managing MongoDB databases is difficult, time-consuming, and expensive. With Amazon DocumentDB, you can set up, secure, and scale MongoDB-compatible databases in the cloud without worrying about manually setting up and securing database clusters, running cluster management software, configuring backups, and monitoring production workloads.
-To learn how, see the Amazon DocumentDB Migration Guide »
+To learn how, see the Amazon DocumentDB Migration Guide
 Store, query, and index JSON data
 As a document database, a type of NoSQL database, Amazon DocumentDB makes it easy to insert, query, index, and perform aggregations over JSON data. JSON is a de facto format for data exchange, a common output of modern APIs, and modeling application data as JSON is intuitive for developers. Being able to store and query JSON data in its natural format, and without translation, enables developers to iterate faster and be more productive.
-To learn more about JSON, read the Amazon DocumentDB documentation »
+To learn more about JSON, read the Amazon DocumentDB documentation
 Featured customers
 "With ever increasing data volumes, and growing demand for schema flexibility, our log collection service faced challenges with managing data on a traditional relational database. Amazon DocumentDB (with MongoDB compatibility)'s support for a flexible document model and a fully managed service has relieved us from handling rigid schema and enabled us to operate mission-critical workloads at scale with ease.”
 Dr. Wooseung Jang, VP - Samsung Electronics
-Learn more »
 “Prior to DocumentDB, we used MongoDB. While MongoDB gave us scale and a rich query language, managing the databases directly meant that we had less time to innovate for our customers. DocumentDB gave us an opportunity to benefit from the features we were already familiar with while reducing the amount of time we spent on database administration. We can ship features faster and spend more time focusing on the customer needs.”
 Sergey Podlazov, Director of Engineering, Shopping Experience - Zulily
 “In order to solve problems aggreggating data with no clear relational model, we migrated to Amazon DocumentDB to get the benefits of a fully managed service where we can store and query our data in a simple and reliable way. Further, because high availability, durability, and backup are enabled by default, those are tasks that we no longer need to worry about, and that frees up developers to work on new capabilities.”
@@ -41,27 +40,26 @@ Ramin Beheshti, Chief Product & Technology Officer - Dow Jones
 Patrick Cullen, Director of Data Science and Artificial Intelligence - The Washington Post
 “We have 2,000 different databases in production, with DocumentDB being the second most prominent. We had to make small adjustments to transition from MongoDB to Amazon DocumentDB, but after we did, we found that with a lot less code, we could accomplish the same tasks with a lot more stability. Now, engineers have maybe 5 percent of the problems they had before, and if they have problems, it’s a problem with the logic or on the application side, not because Amazon DocumentDB is doing something wrong.”
 Marcelo Soto, Head of Data Platform - Rappi
-Read the case study »
+Read the case study
 "Our developers love the document model as it enables them to move fast and iterate quickly when building applications. Amazon DocumentDB integrates deeply with AWS services and has the potential to provide us with a robust, highly scalable, and cost effective database service. With Amazon DocumentDB, our developers will be able to move faster and focus more on innovating on behalf of our customers versus managing a database."
 Sunjay Pandey, Vice President - Capital One
 "The application delivery platform built using AWS has been operating stably since its release, supporting a news delivery service that requires 24x7 reliability. In particular, by utilizing Amazon DocumentDB, we have been able to reduce operating costs while allowing flexibility in article category searches. Amazon DocumentDB has high read browsing performance and maintains high performance that can withstand millions of requests."
 Tatsuki Okamoto, Customer Experience Department, Digital Innovation Headquarters - Asahi Shimbun
 “We chose Amazon DocumentDB because it natively stores data in JSON, making it simpler to query and index regulatory documents. This reduces our development cycles, while extending the usability of our data by easily integrating with other systems that leverage JSON.”
 Ranga Rajagopal, Senior Director, Enterprise Data Platforms - FINRA
-Watch the video »
+Watch the video
 “We tested the scalability and performance of Amazon DocumentDB with a two-fold increase in the load of data we usually work with, and the results were impressive. There were no delays or downtime in performance, allowing multiple concurrent campaigns to run smoothly. As an AWS Enterprise Support customer, we also had 24x7 technical support in finetuning the performance of our platform with Amazon DocumentDB. Thanks to AWS, we were able to achieve high scalability and 20 percent cost-savings.”
 Bhanu Mohanty, Chief Architect - Punchh
 “On day one, we were able to scale far beyond what we were capable of doing with MongoDB. We've gotten great customer service from the DocumentDB service team. From my point of view regarding infrastructure, infrastructure management, and operations, I'd say it's a win. We've absolutely come out on top.”
 Brad Fino, Director of DevOps - Plume
 “Woot! replaced our aging, self-managed, and operational nightmare product catalog database running on MongoDB 2.2 with Amazon DocumentDB. With only minimal changes, we were able to able to upgrade our driver and complete our full production migration in three weeks. In doing so, we cut our infrastructure costs for the database by 82%, including licensing costs.”
 Sam Giagtzoglou, Software Development Engineer – Woot!
-Read the blog »
-See more Amazon DocumentDB case studies »
+Read the blog
+See more Amazon DocumentDB case studies
 Sign up for an AWS account
 Instantly get access to the Amazon DocumentDB Management Console.
 Sign up
 Check out a tutorial
 Explore Amazon DocumentDB with a simple tutorial.
-Learn more
 Start building with AWS
 Learn how to build with Amazon DocumentDB.

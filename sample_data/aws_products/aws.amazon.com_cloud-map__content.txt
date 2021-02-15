@@ -21,7 +21,7 @@ Your applications are typically a combination of AWS services and custom resourc
 Blog posts & articles
 Introducing Cloud Map
 AWS Cloud Map keeps track of all your application components, their locations, attributes, and health status. Now your applications can simply query AWS Cloud Map using AWS SDK, API, or even DNS to discover the locations of its dependencies.
-Keep Reading »
+Keep Reading
 AWS Cloud Map service discovery for serverless applications
 AWS Cloud Map enables the journey to microservices by acting as the glue that binds all of business logic. At Peak.ai, we use the serverless framework very heavily, so we wanted to look into ways of integrating AWS Cloud Map into the serverless framework workflow.
 Check out the AWS Cloud Map features
@@ -31,5 +31,5 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier
 Sign up
 Start building in the console
-Get started building with Cloud Map in the AWS Console
+Get started building with Cloud Map in the AWS Console
 Sign in

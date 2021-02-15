@@ -31,7 +31,7 @@ Ran Nahmias, Vice President Business Development & Sales, Aqua Security.
 Matthew Glickman, Vice President Product Management, Snowflake
 How it works
 AWS PrivateLink enables you to securely connect your VPCs to supported AWS services: to your own services on AWS, to services hosted by other AWS accounts, and to third-party services on AWS Marketplace. Since traffic between your VPC and any one of these services does not leave the Amazon network, an Internet gateway, NAT device, public IP address, or VPN connection is no longer needed to communicate with the service.
-To use AWS PrivateLink, create an interface VPC endpoint for a service in your VPC. This creates an Elastic Network Interface (ENI) in your subnet with a private IP address that serves as an entry point for traffic destined to the service. Service endpoints available over AWS PrivateLink will appear as ENIs with private IPs in your VPCs.
+To use AWS PrivateLink, create an interface VPC endpoint for a service in your VPC. This creates an Elastic Network Interface (ENI) in your subnet with a private IP address that serves as an entry point for traffic destined to the service. Service endpoints available over AWS PrivateLink will appear as ENIs with private IPs in your VPCs.
 To learn more about how PrivateLink works, read the PrivateLink documentation.
 Visibility Through the AWS Service Ready Program
 The AWS Service Ready Program validates and identifies products built by APN Select or Advanced Technology Partners that integrate with AWS PrivateLink.
@@ -39,7 +39,7 @@ Blogs
 How Goldman Sachs builds cross-account connectivity to their Amazon MSK clusters with AWS PrivateLink
 June 1st, 2020
 Robert L. Cossin and Harsha Sharma
-Read now »
+Read now
 Integrating AWS Transit Gateway with AWS PrivateLink and Amazon Route 53 Resolver
 July 24th, 2019
 James Devine
@@ -51,7 +51,7 @@ August 8th, 2018
 Vinod Madabushi and Sahil Thapar
 date
 1
-…
+...
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

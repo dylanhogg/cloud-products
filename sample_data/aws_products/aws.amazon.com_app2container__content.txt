@@ -1,7 +1,7 @@
 AWS App2Container
 Containerize and migrate existing applications
 Getting started with AWS App2Container
-AWS App2Container (A2C) is a command-line tool for modernizing .NET and Java applications into containerized applications. A2C analyzes and builds an inventory of all applications running in virtual machines, on-premises or in the cloud. You simply select the application you want to containerize, and A2C packages the application artifact and identified dependencies into container images, configures the network ports, and generates the ECS task and Kubernetes pod definitions. A2C provisions, through CloudFormation, the cloud infrastructure and CI/CD pipelines required to deploy the containerized .NET or Java application into production. With A2C, you can easily modernize your existing applications and standardize the deployment and operations through containers.
+AWS App2Container (A2C) is a command-line tool for modernizing .NET and Java applications into containerized applications. A2C analyzes and builds an inventory of all applications running in virtual machines, on-premises or in the cloud. You simply select the application you want to containerize, and A2C packages the application artifact and identified dependencies into container images, configures the network ports, and generates the ECS task and Kubernetes pod definitions. A2C provisions, through CloudFormation, the cloud infrastructure and CI/CD pipelines required to deploy the containerized .NET or Java application into production. With A2C, you can easily modernize your existing applications and standardize the deployment and operations through containers.
 Benefits
 Streamline operations
 App2Container allows you to containerize your existing applications and standardize on a single set of tooling for monitoring, operations, and software delivery. Containerization allows you to unify infrastructure and skill sets needed to operate your applications, saving on both infrastructure and training costs.
@@ -26,7 +26,7 @@ AWS App2Container – A New Containerizing Tool for Java and ASP.NET Application
 Channy Yun
 June 30, 2020
 Check out the product features
-Visit the AWS App2Container features page.
+Visit the AWS App2Container features page.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

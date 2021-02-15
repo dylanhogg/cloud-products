@@ -1,0 +1,102 @@
+General
+Q: What is AWS CloudFormation?
+AWS CloudFormation is a service that gives developers and businesses an easy way to create a collection of related AWS and third-party resources, and provision and manage them in an orderly and predictable fashion.
+Q: What can developers do with AWS CloudFormation?
+Developers can deploy and update compute, database, and many other resources in a simple, declarative style that abstracts away the complexity of specific resource APIs. AWS CloudFormation is designed to allow resource lifecycles to be managed repeatably, predictablp, and safely, while allowing for automatic rollbacks, automated state management, and management of resources across accounts and regions. Recent enhancements and options allow for multiple ways to create resources, including using AWS CDK for coding in higher-level languages, importing existing resources, detecting configuration drift, and a new Registry that makes it easier to create custom types that inherit many core CloudFormation benefits.
+Q: How is CloudFormation different from AWS Elastic Beanstalk?
+These services are designed to complement each other. AWS Elastic Beanstalk provides an environment where you can easily deploy and run applications in the cloud. It is integrated with developer tools and provides a one-stop experience for managing application lifecycle. If your application workloads can be managed as Elastic Beanstalk workloads, you can enjoy a more turn-key experience in creating and updating applications. Behind the scenes, Elastic Beanstalk uses CloudFormation to create and maintain resources. If your application requirements dictate more custom control, the additional functionality of CloudFormation gives you more options to control your workloads.
+AWS CloudFormation is a convenient provisioning mechanism for a broad range of AWS and third-party resources. It supports the infrastructure needs of many different types of applications such as existing enterprise applications, legacy applications, applications built using a variety of AWS resources, and container-based solutions (including those built using AWS Elastic Beanstalk).
+AWS CloudFormation supports Elastic Beanstalk application environments as one of the AWS resource types. This allows you, for example, to create and manage an AWS Elastic Beanstalk–hosted application along with an RDS database to store the application data. Any other supported AWS resource can be added to the group as well.
+Q: What new concepts does AWS CloudFormation introduce?
+CloudFormation introduces four concepts: A template is a JSON or YAML declarative code file that describes the intended state of all the resources you need to deploy your application. A stack implements and manages the group of resources outlined in your template, and allows the state and dependencies of those resources to be managed together. A change set is a preview of changes that will be executed by stack operations to create, update, or remove resources. A stack set is a group of stacks you manage together that can replicate a group&nbsp;
+Q: What resources does AWS CloudFormation support?
+To see a complete list of supported AWS resources and their features, visit the Supported AWS Services page in the Release History of the documentation.
+The AWS CloudFormation Registry and AWS CloudFormation custom resources enable management of additional AWS and third party resources.
+Q: Can I manage individual AWS resources that are part of an AWS CloudFormation stack?
+Yes, you can. CloudFormation does not get in the way; you retain full control of all elements of your infrastructure, and can continue using all your existing AWS and third-party tools to manage your AWS resources. However, becuase CloudFormation can allow for additional rules, best practices, and compliance controls, we recommend that you allow CloudFormation to manage the changes to your resources. This predictable, controlled approach helps in managing hundreds or thousands of resources across your application portfolio.
+Q: What are the elements of an AWS CloudFormation template?
+CloudFormation templates are JSON or YAML-formatted text files comprised of five types of elements:
+1. An optional list of template parameters (input values supplied at stack creation time) 2. An optional list of output values (e.g., the complete URL to a web application) 3. An optional list of data tables used to look up static configuration values (e.g., AMI names) 4. The list of AWS resources and their configuration values 5. A template file format version number
+Template parameters are used to customize aspects of your template at run time, when the stack is built. For example, the Amazon RDS database size, Amazon EC2 instance types, database and web server port numbers can be passed to AWS CloudFormation when a stack is created. Each parameter can have a default value and description, and may be marked as “NoEcho” to hide the actual value you enter on the screen and in the AWS CloudFormation event logs. When you create an AWS CloudFormation stack, the AWS Management Console will automatically synthesize and present a pop-up dialog form for you to edit parameter values.
+Output values are a convenient way to present a stack’s key resources (such as the address of an Elastic Load Balancing load balancer or Amazon RDS database) to the user via the AWS Management Console, or via the command line tools. You can use simple functions to concatenate string literals and the value of attributes associated with the actual AWS resources. A template can also leverage Registry resource types, your own custom private types, your own macros, and retrieving configuration parameters from AWS Secrets Manager and AWS System Manager Parameter Store.
+Q: How does AWS CloudFormation choose actual resource names?
+You can assign logical names to AWS resources in a template. When a stack is created, AWS CloudFormation binds the logical name to the name of the corresponding actual AWS resource. Actual resource names are a combination of the stack and logical resource name. This allows multiple stacks to be created from a template without fear of name collisions between AWS resources.
+Q: Why can’t I name all my resources?
+Although AWS CloudFormation allows you to name some resources (such as Amazon S3 buckets), CloudFormation doesn’t allow this for all resources. Naming resources restricts the reusability of templates and results in naming conflicts when an update causes a resource to be replaced. To minimize these issues, CloudFormation supports resource naming on a case by case basis.
+Q: Can I install software at stack creation time using AWS CloudFormation?
+Yes. AWS CloudFormation provides a set of application bootstrapping scripts that enable you to install packages, files, and services on your EC2 instances simply by describing them in your CloudFormation template. For more details and a how-to, see Bootstrapping Applications via AWS CloudFormation.
+CloudFormation can also be integrated with Systems Manager to drive and maintain software installations with Systems Manager Automation Documents.
+Q: Can I use AWS CloudFormation with Chef?
+Yes. AWS CloudFormation can be used to bootstrap both the Chef Server and Chef Client software on your EC2 instances. For more details and a how-to, see Integrating AWS CloudFormation with Chef.
+Q: Can I use AWS CloudFormation with Puppet?
+Yes. AWS CloudFormation can be used to bootstrap both the Puppet Master and Puppet Client software on your EC2 instances. For more details and a how-to, see Integrating AWS CloudFormation with Puppet.
+Q: Can I use AWS CloudFormation with Terraform?
+Yes. CloudFormation can bootstrap your Terraform engine on your EC2 instances, and you can use Terraform resource providers to create resources in stacks, leveraging stack state management, dependencies, stabilization and rollback.
+Q: Does AWS CloudFormation support Amazon EC2 tagging?
+Yes. Amazon EC2 resources that support the tagging feature can also be tagged in an AWS template. The tag values can refer to template parameters, other resource names, resource attribute values (e.g. addresses), or values computed by simple functions (e.g., a concatenated a list of strings). CloudFormation automatically tags Amazon EBS volumes and Amazon EC2 instances with the name of the CloudFormation stack they are part of.
+Q: Do I have access to the Amazon EC2 instance, or Auto Scaling Launch Configuration user-data fields?
+Yes. You can use simple functions to concatenate string literals and attribute values of the AWS resources and pass them to user-data fields in your template. Please refer to our sample templates to learn more about these easy to use functions.
+Q: What happens when one of the resources in a stack cannot be created successfully?
+By default, the “automatic rollback on error” feature is enabled. This will direct CloudFormation to only create or update all resources in your stack if all individual operations succeed. If they do not, CloudFormation reverts the stack to the last known stable configuration. This is useful when, for example, you accidentally exceed your default limit of Elastic IP addresses, or you don’t have access to an EC2 AMI that you’re trying to run. This feature enables you to rely on the fact that stacks are created either fully or not at all, which simplifies system administration and layered solutions built on top of CloudFormation.
+Q: Can stack creation wait for my application to start up?
+Yes. One of the options CloudFormation provides is a WaitCondition resource that acts as a barrier, blocking the creation of other resources until a completion signal is received from an external source such as your application or management system. Other options include creating custom logic with AWS Lambda functions.
+Q: Can I save my data when a stack is deleted?
+Yes. CloudFormation allows you to define deletion policies for resources in the template. You can specify that snapshots be created for Amazon EBS volumes or Amazon RDS database instances before they are deleted. You can also specify that a resource should be preserved and not deleted when the stack is deleted. This is useful for preserving Amazon S3 buckets when the stack is deleted.
+Q: Can I update my stack after it has been created?
+Yes. You can use CloudFormation to modify and update the resources in your existing stacks in a controlled and predictable way. By using templates to manage your stack changes, you have the ability to apply version control to your AWS infrastructure just as you do with the software running on it.
+Q: Can I create stacks in a Virtual Private Cloud (VPC)?
+Yes. CloudFormation supports creating VPCs, subnets, gateways, route tables and network ACLs as well as creating resources such as elastic IPs, Amazon EC2 Instances, EC2 security groups, auto scaling groups, elastic load balancers, Amazon RDS database instances and Amazon RDS security groups in a VPC.
+Q: How can I participate in the CloudFormation community?
+Please join the AWS CloudFormation GitHub community.
+Q: Can I manage resources created outside of CloudFormation?
+Yes! With Resource Import, you can bring an existing resource into AWS CloudFormation management using resource import.
+Getting Started
+Q: How do I sign up for AWS CloudFormation?
+To sign up for CloudFormation, click Create Free Account on the CloudFormation product page. After signing up, please refer to the CloudFormation documentation, which includes our Getting Started Guide.
+Q: Why am I asked to verify my phone number when signing up for AWS CloudFormation?
+CloudFormation registration requires you to have a valid phone number and email address on file with AWS in case we ever need to contact you. Verifying your phone number takes only a few minutes and involves receiving an automated phone call during the registration process and entering a PIN number using the phone key pad.
+Q: How do I get started after I have signed up?
+The best way to get started with CloudFormation is to work through the Getting Started Guide, which is included in our technical documentation. Within a few minutes, you will be able to deploy and use one of our sample templates that illustrate how to create the infrastructure needed to run applications such as such as WordPress. There are various other sources of CloudFormation training, from thirdsparty curriculum providers to tutorials and articles on the web. For more information, check out the CloudFormation Resources.
+Q: Are there sample templates that I can use to check out AWS CloudFormation?
+Yes, CloudFormation includes sample templates that you can use to test drive the offering and explore its functionality. Our sample templates illustrate how to interconnect and use multiple AWS resources in concert, following best practices for multiple Availability Zone redundancy, scale out, and alarming. To get started, all you need to do is go to the AWS Management Console, click Create Stack, and follow the steps to select and launch one of our samples. Once created, select your stack in the console and review the Template and Parameter tabs to look at the details of the template file used to create the respective stack. Sample templates are also available on GitHub.
+AWS CloudFormation Registry
+Q: What is the AWS CloudFormation Registry?
+The AWS CloudFormation Registry is a managed service that lets you register, use, and discover AWS and third-party resource types. Third-party resource types must be registered before they can be used to provision resources with AWS CloudFormation templates. Please see Using the AWS CloudFormation registry in our in the documentation for details.
+Q: What are resource types in AWS CloudFormation?
+A resource provider is a set of resource types with specifications and handlers that control the lifecycle of underlying resources via create, read, update, delete, and list operations. You can use resource providers to model and provision resources using CloudFormation. For example, AWS::EC2::Instance is a resource type from the Amazon EC2 provider. You can use this type to model and provision an Amazon EC2 instance using CloudFormation. Using the CloudFormation Registry, you can build and use resource providers to model and provision third-party resources such as SaaS monitoring, team productivity, or source code management resources.
+Q: What is the difference between AWS and third party resource providers?
+The difference between AWS and third party resource providers is their origin. AWS resource providers are built and maintained by Amazon and AWS to manage AWS resources and services. For example, three AWS resource providers help you manage Amazon DynamoDB, AWS Lambda, and Amazon EC2 resources. These providers contain resource types such as AWS::DynamoDB::Table, AWS::Lambda::Function, and AWS::EC2::Instance. For a complete reference, go to our documentation.
+Third party resource providers are built by another company, organization, or the developer community. They can help you manage both AWS and non-AWS resources such as AWS application resources and non-AWS SaaS software services such as monitoring, team productivity, incident management, or version control management tools.
+Q: What is a resource schema?
+A resource schema defines a resource type in a structured and consistent format. This schema is also used to validate the definition of a resource type. The schema includes all the supported parameters and attributes for a given resource type, as well as the required permissions to create the resource with the least privileges possible.
+Q: How do I develop resource types?
+Use the AWS CloudFormation CLI to build resource providers. You start by defining a simple declarative schema for your resources, which includes permissions required and relationships to other resources. You then use the CloudFormation CLI to generate the scaffolding for resource lifecycle handlers (Create, Read, Update, Delete, and List), along with test stubs for unit and integration testing.
+Q: How do I register a resource provider?
+You can either use the open source AWS CloudFormation CLI or directly call the RegisterType and related Registry APIs available via the AWS SDKs and AWS CLI. For more details, please see Using the AWS CloudFormation registry in our in the documentation. AWS resource providers are available out of the box and do not require any additional registration steps before use.
+Billing
+Q: How much does AWS CloudFormation cost?
+There is no additional charge for using AWS CloudFormation with resource providers in the following namespaces: AWS::*, Alexa::*, and Custom::*. In this case, you pay for AWS resources (such as Amazon EC2 instances, Elastic Load Balancing load balancers, etc.) created using AWS CloudFormation just as if you had created them manually. You only pay for what you use, as you use it; there are no minimum fees and no required upfront commitments.
+When you use resource providers with AWS CloudFormation outside the namespaces mentioned above, you incur charges per handler operation. Handler operations are create, update, delete, read, or list actions on a resource. For more information, please refer to our pricing page.
+Q: Will I be charged for resources that were rolled back during a failed stack creation attempt?
+Yes. Charges for AWS resources created during template instantiation apply irrespective of whether the stack as a whole could be created successfully.
+Limits and Restrictions
+Q: Are there limits to the number of templates or stacks?
+There are no limits to the number of templates. Each AWS CloudFormation account is limited to a maximum of 200 stacks. Complete our request for a higher limit here, and we will respond to your request within two business days.
+Q: Are there limits to the size of description fields?
+Template, Parameter, Output, and Resource description fields are limited to 4096 characters.
+Q: Are there limits to the number of parameters or outputs in a template?
+You can include up to 60 parameters and 60 outputs in a template.
+Q: Are there limits to the number of resources that can be created in a stack?
+Currently, you can create up to 200 resources per stack. Creating smaller templates and stacks and modularizing your application across multiple stacks is a best practice to minimize blast radius for your resource changes, and to troubleshoot issues with multiple resource dependencies faster, since smaller groups of resources will have less complex dependencies than larger groups.
+Regions and Endpoints
+Q: What are the AWS CloudFormation service access points in each region?
+Endpoints for each region are available in AWS CloudFormation endpoints in the technical documentation.
+Q: What are the AWS regions where AWS CloudFormation is currently available?
+Please refer to Regional Products and Services for details of CloudFormation availability by region.
+Learn more about AWS CloudFormation Pricing
+Visit the AWS CloudFormation Pricing Page
+Ready to build?
+Get started with AWS CloudFormation
+Have more questions?
+Contact us
+Page Content

@@ -10,7 +10,6 @@ NEW: Amazon Aurora Serverless v2 (Preview)
 Amazon Aurora Serverless v1
 Amazon Aurora Serverless v2, currently in preview, scales instantly from hundreds to hundreds-of-thousands of transactions in a fraction of a second. As it scales, it adjusts capacity in fine-grained increments to provide just the right amount of database resources that the application needs. There is no database capacity for you to manage, you pay only for the capacity your application consumes, and you can save up to 90% of your database cost compared to the cost of provisioning capacity for peak load.
 Aurora Serverless v2 (Preview) supports all manner of database workloads, from development and test environments, websites, and applications that have infrequent, intermittent, or unpredictable workloads to the most demanding, business critical applications that require high scale and high availability. It supports the full breadth of Aurora features, including Global Database, Multi-AZ deployments, and read replicas. Aurora Serverless v2 (Preview) is currently available in preview for Aurora with MySQL compatibility only.
-Sign up for Aurora Serverless v2 (Preview) »
 Benefits
 HIGHLY SCALABLE
 Scale instantly, from hundreds to hundreds-of-thousands of transactions, in a fraction of a second.
@@ -28,7 +27,7 @@ Use Cases
 Variable workloads
 You're running a lightly-used application, with peaks of 30 minutes to several hours a few times each day or several times per year, such as a human resources, budgeting, or operational reporting application. Now, you no longer have to provision to peak capacity, which would require you to pay for resources you don't continuously use, or to average capacity, which would risk performance problems and a poor user experience.
 Unpredictable workloads
-You're running workloads with database usage throughout the day, and also peaks of activity that are hard to predict - for example, a traffic site that might see a surge of activity when it starts raining. Now, your database will auto-scale capacity to meet the needs of the application's peak load and scale back down when the surge of activity is over.
+You're running workloads with database usage throughout the day, and also peaks of activity that are hard to predict - for example, a traffic site that might see a surge of activity when it starts raining. Now, your database will auto-scale capacity to meet the needs of the application's peak load and scale back down when the surge of activity is over.
 Enterprise database fleet management NEW
 Enterprises with hundreds or thousands of applications, each backed by one or more databases, must manage resources for their entire database fleet. As application requirements fluctuate, continuously monitoring and adjusting capacity for each and every database to ensure high performance, high availability and remain under budget is a daunting task. With Aurora Serverless v2 (Preview), database capacity is automatically adjusted based on application demand and you no longer need to manually manage thousands of databases in your database fleet. Features like Global Database and Multi-AZ deployments ensure high availability and fast recovery.
 Software-as-a-Service applications NEW
@@ -36,7 +35,7 @@ Software-as-a-Service (SaaS) vendors typically operate hundreds or thousands of 
 Scaled-out databases split across multiple servers  NEW
 Customers with high write or read requirements often split databases across several instances to achieve higher throughput. However, customers often provision too many or too few instances, increasing cost or limiting scale. With Aurora Serverless v2 (Preview), customers split databases across several Aurora instances and let the service adjust capacity instantly and automatically based on need. It seamlessly adjusts capacity for each node with no downtime or disruption, and uses just the right amount of capacity needed to support applications.
 How to Get Started
-Aurora Serverless v2 (Preview) is available for Amazon Aurora with MySQL compatibility in US East (N. Virginia). Sign up for Aurora Serverless v2 (Preview) »
+Aurora Serverless v2 (Preview) is available for Amazon Aurora with MySQL compatibility in US East (N. Virginia). Sign up for Aurora Serverless v2 (Preview)
 Amazon Aurora Serverless v1 is a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.
 SCALABLE
 Seamlessly scale compute and memory capacity as needed, with no disruption to client connections.
@@ -45,7 +44,7 @@ Infrequently-used applications
 You have an application that is only used for a few minutes several times per day or week, such as a low-volume blog site, and you want a cost-effective database that only requires you to pay when it's active. With Aurora Serverless v1, you only pay for the database resources you consume.
 Development and test databases
 Your software development and QA teams are using databases during work hours, but don’t need them on nights or weekends. With Aurora Serverless v1, your database automatically shuts down when not in use, and starts up much more quickly when work starts the next day.
-Aurora Serverless v1 is available for both Amazon Aurora with MySQL compatibility and Amazon Aurora with PostgreSQL compatibility. It's easy to get started: choose Serverless when creating your Aurora database cluster, optionally specify the desired range of database capacity, and connect your applications.
+Aurora Serverless v1 is available for both Amazon Aurora with MySQL compatibility and Amazon Aurora with PostgreSQL compatibility. It's easy to get started: choose Serverless when creating your Aurora database cluster, optionally specify the desired range of database capacity, and connect your applications.
 Learn more about Amazon Aurora
 Visit the MySQL-Compatible Edition features page
 Visit the PostgreSQL-Compatible Edition features page

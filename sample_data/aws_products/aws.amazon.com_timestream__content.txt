@@ -35,13 +35,13 @@ Trimble Inc., is a leading technology provider of productivity solutions for the
 David Kohler, Engineering Director – Trimble
 Cake is a performance marketing software company that stores and analyzes billions of clickstream events.
 "Previously, we used a DIY time series solution that was cumbersome to manage and was starting to fall over at scale. When we heard AWS was building a time series database service, Amazon Timestream, we signed up for the preview and started testing our workloads. We’ve worked very closely with the AWS service team, giving them feedback and data on our use case to help ensure Timestream really excels in production for the size and scale of time series data we’re dealing with. And the result is phenomenal – a highly scalable and fully serverless database. It’s the first time we’ve had a single solution for our time series data. We’re looking forward to continuing our partnership with AWS and excited to see what’s in store for Timestream."
-Tyler Agee, Principal Architect – Cake Software
+Tyler Agee, Principal Architect – Cake Software
 Read more customer case studies
 Partners
 Grafana is among the world's most popular visualization technologies, and empowers users to compose their own observability dashboards.
 “We make it a priority to work with other technology leaders in building plugins that support our users’ key goals. Amazon Timestream has great potential as a data source for IoT and time series data, and we are excited to see how the community leverages it.”
 Ryan McKinley, VP of Applications – Grafana Labs
-Since 1998, Rackspace Technology has delivered enterprise-class hosting, professional services, and managed public cloud for businesses of all sizes and kinds around the world, with its Fanatical Experience™ approach to serving customers as its cornerstone.
+Since 1998, Rackspace Technology has delivered enterprise-class hosting, professional services, and managed public cloud for businesses of all sizes and kinds around the world, with its Fanatical ExperienceTM approach to serving customers as its cornerstone.
 “At Rackspace we believe Amazon Timestream fills a longstanding need for a fully-managed service to capture time series data in a cloud native way. We’ve had several opportunities to work with Timestream, and we’ve observed the platform to be performant and easy to use with a developer experience that is familiar and consistent with other AWS services. Cloud Native and IoT are both core competencies for us, so we’re very pleased to see that Timestream is 100% serverless, and that it has tight integration with AWS IoT Core rule actions to easily ingest data without any custom code. Organizations who have a use case to capture and process time series data should consider using Amazon Timestream as a scalable and reliable solution.”
 Eric Miller, Senior Director of Technical Strategy – Rackspace Technology
 Seeq is an advanced analytics solution for process manufacturers that enables organizations to rapidly investigate and share insights from time series data in Amazon Web Services, historians, and IIoT platforms as well as contextual data in manufacturing and business systems.
@@ -52,10 +52,10 @@ Slalom is a modern consulting firm focused on strategy, technology, and business
 Hassan Mahmood, Data and Analytics – Slalom
 Tata Consultancy Services (TCS) helps automotive manufacturers monetize connected products, connected operations, and connected customers through its digital transformation capabilities, domain expertise, and partnerships with leading Cloud services providers including Amazon Web Services (AWS).
 “By leveraging AWS’ new Amazon Timestream database service, Tata Consultancy Services (TCS) will be able to address a wide range of innovative applications in its customer's connected ecosystem."
-- Babu Unnikrishnan, Unit CTO, Manufacturing & Utilities Business Group – TCS
+- Babu Unnikrishnan, Unit CTO, Manufacturing & Utilities Business Group – TCS
 TensorIoT is an AWS Advanced Consulting Partner delivering complete end-to-end products and solutions in IoT, data engineering, machine learning, and artificial intelligence.
 “At TensorIoT, we create custom IoT solutions that used to require unique ways to handle time series data for each project. With the release of Amazon Timestream, we can use data storage that was purposely built for time series data, giving TensorIoT an innovative tool to empower our customers. Having Amazon Timestream in the suite of AWS products allows for seamless integration, unmatched scalability, and easy storage and access for time series data. With TensorIoT's strong focus on ML and IoT spaces, Amazon Timestream has filled a critical place in our toolkit, standing as the go-to time series data storage for companies handling telemetry and IoT."
-Duane Osburn, Principal Solutions Architect – TensorIoT
+Duane Osburn, Principal Solutions Architect – TensorIoT
 TrendMiner is Software AG's industrial analytics platform for Industry 4.0 operations that democratizes analytics by lowering the barrier of process and asset data analysis.
 “Innovation is what thrills us. Our team is always looking to push the boundaries of self-service analytics. That’s why we are now combining the strengths of Amazon Timestream and TrendMiner to help democratize analytics for time series data. Our team is excited to use Timestream in our upcoming projects with process industry customers.”
 Joan van de Wetering, Managing Director – TrendMiner

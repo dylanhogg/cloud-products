@@ -18,7 +18,7 @@ Reduce noise and alarm fatigue
 AmazonDevOps Guru helps Developers and IT operators reduce alarm noise and overcome alarm fatigue by using pre-trained machine learning models to correlate and group related anomalies and surface the most critical alerts. With DevOps Guru, you can reduce the need to manage multiple monitoring tools and alarms, which means you can focus on the root cause of the issue and remediation.
 How it works
 Amazon DevOps Guru Preview
-Get started today »
+Get started today
 Use cases
 Operational audits
 You can use Amazon DevOps Guru to get a quick summary of all the operationally significant events that have been, identified, sorted by their severity. Using the System Health Dashboard you can search for issues in specific applications, identify trends, and decide where developers should spend their time and resources.
@@ -38,7 +38,7 @@ Partners
 - Emel Dogrusoz Head of Product, Opsgenie
 Read how you can deliver operational insights directly to your on-call team by integrating Amazon DevOps Guru with Atlassian Opsgenie
 "PagerDuty was built to drive the move to a DevOps culture by automating the entire incident response lifecycle with resolution. We’re excited to continue this commitment to DevOps with our latest integration with Amazon DevOps Guru. Leveraging Amazon’s decades of operational excellence and DevOps Guru’s machine learning capabilities, PagerDuty provides even more real-time signal-to-action capabilities to our joint customers. Through PagerDuty’s ingestion of DevOps Guru’s Amazon Simple Notification Service (SNS) notifications, AWS customers can take real-time action on operational issues before they become customer-impacting outages.”
-- Jonathan Rende  SVP of Product
+- Jonathan Rende  SVP of Product
 Learn more about delivering ML-powered operational insights to your on-call teams via PagerDuty and Amazon DevOps Guru
 Blog posts & articles >>
 New- Amazon DevOps Guru Helps Identify Application Errors and Fixes
@@ -46,13 +46,13 @@ December 2020
 Harunobu Kameda
 Read blog
 Easily configure Amazon DevOps Guru across multiple accounts and Regions using AWS CloudFormation StackSets
-Nikunj Vaidya & Nuatu Tseggai
-AWS re:Invent 2020: Improve application availability w ML-powered insights using Amazon DevOps Guru
+Nikunj Vaidya & Nuatu Tseggai
+AWS re:Invent 2020: Improve application availability w ML-powered insights using Amazon DevOps Guru
 Jacob Sullivan
 Watch the webinar
-Amazon DevOps Guru is powered by pre-trained ML models that encode operational excellence
+Amazon DevOps Guru is powered by pre-trained ML models that encode operational excellence
 February 2020
-Caner Turkmen, Ravi Turlapati & Tim Januschowski
+Caner Turkmen, Ravi Turlapati & Tim Januschowski
 Read Blog
 Automate code reviews Catch code problems faster and earlier with Amazon CodeGuru
 Check out the product features

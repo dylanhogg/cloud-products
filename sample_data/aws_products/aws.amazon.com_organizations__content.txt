@@ -15,7 +15,7 @@ In addition, you can protect your resources by centrally managing security servi
 Simplify permission management and access control
 Simplify user-based permission management for everyone in your organization with AWS Single Sign-On (SSO) and your Active Directory. You can apply least-privilege practices by creating custom permissions for job categories. You can also control access to AWS services by applying service control policies (SCPs) to users, accounts, or OUs.
 Efficiently provision resources across accounts
-You can reduce resource duplication by sharing critical resources within your organization using AWS Resource Access Manager (RAM). Organizations also helps you meet your software license agreements with AWS License Manager, and maintain a catalog of IT services and custom products with AWS Service Catalog.
+You can reduce resource duplication by sharing critical resources within your organization using AWS Resource Access Manager (RAM). Organizations also helps you meet your software license agreements with AWS License Manager, and maintain a catalog of IT services and custom products with AWS Service Catalog.
 Manage costs and optimize usage
 AWS Organizations enables you to simplify costs and take advantage of quantity discounts with a single bill. In addition, you can optimize usage across your organization with services like AWS Compute Optimizer and AWS Cost Explorer.
 How it Works
@@ -30,7 +30,7 @@ Share common resources across accounts
 AWS Organizations makes it easy for you to share critical central resources across your accounts. For example, you can share your central AWS Directory Service Managed Microsoft Active Directory so that applications can access your central identity store. Use AWS Service Catalog to share IT services hosted in designated accounts so users can quickly discover and deploy approved services. Additionally, you can ensure application resources are created on your Amazon Virtual Private Cloud (VPC) subnets by centrally defining them once and sharing them across your organization using AWS Resource Access Manager.
 Recent publications and articles
 Date
-More…
+More...
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 Discover more on the
 AWS Security Blog.

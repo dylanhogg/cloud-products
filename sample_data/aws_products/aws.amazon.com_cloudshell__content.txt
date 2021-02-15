@@ -14,12 +14,10 @@ With 1 GB of persistent storage per Region, you can store scripts, files, config
 How it works
 Blog posts and articles
 Introducing AWS CloudShell Dec 15, 2020
-Learn more »
+Learn more
 AWS CloudShell: Command-line access to AWS resources Dec 15, 2020
-Learn more »
 Check out the product features
 Learn more about the features of AWS CloudShell, a browser-based Shell.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

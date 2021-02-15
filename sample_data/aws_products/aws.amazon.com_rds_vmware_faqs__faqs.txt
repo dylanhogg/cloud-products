@@ -1,0 +1,116 @@
+General
+Q: What is RDS on VMware?
+A: RDS on VMware delivers AWS-managed relational databases in on-premises VMware environments. Managing relational databases is complex and time-consuming, and RDS on VMware makes it easy to setup, scale, and operate relational databases in your VMware vSphere clusters. RDS on VMware uses the same simple interface, AWS Management Console, to manage databases both on-premises and in AWS.
+Q: Which relational database engines does RDS on VMware support?
+A: RDS on VMware supports MySQL 5.7, PostgreSQL 10.9, and Microsoft SQL Server 2016 SP2 Enterprise Edition. For Microsoft SQL Server, you will need to provide your own media and license (on-premises customer-provided license).
+Q: What are the monitoring capabilities of this solution?
+A: You can use Amazon CloudWatch to monitor database metrics in RDS on VMware. (Normal charges for Amazon CloudWatch will apply).
+Q: Does all my data residing in RDS on VMware stay on-premises?
+A: Yes, data in your databases managed by RDS on VMware stays on-premises.
+Q: Does RDS on VMware support AWS Direct Connect?
+A: Yes, RDS on VMware supports connecting to the AWS Region over AWS Direct Connect.
+Q: Does Amazon RDS on VMware support Amazon Aurora?
+A: No. RDS on VMware does not support Amazon Aurora.
+Q: Are there CLI/API available to access RDS on VMware?
+A: Yes, you can use the same AWS CLI and RDS APIs to manage RDS databases running in AWS and in your on-premises VMware environment.
+Q: What AWS Regions is RDS on VMware available in?
+A: RDS on VMware is available in AWS US East (Northern Virginia) Region.
+Getting Started
+Q: What are the prerequisites to use this service?
+vSphere v6.5 or higher VMware vSphere Enterprise Plus Edition
+AWS Account
+AWS Business or Enterprise support
+For more details on prerequisites, please refer to RDS on VMware User’s Guide
+Q: Can I use my own Microsoft SQL Server license with RDS on VMware?
+A: Yes, you need to bring your own media and your own Microsoft SQL Server license (on-premises customer provided license) to create RDS on VMware managed Microsoft SQL Server databases.
+Q: How do I onboard RDS on VMware onto my vSphere cluster?
+A: To onboard RDS on VMware, you create a Custom Availability Zone from the AWS Management Console. You then download the RDS on VMware installer from the AWS Management Console to the on-premises vSphere cluster where you want to use the service. When you run the installer, it deploys the local components for RDS on VMware on your vSphere cluster and connects your cluster to the Amazon RDS service running in the AWS Region. Once this process is complete, your newly created Custom Availability Zone will become “Active”. You can then create a new database using the AWS Management Console, CLI, or APIs by choosing the appropriate database engine and instance size. Please note that for Microsoft SQL Server, customers have to provide their own media and on-premises license to create the database.
+Q: Where do I go to create or manage a database?
+A: You can create, modify, and manage your RDS on VMware databases using the same AWS Management Console, CLI, and APIs as you do with Amazon RDS in AWS.
+How it Works
+Q: How does RDS on VMware help manage my on-premises databases?
+A: RDS on VMware is comprised of a set of VMs running on your vSphere infrastructure, connected through a dedicated VPN tunnel to the AWS Region. This service provides a single pane of glass experience via the AWS Management Console, CLI, and APIs to manage RDS databases running on-premises and in AWS. This service helps you to automatically perform the common database management tasks, including database provisioning, operating system and database patching, backup, point-in-time restore, compute scaling, instance health monitoring, and failover, freeing you to focus on your applications.
+Q: Can RDS on VMware perform my backups and, if necessary, my restores?
+A: Yes, RDS on VMware allows you to configure automated daily backups and to take user-initiated backups on-demand (DB snapshots). You can restore the database instance from a DB snapshot for all supported engines or to a specific point-in-time for MySQL and PostgreSQL.
+RDS on VMware allows you to specify automated backup retention period of up to 35 days for each database in your fleet. It is important to note that the RDS on VMware restore mechanism does not perform in-place replacement of existing databases. RDS on VMware creates a new database instance and restores your data to new volumes, allowing you to decide the best path forward in your specific situation.
+Q: Does RDS on VMware provide availability protection for my databases?
+A: Yes, every RDS instance benefits from local, on-premises health monitoring. When RDS on VMware detects that the database instance is unhealthy, the service replaces the unhealthy database instance. Customers can continue to access their databases using the same FQDN.
+Q: Does RDS on VMware patch my databases?
+A: Yes. RDS on VMware takes care of both OS and database engine patching with minimal downtime. Patching happens during a configurable maintenance window for database instances.
+Q: What happens if the network connection from my vSphere cluster to the AWS Region is disrupted?
+A: Your database instance availability is not impacted due to disruption in the network connection to the AWS Region from your vSphere cluster. In case of VPN disconnectivity, you will not be able to initiate any new database management operations using the AWS Management Console, CLI, or APIs. If AWS services are not reachable, database monitoring metrics will not be sent to Amazon CloudWatch.
+Q: Will Amazon RDS on VMware support VADP (VMware’s vStorage API for Data Protection)?
+A: No. RDS on VMware does not support VADP or any other external backup solution.
+Q: Will RDS on VMware support customers using VMware NSX?
+A: Yes, RDS on VMware works in a VMware NSX environment.
+Q: Will RDS on VMware support vSAN?
+A: Yes, RDS on VMware supports vSphere Cluster running vSAN.
+Q: Can I migrate my existing database data to RDS on VMware database instances?
+A: To migrate existing data from SQL Server databases, you can use the database migration tools provided by your database vendor to perform a migration.
+Q: Does RDS on VMware support Amazon RDS resource tags?
+A: Yes, RDS on VMware supports resource tags.
+Q: Can I use a proxy server with RDS on VMware?
+Yes, RDS on VMware supports customers who are using a http proxy server in front of their Amazon RDS on VMware databases to protect their network from unauthorized access.
+Q: How does RDS on VMware proxy support work?
+During the installation process, the installer will prompt you to enter the right IP, port and authentication information. It will then validate this information until this information is correctly provided from customer and verified by the installer. After the cluster is up, proxy server will be periodically authenticated for changed credentials.
+Q: How do I configure RDS on VMware to use my Network Proxy Server support?
+As part of the installation process, you can specify your network proxy server through the RDS on VMware installer. Should you require to change a Network Proxy Server setting, you will need to contact AWS support with all the proxy information in the support ticket before making any modifications. AWS will need to make corresponding changes on the AWS side to support the new Network Proxy Server Information.
+Q: Can I specify more than one proxy server information?
+You can provide only one proxy server information.
+Q: What are the authentication methods supported?
+RDS on VMware network proxy supports transparent and password-based authentication method.
+Q: RDS on VMware introduced a database engine version upgrade for PostgreSQL database engines from 10.9-R1 to 10.10-R1. Will RDS on VMware upgrade the database as part of the service?
+Yes, RDS on VMware will upgrade the database engine for you.   Q: Will I have the ability to choose maintenance windows for upgrades so that I don’t disturb my workloads during critical business hours?
+Yes, you can specify the maintenance window that’s most suitable or you can request to perform the upgrade immediately.
+RDS on VMware Read Replica
+Q: What does it mean to run a DB Instance as a read replica?
+Read replicas make it easy to take advantage of supported engines' built-in replication functionality to elastically scale out beyond the capacity constraints of a single DB instance for read-heavy database workloads. You can create a read replica with a few clicks in the AWS Management Console or using the CreateDBInstanceReadReplica API. Once the read replica is created, database updates on the source DB instance will be replicated using a supported engine's native, asynchronous replication.
+Q: When would I want to consider using RDS on VMware read replica?
+There are a variety of scenarios where deploying one or more read replicas for a given source DB instance may make sense. Common reasons for deploying a read replica include:
+Scaling beyond the compute or I/O capacity of a single DB instance for read-heavy database workloads. This excess read traffic can be directed to one or more read replicas.
+Serving read traffic while the source DB instance is unavailable. If your source DB Instance cannot take I/O requests (e.g. due to I/O suspension for backups or scheduled maintenance), you can direct read traffic to your read replica(s). For this use case, keep in mind that the data on the read replica may be “stale” since the source DB Instance is unavailable.
+Business reporting or data warehousing scenarios; you may want business reporting queries to run against a read replica, rather than your primary, production DB Instance.
+Q: Do I need to enable automatic backups on my DB instance before I can create read replicas?
+Yes. You need to enable automatic backups on your source DB Instance before adding read replicas, by setting the backup retention period to a value other than 0. Backups must remain enabled for read replicas to work.
+Q: Which versions of database engines support RDS on VMware read replicas?
+RDS on VMware Read Replica supports MySQL 5.7 and PostgreSQL 10.9 and 10.10. Automatic backups must be enabled on the source DB instance for read replica operations.
+Q: How do I deploy a read replica for a given DB instance?
+You can create a read replica in minutes using the standard CreateDBInstanceReadReplica API or a few clicks on the AWS Management Console. When creating a read replica, you can identify it as a read replica by specifying a SourceDBInstanceIdentifier. The SourceDBInstanceIdentifier is the DB Instance Identifier of the “source” DB Instance from which you wish to replicate. As with a standard DB Instance, you should specify Custom Availability Zone. The engine version and storage allocation of a read replica is inherited from the source DB instance. When you initiate the creation of a read replica, Amazon RDS takes a snapshot of your source DB instance and begins replication.
+Q: How do I connect to my read replica(s)?
+You can connect to a read replica just as you would connect to a standard DB instance, using the DescribeDBInstance API or AWS Management Console to retrieve the endpoint(s) for you read replica(s).
+Q: How many read replicas can I create for a given source DB instance?
+RDS for VMware allows you to create up to 1 read replicas for a given source DB instance.
+Q: Can I create a read replica in an AWS Region different from that of the source DB instance?
+No, you can only create read replica in the same region as the source DB instance.
+Q: Do RDS read replicas support synchronous replication?
+No. RDS for VMware read replica support for MySQL and PostgreSQL are implemented using those engines' native asynchronous replication.
+Q: Can I promote my read replica into a “standalone” DB Instance?
+Yes. You can manually promote your read replica into a “standalone” DB instance.
+Q: Will my read replica be kept up-to-date with its source DB instance?
+Updates to a source DB instance will automatically be replicated to any associated read replicas. However, with supported engines' asynchronous replication technology, a read replica can fall behind its source DB instance for a variety of reasons. Typical reasons include:
+Write I/O volume to the source DB instance exceeds the rate at which changes can be applied to the read replica (this problem is particularly likely to arise if the compute capacity of a read replica is less than the source DB Instance).
+Complex or long-running transactions to the source DB Instance hold up replication to the read replica.
+Read Replicas are subject to the strengths and weaknesses of supported engines' native replication. If you are using Read Replicas, you should be aware of the potential for lag between a Read Replica and its source DB Instance, or “inconsistency”.
+Q: How do I see the status of my active read replica(s)?
+You can use the standard DescribeDBInstances API to return a list of all the DB Instances you have deployed (including Read Replicas), or simply click on the "Instances" tab of the Amazon RDS Console.
+Q: How do I delete a read replica? Will it be deleted automatically if its source DB Instance is deleted?
+You can easily delete a read replica with a few clicks of the AWS Management Console or by passing its DB Instance identifier to the DeleteDBInstance API.   An MySQL read replica will stay active and continue accepting read traffic even after its corresponding source DB instance has been deleted. If you desire to delete the Read Replica in addition to the source DB instance, you must explicitly do so using the DeleteDBInstance API or AWS Management Console.
+Q: What happens to my replica instance if the VPN is disconnected?
+If the VPN is disconnected between your vSphere cluster and the AWS region, your replicated instance doesn’t lose the data and will be re-synchronized when the VPN connectivity is restored.
+Q: Can I pick a read replica of a different size than the master?
+Yes, We however recommend the size of the replica is same as the size of the master.
+Q: How much do read replicas cost? When does billing begin and end?
+A read replica is billed as a standard DB Instance and at the same rates. Just like a standard DB instance, the rate per “DB Instance hour” for a read replica is determined by the DB instance class of the read replica – please see pricing page for up-to-date pricing. You are not charged for the data transfer incurred in replicating data between your source DB instance and read replica within the same AWS Region.  Billing for a read replica begins as soon as the replica has been successfully created (i.e. when status is listed as “active”). The read replica will continue being billed at standard Amazon RDS DB instance hour rates until you issue a command to delete it.
+Help and Support
+Q: Will AWS support my managed environment and databases?
+A: Yes. You can engage with AWS Support for any issues with RDS on VMware, just as you would for any other AWS service.
+Learn about Amazon RDS
+Find additional information about Amazon Relational Database Service (RDS)
+Learn more
+Learn how to get started
+Follow the RDS on VMware getting started guide
+Get started
+See a demo
+Watch the Intro to RDS on VMware Tech Talk webinar
+Watch the demo
+Page Content

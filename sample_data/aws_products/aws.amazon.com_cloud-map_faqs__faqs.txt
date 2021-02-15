@@ -1,0 +1,34 @@
+Products
+Networking
+AWS Cloud Map
+AWS Cloud Map FAQs
+What is AWS Cloud Map?
+AWS Cloud Map is a cloud resource discovery service. Cloud Map enables you to name your application resources with custom names, and it automatically updates the locations of these dynamically changing resources. This increases your application availability because your applications always discover the most up-to-date locations of its resources.
+Why should I use Cloud Map?
+Modern applications are typically composed of multiple services that are accessible over an API and perform a specific function. Each service interacts with a variety of other resources such as databases, queues, object stores, and customer-defined microservices, and they also need to be able to find the location of all the infrastructure resources on which it depends, in order to function.
+Cloud Map allows you to register any application resources such as databases, queues, microservices, and other cloud resources with custom names. Cloud Map then constantly checks the health of resources to make sure the location is up-to-date. The resources in your application can then query the registry for the location of the exact resources needed based on the application version and deployment environment.
+What is the difference between Amazon Route 53 Auto Naming and AWS Cloud Map?
+Amazon Route 53 Auto Naming, which was released on December 05, 2017, automates service name management in DNS and supported IP-based resources only. AWS Cloud Map extends the capabilities of the Auto Naming APIs by providing a service registry for resources, represented by IPs, URLs, and ARNs and offering an API-based service discovery mechanism with a faster change propagation and the ability to use attributes to narrow down the set of discovered resources. All the existing Amazon Route 53 Auto Naming resources are automatically upgraded to AWS Cloud Map and are available for API-based discovery.
+What is a namespace?
+A namespace is a logical entity in AWS Cloud Map that allows for grouping your services and enforcing a common level of visibility—either public (accessible from the public internet) or private (visible in a specific VPC only). You define how your applications should discover services at the namespace level by allowing the discovery via AWS SDK and API, or enabling optional discovery via DNS.
+What is the difference between a “service” and a “resource” in AWS Cloud Map?
+In AWS Cloud Map, a service is an application component that serves a particular purpose, such as generating bills or resizing thumbnail images. When a service is deployed, it runs on some type of infrastructure, for example, EC2 instances, ECS tasks, DynamoDB tables, SQS queues, or Lambda functions. In AWS Cloud Map, these are resources. Your service may require only one resource, or it could be running on thousands of resources that dynamically come and go as it scales.
+What is the difference between the answers AWS Cloud Map returns over DNS vs. HTTPS?
+Over DNS, AWS Cloud Map provides resource locations that consist of IP addresses or IP:port combinations (using either IPv4 or IPv6). Using API-based discovery, AWS Cloud Map can return all of those types of locations, as well as URLs or ARNs. For resources that have IP or IP:port locations, you can specify whether AWS Cloud Map should return resources when queried over DNS, API, or both. For resources that have URL or ARN locations, applications must query over API. When clients query AWS Cloud Map over API, they can narrow down the results by specifying attributes.
+How does AWS Cloud Map perform health checking of my IP-based resources?
+When you register a resource in AWS Cloud Map, you can optionally specify settings for health checks, including: health-checking type (regular or path-based), an optional path to check, and the number of retries to deem the resource unhealthy. As soon as you register IP-based resources, AWS Cloud Map automatically provisions health checks for these resources based on the settings in the service. AWS Cloud Map also makes resource health information available via the /describeHealthStatus API.
+Will AWS Cloud Map work with resources in my VPC?
+Yes, AWS Cloud Map allows you to register resources in your VPC and make them discoverable. AWS Cloud Map also includes a regional API that you can use to register and deregister the resources inside or outside of VPC.
+How does integration with Amazon Elastic Container Service (ECS) work?
+When you create an ECS service, you can choose to enable service discovery by specifying a custom name, attributes, and optional health-checking settings for the service. As ECS launches tasks for your service, it registers them as resources in the AWS Cloud Map service registry, which ensures that the tasks become discoverable via API calls and DNS queries.
+How does integration with Amazon Elastic Container Service for Kubernetes (EKS) work?
+We created a Cloud Map provider in an open-source Kubernetes connector ExternalDNS that automatically propagates internal service locations to the AWS Cloud Map service registry as Amazon EKS services launch and removes them on termination. All EKS services then become discoverable via AWS Cloud Map, which provides a unified service registry for all container workloads on EKS.
+Ready to get started?
+Build your first Cloud Map
+Sign into the Cloud Map console
+Sign up for a free account
+Instantly get access to the AWS Free Tier
+Sign up
+Start building in the console
+Get started building with Cloud Map in the AWS Console
+Sign in

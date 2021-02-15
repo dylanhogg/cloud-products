@@ -19,7 +19,7 @@ Fully Managed
 Amazon Aurora is fully managed by Amazon Relational Database Service (RDS). You no longer need to worry about database management tasks such as hardware provisioning, software patching, setup, configuration, or backups. Aurora automatically and continuously monitors and backs up your database to Amazon S3, enabling granular point-in-time recovery. You can monitor database performance using Amazon CloudWatch, Enhanced Monitoring, or Performance Insights, an easy-to-use tool that helps you quickly detect performance problems. Learn more: MySQL | PostgreSQL
 Migration Support
 MySQL and PostgreSQL compatibility make Amazon Aurora a compelling target for database migrations to the cloud. If you're migrating from MySQL or PostgreSQL, see our migration documentation for a list of tools and options. To migrate from commercial database engines, you can use the AWS Database Migration Service for a secure migration with minimal downtime. Learn more: MySQL | PostgreSQL
-Use the AWS Database Migration Service (DMS) to accelerate your migration from the most common commercial databases. When migrating databases to Aurora, you can use DMS free for six months. Learn more »
+Use the AWS Database Migration Service (DMS) to accelerate your migration from the most common commercial databases. When migrating databases to Aurora, you can use DMS free for six months. Learn more
 Use cases
 Enterprise Applications
 Amazon Aurora is a great option for any enterprise application that can use a relational database. Compared to commercial databases, Amazon Aurora can help cut down your database costs by 90% or more while improving reliability and availability of the database. Amazon Aurora being a fully managed service helps you save time by automating time consuming tasks such as provisioning, patching, backup, recovery, failure detection, and repair.
@@ -46,12 +46,12 @@ If you're currently using Amazon RDS for MySQL or Amazon RDS for PostgreSQL...
 If you're currently using Amazon RDS for MySQL or Amazon RDS for PostgreSQL, migrating to Aurora is as simple as creating a snapshot and launching an Aurora instance from that snapshot. You can follow the simple, step by step instructions in the user guide to perform the migration. Since Amazon Aurora is fully MySQL- and PostgreSQL-compatible, your applications can easily be reconnected to the new instance without any changes.
 MySQL and PostgreSQL databases running on Amazon EC2 or on-premises can also be easily migrated. Create a snapshot backup of your existing database, upload it to Amazon S3, and use it to directly create an Amazon Aurora cluster. You can also import data stored in an Amazon S3 bucket into a table in an Amazon Aurora database. Standard MySQL import and export tools or MySQL binlog replication are also supported. Migrating to Amazon Aurora from supported databases running on Amazon EC2 or on-premises can also be done using AWS Database Migration Service.
 If you're currently using Oracle or Microsoft SQL Server...
-The AWS Schema Conversion Tool simplifies migration from Oracle and Microsoft SQL Server to Amazon Aurora by automatically converting the source database schema and a majority of the custom code - including views, stored procedures, and functions - to a format compatible with Amazon Aurora. Any code that cannot be automatically converted is clearly marked so that it can be manually converted. Learn more and download AWS Schema Conversion Tool »
-Migrating data from Oracle and Microsoft SQL Server databases to Amazon Aurora can be easily done using AWS Database Migration Service. You can begin a data migration with just a few clicks, and your source database remains fully operational during the migration, minimizing downtime to applications using that database. Learn more about AWS Database Migration Service »
+The AWS Schema Conversion Tool simplifies migration from Oracle and Microsoft SQL Server to Amazon Aurora by automatically converting the source database schema and a majority of the custom code - including views, stored procedures, and functions - to a format compatible with Amazon Aurora. Any code that cannot be automatically converted is clearly marked so that it can be manually converted. Learn more and download AWS Schema Conversion Tool
+Migrating data from Oracle and Microsoft SQL Server databases to Amazon Aurora can be easily done using AWS Database Migration Service. You can begin a data migration with just a few clicks, and your source database remains fully operational during the migration, minimizing downtime to applications using that database. Learn more about AWS Database Migration Service
 Blog posts & articles
 Date
 1
-…
+...
 Learn more on the AWS Database blog >>
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
@@ -63,7 +63,7 @@ Start building with Amazon Aurora
 Dig into the Amazon Aurora User Guide to get started.
 Read documentation
 Learn more about Amazon Aurora
-Select a features page: MySQL |  PostgreSQL
+Select a features page: MySQL |  PostgreSQL
 Ready to build?
 Have more questions?
 Contact us

@@ -25,7 +25,7 @@ Featured Security Competency Partners
 The AWS Competency Program is designed to identify, validate, and promote AWS Partner Network (APN) Advanced and Premier Tier Partners with demonstrated AWS technical expertise and proven customer success. To learn more, see the AWS Competency Program.
 Okta, Inc.
 Okta is the identity company that stands for trust.
-Learn more »
+Learn more
 OneLogin, Inc.
 OneLogin is a leading cloud identity management company, enabling enterprises to secure connections across all users and all devices.
 Ping Identity
@@ -34,7 +34,7 @@ Built-in support for AWS accounts and business applications
 AWS SSO helps manage access to your AWS accounts and business applications. For a full list of business applications pre-integrated with AWS SSO, see AWS SSO Cloud Applications.
 Blog posts & articles
 1
-…
+...
 Learn more about AWS Single Sign-On key features
 Visit the features page
 Ready to get started?

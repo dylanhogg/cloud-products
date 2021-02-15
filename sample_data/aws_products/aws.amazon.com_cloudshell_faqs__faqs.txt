@@ -1,0 +1,78 @@
+General
+Q: What is AWS CloudShell?
+AWS CloudShell is a browser-based shell that makes it easier to securely manage, explore, and interact with your AWS resources. CloudShell is pre-authenticated with your console credentials. Common development and operations tools are pre-installed, so there’s no need to install or configure software on your local machine. With CloudShell, you can quickly run scripts with the AWS Command Line Interface (AWS CLI), experiment with AWS service APIs using the AWS SDKs, or use a range of other tools to be more productive.
+Q: What can I do with CloudShell?
+CloudShell gets you started with the AWS CLI more quickly, so you can automate tasks, manage infrastructure, and interact with AWS services. You can use CloudShell to clone repositories containing commonly used scripts, make edits to those scripts, and store them for future use. You can use AWS SDKs to develop applications and use common CLIs, such as the Amazon Elastic Container Service (Amazon ECS) CLI and the AWS Serverless Application Model (AWS SAM) CLI, to manage your AWS resources. You can save your work at no cost in 1 GB of persistent storage available in your home directory.
+Q: What’s pre-installed in CloudShell?
+CloudShell runs on Amazon Linux 2 and contains common AWS command line interfaces, including AWS CLI, Amazon ECS CLI, AWS SAM CLI, along with runtimes and AWS SDKs for Python and Node.js. Other commonly used command line utilities for shells (Bash, PowerShell, Zsh), editors (vi), source control (Git), and package management (npm, pip) are also installed. For a complete list of pre-installed tools, see the AWS CloudShell User Guide.
+Q: What is the pricing for CloudShell?
+There is no additional charge for CloudShell. You pay for any other AWS resources you use with CloudShell to create and run your applications. You pay only for what you use, as you use it; there are no minimum fees and no upfront commitments. Data transfer is billed at standard AWS data transfer rates.
+Q: Can I upload and download files through the browser?
+Yes, you can upload files to the home directory of your CloudShell instance through your browser from your local machine. You can also download files up to 1 GB in size from your CloudShell environment to your local machine.
+Q: How is CloudShell different from Amazon EC2 Instance Connect?
+Amazon EC2 Instance Connect enables you to connect to existing EC2 instances in your account, using a terminal in the browser. CloudShell does not require any resources in your account. EC2 Instance Connect is most useful for connecting to existing EC2 instances via SSH while CloudShell is most useful for running AWS CLI commands and general purpose scripting.
+Q: What is the difference between CloudShell and the AWS Cloud9 terminal?
+AWS Cloud9 is an integrated development environment (IDE) that gives users access to a terminal when using a Cloud9 environment that requires an EC2 instance in your account. CloudShell is a standalone, general purpose tool that you can use to run commands on AWS. When using Cloud9, you are billed for the EC2 instance that runs your Cloud9 environment. CloudShell can be used at no additional cost; you pay only for the AWS resources needed to run scripts and commands. In both cases you are billed for data transfer at standard data transfer rates.
+Q: Do changes that I make to the CloudShell environment persist?
+Only changes made inside your home directory will persist across CloudShell sessions per AWS Region. You can store up to 1 GB of files in your home directory in each supported AWS Region. Storage is not synchronized across AWS Regions.
+Q: Can I access resources in a VPC with CloudShell?
+No, you cannot currently access resources that are in your private VPC in this release of CloudShell.
+Q: Does CloudShell have an API?
+No, CloudShell is intended to be used from the AWS Management Console and does not currently support programmatic interaction.
+Getting started
+Q: How do I access CloudShell?
+CloudShell is available from the AWS Management Console. Clicking the shell icon in the top navigation bar opens a CloudShell environment within a new browser tab. The new browser tab uses your console credentials.
+Q: Is any software installation required?
+No, CloudShell is browser-based and requires no software installation, manual updates, or patch management.
+Q: Which networks can CloudShell access by default?
+By default, CloudShell has public internet egress, but does not have ingress capability.
+Q: Can I disallow access to CloudShell across my company?
+Yes, using an AWS Identity and Access Management (IAM) policy you can restrict the ability to launch CloudShell. Additionally, only users that have the Administrator or PowerUser role can start a CloudShell session by default. Administrators can configure access to CloudShell for their organization. If you choose to restrict this ability, the CloudShell icon will be visible, but a CloudShell session will not start. Your users will receive a message stating that they do not have CloudShell access.
+Storage
+Q: How much storage do I have in CloudShell?
+CloudShell comes with 1 GB of persistent storage for your home directory, per Region.
+Q: Can I attach more storage to CloudShell?
+No, you cannot directly attach more storage to CloudShell. If you need to store more than 1 GB, you can create and use an S3 bucket from CloudShell.
+Q: Can I delete my own CloudShell data?
+Yes. Files removed from CloudShell are deleted permanently. To back up the files, use another storage option.
+Customization
+Q: Can I get a Windows or macOS-backed CloudShell?
+No, CloudShell does not currently support Windows or macOS instances. PowerShell is pre-installed and can be used on Linux.
+Q: How do I customize my CloudShell environment?
+You can customize your CloudShell environment by checking out configuration files from a Git repository or by uploading them to your CloudShell environment. You can customize the look of CloudShell by clicking the settings icon and selecting your desired theme and font size. The shell updates immediately in response to your selection. Software installed outside of your home directory does not persist across sessions.
+Q: Can I install my own software?
+Yes, you can install your own software in CloudShell. Software installed completely within your home directory will persist across sessions so that you do not need to re-install it when you use CloudShell. You are responsible for maintaining any additional software that you install.
+Q: Can I use my own image for CloudShell?
+No, using your own image is not currently supported.
+Security
+Q: Is CloudShell secure?
+Yes, users must sign in to the AWS Management Console to access CloudShell and then only have the privileges granted to them by their console login credentials. You have the same privileges as if you were to install, configure, and use the AWS CLI on your local machine with the same credentials – no more, no less. Account administrators can deny access to CloudShell by defining appropriate IAM policies. CloudShell usage information is logged to AWS CloudTrail and AWS API calls made from the shell are annotated to indicate that they are initiated from a specific users’ CloudShell session.
+Q: Who can use CloudShell?
+Currently, only users that have the Administrator or PowerUser role can start a CloudShell session by default. All other users must be granted permission from an administrator in order to be able to start a CloudShell session. For a complete list of access procedures, see the AWS CloudShell User Guide.
+Q: Who can grant access for others to use CloudShell?
+Access to CloudShell is managed via IAM. Any user with IAM administrator permissions can grant access to CloudShell. If you choose to restrict this ability, the CloudShell icon will be visible, but a CloudShell session will not start, instead your users will receive a message stating that they do not have CloudShell access.
+Limits & usage
+Q: What are the CloudShell limits?
+Your home directory is limited to 1 GB of storage that will persist across your CloudShell sessions on a per-Region basis. CloudShell uses a temporary compute environment that restores data stored in your home directory when you connect to it so changes made outside your home directory are not saved when your session ends. CloudShell is intended for interactive workloads rather than long running processes. To run a long process, consider using another AWS compute service. CloudShell will automatically stop after a period of keyboard input inactivity. Processes running in the background do not constitute activity and may be terminated without notice. Your CloudShell connection will automatically disconnect all sessions when your console session ends. For a complete list of CloudShell limits, see the AWS CloudShell User Guide.
+Q: How many shells can I have?
+CloudShell supports one virtual machine per Region, per user. Users can have up to 10 sessions per virtual machine active concurrently. Users can have shells from multiple Regions open simultaneously. A user is defined as any IAM principal that can be used to sign in to the AWS Management Console, including federated roles and AWS Single Sign-On.
+Q: How long will CloudShell keep my data?
+CloudShell environments will preserve files stored in your home directory ($HOME) for up to 120 days from the last time you initiated a CloudShell session. This limit applies on a regional basis. If you use CloudShell in multiple Regions, each Region has a separate timer, which begins from the time your last CloudShell session was closed per Region. Accessing CloudShell in the expiring Region through the same IAM principal will reset the timer.
+Q: How can I prevent my CloudShell storage from being deleted?
+Sign in to the AWS Management Console and open CloudShell in the expiring Region. This will reset the time associated with your storage in the given Region.
+Q: Will my CloudShell data in all Regions be deleted when the retention period ends?
+No. The CloudShell retention policy applies on a regional basis. Each Region has its own timer associated with your storage.
+Q: Will I be notified before my data is going to be deleted?
+Yes. You will be notified via the personal health dashboard before your CloudShell data is deleted.
+Q: Where can I find a complete list of CloudShell limits?
+For a complete list of CloudShell limits, see the AWS CloudShell User Guide.
+Read the overview
+Learn more about AWS CloudShell, a browser-based Shell.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS CloudShell in the AWS Management Console.
+Sign in
+Page Content

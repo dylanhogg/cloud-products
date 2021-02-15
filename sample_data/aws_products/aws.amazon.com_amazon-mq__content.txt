@@ -14,16 +14,16 @@ Message brokers allow different software systems – often using different progr
 With a few clicks in the Amazon MQ Console, Amazon MQ provisions your broker with support for version upgrades, so you can always use the latest version that Amazon MQ supports. Once you configure your broker, your applications can produce and consume messages.
 “Our existing messaging system was difficult to maintain without experts in the maintenance of the servers and client libraries. Amazon MQ provides less than 100-millisecond latency for thousands of persistent events so applications spread across our system have the most recent information possible. Amazon MQ also allows us to focus on the client and application code instead of maintenance of the servers."
 - Braden Schmidt, Principal Architect, SkipTheDishes
-View more customer testimonials »
+View more customer testimonials
 What's new
 Date
-More…
+More...
 Check out the product features
 Learn more about Amazon MQ features.
-Learn more »
+Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
-Sign up »
+Sign up
 Start building in the console
 Get started building with Amazon MQ in the AWS Management console.
-Get started »
+Get started

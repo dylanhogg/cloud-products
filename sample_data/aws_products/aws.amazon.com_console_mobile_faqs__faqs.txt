@@ -1,0 +1,31 @@
+Products
+Management Tools
+AWS Console Mobile Application
+AWS Console Mobile Application FAQs
+Q: How do I sign in?
+The Console Mobile Application supports several authentication methods, including owner/root credentials, IAM user credentials, and AWS access keys and federated login via AWS Single Sign-On, Microsoft Active Directory and third-party identity providers. An owner account is the AWS login that created the account. An IAM user is an identity that has been created by an administrator through the IAM service. Note that IAM users need to also provide their account alias, which can be found at the top of the Management Console sign-in screen. AWS access keys are used to sign programmatic requests that the app makes to AWS.
+For security reasons, we recommend that you secure your device with a passcode and that you follow an AWS best practice by creating and using an IAM user's credentials to log in to the app. If you lose your device, an IAM user can be deactivated to prevent unauthorized access. Root accounts cannot be deactivated.
+Click here to learn more about the different types of AWS security credentials.
+Q: Can I sign-in with biometric authentication?
+You can setup biometrics authentication on supported iOS and Android devices running Console Mobile Application v2.0+.
+Q: Can I assume IAM roles?
+Yes, on iOS and Android V2.0+.
+Q: Where can I download the app?
+Download the Console Mobile Application from Amazon Appstore, Google Play, and iTunes.
+Q: What versions of iOS and Android are supported?
+iOS 12.0+ and Android 8.0+ are supported.
+Q: Does the Console Mobile application support tablets?
+The Console Mobile application is optimized for iOS and Android mobile devices with a screen size < 7”, but it works on larger screen sizes as well.
+Q: Can I view my current AWS usage charges?
+Yes, you can view your current usage charges in the Console Mobile Application. Simply visit your Billing Preferences page and select the checkbox to Receive Billing Alerts. In order to view usage charges, your identity must have permission to view CloudWatch.
+Q: Is MFA supported?
+Yes. We recommend using either a hardware MFA device or a virtual MFA on a separate mobile device for the greatest level of account protection.
+Q: Can I create resources?
+Resource creation is not currently supported on the Console Mobile Application.
+Q: Can I download S3 objects?
+You can use The Console Mobile Application to generate a pre-signed URL for an S3 object. A pre-signed URL grants time-limited permission to download the object. Read more about pre-signed URLs here.
+In order to open a pre-signed URL for an S3 object in your device's browser, use the app to navigate to the S3 object's detail page and tap "View in browser". Your device configuration will determine what actions are possible with the object.
+Q: I lost my mobile device. What should I do?
+We strongly recommend that in addition to using a password or biometric lock on your mobile device, you use an IAM user to manage AWS resources. If you lose your mobile device, you can remove the IAM user's access.
+Q: Can I provide feedback?
+Yes. Click the Feedback button in the Console Mobile Application's menu. We’re eager to hear about your experience.

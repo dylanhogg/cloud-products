@@ -1,0 +1,22 @@
+AWS Fault Injection Simulator
+Overview
+Features
+FAQs
+Products
+Developer Tools
+AWS Fault Injection Simulator FAQs
+General
+Q: What is Chaos Engineering?
+Chaos engineering is the process of stressing an application in testing or production environments by creating disruptive events, such as server outages or API throttling, observing how the system responds, and implementing improvements. Chaos engineering helps teams create the real-world conditions needed to uncover the hidden issues, monitoring blind spots, and performance bottlenecks that are difficult to find in distributed systems. It starts with analyzing the steady-state behavior, building an experiment hypothesis (e.g., terminating x number of instances will lead to x% more retries), executing the experiment by injecting fault actions, monitoring roll back conditions, and addressing the weaknesses.
+Q: What is AWS Fault Injection Simulator (FIS)?
+FIS simplifies the process of setting up and running controlled chaos engineering experiments across a range of AWS services so you can build confidence in your application behavior.  Q: Does AWS FIS require an agent?
+Many action types do not require any agents to be installed in your resources. However, instance level faults including increased CPU utilization and memory utilization, require the SSM agent.
+Q: Why should I use AWS FIS?
+You should use FIS to discover an application’s weaknesses at scale in order to improve performance, observability, and resiliency. FIS delivers real-world fault injection experience from a centralized console, eliminating the need for you to manage complex tooling. FIS’s flexible experiment template allows you to incorporate various fault types into a single experiment and to design custom experiments to simulate complex outage scenarios. FIS provides built-in safety mechanisms in the form of stop conditions, which stop an experiment before it runs out of control.
+Q: Can I use AWS FIS as part of my CD pipeline?
+Yes, you can integrate FIS into your continuous delivery pipeline. This will enable you to repeatedly test the impact of fault actions as part of your software delivery process
+Q: How do the faults injected by AWS FIS compare to real world conditions?
+FIS fault inject actions create conditions which are nearly identical to what happens in the real world. For example, the action to increase CPU utilization actually consumes CPU resources. The action to throttle API requests throttles those requests at the control plane level so the experience is the same as any other throttling. Unlike the real world, with FIS you have the control to stop an experiment at any time and, where possible, specify roll back actions that execute once an action duration is complete.
+Explore product features
+Visit AWS Fault Injection Simulator Features page.
+Learn more

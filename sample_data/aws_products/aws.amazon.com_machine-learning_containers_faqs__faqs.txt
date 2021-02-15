@@ -1,0 +1,25 @@
+Products
+Machine Learning
+AWS Deep Learning Containers
+AWS Deep Learning Containers FAQs
+Q: What are AWS Deep Learning Containers?
+AWS Deep Learning Containers (AWS DL Containers) give machine learning and deep learning practitioners optimized Docker environments to train and deploy models in their pipelines and workflows across Amazon Sagemaker, Amazon EC2, Amazon ECS, and Amazon EKS. AWS DL Containers are available as Docker images for training and inference with TensorFlow, PyTorch, and MXNet on Amazon ECR.
+Q: Why should I use AWS DL Containers?
+Building, testing, maintaining, and optimizing Docker images for deep learning requires a sustained investment in time and resources by data scientists, machine learning developers, and practitioners. Instead of focusing on building and improving models, practitioners have to spend valuable resources in undifferentiated tasks. These tasks can include installing packages, debugging compatibility issues, optimizing for performance, and integrating and testing with Amazon Sagemaker, Amazon EC2, Amazon ECS, and Amazon EKS. AWS DL Containers offer fully tested and optimized deep learning Docker environments that require no installation, configuration, or maintenance. Deep learning practitioners looking to train and serve models in TensorFlow, PyTorch, or Apache MXNet, get what they need packaged and optimized in these Docker images.
+Q: How does this service relate to/work with other AWS services?
+AWS DL Containers are built, tested, and optimized to be used in Amazon Sagemaker, Amazon EC2, Amazon ECS, and Amazon EKS. Docker images for AWS DL Containers are available on Amazon ECR. For training and inference of deep learning models using GPUs, AWS DL Containers require the underlying Amazon Machine Image (AMI) to have the appropriate GPU drivers installed. DL Containers are built to work with the default GPU AMIs available in Amazon SageMaker, Amazon ECS, and Amazon EKS.
+Q: How do AWS DL Containers work with AWS Deep Learning AMIs?
+AWS Deep Learning AMIs are EC2 Amazon Machine Images (AMIs) built and optimized for building, training, and inference of machine learning and deep learning models. For more information, see AWS Deep Learning AMIs. For more information about using AWS DL Containers in EC2, see the documentation.
+Q: Do I need to pay to use AWS DL Containers?
+AWS DL Containers are available at no additional charge. You pay only for the Amazon Sagemaker, Amazon EC2, Amazon ECS, Amazon EKS, and other AWS resources that you use.
+Q: How do I access Docker images for AWS DL Containers?
+You can access Docker images for AWS DL Containers from repositories in Amazon ECR. For more information, see the documentation for a list of available Docker images.
+Read the documentation
+Learn more about AWS DL Containers.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building with tutorials
+Get started with AWS DL Containers on Amazon EC2.
+Try tutorial

@@ -1,0 +1,102 @@
+Getting Started
+Q: What is an easy way to test Amazon SES?
+The Amazon SES sandbox is an area where new users can test the capabilities of Amazon SES. When your account is in the sandbox, you can only send email to verified identities. A verified identity is an email addresses or domain that you've proven that you own.
+Additionally, when your account is in the sandbox, there are limits to the volume of email you can send each day, and to the number of messages you can send each second.
+Q: Can I start sending large email volumes right away?
+When you're ready to start sending email to non-verified recipients, submit an Amazon SES Sending Limit Increase request through the AWS Support Center. For more information, see Moving Out of the Amazon SES Sandbox in the Amazon SES Developer Guide.
+Pricing and Billing
+Q: How can I track my Amazon SES usage?
+You can view your charges for the current billing period at any time by visiting the Billing Dashboard in the AWS Management Console.
+Limits and Restrictions
+Q: Can I send emails from any email address?
+No. You can only use Amazon SES to send email from addresses or domains that you own.
+To prove that you own an email address or domain, you have to verify it. In each AWS Region, you can verify up to 10,000 email addresses and domains, in any combination. For more information about verifying email addresses and domains, see Verifying Identities in Amazon SES in the Amazon SES Developer Guide.
+Q: Is there a limit on the size of emails Amazon SES can deliver?
+Amazon SES accepts email messages up to 10 MB in size. This includes any images and attachments that are part of the message.
+Q: Are there any limits on how many emails I can send?
+Every Amazon SES account has its own set of sending limits. These limits are:
+Sending quota—the maximum number of recipients that you can send email to in a 24-hour period.
+Maximum send rate—the maximum number of recipients that you can send email per second.
+Sending limits are based on recipients rather than on messages. You can check your sending limits at any time by using the Amazon SES console.
+Note: If we determine that the email you send is of poor or questionable quality (for example, if it has high bounce or complaint rates, or if it contains unsolicited or malicious content), we reserve the right to pause your ability to send email.
+Authentication, Validation, and Configuration
+Q: Does Amazon SES support Sender Policy Framework (SPF)?
+Yes, Amazon SES supports SPF. You may need to publish an SPF record, depending on how you use Amazon SES to send email. If you don't need to comply with Domain-based Message Authentication, Reporting and Conformance (DMARC) using SPF, you don't need to publish an SPF record, because by default, Amazon SES sends your emails from a MAIL FROM domain that's owned by Amazon Web Services. If you want to comply with DMARC using SPF, you have to set up Amazon SES to use your own MAIL FROM domain and publish an SPF record.
+Q: Does Amazon SES support Domain Keys Identified Mail (DKIM)?
+Yes, Amazon SES supports DKIM. If you have enabled and configured Easy DKIM, Amazon SES signs outgoing messages using DKIM on your behalf. If you prefer, you can also sign your email manually. To ensure maximum deliverability, there are a few DKIM headers that you should not sign. For more information, see Manual DKIM Signing in Amazon SES in the Amazon SES Developer Guide.
+Q: Can emails from Amazon SES comply with DMARC?
+With Amazon SES, your emails can comply with DMARC through SPF, DKIM, or both.
+For more information, see Amazon SES and Security Protocols in the Amazon SES Developer Guide.
+Q: Can I specify a dedicated IP address when I send certain types of email?
+If you lease several dedicated IP addresses to use with your Amazon SES account, you can use the dedicated IP pools feature to create groups (pools) of those IP addresses. You can then associate each pool with a configuration set; when you send emails using that configuration set, those emails are only sent from the IP addresses in the associated pool. For more information, see Creating Dedicated IP Pools in the Amazon SES Developer Guide.
+Sending Capabilities
+Q: Does Amazon SES provide an SMTP endpoint?
+Amazon SES provides an SMTP interface for seamless integration with applications that can send email via SMTP. You can connect directly to this SMTP interface from your applications, or configure your existing email server to use this interface as an SMTP relay.
+In order to connect to the Amazon SES SMTP interface, you have to create SMTP credentials. For more information about creating SMTP credentials, see Obtaining Your Amazon SES SMTP Credentials in the Amazon SES Developer Guide.
+Q: Can I use Amazon SES to send email from my existing applications?
+Amazon SES allows you to create a private SMTP relay for use with any existing SMTP client software, including software that you develop yourself, or any third-party software that can send email using the SMTP protocol.
+For more information, see Using the Amazon SES SMTP Interface to Send Email in the Amazon SES Developers Guide.
+Q: Can Amazon SES send emails with attachments?
+Amazon SES supports many popular content formats, including documents, images, audio, and video.
+Note: For your own safety and that of your customers, Amazon SES scans every attachment that you send for viruses and malware.
+You can use an email client that supports SMTP to send email with attachments. When you configure a client to send outgoing email through Amazon SES, the client constructs the appropriate MIME parts and email headers before sending the message.
+You can also send email with attachments programmatically. To include an attachment in your email, construct a new multipart email message. In the message, include a MIME part that contains an appropriate Content-Type header, along with the MIME-encoded content. Next, use the Content-Disposition header to specify whether the content is to be displayed inline or treated as an attachment.
+Once you've composed your message, you can use the SendRawEmail API operation to send it.
+Q: Can I test Amazon SES responses without sending email to real recipients?
+You can use the Amazon SES mailbox simulator to test your sending rate and to test your ability to handle events such as bounces and complaints, without sending email to actual recipients. Messages that you send to the mailbox simulator don't count against your bounce and complaint metrics or your daily sending quota. However, we do charge you for each message you send to the mailbox simulator, just as if they were messages you sent to actual customers.
+For more information about the Amazon SES mailbox simulator, see Testing Amazon SES Email Sending in the Amazon SES Developer Guide.
+Deliverability
+Q: How does Amazon SES help ensure reliable email delivery?
+Amazon SES uses content filtering technologies to scan outgoing email messages. These content filters help ensure that the content being sent through Amazon SES meets the standards of ISPs. In order to help you further improve the deliverability of your emails, Amazon SES provides a feedback loop that includes bounce, complaint, and delivery notifications.
+Q: Does Amazon SES guarantee receipt of my emails?
+Amazon SES closely monitors ISP guidelines to help ensure that legitimate, high-quality email is delivered reliably to recipient inboxes. However, neither Amazon SES nor any other email-sending service can guarantee delivery of every single email. ISPs can drop or lose email messages, recipients can accidentally provide the wrong email address, and if recipients do not wish to receive your email messages, ISPs may choose to reject or silently drop them.
+Q: How long does it take for emails sent using Amazon SES to arrive in recipients' inboxes?
+Amazon SES attempts to deliver emails to the Internet within a few seconds of each request. However, due to a number of factors and the inherent uncertainties of the Internet, we can't predict with certainty when your email will arrive, nor can we predict the exact route the message will take to get to its destination.
+For example, an ISP might be unable to deliver the email to the recipient because of a temporary condition such as "mailbox full." In these cases, Amazon attempts to redeliver the message. If the error is permanent, such as "mailbox does not exist," Amazon SES doesn't try to deliver the message again, and you receive a hard bounce notification. You can set up delivery notifications to alert you when Amazon SES successfully delivers one of your emails to a recipient's mail server.  Q: Can my email deliverability affected by bounces or complaints that are caused by other Amazon SES users?
+Typically, when other Amazon SES users send messages that result in bounces or complaints, your ability to send email remains unchanged.
+An exception to this rule occurs when a recipient's email address generates a hard bounce. When a recipient's email address generates a hard bounce, Amazon SES adds that address to a global suppression list. If you try to send an email to an address that is on the global suppression list, the call to Amazon SES succeeds, but Amazon SES treats the email as a hard bounce instead of attempting to send it.
+Emails that you send to addresses on the global suppression list count toward your sending quota and your bounce rate. An email address can remain on the suppression list for up to 14 days.
+For more information about the global suppression list, see Amazon SES and Deliverability in the Amazon SES
+Security and Encryption
+Q: Can Amazon access the emails that I send and receive?
+We use in-house anti-spam technologies to filter messages that contain poor-quality content. Additionally, we scan all messages that contain attachments to check for viruses and other malicious content.
+Q: Can I encrypt email messages that I receive?
+Amazon SES integrates with AWS Key Management Service (KMS), which provides the ability to encrypt the mail that it writes to your Amazon S3 bucket. Amazon SES uses client-side encryption to encrypt your mail before it sends the email to Amazon S3. This means that it is necessary for you to decrypt the content on your side after you retrieve the mail from Amazon S3. The AWS Java SDK and AWS Ruby SDK provide a client that is able to handle the decryption for you.
+Q: Does Amazon SES send email over an encrypted connection using Transport Layer Security (TLS)?
+Amazon SES supports TLS 1.2, TLS 1.1 and TLS 1.0 for TLS connections.
+By default, Amazon SES uses opportunistic TLS. This means that Amazon SES always attempts to make a secure connection to the receiving mail server. If Amazon SES can't establish a secure connection, it sends the message unencrypted.
+You can change this behavior so that Amazon SES only sends the message to the receiving email server if it can establish a secure connection
+Q: How does Amazon SES ensure that incoming mail is free of spam and viruses?
+Amazon SES uses a number of spam and virus protection measures. It uses block lists to prevent mail from known spammers from entering the system in the first place. It also performs virus scans on every incoming email that contains an attachment. Amazon SES makes its spam detection verdicts available to you, enabling you to decide if you trust each message. In addition to the spam and virus verdicts, Amazon SES provides the DKIM and SPF check results.
+Q: What prevents Amazon SES users from sending spam?
+Amazon SES uses in-house content filtering technologies to scan email content for spam and malware.
+If we determine that an account is sending spam or malicious content, we will pause that account's ability to send additional email.
+Amazon SES and Other AWS Services
+Q: How is Amazon SES different from Amazon SNS?
+Amazon SES is for applications that need to send communications via email. Amazon SES supports custom email header fields, and many MIME types.
+By contrast, Amazon Simple Notification Service (Amazon SNS) is for messaging-oriented applications, with multiple subscribers requesting and receiving "push" notifications of time-critical messages via a choice of transport protocols, including HTTP, Amazon SQS, and email. The body of an Amazon SNS notification is limited to 8192 characters of UTF-8 strings, and isn't intended to support multimedia content.
+Q: Do I need to sign up for Amazon EC2 or any other AWS services to use Amazon SES?
+Amazon SES users do not need to sign up for any other AWS services. Any application with Internet access can use Amazon SES to deliver email, whether that application runs in your own data center, within Amazon EC2, or as a client software solution.
+Contacting Us
+Q: I received spam or other unsolicited email messages from an Amazon SES user. How do I report these messages?
+You can report email abuse by sending an email to email-abuse@amazon.com. To help us handle the issue as quickly and effectively as possible, please include the full headers of the original email. For procedures for obtaining email headers for several common email clients, see How to Get Email Headers on the MxToolbox.com website.
+Q: How can I submit feature requests or send other product feedback about Amazon SES?
+Your AWS Account Manager can send your feature requests and feedback directly to the appropriate team. If you don't currently have an AWS Account Manager, you can also provide your feedback on the Amazon SES forum.
+Q: How can I get technical support for Amazon SES?
+If you have an AWS Support plan, you can create a new support case directly from the web-based AWS management console. AWS Support plans begin at $29 per month. For more information about AWS Support plans, visit https://aws.amazon.com/premiumsupport/.
+To open a new technical support case
+In the console, on the Support menu, choose Support Center.
+Next, choose Create case.
+On the Create case page, choose Technical support.
+Provide information about the issue you're experiencing, and then submit the ticket.
+If you don't have an AWS Support plan, you can also ask questions and get answers on the Amazon SES forum.
+Learn more about pricing
+Visit the Amazon SES pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon SES in the AWS Management Console.
+Sign in
+Page Content

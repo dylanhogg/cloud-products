@@ -6,8 +6,8 @@ Designed for mission-critical systems, EBS volumes are replicated within an Avai
 Amazon Elastic Block Store (EBS) Overview (1:57)
 Benefits
 Performance for any workload
-EBS volumes are performant for your most demanding workloads, including mission-critical applications such as SAP, Oracle, and Microsoft products. SSD-backed options include a volume designed for high performance applications and a general-purpose volume that offers strong price/performance for most workloads. Customers who want to drive higher performance can attach their EBS volumes to Amazon EC2 R5b instances to get up to 60 Gbps bandwidth and 260K IOPS (input/output operations per second) of performance, the fastest block storage performance on EC2. For large, sequential workloads such as big data analytics engines, log processing, and data warehousing, customers can use HDD-backed volumes . Use Fast Snapshot Restore (FSR) to instantly receive full performance when creating an EBS volume from a snapshot.
-Learn more »
+EBS volumes are performant for your most demanding workloads, including mission-critical applications such as SAP, Oracle, and Microsoft products. SSD-backed options include a volume designed for high performance applications and a general-purpose volume that offers strong price/performance for most workloads. Customers who want to drive higher performance can attach their EBS volumes to Amazon EC2 R5b instances to get up to 60 Gbps bandwidth and 260K IOPS (input/output operations per second) of performance, the fastest block storage performance on EC2. For large, sequential workloads such as big data analytics engines, log processing, and data warehousing, customers can use HDD-backed volumes . Use Fast Snapshot Restore (FSR) to instantly receive full performance when creating an EBS volume from a snapshot.
+Learn more
 Highly available and durable
 Amazon EBS architecture offers reliability for mission-critical applications. EBS volumes are designed to protect against failures by replicating within the Availability Zone (AZ), offering 99.999% availability. EBS offers a high-durability volume (io2) for customers that need 99.999% durability, especially for their business-critical applications. All other EBS volumes are designed to deliver 99.8% - 99.9% durability. For simple and robust backup, use EBS Snapshots with Amazon Data Lifecycle Manager (DLM) policies to automate snapshot management.
 Cost-effective
@@ -20,7 +20,7 @@ Secure
 EBS is built to be secure for data compliance. Newly-created EBS volumes can be encrypted by default with a single setting in your account. EBS volumes support encryption of data at rest, data in transit, and all volume backups. EBS encryption is supported by all volume types, includes built-in key management infrastructure, and has zero impact on performance.
 Introducing io2 Block Express in Preview
 Customers have historically had to rely on on-premises Storage Area Networks, or SANs, for delivering high-performance block storage. But SANs are often expensive, force you to pay upfront CAPEX regardless of your utilization, and are difficult to manage. With io2 Block Express, we are introducing the first SAN built for the cloud. io2 Block Express offers the highest-performance block storage in the cloud with 4x higher throughput, IOPS, and capacity than io2 volumes, along with sub-millisecond latency. Designed to provide 4,000 MB/s throughput per volume, 256K IOPS/volume, up to 64 TiB storage capacity, and 1,000 IOPS/GB as well as 99.999% durability, io2 Block Express is ideal for running your largest, most I/O intensive, mission-critical deployments of Oracle, SAP HANA, Microsoft SQL Server, and SAS Analytics. With io2 Block Express, you now get the performance of a SAN, in a high-durability block store in the cloud along with the ability to scale, provision, and pay just for the capacity you need.
-Learn More »
+Learn More
 Introducing new gp3 general purpose SSD volumes
 Customers use general purpose volumes for a majority of their workloads including virtual desktops, medium sized single instance databases such as Microsoft SQL Server and Oracle, latency sensitive interactive applications, boot volumes, and dev/test environments. Amazon EBS gp3 volumes are the latest generation of general-purpose SSD-based EBS volumes that enable customers to provision performance independent of storage capacity, while providing up to 20% lower price per GB than existing gp2 volumes. With gp3 volumes, customers can scale IOPS and throughput without needing to provision additional block storage capacity. This means customers only pay for the storage they need.
 Use cases
@@ -45,7 +45,7 @@ Learn how Geodata built an ultra scalable, cost effective Geographic Information
 What's new with Amazon EBS
 date
 1
-…
+...
 Case studies
 Learn how Adobe uses EBS for their enterprise products.
 Learn how Infor saved 75% on their monthly backup costs.

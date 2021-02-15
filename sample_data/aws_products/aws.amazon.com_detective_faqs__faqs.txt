@@ -1,0 +1,53 @@
+General
+Q: What is Amazon Detective?
+Amazon Detective makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities. Amazon Detective automatically collects log data from your AWS resources and uses machine learning, statistical analysis, and graph theory to build a linked set of data that enables you to easily conduct faster and more efficient security investigations.
+Q: What are the key benefits of Amazon Detective?
+Amazon Detective simplifies the investigative process and helps security teams conduct faster and more effective investigations. Amazon Detective’s prebuilt data aggregations, summaries, and context help you to quickly analyze and determine the nature and extent of possible security issues. Amazon Detective maintains up to a year of aggregated data and makes it easily available through a set of visualizations that shows changes in the type and volume of activity over a selected time window, and links those changes to security findings. There are no upfront costs and you pay only for the events analyzed, with no additional software to deploy or log feeds to enable.
+Q: How much does Amazon Detective cost?
+Amazon Detective pricing is based on the volume of data ingested from AWS CloudTrail logs, Amazon VPC Flow Logs, and Amazon GuardDuty findings. You are charged per Gigabyte (GB) ingested per account/region/month. Amazon Detective maintains up to a year of aggregated data for its analysis. Please see the Amazon Detective pricing page for the latest pricing information.
+Q: Is there a free trial?
+Yes, any new account to Amazon Detective can try the service for 30-days at no cost. You will have access to the full feature set during the free trial.
+Q: Is Amazon Detective a regional or global service?
+Amazon Detective needs to be enabled on a region by region basis and enables you to quickly analyze activity across all your accounts within each region. This ensures all data analyzed is regionally based and doesn’t cross AWS regional boundaries.
+Q: What regions does Amazon Detective support?
+The regional availability of Amazon Detective is listed here: AWS Region Table.
+Getting started with Amazon Detective
+Q: How can I get started with Amazon Detective?
+Amazon Detective can be enabled with a few clicks in the AWS Management console. Once enabled Amazon Detective automatically organizes data into a graph model and the model is continuously updated as new data becomes available. You can experience Amazon Detective and begin investigating for potential security issues.
+Q: How do I enable Amazon Detective?
+You can enable Amazon Detective from within the AWS Management Console or by using the Amazon Detective API. If you are already using the Amazon GuardDuty or AWS Security Hub Consoles, you should enable Amazon Detective with the same account that is the Master account in Amazon GuardDuty or AWS Security Hub to enable the best cross-service experience.
+Q: Can I manage multiple accounts with Amazon Detective?
+Yes, Amazon Detective is a multi-account service that aggregates data from monitored member accounts under a single master account within the same region. You can configure multi-account monitoring deployments in same way that you configure master and member accounts in Amazon GuardDuty and AWS Security Hub.
+Q: What data sources does Amazon Detective analyze?
+Amazon Detective enables customers to view summaries and analytical data associated with AWS CloudTrail events as well as VPC Flow Logs. For customers that have Amazon GuardDuty enabled, Detective also processes Amazon GuardDuty findings.
+Q: Can I use Amazon Detective if I do not have Amazon GuardDuty enabled?
+Amazon Detective requires that you have Amazon GuardDuty enabled on your accounts for at least 48 hours before you enable Detective on those accounts. However, you can use Detective to investigate more than just your GuardDuty findings. Amazon Detective provides detailed summaries, analysis, and visualizations of the behaviors and interactions amongst your AWS accounts, EC2 instances, AWS users, roles, and IP addresses. This information can be very useful in understanding security issues or operational account activity.
+Q: How quickly does Amazon Detective start working?
+Amazon Detective starts collecting log data as soon as it is enabled and provides visual summaries and analytics on the ingested data. Amazon Detective also provides comparisons of recent activity against historical baselines which are established after two weeks of account monitoring.
+Q: Can I export my raw log data from Amazon Detective?
+Amazon Detective analyzes your AWS CloudTrail logs and VPC Flow Logs but does not make the raw logs available for export. AWS enables you to export these logs through other services.
+Q: What data does Amazon Detective store, is it encrypted, and can I control what data sources are enabled?
+Amazon Detective conforms to the AWS shared responsibility model, which includes regulations and guidelines for data protection. Once enabled, Amazon Detective will process data from AWS CloudTrail logs, VPC Flow Logs, and Amazon GuardDuty findings for any accounts where it has been turned on.
+Q: Is there a performance or availability risk to my existing AWS workloads by enabling Amazon Detective?
+Amazon Detective has no impact on the performance or availability of your AWS infrastructure since Amazon Detective retrieves the log data and findings directly from the AWS services.
+Q: How does Amazon Detective differ from Amazon GuardDuty and AWS Security Hub?
+Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. With Security Hub, you have a single place that aggregates, organizes, and prioritizes your security alerts, or findings, from multiple AWS services, such as Amazon GuardDuty, Amazon Inspector, and Amazon Macie, as well as from AWS Partner solutions. Amazon Detective simplifies the process of investigating security findings and identifying the root cause. Amazon Detective analyzes trillions of events from multiple data sources such as VPC Flow Logs, AWS CloudTrail logs, and Amazon GuardDuty findings and automatically creates a graph model that provides you with a unified, interactive view of your resources, users, and the interactions between them over time.
+Q: How can I stop Amazon Detective from looking at my logs and data sources?
+Amazon Detective enables you to analyze and visualize security data from your AWS CloudTrail logs, VPC Flow logs, and Amazon GuardDuty findings. To stop Amazon Detective from analyzing these logs and findings for your accounts please disable the service by using the API or from the settings section in the AWS Console for Amazon Detective.
+Working in the Amazon Detective console
+Q: What guidance does Amazon Detective provide on how to investigate a security issue?
+Amazon Detective provides a variety of visualizations that present context and insights about AWS resources such as AWS accounts, EC2 instances, users, roles, IP addresses, and Amazon GuardDuty findings. Each visualization is designed to answer specific questions that may come up as you analyze findings and the related activity. Each visualization provides textual guidance that clearly explains how to interpret the panel and use its information to answer your investigative questions.
+Q: How is Amazon Detective integrated with other AWS security services like Amazon GuardDuty and AWS Security Hub?
+Amazon Detective supports cross-service user workflows by supporting console integrations with Amazon GuardDuty and AWS Security Hub. These services provide links from within their consoles that redirect you from a selected finding directly to an Amazon Detective page containing a curated set of visualizations for investigating the selected finding. The findings detail page in Amazon Detective is already aligned to the timeframe of the finding and shows relevant data associated with the finding.
+Q: How do I integrate Amazon Detective investigation results with remediation and response tools?
+Various partner security solution providers have integrated with Amazon Detective to enable investigation steps within their automated playbooks and orchestrations. These products present links from within the response workflows that redirect users to Amazon Detective pages containing visualizations curated for investigating findings and resources identified within the workflow.
+Read the documentation
+Learn more about Amazon Detective capabilities and implementation by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Get started with Amazon Detective
+Get started building with Amazon Detective.
+Get started
+Page Content

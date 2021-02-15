@@ -1,0 +1,274 @@
+General
+Q: What is Amazon WorkMail?
+Amazon WorkMail is a secure, managed business email and calendar service with support for existing desktop and mobile clients. Amazon WorkMail gives users the ability to seamlessly access their email, contacts, and calendars using Microsoft Outlook, their web browser, or their native iOS and Android email applications. You can integrate Amazon WorkMail with your existing corporate directory and control both the keys that encrypt your data and the location in which your data is stored.
+Q: How can I get started using Amazon WorkMail?
+To get started with Amazon WorkMail, you will need an AWS account. You can use this account to sign into the AWS Management Console and create an organization, add your domains, and also create users, groups, or resources. Please refer to the Amazon WorkMail documentation for more information on getting started.
+Q: What clients can I use to access Amazon WorkMail?
+You can access Amazon WorkMail from Microsoft Outlook clients on Windows and Mac OS X, and on mobile devices that support the Microsoft Exchange ActiveSync protocol including iPhone, iPad, Kindle Fire, Fire Phone, Android, Windows Phone, and BlackBerry 10. Additionally, you can use the Apple Mail application on Mac OS X or the Amazon WorkMail web application to securely access Amazon WorkMail using your web browser.
+Q: Does Amazon WorkMail support accessibility capabilities?
+Yes, you can use screen readers and keyboard shortcuts with the Amazon WorkMail web application for easier accessibility; you can learn more about these capabilities on the Working with Accessibility Features documentation page here. In addition, the accessibility capabilities offered in supported desktop and mobile clients (see below for a list) can also be used with Amazon WorkMail.
+Q: What is the mailbox storage limit in Amazon WorkMail?
+Amazon WorkMail offers a mailbox storage limit of 50 GB per user.
+Q: What is the maximum size of email that I can send from Amazon WorkMail?
+The maximum size of outgoing and incoming email in Amazon WorkMail is 25 MB.
+Q: Can I share my calendar with other users in my organization?
+Yes. Amazon WorkMail offers the ability to share your calendar with your co-workers.
+Q: Does Amazon WorkMail provide resource booking?
+Yes. Amazon WorkMail provides the option to create resource mailboxes such as conference rooms, projectors, and other equipment. The resource mailboxes will allow users to reserve the room or equipment by including the resource in meeting invites.
+Q: Does Amazon WorkMail support email archiving?
+Email journaling can be enabled to capture and preserve messages in your existing archiving solution.
+Q: Can I set up email redirect rules on Amazon WorkMail?
+Yes, you can configure email redirection rules for Amazon WorkMail mailboxes. You can setup email redirection rules on your desktop email application, such as Microsoft Outlook, or using the Amazon WorkMail web application. You will need to ensure that the Amazon Simple Email Service (Amazon SES) identity policies for your domains are up-to-date to take advantage of email redirection rules. Please visit this page for more information on how to update the Amazon SES identity policy for your domain.
+Q: Are there limits on the number of organizations and users I can create when using Amazon WorkMail?
+No, there are no limits on the number of organizations and users you can create.
+Q: Are there limits on the number of messages I can send per user?
+There are limits only on sending external messages. For example, the number of messages sent to recipients outside your organization. Each user in your organization can send messages to a maximum of 10,000 external recipients per day, and the total external recipients for an AWS account is limited to 100,000 per day. New Amazon WorkMail accounts may start with limits that are lower than the limits described here; please see AWS Service Limits for more information.
+Amazon WorkMail is a business e-mail service and not intended to be used for bulk e-mail services. For bulk e-mail services, please see Amazon Simple Email Service.
+Q: Are there limits associated with the use of the Amazon WorkMail SMTP gateway?
+Yes. To learn more about SMTP limits, please see AWS Service Limits.
+Q: Are there limits on the number of messages each user can receive?
+There are no limits on the number of messages each user can receive. However, we may queue or reject messages (and send a bounce to the sender) if there is a large volume of incoming email in a short period of time. Please see AWS Service Limits for more information.
+Q: Do meeting requests count when evaluating usage against message limits?
+All messages that are sent to another user are considered when evaluating these limits. These include e-mails, meeting requests, meeting responses, task requests, as well as all messages that are forwarded or redirected automatically as a result of a rule.
+Q: Does Amazon WorkMail support public folders?
+No, WorkMail does not offer public folders.
+Web Application
+Q: What features does the Amazon WorkMail web application provide?
+The Amazon WorkMail web application provides users anywhere with access to email, calendar, contacts, and tasks. Users can also access shared calendars, access the global address book, manage their out-of-office replies, and book resources.
+Q: Which browsers does the Amazon WorkMail web application work on?
+The Amazon WorkMail web application supports the following browsers: Firefox, Chrome, Safari and Edge. For more information, please see Log On to the Amazon WorkMail Web Application.
+Q: In which languages is the Amazon WorkMail web application available?
+The Amazon WorkMail web application is currently available in English, French, and Russian.
+Mobility
+Q: Can I use Amazon WorkMail on my mobile device?
+Yes. Amazon WorkMail is compatible with most major mobile devices supporting the Microsoft Exchange ActiveSync protocol, including iPad, iPhone, Kindle Fire, Fire Phone, Android, Windows Phone, and BlackBerry 10.
+Q: What mobile device policies does Amazon WorkMail support?
+Amazon WorkMail gives you the ability to require a PIN or password on your devices, configure the password strength, require a device lock after a number of failed login attempts, require a screen lock for idle timeouts, and require device and storage card encryption.
+Q: Does Amazon WorkMail offer the ability to remotely wipe mobile devices?
+Yes. Amazon WorkMail offers a remote wipe feature. A remote wipe can be performed by the IT administrator using the AWS Management Console.
+Desktop Clients
+Q: Can I use Amazon WorkMail with Microsoft Outlook on Microsoft Windows?
+Yes. Amazon WorkMail offers native support for Microsoft Outlook 2007, 2010, 2013, and 2016 on Microsoft Windows.
+Q: Do I need any additional software to connect Microsoft Outlook to Amazon WorkMail?
+No. Amazon WorkMail offers native support for the most recent versions of Microsoft Outlook and does not require any additional software to connect Microsoft Outlook.
+Q: Can I use Amazon WorkMail with Microsoft Outlook on Mac OS X?
+Yes. Amazon WorkMail offers native support for Microsoft Outlook 2011 and Microsoft Outlook 2016 on Mac OS X.
+Q: Can I use Amazon WorkMail with other clients on Mac OS X?
+Yes. Amazon WorkMail offers native support for the Apple Mail and Calendar applications on Mac OS X (10.6 and above).
+Q: Does the Amazon WorkMail user subscription include a license for Microsoft Outlook?
+Amazon WorkMail does not include a license for Microsoft Outlook. To use Microsoft Outlook with Amazon WorkMail, you must have a valid license from Microsoft.
+Q: Does Amazon WorkMail support the Click-to-run version of Microsoft Outlook 2010, 2013, and 2016?
+Yes. Amazon WorkMail supports the Click-to-run versions of Microsoft Outlook 2010, 2013, and 2016.
+Q: Can I access my Amazon WorkMail mailbox with my existing POP3 or IMAP client applications?
+You can access your Amazon WorkMail mailbox with client applications that support the IMAP protocol. Amazon WorkMail currently does not offer support for POP3 email access.
+Q: When using an IMAP client application, can I access all items in my Amazon WorkMail mailbox?
+The IMAP protocol provides access to email, but not to calendar items, contacts, notes, or tasks.
+Q: When using an IMAP client application, will I be able to see all my email folders?
+Yes, any folder which contains email will be visible and accessible using an IMAP client application.
+Q: How do I send email when using an IMAP email client application?
+You can send email by configuring your IMAP email client to use the Amazon WorkMail SMTP gateway. Amazon WorkMail SMTP addresses can be found at AWS Regions and Endpoints.
+Q: What is the Amazon WorkMail SMTP Gateway?
+The Simple Mail Transfer Protocol (SMTP) gateway is an Amazon WorkMail service which allows you to submit email messages for delivery to both internal and external recipients. To learn more, please see Connect your Client IMAP Application.
+Q: What email client applications can I use to send email using the Amazon WorkMail SMTP gateway?
+You can use the Amazon WorkMail SMTP gateway to send email using any email client that supports the SMTP protocol. This includes popular email clients like Microsoft Outlook, Apple Mail or Mozilla Thunderbird.
+Setup and Maintenance
+Q: Do I need to set up a directory to use Amazon WorkMail?
+Each user you add to your Amazon WorkMail organization needs to exist in a directory, but you do not have to provision a directory yourself. You can integrate your existing Microsoft Active Directory with Amazon WorkMail using AWS Directory Service AD Connector or run AWS Directory Service for Microsoft Active Directory Enterprise Edition ("Microsoft AD") so you don’t have to manage users in two places and users can continue to use their existing Microsoft Active Directory credentials. Alternatively, you can have Amazon WorkMail create and manage a Simple AD directory for you and have users in that directory created when you add them to your Amazon WorkMail organization.
+Q: How can I integrate with an existing Microsoft Active Directory?
+You can integrate with an existing Microsoft Active Directory by setting up an AWS Directory Service AD Connector or Microsoft AD and enabling Amazon WorkMail for this directory. After you've configured this integration, you can choose which users you would like to enable for Amazon WorkMail from a list of users in your existing directory, and users can log in to Amazon WorkMail using their existing Active Directory credentials.
+Q: Can I use my existing domain name with Amazon WorkMail?
+Yes. You can add your existing domain name to Amazon WorkMail using the AWS Management Console. Before the domain name can be used, you must verify the ownership of the domain name. You can verify the ownership by adding a DNS record to your DNS server.
+Q: Can I assign multiple email addresses to a user account?
+Yes. You can assign multiple email addresses to a user account using the AWS Management Console.
+Q: Can I create distribution groups to deliver email to multiple users?
+Yes. You can create new distribution group or enable an existing group from your Microsoft Active Directory using the AWS Management Console. These distribution groups are available in the Global Address Book. Users can also create personal distribution groups using Microsoft Outlook or the Amazon WorkMail web application.
+Q: What happens if a user forgets their password to access Amazon WorkMail?
+If Amazon WorkMail is integrated with an existing Active Directory domain, then the user would follow the existing lost password process for your existing domain, such as contacting an internal helpdesk. If the account is integrated with a Simple AD directory and a user forgets their password, then the account’s IT administrator can reset the password from the AWS Management Console.
+Q: How does an IT administrator remove a user’s access to Amazon WorkMail?
+The account’s IT administrator can remove a user’s access to Amazon WorkMail using the AWS Management Console.
+Q: Does Amazon WorkMail provide a management API?
+No. Amazon WorkMail does not currently provide a management API.
+Administrative SDK
+Q: Does Amazon WorkMail offer an SDK?
+Yes. Amazon WorkMail provides an administrative SDK so you can natively integrate WorkMail with your existing services. The SDK enables programmatic user, email group, and meeting room or equipment resource management through API calls. This means your existing IT service management tools, workflows, and third party applications can automate WorkMail migration and management. To learn more, please visit our our API reference.
+Additionally, Amazon WorkMail offers an SDK for accessing the content of email messages that are in the process of being sent from or delivered to your organization. You can use this SDK in combination with Email Flow Rules to trigger Lambdas on mail sending or delivery and access the full message for analysis or integration with other systems. To learn more, see the API Reference.
+Journaling
+Q: How can I start using email journaling?
+Email journaling can be setup from the Amazon WorkMail Management Console under Organization Settings. You can enable email journaling, specify the email address to which journaled emails are sent, and specify the email address to which reports are sent.
+Q: Can I apply email journaling to a specific set of actions or users?
+No. Today email journaling is a global setting that is applied to all inbound and outbound email, and all users.
+Q: Does email journaling apply to recipients in the blind carbon copy (BCC) field?
+Yes. Email sent using BCC recipients is recorded using email journaling.
+Q: Will journaling reports show email recipients in the BCC field?
+For outbound email, journaling reports will contain the details of recipients in the BCC field. For inbound email, the journaling report will only contain of details of recipients in the BCC field if those recipients are in your Amazon WorkMail organization.
+Q: Will emails marked as spam be journaled?
+Yes, they will.
+Q: Will emails marked as containing viruses be journaled?
+No. Emails that contain viruses will be dropped and will not be journaled.
+Q: What actions will be taken in case of delivery failures to the journaling destination mailbox?
+Amazon WorkMail will continue to try to deliver the journaled messages to the journaling destination mailbox for 12 hours. In case of continuous failure, the failure reports will be delivered to the address you specify in the Amazon WorkMail Management Console.
+Q: What do journaling failed delivery reports contain?
+Whenever journaled email fails to be delivered to the primary journaling address, a report is sent to the failed delivery report email address you specify in the Amazon WorkMail Management Console. This report contains information about each journaled message that failed to be delivered, but does not show the contents of the original message.
+Q: What is the email address from which journaled emails are sent?
+Journaled emails are be sent from amazonjournaling@<alias>.awsapps.com where <alias> is your Amazon WorkMail organization name.
+Q: Is there an additional cost to using email journaling?
+No, there is no additional cost to using email journaling.
+Q: Which SMTP headers will identify a journaled message by the journaling agent?
+“X-WM-Journal-Report” will be used as the header to identify journaled messages. This header will be signed so that it cannot be mimicked.
+Q: Do journaling messages count against the sending limits?
+No, journaling messages are always sent as long as the user is allowed to send a message. They are not counted against that user’s sending limit. On receiving a message, the journaling message is always sent as long as it can be delivered to a user.
+Migration & Interoperability with Microsoft Exchange Server
+Q: How can I migrate mailboxes from my existing email solution to Amazon WorkMail?
+You can migrate your existing mailboxes to Amazon WorkMail using solutions from a preferred Amazon WorkMail migration provider. To see a list of providers, please visit this webpage. If you’re migrating from Microsoft Exchange Server 2013 or 2010, you can set up interoperability to minimize disruption for your end users.
+Q: Does Amazon WorkMail support interoperability with Microsoft Exchange Server?
+Yes, Amazon WorkMail supports interoperability with Microsoft Exchange Server 2013 and 2010. You can learn about how to set up interoperability here.
+Q: What interoperability capabilities does Amazon WorkMail support?
+Interoperability allows you to use the same corporate domain for all mailboxes on both Microsoft Exchange and Amazon WorkMail. Your users can seamlessly schedule meetings with bi-directional sharing of calendar free-busy information between the two environments, and access user and resource information through a unified global address book.
+Q: Which versions of Microsoft Exchange Server are supported with Amazon WorkMail interoperability?
+Amazon WorkMail offers interoperability support with Microsoft Exchange Server 2013 and 2010.
+Q: Are there additional charges to use interoperability features?
+No. Interoperability features are included in Amazon WorkMail per mailbox pricing.
+Q: Can users access Amazon WorkMail using their existing Microsoft Active Directory credentials?
+Yes, users can connect to Amazon WorkMail using their existing Microsoft Active Directory credentials.
+Q: Will mailboxes on Amazon WorkMail use the same domain as mailboxes on my Microsoft Exchange server?
+Yes. To make this possible, you need to enable email routing between Microsoft Exchange and Amazon WorkMail so that mailboxes on both environments use the same corporate domain. To set up email routing, you can follow the steps outlined here.
+Q: Which email platform handles incoming email traffic when interoperability is established?
+Your on-premises Microsoft Exchange Server handles and processes all incoming email. If you’re using interoperability for migration, you can switch your MX record to point to Amazon WorkMail when your migration is complete.
+Q: Can I restrict access to my Microsoft Exchange Server to just my VPC?
+No, you can’t restrict access to the Exchange Server to your VPC. As of now, the EWS endpoint of your on-premises Microsoft Exchange environment needs to be publicly available.
+Q: Does Amazon WorkMail support bi-directional sharing of calendar free-busy information with Microsoft Exchange?
+Yes, interoperability provides you bi-directional sharing of calendar free-busy information between your Amazon WorkMail and Microsoft Exchange environments. Please follow the steps here.
+Q: How does Amazon WorkMail interact with my on-premises Microsoft Exchange Server to perform bi-directional calendar free-busy lookups?
+You will need to configure availability settings on Amazon WorkMail and Microsoft Exchange to share calendar free-busy information. Amazon WorkMail uses the EWS URL for your Microsoft Exchange server to perform free-busy lookups. Amazon WorkMail uses an Exchange service account to login to Exchange and read free-busy data of the users in the Microsoft Exchange organization.
+For free-busy lookups of Amazon WorkMail users from your Microsoft Exchange Server, Exchange performs an Autodiscover request and connects to the Amazon WorkMail EWS endpoint using an Amazon WorkMail service account. You can find more information on this here.
+Q: Do I need to set up federation on my on-premises Microsoft Exchange server?
+No, for interoperability support with Amazon WorkMail, you don’t need to set up federation on your Microsoft Exchange server.
+Q: Can I also view subject and location in the free-busy details when interoperability is enabled?
+Yes, to view subject and location information, the service account user needs to have access to this information.
+Q: Can an Amazon WorkMail user manage the shared calendar or shared folder of a user on Microsoft Exchange (and vice versa).
+No, for calendar delegation or accessing shared folders, both users need to be on the same email platform. We recommend migrating users who use calendar and mailbox delegation in the same batch.
+Q: How does Amazon WorkMail interact with my on-premises Microsoft Exchange Server to create a unified global address book?
+Once interoperability support is enabled, Amazon WorkMail performs a synchronization of the address book with your on-premises Active Directory every four hours, using AD Connector. All Microsoft Exchange users, groups, and resources are automatically added to your Amazon WorkMail address book.
+Q: Will all Microsoft Exchange Server objects synchronize to the Amazon WorkMail global address book?
+Amazon WorkMail will synchronize users, groups, resources, and contacts that reside in Microsoft Exchange Server. Amazon WorkMail will not synchronize dynamic groups or address lists. When your Microsoft Exchange global address book contains these objects, they won't be available in Amazon WorkMail.
+Q: Will Amazon WorkMail still synchronize with my Active Directory when interoperability support isn’t enabled?
+Yes, Amazon WorkMail will still synchronize with your Active Directory when interoperability support is disabled. In this scenario only changes to Amazon WorkMail users and groups are synchronized.
+Q: Does the Microsoft Outlook offline address book also contain all my Microsoft Exchange users, and groups, and resources?
+Yes, the Microsoft Outlook offline address book will contain both Amazon WorkMail Microsoft Exchange users, groups, and resources.
+Q: Can my distribution groups contain both Amazon WorkMail and Microsoft Exchange users as members?
+Yes, you can have both Amazon WorkMail and Microsoft Exchange users as members of distribution groups.
+Q: Can I still create new resource in Amazon WorkMail when interoperability support is enabled?
+No. To create new resources in Amazon WorkMail, you first need to disable interoperability support. Once your new resources have been created, you can then turn interoperability support back on. This is done to ensure resources are synchronized back to your Microsoft Exchange Server.
+Email Flow Rules
+Q: What are email flow rules?
+Amazon WorkMail allows you to use email flow rules to filter or route email traffic for your Amazon WorkMail organizations. On inbound emails, this can help you reduce email from unwanted senders, route suspicious mail to junk folders, and trigger AWS Lambda functions. On outbound, you can block sending to certain domains, route mail through custom SMTP endpoints, or trigger Lambda functions. Email flow rules can be applied based on specific email addresses, or entire email domains.
+Q: What types of email flow rules can I create?
+For inbound mail, mail flow rules can be created to filter email based on specific email addresses, or entire email domains. Examples include:
+Reject all incoming mail from example.com and its subdomains, generating a bounce message to the sender.
+Reject all incoming mail from example.com, except when from myemail@example.com.
+Reject all incoming mail from user@example.com.
+Bypass the spam check for all incoming email from example.com, delivering the messages instead to users' inbox.
+Deliver all messages from example.com to users' junk folders.
+Trigger AWS Lambda function that you define on receiving mail.
+For outbound mail, mail flow rules can be created to filter email or route to an SMTP endpoint or AWS Lambda function. Examples include:
+Reject all outgoing mail from example.com to example2.com, generating an non-deliverable report (NDR) to the sender.
+Reject all outgoing mail to example.com silently.
+Route all mail from example.com that is going to a domain other than example.com through a custom SMTP endpoint that you define.
+Trigger AWS Lambda function that you define on all outgoing mail.
+Q:What types of email data are passed to the Lambda function?
+The Lambda function will receive the message id, sender, recipient, and subject of an email.
+Q: Can I retrieve more information about an email message from within my Lambda?
+Yes, you can retrieve the full content of the email message using WorkMail’s SDKs.
+See the Admin Guide for more information.
+Q: What format does the email content come in when retrieving it from my Lambda?
+The WorkMail SDK will return the raw MIME content of the message that is being processed. You can use common MIME-processing libraries, such as JavaMail for Java or email.parser for Python to convert this to a structured format for easier parsing.
+Q: Can I stop or re-route an email using a Lambda function?
+Yes, you can configure a Lambda action to run your Lambda synchronously and return response from your Lambda to control flow of an email to stop. See
+synchronous Lambda action for more information about Configuring Synchronous Run Lambda Action.
+Q: How can I start using email flow rules?
+Rules can be set up from the Amazon WorkMail management console by navigating to Organization Settings. You can create, modify, and delete flow rules under the Email Flow Rules tab.
+Q: Can I perform filtering based on IP address or range?
+IP based filtering is already supported by Amazon Simple Email Service. Please see Creating IP Address Filters for Amazon SES Email Receiving to learn more about IP-based filtering.
+Q: What happens if email containing a virus is received from a source specified to bypass spam checks?
+Amazon WorkMail scans all incoming and outgoing email for spam, malware, and viruses. All email containing viruses is dropped and not delivered, regardless of the configured flow rules.
+Q: What happens if email flow rules overlap?
+If you have email for which multiple email flow rules match, the action of the most specific rule will be applied. For example, a rule for a specific email address will take precedence over a rule for an entire domain. If multiple rules have the same specificity, the most restrictive action will be applied (for example, Drop will take precedence over Bounce). Please see Managing Email Flows for more information.
+Q: How can I test email flow rules before applying it on real emails?
+You can create a rule with a single email address as Sender domains or addresses condition, and choose the action you want to use. You can then send test emails to or from the single address you chose to confirm that the rule is behaving as you expect. Once satisfied with the result, you can extend the rule for other Sender domains or addresses.
+When using Lambda rules, you can also test your Lambda with a dummy request event in AWS Lambda console. See Lambda event data for an example of event data. See invoke the Lambda fuction for more information about invoking Lambda from Lambda console.
+Q: Are there limits on the number of rules I can create?
+Yes. To learn more about limits related to email flow rules, please see AWS Service Limits.
+Q: How long does a rule need to take effect?
+Rules take effect immediately after creation.
+Q: Is there any additional charge for defining email flow rules?
+No, there is no additional charge for using email flow rules.
+Security
+Q: How is data transmitted to Amazon WorkMail?
+All data in transit is encrypted using industry-standard SSL. Our web application, and mobile and desktop clients transmit data to Amazon WorkMail using SSL.
+Q: Can I choose the AWS region where my data is stored?
+Yes. You choose the AWS region where your organization’s data is stored. Please refer to the Regional Products and Services page for details of Amazon WorkMail availability by region.
+Q: How do I decide which AWS region to use?
+There are several factors to consider, based on your needs, including whether using a specific AWS region enables you to meet regulatory and compliance requirements. We generally recommend that you set up your Amazon WorkMail organization in the region nearest to where most of your users are located, to reduce data access latencies.
+Q: How is Amazon WorkMail protected from malware/viruses?
+Amazon WorkMail scans all incoming and outgoing email for spam, malware, and viruses to help protect customers from malicious email.
+Q: Does Amazon WorkMail offer support for mobile device policies, to protect data stored on mobile devices?
+Yes. Amazon WorkMail gives you the ability to require a PIN or password on your users’ devices, configure the password strength, require a device lock after a number of failed login attempts, require a screen lock for idle timeouts, and require device and storage card encryption.
+Q: How can I manage my encryption key used for the data encryption in Amazon WorkMail?
+Amazon WorkMail is integrated with Amazon Key Management Service for the encryption of your data. Key management can be performed from the Amazon IAM console. For more information about AWS Key Management Service, please see Amazon AWS Key Management developer guide.
+Q: What data is encrypted with my encryption keys?
+All email content, attachments, and metadata for a mailbox is encrypted using the customer-managed keys of that user’s organization.
+Q: Is my email encrypted when using the IMAP protocol to access my Amazon WorkMail mailbox?
+Yes. All email communication is encrypted in transit by the secure connections made between the client and the server, and all email stored in Amazon WorkMail is encrypted at rest.
+Q: Does Amazon WorkMail support S/MIME for signing and encrypting email?
+Yes. Amazon WorkMail supports S/MIME signing and encryption in the Microsoft Outlook client and certain mobile devices like Apple iPhone and iPad. The Amazon WorkMail web application currently does not support S/MIME signing and encryption.
+Q: What compliance certifications does Amazon WorkMail support?
+Amazon Web Services has achieved the ISO 27001, ISO 27017 and ISO 27018 certifications. Amazon WorkMail regions in US East (N.Virginia), US West (Oregon) and EU (Ireland) are within the scope of the certifications. You can learn more about these certifications on the AWS Cloud Compliance section of the website. You can also request a copy of the Service Organization Controls (SOC) report available from AWS Compliance to learn more about the security controls AWS uses to protect your data.
+Q: How does AWS use my Amazon WorkMail email content?
+You own your content in Amazon WorkMail, and you retain full ownership and control of your Amazon WorkMail email. We will not view, use, or move the contents of your Amazon WorkMail account unless authorized by you.
+Integration with AWS Services
+Amazon WorkDocs Integration
+Q: How does Amazon WorkMail integrate with Amazon WorkDocs?
+Amazon WorkDocs integration offers users the ability to distribute large documents easily from the Amazon WorkMail web application, keep control of sensitive documents distributed by email, and securely save email attachments in Amazon WorkDocs.
+Q: How can I start using the Amazon WorkDocs integration?
+To use the integration with Amazon WorkDocs, your organization first needs to be activated for Amazon WorkDocs. You can activate Amazon WorkDocs for your organization in the AWS Management Console. After this is done, you can enable Amazon WorkDocs for your users using the Amazon WorkDocs admin panel. After your users are enabled for Amazon WorkDocs, they can start using the Amazon WorkDocs integration in the Amazon WorkMail web application. If your organization and users are already using Amazon WorkDocs, your users can start using the integration right after they are enabled for Amazon WorkMail.
+Q: Can I use Amazon WorkMail without using Amazon WorkDocs?
+Yes, however you will not be able to use the Amazon WorkDocs integration in the Amazon WorkMail web application.
+Amazon Simple Email Service Integration
+Q: How does Amazon WorkMail integrate with Amazon Simple Email Service?
+Amazon WorkMail uses Amazon Simple Email Service to send all outgoing email. The test mail domain and your production domains are available for management in the Amazon Simple Email Service console.
+Q: Will I be charged for outgoing email sent from Amazon WorkMail?
+No. You won’t be charged for outgoing email sent from Amazon WorkMail.
+Q: Do I need to increase Amazon SES sending limits to use Amazon WorkMail?
+No. This is not needed to use with Amazon WorkMail. The SES limits only apply when you are using Amazon SES using the Amazon SES API for sending bulk email from your AWS account.
+AWS CloudTrail Integration
+Q: Does Amazon WorkMail integrate with AWS CloudTrail?
+Yes. CloudTrail captures API calls from the WorkMail console or from WorkMail or WorkMailMessageFlow API operations. Using the information collected by CloudTrail, you can track requests made to WorkMail, the source IP address from which the requests were made, who made the requests, when they were made, and so on. To learn more about CloudTrail, including how to configure and enable it, see the AWS CloudTrail User Guide. To learn more about logging WorkMail API calls, see Logging Amazon WorkMail API Calls with AWS CloudTrail.
+Q: Will I be charged for using AWS CloudTrail with Amazon WorkMail?
+There is no additional WorkMail charge to use WorkMail with CloudTrail. There may be charges associated with delivering events using CloudTrail. For details, please see the CloudTrail Pricing.
+Amazon CloudWatch Integration
+Q: Does WorkMail offer email metrics?
+Yes, WorkMail logs metrics for emails sent, received, and bounced free of charge in CloudWatch metrics
+Q: Does WorkMail offer message tracking?
+Yes, WorkMail offers the option to enable WorkMail Monitoring in CloudWatch logs. When activating logging, you can define the CloudWatch log group to log into, as well as the log retention period. WorkMail will then log detailed information for messages received and sent, when rules are applied, when message journaling is initiated, and for bounce messages.
+Q: What data is logged in WorkMail Monitoring?
+If logging is activated, WorkMail logs envelope data such as sender and recipients. Message bodies are not logged.
+Q: How can I run queries on messages?
+CloudWatch offers insights which allows for fast and easy querying on CloudWatch logs.
+Pricing
+Q: How will my business be charged for use of Amazon WorkMail?
+There are no upfront fees or commitments to begin using Amazon WorkMail. At the end of the month, you are billed for that month's usage. You can view estimated charges for the current billing period by logging into the AWS Management Console and clicking on "Account Activity." You can get started with a free trial of Amazon WorkMail and activate up to 25 user accounts at no charge for the first 30 days. You can use the WorkMail console to get started today.
+You are charged for the number of user accounts per month. The number of users billed in a month is based on the average number of active user accounts throughout the month. For every user account, your business is charged a monthly subscription fee. If a user account is deactivated during the month, the monthly subscription fee for that account will be prorated based on the number of active days. For more information on how pricing works, see the pricing page.
+Q: Is there a free trial for Amazon WorkMail?
+Yes. You can activate up to 25 users at no charge for the first 30 days after you sign up for Amazon WorkMail. After this period ends, you are charged for all active users unless you remove them or deregister your Amazon WorkMail account.
+Q: Will I be charged for creating or using resources (such as meeting rooms)?
+No. Creating or using of resources within Amazon WorkMail is available free of charge.
+Q: Is there an additional charge for using IMAP client applications?
+No. IMAP access is included in the Amazon WorkMail mailbox pricing.
+Learn more about Amazon WorkMail pricing
+Visit the pricing page
+Ready to build?
+Get started with Amazon WorkMail
+Have more questions?
+Contact us
+Page Content
+Microsoft Exchange Interoperability

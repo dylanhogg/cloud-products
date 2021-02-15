@@ -36,7 +36,7 @@ Testing mobile apps with Cucumber and Appium through TestNG on AWS Device Farm
 Adrian Hall
 August 20, 2018
 Check out the available devices for testing
-Device Farm offers 2500+ devices for you to test your application on.
+Device Farm offers 2500+ devices for you to test your application on.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

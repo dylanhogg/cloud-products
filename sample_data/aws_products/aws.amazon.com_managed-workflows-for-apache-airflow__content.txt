@@ -1,7 +1,7 @@
 Amazon Managed Workflows for Apache Airflow (MWAA)
 Highly available, secure, and managed workflow orchestration for Apache Airflow
 Get Started
-Amazon Managed Workflows for Apache Airflow (MWAA) is a managed orchestration service for Apache Airflow1 that makes it easier to set up and operate end-to-end data pipelines in the cloud at scale. Apache Airflow is an open-source tool used to programmatically author, schedule, and monitor sequences of processes and tasks referred to as “workflows.” With Managed Workflows, you can use Airflow and Python to create workflows without having to manage the underlying infrastructure for scalability, availability, and security. Managed Workflows automatically scales its workflow execution capacity to meet your needs, and is integrated with AWS security services to help provide you with fast and secure access to data.
+Amazon Managed Workflows for Apache Airflow (MWAA) is a managed orchestration service for Apache Airflow1 that makes it easier to set up and operate end-to-end data pipelines in the cloud at scale. Apache Airflow is an open-source tool used to programmatically author, schedule, and monitor sequences of processes and tasks referred to as “workflows.” With Managed Workflows, you can use Airflow and Python to create workflows without having to manage the underlying infrastructure for scalability, availability, and security. Managed Workflows automatically scales its workflow execution capacity to meet your needs, and is integrated with AWS security services to help provide you with fast and secure access to data.
 Amazon Managed Workflows for Apache Airflow: Getting Started (6:48)
 Benefits
 Deploy Airflow rapidly at scale
@@ -23,11 +23,11 @@ Prepare Machine Learning (ML) Data
 In order to enable machine learning, source data must be collected, processed, and normalized so that ML modeling systems like the fully managed service Amazon SageMaker can train on that data. Managed Workflows solve this problem by making it easier to stitch together the steps it takes to automate your ML pipeline.
 1Apache, Apache Airflow, and Airflow are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries.
 Learn more about product features
-Visit the Amazon MWAA Features page.
+Visit the Amazon MWAA Features page.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with Amazon MWAA in the AWS Management Console.
+Get started building with Amazon MWAA in the AWS Management Console.
 Sign in

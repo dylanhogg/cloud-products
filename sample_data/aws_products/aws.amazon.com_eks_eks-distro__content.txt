@@ -15,4 +15,4 @@ Have questions?
 Visit the product FAQs page.
 Learn more
 Amazon EKS Distro on Github
-Get started building with Amazon EKS Distro on GitHub.
+Get started building with Amazon EKS Distro on GitHub.

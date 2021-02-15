@@ -1,0 +1,182 @@
+General
+Q: What is AWS Organizations?
+AWS Organizations helps you centrally govern your environment as you scale your workloads on AWS. Whether you are a growing startup or a large enterprise, Organizations helps you to programmatically create new accounts and allocate resources, simplify billing by setting up a single payment method for all of your accounts, create groups of accounts to organize your workflows, and apply policies to these groups for governance. In addition, AWS Organizations is integrated with other AWS services so you can define central configurations, security mechanisms, and resource sharing across accounts in your organization.
+Q: Which central governance and management capabilities does AWS Organizations enable? AWS Organizations enables the following capabilities:
+Automate AWS account creation and management, and provision resources with AWS CloudFormation Stacksets
+Maintain a secure environment with policies and management of AWS security services
+Govern access to AWS services, resources, and regions
+Centrally manage policies across multiple AWS accounts
+Audit your environment for compliance
+View and manage costs with consolidated billing
+Configure AWS services across multiple accounts
+Q: Which AWS Regions is AWS Organizations available in?
+AWS Organizations is available in all AWS commercial regions, AWS GovCloud (US) regions, and China regions The service endpoints for AWS Organizations are located in US East (N. Virginia) for commercial organizations and AWS GovCloud (US-West) for AWS GovCloud (US) organizations, and AWS China (Ningxia) region, operated by NWCD.
+Q: How do I get started?
+To get started, you must first decide which of your AWS accounts will become the management account (formerly known as master account). You can either create a new AWS account or select an existing one.
+Sign in as an administrator to the AWS Management Console using the AWS account you want to use to manage your organization.
+Go to the AWS Organizations console.
+Choose Create Organization.
+Select what features you want to enable for your organization. Either all features, or consolidated billing only features. Selecting all features is recommended if you want to take advantage of all of the central management capabilities of AWS Organizations.
+Add AWS accounts to your organization by using one of the following two methods:
+Invite existing AWS accounts to your organization by using their AWS account ID or associated email address.
+Create new AWS accounts.
+Model your organizational hierarchy by grouping your AWS accounts in OUs.
+Create policies (such as service control policies or backup policies) for OUs, accounts, or the organization (only available for all-features organizations).
+Enable AWS services that are integrated with AWS Organizations.
+You can also use the AWS CLI (for command-line access) or SDKs to perform the same steps to create a new organization.
+Note: You can initiate the creation of a new organization only from an AWS account that is not already a member of another organization.
+For more information, see Getting started with AWS Organizations.
+AWS Control Tower
+Q: What is AWS Control Tower?
+AWS Control Tower, built on AWS services such as AWS Organizations, offers the easiest way to set up and govern a new, secure, multi-account AWS environment. It establishes a landing zone, which is a well-architected, multi-account environment based on best-practice blueprints, and enables governance using guardrails you can choose. Guardrails are SCPs and AWS Config rules that implement governance for security, compliance, and operations.
+Q: What is the difference between AWS Control Tower and AWS Organizations?
+AWS Control Tower offers an abstracted, automated, and prescriptive experience on top of AWS Organizations. It automatically sets up AWS Organizations as the underlying AWS service to organize accounts and implements preventive guardrails using SCPs. Control Tower and Organizations work well together. You can use Control Tower to set up your environment and set guardrails, then using AWS Organizations, you can further create custom policies (such as tag, backup or SCPs) that centrally control the use of AWS services and resources across multiple AWS accounts.
+Q: AWS Control Tower uses guardrails. What is a guardrail?
+Guardrails are pre-packaged SCP and AWS Config governance rules for security, operations, and compliance that customers can select and apply enterprise-wide or to specific groups of accounts. A guardrail is expressed in plain English, and enforces a specific governance policy for your AWS environment that can be enabled within an organizational unit (OU).
+Q: When should I use AWS Control Tower?
+AWS Control Tower is for customers who want to create or manage their multi-account AWS environment with built-in best practices. It offers prescriptive guidance to govern your AWS environment at scale and gives you control over your environment without sacrificing the speed and agility AWS provides for builders. You will benefit from AWS Control Tower if you are building a new AWS environment, starting out on your journey on AWS, starting a new cloud initiative, are completely new to AWS, or have an existing multi-account AWS environment.
+Core concepts
+Q: What is an organization?
+An organization is a collection of AWS accounts that you can organize into a hierarchy and manage centrally.
+Q: What is an AWS account?
+An AWS account is a container for your AWS resources. You create and manage your AWS resources in an AWS account, and the AWS account provides administrative capabilities for access and billing.
+Using multiple AWS accounts is a best practice for scaling your environment, as it provides a natural billing boundary for costs, isolates resources for security, gives flexibility or individuals and teams, in addition to being adaptable for new business processes.
+Q: What is a management account (formerly known as master account)?
+A management account is the AWS account you use to create your organization. From the management account, you can create other accounts in your organization, invite and manage invitations for other accounts to join your organization, and remove accounts from your organization. You can also attach policies to entities such as administrative roots, organizational units (OUs), or accounts within your organization. The management account is the ultimate owner of the organization, having final control over security, infrastructure, and finance policies. This account has the role of a payer account and is responsible for paying all charges accrued by the accounts in its organization. You cannot change which account in your organization is the management account.
+Q: What is a member account?
+A member account is an AWS account, other than the management account, that is part of an organization. If you are an administrator of an organization, you can create member accounts in the organization and invite existing accounts to join the organization. You also can apply policies to member accounts. A member account can belong to only one organization at a time.
+Q: What is an administrative root?
+An administrative root is contained in the management account and is the starting point for organizing your AWS accounts. The administrative root is the top-most container in your organization’s hierarchy. Under this root, you can create OUs to logically group your accounts and organize these OUs into a hierarchy that best matches your business needs.
+Q: What is an organizational unit (OU)?
+An organizational unit (OU) is a group of AWS accounts within an organization. An OU can also contain other OUs enabling you to create a hierarchy. For example, you can group all accounts that belong to the same department into a departmental OU. Similarly, you can group all accounts running security services into a security OU. OUs are useful when you need to apply the same controls to a subset of accounts in your organization. Nesting OUs enables smaller units of management. For example, you can create OUs for each workload, then create two nested OUs in each workload OU to divide production workloads from pre-production. These OUs inherit the policies from the parent OU in addition to any controls assigned directly to the team-level OU.
+Q: What is a policy?
+A policy is a “document” with one or more statements that define the controls that you want to apply to a group of AWS accounts. AWS Organizations supports the following policies:
+Backup policies—requires AWS backups on a specified cadence
+Tag policies—defines tag keys and allowed values
+AI services opt-out policies—controls how AI services store or use content
+Service Control Policies (SCPs)—An SCP defines the AWS service actions, such as Amazon EC2 RunInstances, that are available for use in different accounts within an organization.
+Organizing AWS accounts
+Q: Can I define and manage my organization regionally?
+All organization entities are globally accessible, except for organizations managed in China, similar to how AWS Identity and Access Management (IAM) works today. You do not need to specify an AWS Region when you create and manage your organization, but you will need to create a separate organization for accounts used in China. Users in your AWS accounts can use AWS services in any geographic region in which that service is available.
+Q: Can I change which AWS account is the management account?
+No. You cannot change which AWS account is the management account. Therefore, you should select your management account carefully.
+Q: How do I add an AWS account to my organization?
+Use one of the following two methods to add an AWS account to your organization:
+Method 1: Invite an existing account to join your organization
+1. Sign in as an administrator of the management account and navigate to the AWS Organizations console.
+2. Choose the Accounts tab.
+3. Choose Add account and then choose Invite account.
+4. Provide the email address of the account that you want to invite or the AWS account ID of the account.
+Note: You can invite more than one AWS account by providing a comma-separated list of email addresses or AWS account IDs.
+The specified AWS account receives an email inviting it to join your organization. An administrator in the invited AWS account must accept or reject the request using the AWS Organizations console, AWS CLI, or Organizations API. If the administrator accepts your invitation, the account becomes visible in the list of member accounts in your organization. Any applicable policies, such as SCPs, will be enforced automatically in the newly added account. For example, if your organization has an SCP attached to the root of your organization it will directly be enforced on the newly created accounts.
+Method 2: Create an AWS account in your organization
+1. Sign in as an administrator of your management account and navigate to the AWS Organizations console.
+3. Choose Add account and then choose Create account.
+4. Provide a name for the account and the email address for the account.
+You can also create an account by using the AWS SDK or AWS CLI. For both methods, after you add the new account, you can move it to an organizational unit (OU). The new account automatically inherits the policies attached to the OU.
+Q: Can an AWS account be a member of more than one organization?
+No. An AWS account can be a member of only one organization at a time.
+Q: How can I access an AWS account that was created in my organization?
+As part of AWS account creation, AWS Organizations creates an IAM role with full administrative permissions in the new account. IAM users and IAM roles with appropriate permissions in the master account can assume this IAM role to gain access to the newly created account.
+Q: Can I set up multi-factor authentication (MFA) on the AWS account that I create in my organization programmatically?
+No. This currently is not supported.
+Q: Can I move an AWS account that I have created using AWS Organizations to another organization?
+Yes. However, you must first remove the account from your organization and make it a standalone account (see below). After making the account standalone, it can then be invited to join another organization.
+Q: Can I remove an AWS account that I created using Organizations and make it a standalone account?
+Yes. When you create an account in an organization using the AWS Organizations console, API, or CLI commands, AWS does not collect all of the information required of standalone accounts. For each account that you want to make standalone, you need to update this information, which can include: providing contact information, agreeing to the AWS Customer Agreement, providing a valid payment method, and choosing a support plan option. AWS uses the payment method to charge for any billable (not AWS Free Tier) AWS activity that occurs while the account is not attached to an organization. For more information, see Removing a Member Account from Your Organization.
+Q: How many AWS accounts can I manage in my organization?
+This can vary. If you need additional accounts, go to the AWS Support Center and open a support case to request an increase.
+Q: How can I remove an AWS member account from an organization?
+You can remove a member account by using one of the following two methods. You might have to provide additional information to remove an account that you created using Organizations. If the attempt to remove an account fails, go to the AWS Support Center and ask for help with removing an account.
+Method 1: Remove an invited member account by signing in to the management account
+1. Sign in as an administrator of the master account and navigate to the AWS Organizations console.
+2. In the left pane, choose Accounts.
+3. Choose the account that you want to remove and then choose Remove account.
+4. If the account does not have a valid payment method, you must provide one.
+Method 2: Remove an invited member account by signing in to the member account
+1. Sign in as an administrator of the member account that you want to remove from the organization.
+2. Navigate to the AWS Organizations console.
+3. Choose *Leave organization*.
+4. If the account does not have a payment method, you must provide one.
+Q: How can I create an organizational unit (OU)?
+To create an OU, follow these steps:
+2. Choose the Organize accounts tab.
+3. Navigate in the hierarchy to where you want to create the OU. You can create it directly under the root, or you can create it within another OU.
+4. Choose to Create organizational unit and provide a name for your OU. The name must be unique within your organization.
+Note: You can rename the OU later.
+You now can add AWS accounts to your OU. You can also use the AWS CLI and AWS APIs to create and manage an OU.
+Q: How can I add a member AWS account to an OU?
+Follow these steps to add member accounts to an OU:
+1. In the AWS Organizations console, choose the Organize accounts tab.
+2. Choose the AWS account, and then choose Move account.
+3. In the dialog box, select the OU to which you want to move the AWS account.
+Alternatively, you can use the AWS CLI and AWS APIs to add AWS accounts to an OU.
+Q: Can an AWS account be a member of multiple OUs?
+No. An AWS account can be a member of only one OU at a time.
+Q: Can an OU be a member of multiple OUs?
+No. An OU can be a member of only one OU at a time.
+Q: How many levels can I have in my OU hierarchy?
+You can nest your OUs five levels deep. Including root and AWS accounts created in the lowest OUs, your hierarchy can be five levels deep.
+Control management
+Q: At what levels of my organization can I apply a policy?
+You can attach a policy to the root of your organization (applies to all accounts in your organization), to individual organizational units (OUs), which applies to all accounts in the OU including nested OUs, or to individual accounts.
+Q: How can I attach a policy?
+You can attach a policy in one of two ways:
+In the AWS Organizations console, navigate to where you want to assign the policy (the root, an OU, or an account), and then choose Attach Policy.
+In the Organizations console, choose the Policies tab and do one of the following:  Choose an existing policy, choose Attach Policy from the Actions drop-down list, and then choose the root, OU, or account to which you want to attach the policy.
+Choose Create Policy, and then as part of the policy creation workflow, choose the root, OU, or account to which you want to attach the new policy.
+For more information, see Managing Policies.
+Q: Are policies inherited through hierarchical connections in my organization?
+Yes. For example, let’s assume that you have arranged your AWS accounts into OUs according to your application development stages: DEV, TEST, and PROD. Policy P1 is attached to the organization’s root, policy P2 is attached to the DEV OU, and policy P3 is attached to AWS account A1 in the DEV OU. With this setup, P1+P2+P3 all apply to account A1. For more information, see About Service Control Policies.
+Q: What types of policies does AWS Organizations support?
+Currently, AWS Organizations supports the following policies:
+Backup policies—requires backups on a specified cadence using AWS Backup
+AI services opt-out policies—controls how AI services store or use content from the organization
+Service Control Policies (SCPs)—define and enforce the actions that IAM users, groups, and roles can perform in the accounts to which the SCP is applied
+Q: What is a Service Control Policy (SCP)?
+Service Control Policies (SCPs) allow you to control which AWS service actions are accessible to principals (account root, IAM users, and IAM roles) in the accounts of your organization. An SCP is required but is not the only control that determines which principals in an account can access resources to grant principals in an account access to resources. The effective permission on a principal in an account that has an SCP attached is the intersection of what is allowed explicitly in the SCP and what is allowed explicitly in the permissions attached to the principal. For example, if an SCP applied to an account states that the only actions allowed are Amazon EC2 actions, and the permissions on a principal in the same AWS account allow both EC2 actions and Amazon S3 actions, the principal is able to access only the EC2 actions. Principals in a member account (including the root user for the member account) cannot remove or change SCPs that are applied to that account.
+Q: What does an SCP look like?
+SCPs follow the same rules and grammar as IAM policies. For information about SCP syntax, see SCP Syntax. For example SCPs, see Example Service Control Policies.
+{
+"Version":"2012-10-17",
+"Statement":[
+"Effect":"Allow",
+"Action":["EC2:*","S3:*"],
+"Resource":"*"
+}
+]
+Blacklist example The following SCP allows access to all AWS service actions except the S3 action, PutObject. All principals (account root, IAM user, and IAM role) with appropriate permissions assigned directly to them in an account with this SCP applied can access any action except the S3 PutObject action.
+"Action": "*:*",
+},
+"Effect":"Deny",
+"Action":"S3:PutObject",
+For more examples, see Strategies for Using SCPs.
+Q: If I attach an empty SCP to an AWS account, does that mean that I allow all AWS service actions in that AWS account?
+No. SCPs behave the same way as IAM policies: an empty IAM policy is equivalent to a default DENY. Attaching an empty SCP to an account is equivalent to attaching a policy that explicitly denies all actions.
+Q: What are the effective permissions if I apply an SCP to my organization and my principals also have IAM policies?
+The effective permissions granted to a principal (account root, IAM user, and IAM role) in an AWS account with an SCP applied are the intersection between those allowed by the SCP and the permissions granted to the principal by IAM permission policies. For example, if an IAM user has "Allow": "ec2:* " and "Allow": "sqs:* ", and the SCP attached to the account has "Allow": "ec2:* " and "Allow": "s3:* ", the resultant permission for the IAM user is "Allow": "ec2:* " The principal cannot perform any Amazon SQS (not allowed by the SCP) or S3 actions (not granted by the IAM policy).
+Q: Can I simulate the effect of an SCP on an AWS account?
+Yes, the IAM policy simulator can include the effects of SCPs. You can use the policy simulator in a member account in your organization to understand the effect on individual principals in that account. An administrator in a member account with the appropriate AWS Organizations permissions can see if an SCP is affecting the access for the principals (account root, IAM user, and IAM role) in your member account. For more information, see Service Control Policies.
+Q: Can I create and manage an organization without enforcing an SCP?
+Yes. You decide which policies that you want to enforce. For example, you could create an organization that takes advantage only of the consolidated billing functionality. This allows you to have a single-payer account for all accounts in your organization and automatically receive default tiered-pricing benefits.
+Billing
+Q: What does AWS Organizations cost?
+AWS Organizations is offered at no additional charge.
+Q: Who pays for usage incurred by users under an AWS member account in my organization?
+The owner of the management account is responsible for paying for all usage, data, and resources used by the accounts in the organization.
+Q: Will my bill reflect the organizational unit structure that I created in my organization?
+No. For now, your bill will not reflect the structure that you have defined in your organization. You can use cost allocation tags in individual AWS accounts to categorize and track your AWS costs, and this allocation will be visible in the consolidated bill for your organization.
+Integrated AWS services
+Q: Why should I enable an AWS service integrated with AWS Organizations?
+AWS services have integrated with AWS Organizations to provide customers with centralized management and configuration across accounts in their organization. This enables you to manage services across your accounts from a single place, simplifying deployment and configurations.
+Q: Which AWS services are currently integrated with AWS Organizations?
+For a list of AWS services integrated with AWS Organizations, see AWS Services That You Can Use with AWS Organizations.
+Q: How do I enable an AWS service integration?
+To get started using an AWS service integrated with AWS Organization, navigate in the AWS Management Console to that service and enable the integration.
+Learn more about AWS Organizations
+Visit the features page
+Ready to build?
+Get started with AWS Organizations
+Have more questions?
+Contact us
+Page Content

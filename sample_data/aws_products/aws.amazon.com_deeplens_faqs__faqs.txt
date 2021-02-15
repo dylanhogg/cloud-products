@@ -1,0 +1,113 @@
+General
+Q: What is AWS DeepLens? >>
+Q: What is AWS DeepLens?
+AWS DeepLens is the world’s first deep-learning enabled video camera for developers of all skill levels to grow their machine learning skills through hands-on computer vision tutorials, example code, and pre-built models.
+Show less
+Q: What is the AWS DeepLens (2019 Edition)? >>
+Q: What is AWS DeepLens (2019 Edition)?
+The AWS DeepLens (2019 Edition) is available for customers in the USA, Canada, UK, Germany, France, Spain, Italy, and Japan. We've made improvements throughout the experience: devices are now easier to setup, allowing developers to get started with machine learning even more quickly; many ML models will run 2x faster on the device thanks to optimization with SageMaker Neo.
+In addition to the device improvements, new educational content is available to all console users to help making learning ML fun with AWS DeepLens. This includes guided instructions for building ML applications for interesting use cases like monitoring worker safety, performing sentiment analysis, and tracking how much coffee is being drunk in the office.
+Q: How is AWS DeepLens different from other video cameras in the market? >>
+Q: How is AWS DeepLens different from other video cameras in the market?  AWS DeepLens is the world's first video camera optimized to run machine learning models and perform inference on the device. It comes with 6 sample projects at launch, that you can deploy to your AWS DeepLens in less than 10 minutes. You can run the sample projects as is, connect them with other AWS services, train a model in Amazon Sagemaker and deploy it to AWS DeepLens, or extend the functionality by triggering a lambda function when an action takes place. You can also apply more advanced analysis on the cloud using Amazon Rekognition. AWS DeepLens provides the building blocks for your machine learning needs.
+Q: What sample projects are available at launch? >>
+Q: What sample projects are available?
+There are 7 sample projects available. We will continue to launch practical and fun projects for developers to use and learn, based on user feedback. The 7 sample projects are:
+1. Object Detection
+2. Hot Dog Not Hot Dog
+3. Cat and Dog
+4. Artistic Style Transfer
+5. Activity Detection
+6. Face Detection
+7. Bird Classification
+Q: What geographic regions is AWS DeepLens available? >>
+Q: What geographic regions is AWS DeepLens available?
+AWS DeepLens (2019 Edition) is available in the US, Germany, France, Italy, Spain, UK, Japan and Canada.
+Q: Does AWS DeepLens include Alexa? >>
+Q: Does AWS DeepLens include Alexa?
+No, AWS DeepLens does not have Alexa or any far-field audio capabilities. However, AWS DeepLens has a 2D microphone array that is capable of running custom audio models, with additional programming required.
+Q: How can I get a AWS DeepLens? >>
+Q: How can I get a AWS DeepLens?
+AWS DeepLens (2019 Edition) is now available for pre-order for developers in Canada, Europe, and Japan via the Amazon.ca, Amazon.de, Amazon.es, Amazon.fr, Amazon.it, Amazon.co.jp, and Amazon.co.uk websites.
+Q: In what regions will the AWS DeepLens console be available? >>
+Q: In what regions will the AWS DeepLens console be available?
+AWS DeepLens will be available in us- east-1 (N.Virginia), eu-central-1 (Frankfurt) and ap-northeast-1 (Tokyo).
+Product Details
+Q: What are the product specifications of the device? >>
+Q: What are the product specifications of the device?
+Intel Atom® Processor
+Gen9 graphics
+Ubuntu OS 16.04 LTS
+100 GFLOPS performance
+Dual band Wi-Fi
+8GB RAM
+16GB storage
+Expandable storage via microSD card
+4MP camera with MJPEG
+H.264 encoding at 1080p resolution
+2 USB ports
+Micro HDMI
+Audio out
+Q: Why do I have "v1.1" marked on the bottom of my device? >>
+Q: Why do I have "v1.1" marked on the bottom of my device?
+AWS DeepLens (2019 Edition) is marked with “v1.1” on the bottom of the device. We have made significant improvements to the user experience, including onboarding, tutorials and additional sensor compatibility support such as depth sensor from Intel Real Sense.
+The orginal AWS DeepLens cannot be upgraded to v1.1 via software updates. Some of the device modifications including the simplified onboarding were hardware changes.
+Q: What deep learning frameworks can I run on the device? >>
+Q: What deep learning frameworks can I run on the device?
+AWS DeepLens (2019 Edition) is optimized for Apache MXNet, TensorFlow and Caffe.
+Q: What kind of performance can I expect with AWS DeepLens? >>
+Q: What kind of performance can I expect with AWS DeepLens?  Performance is measured on images inferred per second and latency. Different models will have varying inference per second. The baseline inference performance is 14 images/second on AlexNet, and 5 images/second on ResNet 50 for batch size of 1. The characteristics of the network that the DeepLens is connected to will determine the latency performance.
+Q: What MXNet network architecture layers does AWS DeepLens support? >>
+Q: What MXNet network architecture layers does AWS DeepLens support?
+AWS DeepLens offers support for 20 different network architecture layers. The layers supported are:
+Activation
+BatchNorm
+Concat
+Convolution
+elemwise_add
+Pooling
+Flatten
+FullyConnected
+InputLayer
+UpSampling
+Reshape
+ScaleShift
+SoftmaxActivation
+SoftmaxOutput
+transpose
+_contrib_MultiBoxPrior
+_contrib_MultiBoxDetection
+_Plus
+Deconvolution
+_mul
+Getting Started
+Q: What comes in the box and how do I get started? >>
+Q: What comes in the box and how do I get started?
+Inside the box, developers will find a Getting Started guide, the AWS DeepLens device, a region specific power cord and adapter, USB cable and a 32GB microSD card. Setup and configuration of the DeepLens device can be done in minutes using the AWS DeepLens console, and by configuring the device through a browser on your laptop or PC.
+There are three 10-Minute Tutorials designed to help guide you through getting started:
+1. Create and Deploy a Project 2. Extend a Project 3. Build an AWS DeepLens Project with Amazon SageMaker
+Q: Why is an USB port marked as registration? >>
+Q: Why is an USB port marked as registration?
+On AWS DeepLens (2019 Edition) the USB port marked as registration will be used during the onboarding process to register your AWS DeepLens to your AWS account.
+The USB port for registration is configured as a slave port. Hence, it cannot be used for keyboard or other master port setup. If you need more ports to connect, we recommend using a USB hub.
+Q: Can I train my models on the device? >>
+Q: Can I train my models on the device?
+No, AWS DeepLens is capable of running inference or predictions using trained models. You can train your models in Amazon SageMaker, a machine learning platform to train and host your models. AWS DeepLens offers a simple 1-click deploy feature to publish trained models from Amazon SageMaker.
+Q: What AWS services are integrated with AWS DeepLens? >>
+Q: What AWS services are integrated with AWS DeepLens?
+DeepLens is pre-configured for integration with AWS Greengrass, Amazon SageMaker and Amazon Kinesis Video Streams. You can integrate with many other AWS services, such as Amazon S3, Amazon Lambda, Amazon Dynamo, Amazon Rekognition using AWS DeepLens.
+Q: Can I SSH into AWS DeepLens? >>
+Q: Can I SSH into AWS DeepLens?
+Yes, we have designed AWS DeepLens to be easy to use, yet accessible for advanced developers. You can SSH into the device using the command: ssh aws_cam@
+Q: What programming languages are supported by AWS DeepLens? >>
+Q: What programming languages are supported by AWS DeepLens?
+You can define and run models on the camera data stream locally in Python 2.7.
+Q: Do I need to be connected to internet to run the models? >>
+Q: Do I need to be connected to internet to run the models?
+No. You can run the models that you have deployed to AWS DeepLens without being connected to the internet. However, you need internet to deploy the model from the cloud to the device initially. After transferring your model, AWS DeepLens can perform inference on the device locally without requiring cloud connectivity. However, if you have components in your project that require interaction with cloud, you will need to have internet for those components.
+Q: Can I run my own custom models on AWS DeepLens? >>
+Q: Can I run my own custom models on AWS DeepLens?
+Yes. You can also create your own project from scratch, using the AWS SageMaker platform to prepare data and train a model using a hosted notebook, and then publish the trained model to your AWS DeepLens for testing and refinement. You can also import an externally-trained model into AWS DeepLens by specifying the S3 location for model architecture and network weights files.
+The AWS DeepLens (2019 Edition) includes an optimized onboarding process that allows developers to get started with machine learning quickly, support for Intel® RealSenseTM depth sensor that allows you to build advanced machine learning models with higher accuracy by utilizing not just vision as the input parameter but also depth, and support for the Intel® MovidiusTM Neural Compute Stick for those who want faster computing speeds. The AWS DeepLens (2019 Edition) also comes with Amazon SageMaker Neo integration which lets customers train models once and run them with up to 2X improvement in performance.
+In addition to the device improvements, we have invested in new content to help making learning ML fun with AWS DeepLens. This includes guided instructions for building ML applications for interesting use cases such as worker safety, sentiment analysis, who drinks the most coffee, to name a few.
+All these enhancements are now available for customers in the USA, Canada, UK, Germany, France, Spain, Italy, Japan.
+Page Content

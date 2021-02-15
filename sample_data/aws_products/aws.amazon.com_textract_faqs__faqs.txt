@@ -1,0 +1,72 @@
+General
+Q: What is Amazon Textract?
+A: Amazon Textract is a document analysis service that detects and extracts printed text, and handwriting, structured data, such as fields of interest and their values, and tables from images and scans of documents. Amazon Textract's machine learning models have been trained on millions of documents so that virtually any document type you upload is automatically recognized and processed for text extraction. When information is extracted from documents, the service returns a confidence score for each element it identifies so that you can make informed decisions about how you want to use the results. For instance, if you are extracting information from tax documents you can set custom rules to flag any extracted information with a confidence score lower than 95%. Also, all extracted data are returned with bounding box coordinates, which is a rectangular frame that fully encompasses each piece of data identified, so that you can quickly identify where a word or number appears on a document. You can access these features with the Amazon Textract API, in the AWS Management Console, or using the AWS command-line interface (CLI).
+Q: What are the most common use cases for Amazon Textract?
+A: The most common use cases for Amazon Textract include:
+Import Documents and Forms into Business Applications
+Create Smart Search Indexes
+Build Automated Document Processing Workflows
+Maintain Compliance in Document Archives
+Extract Text for Natural Language Processing (NLP)
+Text Extraction for Document Classification
+Q: What type of text can Amazon Textract detect and extract?
+A: Amazon Textract can detect printed text and handwriting from the Standard English alphabet and ASCII symbols. Textract can also extract printed text in Spanish, Italian, French, Portuguese and German.
+Q: What document formats does Amazon Textract support?
+A: Amazon Textract currently supports PNG, JPEG, and PDF formats. For synchronous APIs, you can submit images either as an S3 object or as a byte array. For asynchronous APIs, you can submit S3 objects.
+Q: How do I get started with Amazon Textract?
+A: To get started with Amazon Textract, you can click the “Get Started with Amazon Textract”, button on the Amazon Textract page. You must have an Amazon Web Services account; if you do not already have one, you will be prompted to create one during the process. Once you are signed in to your AWS account, try out Amazon Textract with your own images or PDF documents using the Amazon Textract Management Console. You can also download the Amazon Textract SDKs to start creating your own applications. Please refer to our step-by-step Getting Started Guide for more information.
+Q: What APIs does Amazon Textract offer?
+A: Amazon Textract offers APIs that detect and extract printed text and handwriting from scanned images of documents, extracts structured data such as tables, and performs key-value pairing on extracted text. Amazon Textract performs OCR using the Detect Document Text API, but goes a step further in the document analyzing process and also performs key-value pair detection so that text extractions remain organized in their intended structure. The Analyze Document API can detect printed text, handwriting, fields, values, their relationships, tables, and other entities within a document along with their associated confidence scores. With the Analyze Document API, developers can automatically capture structured data from a wide variety of documents including tax forms, financial reports, medical records, and loan applications. For details, please refer to the Amazon Textract API reference.
+Q: How do I use the confidence score Amazon Textract provides?
+A: A confidence score is a number between 0 and 100 that indicates the probability that a given prediction is correct. With Amazon Textract, all extracted printed text, handwriting, and structured data are returned with bounding box coordinates, which is a rectangular frame that fully encompasses each piece of data identified. This allows you to identify the score for each extracted entity so that you can make informed decisions on how you want to use the results.
+Q: How can I get Amazon Textract predictions reviewed by humans?
+A: Amazon Textract is directly integrated with Amazon Augmented AI (A2I) so you can easily get low confidence predictions from Amazon Textract reviewed by humans. Using Amazon Textract’s API for form data extraction and the Amazon A2I console, you can specify the conditions under which Amazon A2I routes predictions to reviewers, which can be either a confidence threshold or a random sampling percentage. If you specify a confidence threshold, Amazon A2I routes only those predictions that fall below the threshold for human review. You can adjust these thresholds at any time to achieve the right balance between accuracy and cost-effectiveness. Alternatively, if you specify a sampling percentage, Amazon A2I routes a random sample of the predictions for human review. This can help you implement audits to monitor the prediction accuracy regularly. Amazon A2I also provide reviewers a web interface consisting of all the instructions and tools they need to complete their review tasks. For more information about implementing human review with Amazon Textract, see the Amazon A2I website.
+Q: How can I get the best results from Amazon Textract?
+A: Amazon Textract uses machine learning to read virtually any type of document, in order to extract printed text, handwriting, and structured information. Keep the following tips in mind in order to get the best results:
+• Make sure your document uses a language supported by Amazon Textract (Currently English, Spanish, Italian, Portuguese, French, German; handwriting for English only).
+• Provide as high quality an image as you can, ideally at least 150 DPI.
+• If your document is already in one of the file formats that Amazon Textract supports (PDF, JPG, PNG), don't convert or downsample it before uploading it to Amazon Textract.
+• Amazon Textract's table feature works best when the tables in your document are visually separated from surrounding elements on the page (e.g. not overlaid on an image or complex pattern), and the text within the table is upright (e.g. not rotated relative to other text on the page)
+You can get started with analyzing you own documents with Amazon Textract with just a few clicks in the
+Amazon Textract Management Console. If you have trouble achieving high accuracy with receipts, identification, or industrial diagrams, please contact us on
+amazon-textract@amazon.com for assistance.
+Q: In which AWS regions is Amazon Textract available?
+A: Amazon Textract is currently available in the US East (Northern Virginia), US East (Ohio), US West (Oregon), US West (N. California), AWS GovCloud (US-West), AWS GovCloud (US-East), Canada (Central), EU (Ireland), EU (London), EU (Frankfurt), EU (Paris), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and Asia Pacific (Mumbai).
+Q: Does Amazon Textract work with AWS CloudTrail?
+A: Yes. Amazon Textract supports logging of the following actions as CloudTrail events - DetectDocumentText, AnalyzeDocument, StartDocumentTextDetection, StartDocumentAnalysis, GetDocumentTextDetection, and GetDocumentAnalysis. For more details, please see Logging Amazon Textract API Calls with AWS CloudTrail.
+Billing
+Q: How does Amazon Textract count the number of pages processed?
+A: An image (PNG or JPEG) counts as a single page. For PDFs, each page in the document is counted as a page processed.
+Q: Which APIs am I charged for with Amazon Textract?
+A: Refer to the Amazon Textract pricing page to learn more about pricing.
+Q: How much does Amazon Textract cost?
+A: Amazon Textract charges you based on the number of pages and images processed. For more information, visit the pricing page.
+Q: Does Amazon Textract participate in the AWS Free Tier?
+A: Yes. As part of the AWS Free Usage Tier, you can get started with Amazon Textract for free. New customers can analyze up to 1,000 pages per month using the Detecting Document Text API and up to 100 pages per month using the Analyze Document API, for the first three months.
+Q: Do your prices include taxes?
+A: For details on taxes, please see Amazon Web Services Tax Help.
+Data Privacy
+Q: Are document and image inputs processed by Amazon Textract stored, and how are they used by AWS?
+A: Amazon Textract may store and use document and image inputs processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Textract and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is necessary for continuous improvement of your Amazon Textract customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. You may opt out of having your document and image inputs used to improve or develop the quality of Amazon Textract and other Amazon machine-learning/artificial-intelligence technologies using an AWS Organizations opt-out policy. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Is the content processed by Amazon Textract moved outside the AWS region where I am using Amazon Textract?
+A: Any content processed by Amazon Textract is encrypted and stored at rest in the AWS region where you are using Amazon Textract. Unless you opt out as provided below, some portion of content processed by Amazon Textract may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Textract customer experience and other Amazon machine-learning/artificial-intelligence technologies. You can request deletion of image and video inputs associated with your account by contacting AWS Support. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. Your content will not be stored in another AWS region if you opt out of having your content used to improve and develop the quality of Amazon Textract and other Amazon machine-learning/artificial-intelligence technologies. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Can I delete images and documents stored by Amazon Textract?
+A: Yes. You can request deletion of document and image inputs associated with your account by contacting AWS Support. Deleting image and document inputs may degrade your Amazon Textract experience.
+Q: Who has access to my content that is processed and stored by Amazon Textract?
+A: Only authorized employees will have access to your content that is processed by Amazon Textract. Your trust, privacy, and the security of your content are our highest priority, and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Do I still own my content that is processed and stored by Amazon Textract?
+A: Yes. You always retain ownership of your content, and we will only use your content with your consent.
+Q: Is Amazon Textract HIPAA eligible?
+A: Yes, AWS has expanded its HIPAA compliance program to include Amazon Textract as a HIPAA eligible service. If you have an executed Business Associate Agreement (BAA) with AWS, you can use Amazon Textract to extract text including protected health information (PHI) from images.
+Learn more about HIPAA Compliance
+Q: What Compliance Programs are in scope for Amazon Textract?
+A: Textract is HIPAA eligible, and compliant with PCI, ISO, and SOC. For more information please visit AWS Artifact in the AWS Management Console, or visit https://aws.amazon.com/compliance/services-in-scope/. Textract also supports Amazon Virtual Private Cloud (Amazon VPC) endpoints via AWS PrivateLink enabling customers to securely initiate API calls to Amazon Textract from within their VPC and avoid using the public internet.
+Featured Customers
+Explore our customer use cases and success stories.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Textract in the AWS Management Console.
+Page Content

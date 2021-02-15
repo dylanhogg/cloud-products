@@ -1,0 +1,74 @@
+General
+Q: What is Amazon Polly?
+Amazon Polly is a service that turns text into lifelike speech. Amazon Polly enables existing applications to speak as a first class feature and creates the opportunity for entirely new categories of speech-enabled products, from mobile apps and cars, to devices and appliances. Amazon Polly includes dozens of lifelike voices and support for multiple languages, so you can select the ideal voice and distribute your speech-enabled applications in many geographies. Amazon Polly is easy to use – you just send the text you want converted into speech to the Amazon Polly API, and Amazon Polly immediately returns the audio stream to your application so you can play it directly or store it in a standard audio file format, such as MP3. Amazon Polly supports Speech Synthesis Markup Language (SSML) tags like prosody so you can adjust the speech rate, pitch, or volume. Amazon Polly is a secure service that delivers all of these benefits at high scale and at low latency. You can cache and replay Amazon Polly’s generated speech at no additional cost. Amazon Polly lets you convert millions of characters per month for free during the first year, upon sign-up. Amazon Polly’s pay-as-you-go pricing, low cost per request, and lack of restrictions on storage and reuse of voice output make it a cost-effective way to enable speech synthesis everywhere.
+Show less
+Q: Why should I use Amazon Polly?
+You can use Amazon Polly to power your application with high-quality spoken output. This cost-effective service has very low response times, and is available for virtually any use case, with no restrictions on storing and reusing generated speech.
+Q: What features are available?
+You can control various aspects of speech such as pronunciation, volume, pitch, speech rate, etc. using standardized Speech Synthesis Markup Language (SSML). You can synthesize speech for certain Neural voices using the Newscaster style, to make them sound like a TV or Radio newscaster. You can detect when specific words or sentences in the text are being spoken to the user based on the metadata included in the audio stream. This allows the developer to synchronize graphical highlighting and animations, such as the lip movements of an avatar, with the synthesized speech. You can modify the pronunciation of particular words, such as company names, acronyms, foreign words and neologisms, e.g. “P!nk”, “ROTFL”, “C’est la vie” (when spoken in a non-French voice) using custom lexicons.
+Q: What are Speech Marks?
+Speech Marks are designed to complement the synthesized speech that is generated from the input text. Using this metadata alongside the synthesized speech audio stream, customers can provide their application with an enhanced visual experience such as speech-synchronized animation or karaoke-style highlighting.
+Amazon Polly generates Speech Marks using the following four elements:
+Sentence, which indicates a sentence element in the input text to be spoken;
+Word, which Indicates a word element in the text;
+Viseme, which describes the shape of the lips that corresponds to the sound that is spoken;
+SSML, which describes an SSML element used in the text.
+Speech Marks are delivered in form of a JSON stream -- specifically, a set of standalone JSON objects delimited with new lines -- containing anywhere from one to all four of these elements, when using the synthesize-speech method with the speech-mark-types parameter. You can find more information in the Amazon Polly Developer Guide.
+Q: What are the most common use cases for this service?
+With Amazon Polly, you can bring your applications to life, by adding life-like speech capabilities. For example, in E-learning and education, you can build applications leveraging Amazon Polly’s Text-to-Speech (TTS) capability to help people with reading disabilities. Amazon Polly can be used to help the blind and visually impaired consume digital content (eBooks, news etc). Amazon Polly can be used in announcement systems in public transportation and industrial control systems for notifications and emergency announcements. There are a wide range of devices such as set-top boxes, smart watches, tablets, smartphones and IoT devices, which can leverage Amazon Polly for providing audio output. Amazon Polly can be used in telephony solutions to voice Interactive Voice Response systems. Applications such as quiz games, animations, avatars or narration generation are common use-cases for cloud-based TTS solution like Amazon Polly.
+Q: How does this product work with other AWS products?
+When combined with Amazon Lex, developers can create full-blown Voice User Interfaces for their applications. Within Amazon Connect, Amazon Polly speech is used to create self-service, cloud-based contact center services. On top of that, developers of mobile applications and Internet-of-Things (IoT) solutions can leverage Amazon Polly to add spoken output to their own systems.
+Q: What are the advantages of a cloud-based Text-to-Speech solution over an on-device one?
+On-device text-to-speech solutions require significant computing resources, notably CPU power, RAM, and disk space to be available on the device. This can result in higher development cost and higher power consumption on devices such as tablets, smartphones, etc. In contrast, text-to-speech conversion done in the cloud dramatically reduces local resource requirements. This makes it possible to support all of the available languages and voices at the highest possible quality. Moreover, speech corrections and enhancements are instantly available to all end-users and do not require additional updates for all devices. Cloud-based text-to-speech (TTS) is platform independent, so it minimizes development time and effort.
+Q: How do I get started with Amazon Polly?
+Simply login to your AWS account and navigate to the Amazon Polly console (which is a part of the AWS Console). You can then use the console to type in any text and listen to generated speech or save it as an audio file.
+Q: In which regions is the service available?
+Please refer to the AWS Global Infrastructure Region Table for all regions supporting Amazon Polly’s Standard voices. Neural voices are supported in the following subset of these regions: Northern Virginia, Oregon, Tokyo, London, Frankfurt, Singapore, Sydney, and Dublin.
+Q: Which programming languages are supported?
+Amazon Polly supports all the programming languages included in the AWS SDK (Java, Node.js, .NET, PHP, Python, Ruby, Go, and C++) and AWS Mobile SDK (iOS/Android). Amazon Polly also supports an HTTP API so you can implement your own access layer.
+Q: Which audio formats are supported?
+With Amazon Polly, you can stream audio to your users in near real time. You can also choose from various sampling rates to optimize bandwidth and audio quality for your application. Amazon Polly supports MP3, Vorbis, and raw PCM audio stream formats.
+Q: Which languages are supported?
+Q: What languages are supported?
+Please refer to  documentation for the complete list of languages supported by Amazon Polly.
+Q: Does Amazon Polly have AWS service limits?
+To help guarantee the availability of AWS resources and to minimize billing risk for new customers, AWS maintains service limits for each account. When using Amazon Polly to power your application with high-quality spoken output, there are default service limits including limitations on throttling, operations, and Speech Synthesis Markup Language (SSML) use. For details, see Limits in Amazon Polly in the Amazon Polly Developer Guide. Combining Amazon Polly with other AWS services, such as AWS Batch for efficient batch processing, can help you make the most of Amazon Polly within those service limits.
+Q: Is Amazon Polly a HIPAA Eligible Service?
+Q: Is Amazon Polly HIPAA certified?
+A: Amazon Polly is a HIPAA Eligible Service covered under the AWS Business Associate Addendum (AWS BAA). If you have an AWS BAA in place, Amazon Polly will use, disclose, and maintain your Protected Health Information (PHI) only as permitted by the terms of your AWS BAA, and not as specified in the Data Privacy section of the Amazon Polly FAQ.
+Q: How do I get started with Amazon Polly Brand Voice?
+If you are interested in building a Brand Voice using Amazon Polly, please reach out to your AWS Account Manager or contact us for more information.
+Q: What is the cost and timeline to build a Brand Voice?
+Every voice is unique, so it’s important that we learn more about your goals to accurately scope a Brand Voice engagement. If you are interested in building a Brand Voice using Amazon Polly, please reach out to your AWS Account Manager or contact us for more information.
+Billing
+Q: How much does Amazon Polly cost?
+Please see the Amazon Polly Pricing Page for current pricing information.
+Q: Can I use the service for generating static voice prompts that will be replayed multiple times?
+Yes, you can. The service does not restrict this and there are no additional costs for doing so.
+Q: Can I use the service to generate content that will be used in mass notification systems (for example on train station)?
+Q: If I request 1,000 characters to be synthesized and request Speech Marks with the same 1,000 characters, will I be charged for 2,000 characters?
+Yes. You will be charged for every request for speech or Speech Marks based on the number of characters you send to the service.
+Q: Does Amazon Polly participate in the AWS Free Tier?
+Yes, as part of the AWS Free Usage Tier, you can get started with Amazon Polly for free. Upon sign-up, new Amazon Polly customers can synthesize millions of characters for free each month for the first 12 months. Please see the Amazon Polly Pricing Page for current pricing information.
+Q: Do your prices include taxes?
+For details on taxes, please see Amazon Web Services Tax Help.
+Data Privacy
+Q: Are text inputs processed by Amazon Polly stored, and how are they used by AWS?
+Amazon Polly may store and use text inputs processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Polly and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is important for continuous improvement of your Amazon Polly customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. You may opt out of having your content used to improve and develop the quality of Amazon Polly and other Amazon machine-learning/artificial-intelligence technologies by using an AWS Organizations opt-out policy. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Who has access to my content that is processed and stored by Amazon Polly?
+Only authorized employees will have access to your content that is processed by Amazon Polly. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Do I still own my content that is processed and stored by Amazon Polly?
+You always retain ownership of your content and we will only use your content with your consent.
+Q: Is the content processed by Amazon Polly moved outside the AWS region where I am using Amazon Polly?
+Any content processed by Amazon Polly is encrypted and stored at rest in the AWS region where you are using Amazon Polly. Some portion of content processed by Amazon Polly may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Polly customer experience and other Amazon machine-learning/artificial-intelligence technologies. If you opt out of having your content used to develop the quality of Amazon Polly and other Amazon machine-learning/artificial-intelligence technologies by contacting AWS Support, your content will not be stored in another AWS region. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Can I use Amazon Polly in connection with websites, programs or other applications that are directed or targeted to children under age 13 and subject to the Children’s Online Privacy Protection Act (COPPA)?
+Yes, subject to your compliance with the Amazon Polly Service Terms, including your obligation to provide any required notices and obtain any required verifiable parental consent under COPPA, you may use Amazon Polly in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13.
+Q: How do I determine whether my website, program, or application is subject to COPPA?
+For information about the requirements of COPPA and guidance for determining whether your website, program, or other application is subject to COPPA, please refer directly to the resources provided and maintained by the United States Federal Trade Commission. This site also contains information regarding how to determine whether a service is directed or targeted, in whole or in part, to children under age 13.
+Learn more about Amazon Polly pricing
+Visit the pricing page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content

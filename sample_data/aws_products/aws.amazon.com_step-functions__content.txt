@@ -1,11 +1,11 @@
 AWS Step Functions
 Assemble functions into business-critical applications
 Sign in to the console
-AWS Step Functions is a serverless function orchestrator that makes it easy to sequence AWS Lambda functions and multiple AWS services into business-critical applications. Through its visual interface, you can create and run a series of checkpointed and event-driven workflows that maintain the application state. The output of one step acts as an input to the next. Each step in your application executes in order, as defined by your business logic.
+AWS Step Functions is a serverless function orchestrator that makes it easy to sequence AWS Lambda functions and multiple AWS services into business-critical applications. Through its visual interface, you can create and run a series of checkpointed and event-driven workflows that maintain the application state. The output of one step acts as an input to the next. Each step in your application executes in order, as defined by your business logic.
 Orchestrating a series of individual serverless applications, managing retries, and debugging failures can be challenging. As your distributed applications become more complex, the complexity of managing them also grows. With its built-in operational controls, Step Functions manages sequencing, error handling, retry logic, and state, removing a significant operational burden from your team.
 Create a Workflow in 10 Minutes
 Want to learn how to create a serverless workflow with AWS Step Functions and AWS Lambda? Learn more.
-Get started»
+Get started
 Benefits
 Build and update apps quickly
 AWS Step Functions lets you build visual workflows that enable fast translation of business requirements into technical requirements. You can build applications in a matter of minutes, and when needs change, you can swap or reorganize components without customizing any code.
@@ -28,14 +28,14 @@ Modernize a monolith
 By using Step Functions to carve off a few tasks from the rest of your codebase, you can tackle the transformation of monolithic applications into microservices as a series of small steps. This allows you to untangle business-critical code safely and at your own pace, without disrupting operations and while you continue to deliver new features.
 Application orchestration
 Use Step Functions to combine multiple AWS Lambda functions into responsive serverless applications and microservices, without having to write code for workflow logic, parallel processes, error handling, timeouts or retries. You can also orchestrate data and services that run on Amazon EC2 instances, containers, or on-premises servers.
-See more use cases »
+See more use cases
 Customers
 Alpha Apps sped up innovation in the fast-moving apps market
 The Guardian orchestrated data flow between multiple systems
 SGK implemented a dynamic ETL pipeline for significant cost savings
 Bigfinite delivered analytics in a highly regulated industry
 Yelp used orchestration to safely refactor their largest code base
-See more customer testimonials »
+See more customer testimonials
 Customer videos
 Coinbase
 Serverless Deployment Pipeline
@@ -73,7 +73,7 @@ Encirca Services by DuPont Pioneer partners with farmers in the field to help th
 What's new
 date
 1
-…
+...
 December 3, 2019
 Introducing AWS Step Functions Express Workflows
 Express Workflows are a new type of AWS Step Functions workflow type that cost-effectively orchestrate AWS compute, database, and messaging services at event rates greater than 100,000 events per second.
@@ -84,7 +84,7 @@ AWS Step Functions now supports dynamic parallelism, so you can optimize the per
 August 12, 2019
 AWS Step Functions Adds Support for Nested Workflows
 AWS Step Functions now allows you to orchestrate more complex processes by composing modular, reusable workflows.
-See all announcements »
+See all announcements
 Recent blog posts
 New—Compute, Database, Messaging, Analytics and Machine Learning Integration for AWS Step Functions
 Jeff Barr

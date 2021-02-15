@@ -1,0 +1,41 @@
+General
+Q: What is Amazon Forecast?
+Amazon Forecast is a fully managed service that uses machine learning to deliver highly accurate forecasts.
+Based on the same technology used at Amazon.com, Amazon Forecast uses machine learning to combine time series data with additional variables to build forecasts. Amazon Forecast requires no machine learning experience to get started. You only need to provide historical data, plus any additional data that you believe may impact your forecasts. For example, the demand for a particular color of a shirt may change with the seasons and store location. This complex relationship is hard to determine on its own, but machine learning is ideally suited to recognize it. Once you provide your data, Amazon Forecast will automatically examine it, identify what is meaningful, and produce a forecasting model capable of making predictions that are up to 50% more accurate than looking at time series data alone.
+Amazon Forecast is a fully managed service, so there are no servers to provision, and no machine learning models to build, train, or deploy. You pay only for what you use, and there are no minimum fees and no upfront commitments.
+Learn more >>
+Q: What is time series data?
+A time series is a set of data points that are ordered by some unit of time. Examples of time series are weekly sales of a product, daily inventory levels, and hourly website visits.
+Q: What is time series forecasting?
+Time series forecasting is a technique that predicts the future time series data based on historical data.
+Q: What are key use cases for Amazon Forecast?
+Amazon Forecast can be used to forecast any time series data, such as retail demand, manufacturing demand, travel demand, revenue, IT capacity, logistics, and web traffic.
+Q: How do I get started with Amazon Forecast?
+You can get started with Amazon Forecast using an API or AWS Console. The first step is to upload your data into Amazon Forecast. Once data is uploaded, you can have Amazon Forecast automatically try all different algorithms to train multiple models, then provide the model with the highest forecasting accuracy. You can also manually choose one of the forecasting algorithms to train a model. Once you have the model, Amazon Forecast provides comprehensive accuracy metrics to evaluate the performance of the model. If you are satisfied, you can deploy the model within Amazon Forecast to generate forecasts with a single click or API call. Amazon Forecasts can be retrieved via API, exported in CSV format, or visualized in the console.
+Q: What data does Amazon Forecast require to start forecasting?
+Amazon Forecast can provide a forecast given any historical set of time series data. However, customers can also provide meta-data available for each of the time series (e.g., the location of a house when predicting energy consumption) as well as other related time series data (e.g., historical pricing data along with sales data for products).
+Q: What are other datasets available to Amazon Forecast to make more accurate forecasts?
+In addition to the data provided by customers, Amazon Forecast provides a set of international holiday calendars which customers can add to their dataset.
+Algorithms Customization
+Q: Can I customize Amazon Forecast algorithms?
+Yes. Customers have the ability to vary recipe specific parameters (e.g. HPO parameters) to optimize their model. For more details, refer to the documentation page.
+Pricing and Availability
+Q: How much does Amazon Forecast cost?
+Refer to Amazon Forecast pricing page to learn more.
+Q: What languages does Amazon Forecast support?
+Amazon Forecast supports English.
+Data Privacy
+Q: Who has access to my content that is processed and stored by Amazon Forecast?
+Only authorized employees will have access to your content that is processed by Amazon Forecast. Your trust, privacy, and the security of your content are our highest priority, and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Do I still own my content that is processed and stored by Amazon Forecast?
+You always retain ownership of your content, and we will only use your content with your consent.
+Learn how to get started
+Refer to developer guide for instructions on using Amazon Forecast.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign up for the Amazon Forecast Preview
+Get started building with Amazon Forecast by signing up for preview access.
+Sign in
+Page Content

@@ -2,12 +2,12 @@ Amazon EMR
 Easily run and scale Apache Spark, Hive, Presto, and other big data frameworks
 Get started with Amazon EMR
 Request support for your evaluation
-Amazon EMR is the industry-leading cloud big data platform for processing vast amounts of data using open source tools such as Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto. Amazon EMR makes it easy to set up, operate, and scale your big data environments by automating time-consuming tasks like provisioning capacity and tuning clusters. With EMR you can run petabyte-scale analysis at less than half of the cost of traditional on-premises solutions and over 3x faster than standard Apache Spark. You can run workloads on Amazon EC2 instances, on Amazon Elastic Kubernetes Service (EKS) clusters, or on-premises using EMR on AWS Outposts.
+Amazon EMR is the industry-leading cloud big data platform for processing vast amounts of data using open source tools such as Apache Spark, Apache Hive, Apache HBase, Apache Flink, Apache Hudi, and Presto. Amazon EMR makes it easy to set up, operate, and scale your big data environments by automating time-consuming tasks like provisioning capacity and tuning clusters. With EMR you can run petabyte-scale analysis at less than half of the cost of traditional on-premises solutions and over 3x faster than standard Apache Spark. You can run workloads on Amazon EC2 instances, on Amazon Elastic Kubernetes Service (EKS) clusters, or on-premises using EMR on AWS Outposts.
 Discover how Apache Hudi simplifies pipelines for change data capture (CDC) and privacy regulations
 An introduction to Amazon EMR (3:00)
 Benefits
 Easy to use
-Analysts, data engineers, and data scientists can use EMR Notebooks to collaborate and interactively explore, process, and visualize data. Simply specify the version of EMR applications and type of compute you want to use. EMR takes care of provisioning, configuring, and tuning clusters so that you can focus on running analytics.
+Analysts, data engineers, and data scientists can use EMR Notebooks to collaborate and interactively explore, process, and visualize data. Simply specify the version of EMR applications and type of compute you want to use. EMR takes care of provisioning, configuring, and tuning clusters so that you can focus on running analytics.
 Low cost
 EMR pricing is simple and predictable: You pay a per-instance rate for every second used, with a one-minute minimum charge. You can launch a 10-node EMR cluster for as little as $0.15 per hour. You can save 50-80% on the cost of the instances by selecting Amazon EC2 Spot for transient workloads and Reserved Instances for long-running workloads. You can also use Savings Plans.
 Elastic
@@ -17,13 +17,13 @@ Spend less time tuning and monitoring your cluster. EMR is tuned for the cloud a
 Secure
 EMR automatically configures EC2 firewall settings, controlling network access to instances and launches clusters in an Amazon Virtual Private Cloud (VPC). Server-side encryption or client-side encryption can be used with the AWS Key Management Service or your own customer-managed keys. EMR makes it easy to enable other encryption options, like in-transit and at-rest encryption, and strong authentication with Kerberos. You can use AWS Lake Formation or Apache Ranger to apply fine-grained data access controls for databases, tables, and columns.
 Flexible
-You have complete control over your EMR clusters and your individual EMR jobs. You can launch EMR clusters with custom Amazon Linux AMIs and easily configure the clusters using scripts to install additional third party software packages. EMR enables you to reconfigure applications on running clusters on the fly without the need to relaunch clusters. Also, you can customize the execution environment for individual jobs by specifying the libraries and runtime dependencies in a Docker container and submit them with your job.
+You have complete control over your EMR clusters and your individual EMR jobs. You can launch EMR clusters with custom Amazon Linux AMIs and easily configure the clusters using scripts to install additional third party software packages. EMR enables you to reconfigure applications on running clusters on the fly without the need to relaunch clusters. Also, you can customize the execution environment for individual jobs by specifying the libraries and runtime dependencies in a Docker container and submit them with your job.
 Deployment options
 Amazon EMR on Amazon EC2
 You can deploy EMR on Amazon EC2 and take advantage of On-Demand, Reserved, and Spot Instances. EMR manages provisioning, management, and scaling of the EC2 instances. AWS offers more instance options than any other cloud provider, allowing you to choose the instance that gives you the best performance or cost for your workload.
-Learn more »
+Learn more
 Amazon EMR on Amazon EKS
-You can run big data jobs on demand on Amazon Elastic Kubernetes Service (EKS), without needing to provision EMR clusters, to improve resource utilization and simplify infrastructure management. Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. With Amazon EMR on EKS, you can share compute and memory resources across all of your applications and use a single set of Kubernetes tools to centrally monitor and manage your infrastructure.
+You can run big data jobs on demand on Amazon Elastic Kubernetes Service (EKS), without needing to provision EMR clusters, to improve resource utilization and simplify infrastructure management. Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. With Amazon EMR on EKS, you can share compute and memory resources across all of your applications and use a single set of Kubernetes tools to centrally monitor and manage your infrastructure.
 Amazon EMR on AWS Outposts
 Amazon EMR is available on AWS Outposts, allowing you to set up, deploy, manage, and scale EMR in your on-premises environments, just as you would in the cloud. AWS Outposts brings AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
 Use cases
@@ -31,29 +31,28 @@ Machine learning
 Use EMR's built-in machine learning tools, including Apache Spark MLlib, TensorFlow, and Apache MXNet for scalable machine learning algorithms, and use custom AMIs and bootstrap actions to easily add your preferred libraries and tools to create your own predictive analytics toolset.
 Extract, transform, load (ETL)
 EMR can be used to quickly and cost-effectively perform data transformation workloads (ETL) such as sort, aggregate, and join on large datasets.
-Learn how Redfin uses transient EMR clusters for ETL »
+Learn how Redfin uses transient EMR clusters for ETL
 Clickstream analysis
 Analyze clickstream data from Amazon S3 using Apache Spark and Apache Hive to segment users, understand user preferences, and deliver more effective ads.
 Real-time streaming
 Analyze events from Apache Kafka, Amazon Kinesis, or other streaming data sources in real-time with Apache Spark Streaming and Apache Flink to create long-running, highly available, and fault-tolerant streaming data pipelines on EMR. Persist transformed data sets to S3 or HDFS and insights to Amazon Elasticsearch Service.
-Learn how Hearst uses Spark Streaming »
+Learn how Hearst uses Spark Streaming
 Interactive analytics
 EMR Notebooks provide a managed analytic environment based on open-source Jupyter that allows data scientists, analysts, and developers to prepare and visualize data, collaborate with peers, build applications, and perform interactive analyses.
 Genomics
 EMR can be used to process vast amounts of genomic data and other large scientific data sets quickly and efficiently. Researchers can access genomic data hosted for free on AWS.
-Learn about Apache Spark and Precision Medicine »
+Learn about Apache Spark and Precision Medicine
 Case studies
 Analyst research
-More…
+More...
 Read more
 What's New
 date
 1
-…
+...
 Get started with AWS
 Read the migration guide
 Learn how to migrate big data from on-premises to AWS.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

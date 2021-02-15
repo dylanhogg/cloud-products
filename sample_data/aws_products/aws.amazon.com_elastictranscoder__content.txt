@@ -1,7 +1,7 @@
 Amazon Elastic Transcoder
 Save Costs and Get More Features with AWS Elemental MediaConvert
-AWS Elemental MediaConvert is a new file-based video transcoding service that provides a comprehensive suite of advanced transcoding features, with on-demand rates starting at $0.0075/minute. Read more.
-Already using Amazon Elastic Transcoder? It's simple to migrate to MediaConvert using this guide which includes step-by-step instructions and a script to convert your presets.
+AWS Elemental MediaConvert is a new file-based video transcoding service that provides a comprehensive suite of advanced transcoding features, with on-demand rates starting at $0.0075/minute. Read more.
+Already using Amazon Elastic Transcoder? It's simple to migrate to MediaConvert using this guide which includes step-by-step instructions and a script to convert your presets.
 Amazon Elastic Transcoder is media transcoding in the cloud. It is designed to be a highly scalable, easy to use and a cost effective way for developers and businesses to convert (or “transcode”) media files from their source format into versions that will playback on devices like smartphones, tablets and PCs.
 What's New with Amazon Elastic Transcoder
 Amazon Elastic Transcoder Adds Support For Clip Stitching
@@ -15,7 +15,7 @@ Get Started with AWS for Free
 Create a Free Account
 Or Sign In to the Console
 Amazon Elastic Transcoder's Free Tier includes up to 20 minutes of transcoding each month.
-View AWS Free Tier Details »
+View AWS Free Tier Details
 Amazon Elastic Transcoder manages all aspects of the media transcoding process for you transparently and automatically. There’s no need to administer software, scale hardware, tune performance, or otherwise manage transcoding infrastructure. You simply create a transcoding “job” specifying the location of your source media file and how you want it transcoded. Amazon Elastic Transcoder also provides transcoding presets for popular output formats, which means that you don’t need to guess about which settings work best on particular devices. All these features are available via service API, AWS SDKs and the AWS Management Console.
 Like other Amazon Web Services products, there are no contracts or monthly commitments for using Amazon Elastic Transcoder — you simply pay based on the minutes you need to transcode, and resolution of the content transcoded.
 Getting Started with Amazon Elastic Transcoder  (5:28)

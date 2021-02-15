@@ -22,18 +22,16 @@ Blog posts and articles
 Rightsizing infrastructure can cut costs 36%
 Mark Schwartz
 Jan 12, 2018
-Learn more »
+Learn more
 New research from TSO Logic shows AWS costs get lower every year
 Aaron Rallo
 Sep 24, 2018
-Learn more »
 Why do today’s businesses migrate to the cloud?
 Discover eight business drivers that send businesses into the cloud.
 Measure the business value of cloud with the AWS Cloud Value Framework
 Learn how to save costs by migrating to the cloud.
 Free migration tools
 Access the Free Tier migration tools and resources.
-Learn more
 Why migrate with AWS?
 Learn how to save costs and drive agility by migrating to AWS.
 Request a business case

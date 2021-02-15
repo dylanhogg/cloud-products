@@ -1,0 +1,779 @@
+General
+Q: What is Amazon WorkSpaces?
+A: Amazon WorkSpaces is a managed, secure cloud desktop service. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. You can pay either monthly or hourly, just for the WorkSpaces you launch, which helps you save money when compared to traditional desktops and on-premises VDI solutions. Amazon WorkSpaces help you eliminate the complexity in managing inventory, OS versions and patches, and Virtual Desktop Infrastructure (VDI), which helps simplify your desktop delivery strategy. With Amazon WorkSpaces, your users get a fast, responsive desktop of their choice that they can access anywhere, anytime, from any supported device.
+Q: What is an Amazon WorkSpace?
+A: An Amazon WorkSpace is a cloud-based virtual desktop that can act as a replacement for a traditional desktop. A WorkSpace is available as a bundle of operating system, compute resources, storage space, and software applications that allow a user to perform day-to-day tasks just like using a traditional desktop.
+Q: How do I connect to my Amazon WorkSpace?
+A: A user can connect to a WorkSpace from any supported device using the free Amazon WorkSpaces client application on supported devices including Windows and Mac computers, Chromebooks, iPads, Fire tablets, Android tablets, or using Chrome or Firefox web browsers. Users will connect using credentials set up by an administrator or using their existing Active Directory credentials if you’ve chosen to integrate your Amazon WorkSpaces with an existing Active Directory domain. Once the user is connected to a WorkSpace they can perform all the usual tasks they would do on a desktop computer.
+Q: How can I get started with Amazon WorkSpaces?
+A: To get started with Amazon WorkSpaces, you will need an AWS account. You can use this account to sign into the AWS Management Console and you can then quickly provision Amazon WorkSpaces for yourself and any other users in your organization who might require one. To provision an Amazon WorkSpace, first select a user from your directory. Next, select an Amazon WorkSpaces bundle for the user. The Amazon WorkSpaces bundle specifies the resources you need, which desktop operating system you want to run, how much storage you want to use and the software applications you want prepackaged. Finally, choose a running mode for their Amazon WorkSpace – pick AlwaysOn if you want to use monthly billing, or AutoStop if you want to use hourly billing. Once your WorkSpace is provisioned, the user will receive an email with instructions for connecting to their WorkSpace. You can use this same process to provision multiple WorkSpaces at the same time.
+Q: Which Amazon WorkSpaces bundles are available?
+A: You can find the latest information on Amazon WorkSpaces bundles here.
+Q: Which operating systems are available for use with Amazon WorkSpaces?
+A: Amazon WorkSpaces offers Amazon Linux WorkSpaces built on Amazon Linux 2 LTS, or Windows 10 desktop experiences. The Windows 10 desktop experiences is powered by Windows Server 2016. If your organization is eligible to bring their own Windows Desktop licenses, you can run the Windows 10 Enterprise operating system on your Amazon WorkSpaces.
+Q: What are the root and user volumes mapped to for Amazon Linux WorkSpaces and Amazon WorkSpaces with Windows?
+A: For Amazon Linux WorkSpaces, root volume is mapped to /, and user volume is mapped to /home
+For Windows, root volume is mapped to C: drive, and user volume is mapped to D: drive
+Q: Can I migrate users from an Amazon WorkSpaces Windows 7 bundle to a Windows 10 bundle?
+A: Yes. WorkSpaces migrate enables WorkSpaces migration to a new bundle or compute type with the user volume data preserved. You could perform migrate operations to move your users to the Windows 10 Desktop experience. To get started, go to the Amazon WorkSpaces console, select the WorkSpace, click “Action > Migrate WorkSpaces”, then select a target bundle with the Windows 10 desktop experience.
+Q: How does a user get started with their Amazon WorkSpace once it has been provisioned?
+A: When Amazon WorkSpaces are provisioned, users receive an email providing instructions on where to download the WorkSpaces clients they need, and how to connect to their WorkSpace. If you are not integrating with an existing Active Directory, the user will have the ability to set a password the first time they attempt to connect to their WorkSpace. If the AWS Directory Services AD Connector has been used to integrate with an existing Active Directory domain, users will use their regular Active Directory credentials to log in.
+Q: What does a user need to use an Amazon Workspace?
+A: A user needs to have an Amazon WorkSpace provisioned for them, and a broadband Internet connection. To use an Amazon WorkSpaces client application to access their WorkSpace, they will need a supported client device (PC, Mac, Linux, iPad, Kindle Fire, or Android tablet), and an Internet connection with opened TCP ports 443 & either 4172 for PCoIP or 4195 for WSP, and UDP port 4172 for PCoIP or 4195 for WSP.
+Q: Once users connect to their Amazon WorkSpace can they personalize it with their favorite settings?
+A: An administrator can control what a user can personalize in their WorkSpace. By default, users can personalize their WorkSpaces with their favorite settings for items such as wallpaper, icons, shortcuts, etc. These settings will be saved and persist until a user changes them. If an administrator wishes to lock down a WorkSpace using tools like Group Policy for Windows, this will restrict a user’s ability to personalize their WorkSpaces.
+Q: Can users install applications on their Amazon WorkSpace?
+A: By default, users are configured as local administrators of their WorkSpaces. Administrators can change this setting and can restrict users’ ability to install applications with a technology such as Group Policy.
+Q: Are Amazon WorkSpaces persistent?
+A: Yes. Each WorkSpace runs on an individual instance for the user it is assigned to. Applications and users’ documents and settings are persistent.
+Q: Do users need an AWS account?
+A: No. An AWS account is only needed to provision WorkSpaces. To connect to WorkSpaces, users will require only the information provided in the invitation email they will receive when their WorkSpace is provisioned.
+Q: If I am located a significant distance from the region where my Amazon WorkSpace is located, will I have a good user experience?
+A: If you are located more than 2000 miles from the regions where Amazon WorkSpaces is currently available, you can still use the service, but your experience may be less responsive. The easiest way to check performance is to use the Amazon WorkSpaces Connection Health Check Website. You can also refer to the Regional Products and Services page for details of Amazon WorkSpaces service availability by region.
+Q: Does Amazon WorkSpaces offer a set of public APIs?
+A: Yes, public APIs are available for creating and managing Amazon WorkSpaces programmatically. APIs are available via the AWS CLI and SDK; you can learn more about the APIs in the documentation.
+Q: Do the Amazon WorkSpaces APIs log actions in AWS CloudTrail?
+A: Yes. Actions on Amazon WorkSpaces performed via the WorkSpaces APIs will be included in your CloudTrail audit logs.
+Q: Is there Resource Permission support with the Amazon WorkSpaces APIs?
+A: Yes. You can specify which Amazon WorkSpaces resources users can perform actions on. For details see the documentation.
+Q: Do I need to use the AWS Management Console to get started with Amazon WorkSpaces?
+A: To get started with Amazon WorkSpaces, you will need to register a directory with the WorkSpaces service. You can use AWS Management Console or Amazon WorkSpaces APIs to register a directory with the WorkSpaces service and then create and manage WorkSpaces.
+Q: Can I deploy my WorkSpaces in the AWS GovCloud (US) Regions?
+A: Yes. You can deploy WorkSpaces in the AWS GovCloud (US West) region to meet US federal, state, and local government requirements. Go here for details on the AWS GovCloud (US) Regions.
+Bundles and Custom Images
+Q: What applications are available with Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces come with a curated selection of applications at no additional cost that include LibreOffice, Firefox Web Browser, Evolution mail, Pidgin IM, GIMP, and other desktop utilities and tools. You can always add more software from the Amazon Linux repositories using yum. To install an available package from the Amazon Linux repositories, simply type “yum install [package-name]”. You can also add software from RPM based public and private Linux repositories at any time.
+Q: What applications are available with Amazon WorkSpaces with Windows 10 Experience?
+A: Amazon WorkSpaces come with a default set of applications at no additional cost that include Internet Explorer 11, and Firefox. You can choose to add “Plus” application bundles to your Amazon WorkSpaces with Windows 10 which include Microsoft Office Professional 2016, and Trend Micro Worry-Free Business Security, for an additional monthly fee.
+Q: Can I create custom images for Amazon WorkSpaces?
+A: Yes, as an administrator you can create a custom image from a running WorkSpace. Once you have customized your WorkSpace with your applications and settings, select the WorkSpace in the console and select “Create Image.” This creates an image with your applications and settings. Custom images created from Amazon WorkSpaces with GPU-enabled bundles (Graphics and GraphicsPro) can only be used with Graphics bundles. Custom images created from Value, Standard, Performance, Power, or PowerPro bundles can only be used with those bundles. Most WorkSpace images are available within 45 minutes. See the custom image
+documentation for more detail.
+Q: How do I launch an Amazon WorkSpace from a custom image?
+A: To launch an Amazon WorkSpace from a custom image, you will first need to pair the custom image with a hardware type you want that WorkSpace to use, which results in a bundle. You can then publish this bundle through the console, then select the bundle when launching new WorkSpaces.
+Q: What is the difference between a bundle and an image?
+A: An image contains only the OS, software and settings. A bundle is a combination of both that image and the hardware from which a WorkSpace can be launched.
+Q: How many custom images can I create?
+A: As an administrator, you can create as many custom images as you need. Amazon WorkSpaces sets default limits, but you can request an increase in these limits here. To see the default limits for Amazon WorkSpaces, please visit our documentation.
+Q: Can I update the image in an existing bundle?
+A: Yes. You can update an existing bundle with a new image that contains the same tier of software (for example containing the Plus software) as the original image.
+Q: Can I copy my Amazon WorkSpaces Images to other AWS Regions?
+A: Yes, you can use the WorkSpaces console, APIs, or CLI to copy your WorkSpaces Images to other AWS Regions where WorkSpaces is available. Log on to the WorkSpaces console and navigate to the “Images” section from the left hand navigation menu. Simply select the image you would like to copy, click on the “Actions” button and select the “Copy Image” option to get started.
+Q: How can I tell if the Image I copied is available for me to use?
+A: As soon as you initiate a copy operation, you will be provided a unique identifier for the new Image being created as a copy of the original one. You can use that identifier to look up the status of that Image in the destination Region through the WorkSpaces console, APIs, or CLI.
+Q: Can I cancel a pending Image copy operation?
+A: Once initiated, you cannot cancel a pending Image copy operation. You can delete the Image in the destination Region if the Image is not required.
+Q: Are there any data transfer fees for copying Images?
+A: No. There are no additional fees for copying Images across Regions. Maximum Image limits for your account in destination AWS Region will still apply. Once you reach this limit you will not be able to copy more Images.
+Q: Can I bulk copy multiple Images to another Region?
+A: You can copy Images one by one to another AWS Region. You can use CopyWorkspaceImage API to programmatically copy Images.
+Q: Can I copy a BYOL Image to another AWS Region?
+A: Yes. You can copy a BYOL WorkSpace Image to another AWS Region if the destination AWS Region is enabled for BYOL.
+Q: Can I copy an Image to the same Region?
+A: Yes. You can use the copy Image operation to make a copy of the WorkSpaces Image in the same region.
+Q: What type of Amazon Elastic Block Store (EBS) volumes does Amazon WorkSpaces offer?
+A: All Amazon WorkSpaces launched after 31st January 2017 are built on general purpose solid-state drives (SSD) EBS volumes for both root and user volumes. Amazon WorkSpaces launched prior to 31st January 2017 are configured with EBS magnetic volumes. You can switch your Amazon WorkSpaces using magnetic EBS volumes to SSD EBS volumes by rebuilding them (more information can be found here). You can learn more about SSD EBS volumes here, and magnetic EBS volumes here.
+Q: Can I use custom images to launch WorkSpaces with SSD volumes, even if they were created using WorkSpaces with magnetic EBS volumes?
+A: Yes. You can use your custom images to launch WorkSpaces with SSD EBS volumes, even if they were created using WorkSpaces with magnetic EBS volumes.
+Q: Do I need to provide an AMI build using WorkSpaces with SSD EBS volumes when using my own Windows desktop licenses (BYOL)?
+A: No. You can use the AMIs you built as part of the BYOL process without any additional changes.
+Q: How do I deploy applications to my users?
+A: You have flexibility in how you deploy the right set of applications to users. First, you choose which image type to build from, either basic or Plus, which determines the default applications that will be in the WorkSpaces. Second, you can install additional software on a WorkSpace and create a custom image which can be used to launch more WorkSpaces. For more detail see the bundle documentation.
+Q: Which software can I install on an Amazon WorkSpace?
+A: For Amazon Linux, any application available in the Amazon Linux repositories is compatible and can be installed using yum install [package-name].
+For Windows, any applications that are compatible with the Windows 10 experience provided by Windows Server 2016, should run on your WorkSpaces. We recommend testing any software you would like to deploy on a ‘test’ WorkSpace before delivering it to more users. You are responsible for ensuring that you remain compliant with any licensing restrictions associated with any software you intend to install on a WorkSpace.
+Q: How do I get started with sharing my images?
+A: Log on to the
+Amazon WorkSpaces console and navigate to the “Images” section from the left hand navigation menu. Simply select the image you would like to share, click on the “Actions” button and select the “View details” option to get started.
+Q: Can I share images with any AWS account?
+A: You can share custom images created from a Windows 7 powered by Windows Server 2008 R2, Windows 10 desktop experience powered by Windows Server 2016, or Linux WorkSpaces with any AWS account. BYOL images can only be shared with other accounts that have the same AWS payer account ID.
+Q: Can I copy an image shared with me?
+A: Yes, you can copy images shared with you. Copied images will be owned by your AWS account.
+Q: Can I create a bundle and launch Amazon WorkSpaces from an image shared with me?
+A: You can copy an image shared with you and then use the copied image to create a custom bundle and launch Amazon WorkSpaces from this custom bundle.
+Q: Can I share an image with another AWS account in a different AWS Region?
+A: You can share an image with another AWS account in the same AWS Region. You can make a copy of shared image in the destination account and then copy that image to other Regions.
+Q: Can I stop sharing an image?
+A: Yes, you can stop sharing an image. Once you stop sharing an image, it will not be available in the destination account. Any copies of shared images in destination account will stay as-is.
+Storage and Hardware Bundles
+Q: Can I increase the size of my Amazon WorkSpaces storage volumes?
+A: Yes. You can increase the size of the root and user volumes attached to your WorkSpaces at any time. When you launch new WorkSpaces, you can select bundled storage configurations for root and user volumes, or choose your preferred storage size greater than the provided storage configurations. For storage configurations with 80 GB Root volume, you can choose 10 GB, 50 GB or 100 GB for User volume. You can use storage configurations with 175 GB to 2000 GB Root volume along with 100 GB to 2000 GB User volume. Please note that you need to set the Root volume to 175 GB in order to expand the User volume in the range of 100GB to 1000GB. After your WorkSpaces have been launched, you can only increase the size of the volumes using the above configurations to up to 2000 GB for each Root and User volume.
+Q: Can I decrease the size of storage volumes?
+A: No. To ensure that your data is preserved, the volume sizes of either volume cannot be reduced after a WorkSpace is launched. You can launch a Value, Standard, Performance, Power or PowerPro WorkSpace with a minimum of 80 GB for the root volume and 10 GB for the user volume. You can launch a Graphics or GraphicsPro WorkSpace with a minimum of 100 GB for the root volume and 100 GB for the user volume. For more information about configurable storage, see Modifying WorkSpaces.
+Q: How do I change the size of my Amazon WorkSpaces storage volumes?
+A: You can change the size of your storage volumes via the Amazon WorkSpaces management console, or through the Amazon WorkSpaces API.
+WorkSpaces users can also increase the size of their storage volume directly in the WorkSpaces client if this self-service management capability is enabled by the WorkSpaces administrator.
+Q: Is the storage configuration for a WorkSpace preserved when I rebuild it?
+A: Yes, each rebuild preserves the storage allocation size for WorkSpaces when using default bundles. If a WorkSpace has its volumes extended, and is rebuilt, the larger volume sizes will be preserved, even if the bundle's drive sizes are smaller.
+Q: Is the storage configuration for a WorkSpace preserved when I restore it?
+A: Yes, each restore preserves your existing storage allocation size when using WorkSpaces default bundles. For example, restoring a WorkSpace with 80GB Root and 100GB User volumes will result in a rebuilt WorkSpace with 80GB Root and 100GB User.
+If the storage allocation of a Custom bundle is increased and a linked WorkSpace is restored, the WorkSpace volumes will be increased to match the bundle’s new volume sizes.
+Q: What data can I retain after a WorkSpaces migrate?
+A: All data in the latest snapshot of the original user volume will be retained. For a Windows WorkSpace, the D drive data captured by the latest snapshot will be retained after migration and the C drive will be newly created from the target bundle image. In addition, migrate attempts to move data from the old user profile to the new one. Data that cannot be moved to the new profile will be preserved in a .notMigrated folder. For more information, please refer to the documentation.
+Q: Can I move an existing WorkSpace from a public bundle to a custom bundle?
+A: Yes. The WorkSpaces migrate function allows you to replace your WorkSpace’s root volume with a base image from another bundle. Migrate will recreate the WorkSpace using a new root volume from the target bundle image, and the user volume from the latest original user volume snapshot. For detailed information about migrate, please refer to the documentation.
+Q: What’s the difference between migrate and rebuild?
+A: WorkSpaces Migrate allows you to switch to a new bundle and have your user profile regenerated. Rebuild just refreshes your WorkSpace with a root volume generated from the base image of the original bundle.
+Q: What happens if I rebuild my WorkSpace after migrate?
+A: Migrate associates your WorkSpace with a new bundle. And a rebuild after migration will uses the newly associated bundle to generate the root volume.
+Q: Can I expand Amazon WorkSpaces magnetic storage volumes?
+A: No, configurable storage volumes are only available when using solid state drives (SSD). Any WorkSpaces launched before February 2017 might still use magnetic storage volumes. To switch from magnetic to SSD drives, rebuild your WorkSpaces.
+Q: How do custom images affect my root volume size?
+A: The root volume size of WorkSpaces launched from a custom image is, by default, the same size as the custom image. For example, if your custom image has a root volume of 100 GB, all WorkSpaces launched from that image also have a root volume size of 100 GB. You can increase your root volume size when you launch your WorkSpace, or any time after that.
+Q: Can I change my Amazon WorkSpaces bundle without performing WorkSpaces migrate?
+A: Yes. You can switch between Value, Standard, Performance, Power, or PowerPro bundles by using the Amazon WorkSpaces management console or the WorkSpaces API. When you switch hardware bundles, your WorkSpaces restart immediately. When they resume, your operating system, applications, data, and allocated storage on both the root and user volumes are all preserved.
+For example, you can launch a Standard bundle (2vCPU, 4 GiB), and later expand the volume size on both volumes to 500 GB. You can then switch to the Performance bundle (2vCPU, 7.5 GiB) while preserving your operating system, applications, and data in the expanded volume.
+Users can also change their WorkSpaces bundle directly from the WorkSpaces client if this self-service management capability is enabled by their WorkSpaces administrator.
+Q: How can I track my storage and bundle switch requests?
+A: You can use AWS CloudTrail to track the changes that you have requested.
+Q: I currently bring my own Windows licenses. Can I expand my storage volumes and switch my WorkSpaces bundles?
+A: Yes. You can take advantage of both these features even if you bring your own Windows desktop licenses. By default, you can switch WorkSpaces bundles for up to 20% of the total number of your WorkSpaces in a week. To switch more than 20% of your WorkSpaces, contact us.
+Q: Does a WorkSpace running in AutoStop mode need to be running to apply a change to the bundle type?
+A: No. When you make a change, we start a WorkSpace that isn’t running, apply the bundle change, restart it so that the changes take effect, and then stop it again. For example, you change the bundle type on a stopped Standard (2vCPU, 4 GiB) WorkSpace to Performance. We start your Standard WorkSpace, apply the bundle change, and restart it. Following the restart, your WorkSpace has Performance hardware (2vCPU, 7.5 GiB).
+Q: How do I get charged if I change storage size or hardware bundle during a month?
+A: For either change, you get charged the monthly price for AlwaysOn or the monthly fee for AutoStop WorkSpaces prorated on a per day basis.
+For example, if you increase the volume on the 10th of a month on an AlwaysOn Power WorkSpace with 175 GB, and 100 GB for root and user volumes respectively, you are charged $78 for the Power WorkSpace and $11.6 for 20 days of additional 175 GB at $0.1/GB-month (in US-East-1). Similarly, switching a bundle—for example, from Value to Standard—on the 15th of a month results in 15 days of Value WorkSpaces charge ($12.5 in US-East-1) and 15 days of Standard WorkSpaces charge ($17.5 in US-East-1).
+Q: How often can I increase volume sizes or change hardware bundle of a WorkSpace?
+A: You can increase volume sizes or change a WorkSpace to a larger hardware bundle once in a 6-hour period. You can also change to a smaller hardware bundle once in a 30-day period. For a newly launched WorkSpace, you must wait 6 hours before requesting a larger bundle.
+For example, if you increase the root and user volume of a Standard WorkSpace on 5th Dec at 11:00 AM and change it to Performance WorkSpace at the same time, on 5th Dec at 4:00 PM, you can again increase the root and user volume, and change the hardware bundle. If you change the Performance WorkSpace to a Standard WorkSpace on 6th Dec at 12:00 and want to go to a further smaller bundle (Value), you would be able to make this change on 6th Jan at 12:00.
+GPU-Enabled Bundles
+Q: Does Amazon WorkSpaces offer GPU-enabled cloud desktops?
+A: Yes. Amazon WorkSpaces offers a Graphics bundle for general purpose graphics applications such as CAD/CAM software, commercial and industrial modeling, prototyping, and mainstream graphics development.  Amazon WorkSpaces also offers a GraphicsPro bundle for performance intensive graphics applications such as 3D visualizations, graphics rendering, video encoding, and high end gaming.  Graphics and GraphicsPro bundles are available in English and Japanese.
+Q: What are GPU-enabled bundles from Amazon WorkSpaces?
+A: GPU-enabled bundles from Amazon WorkSpaces are cloud desktops optimized for workloads that benefit from graphics hardware acceleration. You can choose the Graphics or the GraphicsPro bundle, depending on the performance requirements of your graphics workload.
+The Graphics bundles are well-suited good for general-purpose graphics workloads such as computer-aided design, manufacturing, and engineering software. Each Graphics bundle comes with a high-performance NVIDIA GPU with 1,536 CUDA cores and 4 GB of video memory. Each Graphics bundle includes 8 vCPUs, 15 GiB of RAM, 4 GB of video memory, and 100 GB of storage on the user volume, and 100 GB of general-purpose persistent storage on the root volume. Graphics bundles provide a Windows 10 desktop experience powered by Windows Server 2016.
+The GraphicsPro bundles are ideal for complex graphics applications such as 3D visualizations, 3D rendering, image processing, video encoding, media encoding, seismic visualization, and data mining. GraphicsPro bundles come with a dedicated high-performance NVIDIA Tesla M60 GPU with 2048 parallel processing cores, and a hardware encoder capable of supporting up to 10 H.265 (HEVC) 1080p30 streams and up to 18 H.264 1080p30 streams. Each GraphicsPro bundle contains 16 vCPUs, 122 GiB of RAM, 8 GB of video memory, and a minimum of 100 GB for the root volume and 100 GB for the user volume. GraphicsPro bundles provide a Windows 10 desktop experience powered by Windows Server 2016.
+Q: In which AWS Regions can I launch GPU-enabled Amazon WorkSpaces bundles?
+A: You can launch Graphics or GraphicsPro bundles in the following AWS Regions: US East (N. Virginia), US West (Oregon), EU (Ireland), EU (Frankfurt), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Asia Pacific (Singapore).
+Q: Can I create a custom image for my GPU-enabled bundles?
+A: Yes. Custom images created from a GPU-enabled Amazon WorkSpaces bundle can only be used with the same type of bundle. For instance, you cannot use an image made from a Graphics bundle to launch a GraphicsPro WorkSpace.
+Q: How do I get started with GPU-enabled Amazon WorkSpaces bundles?
+A: You can launch Graphics or GraphicsPro bundles using the Amazon WorkSpaces Management Console, or the Amazon WorkSpaces API. When launching a new WorkSpace, simply select the Graphics or GraphicsPro bundle.
+Q: How much bandwidth do GPU-enabled Amazon WorkSpaces consume?
+A: Bandwidth used by GPU-enabled Amazon WorkSpaces bundles depends on the tasks being performed. If there aren’t many changes taking place on the screen, the bandwidth used is generally less than 300 kbps. If there is context switching between multiple windows, or if 3D models are being manipulated, bandwidth use can increase to several megabits per second.
+Q: Does Amazon WorkSpaces offer GPU-enabled desktops using WSP?
+A: No. Amazon WorkSpaces does not currently offer a GPU-enabled WSP bundle.
+Windows BYOL
+Q: Can I bring my Windows Desktop licenses to Amazon WorkSpaces?
+A: Yes, you can bring your own Windows 10 desktop licenses to WorkSpaces if they meet Microsoft’s licensing requirements. WorkSpaces gives you an option to run Windows 10 desktop images on physically dedicated hardware, which lets you maintain license compliance for your Windows desktops when you bring your own licenses to WorkSpaces.
+Q: Can I bring my own Windows Desktop licenses for Amazon WorkSpaces Graphics bundles?
+A: Yes, you can. Please contact us if this is something you’d like to do.
+Q: What versions of Windows desktop licenses can I bring to Amazon WorkSpaces?
+A: If your organization meets the licensing requirements set by Microsoft, you can bring your Windows 10 Enterprise licenses to Amazon WorkSpaces. You cannot use Windows OEM licenses for your Amazon WorkSpaces. Please consult with Microsoft if you have any questions about your eligibility to bring your own Windows Desktop licenses.
+Q: What benefits are there in bringing my own Windows desktop licenses to Amazon WorkSpaces?
+A: By bringing your own Windows Desktop licenses to Amazon WorkSpaces, you will save $4 per Amazon WorkSpace per month when being billed monthly, and you will save money on the hourly usage fee when being billed hourly (see the Amazon WorkSpaces pricing page for more information). Additionally, you can now use a single golden image to manage your physical and virtual desktop deployments.
+Q: What are the requirements for bringing my Windows desktop Licenses to Amazon WorkSpaces?
+A: You need an active and eligible Microsoft Volume Licensing (VL) agreement with Software Assurance and/or VDA per user license to bring your Windows 10 Desktop licenses to Amazon WorkSpaces. Please consult with your Microsoft representative to confirm your eligibility in bringing your Windows Desktop licenses to Amazon WorkSpaces.
+Q: How do I get started with bringing my Windows desktop licenses to Amazon WorkSpaces?
+A: In order to ensure that you have adequate dedicated capacity allocated to your account, please reach out to your AWS account manager or sales representative to enable your account for BYOL. alternatively, you can create a Technical Support case with Amazon WorkSpaces to get started with BYOL.
+Once enabled for your account, it’s easy to bring your existing Windows 10 Desktop OS to Amazon WorkSpaces. First, import your existing Windows desktop OS using the VM Import API. Then create your new WorkSpaces image, based on the imported VM, using the Create Image action on the Images page in the WorkSpaces Admin Console. Finally, create a custom WorkSpaces bundle using the Bundles tabs in the WorkSpaces Admin Console. You can then launch your newly created custom WorkSpaces bundle as new WorkSpaces for your users through the WorkSpaces Management console.
+You can see more information on the BYOL process in our documentation.
+Q: How will I activate my Windows 10 Desktop operating system on Amazon WorkSpaces?
+A: You can activate your Windows 10 Desktop operating system using existing Microsoft activation servers that are hosted in your VPC, or ones that can be reached from the VPC in which Amazon WorkSpaces are launched.
+Q: Can I create a new custom image of the Windows 10 Desktop image uploaded to Amazon WorkSpaces?
+A: Yes. You can use the standard WorkSpaces image management functionality to further customize the Windows 10 Desktop image and save it as a new Amazon Workspaces image in your account.
+Q: Can I launch new Amazon WorkSpaces using one of the pre-configured public bundles in the same directory with custom Windows bundles I brought to WorkSpaces?
+A: No. Your custom WorkSpaces that support BYOL for Windows 10 Desktops are launched on physically dedicated hardware to meet license compliance requirements with Microsoft. WorkSpaces launched in a directory marked for dedicated hardware can only be from the custom bundle you created that has your Windows 10 Desktop image. If you wish to launch WorkSpaces from public bundles to users in the same domain, you can create a new AWS AD Connector directory that points to the same Microsoft Active Directory as your Windows 10 Desktop WorkSpaces, and launch WorkSpaces in that directory as you normally would through the AWS Management Console or the WorkSpaces SDK and CLI.
+Q: Would I need to commit to a certain number of Amazon WorkSpaces if I want to bring my own Windows desktop license?
+A: Yes, you need to commit to running 200 Amazon WorkSpaces in a region per month on hardware that is dedicated to you. If you want to bring your own Windows desktop licenses for graphics use cases, you need to commit to at least 4 monthly or 20 hourly GPU-enabled WorkSpaces.
+Q: How long will it take before I can launch Amazon WorkSpaces using my own Windows desktop licenses and image?
+A: It can take a few hours after you perform the “Create Image” operation for your custom Windows desktop image to be available to use. You can check the status of your custom image in the WorkSpaces Console, API, or CLI.
+Q: Will all of my dedicated Amazon WorkSpaces launch in a single AZ?
+A: No. Amazon WorkSpaces launched on dedicated hardware will be balanced across two AZs. You select the AZs for Amazon WorkSpaces when you create the directory in which your Amazon WorkSpaces will be launched, and subsequent launches of Amazon WorkSpaces are automatically load balanced across the AZs selected when you created the directory.
+Q: What happens when I terminate Amazon WorkSpaces that are launched on physically dedicated hardware?
+A: You can terminate Amazon WorkSpaces when you no longer need them. You will only be billed for the Amazon WorkSpaces that are running.
+Q: What happens to Amazon WorkSpaces that are rebuilt, restored, or restarted on physically dedicated hardware?
+A: Amazon WorkSpaces that are rebuilt, restored, or restarted can be placed on any available physical server allocated to your account. A restart, restore, or rebuild of an Amazon WorkSpace can result in that instance being placed on a different physical server that has been allocated to your account.
+Q: How do I subscribe to Microsoft Office for BYOL WorkSpaces?
+A: When importing a BYOL image, you can select if you want to include Microsoft Office in the image. If selected, Office is automatically installed in the image during image creation. WorkSpaces created from this image are automatically subscribed to Microsoft Office Professional from AWS.
+Q: How is Office bundle charged on BYOL WorkSpaces?
+A: WorkSpaces launched from a BYOL image with Office bundle enabled incur the listed fee for the Office bundle every month irrespective of whether you use that WorkSpace in that month. You will not be billed for BYOL images with the Office bundle enabled, only the WorkSpaces created from an image with the Office bundle enabled. For more information on pricing for the Office bundle, visit Amazon WorkSpaces pricing page.
+Q: What software is available as part of the Office bundle for BYOL WorkSpaces?
+A: You have the option to select Microsoft Office Professional 2016 or 2019.
+Q: How do I subscribe to the Office bundle on my existing BYOL WorkSpaces?
+A: After you have created a BYOL image with the Office bundle installed, you can use the Amazon WorkSpaces migrate feature to migrate your existing BYOL WorkSpaces to ones with the Office bundle. All data in the latest snapshot of the original user volume will be retained after migration and the C drive will be newly created from the new image. You can migrate a WorkSpace created from a bundle that does not have Office provided by AWS to another WorkSpace created from a bundle that has AWS provided Microsoft Office and vice versa. Data on both root and user volumes are preserved upon migration.
+Q: How do I get updates for the Office bundle applications?
+A: Office updates are included as part of your regular Windows updates. Our image creation process will pick up the latest updates during the creation process. We recommend that you periodically update your Windows base images to stay current on all security patches and updates.
+Amazon Linux WorkSpaces
+Q: What is Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces are enterprise ready cloud desktops that organizations can provide to developers, engineers, students or office workers to get their work done.
+Q: What can I do with Amazon Linux WorkSpaces?
+A: Developers can develop software with their favorite applications like AWS CLI, AWS SDK tools, Visual Studio Code, Eclipse and Atom. Analysts can run simulations using MATLAB and Simulink. Office workers can use pre-installed applications like Libre Office for editing documents, spreadsheets, and presentations, Evolution for email, Firefox for web browsing, GIMP for image editing, Pidgin for instant messaging, and many others. You can always install more applications from the Amazon Linux repositories or other RPM based Linux repositories.
+Q: Which applications and tools come with Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces include a selection of desktop utilities and tools, development tools, and general productivity applications. Developers can quickly get started using packages like OpenJDK 8, Python, C/C++, AWS CLI, and AWS SDK. General office workers can use Libre Office for document editing, spread sheets, and presentations, Firefox for web browsing, GIMP for photo editing, Pidgin for IM, Evolution for mails, Atril for PDF documents and more for day to day productivity tasks. You can always install more applications from the Amazon Linux repositories or from other RPM based Linux repositories.
+Q: How do I get started with Amazon Linux WorkSpaces?
+A: To get started, simply create or select users from your configured directory, select Amazon Linux WorkSpaces bundles, and launch. Your users will receive instructions via email for connecting to their WorkSpaces. Please see here for the list of available hardware bundles.
+Q: How much does it cost to use Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces are available with both the hourly and monthly billing options. Detailed pricing is available here.
+Q: Which package manager does Amazon Linux supports?
+A: Amazon Linux is RPM based and uses yum package manager.
+Q: Which repositories are available with Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces are connected to the Amazon Linux core and extras repositories. You can always add other RPM based Linux repositories.
+Q: How can I request new packages for the Amazon Linux repositories?
+A: You can request new packages for the Amazon Linux repositories using the AWS developer forums here. Packages will be added at the sole discretion of Amazon Web Services.
+Q: How will I receive package updates for the Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces are regularly patched and updated from the Amazon Linux repositories.
+Q: What directory types are supported for Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces currently support Active Directory, an on-premises directory available via AD Connector and Microsoft Active Directory on AWS.
+Q: What hardware bundles are available for Amazon Linux WorkSpaces?
+A: Amazon Linux WorkSpaces are available with different hardware bundle in all regions where the Amazon WorkSpaces service operates. For a complete list, please see here.
+Q: Can I customize my Amazon Linux WorkSpaces?
+A: Yes. You can customize settings and install additional software on Amazon Linux WorkSpaces. You can also create custom images using the Amazon WorkSpaces console or API and use those images to launch WorkSpaces with your customizations for other users in your organization.
+Q: Is sudo access enabled by default on Amazon Linux WorkSpaces?
+A: By default, Amazon Linux WorkSpaces users get sudo access while root user is disabled for them. You can always modify permissions by editing /etc/sudoers file.
+Q: Is there a Amazon Linux WorkSpaces bundle using WSP?
+A: Yes. Amazon WorkSpaces offers Linux with WSP in the AWS GovCloud (US-West) Region with support for smart cards, keyboard and mouse input, and audio output.
+Compliance and Security
+Q: Is Amazon WorkSpaces HIPAA eligible?
+A: Yes. If you have an executed Business Associate Agreement (BAA) with AWS, you can use Amazon WorkSpaces with the AWS accounts associated with your BAA. If you don’t have an executed BAA with AWS, contact us and we will put you in touch with a representative from our AWS sales team. For more information, see, HIPAA Compliance.
+Q: Is Amazon WorkSpaces PCI compliant?
+A: Yes. Amazon WorkSpaces is PCI compliant and conforms to the Payment Card Industry Data Security Standard (PCI DSS). PCI DSS is a proprietary information security standard administered by the PCI Security Standards Council, which was founded by American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa Inc. PCI DSS applies to all entities that store, process or transmit cardholder data (CHD) and/or sensitive authentication data (SAD) including merchants, processors, acquirers, issuers, and service providers. The PCI DSS is mandated by the card brands and administered by the Payment Card Industry Security Standards Council. For more information, see PCI DSS Compliance.
+Q: Which credentials should be used to sign in to Amazon WorkSpaces?
+A: Users sign into their WorkSpace using their own unique credentials, which they can create after a WorkSpace has been provisioned for them. If you have integrated the Amazon WorkSpaces service with an existing Active Directory domain, users will sign in with their regular Active Directory credentials. Amazon WorkSpaces also integrates with your existing RADIUS server to enable multi-factor authentication (MFA).
+Q: Can I control the client devices that access my Amazon WorkSpaces?
+A: Yes. You can restrict access to Amazon WorkSpaces based on the client OS type, and using digital certificates. You can choose to block or allow macOS, Microsoft Windows, Linux, iOS, Android, Chrome OS, zero client, and the WorkSpaces web access client.
+Q: What is a digital certificate?
+A: A digital certificate is a digital form of identity that is valid for a specified period of time, which is used as a credential that provides information about the identity of an entity, as well as other supporting information. A digital certificate is issued by a certificate authority (CA), and the CA guarantees the validity of the information in the certificate.
+Q: What devices use digital certificates to control access to Amazon WorkSpaces?
+A: Digital certificates can be used to block or allow WorkSpaces access from macOS and Microsoft Windows client devices.
+Q: How do I use digital certificates to control access to Amazon WorkSpaces?
+A: To use digital certificates to block or allow access to Amazon WorkSpaces, you upload your root certificates to the WorkSpaces management console and distribute your client certificates to the macOS and Windows devices you want to trust. To distribute your client certificates, use your preferred solution such as Microsoft System Center Configuration Manager (SCCM), or Mobile-Device Management (MDM) software. For more information, see Restrict WorkSpaces Access to Trusted Devices.
+Q: How many root certificates can be imported to an Amazon WorkSpaces directory?
+A: For each Amazon WorkSpaces directory, you can import up to two root certificates each for macOS and Microsoft Windows devices. If two root certificates are imported, WorkSpaces will present both root certificates to the client device, and the client device will use the first certificate that chains up to either root certificate.
+Q: Can I control client device access to Amazon WorkSpaces without using digital certificates?
+A: Yes. You can control access to Amazon WorkSpaces using the device type only.
+Q: Can I use digital certificates to control Amazon WorkSpaces access from iOS, Android, Chrome OS, or zero clients?
+A: At this time Amazon WorkSpaces can use digital certificates only with macOS and Microsoft Windows client devices.
+Q: What is Multi-Factor Authentication (MFA)?
+A: Multi-Factor Authentication adds an additional layer of security during the authentication process. Users must validate their identity by providing something they know (e.g. password), as well as something they have (e.g. hardware or software generated one-time password (OTP).
+Q: What delivery methods are supported for MFA?
+A: Amazon supports one time passwords that are delivered via hardware and software tokens. Out of band tokens, such as SMS tokens are not currently supported.
+Q: Is there support for Google Authenticator and other virtual MFA solutions?
+A: Google Authenticator can be used in conjunction with RADIUS. If you are running a Linux-based RADIUS server, you can configure your RADIUS fleet to use Google Authenticator through a PAM (Pluggable Authentication Module) library.
+Q: Which Amazon WorkSpaces client applications support Multi-Factor Authentication (MFA)?
+A: MFA is available for Amazon WorkSpaces client applications on the following platforms - Windows, Mac, Linux, Chromebooks, iOS, Fire, Android, and PCoIP Zero Clients. MFA is also supported when using web access to access Amazon WorkSpaces through Chrome or Firefox web browsers.
+Q: What happens if a user forgets the password to access their Amazon WorkSpace?
+A: If either AD Connector or AWS Microsoft AD is used to integrate with an existing Active Directory domain, the user would follow your existing lost password process for your domain, such as contacting an internal helpdesk. If the user is using credentials stored in a directory managed by the WorkSpaces service, they can reset their password by clicking on the “Forgot Password” link in the Amazon WorkSpaces client application.
+Q: How will Amazon WorkSpaces be protected from malware and viruses?
+A: You can install your choice of anti-virus software on your users’ WorkSpaces. The Plus bundle options offer users access to anti-virus software, and you can find more details on this here. If you choose to install your own anti-virus software, please ensure that it does not block UDP port 4172 for PCoIP and UDP port 4195 for WSP, as this will prevent users connecting to their WorkSpaces.
+Q: How do I remove a user’s access to their Amazon WorkSpace?
+A: To remove a user’s access to their WorkSpace, you can disable their account either in the directory managed by the WorkSpaces service, or in an existing Active Directory that you have integrated the WorkSpaces service with.
+Q: Does WorkSpaces work with AWS Identity and Access Management (IAM)?
+A: Yes. Please see our documentation.
+Q: Can I select the Organizational Unit (OU) where computer accounts for my WorkSpaces will be created in my Active Directory?
+A: Yes. You can set a default Organizational Unit (OU) in which computer accounts for your WorkSpaces are created in your Active Directory. This OU can be part of the domain to which your users belong, or part of a domain that has a trust relationship with the domain to which your users belong, or part of a child domain in your directory. Please see our documentation for more details.
+Q: Can I use Amazon VPC Security groups to limit access to resources (applications, databases) in my network or on the Internet from my WorkSpaces?
+A: Yes. You can use Amazon VPC Security groups to limit access to resources in your network or the Internet from your WorkSpaces. You can select a default Amazon VPC Security Group for the WorkSpaces network interfaces in your VPC as part of the directory details on the WorkSpaces console. Please see our documentation for more details.
+Q: What is an IP Access Control Group?
+A: An IP Access Control Group is a feature that lets you specify trusted IP addresses that are permitted to access your WorkSpaces. An Access Control group is made up of a set of rules, each rule specifies a specific permitted IP address or range of addresses. you can create up to 25 IP Access Control groups with up to 10 rules per group specifying the IP addresses or IP ranges accessible to your Amazon WorkSpaces.
+Q: Can I implement IP address-based access controls for WorkSpaces?
+A: Yes. With this feature you can create up to 25 IP Access Control groups with up to 10 rules per group specifying the IP addresses or IP ranges accessible to your Amazon WorkSpaces.
+Q: How can I implement IP address-based access controls?
+A: You will have two ways to do this:
+From the WorkSpaces management console on the ‘IP Access Controls’ page, you can create access control groups by selecting ‘Create IP Access Control Groups’ and entering a group name and description. You can then add rules to your IP Access Control Group by selecting the group and going to the Rules tab, selecting ‘Edit’ and adding up to 10 rules, entering the IP addresses to allow along with a description of each rule. You can apply your IP Access Control Groups to WorkSpaces Directories on the ‘Update Directory Details’ page. See IP Access Control Groups for details.
+From the AWS Command Line Interface you can call Amazon WorkSpaces APIs to create, delete, and describe groups, create and delete rules from each group, and to add and remove groups from directories. See Amazon WorkSpaces API Reference for details.
+Q: Can IP address-based access controls be used with all WorkSpaces clients?
+A: Yes. This feature can be used with the macOS, iPad, Windows desktop, Android tablet, Chromebook clients, and web access. This feature also supports zero clients using MFA.
+Q: Which Zero Client configurations are compatible with the IP Based Access Controls feature?
+A: Zero Clients using MFA can be used with IP Based Access Controls, along with any compatible Zero Clients which do not use PCoIP Connection Manager to connect to WorkSpaces. Any connections through PCoIP Connection Manager will not be able to access WorkSpaces if IP Based Access Controls are enabled.
+Q: Are there any scenarios where a non-whitelisted IP address could access a WorkSpace?
+A: Yes. If web access is enabled, when accessing WorkSpaces through the web access client, if the IP address changes from a whitelisted IP to a non-whitelisted IP address after the user’s credentials are validated and before the WorkSpace session begins to launch, the non-whitelisted IP address would be allowed. The initial connection would require a whitelisted IP address.
+Q: How are IP addresses whitelisted if users are accessing the WorkSpaces through a Network address translation (NAT)?
+A: You will need to whitelist your public IPs with this feature, so if you have a NAT, you will need to allow access from the IPs coming from it. In this case you will be allowing access any time a user accesses WorkSpaces through a NAT.
+Q: How should IP addresses be whitelisted for VPNs?
+A: If you want to allow access from VPNs, you will need to add the public IPs of the VPN. In this case you will be allowing access any time a user accesses WorkSpaces through the VPN with public IPs whitelisted.
+Q: Can I customize the login workflow for my end users login experience?
+A: WorkSpaces supports the use of the URI (uniform resource identifier) WorkSpaces:// to open the WorkSpaces client and optionally enter the registration code, user name, and/or multi-factor authentication (MFA) code (if MFA is used by your organization).
+Q: How do I enable URI?
+A: You can create your unique URI links by following the WorkSpaces URI formatting documented in Customize How Users Log in to their WorkSpaces in the Amazon WorkSpaces Administration Guide. By providing these links to users, you enable them to use the URI on any device that has the WorkSpaces client installed. URI links can contain human-readable sensitive information if you choose to include the registration code, user name, and/or MFA information, so take precautions with how and whom you share URI information.
+Q: How can I securely implement a URI for my WorkSpaces users?
+A: WorkSpaces URIs are ideal for organizations that have an existing secure internal landing page or service portal where users access their applications. You can customize and then share the WorkSpaces URI to the portal, which gives users an easy way to access their WorkSpaces without requiring them to enter their user name and MFA multiple times or label their URI to remember which WorkSpaces registration code belongs which directory.
+Encryption
+Q: Does Amazon WorkSpaces support encryption?
+A: Yes. Amazon WorkSpaces supports root volume and user volume encryption. Amazon WorkSpaces uses EBS volumes that can be encrypted on creation of a WorkSpace, providing encryption for data stored at rest, disk I/O to the volume, and snapshots created from the volume. Amazon WorkSpaces integrates with the AWS KMS service to allow you to specify the keys you want to use to encrypt the volumes.
+Q: Which Amazon WorkSpaces bundle types support encryption?
+A: Encryption is supported on all Amazon WorkSpaces hardware and software bundle types. This includes the Windows 10 desktop experiences, and the Value, Standard, Performance, Power, PowerPro, Graphics, and GraphicsPro bundles. It also includes all Plus application bundles. Additionally, any custom bundles also support encryption.
+Q: How can I encrypt a new Amazon WorkSpace?
+A: When creating a new Amazon WorkSpace from the console or the Amazon WorkSpaces APIs, you will have the option to specify which volume(s) you want encrypted along with a key ARN from your KMS keys for encryption. Note that during the launch of a WorkSpace, you can specify whether you want encryption for the user volume, root volume or both volumes, and the key provided will be used to encrypt the volumes specified.
+Q: Can I use different keys to encrypt the root and user volumes of a WorkSpace?
+A: The root and user volumes are encrypted using a single key.
+Q: Do I need to provide a new KMS key for each WorkSpace that I want to encrypt?
+A: You can use the same KMS key to encrypt the volumes of up to 500 Amazon WorkSpaces.
+Q: Can Amazon WorkSpaces create a KMS key on my behalf?
+A: Amazon WorkSpaces creates a default master key upon your first attempt to launch a WorkSpace through the AWS Management Console. You cannot manage the lifecycle of default master keys. To control the full lifecycle of a key, configure WorkSpaces to use a KMS custom customer master key (CMK). To create a KMS custom CMK, visit the KMS console or use KMS APIs to create your own keys. Note that you can use a default key generated by KMS for your WorkSpaces which will be made available to you on your first attempt to launch Amazon WorkSpaces with encryption through the AWS Management Console.
+Q: What are the prerequisites for using KMS keys to encrypt Amazon WorkSpaces?
+A: In order to use KMS keys to encrypt Amazon WorkSpaces, the key must not be disabled, and should not have exceeded its limits (learn more about limits here). You also need to have the correct permissions and policies associated with the key to use it for encryption. To learn more about the correct permissions and policies needed on the keys, please refer to our documentation.
+Q: How will I be notified if my KMS key does not meet the pre-requisites outlined above?
+A: When you launch a new WorkSpace with the key specified, the WorkSpaces service will verify if the key is valid and eligible to be used for encryption. If the key is not valid, the launch process will fail quickly and notify you of the error associated with the key. Please note that if you change the key settings while the WorkSpace is being created, there is a chance that provisioning will fail and you will be notified of this failure through the AWS Management Console or through the DescribeWorkSpaces API call.
+Q: How will I be able to tell which Amazon WorkSpaces are encrypted and which ones are not?
+A: You will be able to see if a WorkSpace is encrypted or not from the AWS Management Console or using the Amazon WorkSpaces API. In addition to that, you will also be able to tell which volume(s) on the WorkSpace were encrypted, and the key ARN that was used to encrypt the WorkSpace. For example, the DescribeWorkSpaces API call will return information about which volumes (user and/or root) are encrypted and the key ARN that was used to encrypt the WorkSpace.
+Q: Can I enable encryption of volumes on a running Amazon WorkSpace?
+A: Encryption of WorkSpaces is only supported during the creation and launch of a WorkSpace.
+Q: What happens to a running Amazon WorkSpace when I disable the key in the KMS console?
+A: A running WorkSpace will not be impacted if you disable the KMS key that was used to encrypt the user volume of the WorkSpace. Users will be able to login and use the WorkSpace without interruption. However, restarts, rebuilds, and restores of WorkSpaces that were encrypted using a KMS key that has been disabled (or the permissions/policies on the key have been modified) will fail. If the key is re-enabled and/or the correct permissions/policies are restored, restarts, rebuilds, and restores of the WorkSpace will work again.
+Q: Is it possible to disable encryption for a running Amazon WorkSpace?
+A: Amazon WorkSpaces does not support disabling encryption for a running WorkSpace. Once a WorkSpace is launched with encryption enabled, it will always remain encrypted.
+Q: Will snapshots of an encrypted user volume also be encrypted?
+A: Yes. All snapshots of the user volume will be encrypted using the same key that was used to encrypt the user volume of the WorkSpace when it was created. The user volume once encrypted stays encrypted throughout its lifecycle. Please note that Amazon WorkSpaces does not take snapshots of the root volume of a running WorkSpace.
+Q: Can I rebuild an Amazon WorkSpace that has been encrypted?
+A: Yes. Rebuilds of a WorkSpace will work as long as the key that was used to encrypt the WorkSpace is still valid. The WorkSpace volume(s) stay encrypted using the original key after it has been rebuilt.
+Q: Can I restore an Amazon WorkSpace that has been encrypted?
+A: Yes. A WorkSpace restore will work as long as the key that was used to encrypt the WorkSpace is still valid. The WorkSpace volume(s) stay encrypted using the original key after it has been restored.
+Q: Can I create a custom image from a WorkSpace that has been encrypted?
+A: Creating a custom image from a WorkSpace that is encrypted is not supported.
+Q: Will the performance of my WorkSpace be impacted because the volume(s) are encrypted?
+A: You can expect a minimum increase in latency on IOPS on encrypted volumes.
+Q: Will encryption impact the launch time of an Amazon WorkSpace?
+A: The launch time of a WorkSpace that only requires user volume encryption are similar to those of an unencrypted WorkSpace. The launch time of a WorkSpace that requires root volume encrypt will take several more minutes.
+Q: Will encryption be supported for BYOL WorkSpaces?
+A: Yes. Amazon WorkSpaces will support encryption for BYOL WorkSpaces.
+Q: Will I be able to use the same KMS key to encrypt Amazon WorkSpaces in a different region?
+A: No. Encrypted resources in one region cannot be used in a different region, because a KMS key belongs to the region in which it was created.
+Q: Is there a charge for encrypting volumes on Amazon WorkSpaces?
+A: There is no additional charge for encrypting volumes on WorkSpaces, however you will have to pay standard AWS KMS charges for KMS API requests and any custom CMKs that are used to encrypt WorkSpaces. Please see AWS KMS pricing here. Please note that the Amazon WorkSpaces services makes a maximum of five API calls to the KMS service upon launching, restarting or rebuilding a single WorkSpace.
+Q: Can I rotate my KMS keys?
+A: Yes. You can use KMS to rotate your custom CMKs. You can configure a custom CMK that you create to be automatically rotated by KMS on an annual basis. There is no impact to WorkSpaces encrypted before the CMK rotation, they will work as expected.
+Amazon WorkSpaces Application Manager (WAM)
+Q: What is Amazon WorkSpaces Application Manager?
+A: Amazon WorkSpaces Application Manager (Amazon WAM) offers a fast, flexible, and secure way for you to deploy and manage applications for Amazon WorkSpaces with Windows. Amazon WAM accelerates software deployment, upgrades, patching, and retirement by packaging Microsoft Windows desktop applications into virtualized application containers that run as though they are natively installed.
+Q: How are Amazon WAM applications delivered to users?
+A: Amazon WAM delivers desktop apps to users' WorkSpaces with Windows as virtualized app containers using a unique cloud delivery technology. The applications execute on a WorkSpace from within the virtualized container and provide performance similar to natively-installed applications.
+Q: How can I get started with Amazon WAM?
+A: To get started with Amazon WAM, select your level of subscription (Lite or Standard,) build an application catalog in the AWS Management Console and assign applications to your users running Amazon WorkSpaces with Windows. You can build an application catalog using applications for which you own licenses, proprietary applications built in-house, and applications from the AWS Marketplace for Desktop Apps.
+After your catalog is available, you can use the AWS Management Console to assign applications from the catalog to your Amazon WorkSpaces users. Applications from the catalog can be made required or optional. Required applications are automatically installed on the appropriate WorkSpaces; optional applications are made available to users for on-demand installation.
+Q: How do I upload my applications to Amazon WAM?
+A: You can package your applications using the Amazon WAM Studio, validate using the Amazon WAM Player, and then upload your applications to Amazon WAM. For more information, see the Amazon WAM User Guide on packaging and validating.
+Q: What type of applications can be delivered using Amazon WAM?
+A: Any application compatible with Microsoft Windows 8, Windows 10, Windows Server 2012, and Windows Server 2016 can be delivered to WorkSpaces using Amazon WAM. Both 32-bit and 64-bit applications are supported.
+Q: Can I track application use with Amazon WAM?
+A: You can track usage for any applications assigned to users.
+Q: In which AWS regions is Amazon WAM available?
+A: To see a list of AWS regions where Amazon WAM is currently available, please visit Region Table.
+Q: Which Amazon WorkSpaces experiences work with Amazon WAM?
+A: You can use Amazon WAM to deploy and manage applications for Amazon WorkSpaces running the Windows 10 desktop experience.
+Q: Which AWS Directory Service directories does Amazon WAM support?
+A: Amazon WAM can be used with AWS Directory Services AD Connector and Simple AD, or AWS Managed Microsoft AD. NOTE: If you have set up a trust relationship between AWS Managed Microsoft AD in the AWS Cloud and your existing on-premises Mi crosoft Active Directory, you can’t assign applications to users in your on-premises Microsoft Active Directory.
+Q: Do Amazon WorkSpaces need Internet access to use Amazon WAM?
+A: Yes, Amazon WorkSpaces need an Internet connection to receive applications via Amazon WAM.
+Q: How do I get Amazon WAM on my users’ Amazon WorkSpaces?
+A: Your users can install the Amazon WAM desktop app on their Amazon WorkSpaces via a shortcut located on the desktop by default.
+Q: How do end users access applications that are assigned using Amazon WAM?
+A: Users can open the Amazon WAM desktop app and see all the applications available to them. You can set up applications to be required or optional. Required applications are automatically installed on user's WorkSpace, and optional applications can be installed via the Amazon WAM desktop app. For more information about the Amazon WAM desktop app, see the Amazon WAM User Guide.
+Q: How many applications can I add to my Amazon WAM catalog?
+A: There is no limit to the number of applications you can add to your Amazon WAM catalog. However, storage charges apply to applications that you upload to Amazon WAM, after the first 100 GB of storage used for your applications.
+Q: How many applications can I deliver to each Amazon WorkSpaces user via Amazon WAM?
+A: You can assign up to 50 applications to each Amazon WorkSpaces user.
+Q: Can I use tags to categorize applications in my Amazon WAM catalogs?
+A: Yes, you can assign tags to applications and service-related charges for WAM by simply tagging your Amazon WorkSpaces. To learn more about assigning tags to your Amazon WorkSpaces, follow the steps listed on this web page: Tagging WorkSpaces.
+Q: How will I be billed for Amazon WAM?
+A: The Lite plan is available at no cost, and the Standard plan costs $5/user/month for each user enrolled in the WAM Standard plan with one or more applications assigned. There may be a cost for applications from AWS Marketplace for Desktop Applications that users activate.
+Q: Can I have users on both the Lite and the Standard plans?
+A: No. You can subscribe to either the Lite or Standard plan, and all users will be on the same plan.
+Q: Can I change my subscription plan during the billing period?
+A: Yes. On the “Subscription plan” page” of the WAM console you can upgrade or downgrade your plan and view the feature details for the two subscription plans. You have the opportunity to view the current usage before confirming the upgrade.
+Q: What will happen to my applications if I downgrade from the Standard to the Lite plan?
+A: Users will be moved to the most up to date version of applications from AWS Marketplace for Desktop Apps, and will lose access to any applications that you packaged and uploaded to Amazon WAM.
+Q: Is there a limit for storage of my app packages?
+A: Both the Lite and Standard plans include 100GB of storage for the apps, and S3 charges will apply for additional storage.
+Q: Can I share an Amazon WAM package with another AWS account?
+A: Yes. Packages created and approved by you within your AWS account can be shared with other AWS accounts in the same region. You can set up package sharing via the Packages tab on the Amazon WAM console by adding package permissions to the AWS account to which you wish to share the package.
+Q: Can I set limits on the packages that I share with other AWS accounts?
+A: No. At this time, you cannot place any restrictions on packages that are shared.
+Q: How do I use an Amazon WAM package that is shared with me?
+A: You can use an Amazon WAM package shared with you by creating an application and assigning the application to your users.
+Q: Can I make any changes to a package that has been shared with my account?
+A: No. A package made available to you by another AWS account cannot be modified.
+Q: How do I know if I can trust a package that has been shared with my account?
+A: Always verify that your package is shared from a trusted source. Verify the source by validating the AWS account ID and check if it is an account that you trust.
+Q: Can I delete an Amazon WAM package?
+A: Yes. You can delete an Amazon WAM package that belongs to your account within an AWS region by launching Amazon WAM Studio in your packaging instance. Once you delete a package, all versions of the package will be deleted. Also, you can only delete packages that don’t have apps assigned or have not been shared with another AWS account. If you have an application created, you will first need to delete the application before you can delete the package. If you have shared a package with another AWS account, you will first need to remove sharing of the package before deleting the package.
+Q: What happens to an Amazon WAM package once it is deleted?
+A: Once an Amazon WAM package is deleted, it will no longer be available from within your account. The package will be fully deleted once any accounts you shared the package with have deleted applications using the package.
+AWS Marketplace for Desktop Apps
+Q: What is AWS Marketplace for Desktop Apps?
+A: AWS Marketplace for Desktop Apps is a new category in the AWS Marketplace that can deploy applications to Amazon WorkSpaces with Windows through Amazon WAM. The AWS Marketplace for Desktop Apps includes both applications you can purchase on a monthly basis and free apps. You can find applications from developers such as Microsoft, Corel and Foxit and popular open source titles.
+Q: How do I use desktop applications from AWS Marketplace?
+A: You can subscribe to applications from the AWS Marketplace for Desktop Apps via Amazon WorkSpaces console. Start by selecting the Application Catalog in Amazon WorkSpaces console, browse and add applications from the AWS Marketplace to your application catalog. Once the applications are in your catalog you can assign the applications to your WorkSpaces users. The applications can then be accessed by users via the Amazon WorkSpaces Application Manager (Amazon WAM) desktop app.
+Q: How will I be charged for applications from the AWS Marketplace for Desktop Apps?
+A: You will be charged the price listed on AWS Marketplace for Desktop Apps for each application on a monthly subscription basis. Software subscriptions are billed monthly, even if they are used on Amazon WorkSpaces set to bill hourly. A subscription is activated and charged the first time a user launches an application and will renew monthly until access to the application is removed for that user. Charges for an application are prorated for the remainder of the first month in which a user launches them. Subsequent months are billed for the entire month. Subscriptions that are removed in the middle of a month will not receive a refund for the remainder of the month.
+Q: How do I unsubscribe from an application?
+A: To unsubscribe from an application, simply remove the users and groups assigned to use the application. Once this is completed, the application will immediately not be available to your users and there will be no new charges for the application in the following month.
+Q: Can Amazon WorkSpaces end users access the AWS Marketplace for Desktop Apps directly?
+A: No, only the administrator of the WorkSpaces account will see the entire AWS Marketplace in the WorkSpaces console. End users will only see the applications you provisioned for them.
+Q: Where can I view charges for my application subscriptions from AWS Marketplace for Desktop Apps?
+A: You can view the charges for application subscriptions from AWS Marketplace for Desktop Apps by signing in to the AWS billing console and viewing the AWS Marketplace section in the estimate bill. You can view the applications subscribed, monthly price, and total charge for each application.
+Q: How do I get support for the applications I use from AWS Marketplace for Desktop Apps?
+A: After subscribing to the application on AWS Marketplace for Desktop Apps, you can select the application details to view support information. Expand the support information to view details on how to obtain support.
+Client Access, Web Access, and User Experience
+Q: Where can I download the Amazon WorkSpaces client application?
+A: You can download the Amazon WorkSpaces client application for free on the client download website.
+Q: Can I use any other client (e.g., an RDP client) with Amazon WorkSpaces?
+A: No. You can use any of the free clients provided by AWS, which includes client applications for Windows, macOS, Chromebooks, iOS, Fire tablets, and Android tablets, or Chrome or Firefox web browsers, to access your Amazon WorkSpaces.
+Q: Which operating systems are supported by the Amazon WorkSpaces client applications?
+A: Amazon WorkSpaces clients are available for the following operating systems: • Microsoft Windows 7, Windows 8, and Windows 10 • Apple macOS (10.8.1 and above) • Linux (Ubuntu Linux 18.04 and above) • Google Chrome OS (45 and above) • Apple iOS (8.0 and above) • Google Android (4.4 and above) • Amazon Fire OS 4 and Fire OS 5
+Q: Which tablet devices are supported by the Amazon WorkSpaces client application?
+A: Amazon WorkSpaces clients are available for the following devices: • Apple iPad Pro 12.9-inch and 9.7-inch models • Apple iPad Mini 2, 3 and 4 • Apple iPad Air and iPad Air 2 • Amazon Fire tablets released after 2012: Fire 7", Fire HD 6/7/8/10, Fire HDX 8.9", Kindle Fire 7", and Kindle Fire HDX 7/8.9 • Samsung and Nexus tablets While we expect other popular Android tablets running Android version 4.4 to work correctly with the Amazon WorkSpaces client, there may be some that are not compatible. If you are interested in support for a particular device, please let us know via the Amazon WorkSpaces forum.
+Q: Which smartphones are supported by the Amazon WorkSpaces client application?
+A: Amazon WorkSpaces clients are available for the following devices: Samsung Galaxy S8 and S8+ with Samsung DeX Station If you are interested in support for a particular device, please let us know via the Amazon WorkSpaces forum.
+Q: What is a PCoIP Zero Client?
+A: A PC-over-IP (PCoIP) Zero Client is a single-purpose hardware device that can enable access to Amazon WorkSpaces. Zero Clients include hardware optimization specifically for the PCoIP protocol, and are designed to require very little administration.
+Q: Can I use PCoIP Zero Clients with Amazon WorkSpaces?
+A: Yes, Amazon WorkSpaces supports PCoIP Zero Client devices that have the Teradici Tera2 chipset. PCoIP Zero client will only work with PCoIP WorkSpaces, they will not work with WSP WorkSpaces. For a complete list of Zero Clients that are compatible with Amazon WorkSpaces please reference Teradici's website.
+Q: Will my Amazon WorkSpace running in AutoStop running mode preserve the state of applications and data when it stops?
+A: Amazon WorkSpaces preserve the data and state of your applications when stopped. On reconnect, your Amazon WorkSpace will resume with all open documents and running programs intact. Graphics enabled WorkSpaces with Windows preserve your data when stopped, and any running application sessions will be closed. On reconnect, your Amazon WorkSpace will retain your files and folders in your last saved location.
+Q: How do I resume my Amazon WorkSpace after it stops?
+A: By logging into your Amazon WorkSpace from the Amazon WorkSpaces client application, the service will automatically restart your Amazon WorkSpace. When you first attempt to log in, the client application will notify you that your Amazon WorkSpace was previously stopped, and that your new session will start once your WorkSpace has resumed.
+Q: How long does it take for my Amazon WorkSpace to be available once I attempt to log in?
+A: If your Amazon WorkSpace has not yet stopped, your connection is almost instantaneous. If you Amazon WorkSpace has already stopped, in most cases it will be available within sixty to ninety seconds.
+Q: Which peripherals can be used with the Amazon WorkSpaces client applications?
+A: Amazon WorkSpaces clients support:
+• Keyboard, mouse, and touch input (touch input is only supported on tablet clients).  Amazon WorkSpaces do not currently support a 3D mouse.
+• Audio output to client device
+• Analog and USB headsets
+For WSP there is additional support for Smartcards.
+Linux WorkSpaces in the AWS GovCloud (US-West) Region only support input, display, and audio out.
+Q: What kind of headsets can be used for audio conversations?
+A: Most analog and USB headsets will work for audio conversations through WorkSpaces running Windows. For USB headsets, you should ensure they show up as a playback device locally on your client computer.
+Q: Can I use the built in microphone and speakers for making audio calls?
+A: Yes. For the best experience, we recommend using a headset for audio calls. However, you may experience an echo when using the built in microphone and speakers with certain communication applications.
+Q: Does Audio-in work with mobile clients such as Android, iOS, and Chromebooks?
+A: Audio-in is supported on the Windows, OSX and iOS clients.
+Q: How do I enable Audio-in for my WorkSpaces?
+A: Audio-in is enabled for all new WorkSpaces. For WorkSpaces with Windows, enabling the WorkSpaces Audio-in capability requires local logon access inside your WorkSpace. If you have a Group Policy restricting user local logon in your WorkSpace, we will detect it and not apply the Audio-in update to the WorkSpace. You can remove the Group Policy and the Audio-in capability will be enabled after the next reboot.
+Q: Does WorkSpaces support devices with high DPI screens?
+A: Yes. The Amazon WorkSpaces desktop client application will automatically scale the in-session display to match the DPI settings of the local device.
+Q: How many monitors does Amazon WorkSpaces support? What monitor resolution is supported?
+A: Amazon WorkSpaces Value, Standard, Performance, Power, PowerPro and GraphicsPro bundles support a maximum of four displays. The maximum supported resolution depends on the number of displays, as shown in the following table:
+Displays
+Maximum Supported Resolution
+1
+3840 x 2160 pixels
+2
+4
+1920 x 1200 pixels
+Graphics bundles support only a single monitor configuration with a maximum resolution of 2560x1600.
+Q: Will my bandwidth usage be higher when I use four monitors, or I use 4k Ultra HD resolution?
+A: Yes. The bandwidth requirements for WorkSpaces depends on two factors (a) the number of screens it has to stream to and (b) the amount of pixel changes taking place in each screen.
+Q: Can each monitor have different orientation?
+A: Yes. You can have some of your monitors in landscape mode and others in portrait mode to suit your desktop productivity needs.
+Q: Will Amazon WorkSpaces remember my monitor settings between sessions?
+A: The fullscreen mode setting will be preserved. If you quit a WorkSpaces session in the fullscreen mode, you will be able to log into the fullscreen mode next time. However, display configurations will not be saved. Every time you initiate a WorkSpaces session, the client application extracts the EDID of uses your local setup configuration and sends that to the WorkSpaces host to deliver an optimal display experience.
+Q: What happens to my display settings when I connect to my WorkSpace from a different desktop?
+A: When you connect from a different desktop computer, the display settings of that computer will take precedence to deliver an optimal display experience.
+Q: Will the iPad and Android applications support Keyboard/Mouse input?
+A: The Android client supports both keyboard and mouse input. The iPad client supports keyboard and mouse (SwiftPoint GT mouse) inputs. While we expect most popular keyboard and mouse devices to work correctly, there may be devices that may not be compatible. If you are interested in support for a particular device, please let us know via the Amazon WorkSpaces forum.
+Q: Can I access my Amazon WorkSpaces through a web browser?
+A: Yes, you can use Amazon WorkSpaces web access to log in to your Amazon WorkSpace with Windows through Chrome or Firefox web browsers. You do not need to install any software, and you can connect from any network that can access the public Internet. To enable WorkSpaces web access, first, if you have an exisiting WorkSpace with Windows 10, you should reboot it. Then your WorkSpaces admin needs to enable web access from the AWS Console in the WorkSpaces Directory Details – Access Control Options section. Once these steps are complete, to access your WorkSpace through a browser, simply visit the Amazon WorkSpaces web access page using a supported browser and enter your WorkSpaces registration code and then login to the WorkSpace with your username and password.
+Q: What is Amazon WorkSpaces web access?
+A: Amazon WorkSpaces web access allows you to access your Amazon WorkSpace with Windows from Chrome or Firefox running on a computer connected to any network that can access the public Internet. web access does not exclude users from using native Amazon WorkSpaces client applications to connect to their WorkSpaces with Windows; users can choose between web access and native client applications. Web access is available here.
+Q: Which web browsers can I use to access Amazon WorkSpaces web access?
+A: Amazon WorkSpaces web access works with the latest Google Chrome and Firefox versions running on Windows, Mac, or Linux. Mobile versions of Chrome and Firefox are not currently supported.
+Q: Can I enable web access for Non-English based Amazon WorkSpaces?
+A: Yes. Web access support is currently available on WorkSpaces with English (US), Japanese, Korean, and French (Canadian) based versions Windows desktops.
+Q: Do I need to install any additional software in order to access my Amazon WorkSpaces through a web browser?
+A: No, you do not need to install any programs, add-ins, or plugins in order to access your Amazon WorkSpaces through a supported web browser.
+Q: How do I get started using web access to log in to my Amazon WorkSpaces?
+A: First, your Amazon WorkSpace needs to be enabled for web access. This can be done through the AWS Management Console by your IT administrator. Once this is complete, you can log in using web access, available here. The first time you log in, you will be asked to enter the registration code that was provided in your welcome email.
+Q: How will I know if my Amazon WorkSpace has been enabled for web access?
+A: If your Amazon WorkSpace has been set to block web access, you will receive an error message when you attempt to log in, informing you to contact your system administrator to enable web access.
+Q: Can I use Web Access to access my Amazon WorkSpaces on any network?
+A: Yes. You can use web access on any network that can access the public Internet. If you can browse the web, then you can connect to your Amazon WorkSpace.
+Q: Which Amazon WorkSpaces bundles support web access?
+A: You can use web access to connect to the Value, Standard, Performance, Power, and PowerPro Amazon WorkSpaces with Windows 10 or Windows Server 2016 operating systems. Graphics, GraphicsPro bundles and Amazon Linux WorkSpaces currently do not support web access.
+Q: What local devices can I use when connecting to my Amazon WorkSpace through Chrome or Firefox?
+A: You will be able to use your mouse and keyboard as input devices. Local peripheral devices—including printers, USB drives, webcams, and microphones—will not be available. Though clipboard redirection will not work across your local operating system and your Amazon WorkSpace, copy and paste operations within your WorkSpace will work.
+Q: In which regions is web access available?
+A: Amazon WorkSpaces web access is available in all regions where Amazon WorkSpaces is available.
+Q: Do I need to enter a registration code to use web access?
+A: The first time you log in using web access, you will be asked to enter the registration code that was provided in your welcome email. At the moment, web access does not offer the ability to store multiple different registration codes.
+Q: When using a web browser to access my Amazon WorkSpace, how can I control my session?
+A: You can use the connection bar along the top of your browser window to control your session. The connection bar allows you to disconnect, enter and exit full screen mode, and send a “Ctrl-Alt-Del” key sequence to the Amazon WorkSpace. It can be pinned in place, or set to hide automatically.
+Q: How do I disconnect from my Amazon WorkSpace when accessing it through a web browser?
+A: You can disconnect using the “Disconnect” command in the connection bar, by closing the browser tab, or by quitting the browser program. Web access does not support reconnecting to your Amazon WorkSpace - you must log in again to reconnect.
+Q: Will Amazon WorkSpaces support additional client devices and virtual desktop operating systems?
+A: We continually review our roadmap to see what features we can add to address our customers' requirements. If there is a client device or virtual desktop operating system that you'd like Amazon WorkSpaces to support, please email us with details of your request.
+Q: What is the end user experience when Multi-Factor Authentication (MFA) is enabled?
+A: Users will be prompted for their Active Directory username and password, followed by their OTP. Once a user passes both Active Directory and RADIUS validation, they will be logged in to their Amazon WorkSpace. To learn more, visit our documentation.
+Q: How can I determine the best region to run my Amazon WorkSpaces?
+A: The Amazon WorkSpaces Connection Health Check Website compares your connection speed to each Amazon WorkSpaces region and recommends the fastest one.
+Q: Which languages are supported by Amazon WorkSpaces?
+A: Amazon WorkSpaces bundles that provide the Windows 10 desktop experience currently support English (US), French (Canadian), Korean, and Japanese. You can also download and install language packs for Windows directly from Microsoft. For more information, visit this page. Amazon WorkSpaces client applications currently support English (US), German, Chinese (Simplified), Japanese, French (Canadian), Korean, and Portuguese.
+Q: Can I access my WorkSpaces using SmartCard instead of username/password?
+A: Yes - WSP WorkSpaces can be accessed with SmartCard instead of username/password. You can access WorkSpaces using smartcard if you use an Active Directory Connector and set the directory API to smartcard enabled. Note: PCoIP WorkSpaces cannot support SmartCard features.
+Q: What types of SmartCards are officially supported?
+A: WorkSpaces officially Supports CAC and PIV SmartCards.
+Q:How many SmartCards can be used in session at the same time
+A: WorkSpaces can only handle one SmartCard in-session at the same time
+Q: Is SmartCard Support available in all regions?
+A: In-session SmartCard support for use inside of the WorkSpaces is available in all regions in which WSP is supported. Pre-session SmartCard for authentication to WorkSpaces is only available for WSP WorkSpaces in AWS GovCloud (US-West) Region.
+Maintenance and Setup
+Q: Does the Amazon WorkSpaces service have maintenance windows?
+A: Yes. Amazon WorkSpaces enables maintenance windows for both AlwaysOn and AutoStop WorkSpaces by default.
+For AlwaysOn (monthly) WorkSpaces, the maintenance schedule is controlled by the OS settings on the WorkSpace. The default maintenance window is a four-hour period from 00h00 – 04h00 (this time window is based on the time zone settings you have set for your Amazon WorkSpaces) each Sunday morning. During this time your WorkSpaces may not be available.
+For AutoStop (hourly) WorkSpaces, the default maintenance window is typically from 00h00 to 05h00 everyday starting on the 3rd Monday of the month in the time zone of the WorkSpaces’s AWS region. The Maintenance window might take up to two weeks. WorkSpaces can be maintained on any day in the maintenance window. You can set the Maintenance mode for AutoStop WorkSpaces in the WorkSpaces management console. For more information see Manage the WorkSpace Running Mode. The maintenance window for AutoStop WorkSpaces is currently not configurable.
+Q: Can I opt out of maintenance windows for my WorkSpaces?
+A: It is highly recommended to keep your WorkSpaces maintained regularly. If you want to run your own WorkSpaces maintenance schedule, it is possible to opt out of the service default maintenance windows for Windows WorkSpaces.
+For AutoStop (hourly) WorkSpaces, you can disable the Maintenance mode on the console. For AlwaysOn Windows WorkSpaces, the maintenance window is controlled by the system settings and can be configured via Automatic Updates GPO settings. Currently, you cannot opt out of the maintenance windows for AlwaysOn Amazon Linux WorkSpaces.
+Q: Will my Amazon WorkSpaces require software updates?
+A: Your Amazon WorkSpaces provide users with the Amazon Linux cloud desktops, Windows 10 experience, provided by Windows Server 2016. The underlying OS, and any applications installed in the WorkSpace may need updates.
+Q: How will my Amazon WorkSpaces be patched with software updates?
+A: By default, your Amazon WorkSpaces are configured to install software updates. Amazon Linux WorkSpaces will be updated to install the latest security and software patches, and Amazon WorkSpaces with Windows have Windows Updates turned on. You can customize these settings, or use an alternative patch management approach. Updates are installed at 2am each Sunday.
+Q: What action is needed to receive updates for the Amazon WorkSpaces service?
+A: No action is needed on your part. Updates are delivered automatically to your Amazon WorkSpaces during the maintenance window. During the maintenance window, your WorkSpaces may not be available.
+Q: Can I turn off the software updates for the Amazon WorkSpaces service?
+A: No. The Amazon WorkSpaces service requires these updates to be provided to ensure normal operation of your users’ WorkSpaces.
+Q: I don’t want to have Windows Update automatically update my Amazon WorkSpaces. How can I control updates and ensure they are tested in advance?
+A: You have full control over the Windows Update configuration in your WorkSpaces, and can use Active Directory Group Policy to configure this to meet your exact requirements. If you would like to have advance notice of patches so you can plan appropriately we recommend you refer to Microsoft Security Bulletin Advance Notification for more information.
+Q: How are updates for applications installed in my WorkSpaces provided?
+A: Amazon WorkSpaces running Amazon Linux are updated via pre-configured Amazon Linux yum repositories hosted in each WorkSpaces region and the updates are automatically installed. Patches and updates requiring a reboot are installed during our weekly maintenance window.
+For all other applications, updates can be delivered via the automatic update service for each application if one is available. For applications without an automatic update service, you will need to evaluate the software vendor’s recommended updating approach and follow that if necessary.
+Q: How do I manage my WorkSpaces?
+A: The WorkSpaces Management console lets you provision, restart, rebuild, restore, and delete WorkSpaces. To manage the underlying OS for the WorkSpaces, you can use standard Microsoft Active Directory tools such as Group Policy or your choice of Linux orchestration tools to manage the WorkSpaces. In the case when you have integrated WorkSpaces with an existing Active Directory domain, you can manage your WorkSpaces using the same tools and techniques you are using for your existing on-premises desktops. If you have not integrated with an existing Active Directory, you can set up a Directory Administration WorkSpace to perform management tasks. Please see the documentation for more information.
+You can also give WorkSpaces users the ability to perform common tasks on their own by enabling self-service management. Once enabled, WorkSpaces users can do things like restart, rebuild, restore, increase volume size, change compute type, and change running mode directly from the WorkSpaces client with no IT or helpdesk intervention.
+Q: Can I use tags to categorize my Amazon WorkSpaces resources?
+A: Yes, you can assign tags to existing Amazon WorkSpaces resources including WorkSpaces, directories registered with WorkSpaces, images, custom bundles, and IP Access Control Groups. You can also assign tags during the creation of new Amazon WorkSpaces and new IP Access Control Groups. You can assign up to 50 tags (key/value pairs) to each Amazon WorkSpaces resource using the AWS Management Console, the AWS Command Line Interface, or the Amazon WorkSpaces API. These tags automatically get applied to all Amazon WorkSpaces Application Manager (WAM) applications and WAM-related service charges associated with a WorkSpace. To learn more about assigning tags to your Amazon WorkSpaces resources, follow the steps listed on this web page: Tag WorkSpaces Resources.
+Q: Can I control whether my users can access Amazon WorkSpaces web access?
+A: Yes. You can use the AWS Management Console to control whether Amazon WorkSpaces in your directory can be accessed using web access, by visit the directory details page. Note: this setting can only be applied to all Amazon WorkSpaces in a directory, not at an individual Amazon WorkSpace level.
+Q: What is the difference between restarting and rebuilding a WorkSpace?
+A: A restart is just the same as a regular operating system (OS) reboot. A rebuild will retain the user volume on the WorkSpace but will return the WorkSpace to its original state (any changes made to the system drive will not be retained).
+Q: What is the difference between WorkSpaces Rebuild and Restore?
+A: A rebuild will retain the user volume on the WorkSpace but will return the WorkSpace to its original state (any changes made to the system drive will not be retained). A restore will retain both the root and user volumes on the WorkSpace but will return the WorkSpace to the last healthy state as detected by the service.
+Q: How do I remove an Amazon WorkSpace I no longer require?
+A: To remove a WorkSpace you no longer require, you can “delete” the Workspace. This will remove the underlying instance supporting the WorkSpace and the WorkSpace will no longer exist. Deleting a WorkSpace will also remove any data stored on the volumes attached to the WorkSpace, so please confirm you have saved any data you must keep prior to deleting a WorkSpace.
+Q: Can I provide more than one Amazon Workspace per user?
+A: No. You can currently only provide one WorkSpace for each user.
+Q: How many Amazon WorkSpaces can I launch?
+A: You can launch as many Amazon WorkSpaces as you need. Amazon WorkSpaces sets default limits, but you can request an increase in these limits here. To see the default limits for Amazon WorkSpaces, please visit our documentation.
+Q: What is the network bandwidth that I need to use my Amazon WorkSpace?
+A: The bandwidth needed to use your WorkSpace depends on what you're doing on your WorkSpace. For general office productivity use, we recommend that a bandwidth download speed of between 300Kbps up and 1Mbps. For graphics intensive work we recommend bandwidth download speeds of 3Mbps.
+Q: What is the maximum network latency recommended while accessing a WorkSpace?
+A: For PCoIP, the maximum round trip latency recommendation is 250 ms, but the best user experience will be achieved at less than 100 ms. When the RTT exceeds 375ms, the WorkSpaces client connection is terminated. For WorkSpaces Streaming Protocol (WSP), the best user experience will be achieved with round trip latency below 250ms. If the RTT is between 250ms and 400ms, the user can access the WorkSpace, but performance is degraded.
+Q: Is there a recommended power plan or power settings for my WorkSpaces?
+A: Yes. For WorkSpaces running Windows, we recommend selecting the "High Performance" power plan in Windows.  For WorkSpaces running Linux, you should select a power plan that optimizes for performance.
+Q: Does WorkSpaces need any Quality of Service configurations to be updated on my network?
+A: If you wish to implement Quality of Service on your network for WorkSpaces traffic, you should prioritize the WorkSpaces interactive video stream which is comprised of real time traffic on UDP port 4172 for PCoIP and 4195 for WSP. If possible, this traffic should be prioritized just after VoIP to provide the best user experience.
+Q: Is MFA on Amazon WorkSpaces available in my region?
+A: Support for MFA is available in all AWS Regions where Amazon WorkSpaces is offered.
+Q: What are the prerequisites for setting up a PCoIP Zero Client?
+A: Zero Clients should be updated to firmware version 4.6.0 (or newer). The WorkSpace will need to be using the PCoIP protocol, WSP protocol does not support PCoIP Zero Clients. You will need to run the PCoIP Connection Manager to enable the clients to successfully connect to Amazon WorkSpaces. Please consult the Amazon WorkSpaces documentation for a step by step guide on how to properly setup the PCoIP Connection Manager, and for help on how to find and install the necessary firmware required for your Zero Clients.
+Q: How do I get support with Amazon WorkSpaces?
+A: You can get help from AWS Support, and you can also post in the Amazon WorkSpaces Forum.
+Billing and Pricing
+Q: How does billing work for Amazon WorkSpaces?
+A: You can pay for your Amazon WorkSpaces either by the hour, or by the month. You only pay for the WorkSpaces you launch, and there are no upfront fees and no term commitments. The fees for using Amazon WorkSpaces include use of both the infrastructure (compute, storage, and bandwidth for streaming the desktop experience to the user) and the software applications listed in the bundle.
+Q: How much does an Amazon WorkSpace cost?
+A: Please see our pricing page for the latest information.
+Q: Can I pay for my Amazon WorkSpaces by the hour?
+A: Yes, you can pay for your Amazon WorkSpaces by the hour. Hourly pricing is available for all WorkSpaces bundles, and in all AWS regions where Amazon WorkSpaces is offered.
+Q: How does hourly pricing work for Amazon WorkSpaces?
+A: Hourly pricing has two components: an hourly usage fee, and a low monthly fee for fixed infrastructure costs. Hourly usage fees are incurred only while your Amazon WorkSpaces are actively being used, or undergoing routine maintenance. When your Amazon WorkSpaces are not being used, they will automatically stop after a specified period of inactivity, and hourly metering is suspended. When your Amazon WorkSpaces resume, hourly charges begin to accrue again.
+Q: How do I get started with hourly billing for my Amazon WorkSpaces?
+A: To launch an Amazon WorkSpace to be billed hourly, simply select a user, choose an Amazon WorkSpaces bundle (a configuration of compute resources and storage space), and specify the AutoStop running mode. When your Amazon WorkSpace is created, it will be billed hourly.
+Q: What is the difference between monthly pricing and hourly pricing for Amazon WorkSpaces?
+A: With monthly billing, you pay a fixed monthly fee for unlimited usage and instant access to a running Amazon WorkSpace at all times. Hourly pricing allows you to pay for your Amazon WorkSpaces by the hour and save money on your AWS bill when your users only need part-time access to their Amazon WorkSpaces. When your Amazon WorkSpaces being billed hourly are not being used, they automatically stop after a specified period of inactivity, and hourly usage metering is suspended.
+Q: How do I select hourly billing or monthly billing for my Amazon WorkSpaces?
+A: To make hourly billing possible, Amazon WorkSpaces now operates in two running modes – AutoStop and AlwaysOn. The AutoStop running mode allows you to pay for your Amazon WorkSpaces by the hour. The AlwaysOn running mode is used when paying a fixed monthly fee for unlimited usage of your Amazon WorkSpaces. You can easily choose between monthly and hourly billing by selecting the running mode when you launch Amazon WorkSpaces through the AWS Management Console, the Amazon WorkSpaces APIs, or the Amazon WorkSpaces Command Line Interface. You can also switch between running modes for your Amazon WorkSpaces at any time.
+Q: When do I incur charges for my Amazon WorkSpace when paying by the hour?
+A: Hourly usage fees start accruing as soon as your Amazon WorkSpace is running. Your Amazon WorkSpace may resume in response to a login request from a user, or to perform routine maintenance.
+Q: When do I stop incurring charges for my Amazon WorkSpaces when paying by the hour?
+A: Hourly usage charges are suspended when your Amazon WorkSpaces stop. AutoStop automatically stops your WorkSpaces a specified period of time after users disconnect, or when scheduled maintenance is completed. The specified time period is configurable and is set to 60 minutes by default. Note that partial hours are billed as a full hour, and the monthly portion of hourly pricing does not suspend when your Amazon WorkSpaces stop.
+Q: Can I force hourly charges to suspend sooner?
+A: You can manually stop Amazon WorkSpaces from the AWS Management Console, or by using the Amazon WorkSpaces APIs. To stop the monthly fee associated with your hourly Amazon WorkSpaces, you need to remove the Amazon WorkSpaces from your account (note: this also deletes all data stored in those Amazon WorkSpaces).
+Q: Can I switch between hourly and monthly billing?
+A: Yes, you can switch from hourly to monthly billing for your Amazon WorkSpaces at any time by switching the running mode to AlwaysOn in the AWS Management Console, or through the Amazon WorkSpaces APIs. When you switch, billing immediately changes from hourly to monthly, and you are charged a prorated amount at the monthly rate for the remainder of the month for AlwaysON, along with the base monthly fee and hourly usage fees of AutoStop that have been already billed for the month. Your Amazon WorkSpaces will continue to be charged monthly unless you switch the running mode back to AutoStop.
+You can switch from monthly to hourly billing by setting the running mode to AutoStop in the AWS Management Console or through the Amazon WorkSpaces APIs. Switching from monthly to hourly billing will take effect the following month as you will have already paid for your Amazon WorkSpaces for that month. Your Amazon WorkSpaces will continue to be charged hourly unless you switch the running mode back to AlwaysOn. Please note that billing renewals happen at 00:00 UTC Time on the first of each month.
+WorkSpaces users can also switch between monthly and hourly billing directly from the WorkSpaces client if this self-service management capability is enabled by their WorkSpaces administrator.
+Q: If I don’t use my Amazon WorkSpace for the full month, are the fees prorated?
+A: If you’re paying for your Amazon WorkSpaces monthly, your Amazon WorkSpaces are charged for the full month’s usage. If you’re paying hourly (AutoStop running mode), you are charged for the hours during which your Amazon WorkSpaces are running or undergoing maintenance, plus a monthly fee for fixed infrastructure costs. In both cases, the monthly fee is prorated in the first month only.
+Q: Will I be charged the low monthly fee associated with hourly billing if I don’t use my Amazon WorkSpaces in a given month?
+A: Yes, you will be charged a small monthly fee for the Amazon WorkSpaces bundle you selected. If you’ve chosen an Amazon WorkSpaces Plus bundle, you will be charged for the software subscription as well. You can find the monthly fees for all Amazon WorkSpaces on the pricing page here.
+Q: How are the Plus software bundles charged when I pay hourly for my Amazon WorkSpaces?
+A: Plus bundles are always charged monthly, even if you’re paying for your Amazon WorkSpaces by the hour. If you selected a Plus bundle when you launched your WorkSpaces, you will incur the listed fee for the Plus software bundle even if you do not use those Amazon WorkSpaces in a particular month.
+Q: Will I be able to monitor how many hours my Amazon WorkSpaces have been running?
+A: Yes, you will be able to monitor the total number of hours your Amazon WorkSpaces have been running in a given period of time through the Amazon CloudWatch “UserConnected” metric.
+Q: Does Amazon WorkSpaces pricing include bandwidth costs?
+A: Amazon WorkSpaces pricing includes network traffic between the user’s client and their WorkSpace. Web traffic from WorkSpaces (for example, accessing the public Internet, or downloading files) will be charged separately based on current AWS EC2 data transfer rates listed here.
+Q: How will I be charged for Amazon WorkSpaces that I launch that are based on a custom image?
+A: There is no additional charge for Amazon WorkSpaces created from custom images. You will be charged the same as the underlying bundles on which the customized images are based.
+Q: Can I use custom images for Amazon WorkSpaces that are billed hourly?
+A: Yes. You can launch Amazon WorkSpaces billed hourly from images that you create and upload. There is no additional charge for Amazon WorkSpaces launched from custom images. You will be charged the same as the underlying bundles on which the customized images are based.
+Q: Is there a charge to use Amazon WorkSpaces client applications?
+A: The Amazon WorkSpaces client applications are provided at no additional cost, and you can install the clients on as many devices as you need to. You can access these here.
+Q: Is there an additional charge to access Amazon WorkSpaces using web access?
+A: There is no additional charge to access Amazon WorkSpaces using web access. For Amazon WorkSpaces set to bill hourly, you will keep getting billed for the time you leave a browser tab open with an actively running Amazon WorkSpace.
+Q: Can I use tags to obtain usage and cost details for Amazon WorkSpaces, Amazon WorkSpaces Application Manager (WAM), and WAM applications on my AWS monthly billing report?
+A: Yes. By setting tags to appear on your monthly Cost Allocation Report, your AWS monthly bill will also include those tags. You can then easily track costs according to your needs. To do this, first assign tags to your Amazon WorkSpaces by following the steps listed on this web page: Tagging WorkSpaces. Next, select the tag keys to include in your cost allocation report by following the steps listed on this web page: Setting Up Your Monthly Cost Allocation Report.
+Q: Are there any costs associated with tagging Amazon WorkSpaces?
+A: There are no additional costs when using tags with your Amazon WorkSpaces.
+Q: What does the Amazon WorkSpaces Application Manager (Amazon WAM) cost?
+A: Amazon WAM is available in two versions - lite or standard. The Amazon WAM lite subscription is available at no charge, and the Amazon WAM standard subscription costs $5/user/month. You can learn more about Amazon WAM here.
+Q: Can I pay for Amazon WAM on an hourly basis?
+A: Amazon WAM is not available for hourly billing. You will still be charged monthly for Amazon WAM usage, even if you’re using Amazon WAM to deliver applications to an Amazon WorkSpace being billed hourly.
+Q: Do I have to pay to use the Amazon WAM Studio or Amazon WAM Player?
+A: No. There is no additional charge for using the Studio or Player. You will be charged for AWS resources such as the Amazon EC2 instance hours, EBS storage, and bandwidth when using the Studio to package your applications for Amazon WAM.
+Q: What are the requirements for schools, universities, and public institutions to reduce their WorkSpaces licensing?
+A: Schools, universities, and public institutions may qualify for reduced WorkSpaces licensing fees. Please reference the Microsoft Licensing Terms and Documents for qualification requirements. If you think you may qualify, please create a case with the AWS support center here. Select Regarding:<Account and Billing Support>, Service:<Billing>, Category:<Qualify as Educational institution>, and enter the required info. We will review your information and work with you to reduce your fees and costs.
+Q: What do I need to provide to qualify as a school, university, or public institution?
+A: You will need to provide AWS your institution's full legal name, principle office address, and public website URL. AWS will use this information to qualify you for reduced user fees for qualified educational institutions with your WorkSpaces. Please note: The use of Microsoft software is subject to Microsoft’s terms. You are responsible for complying with Microsoft licensing. If you have questions about your licensing or rights to Microsoft software, please consult your legal team, Microsoft, or your Microsoft reseller. You agree that we may provide the information to Microsoft in order to apply educational pricing to your Amazon WorkSpaces usage.
+Q: Does qualification for Amazon WorkSpaces reduced user fees affect other AWS cloud services?
+A: No, your user fees are specific to Amazon WorkSpaces, and do not affect any other AWS cloud services or licenses you have.
+Q: Is there a charge for streaming data between my WorkSpaces and End Users' devices?
+A: The charges for the Service include the cost of streaming data between your WorkSpaces and End Users’ devices unless you stream via VPN, in which case you will be charged VPN data transfer rates in addition to any applicable Internet data transfer changes. Other WorkSpace data transfer will be charged using Amazon EC2 data transfer pricing.
+Free Tier
+Q: Am I eligible to take advantage of the Amazon WorkSpaces Free Tier offer?
+A: The Amazon WorkSpaces Free Tier offer is available to new or existing AWS customers that have not previously used WorkSpaces. Customers must be a new Amazon customer for WorkSpaces and have an account that is not under an AWS Partner account.
+Q: What Amazon WorkSpaces bundles are available as part of the Free Tier?
+A: The Amazon WorkSpaces Free Tier allows you to provision two Standard bundle WorkSpaces with 80 GB Root and 50 GB User volumes. The Standard bundle WorkSpace offers a cloud desktop with 2 vCPUs, 4 GB of memory, 80 GB Root and 50 GB User volume of SSD-based storage, and you can choose between Amazon Linux WorkSpaces, Amazon WorkSpaces with Windows 10 desktop experiences powered by Windows Server. As with all WorkSpaces, your WorkSpace comes with the pre-installed applications, and access to Amazon WorkDocs with 50 GB included storage.
+For a limited time, starting February 1, 2021 through July 31 2021, we are expanding the Amazon WorkSpaces Free Tier to allow you to provision up to 50 WorkSpaces with Windows Standard bundle with 80 GB Root and 50 GB User Volumes. Additionally, the Free Tier includes 1 WorkSpace with Windows Performance bundle with 80 GB Root and 100 GB User Volume, 1 WorkSpace with Windows Value bundle with 80 GB root and 10 GB User Volume, and 2 WorkSpaces with Linux Standard bundle with 80 GB root and 50 GB User Volume.
+Q: What is included with the Amazon WorkSpaces Free Tier?
+A: The WorkSpaces Free Tier includes two Standard Bundle WorkSpaces with 80 GB Root and 50 GB User volumes, for 40 hours of combined use per month, for two calendar months. As with all bundles, your WorkSpace comes with the pre-installed applications, and access to Amazon WorkDocs with 50 GB included storage.
+For a limited time, starting February 1, 2021 through July 31, 2021, Amazon WorkSpaces Free Tier provides:
+50 WorkSpaces with Windows Standard bundle with 80 GB Root and 50 GB User Volumes, running in AutoStop mode for up to 10,000 hours of combined use per month
+1 WorkSpace with Windows performance bundle with 80 GB Root and 100 GB User Volumes, running in AutoStop mode for up to 200 hours of combined use per month
+1 WorkSpace with Windows Value bundle with 80 GB Root and 10 GB User Volumes, running in AutoStop mode, for up to 200 hours of combined use per month, and
+2 WorkSpaces with Linux Standard bundle with 80 GB Root and 50 GB User Volumes, running in AutoStop mode, for up to 400 hours of combined use per month
+Q: Can I use any other Amazon WorkSpaces bundles as part of the Free Tier?
+A: The Amazon WorkSpaces Free Tier includes the Standard bundle only. For a limited time, starting February 1, 2021, Amazon WorkSpaces Free Tier includes Value, Standard, and Performance bundles through July 31, 2021.
+Q: What is the duration of the Amazon WorkSpaces Free Tier?
+A: The Free Tier offer starts when you launch your first Amazon WorkSpace, and expires at the end of the second calendar month. For example, if you launched your first WorkSpace on the 15th of the month, the Free Tier offer extends to the end of the next month.
+However, for a limited time, starting February 1, 2021, the Free Tier offer starts when you launch your first Amazon WorkSpace and expires on July 31, 2021.
+Q: If I use less than 40 hours in my first month of Free Tier use, do the remaining hours roll over to the next month?
+A: The Amazon WorkSpaces Free Tier allows you to use a combined total of 40 hours per month. Unused hours expire when the new calendar month starts.
+However, for a limited time starting February 1, 2021 through July 31 2021, Amazon WorkSpaces Free Tier allows you to use a combined total of 10,000 hours on Windows Standard bundle WorkSpaces, 200 hours on Windows Performance bundle WorkSpace, 200 hours on Windows Value bundle WorkSpace, and 400 hours on Linux Standard bundle WorkSpaces per month.
+Q: What happens if I use my WorkSpaces for more than 40 hours in a calendar month during the Free Tier period?
+A: In the event you exceed 40 hours of use in a month during the Free Tier period, you are billed at the current hourly rate for Amazon WorkSpaces.
+Again, for a limited time, starting February 1, 2021, if you are on Free Tier, you will not be billed unless you exceed combined total of 10,000 hours on Windows Standard bundle WorkSpaces, 200 hours on Windows Performance bundle WorkSpace, 200 hours on Windows Value bundle WorkSpace, and 400 hours on Linux Standard bundle WorkSpaces per month.
+Q: What happens if I convert my Amazon WorkSpaces from AutoStop (hourly billing) to AlwaysOn (monthly billing) before my Free Tier period expires?
+A: To qualify for the Free Tier, your Amazon WorkSpaces need to run in the AutoStop running mode. You can change the running mode of your WorkSpaces to AlwaysOn, but this action converts your WorkSpaces to monthly billing, and your Free Tier period will end.
+Q: Hourly billing for Amazon WorkSpaces includes a fee for hours used, and a monthly infrastructure cost. Is the monthly infrastructure cost waived during the Amazon WorkSpaces Free Tier?
+A: The monthly infrastructure fee for Amazon WorkSpaces is waived for Free Tier use.
+Q: What happens when my Amazon WorkSpaces Free Tier period ends?
+A: When your Free Tier period ends, your Amazon WorkSpaces will be billed at the current hourly rate. In addition, the monthly infrastructure fee will start to apply. For current rates, see Amazon WorkSpaces Pricing.
+Q: How can I track my Amazon WorkSpaces Free Tier usage?
+A: To track your Amazon WorkSpaces usage, go to the My Account page in the AWS management console and see your current and past activity by service, and region. You can also download usage reports. For more information, see Understanding Your Usage with Billing Reports.
+Connectivity
+Q: Can I use an HTTPS proxy to connect to my Amazon WorkSpaces?
+A: Yes, you can configure a WorkSpaces Client app to use an HTTPS proxy. Please see our documentation for more information.
+Q: Can I connect Amazon WorkSpaces to my VPC?
+A: Yes. The first time you connect to the WorkSpaces Management Console, you can choose an easy ‘getting started’ link that will create a new VPC and two associated subnets for you as well as an Internet Gateway and a directory to contain your users. If you choose to access the console directly, you can choose which of your VPCs your WorkSpaces will connect to. If you have a VPC with a VPN connection back to your on-premises network, then your WorkSpaces will be able to communicate with your on-premises network (you retain the usual control you have over network access within your VPC using all of the normal configuration options such as security groups, network ACLS, and routing tables).
+Q: Can I connect to my existing Active Directory with my Amazon WorkSpaces?
+A: Yes. You can use AD Connector or AWS Microsoft AD to integrate with your existing on-premises Active Directory.
+Q: Will my Amazon WorkSpaces be able to connect to the Internet to browse websites and download applications?
+A: Yes. You have full control over how your Amazon WorkSpaces connect to the Internet based on regular VPC configuration. Depending on what your requirements are you can either deploy a NAT instance for Internet access, assign an Elastic IP Address (EIP) to the Elastic Network Interface (ENI) associated with the WorkSpace, or your WorkSpaces can access the Internet by utilizing the connection back to your on-premises network.
+Q: Can I use IPv6 addresses for my Amazon WorkSpaces bundles?
+A: Yes. You can use IPv6 addresses for  Value, Standard, Performance, Power, and PowerPro bundles. At this time, IPv6 addresses are not supported in Graphics, or GraphicsPro bundles.
+Q: Can my Amazon WorkSpaces connect to my applications that are running in Amazon EC2 such as a file server?
+A: Yes. Your WorkSpaces can connect to applications such as a fileserver running in Amazon EC2 (both “Classic” and VPC networking environments). All you need to do is ensure appropriate route table entries, security groups and network ACLs are configured so that the WorkSpaces can reach the EC2 resources you would like them to be able to connect to.
+Q: What are the pre-requisites for using my digital certificates on Amazon WorkSpaces?
+A: To use your certificates to manage which client devices can access Amazon WorkSpaces, you need to distribute your client certificates using your preferred solution such as Microsoft System Center Configuration Manager (SCCM), or a Mobile-Device Management (MDM) software solution to the devices you want to trust. Your root certificates are imported into the WorkSpaces management console. For more information, please see Restrict WorkSpaces Access to Trusted Devices.
+Q: What are the pre-requisites for enabling MFA on Amazon WorkSpaces?
+A: To enable MFA on WorkSpaces, you will need to configure AD Connector, and have an on-premises RADIUS server(s). Your on-premises network must allow inbound traffic over the default RADIUS server port (1812) from the AD Connector server(s). Additionally, you must ensure that usernames match between Active Directory and your RADIUS server. To learn more, visit our documentation.
+Directories
+Q: Do I need to set up a directory to use the Amazon WorkSpaces service?
+A: Each user you provision a WorkSpace for needs to exist in a directory, but you do not have to provision a directory yourself. You can either have the WorkSpaces service create and manage a directory for you and have users in that directory created when you provision a WorkSpace. Alternatively, you can integrate WorkSpaces with an existing, on-premises Active Directory so that users can continue to use their existing credentials meaning that they can get seamless applications to existing applications.
+Q: If I use a directory that the Amazon WorkSpaces service creates for me, can I configure or customize it?
+A: Yes. Please see our documentation for more details.
+Q: Can I integrate Amazon WorkSpaces with my existing on-premises Active Directory?
+Q: How do I integrate Amazon WorkSpaces with my on-premises Microsoft Active Directory?
+A: There are two ways you can integrate Amazon WorkSpaces with your on-premises Microsoft Active Directory (AD): you can set up an interforest trust relationship with your AWS Microsoft AD domain controller, or you can use AD Connector to proxy AD authentication requests.
+To configure an interforest trust relationship between your on-premises Microsoft AD and your AWS Microsoft AD please see the documentation here. To configure AD Connector, please see the documentation here.
+Once a trust is established, you can select the domain where your user accounts reside directly in the Amazon WorkSpaces console, and proceed to provisioning WorkSpaces for your users. Please note that usernames across domains need to be unique per instance of AWS Microsoft AD.
+Q: There are two options for integrating Amazon WorkSpaces with my on-premises Microsoft Active Directory. Which one should I use?
+A: You can integrate Amazon WorkSpaces with your on-premises Microsoft Active Directory (AD) either by setting up an interforest trust relationship with your AWS Microsoft AD domain controller, or by using AD Connector to proxy AD authentication requests.
+When using interforest trust, you only need a single trust relationship between your on-premises AD and your AWS Microsoft AD domain controller. You can assign Amazon WorkSpaces to users in any of your on-premises domains, and AWS Microsoft AD automatically discovers and routes authentication requests to the correct domain controller. This option works well when your environment consists of multiple on-premises Microsoft AD domains.
+When using AD Connector, a separate AD Connector is required for each of your on-premises Microsoft AD domains with users that will need WorkSpaces assigned to them. Using AD Connector works well for environments with a single on-premises domain, or for proof-of-concept projects.
+For more information, please visit this page.
+Q: Can I use the Amazon WorkSpaces APIs to create new WorkSpaces for users across domains when I have an interforest trust relationship established with AWS Microsoft AD?
+A: Yes. When using the Amazon WorkSpaces API to launch WorkSpaces, you will need to specify the domain name as part of the username, in this format: “NETBIOS\username” or “corp.example.com\username”. For more information, please visit this page.
+Q: Can I apply the same Group Policy object settings from my on-premises Microsoft Active Directory to Amazon WorkSpaces?
+A: Yes. If you’re using an interforest trust relationship between your on-premises Microsoft AD and your AWS Microsoft AD domain controller, you will need to ensure that your Group Policy object (GPO) settings are replicated across domains before they can be applied to Amazon WorkSpaces. If you are using AD Connector, your GPO settings will be applied to your WorkSpaces much like any other computer in your domain.
+Q: Can I apply Active Directory policies to my Amazon WorkSpaces using the directory that the WorkSpaces service creates for me?
+Q: What happens to my directory when I remove all of my Amazon WorkSpaces?
+A: You may keep your AWS directory in the cloud and use it to domain join EC2 instances or provide directory users access to the AWS Management Console. You may also delete your directory.
+If there are no WorkSpaces being used with your Simple AD or AD Connector for 30 consecutive days, you will be charged for this directory as per the AWS Directory Service pricing terms. If you delete your Simple AD or AD Connector you can always create a new one when you want to start using WorkSpaces again.
+Q: Which AWS Directory Services support the use of PCoIP Zero Clients?
+A: PCoIP Zero Clients can be used with the AD Connector and Simple AD directory services from AWS. Currently, Zero Clients cannot be used with the AWS Directory Service for Microsoft Active Directory.
+CloudWatch Monitoring
+Q: What does Amazon CloudWatch monitor for Amazon WorkSpaces?
+A: Amazon WorkSpaces is integrated with both CloudWatch Metrics and CloudWatch Events.
+You can use Amazon CloudWatch Metrics to review health and connection metrics for individual WorkSpaces and all WorkSpaces belonging to a directory. You can set up CloudWatch Alarms on these metrics to be alerted about changes to WorkSpaces health, or about issues your users may have connecting to their WorkSpaces.
+You can use CloudWatch Events to view, search, download, archive, analyze, and respond to successful WorkSpace logins. Amazon WorkSpaces client applications send WorkSpaces Access events to CloudWatch Events when a user successfully logs in to a WorkSpace. All Amazon WorkSpaces client applications send these events.
+A: Yes, you will be able to monitor the total number hours your Amazon WorkSpaces has been running in a given period of time through Amazon CloudWatch “UserConnected” metric.
+Q: In what regions can I use Amazon WorkSpaces with CloudWatch Metrics?
+A: CloudWatch Metrics are available with Amazon WorkSpaces in all AWS regions where WorkSpaces is available.
+Q: What does CloudWatch Metrics cost?
+A: There is no additional cost for using CloudWatch Metrics with WorkSpaces via the CloudWatch console. There may be additional charges for setting up CloudWatch Alarms and retrieving CloudWatch Metrics via APIs. Please see CloudWatch pricing for more information.
+Q: How do I get started with CloudWatch Metrics for my Amazon WorkSpaces?
+A: CloudWatch Metrics are enabled by default for all your WorkSpaces. Visit the AWS Management Console to review the metrics and set up alarms.
+Q: What metrics are supported for the Amazon WorkSpaces client application and PCOIP Zero Clients?
+A: Please see the documentation for more information on Amazon CloudWatch metrics with Amazon WorkSpaces.
+Q: What metrics are supported for Amazon WorkSpaces web access usage?
+A: The following metrics are currently supported for reporting on Amazon WorkSpaces web access usage: • Available • Unhealthy • UserConnected • Maintenance
+Please see the documentation for more information on Amazon CloudWatch Metrics with Amazon WorkSpaces.
+Q: What CloudWatch Events are generated by Amazon WorkSpaces?
+A: Successful WorkSpace logins. Amazon WorkSpaces sends access event information to CloudWatch Events when a user successfully logs in to a WorkSpace from any WorkSpaces client application.
+Q: How can I utilize CloudWatch Events with WorkSpaces?
+A: You can use CloudWatch Events to view, search, download, archive, analyze, and respond based on rules that you configure. You can either use the AWS Console under CloudWatch to view and interact with CloudWatch Events or use services such as Lambda, ElasticSearch, Splunk and other partner solutions using Kinesis Streams or Firehose to take actions based on your event data. For storage, CloudWatch Events recommends using Kinesis to push data to S3. For more information on how to use CloudWatch Events, see the Amazon CloudWatch Events User Guide.
+Q: What information is included in WorkSpaces Access Events?
+A: Events are represented as JSON objects which include WAN IP address, WorkSpaces ID, Directory ID, Action Type (ex. Login), OS platform, Timestamp and a Success/Failure indicator for each successful login to WorkSpaces. See our documentation for more details here.
+Q: What does CloudWatch Events cost?
+A: There is no additional cost for using CloudWatch Events with Amazon WorkSpaces. You will be charged for any other services you use that take action based on CloudWatch Events, such as Amazon ElasticSearch, and AWS Lambda. This also includes other CloudWatch services such as CloudWatch Metrics, CloudWatch Logs, and CloudWatch Alarms if your usage surpasses the CloudWatch Free Tier limits. All of these services are integrated with and can be triggered from CloudWatch Events.
+Printing
+Q: Can I print from my Amazon WorkSpace?
+A: Yes, Amazon WorkSpaces with Windows support local printers, network printers, and cloud printing services. Amazon WorkSpaces with Amazon Linux support network printers, and cloud printing services.
+Q: How do I enable printer auto-redirection for my Amazon WorkSpace?
+A: By default, local printer auto-redirection is disabled. You can use the Group Policy settings to enable this feature. This will ensure that your local printer is set as the default every time you connect to your WorkSpace.
+Q: How do I print to my local printer?
+A: If you have a local printer configured, it will show up in your WorkSpaces printer menu the next time you connect to your WorkSpace. If not, you will need to configure a local printer outside of your WorkSpace. Once this is done, select your local printer from the print menu, and select print.
+Q: Why can’t I see my local printer from the printing menu?
+A: Most printers are already supported by Amazon WorkSpaces. If your printer is not recognized, you may need to install the appropriate device driver on your WorkSpace.
+Q: How do I print to a network printer?
+A: Any printer which is on the same network as your Amazon WorkSpace and is supported by Windows Server 2016 can be added as a network printer. Once a network printer is added, it can be selected for printing from within an application.
+Q: Can I use my Amazon WorkSpace with a cloud printing service?
+A: You can use cloud printing services with your WorkSpace including, but not limited to, Cortado ThinPrint®.
+Q: Can I print from my tablet or Chromebook?
+A: The Amazon WorkSpaces clients for tablets and Chromebook support cloud printing services including, but not limited to, Cortado ThinPrint®. Local and network printing are not currently supported.
+User Self Service Management
+Q: What self-service management capabilities are available for Amazon WorkSpaces?
+A: You can choose to let users accomplish typical management tasks for their own WorkSpace, including restart, rebuild, change compute type, and change disk size. You can also let users switch from monthly to hourly billing (and back). You can choose to enable specific self-service management capabilities that suit your needs directly in the WorkSpaces Admin Console.
+Q: How do I get started with self-service management capabilities for my WorkSpaces users?
+A: Self-service management capabilities are enabled by default when you register a directory with WorkSpaces. You can choose to not enable them when you register a directory.
+You can modify specific self-service management capabilities from the WorkSpaces console. On the Directories page, select the directory you want to modify for self-service management. Next, select “Update Details” under the “Actions” menu. You can find all self-service management capabilities options under the “User Self Service Permissions” section. You can also use WorkSpaces APIs to modify self-service management capabilities.
+Q: How do end users access self-service management capabilities?
+A: Self-service management capabilities are available to users through the WorkSpaces client on Windows and Mac devices.
+Q: Do I need to log into WorkSpaces to use self-service management capabilities?
+A: Yes, you must authenticate to use any self-service management capabilities.
+Q: Can I continue to use my WorkSpace while a self-service management actions is being performed?
+A: You can continue to use your WorkSpace while disk size or running mode is being changed. Restarting, rebuilding, restoring, and changing compute type requires disconnecting from your WorkSpaces session.
+Q: How much does it cost to use self-service management capabilities?
+A: Self-service management capabilities are available at no additional cost. You can enable self service management for tasks such as changing the WorkSpace bundle type, or increasing the volume size. When end users perform these tasks, the billing rate for those WorkSpaces may change.
+High Availability and Disaster Recovery
+Q: How do I get high availability with Amazon WorkSpaces?
+A: To reduce downtime from maintenance and disruptive events, you may consider deploying WorkSpaces in multiple Regions, and making sure that regional WorkSpaces maintenance schedules do not overlap. We recommend that you use cross-Region redirection, so that you can direct users to WorkSpaces Regions not under maintenance. For more information on WorkSpaces cross-Region redirection, please refer to Amazon WorkSpaces documentation.
+Q: How do I plan for disaster recovery for my WorkSpaces?
+A: You may consider deploying WorkSpaces in multiple Regions for regional resiliency, and designing a cross-region failover strategy in preparation for disruptive events. Leveraging DNS failover and health check capabilities, WorkSpaces cross-Region redirection could point your users to log into WorkSpaces in a disaster recovery Region when the primary WorkSpaces Region is not reachable. For more information on WorkSpaces cross-Region redirection, please refer to Amazon WorkSpaces documentation.
+Q: How do I define my WorkSpaces’ primary Regions and backup Regions with cross-Region redirection?
+A: You can define the Region priority by configuring routing policies for your FQDN on DNS. For more information, please refer to Amazon WorkSpaces documentation.
+Q: Will my old registration codes still work after I enable cross-Region redirection?
+A: Yes. Old registration codes will keep working. Users can register with either old registration codes or fully qualified domain names (FQDN). Cross-Region redirection only works when end users register with FQDNs.
+Q: Can I use internal domain names for cross-Region redirection?
+A: Yes. WorkSpaces cross-Region redirection works with both public domain names and domain names in private DNS zones. If your end users use private FQDNs from the public internet, the WorkSpaces clients will return errors reporting invalid registration codes.
+Q: What AWS Regions have the WorkSpaces cross-Region redirection support?
+A: WorkSpaces cross-Region redirection works in all AWS Regions where Amazon WorkSpaces is available except AWS GovCloud and China Regions.
+Q: What client types support WorkSpaces cross-Region redirection?
+A: Windows, macOS, and Linux WorkSpaces clients support cross-Region redirection.
+Protocol
+Q: Why are there 2 protocols available when I choose my WorkSpaces bundle?
+A: WorkSpaces wants to offer protocol choice to enable flexibility to meet different customer needs.
+Q: Can I have a directory with both PCoIP and WSP users?
+A: Yes. When you launch a new WorkSpace into the directory you can enable either WSP or PCoIP workspaces as long as the user does not already have a WorkSpace in that directory.
+Q: Can the same user have both a PCoIP and a WSP WorkSpace?
+A: Yes, this is possible, as long as a separate directory is provisioned for that user. A single user cannot have both a PCoIP and a WSP WorkSpace in the same directory. However, a single directory can have a mix of both PCoIP and WSP based WorkSpaces users.
+Q: Can I switch between the PCoIP and WSP protocols on a WorkSpace?
+A: Yes. One streaming protocol is selected when a WorkSpace is created. To switch a WorkSpace to a different streaming protocol after the WorkSpace has been created, you can use the WorkSpaces migrate tool which requires a rebuild of the WorkSpace as long as your WorkSpaces bundle supports WSP.
+Learn more about Amazon WorkSpaces pricing
+Visit the pricing page
+Ready to build?
+Get started with Amazon WorkSpaces
+Have more questions?
+Contact us
+Page Content

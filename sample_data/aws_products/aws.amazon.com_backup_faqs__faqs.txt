@@ -1,0 +1,53 @@
+General
+Q: What is AWS Backup?
+A: AWS Backup is a centralized backup service that makes it easy and cost-effective for you to backup your application data across AWS services in the AWS Cloud, helping you meet your business and regulatory backup compliance requirements. AWS Backup makes protecting your AWS storage volumes, databases, and file systems simple by providing a central place where you can configure and audit the AWS resources you want to backup, automate backup scheduling, set retention policies, and monitor all recent backup and restore activity.
+Q: How does AWS Backup work with other AWS services that have backup capabilities?
+A: Today, several AWS services offer backup features that help you protect your data, such as EBS snapshots, RDS snapshots, Amazon FSx backups, DynamoDB backups, and Storage Gateway snapshots. All existing per-service backup capabilities remain unchanged. AWS Backup provides a new, common way to manage backups across AWS services both in the AWS Cloud and on premises. AWS Backup introduces a centralized backup console that offers backup scheduling, retention management, and backup monitoring. AWS Backup supports existing backup functionality provided by EBS, RDS, Amazon FSx, DynamoDB, and Storage Gateway. For AWS services that have backup functionality built on AWS Backup, such as Amazon EFS, AWS Backup provides you with backup management capabilities, such as backup scheduling, retention management and backup monitoring, as well as additional features, such as lifecycling backups to a low-cost storage tier, backup storage and encryption that is independent from its source data, and backup access policies.
+Q: Why should I use AWS Backup?
+A: Backing up your data is an important step towards protecting your application and ensuring that you meet your business and regulatory backup compliance requirements. Even durable resources are susceptible to threats like bugs in your application that could cause accidental deletions or corruption. Building and managing your own backup workflows across all your applications in a compliant and consistent manner can be complex and costly. AWS Backup removes the need for costly, custom solutions or manual processes by providing a fully managed, policy-based backup solution that provides automated backup scheduling and backup retention management.
+Q: How does AWS Backup work?
+A: To get started with AWS Backup, create a backup policy called a backup plan, which defines parameters such as how frequently to backup your resources and how long to store those backups. You can then assign resources to backup plans and AWS Backup will start automatically backing up these resources and managing backup retention on your behalf according to your backup plan. You can use AWS Backup’s central console to view your AWS resources that are being protected, restore from a backup, and monitor backup and restore activity.
+Q: What are the key features of AWS Backup?
+A: AWS Backup provides a centralized console, automated backup scheduling, backup retention management, and backup monitoring and alerting. AWS Backup also offers advanced features such as lifecycling backups to a low-cost storage tier, backup storage and encryption that is independent from its source data, and backup access policies.
+Q: What can I backup using AWS Backup?
+A: You can use AWS Backup to manage the backups of EBS volumes, EC2 instances, RDS databases, DynamoDB tables, EFS file systems, Amazon FSx file systems, and Storage Gateway volumes.
+Q: Can I use AWS Backup to backup on-premises data?
+A: Yes. AWS Backup integrates with Storage Gateway to enable you to backup your on-premises Storage Gateway volumes, providing a common way to manage the backups of your application data both on premises and in the AWS cloud.
+Q: Can I use AWS Backup to access backups created by services with existing backup capabilities?
+A: Yes. Backups created using services with existing backup capabilities, such as EBS snapshots or DynamoDB backups, can be accessed using AWS Backup. Conversely, backups created by AWS Backup can be accessed using the source service, like EBS or DynamoDB.
+Q: How does AWS Backup relate to Amazon Data Lifecycle Manager and when should I use one over the other?
+A: Amazon Data Lifecycle Management (DLM) policies and backup plans created in AWS Backup work independently from each other and provide two ways to manage EBS snapshots. DLM provides a simple way to manage the lifecycle of EBS resources, such as volume snapshots. You should use DLM when you want to automate the creation, retention, and deletion of EBS snapshots. You should use AWS Backup to manage and monitor backups across the AWS services you use, including EBS volumes, from a single place.
+Q: Does AWS Backup offer a Service Level Agreement (SLA)?
+Yes. The AWS Backup SLA provides for a service credit if a customer's monthly uptime percentage is below our service commitment in any billing cycle.
+Core concepts
+Q: What is a recovery point?
+A: A recovery point represents the content of a resource at a specified time. Recovery points also include metadata such as information about the resource, restore parameters, and tags.
+Q: What is a Backup Plan?
+A: A backup plan is a policy expression that defines when and how you want to backup your AWS resources, such as DynamoDB tables or EFS file systems. You assign resources to backup plans and AWS Backup will then automatically backup and retain backups for those resources according to the backup plan. Backup plans are composed of one or more backup rules. Each backup rule is composed of 1) a backup schedule, which includes the backup frequency (Recovery Point Objective - RPO) and backup window, 2) a lifecycle rule that specifies when to transition a backup from one storage tier to another and when to expire the recovery point, 3) the Backup Vault in which to place the created recovery points in, and 4) the tags to be added to backups upon creation. For example, a backup plan might have a “daily backup rule” and a “monthly backup rule”. The daily rule backs up resources every day at midnight and retains the backups for one month. The monthly rule takes a backup once a month on the beginning of every month and retains the backups for one year.
+Q: What is a Backup Vault?
+A: A Backup Vault is a logical backup container for your recovery points that allows you to organize your backups.
+Q: How does AWS Backup’s lifecycle feature work?
+A: For AWS services that introduce backup functionality built on AWS Backup, such as Amazon EFS, AWS Backup provides a lifecycle feature that allows you to automatically transition your recovery points from a warm storage tier backed by Amazon S3 that provides millisecond access time to your backups to a lower-cost cold storage tier backed by Glacier that provides a restore time of 3-5 hours.
+Q: How does encryption work in AWS Backup?
+A: Backups from AWS services that introduce backup functionality built on AWS Backup, such as Amazon EFS, are encrypted in-transit and at-rest independently from the source services, giving your backups an additional layer of protection. Encryption is configured at the Backup Vault level. Backups from services with existing backup capabilities are encrypted using the source service’s backup encryption methodology. For example, EBS snapshots are encrypted using the encryption key of the volume the snapshot was created from.
+Q: How do I use access policies in a Backup Vault to control access to backups
+A: AWS Backup allows you to set resource-based policies on Backup Vaults, enabling you to control access to the Backup Vault and the backups in it.
+Q: What services provide support for AWS Backup’s advanced features?
+A: Amazon EFS supports AWS Backup’s advanced features with backup functionality integrated with AWS Backup.
+Compliance
+Q: Which compliance programs does AWS Backup support?
+A: AWS has the longest-running compliance program in the cloud and are committed to helping customers navigate their requirements. AWS Backup has been assessed to meet global and industry security standards. It complies with PCI DSS, ISO 9001, 27001, 27017, and 27018), in addition to being HIPAA eligible. That makes it easier for you to verify our security and meet your own obligations. For more information and resources, visit our compliance pages. You can also go to the Services in Scope by Compliance Program page to see a full list of services and certifications.
+Q: Is AWS Backup PCI compliant?
+A: Yes. AWS Backup is PCI-DSS compliant, which means you can use it to transfer payment information. You can download the PCI Compliance Package in AWS Artifact to learn more about how to achieve PCI Compliance on AWS.
+Q: Is AWS Backup HIPAA eligible?
+A: Yes. AWS Backup is HIPAA eligible, which means if you have a HIPAA BAA in place with AWS, you can use AWS Backup to tranfer protected health information (PHI).
+Learn more about pricing
+There are no upfront costs to use AWS Backup, and you pay only for the resources you use.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Backup in the AWS Console.
+Sign in
+Page Content

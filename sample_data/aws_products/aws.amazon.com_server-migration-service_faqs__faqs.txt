@@ -1,0 +1,99 @@
+General
+Q: How do I get started with AWS Server Migration Service?
+Use the wizard in the AWS Server Migration Service dashboard of the AWS Management Console. Visit the Getting Started Guide for more details, including how to replicate a server.
+Q: What is the output of AWS Server Migration Service?
+Each server volume replicated is saved as a new Amazon Machine Image (AMI), which can be launched as an EC2 instance (virtual machine) in the AWS cloud. If you are using application groupings, Server Migration Service will launch the servers in a CloudFormation stack using an auto-generated CloudFormation template.
+Q: What kind of servers can be migrated to AWS using AWS Server Migration Service?
+Currently, you can migrate virtual machines from VMware vSphere, Windows Hyper-V, or Microsoft Azure to AWS using AWS Server Migration Service.
+Q: In what Regions is AWS Server Migration Service available?
+Refer to the Region Table.
+Q: How do I track the status of the migration?
+Visit the AWS Server Migration Service dashboard in the AWS Management Console to see the status of the replication.
+Q: What operating systems does AWS Server Migration Service support?
+AWS Server Migration Service supports migrating Windows Server 2003, 2008, 2012, and 2016, and Windows 7, 8, and 10; Red Hat Enterprise Linux (RHEL), SUSE/SLES, CentOS, Ubuntu, Oracle Linux, Fedora, and Debian Linux operating systems. Learn more.
+Q: How long can I replicate my server volumes from on-premises to AWS?
+You can replicate your on-premises servers to AWS for up to 90 days (per server). Usage time is calculated from the time a server replication begins until you terminate the replication job. After 90 days, your replication job will be automatically terminated. If you want to increase this limit, please discuss your use case with the AWS Support team.
+Q: What is the difference between EC2 VM Import and AWS Server Migration Service?
+AWS Server Migration Service is a significant enhancement of EC2 VM Import. The AWS Server Migration Service provides automated, live incremental server replication and AWS Console support. For customers using EC2 VM Import for migration, we recommend using AWS Server Migration Service.
+AWS Server Migration Service Connector
+Q: What is the AWS Server Migration Service Connector?
+The connector appliance is a pre-configured FreeBSD virtual machine (in OVA format). To set up AWS Server Migration Service, you need to first deploy the AWS Server Migration Service Connector virtual appliance on your on-premises VMware vCenter environment.
+Q: How many AWS Server Migration Service Connectors do I need to install?
+You need to install one AWS Server Migration Service Connector for each VMware vCenter environment.
+Q: What permissions does the AWS Server Migration Service Connector require from VMware vCenter?
+At minimum, the AWS Server Migration Service Connector requires the ability to create and delete snapshots on VMs that need to be migrated to AWS. Learn more.
+Q: Can I use a proxy for communicating with the AWS Server Migration Service?
+Yes. The AWS Server Migration Service Connector supports password-based proxy; it does not support NTLM-based proxy.
+Security
+Q: Are server volumes securely transferred from my data center to AWS?
+Yes. Replicated server volumes are encrypted in transit by Transport Layer Security (TLS).
+Q: What data does the AWS Server Migration Service Connector capture from VMware vCenter?
+The AWS Server Migration Service Connector captures VM inventory information from VMware vCenter and replicates server volumes to AWS.
+Q: How do I update the AWS Server Migration Service Connector?
+Updates are automatically downloaded and applied when you enable the auto-upgrade option; otherwise, they can be applied on-demand.
+Q: Is it secure to deploy the AWS Server Migration Service Connector on my virtualization environment?
+Yes, the AWS Server Migration Service Connector only captures basic VM inventory information and snapshots of server volumes from VMware vCenter and does not gather any sensitive information.
+Q: Where are my replicated server volumes stored?
+Your replicated server volumes are converted to AMIs and stored in your AWS account.
+Support
+Q: Does AWS Premium Support cover AWS Server Migration Service?
+Yes, AWS Premium Support covers issues related to your use of the AWS Server Migration Service. Learn more.
+Q: What other support options are available?
+Visit the AWS Community discussion forum.
+Hyper-V VM migration
+Q: What are the key benefits of using AWS Server Migration Service for migrating on premise Hyper-V VMs?
+By automating an incremental replication of live server volumes to the AWS cloud as AMIs, SMS allows customers to speed up migration process and reduce manual labor of migration significantly. SMS orchestrates server migrations by allowing customers to schedule replications and track the progress of a group of servers, alleviating the logistical burden of coordinating large-scale server migrations. With the support of incremental replication, customers are able to test server migrations easily. With the support of AWS console-based GUI, customers are able to start and manage migration and track progress easily.
+Q: Who can benefit from AWS Server Migration Service for Hyper-V?
+Any customer who is looking to migrate their Microsoft Hyper-V virtual machines managed by SCVMM or standalone Hyper-Vs to AWS will benefit from Hyper-V support in SMS. This may include enterprise customers, System integrators, and IT consulting firms who help enterprise customers migrate Hyper-V workloads to AWS.
+Q: What components does AWS Server Migration Service have for Hyper-V VM migration?
+SMS has an on-premises appliance, the SMS Connector, which talks to the service in AWS. The Connector incrementally transfers volumes of running Hyper-V VMs to the SMS service, and the service creates the AMI incrementally from the transferred volume.
+Q: Where can I download the SMS Connector for Hyper-V VM migration?
+You can go to the AWS Server Migration Service Console or the SMS public documentation.
+Q: What permissions are required in System Center to deploy SMS Connector and start migration?
+The SMS connector securely communicates with the SCVMM server using Windows remote management protocol (WinRM). Connector requires a non-admin AD user that is added to “Remote Management Users” group on the SCVMM host, has limited permissions on the CMIV2 and SCVMM WMI objects and is a part of the “Delegated administrator” group within SCVMM. A firewall port needs to be opened on the SCVMM server to allow for secure transfer of remote commands from Connector deployed on a private network within your datacenter. The AD user also needs read permissions on the VM data store on the Hyper-V machine. For additional security, customers may configure WinRM to allow only encrypted traffic over SSL using self-signed certificate and limit access to Connector IP/hostname alone.For more details, please refer to the SMS technical documentation.
+Q: How do I set up AWS Server Migration Service for Hyper-V?
+AWS console will walk you through a wizard that help you download and install the SMS Connector. You will need to work with your system administrators to create an active directory user for Hyper-V VM migration use. AWS SMS provides an interactive PowerShell script, to be executed with administrative privileges on your Hyper-V host, that automates the permissions setup/configuration. You will provide the AD user credentials and networking/proxy settings as necessary in the SMS Connector. For more details, please refer to the SMS technical documentation.
+Q: Do I need to have SCVMM for AWS SMS to work with my Hyper-V hosts?
+No. The SMS Connector can be configured to use SCVMM or standalone Hyper-V VMs.
+Q: I’m operating both VMware and Hyper-V environments. Can I migrate VMware VMs and Hyper-V VMs simultaneously?
+Yes, but you will need two separate SMS Connectors to simultaneously migrate VMs from both VMware and Hyper-V environments.
+Q: What versions of Hyper-V, a component of the Windows server, does SMS support?
+SMS Supports Hyper-V running on Windows Servers 2012 R2 and above.
+Q: How can I view my on-premises Hyper-V VM inventory in AWS console?
+After configuring the SMS Connector, customers can import their on-premises Hyper-V inventory by clicking on the "Import server catalog" button in "AWS Console --> Server Migration --> Servers" tab.
+Q: I’m going to migrate Hyper-V and VMware VMs simultaneously. Can I view the inventory of Hyper-V and VMware VMs together in a single pane of glass in AWS console?
+Yes. SMS enables you to view the VM inventory of both Microsoft’s Hyper-V and VMware environments in a single pane of glass. After you import your on-premises Hyper-V VM inventory by clicking on the "Import server catalog" button in AWS SMS console, SMS automatically collects the VM inventory from all the SMS Connectors, deployed across Hyper-V and VMware environments, as a default.
+Q: Can I see the VM inventory of Hyper-V and VMware environments separately?
+Yes, on the ‘servers’ page on the AWS SMS console, you can filter by VM manager in the search bar to show only the VMs imported from Hyper-V or VMware environments.
+Q: How can I distinguish Hyper-V VMs from VMware VMs during migration?
+Yes, on the ‘replication jobs’ page on the AWS SMS console, you can filter by VM manager in the search bar to show only the progress of SMS replication jobs for VMs from Hyper-V or VMware environments.
+Q: an I track the progress of Hyper-V and VMware VMs migration simultaneously?
+Yes. Customers can track the progress of Hyper-V and VMware VM migration in a single pane of glass under the ‘Replication Jobs’ page on the AWS SMS console.
+Multi-Server Migration
+Q: What is multi-server migration in AWS Server Migration Service?
+AWS Server Migration Service now offers multi-server migration support that makes it easier and cost effective to migrate applications from on-premises datacenters to Amazon EC2. Multi-server migration provides you the ability to migrate entire application stacks as opposed to migrating each server individually. You can group servers into applications, replicate the entire application together, and monitor its migration status centrally from the console. You can also easily launch and configure the migrated application with an auto-generated CloudFormation Template.
+Q: How does multi-server support work in AWS Server Migration Service?
+You can group on-premises servers into an application with one or more sub-groups, specify a replication frequency, provide configuration scripts, and a landing zone where the replicated application should be launched. Server Migration Service will orchestrate migration of all the underlying servers that are part of the application groups, wait for all of the AMIs to be available, and create a Cloud Formation Template that can be launched in the landing zone. Once you launch the application using the auto-generated CloudFormation Template, Server Migration Service will configure it based on your specified configuration scripts.
+Q: I already use AWS Server Migration Service. How does this capability benefit me?
+With multi-server migration, you no longer have to write custom tooling to coordinate the migrations of multiple servers that make up your application—you can migrate all of your servers together as a single unit. You have the ability to launch all of the servers automatically through a CloudFormation Template and keep it continuously updated with the latest AMIs produced for each replication run. You can start using the multi-server migration without any new setup.
+Q: How do I get started with using multi-server migration in Server Migration Service?
+Once the on-premises server catalog is imported into Server Migration Service using the SMS Connector, you can get started by configuring an application from the Server Migration Service console, CLI, or APIs. If you are already using Server Migration Service and have configured a SMS role using a managed policy, no action is required. Multi-server migration requires a new role to be able to launch instances using CloudFormation. See technical documentation for more details on how to setup permissions for Server Migration Service.
+Q: Can I migrate the applications defined in AWS Application Discovery Service using AWS Server Migration Service?
+Currently, the application groupings defined using AWS Application Discovery Service are not available through Server Migration Service. However, support is being added for applications discovered/defined in Application Discovery Service to be automatically available in Server Migration Service for multi-server migration.
+Q: Can I customize the CloudFormation Template that AWS Server Migration Service auto-generates?
+No, the ability to customize the auto-generated template is not available at this time.
+Q: How do I re-configure my application after I launch it in the AWS cloud?
+You can provide a custom configuration script per server while defining an application in the Server Migration Service console. Once the server is migrated and launched in the AWS cloud, the service will run the configuration script on your behalf. For example, you can use a configuration script to update database connection strings on your application servers without having to log into each instance and updating it manually.
+Q: What type of snapshot consistency does AWS Server Migration Service provide?
+AWS Server Migration Service creates crash consistent snapshots for the servers that are part of an application group. These snapshots are triggered around the same time for all the servers within an application. Additionally, for servers running Windows operating system in VMware environments, you can use Volume Shadow Copy Service (VSS) to take application consistent snapshots.
+Windows to Linux replatforming assistant for Microsoft SQL Server databases
+Q: What is a replatforming assistant for Microsoft SQL Server?
+Learn more about the replatforming assistant for Microsoft SQL Server in our latest What's New post.
+Learn more about AWS Server Migration Service pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS Server Migration Service
+Have more questions?
+Contact us
+Page Content
+Windows to Linux replatforming assistant for SQL server databases

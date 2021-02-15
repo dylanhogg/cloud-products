@@ -1,0 +1,57 @@
+General
+What is AWS CodeArtifact?
+AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process. CodeArtifact works with commonly used package managers and build tools like Maven and Gradle (Java), npm and yarn (JavaScript), or pip and twine (Python), or NuGet (.NET).
+How much does CodeArtifact cost?
+With CodeArtifact, there are no upfront fees or commitments. You pay only for the software packages stored, the number of requests made, and the data transferred out of an AWS Region. CodeArtifact includes a monthly free tier for storage and requests. For pricing details see the pricing details.
+In which AWS Regions is CodeArtifact available?
+CodeArtifact is available in the following 10 AWS Regions:
+US East (N.Virginia)
+US East (Ohio)
+US West (Oregon)
+EU (Ireland)
+EU (Frankfurt)
+EU (Stockholm)
+Asia Pacific (Sydney)
+Asia Pacific (Tokyo)
+Asia Pacific (Mumbai)
+Asia Pacific (Singapore).
+Getting Started/Using CodeArtifact
+How do I get started with CodeArtifact?
+You can begin using CodeArtifact by creating a new domain and repository using the AWS Management Console, SDKs, or CLI. You can then use popular package managers and build tools such as the npm or yarn CLI (JavaScript), maven or gradle (Java), pip (Python), or NuGet (.NET) to publish packages to your repository. You can also consume open-source packages from public repositories such as npm registry, Maven Central, or Python Package Index (PyPI), or NuGet.org via your CodeArtifact repository, which stores any package consumed in this way.
+What is a CodeArtifact domain?
+A domain is a CodeArtifact-specific construct that allows grouping and managing multiple CodeArtifact repositories owned by a single organization across multiple AWS accounts. For example, an organization might create a central repository for sharing packages between teams and project-level repositories to store packages only used by a single team or application.
+What is a CodeArtifact repository?
+A CodeArtifact repository contains a set of package versions, each of which maps to a set of assets. Repositories are polyglot—a single repository can contain packages of any supported type. Each repository exposes endpoints for fetching and publishing packages using tools like the npm CLI, the Maven CLI (mvn), pip, and NuGet. For resource limits in AWS CodeArtifact, see Quotas in AWS CodeArtifact.
+How do I create repositories in CodeArtifact?
+You can create repositories using the console wizard, or programmatically using the AWS SDKs or CLI. For more information, see Create a repository in the AWS CodeArtifact documentation.
+How do I publish artifacts to CodeArtifact?
+You can publish artifacts using language-native tools such as npm or yarn (JavaScript), maven or gradle (Java), or twine (Python), or NuGet (.NET). For example, publishing a new package version using npm requires two commands: First, run the CodeArtifact CLI “login” command and then run npm publish to upload the package to the repository. The same commands can be run by AWS CodeBuild to publish new package versions as part of a continuous integration (CI) workflow. Learn more here.
+How do I retrieve an artifact from CodeArtifact?
+You can fetch artifacts using language-native tools. For example, to install the npm package webpack and all its dependencies, run the CodeArtifact CLI “login” command, and then run npm install webpack. npm fetches the webpack from CodeArtifact, performs dependency resolution based on the information in webpack’s package.json file, then recursively fetches all required dependencies from CodeArtifact. Learn more here.
+How do I configure a CodeArtifact repository to pull packages from external package repositories such as npm registry?
+On the CodeArtifact console, create a repository with an external connection to pull packages from a public repository such as npm registry. You can also use the AssociateExternalConnection API to create a connection between a CodeArtifact repository and a public repository. Whenever packages are requested, CodeArtifact pulls and caches the required packages from external repositories if those packages are not already present.
+Authentication and access control
+How do I authenticate to a CodeArtifact repository from the AWS CLI?
+First, install the AWS CLI and configure AWS credentials for an IAM user or role that has the appropriate permission to access CodeArtifact. You can then use the CLI to call the CodeArtifact GetAuthorizationToken API. This API vends auth tokens, that can be included in the HTTP Authorization header in rvequests made by package managers and build tools. The CLI provides the login command that calls GetAuthorizationToken and automatically configures a package manager to use this token for all requests. This is similar to the get-login command provided by Amazon ECR, so developers who have interacted with ECR using the docker CLI will be familiar with this pattern.
+Can I enable cross-account access to my repositories?
+Yes. CodeArtifact repositories support resource policies to enable cross-account access. You can add a resource policy via the console or AWS CLI.
+Can I enable permissions at the package level?
+Yes. CodeArtifact supports package-level write permissions. You can configure these by adding statements to a repository resource policy document that specify a package ARN as the resource. CodeArtifact supports only repository-level read permissions, that is, a given IAM principal can either read all the packages in a repository or none of them.
+Does CodeArtifact encrypt my packages?
+Yes. All packages stored by CodeArtifact are encrypted in transit using TLS and at rest using AES-256 symmetric key encryption. CodeArtifact supports both the AWS Key Management Service (KMS) customer managed CMKs and the AWS managed CMKs.
+Integrations
+Can I use AWS CodeArtifact with AWS CodeBuild?
+Yes. You can specify the CodeArtifact repositories to use for consuming and publishing packages in your CodeBuild project configuration. Available CodeBuild images include client tools for all the package types supported by CodeArtifact. CodeBuild configures the build tool or package manager to use the specified repository and fetch a CodeArtifact auth token at the start of the build using the build’s IAM role. You can also specify the build artifacts that should be published to your CodeArtifact repository when the build is complete. CodeBuild builds can be triggered using CloudWatch Events emitted by a CodeArtifact repository when its contents change.
+Can I use AWS CodeArtifact with AWS CodePipeline?
+Yes. Using Amazon EventBridge, you can trigger a CodePipeline build when a package stored in a CodeArtifact repository changes - for example, when a new version of the package is published.
+Q: Can I use AWS CloudFormation to create AWS CodeArtifact resources?
+A: Yes. You can create CodeArtifact resources such as domains and repositories using CloudFormation. Please refer to CodeArtifact documentation for details.
+Read the documentation
+Learn more about AWS CodeArtifact by reading the documentation.
+Read documentation
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Sign in
+Get started building with AWS CodeArtifact by signing in.
+Page Content

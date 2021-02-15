@@ -33,5 +33,5 @@ Introducing Amazon Corretto at Devoxx
 Amazon Corretto Annoucement at Devoxx
 AWS re:Invent 2019: Migrating AWS Lambda's front end from Java 8 to Java 11
 Learnings from migrating a production service from JDK 8 to JDK 11
-Download Now »
-Visit our documentation »
+Download Now
+Visit our documentation

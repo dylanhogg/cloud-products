@@ -3,23 +3,23 @@ Enhance multiplayer experiences with dedicated cloud servers
 Get started with Amazon GameLift
 FEATURE UPDATE NOW GENERALLY AVAILABLE
 Amazon GameLift FlexMatch
-Unlocking the ability for developers to use a fully managed multiplayer matchmaker with any game server solution of their choice - all at AWS scale. Read the announcement »
+Unlocking the ability for developers to use a fully managed multiplayer matchmaker with any game server solution of their choice - all at AWS scale. Read the announcement
 Amazon GameLift is a dedicated game server hosting solution that deploys, operates, and scales cloud servers for multiplayer games. Whether you’re looking for a fully managed solution, or just the feature you need, GameLift leverages the power of AWS to deliver the best latency possible, low player wait times, and maximum cost savings.
 “We can quickly provision large amounts of server capacity, ensuring we have servers ready to go for anyone around the world. We don’t have to add additional staff to manage infrastructure, and this helps improve the bottom line not just from overhead, but also from server hosting by tapping into unused EC2 Spot instances at a discount when compared to On-Demand pricing.” - Stephen Detwiler, Co-Founder and CTO, N3TWORK
-Learn how they use GameLift »
+Learn how they use GameLift
 "By easily integrating Amazon GameLift FleetIQ and Amazon EC2 SPOT instances with our in-house matchmaker, we can maintain complete control to provide players with well matched, low latency game sessions, all while optimizing costs. Since implementing GameLift FleetIQ and SPOT, servers automatically scale with fluctuating player demand, and preliminary estimates already show cost savings of 20% - 40% in comparison to on-demand instances.” -Nicolae Georgescu, Studio Online Lead, Gameloft
 “At Behaviour Interactive, the player experience comes first. That’s why we entrust our dedicated servers for Dead by Daylight to Amazon GameLift. With its FleetIQ Spot instances, we've experienced 0.00033% interruption rates in over 25M game sessions, helping us focus our efforts on bringing new and exciting features to players with very little ongoing infrastructure maintenance.”
 “Transitioning from meshed peer-to-peer networks to dedicated servers with Amazon GameLift allowed us to eliminate several stability and connectivity issues while improving the core For Honor player experience across all platforms.”
 Benefits
 45 ms
 global median latency
-GameLift provides dedicated, reliable game servers for seamless gameplay experiences with minimal latency while maximizing cost savings. Leveraging EC2 compute capacity, 15 regions, and 40 instance types, GameLift offers the most elastic, global scalable service for computing.  Learn more »
+GameLift provides dedicated, reliable game servers for seamless gameplay experiences with minimal latency while maximizing cost savings. Leveraging EC2 compute capacity, 15 regions, and 40 instance types, GameLift offers the most elastic, global scalable service for computing.  Learn more
 Up to 70% savings
 compared to existing on-premises deployments
-Autoscale with FlexMatch to meet player demand and connect up to 200 players in a single game session on the lowest latency server instance available. With GameLift you can experience up to 70% cost-savings compared to existing on-premises deployments. Learn more »
+Autoscale with FlexMatch to meet player demand and connect up to 200 players in a single game session on the lowest latency server instance available. With GameLift you can experience up to 70% cost-savings compared to existing on-premises deployments. Learn more
 Flexibility
 to use as a complete game server solution or as modules compatible with your existing tech stack
-GameLift caters to you, whether you want everything the service has to offer or only specific modular pieces. Building a game from scratch? Use all of GameLift. Run containerized game server builds or want to reuse your existing server management layer? Use GameLift FleetIQ to provide you with just the low-cost viable Spot instances. Need just a matchmaker? Use GameLift FlexMatch to form matches for your players regardless of whether you run your game servers peer-to-peer, on-premises, or on cloud compute primitives. Learn more »
+GameLift caters to you, whether you want everything the service has to offer or only specific modular pieces. Building a game from scratch? Use all of GameLift. Run containerized game server builds or want to reuse your existing server management layer? Use GameLift FleetIQ to provide you with just the low-cost viable Spot instances. Need just a matchmaker? Use GameLift FlexMatch to form matches for your players regardless of whether you run your game servers peer-to-peer, on-premises, or on cloud compute primitives. Learn more
 Use cases
 Managed servers
 Flexible to fit your stack
@@ -28,31 +28,31 @@ Support cross-play
 Competitive matchmaking
 Let GameLift do the heavy-lifting of deploying and managing dedicated game servers so you can focus on developing games. GameLift reduces the burden of scaling servers with fluctuating player demand while providing low latency and low cost. The example architecture describes this process.
 A game session request is sent after platform and player authentication. GameLift FlexMatch searches for like-minded players to join the game, creates a matchmaking ticket, and places players into the matching process. The match is determined and the matchmaker passes the information to the GameLift game session placement queue. A search occurs for an available fleet instance that provides the lowest latency to the player and the lowest cost. The fleet instance is notified of the intent to begin a game, which exposes an IP address, and the chosen server listens on a particular IP port. The IP address and port are returned to the game when the match is set up.
-The match is created and allows matchmaking results to be passed back to the game. The game has the IP address and port to contact, and a session token for the GameLift game server. The game now makes a connection to the GameLift game server assigned to the player’s match, players arrive, and fun begins for the players. Get started with the developer guide»
-GameLift provides the flexibility specific to your needs. You can choose to use GameLift FleetIQ to onboard server workloads to the cloud using your existing tools or software, independent of adopting any other managed GameLift features. Experience  up to 70% cost-savings compared to existing on-premises deployments by gradually moving live games or launching new games to the cloud with the cost savings of EC2 Spot instances possible only with GameLift FleetIQ. You can save on cost, speed time to market, and deliver a reliable player experience.
-The following diagram illustrates the role of GameLift FleetIQ when it is working with Amazon EC2 for game hosting. It locates the best available game server to host a game session that provides players an optimal gameplay experience. For game hosting, the best resources deliver the highest hosting viability at the lowest cost. GameLift FleetIQ enables this by allowing only optimal instances types in the Autoscaling group and placing new game sessions effectively across the group's available resources. Get started with the developer guide»
+The match is created and allows matchmaking results to be passed back to the game. The game has the IP address and port to contact, and a session token for the GameLift game server. The game now makes a connection to the GameLift game server assigned to the player’s match, players arrive, and fun begins for the players. Get started with the developer guide
+GameLift provides the flexibility specific to your needs. You can choose to use GameLift FleetIQ to onboard server workloads to the cloud using your existing tools or software, independent of adopting any other managed GameLift features. Experience  up to 70% cost-savings compared to existing on-premises deployments by gradually moving live games or launching new games to the cloud with the cost savings of EC2 Spot instances possible only with GameLift FleetIQ. You can save on cost, speed time to market, and deliver a reliable player experience.
+The following diagram illustrates the role of GameLift FleetIQ when it is working with Amazon EC2 for game hosting. It locates the best available game server to host a game session that provides players an optimal gameplay experience. For game hosting, the best resources deliver the highest hosting viability at the lowest cost. GameLift FleetIQ enables this by allowing only optimal instances types in the Autoscaling group and placing new game sessions effectively across the group's available resources. Get started with the developer guide
 “Having to manage enough servers to handle the load of potentially hundreds of thousands of players would have been a huge amount to handle on our own. With Amazon Gamelift FleetIQ, we can quickly provision large amounts of server capacity, ensuring we have servers ready to go for anyone around the world. We don’t have to add additional staff to manage infrastructure, and this helps improve the bottom line not just from overhead, but also from server hosting by tapping into unused EC2 Spot instances at a discount when compared to On-Demand pricing. We have less to worry about and can focus more on Tetris and our players, while scaling with the growth of the game.”
 Stephen Detwiler, Co-Founder and CTO, N3TWORK
 "For Modern Combat 5, reliable and highly scalable game servers are essential to deliver a great multiplayer experience. By easily integrating Amazon GameLift FleetIQ as a backend with our in-house matchmaker, we can maintain complete control to provide players with well matched, low latency game sessions, all while optimizing costs. Since implementing GameLift FleetIQ, servers automatically scale with fluctuating player demand, and preliminary estimates already show cost saving of 20% - 40%.”
 Nicolae Georgescu, Studio Online Lead, Gameloft
-Peer-to-Peer and listen servers are often viewed as a low-latent, cost-effective solution for games. However, they can create poor player experiences with host interruptions and dependencies on your players having good internet connections. GameLift customers like Ubisoft, Behaviour Interactive, and Illfonic migrated their P2P or listen server infrastructure to GameLift to achieve low cost and low latency dedicated game servers. The below example illustrateshow Behaviour Interactive migrated to GameLift for their game, Dead by Daylight. Get started with the Developer Guide »
+Peer-to-Peer and listen servers are often viewed as a low-latent, cost-effective solution for games. However, they can create poor player experiences with host interruptions and dependencies on your players having good internet connections. GameLift customers like Ubisoft, Behaviour Interactive, and Illfonic migrated their P2P or listen server infrastructure to GameLift to achieve low cost and low latency dedicated game servers. The below example illustrateshow Behaviour Interactive migrated to GameLift for their game, Dead by Daylight. Get started with the Developer Guide
 Fadi Beyrouti, Head of Technology - Behaviour Interactive
 For Honor team, Ubisoft
-GameLift supports cross-platform play to connect your community and broaden your player pool of potential matches. Learn more below on how Metalhead Software introduced cross-platform play for players with GameLift in Super Mega Baseball series. Get started with GameLift now »
+GameLift supports cross-platform play to connect your community and broaden your player pool of potential matches. Learn more below on how Metalhead Software introduced cross-platform play for players with GameLift in Super Mega Baseball series. Get started with GameLift now
 Metalhead is all-in on AWS and uses Amazon GameLift to power their dedicated global game servers and matchmaking systems for online plays.
 Read what co-founder, Christian Zuger has to say about their experience
 Watch a webinar on how they implemented cross-platform play for their previous game, Super Mega Baseball 2
 "Mitigating the impacts of latency is also extremely important for Super Mega Baseball. Fast reaction speeds and real-time gameplay are integral to making players really feel like they are on the field...Using Amazon GameLift we can ensure that latency is always below 120 ms, and players are matched to the closest possible data center to achieve average rates of only 40 ms."
 Christian Zuger, Co-Founder - Metalhead Software
 Match players based on rules you define with Amazon GameLift FlexMatch. Whether you choose to build your matchmaking based on player skill, latency, or custom criteria, FlexMatch’s simple but powerful rules language makes it easy to quickly create robust player matchmaking. Customers Oasis Games and Iron Mountain Interactive use FlexMatch for matching players around the world for their game, Steel Circus.
-FlexMatch pairs the matchmaking service with a customizable rules engine. Once a match is formed, FlexMatch hands the match details to a queue of your choice. The queue searches for available hosting resources on your Amazon GameLift fleets and starts a new game session for the match. Learn more in the developer guide »
+FlexMatch pairs the matchmaking service with a customizable rules engine. Once a match is formed, FlexMatch hands the match details to a queue of your choice. The queue searches for available hosting resources on your Amazon GameLift fleets and starts a new game session for the match. Learn more in the developer guide
 “GameLift is powerful because it frees us up to think about those player facing features. Using a few simple configuration options, we can automate the scaling of game servers and cut down on the complexity of matchmaking players quickly and fairly.”
 Nikolaus Pottler, DevOps Engineer - Iron Mountain Interactive
 Contact us to discuss your use case
 How GameLift fits into your game services architecture
 Backend game infrastructure is generally made up of three components: a gateway to your services, game services, and game servers.
 Gateway
-The gateway helps protect your service from denial of service load levels by providing a scalable, load-balanced service to host your services API. It also provides a mechanism to authenticate users to your services. In the AWS cloud, the Gateway services include AWS Shield for DDoS protection, Amazon API Gateway to host the API, and Amazon Cognito for authentication.
+The gateway helps protect your service from denial of service load levels by providing a scalable, load-balanced service to host your services API. It also provides a mechanism to authenticate users to your services. In the AWS cloud, the Gateway services include AWS Shield for DDoS protection, Amazon API Gateway to host the API, and Amazon Cognito for authentication.
 Game services
 Game services provide basic multiplayer game support, like matchmaking, session directory, player data, and player analytics. With AWS, you can use services like AWS Lambda that provides serverless, scalable, and flexible compute, or features in services like Amazon GameLift FlexMatch, for matchmaking.
 Game servers
@@ -69,14 +69,12 @@ Read the Case Study
 Related content
 AWS announces General Availability of Amazon GameLift feature update
 Nov 24, 2020
-Learn more »
+Learn more
 Aug 27, 2020
-Learn more »
 Online Course - GameLift Primer
 This course provides an in-depth look at Amazon GameLift.
 Check out the product features
 Dive into GameLift features like Autoscaling, FleetIQ, FlexMatch, Realtime Game Servers, and more.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

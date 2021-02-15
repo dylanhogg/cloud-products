@@ -1,0 +1,112 @@
+General
+Q: What is Amazon QuickSight?
+Amazon QuickSight is a very fast, easy-to-use, cloud-powered business analytics service that makes it easy for all employees within an organization to build visualizations, perform ad-hoc analysis, and quickly get business insights from their data, anytime, on any device. Upload CSV and Excel files; connect to SaaS applications like Salesforce; access on-premises databases like SQL Server, MySQL, and PostgreSQL; and seamlessly discover your AWS data sources such as Amazon Redshift, Amazon RDS, Amazon Aurora, Amazon Athena, and Amazon S3. QuickSight enables organizations to scale their business analytics capabilities to hundreds of thousands of users, and delivers fast and responsive query performance by using a robust in-memory engine (SPICE).
+Q: How is Amazon QuickSight different from traditional Business Intelligence (BI) solutions?
+Traditional BI solutions often require teams of data engineers to spend months building complex data models before generating a report. They typically lack interactive ad-hoc data exploration and visualization, limiting users to canned reports and pre-selected queries. Traditional BI solutions also require significant up-front investment in complex and costly hardware and software, and then customers to invest in even more infrastructure to maintain fast query performance as database sizes grow. This cost and complexity makes it difficult for companies to enable analytics solutions across their organizations. Amazon QuickSight has been designed to solve these problems by bringing the scale and flexibility of the AWS Cloud to business analytics. Unlike traditional BI or data discovery solutions, getting started with Amazon QuickSight is simple and fast. When you log in, Amazon QuickSight seamlessly discovers your data sources in AWS services such as Amazon Redshift, Amazon RDS, Amazon Athena, and Amazon Simple Storage Service (Amazon S3). You can connect to any of the data sources discovered by Amazon QuickSight and get insights from this data in minutes. You can choose for Amazon QuickSight to keep the data in SPICE up-to-date as the data in the underlying sources change. SPICE supports rich data discovery and business analytics capabilities to help customers derive valuable insights from their data without worrying about provisioning or managing infrastructure. Organizations pay a low monthly fee for each Amazon QuickSight user, eliminating the cost of long-term licenses. With Amazon QuickSight, organizations can deliver rich business analytics functionality to all employees without incurring a huge cost upfront.
+Q: What is SPICE?
+Amazon QuickSight is built with "SPICE" – a Super-fast, Parallel, In-memory Calculation Engine. Built from the ground up for the cloud, SPICE uses a combination of columnar storage, in-memory technologies enabled through the latest hardware innovations and machine code generation to run interactive queries on large datasets and get rapid responses. SPICE supports rich calculations to help you derive valuable insights from your analysis without worrying about provisioning or managing infrastructure. Data in SPICE is persisted until it is explicitly deleted by the user. SPICE also automatically replicates data for high availability and enables QuickSight to scale to hundreds of thousands of users who can all simultaneously perform fast interactive analysis across a wide variety of AWS data sources.
+Q: How can I get started with Amazon QuickSight?
+To get started, sign up to Amazon Quicksight and get 1 user and 1GB of SPICE capacity for free. If you’re already signed up, you can access QuickSight at https://quicksight.aws.amazon.com.
+Q: Are there any pre-requisites to use SageMaker inferencing in QuickSight?
+Your privileged QuickSight account administrator needs to first grant QuickSight IAM permissions to make SageMaker API calls on your behalf. To learn more, see documentation on granting QuickSight IAM permissions.
+Authors and Readers
+Who is a QuickSight “Author”? A QuickSight Author is a user who can connect to data sources (within AWS or outside), create visuals and analyze data. Authors can create interactive dashboards using advanced QuickSight capabilities such as parameters and calculated fields, and publish dashboards with other users in the account.
+Who is a QuickSight “Reader”?  A QuickSight Reader is a user who consumes interactive dashboards. Readers can log in via their organization’s preferred authentication mechanism (QuickSight username/password, SAML portal or AD auth), view shared dashboards, filter data, drill down to details or export data as a CSV file, using a web browser or mobile app. Readers do not have any allocated SPICE capacity.
+Individual end-users can be provisioned to access QuickSight as Readers. Reader pricing applies to manual session interactions only. We reserve the right charge for the reader at the higher monthly author rate if, in our discretion, we determine that you are using reader sessions for other types of use (e.g., programmatic or automated queries).
+Can I upgrade a Reader to an Author? Yes, readers can be easily upgraded to authors via the QuickSight user management options.
+I have a Standard Edition account. Can I add readers? No, Readers with pay-per-session pricing only exist in Enterprise Edition. If you have a Standard Edition account, you can upgrade to Enterprise Edition via the QuickSight management page.
+Can I use the QuickSight Reader account for programmatic access to QuickSight? Amazon QuickSight’s reader pricing applies to interactive consumption of data by individual users. A fair use policy applies, and any abuse of the system will result in the reader being metered as an author. To avoid such situations, we recommend that programmatic refresh of dashboards, if needed, be performed from an Author account.
+Who is a QuickSight “Admin”? A QuickSight Admin is a user who can manage QuickSight users and account-level preferences, as well as purchase SPICE capacity and annual subscriptions for the account. Admins also have all QuickSight authoring capabilities. Admins can also upgrade Standard Edition accounts to Enterprise Edition if needed.
+Can I upgrade a Reader or Author to Admin? Amazon QuickSight Authors and Readers can be upgraded to Admins at any time.
+How long is a Reader session? Amazon QuickSight Reader sessions are of 30-minute duration each. Each session is charged at $0.30 with maximum charges of $5 per Reader in a month.
+When does a Reader session start and end? A Reader session starts with a user-initiated action (e.g., login, dashboard load, page refresh, drill-down or filtering) and runs for next 30-minutes. Keeping Amazon QuickSight open in a background browser window/tab does not result in active sessions until the Reader initiates action on page.
+Will a Reader be logged out after a 30-minute session? No, Reader sessions are transparent to the QuickSight Reader. Reader sessions will be automatically renewed in 30-minute intervals, and time out 30 minutes after start upon inactivity. Readers will only be logged out of QuickSight when their authentication expires, which is dependent on the authentication scheme in place (can be one of QuickSight-only users, SAML/Open ID Connect or Active Directory).
+Will a Reader be charged if QuickSight is open in a browser in a background tab? No, having Amazon QuickSight open in a background tab will not result in usage charges. A session is only initiated when there is explicit Reader activity on the QuickSight web application. If the QuickSight page is moved to the background or minimized, there will be no additional sessions charged (beyond any sessions initiated when the Reader was active on the window/tab) until the Reader interacts with QuickSight again.
+What does up to $5/mo. on reader charges mean?
+A reader will be charged $0.30 a session up to a maximum of $5/month, after which the reader can access QuickSight at no charge for additional sessions.
+Can Qucksight “Authors” or “Readers” invite more users? No, QuickSight Authors and Readers are user types that cannot change account permissions or invite more users. QuickSight offers an Admin user, who can manage QuickSight users and account-level preferences, as well as purchase SPICE capacity and annual subscriptions for the account. Admins also have all QuickSight authoring capabilities. Admins can also upgrade Standard Edition accounts to Enterprise Edition if needed.
+Can I use the QuickSight Reader account for display and scripted refresh of QuickSight dashboards on monitors or large screens? Amazon QuickSight’s reader pricing applies to interactive consumption of data by end-users in an organization. For programmatic access and scripted refresh, we recommend use of an Author account to comply with fair use policies associated with the QuickSight Reader.
+Mobile and web access
+Q: Can I use Amazon QuickSight on my mobile device?
+QuickSight mobile apps (available on iOS and Android) gives instant access to your data and insights for you to make decisions on the go. Browse, search and interact with your dashboards. Add dashboards to Favorites for quick and easy access. Explore your data with drill downs, filtering and more. You can also use a web browser on any mobile device to access Amazon QuickSight.
+Q: On which browsers is Amazon QuickSight supported?
+Amazon QuickSight supports the latest versions of Mozilla Firefox, Chrome, Safari, Internet Explorer version 10 and above and Edge.
+Data management
+Q: Which data sources does Amazon QuickSight support?
+You can connect to AWS data sources including Amazon RDS, Amazon Aurora, Amazon Redshift, Amazon Athena and Amazon S3. You can also upload Excel spreadsheets or flat files (CSV, TSV, CLF, and ELF), connect to on-premises databases like SQL Server, MySQL and PostgreSQL and import data from SaaS applications like Salesforce.
+Q: Can I connect Amazon QuickSight to my Amazon EC2 or on-premises database?
+Yes. In order to connect Amazon QuickSight to an Amazon EC2 or on-premises database, you need to add the Amazon QuickSight IP range to the authorized list (whitelist) in your hosted database.
+Q: How do I upload my data files into Amazon QuickSight?
+You can upload XLSX, CSV, TSV, CLF, XLF data files directly from Amazon QuickSight website. You can also upload them to an Amazon S3 bucket and point Amazon QuickSight to the Amazon S3 object.
+Q: How do I access my data in AWS data sources?
+Amazon QuickSight seamlessly discovers your AWS data sources that are available in your account with your approval. You can immediately start browsing the data and building visualizations. You can also explicitly connect to other AWS data sources that are not in your account or in a different region by providing connection details for those sources.
+Q: My source data is not in a clean format. How do I format and transform the data before visualizing?
+Amazon QuickSight lets you prepare data that is not ready for visualization. Select the “Edit/Preview Data” button in the connection dialog. Amazon QuickSight supports various functions to format and transform your data. You can alias data fields and change data types. You can subset your data using built in filters and perform database join operations using drag and drop. You can also create calculated fields using mathematical operations and built-in functions such conditional statements, string, numerical and date functions.
+Q: How much data can I analyze with Amazon QuickSight?
+With Amazon QuickSight you don’t need to worry about scale. You can seamlessly grow your data from a few hundred megabytes to many terabytes of data without managing any infrastructure.
+Q: How does QuickSight’s integration with SageMaker work?
+The first step is to connect the data source from which you want to pull data. Once you’re connected to a data source, select “Augment with SageMaker” option. From there, you pick the model you want to use from a list of SageMaker models in your AWS account and provide the schema file, which is a JSON-formatted file that contains the input, output, and run-time settings. Review the input schema mapping with the columns in your data set. Once you’re done, you can execute this job and start running the inference.
+Q: Does QuickSight leverage SageMaker models to perform inference on incremental data or the full data every time it runs?
+QuickSight does inference on the full data every time it refreshes.
+User management
+Q: How do I manage user access for Amazon QuickSight?
+When you create a new Amazon QuickSight account, you have administrative privileges by default. If you are invited to become an Amazon QuickSight user, whoever invites you assigns you either an ADMIN or a USER role. If you have an ADMIN role, you can create and delete user accounts, purchase annual subscriptions and SPICE capacity in addition to using the service.
+To create a user account, you send an email invitation to the user via an in-application interface, and then the user completes the account creation by specifying a password and signing in.
+Visualization and analysis
+Q: How do I create an analysis with Amazon QuickSight?
+Creating an analysis is simple. Amazon QuickSight seamlessly discovers data in popular AWS data repositories within your AWS account. Simply point Amazon QuickSight to one of the discovered data sources. To connect to another AWS data source that is not in your AWS account or in a different region, you can provide the connection details of the source. Then, select a table and start analyzing your data. You can also upload spreadsheets and CSV files and use Amazon QuickSight to analyze your files. To create a visualization, start by selecting the data fields you want to analyze, or drag the fields directly on to the visual canvas, or a combination of both actions. Amazon QuickSight will automatically select the appropriate visualization to display based on the data you’ve selected.
+Q: How does Amazon QuickSight select the right visualization to use for my data?
+Amazon QuickSight has an innovative technology called AutoGraph that allows it to select the most appropriate visualizations based on the properties of the data, such as cardinality and data type. The visualization types are chosen to best reveal the data and relationships in an effective way.
+Q: How do I create a dashboard?
+Dashboards are a collection of visualizations, tables, and other visual displays arranged and visible together. With Amazon QuickSight, you can compose a dashboard within an analysis by arranging the layouts and size of visualizations and then publish the dashboard to an audience within your organization.
+Q: What types of visualizations are supported in Amazon QuickSight?
+Amazon QuickSight supports assorted visualizations that facilitate different analytical approaches:
+Comparison and distribution
+Bar charts (several assorted variants)
+Changes over time
+Line graphs
+Area line charts
+Correlation
+Scatter plots
+Heat maps
+Aggregation
+Pie graphs
+Tree maps
+Tabular
+Pivot tables
+Q: What is a suggested visualization? How does Amazon QuickSight generate suggestions?
+Amazon QuickSight comes with a built-in suggestion engine that provides you with suggested visualizations based on the properties of the underlying datasets. Suggestions serve as possible first or next-steps of an analysis and removes the time-consuming task of interrogating and understanding the schema of your data. As you work with more specific data, the suggestions will update to reflect the next steps appropriate to your current analysis.
+Q: What are Stories?
+Stories are guided tours through specific views of an analysis. They are used to convey key points, a thought process, or the evolution of an analysis for collaboration. You can construct them in Amazon QuickSight by capturing and annotating specific states of the analysis. When readers of the story click on an image in the story, they are then taken into the analysis at that point, where they can explore on their own.
+Q: What type of calculations does Amazon QuickSight enable?
+You can perform typical arithmetic and comparison functions; conditional functions such as if,then; and date, numeric, and string calculations.
+Q: How can I get sample data to explore in QuickSight?
+For your convenience, sample analyses are automatically generated when you create an account in Amazon QuickSight. The raw data can also be downloaded from the links below:
+Business overview
+People overview
+Sales pipeline
+Web and marketing analytics
+These datasets were created by 47Lining, an AWS Advanced Consulting Partner with Big Data Competency designation.
+Security and access
+Q: How is data transmitted to Amazon QuickSight?
+You have several options to get your data into Amazon QuickSight: file upload, connect to AWS data sources, connect to external data stores over JDBC/ODBC, or through other API-based data store connectors.
+Q: Can I choose the AWS region to connect to hosted or on-premises databases over JDBC/ODBC?
+Yes. For better performance and user interactivity, customers are advised to use the region where your data is stored. The Amazon QuickSight auto discovery feature detects data sources only within the AWS region of the Amazon QuickSight endpoint to which you are connected. For a list of the supported Amazon QuickSight AWS regions, please visit the Regional Products and Services page for all AWS global infrastructure.
+Q: Does Amazon QuickSight support multi-factor authentication?
+Yes. You can enable multi-factor authentication (MFA) for your AWS account via the AWS Management console.
+Q: How do I connect my VPC to Amazon QuickSight?
+If your VPC has been set up with public connectivity, you can add Amazon QuickSight’s IP address range to your database instances’ security group rules to enable traffic flow into your VPC and database instances.
+Q: What is row-level security?
+Row-level security (RLS) enables QuickSight dataset owners to control access to data at row granularity based on permissions associated with the user interacting with the data. With RLS, Amazon QuickSight users only need to manage a single set of data and apply appropriate row-level dataset rules to it. All associated dashboards and analyses will enforce these rules, simplifying dataset management and removing the need to maintain multiple datasets for users with different data access privileges.
+Q: What does private VPC access in the context of Amazon QuickSight mean?
+If you have data in AWS (perhaps in Amazon Redshift, Amazon Relational Database Service (RDS), or on EC2) or on-premises in Teradata or SQL Server on servers without public connectivity, this feature is for you. Private VPC (Virtual Private Cloud) Access for QuickSight uses an Elastic Network Interface (ENI) for secure, private communication with data sources in a VPC. It also allows you to use AWS Direct Connect to create a secure, private link with your on-premises resources.
+Sharing
+Q: How do I share an analysis, dashboard, or story in Amazon QuickSight?
+You can share an analysis, dashboard, or story using the share icon from the QuickSight service interface. You will be able to select the recipients (email address, username or group name), permission levels, and other options before sharing the content with others.
+Upgrades and downgrades
+Q: Can I upgrade from Standard Edition to Enterprise Edition? Yes, Standard Edition account accounts can be upgraded to Enterprise Edition through the QuickSight management page. Existing authentication details and user data will be seamlessly migrated to Enterprise Edition. Enterprise Edition rates for user and SPICE capacity will apply.
+Q: Can I downgrade from Enterprise Edition to Standard Edition? No, you will not be able to downgrade from Amazon QuickSight Enterprise Edition to Standard Edition. Amazon QuickSight Enterprise Edition offers enhanced functionality such as QuickSight Readers, connectivity to data sources in Private VPC, row-level security, hourly refresh of SPICE data as well as AD connectivity and group-based management of assets for AD accounts. Due to the differences in feature set, a downgrade might result in loss of data connectivity and security, and as a result, this option is not supported.
+Keep in touch
+To stay in touch with all of the new and innovative QuickSight features in the coming months, sign up for the QuickSight update email.
+Signup for the QuickSight update
+Page Content

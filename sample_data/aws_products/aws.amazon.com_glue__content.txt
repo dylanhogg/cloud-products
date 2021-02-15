@@ -7,11 +7,11 @@ AWS Glue provides both visual and code-based interfaces to make data integration
 Introducing AWS Glue (1:47)
 Benefits
 Faster data integration
-Different groups across your organization can use AWS Glue to work together on data integration tasks, including extraction, cleaning, normalization, combining, loading, and running scalable ETL workflows. This way, you reduce the time it takes to analyze your data and put it to use from months to minutes.
+Different groups across your organization can use AWS Glue to work together on data integration tasks, including extraction, cleaning, normalization, combining, loading, and running scalable ETL workflows. This way, you reduce the time it takes to analyze your data and put it to use from months to minutes.
 Automate your data integration at scale
 AWS Glue automates much of the effort required for data integration. AWS Glue crawls your data sources, identifies data formats, and suggests schemas to store your data. It automatically generates the code to run your data transformations and loading processes. You can use AWS Glue to easily run and manage thousands of ETL jobs or to combine and replicate data across multiple data stores using SQL.
 No servers to manage
-AWS Glue runs in a serverless environment. There is no infrastructure to manage, and AWS Glue provisions, configures, and scales the resources required to run your data integration jobs. You pay only for the resources your jobs use while running.
+AWS Glue runs in a serverless environment. There is no infrastructure to manage, and AWS Glue provisions, configures, and scales the resources required to run your data integration jobs. You pay only for the resources your jobs use while running.
 Use cases
 Build event-driven ETL (extract, transform, and load) pipelines
 AWS Glue can run your ETL jobs as new data arrives. For example, you can use an AWS Lambda function to trigger your ETL jobs to run as soon as new data becomes available in Amazon S3. You can also register this new dataset in the AWS Glue Data Catalog as part of your ETL jobs.
@@ -22,11 +22,11 @@ AWS Glue Studio makes it easy to visually create, run, and monitor AWS Glue ETL 
 Explore data with self-service visual data preparation
 AWS Glue DataBrew enables you to explore and experiment with data directly from your data lake, data warehouses, and databases, including Amazon S3, Amazon Redshift, AWS Lake Formation, Amazon Aurora, and Amazon RDS. You can choose from over 250 prebuilt transformations in AWS Glue DataBrew to automate data preparation tasks, such as filtering anomalies, standardizing formats, and correcting invalid values. After the data is prepared, you can immediately use it for analytics and machine learning. Learn more about AWS Glue DataBrew here.
 Build materialized views to combine and replicate data (in preview)
-AWS Glue Elastic Views enables you to use familiar SQL to create materialized views. Use these views to access and combine data from multiple source data stores, and keep that combined data up-to-date and accessible from a target data store. The AWS Glue Elastic Views preview currently supports Amazon DynamoDB as a source, with support for Amazon Aurora and Amazon RDS to follow. Currently supported targets are Amazon Redshift, Amazon S3, and Amazon Elasticsearch Service, with support for Amazon Aurora, Amazon RDS, and Amazon DynamoDB to follow. Learn more about AWS Glue Elastic Views here.
+AWS Glue Elastic Views enables you to use familiar SQL to create materialized views. Use these views to access and combine data from multiple source data stores, and keep that combined data up-to-date and accessible from a target data store. The AWS Glue Elastic Views preview currently supports Amazon DynamoDB as a source, with support for Amazon Aurora and Amazon RDS to follow. Currently supported targets are Amazon Redshift, Amazon S3, and Amazon Elasticsearch Service, with support for Amazon Aurora, Amazon RDS, and Amazon DynamoDB to follow. Learn more about AWS Glue Elastic Views here.
 What's New
 date
 1
-…
+...
 Check out the AWS Glue features
 Learn more about the key features of AWS Glue.
 Learn more

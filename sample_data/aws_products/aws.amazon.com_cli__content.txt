@@ -1,17 +1,17 @@
 AWS Command Line Interface
 The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.
 The AWS CLI v2 offers several new features including improved installers, new configuration options such as AWS Single Sign-On (SSO), and various interactive features.
-Getting Started »
-CLI Reference »
-GitHub Project »
-Community Forum »
+Getting Started
+CLI Reference
+GitHub Project
+Community Forum
 Windows Download and run the 64-bit Windows installer.
 MacOS Download and run the MacOS PKG installer.
 Linux  Download, unzip, and then run the Linux installer
 Amazon Linux The AWS CLI comes pre-installed on Amazon Linux AMI.
-Release Notes Check out the Release Notes for more information on the latest version.
+Release Notes Check out the Release Notes for more information on the latest version.
 aws-shell (Developer Preview)
-aws-shell is a command-line shell program that provides convenience and productivity features to help both new and advanced users of the AWS Command Line Interface. Key features include the following.
+aws-shell is a command-line shell program that provides convenience and productivity features to help both new and advanced users of the AWS Command Line Interface. Key features include the following.
 Fuzzy auto-completion for
 Commands (e.g. ec2, describe-instances, sqs, create-queue)
 Options (e.g. --instance-ids, --queue-url)
@@ -37,10 +37,10 @@ $ aws autoscaling create-auto-scaling-group help
 File Commands for Amazon S3
 New file commands make it easy to manage your Amazon S3 objects. Using familiar syntax, you can view the contents of your S3 buckets in a directory-based listing.
 $ aws s3 ls s3://mybucket
-LastWriteTime            Length Name
-------------             ------ ----
+LastWriteTime            Length Name
+------------             ------ ----
 PRE myfolder/
-2013-09-03 10:00:00           1234 myfile.txt
+2013-09-03 10:00:00           1234 myfile.txt
 You can perform recursive uploads and downloads of multiple files in a single folder-level command. The AWS CLI will run these transfers in parallel for increased performance.
 $ aws s3 cp myfolder s3://mybucket/myfolder --recursive
 upload: myfolder/file1.txt to s3://mybucket/myfolder/file1.txt
@@ -49,12 +49,12 @@ A sync command makes it easy to synchronize the contents of a local folder with 
 $ aws s3 sync myfolder s3://mybucket/myfolder --exclude *.tmp
 upload: myfolder/newfile.txt to s3://mybucket/myfolder/newfile.txt
 Supported Services
-See the AWS CLI command reference for the full list of supported services.
+See the AWS CLI command reference for the full list of supported services.
 Additional Resources
-Connect with other developers in the AWS CLI Community Forum »
-Find examples and more in the User Guide »
-Learn the details of the latest CLI tools in the Release Notes »
-Dig through the source code in the GitHub Repository »
+Connect with other developers in the AWS CLI Community Forum
+Find examples and more in the User Guide
+Learn the details of the latest CLI tools in the Release Notes
+Dig through the source code in the GitHub Repository
 GET STARTED WITH AWS
 Learn how to start using AWS in minutes
 AWS FREE TIER

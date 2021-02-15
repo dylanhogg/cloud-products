@@ -1,0 +1,454 @@
+General Questions
+Q: What is AWS Direct Connect?
+AWS Direct Connect is a network service that provides an alternative to using the Internet to connect customer's on premise sites to AWS.
+Q: What can I do with AWS Direct Connect?
+Using AWS Direct Connect, data that would have previously been transported over the Internet can now be delivered through a private network connection between AWS and your datacenter or corporate network.
+Q: What are the benefits of using AWS Direct Connect and private network connections?
+In many circumstances, private network connections can reduce costs, increase bandwidth, and provide a more consistent network experience than Internet-based connections.
+Q: Which AWS services can be used with AWS Direct Connect?
+All AWS services, including Amazon Elastic Compute Cloud (EC2), Amazon Virtual Private Cloud (VPC), Amazon Simple Storage Service (S3), and Amazon DynamoDB can be used with AWS Direct Connect.
+Q: Can I use the same private network connection with Amazon Virtual Private Cloud (VPC) and other AWS services simultaneously?
+Yes. Each AWS Direct Connect connection can be configured with one or more virtual interfaces. Virtual interfaces may be configured to access AWS services such as Amazon EC2 and Amazon S3 using public IP space, or resources in a VPC using private IP space.
+Q: If I’m using Amazon CloudFront and my origin is in my own data center, can I use AWS Direct Connect to transfer the objects stored in my own data center?
+Yes. Amazon CloudFront supports custom origins including origins you run outside of AWS. The access to the CloudFront edge locations will be restricted to the geographically nearest AWS region, with the exception of the North America regions which currently allow access to all North American region's on-net CloudFront origins. With AWS Direct Connect, you will pay AWS Direct Connect data transfer rates for origin transfer.
+Through Direct Connect, customer traffic will remain in Amazon's backbone network after it enters it. Therefore, prefixes of CloudFront locations that are not on the Amazon backbone network will not be advertised through Direct Connect. You can also find more details about IP prefixes advertised on AWS Direct Connect public virtual interfaces here. You can also refer to this link to know more about Direct Connect routing policy.
+Q: Where is AWS Direct Connect available?
+You can find the complete list of Direct Connect locations on the Product Details page.
+Q: Can I use AWS Direct Connect if my network is not present at an AWS Direct Connect location?
+Yes. AWS Direct Connect Partners can help you extend your preexisting data center or office network to an AWS Direct Connect location. Please see AWS Direct Connect Partners for more information.
+Q: How can I get started with AWS Direct Connect?
+Use the AWS Direct Connect tab on the AWS Management Console to create a new connection. Then you will change the region to the region you wish to use. When requesting a connection, you will be asked to select the AWS Direct Connect location you wish to use, the number of ports, and the port speed. You will also have the opportunity to request to have an AWS Direct Connect Partner contact you if you need assistance extending your office or data center network to the AWS Direct Connect location.
+Q: How do I order Dedicated connections?
+You can request 1G/10G/100G Dedicated connections from AWS Direct Connect console or using the CreateConnection API. Before you order your Dedicated connections, please take a look at AWS Direct Connect resiliency recommendations  to know more about the recommended configurations to meet the resiliency needs of your workload. For the production workloads, AWS recommends DX customers to deploy a location redundant configuration. A location redundant configuration will protect customer’s connectivity against a device failure in a co-location facility or a failure of a co-location facility.
+Using the Resiliency Toolkit – connection wizard,  you can order a location-redundant connectivity.  Once your connectivity is established, use the Resiliency Toolkit – failover testing feature to test your connectivity against a potential failure situation.
+Q: Can I order a port for AWS GovCloud (US) in the AWS Management Console?
+If you wish to order a port to connect to AWS GovCloud (US) you will need to use the AWS GovCloud (US) management console. Details about getting started in the AWS GovCloud (US) region can be found here.
+Billing
+Q: Are there any setup charges or a minimum service term commitment required to use AWS Direct Connect?
+There are no setup charges, and you may cancel at any time. Services provided by AWS Direct Connect Partners may have other terms or restrictions that apply.
+Q: How will I be charged and billed for my use of AWS Direct Connect?
+AWS Direct Connect has two separate charges: port-hours and Data Transfer. Pricing is per port-hour consumed for each port type. Partial port-hours consumed are billed as full hours. The account that owns the port will be charged the port-hour charges.
+Data Transfer via AWS Direct Connect will be billed in the same month in which the usage occurred.  See additional Q & A below to understand how Data Transfer will be billed.
+Q: Will regional data transfer be billed at the AWS Direct Connect rate?
+No, data transfer between Availability Zones in a region will be billed at the regular regional data transfer rate in the same month in which the usage occurred.
+Q: What defines billable port-hours for Dedicated Connections?
+Port-hours are billed once the connection between the AWS router and your router is established, or 90 days after you ordered the port, whichever comes first. Port charges will continue to be billed anytime the AWS Direct Connect port is provisioned for your use. If you no longer wish to be charged for your port, please follow the cancellation process detailed in How do I cancel the AWS Direct Connect service?
+Q: What defines billable port-hours for Hosted Connections?
+Port-hours are billed once you have accepted the Hosted Connection. Port charges will continue to be billed as long as the Hosted Connection is provisioned for your use. If you no longer wish to be charged for your Hosted Connection, please work with the AWS Direct Connect Partner to cancel the Hosted Connection.
+Q: What is the format for Hosted Connection port-hour charges?
+All Hosted Connection port-hour charges at a Direct Connect location are grouped by capacity.
+For example, consider the bill for a customer with two separate 200Mbps Hosted Connections at a Direct Connect location, and no other Hosted Connections at that location. The port-hour charges for the two separate 200Mbps Hosted Connections will be summarized under a single item with a label ending in “HCPortUsage:200M”. For a month with 720 total hours, the port-hour total for this item will be 1,440, or the total number of hours in the month multiplied by the total number of 200Mbps Hosted Connections at this location.
+The Hosted Connection capacity identifiers which may appear on your bill are as follows:
+HCPortUsage:50M HCPortUsage:100M HCPortUsage:200M HCPortUsage:300M HCPortUsage:400M HCPortUsage:500M HCPortUsage:1G HCPortUsage:2G HCPortUsage:5G HCPortUsage:10G
+Note that these capacity identifiers will appear by location depending on which Hosted Connection capacities you have at each location.
+Q: Which AWS account gets charged for the Data Transfer Out performed over a public virtual interface?
+For publicly addressable AWS resources (for example, Amazon S3 buckets, Classic EC2 instances, or EC2 traffic that goes through an internet gateway), if the outbound traffic is destined for public prefixes owned by the same AWS payer account and actively advertised to AWS through an AWS Direct Connect public virtual Interface, the Data Transfer Out (DTO) usage is metered toward the resource owner at AWS Direct Connect data transfer rate.
+For AWS Direct Connect pricing information, please see AWS Direct Connect pricing. If using an AWS Direct Connect Partner to facilitate a Direct Connect connection, contact the AWS Direct Connect Partner regarding any fees they may charge.
+Q: Which AWS account gets charged for the Data Transfer Out performed over a transit/private virtual interface?
+With the introduction of the granular Data Transfer Out allocation feature, the AWS account responsible for the Data Transfer Out will be charged for the Data Transfer Out performed over a transit/private virtual interface. The AWS account responsible for the Data Transfer Out will be determined based on the customer’s use of the private/transit virtual interface as follows:
+Private virtual interface(s) is used to interface with Amazon Virtual Private Cloud(s) with or without Direct Connect gateway(s). In the case of the private virtual interface, the AWS account owning the AWS resources responsible for the Data Transfer Out will be charged.
+Transit virtual interface(s) is used to interface with AWS Transit Gateway(s). In the case of the transit virtual interface, the AWS account owning the Amazon Virtual Private Cloud(s) attached to the AWS Transit Gateway associated with the Direct Connect gateway attached to the transit virtual interface will be charged. Please note that all applicable AWS Transit Gateway specific charges (Data Processing and Attachment) will be in addition to the AWS Direct Connect Data Transfer Out.
+Q: How does AWS Direct Connect work with consolidated billing?
+AWS Direct Connect data transfer usage will be aggregated to your master account.
+Q: How do I cancel the AWS Direct Connect service?
+You can cancel AWS Direct Connect service by deleting your ports from the AWS management console. You should also cancel any service(s) offered by a third party. For example, contact the colocation provider to disconnect any cross-connects to AWS Direct Connect, and/or a network service provider who may be providing network connectivity from your remote locations to the AWS Direct Connect location.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Technical
+Q: What connection capacities are supported by AWS Direct Connect?
+For Dedicated Connections, 1Gbp, 10Gbps, and 100Gbps ports are available. For Hosted Connections, capacities of 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps and 10Gbps may be ordered from approved AWS Direct Connect Partners. See AWS Direct Connect Partners for more information.
+Q: Is 100Gbps connection capacity supported for Hosted connections?
+No. 100 Gbps is only currently supported on Dedicated Connections.
+Q: Are there limits on the amount of data that I can transfer using AWS Direct Connect?
+No. You may transfer any amount of data up to the limit of your selected port capacity.
+Q: Are there limits on the number of routes I can advertise towards AWS using AWS Direct Connect?
+Yes, you can advertise up to 100 routes over each Border Gateway Protocol session using AWS Direct Connect.
+Q: What happens if I advertise more than 100 routes over a Border Gateway Protocol session?
+Your Border Gateway Protocol session will go down if you advertise more than 100 routes over a Border Gateway Protocol session. This will prevent all network traffic flowing over that virtual interface until you reduce the number of routes to less than 100.
+Q: What are the technical requirements for the connection?
+AWS Direct Connect supports  1000BASE-LX for 1Gbps, 10GBASE-LR for 10Gbps and 100GBASE-LR4 for 100Gbps connections over single mode fiber using Ethernet transport. Your device must support 802.1Q VLANs. See the AWS Direct Connect User Guide for more detailed requirements information.
+Q: What AWS region(s) can I connect to via this connection?
+Using direct connect gateway, you can connect to VPCs deployed in any AWS Region from this location. See the Direct Connect Gateway page to get more details.
+Direct connect locations can also access the public resources in any AWS Region using a public virtual interface.
+Q: What Availability Zone(s) can I connect to via this connection?
+Using direct connect gateway, you can connect to VPCs deployed in any AWS Region Availability Zone(s) from this location. See the direct connect gateway page to get more details.
+Q: Are connections to AWS Direct Connect redundant?
+Each connection consists of a single dedicated connection between ports on your router and an Amazon router. We recommend establishing a second connection if redundancy is required. When you request multiple ports at the same AWS Direct Connect location, they will be provisioned on redundant Amazon routers. To achieve high availability, we recommend you to have connections at multiple AWS Direct Connect locations. You can refer to this page to learn more about achieving highly available network connectivity.
+Q: Will I lose connectivity if my AWS Direct Connect link fails?
+If you have established a second AWS Direct Connect connection, traffic will failover to the second link automatically. We recommend enabling Bidirectional Forwarding Detection (BFD) when configuring your connections to ensure fast detection and failover.
+To achieve high availability, we recommend you to have connections at multiple AWS Direct Connect locations. You can refer to this page to learn more about achieving highly available network connectivity.
+If you have configured a back-up IPsec VPN connection instead, all VPC traffic will failover to the VPN connection automatically. Traffic to/from public resources such as Amazon S3 will be routed over the Internet. If you do not have a backup AWS Direct Connect link or a IPsec VPN link, then Amazon VPC traffic will be dropped in the event of a failure. Traffic to/from public resources will be routed over the Internet.
+Q: Can I extend one of my VLANs to the AWS Cloud using AWS Direct Connect?
+No, VLANs are utilized in AWS Direct Connect only to separate traffic between virtual interfaces.
+Q: Does AWS Direct Connect offer a Service Level Agreement (SLA)?
+Yes, AWS Direct Connect offers SLA. Please see here for more details.
+Q: What are the technical requirements for virtual interfaces to public AWS services such as Amazon EC2 and Amazon S3?
+This connection requires the use of the Border Gateway Protocol (BGP) with an Autonomous System Number (ASN) and IP Prefixes. You will need the following information to complete the connection:
+A public or private ASN. If you are using a public ASN, you must own it. If you are using a private ASN, it must be in the 64512 to 65535 range.
+A new unused VLAN tag that you select
+Public IPs (/30) allocated by you for the BGP session
+By default, Amazon will advertise global public IP prefixes via BGP.  You must advertise public IP prefixes (/30 or smaller) that you own via BGP. For more details, consult the AWS Direct Connect User Guide.
+Q: What is an Autonomous System Number (ASN) and do I need one to use AWS Direct Connect?
+Autonomous System numbers are used to identify networks that present a clearly defined external routing policy to the Internet. AWS Direct Connect requires an ASN to create a public or private virtual interface. You may use a public ASN which you own, or you can pick any private ASN number between 64512 to 65535 range.
+Q: What IP address will be assigned to each end of a virtual interface?
+If you are configuring a virtual interface to the public AWS cloud, the IP addresses for both ends of the connection must be allocated from public IP space that you own. If the virtual interface is to a VPC and you choose to have AWS auto-generate the peer IP CIDR, the IP address space for both ends of the connection will be allocated by AWS in the 169.254.0.0/16 range.
+Q: Can I connect to the Internet via this connection?
+No.
+Q: If I have more than one virtual interface attached, can I exchange traffic between the two ports?
+Not for public Direct Connect virtual interfaces; but you can exchange traffic between the two ports in the same region if they are connecting to the same VGW.
+Q: Can I locate my hardware next to the equipment that powers AWS Direct Connect?
+You can procure rack space within the facility housing the AWS Direct Connect location and deploy your equipment nearby. However, AWS customer equipment cannot be placed within AWS Direct Connect racks or cage areas for security reasons. For more information, contact the operator for the particular facility. Once deployed, you can connect this equipment to AWS Direct Connect using a cross-connect.
+Q: How do I enable BFD on my Direct Connect connection?
+Asynchronous BFD is automatically enabled for each Direct Connect virtual interface, but will not take effect until it's configured on your router. AWS has set the BFD liveness detection minimum interval to 300, and the BFD liveness detection multiplier to 3.
+Q: How do I set up Direct Connect for the AWS GovCloud (US) Region?
+See the AWS GovCloud (US) User Guide for detailed instructions on how to set up a Direct Connect connection for the AWS GovCloud (US) region.
+Link Aggregation Group
+Q: What is this feature?
+Link Aggregation Groups (LAG) are a way for customers to order and manage multiple direct connect ports as a single larger connection instead of as separate discrete connections.
+Q: What’s the max number of links I can have in a LAG group? The maximum number of links in a LAG group are 4x for 1G and 10G ports and 2x for 100G ports.
+Q: What does the LOA look like?
+You will receive a single LOA document with dedicated page for each connection.
+Q: What are you using for Link Aggregation Groups?
+We are using the industry standard of LACP.
+Q: Are these LAGs Static or Dynamic LACP?
+We are configuring Dynamic LACP bundles. Static LACP bundles are not supported.
+Q: Are these in Active/Active or Active/Passive mode?
+They will be in Active/Active. That means, that AWS ports will always be sending Link Aggregation Control Protocol Data Units (LACPDUs).
+Q: Does the MTU change at all?
+The MTU of the LAG can be changed, please refer to Jumbo Frame documentation here to know more.
+Q: Can I have my ports configured for Active/Passive instead of Active/Active?
+You could configure LAG at your endpoint with LACP active or passive mode, AWS side is always configured as Active mode LACP.
+Q: Can I mix interface types and have a few 1G ports and a few 10G ports in the same LAG?
+No, you can create LAG using the same type of ports (either 1G or 10G or 100G).
+Q: What ports types are supported for LAG?
+1Gbps, 10Gbps, and 100Gbps Dedicated Connection ports are support for LAG.
+Q: Can I LAG Hosted Connections as well?
+No. LAG is only available for 1Gbps,  10Gbps, and 100Gbps Dedicated Connections. It will not be available for Hosted Connections.
+Q: Can I create a LAG out of my existing ports?
+Yes, if your ports are on the same chassis. Please note this will cause your ports to go down for a moment while they are reconfigured as a LAG. They will not come back up until LAG is configured on your side as well.
+Q: Can I have a LAG that spans multiple AWS routers?
+LAG will only include ports on the same AWS device. We don’t support multi-chassis LAG.
+Q: How do I add links to my LAG once it’s set up?
+You can request another port for your LAG, but if we do not have ports available in the same chassis you will need to order a new LAG and migrate your connections. For example, if you have 3x 1G links, and would like to add a fourth but we do not have a port available on that chassis, you will need to order a new LAG of 4x 1G ports.
+Q: What does the new LOA look like when I order additional connection to add to the LAG?
+You will receive a separate LOA for each the new members of the LAG group.
+Q: You’re out of ports and I have to order a new LAG, but I have VIFs configured! How do I move those?
+You can have multiple VIFs attached to a VGW at once, and you can configure VIFs on a connection even when it’s down. We suggest you create the new VIFs on your new bundle, and then move the connections over to the new bundle once you’ve created all of your VIFS. Remember to delete the old connections so we stop billing you for them.
+Q: Can I delete a single port from my LAG?
+Yes, but only if your min links is set to lower than the ports you’ll have left. Ex: You have 4 ports and Min links set to 4 – you won’t be able to delete a port from the bundle. If min links is set to 3, you can then delete a port from the bundle. We will return a notification with the specific panel/port you’ve deleted and a reminder to disconnect the cross connect and circuit from Amazon.
+Q: Can I delete my LAG all at once?
+Yes, but just like a regular connection you won’t be able to delete it if you have VIFs configured.
+Q: If I have only 2 ports in my LAG can I still delete one?
+Yes, you can have a single port in a LAG.
+Q: Can I order a LAG with only one port?
+Yes you can. Please note we can’t guarantee there will be more ports available on the same chassis in the future if you wish to add more ports.
+Q: Can I convert a LAG back to individual ports? Yes. This can be done with the DisassociateConnectionWithLag API call. See the API section.
+Q: Can you just create a tool to move my VIFs for me?
+You can use AssociateVirtualInterface API or console to do this operation.
+Q: Does the LAG show as a single connection or a collection of connections?
+It will show as a single dxlag and we’ll list the connection id’s under it.
+Q: What does Min Links mean, and why do I have a check box for it when I order my bundle?
+Min links is a feature in LACP where you can set the minimum number of links needed to be active in a bundle for that bundle to be active and pass traffic. If, for example, you have 4 ports, your min links is set to 3, and you only have 2 active ports, your bundle will not be active. If you have 3 or more then the bundle is active and will pass traffic if you have a VIF configured.
+Q: What’s the behavior if I don’t click the Min Links?
+We’ll set Min Links to 0 by default.
+Q: Can I change the Min Links after I’ve set up my LAG?
+Yes. You can change the min links value after you’ve set up the bundle, either via console or via API.
+Q: When I associate my existing DirectConnect connection with a LAG what happens with existing Virtual Interfaces already created with DirectConnect connection?
+When a DirectConnect connection with existing Virtual Interfaces (VIFs) is associated to a LAG, Virtual Interfaces are migrated to the LAG; Please note that certain parameters associated with VIFs needs to be unique like VLAN numbers to be moved to LAG.
+Q: If I have multiple LAGs, can I still use BFD to improve fail over time between paths?
+BFD is still supported.
+Q: Can I set link priority on a specific link?
+We’ll treat all links as equal, so we won’t set “link priority” on any specific link.
+Q: Does having a LAG make my connection more resilient?
+No, LAG does not make your connectivity to AWS more resilient. If you have more than one link in your LAG, and if your min links is set to one, your LAG will let you protect against single link failure. It won’t protect against a single device failure at AWS where your LAG is terminating.
+To achieve high availability connectivity to AWS we recommend you to have connections at multiple AWS Direct Connect locations. You can refer to this page to learn more about achieving highly available network connectivity.
+Q: Can I have VIFs on two different LAG connected to the same VGW?
+Yes. This behavior is exactly like creating VIFs on single ports.
+Q: Can I have a 40GE interface on my side that connects to 4x 10GE on the AWS side?
+You will need 4x 10GE interfaces on your router to connect to AWS. A single 40GE interface connecting to a 4x 10GE LACP is not supported.
+Q: Is there a charge for LAG?
+There is no extra charge for LAG.
+IPv6
+Q: Can I run IPv4 and IPv6 on the same virtual interface (VIF)?
+AWS Direct Connect supports both single and dual stack configurations on public and private VIFs. You will be able to add an IPv6 peering session to an existing VIF with IPv4 peering session (or vice versa). You can also create 2 separate VIFs – one for IPv4 and another one for IPv6
+Q: I need a public IPv6 range, can Amazon assign me a range?
+Yes. Addressing for both public and private VIFs is provided by default and with a netmask of /125.
+Q: What IP address will Amazon assign my private VIF if I select “assign an IP” in the console?
+For a private IPv4 VIF, Amazon will provide you a /30 CIDR. For a private IPv6 VIF, Amazon will provide you a /125 CIDR.
+Q: Will I still need to run BGP on my VIFs?
+Yes. Both private and public Direct Connect require a native peering from IPv4 or IPv6. Multiprotocol BGP is not supported at this time.
+Q: Are there any changes to VLAN assignment?
+No. Layer 2 functionality remains the same for IPv4 and IPv6.
+Q: Will I still be able to use BFD for faster BGP failover times?
+Yes. BFD is supported for IPv6 BGP peerings.
+Q: Are there any changes in the length of CIDR you can advertise to AWS?
+Yes, for IPv6 we will limit the length of CIDR you can advertise to AWS to /64 (or shorter) for public Direct Connect Virtual Interface. For IPv4, prefix limits will remain the same.
+Q: What routes will AWS announce to me over a public VIF?
+All public routes.
+Q: Will you support multicast or anycast over IPv6 VIFs?
+We will not support multicast or anycast on Direct Connect.
+Q: What routes will I learn from AWS over a public VIF?
+AWS Public Direct Connect will advertise IPv6 prefixes for all IPv6 enabled services.
+Q: Can I create a Hosted Virtual Interface for someone that is IPv6 enabled?
+Yes you can.
+Q: Will this impact policers associated with Hosted Connections?
+It will not.
+Q: Will cloudhub still work in my VGW? (note also impacts VPN)
+It will only work for like-for-like traffic; that is, you can send IPv4 traffic out an IPv4 interface. Translation between IPv4 and IPv6 is not supported. Translation between IPv4 and IPv6 is not supported.
+Using AWS Direct Connect with Amazon Virtual Private Cloud
+Q: What are the technical requirements for virtual interfaces to VPCs?
+This connection requires the use of Border Gateway Protocol (BGP). You will need the following information to complete the connection:
+A public or private ASN. If you are using a public ASN you must own it. If you are using a private ASN, it must be in the 64512 to 65535 range.
+The VPC Virtual Private Gateway (VGW) ID
+AWS will allocate private IPs (/30) in the 169.x.x.x range for the BGP session and will advertise the VPC CIDR block over BGP. You can advertise the default route via BGP.
+Q: How does AWS Direct Connect differ from an IPSec VPN Connection?
+A VPC VPN Connection utilizes IPSec to establish encrypted network connectivity between your intranet and Amazon VPC over the Internet. VPN Connections can be configured in minutes and are a good solution if you have an immediate need, have low to modest bandwidth requirements, and can tolerate the inherent variability in Internet-based connectivity. AWS Direct Connect does not involve the Internet; instead, it uses dedicated, private network connections between your intranet and Amazon VPC.
+Q: Can I use AWS Direct Connect and a VPN Connection to the same VPC simultaneously?
+Yes. However, only in fail-over scenarios. The Direct Connect path will always be preferred, when established, regardless of AS path prepending.
+Q: Can I establish a Layer 2 connection between VPC and my network?
+No, Layer 2 connections are not supported.
+Direct Connect Gateway
+Q: What is Direct Connect gateway?
+Direct Connect gateway is a grouping of virtual private gateways (VGWs) and private virtual interfaces (VIFs).
+Q: What is the multi-account support for Direct Connect gateway?
+Multi-account support for Direct Connect gateway will allow you to associate up to 10 Amazon Virtual Private Clouds (Amazon VPCs) or up to 3 AWS Transit Gateways from multiple AWS accounts with a Direct Connect gateway.
+Q: Can I associate Amazon Virtual Private Clouds (Amazon VPCs) owned by any AWS account with a Direct Connect gateway owned by any AWS account?
+Yes, you can associate Amazon Virtual Private Clouds (Amazon VPCs) owned by any AWS account with a Direct Connect gateway owned by any AWS account.
+Q: Can I associate AWS Transit Gateway owned by any AWS account with a Direct Connect gateway owned by any AWS account?
+Yes, you can associate AWS Transit Gateway owned by any AWS account with a Direct Connect gateway owned by any AWS account.
+Q: How do I use multi-account support for Direct Connect gateway?
+You can use the AWS Management Console or AWS Direct Connect APIs to use multi-account support for the Direct Connect gateway. If you are the owner of the Direct Connect gateway, follow the steps outline in the AWS Direct Connect user guide.
+Q: Why is Direct Connect gateway needed?
+It provides three main functions. First; Direct Connect gateway will enable you to interface with VPCs in any AWS Region (except AWS China Region), enabling you to use your AWS Direct Connect connections to interface with more than one AWS Regions.
+Second; you can share a private virtual interface to interface with up to ten Virtual Private Clouds (VPCs), enabling you to reduce the number of Border gateway Protocol sessions between your on-premises network and AWS deployments.
+Third: By attaching transit virtual interface(s) to a Direct Connect gateway and associating Transit Gateway(s) with the Direct Connect gateway, you can share transit virtual interface(s) to interface with up to three Transit Gateways, enabling you to reduce the number of Border Gateway Protocol sessions between your on-premises network and AWS deployments.
+Q: If I use Direct Connect gateway, does my traffic to the desired AWS Region go via the associated home AWS Region?
+No. When using Direct Connect gateway, your traffic will take the shortest path from your Direct Connect location to the destination AWS Region and vice versa regardless of the associated home AWS Region of the Direct Connect location that you are connected at.
+Q: Are there additional fees when using Direct Connect gateway and working with remote regions?
+There are no charges for using a Direct Connect gateway. You will pay applicable egress data charges based on the source remote AWS Region and port hour charges as per AWS Direct Connect pricing.
+Q: Do the private/transit virtual interfaces(s), Direct Connect gateway, Virtual Private Gateway or AWS Transit Gateways need to be in the same account to use Direct Connect gateway functionality?
+Yes, private virtual interface and Direct Connect gateway must be in the same AWS account to use Direct Connect gateway functionality. Similarly, transit virtual interface and Direct Connect gateway must be in the same AWS account to use Direct Connect gateway functionality
+Virtual private gateway(s) or AWS Transit Gateway(s) can be in different AWS accounts then the account owning the Direct Connect gateway.
+Q: Can I continue to use all my VPC features if I associate VGW (associated with Amazon VPC) to Direct Connect Gateway?
+Yes, Networking features such as Elastic File System, Elastic Load Balancer, Application Load Balancer, Security Groups, Access Control List, AWS PrivateLink will still work with Direct Connect gateway.
+Direct Connect gateway will not support CloudHub functionality, but if you are using AWS Classic VPN or AWS VPN connection to VGW that is associated with your Direct Connect gateway, you will be able to use your VPN connection to failover.
+Features that are currently not supported by Direct Connect, AWS Classic VPN, or AWS VPN, such as edge-to-edge routing, VPC peering, VPC endpoint, will not be supported by Direct Connect gateway.
+Q: I am working with one of the AWS Direct Connect Partners to get private virtual interface provisioned for my account, can I use Direct Connect gateway?
+Yes, you can associate a provisioned private virtual interface with your Direct Connect gateway when you confirm your provisioned Private in your AWS account.
+Q: What if I just want to connect to VPCs in my local region?
+You can continue to use the current practice of attaching your VIF to VGW; you will continue to have intra-region VPC connectivity, and will be charged egress rate that is applicable based on geographical regions.
+Q: What are the limits associated with Direct Connect gateway usage?
+Please refer to AWS Direct Connect Limits to get limits associated with the Direct Connect gateway feature.
+Q: Can a VGW (associated with a VPC) be part of more than one Direct Connect gateway?
+No, a VGW-VPC pair cannot be part of more than one Direct Connect gateway.
+Q: Can a private virtual interface be attached to more than one Direct Connect gateway?
+No, one private virtual interface can only attach to a single Direct Connect gateway OR a single Virtual Private Gateway. We recommend that you follow AWS Direct Connect resiliency recommendations and attach more than one private virtual interface.
+Q: Can I associate multiple VGWs (each associated with a VPC) to a Direct Connect gateway?
+Yes, as long as the IP CIDR blocks of the Amazon VPC associated with the Virtual Private Gateway do not overlap.
+Q: Does Direct Connect gateway break existing CloudHub functionality for customers?
+No, Direct Connect gateway does not break existing CloudHub for customers. Direct Connect gateway enables connectivity between on-premise networks and any AWS region's VPC. CloudHub enables connectivity between on-premise network using Direct Connect or VPN within the same region the VIF is associated with the VGW directly. Existing CloudHub functionality will continue to be supported.
+Q: What type of traffic is supported, and not supported by Direct Connect gateway?
+Please refer to AWS Direct Connect User Guide to review supported and not supported traffic patterns.
+Q: Will intra-region CloudHub continue to be supported?
+Yes, customers will still be able to attach a Direct Connect VIF directly to a VGW to support CloudHub
+Q: I currently have a VPN in us-east-1 attached to a VGW. I want to enable CloudHub in us-east-1 between that VPN and a new VIF. Can I do this with Direct Connect gateway?
+No, you cannot do this with a Direct Connect gateway, but the option to attach a VIF directly to a VGW is available to enable the VPN <-> Direct Connect CloudHub use case.
+Q: I have an existing private virtual interface associated with VGW, can I associate my existing private virtual interface with Direct Connect gateway?
+No, an existing private virtual interface associated with VGW cannot be associated with the Direct Connect gateway. Please create a new private virtual interface, and at the time of creation, associate with your Direct Connect gateway.
+Q: Does Direct Connect gateway deprecate CloudHub functionality?
+No. You can continue using your already created CloudHub.
+Q: Can I create a new CloudHub between my VPN connection and Direct Connect VIF?
+Yes, you can create a new CloudHub between your VPN and Direct Connect VIF by using a VGW attachment instead of a Direct Connect gateway attachement.
+Q: If I have a VGW attached to a VPN and a Direct Connect gateway and my Direct Connect circuit goes down, will my VPC traffic route out the VPN?
+Yes, as long as the VPC route table still has routes to the VGW towards the VPN.
+Q: Can I attach a VGW that is not attached to a VPC to a Direct Connect gateway?
+No, you cannot associate an unattached VGW to Direct Connect gateway.
+Q: I have created a Direct Connect gateway with one Direct Connect Private , and three non-overlapping VGWs (each associated with a VPC), what happens if I detach one of the VGW from the VPC?
+Traffic from your on-premise network to the detached VPC will stop, and VGW's association with the Direct Connect gateway will be deleted.
+Q: I have created a Direct Connect gateway with one Direct Connect VIF, and three non-overlapping VGW-VPC pairs, what happens if I detach one of the VGW from the Direct Connect gateway?
+Traffic from your on-premise network to the detached VGW (associated with a VPC) will stop.
+Q: Can I send traffic from one VPC associated with a Direct Connect gateway to another VPC associated to the same Direct Connect gateway?
+No, Direct Connect gateway only supports routing traffic from Direct Connect VIFs to VGW (associated with VPC). In order to send traffic between 2 VPCs, you would configure a VPC peering connection, the same as you do today.
+Q: I currently have a VPN in us-east-1 attached to a VGW. If I associate this VGW to a Direct Connect gateway, can I send traffic from that VPN to a VIF attached to the Direct Connect gateway in a different region?
+No, a Direct Connect gateway will not route traffic between a VPN and a Direct Connect VIF. To enable this use case, you would create a VPN in the region of the VIF and attach the VIF and the VPN to the same VGW.
+Q: How do I detach my VGW-VPC pair from a Direct Connect gateway?
+You can detach a VGW-VPC pair from a Direct Connect gateway using the AWS Console or API.
+Q: Do you provide any SLA for Direct Connect gateway?
+Please see here to review AWS Direct Connect SLA.
+Q: Can I resize my Amazon VPC associated with a Direct Connect gateway?
+Yes, you can resize the Amazon VPC. If you re-size your Amazon VPC, you must re-send the proposal with the re-sized VPC CIDR to the Direct Connect gateway owner. Once the Direct Connect gateway owner approves the new proposal, the re-sized VPC CIDR will be advertised towards your on-premise network.
+Q: Is there a way to configure Direct Connect gateway to selectively propagate prefixes to/from Amazon VPCs?
+Yes, Direct Connect gateway offers a way for you to selectively announce prefixes towards your on-premise networks. As the owner of the Direct Connect gateway, you can override the prefixes being advertised towards the on-premises network before you accept the association proposal OR when you can update the association request with allowed prefixes. Please see this documentation to get more information.
+For prefixes getting advertised from your on-premise networks, each VPC associated with a Direct Connect gateway will receive all prefixes announced from your on-premises networks.
+If you want to limit traffic to and from any specific Amazon VPC, you should consider using Access Control Lists (ACLs) for each VPC.
+Q: Can I associate multiple AWS Transit Gateways to a Direct Connect gateway?
+Yes, you can associate up to three AWS Transit Gateways to a Direct Connect gateway as long as the IP CIDR blocks announced from your AWS Transit Gateways do not overlap.
+Direct Connect Gateway - Bring your own Private ASN
+Configurable Private Autonomous System Number (ASN). This allows customers to set the ASN on the Amazon side of the BGP session for private VIFs on any newly created Direct Connect Gateway.
+Q: Where are these features available?
+All commercial AWS Regions (except AWS China Region) and GovCloud (US).
+Q: How can I configure/assign my ASN to be advertised as the Amazon side ASN?
+You can configure/assign an ASN to be advertised as the Amazon side ASN during creation of the new Direct Connect Gateway. You can create a Direct Connect Gateway using the AWS Direct Connect console or a CreateDirectConnectGateway API call.
+Q: Can I use any ASN - public and private?
+You can assign any private ASN to the Amazon side. You cannot assign any other public ASN.
+Q: Why can't I assign a public ASN for the Amazon half of the BGP session?
+Amazon is not validating ownership of the ASNs, therefore we're limiting the Amazon-side ASN to private ASNs. We want to protect customers from BGP spoofing.
+Q: What ASN can I choose?
+You can choose any private ASN. Ranges for 16-bit private ASNs include 64512 to 65534. You can also provide 32-bit ASNs between 4200000000 and 4294967294.
+Q: What will happen if I try to assign a public ASN to the Amazon half of the BGP session?
+We will ask you to re-enter a private ASN once you attempt to create the Direct Connect Gateway.
+Q: If I don't provide an ASN for the Amazon half of the BGP session, what ASN can I expect Amazon to assign to me?
+Amazon will provide an ASN of 64512 for the Direct Connect Gateway if you don't choose one.
+Q: Where can I view the Amazon side ASN?
+You can view the Amazon side ASN in the AWS Direct Connect console and in the response of the DescribeDirectConnectGateways or using DescribeVirtualInterfaces API.
+Q: If I have a public ASN, will it work with a private ASN on the AWS side?
+Yes, you can configure the Amazon side of the BGP session with a private ASN and your side with a public ASN.
+Q: I have private VIFs already configured and want to set a different Amazon side ASN for the BGP session on an existing VIF. How can I make this change?
+You will need to create a new Direct Connect Gateway with desired ASN, and create a new VIF with the newly created Direct Connect Gateway. Your device configuration also needs to change appropriately.
+Q: I'm attaching multiple private VIFs to a single Direct Connect Gateway. Can each VIF have a separate Amazon side ASN?
+No, you can assign/configure separate Amazon side ASN for each Direct Connect Gateway, not each VIF. Amazon side ASN for VIF is inherited from the Amazon side ASN of the attached Direct Connect Gateway.
+Q: Can I use different private ASNs for my Direct Connect Gateway and Virtual Private Gateway?
+Yes, you can use different private ASNs for your Direct Connect Gateway and Virtual Private Gateway. Please note, the Amazon side ASN you will receive depends on your private virtual interface association.
+Q: Can I use same private ASNs for my Direct Connect Gateway and Virtual Private Gateway?
+Yes, you can use same private ASNs for your Direct Connect Gateway and Virtual Private Gateway. Please note, the Amazon side ASN you will receive depends on your private virtual interface association.
+Q: I'm attaching multiple Virtual Private Gateways with their own private ASN to a single Direct Connect Gateway configured with its own private ASN. Which private ASN takes precedence, VGW or Direct Connect Gateway?
+Direct Connect Gateway private ASN will be used as the Amazon side ASN for the Border Gateway Protocol (BGP) session between your network and AWS.
+Q: Where can I select my own private ASN?
+When creating a Direct Connect Gateway in the AWS Direct Connect Gateway console. Once Direct Connect Gateway is configured with Amazon side ASN, the private virtual interfaces associated with the Direct Connect Gateway will use your configured ASN as the Amazon side ASN.
+Q: I use CloudHub today. Will I have to adjust my configuration in the future?
+You will not have to make any changes.
+Q: I want to select a 32-bit ASN. What is the range of 32-bit private ASNs?
+We will support 32-bit ASNs from 4200000000 to 4294967294.
+Q: Once the Direct Connect Gateway is created, can I change or modify the Amazon side ASN?
+No, you cannot modify the Amazon side ASN after creation. You can delete the Direct Connect Gateway and recreate a new Direct Connect Gateway with the desired private ASN.
+Using Public Virtual Interfaces
+Q: When creating a virtual interface to work with AWS services using public IP space, what IP prefixes will I receive via BGP?
+You will receive all Amazon IP prefixes for the region that you are connecting to in supported AWS Regions, and on-net prefixes from other AWS non-regional point of presence (PoP) as available such as CloudFront you can refer to this link for more information. This includes prefixes necessary to reach AWS services, and may include prefixes for other Amazon affiliates, including those of www.amazon.com. For the current list of prefixes advertised by AWS, please download the JSON of AWS IP Address Ranges. Note, that AWS may advertise a prefix in more specific (or-longer) ranges. For example, prefix 96.127.0.0/17 in the file may be advertised as 96.127.0.0/21, 96.127.8.0/21, 96.127.32.0/19, and 96.127.64.0/18 so please ensure you're matching more specific ranges.
+When customers use AWS Direct Connect, customers' traffic will remain in AWS global network backbone, after it enters AWS global network backbone. Therefore, prefixes of services such as Route53 or certain CloudFront locations that are not on the Amazon backbone network will not be advertised through Direct Connect.
+For the newly created public VIF, Direct Connect customers will receive all Amazon public IP prefixes in supported AWS regions and on-net prefixes from other AWS non-region points of presence (POP) as available such as CloudFront. Standard AWS Direct Connect data transfer out rates apply for all traffic routed through your AWS Direct Connect connection. Please see the AWS Direct Connect community forum for the additional details in the routing policy of the public virtual interface.
+Note: Currently AWS Global Accelerator prefixes are not advertised over AWS Direct Connect public virtual interface.
+Q: What IP prefixes should I advertise over BGP for virtual interfaces to public AWS services?
+You should advertise appropriate public IP prefixes that you own over BGP. Traffic from AWS services destined for these prefixes will be routed over your AWS Direct Connect connection.
+Q: I am going to create a new public virtual interface. Do I need to take any action to get Amazon’s global public IP address prefixes?
+No, by default, AWS Direct Connect will advertise local and remote AWS Region prefixes where available and includes on-net prefixes from other AWS non-Region points of presence (PoP) where available; for example, CloudFront and Route53. Note: Currently AWS Global Accelerator prefixes are not advertised over AWS Direct Connect public virtual interface.
+Q: How do I receive IP address prefixes for AWS Global Accelerator over my public virtual interface?
+At this time, AWS Direct Connect does not advertise IP address prefixes for AWS Global Accelerator over public virtual interface.
+Q: I see asymmetric traffic with AWS Global Accelerator. My traffic that goes to AWS Global Accelerator traverses the internet, but the return traffic that comes to my on-premises network traverses my AWS Direct Connect public virtual interface. How can I make sure that I get symmetric traffic between my on-premises network and AWS Global Accelerator?
+Currently, we recommend that you do not advertise IP addresses that you use to communicate with AWS Global Accelerator over your AWS Direct Connect public virtual interface.
+Q: I am okay with asymmetric traffic for AWS Global Accelerator. My traffic that goes to AWS Global Accelerator traverses the internet, but the return traffic that come to my on-premises network traverses my AWS Direct Connect public virtual interface. What Data Transfer Out charges do I pay for the AWS Global Accelerator traffic over AWS Direct Connect?
+You pay internet Data Transfer Out rates for your AWS Global Accelerator traffic that traverses the AWS Direct Connect public virtual interface.
+Q: Can I enable Jumbo MTU on Public Virtual Interface?
+No, Jumbo MTU is not supported for Public Virtual Interface
+Q: Will this new capability affect my existing public virtual interfaces?
+No, your existing public virtual interfaces will not get affected.
+Q: How many prefixes will you advertise over my newly created public virtual interface?
+You should receive approximately 2,000 prefixes, and it will continue to increase.
+Q: I do not want global public IP prefixes, can I opt out?
+Yes, you can opt out using scoping communities. Please refer to this link to learn more about scoping communities supported by AWS Direct Connect.
+Q: I want to migrate my existing public virtual interface to receive global prefixes; how can I do this migration?
+You have two options to do such a migration. First, create a new public virtual interface, migrate traffic from your existing public virtual interface to the newly created public virtual interface; delete your old public virtual interface. Second, open a support case to request scope change for your existing public virtual interface, you will experience a Border Gateway Protocol flap during the scope change.
+Jumbo Frames
+Q: What is the Maximum Transmission Unit (MTU) supported by AWS Direct Connect?
+AWS Direct Connect and Direct Connect Gateway support both 1500 and 9001 Maximum Transmission Unit (MTU). MTU is a configurable option on the AWS Direct Connect Private Virtual Interface.
+Q: How do I change the MTU of a Private Virtual Interface?
+If you own both the AWS Direct Connect port and the Virtual Private Interface created on the AWS Direct Connect port, you can modify the MTU of an existing Virtual Interface or you can create a new Virtual Interface with 9001 MTU using API, CLI or Console.
+If the AWS Direct Connect port is owned by another AWS account, the port owner will need to enable Jumbo Frames on the port by modifying the MTU on an existing Virtual Interface or creating a new Virtual Interface with 9001 MTU.
+If your AWS Direct Connect connection is provided by an AWS Direct Connect Partner, then you need to check if the port is Jumbo Frames capable using API, CLI or console. If the port is Jumbo Frames capable, you can modify the MTU setting on the Virtual Interface. Otherwise, the AWS Direct Connect Partner will need to contact AWS support to make the port Jumbo Frames capable.
+Q: Can I use Jumbo Frames over AWS Direct Connect with both propagated and static routes?
+Jumbo Frames only apply to propagated routes from Direct Connect. If you add static routes pointing to your Virtual Private Gateway to the route table, traffic routed through static routes will be sent using a 1500 MTU.
+Q: If I have two Private Virtual Interfaces that advertise the same route and both Interfaces have different MTUs, which MTU will be used?
+If two virtual interfaces advertise the same route, but use different MTUs, 1500 MTU will be used for both virtual interfaces.
+Q: Will Jumbo Frames work with AWS Direct Connect and AWS Managed VPN when both advertise the same routes?
+AWS Managed VPN service does not support Jumbo Frames. If the same route is advertised over AWS Direct Connect and AWS Managed VPN, the 1500 MTU will be used.
+Q: Do you support moving of a Jumbo Frame enabled Virtual Private Interface from one Direct Connect port to another?
+If the destination port is not Jumbo Frames capable then you cannot move the Jumbo Frames enabled Virtual Interface to it. You will need to disable Jumbo Frames on the Virtual Interface and move it then re-enable Jumbo Frames. Alternatively, you can enable Jumbo on any Virtual Interface on the destination connection before moving the Jumbo Frames enabled Virtual Interface.
+Q: Is the downtime expected when enabling Jumbo Frames on a Private Virtual Interface?
+Yes, if the owner of an AWS Direct Connect port (with Jumbo Frames not enabled on any virtual interface) creates a Jumbo Frame enabled Private Virtual Interface for the first time, there will be expected downtime of 5 to 30 seconds on the physical port. Other virtual interfaces on this port, regardless of their account, will also observe this downtime. If the physical port has at least one Virtual Interface that is Jumbo Frames enabled, then there will be no downtime observed on the physical interface.
+Q: How do I enable Jumbo Frames on a Link Aggregation Group (LAG) Private Virtual Interface?
+You will need to enable Jumbo Frames for at least one Private Virtual Interface in the LAG to enable Jumbo Frames on the LAG.
+Local preference communities for private virtual interface
+This feature provides support for local preference communities for private virtual interfaces. With communities, customers can influence the return path for traffic sourced from VPC address space.
+Q: Can I use this feature for my existing EBGP sessions?
+Yes, all existing BGP sessions on private virtual interfaces support the use of local preference communities.
+Q: Do you charge additionally for this feature?
+There is no additional charge for using this feature.
+Q: Will this feature be available on both Public and Private Virtual Interfaces?
+No, this feature is currently available for private virtual interfaces only.
+Q: Will this feature work with Direct Connect Gateway?
+Yes, this feature will work with private virtual interfaces attached with Direct Connect Gateway.
+Q: Can I verify communities being received by AWS?
+No, at this time we do not provide such monitoring features.
+Q: What are the supported local preference communities for Direct Connect private virtual interface?
+The following communities are supported for private virtual interface and are evaluated in order of lowest to highest preference. Communities are mutually exclusive. Prefixes marked with the same communities, and bearing identical MED*, AS_PATH attributes are candidates for multi-pathing.
+7224:7100 – Low Preference
+7224:7200 – Medium Preference
+7224:7300 – High Preference
+Q: What is the default behavior in case I do not use the supported communities?
+If you do not specify Local Preference communities for your private VIF, the default local preference is based on the distance to the Direct Connect Locations from the local region. In such situation, egress behavior across multiple VIFs from multiple Direct Connect Locations may be arbitrary.
+Q: I have two private VIFs on a physical connection at a Direct Connect location; can I use supported communities to influence egress behavior across these two private VIFs?
+Yes, you can use this feature to influence egress traffic behavior between two VIFs on the same physical connection.
+Q: I have two Direct Connect connections, both 1G, I want all incoming traffic into my network load balanced across these two connections, can I use community based routing to achieve such load balancing across the locations?
+Yes, you can use community based routing to enable load balancing across Direct Connect locations. To do so, any prefixes requiring load-balancing must be marked with the same communities.
+Q: Will the local preference communities feature support failover?
+Yes. This can be accomplished by advertising prefixes over the primary/active virtual interface with a community for higher local preference than prefixes advertised over the backup/passive virtual interface. This feature is backwards compatible with pre-existing methods for achieving failover; if your Direct Connect is currently configured for failover, no additional changes are necessary.
+Q: I have already configured my routers with AS_PATH, do I need to change the configuration to use community tags and disrupt my network?
+No, we will continue to respect AS_PATH attribute. This feature is an additional knob you can use to get better control over the incoming traffic from AWS. Direct Connect follows the standard approach for path selection. Bear in mind that local preference is evaluated before the AS_PATH attribute.
+Q: I have two Direct Connect connections, one is 1G and another is 10G, and both are advertising the same prefix. I would like to receive all traffic for this destination across the 10G Direct Connect connection, but still be capable of failing over to the 1G connection. Can local preference communities be used to balance traffic in this scenario?
+Yes. By marking the prefix advertised over the 10G Direct Connection with a community of a higher local preference, it will be the preferred path. In the event that the 10G fails or the prefix withdrawn, the 1G interface will become the return path. Same logic applies for 100G ports as well.  The connection with the higher local preference will be the preferred path.
+Q: How wide will you multipath traffic to my network?
+We will multipath per prefix at up to 16 next-hops wide, where each next-hop is a unique AWS endpoint.
+Q: Can I have v4 and v6 BGP sessions running over a single VPN tunnel?
+At this time, we will only allow v4 BGP session running single VPN tunnel with IPv4 address. In future, we will allow v6 BGP sessions running over the single VPN tunnel with IPv4 endpoint address.
+Q: Is there any difference to the BGP configuration/setup details outlined for DX?
+VPN BGP will work the same as DX
+Q: Can I terminate my tunnel to an endpoint with an IPv6 address?
+At this time, we will only support IPv4 endpoint address for VPN. In future, we will support VPN endpoint with IPv6 address.
+Q: Can I terminate my tunnel to an IPv4 address and run IPv6 BGP sessions over the tunnel?
+AWS Transit Gateway Support
+Q: Which AWS Regions offer AWS Direct Connect support for AWS Transit Gateway?
+AWS Direct Connect support for AWS Transit Gateway is now available in AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), EU (Ireland), EU (London), EU (Frankfurt), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Tokyo), EU (Paris), South America (Sao Paulo), Middle East (Bahrain), AWS Europe (Milan), AWS Africa (Cape Town), and Asia Pacific (Hong Kong) AWS Regions.
+Q: What is transit virtual interface?
+Transit virtual interface is a type of virtual interface you can create on any AWS Direct Connect 1/2/5/10/100 Gbps connection. Transit virtual interface can only be attached to a Direct Connect gateway. You can use the AWS Direct Connect gateway attached with one or more transit virtual interface to interface with up to three AWS Transit Gateways in any supported AWS Regions.
+Similar to the private virtual interface, you can establish one IPv4 BGP session and one IPv6 BGP session over a single transit virtual interface.
+Q: How do I create transit virtual interface?
+You can use the AWS Management console or APIs to create transit virtual interface.
+Q: Can I allocate transit virtual interface in another AWS account?
+Yes, you can allocate transit virtual interface in any AWS account.
+Q: Can I attach transit virtual interface to my Virtual Private Gateway?
+No, you cannot attach transit virtual interface to your Virtual Private Gateway
+Q: Can I attach private virtual interface to my AWS Transit Gateway?
+No, you cannot attach private virtual interface to your AWS Transit Gateway.
+Q: What are the limits associated with transit virtual interface?
+Please refer to AWS Direct Connect limits page to know more about the limits associated with transit virtual interface.
+Q: Can I add more transit virtual interfaces to the connection?
+No, you can create only one transit virtual interface for any AWS Direct Connect 1/2/5/10/100 Gbps connection.
+Q: I have an existing Direct Connect gateway attached to a private virtual interface, can I attach a transit virtual interface to this Direct Connect gateway?
+No, a Direct Connect Gateway can only have one type of virtual interface attached.
+Q: Can I associate my AWS Transit Gateway to the Direct Connect gateway attached to private virtual interface?
+No, an AWS Transit Gateway can only be associated with the Direct Connect gateway attached to transit virtual interface.
+Q: How long does it take to establish an association between AWS Transit Gateway and AWS Direct Connect gateway?
+It can take up to 40 minutes to establish an association between AWS Transit Gateway and AWS Direct Connect gateway.
+Q: How many total virtual interfaces can I create per 1 Gbps, 10 Gbps, or 100Gbps dedicated connection?
+You can create up to 51 virtual interfaces per 1 Gbps, 10Gbps, and 100Gbps dedicated connection inclusive of the one transit virtual interface.
+Q: Does a transit virtual interface support jumbo frames?
+Yes, transit virtual interface will support jumbo frames. Maximum transmission unit (MTU) size will be limited to 8,500.
+Q: I have 4x10G LAG, how many transit virtual interfaces can I create on this link aggregation group (LAG)?
+You can create one transit virtual interface on the 4x10G LAG.
+Q: Do you support all the border gateway protocol (BGP) attributes that you support on the Private virtual interface for the transit virtual interface?
+Yes, you can continue to use supported BGP attributes (AS_PATH, Local Pref, NO_EXPORT) on the transit virtual interface.
+Q: Can I create transit virtual interface on 1/2/5/10 Gbps hosted connection?
+Yes, you can create one transit virtual interface on a 1/2/5/10 Gbps hosted connection.
+Q: I want to associate my Transit Gateway to a Direct Connect gateway, can I use the same Autonomous System Number (ASN) for the Direct Connect gateway and the Transit Gateway?
+No, you cannot use the same ASN for the Transit Gateway and the Direct Connect gateway.
+Resiliency Toolkit - Failover Testing
+Q: What is this feature? The AWS Direct Connect Failover Testing feature allows you to test the resiliency of your Direct Connect connection by disabling the Border Gateway Protocol session between your on-premises networks and AWS. You can use the AWS Management Console or AWS Direct Connect Application Programming Interface (API). Please refer to this document to learn more about this feature.   Q. Which AWS regions support this feature? All commercial AWS Regions (except AWS China Regions and GovCloud (US)).   Q. How do I use this feature? You can use the AWS Management Console or AWS Direct Connect Application Programming Interface (API) to perform a failover test.   Q. What happens when I initiate a test? Once you initiate a test, we will bring down the Border Gateway Protocol session between your on-premises networks and AWS.   Q. Can I configure the duration of the test? Yes, you can configure the duration of the test.   Q. What is the minimum and maximum duration for the test? You can set minimum and maximum duration for the test to be 1 minute and 180 minutes, respectively.   Q. Can I cancel the test while the test is running? Yes, you can cancel the test while the test is running.   Q. What happens when I cancel the test while the test is running? When you cancel the test, we will restore the Border Gateway Protocol session, and your test history will reflect that the test was canceled.   Q. Can I see my past test history? Yes, you can see your past test history.   Q. How long do you keep the test history? We preserve your test history for 365 days. If you delete the virtual interface, your test history is deleted.   Q. How can I review my test history? You can review your test history using the AWS Management Console or through CloudTrail.   Q. Who can initiate the test? Only the owner of the AWS account that includes the virtual interface can initiate the test.   Q. Can I delete the virtual interface while the test for the same virtual interface is in progress? Yes, you can delete the virtual interface while the test for the same virtual interface is in progress.   Q. Can I run the test for any type of virtual interface? Yes, you can run the test for the Border Gateway Protocol session(s) established using any type of virtual interface.   Q. I have established IPv4 and IPv6 Border Gateway Protocol sessions, can I do this test for each Border Gateway Protocol session? Yes, you can initiate a test for one or both Border Gateway Protocol sessions.   Q. What happens after the test is complete? After the configured test duration, we will restore the Border Gateway Protocol session between your on-premises networks and AWS using the Border Gateway Protocol session using the parameters negotiated prior to the test initiation.   Q. What happens if failover testing is run during planned device maintenance
+The test will be marked as failed and will not be able to complete.
+Virtual Private Network (VPN)
+Learn more about AWS Direct Connect pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS Direct Connect
+Have more questions?
+Contact us
+Page Content
+Link Aggregation Groups

@@ -1,0 +1,153 @@
+General
+Q: Are Amazon EBS volume and snapshot ID lengths changing in 2018?
+Yes, please visit the EC2 FAQs page for more details.
+Q: What happens to my data when an Amazon EC2 instance terminates?
+Unlike the data stored on a local instance store (which persists only as long as that instance is alive), data stored on an Amazon EBS volume can persist independently of the life of the instance. Therefore, we recommend that you use the local instance store only for temporary data. For data requiring a higher level of durability, we recommend using Amazon EBS volumes or backing up the data to Amazon S3. If you are using an Amazon EBS volume as a root partition, set the Delete on termination flag to "No" if you want your Amazon EBS volume to persist outside the life of the instance.
+Q: What kind of performance can I expect from Amazon EBS volumes?
+Amazon EBS provides six volume types: Provisioned IOPS SSD (io2 and io1), General Purpose SSD (gp3 and gp2), Throughput Optimized HDD (st1) and Cold HDD (sc1). These volume types differ in performance characteristics and price, allowing you to tailor your storage performance and cost to the needs of your applications. The average latency between EC2 instances and EBS is single digit milliseconds. For more performance information see the EBS product details page. For more information about Amazon EBS performance guidelines, see Increasing EBS Performance.
+We are now previewing the io2 Block Express volume that offers sub millisecond latency profile. You can sign up for the preview here.
+Q: Which volume should I choose?
+Amazon EBS includes two major categories of storage: SSD-backed storage for transactional workloads (performance depends primarily on IOPS, latency, and durability) and HDD-backed storage for throughput workloads (performance depends primarily on throughput, measured in MB/s). SSD-backed volumes are designed for transactional, IOPS-intensive database workloads, boot volumes, and workloads that require high IOPS. SSD-backed volumes include Provisioned IOPS SSD (io1 and io2) and General Purpose SSD (gp3 and gp2). io2 is the latest generation of the Provisioned IOPS SSD volumes that is designed to provide 100X durability of 99.999% making it ideal for business-critical applications that need higher uptime. gp3 is the latest generation of General Purpose SSD volumes that provides the right balance of price and performance for most applications that don’t require the highest IOPS performance or 99.999% durability. HDD-backed volumes are designed for throughput-intensive and big-data workloads, large I/O sizes, and sequential I/O patterns. HDD-backed volumes include Throughput Optimized HDD (st1) and Cold HDD (sc1).
+Q: Since io2 provides higher volume durability, should I still take snapshots and plan to replicate io2 volumes across Availability Zones (AZs) for high durability?
+High volume durability, snapshots, and replicating volumes across AZs protect against different types of failures, and customers can choose to use one, two, or all of these approaches based on their data durability requirements. Higher volume durability reduces the probability of losing the primary copy of your data. Snapshots protect against the unlikely event of a volume failure. Replicating volumes across AZs protects against an AZ level failure and also provides faster recovery in case of failure.
+Q: How do I modify the capacity, performance, or type of an existing EBS volume?
+Changing a volume configuration is easy. The Elastic Volumes feature allows you to increase capacity, tune performance, or change your volume type with a single CLI call, API call or a few console clicks. For more information about Elastic Volumes, see the Elastic Volumes documentation.
+Q: Are EBS Standard Volumes still available?
+EBS Standard Volumes have been renamed to EBS Magnetic volumes. Any existing volumes will not have been changed as a result of this and there are no functional differences in the EBS Magnetic offering compared to EBS Standard. The name of this offering was changed to avoid confusion with our General Purpose SSD (gp2) volume type which is our recommended default volume type.
+Q: Are Provisioned IOPS SSD (io2 and io1) volumes available for all Amazon EC2 instance types?
+Provisioned IOPS SSD io1 volumes are available for all Amazon EC2 Instance Types, whereas Provisioned IOPS SSD io2 volumes are available on all EC2 Instances Types, with the exception of R5b. Use EBS optimized EC2 instances to deliver consistent and predictable IOPS on io2 and io1 volumes. EBS-optimized instances deliver dedicated throughput between Amazon EC2 and Amazon EBS, with options between 62.5 MB/s and 7,500 MB/s depending on the instance type used. To achieve the limit of 64,000 IOPS and 1,000 MB/s throughput, the volume must be attached to a Nitro System-based EC2 instance.
+Performance
+Q: What level of performance consistency can I expect to see from my Provisioned IOPS SSD (io2 and io1) volumes?
+When attached to EBS-optimized instances, Provisioned IOPS SSD (io2 and io1) volumes are designed to deliver within 10% of the provisioned IOPS performance 99.9% of the time in a given year. Your exact performance depends on your application’s I/O requirements.
+Q: What level of performance latency can I expect to see from my Provisioned IOPS SSD (io2 and io1) volumes?
+When attached to EBS-optimized instances, Provisioned IOPS volumes can achieve single digit millisecond latencies. Your exact performance depends on your application’s I/O requirements.
+Q: Does the I/O size of my application reads and writes affect the rate of IOPS I get from my Provisioned IOPS SSD (io2 and io1) volumes?
+Yes, it does. When you provision IOPS for io2 or io1 volumes, the IOPS rate you get depends on the I/O size of your application reads and writes. Provisioned IOPS volumes have a base I/O size of 16KB. So, if you have provisioned a volume with 40,000 IOPS for an I/O size of 16KB, it will achieve up to 40,000 IOPS at that size. If the I/O size is increased to 32 KB, then you will achieve up to 20,000 IOPS, and so on. For more details, please visit technical documentation on Provisioned IOPS volumes. You can use Amazon CloudWatch to monitor your throughput and I/O sizes.
+Q: What factors can affect the performance consistency I see with Provisioned IOPS SSD (io2 and io1) volumes?
+Provisioned IOPS SSD (io2 and io1) volumes attached to EBS-optimized instances are designed to offer consistent performance, delivering within 10% of the provisioned IOPS performance 99.9% of the time over a given year. For maximum performance consistency with new volumes created from a snapshot, we recommend enabling Fast Snapshot Restore (FSR) on your snapshots. EBS volumes restored from FSR-enabled snapshots instantly receive their full performance.
+Another factor that can impact your performance is if your application isn’t sending enough I/O requests. This can be monitored by looking at your volume’s queue depth. The queue depth is the number of pending I/O requests from your application to your volume. For maximum consistency, a Provisioned IOPS volume must maintain an average queue depth (rounded to the nearest whole number) of one for every 1000 provisioned IOPS in a minute. For example, for a volume provisioned with 3000 IOPS, the queue depth average must be 3. For more information about ensuring consistent performance of your volumes, see Increasing EBS Performance.
+Q: What level of performance consistency can I expect to see from my HDD-backed volumes?
+When attached to EBS-optimized instances, Throughput Optimized HDD (st1) and Cold HDD (sc1) volumes are designed to deliver within 10% of the expected throughput performance 99% of the time in a given year. Your exact performance depends on your application’s I/O requirements and the performance of your EC2 instance.
+Q: Does the I/O size of my application reads and writes affect the rate of throughput I get from my HDD-backed volumes?
+Yes. The throughput rate you get depends on the I/O size of your application reads and writes. HDD-backed volumes process reads and writes in I/O sizes of 1MB. Sequential I/Os are merged and processed as 1 MB units while each non-sequential I/O is processed as 1MB even if the actual I/O size is smaller. Thus, while a transactional workload with small, random IOs, such as a database, won't perform well on HDD-backed volumes, sequential I/Os and large I/O sizes will achieve the advertised performance of st1 and sc1 for a longer period of time.
+Q: What factors can affect the performance consistency of my HDD-backed volumes?
+Throughput Optimized HDD (st1) and Cold HDD (sc1) volumes attached to EBS-optimized instances are designed to offer consistent performance, delivering within 10% of the expected throughput performance 99% of the time in a given year. There are several factors that could affect the level of consistency you see. For example, the relative balance between random and sequential I/O operations on the volume can impact your performance. Too many random small I/O operations will quickly deplete your I/O credits and lower your performance down to the baseline rate. Your throughput rate may also be lower depending on the instance selected. Although st1 can drive throughput up to 500 MB/s, performance will be limited by the separate instance-level limit for EBS traffic. Another factor is taking a snapshot which will decrease expected write performance down to the baseline rate, until the snapshot completes. This is specific to st1 and sc1.
+Your performance can also be impacted if your application isn’t sending enough I/O requests. This can be monitored by looking at your volume’s queue depth and I/O size. The queue depth is the number of pending I/O requests from your application to your volume. For maximum consistency, HDD-backed volumes must maintain an average queue depth (rounded to the nearest whole number) of four or more for every 1 MB sequential I/O. For more information about ensuring consistent performance of your volumes, see Increasing EBS Performance.
+Q: Can I stripe multiple volumes together to get better performance?
+Yes. You can stripe multiple volumes together to achieve up to 260,000 IOPS or 60,000 Mbps (or 7500 MB/s) when attached to larger EC2 instances. However, performance for st1 and sc1 scales linearly with volume size so there may not be as much of a benefit to stripe these volumes together.
+Q: How does Amazon EBS handle issues like storage contention?
+EBS is a multi-tenant block storage service. We employ rate limiting as a mechanism to avoid resource contention. This starts with having defined performance criteria for the volumes – our volume types (gp2, PIOPS, st1, and sc1) all have defined performance characteristics in terms of IOPS and throughput. The next step is defining performance at the instance level. Each EBS Optimized instance has defined performance (both throughput and IOPS) for the set of EBS volumes attached to the instance. A customer can, therefore, size instances and volumes to get the desired level of performance. In addition, customers can use our reported metrics to observe instance level and volume level performance. They can set alarms to determine if what they are seeing does not match the expected performance – the metrics can also help determine if customers are configured at the right type of instance with the right amount of performance at the volume level or not. On the EBS end, we use the configured performance to inform how we allocate the appropriate instance and EBS infrastructure to support the volumes. By appropriately allocating infrastructure, we avoid resource contention. Additionally, we constantly monitor our infrastructure. This monitoring allows us to detect infrastructure failure (or imminent infrastructure failure) and therefore, move the volumes pro-actively to functioning hardware while the underlying infrastructure is either repaired or replaced (as appropriate).
+Q: What level of performance consistency can I expect to see from my General Purpose SSD (gp3 and gp2) volumes?
+When attached to EBS-optimized instances, General Purpose SSD (gp3 and gp2) volumes are designed to deliver within 10% of the provisioned IOPS performance 99% of the time in a given year. Your exact performance depends on your application’s I/O requirements.
+Q: What level of performance latency can I expect to see from my General Purpose SSD (gp3 and gp2) volumes?
+When attached to EBS-optimized instances, General Purpose SSD (gp3 and gp2) volumes can achieve single digit millisecond latencies. Your exact performance depends on your application’s I/O requirements.
+Q: Do General Purpose SSD (gp3) volumes have burst?
+No. All General Purpose SSD (gp3) volumes include 3,000 IOPS and 125 MB/s of consistent performance at no additional cost. Volumes can sustain the full 3,000 IOPS and 125 MB/s indefinitely.
+Q: How does burst work on General Purpose SSD (gp2) volumes?
+General Purpose SSD (gp2) volumes that are under 1,000 GB receive burst IOPS performance up to 3,000 IOPS for at least 30 min of sustained performance. Additionally, gp2 volumes deliver consistent performance of 3 IOPS per provisioned GB. For example, a 500 GB volume is capable of driving 1,500 IOPS consistently, and bursting to 3,000 IOPS for 60 minutes (3,000 IOPS * 60 seconds * 30 minutes / 1,500 IOPS / 60 seconds).
+Q: What is the difference between io2 and io2 Block Express?
+io2 volumes offer the highest performance among all EBS volume types. For applications that require even higher performance than currently offered by io2, you can now request access for io2 Block Express, in preview. This will enable you to achieve up to 64 TiB capacity, 256,000 IOPS and 4,000 MB/s of throughput (all 4x of currently available on io2 volumes) from a single io2 volume along with sub-millisecond average IO latency. During preview, some EBS features such as Multi-attach, Elastic Volumes and Fast Snapshot Restore will not be supported by io2 Block Express volumes.
+Q: What is EBS Block Express?
+EBS Block Express is the next generation of Amazon EBS storage server architecture purpose-built to deliver the highest levels of performance with sub-millisecond latency for block storage at cloud scale. Block Express does this by using Scalable Reliable Datagrams (SRD), a high-performance lower-latency network protocol, to communicate with Nitro System-based EC2 instances. This is the same high performance and low latency network interface that is used for inter-instance communication in Elastic Fabric Adapter (EFA) for High Performance Computing (HPC) and Machine Learning (ML) workloads. Additionally, Block Express offers modular software and hardware building blocks that can be assembled in many different ways, giving us the flexibility to design and deliver improved performance and new features at a faster rate.
+What workloads are suited for io2 Block Express?
+io2 Block Express is suited for performance and capacity intensive workloads that benefit from lower latency, higher IOPS, higher throughput, or larger capacity in a single volume. These workloads include relational and NoSQL databases such as SAP HANA, Oracle, MS SQL, PostgreSQL, MySQL, MongoDB, Cassandra, and critical business operation workloads such as SAP Business Suite, NetWeaver, Oracle eBusiness, PeopleSoft, Siebel, and ERP workloads such as Infor LN and Infor M3.
+How do I sign-up for the preview of io2 Block Express?
+You can reach out to your account representative or fill-up a form here to provide the account number and region where you want to enable io2 Block Express. Once we enable your account, we will send you a confirmation.
+How do I tell whether my account has been enabled for io2 Block Express?
+After your account is access enabled, you will see a banner in your EC2 dashboard console that says “Your account in <region> is enabled for io2 Block Express in preview. For additional details please click here.” Alternatively, you may try creating an io2 volume with size greater than 16TiB through the CreateVolume API. If the API call is successful, then your account is enabled for io2 Block Express preview in that region.
+Snapshots
+Q: How can I use EBS direct APIs for Snapshots?
+This feature can be used via the following APIs that can be called using AWS CLI or via AWS SDK.
+List Snapshot Blocks: The ListSnapshotBlocks API operation returns the block indexes and block tokens for blocks in the specified snapshot.
+List Changed Blocks: The ListChangedBlocks API operation returns the block indexes and block tokens for blocks that are different between two specified snapshots of the same volume/snapshot lineage.
+Get Snapshot Blocks: The GetSnapshotBlock API operation returns the data in a block for the specified snapshot ID, block index, and block token.
+Start Snapshot: The StartSnapshot operation starts a snapshot, either as an incremental snapshot of an existing one or as a new snapshot. The started snapshot remains in a pending state until it is completed using the CompleteSnapshot action.
+Put Snapshot Block: The PutSnapshot operation adds data in the form of individual blocks to a started snapshot that is in a pending state. You must specify a Base64-encoded SHA256 checksum for the block of data transmitted. The service validates the checksum after the transmission is completed. The request fails if the checksum computed by service doesn’t match what you specified.
+Complete Snapshot: The CompleteSnapshot operation completes a started snapshot that is in a pending state. The snapshot is then changed to a completed state.
+For more information, please refer to
+technical documentation.
+Q: What block sizes are supported by GetSnapshotBlock and PutSnapshotBlock APIs?
+GetSnapshotBlock and PutSnapshotBlock APIs support 512KiB block size.
+Q: Will I be able to access my snapshots using the regular Amazon S3 API?
+No, snapshots are only available through the Amazon EC2 API.
+Q: Do volumes need to be un-mounted to take a snapshot?
+No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your Amazon EBS volume, which might exclude any data that has been locally cached by your application or OS. To ensure consistent snapshots on volumes attached to an instance, we recommend detaching the volume cleanly, issuing the snapshot command, and then reattaching the volume. For Amazon EBS volumes that serve as root devices, we recommend shutting down the machine to take a clean snapshot.
+Q: Does it take longer to snapshot an entire 16 TB volume as compared to an entire 1 TB volume?
+By design, an EBS Snapshot of an entire 16 TB volume should take no longer than the time it takes to snapshot an entire 1 TB volume. However, the actual time taken to create a snapshot depends on several factors including the amount of data that has changed since the last snapshot of the EBS volume.
+Q: Are snapshots versioned? Can I read an older snapshot to do a point-in-time recovery?
+Each snapshot is given a unique identifier, and customers can create volumes based on any of their existing snapshots.
+Q: How can I discover Amazon EBS snapshots that are shared with me?
+You can find snapshots that are shared with you by selecting Private Snapshots from the list in the Snapshots section of the AWS Management Console. This section lists both snapshots that you own and snapshots that are shared with you.
+Q: How can I find which Amazon EBS snapshots are shared globally?
+You can find snapshots that are shared globally by selecting Public Snapshots from the list in the Snapshots section of the AWS Management Console.
+Q: How can I find a list of Amazon public datasets stored in Amazon EBS Snapshots?
+You can use the AWS Management Console to find public datasets stored as Amazon Snapshots. Log into the console, select the Amazon EC2 Service, select Snapshots and then filter on Public Snapshots. All information on public datasets is available in our AWS Public Datasets resource center.
+Q: When would I use Fast Snapshot Restore (FSR)?
+You should enable FSR on snapshots if you are concerned about latency of data access when you restore data from a snapshot to a volume and want to avoid the initial performance hit during initialization. FSR is intended to help with use cases such as virtual desktop infrastructure (VDI), backup & restore, test/dev volume copies, and booting from custom AMIs. By enabling FSR on your snapshot, you will see improved and predictable performance whenever you need to restore data from that snapshot.
+Q: Does enabling FSR for my snapshot speed up snapshot creation?
+No. FSR-enabled snapshots improve restoring backup data from your snapshot to your volumes. FSR-enabled snapshots do not speed up snapshot creation time.
+Q: How do I enable Fast Snapshot Restore (FSR)?
+To use the feature, invoke the new enable-fast-snapshot-restores API on a snapshot within the availability zone (AZ) where initialized volumes are to be restored.
+The FSR-enabled snapshot may be in any one of the following states: enabling, optimizing, enabled, disabling, disabled. State transitions are published as CloudWatch events and the FSR state can be checked via the describe-fast-snapshot-restores API.
+Enabling FSR on a snapshot does not change any existing snapshot API interactions, and existing workflows will not need to change. FSR can be enabled or disabled on account-owned snapshots only. FSR cannot be applied to shared snapshots. You can view the list of your FSR-enabled snapshots via API or the console.
+Q: How do I use Fast Snapshot Restore (FSR)?
+Volumes created from an FSR-enabled snapshot are fully initialized. However, there are limits on the number of volumes that can be created with immediate full performance. These limits are expressed in the form of a credit bucket that is associated with an FSR-enabled snapshot in a given AZ. The important things to know regarding credits:
+1. A single volume create operation consumes a single credit 2. The number of credits is a function of the FSR-enabled snapshot size 3. Credits refill over time 4. Maximum credit bucket size is 10
+To estimate your credit bucket size and fill rate, divide 1,024 by your snapshot size. For example, a 100 GiB FSR-enabled snapshot will have the maximum balance of 10 credits with a fill rate of 10 credits every hour. A 4 TiB snapshot will have a maximum balance of 1 with a fill rate of 1 credit every 4 hours.
+It's important to note that the credit bucket size is a function of the FSR-enabled snapshot size, not the size of the volumes that are created. For example, it is possible to create up to ten 1TiB volumes from a 100GiB snapshot at once.
+Lastly, each AZ in which the snapshot is FSR-enabled gets its own credit bucket independent of other AZs.
+Q: How many concurrent volumes can I create and what happens when I surpass this limit?
+The size of the create credit bucket represents the maximum number and the balance of the credit bucket represents the number of creates available. When filled, up to 10 initialized volumes can be created from an FSR-enabled snapshot at once. Both the maximum size of the credit bucket and the credit bucket balance are published as CloudWatch metrics. Volume creations beyond the limit will proceed as if FSR is not enabled on the snapshot.
+Q: How do I know when a volume was created from an FSR-enabled snapshot?
+When using FSR, a new EBS-specific attribute (fastRestored) is added in the DescribeVolumes API to denote the status at create time. When a volume is created from an FSR-enabled snapshot without sufficient volume-create credits, the create will succeed but the volume will not be initialized.
+Q: What happens to FSR when I delete a snapshot?
+When you delete a snapshot, the FSR for your snapshot is automatically disabled and FSR billing for the snapshot will be terminated.
+Q: Can I enable FSR for public and private snapshots shared with me?
+Yes, you can enable FSR for public snapshots as well as all private snapshots shared with your account. To enable FSR for shared snapshots, you can use the same set of API calls that you use for enabling FSR on snapshots you own.
+Q: How am I billed for enabling FSR on a snapshot shared with me?
+When you enable FSR on your shared snapshot, you will be billed at standard FSR rates (see pricing pages). Note that only your account will be billed for the FSR of the shared snapshot. The owner of the snapshot will not get billed when you enable FSR on the shared snapshot.
+Q: What happens to the FSR for a shared snapshot when the owner of the snapshot stops sharing the snapshot or deletes it?
+When the owner of your shared snapshot deletes the snapshot, or stops sharing the snapshot with you by revoking your permissions to create volumes from this snapshot, the FSR for your shared snapshot is automatically disabled and FSR billing for the snapshot will be terminated.
+Encryption
+Q: What is Amazon EBS encryption?
+Amazon EBS encryption offers seamless encryption of EBS data volumes, boot volumes and snapshots, eliminating the need to build and maintain a secure key management infrastructure. EBS encryption enables data at rest security by encrypting your data using Amazon-managed keys, or keys you create and manage using the AWS Key Management Service (KMS). The encryption occurs on the servers that host EC2 instances, providing encryption of data as it moves between EC2 instances and EBS storage. For more details, see Amazon EBS encryption in the Amazon EC2 User Guide.
+Q: What is the AWS Key Management Service (KMS)?
+AWS KMS is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. AWS Key Management Service is integrated with other AWS services including Amazon EBS, Amazon S3, and Amazon Redshift, to make it simple to encrypt your data with encryption keys that you manage. AWS Key Management Service is also integrated with AWS CloudTrail to provide you with logs of all key usage to help meet your regulatory and compliance needs. To learn more about KMS, visit the AWS Key Management Service product page.
+Q: Why should I use EBS encryption?
+You can use Amazon EBS encryption to meet security and encryption compliance requirements for data at rest encryption in the cloud. Pairing encryption with existing IAM access control policies improves your company’s defense-in-depth strategy.
+Q: How are my Amazon EBS encryption keys managed?
+Amazon EBS encryption handles key management for you. Each newly created volume gets a unique 256-bit AES key; Volumes created from the encrypted snapshots share the key. These keys are protected by our own key management infrastructure, which implements strong logical and physical security controls to prevent unauthorized access. Your data and associated keys are encrypted using the industry-standard AES-256 algorithm.
+Q: Does EBS encryption support boot volumes?
+Yes.
+Q: Can I create an encrypted data volume at the time of instance launch?
+Yes, using customer master keys (CMKs) that are either AWS-managed or customer-managed. You can specify the volume details and encryption through a RunInstances API call with the BlockDeviceMapping parameter or through the Launch Wizard in the EC2 Console.
+Q: Can I create additional encrypted data volumes at the time of instance launch that are not part of the AMI?
+Yes, you can create encrypted data volume with either default or custom CMK encryption at the time of instances launch. You can specify the volume details and encryption through BlockDeviceMapping object in RunInstances API call or through Launch Wizard in EC2 Console.
+Q: Can I launch an encrypted EBS instance from an unencrypted AMI?
+Yes. See technical documentation for details.
+Q: Can I share encrypted snapshots and AMIs with other accounts?
+Yes. You can share encrypted snapshots and AMIs using a customer-managed customer master key (CMK) with other AWS accounts. See technical documentation for details.
+Q: Can I ensure that all new volumes created are always encrypted?
+Yes, you can enable EBS encryption by default with a single setting per region. This ensures that all new volumes are always encrypted. Refer to technical documentation for more details.
+Billing and metering
+Q: Will I be billed for the IOPS provisioned on a Provisioned IOPS volume when it is disconnected from an instance?
+Yes, you will be billed for the IOPS provisioned when it is disconnected from an instance. When a volume is detached, we recommend you consider creating a snapshot and deleting the volume to reduce costs. For more information, see the "Underutilized Amazon EBS Volumes" cost optimization check in Trusted Advisor. This item checks your Amazon Elastic Block Store (Amazon EBS) volume configurations and warns when volumes appear to be underused.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Multi-Attach
+Q: Is there an additional fee to enable Multi-Attach?
+No. Multi-Attach can be enabled on an EBS Provisioned IOPS io1 volume and there will be charges for the storage (GB-Mo) and IOPS (IOPS-Mo) provisioned.
+Q: Can I boot an EC2 instance using a Multi-Attach enabled volume?
+No.
+Q: What happens if all of my attached instances do not have the ‘deleteOnTermination’ flag set?
+The volume's deleteOnTermination behavior is determined by the configuration of the last attached instance that is terminated. To ensure predictable delete on termination behavior, enable or disable 'deleteOnTermination' for all of the instances to which the volume is attached.
+If you want the volume to be deleted when the attached instances are terminated, enable ‘deleteOnTermination’ for all of instances to which the volume is attached. If you want to retain the volume after the attached instances have been terminated, disable ‘deleteOnTermination’ for all attached instances. For more information, see Multi-Attach technical documentation.
+Q: Can my application use Multi-Attach?
+If your application does not require storage layer coordination of write operations, such as a read-only application or it enforces application level IO fencing, then your application can use Multi-Attach.
+Learn more about Amazon EBS pricing
+Visit the pricing page
+Ready to build?
+Get started with Amazon EBS
+Have more questions?
+Contact us
+Page Content

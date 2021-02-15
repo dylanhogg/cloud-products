@@ -15,9 +15,8 @@ Amazon Monitron Sensors are currently available for sale in the US, UK, Germany,
 Data from Amazon Monitron Sensors is automatically and securely transferred to AWS using Amazon Monitron Gateways. Amazon Monitron Gateways connect with the sensors over Bluetooth Low Energy (BLE) and with AWS over Wi-Fi. Gateways and sensors are automatically updated over-the-air (OTA), providing system improvements over the life of your installation.
 Amazon Monitron Gateways are currently available for sale in the US, UK, Germany, Spain, France and Italy.
 The sensor data is automatically analyzed using machine learning (ML) to detect abnormal equipment conditions that may require maintenance. You can start tracking equipment health in minutes.
-Get started with Amazon Monitron »
 View sensor readings easily on the Amazon Monitron mobile app. The app sends you push notifications when abnormal behavior is detected, so you can diagnose the issue, proactively take action on site, and avoid downtime.
-Android app is available in the Google Play store »
+Android app is available in the Google Play store
 iOS app coming soon.
 Benefits
 Cost-effective equipment monitoring
@@ -45,7 +44,7 @@ Lithium Metal Non-Rechargeable Batteries. Estimated 3 year battery life
 95 grams
 WiFi, 802.11b/g/n, ISM 2.4GHz only
 Power 5.0V - 2.0A DC, AC adapter included for USA, UK and EU countries (indoors only)
-Learn more »
+Learn more
 Amazon Monitron can monitor and detect potential failures in a broad range of rotating equipment.
 Motors
 Gearboxes
@@ -68,10 +67,9 @@ RS Components is a leading player in the industrial components and predictive ma
 Richard Jeffers, Technical Director at RS Components
 Choose the cloud provider with proven experience in industrial operations
 From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
-Learn more about AWS for Industrial »
+Learn more about AWS for Industrial
 Check out the product features
 Visit the Amazon Monitron features page.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

@@ -1,0 +1,18 @@
+Products
+Containers
+Red Hat OpenShift Service on AWS
+Red Hat OpenShift Service on AWS FAQs (Preview)
+What is Red Hat OpenShift Service on AWS?
+Red Hat OpenShift Service on AWS (ROSA) is a service operated by Red Hat and jointly supported with AWS to provide fully managed Red Hat OpenShift. ROSA provides pay-as-you-go (hourly and annual) billing on a single invoice through AWS, and the option to contact Red Hat or AWS for support. Enterprise developers familiar with deploying their applications with OpenShift on-premises will be able to more quickly build and deploy applications in the AWS public cloud, and take advantage of AWS Service Broker support for a more integrated experience when deploying applications with dependencies on AWS cloud-native services.
+Why should I use Red Hat OpenShift Service on AWS?
+Red Hat OpenShift Service on AWS makes it simple to create and operate Red Hat OpenShift clusters on AWS. You can leverage an integrated experience for cluster creation, scalability, and unified billing model with support for hourly or annual, on-demand pricing. ROSA provides an integration with AWS APIs to support cluster creation and a fully integrated offering. For applications already containerized on-premises on OpenShift Container Platform, ROSA provides a familiar API surface and keeps the deployment toolchain the same so you can focus on refactoring the data model, not the entire application stack. As a result, you can accelerate your datacenter exit, and reduce the time gain the agility from cloud-based operational model and the financial benefits of scaling to capacity, not future needs.
+What problems does Red Hat OpenShift Service on AWS solve?
+You need intuitive self-service functionality for getting started, cluster creation, scale-up, and deployment, and an integrated billing and licensing model with support for hourly, on-demand usage to make AWS an economic choice. If you are intending to migrate your application to the cloud, you are probably looking for the fastest and easiest path to exit your datacenters, and the confidence that dependencies are supported. You want a service that provides a managed experience for undifferentiated tasks, and flexible, self-service functionality to support deployment and management operations. If you are migrating from OpenShift on-premises, you are otherwise required to redesign your applications to take advantage of the scalability of AWS managed containers services and a cloud-native architecture.
+How does Red Hat OpenShift Service on AWS help me?
+It enables you to choose AWS as the cloud provider for your on-premises OpenShift containerized applications by providing an on-ramp for cloud migration and the confidence to choose AWS based on a joint management and support model by Amazon and Red Hat. You can accelerate datacenter exits with a native service that provides the same orchestrator, API surface, and deployment tooling that you are already using. Moreover, you get an hourly billing model for OpenShift licensing to fully realize the financial benefits of a cloud-native service.
+Is this the same as a Marketplace listed solution?
+No, this is a joint service that uses Marketplace for billing and metering.
+How does this help other software providers?
+Partners get the ability to provide opinionated experiences and focus on niche requirements to serve customers that need, for example, an integrated service and managed offering, an end-to-end out of the box solution, or industry specific requirements.
+What does Red Hat say about Red Hat OpenShift Service on AWS?
+Visit the OpenShift website to learn more about ROSA.

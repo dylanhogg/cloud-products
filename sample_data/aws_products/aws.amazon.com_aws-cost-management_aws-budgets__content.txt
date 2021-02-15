@@ -15,7 +15,7 @@ Create annual, quarterly, monthly, or even daily budgets depending on your busin
 FEATURED RESOURCE
 Getting Started with AWS Budget Actions
 Get started with AWS Budget Actions to respond to cost and usage in your accounts when a budget target has been exceeded.
-Read the blog »
+Read the blog
 Use Cases
 Monitor
 Monitor your AWS cost and usage, or RI and Savings Plans’ coverage and utilization. Set up your preferred budget period of day, month, quarter or year, and create specific budget limits that meet your business needs.
@@ -26,16 +26,16 @@ Set up custom actions, such as Identity and Access Management (IAM) policies, Se
 Featured Resources
 Blog Post
 Getting Started with AWS Budgets
-Learn how to set custom budgets that alert you when you exceed (or are forecasted to exceed) the thresholds that you set. Read more »
+Learn how to set custom budgets that alert you when you exceed (or are forecasted to exceed) the thresholds that you set. Read more
 AWS Daily Cost and Usage Reports
-The daily budgeting time range allows you to take timely actions to prevent potential cost overruns. Read more »
+The daily budgeting time range allows you to take timely actions to prevent potential cost overruns. Read more
 AWS Budgets Reports
-Keep an eye on your cost, usage, coverage and utilization of RIs and Savings Plans by opting in to AWS Budget Reports. Learn more »
+Keep an eye on your cost, usage, coverage and utilization of RIs and Savings Plans by opting in to AWS Budget Reports. Learn more
 Latest AWS Cost Management Blogs
 1
-…
+...
 No blog posts have been found at this time. Please see AWS Blog for other resources.
-Read more at the AWS Cost Management Blog »
+Read more at the AWS Cost Management Blog
 Ready to get started?
 Check out the product features
 Learn more about features for cost management, cost optimization, and more.

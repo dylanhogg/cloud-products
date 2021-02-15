@@ -1,0 +1,117 @@
+General
+Q: What is the AWS Application Discovery Service? >>
+Q: What is the AWS Application Discovery Service?
+AWS Application Discovery Service collects and presents data to enable enterprise customers to understand the configuration, usage, and behavior of servers in their IT environments. Server data is retained in the Application Discovery Service where it can be tagged and grouped into applications to help organize AWS migration planning. Collected data can be exported for analysis in Excel or other cloud migration analysis tools.
+Show less
+Q: How does the AWS Application Discovery Service help enterprises migrate to AWS? >>
+Q: How does the AWS Application Discovery Service help enterprises migrate to AWS?
+AWS Application Discovery Service helps enterprises obtain a snapshot of the current state of their data center servers by collecting server specification information, hardware configuration, performance data, and details of running processes and network connections. Once the data is collected, you can use it to perform a Total Cost of Ownership (TCO) analysis and then create a cost optimized migration plan based on your unique business requirements.
+Q: How does the AWS Application Discovery Service work? >>
+Q: How does the AWS Application Discovery Service work?
+AWS Application Discovery Service supports agent-based and agentless modes of operation. With the agentless discovery, VMware customers collect VM configuration and performance profiles without deploying the AWS Application Discovery Agent on each host, which accelerates data collection. Customers in a non-VMware environment or that need additional information, like network dependencies and information about running processes, may install the Application Discovery Agent on servers and virtual machines (VMs) to collect data.
+Q: How can I get started using the AWS Application Discovery Service? >>
+Q: How can I get started using the AWS Application Discovery Service?
+To get started with AWS Application Discovery Service, simply visit the AWS Migration Hub console.
+Q: Where is AWS Application Discovery Service available? >>
+Q: Where is AWS Application Discovery Service available?
+AWS Application Discovery Service is available worldwide. This means you can perform discovery on resources regardless of their location. To see which regions the service is hosted in, please refer to the AWS Region Table.
+Q: What is the Migration Hub home region? >>
+Q: What is the Migration Hub home region?
+Before using the Migration Hub and Application Discovery Service, you need to select a Migration Hub home region from the Migration Hub Settings page or using the Migration Hub Config API. Application Discovery Service uses the Migration Hub home region as the only AWS region to store your discovery and planning data. The data stored in the Migration Hub home region provides a single repository of discovery and migration planning information for your entire portfolio and a single view of migrations into multiple AWS regions. See the docs to learn more about the Migration Hub home region.
+Note: Once set, the Migration Hub home region cannot be changed.
+Q: Should I use agentless or agent-based application discovery? >>
+Q: Should I use agentless or agent-based application discovery?
+Agentless Application Discovery is recommended for VMware customers because it does not require customers installing an agent on each host, and gathers server information regardless of the VM’s operating systems. It does not collect information on non-VMware environments.
+If you run a non-VMware environment, or are looking for process and network connection details, use the AWS Application Discovery Agent. You can run agent-based and agentless Application Discovery simultaneously.
+Agent-based discovery
+Q: What data does the AWS Application Discovery Agent capture? >>
+Q: What data does the AWS Application Discovery Agent capture?
+The agent captures system configuration, system performance, running processes, and details of the network connections between systems.
+Q: What operating systems does AWS Application Discovery Service provide agents for? >>
+Q: What operating systems does AWS Application Discovery Service provide agents for?
+AWS Application Discovery Service launched a new 2.0 version of the Discovery Agent that offers better operating system support. 2.0 version of the Discovery Agent supports Microsoft Windows Server 2008 R1 SP2, 2008 R2 SP1, 2012 R1, 2012 R2, 2016, 2019, Amazon Linux 2012.03, 2015.03, Amazon Linux 2 (9/25/2018 update and later), Ubuntu 12.04, 14.04, 16.04, 18.04, 20.04, Red Hat Enterprise Linux 5.11, 6.10, 7.3, 7.7, 8.1, CentOS 5.11, 6.9, 7.3 and SUSE 11 SP4, 12 SP5.
+Q: How is the data protected while in transit to AWS? >>
+Q: How is the data protected while in transit to AWS?
+The AWS Application Discovery Agent uses HTTPS/TLS to transmit data to the AWS Application Discovery Service. The AWS Application Discovery Agent can be operated in an offline test mode that writes data to a local file so customers can review collected data before enabling online mode.
+Q: How do I install the AWS Application Discovery Agent in my data center? >>
+Q: How do I install the AWS Application Discovery Agent in my data center?
+Please refer to the documentation for details on how to install the AWS Application Discovery Agent.
+Q: Will the AWS Application Discovery Service Agent grant AWS remote access to my data center server? >>
+Q: Will the AWS Application Discovery Service Agent grant AWS remote access to my data center server?
+No, the AWS Application Discovery Service Agent deployed on your data center server will not grant AWS remote access. However, the Agent does need to establish an outbound SSL connection to transfer the collected data to AWS.
+Q: Can I run agents in my EC2 instances? >>
+Q: Can I run agents in my EC2 instances?
+Yes. You can install the AWS Discovery Agents on your EC2 instances to perform discovery and report upon performance information, network connections, and running processes, just as for any other server.
+Agentless discovery
+Q: What does ‘agentless’ Application Discovery mean? >>
+Q: What does ‘agentless’ Application Discovery mean?
+‘Agentless’ means no software needs to be installed on each host to use Application Discovery. Simply install the AWS Application Discovery Agentless Connector as an OVA on VMware vCenter.
+Q: What data does the AWS Application Discovery Agentless Connector capture? >>
+Q: What data does the AWS Application Discovery Agentless Connector capture?
+The AWS Application Discovery Agentless Connector is delivered as an Open Virtual Appliance (OVA) package that can be deployed to a VMware host. Once configured with credentials to connect to vCenter, the Discovery Connector collects VM inventory, configuration, and performance history such as CPU, memory, and disk usage and uploads it to Application Discovery Service data store.
+Q: What operating systems does the agentless discovery support? >>
+Q: What operating systems does the agentless discovery support?
+Agentless discovery is OS agnostic. It collects information about VMware virtual machines regardless of the VM operating system.
+The AWS Application Discovery Agentless Connector uses HTTPS/TLS to transmit data to the AWS Application Discovery Service. The AWS Application Agentless Discovery Connector can be operated in an offline test mode that writes data to a local file so customers can review collected data before enabling online mode.
+Q: How do I install the Application Discovery Agentless Connector in my data center? >>
+Q: How do I install the Application Discovery Agentless Connector in my data center?
+Please refer to the documentation for details on how to install the AWS Agentless Application Discovery Connector.
+Q: How can I start the data collection? >>
+Q: How can I start the data collection?
+Data collection can be enabled or disabled from the AWS console or via the AWS Discovery SDK or AWS Command Line Interface (CLI). Newly installed Connectors have data collection initially disabled when installed.
+Q: Will the AWS Application Discovery Agentless Connector grant AWS remote access to my data center servers? >>
+Q: Will the AWS Application Discovery Agentless Connector grant AWS remote access to my data center servers?
+No, the AWS Agentless Connector deployed on your VMware environment will not grant AWS remote access to your data center servers. However, the Agentless Connector requires VMware credentials in order to collect data. These credentials reside locally and are never shared with AWS. The Agentless Connector establishes outbound SSL connection to transfer only the collected data.
+Q: Can I run agentless discovery in my EC2 instances? >>
+Q: Can I run agentless discovery in my EC2 instances?
+No. The AWS Agentless Discovery Connector installs on VMware and collects information only from VMware vCenter.
+Discovered data
+Q: What kind of information is captured by AWS Application Discovery Service? >>
+Q: What kind of information is captured by AWS Application Discovery Service?
+AWS Application Discovery Service is designed to capture a variety of data including static configuration such as server hostnames, IP addresses, MAC addresses, CPU allocation, network throughput, memory allocation, disk resource allocations, DNS servers. It also captures resource utilization metrics such as CPU usage and memory usage. In addition, the AWS Application Discovery Agent can help determine server workloads and network relationships by identifying network connections between systems.
+Q: Does this service capture any storage metrics? >>
+Q: Does this service capture any storage metrics?
+Yes, disk metrics, such as read and write volume, throughout, allocated/provisioned and utilized capacity, are captured by this service.
+Q: How often is the information within AWS Application Discovery Service updated? >>
+Q: How often is the information within AWS Application Discovery Service updated?
+Information is gathered only when the AWS Application Discovery Agent or the Agentless Discovery Connector is online.
+Using the AWS Application Discovery Service data
+Q: Can I ingest data into the AWS Application Discovery Service from my existing configuration management database (CMDB)? >>
+Q: Can I ingest data into the AWS Application Discovery Service from my existing configuration management database (CMDB)?
+Yes, you can import information about your on-premises servers and applications into the Migration Hub so you can track the status of application migrations To import your data, you can download and populate the import CSV template and then upload it using the Migration Hub import console or by invoking the Application Discovery Service APIs.
+Q: How do I access the data from this service? >>
+Q: How do I access the data from this service?
+Summary data can be viewed in the AWS console. You can export detailed data collected by the AWS Application Discovery Service using the AWS Console or a public API. The service exports data in CSV format.
+Data Exploration in Amazon Athena
+Q: What is the Data Exploration feature? >>
+Q: What is the Data Exploration feature?
+The Data Exploration feature allows customers to analyze the data collected from their on-premises servers by ADS agents in one single place. Once a customer enables this feature, data collected by agents is automatically stored in an Amazon S3 bucket created in their account. Customers can query the collected data in Amazon Athena and visualize the query output in Amazon QuickSight to perform migration planning.
+Q: What can I see inside Amazon Athena with Data Exploration turned on? >>
+Q: What can I see inside Amazon Athena with Data Exploration turned on?
+If the Data Exploration feature is turned on when you get to Amazon Athena, you can see a database called “application_discovery_service_database”. Inside the database, a list of tables is created by default for you. These tables include:
+os_info_agent
+network_interface_agent
+sys_performance_agent
+processes_agent
+inbound_connection_agent
+outbound_connection_agent
+id_mapping_agent
+Q: Is there cost associated with using Application Discovery Service’s Data Exploration feature? >>
+Q: Is there cost associated with using Application Discovery Service’s Data Exploration feature?
+The ADS discovery tools are available at no charge. However, additional charges may apply for streaming agent data via Amazon Kinesis Data Firehose, for storing the agent data in a S3 bucket and for querying the agent data in Amazon Athena. The cost of using each of these AWS resources will vary based on the actual on the time period you collect data via agents, the number of agents you have deployed, the network activity on each server where the agent is deployed and the number of queries that are run on the collected data.
+Q: Can I enable Data Exploration for some agents only? >>
+Q: Can I enable Data Exploration for some agents only?
+No, the Data Exploration feature is a global setting for all agents. The global setting ensures that data collected by all agents is for the same time period.
+Q: Do I need to create a special S3 bucket to use this feature? >>
+Q: Do I need to create a special S3 bucket to use this feature?
+No, you don’t have to create an S3 bucket on your own. When you turn on this new feature for the first time, a S3 bucket with the name “aws-application-discovery-service-” is created automatically on your behalf. By default, this bucket and the discovery data saved to this bucket are private. Only the users in your account with permission to the Application Discovery Service and Migration Hub can access the bucket and the data it contains.
+Q: Will the S3 bucket storing my discovery data be secure? >>
+Q: Will the S3 bucket storing my discovery data be secure?
+Yes, the data stored in the designed S3 bucket is encrypted using the customer master key. You can also further control access to your S3 resources by using a combination of bucket ACLs and IAM and bucket policies.
+Learn more about AWS Application Discovery Service pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS Application Discovery Service
+Have more questions?
+Contact us
+Page Content

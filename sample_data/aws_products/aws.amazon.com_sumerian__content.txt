@@ -37,7 +37,7 @@ Entice travelers with a new destination. Leverage 360-degree video to provide an
 Case studies
 Electronic Caregiver (ECG)
 AI-driven 3D web virtual care platform, Addison Care
-Read the case study »
+Read the case study
 WeatherBug
 AR visualization of Air Quality Index (AQI)
 Fidelity Labs

@@ -1,0 +1,78 @@
+General
+Q: What is AWS Shield?
+AWS Shield is a managed service that provides protection against Distributed Denial of Service (DDoS) attacks for applications running on AWS. AWS Shield Standard is automatically enabled to all AWS customers at no additional cost. AWS Shield Advanced is an optional paid service. AWS Shield Advanced provides additional protections against more sophisticated and larger attacks for your applications running on Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, and Route 53.
+Q: What is AWS Shield Standard?
+AWS Shield Standard provides protection for all AWS customers against common and most frequently occurring infrastructure (layer 3 and 4) attacks like SYN/UDP floods, reflection attacks, and others to support high availability of your applications on AWS.
+Q: What is AWS Shield Advanced?
+AWS Shield Advanced provides enhanced protections for your applications running on protected Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, and Route 53 resources against more sophisticated and larger attacks. AWS Shield Advanced protection provides always-on, flow-based monitoring of network traffic and active application monitoring to provide near real-time notifications of suspected DDoS incidents. AWS Shield Advanced also employs advanced attack mitigation and routing techniques for automatically mitigating attacks. Customers, with Business or Enterprise support, can also engage the DDoS Response Team (DRT) 24x7 to manage and mitigate their application layer DDoS attacks. The DDoS cost protection for scaling protects your AWS bill against higher fees due to usage spikes from protected Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, and Amazon Route 53 during a DDoS attack.
+Q: What is DDoS cost protection for scaling?
+AWS Shield Advanced includes DDoS cost protection, a safeguard from scaling charges as a result of a DDoS attack that causes usage spikes on protected Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, or Amazon Route 53. If any of the AWS Shield Advanced protected resources scale up in response to a DDoS attack, you can request credits via the regular AWS Support channel.
+Q: Can I use AWS Shield to protect web sites not hosted in AWS?
+Yes, AWS Shield is integrated with Amazon CloudFront, which supports custom origins outside of AWS.
+Q: Can I use IPv6 with all AWS Shield features?
+Yes. All of AWS Shield’s detection and mitigations work with IPv6 and IPv4 without any discernable changes to performance, scalability, or availability of the service.
+Q: How can I test AWS Shield?
+AWS Acceptable Use Policy describes permitted and prohibited behavior on AWS, and it includes descriptions of prohibited security violations and network abuse. However, because DDoS simulation testing, penetration testing, and other simulated events are frequently indistinguishable from these activities, we have established policies for customers to request permission to conduct DDoS tests, penetration tests and vulnerability scans. Visit our Penetration testing page and DDoS Simulation Testing policy for more details.
+Q: In which AWS regions is AWS Shield Standard available?
+AWS Shield Standard is available on all AWS services in every AWS Region and AWS edge location worldwide.
+Please refer to Regional Products and Services for details of AWS Shield Standard availability by region.
+Q: In which AWS regions is AWS Shield Advanced available?
+AWS Shield Advanced is available globally on all Amazon CloudFront, AWS Global Accelerator, and Amazon Route 53 edge locations worldwide. You can protect your web applications hosted anywhere in the world by deploying Amazon CloudFront in front of your application. Your origin servers can be Amazon S3, Amazon EC2, Elastic Load Balancing, or a custom server outside of AWS. You can also enable AWS Shield Advanced directly on Elastic Load Balancing or Amazon EC2 in the following AWS Regions - Northern Virginia, Ohio, Oregon, Northern California, Montreal, São Paulo, Ireland, Frankfurt, London, Paris, Stockholm, Singapore, Tokyo, Sydney, Seoul, Mumbai, Milan, and Cape Town.
+Please refer to Regional Products and Services for up-to-date details of AWS Shield Advanced availability by region.
+Q: Is AWS Shield HIPAA eligible?
+Yes, AWS has expanded its HIPAA compliance program to include AWS Shield as a HIPAA eligible service. If you have an executed Business Associate Agreement (BAA) with AWS, you can use AWS Shield to safeguard your web applications running on AWS from Distributed Denial of Service (DDoS) attacks. For more information, see HIPAA Compliance.
+Configuring protections
+Q: What types of attacks can AWS Shield help me stop?
+AWS Shield helps protects your website from all types of DDoS attacks including Infrastructure layer attacks (like UDP floods), State exhaustion attacks (like TCP SYN floods), and Application layer attacks (like HTTP GET or POST floods). See the AWS WAF and AWS Shield Advanced Developer Guide for examples.
+Q: What types of attacks can AWS Shield Standard help protect me from?
+AWS Shield Standard automatically provides protection for web applications running on AWS against the most common, frequently occurring Infrastructure layer attacks like UDP floods, and State exhaustion attacks like TCP SYN floods. Customers can also use AWS WAF to protect against Application layer attacks like HTTP POST or GET floods. Find more details on how to deploy application layer protections in the AWS WAF and AWS Shield Advanced Developer Guide.
+Q: How many resources can I enable for AWS Shield Standard protection?
+There is no limit on the number of resources subject to AWS Shield Standard protection. You can get the full benefits of AWS Shield Standard protections by following the best practices of DDoS resiliency on AWS.
+Q: How many resources can I enable for AWS Shield Advanced protection?
+You can enable up to 1000 AWS resources of each supported resource type (Classic / Application Load Balancers, Amazon CloudFront distributions, Amazon Route 53 hosting zones, Elastic IPs, AWS Global Accelerator accelerators) for AWS Shield Advanced protection. If you want to enable more than 1000, you can request for a limit increase by creating an AWS Support case.
+Q: Can I activate AWS Shield Advanced protection via API?
+Yes. AWS Shield Advanced can be activated via APIs. You can also add or remove AWS resources from AWS Shield Advanced protection via APIs.
+Q: How quickly are attacks mitigated?
+Typically, 99% of infrastructure layer attacks detected by AWS Shield are mitigated in less than 1 second for attacks on Amazon CloudFront and Amazon Route 53, and less than 5 minutes for attacks on Elastic Load Balancing. The remaining 1% of infrastructure attacks are typically mitigated in under 20 minutes. Application layer attacks are mitigated by writing rules on AWS WAF, which are inspected and mitigated inline with incoming traffic.
+Q: Can I protect resources outside of AWS?
+Yes a number of our customers choose to use AWS endpoints in front of their backend instances. Most commonly, these endpoints are our globally distributed services of CloudFront and Route 53. These services are also our best practice suggestions for DDoS resiliency. Customers can then protect these CloudFront distributions and Route 53 hosted zones with Shield Advanced. Please note that you need to lock down their backend resources to only accept traffic from these AWS endpoints.
+Responding to attacks
+Q: What tools does AWS Shield Standard provide me to mitigate DDoS attacks?
+AWS Shield Standard automatically protects your web applications running on AWS against the most common, frequently occurring DDoS attacks. You can get the full benefits of AWS Shield Standard by following the best practices of DDoS resiliency on AWS.
+Q: What tools does AWS Shield Advanced provide me to mitigate DDoS attacks?
+AWS Shield Advanced manages mitigation of layer 3 and layer 4 DDoS attacks. This means that your designated applications are protected from attacks like UDP Floods, or TCP SYN floods. In addition, for application layer (layer 7) attacks, AWS Shield Advanced can detect attacks like HTTP floods and DNS floods. You can use AWS WAF to apply your own mitigations, or, if you have Business or Enterprise support, you can engage the 24X7 AWS DDoS Response Team (DRT), who can write rules on your behalf to mitigate Layer 7 DDoS attacks.
+Q: Do I need a special support plan to contact the AWS DDoS Response Team?
+Yes, you need Business or Enterprise support plan in order to escalate to or engage the AWS DDoS Response Team (DRT). See the AWS Support website for more details about AWS Support plans.
+Q: How can I contact the AWS DDoS Response Team?
+You can engage the AWS DDoS Response Team (DRT) via regular AWS support, or contact AWS Support.
+Q: How quickly can I engage the AWS DDoS Response Team (DRT)?
+Response times for DRT depends on the AWS Support plan you are subscribed to. We will make every reasonable effort to respond to your initial request within the corresponding timeframes. See the AWS Support website for more details about AWS Support plans.
+Visibility and reporting
+Q: Does AWS Shield notify me when attacks happen?
+Yes. With AWS Shield Advanced you will get notification of DDoS attacks via CloudWatch metrics.
+Q: How quickly will I get an attack notifications?
+Typically, AWS Shield Advanced provides notification of an attack within a few minutes of attack detection.
+Q: Can I get a history of all DDoS attacks on my AWS resources?
+Yes. With AWS Shield Advanced you will be able to see the history of all incidents in the trailing 13 months.
+Q: Can I see attacks across AWS?
+Yes, AWS Shield Advanced customers get access to the Global threat environment dashboard, which gives a anonymized and sampled view of all DDoS attacks seen on AWS within the last 2 weeks.
+Q: How can I see if my AWS WAF rules are working?
+AWS WAF includes two different ways to see how your website is being protected: one-minute metrics are available in CloudWatch and Sampled Web Requests are available in the AWS WAF API or management console. Additionally you can enable comprehensive logs that are delivered through Amazon Kinesis Firehose to a destination of your choice. These allow you to see which requests were blocked, allowed, or counted and what rule was matched on a given request (i.e., this web request was blocked due to an IP address condition, etc.). For more information see the AWS WAF and AWS Shield Advanced Developer Guide.
+Q: I need to do a pen-test to evaluate the service and my application. What is the approved procedure?
+Please refer to Penetration testing on AWS. However, this does not include a “DDoS load test”, which is not authorized on AWS. If you'd like to do a live DDoS test, you can request approval for the same by raising a ticket through AWS Support. Approval for the same involves agreement on the conditions of the test between AWS, the customer and the DDoS test vendor. Please note that we only work with approved DDoS test vendors, and whole process takes 3-4 weeks.
+Billing
+Q: How am I charged for AWS Shield Standard?
+AWS Shield Standard is built into the AWS services that you already use for your web applications. There are no additional costs for AWS Shield Standard.
+Q: How am I charged for AWS Shield Advanced?
+With AWS Shield Advanced, you pay a monthly fee of $3,000 per month per organization. In addition, you also pay for AWS Shield Advanced Data Transfer usage fees for AWS resources enabled for advanced protection. AWS Shield Advanced charges are in addition to standard fees on Amazon EC2, Elastic Load Balancing (ELB), Amazon CloudFront, AWS Global Accelerator, and Amazon Route 53. Please see the AWS Shield Pricing page for more details.
+Q: Can I choose to only protect some of my resources with AWS Shield Advanced?
+Yes, AWS Shield Advanced allows you the flexibility to choose the resources that you'd like to protect. You will only be charged for AWS Shield Advanced Data Transfer on these protected resources.
+Q: How can I enable AWS Shield Advanced across multiple AWS Accounts?
+If your organization has multiple AWS accounts, then you can subscribe multiple AWS Accounts to AWS Shield Advanced by individually enabling it on each account using the AWS Management Console or API. You will pay the monthly fee once as long as the AWS accounts are all under a single consolidated billing, and you own all the AWS accounts and resources in those accounts.
+Learn more about AWS Shield pricing
+Visit the pricing page
+Ready to build?
+Get started with AWS Shield
+Have more questions?
+Contact us
+Page Content

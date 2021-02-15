@@ -1,0 +1,54 @@
+General
+Q: What is Amazon Elastic Container Registry (ECR)?
+Amazon Elastic Container Registry (ECR) is a fully-managed container registry that makes it easy for developers to share and deploy container images and artifacts. Amazon ECR is integrated with
+Amazon Elastic Container Service (ECS),
+Amazon Elastic Kubernetes Service (EKS), and
+AWS Lambda, simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications. Integration with AWS Identity and Access Management (IAM) provides resource-level control of each repository that lets you share images across your organization or with anyone in the world.
+Q: Why should I use Amazon ECR?
+Amazon ECR eliminates the need to operate and scale the infrastructure required to power your container registry. Amazon ECR uses Amazon S3 for storage to make your container images highly available and accessible, allowing you to reliably deploy new containers for your applications. Amazon ECR transfers your container images over HTTPS and automatically encrypts your images at rest. You can configure policies to manage permissions for each repository and restrict access to IAM users, roles, or other AWS accounts. Amazon ECR integrates with Amazon ECS, Amazon EKS, AWS Fargate, AWS Lambda, and the Docker CLI, allowing you to simplify your development and production workflows. You can easily push your container images to Amazon ECR using the Docker CLI from your development machine, and Amazon container orchestrators or compute can pull them directly for production deployments.
+Q: What is the pricing for Amazon ECR?
+With Amazon ECR, there are no upfront fees or commitments. You pay only for the amount of data you store in your public or private repositories, and data transferred to the Internet. Please see our
+Pricing page for more details.
+Q: Is Amazon ECR a global service?
+Amazon ECR is a regional service and is designed to give you flexibility in how images are deployed. You have the ability to push/pull images to the same region where your Docker cluster runs for the best performance. You can also access Amazon ECR anywhere that Docker runs such as desktops and on-premises environments. Pulling images between regions or out to the internet will have additional latency and data transfer costs.
+Q: Can Amazon ECR host public container images?
+Yes. Amazon ECR has a highly available container registry and website that makes it easy for you to share or search for public container software. Anyone with or without an AWS account can use the ECR
+public gallery to search for and download commonly used container images such as operating systems, AWS published images, and files such as helm charts for Kubernetes.
+Q: What is the difference between Amazon ECR public and private repositories?
+A private repository does not offer content search capabilities and requires Amazon IAM-based authentication using AWS account credentials before allowing images to be pulled. A public repository has descriptive content and allows anyone anywhere to pull images without needing an AWS account or using IAM credentials. Public repository images are also available in the ECR public gallery.
+Q: What compliance capabilities can I enable on Amazon ECR?
+You can use AWS CloudTrail on Amazon ECR to provide a history of all API actions such as who pulled an image and when tags were moved between images. Administrators can also find which EC2 instances pulled which images.
+Using Amazon ECR
+Q: How do I get started using Amazon ECR? The best way to get started with Amazon ECR is to use the Docker CLI to push and pull and your first image. Visit our Getting Started page for more information.
+Q: Can I access Amazon ECR inside a VPC? Yes. You can setup AWS PrivateLink endpoints to allow your instances pull images from your private repositories without traversing through the public internet.
+Q: What’s the best way to manage my repositories and images? Amazon ECR provides a command line interface and APIs to create, monitor, and delete repositories and set repository permissions. You can perform the same actions in the Amazon ECR Management Console, which can be accessed via the “Repositories” section of the Amazon ECR Console. Amazon ECR also integrates with the Docker CLI allowing you to push, pull, and tag images on your development machine.
+Q: How do I publicly share an image using ECR?
+You publish an image to the ECR public gallery by signing into your AWS account and pushing to a public repository you create. You are assigned a unique alias per account to use in image URLs that identifies all public images that you publish.
+Q: Can I use a custom alias for my public images?
+Yes. You can request a custom alias such as your organization or project name, unless it’s a reserved alias. Names that identify AWS services are reserved. Names that identify AWS Marketplace sellers may also be reserved. We will review and approve your custom alias request within a few days unless your alias request violates the AWS Acceptable Use Policy or other AWS Policies.
+Q: How do I pull a public image from ECR?
+You pull using the familiar ‘docker pull’ command with the URL of the image. You can easily search for this URL by finding images using a publisher alias, image name or image description using the ECR public gallery. Image URLs are in the format public.ecr.aws/<alias>/<image>:<tag>, for example public.ecr.aws/eks/aws-alb-ingress-controller:v1.1.5
+Q: Does Amazon ECR replicate images across regions?
+Yes. Amazon ECR is designed to give you flexibility in where you store and how you deploy your images. You can create deployment pipelines that build images, push them to Amazon ECR in one region, and Amazon ECR can automatically replicate them to other regions and accounts for deployment to multi-region clusters.
+Q: Can I use Amazon ECR within local and on-premises environments? Yes. You can access Amazon ECR anywhere that Docker runs such as desktops and on-premises environments.
+Q: Does the Amazon ECR public gallery provide AWS-published images? Yes. Services such as Amazon Elastic Kubernetes Service (EKS), Amazon Sagemaker and AWS Lambda publish their official public use container images and artifacts to Amazon ECR.
+Q: Does Amazon ECR work with Amazon ECS? Yes. Amazon ECR is integrated with Amazon ECS allowing you to easily store, run, and manage container images for applications running on Amazon ECS. All you need to do is specify the Amazon ECR repository in your Task Definition and Amazon ECS will retrieve the appropriate images for your applications.
+Q: Does Amazon ECR work with AWS Elastic Beanstalk? Yes. AWS Elastic Beanstalk supports Amazon ECR for both single and multi-container Docker environments allowing you to easily deploy container images stored in Amazon ECR with AWS Elastic Beanstalk. All you need to do is specify the Amazon ECR repository in your Dockerrun.aws.json configuration and attach the AmazonEC2ContainerRegistryReadOnly policy to your container instance role.
+Q: What version of Docker Engine does Amazon ECR support? Amazon ECR currently supports Docker Engine 1.7.0 and up.
+Q: What version of the Docker Registry API does Amazon ECR support? Amazon ECR supports the Docker Registry V2 API specification.
+Q: Will Amazon ECR automatically build images from a Dockerfile? No. However, Amazon ECR integrates with a number of popular CI/CD solutions to provide this capability. See the Amazon ECR Partners Page for more information.
+Q: Does Amazon ECR support federated access? Yes. Amazon ECR is integrated with AWS Identity and Access Management, which supports identity federation for delegated access to the AWS Management Console or AWS APIs.
+Q: What version of the Docker Image Manifest specification does Amazon ECR support? Amazon ECR supports the Docker Image Manifest V2, Schema 2 format. In order to maintain backwards compatibility with Schema 1 images, Amazon ECR will continue to accept images uploaded in the Schema 1 format. Additionally, Amazon ECR can down-translate from a Schema 2 to a Schema 1 image when pulling with an older version of Docker Engine (1.9 and below).
+Q: Does Amazon ECR support the Open Container Initiative (OCI) format? Yes. Amazon ECR is compatible with the Open Container Initiative (OCI) image specification letting you push and pull OCI images and artifacts. Amazon ECR can also translate between Docker Image Manifest V2, Schema 2 images and OCI images on pull.
+Security
+Q: How does Amazon ECR help ensure that container images are secure? Amazon ECR automatically encrypts images at rest using S3 server side encryption or AWS KMS encryption and transfers your container images over HTTPS. You can configure policies to manage permissions and control access to your images using AWS Identity and Access Management (IAM) users and roles without having to manage credentials directly on your EC2 instances.
+Q: How can I use AWS Identity and Access Management for permissions? You can use IAM resource-based policies to control and monitor who and what (e.g., EC2 instances) can access your container images as well as how, when, and where they can access them. To get started, use the Management Console to create resource-based policies for your repositories. Alternatively, you can use sample policies and attach them to your repositories via the Amazon ECR CLI.
+Q: Can I share my images across AWS accounts? Yes. Here is an example of how to create and set a policy for cross-account image sharing.
+Q: Does Amazon ECR scan container images for vulnerabilities? Yes. Amazon ECR can automatically scan your container images for a broad range of operating system vulnerabilities when enable scan on push for private repositories. You can also scan images using an API command. ECR notifies you when a scan completes, and results are available in the console and over the API.
+Learn more about Amazon ECR pricing
+Visit the pricing page
+Ready to build?
+Get started with Amazon ECR
+Have more questions?
+Contact us
+Page Content

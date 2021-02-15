@@ -2,7 +2,7 @@ Amazon WorkSpaces
 Access your desktop anywhere, anytime, from any device
 Get started with Amazon WorkSpaces
 Download the WorkSpaces Client
-Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. You can pay either monthly or hourly, just for the WorkSpaces you launch, which helps you save money when compared to traditional desktops and on-premises VDI solutions. Amazon WorkSpaces helps you eliminate the complexity in managing hardware inventory, OS versions and patches, and Virtual Desktop Infrastructure (VDI), which helps simplify your desktop delivery strategy. With Amazon WorkSpaces, your users get a fast, responsive desktop of their choice that they can access anywhere, anytime, from any supported device.
+Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. You can pay either monthly or hourly, just for the WorkSpaces you launch, which helps you save money when compared to traditional desktops and on-premises VDI solutions. Amazon WorkSpaces helps you eliminate the complexity in managing hardware inventory, OS versions and patches, and Virtual Desktop Infrastructure (VDI), which helps simplify your desktop delivery strategy. With Amazon WorkSpaces, your users get a fast, responsive desktop of their choice that they can access anywhere, anytime, from any supported device.
 Introduction to Amazon WorkSpaces
 Benefits
 Simplify Desktop Delivery
@@ -10,7 +10,7 @@ Amazon WorkSpaces helps you eliminate many administrative tasks associated with 
 Reduce Costs
 Amazon WorkSpaces eliminates the need to over-buy desktop and laptop resources by providing on-demand access to cloud desktops that include a range of compute, memory, and storage resources to meet your users' performance needs.
 Keep Your Data Secure
-Amazon WorkSpaces is deployed within an Amazon Virtual Private Network (VPC), provide each user with access to persistent, encrypted storage volumes in the AWS Cloud, and integrate with AWS Key Management Service (KMS). No user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
+Amazon WorkSpaces is deployed within an Amazon Virtual Private Network (VPC), provide each user with access to persistent, encrypted storage volumes in the AWS Cloud, and integrate with AWS Key Management Service (KMS). No user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
 Centrally Manage and Scale Your Global Desktop Deployment
 Amazon WorkSpaces is available in 13 AWS Regions and provides access to high performance cloud desktops wherever your teams get work done. You can manage a global deployment of many thousands of WorkSpaces from the AWS console. And you can rapidly provision and de-provision desktops as the needs of your workforce change.
 Use cases
@@ -37,7 +37,7 @@ MAXIMUS partners with state, federal, and local governments to provide communiti
 Blog posts & articles
 date
 1
-…
+...
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

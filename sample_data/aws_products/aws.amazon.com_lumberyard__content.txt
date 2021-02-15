@@ -13,7 +13,7 @@ Quickly learn essential Lumberyard tools and workflows while building a game pro
 Getting Started with Lumberyard
 Watch Now
 More Tutorials
-We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
+We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
 Learn how to use the editor and more.
 Community
 Learn from the talented Lumberyard community and get in touch with our community managers. We're here to help.

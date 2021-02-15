@@ -1,0 +1,67 @@
+General
+Q: What is Amazon WorkLink?
+Amazon WorkLink is a fully managed, cloud-based service that enables secure one-click access to internal websites and web apps from mobile devices. With Amazon WorkLink, employees can access internal websites as seamlessly as they access any public website. Employees can simply type a URL in Chrome or Safari, or click on a link in their email. Amazon WorkLink works behind the scenes to isolate and render corporate web content using the compute and networking infrastructure of AWS, and send that content securely to employee devices. Amazon WorkLink reduces the risk of information loss or theft because data is never stored or cached on devices, and IT administrators can enforce their own security and access policies.
+Q: Why should I use Amazon WorkLink?
+Amazon WorkLink enables your employees to access corporate websites in Chrome or Safari as seamlessly as they access any other public website. Amazon WorkLink does not store or cache data on user devices because your web content is rendered in AWS and sent to user devices as encrypted Scalable Vector Graphics (SVG). Because user devices do not connect directly to your network, Amazon WorkLink eliminates the path for device-based malware to reach resources in your network. Amazon WorkLink does not require content migration and can be configured to access your web content regardless of where it is hosted. Amazon WorkLink honors your existing security policies so you don’t have to manage access. As a fully managed service, Amazon WorkLink automatically handles the deployment, capacity provisioning, scaling, and updates to browsers and resources in the cloud.
+Q: How is Amazon WorkLink related to other EUC services from AWS?
+Amazon WorkLink is the latest addition to the AWS End-User Computing category, which today consists of WorkSpaces, AppStream 2.0, and Workdocs. Each service is designed to provide secure access to a different environment – WorkSpaces for full desktops, AppStream for applications, WorkLink for web content, and WorkDocs for documents.
+Getting Started
+Q: How do I get started with Amazon WorkLink?
+You can get started with Amazon WorkLink from the AWS Management Console. First, select the region that will serve as your home region (this is where Amazon WorkLink will be deployed, your websites rendered, and user analytics generated). Then, link your existing SAML-based identity provider with Amazon WorkLink. Next, associate web domains that your employees will access through Amazon WorkLink . Lastly, you need a VPC to connect Amazon WorkLink with your corporate content.
+Q: How does Amazon WorkLink communicate with my corporate network?
+Amazon WorkLink containers execute on customer-specific EC2 instances provisioned on-demand. You can create a VPC in your account, identify subnets for Amazon WorkLink traffic, and give Amazon WorkLink permission to create Elastic Network Interfaces (X-ENI) that will be linked to EC2 rendering hosts allocated to you. Your content can exist within that VPC (for example, applications hosted on an EC2 instance), in another VPC that is peered with it, or on-premises. Resources running in a VPC can use AWS PrivateLink. Resources hosted on-premises must be accessible via an IPsec tunnel, AWS Direct Connect, or the new AWS Transit Gateway.
+Q: How do my end users get started with Amazon WorkLink?
+One you have completed setup in the AWS Management Console, you can use the provided email template to invite employees to download the WorkLink app. Your end-users can simply download the WorkLink app from their device app store, log in with their corporate credentials, and start accessing internal websites using their browser.
+Compatibility
+Q: What devices are supported at launch?
+Amazon WorkLink supports devices running iOS 12+ and Android 6+. The Amazon WorkLink app is available for download in the iOS App Store and the Google Play Store.
+Q: Do some applications work better with Amazon WorkLink than others?
+Amazon WorkLink uses Chromium as part of its core rendering engine, so a good rule of thumb is that if it works in Chrome, it will work in Amazon WorkLink. That said, Amazon WorkLink will work best for sites that are not graphically intense (such as sites that deliver video with more than 60 frames per second, or sites that include Flash, Silverlight, or other plugins).
+Q: Does Amazon WorkLink work with SaaS applications?
+Amazon WorkLink supports SaaS web apps served via domains that you own. For example, if you use JIRA or SAP with a custom domain for your enterprise.
+Q: Does Amazon WorkLink work with e-mail?
+Amazon WorkLink supports web interfaces to email. For example, you can enable end users to access email via Outlook Web Access served via a custom domain. However, Amazon WorkLink does not today support email in native email clients.
+Security
+Q: How does Amazon WorkLink manage user access and authentication?
+Amazon WorkLink is designed to work with your existing systems and not add extra layers of user management. Amazon WorkLink supports user authentication and federated sign-in using any SAML 2.0 compliant identity providers, such as AWS SSO, OneLogin, Okta, or Ping Identity.
+Q: How is my data protected?
+During an Amazon WorkLink session, customer data is isolated in the cloud and securely rendered. Once the session ends, that data is deleted. Throughout this process, data in transit is protected by enterprise-grade encryption.
+Q: What are the key security differentiators enabled by Amazon WorkLink?
+Amazon WorkLink is an AWS service, so your content is always handled in a secure environment consistent with AWS standards. As a user of Amazon WorkLink, a part of the cloud is dedicated to you and only handles your data. Amazon WorkLink only handles pages that you associate with your fleet. Your content is delivered in a format that enables seamless interactions for end users while enhancing the controls on how that data is secured on the user device.
+Q: Does Amazon WorkLink prevent web browsers from caching corporate data?
+Yes, Amazon WorkLink streams a representation (image) of your content only to the browsers that enforce web standards on content caching. The streaming process prevents corporate content from being cached on user devices.
+Q: Is corporate data stored on end-user devices?
+Content from your websites is never stored on the end-user web browsers. Session information (i.e., cookies) is encrypted in the cloud and stored on end-user devices in an encrypted format that cannot be decrypted on the device. Because the encrypted data is unusable on the device, there is no need to wipe devices if a device is lost or stolen or if a user leaves the company.
+Q: How do I associate a corporate website with Amazon WorkLink ?
+In your AWS Management Console, you can associate your domains to Amazon WorkLink by providing the domain name and the domain certificate via Amazon Certificate Manager.
+Q: Does Amazon WorkLink have visibility of personal browsing activity?
+No, Amazon WorkLink only handles domains you associate with the service and requires administrators to provide proof of ownership (via Amazon Certificate Manager). It is not possible for administrators to associate public domains they do not own (such as news or social media websites) with the service.
+Monitoring
+Q: What information can I get from Amazon WorkLink usage metrics?
+Amazon WorkLink usage metrics provide the following information:
+BrowsingSessionId: An unique identifier representing a user’s browsing session
+UserId: Registered user email.
+DeviceId: Unique identifier representing the device registered with Amazon WorkLink.
+DomainName: domain name provided by you during set up.
+ErrorMessage: Message describing error, if any, encountered during the browsing session.
+HTTPStatusCode: Status code of the HTTP request directed via Amazon WorkLink.
+URI: Path that follows the domain name when the request was sent by the user browser.
+Q: How can I create custom usage metrics for Amazon WorkLink?
+Amazon WorkLink delivers usage data logs to you via an Amazon Kinesis stream. Amazon Kinesis makes it easy to collect, process, and analyze data so you can get timely insights and react quickly to new information. You can store, process, and analyze the logs with familiar tools or data store of your choice. For example, you can stream these logs to Amazon S3 and use tools such as Splunk to analyze the information. Similarly, you can direct this data to Amazon Redshift via Kinesis Data Firehose and use Amazon QuickSight to generate reports and dashboards.
+Q: Do the Amazon WorkLink APIs log actions in AWS CloudTrail?
+Yes. To receive a history of Amazon WorkLink API calls made on your account, you can simply turn on CloudTrail in the AWS Management Console.
+Pricing and Availability
+Q: How much does Amazon WorkLink cost?
+Amazon WorkLink is a pay-as-you-go service with no minimum fees, upfront commitments, or long-term contracts. Users have unlimited access to the content you enable with Amazon WorkLink, and you are charged monthly based on the number of users that connect to the service. Please see our pricing page for the latest information.
+Q: What are all the regions where Amazon WorkLink is available?
+Amazon WorkLink is generally available in the following AWS regions: US East (N. Virginia), US East (Ohio), US West (Oregon), and Europe (Ireland).
+Learn about features
+Learn more about Amazon WorkLink features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon WorkLink in the AWS Console.
+Sign in
+Page Content

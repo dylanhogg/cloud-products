@@ -17,7 +17,7 @@ Unity
 Xamarin
 IoT Device SDKs
 Embedded C
-Arduino Yún
+Arduino Yún
 IDE and IDE Toolkits
 AWS Cloud9
 Eclipse

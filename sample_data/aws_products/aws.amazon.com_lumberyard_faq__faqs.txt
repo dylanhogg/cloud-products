@@ -1,0 +1,100 @@
+General
+Q: What is Amazon Lumberyard?
+Amazon Lumberyard is a free, cross-platform AAA game engine deeply integrated with AWS and Twitch – with full source code provided. Whether you are a major studio, an indie developer, a student, or a hobbyist, Lumberyard provides a growing set of tools to create the highest-quality games, connect your games to the vast compute and storage of the AWS Cloud, and engage fans on Twitch. Lumberyard's robust professional tools help developers build games with beautiful worlds, realistic characters, and stunning effects. Additionally, with Lumberyard’s AWS Cloud integration, developers can add cloud-connected features to a game in as little as minutes (e.g. dynamic content, daily news, leaderboards, or server-side combat resolution). Lumberyard is also integrated with Amazon GameLift, the AWS service for deploying, operating, and scaling dedicated game servers for session-based multiplayer games.
+Amazon Lumberyard is free, with no seat licenses, royalties, or subscriptions required. With Amazon Lumberyard, you only pay standard AWS fees for the AWS services they choose to use.
+Q: What do you mean by "free"? Do I owe you 5% of my revenues?
+Lumberyard is free, including source. We make money when you use other AWS services to power your game. We built Lumberyard to make it faster and easier to build fantastic live, multiplayer, community-driven games – which naturally connect to the cloud to provide these features to players. If your game doesn't connect to the cloud, that's ok too and you pay us nothing. There are also no seat fees, subscription fees, or requirements to share revenue. You pay only for the infrastructure resources you choose to use. For full licensing details, see our Licensing FAQs below.
+Q: Is Amazon Game Studios using Lumberyard to build games?
+Yes, Amazon Game Studios games are built with Lumberyard. Check them out on the Amazon Game Studios website.
+Q: Is Lumberyard based on other technologies?
+Lumberyard is made up of proven technology from CryEngine, AWS, Twitch, EMotion FX, and Double Helix. We’ve hired some of the best game technologists in the world, who have already made over 3,300 improvements, new features, and fixes to Lumberyard since launch. Some examples of new functionality we've released since launch:
+We've introduced a new Component Entity system, a modern approach to composing complex entities out of simpler entities. Content creators can just drag and drop components to build the behavior they want, edit component settings live in the Editor, and create Lua and visual scripts to quickly change or extend the behavior of an entity. To help you iterate on more complex scenes, entities can be grouped together into "slices," and those slices can in turn be used to create more complex slices, resulting in a fully cascading prefab system.
+We've created new asset workflows designed to take artists from their favorite digital content creation tools right into gameplay in seconds. The asynchronous Lumberyard Asset Processor automatically imports and performs live updates of assets in seconds -- and across target device platforms. Just drop an asset file in your project directory, or save a change to an existing file, and those assets are processed, optimized and updated in the editor in seconds.
+The Lumberyard Editor has a new information architecture and UI, rebuilt in Qt, and designed to be easier to use and accelerate your productivity.
+We've integrated a networking layer, GridMate, so your engineers can more easily build low-latency multiplayer games with large numbers of players.
+We’ve introduced Cloud Canvas, the Cloud Gems Framework and Cloud Gem Portal, which enable your engineers and technical designers with little to no backend experience to build live online game features, such as community news feeds, sharing scores, and server-side combat resolution, in as little as minutes using Lumberyard’s visual scripting system and pre-built Cloud Gems.
+We've integrated with Amazon GameLift, so you can deploy, scale, and operate session-based multiplayer games with dedicated servers.
+We have added a new code generation system to allow you to annotate your C++ code and generate the code you need.
+We’ve advanced the engine to include support for mobile devices, including support for iOS Metal and 1-click Android deployment.
+We’ve created a new launcher and Project Configurator so your team can get set up with less engineering help.
+We’ve also created new workflows so your artists can iterate faster and create higher-quality content, including a new particle effects editor, new FBX importer, and UI editor.
+Please see our full release notes of additions, fixes, and improvements to learn more, and tune in to our Lumberyard Blog for more news on what we are working on.
+Q: Do I really get source code access to Lumberyard?
+Yes. Free access to full C++ source code is included with the download of Lumberyard. You can also get the Lumberyard source from GitHub.
+Q: What kind of support is available for Lumberyard?
+We recommend you start with our Getting Started Guide to quickly learn how to build a working game prototype using essential Lumberyard tools. All Lumberyard customers have access to documentation, tutorials, forums, and samples and assets. Additional support for Lumberyard is available via AWS Premium Support plans.
+Q: Can I use Lumberyard for non-game purposes, such as architecture, simulations, and animated movies?
+Yes, please do.
+Q: What are the system requirements for building a game with the Lumberyard Editor and tools?
+We recommend you use a PC with Windows 10 64-bit, 8+ GB RAM, 60 GB of storage, a 3GHz+ quad-core processor, and a 2+ GB DX11+ compatible video card.
+Q: What device platforms does Lumberyard support?
+Lumberyard currently supports PC, Xbox One, PlayStation 4, iOS (iPhone 5S+ and iOS 7.0+), and Android (Nexus 5 and equivalents with support for OpenGL 3.0+). Lumberyard also supports dedicated servers on Windows and Linux. Additional support for MacOS is coming soon. Please note that Sony and Microsoft only permit developers who have passed their screening process to develop games for their console platforms.
+Q: Does Lumberyard support VR?
+Yes. We currently support Oculus Rift, HTC Vive, and PlayStation VR. Because VR is a rapidly evolving area, we've built Lumberyard's VR support to be modular, which allows you to isolate all device specific implementation details in a separate package, so support for new HMDs can be added independently, and with less code. To find out more about our modular VR system, check out our blog here.
+Q: How do I get started with Xbox and PlayStation game development?
+If you are a licensed Microsoft Xbox developer, please e-mail your name, studio name, and the licensed e-mail address to lumberyard-consoles@amazon.com. If you are a licensed Sony PlayStation developer, please visit SCE DevNet. Under the Middleware Directory click "Confirm Status" for Amazon Lumberyard.
+Lumberyard and AWS
+Q: If I build a single-player game that uses no cloud connectivity, do I have to pay to use the engine?
+No, in this case you would pay us nothing.
+Q: Do I need an AWS account to use Lumberyard?
+No, but by downloading or using Lumberyard, you agree to the AWS Customer Agreement and Lumberyard Service Terms. If you want to use Amazon GameLift or Lumberyard’s Cloud Canvas to build connected gameplay features, you or someone from your game team needs to register for an AWS account and provision services to your account.
+Q: Do I have to run my game on AWS?
+No. If you own and operate your own private servers, you do not need to use AWS. You can also use Lumberyard without AWS if your game does not use any servers. For example, if you release a free-standing single‐player or local-only multiplayer game, you pay us nothing.
+Q: Is there a surcharge or other additional fee over and above AWS service rates for Lumberyard customers?
+No.
+Q: How do I authorize my team of developers to use Cloud Canvas and AWS via the Lumberyard Editor?
+To enable team members to access AWS through Cloud Canvas, you first need to create an IAM user for your team members and generate access keys and secret keys. Your team members can enter these keys in the Lumberyard Editor’s Credentials Manager under the AWS menu. For more information, please see the Cloud Canvas and IAM documentation.
+Q: Can I grant certain team members permissions or restrictions to access specific AWS services in Cloud Canvas?
+Yes, Cloud Canvas lets you configure permissions so your development, test, and release resources can have different access restrictions. Cloud Canvas creates AWS IAM Managed Policies, which can be used to grant access to the AWS IAM Users and Groups you choose. You can customize the permissions by editing your Cloud Canvas configuration in the Lumberyard Editor, and update the user and group assignments in the AWS Management Console as needed.
+Q: Which AWS services are available in Cloud Canvas?
+Cloud Canvas enables you to use DynamoDB, S3, Cognito, SQS, SNS, and Lambda via Lumberyard's scripting tools.
+Licensing and Mods
+Q: What are the license terms for Lumberyard?
+Your use of Lumberyard is governed by the AWS Customer Agreement and Lumberyard Service Terms.
+Q: Do I have to sell my Lumberyard game on Amazon?
+No, you can sell your game wherever you'd like. Of course, we’d love to see your game on Amazon, and you can find information about publishing PC and Mac games on Amazon here and publishing Android games on the Amazon Appstore here.
+Q: Can I take Lumberyard and make my own game engine and distribute it?
+No. While you may maintain an internal version of Lumberyard that you have modified, you may not use Lumberyard to distribute your own game engine, to make improvements to another game engine, or otherwise compete with Lumberyard.
+However, you may distribute your own fork of Lumberyard via the Lumberyard Repository on GitHub, as long as you comply with the requirements of our terms, and include a copy of our license notice in your fork. Users who use your fork must agree to the AWS Customer Agreement and the Lumberyard Service Terms, and their use of your fork is governed by those terms.
+Q: Is Lumberyard “open source”?
+No. We make the source code available to enable you to fully customize your game, but your rights are limited by the Lumberyard Service Terms. For example, you may not publicly release the Lumberyard engine source code (except on the Lumberyard GitHub repository), or use it to release your own game engine.
+Q: Can I make plugins or tools for Lumberyard?
+Yes. Please note that if your plugin incorporates Lumberyard code, then you must follow the requirements related to distributing Lumberyard Materials in the Service Terms, for example, to not distribute Lumberyard Materials in source code form. If your plugin merely calls Lumberyard functions or APIs as part of its operation, then the distribution requirements would not apply.
+Q: Can I redistribute source code modifications to Lumberyard?
+Yes, you may distribute your own fork of Lumberyard via the Lumberyard Repository (your fork must be parented to our repo) on GitHub, as long as you comply with the requirements of our terms, and include a copy of our license notice in your fork. Users who use your fork must agree to the AWS Customer Agreement and the Lumberyard Service Terms, and their use of your fork is governed by those terms.
+Also, you can redistribute up to 50 lines of source code on forums (including the official Lumberyard contribution forum) or elsewhere. You may also share modifications with your contractors and publishers working on your game, as set out in the Service Terms. Otherwise, you may not release Lumberyard engine source code.
+Q: Do I get to set my own terms when I post a fork on GitHub, or share improvements on a forum?
+No. When you publicly share an improvement to Lumberyard, you give other Lumberyard customers a license to use that improvement under the same terms that govern Lumberyard itself, and you give us a license to use that improvement without restriction.
+Q: Can I submit code that adds features or fixes bugs that I find?
+Yes, we welcome your contributions! The Lumberyard source code is available on GitHub at http://www.github.com/aws/lumberyard. You may submit code for inclusion in a future version of Lumberyard in the form of a pull request. See the contribution guidelines on our GitHub page for details.
+Q: Can my Lumberyard game connect to services like Steamworks, Xbox Live, PSN, Apple Game Center, Google Play Games, or console social services?
+Yes. Your game may read and write data to platform services and public third-party game services for player save state, identity, social graph, matchmaking, chat, notifications, achievements, leaderboards, advertising, player acquisition, in-game purchasing, analytics, and crash reporting.
+Q: Can my game use an alternate web service instead of AWS?
+No. By “alternate web service” we mean any non-AWS web service that is similar to or can act as a replacement for Amazon EC2, Amazon Lambda, Amazon DynamoDB, Amazon RDS, Amazon S3, Amazon EBS, Amazon EC2 Container Service, or Amazon GameLift. You can use hardware you own and operate for your game servers.
+Q: Is it okay for me to use my own servers?
+Yes. You can use hardware you own and operate for your game. It’s also ok for your users to connect peer-to-peer, and for users to host personal servers (as long as they’re not operating as a service provider business).
+Q: Can I use the game assets that are included with Lumberyard in my game?
+Yes. Lumberyard includes asset packs that you can use in your games and prototypes. We also provide additional high-fidelity assets and samples that you may find useful on our website.
+Q: Can I redistribute assets from Lumberyard or Lumberyard sample projects?
+Not on their own. You can modify and/or redistribute Lumberyard sample assets such as audio, textures, meshes, animations, game data files, and scripts as part of your game. But you can’t, for example, resell Lumberyard assets in an asset store.
+Q: Can I use Lumberyard in a way not permitted by the Service Terms?
+Please contact us if you would like to use Lumberyard in a way that is not permitted by the Lumberyard Service Terms.
+Q: Does Lumberyard support integrations with third-party middleware?
+Yes. Lumberyard is already integrated with popular middleware, including Perforce, Wwise, Substance, Speedtree, and more. If you’re a middleware provider interested in integrating with Lumberyard, please contact us.
+Q: Can I include Lumberyard’s tools so my players can build mods for my game?
+Yes. Your right to redistribute Lumberyard in your game includes the right to redistribute pieces of the development environment in your game too. A list of redistributable components is included in the documentation. These rights also apply to companion products that you make available to end users to modify and create derivative works of your game. If you want to distribute Lumberyard components in source code form, please contact us.
+Registration
+Q: Where can I tell you about my Lumberyard game?
+Please reach out about your Lumberyard project before it is released.
+Other
+Q: How do I submit feedback or suggestions?
+Please visit our Lumberyard Forums or email us your feedback.
+Q: I’d love to join your team. Are you hiring?
+Yes, our team is growing, and we’d love to hear from you if you’re interested in joining our team. Check out our careers page to learn more.
+Ready to get started with Lumberyard?
+Check out the Lumberyard Getting Started Guide
+Ready to build with Lumberyard?
+Download now
+Have more questions?
+Contact us
+Page Content

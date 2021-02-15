@@ -1,0 +1,37 @@
+General
+Q: Why should I use Amazon Personalize?
+A: Amazon Personalize has helped numerous customers create personalized experiences for their users and has helped customers drive material improvements to business outcomes. When using Personalize customers are able to deploy their models in days not months. See our customer references for examples.
+Q: What are the key use cases supported by Amazon Personalize
+A: Amazon Personalize supports the following key use cases:
+Personalized recommendations
+Similar items
+Personalized reranking i.e. rerank a list of items for a user
+Personalized promotions/notifications
+Q: What are some of the common business applications for Amazon Personalize
+A: Amazon Personalize can be used to personalize the end-user experience over any digital channel. Examples include product recommendations for e-commerce, news articles and content recommendation for publishing, media and social networks, hotel recommendations for travel websites, credit card recommendations for banks, and match recommendations for dating sites. These recommendations and personalized experiences can be delivered over websites, mobile apps, or email/messaging. Amazon Personalize can also be used to customize the user experience when user interaction is over a physical channel, e.g., a meal delivery company could personalize weekly meal to users in a subscription plan.
+Using Amazon Personalize
+Q: How do I get started with Amazon Personalize?
+A: Developers get started by creating an account and accessing the Amazon Personalize developer console which walks them through an intuitive set-up wizard. Developers have the option of using a JavaScript API and Server-Side SDKs to send real-time activity stream data to Amazon Personalize or bootstrapping the service using a historical log of user events. Developers can also import their catalog (item dataset) and user data via Amazon S3. Then, with only a few API calls, developers can train a personalization model, either by letting the service choose the right algorithm for their dataset with AutoML or manually choosing one of the several algorithm options available. Once trained, the models can be deployed with a single API call and can then be used by production applications. When deployed, developers call the service from their production services to get real-time recommendations, and Amazon Personalize will automatically scale to meet demand.
+Q: What data do I have to provide to Amazon Personalize?
+A: Developers should provide the following data to Amazon Personalize:
+User activity stream or event data - User interaction data on the website/application is captured in the form of events and is sent to Amazon Personalize often via an integration that involves a single line of code. This includes key events such as click, buy, watch, add-to-shopping cart, like etc. When onboarding to the service, developers can also provide a historical log of all event/activity stream data, if available.
+Catalog (item) data - This can be any type of catalog including books, videos, news articles or products. This involves item ids and meta-data associated with each item. This data is optional.
+User data - User profile data including user demographic data such as gender and age. This data is optional.
+Amazon Personalize will train and deploy a model based on this data. Developers can then use a simple inference API to get individualized recommendations at run-time and generate a personalized experience for the end users according to the type of personalization model (e.g. user personalization, related items or personalized reranking).
+Q: How do I apply/export Amazon Personalize recommendations to my business workflows or applications?
+A: Amazon Personalize provide customers two inference APIs: getRecommendations and getPersonalizedRanking. These APIs return a list of recommended itemIDs for a user, a list of similar items for an item or a reranked list of items for a user. The itemID can be a product identifier, videoID etc. The customers are then expected to use these itemIDs to generate the end user experience through steps, such as fetching image and description, and then rendering a display. In some cases, customers might integrate with AWS or third party email delivery services, or notification services etc. to generate the end user experience.
+Q: Will my data be secure and private?
+A: All models are unique to the customers’ data set, and are not shared across other AWS accounts. No data is used to train or propagate models for other customers, the customer’s model inputs and outputs are entirely owned by the account. Every interaction customers have with Amazon Personalize is protected by encryption. Any data processed by Amazon Personalize can be further encrypted with customer keys through Amazon Key Management Service, and encrypted at rest in the AWS Region where customer is using the service. Administrators can also control access to Amazon Personalize through an AWS Identity and Access Management (IAM) permissions policy – ensuring that sensitive information is kept secure and confidential.
+Pricing
+Q: What does Amazon Personalize cost?
+A: Refer to the Amazon Personalize pricing page to learn more.
+Learn how to get started
+Refer to developer guide for instructions on using Amazon Personalize.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Personalize in the AWS Console.
+Get started
+Page Content

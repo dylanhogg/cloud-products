@@ -35,8 +35,8 @@ Show less
 What's new
 date
 1
-…
-See all announcements »
+...
+See all announcements
 Blog posts & articles
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 Learn more about Amazon EKS features

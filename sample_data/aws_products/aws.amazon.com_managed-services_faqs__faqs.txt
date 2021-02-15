@@ -1,0 +1,51 @@
+AWS Managed Services FAQs
+Contact us for more information
+What use cases does AWS Managed Services solve?
+Enterprises want to adopt AWS at scale but often the skills that have served them well in traditional IT do not always translate to success in the cloud. Organizations must transform with new skills, tools and processes, while maintaining compliance and accelerating innovation to drive their businesses. AWS Managed Services (AMS) is designed to solve these use cases for enterprises, enabling them to migrate to AWS at scale more quickly, reduce their operating costs, improve security and compliance, and focus on their differentiating business priorities.
+AWS Managed Services (AMS) operates AWS on your behalf, providing a secure AWS Landing Zone, features which help you meet various compliance program requirements (HIPAA, HITRUST, GDPR, SOC, ISO, PCI), a proven enterprise operating model, on-going cost optimization, and day-to-day infrastructure management. AMS helps you close the skills gap and create a flywheel of innovation in the cloud that will help transform your IT culture.
+How can AWS Managed Services help enterprises accelerate cloud adoption?
+AWS Managed Services helps accelerate cloud adoption by defining a standardized operating environment and common application stack templates for use by both cloud-native and traditional workloads. AWS Managed Services fast-tracks cloud adoption by providing a turnkey service that augments or replaces your infrastructure management capability, and supports your existing operational processes.
+How much does AWS Managed Services cost?
+AWS Managed Services offers you a pay-as-you-go approach for pricing for cloud services. With AWS you pay only for the individual services you need for as long as you use them. The price of AWS Managed Services is calculated based on AWS usage within the accounts we manage. For more information on pricing, please contact sales.
+If you need help implementing billing and account best practices, the Support Concierge Team is available to help. Support Concierge expertise includes AWS console access, account structure, cost allocation, cost optimization, onboarding, payments (AR), and reserved instances (RI). To learn more, please see the AWS Support FAQs.
+How do AWS Partners and AWS Managed Services work together?
+AWS Managed Services offers AWS infrastructure operations management. Our partners are an important aspect of our service, helping you to migrate your traditional workloads to the cloud, developing and managing applications, and offering hybrid and multi-cloud. You can greatly benefit from our AWS Consulting Partners’ deep industry-specific expertise. If you want a single vendor to manage both applications and AWS infrastructure, validated AWS Managed Service Providers deliver full-lifecycle support for applications, while AWS Managed Services manages ongoing infrastructure operations.
+Will AWS Managed Services work with existing ITSMs?
+We designed AWS Managed Services to operate via APIs, enabling integration of the service into a wide range of existing ITSM systems and development platforms. We provide standard integrations with ServiceNow versions up to and including the Kingston release. Integrations can be performed by AWS Professional Services or an AWS Managed Services Partner.
+What industry standards does AWS Managed Services comply with?
+AWS Managed Services follows ITIL*, the popular IT service management framework used by many Enterprises. Many of the underlying AWS services managed by AWS Managed Services are certified. AWS Managed Services is certified for HIPAA, HITRUST, GDPR, SOC, ISO, and PCI and in the process of obtaining additional compliance certifications. See here for more information about AWS and compliance.
+*  ITIL® is a (registered) Trade Mark of AXELOS Limited. All rights reserved.
+What kind of workloads does AWS Managed Services support?
+AWS Managed services can support both traditional and next generation workloads across all of the supported AWS services.
+How do I deploy applications on AWS Managed Services?
+AWS Managed Services supports three methods of application deployment:
+Immutable: applications are installed and burnt into an AMI, which is used to deploy new infrastructure for each release.
+Deployment Automation (e.g. CodeDeploy, Chef, Puppet): automatically install and configure your application on existing or newly created infrastructure using scripting and recipes.
+Manual: deploy your infrastructure and submit a follow-up change request for administrative access to install an application during a change window.
+Does AWS Managed Services manage on-premises resources or other public clouds?
+No, AWS Managed Services focuses on managing operations for AWS.
+Will I still have access to my resources?
+AWS Managed Services offers a managed, controlled environment to ensure security and compliance. Your teams and AWS Managed Services cloud engineers follow the same streamlined process to gain access to managed resources via access requests. Your team can file change requests for network access via bastion, activation of corporate AD credentials on a stack, and logging within a change window. All access requests flow through change management, and neither party has persistent access to managed resources – ensuring compliance and creating a full audit trail. This makes it easy for your team to take back control of an account at any time with the correct controls in place.
+Can I access my managed environments from my corporate network?
+Yes. All resources are part of your private address space and domain. Managed workloads can access on-premises applications, middleware, and data via AWS Direct Connect or VPN.
+In which AWS regions is AWS Managed Services available?
+For a list of the regions where AWS Managed Services is currently available, please refer to the region table.
+What languages are supported by AWS Managed Services?
+Currently, AWS Managed Services provides support in English.
+Does AWS Managed Services manage applications?
+AWS Managed Services manages certain applications and appliances that relate to infrastructure management, including endpoint security, directory services, bastions, logging, monitoring and critical network appliances. AMS does not manage the configuration and monitoring of your applications, but instead focuses on managing your cloud infrastructure so that you can focus on innovation. For custom and packaged applications, we have a community of AWS Partners who provide application management as part of their portfolio of services.
+What operating systems does AWS Managed Services support?
+AWS Managed Services supports the following operating systems:
+• Amazon Linux 2 and Amazon Linux
+• CentOS 7.x, CentOS 6.5-6.10
+• Oracle Linux 7.5 and later minor versions
+• Red Hat Enterprise Linux (RHEL) 8.x, 7.x, 6.5-6.10
+• SUSE Linux Enterprise Server 15 SP0, SP1, and SAP specific versions, SUSE Linux Enterprise Server 12 SP4, SP5, and SAP specific versions
+• Microsoft Windows Server 2019, 2016, 2012 R2, 2012, 2008 R2
+Operating Systems that are outside of the general support period of the operating system manufacturer (“end of support” (EOS)) have an increased security risk and are considered as supported configuration, only if 1) you have extended support with the OS vendor that allows you to receive updates, or 2) any instances using EOS OS follow the security controls as specified by AWS Managed Services in the user guide, or 3) you comply with any other compensating security controls required by AWS Managed Services.
+What firewall services does AWS Managed Services support?
+AWS Managed Services supports the Palo Alto VM-Series Next-Generation Firewall.
+What security software does AWS Managed Services support?
+AWS Managed Services supports Deep Security from Trend Micro.
+What is the approved directory service for AWS Managed Services?
+The approved directory service for AWS Managed Services is Microsoft Active Directory (AD).

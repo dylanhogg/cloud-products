@@ -1,0 +1,152 @@
+General
+Q: What is Amazon FSx for Lustre?
+A: Amazon FSx for Lustre makes it easy and cost effective to launch, run, and scale the world’s most popular high-performance file system.
+The open source Lustre file system is designed for applications that require fast storage – where you want your storage to keep up with your compute. Lustre was built to solve the problem of quickly and cheaply processing the world’s ever-growing data sets, and it’s the most widely used file system for the 500 fastest computers in the world.
+As a fully managed service, Amazon FSx brings Lustre to the masses, allowing you to use it for any workload where storage speed matters. Amazon FSx eliminates the traditional complexity of setting up and managing high-performance Lustre file systems, allowing you in minutes to spin up, run, and scale a battle-tested high-performance file system. It also provides multiple deployment options so you can optimize cost for your needs
+Amazon FSx also integrates with Amazon S3, making it easy for you to process cloud data sets with the Lustre high-performance file system. When linked to an S3 bucket, an FSx for Lustre file system transparently presents S3 objects as files and allows you to write changed data back to S3.
+Q: What use cases does Amazon FSx for Lustre support?
+A: Use Amazon FSx for Lustre for workloads where speed matters, such as machine learning, high performance computing (HPC), video processing, financial modeling, genome sequencing, and electronic design automation (EDA).
+Q: How do I get started with Amazon FSx for Lustre?
+A: To use Amazon FSx for Lustre, you must have an AWS account. If you do not already have an AWS account, you can sign-up for an AWS account.
+Once you have created an AWS account, you can create a file system via the AWS Management Console, the AWS Command Line Interface (AWS CLI), and Amazon FSx API (and various language-specific SDKs). To learn more, get started here.
+Q: How do I create a file system with Amazon FSx for Lustre?
+A: Creating an Amazon FSx for Lustre file system from the Console, CLI, or API is a simple process. Within minutes, your file system is running and accessible to your compute instances. If you link your filesystem to an S3 data lake, your objects will appear as files and directories as soon as your file system is available.
+Q: What is the difference between scratch and persistent deployment options?
+A: Amazon FSx for Lustre provides two deployment options: scratch and persistent.
+Scratch file systems are designed for temporary storage and shorter-term processing of data. Data is not replicated and does not persist if a file server fails.
+Persistent file systems are designed for longer-term storage and workloads. The file servers are highly available, and data is automatically replicated within the AWS Availability Zone (AZ) that is associated with the file system. The data volumes attached to the file servers are replicated independently from the file servers to which they are attached.
+Q: How do I choose the right storage type for my application?
+A: Choose SSD storage for latency-sensitive workloads or workloads requiring the highest levels of IOPS/throughput. Choose HDD storage for throughput-focused workloads that aren’t latency-sensitive. For HDD-based file systems, the optional SSD cache improves performance by automatically placing your most frequently read data on SSD (the cache size is 20% of your file system size).
+Q: What instance types and AMIs work with Amazon FSx for Lustre?
+A: FSx for Lustre is compatible with the most popular Linux-based AMIs, including Amazon Linux, Amazon Linux 2, Red Hat Enterprise Linux (RHEL), CentOS, SUSE Linux and Ubuntu. FSx for Lustre is also compatible with both x86-based EC2 instances and Arm-based EC2 instances powered by the AWS Graviton2 processor. With FSx for Lustre, you can mix and match the instance types and Linux AMIs that are connected to a single file system.
+Q: How do I access an FSx for Lustre file system from a compute instance?
+A: To access your file system from a Linux instance, you first install the open-source Lustre client on that instance. Once it’s installed, you can mount your file system using standard Linux commands. Once mounted, you can work with the files and directories in your file system just like you would with a local file system.
+The Lustre client is included with Amazon Linux 2 and Amazon Linux. For Red Hat Enterprise Linux, CentOS, and Ubuntu an AWS repository for the Lustre client is supported that provides clients compatible with these operating systems. See the FSx for Lustre documentation for details.
+Q: How do I access an Amazon FSx for Lustre file system from an Amazon Elastic Kubernetes Service (EKS) cluster?
+A: You can use persistent storage volumes backed by FSx for Lustre using the FSx for Lustre CSI driver from Amazon EKS or your self-managed Kubernetes on AWS. See Amazon EKS documentation for details.
+Q: How do I manage an FSx for Lustre file system?
+A: Amazon FSx is a fully managed service, so all of the file storage infrastructure is managed for you. When you use Amazon FSx, you avoid the complexity of deploying and maintaining complex file system infrastructure.
+You can administer a file system via the AWS Management Console, the AWS command-line interface (CLI), or the Amazon FSx API (and various language-specific SDKs). The Console, API, and SDK provide the ability to create, scale, and delete file systems; create and edit file system tags, and display detailed information about file systems. If you link your filesystem to an S3 data lake, your objects will appear as files and directories as soon as your system is available.
+Q: How can I set and enforce storage limits for file system users?
+A: You can set and enforce storage limits based on the number of files or storage capacity consumed by a specific user or group. You can choose to set a hard limit that denies users and groups from consuming additional storage after exceeding their quota, or set a soft limit that provides users with a grace period to complete their workloads before converting into a hard limit. To simplify file system administration, you can also monitor user-and group-level storage usage on FSx for Lustre file systems. To learn more, visit the FSx for Lustre Storage Quotas documentation.
+Q: If I have data in S3, how do I access it from Amazon FSx for Lustre?
+A: You can link your Amazon FSx for Lustre file system to your Amazon S3 bucket, and FSx will make your S3 data transparently accessible in your file system. Once your file system is created, the names and prefixes of objects in your S3 bucket will appear as file and directory listings on the file system. Although the names and prefixes of objects are listed as files and directories in your file system, the actual content of a given object is imported automatically from S3 only when you access the associated file on the file system for the first time – meaning an object’s data doesn’t consume space on your file system unless it’s accessed at least once on the file system.
+After your file system is created, FSx can keep your file and directly listing up to date automatically as you add or modify objects in your S3 bucket.
+You can export new files and changed files from your file system to your S3 bucket at any time, using the FSx Console, the AWS Command Line Interface (CLI), and the Amazon FSx API.
+Amazon FSx for Lustre uses parallel data transfer techniques to transfer data to and from S3 at up to hundreds of GBs/s.
+Q: How do I import updates and changes from my Amazon S3 bucket?
+A: If you choose to link a new file system to an S3 bucket, once your file system is created the names and prefixes of existing objects in your S3 bucket will appear as file and directory listings in the file system.
+You can optionally configure your FSx file system to keep your file and directly listing up to date automatically as you add or modify objects in your S3 bucket. You can set your import preferences when you create your file system or at any time by updating your file system using the CLI, API, or the AWS Console. Learn more in the Automatically import Amazon S3 object updates into Amazon FSx for Lustre blog post.
+Q: How do I export files written to my Amazon FSx for Lustre file system back to Amazon S3?
+A: At any time, you can export files from your file system back to your Amazon S3 bucket using the “Export to repository” action on the console, or by using the AWS CLI, API, or the AWS Console. Only new files or files changed since the last export action will be exported to S3.
+Q: How are directories, symbolic links, POSIX metadata, and POSIX permissions imported from and exported to Amazon S3?
+A: As with other AWS services (like AWS Data Sync) that move data between file systems and S3 buckets, FSx for Lustre stores directories and symbolic links (symlinks) as separate objects in your S3 bucket. For example, a directory is stored as an S3 object with a key name that ends with a slash ("/").
+Amazon FSx for Lustre also automatically transfers Portable Operating System Interface (POSIX) metadata and permissions for files and directories when importing data from and exporting data to S3. The POSIX metadata is stored as S3 object metadata in the same format used by other AWS services.
+See POSIX metadata support for data repositories for more details.
+Q: Can I link my S3 bucket to multiple FSx for Lustre file systems?
+A: Yes, you can create multiple FSx for Lustre file systems linked to the same S3 bucket. Doing so allows you to maintain a common data set in S3 that is reflected in multiple FSx for Lustre file systems, or to share results of computation on one FSx file system with users processing data on other file systems.
+Q: How do I monitor my file system’s activity?
+A: Amazon FSx for Lustre provides native CloudWatch integration, allowing you to monitor file system health and performance metrics in real time. Example metrics include storage consumed, number of compute instance connections, throughput, and number of file operations per second. You can log all Amazon FSx API calls using AWS CloudTrail.
+Q: How do I use Amazon FSx for Lustre to speed up my Amazon SageMaker machine learning training jobs?
+A: Amazon FSx for Lustre can be an input data source for Amazon SageMaker. When FSx for Lustre is used as an input data source, Amazon SageMaker ML training jobs are accelerated by eliminating the initial S3 download step. SageMaker jobs can get started as soon as the FSx for Lustre file system linked with the S3 bucket is created without needing to download the full machine learning training data set from S3. Data is lazy loaded as needed from Amazon S3 for processing jobs. Another benefit is reduced TCO by avoiding the repeated download of common objects (saving S3 request costs) for iterative jobs on the same dataset.
+Q: How do I use Amazon FSx for Lustre with AWS Batch?
+A: Amazon FSx for Lustre integrates with AWS Batch though EC2 Launch Templates. AWS Batch is a cloud-native batch scheduler for HPC, ML, and other asynchronous workloads. AWS Batch will automatically and dynamically size instances to job resource requirements, and use existing FSx for Lustre file systems when launching instances and running jobs.
+Q: How do I use Amazon FSx for Lustre with AWS Parallel Cluster?
+A: AWS ParallelCluster is an AWS-supported open-source cluster management tool that helps you to deploy and manage High Performance Computing (HPC) clusters in the AWS Cloud. AWS ParallelCluster supports automatic creation of a new Amazon FSx for Lustre file system or the ability to use an existing Amazon FSx for Lustre file system as part of the cluster creation process.
+Q: What regions is Amazon FSx for Lustre available in?
+A: Please refer to Regional Products and Services for details of Amazon FSx for Lustre service availability by region.
+Q: If I have data on-premises how do I make it available to Amazon FSx for Lustre to process it?
+A: If you have high-performance or data processing workloads running on-premises and demand for computing capacity spikes, you can cloud burst your workloads to Amazon FSx for Lustre by using Amazon Direct Connect or VPN.
+Scale and performance
+Q: What performance can I expect from Amazon FSx for Lustre?
+A: Amazon FSx for Lustre file systems scale to hundreds of GB/s of throughput and millions of IOPS. FSx for Lustre also supports concurrent access to the same file or directory from thousands of compute instances. FSx for Lustre provides consistent, sub-millisecond latencies for file operations.  See Amazon FSx Performance documentation for more details.
+Q: How does throughput scale with storage capacity?
+A: FSx for Lustre file systems automatically provision throughput for each TiB of storage provisioned. SSD-based file systems can be provisioned with 50, 100, or 200 MB/s of throughput per TiB of storage provisioned. HDD-based file systems can be provisioned with 12 or 40 MB/s of throughput per TiB of storage provisioned.
+Q: How do I change my file system's storage capacity?
+A: You can increase the storage capacity of your file system by clicking “Update" in the Amazon FSx Console, or by calling “UpdateFileSystem” in the AWS CLI/API and specifying the desired storage capacity.
+Q: How does Amazon FSx grow the storage capacity of my file system? How long does it take?
+A: Amazon FSx for Lustre stores data across multiple network file servers and stores file metadata on a dedicated metadata server with its own storage. When you request an update to your file system’s storage capacity, Amazon FSx automatically adds new network file servers and scales your metadata server. While scaling storage capacity, the file system may be unavailable for a few minutes. Client requests sent while the file system is unavailable will transparently retry and eventually succeed after scaling is complete.
+After scaling, FSx transparently optimizes your file system by redistributing your data across the old and newly added file servers. This optimization process runs in the background, and can take between a few hours to a few days depending on the amount of data stored on your file system. The background optimization process has minimal impact on your workload performance. You can track the progress of the optimization process at any time using the Amazon FSx Console or AWS CLI/API. See Managing Storage Capacity documentation for more information.
+Q: How frequently and in what increments can I increase my file system’s storage capacity?
+A: You can increase your file system’s storage capacity every six hours, and in the same increments that you can provision new file systems. Note that your previous scaling request, including optimization, must be complete when you issue a new scaling request.
+Q: How many instances can connect to a file system?
+A: An FSx for Lustre file system can be concurrently accessed by thousands of compute instances.
+Q: What file system sizes are supported by FSx for Lustre & what is the increment granularity?
+A: Scratch and persistent SSD-based file systems can be created in sizes of 1.2 TiB or in increments of 2.4 TiB. Persistent HDD-based file systems with 12 MB/s and 40 MB/s of throughput per TiB can be created in increments of 6.0 TiB and 1.8 TiB, respectively.
+Q: How many file systems can I create?
+A: There is a 100-file system limit per account which can be increased upon request.
+Security and compliance
+Q: Does Amazon FSx for Lustre support data encryption?
+Yes. Amazon FSx for Lustre always encrypts your file system data and your backups at-rest using keys you manage through AWS Key Management Service (KMS). Amazon FSx encrypts data-in-transit when accessed from supported EC2 instances. See the Amazon FSx documentation for details on regions where in-transit encryption is supported.
+Q: What access control capabilities does Amazon FSx provide?
+A: Every FSx for Lustre resource is owned by an AWS account, and permissions to create or access a resource are governed by permissions policies. You specify the Amazon Virtual Private Cloud (VPC) in which your file system is made accessible, and you control which resources within the VPC have access to your file system using VPC Security Groups. You control who can administer your file system and backup resources (create, delete, etc.) using AWS IAM.
+Q: Does Amazon FSx support shared VPCs?
+A: Yes, with Amazon FSx, you can create and use file systems in shared Amazon Virtual Private Clouds (VPCs) from both owner accounts and participant accounts with which the VPC has been shared. VPC sharing enables you to reduce the number of VPCs that you need to create and manage, while you still benefit from using separate accounts for billing and access control.
+Q: What compliance programs does Amazon FSx support?
+A: AWS has the longest-running compliance program in the cloud and are committed to helping customers navigate their requirements. Amazon FSx has been assessed to meet global and industry security standards. It complies with PCI DSS, ISO 9001, 27001, 27017, and 27018), and SOC 1, 2, and 3, in addition to being HIPAA eligible. That makes it easier for you to verify our security and meet your own obligations. For more information and resources, visit our compliance pages. You can also go to the Services in Scope by Compliance Program page to see a full list of services and certifications.
+Availability and durability
+Q: When and why should I use the persistent FSx for Lustre versus the scratch FSx for Lustre deployment option?
+A: Use scratch file systems when you need cost-optimized storage for short-term, processing-heavy workloads.
+Use persistent file systems for workloads that run for extended periods or indefinitely, and may be sensitive to disruptions in availability.
+Q: Does Amazon FSx offer a Service Level Agreement (SLA)?
+A: Yes. The Amazon FSx SLA provides for a service credit if a customer's monthly uptime percentage is below our service commitment in any billing cycle.
+Q: What are the availability and durability characteristics of FSx for Lustre file systems?
+A: Amazon FSx for Lustre provides a parallel file system. In parallel file systems, data is stored across multiple network file servers to maximize performance and reduce bottlenecks, and each server has multiple disks. Larger file systems have more file servers and disks than smaller file systems.
+On a persistent file system, if a file server becomes unavailable it is replaced automatically and within minutes. In the meantime, client requests for data on that server transparently retry and eventually succeed after the file server is replaced. With persistent file systems, data is replicated on disks and any failed disks are automatically replaced behind the scenes, transparently.
+On a scratch file system, file servers are not replaced if they fail and data is not replicated. If a file server or a storage disk becomes unavailable, files stored on other servers are still accessible. If clients try to access files that are on the unavailable server, clients will get an I/O error. The following table provides the availability/durability for which scratch file systems of example sizes are designed. As larger file systems have more file servers and more disks, the probabilities of failure are increased.
+Table: Availability/durability of scratch file systems of various example sizes
+Scratch file system size (TiB)
+Number of file servers
+Availability/durability during one day
+Availability/durability during one week
+1.2
+2
+99.9%
+99.4%
+2.4
+4.8
+3
+99.8%
+99.2%
+9.6
+5
+98.6%
+50.4
+22
+99.1%
+93.9%
+Please refer to the Amazon FSx for Lustre documentation for more information.
+Data protection
+Q: How do I take backups on Amazon FSx for Lustre?
+A. Amazon FSx takes daily automatic backups of your file systems, and allows you to take additional backups at any point. Amazon FSx backups are incremental, which means that only the changes after your most recent backup are saved, thus saving on backup storage costs by not duplicating data.
+Q: What durability and consistency does Amazon FSx provide for backups?
+A: Backups are highly durable and file-system-consistent. To ensure high durability, Amazon FSx stores backups with 99.999999999% (11 9's) of durability on Amazon S3. Backups also present a consistent view of your file system, meaning that if metadata exists for a file in the backup, then the file’s associated data is also included in the backup.
+Q: What is the daily backup window?
+A: The daily backup window is a 30-minute window that you specify when creating a file system. Amazon FSx takes the daily automatic backup of your file system during this window. At some point during the daily backup window, storage I/O will be briefly suspended while the backup process initializes (typically a few seconds).
+Q: What is the daily backup retention period?
+A: The daily backup retention period specified for your file system (7 days by default), determines the number of days your daily automatic backups are kept.
+Q: What happens to my backups if I delete my file system?
+A: When you delete your file system, all automatic daily backups associated with the file system are deleted. Any user-initiated backups you created will remain.
+Q: Can I take a backup of any FSx for Lustre file system?
+A: You can take a backup of any FSx for Lustre file system that has persistent storage and is a standalone file system (i.e., not linked to an Amazon S3 bucket).
+Backups aren’t supported on scratch file systems because these file systems are designed for temporary storage and shorter-term processing of data.
+Backups aren’t supported on file systems linked to an Amazon S3 bucket because in this case the S3 bucket serves as the primary storage location for your full data set – the file system does not necessarily contain the full data set at any given time. With these file systems, use the FSx API to export new or changed files from the file system to your S3 bucket.
+Q: How do I protect my FSx for Lustre resources using AWS Backup?
+A: You first enable Amazon FSx as a protected service in AWS Backup. You can then configure backups of your Amazon FSx resources via the AWS Backup console, API or CLI. You can create both scheduled and on-demand backups of Amazon FSx resources via AWS Backup and restore these backups as new Amazon FSx file systems. Amazon FSx file systems can be added to backup plans in the same way as other AWS resources, either by specifying the ARN or by tagging the Amazon FSx file system for protection in the backup plan. Learn more in the AWS Backup documentation.
+Pricing and billing
+Q: How will I be charged and billed for my use of Amazon FSx for Lustre?
+A: You pay only for the resources you use. See the Amazon FSx for Lustre pricing page for details.
+Q: How am I billed when scaling the storage capacity of my file system?
+A: Storage capacity scaling requests are processed by adding new storage capacity to your file system. You will be billed for new storage capacity once the new file servers have been added to your file system, and the file system status changes from UPDATING to AVAILABLE.
+Q: Do your prices include taxes?
+A: Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Learn more about pricing
+Amazon FSx for Lustre has simple pricing; you pay only for the resources you use.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with FSx for Lustre in the AWS Console.
+Sign in
+Page Content

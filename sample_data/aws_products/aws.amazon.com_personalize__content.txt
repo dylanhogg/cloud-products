@@ -47,10 +47,9 @@ Pomelo Fashion is a leading omnichannel fashion brand based in Bangkok, Thailand
 Pomelo Fashion Betters Customer Experience with Amazon Personalize
 Learn how StockX is using Amazon Personalize to create pioneering customized experiences for their customers, with no prior machine learning experience.
 "We’re quickly learning the potency of integrating ML into all facets of the company. Our success led to key decision-makers requesting we integrate Amazon Personalize into more of the StockX experience and expand our ML endeavors. It’s safe to say that personalization is now a first-class citizen here."
-Read blog»
+Read blog
 Learn how Lotte Mart is using Amazon Personalize to enable over 600,000 users to save on their in store shopping experience.
 “By using Amazon Personalize, we have seen a 5x increase in response to recommended products compared to our prior big data analytics solution resulting in increased revenue per month. In particular, Amazon Personalize has increased the number of products that the customer has never purchased before up to 40%. The new recommendation service powered by AWS is the first of a much broader roll-out of AI technologies across our organization“
-Read blog »
 Amazon Personalize for Media and Entertainment
 Increase content consumption
 Deliver highly relevant, individualized content recommendations for videos, music, e-books, and more.
@@ -72,16 +71,15 @@ Learn more about Amazon Personalize customer success >>
 Blog posts & articles >>
 Amazon Personalize can now create up to 50% better recommendations for fast changing catalogs of new product and content
 August, 2020 Hao Ding, Vaibhav Sethi, and Yen Su
-Read blog »
 Selecting the right metadata to build high-performing recommendation models with Amazon Personalize
 September, 2020
 Andrew Hood and Ion Kleopas
 Amazon Personalize Github samples
 Notebooks and examples on how to onboard and use various features of Amazon Personalize
-Go to Github »
+Go to Github
 Tech Talk: Offer Your Customers Real-Time Personalized Recommendations
 June, 2020 Luis Lopez Soria
-Watch Now »
+Watch Now
 Check out the product features
 Easily build sophisticated personalization capabilities into your applications
 Learn more

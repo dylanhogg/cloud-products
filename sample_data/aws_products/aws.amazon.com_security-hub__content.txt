@@ -13,11 +13,11 @@ Integrated dashboards bring together your security findings across accounts to s
 How it works
 Blog posts and articles
 Date
-More…
+More...
 Featured customers
 Partners
 Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps. See a full list of AWS Security Hub integration partners
-Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
+Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
 Explore AWS Security Hub features
 Security Hub offers aggregated findings across AWS services and partner solutions, pre-configured and custom security insights, and multi-account support.
 Learn more

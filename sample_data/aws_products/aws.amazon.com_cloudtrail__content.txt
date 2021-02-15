@@ -1,7 +1,7 @@
 AWS CloudTrail
 Track user activity and API usage
 Get started with AWS CloudTrail
-AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting.
+AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting.
 AWS CloudTrail: Simplify Security Analysis, Resource Change Tracking, and Troubleshooting (1:30)
 Benefits
 Simplified compliance
@@ -30,7 +30,7 @@ British Gas uses AWS CloudTrail to support its Hive monitoring operations.
 Solinor uses AWS CloudTrail to support its compliance needs.
 2C2P monitors unsuccessful log-in attempts via AWS CloudTrail.
 Blog posts & articles
-Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
+Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

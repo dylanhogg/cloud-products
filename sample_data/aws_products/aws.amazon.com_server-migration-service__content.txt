@@ -24,7 +24,7 @@ Sign up
 Start building in the console
 Get started building with AWS Server Migration Service in the AWS Console.
 Sign in
-Learn more about AWS Server Migration Service
+Learn more about AWS Server Migration Service
 Visit the pricing page
 Ready to build?
 Have more questions?

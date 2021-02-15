@@ -40,16 +40,16 @@ Manage Content
 How it works
 Use cases
 Onboarding flows
-Create custom onboarding flows allowing users to log in with preferred methods. Features: Auth, UI Components, Analytics
+Create custom onboarding flows allowing users to log in with preferred methods. Features: Auth, UI Components, Analytics
 Real-time collaboration
-Build real-time feeds, chat, and document sharing to facilitate remote scenarios. Features: Interactions, API, DataStore
+Build real-time feeds, chat, and document sharing to facilitate remote scenarios. Features: Interactions, API, DataStore
 AI/ML
-Add voice interactions, translations, and image recognition to enable smarter user experiences. Features: Predictions, API, DataStore,
+Add voice interactions, translations, and image recognition to enable smarter user experiences. Features: Predictions, API, DataStore,
 Targeted campaigns
 Develop targeted push notifications and campaigns to retain and engage customers. Features: Analytics, Notifications, API
 Community
 Amplify is loved by the community, making it a top 5 fastest growing open source project on GitHub with millions of downloads.
-Join our community »
+Join our community
 “Trying out AWS Amplify... so far looking like pure magic” @thiagoleychr
 “AWS Amplify is an incredible productivity boost. If you're kicking off a new web or mobile app, start here!” @rts_rob
 “I'm a huge fan of Amplify hosting, it's AWS best kept secret.” @mikemacd

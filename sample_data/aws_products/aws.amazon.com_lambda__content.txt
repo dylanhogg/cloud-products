@@ -20,11 +20,11 @@ You can use AWS Lambda to execute code in response to triggers such as changes i
 Real-time file processing
 You can use Amazon S3 to trigger AWS Lambda to process data immediately after an upload. You can also connect to an existing Amazon EFS file system directly, which enables massively parallel shared access for large scale file processing. For example, you can use Lambda to thumbnail images, transcode videos, index files, process logs, validate content, and aggregate and filter data in real-time.
 Reference Architecture: Sample Code
-The Seattle Times uses AWS Lambda to resize images for viewing on different devices such as desktop computers, tablets, and smartphones. Read the case study »
+The Seattle Times uses AWS Lambda to resize images for viewing on different devices such as desktop computers, tablets, and smartphones. Read the case study
 Real-time stream processing
 You can use AWS Lambda and Amazon Kinesis to process real-time streaming data for application activity tracking, transaction order processing, click stream analysis, data cleansing, metrics generation, log filtering, indexing, social media analysis, and IoT device data telemetry and metering.
 Reference Architecture: Sample code
-Localytics processes billions of data points in real-time, and uses Lambda to process historical and live data stored in S3 or streamed from Kinesis. Read the case study »
+Localytics processes billions of data points in real-time, and uses Lambda to process historical and live data stored in S3 or streamed from Kinesis. Read the case study
 Machine learning
 You can use AWS Lambda to preprocess data before feeding it to your machine learning model. With Lambda access to EFS, you can also serve your model for prediction at scale without having to provision or manage any infrastructure.
 "At Aible we focus on delivering the most powerful AI technologies at the lowest possible operating cost. As such, we use AWS Lambda and Serverless for machine learning training and predictions. With Serverless, we can run a wide variety of machine learning workloads more cost effectively while benefiting from burst compute resources needed for rapid iteration and scaling to create AI for optimal business impact."
@@ -37,15 +37,15 @@ IoT backends
 You can build serverless backends using AWS Lambda to handle web, mobile, Internet of Things (IoT), and 3rd party API requests.
 Mobile backends
 AWS Lambda makes it easy to create rich, personalized app experiences. You can build backends using AWS Lambda and Amazon API Gateway to authenticate and process API requests. Use AWS Amplify to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
-Bustle runs a serverless backend for its Bustle iOS app and websites using AWS Lambda and Amazon API Gateway. Serverless architectures allow Bustle to never have to deal with infrastructure management, so every engineer can focus on building out new features and innovating. Read the case study »
+Bustle runs a serverless backend for its Bustle iOS app and websites using AWS Lambda and Amazon API Gateway. Serverless architectures allow Bustle to never have to deal with infrastructure management, so every engineer can focus on building out new features and innovating. Read the case study
 Case studies
 The Coca-Cola Company, an American multinational beverage corporation, used AWS Lambda and AWS Step Functions to build a cost-effective serverless solution.
-Read the blog »
+Read the blog
 iRobot, a leading global consumer robot company, is building the next generation of connected devices for the smart home using a serverless architecture.
-Read more »
+Read more
 Benchling, a life science software company, created a technique that researchers use to modify parts of a genome with extreme precision using serverless architecture.
 Thomson Reuters uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
-See more case studies »
+See more case studies
 Sign up for an AWS account
 Instantly get access to the
 AWS Free Tier.

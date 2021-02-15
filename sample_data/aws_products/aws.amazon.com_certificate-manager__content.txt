@@ -27,5 +27,5 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with AWS Certificate Manager in the AWS Console.
+Get started building with AWS Certificate Manager in the AWS Console.
 Sign in

@@ -1,0 +1,211 @@
+General
+Q: What is Amazon Chime?
+Amazon Chime is a high-quality communications service that transforms online meetings with an easy-to-use app which works seamlessly across all your devices. With Amazon Chime, you can schedule and attend online meetings and video conferences, and chat, call, and collaborate, inside and outside your organization, all with a single app. Now you can work productively from wherever you are.
+Show less
+Q: What is the Amazon Chime web app?
+The Amazon Chime web app allows your meeting attendees to quickly join Amazon Chime meetings directly in their browser. Your attendees do not need to download anything and are not required to create an account. Users that do choose to create an account have the ability to collaborate through chat, create instant person to person calls and share content, just like they can using any of the other Amazon Chime clients. Pro features are also available, including scheduling and hosting meetings for up to 100 attendees with organizer controls.
+Q: Which operating systems does the Amazon Chime app support?
+Amazon Chime is available for the following operating systems:
+Microsoft Windows 7, Windows 8.1, and Windows 10
+Apple Mac OS X, version 10.11 and above
+Apple iOS, version 10.0 and above
+Android, version 5.0 and above
+Users on these operating systems, as well as other operating systems like Linux and
+ChromeOs
+can use the Amazon Chime web app on supported browsers. For more information, please visit the help center.
+Q: What is Amazon Chime Voice Connector?
+Amazon Chime Voice Connector is a pay-as-you-go SIP trunking service that enables companies to make and/or receive secure and inexpensive phone calls with their phone systems. Voice Connector is a low-cost alternative to service provider SIP trunks or Integrated Services Digital Network (ISDN) Primary Rate Interfaces (PRIs). Customers have the option to enable inbound calling, outbound calling, or both. The service leverages the AWS network to deliver a highly available calling experience across multiple AWS Regions. Voice Connector uses your company’s internet connection or Amazon Direct Connect without requiring dedicated fixed-bandwidth data circuits. The service supports United States phone numbers (including toll free) with low-cost calling to over 115 countries. Customers pay a monthly charge for phone numbers and by the minute for calls. There are no upfront fees, no concurrent call path charges, no commitments, and no contracts required. To learn more about Amazon Chime Voice Connector, see Amazon Chime Voice Connector FAQs.
+Q: What is Amazon Chime Business Calling?
+Amazon Chime Business Calling is an easy-to-use, self-service cloud phone system that enables users to place and receive phone calls; and send and receive text messages using the Amazon Chime mobile, desktop, and web apps. Setting up Business Calling is as easy as few clicks in the Chime Admin console, and your employees can begin making calls in minutes. No specialized deployment services or IT skills are required. Business Calling supports United States phone numbers with calling and texting to over 100 countries. There are no up-front payments or long-term commitments; customers pay for phone numbers, voice minutes, and text messages – with no additional seat fees.
+Q: What is the Amazon Chime Meetings App for Slack?
+The Amazon Chime Meetings App for Slack is an app available in the Slack App Directory. Administrators of Slack workspaces can install the app to make it easy for users to start and join Amazon Chime meetings from their Slack channels or conversations. The app helps users to access the Amazon Chime service for online meetings without requiring them to create or manage a new Chime account.
+Getting Started
+Q: Do I need a credit card to access the free trial?
+No. Download the app, sign up, and start using Amazon Chime.
+Q: How do I download the Amazon Chime app?
+To download the Amazon Chime app, see download Amazon Chime.
+Q: How do I create an Amazon Chime account?
+You can use the Amazon Chime app to create your Amazon Chime account. After you download and open the app, you’ll be guided through the process of creating your Amazon Chime account, which you can then use to log in and access the service.
+Q: Why am I being asked to login with Amazon?
+Amazon Chime uses Login with Amazon as a fast, secure, and easy way for you log in to your Amazon Chime account. Login with Amazon allows you to use an Amazon user name and password to log in to websites and apps that offer the service, such as Amazon Chime.
+Q: Can I use my existing Amazon.com account with Amazon Chime?
+We recommend that you create a new Amazon.com account to use with Amazon Chime, using your work email address. Amazon Chime uses the email address associated with your Amazon Chime account to schedule meetings and automatically call you and your meeting participants. As such, it’s important for this email address to be the same as the email address you use with your calendar, which is typically your work email address.
+Q: What is Login with Amazon?
+Login with Amazon allows you to log in to third party websites or apps, such as Amazon Chime, using an Amazon user name and password. With Login with Amazon, you can use a single user name and password for websites and apps that offer Login with Amazon, and you can easily manage access to your account (read more here).
+Q: I am an end user. Where can I learn more about using Amazon Chime?
+To learn more about Amazon Chime, you can access the Amazon Chime user guide, or the detailed help available on the Help Center.
+Q: I am an IT administrator. Where can I learn more about how to perform administration tasks for Amazon Chime?
+To learn more about the administration capabilities available in Amazon Chime, please see Amazon Chime Documentation.
+Q: How do I get started with Amazon Chime call me?
+First, your administrator must enable Amazon Chime call me in the Policies tab within the Amazon Chime console. Once enabled, you and your meeting attendees will then see the Call me at a phone number option when joining with your browser.
+Detailed information for administrators can be found in the Chime documentation.
+Q: How do I get started with Amazon Chime Business Calling?
+To enable Amazon Chime Business Calling your administrator must provision and assign phone numbers in the Number Management tab of the Amazon Chime Console. Once numbers are assigned your administrator designates which features, inbound calling, outbound calling or text, are available for that phone number.
+Q: Do I need to download the Amazon Chime client or app to use Amazon Chime with Slack?
+You do not need to download the Amazon Chime clients or apps for desktop or mobile to use the Amazon Chime Meetings App for Slack. When you start or join an Amazon Chime meeting from your Slack workspace, the Amazon Chime Meeting App for Slack will automatically open the meeting using the Amazon Chime web application. When using Slack on a mobile device, Amazon Chime meetings can be opened in one of the Amazon Chime mobile apps if they are installed . When an Amazon Chime mobile app is not installed, the meeting will be opened using the Amazon Chime web application in your mobile browser.
+Q: Will my scheduled meetings call me in Slack?
+Only the Amazon Chime meetings that are started within Slack will cause a call block to be posted to a Slack channel or direct message. Meetings that are created outside of the Slack workspace, including meetings that are created with the meet@chime.aws calendar integration, will not post a call block automatically to a Slack channel. You can receive auto-call if you download and sign into one of the Amazon Chime applications at https://aws.amazon.com/chime/download.
+Application Features
+Q: Can I chat with people outside my organization?
+Yes, you can chat with any registered Amazon Chime user. All you need to know is the email address associated with the Amazon Chime account. Initiate a conversation and chime in.
+Q: Will my meeting attendees be required to download anything?
+No, meeting attendees who don’t have Amazon Chime installed won’t be required to download anything. Simply provide a meeting link in your invitation, and your attendees can join using their browser. Using the web app, attendees can quickly join meetings, .use their computer audio, view or share screens, access the meeting roster, and participate in chat.
+Q: How many people can participate in an online meeting or video conference?
+Amazon Chime allows you to have up to 250 participants in an online meeting when not using video. For video conferences, up to 16 participants can share video desktops, and up to 8 participants on mobile.
+Q: Does Amazon Chime support in-room video conferencing systems?
+Yes, Amazon Chime supports most SIP-based and H.323 compatible in-room video conferencing systems. You can join meetings using video conferencing systems anywhere Amazon Chime is available, and there is no additional charge to use them.
+Q: How do I join an Amazon Chime meeting using a SIP or H.323 compatible video conferencing system?
+To join an Amazon Chime meeting, simply enter the meeting ID into the device console. To learn more, please visit In-Room Video Conference Room Support.
+Q: Can I join a meeting using a phone?
+Yes, you can join a meeting from a phone using either dial-in or Amazon Chime call me. With dial-in, you manually dial the meeting phone number and then enter the meeting PIN. With Amazon Chime call me, you enter your phone number in the Chime Web Application or simple screen share viewer and Chime calls you back. For dial-in rates, please see conference call dial-in rates. For Amazon Chime call me rates, please see Amazon Chime call me rates. For more information on joining meeting by phone, please see the Chime documentation.
+Q: What countries does Amazon Chime call me work in?
+Amazon Chime call me allows calls to phone numbers in over 40 countries. To see the full list of supported countries, please visit Amazon Chime call me rates. Note: Calls to toll free, shared cost, and premium rate numbers are not supported at this time.
+Q: What's the difference between a voice (VoIP) or video call and a meeting?
+Voice (VoIP) or video calls take place between 2 people. Calls are initiated from the contact list, or directly from a chat, and they can't be scheduled. Person-to-person calls do not allow callers to connect via the public telephone network. Any Amazon Chime plan allows you to start or join a call.
+Meetings can have between 2 and 100 participants, and they can be scheduled or initiated instantly. Meetings call participants, or they can join using traditional dial-in numbers. Meetings use the visual roster to provide better meeting control for participants. Anyone in the meeting can share their screen and use Remote Desktop Control.
+Q: How do I initiate a voice (VoIP) or video call?
+You can initiate a voice call from the contact list, or directly from a chat with a single click. You can add video once your voice call has started.
+Q: What is the maximum number of attendees I can have on a meeting?
+You can have up to 250 attendees on a meeting.
+Q: What is Alexa for Business?
+Alexa for Business allows organizations of all sizes to introduce Alexa to their workplace. Alexa for Business includes the tools and controls that administrators need to deploy and manage shared Alexa devices, users, and skills at scale. Amazon Chime works with Alexa for Business, which means you can use Alexa to start your video meetings in large conference rooms, and automatically dial into online meetings in smaller huddle rooms and from your desk.
+To learn more about using Alexa in your organization, visit Alexa for Business.
+Q: Can I start Amazon Chime meetings in my conference rooms using Alexa?
+Yes. With Alexa for Business, Alexa can start Amazon Chime meetings in your conference rooms using your existing equipment. You can use Alexa-enabled devices to control audio and video conferencing equipment in larger conference rooms, and for audio conferencing in small conference rooms.
+To learn more about joining Amazon Chime meetings using Alexa, visit Alexa for Business.
+Q: Can I join Amazon Chime meetings from my desk using Alexa?
+Yes. With Alexa for Business, Alexa can automatically dial into Amazon Chime meetings from your desk, using any Alexa-enabled device in your personal Alexa account.
+Q: Can I call a telephone number with Amazon Chime Business Calling?
+Yes. If your administrator has assigned a number to your user ID and enabled the outbound calling feature you can make calls to the public telephone network.
+Q: Can I text a telephone number with Amazon Chime Business Calling?
+Yes. If your administrator has assigned a number to your user ID and enabled the texting feature you can send and receive text messages with the public telephone network.
+Q: Can a telephone call become a meeting?
+Yes, with Amazon Chime Business Calling you have the flexibility to upgrade a one-on-one call to group call with multiple phone participants or a mix of VoIP and phone users.
+Q: Do I have to have Amazon Chime Basic or Pro to use Amazon Chime Business Calling?
+Yes, for Amazon Chime Business Calling you will at least need Amazon Chime Basic. It is recommended that you also have the paid Pro features of Amazon Chime to better maintain all of your UC needs in one place.
+Administration
+Q: How do I log in to the Amazon Chime console to access my account?
+To access the Amazon Chime console, you first need to create an AWS account. When you’ve done this, you can log in to the AWS Management Console, and navigate to Amazon Chime. To navigate directly to the Amazon Chime console, go to https://chime.aws.amazon.com and provide your AWS credentials.
+Q: Can I add or remove Amazon Chime users in my Amazon Chime organization?
+Yes, you can add or remove Amazon Chime users in your Amazon Chime organization at any time through the Amazon Chime console.
+Q: In which AWS region is Amazon Chime user information stored and where is the Amazon Chime service hosted?
+All Amazon Chime user information, such as chat messages, contacts, calendar, and meeting recordings, is stored in the Northern Virginia AWS region, where the Amazon Chime service is hosted.
+Q: To improve meeting connections, in which AWS regions does the Amazon Chime Meetings Application and SDK connect to?
+To improve your meeting experience, Amazon Chime Meetings Application and SDK meetings can connect to meetings in different AWS regions, which is where the participants send their audio and video. Customers can choose to have their meetings in one or more of the available AWS regions. Separately, participants can join any meeting in any country where Amazon Chime is supported via the Internet.
+Note: No Amazon Chime user information is being stored in the above regions, except for the Northern Virginia region. Please see the previous FAQ for additional details.
+Q: Why can I not use Mumbai or Seoul with the Amazon Chime Meetings Application?
+These regions are only available for use with the Amazon Chime SDK.
+Q: Can an organization select which AWS regions can host its Amazon Chime meetings?
+Yes. IT Administrators select their organizations Amazon Chime meeting regions in the Amazon Chime console.
+Q: Can a user select the AWS region for a specific Amazon Chime meeting?
+No. Amazon Chime selects a region for each meeting, from the meeting regions selected by the host’s organization, to minimize latency and optimize the meeting experience for the participants.
+Q: Can I assign different permissions to different users in my Amazon Chime Team or Enterprise account?
+Yes. You can have users with Amazon Chime Pro permissions and users with Amazon Chime Basic permissions in your Team or Enterprise account. When you add users to your account, they are assigned Amazon Chime Pro permissions by default. You can change these settings using the Amazon Chime console, or Active Directory (AD) groups if you’re using AD to manage users in an Amazon Chime Enterprise account.
+Note: assigning permissions does not incur a charge; you are only charged when users access Amazon Chime Pro features. For more information, see the Manage User Access and Permissions.
+Q: What does "claim your domain" mean?
+With Amazon Chime, you can ensure that all users that sign up to use Amazon Chime with an email address in your corporate domain(s) are automatically added to your Amazon Chime account. This makes it easier for you to keep track of and manage your Amazon Chime users and their subscriptions, and allows you to pay for the service centrally.
+Q: How do I claim my domain?
+You can claim your domain by following the steps laid out in Claim a Domain.
+Q: Can I use my corporate directory to manage my Amazon Chime users?
+Yes, you can configure Amazon Chime to use your company’s directory to manage your Amazon Chime users using either Okta SSO or Microsoft Active Directory. If you chose to use Microsoft AD with Amazon Chime, you can connect to your on-premises AD using the AWS Directory Service AD Connector, or you can use the AWS Microsoft AD service.
+Q: How do I configure Amazon Chime to use another identity provider (such as Microsoft Active Directory or Okta SSO)?
+Steps to configure identity providers are laid out in Connect to Your Active Directory and Connect to OKTA SSO.
+Q: Is there an additional cost when using Microsoft Active Directory or Okta SSO to manage my Amazon Chime users?
+The Amazon Chime per user, per month cost does not change when integrating with Microsoft Active Directory (AD) or Okta SSO. AWS Directory Services is not included in Amazon Chime pricing, and may incur additional charges. For more information, please see AWS Directory Services Pricing. Okta SSO is a paid cloud identity product available from Okta, Inc. You can learn more about Okta pricing by visiting https://www.okta.com/pricing/.
+Q: Does Amazon Chime provide a history of changes made to my account through the Amazon Chime console?
+Yes, you can record the changes made to your Amazon Chime account through the Amazon Chime console by using AWS CloudTrail. You can learn more about setting up CloudTrail to work with your Amazon Chime account by visiting Log Amazon Chime Administration Calls with AWS CloudTrail.
+Q: What is required to set up phone numbers for users?
+In order to assign phone numbers to a user you must order numbers through the Amazon Chime console. To learn more check out our Managing Phone Numbers Guide.
+Q: How do I set up and access Call Detail Records (CDRs) for Amazon Chime Business Calling?
+Before you can receive CDRs you must first set up an Amazon Simple Storage Service (S3) bucket. Once configured you can retrieve your Call Detail Records through your configured S3 bucket. Learn more how to configure your S3 bucket and enabling your Call Detail Records here.
+Q: How can I perform bulk provisioning of phone numbers and users?
+This is possible using the Chime Admin SDK. Learn more here.
+Q: Are all features in Amazon Chime Business Calling available when I assign a phone number to a user?
+No, you have the flexibility to choose which features meet for your business needs. When you order the number and assign to the user you can then define whether that user will inbound calling only, outbound only, or both; You can also choose to enable or disable text messaging independently.
+Q: How do I add the Amazon Chime Meetings App for Slack?
+Slack workspace administrators can install the Amazon Chime Meetings App for Slack, by searching for Amazon Chime in the Slack App Directory. A step-by-step guide to installing the Amazon Chime Meetings App for Slack is available here.
+Q: How can I upgrade the users in my Slack workspace to Amazon Chime Pro?
+Administrators of a Slack workspace can upgrade their workspace users to Amazon Chime Pro using the Amazon Chime Meetings App for Slack. During the app installation process, click the Upgrade Now button and complete the steps to create a team account and invite your workspace users. If you have already installed the app, and need to invite more users, or need more information on using the Amazon Chime Meetings App for Slack, see Setting up the Amazon Chime Meetings App for Slack.
+Billing and Permissions
+Q: Will I be charged for Amazon Chime Pro usage after September 30, 2020 if I signed up for the free offer between March 4 and September 30, 2020?
+Starting on October 1, 2020 00:00 UTC, you will be charged for users who use Amazon Chime Pro features for hosting online meetings and video conferencing. If you do not wish to get charged for Amazon Chime Pro features, you and your colleagues can continue using Amazon Chime Basic features for free. Click here to learn more about switching to Amazon Chime Basic features and user permissions.
+Q: Can I schedule or host instant meetings of three or more people if I only have Basic permissions?
+No. To schedule or host instant meetings, you need to have Amazon Chime Pro permissions. Amazon Chime Basic allows you to attend and fully participate in meetings scheduled or initiated by an Amazon Chime Pro user, including auto-call, video, sharing your screen, and using remote desktop controls.
+Q: Is Amazon Chime call me available to trial users?
+The Amazon Chime call me feature is only available to attendees of meetings whose organizers have Pro permissions and whose administrators have enabled the feature.
+Q: Does Amazon Chime charge a usage fee for all meeting participants?
+No. With Amazon Chime, you only pay a usage fee for the meeting host. Hosting an Amazon Chime meeting is an Amazon Chime Pro feature, and is charged at $3 per user per day, with a monthly maximum of $15 per user per day. There is no charge to attend meeting, which is an Amazon Chime Basic feature.
+Q: What's the difference between a 2-person voice or video call and a meeting?
+Voice or video calls (using Voice over IP, or VoIP) take place between 2 people. Calls are initiated from the contact list, or directly from a 1:1 chat, and they aren’t scheduled. They require use of the Amazon Chime app, and do not allow either party to connect via a dial-in number or in-room video conference room systems. Calling is an Amazon Chime Basic feature, and all Amazon Chime users can start or join a voice or video call. Meetings can have between 2 and 100 participants.
+Meetings can be scheduled, or they can be initiated instantly. Attendees have the option of joining using the Amazon Chime app, or using a traditional dial-in phone number. Attendees logged in to the Amazon Chime app will be auto-called for scheduled meetings. Meeting attendees can use all the features of Amazon Chime meetings, including voice and video, the visual roster, screen sharing, remote desktop control, chat, file sharing, and recording meetings. Scheduling and hosting a meeting is an Amazon Chime Pro feature.
+Q: Is Amazon Chime Business Calling available to trial users?
+No, Amazon Chime Business Calling is only available as a paid feature, however it can be used with Amazon Chime Basic features.
+Q: Will I be charged for phone numbers for Amazon Chime Business Calling if I have not assigned them to a user?
+Yes, phone numbers will be charged from the time they are ordered to the time they are deleted from the account.
+Q: What countries can I make calls to with Amazon Chime Business Calling?
+Over 100 countries are supported for outbound calling. Please check our pricing rates page for the most up to date information.
+Q: What countries does Amazon Chime Business Calling support for telephone numbers?
+We currently support United States phone numbers only. Additional countries will be supported in the future.
+Q: Does Amazon Chime Business Calling support toll free numbers?
+Amazon Chime Voice Connector support US toll free numbers. Currently, toll free numbers are not supported on Amazon Chime Business Calling.
+Q: Will I be charged separately for S3 usage associated to Call Detail Record storage?
+Yes, any S3 usage associated to Chime Call Detail Records will be charged separately as S3 usage.
+Pricing
+Q: How does the free trial for Amazon Chime work?
+New users can start a 30-day trial by creating an Amazon Chime account, without using a credit card. Trial users can access Amazon Chime Pro features free for 30 days, including the usage of a limited number of dial-in numbers. The trial ends when users accept an invite to join an Amazon Chime Team account, become part of an Amazon Chime Enterprise account, or after 30 days (whichever comes first). After 30 days, if a user is not part of a Team or Enterprise account, they can continue to use the Amazon Chime Basic features for free.
+Q: How do I purchase Amazon Chime?
+To purchase Amazon Chime, create or sign into your AWS account and create an Amazon Chime Team. Next, add users and assign permissions (Basic or Pro) to give access to features for each user. Visit the Get Started Using Amazon Chime page here.
+Q: How does billing work for Amazon Chime?
+Amazon Chime is a pay-as-you-go service with no upfront fees, commitments, or long-term contracts. With Amazon Chime, there are features that are free to use, called Amazon Chime Basic features, and features that incur a charge, called Amazon Chime Pro features (please refer to the features table above for details). You’re only charged for Amazon Chime Pro features on the days your users access them, at $3 per user per day. Usage fees are capped at $15 per user per month. Please note: dial-in usage is billed separately at published rates, and is not included in the fees stated above.
+Q: What does Amazon Chime cost?
+Please see the Amazon Chime pricing page for the latest information.
+Q: Is there an additional charge when attendees join a meeting using a standard phone line?
+Yes, you are charged a per minute per user fee for each meeting participant joining using a standard phone line. For the latest conference call dial-in rates, see conference call dial-in rate page.
+The Amazon Chime per user, per month cost does not change when using other identity providers such as Microsoft Active Directory or Okta SSO. AWS Directory Services and Okta SSO are not included in Amazon Chime pricing, and may incur additional charges. For more information, please see AWS Directory Services Pricing and Okta Pricing.
+Q: Are there any fixed costs for Amazon Chime Business Calling?
+No, Amazon Chime Business Calling is pay-as-you-go, with no upfront fees, commitments, or long-term contracts. Please check our pricing rates page for the most up to date information.
+Q: Does the Amazon Chime global expansion affect pricing?
+It does not. Whether you are using Amazon Chime Meetings or Amazon Chime SDK, the pricing is unaffected by the choice of meeting region.
+Developers
+Q: Does Amazon Chime have APIs available to integrate Chime with my internal systems and processes?
+Yes, you can use the Amazon Chime Management APIs to perform key tasks, such as create and manage Amazon Chime accounts, invite users, enable chat bots, and manage chat rooms. Learn more in our documentation.
+Q: Can I use incoming webhooks to send messages to Amazon Chime chat rooms?
+Yes, incoming webhooks can be set up by chat room administrators from an Amazon Chime desktop client to generate a webhook URL, which is then provided to developers. An application can send a message to an Amazon Chime chat room by calling the webhook API with an HTTP POST request. To learn more, visit Automate Chat Messages with Webhooks.
+Q: Does Amazon Chime support chat bots?
+Yes, enterprise Chime accounts can integrate with up to 10 custom-built chat bots. For more information on creating and integrating with chat bots, see Managing Chat Bots.
+Reporting
+Q: Does Amazon Chime provide administrators with usage reports?
+Yes, Amazon Chime now provides administrators with usage reports in the Amazon Chime console. These reports provide visibility into how users are using Amazon Chime, as well as information about their experience with the service.
+Q: Does Amazon Chime Business Calling provide Call Detail Records?
+Does Amazon Chime Business Calling provide Call Detail Records?
+Yes, administrators can elect to have their Call Detail Records stored in S3 for call and usage analysis. For more information on Call Detail Records and what is included please visit documentation.
+Q: What information is included in the Amazon Chime usage reports?
+You can view data such as the total number of registered and active users, meetings and meeting feedback responses, and message activity. You can click through to learn which meetings occurred, the meeting duration, and the attendee list for each meeting. You can also see user-level information, such as email address, registration date, last-active date, and the number of meetings attended.
+Q: How do I access these reports?
+You can view reporting data by navigating to the Amazon Chime console page and choosing Reports and Dashboard. Admins must have valid IAM credentials in order to access Amazon Chime console page.
+Devices
+Q: What devices are supported on Amazon Chime?
+What devices are supported on Amazon Chime?
+Amazon Echo devices, Dolby Voice Room.
+Q: What Amazon Echo devices are supported on Amazon Chime?
+What Amazon Echo devices are supported on Amazon Chime?
+Echo Show 8 for video/audio. Echo, Echo Dot, Echo Plus, Echo Spot, Echo Show (1st Gen), Echo Show (2nd Gen), Echo Show 5, and Echo Auto, are supported for Amazon Chime audio meetings only.
+Q: Are Amazon Echo devices authenticated to the enterprise network?
+Are Amazon Echo devices authenticated to the enterprise network?
+No. The end user joins anonymously to Amazon Chime meetings on the Echo Show. The end user’s Amazon Alexa account name shows as attendee name in the meeting roster.
+Q: How do Amazon Echo devices join Amazon Chime meetings?
+How do Amazon Echo devices join Amazon Chime meetings?
+You can link your calendar using the Alexa app and simply say, “Alexa, join the Amazon Chime meeting” when it is time for that meeting. If you do not have calendar linked, you can also speak the meeting ID at the time of the meeting.
+Q: What Amazon Chime meeting features are available on Echo Show?
+What Amazon Chime meeting features are available on Echo Show?
+You can share your video, get a visual roster with attendee information, and use other features such as mute on/off, video on/off during your meeting. You can view shared content; however, you cannot present content from the Echo Show screen.
+Check out the Amazon Chime features page
+Learn more about Amazon Chime features
+Learn more
+Contact us
+Contact us and let us provide you with a personalized demo.
+Sign up
+Download Amazon Chime
+Try Amazon Chime Pro features free for 30 days!
+Download
+Page Content

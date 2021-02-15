@@ -9,19 +9,19 @@ AWS Trusted Advisor analyzes your AWS environment and provides best practice rec
 Cost optimization
 AWS Trusted Advisor can save you money on AWS by eliminating unused and idle resources or by making commitments to reserved capacity.
 Performance
-AWS Trusted Advisor can improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
+AWS Trusted Advisor can improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
 Security
-AWS Trusted Advisor can improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
+AWS Trusted Advisor can improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
 Fault tolerance
 AWS Trusted Advisor can increase the availability and redundancy of your AWS application by take advantage of auto scaling, health checks, multi AZ, and backup capabilities.
 Service limits
 AWS Trusted Advisor checks for service usage that is more than 80% of the service limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes.
 Features
-AWS Trusted Advisor provides a suite of features for you to customize recommendations and to proactively monitor your AWS resources. For more information, please see the Trusted Advisor FAQs.
+AWS Trusted Advisor provides a suite of features for you to customize recommendations and to proactively monitor your AWS resources. For more information, please see the Trusted Advisor FAQs.
 Email notifications
-The Trusted Advisor notification feature helps you stay up-to-date with a summary of status across your checks. You will be notified by weekly email when you opt in for this feature. A refresh of checks is required to ensure up-to-date summary of check status in your email notification.
+The Trusted Advisor notification feature helps you stay up-to-date with a summary of status across your checks. You will be notified by weekly email when you opt in for this feature. A refresh of checks is required to ensure up-to-date summary of check status in your email notification.
 Recent changes
-You can track recent changes or check status in the AWS Management Console dashboard. The most recent changes appear at the top of the list to bring them to your attention. Available with AWS Business Support and AWS Enterprise Support.
+You can track recent changes or check status in the AWS Management Console dashboard. The most recent changes appear at the top of the list to bring them to your attention. Available with AWS Business Support and AWS Enterprise Support.
 Exclude items
 The "exclude items" allows you to customize the Trusted Advisor report. You can exclude items from the check result if they are not relevant; the excluded items appear separately, and you can restore (include) them at any time.
 Action links
@@ -29,9 +29,9 @@ Items in a Trusted Advisor report have hyperlinks to the console, where you can 
 Access management
 You can use AWS Identity and Access Management (IAM) to control access to specific checks or check categories.
 AWS Support API
-You can refresh and retrieve Trusted Advisor results programmatically using AWS Support API. Available with AWS Business Support and AWS Enterprise Support.
+You can refresh and retrieve Trusted Advisor results programmatically using AWS Support API. Available with AWS Business Support and AWS Enterprise Support.
 Refresh
 You can refresh individual checks or refresh all the checks at once by clicking the Refresh All button in the top-right corner of the summary dashboard. The minimum refresh interval varies based on the check.
 Amazon CloudWatch integration
-You can use Amazon CloudWatch Events to detect and react to changes in the status of Trusted Advisor checks. Available with AWS Business Support and AWS Enterprise Support.
+You can use Amazon CloudWatch Events to detect and react to changes in the status of Trusted Advisor checks. Available with AWS Business Support and AWS Enterprise Support.
 How it works

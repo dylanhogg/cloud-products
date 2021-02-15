@@ -3,7 +3,7 @@ Lower machine learning inference costs by up to 75%
 Get started with Amazon Elastic Inference
 Amazon Elastic Inference allows you to attach low-cost GPU-powered acceleration to Amazon EC2 and Sagemaker instances or Amazon ECS tasks, to reduce the cost of running deep learning inference by up to 75%. Amazon Elastic Inference supports TensorFlow, Apache MXNet, PyTorch and ONNX models.
 Inference is the process of making predictions using a trained model. In deep learning applications, inference accounts for up to 90% of total operational costs for two reasons. Firstly, standalone GPU instances are typically designed for model training - not for inference. While training jobs batch process hundreds of data samples in parallel, inference jobs usually process a single input in real time, and thus consume a small amount of GPU compute. This makes standalone GPU inference cost-inefficient. On the other hand, standalone CPU instances are not specialized for matrix operations, and thus are often too slow for deep learning inference. Secondly, different models have different CPU, GPU, and memory requirements. Optimizing for one resource can lead to underutilization of other resources and higher costs.
-Amazon Elastic Inference solves these problems by allowing you to attach just the right amount of GPU-powered inference acceleration to any EC2 or SageMaker instance type or ECS task, with no code changes. With Amazon Elastic Inference, you can choose any CPU instance in AWS that is best suited to the overall compute and memory needs of your application, and then separately configure the right amount of GPU-powered inference acceleration, allowing you to efficiently utilize resources and reduce costs.
+Amazon Elastic Inference solves these problems by allowing you to attach just the right amount of GPU-powered inference acceleration to any EC2 or SageMaker instance type or ECS task, with no code changes. With Amazon Elastic Inference, you can choose any CPU instance in AWS that is best suited to the overall compute and memory needs of your application, and then separately configure the right amount of GPU-powered inference acceleration, allowing you to efficiently utilize resources and reduce costs.
 Introducing Amazon Elastic Inference
 Benefits
 Reduce inference costs by up to 75%
@@ -17,10 +17,9 @@ Amazon Elastic Inference supports TensorFlow and Apache MXNet models, with addit
 Related content
 Blog: Amazon Elastic Inference – GPU-Powered Inference Acceleration
 Nov 28, 2018
-Learn more »
+Learn more
 Check out the product features
 Learn more about Amazon Elastic Inference features.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

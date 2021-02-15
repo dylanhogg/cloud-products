@@ -38,7 +38,7 @@ Burt uses AWS Config and other AWS services to keep its operations agile and ach
 Autodesk controls cloud resource usage using AWS tools such as AWS Config.
 AWS Config provides FanDuel with a fully managed resource inventory service.
 Blog posts & articles
-Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
+Discover more on the Management Tools Blog, the AWS Security Blog, and the AWS News Blog.
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

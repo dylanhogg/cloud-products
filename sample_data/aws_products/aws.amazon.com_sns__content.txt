@@ -3,10 +3,10 @@ Fully managed pub/sub messaging, SMS, email, and mobile push notifications
 Get started for free
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing, and Amazon Kinesis Data Firehose. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
-TUTORIAL:  Learn how to use SNS in minutes
+TUTORIAL:  Learn how to use SNS in minutes
 Benefits
 Modernize and decouple your applications
-Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
+Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
 Send messages directly to millions of users
 Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP). Amazon SNS provides redundancy across multiple SMS providers and allows you to push mobile notifications using a single endpoint for all platforms.
 Reliably deliver messages
@@ -41,7 +41,7 @@ Enriching Event-Driven Architectures with AWS Event Fork Pipelines Rachel Richar
 Encrypting messages published to Amazon SNS with AWS KMS
 Michelle Mercier and Otavio Ferreira
 Nov 15, 2018
-More…
+More...
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 What's new with Amazon SNS
 Date

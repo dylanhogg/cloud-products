@@ -15,18 +15,18 @@ Elastic Beanstalk automatically scales your application up and down based on you
 Complete resource control
 You have the freedom to select the AWS resources, such as Amazon EC2 instance type, that are optimal for your application. Additionally, Elastic Beanstalk lets you "open the hood" and retain full control over the AWS resources powering your application. If you decide you want to take over some (or all) of the elements of your infrastructure, you can do so seamlessly by using Elastic Beanstalk's management capabilities.
 Featured customers
-"After evaluating various cloud technologies, Zillow chose Amazon Web Services." »
-"Prezi moved two of its most critical back-end services to AWS Elastic Beanstalk." »
-"Using AWS Elastic Beanstalk, the transformation to AWS was incredibly easy." »
-"BMW leveraged Elastic Beanstalk to build its "car-as-a-sensor" service. »
-"For us, the main attraction of Amazon Web Services (AWS) was its scalability." »
-“AWS was exactly what we needed: a hosting solution that scaled seamlessly." »
-"AWS has given Ividata the scalability it requires as it pursues new business." »
-"Deploying the apps on AWS has allowed GeoNet's team to become more efficient." »
-"Ebury can scale to meet the demands of its customer base without increasing the size of its infrastructure team. »
-"Rachio uses AWS Elastic Beanstalk to deploy and manage its website, web apps, and API infrastructure. »
-"AWS has allowed us to build a web app at large scale." »
-"Samsung decided to deploy it's new Samsung Printing Apps center app store on AWS". »
+"After evaluating various cloud technologies, Zillow chose Amazon Web Services."
+"Prezi moved two of its most critical back-end services to AWS Elastic Beanstalk."
+"Using AWS Elastic Beanstalk, the transformation to AWS was incredibly easy."
+"BMW leveraged Elastic Beanstalk to build its "car-as-a-sensor" service.
+"For us, the main attraction of Amazon Web Services (AWS) was its scalability."
+“AWS was exactly what we needed: a hosting solution that scaled seamlessly."
+"AWS has given Ividata the scalability it requires as it pursues new business."
+"Deploying the apps on AWS has allowed GeoNet's team to become more efficient."
+"Ebury can scale to meet the demands of its customer base without increasing the size of its infrastructure team.
+"Rachio uses AWS Elastic Beanstalk to deploy and manage its website, web apps, and API infrastructure.
+"AWS has allowed us to build a web app at large scale."
+"Samsung decided to deploy it's new Samsung Printing Apps center app store on AWS".
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the AWS Management Console.

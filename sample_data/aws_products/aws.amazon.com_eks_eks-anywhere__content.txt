@@ -25,4 +25,4 @@ Seasonal workloads can require a lot of compute (5x to 10x more than the baselin
 Have questions?
 Visit the product FAQs page.
 Learn more
-Learn more about EKS Anywhere.
+Learn more about EKS Anywhere.

@@ -58,7 +58,7 @@ Built-In Storage
 Graphics
 Intel Gen9 Graphics Engine
 Supports
-Intel® Movidius™ Neural Compute Stick and Intel® RealSense™ depth sensor
+Intel® MovidiusTM Neural Compute Stick and Intel® RealSenseTM depth sensor
 Order your AWS DeepLens 2019 Edition Today
 Available to purchase for $249
 Buy Now

@@ -1,0 +1,89 @@
+Overview
+Q: What is Amazon EventBridge?
+Amazon EventBridge is a service that provides real-time access to changes in data in AWS services, your own applications and Software-as-a-Service (SaaS) applications without writing code. To get started, you can choose an event source on the Amazon EventBridge console, and select a target from a number of AWS services including AWS Lambda, Amazon SNS, and Amazon Kinesis Data Firehose. Amazon EventBridge will automatically deliver the events in near real-time.
+Q: How can I get started using Amazon EventBridge?
+Log in to your AWS account, navigate to the Amazon EventBridge console, and choose an event source from a list of partner SaaS applications and AWS services. If you are using a partner application ensure that you have configured your SaaS account to emit events, and accept it in the offered event sources section of the Amazon EventBridge console. Amazon EventBridge will automatically create an event bus for you to which events will be routed. Alternatively, you can use the AWS SDK to instrument your application to start emitting events to your event bus. Optionally configure a filtering rule and attach a target for your events, for example, this can be a Lambda function. Amazon EventBridge will be automatically ingest, filter and send the events to the configured target in a secure and highly available way.
+Q: Can I publish my own events to Amazon EventBridge?
+Yes. Customers can generate custom application-level events and publish them to Amazon EventBridge via the service’s APIs. Customers can also set up scheduled events that are generated on a periodic basis, and can process these events in any of the Amazon EventBridge supported targets.
+Q: What is the format of an event?
+Events use a specific JSON structure. Every event has the same top-level envelope fields, such as the source of the event, timestamp, and region. This is followed by a detail field which is the body of the event. For example, when an Amazon EC2 auto scaling group creates a new Amazon EC2 instance, it emits an event with source: “aws.autoscaling” and detail: "EC2 instance created successfully".
+Q: How do I filter which events are delivered to a target?
+You can filter events with rules. A rule matches incoming events for a given event bus and routes them to targets for processing. A single rule can route to multiple targets, all of which are processed in parallel. Rules allow different application components to look for and process the events that are of interest to them. A rule can customize an event before it is sent to the target, by passing only certain parts or by overwriting it with a constant. For the example given in the previous question, you can create an event rule that matches on source: “aws.autoscaling” and detail: "EC2 instance created successfully" to be notified any time an auto scaling group successfully creates an Amazon EC2 instance.
+Q: How do I secure access to Amazon EventBridge?
+Amazon EventBridge integrates with AWS Identity and Access Management (IAM) so that you can specify which actions a user in your AWS Account can perform. For example, you could create an IAM policy that gives only certain users in your organization permission to create event buses or attach event targets.
+Q: How does Amazon EventBridge relate to CloudWatch Events?
+Amazon EventBridge builds upon and extends CloudWatch Events. It uses the same service API and endpoint, and the same underlying service infrastructure. For existing CloudWatch Events customers, nothing changes - you can continue to use the same API, CloudFormation templates, and console. We heard from customers that CloudWatch Events is the ideal service for building event-driven architectures, and so we built new features that would enable our customers to connect data from their own apps and third-party SaaS apps. Rather than keeping this beneath the CloudWatch service, we have released this functionality with a new name, Amazon EventBridge, to signify the expansion beyond the monitoring use case that CloudWatch Events was developed for.
+Q: I currently use Amazon CloudWatch Events and I WANT to try the features of Amazon EventBridge. Do I need to move my Amazon CloudWatch Events rules and permissions to Amazon EventBridge?
+No. Existing Amazon CloudWatch Events users can access their existing default bus, rules, and events in the new Amazon EventBridge console and API or in the Amazon CloudWatch Events console and API.
+Q: I’m already using Amazon CloudWatch Events and I don’t need the features of Amazon EventBridge. What will change for me?
+Nothing. Amazon EventBridge uses the same Amazon CloudWatch Events API so all of your existing CloudWatch Events API usage will remain the same.
+Q: Are you going to deprecate Amazon CloudWatch Events one day?
+No, we are not going to deprecate the API or the service itself. Amazon EventBridge is using the same API, and has added additional features. Over time, the Amazon CloudWatch Events name will be replaced with Amazon EventBridge.
+Q: Which AWS services are integrated as event sources for Amazon EventBridge?
+There are over 90 AWS services available as event sources for EventBridge including AWS Lambda, Amazon Kinesis, and AWS Fargate. For a full list of AWS service integrations please see the EventBridge documentation.
+Q: Which AWS services are integrated as event targets for Amazon EventBridge?
+There are over 15 AWS services available as event targets for EventBridge including AWS Lambda, Amazon SQS, Amazon SNS, Amazon Kinesis Streams, and Amazon Kinesis Firehose. For a full list of AWS service integrations please see the EventBridge documentation.
+Limits and performance
+Q: What are the service limits?
+See “Service Limits” page here.
+Q: What is the latency I can expect between sending and receiving an event?
+Typical latency is about half a second. Note that this can vary.
+Q: Does Amazon EventBridge support resource tagging?
+Yes, you can tag rules. You can’t tag event buses or event sources.
+Q: What throughput can I expect from Amazon EventBridge?
+Event bus throughput limits are given in the “Service Limits” page here. If you require higher throughput please request a service limit increase through the AWS Support Center by choosing Create Case and then choosing Service Limit Increase.
+Q: Does EventBridge have a Service Level Agreement? Yes. AWS will use commercially reasonable efforts to make EventBridge available with a Monthly Uptime Percentage for each AWS region, during any monthly billing cycle, of at least 99.99%. For details, please review the full EventBridge Service Level Agreement.
+Schema Registry
+Q: What is a schema?
+A schema represents the structure of an event, and commonly includes information such as the title and format of each piece of data included in the event. For example, a schema might include fields such as name and phone number, and the fact that the name is a text string, and the phone number is an integer. The schema can also include information on patterns, such as a requirement that the phone number be 10 digits in length. The schema of an event is important because it shows what information is contained in the event, and allows you to write code based on that data.
+Q: What is a schema registry?
+A schema registry stores a searchable collection of schema so any developer in your organization can easily access schema generated by the application, rather than looking through documentation or finding the schema’s author for this information. You can add a schema to the registry manually, or automate this process by turning on the EventBridge schema discovery feature.
+Q: What is the schema discovery feature?
+Schema discovery automates the processes of finding schemas and adding them to your registry. When schema discovery is enabled for an EventBridge event bus, the schema of each event sent to the event bus is automatically added to the registry. If the schema of an event changes, schema discovery will automatically create a new version of the schema in the registry. Once a schema is added to the registry, you can generate a code binding for the schema, either in the EventBridge console or directly in your IDE, which allows you to represent the event as an strongly-typed object in your code, and take advantage of IDE features such as validation and auto-complete.
+Q: Can I discover schemas from events delivered across other accounts?
+Schema discovery is only enabled for events originating within the same account as the discoverer on the default, custom and partner event buses.
+Q: How much does the schema registry cost?
+There is no cost to use the schema registry, however there is a cost per ingested event when you turn on schema discovery. Schema discovery has a free tier of 5M ingested events per month, which should cover most development usage. There is a fee of $0.10 per million ingested events for additional usage outside of the free tier. For more info on pricing, please see the EventBridge pricing page.
+Q: How does the schema registry reduce the amount of code I need to write?
+First, you can use schema discovery to automatically identify schema for any events sent to your EventBridge event bus, and storing them in the registry, saving you from having to manually manage your event schema. Second, when you write applications that handle events on your bus, you can generate and download code bindings for this schema so you can use strongly-typed objects directly in your code. This saves overhead for deserialization, validation, and guesswork for your event handler.
+Q: Why should I use the schema registry?
+With the schema registry, EventBridge gives you a way to develop event-driven applications significantly faster, allowing you to focus on your application code. Previously, you needed to find available events and their structure, and write code to interpret and translate events into a format understandable by your code. Now, with the schema registry, you can automatically find the events available from any supported event source, including AWS services, third-party, and custom applications, and detect their schema.
+Q: Which IDEs does the schema registry support?
+The schema registry is available via the AWS Toolkit for Jetbrains (Intellij, PyCharm, Webstorm, Rider) and VS Code, as well as in the EventBridge console and APIs. Learn more about using the EventBridge schema registry within your IDE.
+Q: Can I use schema with the Serverless Application Model (SAM)?
+Yes, the latest version of the SAM CLI includes an interactive mode that allows you to create new serverless applications on EventBridge for any schema as an event type. Simply choose the “EventBridge Starter App” template, and the schema of your event, and SAM will automatically generate an application with a Lambda Function invoked by EventBridge, with handling code of the event . This means that you can treat an event trigger like a normal object in your code, and use features such as validation and auto-complete in your IDE.
+The AWS Toolkit plugin for Jetbrains (Intellij, PyCharm, Webstorm, Rider) and VS Code also provide functionality to generate serverless applications from this template, with a schema as a trigger, directly from these IDEs.
+Q: In which languages can I generate code from my schemas?
+Code generation is available in Java (8+), Python (3.6+), and Typescript (3.0+).
+Q: In which regions is the schema registry available?
+The EventBridge schema registry is available in the following regions: US East (Ohio and N. Virginia), US West (Oregon and N. California), Canada (Central), EU (Stockholm, Paris, Ireland, Frankfurt, and London), Asia Pacific (Mumbai, Tokyo, Seoul, Singapore, Hong Kong, and Sydney), and South America (Sao Paulo).
+Cost and billing
+Q: What does event bridge cost?
+Please see Pricing here.
+Q: Will I be charged for events sent by a partner to an event source that does not have an event bus attached?
+No.
+Architecture and design
+Q: Can I have a target that sends events to another account?
+Yes. These are called cross-account events, and you can have a target that is either the default event bus or any other event bus in another account.
+Q: Can I use AWS CloudFormation with Amazon EventBridge?
+AWS CloudFormation is supported for Rules and EventBusPolicy resources. Event bus and event source resources are not yet supported, but will be in the future.
+Q: When should I use Amazon EventBridge and when should I use Amazon SNS?
+Both Amazon EventBridge and Amazon SNS can be used to develop event-driven applications, and your choice will depend on your specific needs. Amazon EventBridge is recommended when you want to build an application that reacts to events from SaaS applications and/or AWS services. Amazon EventBridge is the only event-based service that integrates directly with third-party SaaS partners. Amazon EventBridge also automatically ingests events from over 90 AWS services without requiring developers to create any resources in their account. Further, Amazon EventBridge uses a defined JSON-based structure for events, and allows you to create rules that are applied across the entire event body to select events to forward to a target. Amazon EventBridge currently supports over 15 AWS services as targets, including AWS Lambda, Amazon SQS, Amazon SNS, and Amazon Kinesis Streams and Firehose, among others. At launch, Amazon EventBridge is has limited throughput (see Service Limits) which can be increased upon request, and typical latency of around half a second.  Amazon SNS is recommended when you want to build an application that reacts to high throughput or low latency messages published by other applications or microservices (as Amazon SNS provides nearly unlimited throughput), or for applications that need very high fan-out (thousands or millions of endpoints). Messages are unstructured and can be in any format. Amazon SNS supports forwarding messages to 6 different types of targets, including AWS Lambda, Amazon SQS, HTTP/S endpoints, SMS, Mobile Push, and email. Amazon SNS typical latency is under 30 msec. A wide range of AWS services send SNS messages by configuring the service to do so (more than 30, including Amazon EC2, Amazon S3, and Amazon RDS).
+Integrations
+Q: Why would I integrate my SaaS application with Amazon EventBridge?
+Amazon EventBridge makes it easy for SaaS vendors to integrate their service into their customers’ event-driven architectures built on AWS. Amazon EventBridge makes your product directly accessible to millions of AWS developers, unlocking new use cases. It offers a fully auditable, secure, and scalable pathway to send events without the SaaS vendor managing any eventing infrastructure.
+Q: My SaaS company would be a great event source. How do I get on-boarded?
+SaaS vendors interested in becoming an Amazon EventBridge partner, should follow self-service instructions at the Amazon EventBridge integrations page to begin publishing events to Amazon EventBridge.
+Q: How much effort will be required for a SaaS Vendor to integrate with Amazon EventBridge?
+SaaS vendors that already support a webhook or other push-based integration mode can expect to perform less than 5 days of development to integrate with Amazon EventBridge.
+Q: Which SaaS Integrations are supported?
+For a full list of supported integrations please see here.
+Learn more about the Amazon EventBridge integrations
+Visit the Amazon EventBridge integrations page.
+Learn more
+Start building in the console
+Get started building with Amazon EventBridge in the AWS Management Console.
+Sign in
+Learn more in documentation
+Get a deeper understanding of EventBridge in the Developer Guide.
+Page Content

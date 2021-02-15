@@ -1,0 +1,199 @@
+FreeRTOS
+Q: What is FreeRTOS?
+FreeRTOS is an open source, real-time operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. Distributed freely under the MIT open source license, FreeRTOS includes a kernel and a growing set of software libraries suitable for use across industry sectors and applications. To support a growing number of use cases, AWS provides software libraries that offer enhanced functionality including connectivity, security, and over-the-air updates. For example, you can use FreeRTOS to securely connect your small, low-powered devices to AWS cloud services like AWS IoT Core or to more powerful edge devices running AWS IoT Greengrass.
+Q: What is the relationship between Amazon FreeRTOS and FreeRTOS?
+Since 2017, Amazon FreeRTOS has been an extension of the FreeRTOS project, so we have unified the two names to reduce customer confusion. The FreeRTOS project now includes the additional connectivity libraries, security libraries, and IoT reference integrations.
+Q: Which AWS region is FreeRTOS available in?
+Please see the AWS Region Table for a complete list of regions where FreeRTOS is available. You can download FreeRTOS code from GitHub irrespective of your geographic location and AWS region availability.
+Q: What are some use cases for FreeRTOS?
+FreeRTOS can be used in embedded systems spanning industrial, commercial, and consumer applications. For example, smart meters, oil pump sensors, appliances, commercial security systems, fitness trackers, and sensor networks can all benefit from FreeRTOS. Smart meters are used in homes to monitor electricity usage in real-time. Fitness trackers send health data via the user’s mobile device to the cloud for real-time monitoring or analytics. Utilities benefit from this data by enabling more efficient load balancing and power output from their generating stations. Oil pump sensors are used on oil rigs to monitor the output on wells that might be buried deep underwater. An oil rig might deploy FreeRTOS on those sensors and use an AWS IoT Greengrass Core to locally process data from pumps and valves in real-time. The AWS IoT Greengrass Core could then send batches of preprocessed pump sensor data to the cloud for analytics and data warehousing. To learn more about AWS IoT Greengrass, click here.
+Q: How can a microcontroller developer get access to FreeRTOS?
+FreeRTOS developers can download the FreeRTOS microcontroller device software from the FreeRTOS console, GitHub, or FreeRTOS.org.
+Q: Who can benefit from FreeRTOS?
+Semiconductor vendors manufacture microcontrollers and modules like connectivity sensors, security peripherals, and Ethernet controllers. These microcontrollers and modules are used by OEMs to build IoT devices.
+OEMs include industrial companies, commercial enterprises, and consumer brands. Microcontroller developers can use FreeRTOS to easily design and develop a connected device and IoT applications.
+Enterprises can use IoT connected devices that are powered by FreeRTOS to gain business and operational efficiency.
+Q: What are the major components of FreeRTOS software?
+FreeRTOS includes the FreeRTOS kernel, a real-time operating system kernel for microcontrollers, and libraries that support connectivity, security, and over-the-air updates. The connectivity stack includes MQTT, HTTP, TCP/IP, Wi-Fi, and Bluetooth Low Energy for cloud and local connectivity. Security libraries include a standard-based Berkeley socket interface for TLS and a PKCS #11 standard interface for crypto offload.
+FreeRTOS kernel: An MIT licensed real-time operating system (RTOS) kernel for embedded microcontroller devices.
+coreMQTT: MQTT client library that you can use to create applications that publish and subscribe to MQTT topics, and connect to an MQTT-based message broker.
+coreHTTP: HTTP client library that you can use to create applications that use REST API to connect to an HTTP server.
+Wi-Fi management library: A common API layer that abstracts port-specific Wi-Fi implementations and simplifies application development.
+Bluetooth Low Energy management library: A standardized API layer that enables you to use Generic Access Profile (GAP) and Generic Attributes (GATT) profiles to create Bluetooth Low Energy applications.
+Device Defender library: Allows your FreeRTOS-based devices to work with AWS IoT Device Defender. Learn more about Device Defender here.
+Device Shadows library: Defines functions to create, update, and delete AWS IoT Device Shadows. Learn more about Device Shadows here.
+OTA agent: Enables you to manage the notification, download, and verification of firmware updates for FreeRTOS devices.
+Greengrass discovery: A library that helps FreeRTOS devices to discover and connect to an AWS IoT Greengrass Core.
+TLS: Transport Layer Security (TLS) interface is an optional wrapper used to abstract cryptographic implementation details of the underlying TLS stack.
+corePKCS11: Implementation of the PKCS #11 OASIS standard that abstracts key storage, get/set properties for cryptographic objects, and session semantics.
+Q: What minimum hardware specifications are required?
+If you run all FreeRTOS libraries, including TLS, on the application microcontroller, you may need a microcontroller with >25MHz processing speed and >64KB RAM. If the communication and crypto stack (except for MQTT) is offloaded onto the networking processor, your microcontroller will only need 10MHz processing speed and 16KB RAM. However, these values are just approximations, as factors such as MCU architecture, compiler, and compiler optimization level may impact processing speed and RAM requirements. FreeRTOS needs 128KB of program memory per executable image stored on the microcontroller. For OTA update functionality, two executable images must be stored in program memory at the same time.
+Q: What architectures does FreeRTOS support?
+FreeRTOS provides IoT Reference Integrations for a wide range of microcontrollers from our partners in the AWS Partner Device Catalog. FreeRTOS includes the FreeRTOS kernel, which supports 40+ architectures, including the latest from RISC-V and ARMv8-M.
+Q: How can I get started on FreeRTOS?
+You can use the getting started guide for systematic instructions on how to run FreeRTOS on a qualified board.
+Q: How can I get technical support?
+Use any of the following channels to get support:
+FreeRTOS Community Forums
+Premium Support
+AWS Support
+GitHub Issues
+Q: What happened to the Amazon FreeRTOS group on AWS Forums?
+To create a better forums experience for our customers, we have migrated all content and users from the AWS Forums Amazon FreeRTOS group to the Amazon Web Services category on the FreeRTOS Community Forums. Learn more here.
+Q: Is there a user guide?
+Yes. You can use the FreeRTOS user guide to get started with connecting FreeRTOS devices to AWS.
+Q: Can I use FreeRTOS to connect to other cloud services?
+Yes. FreeRTOS is an open-source software, so it can be modified to fit any specific needs of your application.
+Q: Can I make changes to the FreeRTOS source code for my project?
+Yes. FreeRTOS is an open-source software distributed under the MIT license, so it can be modified to fit any specific needs of your application or project without the permission of AWS.
+Q: How much do I pay for using FreeRTOS?
+FreeRTOS is free to download and use under an open source MIT license.
+Q: How can I explore FreeRTOS without buying hardware?
+You can explore FreeRTOS code and functionality on a Windows machine by downloading the libraries and samples ported to run on Windows. This is a set of files referred to as the FreeRTOS simulator for Windows (Windows Simulator). Get started here.
+Q: Does FreeRTOS include hardware?
+No. FreeRTOS is an open source, real-time operating system for microcontrollers. You can run FreeRTOS on your chosen microcontroller by porting FreeRTOS code and validating the ported code with AWS IoT Device Tester. To make it easier for you, we have provided IoT reference integrations and qualified ports for common microcontrollers in the AWS Partner Device Catalog.
+Q: How do I understand FreeRTOS versioning?
+The FreeRTOS kernel and each individual library use semantic versioning. In semantic versioning, the version number itself (X.Y.Z) indicates if the release is a major, minor, or point release. An increment of the first version number indicates a major release, an increment of the second version number indicates a minor release, and an increment of the third number indicates a point release.
+For FreeRTOS IoT reference integration releases that consist of a group of FreeRTOS libraries, date-based versioning is used. Additionally, downloads that contain the FreeRTOS kernel and additional libraries use date-based versioning. This date-based versioning follows the format YYYYMM.NN for standard releases where Y represents the year, M represents the month, and N represents the release order within the designated month (00 being the first release in a given month). A ‘Major’ denotation indicates the addition of new features and/or significant updates to multiple libraries. For example, ‘201906.00 Major’ implies that it is the first release in June 2019 and contains new features and/or significant updates. By moving semantic versioning down to the individual libraries, you can make your own assessment of the scope and impact of a new release on your application.
+FreeRTOS kernel
+Q: What is the FreeRTOS kernel?
+Developed over a 15-year period and in partnership with the world's leading chip companies, the FreeRTOS kernel is the market-leading, real-time operating system kernel and the de-facto standard solution for microcontrollers and small microprocessors.
+Q: Does AWS maintain the FreeRTOS kernel?
+Yes. The latest update to v10 of the FreeRTOS kernel, includes support for RISC-V and Armv8-M (Cortex-M33 and Cortex-M23).
+Q: What is the difference between the MIT open source license and the (previously used) modified GPL open source license?
+Both licenses allow the software to be used for free, even in commercial products, and neither license imposes any obligations when distributing binary (executable) copies. The MIT license provides simplified wording and allows for more permissive use of our source code. With the MIT license, you can still develop and sell commercial products using FreeRTOS (including the kernel) but you are no longer obliged to open source modifications to our source code, meaning you own all the changes you make. The only requirements under MIT is that the copyright notice and permission notice shall be included in all copies or substantial portions of the software (source files).
+FreeRTOS Long Term Support
+Q: Which libraries are covered under FreeRTOS Long Term Support (LTS)?
+FreeRTOS 202012.00 LTS covers the following libraries: FreeRTOS kernel, FreeRTOS+TCP, coreMQTT, coreHTTP, corePKCS11, coreJSON, and AWS IoT Device Shadow.
+Q: What is the support period for FreeRTOS LTS libraries?
+The support period for FreeRTOS LTS libraries is two years. FreeRTOS 202012.00 LTS libraries will not have any feature development (although we expect to add incremental libraries a few months after the first LTS release), and will include security updates and bug fixes that AWS determines as critical, at least until December 31, 2022.
+Q: Where do I obtain the FreeRTOS LTS libraries?
+You can get the FreeRTOS LTS libraries by cloning the FreeRTOS 202012.00 LTS hub repository in GitHub, cloning individual LTS libraries, or by downloading the FreeRTOS 202012.00 LTS zip file from FreeRTOS.org.
+Q: How do I integrate FreeRTOS LTS libraries into my project?
+There are several ways you can get started: 1. You can update individual libraries to LTS libraries by cloning them from their corresponding repositories. For example, you can update your project to the FreeRTOS LTS MQTT library by downloading code from the coreMQTT GitHub repository. 2. You can download an IoT Reference Integration from FreeRTOS.org, and update the submodule pointers to the FreeRTOS LTS version. 3. You can clone the latest FreeRTOS version in GitHub, and update the submodule pointers to the FreeRTOS LTS version.
+Q: How do I find information on and download the FreeRTOS LTS patches?
+You can visit the ‘FreeRTOS LTS Patches’ section in the LTS Libraries page on FreeRTOS.org for the latest information, or subscribe to GitHub notifications for the FreeRTOS 202012.00 LTS repository. FreeRTOS LTS releases use a date-based versioning scheme (YYYYMM) followed by a patch sequential number (.XX). For example, FreeRTOS 202012.02 LTS means the second patch to the December-2020 FreeRTOS LTS release. You can get the latest patch from GitHub by using the associated download link.
+Q: What is the software license for FreeRTOS LTS?
+FreeRTOS 202012.00 LTS libraries are distributed free under the MIT open source license.
+Q: Do I have to pay to use FreeRTOS LTS libraries?
+No. FreeRTOS LTS libraries are free for all users under the MIT open source license.
+Q: Who is releasing and supporting FreeRTOS LTS?
+AWS will release and provide ongoing maintenance of the FreeRTOS LTS libraries for the benefit of the FreeRTOS community. The FreeRTOS community is encouraged to provide feedback and contribute code in the form of GitHub pull requests.
+Q: What is the release cycle for FreeRTOS LTS?
+We expect new FreeRTOS LTS releases to happen every 1.5 years.
+Q: What is the SLA for security updates and critical bug fixes?
+We aim to address security vulnerabilities and critical bugs on FreeRTOS LTS libraries within seven days from successfully implementing a mitigation to releasing an update.
+Q: Can I get support for more than two years?
+Please contact us for options.
+Q: I am already using a version of FreeRTOS. How can I start using FreeRTOS LTS?
+FreeRTOS LTS kernel versions are backward compatible with FreeRTOS kernel versions V8.0.0 or higher. So if you are already using FreeRTOS kernel versions v8.0.0 or higher, you can migrate to the latest kernel version in the LTS release with minimal changes to your application code.  If you are using FreeRTOS IoT and AWS libraries from FreeRTOS versions 201906.00 or higher, you can migrate to FreeRTOS LTS libraries by updating your project with:  1. LTS libraries and compatibility layer provided with AWS IoT reference integrations. These layers provide backward compatibility to FreeRTOS versions 201906.00 or higher, so that you do not have to modify your existing application code.  2. Only the LTS libraries. In this case, you will benefit from the optimized libraries targeting constrained microcontrollers, but you will need to update your existing applications. If you are early in your development cycle, you can choose this option to benefit from an easy migration to future LTS releases.
+Q: Are compatibility layers covered under FreeRTOS LTS?
+No. We encourage you to use the FreeRTOS LTS libraries directly to benefit from the improved modularity and memory usage, but if you want to use the compatibility layer for migrating from a previous FreeRTOS version to FreeRTOS LTS, we continue to provide technical support.
+FreeRTOS Community
+Q: Can I contribute code to FreeRTOS?
+Yes, you can contribute code to FreeRTOS via GitHub. Please refer to Contributions.md file in GitHub for guidelines.
+AWS IoT Device Tester for FreeRTOS
+Q: What is AWS IoT Device Tester for FreeRTOS?
+AWS IoT Device Tester for FreeRTOS is a Windows/Linux/Mac test automation tool that lets semiconductor vendors self test and qualify FreeRTOS on their microcontroller boards. With AWS IoT Device Tester, semiconductor vendors can verify whether their microcontroller boards can run FreeRTOS and be authenticated by and interoperate with AWS IoT services.
+Q: Where do I get AWS IoT Device Tester for FreeRTOS?
+You can get AWS IoT Device Tester for FreeRTOS here.
+Q: Is AWS IoT Device Tester for FreeRTOS required for qualification and listing in the AWS Partner Device Catalog?
+Yes, you can learn more about how to get listed here.
+Q: What does AWS IoT Device Tester for FreeRTOS test?
+AWS IoT Device Tester for FreeRTOS tests that the combination of a FreeRTOS IoT reference integration with a microcontroller board’s porting layer interfaces and underlying device drivers are compatible and can interoperate with AWS IoT services. AWS IoT Device Tester confirms the porting layer interfaces (implemented by semiconductor vendors) for FreeRTOS libraries function correctly on top of the device drivers. Also, AWS IoT Device Tester runs end-to-end tests to confirm the microcontroller board can authenticate and interoperate with AWS IoT services.
+Q: How do I get technical support for AWS IoT Device Tester for FreeRTOS?
+Customer Support
+Q: How can I get my microcontroller-based hardware platform listed in the AWS Partner Device Catalog?
+The AWS Device Qualification Program defines the process to get your microcontroller listed on AWS Partner Device Catalog. The high-level overview is as follows: First, you must pass the AWS IoT Device Tester for AWS FreeRTOS tests. Next, log into the AWS Partner Network Portal and upload the AWS IoT Device Tester for FreeRTOS report. Provide reference to your source code for ported FreeRTOS interfaces to make it available to OEMs. Once the ported code and report are verified by AWS and other device related artifacts (such as device image, data sheet, etc.) have been submitted, the device is listed in the AWS Partner Device Catalog.
+Q: In which regions is AWS IoT Device Tester for FreeRTOS available?
+AWS IoT Device Tester for FreeRTOS is available in all the regions where FreeRTOS is supported.
+Q: How much does AWS IoT Device Tester for FreeRTOS cost?
+AWS IoT Device Tester for FreeRTOS is free to use. However, you will be responsible for any costs associated with AWS usage as part of qualification tests. On average, a single run of the AWS IoT Device Tester would cost less than a cent. Please refer to AWS IoT Core pricing for associated costs.
+FreeRTOS and AWS IoT Greengrass
+Q: What is the difference between AWS IoT Greengrass and FreeRTOS?
+AWS IoT Greengrass is software that lets you run local compute, messaging, data caching, sync, and ML inference capabilities for connected devices in a secure way. With AWS IoT Greengrass, connected devices can run AWS Lambda functions, keep device data in sync, and communicate with other devices securely – even when not connected to the Internet. Using AWS Lambda, AWS IoT Greengrass ensures your IoT devices can respond quickly to local events, use Lambda functions running on AWS IoT Greengrass Core to interact with local resources, operate with intermittent connections, stay updated with over the air updates, and minimize the cost of transmitting IoT data to the cloud.
+FreeRTOS is an open source, real-time operating system for microcontrollers that operates on the edge and does not generally support chipsets that could run AWS IoT Greengrass. These microcontroller devices are found on a variety of IoT endpoints such as fitness trackers, pacemakers, electricity meters, automotive transmissions, and sensor networks. FreeRTOS devices cannot run AWS IoT Greengrass Core but can trigger the execution of Lambda functions on an AWS IoT Greengrass Core device.
+The hardware requirements and operating systems are different on both devices.
+AWS IoT Greengrass
+Software
+Real-time OS with libraries, runs on a microcontroller
+Runtime for Linux devices and SDK for AWS IoT Greengrass-aware devices
+Hardware Requirements
+>64KB RAM
+>128MB of RAM
+Category
+Embedded systems, IoT endpoints
+Edge devices, local gateways
+Use Cases
+Microcontroller-based devices
+Industrial automation systems, wireless routers, smartphones
+Q: Does FreeRTOS require the use of AWS IoT Greengrass?
+FreeRTOS does not require the use of AWS IoT Greengrass. FreeRTOS runs on IoT endpoints and is often responsible for the ‘sensing’ and ‘acting’ in an IoT topology. FreeRTOS devices can connect directly to the cloud or connect to AWS IoT Greengrass Core devices locally.
+Q: How can I connect FreeRTOS devices to AWS IoT Greengrass Core devices?
+The AWS IoT Greengrass discovery library is included in the FreeRTOS source code, enabling you to find and connect to an AWS IoT Greengrass Core device. For more information, refer to the FreeRTOS user guide.
+FreeRTOS and Bluetooth Low Energy
+Q: What is Bluetooth Low Energy support in FreeRTOS?
+Bluetooth Low Energy support in FreeRTOS offers a standardized API layer for developers to write Bluetooth Low Energy applications that are portable across FreeRTOS qualified boards. It includes companion Android and iOS SDKs that enable a FreeRTOS device to consume AWS IoT services using an Android or iOS device as proxy. You can use standard Generic Access Profile (GAP) and Generic Attributes (GATT) profiles to write Bluetooth Low Energy applications, and use custom profiles for MQTT over Bluetooth Low Energy, and Wi-Fi provisioning via Bluetooth Low Energy. You can also use other AWS IoT services and features including AWS IoT Device Defender, Device Shadows, and OTA Updates.
+Q: Why should I use FreeRTOS Bluetooth Low Energy?
+If you are an embedded developer that needs to create a Bluetooth Low Energy application, connect your Bluetooth Low Energy devices to AWS IoT through an Android or iOS proxy, or use AWS IoT features such as AWS IoT Device Shadows, you will benefit from using Bluetooth Low Energy in FreeRTOS. The standardized Bluetooth Low Energy API for FreeRTOS allows you to code portable applications against FreeRTOS-qualified devices. If you decide to use a different microcontroller (e.g. for upgrading the product), you can use your existing Bluetooth Low Energy application code as a base for adding newer features. You can then concentrate on your application code and not worry about connectivity and security libraries underneath, which are not features that differentiate your product.
+Q: Which boards are supported by Bluetooth Low Energy in FreeRTOS?
+Visit our getting started page for more information on supported hardware.
+Q: How do I find the libraries I need?
+You can download FreeRTOS source code from the FreeRTOS console and the FreeRTOS GitHub repository, and you can download the companion Android and iOS SDKs from GitHub. FreeRTOS source code has demo examples, and the mobile SDKs have sample applications to help you quickly get started.
+Q: Does Bluetooth Low Energy support in FreeRTOS work only with AWS?
+No. The FreeRTOS libraries for Bluetooth Low Energy are open source and under the MIT license so developers can modify according to their specific need.
+Q: What Bluetooth Low Energy versions are supported?
+FreeRTOS supports Bluetooth Low Energy versions 4.2 and above. Bluetooth Low Energy version 4.2 raises the security bar by adding support for Bluetooth Low Energy Secure Connections, an enhanced security feature introduced in Bluetooth Low Energy version 4.2 to authenticate a peer device and create an encrypted channel.
+Q: Is Amazon providing the Bluetooth Low Energy stack?
+No. FreeRTOS is providing a standardized Bluetooth Low Energy API library that interfaces with a third-party (e.g., MCU vendor) Bluetooth Low Energy stack.
+Q: What GATT services does FreeRTOS support for Bluetooth Low Energy enable?
+Bluetooth Low Energy support in FreeRTOS enables developers to add any number of standard and custom GATT services, depending on the capabilities of the target hardware. FreeRTOS contains two customer profiles: 1) MQTT over Bluetooth Low Energy, to enable Bluetooth Low Energy devices to use AWS IoT services, and 2) Wi-Fi provisioning over Bluetooth Low Energy, to provision Wi-Fi credentials in an IoT device using Bluetooth Low Energy.
+Q: Can the Bluetooth Low Energy proxy take a local action?
+Currently, there is no mechanism to intercept messages flowing between a Bluetooth Low Energy device and AWS IoT. The Bluetooth Low Energy proxy only acts as a pass-through device.
+However, you can use methods and classes that are provided within the proxy libraries as a starting point and modify these libraries to intercept the messages and take local action.
+Q: What are the benefits of using MQTT over Bluetooth Low Energy?
+MQTT over Bluetooth Low Energy enables Bluetooth Low Energy devices to connect to AWS IoT via a proxy device, as well as enables you to use other AWS services and features including AWS IoT Device Defender, AWS IoT Device Shadows, and FreeRTOS OTA updates.
+Q: Can I use multiple connectivity options from the same device?
+Yes. You can use MQTT over Wi-Fi and MQTT over Bluetooth Low Energy simultaneously as long as your device has the memory required to do so.
+Q: How can I authenticate my proxy device with AWS IoT?
+AWS IoT uses the Amazon Cognito service to authenticate mobile devices with cloud services. However, you can also use X.509 certificates that are supported by FreeRTOS mobile SDKs to authenticate your proxy device with AWS IoT.
+FreeRTOS & Cellular LTE-M
+Q: What is the FreeRTOS cellular interface library, and what else is included?
+We have a preview FreeRTOS cellular library that makes it easier to develop secure LTE-M (or CAT-M1) IoT solutions. New reference integrations and demonstration projects are available from our partners Quectel, Sierra Wireless, and u-blox.
+Q: Which cellular technologies are supported?
+The FreeRTOS cellular library supports LTE-M cellular modems. LTE-M is a type of low power wide area network (LPWAN) radio technology standard developed by 3GPP to enable a wide range of cellular devices and services.
+Q: Which cellular modems are supported in this preview?
+Currently, the FreeRTOS cellular library offers interoperability across the following LTE-M modems: Quectel BG96, Sierra Wireless HL7802, and u-blox SARA-R4.
+Q: Where can I get the source code?
+Source code for the FreeRTOS cellular library and IoT reference integrations are available on the FreeRTOS Labs repository on GitHub.
+FreeRTOS and AWS IoT Device Management
+Q: How do I update my devices with new firmware?
+You can use the over-the-air (OTA) update feature of FreeRTOS. Within the AWS IoT Device Management console, all you need to do is provide a firmware image, select the devices to update, select a code signing method, and create the FreeRTOS OTA job update. For more information on the OTA update feature and code signing, refer to the FreeRTOS user guide.
+Q: What is code signing?
+Code signing enables developers to confirm the integrity and origin of firmware images scheduled for OTA deployment to FreeRTOS devices. The process confirms the integrity of firmware images using a cryptographic hash that validates that the code has not been altered or corrupted since it was signed. The process also uses public-key cryptography to sign these images with proof of origin that can be validated on the device. Using the integrated FreeRTOS OTA update device job within the AWS IoT Device Management console, developers can upload a new firmware image, sign that image, and deliver it to a group of devices in the field. Those devices will validate the signature upon download and only install trusted code. Customers can use IAM to provide fine-grained access controls to signing tools, so only designated developers can sign and schedule new firmware updates.
+Q: Do I have to use code signing?
+No, you can also use your own signing service and upload a signed image directly into Amazon S3. You will need to modify the FreeRTOS OTA agent to accept the signature format that you choose to use.
+Q: What hardware supports OTA?
+You can find qualified hardware that support FreeRTOS OTA in the AWS Partner Device Catalog.
+FreeRTOS Security
+Q: How does FreeRTOS secure data in transit?
+FreeRTOS uses Transport Layer Security (TLS 1.2) for secure connections to the cloud. The TLS protocol ensures privacy and data integrity between two communicating applications. It ensures that a FreeRTOS device and the cloud server are mutually authenticated using X.509 certificates and that data is encrypted while it is in transit.
+Q: How does FreeRTOS secure data within the device (at rest)?
+FreeRTOS uses a standard application interface, called PKCS #11, for encryption, digital signatures, and cryptographic object management. Cryptographic objects are kept either in dedicated storage or in the flash memory of the main microcontroller if dedicated storage is not available. If your device requires data encryption at rest, we recommend that you use dedicated cryptographic hardware to protect your encryption keys. Use the PKCS #11 API to access keys and encrypt and decrypt application data.
+Q: How can I stay informed of the latest security patches?
+Security updates are provided via the FreeRTOS console, the FreeRTOS Security Updates page, and on GitHub.
+Q: Where can I report a security concern?
+To report a security issue, please visit Vulnerability Reporting for AWS.
+Q: How can I update my FreeRTOS devices with the latest security patches?
+We recommend that you use the over-the-air (OTA) update feature of FreeRTOS to send security patches to your FreeRTOS devices. Within the AWS IoT Device Management console, you can provide a firmware image, select the devices to update, and create the FreeRTOS OTA job update. The code signing feature will verify the signed image on the device to ensure your device code is not compromised during deployment and updates. For more information on the OTA update feature, refer to the FreeRTOS user guide.
+Learn more about FreeRTOS
+Visit the FreeRTOS overview page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content
+FreeRTOS Kernel
+FreeRTOS & AWS IoT Greengrass
+FreeRTOS & Bluetooth Low Energy
+FreeRTOS & AWS IoT Device Management

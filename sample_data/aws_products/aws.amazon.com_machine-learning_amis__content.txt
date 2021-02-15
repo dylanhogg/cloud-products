@@ -9,13 +9,13 @@ Learn more
 Choosing an AWS Deep Learning AMI
 Even for experienced machine learning practitioners, getting started with deep learning can be time consuming and cumbersome. The AMIs we offer support the various needs of developers. To help guide you through the getting started process, also visit the AMI selection guide and more deep learning resources.
 Conda AMI
-For developers who want pre-installed pip packages of deep learning frameworks in separate virtual environments, the Conda-based AMI is available in Ubuntu, Amazon Linux and Windows 2016 versions.
+For developers who want pre-installed pip packages of deep learning frameworks in separate virtual environments, the Conda-based AMI is available in Ubuntu, Amazon Linux and Windows 2016 versions.
 Learn more about the benefits of the Conda AMI and get started with this step-by-step guide.
 Base AMI
 For developers who want a clean slate to set up private deep learning engine repositories or custom builds of deep learning engines, the Base AMI is available in Ubuntu and Amazon Linux versions.
 Learn more about the benefits of the Base AMI and get started with this step-by-step guide.
 Support for deep learning frameworks
-The AWS Deep Learning AMIs support all the popular deep learning frameworks allowing you to define models and then train them at scale. Built for Amazon Linux and Ubuntu, the AMIs come pre-configured with TensorFlow, PyTorch, Apache MXNet, Chainer, Microsoft Cognitive Toolkit, Gluon, Horovod, and Keras, enabling you to quickly deploy and run any of these frameworks and tools at scale.
+The AWS Deep Learning AMIs support all the popular deep learning frameworks allowing you to define models and then train them at scale. Built for Amazon Linux and Ubuntu, the AMIs come pre-configured with TensorFlow, PyTorch, Apache MXNet, Chainer, Microsoft Cognitive Toolkit, Gluon, Horovod, and Keras, enabling you to quickly deploy and run any of these frameworks and tools at scale.
 Accelerate your model training
 To expedite your development and model training, the AWS Deep Learning AMIs include the latest NVIDIA GPU-acceleration through pre-configured CUDA and cuDNN drivers, as well as the Intel Math Kernel Library (MKL), in addition to installing popular Python packages and the Anaconda Platform.
 GPU Instances

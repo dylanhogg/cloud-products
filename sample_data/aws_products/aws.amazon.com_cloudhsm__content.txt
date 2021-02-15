@@ -41,5 +41,5 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with AWS CloudHSM in the AWS Management Console.
+Get started building with AWS CloudHSM in the AWS Management Console.
 Sign in

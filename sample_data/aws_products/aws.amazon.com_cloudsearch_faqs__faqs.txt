@@ -1,0 +1,280 @@
+Amazon CloudSearch FAQs
+General
+About latest CloudSearch instances (Launched Jan 2021)
+About the 2013-01-01 API
+Getting Started
+Search Domains, Data, and Indexing
+Best Practices
+Search Features
+Performance
+Scaling
+Security
+Pricing
+Try Amazon CloudSearch for free
+Start CloudSearch Free Trial
+Learn More
+Get 750 free hours of fully functional search instances for 30 days. To start:
+Sign in to your AWS account and launch the CloudSearch Console
+Create and configure a search domain with a few clicks
+Upload data and send search/update requests via console, AWS SDK, or CLI
+Q: What is Amazon CloudSearch?
+Amazon CloudSearch is a fully-managed service in the AWS Cloud that makes it easy to set up, manage, and scale a search solution for your website or application.
+Q: What are the benefits of running a managed search service like Amazon CloudSearch over running my own search service on EC2?
+Amazon CloudSearch provides several benefits over running your own self-managed search service including easy configuration, auto scaling for data and traffic, self-healing clusters, and high availability with Multi-AZ. With a few clicks in the AWS Management Console, you can create a search domain and upload the data you want to make searchable, and Amazon CloudSearch automatically provisions the required resources and deploys a highly tuned search index.
+Q: What is a search engine?
+A search engine makes it possible to search large collections of mostly textual data items (called documents) to quickly find the best matching results. Search requests are usually a few words of unstructured text, such as "matt damon movies". The returned results are usually ranked with the best matching, or most relevant, items listed first (the ones that are most "about" the search words).
+Documents may be completely unstructured, or they can contain multiple fields that can optionally be searched individually. For example, a search service for movies might have documents with fields for title, director, actor, description, and reviews. Results returned by a search engine are typically proxies for the underlying documents, such as URLs that reference particular web pages. However, the search service can also return the actual contents of individual fields.
+Q: What benefits does Amazon CloudSearch offer?
+Amazon CloudSearch is a fully managed search service that automatically scales with the volume of data and complexity of search requests to deliver fast and accurate results. Amazon CloudSearch lets customers add search capability without needing to manage hosts, traffic and data scaling, redundancy, or software packages. Users pay low hourly rates only for the resources consumed. Amazon CloudSearch can offer significantly lower total cost of ownership compared to operating and managing your own search environment.
+Q: Can Amazon CloudSearch be used with a storage service?
+A search service and a storage service are complementary. A search service requires that your documents already be stored somewhere, whether it's in files of a file system, data in Amazon S3, or records in an Amazon DynamoDB or Amazon RDS instance. The search service is a rapid retrieval system that makes those items searchable with sub-second latencies through a process called indexing.
+Q: Can Amazon CloudSearch be used with a database?
+Search engines and databases are not mutually exclusive - in fact, they are often used together. If you already have a database that contains structured data, you might want to use a search engine to intelligently filter and rank the database contents using search keywords as relevance criteria.
+A search service can be used to index and search both structured and unstructured data. Content can come from multiple sources and can include database fields along with files in a variety of formats, web pages, and so on. A search service can support customizable result ranking as well as special search features such as using facets for filtering that are not available in databases.
+Q: What regions is Amazon CloudSearch available in?
+Amazon CloudSearch is available in the following AWS Regions: US East (Northern Virgina), US West (Oregon), US West (N. California), EU (Ireland), EU (Frankfurt), South America (Sao Paulo) and Asia Pacific (Singapore, Tokyo, Sydney, and Seoul).
+Q: What are the latest CloudSearch instance types?
+In Jan 2021, we launched new CloudSearch instance types to replace the older instances. The latest CloudSearch instances are search.small, search.medium, search.large, search.xlarge, and search.2xlarge, and are one to one replacements for the existing instances; for example, search.small replaces search.m1.small. The new instances leverage the latest generation EC2 instance types underneath, and hence provide better availability and performance at the same pricing.
+Q: How do we update our domains to the new instances?
+We will automatically move your domain to the new instances seamlessly. No action is needed by you. We will do this migration incrementally over the next several weeks, starting with domains that are on the 2013 version of CloudSearch. You will see a notification on the console once your domain is updated to the new instance types. Any new domains that you create, will automatically start using the new instances. If you have any questions about the migration, please reach out to AWS support.
+Q: Will I incur additional cost due to the new instances?
+No. These instances are priced the same as the instances that you were using earlier or are currently using, and offer better availability and performance.
+Q: My domain is running previous generation CloudSearch instances such as search.m2.2xlarge. Will my domain be migrated?
+Yes, your domain will be migrated to equivalent new instances in subsequent phases of the migration. For example, search.m2.2xlarge will be updated to search.previousgeneration.2xlarge. These instances are priced the same as the existing instances, and provide better stability for your domain.
+Q: What new features does Amazon CloudSearch support?
+With this latest release Amazon CloudSearch supports several new search and administration features. The key new features include:
+Language support:
+34 languages, plus "multiple" to handle mixed language fields
+Per-field language configuration
+Language-specific text analysis
+Multiple levels of algorithmic stemming are available for many languages, including "none"
+Enhanced search features:
+Suggestions
+Highlighting
+Geospatial search
+New data types: date, double, 64 bit signed int, latlon
+Sloppy phrase search
+Term boosting
+Enhanced range searching for all field types
+Support for multiple query parsers: simple, structured, lucene, dismax
+Query parser configuration options
+Administration features:
+High availability option
+IAM integration
+User configurable scaling
+Available in additional AWS Regions: Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Seoul), and South America (Sao Paulo)
+Q: Does Amazon CloudSearch still support dictionary stemming?
+Yes. The new version of Amazon CloudSearch supports dictionary stemming in addition to algorithmic stemming.
+Q: Does the new version of Amazon CloudSearch use Apache Solr?
+Yes. The latest version of Amazon CloudSearch has been modified to use Apache Solr as the underlying text search engine. Amazon CloudSearch now provides several popular search engine features available with Apache Solr in addition to the managed search service experience that makes it easy to set up, operate, and scale a search domain.
+Q: Can I access the new version of Amazon CloudSearch through the console?
+Yes. You can access the new version of Amazon CloudSearch through the console. If you are a current Amazon CloudSearch customer with existing search domains, you have the option to select which version of Amazon CloudSearch you want to use when creating new search domains. New customers will use the new version of Amazon CloudSearch by default and will not have access to the 2011-01-01 version.
+Q: What data types does the new version of Amazon CloudSearch support?
+Amazon CloudSearch supports two types of text fields, text and literal. Text fields are processed according to the language configured for the field to determine individual words that can serve as matches for queries. Literal fields are not processed and must match exactly, including case. CloudSearch also supports four numeric types: int, double, date, and latlon. Int fields hold 64-bit, signed integer values. Double fields hold double-width floating point values. Date fields hold dates specified in UTC (Coordinated Universal Time) according to IETF RFC3339: yyyy-mm-ddT00:00:00Z. Latlon fields contain a location stored as a latitude and longitude value pair.
+Q: Will my existing search domains created with the 2011-02-01 version of Amazon CloudSearch continue to work?
+Yes. Existing search domains created with the 2011-02-01 version of Amazon CloudSearch will continue to work.
+Q: Will I be able to use the new features on my existing search domains created with the 2011-01-01 version of Amazon CloudSearch?
+No. Existing search domains created with the 2011-01-01 version of Amazon CloudSearch will not have access to the features available in the new version. To access the new features you will have to create a new search domain using the 2013-01-01 version of Amazon CloudSearch.
+Q: How can I migrate my applications built using the 2011-01-01 version of Amazon CloudSearch to the new version of Amazon CloudSearch?
+To use the new version of Amazon CloudSearch you need to recreate existing domains using the new version of Amazon CloudSearch and re-upload your data. For more information, see Migrating to the 2013-01-01 API in the Amazon CloudSearch Developer Guide.
+Q: Will AWS continue to support the 2011-02-01 version of Amazon CloudSearch?
+Yes. AWS will continue support for the 2011-02-01 version of Amazon CloudSearch.
+Q: Can I create new search domains using the 2011-02-01 version of Amazon CloudSearch?
+Current Amazon CloudSearch customers who have existing 2011-02-01 domains will be able to choose whether their new domains use the 2011-02-01 API or the new 2013-01-01 API. Search domains created by new customers will automatically be created with the 2013-01-01 API.
+Q: Can I take advantage of the free trial offer with the new version of Amazon CloudSearch?
+New customers will still be able to take advantage of the free trial offer available with Amazon CloudSearch. See the Amazon CloudSearch Free Trial page for details.
+Q: How do I get started with Amazon CloudSearch?
+To sign up for Amazon CloudSearch, click the Create Free Account button on the Amazon CloudSearch detail page and complete the sign-up process. You must have an Amazon Web Services account. If you do not already have one, you will be prompted to create an AWS account when you begin the Amazon CloudSearch sign-up process.
+After you have signed up, select Amazon CloudSearch from the AWS Management Console. Using the Amazon CloudSearch console you can quickly create a search domain, configure your search fields, upload sample data, and send search queries to your search domain. You can also use the AWS SDKs and the CLI to perform these operations.
+For more information, see the Getting Started tutorial in the Amazon CloudSearch Developer Guide.
+Q: Do the AWS SDKs support Amazon CloudSearch?
+Yes, the AWS SDKs for Java, Ruby, Python, .Net, PHP, and Node.js provide support for CloudSearch. Using the AWS SDKs you can quickly create a search domain, configure your search fields, upload data, and send search queries to your search domain.
+Q: Does the AWS CLI support Amazon CloudSearch?
+Yes, the AWS CLI provides support for CloudSearch. Using the AWS CLI you can quickly create a search domain, configure your search fields, upload data, and send search queries to your search domain.
+Q: Can I still use the Amazon CloudSearch CLTs?
+Yes, the Amazon CloudSearch CLTs will continue to work.
+Q: What is a search domain and how do I create one?
+A search domain is a data container and a set of services that make the data searchable. These services include:
+A document service that allows you upload data to your domain for indexing.
+A search service that allows you to perform search requests against your indexed data.
+A configuration service for controlling your domain's behavior (including relevance ranking).
+You can create, manage, and delete search domains using the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: How do I upload documents to my search domain?
+You upload documents to your domain using the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: Do my documents need to be in a particular format?
+To make your data searchable, you need to format your data in JSON or XML.  Each item that you want to be able to receive as a search result is represented as a document. Every document has a unique document ID and one or more fields that contain the data that you want to search and return in results. Amazon CloudSearch generates a search index from your document data according to the index fields configured for the domain. As your data changes, you submit updates to add or delete documents from your index.
+Q: How do I create document batches formatted for Amazon CloudSearch?
+To create document batches that describe your data, you create JSON or XML text files that specify:
+The operation type: add or delete
+A unique identifier
+The actual fields and their data
+The following example shows a single document batch formatted in JSON:
+[
+{
+"fields" : {
+"directors" : [
+"Francis Lawrence"
+],
+"release_date" : "2013-11-11T00:00:00Z",
+"genres" : [
+"Action",
+"Adventure",
+"Sci-Fi",
+"Thriller"
+"image_url" : "http://ia.media-imdb.com/images/M/MV5xMzzAx._V1_SX400_.jpg",
+"plot" : "Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem.",
+"title" : "The Hunger Games: Catching Fire",
+"rank" : 4,
+"running_time_secs" : 8760,
+"actors" : [
+"Jennifer Lawrence",
+"Josh Hutcherson",
+"Liam Hemsworth"
+"year" : 2013
+},
+"id" : "tt1951264",
+"type" : "add"
+}
+]
+Note that numeric values such as the year are not enclosed in quotes, and that values in a multi-value field such as genres are listed in a JSON array.
+To make this data available to Amazon CloudSearch, you can save it to a file and upload it using the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: How do my documents get indexed?
+Documents are automatically indexed when you upload them to your search domain. You can also explicitly re-index your documents when you make configuration changes by sending an IndexDocuments request.
+Q: When do I need to re-index my domain?
+Certain configuration options, such as adding a new index field or updating your stemming or stopword dictionaries, are not available until your domain is re-indexed. When you have made changes that require indexing, the domain’s status will indicate that it needs to be indexed. You can initiate indexing from the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: How do I send search requests to my search domain?
+Every search domain has a REST-based search service with a unique URL (search endpoint) that accepts search requests for its document set. You can send search requests from the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: Can a search domain span multiple Availability Zones?
+Yes. If you enable the Multi-AZ option, Amazon CloudSearch deploys additional instances in a second availability zone in the same Region. For more information, see Configuring Availability Options in the Amazon CloudSearch Developer Guide.
+Q: Can I move a search domain from one region to another?
+At this time, there is no way to automatically migrate a search domain from one region to another. You will need to create a new domain in the target region, configure the domain and upload your data, then delete the original domain.
+Q: How do I delete my search domain?
+To delete a search domain, click on Delete Domain button in the Amazon CloudSearch console. You can also delete domains through the AWS SDKs or AWS CLI.
+Q: How do I delete documents from my search domain?
+To delete documents you specify a delete operation in your batch upload that contains the ID of the document you want to remove.
+You can submit data updates through the AWS Management Console, AWS SDKs, or AWS CLI.
+Q: How do I empty my search domain?
+If you wish to maintain your domain’s endpoints, you can send a delete for each document that is in your domain.
+Q: Why is my domain in the "Processing" state?
+A domain can be in one of three different states: “processing,” “active,” or “reindexing.” Normally, your domain will be in the “active” state, which indicates that no changes are currently being made, that the domain can be queried and updated, and that all previous changes are currently visible in the search results.
+When a domain needs to be re-indexed, Amazon CloudSearch needs to rebuild the index entirely. However, the domain does not enter the “processing” state until you initiate reindexing. During this stage, the domain can still be queried and updated, but the configuration changes won't be visible in search results until indexing is completed, and the domain's status changes back to “active.”
+You can also continue to upload document batches to your domain. However, if you submit a large volume of updates while your domain is in the “processing” state, it can increase the amount of time it takes for the updates to be applied to your search index. If this becomes an issue, slow down your update rate until the domain returns to the “active” state.
+Q: What are the best practices for bootstrapping data into CloudSearch?
+After you’ve launched your domain, the next step is loading your data into Amazon CloudSearch. You’ll likely need to upload a single large dataset, and then make smaller updates or additions as new data comes in. The following guidelines will help make bootstrapping your initial data into CloudSearch quick and easy.  1. Use the curl-v command line tool when preparing your script
+During the upload of a dataset, the script you’ve written reads your data and uses it to create JSON or XML documents. We recommend preparing this script in advance, and using curl or another simple command line tool to see if you’re able to upload the documents that the script creates. The “-v” option in curl often provides more detailed information about syntax problems than the AWS SDK or Boto, which both suppress errors for production purposes. Curl displays more detailed error messages, which helps identify the sources of any issues.  2. Use the UTF-8 character code
+Make sure that all data is formatted in the UTF-8 character code format, and that any bad Unicode characters have been removed before uploading to CloudSearch. Illegal characters will cause the document upload to fail.  3. Batch your documents
+Batching your documents is perhaps the most important step in data bootstrapping. Submitting documents to CloudSearch individually is not only inefficient, but also leads to preventable errors.
+A document batch is simply a collection of add and delete operations that represent the documents you want to add, update, or delete from your domain. Batches are described in either JSON or XML, and when you upload them to a domain, the data is indexed automatically, according to the domain's indexing options. Since you’re billed for the total number of document batches uploaded to your search domain, it’s more cost-effective to upload your data in batches of 5 MB, the maximum allowed per upload. You can also upload batches in parallel to reduce the amount of time it takes to upload your data.  4. Pre-scale
+It’s also important to pre-scale your data before uploading it to CloudSearch. Pre-scaling involves selecting the appropriate instance type for the amount of data you wish to upload.
+Choosing an instance with enough capacity to handle the size of your upload can help prevent errors and a high replication count. Although replication can help decrease search response time, it doesn’t increase the size of the data pipe or address core problems in data uploads.
+CloudSearch will automatically scale up to larger instances as you send more data. Still, pre-selecting the appropriate instance type saves time later in the bootstrapping process, as scaling from one instance to another tends to be a slower process. Below is a sample script to pre-scale the domain for boostrapping and to restore the instance type after data is loaded.
+Pre-scale before bootstrapping:
+aws cloudsearch update-scaling-parameters --domain-name foo --scaling-parameters DesiredInstanceType=search.m3.2xlarge
+aws cloudsearch index-documents --domain-name foo
+Restore after data loading:
+aws cloudsearch update-scaling-parameters --domain-name foo --scaling-parameters DesiredInstanceType=search.m1.small
+Q: What are some ways to avoid 504 errors?
+If you’re seeing 504 errors or high replication counts, try moving to larger instance type. For example, if you’re having problems with m3.large, move up to m3.xlarge. If you continue to get 504 errors even after pre-scaling, start batching the data and increase the delay between retries.
+Q: What are the best practices to accelerate domain configuration and re-indexing?
+When you change the configuration options of your search domain, you must rebuild your search index for those changes to take effect in search results. Rebuilding the index can take 30 to 60 minutes whether you make one configuration change at a time or several configuration changes at once. Even if your domain has only a small number of documents, re-indexing takes this time because of the processing and provisioning necessary to build the index and distribute it. Therefore, you should plan your configuration changes ahead of time, make all of your changes at once, and then re-index your domain. The same applies when setting up a new domain - plan your configuration before you set it up so that you can index only once and get up and running in the shortest time possible.  Some domain changes require re-indexing while others just require re-deploying the existing index. Redeploying the domain takes 10 to 15 minutes compared to 30-60 minutes for re-indexing. During re-deployment, CloudSearch creates new nodes, deploys the index on them, and shuts down the old nodes. Your domain status changes to “Processing” during re-deployment. When re-indexing is needed, your domain status changes to “Needs Indexing,” followed by “Processing” once you have initiated indexing. Once the new index is created, your domain is re-deployed. The following table summarizes which changes require re-indexing followed by re-deployment and which changes require just re-deployment. Understanding this will help you better plan your configuration changes.
+Change
+Needs re-indexing
+Needs re-deployment
+Multi-AZ
+No
+Yes
+Index fields
+Index field options
+Instance type
+Partition count
+Replication count
+Suggesters
+Expressions
+Analysis schemes
+Q: What search features does Amazon CloudSearch provide?
+Amazon CloudSearch provides features to index and search both structured data and plain text, including faceted search, free text search, Boolean search expressions, customizable relevance ranking, query time rank expressions, field weighting, searching and sorting of results using any field, and text processing options including tokenization, stopwords, stemming and synonyms. It also provides near real-time indexing for document updates. New features include:
+Autocomplete suggestions
+New data types: date, double, 64 bit signed int, LatLon
+Dynamic fields
+Index field statistics
+Search filters that don't affect relevance
+Q: What is faceting?
+Faceting allows you to categorize your search results into refinements on which the user can further search. For example, a user might search for "umbrellas", and facets allow you to group the results by price, such as $0-$10, $10-$20, $20-$40, and so on. Amazon CloudSearch also allows for result counts to be included in facets, so that each refinement has a count of the number of documents in that group. The example could then be: $0-$10 (4 items), $10-$20 (123 items), $20-$40 (57 items), and so on.
+Q: What languages does Amazon CloudSearch support?
+Amazon CloudSearch currently supports 34 languages: Arabic (ar), Armenian (hy), Basque (eu), Bulgarian (bg), Catalan (ca), simplified Chinese (zh-Simp), traditional Chinese (zh-Trad), Czech (cs), Danish (da), Dutch (nl), English (en), Finnish (fi), French (fr), Galician (gl), German (de), Greek (el), Hebrew (he), Hindi (hi), Hungarian (hu), Indonesian (id), Irish (ga), Italian (it), Japanese (ja), Korean (ko), Latvian (la), Norwegian (no), Persian (fa), Portuguese (pt), Romanian (ro), Russian (ru), Spanish (es), Swedish (sv), Thai (th), and Turkish (tr). In addition, Amazon CloudSearch supports a Multiple (mul) option for fields that contain mixed languages.
+Q: Does Amazon CloudSearch support geospatial search?
+Yes, Amazon CloudSearch has a native type to support latitude and longitude (latlon), so that you can easily implement geographically-based searching and sorting. For more information, see Searching and Ranking Results by Geographic Location in the Amazon CloudSearch Developer Guide.
+Q: How quickly will my uploaded documents become searchable?
+Documents uploaded to a search domain typically become searchable within seconds to a few minutes.
+Q: How many search requests can I send to my search domain?
+There is no intrinsic limit on the number of search requests that can be sent to a search domain.
+Q: What factors affect the latency of my search requests?
+Your search requests are typically processed within a few hundred milliseconds, frequently much faster. Latency is affected by many factors including the time it takes for your request and responses to travel between your own application and your search domain, the complexity of your search request, and how heavily you are using your search domain.
+Q: What makes one search request more complex than another?
+Amazon CloudSearch is designed to efficiently process a wide range of search requests very quickly. Search requests vary in complexity depending on the expressions that determine which documents match and additional criteria that determine how closely each document matches. Search requests that match a large number of documents take longer to process than those that match very few documents. Search requests that compute complex expressions take longer to process than those that rank using a simple criteria such as a single field. To help you understand the difference in complexity between Search requests, the time it took to process the request is returned as part of the response.
+Q: Where should I run my search application to minimize communication time with my search domain?
+Applications hosted in the same AWS Region as your search domain will experience the fastest communication times.
+Q: What is a search instance?
+A search instance is a single search engine in the cloud that indexes documents and responds to search requests. It has a finite amount of RAM and CPU resources for indexing data and processing requests.
+Q: What is a search partition?
+A search partition is the portion of your data which fits on a single search instance. A search domain can have one or more search partitions, and the number of search partitions can change as your documents are indexed.
+Q: How does my search domain scale to meet my application needs?
+Search domains scale in two dimensions: data and traffic. As your data volume grows, you need more (or larger) Search instances to contain your indexed data, and your index is partitioned among the search instances. As your request volume or request complexity increases, each Search Partition must be replicated to provide additional CPU for that Search Partition. For example, if your data requires three search partitions, you will have 3 search instances in your search domain. As your traffic increases beyond the capacity of a single search instance, each partition is replicated to provide additional CPU capacity, adding an additional three search instances to your search domain. Further increases in traffic will result in additional replicas, to a maximum of 5, for each search partition.
+Q: How much data can I upload to my search domain?
+The number of partitions you need depends on your data and configuration, so the maximum data you can upload is the data set that when your search configuration is applied results in 10 search partitions. When you exceed your search partition limit, your domain will stop accepting uploads until you delete documents and re-index your domain. If you need more than 10 search partitions, please contact us.
+Q: Do I need to select the number and type of search instances for my search domain?
+CloudSearch is a fully managed search service that automatically scales your search domain and selects the number and type of search instances. All search instances in a given search domain are of the same type and this type can change over time as your data or traffic grows.
+You can also configure scaling options for an Amazon CloudSearch domain to:
+Increase the upload capacity
+Speed up search requests
+Increase the search capacity
+Improve fault tolerance
+Q: What instance types does Amazon CloudSearch support?
+Amazon CloudSearch supports the following instance types:
+Small Search Instance
+Large Search Instance
+Extra Large Search Instance
+Double Extra Large Search Instance
+Q: How do I find out the number and type of search instances in my search domain?
+You can find out the number and type of search instances in your search domain by using the AWS Management Console, AWS SDKs, or AWS CLI. The number and type of search instances change over time and automatically scale up and down according to your indexable data and search traffic.
+Q: How quickly does my search domain scale to accommodate changes in data and traffic?
+Search domains typically react to increases in traffic changes within minutes. Changes in data volume or a reduction in traffic might take longer but you can accelerate this process by invoking an IndexDocuments operation. If you are about to upload a large amount of data or expect a surge in query traffic, you can prescale your domain by setting the desired instance type and replication count. For more information, see Configuring Scaling Options in the Amazon CloudSearch Developer Guide.
+Q: Does Amazon CloudSearch support Multi-AZ deployments?
+Yes. Amazon CloudSearch supports Multi-AZ deployments. When you enable the Multi-AZ option, Amazon CloudSearch provisions and maintains extra instances for your search domain in a second Availability Zone to ensure high availability. Updates are automatically applied to the instances in both Availability Zones. Search traffic is distributed across all of the instances and the instances in either zone are capable of handling the full load in the event of a failure.
+Q: How does the new Multi-AZ feature work? Will my system experience any downtime in the event of a failure?
+When the Multi-AZ option is enabled, Amazon CloudSearch instances in either zone are capable of handling the full load in the event of a failure. If there's service disruption or the instances in one zone become degraded, Amazon CloudSearch routes all traffic to the other Availability Zone. Redundant instances are restored in a separate Availability Zone without any administrative intervention or disruption in service.
+Some inflight queries might fail and will need to be retried. Updates sent to the search domain are stored durably and will not be lost in the event of a failure.
+Q: Can a search domain be deployed in more than 2 Availability Zones?
+No. The maximum number of Availability Zones a domain can be deployed in is two.
+Q: Can I modify the Multi-AZ configuration on my search domain?
+Yes. You can turn the Multi-AZ configuration on and off for your search domains. The service is not interrupted when this setting is changed.
+Q: Can I choose which Availability Zones my search domain is deployed in?
+No. At this time Amazon CloudSearch automatically chooses an alternate Availability Zone in the same Region.
+Q: Can I choose the instance type my domain uses?
+Yes. With the latest release, Amazon CloudSearch enables you to specify the desired instance type for your domain. If necessary, Amazon CloudSearch will scale your domain up to a larger instance type, but will never scale back to a smaller instance type.
+Q: What is the fastest way to get my data into CloudSearch?
+By default, all domains start out on a small search instance. If you need to upload a large amount of data, you should prescale your domain to a larger instance type. For more information, see Bulk Uploads in the Amazon CloudSearch Developer Guide.
+Q: How do I know which instance type I should choose for my initial setup?
+For datasets of less than 1 GB of data or fewer than one million 1 KB documents, start with the default settings of a single small search instance. For larger data sets consider pre-warming the domain by setting the desired instance type. For data sets up to 8 GB, start with a large search instance. For datasets between 8 GB and 16 GB, start with an extra large search instance. For datasets between 16 GB and 32 GB, start with a double extra large search instance. Contact us if you need more upload capacity or have more than 500 GB to index.
+Q: What additional security features are available with the new version of Amazon CloudSearch?
+With the latest release, Amazon CloudSearch now provides IAM integration for the configuration service and all search domain services. You can control access to specific Amazon CloudSearch actions and require request authentication for all requests. Requests are authenticated using Signature Version 4 signing.
+Q: How do I upload my data to Amazon CloudSearch securely?
+You send us your data using a secure and encrypted SSL connection by using HTTPS instead of HTTP when you connect to Amazon CloudSearch.
+Q: My data is already encrypted. Can I just send you the encrypted data and the encryption key?
+We do not support user-generated encryption keys. You will need to decrypt the data and upload it using HTTPS.
+Q: Do you support encrypted search results?
+Yes. We support HTTPS for all Amazon CloudSearch requests.
+Q: How can I prevent specific users from accessing my search domain?
+Amazon CloudSearch supports IAM integration for the configuration service and all search domain services. You can grant users full access to Amazon CloudSearch, restrict their access to specific domains, and allow or deny access to specific actions.
+Q: How will I be charged and billed for my use of Amazon CloudSearch?
+There are no set-up fees or commitments to begin using the service. Following the end of the month, your credit card will automatically be charged for that month's usage. You can view your charges for the current billing period at any time on the AWS web site by logging into your Amazon Web Services account and clicking Account Activity under Your Web Services Account.
+Q: How much does it cost to use Amazon CloudSearch?
+There are no changes to the pricing structure for Amazon CloudSearch at this time. For detailed pricing information, see Amazon CloudSearch Pricing.
+Q: Is a free trial available for Amazon CloudSearch?
+Yes, a free trial is available for new CloudSearch customers. For more information, see Amazon CloudSearch 30 Day Free Trial.
+Q: How much does it cost to use the new version of Amazon CloudSearch?
+There are no changes to the pricing structure for Amazon CloudSearch at this time. See the Pricing page for more information.
+Q: Are there any cost savings to using the new version of Amazon CloudSearch?
+The latest version of Amazon CloudSearch features advanced index compression and supports larger indexes on each instance type. This makes the new version of Amazon CloudSearch more efficient than the previous version and can result in significant cost savings.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.

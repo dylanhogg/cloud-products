@@ -79,7 +79,7 @@ Amazon SageMaker supports the leading machine learning frameworks
 Key features to prepare data, and build, train, and deploy ML models
 Improve productivity using the first fully integrated development environment (IDE) for ML
 Amazon SageMaker Studio provides a single, web-based visual interface where you can perform all ML development steps required to prepare data, and build, train, and deploy models.
-Learn more »
+Learn more
 Build, train, and tune models automatically
 Amazon SageMaker Autopilot selects the best algorithm for the prediction, and automatically builds, trains, and tunes machine learning models without any loss of visibility or control.
 Reduce data labeling costs by up to 70%
@@ -104,15 +104,15 @@ Amazon SageMaker offers a comprehensive set of security features, including encr
 Improve transparency
 Amazon SageMaker customers
 Amazon SageMaker is used by tens of thousands of customers across a wide range of industries.
-See more customer stories »
+See more customer stories
 Get started with Amazon SageMaker JumpStart
 Amazon SageMaker is a machine learning service that you can use to build, train, and deploy ML models for virtually any use case. For a quick technical introduction, see the SageMaker step-by-step guide. To help you get started with your ML project, Amazon SageMaker JumpStart offers a set of pre-built solutions for the most common use cases that you can deploy with just a few clicks. These solutions are fully customizable so you can modify them to suit the needs of your specific use case and datasets.
-SageMaker step-by-step guide »
-SageMaker JumpStart »
+SageMaker step-by-step guide
+SageMaker JumpStart
 Predictive maintenance
 Georgia Pacific uses SageMaker to develop ML models that detect machine issues early.
 Computer vision
 3M is using defect detection models built on SageMaker to improve the effectiveness of its quality control processes.
 Autonomous driving
-Lyft Level 5 standardized on SageMaker for training and reduced model training times from days to under a couple of hours.
+Lyft Level 5 standardized on SageMaker for training and reduced model training times from days to under a couple of hours.
 Get started with Amazon SageMaker

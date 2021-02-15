@@ -1,0 +1,68 @@
+General
+Q: How does AWS License Manager work?
+A: AWS License Manager provides you with the flexibility and control to manage license usage to match your organizational structure and processes. AWS License Manager can be set in different configurations to address specific business needs. Here are three steps to get started with AWS License Manager:
+Define licensing rules: Administrators work with the relevant stakeholders (for example, business or compliance teams) in your organization to carefully review licensing agreements, and create licensing rules in AWS License Manager. Licensing rules contain settings that are configured to reflect the terms of your enterprise agreement.
+Enforce licensing rules: After rules are created, they can be applied in several different ways to track license usage and compliance. Administrators can attach the rules to the organization’s specific Amazon Machine Images (AMIs), create AWS CloudFormation templates, use Amazon EC2 launch templates, or simply attach them to applications in AWS Service Catalog. After the rules are created and attached to the relevant instances to be deployed, end users in your organization can seamlessly launch AWS resources such as EC2 instances with the certainty they are licensed correctly. Administrators can track usage through AWS License Manager’s built-in dashboard. AWS License Manager flags any resources that are not compliant with the predefined rules.
+Discover usage of software installed on AWS and on-premises environments: AWS License Manager integrates seamlessly with AWS Systems Manager, allowing discovery of any software installed on your AWS resources. With AWS Systems Manager, you can manage instances running on AWS and in your on-premises data center through a single interface. AWS Systems Manager securely communicates with a lightweight agent installed on your servers to execute management tasks. This helps you manage resources for Windows and Linux operating systems running on Amazon EC2 or on-premises. After the instances are attached to AWS License Manager, administrators can search for any operating system or application software through a single pane across AWS resources and on-premises servers. You can apply your licensing rules to the discovered software and track all the applications through the built-in dashboard.
+Q: What types of software licenses can I track using AWS License Manager?
+A: With AWS License Manager, you can track software that is licensed based on virtual cores (vCPUs), physical cores, sockets, or number of instances. This includes a variety of software products from vendors including Microsoft, Oracle, IBM, and SAP. Common use cases include tracking Oracle databases, Microsoft Windows Server, and SQL Server licenses that can be licensed by physical and virtual cores.
+Q: Which AWS services are supported through AWS License Manager?
+A: AWS License Manager supports Amazon EC2, Amazon Relational Database Service (Amazon RDS), AWS Marketplace, and AWS Systems Manager (includes support for on-premises environments and AWS cloud). You can use AWS License Manager to track licenses across your EC2 instances using default tenancy, Dedicated Instances, Dedicated Hosts, Spot instances, Spot Fleet, and Auto Scaling groups.
+Q: Does AWS License Manager support tracking license usage on Amazon Relational Database Service (RDS)?
+A: You can configure License Manager to help you automatically track licenses of Oracle database engine editions and options and packs, as you grow your database footprint on Amazon RDS.
+Q: Does AWS License Manager support tracking license usage outside of AWS?
+A: Yes. You can use AWS License Manager along with AWS Systems Manager Agent to track licenses outside of AWS, including licenses for on-premises servers.
+Q: How does AWS License Manager work with AWS Organizations?
+A: AWS License Manager integrates with AWS Organizations seamlessly. Administrators can sign in to their organizational master account and link all their organizational accounts. They can manage and control license usage centrally using the master account.
+Q: How can I leverage the benefits of AWS License Manager with bring your own license (BYOL) products purchased from AWS Marketplace?
+A: AWS License Manager allows you to associate licensing rules to AWS Marketplace BYOL AMI products and benefit from centralized license management tracking and compliance. AWS License Manager doesn’t change the way you obtain or activate your BYOL AMI’s in AWS Marketplace. For example, if you launch an EC2 instance, you provide the license key obtained directly from the seller to activate the software.
+Compliance
+Q: How does AWS License Manager help me stay compliant?
+A: AWS License Manager reduces the risk of non-compliance by increasing transparency and enforcing and tracking licensing rules that administrators define. AWS License Manager provides built-in dashboards that can be used when considering new license purchases, reporting to procurement, and in vendor audits. However, customers are responsible for compliance and assume the responsibility of carefully understanding and adding rules into AWS License Manager based on their licensing agreements. While AWS cannot participate in audits, AWS License Manager’s rich reports provide valuable insights that allow for more accuracy and transparency.
+Managed entitlements
+Q: As an administrator, how do I use AWS License Manager managed entitlements with purchases in AWS Marketplace?
+A: When you purchase software licenses in AWS Marketplace, you can track them in AWS License Manager managed entitlements. You can distribute different tiers of licenses to different groups of users (e.g. business units) you create in the software, whenever tiered licenses are available from supported vendors.
+Q: As an administrator, can I use managed entitlements with other AWS services?
+A: Yes, you can use managed entitlements with other AWS services such as AWS Service Catalog to simplify deployments and governance of licensed software. This also applies to third-party software licenses purchased on AWS Marketplace, which are automatically created in AWS License Manager. You can use managed entitlements with AWS Identity and Access Management (AWS IAM) or with AWS accounts to control which workloads and users can use those licenses.
+Q: As an administrator, can I use managed entitlements to manage software licenses on AWS and on-premises deployments?
+A: When you purchase licenses from participating independent software vendors (ISVs) in AWS Marketplace, you can extend license management across both AWS cloud accounts and on-premises environments. You can pay for software licenses through AWS Marketplace, and then manage distribution and track entitlements using managed entitlements.
+Q: As an administrator, can I track and govern license use across my AWS Organization?
+A: Yes, you can turn on the AWS Organizations integration in AWS License Manager. Using the management account, you can now view all licenses distributed to identities in your AWS Organization across all AWS Regions. You can see detailed information about each license, including the expiration date and software capabilities. You also get metrics showing how much of the license is consumed by each identity.
+Q: As a software vendor, how do I onboard directly to AWS License Manager for licenses sold outside of AWS Marketplace?
+A: You can onboard directly through AWS License Manager by creating a public and private key pair through the console or application programming interface (API). License information returned by the APIs are signed with your private key and you can use the public key to verify the signature. Using AWS License Manager’s APIs, you can integrate with your sales order system to create licenses for customers after their purchase and update licenses after renewals. You can also use the APIs to migrate existing licenses from your current system to AWS License Manager. You will need to modify your software to call the APIs to verify a customer’s license before provisioning software capabilities. To simplify integration with the APIs, use the AWS Software Development Kit (AWS SDK).
+Q: As a software vendor, can I enforce that customers are using licenses in compliance with my terms?
+A: Yes. AWS License Manager helps you enforce license use by tracking the amount of software capabilities customers are using against the amount they are entitled. AWS License Manager keeps track of usage across all of the customer identities with access to the licenses. When customers stop using your software, they can return the licenses back to the pool and make them available for reuse through the APIs or let the licenses expire automatically.
+Q: As a software vendor, how do I use AWS License Manager managed entitlements for SaaS software?
+A: You can use AWS License Manager to assign licenses to users. For example, a customer may want to give a license with more capabilities to power users, and a different license to the average user. You can enable this by mapping your users to AWS Identity and Access Management (AWS IAM) roles with AWS Cognito, and then using AWS License Manager to distribute the licenses to those users by specifying their associated IAM roles.
+Q: As a software vendor, how do I use AWS License Manager on-premises without using AWS Identity?
+A: Customers do not have to use AWS Identity with their on-premises applications. You can use AWS License Manager to create a unique short lived token to identify the customer to whom you are giving a license. Next, share this token with the customer. When they launch your software, the customer enters the token to activate the license. Your software should pass the short lived token to the APIs and exchange it for a long lived customer identifier that you use in API calls. For on-premises workloads that do not have an internet connection, you can generate a license file unique to the host that customers can use to run your software on that host.
+Automated discovery
+Q: How do I get started with automated discovery?
+A: You can get started with automated discovery by specifying the product information along with licensing rules in AWS License Manager. Product information may include the name of the software, the publisher, and the version, which tells AWS License Manager how to detect installed software.
+Q: How do I set up tags, and search using these tags?
+A: You should consider having an organization-wide tagging strategy that can help you organize your resources, allocate cost, automate processes, control access, and manage security risk. If you are new to tagging, review AWS recommended tagging best practices to learn how to set up and search using tags.
+Q: Can I search License Included instances as well?
+A: Yes, you can search instances running AWS License Included software.
+Q: Can I combine tag-based search with other search filters?
+A: Yes, you can combine tag-based search with other search filters that AWS License Manager supports. Other search filters include names of operating systems and applications, whether they are License Included or not, AWS Account IDs, and Resource IDs.
+Q: How does automated discovery help you track uninstalled software?
+A: Automated discovery helps you keep track of all instances as you install software. If a software is specified in automated discovery rules, the instances will automatically get tracked by AWS License Manager. Once you uninstall software, AWS License Manager will automatically stop tracking those instances and make the licenses available to you for reuse.
+Q: Do I need to opt in to use the automated accounting feature?
+A: Yes, you need to opt in. You can opt in by specifying a simple setting in automated discovery which will ask AWS License Manager to stop tracking an instance when applications are uninstalled. See the documentation.
+Q: If I install the software again, what happens?
+A: If you install the software again, AWS License Manager’s automated discovery capability will detect it and account for the license usage again.
+Q: What if my vendor agreement says that the licenses are node-locked and that I need to consider them as consumed even if I uninstall?
+A: If your licenses are node-locked to a physical server, you can use AWS License Manager’s license affinity property where you can specify the time period for which your licenses need to be node-locked. AWS License Manager will continue to account for the usage until the license affinity period has elapsed, even if you uninstall your software.
+Pricing
+Q: Are there additional charges attached with using AWS License Manager?
+A: There is no charge for using AWS License Manager. You only pay for the resources created in your account. These include EC2 instances but can also include an S3 bucket for storing software based on AWS Systems Manager, Amazon Athena queries, and AWS Glue jobs for enabling the centralized discovery of the Systems Manager data, and Amazon SNS notifications.
+Learn more about AWS License Manager
+You can set up AWS License Manager in different configurations, but in general there are three distinct phases: Define rules, enforce them, discover new software.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS License Manager in the AWS Console.
+Sign in
+Page Content

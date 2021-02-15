@@ -1,0 +1,29 @@
+AWS IoT Things Graph Overview
+Q: What is AWS IoT Things Graph?
+A: AWS IoT Things Graph is a fully managed service that makes it easy to rapidly build IoT applications by connecting devices (such as sensors and actuators) and web services (such as Amazon Rekognition) from different vendors that speak different protocols and don’t work with each other out of the box. AWS IoT Things Graph allows you to represent things (devices and web services) as models that abstract capabilities from the underlying implementation and make them accessible via APIs, transform messages between various models so they can understand each other, and coordinate interactions between models to create workflows.
+Q: Why should I use AWS IoT Things Graph?
+A: AWS IoT Things Graph simplifies IoT application development and enables you to bring your applications to market faster. A model-based approach allows you to focus on the logic and functionality of your applications instead of dealing with the low-level details of integrating devices and services. IoT applications built using AWS IoT Things Graph are more maintainable, allowing you to swap in similar devices from different manufacturers without redoing your entire application or retrofitting existing installations. As your needs and available devices change, you can adapt without throwing away your existing investments. The simple drag-and-drop interface allows you to build and iterate on applications easily.
+Q: What applications are best suited for AWS IoT Things Graph?
+A: AWS IoT Things Graph is best suited for applications that encompass a wide diversity of devices and services from different manufacturers, that when combined in a specific order, can automate business operations. Such applications are abundant in verticals such as home automation and access management, building energy management, smart agriculture, smart cities, manufacturing, logistics, and oil and gas extraction.
+Q: How does AWS IoT Things Graph work with other AWS IoT services?
+A: AWS IoT Things Graph provides a higher-level abstraction on AWS IoT by allowing you to define things and their interactions, and making sure interactions work across things without having to worry about device specific details and managing sequencing of events. AWS IoT Things Graph builds on the capabilities of AWS IoT Core and AWS IoT Greengrass.
+Q: In which regions is AWS IoT Things Graph available?
+A: AWS IoT Things Graph is now generally available in the US East (Northern Virginia), US West (Oregon), EU (Ireland), APAC (Sydney), APAC (Seoul), and APAC (Tokyo) regions. Please see the AWS Region table for all the regions where AWS IoT Things Graph is available.
+Q: How much does AWS IoT Things Graph cost?
+A: Please see the AWS IoT Things Graph pricing page for more details.
+Getting Started
+Q: How do I get started with AWS IoT Things Graph?
+A: AWS IoT Things Graph is generally available. You can start building workflows by logging into AWS IoT Things Graph Console (click here). The AWS IoT Things Graph console allows you to build models, create flows, configure your deployment, and manage and monitor your flows, all from a single location. If you haven’t already, sign up for an AWS account here.
+Q: Where can I deploy my AWS IoT Things Graph application?
+A: Once your application is built, you can deploy it to the AWS Cloud or to edge gateways running AWS IoT Greengrass. Deployment is easy and can be initiated with one click from the AWS IoT Things Graph console. Then, AWS IoT Things Graph asks you to select devices registered in the AWS IoT registry that are represented as models in your application. IoT Things Graph bundles your application details and the related models along with the AWS IoT Things Graph run-time, and pushes it to the AWS Cloud or your AWS IoT Greengrass-enabled device where it starts listening to messages and coordinating interactions.
+Q: Which protocols does AWS IoT Things Graph handle?
+A: AWS IoT Things Graph supports MQTT, HTTP, and Modbus.
+Learn more about pricing
+Pricing based on edge deployments
+Learn more
+Sign up for an AWS account
+Instantly get access to the AWS Free Tier and get started with AWS IoT Things Graph
+Sign up
+Check out the service features
+Explore more details about models, workflows, and application performance monitoring
+Page Content

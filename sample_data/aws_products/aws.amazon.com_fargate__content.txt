@@ -19,8 +19,8 @@ How it works
 What's New
 date
 1
-…
-See all announcements »
+...
+See all announcements
 Customers using AWS Fargate
 How Turner migrated to Fargate for its containerized apps
 Datree achieved operational efficiency with Fargate

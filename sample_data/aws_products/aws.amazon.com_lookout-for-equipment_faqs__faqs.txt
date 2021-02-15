@@ -1,0 +1,69 @@
+General
+Q: What is Amazon Lookout for Equipment?
+A: Amazon Lookout for Equipment uses the data from your sensors to detect abnormal equipment behavior, so you can take action before machine failures occur and avoid unplanned downtime. Customers that want to build ML models to monitor the health or efficiency of their equipment can directly upload their historical sensor data to Amazon Lookout for Equipment and automatically build a ML model that learns the normal behavior patterns and alerts to abnormal behavior. Customers can set up Amazon Lookout for Equipment to read real-time data from their equipment and detect the current behavior of the asset.
+Q: Why should I use Amazon Lookout for Equipment?
+A: Current methods of analyzing data from industrial equipment often lead to too many alerts or an overgeneralized physics or statistics based model that does not adapt to the unique operating conditions of each piece of equipment. Amazon Lookout for Equipment benefits customers who have their own sensors generating data on industrial equipment and want to build custom models to detect abnormal behavior such as failure patterns or inefficient processes. Amazon Lookout for Equipment’s key benefits include:
+Ease of use: Lookout for Equipment removes the complexities of data science so you can focus on your data and use case without needing deep technical experience in machine learning.
+Fast proof of concepts: Lookout for Equipment automates away many of steps in building models on industrial data so you can focus getting the right output and fast.
+Cost Effectiveness: Lookout for Equipment is priced based on usage, so training and inferencing can be set up and automated for cost effective model deployment,
+Accuracy: While not all equipment issues can be seen in the data, Lookout for Equipment can find key abnormal equipment behavior with best in class detection algorithms
+Scale: Lookout for Equipment can be used across thousands of pieces of equipment located across the world.
+Q: How does this service relate to and work with other AWS services?
+A: Lookout for Equipment reads directly from your Amazon S3 bucket and uses a variety of AWS services under the hood. Lookout for Equipment also works with AWS IoT SiteWise as customer can connect their sensors or historical data sets to AWS IoT SiteWise and then leverage Lookout for Equipment for model development.
+Q: What type of sensors does Lookout for Equipment work with?
+A: Lookout for Equipment is designed to work with any time series analog data, most commonly referred to as data tags. This can include data such as temperature, flow rates, rpms from components including sensors and actuators. As long as the tags vary over time and are relevant to the machines condition and/or process characteristics, Lookout for Equipment will work with the data.
+Q: Does Lookout for Equipment use pre-trained models?
+A: No. Lookout for Equipment does not use pre-trained models. The wide variety of industrial equipment types and operating environments make pre-trained models very difficult to use across equipment. Instead, Lookout for Equipment builds a custom model on every data set it is given. Thus, Lookout for Equipment learns the normal operating behavior specific to the equipment and its unique operating environment.
+Q: Can I bring my own ML model or algorithm to Lookout for Equipment?
+A: No. Lookout for Equipment is an automated Machine Learning product. The service is designed to search through algorithms and thresholds itself to find the optimal setting for the given data set.
+Q: Does Lookout for Equipment get smarter over time?
+A: Since Lookout for Equipment is an automated machine learning tool, it can get smarter over time as Lookout for Equipment can be used to retrain a model with new data. This can be done either as new unseen failures occur or as a model drifts over time.
+Q: Can Lookout for Equipment be used for real time analysis?
+A: Yes. Lookout for Equipment is designed for real time analysis. First, a user needs to set up to publish sensor readings to Amazon S3. Then, with scheduled inferencing, a user can set a schedule ranging from one minute to one hour. As data arrives in Amazon S3, Lookout for Equipment will grab the new data at the desired schedule, run inferencing on the data, and then deposit the results into another S3 bucket.
+Q: Are there restrictions on the number of sensors I can use to build a model?
+A: Lookout for Equipment currently allows up to a maximum of 300 sensors (tags) for one model.
+Q: What kind of use cases does Lookout for Equipment support? What use cases are not supported?
+A: Lookout for Equipment is built for applications that involve stationary equipment that operate continuously and with limited variability in their operating conditions. This can include rotating equipment such as pumps, compressors, motors etc. as well as assets like heat exchangers, boilers and inverters. It is not meant for equipment that are run infrequently and that have high variability in operating conditions.
+Q: How do customers get up and running with Lookout for Equipment?
+A: You can get started by creating an AWS account at aws.amazon.com and accessing the Amazon Lookout for Equipment developer console which walks you through an intuitive set-up. Developers can then import their historical equipment data via Amazon S3. Then, with only a few API calls, you can train a model automatically. Once trained, the models can be deployed with a scheduled API call. When deployed, developers call the service to get real-time abnormal state detection.
+Q: What file types does Lookout for Equipment accept?
+A: Lookout for Equipment works with CSV files.
+Q: What regions is Lookout for Equipment available?
+A: Lookout for Equipment will be available in US west, Dublin, Ireland and Seoul, South Korea,
+Q: What are the key use cases supported by Amazon Lookout for Equipment?
+A: Lookout for Equipment is made for industrial process equipment that operate continuously and with low variability in operating conditions. Some good examples include
+Compressors
+Pumps
+Motors
+Turbines
+Boilers
+Heat Exchangers
+Inverters
+Lookout for Equipment may not be effective on highly variable equipment
+Construction equipment (cranes, trucks, etc)
+Vehicles
+Robots
+CNC machines
+Q: What are some of the common predictive maintenance applications for Amazon Lookout for Equipment?
+A:
+Predicting failure in a compressor in a pipeline
+Detecting critical issues in a wind turbine
+Finding a leak in a boiler
+Finding process issues in a manufacturing workflow
+Q: What data do I have to provide to Amazon Lookout for Equipment?
+A: Your data set should be time series data generated from an industrial asset such as a pump, compressor, motor etc. Each asset should be generating data from sensors (tags). The data used should be representative of the condition and/or operation of the asset. For example, how could you know if your car is out of oil if you are not measuring the oil level? Making sure that you have the right data is crucial. This is why SMEs are required to ensure the data is relevant to the asset. It is equally as important to make sure that unnecessary and/or unrelated inputs are removed from the data. Amazon Lookout for Equipment works with up to 300 inputs, so make sure you choose the inputs that are crucial to the equipment. Too few inputs and you may be missing critical information, too many and the key inputs might have less of an impact on the detection.
+Choosing the right input data is crucial to the success of using Amazon Lookout for Equipment. It may take you multiple trial and error iterations of Amazon Lookout for Equipment to find the right inputs. We make no claims to guarantee results, success is highly dependent on the relevancy of your data to the equipment issues.
+Q: Are inputs processed by Amazon Lookout for Equipment stored, and how are they used by AWS?
+A: Amazon Lookout for Equipment may store and use content processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Lookout for Equipment and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is important for continuous improvement of your Amazon Lookout for Equipment customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services, or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority, and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. You may opt out of having your content used to improve and develop the quality of Amazon Lookout for Equipment and other Amazon machine-learning/artificial-intelligence technologies by using an AWS Organizations opt-out policy. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Is the content processed by Amazon Lookout for Equipment moved outside the AWS region where I am using Amazon Lookout for Equipment?
+A: Any content processed by Amazon Lookout for Equipment is encrypted and stored at rest in the AWS region where you are using Amazon Lookout for Equipment. Some portion of content processed by Amazon Lookout for Equipment may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Lookout for Equipment customer experience and other Amazon machine-learning/artificial-intelligence technologies. If you opt out of having your content used to develop the quality of Amazon Lookout for Equipment and other Amazon machine-learning/artificial-intelligence technologies by contacting AWS Support, your content will not be stored in another AWS region. You can request deletion of content associated with your account by contacting AWS Support. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Learn more about pricing
+Visit the Amazon Lookout for Equipment pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Lookout for Equipment in the AWS Management Console.
+Sign in
+Page Content

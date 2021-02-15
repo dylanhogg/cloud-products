@@ -33,7 +33,7 @@ Mikhail Artyugin - Technical Director, Playrix
 “We saw the improved accuracy that Lookout for Metrics can bring to our existing anomaly detection process and we are thrilled to start using the service.”
 Brian Ecker - Sr. Staff Engineer, NextRoll
 "Amazon Lookout for Metrics will help us deliver faster and more accurate anomaly detection while enabling quicker remediation to our customers."
-Charles Burden - Head of Business Development, TensorIoT
+Charles Burden - Head of Business Development, TensorIoT
 "The context and insights that Lookout for Metrics extracts enable our customers to make informed decisions when an anomaly is detected. We look forward to using Lookout for Metrics to help our customers better understand their data.”
 Arnav Gupta - AWS Practice Lead, Quantiphi
 "With Lookout for Metrics, we are excited about the possibility to build solutions that detect outliers and anomalies in the real-time data enabling businesses to improve customer experience, sales analytics, and marketing intelligence.”

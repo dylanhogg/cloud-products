@@ -1,7 +1,7 @@
 AWS Service Catalog
 Create, organize, and govern your curated catalog of AWS products
 Get started with AWS Service Catalog
-AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage deployed IT services and your applications, resources, and metadata. This helps you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved IT services they need. With AWS Service Catalog AppRegistry, organizations can understand the application context of their AWS resources. You can define and manage your applications and their metadata, to keep track of cost, performance, security, compliance and operational status at the application level.
+AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage deployed IT services and your applications, resources, and metadata. This helps you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved IT services they need. With AWS Service Catalog AppRegistry, organizations can understand the application context of their AWS resources. You can define and manage your applications and their metadata, to keep track of cost, performance, security, compliance and operational status at the application level.
 AWS Service Catalog - Getting Started (1:34)
 Benefits
 Ensure compliance with corporate standards
@@ -11,7 +11,7 @@ With AWS Service Catalog, you define your own catalog of AWS services and AWS Ma
 Centrally manage IT service lifecycle
 AWS Service Catalog enables you to add new versions of IT services, and end users are notified so they can keep abreast of the latest updates. With AWS Service Catalog you can control the use of IT services by specifying constraints, such as limiting the AWS regions in which a product can be launched.
 Connect with ITSM/ITOM software
-The AWS Service Management Connector helps IT Service Management (ITSM) administrators improve governance over provisioned AWS and third-party products. ITSM tools, such as ServiceNow and Jira Service Desk, connect with the AWS Management and Governance services AWS Service Catalog, AWS Config, and AWS Systems Manager. ITSM users to can connect to AWS Service Catalog to request, provision, and manage AWS and third-party services and resources.
+The AWS Service Management Connector helps IT Service Management (ITSM) administrators improve governance over provisioned AWS and third-party products. ITSM tools, such as ServiceNow and Jira Service Desk, connect with the AWS Management and Governance services AWS Service Catalog, AWS Config, and AWS Systems Manager. ITSM users to can connect to AWS Service Catalog to request, provision, and manage AWS and third-party services and resources.
 Manage all of your application information on AWS
 AWS Service Catalog AppRegistry provides a single repository for collecting and managing your application resources on AWS. You define your application metadata, which may include information from your internal systems, other AWS services, and software vendors. Builders can include a reference to their application within the infrastructure code, and business stakeholders have up-to-date information on application contents and metadata, such as organizational ownership, data sensitivity, and cost center.
 Case studies
@@ -22,7 +22,7 @@ Cloudticity runs its Oxygen managed services platform on AWS and uses AWS Servic
 TechnipFMC enhances security, provisions IT services quickly, and creates a repeatable foundation for future application migrations using the AWS Service Catalog.
 Blog posts & articles
 Date
-More…
+More...
 Additional AWS Service Catalog blog posts are available in the
 AWS Partner Network (APN) Blog.
 Read the getting started guide

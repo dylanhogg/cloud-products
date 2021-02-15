@@ -8,7 +8,7 @@ Creative meets generative
 Generative AI is one of the biggest recent advancements in artificial intelligence technology because of its ability to create something new. It opens the door to an entire world of possibilities for human and computer creativity, with practical applications emerging across industries, from turning sketches into images for accelerated product development, to improving computer-aided design of complex objects. Until now, developers interested in growing skills in this area haven’t had an easy way to get started. Developers, regardless of their background in ML or music, can get started with Generative Adversarial Networks (GANs). This Generative AI technique pits two different neural networks against each other to produce new and original digital works based on sample inputs. With AWS DeepComposer, you can train and optimize GAN models to create original music.
 Keyboard
 Input a melody by connecting the AWS DeepComposer keyboard to your computer, or play the virtual keyboard in the AWS DeepComposer console.
-Learn more »
+Learn more
 Console
 Generate an original musical composition using the pre-trained genre models in the AWS DeepComposer console. Choose from rock, pop, jazz, classical, or build your own custom genre.
 Chartbusters
@@ -26,7 +26,7 @@ Tweak the model hyperparameters such as epochs and learning rate in the AWS Deep
 Get creative and customize your AI-generated music using your favorite Digital Audio Workstation (DAW).
 Upload your finished AI-generated compositions directly from AWS DeepComposer into SoundCloud to share your tracks with the world. Enter monthly AWS DeepComposer Charbusters challenges for a chance to win prizes and glory.
 Tune in to learning capsules
-Learning capsules provide developers with tutorials to learn Generative AI in easy-to-consume, bite-size modules. With learning capsules, developers can now get hands-on with Generative AI techniques in addition to ML concepts. Developers looking to dive deep will be provided with sample Amazon SageMaker notebooks for step-by-step code walk through in each learning capsule. Log on to the AWS DeepComposer console and tune in to learning.
+Learning capsules provide developers with tutorials to learn Generative AI in easy-to-consume, bite-size modules. With learning capsules, developers can now get hands-on with Generative AI techniques in addition to ML concepts. Developers looking to dive deep will be provided with sample Amazon SageMaker notebooks for step-by-step code walk through in each learning capsule. Log on to the AWS DeepComposer console and tune in to learning.
 The keys to machine learning
 Get started by using the MIDI-compatible AWS DeepComposer keyboard to compose melodies as input for your ML generated compositions. Use the hardware buttons on the keyboard to control the volume, playback, and recording flow, as well as use the built-in functions to create more complex inputs. You can also export the MIDI files to your favorite Digital Audio Workstation (DAW) and get even more creative.
 More hands-on learning

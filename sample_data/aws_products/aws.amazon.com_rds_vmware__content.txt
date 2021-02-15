@@ -1,7 +1,7 @@
 Amazon RDS on VMware
 Deploy Amazon RDS managed databases in on-premises VMware environments
 Get Started with Amazon RDS on VMware
-Amazon Relational Database Service (RDS) on VMware lets you deploy managed databases in on-premises VMware environments using the Amazon RDS technology enjoyed by hundreds of thousands of AWS customers. Amazon RDS provides cost-efficient and resizable capacity while automating time-consuming administration tasks including infrastructure provisioning, database setup, patching, and backups, freeing you to focus on your applications. RDS on VMware brings many of these same benefits to your on-premises deployments, making it easy to set up, operate, and scale databases in VMware vSphere private data centers.
+Amazon Relational Database Service (RDS) on VMware lets you deploy managed databases in on-premises VMware environments using the Amazon RDS technology enjoyed by hundreds of thousands of AWS customers. Amazon RDS provides cost-efficient and resizable capacity while automating time-consuming administration tasks including infrastructure provisioning, database setup, patching, and backups, freeing you to focus on your applications. RDS on VMware brings many of these same benefits to your on-premises deployments, making it easy to set up, operate, and scale databases in VMware vSphere private data centers.
 RDS on VMware allows you to utilize the same simple interface for managing databases in on-premises VMware vSphere environments as you would use in AWS. RDS on VMware supports MySQL, PostgreSQL, and Microsoft SQL Server databases.
 Understanding Amazon RDS on VMware
 Benefits

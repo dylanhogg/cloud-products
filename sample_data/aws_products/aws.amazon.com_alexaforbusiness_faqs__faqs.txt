@@ -1,0 +1,225 @@
+General
+What is Alexa for Business?
+Alexa for Business allows organizations of all sizes to introduce Alexa to their workplace. With Alexa for Business, you can use the Alexa you know as an intelligent assistant to stay organized and focus on the work that matters. Alexa helps workers be more productive as they move throughout their day at – home and at their desks as enrolled users with personal devices, and in meeting rooms, copy rooms or other shared spaces with shared devices. Alexa for Business includes the tools and controls that administrators need to deploy and manage shared Alexa devices, skills, and users at scale.
+How can I get started with Alexa for Business?
+To start using Alexa for Business, you need one or more Alexa devices and an AWS account. Simply sign into the console and navigate to “Alexa for Business” under “Business Productivity”.
+What are some example uses for Alexa in an organization?
+With Alexa for Business, you can deploy Alexa devices:
+At your desk: Alexa lets you be more productive throughout your day and stay focused on important tasks. Alexa can help you manage your calendar with Alexa Smart Scheduling Assistant, keep track of your to-do list, and set reminders. Alexa can automatically dial into your conference calls and make phone calls for you. Alexa can help quickly find information for you, like the latest sales data, or the inventory levels in your warehouse.
+In your meeting room:  Alexa for Business simplifies meeting room experiences for your employees. You can control conferencing systems, check room availability, and book rooms with just your voice. For example, say “Alexa, join my meeting” and Alexa finds the upcoming meeting from the calendar, turns on the display, and connects you to the meeting. Alexa for Business integrates with popular video conferencing devices, room control systems, meeting room scheduling solutions, and calendar systems. You can also use Alexa for Business in your meeting rooms to offer your employees a natural interface to report service and equipment issues, answer frequently asked questions, and provide a company news briefing by building private skills or using Blueprints.
+Around your workplace: Alexa helps your workplace run more efficiently. By building your own custom Alexa skills, you can easily voice-enable your workplace, and let Alexa help with common everyday tasks. Using your custom Alexa skills, Alexa can provide directions, find an open meeting room, order new supplies, report building problems, or notify IT of an equipment issue. Alexa can also provide important information, like inventory levels, and help with on-the-job training.
+What is the difference between shared devices and enrolled users using personal devices?
+Shared devices are the Alexa-enabled devices that you deploy to shared spaces in your workplace, like meeting rooms, lobbies, or breakout rooms. Shared devices are not linked to any specific user, and anyone with physical access to a shared device can use it. Shared devices are managed and configured directly through the Alexa for Business console, where you can assign them to locations, manage settings and enable groups of skills. To simplify setting up shared devices, you can either import existing setup devices or use the Device Setup Tool provided by Alexa for Business.
+Personal devices are Alexa devices that are registered to a user’s personal Alexa account. In order to use a personal device with Alexa for Business, the user’s personal Alexa account needs to be enrolled into the organization’s Alexa for Business account. Enrolling in Alexa for Business gives users access to certain Alexa for Business features including the ability to automatically dial into conference calls, discover and enable private skills, and access to their Microsoft Exchange calendar (provided this has been configured by the Alexa for Business account administrator).
+What devices can I use with Alexa for Business?
+You can use the following devices with Alexa for Business:
+Shared devices:
+Echo (1st and 2nd generation)
+Echo Dot (2nd and 3rd generation)
+Echo Plus (1st and 2nd generation)
+Polycom Trio 8500 and 8800
+Personal devices:
+Echo Show
+Echo Spot
+Echo Plus
+Echo
+Echo Dot
+Any other Alexa-enabled device
+To get started, you can purchase any of these devices individually, or purchase the Alexa for Business Starter Kit which includes a bundle of seven Echo devices and instructional materials that will help you get the most from Alexa for Business around your workplace.
+Where is Alexa for Business available today?
+Alexa for Business is currently available in the US East (N. Virginia) and supports Alexa devices running anywhere in the US. Access or use of Alexa for Business or its features may be restricted or limited in countries where Alexa for Business is not currently offered.
+How does Alexa for Business work with Alexa Skills Kit?
+Using the Alexa Skills Kit, you can build your own skills.  With Alexa for Business you can make these skills available to your shared devices and enrolled users without having to publish them to the Alexa Skills store. Alexa for Business also provides skills developers an API to build context aware skills for use on shared devices. Alexa for Business supports any skill in the Alexa Skills store.
+Does Alexa for Business provide a public API?
+Yes, public APIs are available for creating and managing users, rooms, room profiles, skill groups, and devices. APIs are available via the AWS CLI and SDK; you can learn more about the APIs in the documentation.
+Does the Alexa for Business API log actions in AWS CloudTrail?
+Yes. All Alexa for Business actions performed via the AWS CLI and SDK will be included in your CloudTrail audit logs.
+How is Alexa for Business different from Amazon Lex?
+Alexa for Business is intended to enable organizations to take advantage of Amazon’s voice enabled assistant, Alexa. Alexa for Business provides Alexa capabilities that make workers more productive, while working alongside all of the other capabilities that Alexa has today like music, smart home controls, shopping, and thousands of third party skills.
+Amazon Lex is intended to help build custom conversational interfaces and chat bots for use cases like call centers or application based bots. Bots built with Lex can be highly customized and exist separately from Alexa but they do not take advantage of Alexa’s built in capabilities or third party skills. Both Alexa for Business and Amazon Lex use Amazon’s deep learning capabilities that provide Automatic Speech Recognition (ASR) and Natural Language Understanding (NLU).
+Shared devices
+What is a shared device?
+Alexa for Business lets you use shared Alexa devices in common areas around your workplace. Shared devices can be used by anyone, and they are not associated with a personal Alexa account, and no one can use their personal skills with these devices.
+Where can I deploy shared devices?
+Shared devices can be deployed to any common area in your organization such as meeting rooms, lobbies, kitchens, break rooms, and copy rooms. Interactions with shared devices are not linked to a personal Alexa account, and provide your organization with Alexa’s built-in capabilities and third party skills you choose to enable.
+How do I set up shared devices?
+To set up shared devices, Alexa for Business provides the Device Setup Tool. Run the Device Setup Tool to connect all your Alexa devices (Amazon Echo, Echo Dot, or Echo Plus) to your corporate Wi-Fi network (either WPA2 Personal or WPA2 Enterprise) and register them with your Alexa for Business account. You can also import select Echo devices registered to Amazon.com or Amazon Business accounts directly from the Alexa for Business management console. Once your devices are set up, you can assign them to your rooms. Please refer to the Alexa for Business Administrator Guide for more information about using the Device Setup Tool.
+What are "rooms"?
+Rooms are the shared spaces where you put your Alexa devices, such as meeting rooms, lobbies, copy rooms and breakout rooms.
+What is a "room profile"?
+A room profile contains the settings for your Alexa device including wake word, address, time zone, and units of measurement. A room profile simplifies the process of creating and managing rooms. For example, you can create a room profile that contains the Alexa settings that apply to all rooms in the same building.  What is a network profile?
+A network profile contains the network settings for your shared Echo device including the SSID, network security type, network credentials and description. A network profile simplifies the process of creating, managing and assigning network configurations to your echo devices managed by Alexa for Business. Additionally, network profiles enable you to rotate your wireless passwords and enterprise certificates on associated Echo devices at scale without any physical interaction.
+How do I use "skill groups"?
+Skill groups are collections of Alexa skills you can use to enable skills on the devices in your rooms. For example, you can define a skill group with all the skills users will need in your meeting rooms. When you assign an Alexa device to a room, Alexa for Business automatically enables the skills in the skill groups assigned to the room. You can add skills to your skill groups at any time, and Alexa for Business will automatically enable them on all the Alexa devices in rooms that have been assigned that skill group.
+What can users ask Alexa from a shared device?
+Users can ask Alexa any of the same things they can ask on personal devices such as “Alexa, what time is it?” or “Alexa, what is the capital of Washington state?” If allowed by the administrator, users can also make outbound calls by asking “Alexa, call 206-555-1212” Users can also access any skill which you have enabled on the shared device, including private skills.
+Does Alexa on shared devices provide personal responses to users?
+No. Interactions with Alexa on a shared device are not linked to any personal Alexa account. Users cannot make phone calls to personal contacts, access their personal calendar, or interact with any personal skills linked to their personal Alexa account.
+Do shared devices support shopping?
+No, shopping is not available on shared devices.
+Do shared devices support timers, alarms, and lists?
+Yes, users can use a shared device to set a timer or alarm or add items to a list. However, Alexa for Business provides a capability that allows you to reset a shared device from the console, or using the AWS SDK. You can reset a device to clear timers, alarms, shopping list, to-do list, the history of Bluetooth connections, and set the volume level back to 50%.
+Alexa in Meeting Rooms
+How can I use Alexa in my meeting rooms?
+Your employees can use Alexa for Business in the meeting room to control conferencing equipment, check room availability, and book the room. You can improve meeting room utilization in your office, by having Alexa for Business release rooms when they are booked but unused, or reminding them to end meetings when their reservation is ending. Alexa for Business also surfaces room utilization metrics to you so you can learn about how your meeting space is used and optimize it.
+You can also use Alexa to offer your employees a voice interface to report service and equipment issues, answer frequently asked questions, and provide a company news briefing by building private skills or using Blueprints.
+Which meeting room equipment works with Alexa for Business?
+Alexa for Business can control most popular video conferencing and in-room systems including Polycom Group Series, Cisco TelePresence systems, Cisco Webex Room Kit, Crestron 3-Series Control Systems, and Zoom Rooms. Alexa for Business is also built-in to Polycom Trio 8500 and 8800.  In addition, the Alexa for Business conference device APIs allow you to build skills so that Alexa can work with additional equipment or perform specific tasks in your meeting rooms. To learn how to enable your conferencing equipment, please see our documentation.
+How does Alexa for Business know what meeting to join?
+You can connect Alexa for Business to Google G-Suite, Office365, or Microsoft Exchange calendars. Alexa for Business utilizes this calendar integration to look up the dial-in information of the scheduled meeting. Alexa for Business can look up meeting dial-in information from the most used conferencing providers including Amazon Chime, Cisco WebEx, Fuze, Google Meet, Zoom, BlueJeans, and Skype for Business. If there is no scheduled meeting, or Alexa cannot determine the dial-in information, users will be prompted for the meeting ID and optional PIN for the default conferencing provider that you specified in the Alexa for Business console.
+What can users ask Alexa in meeting rooms?
+Users can say “Alexa, join my meeting” to start their meeting or “Alexa, end the meeting” to end the meeting. Users can check availability by asking “Alexa, is this room free?”. User can also make reservations for the current or future time by saying “Alexa, book this room for half an hour” or “Alexa, book this room at 2”, and find out who owns the room booking if it's not free by asking “Alexa, who booked this room?”. Users can also make calls, as well as access any Alexa skills which have been enabled for the Alexa devices in the meeting room.
+How do I get started with Room Booking?
+The Room Booking feature is automatically enabled for every Alexa for Business customer once they link their calendar provider. The feature is supported by all three calendaring systems currently integrated with Alexa for Business: Microsoft Exchange, Microsoft Office 365, and Google G-Suite, and requires read and write permissions. Without write permissions, Alexa cannot create events on the rooms' resource calendars.
+Can I delete events from a room’s calendar with Alexa?
+No, users cannot delete a meeting from a room's calendar with Alexa.
+How can users make phone calls using Alexa?
+There are two ways users can make phone calls using Alexa. First, they can ask Alexa to call a contact from the address book set up by their administrator. For example, a user can say “Alexa, call IT”. Second, they can ask Alexa to call a specific phone number by speaking the numbers during the request. For example, a user can say "Alexa, call 212 555 1212"
+Can I create address books to simplify calling from my shared devices?
+Yes, you can create address books in the Alexa for Business console by clicking on the Create Address Book link in the Calls tab. Address books can contain frequently used contacts, such as the IT helpdesk, facilities, or the building reception. When an address book is associated with a shared Echo device, users can initiate a call from the device to a contact in the address book by speaking the contact name. For example, a user trying to reach the IT helpdesk could say “Alexa, call IT”.
+Can I create different address books for different shared devices?
+Yes, you can create multiple address books and have a unique list of contacts in each of them. This lets you use different numbers for the same contact when used in different contexts. For example, you might have a unique phone number for the IT helpdesk in each building; creating a unique address book for each building makes it possible for users reach the right IT helpdesk.
+How do I enable outbound calling for my shared devices?
+Outbound calling is by default enabled for shared devices and you can start making calls straight away. You can disable outbound calling by changing the setting in your room profiles in the Alexa for Business console.
+Note: Alexa does not currently support inbound calls from mobile or landline phones
+What phone number shows up when making calls via Echo devices?
+When making calls via Echo device, the phone number shows up as an unknown number. For third-party conferencing devices that have Alexa built-in such as Polycom Trio, the phone number associated with the device will show up as caller ID.
+How much does it cost to make calls from Echo devices ?
+Making outbound PSTN calls from your Echo devices is free of charge.   Can I make international calls from Echo devices?
+No, users are only allowed to call most local and toll-free US numbers. International calls, premium rate numbers, N-1-1 numbers, abbreviated dial codes, and dialing-by-letters are not supported.
+What room utilization metrics can Alexa for Business surface to me?
+Once you have enabled room utilization metrics in a room profile, Alexa for Business provides:
+Total meetings - how many meetings were reserved in each room.
+Total meeting minutes - how many minutes each room was reserved.
+If you also have intelligent room release enabled, you will have access to the below metrics:
+Attended meetings: How many meetings were checked into
+Released meetings: How many meetings were released due to a lack of check in
+Released minutes: How many minutes were freed up due to intelligent room release
+Attendance rate: When there was a meeting on the calendar, how often did an employee show up and check in?
+Recovered meetings: A recovered meeting occurs when a room is reserved over a previously released time slot.
+How does intelligent room release work?
+In the Alexa for Business console, you can configure the amount of time an employee has to check into a room reservation before the room is released. Employees will be automatically checked in if they start their meetings with Alexa (ex: “Alexa, join the meeting”), or are in a call on a device with Alexa-built in. They can also check in by saying “Alexa, check in.”
+If no check in has occurred within the selected time, Alexa will remind the room to check in. If check in has not occured within the next minute, Alexa will release the reservation, and notify the room that it has been released. Releasing the reservation means that Alexa will truncate the meeting invite so that the end time is updated to the release time.
+Alexa will also measure how often meeting room are released - surfacing important metrics to you like attendance rate, released minutes, and recovered meetings.
+Enrolled users and personal devices
+What is an enrolled user?
+Enrolled users are users that have linked their personal Alexa account with your Alexa for Business account. This allows them to use their personal Alexa devices for work, at their desks or in their homes. You can invite users to join your Alexa for Business account, who can then join using the Alexa for Business enrollment portal. Once they’ve enrolled, you can enable calendar access and make your private skills available to them. Enrolled users can access these on any of the devices in their personal Alexa account. Enrolled users can also use shared devices in your organization, but they can only access the skills available on those devices.
+How do I invite a user to join my Alexa for Business organization?
+You can send your users an invitation to join your organization via the Alexa for Business console. You can use the console to customize the content of the invitation e-mail that users will receive. The e-mail contains an enrollment URL where your users can login with the Amazon account they use to manage their Alexa devices. Once this is completed, users have access to the Alexa for Business resources you have enabled for them, including their Microsoft Exchange calendar, and your private skills. Users will also be able to auto-dial into conference calls from their Alexa devices, based on the default conferencing provider you configured for your organization in the Alexa for Business console.
+What if a user does not already have an Amazon account, or doesn't use Alexa?
+Your users do not need to be existing users of Alexa to use Alexa for Business. They can use their existing Amazon.com account to enroll with Alexa for Business or create a new Amazon.com account if they do not already have one. Once enrolled, users who are new to Alexa can install the Alexa mobile app for Android or iOS to customize Alexa’s settings for their personal devices.
+Should my users use a different Amazon account from the one they use at home?
+Users may choose to use any Amazon account they wish to enroll in your Alexa for Business organization. We recommend they use the same account that they use at home so that they can access Alexa for Business capabilities whether they are at home, on the go, or at the office.
+What Alexa devices are supported for enrolled users?
+Enrolled users can use any type of Alexa-enabled device. However, some features, such as dialing into conference calls, are only available from compatible Amazon Echo devices (Echo Dot, Echo, Echo Plus, Echo Show).
+What can users do with Alexa after enrolling with your Alexa for Business account?
+Users can continue to ask Alexa the same things they asked before they enrolled with your organization. With Alexa for Business, enrolled users get access to additional skills and features, such as asking Alexa to join their scheduled meetings. Users will also be able to access any private skills you choose to make available to your organization.
+As an administrator, what access and control do I have to my enrolled users’ personal Alexa accounts?
+You do not have any access or control over your users’ personal Alexa accounts, including Alexa capabilities and skills. You cannot see or delete utterances from personal devices used by enrolled users. As an administrator, you can enable your private skills for your users to access, and you can require that users use voice profiles to access their calendars.
+Can a user link their Alexa account with multiple organizations?
+Yes. Users can link their personal Alexa account to more than one Alexa for Business organization.
+Can I help users self-enroll so that I don’t need to send them an invitation e-mail?
+Yes. You can set up a self enrollment process within your organization and use the Alexa for Business SDK to automatically trigger an invitation e-mail to be sent to users. You can also choose to publish an internal LDAP connected web portal that authenticates users and verifies access before generating an invitation e-mail.
+Can I remove users from my Alexa for Business account?
+Yes. You can remove users from your Alexa for Business account using the Alexa for Business console. Removing a user will revoke access to all Alexa for Business features and your private skills.
+Do I need my company’s IT department to do anything to enable Alexa for Business Work Updates?
+As long as your company uses Office 365 or GSuite, no IT work is needed to set up Alexa for Business Work Updates. Please note, however, that your company may block third party apps and you might not be able to use Work Updates. If this happens, reach out to your IT department for clarifications or authorization.
+Calendar integration
+What business calendar systems are supported?
+You can link your Alexa account to calendars in Google G-Suite, Microsoft Office365, and Microsoft Exchange 2013 (or later).
+What can users do after they’ve linked their calendar to their personal Alexa account?
+After the calendar is linked, users can ask Alexa to add new events, schedule meetings, cancel or delete events, and review upcoming events on your calendar.
+How does a user link their personal Alexa account to their Microsoft Exchange 2013 (or later) account?
+After a user is successfully enrolled with Alexa for Business, they can link their Microsoft Exchange account. To link a Microsoft Exchange account to Alexa, open the Alexa app, select Settings, and then select Calendar. Choose Microsoft Exchange and select Link account.
+How can users restrict their calendar from being accessed?
+Once a calendar is linked to Alexa, users can create a voice profile and restrict the calendar to only their voice.
+How can I manage my calendar with Alexa?
+Alexa helps you find one-on-one meeting time with your contacts. It offers suggested times that you and your contact are available to meet. Alexa also makes sure that you don't double-book your meeting by looking at all calendars you have linked with Alexa. Now, you are less likely to book a meeting with a coworker at the same time as your daughter's soccer game or your dentist appointment.
+Because of busy schedules, we are frequently moving meetings to accommodate a higher priority work or personal event. Now you can let Alexa Smart Scheduling Assistant help you move those meetings, and send updates to all participants.
+The Alexa Smart Scheduling Assistant expands Alexa's calendar management capabilities that also includes browsing the calendar, creating new events and canceling appointments.
+How can a new Alexa user get started with the Alexa Smart Scheduling Assistant?
+Link a Google Gmail, Google G Suite, Microsoft Exchange 2013 (or later), or Microsoft Office 365 calendar with Alexa; For more information about how to link your calendar, see Connect Your Calendar to Alexa.
+Add work or personal contacts to your Alexa app. For more information about how to add your contacts, see Add and Edit Your Contacts to the Alexa App.
+Have access to your contacts’ calendar availability information.
+After the calendars and contacts are set up, you can ask Alexa to manage your meetings. For example, you can say ‘Alexa, schedule a meeting with John’ or 'Alexa, move my 2PM meeting.'
+How can an existing Alexa user get started with the Alexa Smart Scheduling Assistant?
+If you have a linked Microsoft Office 365 calendar you may need to relink your calendar. Go to your Alexa Companion App | Settings | Calendar | Microsoft and click Unlink this Microsoft account. Then click on Link this Microsoft account and follow the prompts as defined in Calendar linking flow.
+If you have a linked Google G-Suite or Microsoft Exchange 2013 (or later) calendar, you can follow the steps below.
+What are the new permissions requested from Microsoft Office 365?
+Alexa Smart Scheduling Assistant requires the following permissions
+Calendars.Read.Shared - Read user and shared calendars - Allows the app to read events in all calendars that the user can access, including delegate and shared calendars.
+Calendars.ReadWrite.Shared - Read and write user and shared calendars - Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.
+People.Read - Read users' relevant people lists - Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from user's social networks and company directory, and people from recent communications (such as email and Skype).
+The permissions help Alexa Smart Scheduling Assistant look up free/busy information for the organizer and participants, as well as determine the right contact that the user is trying to meet with.  Can I choose to decline the new permissions?
+If you are new customer, you will be required to provide the permissions when linking your calendar for the first time. If you an existing customer who wants Alexa to get availability information when scheduling meetings, you will have to unlink and relink your calendar. If you choose not to relink, you will not be able to get the additional functionality.
+What calendars are supported by the Alexa Smart Scheduling Assistant?
+The Alexa Smart Scheduling Assistant supports Google G-Suite, Microsoft Office 365, and Microsoft Exchange 2013 (or later) calendars. It is available to Alexa for Business and Alexa consumers in the US.
+How does Alexa find open spots on calendars when I use Alexa to schedule a 1:1 meeting with a contact?
+Alexa's calendar works like most other calendar applications, such as the one on your mobile phone. When you link your calendar to Alexa using your calendar credentials, Alexa is able to read, create, edit, and cancel your calendar appointments. Alexa can also find open times on the calendar of the person with whom you're trying to schedule a meeting, so long as they have shared their calendar with you. When you ask Alexa to schedule a meeting with a colleague, Alexa compares your calendar with your colleague's to find and suggest mutually available free times.
+How can I control which contacts can see my calendar through Alexa?
+You can control calendar access by setting permissions in your calendar application. Alexa needs permission to access the free/busy information in calendars, such as Microsoft Office 365, Microsoft Exchange, Google G Suite or Google Calendar. If you have restricted access to your calendar, those restrictions will also apply to anyone using Alexa to schedule a meeting with you.   Different calendars have different default permissions. With Google Calendars, users must explicitly share their calendar with their contacts - calendars are not shared by default. Please see Share your calendar with someone to learn more. With G Suite Calendars, users can see calendar availability for contacts if your administrator has enabled it. Please see Set calendar visibility and sharing options to learn more. With Microsoft Office 365 and Microsoft Exchange 2013 (or later), users can see calendar availability for any contacts in their organization by default. The ability to hide or show your availability is controlled by your organization's IT administrator.
+Can Alexa access calendar free/busy information for contacts outside my organization?
+Alexa respects the sharing controls enabled by your IT administrator. Alexa will only see free/busy information if your IT administrator has granted sharing permissions with specific external organizations. By default, Microsoft Office 365, Microsoft Exchange, Google Calendar and Google G Suite do not allow sharing outside the organization.
+How does Alexa schedule meetings if I have multiple calendars linked with my account?
+Alexa allows only one default calendar to be used for creating meetings and then sending the email invite. You can see the default calendar in the calendar settings of your Alexa mobile app. When looking for your availability, Alexa will read the events across all your linked calendars and then attempt to find your contact's availability through your linked calendar that has access to the contact's availability information.   For example, let's say you have a personal Google Calendar and a work Microsoft Exchange 2016 calendar linked to Alexa, and you have set Microsoft Exchange 2016 as your default calendar for creating meetings in the Alexa mobile app. When you ask Alexa to schedule a meeting with a work contact, whose availability you can see because they are in your organization, Alexa will look for your availability on both your Google Calendar and Microsoft Exchange 2016 calendars. Alexa will then attempt to look for your work contact's availability using both Google Calendar and Microsoft Exchange 2016. Because your work colleague does not have a Google Calendar shared with you, but their availability is shared via your organization's Microsoft Exchange 2016 settings, Alexa will use your contact's Microsoft Exchange 2016 calendar to suggest meeting times that work for both of you. When you pick a time slot for the meeting and complete the other prompts, Alexa will send an email invite to your contact through Microsoft Exchange 2016 because you setup Exchange as your default calendar for creating and sending meeting requests.
+Private skills
+How do I build a private skill for my organization?
+You build private skills much like how you build a public skill - by using the Alexa Skills Kit. When your skill is ready you can mark the skill as private, submit the skill, and then distribute it to your Alexa for Business account. Please refer to the Alexa Skills Kit for more information.
+Does my private skills need to pass certification before I can distribute it to my AWS account?
+No. Private skills are not subject to certification. As a result, you should only enable private skills that you developed or are from trusted developers.
+How do I make a private skill available on my shared devices?
+You make a private skill available to your shared devices by adding the skill to a skill group and then adding the skill group to your rooms. Alexa for Business automatically enables the skills for the Alexa devices assigned to your rooms.
+How do I make a private skill available to my users?
+Once you have published a private skill, you can navigate to the Skills section on the Alexa for Business Console. Find the skill in the Private Skills tab and check the box under the column “Available for users”. This will enable the skill for all users in the organization.
+How can my users access the private skill?
+Your users can view and manage private skills from the Alexa app on their phone by going to the menu, selecting Skills, and then selecting Your Skills (at the top of the screen.
+Privacy and data security
+How do Amazon Echo devices recognize the wake word?
+Amazon Echo devices use on-device keyword spotting to detect the wake word. When these devices detect the wake word, they stream audio to the cloud, including a fraction of a second of audio before the wake word.
+Can I turn off the microphone on Echo devices?
+Yes, you can turn off the microphone by pushing the microphone on/off button on the top of your device. When the microphone on/off button turns red (on the Echo Show there is a red LED), the microphone is off. The device will not respond to the wake word until you reactivate the microphone by pushing the microphone on/off button again. An organization cannot turn on a device’s microphones via the Alexa for Business Console if the device’s microphones have been turned off.
+How do I know when an Echo device is streaming my voice to the Cloud?
+When an Echo device detects the wake word the light ring around the top of your device turns blue, to indicate that the device is streaming audio to the Cloud (for Echo Show and Echo Spot, you will see a blue bar or ring on the screen). When you use the wake word, the audio stream includes a fraction of a second of audio before the wake word. The audio stream closes once your question or request has been processed.
+For personal devices you can enable a ’start of request sound,’ a short audible tone that plays after the wake word is recognized to indicate that the device is streaming audio. You can also enable an ’end of request sound’ that will play a short audible tone at the end of your request, to indicate that the connection has closed and the device is no longer streaming audio. This is available within the Sounds settings in the Alexa App (Settings > [Your Device Name] > Sounds).
+What can an organization tell their users about the user’s information when using a corporate skill on an enrolled account or using a device managed by the organization?
+You can tell them that the organization has no access to the information it receives about how they use a personal device, outside of when they interact with corporate skills. The organization may receive engagement metrics (device and skill usage metrics) for shared devices. In either case, the organization has no access to any voice recordings.  Voice recordings from shared devices being managed by Alexa for Business can be deleted from the Alexa for Business management console or by voice. If a user has enrolled their personal account, they can view and delete individual voice recordings associated with their account using the Alexa companion app, or all recordings by visiting Manage Your Content and Devices.  More Alexa and information on Alexa can be found here: Alexa Device FAQs.
+When an organization manages shared devices using Alexa for Business, what information does that organization have access to?
+The organization can see and control which skills are enabled on a shared device, the room where it’s assigned, and the settings applied to the device.
+When an organization manages shared devices using Alexa for Business, does the organization have access to voice recordings made by users of the shared device?
+No, unlike with a personal Alexa-enabled device where a user can review their voice recordings in the Alexa companion app, Alexa for Business organizations cannot access any voice recordings or text transcripts of what a user said. In addition, the organization doesn’t see Alexa’s responses to users’ queries.
+What data do skill developers for Alexa for Business have access to?
+Skill developers receive the information about their skill and its usage that is made available to skill developers in the Alexa Skills Kit developer portal. They also have access certain information about shared devices via the Alexa for Business API.
+What controls do organizations have over personal accounts that they let enroll and join their Alexa for Business account?
+Organizations can control which of their users can enroll and join their personal account to the organization’s Alexa for Business account. In addition, they can require a user create a voice profile to access corporate resources like calendars.
+What information does an organization receive about its users' Amazon accounts when users enroll their personal account with the organization's Alexa for Business account?
+The organization does not have any access to the user’s personal Amazon account. The organization does not receive the name or email that the personal account uses. As with shared devices, the organization has no access to the voice recordings on a personal device, including deleting voice recordings.
+Are voice inputs processed by Alexa for Business stored, and how are they used by Alexa for Business?
+Alexa for Business may store and use voice inputs processed by the service solely to provide and maintain the service and to improve and develop the quality of Alexa for Business and other Amazon machine learning and artificial intelligence services. Use of your content is necessary for continuous improvement of your Alexa for Business customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services, or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you.
+How can voice recordings be deleted?
+An individual using a shared device can delete their voice recordings by saying either “Alexa, forget what I just said” or “Alexa, forget what I said today.”  The organization can also delete voice recordings for shared devices they manage in one of two ways: via the Alexa for Business console or via an programmatic API call. The organization does not have any access to these voice recordings, other than the ability to delete them. Personal device users can can view and delete specific voice recordings associated with their accounts by going to History in Settings in the Alexa app, drilling down for a specific entry, and then tapping on the delete button. Or, personal device users can delete all voice recordings associated with their accounts for each of their Alexa-enabled products by selecting the applicable product at Manage Your Content and Devices.  Deleting voice recordings may degrade your Alexa for Business experience.
+Who has access to my content that is processed and stored by Alexa for Business?
+Only authorized employees will have access to your content that is processed by Alexa for Business. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you.
+Alexa for Business provides access to non-AWS services provided by third parties and other Amazon entities (for example, skills and features that provide movie showtimes and traffic information). If you or your users use those non-AWS services, we may exchange information related to those requests with the parties providing the applicable services and that information is subject to the privacy and security practices of those parties.
+Do I still own my content that is processed and stored by Alexa for Business?
+You always retain ownership of your content and we will only use your content with your consent.
+Is the content processed by Alexa for Business moved outside the AWS region where I am using Alexa for Business?
+Any content processed by Alexa for Business is encrypted and stored at rest in the AWS region where you are using Alexa for Business. Some portion of content processed by Alexa for Business may be stored in another AWS region solely in connection with the continuous improvement and development of your Alexa for Business customer experience and other Amazon machine learning and artificial intelligence services. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you.
+Can customers manage how Amazon uses voice recordings for machine learning?
+Voice recordings are used to train our speech recognition and natural language understanding systems using machine learning. By default, a very small percentage of these recordings are manually reviewed in order to improve this process. Customers can now designate, at a room profile level, if voice recordings from shared devices they manage will be manually reviewed and used to improve machine learning algorithms. Using a new preference, Data Use Policy, located in the Room Profile, customers can either allow (default) or disallow manual reviews of voice recordings which are used to improve Amazon’s services.
+Support and billing
+What support is provided for Alexa for Business?
+Depending on your AWS support contract, Alexa for Business is supported under Developer Support, Business Support and Enterprise Support plans.
+How much does Alexa for Business cost?
+Please see Alexa for Business Pricing for the latest information.
+Does Alexa for Business offer a Free Tier?
+Currently there is no Free Tier for Alexa for Business.
+Learn more about Alexa for Business features
+Visit the features page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content
+Enrolled users & personal devices
+Privacy & data security
+Support & billing

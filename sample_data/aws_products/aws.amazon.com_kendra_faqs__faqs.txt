@@ -1,0 +1,44 @@
+Products
+Machine Learning
+Kendra
+Amazon Kendra FAQs
+Q: What is Amazon Kendra?
+A: Amazon Kendra is a highly accurate and easy to use enterprise search service that’s powered by machine learning. Kendra enables developers to add search capabilities to their applications so their end users can discover information stored within the vast amount of content spread across their company. This includes data from manuals, research reports, FAQs, HR documentation, customer service guides, and is found across various systems such as S3, SharePoint, Salesforce, Servicenow, RDS databases, One Drive, and many more coming later this year. When you type a question, the service uses machine learning algorithms to understand the context and return the most relevant results, whether that be a precise answer or an entire document. For example, you can ask a question like "How much is the cash reward on the corporate credit card?” and Kendra will map to the relevant documents and return a specific answer like “2%”. Kendra provides sample code so that you can get started quickly and easily integrate highly accurate search into your new or existing applications.
+Q: How does Amazon Kendra work with other AWS services?
+A: Amazon Kendra provides ML-powered search capabilities for all unstructured data customers store in AWS. Kendra offers easy to use native connectors to popular AWS repository types such as S3 and RDS databases. Other AI services such as Amazon Comprehend, Amazon Transcribe, and Amazon Comprehend Medical can be used to pre-process documents, generate searchable text, extract entities, and enrich their metadata for more specialized search experiences.
+Q: What types of questions can I ask Amazon Kendra?
+A: Amazon Kendra supports the following common types of questions:
+Factoid questions (who, what, when, where): “Who is Amazon’s CEO?” or “When is Prime Day 2019?” these questions require fact-based answers that may be returned in the form of a single word or phrase. The precise answer, however, must be explicitly stated in the ingested text content.
+Descriptive questions: “How do I connect my Echo Plus to my network?” or “How do I obtain tax benefits for lower income families?” where the answer could be a sentence, passage, or an entire document.
+Keyword searches: “Health Benefits” or “IT Help Desk”, where the intent and scope are not very clear. Kendra will leverage its deep learning models to return relevant documents in these cases.
+Q: What if my data does not contain the precise answer Amazon Kendra is looking for?
+A: When your data does not contain a precise answer to a question, Kendra returns a list of the most relevant documents ranked by its deep learning models.
+Q: What types of questions will Amazon Kendra be unable to answer?
+A: Kendra does not yet support questions for which the answers require cross-document passage aggregation or calculations.
+Q: How do developers get up and running with Amazon Kendra?
+A: The Kendra console provides the easiest way to get started. You can point Kendra at unstructured and semi-structured documents like FAQs stored in S3. After ingestion, you can start testing Kendra by typing queries directly in the “search” section of the console. You can then deploy Kendra search in your own application with a few lines of code, or by copying code samples provided in the console.
+Q: How can I customize Amazon Kendra to better fit my company’s domain or business specialty?
+A: Kendra offers domain specific expertise for IT, pharma, insurance, energy, industrial, financial services, legal, media and entertainment, travel and hospitality, health, human resources, news, telecommunications, and automotive. You can further fine tune and extend Kendra's domain-specific understanding by providing your own synonym lists (coming soon). You just upload a file with your specific terminology and Kendra will use these synonyms to enrich user searches.
+Q: What file types does Amazon Kendra support?
+A: Kendra supports unstructured and semi-structured data in .html, MS Office (.doc, .ppt), PDF, and text formats.
+Q: How does Amazon Kendra handle incremental data updates?
+A: Kendra provides two methods of keeping your index up to date. First, connectors provide scheduling to automatically sync your data sources on a regular basis. Second, the Kendra API allows you to build your own connector to send data directly to Kendra from your data source via your existing ETL jobs or applications.
+Q: What languages does Amazon Kendra support?
+A: Kendra supports US English.
+Q: What code changes do I need to make to use Amazon Kendra?
+A: Ingesting content does not require coding when using the native connectors. You can also write your own custom connectors to integrate with other data sources, using the Kendra SDK. You can easily deploy search in your application with a few lines of code, or copying short code samples from the console to replicate specific functionality. The SDK provides full control and flexibility of the end user experience.
+Q: In what regions is Amazon Kendra available?
+A: Amazon Kendra is currently available in the following AWS regions: Northern Virginia, Oregon, and Ireland. See the AWS Region Table for more details.
+Q: Can I add custom connectors?
+A. Customers can write their own connectors from scratch using the Kendra ingestion API. Amazon Kendra has a search expert partner ecosystem that can help build connectors currently not available from AWS. Please contact us for more details on our partner network.
+Q: How does Amazon Kendra handle security?
+A. Amazon Kendra encrypts your data in motion and at rest. You have two choices for encryption keys for data at rest: AWS owned customer master key (CMK), AWS managed CMK in your account; a customer managed CMK. In motion, Amazon Kendra uses the HTTPS protocol to communicate with your client application. API calls to access Amazon Kendra through the network use Transport Layer Security (TLS) that must be supported by the client.
+Learn more about pricing
+Visit Amazon Kendra pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Kendra in the AWS Management Console.
+Sign in

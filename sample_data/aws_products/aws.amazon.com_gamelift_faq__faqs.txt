@@ -1,0 +1,197 @@
+General
+Q: What is Amazon GameLift?
+Amazon GameLift is a managed service for deploying, operating, and scaling dedicated game servers for session-based multiplayer games. You can deploy your first game server in the cloud in just minutes, saving up to thousands of engineering hours in upfront software development and lowering the technical risks that often cause developers to cut multiplayer features from their designs. Built on AWS’s proven computing environment, Amazon GameLift lets you scale high-performance game servers up and down to meet player demand. You pay only for the capacity you use, so you can get started whether you’re working on a new game idea or running a game with millions of players.
+Q: What types of game genres are recommended for use with Amazon GameLift?
+Amazon GameLift works with most multiplayer game genres.
+GameLift is designed for multiplayer games that have game sessions that begin and end within a specified time period. These can be multiplayer games in genres like first person shooters, MOBAs, fighting, racing, or sports.
+GameLift Realtime Servers, a new feature in preview, is ideal for those session-based multiplayer games that share small amounts of data amongst players and have low-complexity simulation. These attributes are typical of games in genres such as card games, mobile match 3, realtime strategy, role playing, or turn-based strategy games.
+Q: Does Amazon GameLift work for latency-intolerant games, such as first-person shooters? Does Amazon GameLift add latency to my game?
+Amazon GameLift is designed to work for latency-intolerant games. Amazon GameLift introduces no additional latency during gameplay.
+When joining a game session, your game client communicates with the Amazon GameLift service to reserve a player slot and receive connection details. This step may take up to several seconds. However, once the player connects to a game server, all player-to-server communication is done directly between your game client and game server. Latency experienced during gameplay will depend upon the player's internet connection and their physical distance to the game server. You can further reduce latency by positioning game servers in regions that are as close as possible to your players. Amazon GameLift supports regions in North America, Europe, Asia, South America, and Australia so you can choose where to best deploy game servers for your players.
+Billing
+Q: How much does Amazon GameLift cost?
+You pay for the compute resources and bandwidth your games actually use, without monthly or annual contracts. Please see our pricing page for more information.
+Q: When does billing of my Amazon GameLift games begin and end?
+Billing begins when you allocate Amazon GameLift capacity and Amazon GameLift launches your game’s server binary for the first time on each instance. Billing concludes when you stop instances. For Windows instances, which are billed per instance-hour, partial instance-hours consumed are billed as full hours. For Linux instances, which are billed per instance-second, there is a 1 minute minimum charge per-instance.
+Q: Is there an additional charge for using FlexMatch?
+No, not directly. However, please note that successful matches with FlexMatch automatically result in the creation of new game sessions. Depending on how you’re managing game server capacity, creating new game sessions may trigger additional server instances, for which you’ll be charged standard Amazon GameLift instance prices. Using FlexMatch in standalone mode will incur charges based on player packages and matchmaking hours consumed. See Pricing Page for more details.
+Q: How is the 70% compute cost savings compared to colocation environments calculated?
+Compared to running servers in a colocation environment, Amazon GameLift with Spot Instances and Autoscaling can save you up to 70% on compute costs. Watch our video to learn more or see a sample cost comparison below.
+We start with the AWS Total Cost of Ownership (TCO) calculator  to estimate the cost of running game servers in a colocation environment.
+For this example, we calculated costs in the US East region (N. Virginia) using Linux as our operating system and 2 CPU cores and 3 GB of memory for our servers. At peak demand, we assumed we needed 2,500 instances running. These inputs result in a 3-year total compute cost of about $4.5 million, or roughly $125,000 per month.
+Next, we chose a comparable configuration with Amazon GameLift: a c4.large instance meets the 2 CPU cores with 3 GB of memory requirement.
+Now we’ll calculate the cost savings from using Amazon GameLift Spot instances. While Spot prices fluctuate throughout the day, a good rule of thumb is that Amazon GameLift Spot instances running Linux are on average 70% less expensive than the same On-Demand instances. The On-Demand price for a c4.large instance in the US East (N. Virginia) region is $0.127 per hour. Using our rule of thumb, we arrive at a Spot instance price of $0.04. Running 2,500 instances 24 hours a day for an entire month (assuming a 30 day month) comes to $229,000 per month for On-Demand instances, but only $72,000 per month for Spot instances. So Spot instances give us a 42% savings over colocation.
+However, based on the variability from player traffic, most games don’t need peak capacity 24/7. To automatically handle changing capacity needs based on your current player demand, Amazon GameLift autoscales the number of instances up and down throughout the day. &nbsp;While it’s hard to know what daily demand will look like for all games, we estimated that the hourly average runs at 50% of peak capacity. With auto-scaling, that brings the cost down just under $36,000 for the month.
+Compared to the $125,000 we calculated for the colocation solution, that saves us $89,000 or 71%. Note that this calculation does not include the cost of data transfer. Data transfer fees are generated for traffic between your game servers and your game clients. Inbound data transfer is free. For outbound data transfer rates to other AWS services and regions, visit the Data Transfer Rates.
+Q: Is there an additional charge for using GameLift Realtime Servers?
+No. Please note that your GameLift Realtime Servers are run within the context of game sessions. Depending on how you’re managing game server capacity, creating new game sessions may trigger additional server instances, for which you’ll be charged standard Amazon GameLift instance prices.
+Development
+Q: How do I get started with Amazon GameLift?
+First, integrate Amazon GameLift into your game client and server using the AWS SDK and the Amazon GameLift Server SDK. Then, upload your game server to Amazon GameLift in your AWS Account, and use the Amazon GameLift console to set up fleets of computing resources and deploy your game. When your players connect, you can monitor your fleet through the Amazon GameLift console. You can also integrate Amazon GameLift with your custom game services like identity or matchmaking using the AWS SDK.
+Q: Is there a sample game I can use to test Amazon GameLift?
+You can quickly test Amazon GameLift using our sample game. Download Amazon Lumberyard to get a sample multiplayer project called MultiplayerSample for you to evaluate and test Amazon GameLift.
+Q: Can I use Amazon GameLift with any game engine?
+Yes. Amazon GameLift supports Amazon Lumberyard, Unreal Engine, Unity, and custom C# and C++ game engines. Learn more about engine integration in the Amazon GameLift Developer Guide.
+Q: Which server operating systems and programming languages are supported by Amazon GameLift?
+The Amazon GameLift Server SDK supports both Unity and Unreal Engines, contains C++ and C# versions of the Amazon GameLift Server SDK and an Unreal Engine plugin to accelerate integration into Unreal Engine game servers. Amazon GameLift supports game servers that run on Windows Server 2012 R2, Amazon Linux and Linux 2. Amazon GameLift Realtime Servers supports JavaScript to customize server logic.
+Q: Which client devices and programming languages are supported by Amazon GameLift?
+Amazon GameLift supports games built for major game platforms including Android, FireOS, iOS, Mac, PC, PlayStation 4, and Xbox One. Game clients and game services (such as matchmaking or authentication) can use the Amazon GameLift functionality in the AWS SDK to communicate with the Amazon GameLift service and join players to games. The AWS SDK is available in C++, Java, .NET(C#), Go, Python, Ruby, PHP, JavaScript and other major languages.
+Q: Do I have to authenticate players in order to access my Amazon GameLift game servers?
+No, you are not required to authenticate players. However, you are required to provide a unique, non-personally identifiable player ID for each user. Learn more in the Integrating a Game Client section of the Amazon GameLift Developer Guide. Your game client must authenticate to your servers on Amazon GameLift using your AWS credentials. To learn more about how to set up and configure AWS credentials, please visit the Amazon GameLift Developer Guide.
+Q: Can I use Amazon GameLift with platform services like Xbox Live, Steam and PlayStation Network?
+Yes. Amazon GameLift is built on open web standards, and is compatible with all major game platforms.
+Q: What debugging tools does Amazon GameLift provide for game servers?
+You can track performance and health metrics for your game servers to discover and investigate issues. You can debug fleets during build extraction, installation, and runtime validation by downloading fleet creation logs from the Events tab in the Amazon GameLift Console. You can also remotely access individual instances in a fleet to inspect status, debug problems, or connect debugging tools. To remotely access instances, you can use either Windows Remote Desktop for Windows or SSH for Linux. You can also use Amazon GameLift Local to emulate a subset of the Amazon GameLift API so you can debug game server code locally on your development machine. Visit our Amazon GameLift Developer Guide to learn more about debugging and Amazon GameLift Local.
+Q: Does Amazon GameLift provide operational monitoring and alarming tools?
+The Amazon GameLift Console provides real-time dashboards to help you understand your player’s experience. You can also use Amazon CloudWatch to monitor all of your Amazon GameLift resources and react to emergent issues. With CloudWatch, you can create at-a-glance dashboards and configure operational alarms to help identify issues before they impact your players. Amazon GameLift metrics are automatically available in CloudWatch as long as your fleet is active. Learn more about CloudWatch metrics in the Amazon GameLift Developer Guide.
+Q: What is Amazon GameLift Local?
+Amazon GameLift Local is a client-side debugging tool that emulates a subset of the Amazon GameLift API on your local development machine. With Amazon GameLift Local, you can verify code changes in seconds, without incurring any usage charges. Amazon GameLift Local is packaged in the Amazon GameLift Server SDK download, available for Windows and Linux desktops, and does not require a network connection to use. Learn more about Amazon GameLift Local in our Developer Guide.
+Q: Can I simulate uploading a build, creating a fleet, or setting auto-scaling rules with Amazon GameLift Local? Can I use Amazon GameLift Local on my own server to host my game?
+No. Amazon GameLift Local is a client-side debugging tool that only emulates the set of GameSession and PlayerSession client APIs needed to create games, connect players, and test your game server changes. Amazon GameLift Local does not emulate the additional Amazon GameLift client APIs (fleets, builds, aliases, scaling policies, etc.) required for hosting your game in production.
+Q: Can I redistribute Amazon GameLift Local?
+No. Amazon GameLift Local is intended to be used only for testing and debugging purposes and is not intended to be deployed into any production environment, on customer’s devices, or into cloud infrastructure.
+Q: Are logs collected in real-time?
+Fleet-level aggregated data is generally available in the Amazon GameLift console within ten minutes of collection and server-level aggregated data is generally available within five minutes of collection.
+Q: How can I help players find game sessions to join?
+Amazon GameLift provides a search capability that helps you filter and sort game sessions by characteristics meaningful to your players. You can filter and sort game sessions on attributes like game session age, current player count, maximum players count, open slots, or your own custom game properties. Learn more in our Amazon GameLift Developer Guide.
+Q: What matchmaking features does Amazon GameLift provide?
+The Amazon GameLift matchmaking platform includes both FlexMatch and game session queues. FlexMatch lets you match players together based on rules you define. You can use FlexMatch to configure rule sets that group players together while balancing match quality and player wait time. FlexMatch results are automatically fed into a game session queue, which can intelligently select the closest available game server for the match based on each player’s location, giving players the lowest possible latency by leveraging AWS’s broad global footprint. Learn more about FlexMatch and game session queues in the Amazon GameLift Developer Guide.
+Q: Can I use game session queues without using FlexMatch?
+Yes. If you would like to use your own matchmaking system, you can feed match results into any game session queues that you define.
+Q: Can I edit a FlexMatch rule set after I’ve created it?
+No. Once you create a FlexMatch rule set, that rule set can’t be changed. To change a rule set, you must clone the rule set, give it a new name, and then create your changes. To change the rule set for a live matchmaker, you then update the matchmaker’s configuration to use the new rule set instead of the old one. Because a rules set may be used by one or more live matchmakers, this limitation guards against causing unintended consequences to live production systems.
+Q: Can I get a history of Amazon GameLift API calls made on my account for security analysis and operational troubleshooting purposes?
+Yes. To receive a history of Amazon GameLift API calls made on your account, you simply turn on CloudTrail in the AWS Management Console.
+Q: What kind of support is available?
+Every customer has access to documentation, tutorials, and forums. Additional support is available in AWS Premium Support packages.
+Instances and Fleets
+Q: Which instance types does Amazon GameLift support?
+Please see our pricing page for a full list of Amazon GameLift instances.
+Q: How many server processes can I run on an Amazon GameLift instance?
+Up to 50. The number of server processes depends on the performance requirements of your game servers and the instance type you choose for your fleet. When you set up a fleet, you will select an instance type and configure the fleet to concurrently run an optimum number of server processes. Running more processes on fewer instances can help you decrease costs. You can also configure your fleet to run multiple server builds or game configurations on each instance.
+Q: How quickly can I add or remove new instances from my Amazon GameLift fleet?
+Amazon GameLift provides a truly elastic computing environment. Amazon GameLift instances enable you to increase or decrease capacity within minutes, not hours or days. You can provision one, hundreds, or even thousands of server instances simultaneously.
+Seamlessly provide the capacity you need to meet changes in player demand with Amazon GameLift Target Tracking. Target Tracking is an autoscaling feature that allows you to simply set a percentage target for available game sessions, creating a buffer to accommodate fluctuations in player traffic. Amazon GameLift will add or remove capacity as required to keep this buffer of available game sessions at the target value you define and adjust to a fluctuating load pattern, minimizing rapid fluctuations in capacity. For more information, see the Autoscaling section of the Amazon GameLift Developer Guide.
+You can also manually control the quantity of instances from the fleet details page in the Amazon GameLift console.
+Q: How do I select the right instance type for my game?
+The right instance type depends on your game’s server performance and the number of server processes you plan to run concurrently on each instance. The computational complexity of your game, optimization of your game and network code, and maximum number of players are the main drivers for the size of the instance that you will need. One of the advantages of Amazon GameLift is that you only pay for what you use, which makes it convenient and inexpensive to test the performance of your game on different instance families and types.
+Q: What happens to my data when an Amazon GameLift instance terminates?
+Amazon GameLift retains activity metrics. When you terminate an instance, any data generated by your game server and stored on the instance is lost. However, you can instruct Amazon GameLift to retain and store these data files for up to seven days after the instance has been terminated.
+Q: What is a fleet?
+A fleet is a set of Amazon GameLift instances in one region running one build of your game server. You can accommodate changes in player demand by increasing or decreasing the number of instances in your fleet. A fleet is configured to use a certain instance type, to deploy a build, and to run one or more server processes on each instance.
+Q: How long does it take to create a fleet?
+It typically takes less than an hour to set up the resources necessary to run your game, measured from the time you upload your game binary to when it is fully deployed and accessible to your players. This time is dependent on the size of your binary and the number of instances you are deploying.
+Q: Can I access fleets and instances in real time?
+Yes. You can remotely access an instance in a fleet that is in an activating, active, or error status. This is useful for debugging, inspecting player activity in real time, or connecting performance monitoring or benchmarking tools. You can modify your fleet’s port settings and protocols using either the AWS command line interface (CLI) or through the Amazon GameLift console.
+Q: Does Amazon GameLift allow me to update a live production fleet, or revert to a previous fleet if there is a problem?
+Yes, Amazon GameLift makes updating production fleets simple with its alias feature. An alias enables you to direct traffic to fleets without having to change the client end-point descriptor. After creating a new production fleet, you can edit an alias to point from an older fleet to this newer fleet, routing all connecting players to the new fleet alias feature.
+Similarly, if you discover an issue with a fleet (e.g., you find an issue in your game code), you can edit an alias to redirect traffic from the new fleet to an older fleet.
+Q: Which regions is Amazon GameLift available in?
+Amazon GameLift is currently available in the following regions: US East (N. Virginia and Ohio), US West (Oregon and N. California), Central Canada (Montreal), EU Central (Frankfurt), EU West (London and Ireland), Asia Pacific South (Mumbai), Asia Pacific Northeast (Seoul and Tokyo), Asia Pacific Southeast (Singapore and Sydney), AWS China (Beijing) Region, operated by Sinnet, and South America East (São Paulo). Please refer to the AWS Global Infrastructure Region Table for the current information on product and service availability by region.
+Q: In which AWS regions can I place a FlexMatch matchmaker?
+US East (N. Virginia), US West (Oregon), EU Central (Frankfurt), EU West (Ireland), Asia Pacific Southeast (Sydney), and Asia Pacific Northeast (Seoul and Tokyo) and AWS China (Beijing) Region, operated by Sinnet. A matchmaker located in AWS China (Beijing) Region, operated by Sinnet will only place players into fleets in AWS China (Beijing) Region and can only be associated with a queue located in AWS China (Beijing) Region. When choosing one of the above regions to host a FlexMatch matchmaker, we recommend that you pick a region as close as possible to the player population that the matchmaker will service. We also recommend placing the matchmaker’s game session queue in the same region as the matchmaker. Learn more about FlexMatch region availability in our Amazon GameLift Developer Guide.
+Storage
+Q: What is the build catalog?
+The build catalog is a record of all of your server builds that have been uploaded to Amazon GameLift. Builds in ready state are available for fleet creation at any time.
+Q: Is there a limit to how many builds I can store in the build catalog?
+The build catalog can store the maximum of 1,000 builds or 100GB of storage.
+Q: How much storage does Amazon GameLift provide on each instance?
+Amazon GameLift includes 50GB EBS General Purpose (SSD) Volume for each instance.
+Operational Limits
+Q: Is there a limit to the number of fleets I can create?
+Yes, by default, you are limited to 20 fleets per region. However, if you need more fleets, please contact us to request an increase.
+Q: Is there a maximum number of allowed instances per fleet?
+No, you are only limited by your AWS account limits.
+Q: Is there a limit to the number of instances I can run in Amazon GameLift?
+Yes, Amazon GameLift is limited by the number of instances available to your AWS account. If you need to raise this limit, you can do so via the service limits page in the Amazon GameLift console.
+Q: Is there a maximum number of players per game session supported?
+Yes, the maximum number of players per game session is 200. However, if you need more players per game session, contact us to request an increase.
+Q: Is there a maximum number of players per instance supported?
+No, the maximum number of players per instance is primarily dictated by your game design and game code.
+Q: Is there a maximum number of players per fleet supported?
+No.
+Amazon GameLift Spot and FleetIQ
+Q: What is Amazon GameLift Spot and FleetIQ?
+Amazon GameLift Spot instances offer access to spare AWS computing capacity at savings of up to 70% compared to On-Demand prices. However, Spot instances can be interrupted by AWS with two minutes of notification when AWS needs the capacity back. You can use this notification period to migrate or shut down games running on those instances. You can achieve cost savings while maintaining high game server availability with the use of FleetIQ, a new feature of Amazon GameLift that places new sessions on game servers based on player latencies, instance prices, and Spot interruption rates.
+Q: Why should I use Amazon GameLift Spot instances?
+You get the same high-performance hardware as Amazon GameLift On-Demand instances, but save up to 90%. By accepting a small decrease in server availability as compared to using only On-Demand instances, you can save a lot of money.
+Q: How much will I save using Amazon GameLift Spot?
+Amazon GameLift Spot prices fluctuate based on the current supply and demand for each instance type in each region. Spot instance prices are set by Amazon and adjust gradually based on long-term trends in supply and demand for Spot instance capacity. However, Amazon GameLift Spot prices never exceed Amazon GameLift On-Demand prices. In the Amazon GameLift console, you can view three months of historical pricing and savings data for GameLift Spot for every instance type and region.
+Q: What are the best practices for using Amazon GameLift Spot instances?
+First, set up an Amazon GameLift Queue with multiple fleets based on different sizes of the same Spot instance family (e.g. C4.large, C4.xlarge, etc.) and across multiple AWS regions. To place a game session, FleetIQ will first use player latency data to select the region that will provide the lowest latency, then place the game session into the fleet with the lowest price and the lowest interruption frequency. The Amazon GameLift Queue should also include an On-Demand fleet in each of the configured regions. FleetIQ will prioritize game session placement into Spot fleets in a region first, then fall back to the On-Demand fleet if needed to maintain high availability. To see more best practices, visit the developer documentation.
+Q: What happens when Amazon GameLift Spot instances receive a termination warning?
+When AWS occasionally needs more capacity, some Amazon GameLift Spot instances could receive a warning that the game servers must shut down within two minutes. When that happens, you can use the warning period to gracefully migrate or shut down active game sessions. To maintain an equal amount of available capacity for your game, FleetIQ will automatically start new servers in the same region by using alternate Spot instances types or by using On-Demand instances.
+Q: Does Amazon GameLift guarantee termination rates when using Amazon GameLift Spot and FleetIQ?
+No. FleetIQ minimizes the chances of termination.
+Q: How does FleetIQ minimize the chances of instances terminating while games are active?
+FleetIQ tracks Spot interruption rates and uses this data to automatically place games on instances with low interruption frequencies.
+Q: How am I charged if Amazon GameLift Spot prices change while my instance is running?
+While a Spot instance remains running, you will be charged the price set at the beginning of each hour.
+Q: Where can I see my usage history for Amazon GameLift Spot instances and see how much I was billed?
+The AWS Management Console makes a detailed billing report available which shows Spot instance start and termination/stop times for all instances.
+Amazon GameLift FleetIQ - Major Update Now Generally Available
+Q: What is the new update to Amazon GameLift FleetIQ?
+The update to Amazon GameLift FleetIQ allows developers to onboard low-cost game server workloads to the cloud at their own pace, using their own tools, and independent of adopting any other managed GameLift features. What’s not changing is the ability to do this while experiencing up to 70% cost-savings compared to existing on-premises deployments. Gradually move live games or launching new games to the cloud with the cost savings of EC2 Spot instances possible only with GameLift FleetIQ. In addition, it supports any runtime or OS that runs on EC2 today, along with many instance types and regions. Designed to integrate with your existing game backend incrementally, save on cost, speed your time to market, and deliver a reliable player experience.
+Q: Is GameLift FleetIQ different than GameLift?
+No, GameLift FleetIQ is part of GameLift. It is a feature of GameLift that places new sessions on game servers based on player latencies, instance prices, and Spot interruption rates.
+Q: How is this different from GameLift today?
+This update to the GameLift FleetIQ feature is still part of GameLift. This feature update greatly enhances the flexibility in how game developers can adopt and use GameLift. Until now, the game servers that GameLift managed were not directly accessible to game developers from their own EC2 console. With these updates to GameLift FleetIQ, game developers now enjoy the benefits of the FleetIQ algorithm to find low-cost Spot instances, with those EC2 instances being placed into their own AWS accounts. With instances in their own accounts, customers can incrementally migrate server workloads to the cloud at their own pace, partially or completely, while maximizing cost savings and minimizing game session interruptions.
+Q: Why did we create this update to GameLift FleetIQ?
+Last year we asked customers what would make GameLift an even better alternative to on-prem deployments. Cost-savings and low latency were already a given—but increased flexibility was a common theme. Specifically, they wanted the ability to use existing tools without GameLift’s game server management layer and more control in moving game sessions to the cloud.
+Q: How do you get started with the new update to Amazon GameLift FleetIQ?
+To use GameLift FleetIQ, simply download the AWS SDK and CLI, and then refer to the documentation to get started.
+Q: Where it’s available?
+Amazon GameLift FleetIQ is available in London, Ireland, Seoul, Mumbai, Oregon, Northern California, Northern Virginia, Ohio, Canada, Sao Paulo, Frankfurt, Singapore, Tokyo, Sydney and Beijing (made available by Sinnet).
+Q: What does it cost?
+With general availability for the GameLift FleetIQ update, only pay for what you use. GameLift FleetIQ charges a fee derived from EC2 instance charges under GameLift FleetIQ management. For full details, learn more on the pricing page.
+Q: How is this different from EC2?
+The new update to FleetIQ runs on the same hardware as EC2, but uses EC2’s spare capacity called Spot to save customers money (up to 70% cost-savings compared to existing on-premises deployments) from FleetIQ replacing Spot instances that are more likely to have game session interruptions with instances that are less likely. This update can also prevent instances hosting games from being scaled-in by the standard Auto Scaling group.
+Amazon GameLift FlexMatch – Update Now Generally Available
+Q: What is the new update to Amazon GameLift FlexMatch?
+Today we are launching an update to GameLift FlexMatch that enables game developers to use FlexMatch standalone from GameLift game servers. In standalone mode, game developers can use FlexMatch to form player matches and then place them into any game server solution they want. FlexMatch as a standalone feature will be charged by player packages submitted and matchmaking hours consumed. FlexMatch remains free of charge for developers using GameLift servers.
+Q: Is this different from GameLift?
+Previously, GameLift FlexMatch was only available to those who host their games on GameLift’s game servers. Today, GameLift FlexMatch is available to anyone, regardless of whether they host their games peer-to-peer, on-premises, or on cloud compute primitives.
+Q: Why did we create this update to GameLift FlexMatch?
+Game developers who have existing game server commitments on-premises or on other cloud platforms have told us that they value GameLift FlexMatch’s match quality, flexible rules, and AWS scale but want to leverage their existing game server capacity.
+Q: How do you get started with the new update to Amazon GameLift FlexMatch?
+To use FlexMatch in standalone mode, a game developer sets the FlexMatchMode parameter in the CreateMatchmakingConfiguration API to STANDALONE and subscribes to an SNS topic. When FlexMatch forms a match, it will publish an event notification to that SNS topic, which the developer’s session management system can then use to route players to their game servers.
+Q: Where is it available?
+GameLift FlexMatch as a standalone feature will be available in Seoul, Oregon, Northern Virginia, Frankfurt, Dublin, Tokyo, and Sydney. Beijing (made available by Sinnet) will be available in the coming months.
+6. What does it cost?
+FlexMatch in standalone mode will cost $20 per million player packages, and $1 per matchmaking hour. FlexMatch counts a Player Package each time you submit a player’s request to play a game session. This package also includes player attributes used to evaluate a match. Matchmaking Hours is calculated as the duration FlexMatch is executing a matchmaking evaluation, rounded up to the nearest 1 microsecond.
+See pricing page for details.
+Service Level Agreement (SLA)
+Q: What does your Amazon GameLift Service Level Agreement guarantee?
+Our SLA guarantees a Monthly Uptime Percentage of at least 99.9% for Amazon GameLift within a Region.
+Q: How do I know if I qualify for a SLA Service Credit?
+You are eligible for a SLA credit for Amazon GameLift if the region that you are operating in has an Monthly Uptime Percentage of less than 99.9% during any monthly billing cycle. For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see https://aws.amazon.com/gamelift/sla/.
+Other
+Q: What is an AMI?
+An Amazon Machine Image (AMI) is a supported and maintained image provided by AWS for use on Amazon EC2. Amazon GameLift uses Windows 2012 R2, Amazon Linux and Linux 2 to run your game server. An AMI is designed to provide a stable, secure, and high performance execution environment for applications running on Amazon EC2. It also includes packages that enable easy integration with AWS, including launch configuration tools and many popular AWS libraries and tools. AWS provides ongoing security and maintenance updates to all instances running the Amazon AMI.
+Q: Can anyone access the Amazon GameLift console?
+No. Only your authorized users with the necessary AWS credentials can access the Amazon GameLift console. You can use AWS Identity and Access Management (IAM) to securely share AWS credentials across a team. Please see Creating IAM Policies for Amazon GameLift for more details.
+Q: Where can I find more information about security and running applications on AWS?
+For more information about securing AWS resources, see the AWS Security Center.
+Q: How did we calculate a 41 ms global median latency when using Amazon GameLift?
+We worked with a customer to measure latency between player game clients and Amazon GameLift servers. Based on 236,000 unique players connecting between May 1 and May 10, 2018 to servers in 9 regions, median latency globally for Amazon GameLift was 41 millseconds.
+Getting Started for Free
+Q: How do I get started with Amazon GameLift for free?
+Sign up for an AWS account for instant access to the AWS Free Tier, which will give you the following benefits:
+125 hours per month of Amazon GameLift c3.large, c4.large and c5.large (combined) depending on region for On-Demand instance usage, plus 50 GB EBS General Purpose SSD storage
+15 GB per month of bandwidth out, aggregated across all AWS services
+Try Amazon GameLift for free here
+Learn more about pricing
+With Amazon GameLift, you only pay for the capacity you use.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with GameLift in the AWS Management Console.
+Sign in
+Let’s take it to the next level.
+Whether you’re a team of one or one thousand, we’d love to learn more about your game development needs.
+Get in touch
+Page Content
+Update to GameLift FleetIQ now GA
+Update to GameLift FlexMatch now GA

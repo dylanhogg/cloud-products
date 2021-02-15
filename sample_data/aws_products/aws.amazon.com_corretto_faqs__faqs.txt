@@ -1,0 +1,74 @@
+General
+Q: What is Amazon Corretto?
+A: Corretto is a build of the Open Java Development Kit (OpenJDK) with long-term support from Amazon. Corretto is certified using the Java Technical Compatibility Kit (TCK) to ensure it meets the Java SE standard and is available on Linux, Windows, and macOS. It includes patches from Amazon that have proven useful in running our own services.
+Q: Why should I use Corretto?
+A: Corretto is a reliable build of OpenJDK with the assurance of long-term support provided at no cost to you. Amazon runs Corretto internally on thousands of production services. Every modification we make to Corretto fixes or mitigates a problem we found running OpenJDK. Amazon also plans to apply urgent fixes (including security) when they are available and ready to use, outside of the regular quarterly cycle.
+Q: How is Corretto different from OpenJDK?
+A: Corretto is a distribution of Open JDK with patches included by Amazon that are not yet integrated in the corresponding OpenJDK update projects. We focus on patches that improve performance or stability in OpenJDK, chosen based on Amazon's observations running large services.
+Q: What kinds of patches does Amazon intend to include in Corretto?
+A: Patches will include security fixes, performance enhancements (e.g., speeding up frequently-used functions), garbage collection scheduling, and preventing out-of-memory situations, as well as improved monitoring, reporting, and thread management.
+Q: Is there any cost associated with using Corretto?
+A: Corretto is distributed by Amazon under an Open Source license at no cost to you. It is licensed under the terms of the GNU Public License version 2 with the Class Path Exception (GPLv2 with CPE). Amazon does not charge for its use or distribution.
+Q: What does long-term support (LTS) mean for Corretto?
+A: Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK) that comes with long-term support (LTS). LTS includes Amazon’s commitment to provide performance enhancements and security updates at no cost until at least the specified date for the relevant release version (e.g. May 2026 for Corretto 8). Updates are planned to be released quarterly. Amazon also plans to apply urgent fixes (including security) outside of the regular quarterly cycle when they are available and ready to use.
+Q: What is included in Corretto's long-term support?
+A: Long-term support (LTS) for Corretto includes performance enhancements and security updates for Corretto 8 until at least May 2026 and for Corretto 11 until at least September 2027 at no cost. Updates are planned to be released quarterly.
+LTS for Corretto is unrelated to AWS Support Plans, which provide expert guidance and assistance for achieving your objectives on AWS. If you already have an AWS Support Plan, Corretto is covered on the same basis as all other supported AWS Services and software. For those who do not have a plan, it may or may not make sense for you to purchase a plan if your only intention is to receive assistance with Corretto. Please visit the website to determine if it is right for you. There are currently no plans to launch Corretto-specific assistance plans. As always, our roadmaps are a reflection of our customer feedback and we welcome your feature requests at the Corretto GitHub repository.
+Q: What is Corretto's support calendar?
+Corretto Release
+Release Type
+GA Date
+Last Planned Update
+End of Life
+8
+LTS
+January 31st 2019
+April 2026
+June 2026
+11
+March 15th 2019
+July 2027
+September 2027
+15
+FR
+September 24th 2020
+January 19th 2021
+April 20th 2021
+16
+March 16th 2021 (expected)
+July 20th 2021 (expected)
+October 19th 2021 (expected)
+17
+September 21st 2021 (expected)
+TBD
+LTS: Long-Term Support FR: Feature Release
+Q: What should I do if I need help with Corretto?
+A: For general questions about installing or running Corretto, please see our documentation. If you have an issue related to OpenJDK, please open an issue with the upstream OpenJDK project. If you have a specific issue with Corretto or feature request that is not applicable to OpenJDK, please open an issue or a feature request in the Corretto GitHub repository. If you already have an AWS Support Plan you can reach out for assistance with Corretto through your plan.
+Using Amazon Corretto
+Q: Can I use Corretto as a drop-in replacement for other JDKs?
+A: Corretto is designed as a drop-in replacement for all Java SE distributions unless you are using features not available in OpenJDK. Once Corretto binaries are installed on a host and correctly invoked to run your Java applications (e.g., using the alternatives command on Linux), existing command-line options, tuning parameters, monitoring, and anything else in place will continue to work as before.
+Q: What operating systems does Corretto 8 support?
+A: Corretto 8 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
+Windows builds are supported on versions 7, 8, 10, Server 2008, Server 2012, Server 2016 and Server 2019.
+Mac OS X builds are supported on 10.10 (Yosemite) and later.
+Linux (glibc) builds are supported on Red Hat Enterprise Linux 6+, CentOS 6+, Ubuntu Linux 14+, Debian Linux 8+, Amazon Linux AMI, and SuSE 12+.
+Linux (musl-libc) builds are supported on Alpine Linux 3.12+
+Q: What operating systems does Corretto 11 support?
+A: Corretto 11 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
+Windows builds are supported on versions 7, 8, 10, Server 2008, Server 2012, and Server 2016.
+Mac OS X builds are supported on 10.13 (High Sierra) and later.
+Linux (musl-libc) builds are supported on Alpine Linux 3.12+.
+Linux Arm (glibc) builds are supported on Linux ARMv7+ with glibc 2.25+.
+Q: What operating systems does Corretto 15 support?
+A: Corretto 15 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS.
+Licensing and Open Source
+Q: What are Corretto's license terms?
+A: Corretto is released under the same open source license as OpenJDK, which is licensed under the GNU Public License version 2 with the Class Path Exception (GPLv2 with CPE). You can use Corretto as you would use OpenJDK.
+Q: How does Amazon contribute to OpenJDK?
+A: Amazon started contributing to OpenJDK in 2017 and we plan to increase contributions in both number and complexity.
+Q: How can I contribute to Corretto?
+A: Amazon encourages contributions to the OpenJDK project as the way to get code into Corretto. This way the whole OpenJDK community benefits from your changes. If your contribution is specific to Corretto, such as to the build logic, the code is available on GitHub, where we will evaluate issues and pull requests.
+Read the blog post
+Download Now
+Visit our documentation
+Page Content

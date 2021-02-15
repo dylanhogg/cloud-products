@@ -1,0 +1,35 @@
+General
+Q: What is Amazon Sumerian? Amazon Sumerian is a managed service that lets you create and run 3D, Augmented Reality (AR) and Virtual Reality (VR) applications. You can build immersive and interactive scenes that run on AR and VR, mobile devices, and your web browser. Whether you are non-technical, a web or mobile developer, or have years of 3D development experience, getting started with Sumerian is easy. You can design scenes directly from your browser and, because Sumerian is a web-based application, you can quickly add connections in your scenes to existing AWS services.
+Q: What technologies is Amazon Sumerian based on?  Amazon Sumerian is based on WebGL 2. Sumerian falls back to WebGL 1 where WebGL 2 is not available.  Q: How do I access Amazon Sumerian? Amazon Sumerian is generally available. To get started, click here.
+Q: Where can I find Amazon Sumerian documentation? To read Amazon Sumerian documentation, click here.
+Q: What are Sumerian Hosts? Sumerian Hosts are AI driven animated characters that can be added to your scene. Amazon Sumerian helps you design and assemble scenes to create rich 3D environments. Within those environments, you can use Sumerian Hosts to create and add animated 3D characters to your scenes. Hosts can guide your users through a scene by narrating scripts or answering questions. You can customize the Host’s characteristics such as gender, appearance, clothing, voice, and language. Using Sumerian’s integration with Amazon Lex and Amazon Polly, you can enable engaging spoken interactions between Hosts and your users. Polly lets you input text which your Host can speak in lifelike voices across a variety of languages. Using Lex’s automatic speech recognition and natural language understanding capabilities, you can build the conversational interface for your Host that allows it to understand and respond to users’ speech.  Q: Does Amazon Sumerian support Virtual Reality (VR)? Yes. Because VR is a rapidly evolving technology, we've built Amazon Sumerian's VR support on top of WebVR, which allows us to quickly add support for new head-mounted displaysHMDs. Sumerian currently supports Oculus Go, Oculus Rift, HTC Vive, and HTC Vive Pro.
+Q: Does Amazon Sumerian support Augmented Reality (AR)? Yes. Amazon Sumerian supports AR compatible mobile devices. To get started developing for iOS or Android with Sumerian, you can follow the tutorials found here.  Q: What file types does Amazon Sumerian support? Amazon Sumerian supports FBX 2017 and OBJ.  Q: Does Sumerian integrate with other AWS services? Yes. We have integrated a base set of AWS services directly into the Sumerian interface. For example, you can choose an Amazon Polly persona and attach a script to a Sumerian host to make the Host speak.
+Q: How is Sumerian different than Amazon Lumberyard? Amazon Lumberyard and Amazon Sumerian are complimentary services that help customers design, build, and deploy 3D content. Sumerian and Lumberyard do share similarities in feature sets but serve different customer types. Sumerian uses technologies like JavaScript, HTML, WebGL, and WebVR to enable web and mobile developers to deploy experiences to target platforms through web browsers.
+Amazon Sumerian
+Amazon Lumberyard
+Technologies
+JavaScript, HTML, WebGL, WebVR
+C++, Lua, DirectX, OpenGL
+Platform Examples
+Web Browsers (e.g. Chrome and Firefox), Mobile Browsers (e.g. iOS, Android), Oculus Go, Oculus Rift, HTC Vive, HTC Vive Pro, Google Daydream, Lenovo Mirage
+PC, Mac, iPhone, Xbox, Playstation
+Experience Types
+Focused, supports latest web browser technology
+Big, complex, and/or high visual fidelity
+Distribution Examples
+Any browser and hybrid experiences for iOS ARKit and Android ARCore
+Steam, Amazon.com, Google Play
+Pricing
+Q: Is there a free trial for Amazon Sumerian? Yes. You can try AWS Sumerian for free in your first year of using the service. The Sumerian free tier lets you create a 50MB published scene that receives 100 views per month for free in the first year.
+Q: How much does Amazon Sumerian cost? Please see our pricing page for the latest information.
+Support
+Q: What kind of support is available for Amazon Sumerian? All Amazon Sumerian customers have access to documentation, tutorials, and prebuilt scene templates and assets. Additional support for Sumerian is available via AWS Premium Support plans. Support is also provided via the Sumerian AWS Developer Forum.
+Q: How do I submit feedback or suggestions?
+Please email us your feedback.
+Learn more about Amazon Sumerian
+Read the documentation
+Ready to build?
+Sign in or sign up for Amazon Sumerian
+Have more questions?
+Contact us
+FAQs

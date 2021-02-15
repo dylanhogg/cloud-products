@@ -1,0 +1,92 @@
+General
+Q: Can I really set up Amazon Connect in minutes?
+Yes. We encourage you to go to the Amazon Connect console and set up an Amazon Connect contact center now.
+Q: Do you have examples of how customers are already using Amazon Connect?
+Yes. Please see the Amazon Connect customers web page and the AWS contact center blog channel.
+Getting started
+Q: How can I try Amazon Connect?
+Amazon Connect is self-service so you can try before you buy, without talking to sales, completing RFPs, or hiring for consultants or professional services. Simply log in to the Amazon Connect Console using your AWS account and set up an Amazon Connect instance. To learn how to set up Amazon Connect, see the Getting Started documentation, and visit the Amazon Connect Integration Quickstart Portal. To learn how to configure an Amazon Connect instance for your business, see the Administrator Guide.
+Q: Is there a free trial for Amazon Connect?
+Yes. As part of the AWS Free Tier, Amazon Connect includes free usage for each capability. For any additional usage, you will be charged at the published Amazon Connect pricing. To start your free trial, create an Amazon Connect instance in your AWS account and start using the service. For more information visit Amazon Connect pricing.
+Communications and telephony
+Q: How do end-customers interact with Amazon Connect?
+Customers can call into your Amazon Connect contact center using any phone and speak to an agent. You can define other interactions with your customers in contact flows. For example, you can use voice or DTMF input, and text-to speech output using Amazon Polly, which can optionally be combined with Amazon Lex for natural language interactions.
+Q: How do agents interact with Amazon Connect?
+Agents use the Contact Control Panel (CCP) to interact with customers, such as answering calls, placing calls, or setting their status. For agent voice communications, Amazon Connect includes a web-based softphone for incoming and outgoing telephony, or agents can use a traditional telephone service using the PSTN.
+Q: Does Connect support remote contact centers?
+Yes. Amazon Connect is so simple to set-up and use, with only a few clicks you can set up a virtual contact center in minutes. Remote agents can be trained in less than 20 minutes, all they need is an internet connection and a headset to provide the best possible customer service. Click here [link to remote agent landing page] for more information on our Remote Agent Solution.
+Q: Do I need to bring my own telephony provider to use Amazon Connect?
+No. Telephony services are included with Amazon Connect, which is designed to scale to meet your telephony needs.
+Q: Does Amazon Connect support high quality audio?
+Yes. With Amazon Connect, calls are made over the Internet from a computing device like a PC, using the Amazon Connect softphone. The Amazon Connect softphone delivers high-quality 16kHz audio and, is resistant to packet loss to ensure a high quality call experience.
+Q: Does Amazon Connect support call recordings?
+Yes. Amazon Connect enables you to store call recordings of customer interactions in Amazon S3. Interactions are not recorded unless an agent is connected. If multiple agents are connected, each will have an associated call recording.
+Q: What types of work can contact center managers and agents prioritize, assign, and track using task management?
+In addition to managing calls and chats in Amazon Connect, contact center managers have the flexibility to prioritize, assign, and track virtually any contact center task that agents complete in external applications. Examples of tasks include replying to tweets or Facebook posts in a social media management application, answering emails, following up on a customer case in Salesforce, and completing work like processing an insurance claim in a business specific application. Additionally, during periods of downtime, contact center managers can also assign agents Tasks that are not directly related to solving a customer issue, such as completing training in a learning portal.
+Q: Does Amazon Connect support hybrid contact centers?
+Yes, with Amazon Connect you can onboard specific business lines or agents to handle calls as needed. For example, if your local support team uses an on-premises system but your international agents need to work remotely, you can migrate any international team to Amazon Connect.
+Web and mobile chat
+Q: How do my agents use Amazon Connect chat?
+Agents chat with your customers using the Amazon Connect Contact Control Panel (CCP) which is the same web-based application agents use for voice engagements. Since it is web based, agents can work from virtually anywhere. The CCP SDK makes it easy to integrate with other apps like agent desktops or CRMs with just a few lines of code.
+Q: How do I add Amazon Connect chat to my website or mobile app to enable my customers to contact me?
+By leveraging our open source reference implementation and a few lines of code, you can easily add Amazon Connect chat into your existing website or mobile app. Customizing and branding the chat experience is easy using Amazon Connect's APIs and client SDKs. Learn more
+Q: Can I use Amazon Connect for just chat?
+Yes. You can use Amazon Connect for just chat, just voice, or both. Existing instances of Amazon Connect are enabled for chat by default but you only pay for what you use.
+ML-powered contact center analytics
+Q: Does Amazon Connect have integrated machine learning speech-to-text or sentiment analysis?
+Yes. Contact Lens for Amazon Connect is a set of machine learning (ML) capabilities integrated into Amazon Connect. With Contact Lens for Amazon Connect, contact center supervisors can better understand the sentiment, trends, and compliance risks of customer conversations to effectively train agents, replicate successful interactions, and identify crucial company and product feedback.
+Using AWS machine learning natural language processing (NLP) and speech-to-text, Contact Lens for Amazon Connect transcribes contact center calls to create a fully searchable archive and surface valuable customer insights.
+Contact flows
+Q: What is a Contact flow?
+Contact flows define the experience your customers have when they interact with your contact center. These are similar in concept to Interactive Voice Response (IVR). Contact flows are comprised of blocks, with each block defining a step or interaction in your contact center. For example, there are blocks to play a prompt, get input from a customer, branch based on customer input, or invoke a AWS Lambda function or and Amazon Lex bot.
+Q: How do I edit Amazon Connect Contact flows?
+Amazon Connect provides a Contact flow editor that lets you drag-and-drop blocks onto the designer canvas, and then use connectors to connect the blocks in the flow. You can configure the settings for each block after adding it to the designer.
+Q: Does Amazon Connect offer text-to-speech in Contact flows?
+Yes. Amazon Connect has built in text-to-speech leveraging Amazon Polly. You can access all the languages and voices offered by Amazon Polly.
+Q: How do I use Amazon Lex chatbots with Amazon Connect?
+You can use an Amazon Lex chatbot in your Amazon Connect contact flow to interact with callers. Callers can provide input to the chatbot by either speaking an utterance or pressing digits on their keypads. Amazon Lex interprets the spoken utterance or dual-tone multi-frequency signaling (DTMF) digits entered on a keypad, and uses them to understand the caller’s intent, or for collecting slot information like a zip code or account number.
+Q: What are contact attributes in Amazon Connect?
+Contact attributes are pieces of data about a contact that you can use to personalize the customer experience, make routing decisions about contacts as they progress through your contact center orretrieve real-time metrics about the queues and agents in your contact center to dynamically route contacts based on queue and agent availability.
+For more information, see Contact Attributes in the Amazon Connect documentation.
+Skills-based routing
+Q: Does Amazon Connect support skills-based routing?
+Yes. Contacts can be routed based on availability, agent skill set, customer sentiment, or past history.
+Q: Do you have to recreate routing rules and profiles for each channel (e.g. voice and chat)?
+No. You can build once and use across channels. Amazon Connect has a single user interface, configuration, workflow, and routing engine for calls and chat.
+Q: Can I adjust the priority of contacts in queue?
+Yes. You can adjust priority of contacts in the queue using the set routing priority block in an Amazon Connect Contact flow.
+Metrics and reporting
+Q: What type of metrics reporting does Amazon Connect support? Amazon Connect offers three metrics experiences:
+Historical metrics reports—Generate reports to analyze how your contact center has performed over a specified period of time. You can generate granular or aggregated reports pivoted on queues, individual agents, and phone numbers.
+Real-time metrics reports—Gain insight into how your contact center is performing in real time. You can see reports pivoted on queues, agents, and routing profiles
+Contact search—View detailed individual contact reports with the option to find and play back call recordings.
+Q: Can I create a dashboard to view the metrics reports I’ve defined?
+Yes. You can use the comprehensive dashboard to define and monitor the service levels and agent occupancy performance indicators that are most important to you. You can configure the dashboard so that the metrics you care about are always visible. You can configure your dashboard from the home page of your Amazon Connect contact center instance.
+Ecosystem and integrations
+Q: Does Amazon Connect work with other AWS services?
+Yes. Amazon Connect integrates with several AWS services to provide a richer depth of capabilities and customization, including:
+Amazon Connect can leverage AWS Directory Services for identity and access management.
+Amazon Connect stores any call recordings and scheduled metrics reports in Amazon S3 buckets in your account, letting you control the lifecycle management and retention of your data.
+Amazon Connect can invoke AWS Lambda functions to perform data dips, send encrypted customer input, and other external integration in contact flows.
+Amazon Connect can stream metrics and agent event data to Amazon Kinesis Data Stream or Amazon Kinesis Data Firehose. Amazon Elastic Search Service can consume the data from Amazon Kinesis to enable advanced monitoring.
+Amazon Connect can encrypt data from your contact center, such as call recordings and reports, with encryption keys stored with Amazon Key Management Service.
+Amazon Connect leverages Amazon Lex for Natural Language Understanding and automated customer interactions.
+Amazon Connect uses Amazon CloudWatch for operational metrics and alarms.
+Amazon Connect uses Amazon Polly to provide the voice for text-to-speech messages.
+Q: Does Amazon Connect integrate with my existing or other third party systems?
+Yes. Amazon Connect is an open platform so it is easy to integrate with existing or other third party systems. Amazon Connect provides integrations for leading customer relationship management (CRM) offerings, such as Salesforce and Zendesk, Workforce Management (WFM), and Analytics tools.
+You can also use Amazon Connect with other AWS services like Amazon S3 and AWS Lambda for storing recorded calls or streaming detailed contact records in real-time to a data warehouse to merge with business intelligence systems for further analysis. Amazon Connect provides an API so you can customize the solution to your needs.
+Q: What type of architecture is Amazon Connect built on?
+Amazon Connect is built on a multi-tenant architecture, meaning multiple organizational deployments share common AWS servers. With multi-tenant hosting, you have easy access to managed software, reduce costs associated with on-premises hardware, and can ensure complete security over your private data. You are no longer responsible for maintaining your hardware, and software is automatically updated as Amazon Connect adds new features.
+Q: Is there a network of consulting partners should I need their help?
+Yes. A set of APN Consulting Partners with the requisite AWS and Amazon Connect knowledge have been approved by the Amazon Connect team to help you successfully configure and implement Amazon Connect. Please refer to the Amazon Connect Partner website for a list of these partners, and check back for updates as additional partners are approved.
+Billing
+Q: How much does it cost to use Amazon Connect?
+With Amazon Connect, you only pay for what you use. Please consult the Amazon Connect pricing page for the latest prices.
+Q: How are usage charges calculated?
+For information about how each of the Amazon Connect capabilities charge please visit Amazon Connect pricing.
+Support
+Q: How do I get support for Amazon Connect?
+The answers to most questions about Amazon Connect can be found in the Administrator Guide.
+For additional support options, see the AWS Support Center.
+Page Content

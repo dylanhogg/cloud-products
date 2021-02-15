@@ -3,13 +3,13 @@ On-premises access to virtually unlimited cloud storage
 Get started with AWS Storage Gateway
 Request more information
 AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. Customers use Storage Gateway to simplify storage management and reduce costs for key hybrid cloud storage use cases. These include moving backups to the cloud, using on-premises file shares backed by cloud storage, and providing low latency access to data in AWS for on-premises applications.
-To support these use cases, Storage Gateway offers three different types of gateways – File Gateway, Tape Gateway, and Volume Gateway – that seamlessly connect on-premises applications to cloud storage, caching data locally for low-latency access. Your applications connect to the service through a virtual machine or gateway hardware appliance using standard storage protocols, such as NFS, SMB, and iSCSI. The gateway connects to AWS storage services, such as Amazon S3, Amazon S3 Glacier, Amazon S3 Glacier Deep Archive, Amazon EBS, and AWS Backup, providing storage for files, volumes, snapshots, and virtual tapes in AWS. The service includes a highly-optimized and efficient data transfer mechanism, with bandwidth management and automated network resilience.
+To support these use cases, Storage Gateway offers three different types of gateways – File Gateway, Tape Gateway, and Volume Gateway – that seamlessly connect on-premises applications to cloud storage, caching data locally for low-latency access. Your applications connect to the service through a virtual machine or gateway hardware appliance using standard storage protocols, such as NFS, SMB, and iSCSI. The gateway connects to AWS storage services, such as Amazon S3, Amazon S3 Glacier, Amazon S3 Glacier Deep Archive, Amazon EBS, and AWS Backup, providing storage for files, volumes, snapshots, and virtual tapes in AWS. The service includes a highly-optimized and efficient data transfer mechanism, with bandwidth management and automated network resilience.
 Introduction to AWS Storage Gateway (2:36)
 Benefits
 Simple
-It is simple to get started with AWS Storage Gateway. You download the gateway virtual machine software from AWS or deploy the dedicated hardware appliance, assign an IP address to the gateway, and associate the gateway with your AWS account by activating it. Your gateway is managed and updated from the AWS Console. Storage Gateway requires no changes to your applications, easily integrating with standard storage protocols on-premises.
+It is simple to get started with AWS Storage Gateway. You download the gateway virtual machine software from AWS or deploy the dedicated hardware appliance, assign an IP address to the gateway, and associate the gateway with your AWS account by activating it. Your gateway is managed and updated from the AWS Console. Storage Gateway requires no changes to your applications, easily integrating with standard storage protocols on-premises.
 Cloud-integrated
-Hybrid cloud storage means your data can be accessed on-premises and stored durably in AWS Cloud storage services, including Amazon S3, Amazon S3 Glacier, Amazon S3 Glacier Deep Archive, and Amazon EBS. Once data is moved to AWS, you'll benefit from using AWS compute, machine learning, and big data analytics services to gain more insights from your data. Additionally, you can leverage the full AWS portfolio of security and management services including AWS Key Managament Service (KMS), AWS Identity and Access Management (IAM), SNS workflows, Amazon CloudWatch, and AWS CloudTrail.
+Hybrid cloud storage means your data can be accessed on-premises and stored durably in AWS Cloud storage services, including Amazon S3, Amazon S3 Glacier, Amazon S3 Glacier Deep Archive, and Amazon EBS. Once data is moved to AWS, you'll benefit from using AWS compute, machine learning, and big data analytics services to gain more insights from your data. Additionally, you can leverage the full AWS portfolio of security and management services including AWS Key Managament Service (KMS), AWS Identity and Access Management (IAM), SNS workflows, Amazon CloudWatch, and AWS CloudTrail.
 Low latency
 AWS Storage Gateway caches data in the local VM or gateway hardware appliance, providing low-latency disk and network performance for your most active data, with optimized data transfers occurring to AWS Cloud storage in the background. Your on-premises applications can easily and seamlessly work with data in the cloud. Users and applications continue to operate using a local storage model while you realize the benefits of the AWS Cloud.
 Durable and secure
@@ -17,36 +17,36 @@ Data stored through AWS Storage Gateway benefits from the durability and securit
 Optimized transfers
 Compression, encryption, and bandwidth management are built in. Storage Gateway manages local cache offloads to the cloud based on your desired performance parameters, enabling you to fine-tune the balance of latency and scale for your workloads. Only data that changes is transferred, enabling you to optimize your network bandwidth.
 Scalable
-Customers experience a fast deployment and the cloud storage is delivered and billed on demand, enabling your business to leverage the infinite scale of the AWS Cloud as business needs fluctuate. Workloads can expand and contract, backup and archive storage can extend without upfront costs, and you can provision additional storage capacity without new hardware. Storage Gateway gives customers looking for hybrid cloud storage the best of both worlds since it provides an easy on-ramp to the cloud while supporting your on-premises applications.
+Customers experience a fast deployment and the cloud storage is delivered and billed on demand, enabling your business to leverage the infinite scale of the AWS Cloud as business needs fluctuate. Workloads can expand and contract, backup and archive storage can extend without upfront costs, and you can provision additional storage capacity without new hardware. Storage Gateway gives customers looking for hybrid cloud storage the best of both worlds since it provides an easy on-ramp to the cloud while supporting your on-premises applications.
 Cloud Storage in Minutes with AWS Storage Gateway
 AWS Storage Gateway is a fast, simple way to get started in the cloud. In this video, we’ll show you how quick and easy it is to get started. In just minutes, you can be up and running in the cloud using AWS Storage Gateway.
 Cloud Storage in Minutes with AWS Storage Gateway (6:38)
-Read blog: Cloud storage in minutes with AWS Storage Gateway »
+Read blog: Cloud storage in minutes with AWS Storage Gateway
 How it Works
 Use cases
 Move backups to the cloud
 Storage Gateway enables you to securely and easily store backups in the cloud. These include database backups, file share backups, tape archives, and more. Tape Gateway provides a virtual tape library, with each virtual tape being stored in Amazon S3, and supports all major backup applications. Tape Gateway is designed to be a seamless drop-in replacement to your existing physical tape infrastructure. When you no longer require immediate or frequent access to data contained on a virtual tape, you can have your backup application archive it. Your data goes from the virtual tape library into Amazon S3 Glacier or Amazon S3 Glacier Deep Archive, further reducing storage costs. File Gateway offers you a seamless way to connect to the cloud in order to store application data files and backup data as durable objects on Amazon S3 cloud storage.
-Learn more about Tape Gateway »
-Learn more about File Gateway »
+Learn more about Tape Gateway
+Learn more about File Gateway
 Use on-premises file shares backed by cloud storage
-File Gateway helps you access virtually unlimited cloud backed file shares from on-premises, reduces your costs of storing data locally, and provides you with additional flexibility by allowing you to access your data in the cloud. Nearly all enterprises, regardless of industry, have to store files, whether they are backups, media content, or specialized vertical application datasets. Managing and scaling on-premises infrastructure to provide online storage and distribution of such backup or content files is often burdensome and costly, requiring expensive hardware refreshes, expansion, and software licensing. File Gateway helps you reduce these on-premises costs and physical hardare footprints giving you more freedom to make the best decisions for your business.
+File Gateway helps you access virtually unlimited cloud backed file shares from on-premises, reduces your costs of storing data locally, and provides you with additional flexibility by allowing you to access your data in the cloud. Nearly all enterprises, regardless of industry, have to store files, whether they are backups, media content, or specialized vertical application datasets. Managing and scaling on-premises infrastructure to provide online storage and distribution of such backup or content files is often burdensome and costly, requiring expensive hardware refreshes, expansion, and software licensing. File Gateway helps you reduce these on-premises costs and physical hardare footprints giving you more freedom to make the best decisions for your business.
 Low latency access for on-premises applications to cloud
 Storage Gateway enables on-premises applications to use cloud storage by providing low-latency data access over standard storage protocols. A local cache stores your most recently used data on-premises, and the cloud provides scalability as well as industry-leading data protection, durability, availability, security, and performance. Storage Gateway provides a simple first step into the cloud and is designed to be easy to deploy, easy to activate, and easy for your applications to access.
 Data protection and disaster recovery
 With a Volume Gateway configuration, you can take snapshots of your local volumes and store those snapshots in Amazon EBS. Those snapshots can be the starting point for an Amazon EBS volume, which you can then attach to an Amazon EC2 instance. In the event of a local site disaster, simply set up your applications in the cloud or in a different data center, and restore your snapshot to get back up and running.
-Learn more about Volume Gateway »
+Learn more about Volume Gateway
 Customer Case Studies
 AWS Storage Gateway helped TransferWise address their load and network constraints, which were preventing them from getting backups completed.
 Ryanair moved to Tape Gateway because of the unreliability of physical tape and experienced 65% cost savings by switching to AWS.
 FINRA (Financial Industry Regulatory Authority) uses AWS Storage Gateway to substantially reduce costs and simplify storage management.
-Hear from more AWS Storage Gateway customers »
+Hear from more AWS Storage Gateway customers
 Storage Gateway Blogs
 No blog posts have been found at this time. Please see AWS Blog for other resources.
 To read more AWS Storage Gateway blogs, please visit the AWS Storage blog channel.
 What's New with Storage Gateway
 Date
 1
-…
+...
 Ready to get started?
 Check out Storage Gateway features
 Learn more about the features that make it easy for you to run hybrid cloud workloads at any stage of your cloud adoption.

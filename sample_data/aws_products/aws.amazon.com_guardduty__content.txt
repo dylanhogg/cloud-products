@@ -15,7 +15,7 @@ Blog posts & articles
 No blog posts have been found at this time. Please see the AWS Blog for other resources..
 Featured customers
 Partners
-Meet the AWS APN Partners who have integrated with Amazon GuardDuty. APN Partner products complement the existing AWS services to enable you to deploy a comprehensive security architecture and a more seamless experience across your AWS Cloud and on-premises environment. See a full list of Amazon GuardDuty partners.
+Meet the AWS APN Partners who have integrated with Amazon GuardDuty. APN Partner products complement the existing AWS services to enable you to deploy a comprehensive security architecture and a more seamless experience across your AWS Cloud and on-premises environment. See a full list of Amazon GuardDuty partners.
 Threat intelligence partners
 See all Amazon GuardDuty partners
 Explore Amazon GuardDuty features

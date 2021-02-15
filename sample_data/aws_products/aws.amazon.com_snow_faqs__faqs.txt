@@ -1,0 +1,34 @@
+AWS Snow Family
+Overview
+FAQs
+AWS Snowcone
+AWS Snowball
+AWS Snowmobile
+Products
+Storage
+AWS Snow Family FAQs
+General
+Q: What is the AWS Snow Family?
+The AWS Snow Family is a collection of physical devices that help migrate large amounts of data into and out of the cloud without depending on networks. This helps you apply the wide variety of AWS services for analytics, file systems, and archives to your data. AWS Snowcone is the smallest member of the AWS Snow Family of edge computing and data transfer devices. Snowcone is portable, rugged, and secure. You can use Snowcone to collect, process, and move data to AWS, either offline by shipping the device, or online with AWS DataSync. AWS Snowball is a suitcase-sized data migration and edge computing device that comes in two device options: Compute Optimized and Storage Optimized. Snowball Edge Storage Optimized devices provide 40 vCPUs of compute capacity coupled with 80 terabytes of usable block or Amazon S3-compatible object storage. It is well-suited for local storage and large-scale data transfer. Snowball Edge Compute Optimized devices provide 52 vCPUs, 42 terabytes of usable block or object storage, and an optional GPU for use cases such as advanced machine learning and full motion video analysis in disconnected environments. AWS Snowmobile is a shipping container moved with a tractor-trailer. These services can assist with data migration, disaster recovery, data center shutdown, and remote data collection projects.
+Q: What are some example use cases?
+You can use AWS Snow Family services for data transfer and occasional pre-processing on location. Some large data transfer examples include cloud migration, disaster recovery, data center relocation, and/or remote data collection projects. These projects typically require you to migrate large amounts of data in the shortest, and most cost-effective, amount of time.
+Some example use cases for Snowcone and Snowball Edge computing capabilties include IoT sensor stream capture, on-the-fly media transcoding, image compression, aggregating metrics, and control signaling and alarming.
+Q: Why do I need Snow Family services?
+It can take a long time to transfer large amounts of data over the wire, and some locations don't have any connectivity at all. The Snow Family helps expedite data transfers in a more secure and cost-effective way. Each service has a pre-set capacity level to make it easy to choose the right option for you. Snowcone and Snowball Edge further help bring computing applications closer to the data source to enhance analysis and deliver real-time results.
+Q: Which Snow Family service is best for me?
+The Snow Family comes in multiple capacities and form factors to fit most data migration and/or remote data collection projects. First, determine the amount of storage capacity you need. Then, evaluate your need for onboard computing capabilities.
+Please refer to the feature comparison table for more details.
+Q: How quickly can I migrate data?
+The Snowball services can typically transfer up to 100 TBs in about a week. Snowmobile can transfer data at a rate of up to 1TB/s, which means 100 PBs can be loaded in just a few weeks. In comparison, a dedicated T3 line at 50Mb/s takes years.
+Q: How do I choose between Snow Family and other AWS data migration services?
+AWS Storage Gateway and AWS Direct Connect services are good choices when network bandwidth limitations do not exist. For the most efficient means of data transfer, whether connected to a network or not, the Snow Family of services provides good choices as well. AWS offers a variety of tools to help you move data via networks, roads, and technology partners. See the pages below to find out which service is best for you.
+Learn more about migrating to AWS here
+Learn more about which data migration tool is right for you
+Q: What AWS Regions are supported?
+Snow Family services are available for use in specific AWS Regions. See the Regional Service Availability pages, for more information.
+Learn more about AWS Snow Family
+Visit the Snow Family page
+Ready to build?
+Get started with AWS Snow Family
+Have more questions?
+Contact us

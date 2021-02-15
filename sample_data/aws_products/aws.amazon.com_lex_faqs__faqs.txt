@@ -1,0 +1,116 @@
+General
+Q: What is Amazon Lex?
+Amazon Lex is a service for building conversational interfaces using voice and text. Powered by the same conversational engine as Alexa, Amazon Lex provides high quality speech recognition and language understanding capabilities, enabling addition of sophisticated, natural language ‘chatbots’ to new and existing applications. Amazon Lex reduces multi-platform development effort, allowing you to easily publish your speech or text chatbots to mobile devices and multiple chat services, like Facebook Messenger, Slack, Kik, or Twilio SMS. Native interoperability with AWS Lambda and Amazon CloudWatch and easy integration with many other services on the AWS platform including Amazon Cognito, and Amazon DynamoDB makes bot development effortless.
+Q: How can I get started with Amazon Lex?
+To start using Amazon Lex, simply sign into the AWS Management Console and navigate to “Lex” under the “Artificial Intelligence” category. You must have an Amazon Web Services account to start using Amazon Lex. If you do not already have one, you will be prompted to create one during the sign-up process. Please refer to the Amazon Lex V2 Getting Started Guide for more information.
+Q: What are the most common use cases for Amazon Lex?
+The most common use-cases include:
+Self-service voice assistants and chatbots – build a call center bot
+Informational bot – build an automated customer support agent or bot that answers questions
+Application/Transactional bot – build a stand-alone pizza ordering agent or a travel bot
+Enterprise Productivity bot – build custom bots to connect to enterprise data resources
+Device Control bot– use Amazon Lex to issue control commands to connected devices
+Q: How does Amazon Lex work with other AWS services?
+Amazon Lex leverages AWS Lambda for Intent fulfillment, Amazon Cognito for user authentication, and Amazon Polly for text to speech.
+Q: Do I have to be a machine learning expert to use Amazon Lex?
+No machine learning expertise is necessary to use Amazon Lex. Developers can declaratively specify the conversation flow and Amazon Lex will take care of the speech recognition and natural language understanding functionality. Developers provide some sample utterances in plain English and the different parameters (slots) that they would like to collect from their user with the corresponding prompts. The language model gets built automatically.
+Q: In which AWS regions is Amazon Lex available?
+For a list of the supported Amazon Lex AWS regions, please visit the AWS Region Table for all AWS global infrastructure. Also for more information, see Regions and Endpoints in the AWS General Reference.
+Q: What is the maximum bandwidth supported on Amazon Lex?
+Amazon Lex scales to your needs and does not impose bandwidth constraints.
+Q: Is Amazon Lex a managed service?
+Amazon Lex is a completely managed service so you don’t have to manage scaling of resources or maintenance of code. Your interaction schema and language models are automatically backed up. We also provide comprehensive versioning capability for easy rollback. Amazon Lex architecture does not require storage or backups of end user data.
+Q: When do I use Amazon Polly vs. Amazon Lex?
+Amazon Polly converts text inputs to speech. Amazon Lex is a service for building conversational interfaces using voice and text.
+Q: Does Amazon Lex get more intelligent over time?
+Yes. Amazon Lex uses deep learning to improve over time.
+Bot Structure
+Q: How do I create a bot in Amazon Lex?  To create a bot, you will first define the actions performed by the bot. These actions are the intents that need to be fulfilled by the bot. For each intent, you will add sample utterances and slots. Utterances are phrases that invoke the intent. Slots are input data required to fulfill the intent. Lastly, you will provide the business logic necessary to execute the action. An Amazon Lex bot can be created both via Console and REST APIs.
+Q: Can I implement business logic on the client?  Yes. Amazon Lex provides the option of returning parsed intent and slots back to the client for business logic implementation.
+Q: How can I validate user input?   Amazon Lex provides deep integration with AWS Lambda and you can validate user input using the initialization and validation codeHook. This code gets executed at every turn of the conversation. The codehook can be used to set up session parameters, validate user input and customize responses.
+Q: What is an Intent?   To build an Amazon Lex bot, you will need to identify a set of actions - known as 'intents’ -- that you want your bot to fulfill. A bot can have multiple intents. For example, a ‘BookTickets’ bot can have intents to make reservations, cancel reservations and review reservations.
+Q: What is an utterance?   An ‘utterance’ is the spoken or typed phrase to invoke an intent. For example, to invoke the intent to make reservations, you would provide a sample utterance such as, “Can I make a reservation?”
+Q: What are slots?   To fulfill an intent, the Amazon Lex bot needs information from the user. This information is captured in ‘slots’. For example, you would define show name and time as slots for intent to make reservations.
+Q: What are prompts?   Amazon Lex elicits the defined ‘slots’ by using the ‘prompts’ provided. For example, to elicit value for the slot ‘time’ you will define a prompt such as “What show time would you like to reserve?”. Amazon Lex is capable of eliciting multiple slot values via a multi-turn conversation.
+Q: How is an action fulfilled?   Amazon Lex integrates with AWS Lambda for ‘fulfillment’ of the action or business logic. Alternately, you can configure Amazon Lex to return parsed intent and slot values to the client for action fulfillment.
+Q: How do I monitor and track my bot?   You can track metrics for your bot on the ‘Monitoring’ dashboard in the Amazon Lex Console. Currently, you can track the number of missed utterances, request latency and traffic by channel for your bot. You can view list of utterances that were not recognized by your bot, aka 'missed utterances'. With these monitoring capabilities, you view how your users are interacting with the bot and make improvements over time.
+Build and Test
+Q: What happens when I ‘build’ a bot?  Building a bot triggers machine learning and creates the models for your bot. A new version of your intents and slot types is created. Once created a version is immutable.
+Q: How can I test an Amazon Lex bot?  You can test your Amazon Lex bot via the test window on the console. Any business logic implemented in AWS Lambda can be tested via this console as well. All supported browsers allow for testing text with your Amazon Lex bot; voice can be tested from a Chrome browser.
+Deployment
+Q: How can I create Amazon Lex bots for mobile?  Amazon Lex provides SDKs for iOS and Android. You can develop bots for your mobile use cases with these SDKs. User authentication can be enabled via Amazon Cognito.
+Q: How can I make Amazon Lex bots available on messaging services?  Amazon Lex bots can be published to messaging platforms like Facebook Messenger, Slack, Kik, and Twilio SMS. To publish the bot you can provide the tokens for authentication in the console, and we will store it securely and provide a callback URL that you can provide to the chat service.
+Q: Do I have to submit my bot for certification prior to deployment?  You don’t need to certify your bot with Amazon prior to deployment.
+Q: Can I have an Amazon Lex bot version deployed for use by end users while I continue to develop on a different version?  Yes. You can build and deploy a version of your bot into production while you continue to develop on a different version. Every version of an Amazon Lex bot will have an ARN. Each version can be associated with a different alias. You can use these tools to set up dev, stage and prod environments.
+Q: Can I choose different versions while deploying to different messaging services?  Yes. You can deploy a specific version to each messaging service. Every version of Amazon Lex will have an ARN. Each version can be associated with an alias. You can use different aliases for deployment to different messaging service. Also, you can have multiple bots deployed to the same messaging service.
+Q: What is the maximum duration of speech input?  Amazon Lex bots are designed for a request and response interaction or a continuous streaming conversation. With the request and response interaction, Amazon Lex supports up to 15 seconds of speech input. In a streaming conversation, all user inputs across multiple turns are processed in one streaming API call up to 15 seconds of speech input including silence.
+Q: Can I configure for speech input and text output?  Yes, you can just choose the PostContent API to provide voice input and choose text output.
+Q: How many languages are supported on Amazon Lex?  Currently, Amazon Lex supports US English, Spanish, French, German, Italian, Australian English, British English, Canadian French, Latin American Spanish, and US Spanish.
+Q: What audio formats does Amazon Lex support?  Amazon Lex supports the following formats for input audio: LPCM and Opus; Supported output audio formats: MPEG, OGG, PCM.
+Q: Can I use Amazon Lex in VPC?  Amazon Lex can be accessed from VPC via public endpoints for building and running a bot. Currently, Amazon Lex does not provide a VPC endpoint.
+Q: Can I access Amazon Lex bots locally i.e. without an Internet connection?  No. End users will need to access the Amazon Lex runtime endpoint over the Internet.
+Lex V2
+Q: What are the usability improvements offered in the V2 enhanced console and APIs?
+Lex V2 console and APIs use an updated information architecture (IA) to deliver simplified versioning, support for multiple languages in a bot, and streaming capabilities. Additional improvements include the saving of partially completed bot configurations, renaming of resources, simplified navigation, bulk upload of utterances, and granular debugging.
+Q: How can I use the streaming capability?
+You can use the streaming API to conduct a continually streaming conversation with a Lex bot. With streaming conversation, the bot continuously listens and can be designed to respond proactively to user interruptions and pauses. For example, you can configure the bot to keep a conversation going when a user needs more time to respond by sending periodic messages such as “Take your time. Let me know once you are ready.”
+Q: What are the pricing details for the V2 APIs?
+Amazon Lex bots are designed for a request and response interaction or a continuous streaming conversation. With the request and response interaction, each user input (voice or text) is processed as a separate API call. In a streaming conversation, all user inputs across multiple turns are processed in one streaming API call. Please refer to the Amazon Lex pricing page for more details.  Q: Can I integrate bots created using V2 APIs with Amazon Connect contact flows?
+No. Currently, Amazon Connect contact flows only work with the existing V1 APIs. You can use the V1 console to create and integrate bots with Amazon Connect.
+Q: Can I take advantage of V2 API features for my existing bots?
+No. If you want to take advantage of V2 features, you will need to recreate your bot with V2 APIs. The Lex V1 APIs are not compatible because V2 APIs use an updated information architecture to enable simplified resource versioning and support for multiple languages within a bot. Converting to V2 APIs is easy, so get started with this step by step migration guide.
+Q: Which regions and languages do the V2 APIs support?
+The Amazon Lex V2 APIs and enhanced console experience is available in all existing 8 regions and languages including US English, Spanish, French, German, Italian, Australian English, British English, Canadian French, Latin American Spanish, and US Spanish. For a list of the supported Amazon Lex AWS regions, please visit the AWS Region Table.
+Q: Will the support for new features such as simplified versioning and multiple languages in a bot be available in the existing APIs?
+No. These features are only available in the V2 APIs. If you want to take advantage of these features, you can migrate to V2 APIs by following this migration guide.
+Q: Will I be able to access the V1 console?
+Yes, you can access the V1 console in the AWS Management Console. Once in the Lex console, you can navigate between the V1 and V2 console. The bots created in the V1 console will only be visible within the V1 Console. You will not be able to access your V1 bots in the V2 console until you recreate them in the V2 console. Migrating your bots to V2 is easy, here is a step by step migration guide.
+Q: How do I access the V2 console?
+You can click on the link in the left navigation bar to choose V1 or V2 as your console.
+Q: Can I still use Lex V1 APIs?
+Yes. The existing Lex V1 APIs are still supported. You can continue to use them to build and conduct your bot conversations.
+Amazon Alexa
+Q: How is this different from Alexa Skills Kit?
+Alexa Skills Kit (ASK) is used to build skills for use in the Alexa ecosystem and devices and lets developers take advantage of all Alexa capabilities such as the Smart Home and Flash Briefing API, streaming audio and rich GUI experiences. Amazon Lex bots support both voice and text and can be deployed across mobile and messaging platforms.
+Q: Do I need a wake word to invoke an Amazon Lex intent?
+Amazon Lex does not support wake word functionality. The app that integrates with Amazon Lex will be responsible for triggering the microphone, i.e. push to talk.
+Q: Can an Amazon Lex bot respond using Alexa’s voice?
+Currently we do not support the Alexa voice for Amazon Lex responses. However, there are 7 other voices from which to choose.
+Q: Can I create an Alexa Skill from an Amazon Lex bot?
+Amazon Lex provides the ability for you to export your Amazon Lex bot schema into a JSON file that is compatible with Amazon Alexa. Once downloaded as JSON, you need to log in to the Alexa developer portal, navigate to the ‘Interaction Model’ tab, launch the Alexa Skill Builder, and paste the bot schema into the Code Editor of your Alexa Skill.&nbsp; More details and steps can be found in the Amazon Lex documentation.
+Q: When exporting my Amazon Lex bot schema to use in an Alexa skill, are my AWS Lambda functions exported and included in the bot schema?
+No. Only the bot definition will be downloaded.
+Q: I have created an Alexa Skill from an Amazon Lex bot using the schema export feature. Which Alexa platforms support the Amazon Lex bot schema?
+All Alexa platforms that support Alexa skills can be used: The Amazon Echo, Amazon Dot, Amazon Look, Amazon Tap, Amazon Echo Show and any third-party Alexa-enabled devices.
+Data and Security
+Q: Are voice and text inputs processed by Amazon Lex stored, and how are they used by AWS?
+Amazon Lex may store and use voice and text inputs processed by the service solely to provide and maintain the service and to improve and develop the quality of Amazon Lex and other Amazon machine-learning/artificial-intelligence technologies. Use of your content is necessary for continuous improvement of your Amazon Lex customer experience, including the development and training of related technologies. We do not use any personally identifiable information that may be contained in your content to target products, services or marketing to you or your end users. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information. You may opt out of having your content used to improve and develop the quality of Amazon Lex and other Amazon machine-learning/artificial-intelligence technologies by using an AWS Organizations opt-out policy. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Can I delete voice and text inputs stored by Amazon Lex?
+Yes. You can request deletion of voice and text inputs associated with your account by contacting opting out. Deleting voice and text inputs may degrade your Amazon Lex experience. For information about how to opt out, see Managing AI services opt-out policy.
+Q: Who has access to my content that is processed and stored by Amazon Lex?
+Only authorized employees will have access to your content that is processed by Amazon Lex. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Do I still own my content that is processed and stored by Amazon Lex?
+You always retain ownership of your content and we will only use your content with your consent.
+Q: Is the content processed by Amazon Lex moved outside the AWS region where I am using Amazon Lex?  Any content processed by Amazon Lex is encrypted and stored at rest in the AWS region where you are using Amazon Lex. Some portion of content processed by Amazon Lex may be stored in another AWS region solely in connection with the continuous improvement and development of your Amazon Lex customer experience and other Amazon machine-learning/artificial-intelligence technologies. You can request deletion of voice and text inputs associated with your account by contacting AWS Support. Your trust, privacy, and the security of your content are our highest priority and we implement appropriate and sophisticated technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. Please see https://aws.amazon.com/compliance/data-privacy-faq/ for more information.
+Q: Can I use Amazon Lex in connection with websites, programs or other applications that are directed or targeted to children under age 13 and subject to the Children’s Online Privacy Protection Act (COPPA)?
+Yes, subject to your compliance with the Amazon Lex Service Terms, including your obligation to provide any required notices and obtain any required verifiable parental consent under COPPA, you may use Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13. Amazon Lex does not store or retain voice or text utterance information from websites, programs, or applications that are identified by customers in accordance with the Amazon Lex Service Terms as being directed or targeted, in whole or in part, to children under age 13 and subject to COPPA.
+Q: How do I determine whether my website, program, or application is subject to COPPA?
+For information about the requirements of COPPA and guidance for determining whether your website, program, or other application is subject to COPPA, please refer directly to the resources provided and maintained by the United States Federal Trade Commission. This site also contains information regarding how to determine whether a service is directed or targeted, in whole or in part, to children under age 13. whole or in part, to children under age 13.
+SDK
+Q: What SDKs are supported for Amazon Lex?
+Amazon Lex currently supports SDKs for runtime services. IoS and Android SDKs, as well as Java, JS, Python, CLI, .Net, Ruby, PHP, Go, and CPP support both text and speech input.
+Q: Can I use SDKs to build bots?
+You can build bots using SDKs: Java, JavaScript, Python, CLI, .NET, Ruby on Rails, PHP, Go, and CPP.
+Support and Billing
+Q: What support is provided for Amazon Lex?  Depending on your AWS support contract, Amazon Lex is supported under Developer Support, Business Support and Enterprise Support plans. &nbsp;You can also post your queries on the Amazon Lex forums.
+Q: How does Amazon Lex count the number of requests?
+Every input to an Amazon Lex bot is counted as a request. For example, if an end user provides 5 inputs to the bot as part of conversation, these are billed as 5 requests. Usage is metered and billed per request.
+Q: How much does Amazon Lex cost?  Get started with the AWS Free Tier. Please see the Amazon Lex Pricing Page for current pricing information.
+Q: Does Amazon Lex participate in the AWS Free Tier?  Yes. You can try Amazon Lex for free. From the date you get started with Amazon Lex, you can process up to 10,000 text requests and 5,000 speech requests per month for free during the first year.
+Learn more about Amazon Lex pricing
+Visit the pricing page
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content

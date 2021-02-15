@@ -4,8 +4,8 @@ Talk to a specialist
 Get Started
 Analyze all of your data
 No other data warehouse makes it as easy to gain new insights from all your data. With Redshift, you can query and combine exabytes of structured and semi-structured data across your data warehouse, operational database, and data lake using standard SQL. Redshift lets you easily save the results of your queries back to your S3 data lake using open formats, like Apache Parquet, so that you can do additional analytics from other analytics services like Amazon EMR, Amazon Athena, and Amazon SageMaker.
-Learn more about taking the lake house approach by integrating with your Amazon S3 data lake »
-"By leveraging Redshift's ability to query data directly in our Amazon S3 data lake, we have been able to easily integrate new data sources in hours, not days or weeks.  This has not only reduced our time to insight, but helped us control our infrastructure costs."
+Learn more about taking the lake house approach by integrating with your Amazon S3 data lake
+"By leveraging Redshift's ability to query data directly in our Amazon S3 data lake, we have been able to easily integrate new data sources in hours, not days or weeks.  This has not only reduced our time to insight, but helped us control our infrastructure costs."
 - Elliott Cordo
 VP of Data Analytics, Equinox Fitness
 3X
@@ -13,12 +13,12 @@ FASTER THAN OTHER CLOUD DATA WAREHOUSES
 Performance at any scale
 Redshift delivers fast query performance on gigabytes to petabytes of data, and from a few users to thousands. And you get consistently fast results as your workload grows over time.
 Use RA3 instances with managed storage to get up to 3x better price performance than other cloud data warehouses.
-Learn more about the performance benchmarks »
+Learn more about the performance benchmarks
 Experience the next generation of Redshift with AQUA (Advanced Query Accelerator)
 AQUA is a new distributed and hardware accelerated cache that allows Redshift queries to run up to 10x faster than other cloud data warehouses by automatically boosting certain types of queries.
-Learn more about AQUA »
+Learn more about AQUA
 Join tens of thousands of Amazon Redshift customers
-Redshift powers analytical workloads for Fortune 500 companies, startups, and everything in between. Learn more about Redshift customers »
+Redshift powers analytical workloads for Fortune 500 companies, startups, and everything in between. Learn more about Redshift customers
 10s of thousands
 of customers use Amazon Redshift
 "Because of the performance and scale Redshift provides, we have increased our manufacturing efficiency and reduced the time needed to gather and prepare data for regulatory submissions by a factor of five."
@@ -34,7 +34,7 @@ Learn more about modernizing your data warehouse.
 Jack in the Box migrated off of Oracle and Microsoft SQL Server to Amazon Relational Database Service (RDS) and Amazon Redshift
 Press Release
 Equinox Fitness migrated its on-premises data warehouse to Amazon Redshift.
-Learn more »
+Learn more
 21st Century Fox migrated its IBM Netezza on-premises data warehouse to Amazon Redshift.
 Press Release | re:Invent session
 Use cases
@@ -51,8 +51,7 @@ Use SQL to automatically create, train, and deploy Amazon SageMaker models on th
 What's New
 date
 1
-…
+...
 Learn more about pricing
-Learn more
 See what's new
 Visit our resources page

@@ -6,7 +6,7 @@ Applications are moving to the cloud faster today than ever before. A new catego
 Introducing AWS Snowcone
 Meet the newest, smallest member of the AWS Snow Family: AWS Snowcone, a portable, rugged, and secure edge computing and data transfer device
 Explore the new AWS Snowcone with Bill Vass and Jeff Barr (2:46)
-AWS News Blog: Introducing AWS Snowcone »
+AWS News Blog: Introducing AWS Snowcone
 CNBC profile: How the AWS Snow Family helps customers move massive amounts of data to the cloud
 Fireside Chat: Evolving at the Edge with the AWS Snow Family
 AWS OpsHub: A graphical user interface to manage AWS Snow Family devices and computing resources
@@ -14,13 +14,13 @@ AWS Snow Family members
 AWS Snowcone
 AWS Snowcone is the smallest member of the AWS Snow Family of edge computing and data transfer devices. Snowcone is portable, rugged, and secure. You can use Snowcone to collect, process, and move data to AWS, either offline by shipping the device, or online with AWS DataSync.
 Running applications in disconnected environments and connected edge locations can be challenging because these locations often lack the space, power, and cooling needed for data center IT equipment. AWS Snowcone stores data securely in edge locations, and can run edge computing workloads that use AWS IoT Greengrass or Amazon EC2 instances. Snowcone devices are small and weigh 4.5 lbs. (2.1 kg), so you can carry one in a backpack or fit it in tight spaces for IoT, vehicular, or even drone use cases.
-Learn more about Snowcone »
+Learn more about Snowcone
 AWS Snowball
 AWS Snowball is a data migration and edge computing device that comes in two device options: Compute Optimized and Storage Optimized.  Snowball Edge Storage Optimized devices provide 40 vCPUs of compute capacity coupled with 80 terabytes of usable block or Amazon S3-compatible object storage. It is well-suited for local storage and large-scale data transfer. Snowball Edge Compute Optimized devices provide 52 vCPUs, 42 terabytes of usable block or object storage, and an optional GPU for use cases such as advanced machine learning and full motion video analysis in disconnected environments. Customers can use these two options for data collection, machine learning and processing, and storage in environments with intermittent connectivity (such as manufacturing, industrial, and transportation) or in extremely remote locations (such as military or maritime operations) before shipping it back to AWS. These devices may also be rack mounted and clustered together to build larger, temporary installations.
-Learn more about Snowball »
+Learn more about Snowball
 AWS Snowmobile
 AWS Snowmobile moves up to 100 PB of data in a 45-foot long ruggedized shipping container and is ideal for multi-petabyte or Exabyte-scale digital media migrations and data center shutdowns. A Snowmobile arrives at the customer site and appears as a network-attached data store for more secure, high-speed data transfer. After data is transferred to Snowmobile, it is driven back to an AWS Region where the data is loaded into Amazon S3.  Snowmobile is tamper-resistant, waterproof, and temperature controlled with multiple layers of logical and physical security -- including encryption, fire suppression, dedicated security personnel, GPS tracking, alarm monitoring, 24/7 video surveillance, and an escort security vehicle during transit.
-Learn more about Snowmobile »
+Learn more about Snowmobile
 Feature comparison
 AWS Snowball Edge Storage Optimized
 AWS Snowball Edge Compute Optimized
@@ -50,15 +50,14 @@ Usable Memory
 GPU
 nVidia V100 (optional)
 Onboard Computing Options
-AWS IoT Greengrass   Amazon EC2 AMIs
+AWS IoT Greengrass   Amazon EC2 AMIs
 DataSync
 Yes
 Transfers via NFS
 Transfers via S3 API
 Network Interfaces
 2x 1/10 Gbit - RJ45
-2x 10 Gbit – RJ45  1x 25 Gbit – SFP+  1x 100 Gbit – QSFP28
-2x 10 Gbit – RJ45  1x 25 Gbit – SFP+  1x 100 Gbit – QSFP28
+2x 10 Gbit – RJ45  1x 25 Gbit – SFP+  1x 100 Gbit – QSFP28
 6x 40 Gbit
 Device Size
 9 inches long, 6 inches wide, and 3 inches tall (227 mm x 148.6 mm x 82.65 mm)
@@ -82,7 +81,7 @@ Offline Data Transfer: Days-Weeks
 Edge Compute: Weeks-Years
 Data Migration: Months
 Pricing and availability
-Snow Family devices and vehicles are owned and managed by AWS, so customers do not need to invest in new hardware. Customers pay varying startup fees plus shipping per device. Multiple devices can be requested in parallel if more capacity is needed. AWS monitors the health and utilization of Snowcones and Snowballs, and provides replacement devices when needed. For region availability, view the Regional Service Availability page for more information.
+Snow Family devices and vehicles are owned and managed by AWS, so customers do not need to invest in new hardware. Customers pay varying startup fees plus shipping per device. Multiple devices can be requested in parallel if more capacity is needed. AWS monitors the health and utilization of Snowcones and Snowballs, and provides replacement devices when needed. For region availability, view the Regional Service Availability page for more information.
 Learn more about each member of the AWS Snow Family
 Ready to build?
 Have more questions?
