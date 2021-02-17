@@ -29,18 +29,18 @@ Web and Mobile Gaming
 Web and mobile games that are built to operate at very large scale need a database with high throughput, massive storage scalability, and high availability. Amazon Aurora fulfills the needs of such highly demanding applications with enough room for future growth. Since Amazon Aurora does not have any licensing constraints, it perfectly fits the variable usage pattern of these applications.
 Featured customers
 Samsung moved over a billion users across three continents from Oracle to Amazon Aurora, improving latency and scalability while lowering monthly costs.
-Read the case study >>
+Read the case study
 DoorDash uses Amazon Aurora to help it make over 800,000 deliveries a day, managing billions of rows and nearly 10 TB of data in a single Aurora cluster.
-Watch the video >>
+Watch the video
 Amazon Aurora enables Pokemon to support 300+ million users, including 300 login requests per second, while automating administrative tasks.
 Dow Jones migrated its market data service from an on-premises database to Amazon Aurora ahead of schedule and with no disruption to service.
-Read the blog post >>
-View all Amazon Aurora case studies >>
+Read the blog post
+View all Amazon Aurora case studies
 Featured partners
 Accelerate your Aurora database migration journey with Logicworks, a Premier AWS Partner with customers like Thomson Reuters, Orion Health, and MassMutual.
-Learn more about Logicworks >>
+Learn more about Logicworks
 Eliminate Database Lock-In and Achieve Database Freedom with TekStream and AWS.
-Watch On-Demand Webinar >>
+Watch On-Demand Webinar
 Migrating Your Databases to Amazon Aurora
 If you're currently using Amazon RDS for MySQL or Amazon RDS for PostgreSQL...
 If you're currently using Amazon RDS for MySQL or Amazon RDS for PostgreSQL, migrating to Aurora is as simple as creating a snapshot and launching an Aurora instance from that snapshot. You can follow the simple, step by step instructions in the user guide to perform the migration. Since Amazon Aurora is fully MySQL- and PostgreSQL-compatible, your applications can easily be reconnected to the new instance without any changes.
@@ -52,7 +52,7 @@ Blog posts & articles
 Date
 1
 ...
-Learn more on the AWS Database blog >>
+Learn more on the AWS Database blog
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

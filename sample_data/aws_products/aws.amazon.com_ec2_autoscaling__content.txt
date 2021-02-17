@@ -3,7 +3,7 @@ Add or remove compute capacity to meet changes in demand
 Amazon EC2 Auto Scaling helps you maintain application availability and allows you to automatically add or remove EC2 instances according to conditions you define. You can use the fleet management features of EC2 Auto Scaling to maintain the health and availability of your fleet. You can also use the dynamic and predictive scaling features of EC2 Auto Scaling to add or remove EC2 instances. Dynamic scaling responds to changing demand and predictive scaling automatically schedules the right number of EC2 instances based on predicted demand. Dynamic scaling and predictive scaling can be used together to scale faster.
 New AWS Blogs
 Automatically scale across purchase options in a single ASG. Read the Blog
-Proactively respond to changing traffic with Predictive Scaling. Read the Blog>>
+Proactively respond to changing traffic with Predictive Scaling. Read the Blog
 Benefits
 Improve Fault Tolerance
 Amazon EC2 Auto Scaling can detect when an instance is unhealthy, terminate it, and replace it with a new one.

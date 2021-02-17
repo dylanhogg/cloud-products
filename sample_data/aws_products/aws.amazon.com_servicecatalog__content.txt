@@ -16,7 +16,7 @@ Manage all of your application information on AWS
 AWS Service Catalog AppRegistry provides a single repository for collecting and managing your application resources on AWS. You define your application metadata, which may include information from your internal systems, other AWS services, and software vendors. Builders can include a reference to their application within the infrastructure code, and business stakeholders have up-to-date information on application contents and metadata, such as organizational ownership, data sensitivity, and cost center.
 Case studies
 Wiley is using AWS to give developers self-service capabilities, launch new applications in minutes instead of weeks, and enable the creation of new digital publishing platforms.
-Read case study >>
+Read case study
 “Using reliable, HIPAA-compliant services deployed from AWS Service Catalog, we can accelerate our time to market while continuing to lead conversations around security.”
 Cloudticity runs its Oxygen managed services platform on AWS and uses AWS Service Catalog to create and manage catalogs of IT services.
 TechnipFMC enhances security, provisions IT services quickly, and creates a repeatable foundation for future application migrations using the AWS Service Catalog.

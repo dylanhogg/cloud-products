@@ -40,11 +40,10 @@ Customers
 Related content
 FORRESTER REPORT
 Amazon Neptune is a Leader in The Forrester WaveTM: Graph Data Platforms, Q4 2020 report.
-Learn more >>
+Learn more
 How it works
 Check out the product features
 Learn more about Amazon Neptune features.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

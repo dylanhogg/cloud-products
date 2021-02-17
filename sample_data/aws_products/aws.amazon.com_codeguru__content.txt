@@ -29,6 +29,7 @@ CodeGuru Profiler automatically detects anomalies in performance of critical met
 Catch your most expensive line of code today
 The more efficient your code and application is, the less costly it is to run. CodeGuru Profiler provides visualizations and recommendations on how to fix performance issues, helping you reduce operational costs by up to 50% for any application running in production. It also shows the estimated cost of running inefficient code, so developers can prioritize remediation.
 To learn more about CodeGuru visit the Amazon CodeGuru developer forum.
+Close
 Customer success
 "Teams at more than 170,000 companies rely on Atlassian products to make teamwork easier, and help them organize, discuss, and complete their work. At Atlassian, many of our services have 100s of check-ins per deployment. While code reviews from our development team do a great job of preventing bugs from reaching production, it’s not always possible to predict how systems will behave under stress or manage complex data shapes, especially as we have multiple deployments per day."
 Zak Islam, Head of Engineering, Tech Teams, Atlassian

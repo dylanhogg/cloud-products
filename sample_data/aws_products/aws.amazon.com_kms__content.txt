@@ -8,7 +8,7 @@ Try AWS Key Management Service Free
 Benefits
 Fully managed
 You control access to your encrypted data by defining permissions to use keys while AWS KMS enforces your permissions and handles the durability and physical security of your keys.
-Learn more >>
+Learn more
 Centralized key management
 AWS KMS presents a single control point to manage keys and define policies consistently across integrated AWS services and your own applications. You can easily create, import, rotate, delete, and manage permissions on keys from the AWS Management Console or by using the AWS SDK or CLI.
 Manage encryption for AWS services
@@ -29,7 +29,6 @@ Blog posts & articles
 No items returned.
 Check out the product features
 Read about AWS Key Management Service security, compliance, and availability.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

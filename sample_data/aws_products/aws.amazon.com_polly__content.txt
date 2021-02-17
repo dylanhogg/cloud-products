@@ -59,13 +59,13 @@ Audio can be used as a complementary media to written and/or visual communicatio
 Example: Convert an article to speech and download as MP3
 “Amazon Polly gives GoAnimate users the ability to immediately give voice to the characters they animate using our platform. This is especially helpful in scenarios where live voice-over is either resource or time prohibitive, such as when developing a video in many languages or within pre-production to speed the approval process. The speech is integrated seamlessly with our rich set of pre-animated assets, which reinforces GoAnimate’s ease-of-use and affords our customers both efficiency and speed to market.”
 – Alvin Hung, CEO and founder, GoAnimate
-Refer to case study >>
+Refer to case study
 E-learning
 Amazon Polly enables developers to provide their applications with an enhanced visual experience such as speech-synchronized facial animation or karaoke-style word highlighting. Amazon Polly makes it easy to request an additional stream of metadata with information about when particular sentences, words and sounds are being pronounced. Using this metadata stream alongside the synthesized speech audio stream, customers can animate avatars and highlight text as it is currently spoken text in their app.
 Example: Play speech and highlight spoken text
 “I can't think of many use cases where accurate pronunciation is more important than when you're learning a new language. We have found that the Amazon Polly voices are not just high in quality, but are as good as natural human speech for teaching a language.”
 – Severin Hacker, CTO, Duolingo
-Read their blog post >>
+Read their blog post
 Telephony
 With Amazon Polly, your contact centers can engage customers with natural sounding voices. You can cache and replay Amazon Polly’s speech output to prompt callers through interactive voice response (IVR) systems, such as Amazon Connect. Additionally, you can leverage Amazon Polly’s API to deliver automated real-time information such as service status, account and billing inquiries, addresses, and contact information.
 Example: Text-to-speech for telephony systems

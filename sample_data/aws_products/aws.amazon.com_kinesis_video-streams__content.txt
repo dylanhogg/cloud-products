@@ -41,7 +41,7 @@ Neosperience Cloud enables frame by frame analysis of live video streams using K
 Nirovision increases flexibility and agility by using Amazon Kinesis Video Streams.
 Agent Vi extends its AI-driven video analytics solution to any IP camera.
 Veritone brings artificial intelligence to video analytics.
-See more details >>
+See more details
 Blog posts
 Analyze live video at scale in real time using Amazon Kinesis Video Streams and Amazon SageMaker
 by Aditya Krishnan and Jagadeesh Pusapadi

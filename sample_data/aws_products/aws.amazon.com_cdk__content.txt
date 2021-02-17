@@ -23,7 +23,7 @@ Stedi provides organizations with the ability to quickly connect and transact wi
 Stedi has an ambitious goal: help businesses save countless hours of menial tasks by processing every B2B transaction on the planet. To do this, Stedi knew it would have to offload menial tasks of its own – which is why they chose to build with a fully-serverless AWS architecture from day one. However, Stedi's work with AWS goes beyond just serverless infrastructure: they have adopted AWS-native developer tooling – like AWS CDK and AWS Amplify – to help iterate quickly and deploy frequently.
 “CDK has been a gamechanger for us. It has drastically improved our feedback cycle and reduced the time it takes to go from brand-new to fully-deployed infrastructure."
 Tyler van Hensbergen, Engineering - Stedi
-Learn More >>
+Learn More
 CyberArk is a global leader in privileged access management, a critical layer of IT security to protect data, infrastructure, and assets across the enterprise, in the cloud, and throughout the DevOps pipeline. CyberArk delivers solutions to reduce the risk created by privileged credentials and secrets. The company is trusted by the world’s leading organizations, including more than 50 percent of the Fortune 500, to protect against external attackers and malicious insiders.
 Check out the product features
 Learn more about AWS CDK's features.

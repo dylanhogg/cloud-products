@@ -32,7 +32,7 @@ Explore, analyze, and visualize your logs to address operational issues and impr
 Customers
 Customers use Amazon CloudWatch to improve operational performance, optimize resource allocation, and reduce MTTR. To learn more about how organizations use Amazon CloudWatch, visit our customers page.
 Mapbox uses Amazon CloudWatch to ingest multiple data sources and monitor key workloads.
-Read customer reference >>
+Read customer reference
 Pushpay uses Amazon CloudWatch Logs Insights to query logs and reduce operational complexity.
 Rackspace uses Amazon CloudWatch Agent to monitor their virtual machines.
 SendGrid uses Amazon CloudWatch natively without needing a self-managed stack or third-party vendor.

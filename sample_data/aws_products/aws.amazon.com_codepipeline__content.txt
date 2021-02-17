@@ -16,7 +16,7 @@ AWS CodePipeline can easily be extended to adapt to your specific needs. You can
 How it works
 Case studies
 Lululemon athletica, a Canadian company that sells yoga-inspired apparel and other clothing at more than 350 locations throughout the world, uses AWS CodePipeline to streamline development processes to support its continuous integration and delivery focus.
-Learn More >>
+Learn More
 3M Health Information Systems, one of the world’s largest providers of software for the healthcare industry, supports a DevOps culture by using AWS CodePipeline to manage its continuous integration and continuous delivery deployment workflows.
 sRide, a carpooling and bikepooling app for commuters in some of India’s largest cities, leverages AWS CodePipeline to deploy software faster, facilitating their twice-daily schedule for software releases.
 Check out the product features

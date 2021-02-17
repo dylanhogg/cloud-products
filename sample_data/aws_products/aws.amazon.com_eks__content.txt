@@ -6,9 +6,9 @@ EKS runs upstream Kubernetes and is certified Kubernetes conformant for a predic
 EKS makes it easy to standardize operations across every environment. You can run fully managed EKS clusters on AWS. You can have an open source, proven distribution of Kubernetes wherever you want for consistent operations with Amazon EKS Distro. You can host and operate your Kubernetes clusters on-premises and at the edge with AWS Outposts and AWS Wavelength, and have a consistent cluster management experience with Amazon EKS Anywhere (coming in 2021.)
 Important Links with Amazon EKS
 Here's a list of resources you may find helpful:
-Blog Highlight- Version Lifecycle Read more here >>
-EKS Workshop Try it yourself>>
-Latest Feature Releases Learn More >>
+Blog Highlight- Version Lifecycle Read more here
+EKS Workshop Try it yourself
+Latest Feature Releases Learn More
 Benefits
 Improve availability and observability
 EKS runs the Kubernetes control plane across multiple AWS Availability Zones, automatically detects and replaces unhealthy control plane nodes, and provides on-demand, zero downtime upgrades and patching. EKS offers a 99.95% uptime SLA. At the same time, the EKS console provides observability of your Kubernetes clusters so you can identify and resolve issues faster.

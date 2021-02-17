@@ -13,7 +13,7 @@ Setting up AWS Chatbot in your Slack channels or Amazon Chime chat rooms is easy
 Easily define permissions
 AWS Chatbot enables you to set permissions for individual Slack channels and Amazon Chime chat rooms quickly and pre-defined permission templates make it easy to tailor for your organization’s needs.
 Amazon Lex Build your own voice and text-based chatbots to communicate with your customers.
-Learn More>>
+Learn More
 How it works
 Notifications
 Commands

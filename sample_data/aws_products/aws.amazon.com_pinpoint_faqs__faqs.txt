@@ -83,6 +83,9 @@ Q: Do I own my content that is processed and stored by Amazon Pinpoint?
 You always retain ownership of your content. We only use your content with your consent.
 Q: How do I delete the data that Amazon Pinpoint stores?
 You can selectively delete the data stored in your Amazon Pinpoint account. You can also close your entire AWS account, which deletes all of the data stored in Amazon Pinpoint and all other AWS services in every AWS Region. For more information, see Deleting Data from Amazon Pinpoint in the Amazon Pinpoint Developer Guide.
+Pricing
+Q: What are carrier fees?
+Mobile carriers in the US will assess a fee each time an Application-to-Person (A2P) SMS is sent over their networks. The AWS carrier fees cover these charges and are subject to change when mobile carriers change their fees.
 Contacting us
 Q: I received spam or other unsolicited email messages from an Amazon Pinpoint user. How do I report these messages?
 You can report email abuse by sending an email to email-abuse@amazon.com.

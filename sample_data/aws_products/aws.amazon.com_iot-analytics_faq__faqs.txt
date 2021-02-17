@@ -2,46 +2,33 @@ Products
 Internet of Things
 AWS IoT Analytics
 AWS IoT Analytics FAQs
-Q: What is AWS IoT Analytics? >>
 Q: What is AWS IoT Analytics?
 AWS IoT Analytics is a fully-managed IoT analytics service that collects, pre-processes, enriches, stores, and analyzes IoT device data at scale. IoT Analytics can perform simple ad hoc queries as well as complex analysis, and is a simpler way to run IoT analytics for understanding the performance of devices, predicting device failures, and machine learning. It is designed specifically for IoT and automatically captures and stores the message timestamp making time-series analysis easy. IoT Analytics can also enrich the data with device-specific metadata such as device type and location using the AWS IoT registry. AWS IoT Analytics stores data in an IoT-optimized data store so you can run queries on large datasets. With AWS IoT Analytics, you can also execute custom authored code containers. AWS IoT Analytics automates the execution of your custom analyses created in Jupyter Notebook or your own tools (such as Matlab, Octave, etc.) for scheduled execution.
 Show less
-Q: How does AWS IoT Analytics work? >>
 Q: How does AWS IoT Analytics work?
 AWS IoT Analytics is fully integrated with AWS IoT Core so it is easy to get started. First, you define a channel and select the data you want to collect so you only store and analyze the data of interest, such as sensor temperature. Once the channel is set up, you configure pipelines to process your data. Pipelines support transformations like Celsius to Fahrenheit conversion, conditional statements, message filtering, and message enrichment using external data sources and AWS Lambda functions.
 After processing the data in the pipeline, IoT Analytics stores it in an IoT-optimized data store for analysis. You can query the data using the built-in SQL query engine to answer specific business questions. For example, you may want to know how many monthly active users there are for each device in your fleet. Through integration with Amazon SageMaker, IoT Analytics supports more sophisticated analytics, like Bayesian inference and machine learning. Also, it is easy to build visualizations and dashboards and get business insights quickly from your IoT Analytics data since it is integrated with Amazon QuickSight.
-Q: Can I execute my custom analysis code on AWS IoT Analytics? >>
 Q: Can I execute my custom analysis code on AWS IoT Analytics?
 Yes, you can bring your own custom analysis packaged in a container to execute on AWS IoT Analytics. You can import your custom code container in a container data set and schedule the execution of your container.
-Q: How is a SQL data set different than a container data set? >>
 Q: How is a SQL data set different than a container data set?
 A SQL data set is similar to a materialized view from a SQL database. In fact, you create a SQL data set by applying a SQL action. SQL data sets can be generated automatically on a recurring schedule by specifying a trigger.
 A container data set allows you to automatically run your analysis tools and generate results. It brings together a SQL data set as input, a Docker container with your analysis tools and needed library files, input and output variables, and an optional schedule trigger. The input and output variables tell the executable image where to get the data and store the results. The trigger can run your analysis when a SQL data set finishes creating its content or according to a time schedule expression. A container data set will automatically run, generate and then save the results of the analysis tools.
-Q: What are DeltaTime Windows? >>
 Q: What are DeltaTime Windows?
 Delta windows are a series of user-defined, non-overlapping and contiguous time intervals. Delta windows allow you to create data set contents with, and perform analysis on, new data that has arrived in the data store since the last analysis. You create a Delta window by setting the DeltaTime in the filters portion of a queryAction of a data set. Basically, this allows you to filter messages that have arrived during a specific time window, so the data contained in messages from previous time windows doesn't get counted twice.
-Q: How do I execute my custom code container on AWS IoT Analytics at my preferred schedule? >>
 Q: How do I execute my custom code container on AWS IoT Analytics at my preferred schedule?
 You can bring your own custom analysis code packaged in a container to execute on AWS IoT Analytics. You can create a container data set through the AWS IoT Analytics console or API by specifying your SQL dataset, custom code container image, input and output variables and an optional schedule trigger as a parameter, where a trigger can be an event of SQL dataset content creation or a schedule. The container data set feeds the content of SQL data set to the analytical code available in the container image and automatically executes the image based on your trigger to generate insights at your preferred schedule.
-Q: What retention policies do I have on my Data Stores and Channels? >>
 Q: What retention policies do I have on my Data Stores and Channels?
 You can choose to set your own data retention policies on the Data stores and Channels. You can select the retention period for any number of days. If you do not select any retention period, the service will retain your data for unlimited period.
-Q: What type of message formats are supported with AWS IoT Analytics? >>
 Q: What type of message formats are supported with AWS IoT Analytics?
 AWS IoT Analytics service supports JSON and Binary formats (Binary JSON, protocol buffers, etc.). In case the messages are binary, the first activity of your Pipeline needs to be the Lambda activity with an output of a valid JSON.
-Q: Can I re-process my data from Channel to a Pipeline? >>
 Q: Can I re-process my data from Channel to a Pipeline?
 Yes, you can re-process your data from the Channel connected to the Pipeline using StartPipelineReprocessing. If you want to re-process your Channel data using another Pipeline, you will need to connect the Pipeline to your appropriate Channel.
-Q: How do I get the data into AWS IoT Analytics using the Ingestion API? >>
 Q: How do I get the data into AWS IoT Analytics using the Ingestion API?
 You can use the BatchPutMessage API to send your data to AWS IoT Analytics from sources like Amazon S3, Amazon Kinesis or any other data source. You can use this APIs within your Lambda function or any other script to send the data to AWS IoT Analytics. For more information, please refer to Send data from S3 to IoT Analytics and send data from Kinesis to IoT Analytics.
-Q: Can I preview my messages in the Channel? >>
 Q: Can I preview my messages in the Channel?
 Yes, you can preview your messages using SampleChannelData API. This API samples up to ten messages from your Channel across all data.
-Q: Can I simulate my pipeline activity? >>
 Q: Can I simulate my pipeline activity?
 Yes, you can use the RunPipelineActivity API or console to simulate your pipeline activity. This API takes the list of sample data (either from SampleChannelData or supplied manually) to simulate the activity and previews the results.
-Q: What are the differences between AWS IoT Analytics and Amazon Kinesis Analytics? >>
 Q: What are the differences between AWS IoT Analytics and Amazon Kinesis Analytics?
 AWS IoT Analytics is designed specifically for IoT and automatically captures and stores the message timestamp so it is easy to perform time-series analytics. IoT Analytics can also enrich the data with device-specific metadata such as device type and location using the AWS IoT registry and other public data sources. IoT Analytics stores the device data in IoT-optimized data store so you can run queries on large datasets.
 Amazon Kinesis Analytics is a general-purpose tool designed to easily process streaming data from IoT devices as well as other data sources in real time.
@@ -60,7 +47,7 @@ Seconds or milliseconds latency
 Time-windowed operations
 Parse unstructured data and automatically create schema
 JSON and CSV
-Q: When do I use AWS IoT Analytics and when do I use Kinesis Analytics? >>
+Q: When do I use AWS IoT Analytics and when do I use Kinesis Analytics?
 Q: When do I use AWS IoT Analytics and when do I use Amazon Kinesis Analytics?
 You can use AWS IoT Analytics for IoT analytics. Some use cases include understanding long-term device performance, business reporting and ad-hoc analysis, and predictive fleet maintenance. IoT Analytics is best suited for these use cases because it collects, prepares, and stores data from devices over long timeframes in an IoT-optimized data store. IoT Analytics also enriches the data with device-specific metadata such as device type and location using the AWS IoT registry and other public data sources.
 However, if you need to analyze IoT data in real-time for use cases such as device monitoring, you can use Amazon Kinesis Analytics.
@@ -78,15 +65,13 @@ No. Predictive maintenance requires a historical analysis on long-term data to b
 Real-Time Device Monitoring
 No.
 Yes. Kinesis Analytics can aggregate data over time windows continuously, detect anomalies, and take actions such as sending alerts. For example, Kinesis Analytics can calculate rolling 10-second averages of valve temperatures every 5 minutes in industrial equipment, and detect when the temperature exceeds certain preset thresholds. It can then alert control systems to automatically shut off machinery, avoiding accidents.
-Q: When do I use AWS IoT Analytics and Amazon Kinesis together? >>
 Q: When do I use AWS IoT Analytics and Amazon Kinesis together?
 Use AWS IoT Analytics and Amazon Kinesis together when you need both historical and real-time analytics. For example, use Kinesis Analytics to calculate 10-second rolling averages of valve temperatures in industrial equipment to detect when the temperature exceeds certain thresholds. Kinesis Analytics can then alert control systems to automatically shut off machinery, avoiding accidents. Then, use Kinesis Streams to send data to IoT Analytics. You use IoT Analytics to understand trends and also predict when valves should be replaced or serviced.
-Q: When working with IoT data, when should I use AWS IoT Analytics vs. Amazon Kinesis Streams, Amazon Kinesis Analytics, and Amazon Kinesis Firehose? >>
+Q: When working with IoT data, when should I use AWS IoT Analytics vs. Amazon Kinesis Streams, Amazon Kinesis Analytics, and Amazon Kinesis Firehose?
 Q: When working with IoT data, when should I use AWS IoT Analytics vs. Amazon Kinesis Streams, Amazon Kinesis Analytics and Amazon Kinesis Firehose?
 Customers can use AWS Lambda to send data from Amazon Kinesis Streams to an AWS IoT data channel and then to AWS IoT Analytics.
 Amazon Kinesis Analytics is designed for streaming analytics, while IoT Analytics is designed for analytics on data at rest. Customers who need both real-time and IoT analytics can use a combination of Kinesis Analytics and IoT Analytics.
 Amazon Kinesis Firehose is the easiest way to load streaming data into AWS data stores Amazon S3, Amazon Redshift, and Amazon Elasticsearch Service, enabling near real-time analytics with existing business intelligence tools. IoT Analytics does not support Kinesis Firehose as a data source.
-Q: When do I use AWS IoT Analytics and when do I use Amazon Kinesis Video Streams? >>
 Q: When do I use AWS IoT Analytics and when do I use Amazon Kinesis Video Streams?
 Amazon Kinesis Video Streams makes it easy to securely stream video, audio and other time-encoded data from sources like cameras, depth sensors, and RADARs to AWS for real-time and batch processing in machine learning, analytics, and other applications. Kinesis Video Streams is particularly designed for ingesting video data from devices, whereas AWS IoT Analytics is designed for analyzing non-video IoT data. At GA, there is no direct integration between Kinesis Video Streams and AWS IoT Core or IoT Analytics. However, customers can query Kinesis Video Streams and IoT Analytics from their applications using the APIs.
 Discover more AWS IoT Analytics features

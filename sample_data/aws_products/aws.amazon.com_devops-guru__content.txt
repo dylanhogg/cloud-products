@@ -40,7 +40,7 @@ Read how you can deliver operational insights directly to your on-call team by i
 "PagerDuty was built to drive the move to a DevOps culture by automating the entire incident response lifecycle with resolution. We’re excited to continue this commitment to DevOps with our latest integration with Amazon DevOps Guru. Leveraging Amazon’s decades of operational excellence and DevOps Guru’s machine learning capabilities, PagerDuty provides even more real-time signal-to-action capabilities to our joint customers. Through PagerDuty’s ingestion of DevOps Guru’s Amazon Simple Notification Service (SNS) notifications, AWS customers can take real-time action on operational issues before they become customer-impacting outages.”
 - Jonathan Rende  SVP of Product
 Learn more about delivering ML-powered operational insights to your on-call teams via PagerDuty and Amazon DevOps Guru
-Blog posts & articles >>
+Blog posts & articles
 New- Amazon DevOps Guru Helps Identify Application Errors and Fixes
 December 2020
 Harunobu Kameda

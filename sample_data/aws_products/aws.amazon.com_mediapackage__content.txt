@@ -4,6 +4,7 @@ Get started with AWS Elemental MediaPackage
 Live Chat
 AWS Elemental MediaPackage reliably prepares and protects your video for delivery over the Internet. From a single video input, AWS Elemental MediaPackage creates video streams formatted to play on connected TVs, mobile phones, computers, tablets, and game consoles. It makes it easy to implement popular video features for viewers (start-over, pause, rewind, etc.), like those commonly found on DVRs. AWS Elemental MediaPackage can also protect your content using Digital Rights Management (DRM). AWS Elemental MediaPackage scales automatically in response to load, so your viewers will always get a great experience without you having to accurately predict in advance the capacity you’ll need.
 AWS Elemental MediaPackage Explained
+Close
 Watch Now: AWS Elemental MediaPackage Explained (53 sec)
 How it works
 Live Packaging

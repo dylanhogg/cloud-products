@@ -29,15 +29,15 @@ Retrieve or modify data from multiple data sources (SQL, NoSQL, search data, RES
 Automatically synchronize data between mobile/web applications and the cloud with AWS AppSync and Amplify DataStore, an on-device persistent storage engine with built-in support for data versioning and conflict detection and resolution.
 Customers using AWS AppSync
 case study
+Real-time sports updates
+Learn how Sky Italia uses AWS AppSync to deliver real-time sports updates and delight their fans.
+Learn more
+Accelerate digital transformation
+Read how BMW increases developer velocity by using AWS AppSync to build scalable and universal APIs.
 Live Location Tracking
 Read about how HyperTrack uses AWS for real-time data processing for live location tracking at scale.
-Learn more
 In-Store Customer Service
 ALDO uses AWS AppSync. Learn more about how they improved the shopping experience of footwear customers.
-Patient Safety and Care
-Read about how Repp Health uses AWS to track medical assets to within 10 centimeters.
-Making the News Actionable
-Learn about how AWS AppSync helps Public Good Software do good by prompting real-time reader action.
 Learn more about AWS AppSync features
 Visit the features page
 Ready to build?

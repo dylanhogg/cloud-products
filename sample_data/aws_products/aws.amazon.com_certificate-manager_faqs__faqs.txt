@@ -55,7 +55,7 @@ Q: Do I need to have a CA hierarchy to use ACM Private CA?
 No. You can issue end-entity certificates from a root CA; however, in most cases security best practices call for a CA hierarchy with at least two tiers, including a root CA as the root of trust and a subordinate CA for issuing end-entity certificates. Refer to the ACM Private CA [Creating a CA] guide for more details.
 ACM Certificates
 Q: What types of certificates does ACM manage?
-ACM manages public, private, and imported certificates. Refer to [Q: How can I manage certificates with ACM?] for details on ACM’s management capabilities for each type of certificate.
+ACM manages public, private, and imported certificates. Please refer to the Issuing and Managing Certificates documentation page for details on ACM’s certificate management capabilities.
 Q: Can ACM provide certificates with multiple domain names?
 Yes. Each certificate must include at least one domain name, and you can add additional names to the certificate if you want to. For example, you can add the name “www.example.net” to a certificate for “www.example.com” if users can reach your site by either name. You must own or control all of the names included in your certificate request.
 Q: What is a wildcard domain name?

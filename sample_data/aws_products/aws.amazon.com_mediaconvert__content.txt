@@ -4,6 +4,7 @@ Get started with AWS Elemental MediaConvert
 Live Chat
 AWS Elemental MediaConvert is a file-based video transcoding service with broadcast-grade features. It allows you to easily create video-on-demand (VOD) content for broadcast and multiscreen delivery at scale. The service combines advanced video and audio capabilities with a simple web services interface and pay-as-you-go pricing. With AWS Elemental MediaConvert, you can focus on delivering compelling media experiences without having to worry about the complexity of building and operating your own video processing infrastructure.
 AWS Elemental MediaConvert Explained
+Close
 Watch Now: AWS Elemental MediaConvert Explained (47 sec)
 How it works
 Benefits

@@ -75,7 +75,7 @@ Tags have multiple use cases - they enable you to group and filter your resource
 Organize - use the Lightsail console and API filters to view and manage resources based on their tags you have assigned them. This is useful when you have many resources of the same type—you can quickly identify a specific resource based on the tags you've assigned to it.
 Cost-allocate - track and allocate costs across different projects or users by tagging your resources and creating “cost allocation tags” in the billing console. For instance, you can split out your bill and understand your costs by project or by client.
 Manage access - control how users with access to your AWS account can edit, create, and delete Lightsail resources by using AWS Identity and Access Management policies. This allows you to more easily collaborate with others without needing to give them full access to your Lightsail resources.
-Learn more about using tags in Lightsail >>
+Learn more about using tags in Lightsail
 Q: What resources can be tagged?
 Lightsail current supports tagging for the following resources:
 Instances (Linux and Windows)

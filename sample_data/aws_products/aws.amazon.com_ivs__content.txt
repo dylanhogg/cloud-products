@@ -4,6 +4,7 @@ Get started with Amazon Interactive Video Service
 Live Chat
 Amazon Interactive Video Service (Amazon IVS) is a managed live streaming solution that is quick and easy to set up, and ideal for creating interactive video experiences. Send your live streams to Amazon IVS using streaming software and the service does everything you need to make low-latency live video available to any viewer around the world, letting you focus on building interactive experiences alongside the live video. You can easily customize and enhance the audience experience through the Amazon IVS player SDK and timed metadata APIs, allowing you to build a more valuable relationship with your viewers on your own websites and applications.
 Amazon Interactive Video Service Explained
+Close
 Watch Now: Amazon IVS Explained (77 sec)
 Benefits
 Simple-to-use live video streaming

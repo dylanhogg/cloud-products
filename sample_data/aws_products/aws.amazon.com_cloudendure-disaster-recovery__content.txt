@@ -47,6 +47,13 @@ CloudEndure Disaster Recovery saved the day for Malibu Boats when their primary 
 “We estimate that building our disaster recovery in the cloud was 73% cheaper than if we built the same solution on-prem.”
 – Matthieu Traverse, Lead IT Architect at Transdev
 Transdev used CloudEndure Disaster Recovery to protect business-critical workloads and reduce their disaster recovery costs by 73%. Rather than refreshing their previous disaster recovery infrastructure, Transdev decided that shifting their recovery site to AWS would save IT resources and align well with their AWS migration strategy. The team began testing disaster recovery solutions on a wide range of complex, write-intensive workloads. Transdev was close to giving up on cloud-based disaster recovery until they tested CloudEndure Disaster Recovery, which worked exactly as expected. Transdev now uses CloudEndure Disaster Recovery to protect a range of business-critical workloads, including Microsoft Active Directory, SQL Servers, MSCS clustered SAP workloads, and niche applications.
+Additional case studies
+Xavier University improves staff and student experiences using Ellucian ERP on AWS
+Ellucian and Troy University: Automating processes for greater efficiency and innovation
+Understanding disaster recovery as a service (DRaaS): How FSU achieved a modern solution for an inevitable threat
+Luen Heng supports rapid growth with SAP on AWS
+Novus modernizes tech stack and cuts costs 50%
+Customer perspective: Bank United (video)
 Check out the product features
 CloudEndure Disaster Recovery offers a range of features that minimize downtime and data loss.
 Take online training

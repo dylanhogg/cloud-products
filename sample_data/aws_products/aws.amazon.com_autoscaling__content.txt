@@ -5,7 +5,7 @@ AWS Auto Scaling monitors your applications and automatically adjusts capacity t
 It’s easy to get started with AWS Auto Scaling using the AWS Management Console, Command Line Interface (CLI), or SDK. AWS Auto Scaling is available at no additional charge. You pay only for the AWS resources needed to run your applications and Amazon CloudWatch monitoring fees.
 Introducing Predictive Scaling
 Automatically scale your compute capacity in advance of traffic changes using ML technology.
-Read the Blog>>
+Read the Blog
 Amazon EC2 Auto Scaling has moved
 You have several options for scaling with AWS.  Do you only need to manage Amazon EC2 instances?
 Visit the Amazon EC2 Auto Scaling page

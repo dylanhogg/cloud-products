@@ -33,11 +33,11 @@ Equifax addressed its scalability and performance issues by moving its entire Or
 “If we had started with replatforming, it could have taken years. Our lift-and-shift strategy, using CloudEndure Migration, allowed us to move 65% of our IT infrastructure in just 6 months."
 -Tim Brown, Senior Director of Cloud and Infrastructure Operations, Inmarsat
 Inmarsat, a UK-based leader in global satellite communications, implemented a two-phase migration strategy: “lift and shift” first and then “replatform.” They used CloudEndure Migration to lift and shift more than 1,500 servers to AWS, averaging 120 servers per month. Among the workloads they migrated were Microsoft SharePoint sites, SQL Server, Java web applications, custom software, and legacy applications.
-Related content
-AWS CloudEndure Migration Factory Solution
-Defense Logistics Agency migrates to AWS GovCloud (US) ahead of schedule
-AWS Online Tech Talk: How to Accelerate Migrations to AWS with CloudEndure
-AWS Online Tech Talk: How a U.S. Government Agency Migrated to GovCloud
+Additional case studies
+Defense Logistics Agency migrates five applications to AWS GovCloud (US) ahead of schedule
+St-Hubert drives innovation, agility, and growth by running SAP on AWS
+PGA of America works with EagleDream to migrate to AWS for scalability and high availability
+Vivere begins cloud journey with SAP Migration to AWS
 Migrate to AWS
 Get started now with free CloudEndure Migration licenses.
 Sign up

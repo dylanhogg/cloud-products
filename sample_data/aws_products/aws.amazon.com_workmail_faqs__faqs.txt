@@ -161,7 +161,7 @@ Q: Can I still create new resource in Amazon WorkMail when interoperability supp
 No. To create new resources in Amazon WorkMail, you first need to disable interoperability support. Once your new resources have been created, you can then turn interoperability support back on. This is done to ensure resources are synchronized back to your Microsoft Exchange Server.
 Email Flow Rules
 Q: What are email flow rules?
-Amazon WorkMail allows you to use email flow rules to filter or route email traffic for your Amazon WorkMail organizations. On inbound emails, this can help you reduce email from unwanted senders, route suspicious mail to junk folders, and trigger AWS Lambda functions. On outbound, you can block sending to certain domains, route mail through custom SMTP endpoints, or trigger Lambda functions. Email flow rules can be applied based on specific email addresses, or entire email domains.
+Amazon WorkMail allows you to use email flow rules to filter, update, or route email traffic for your Amazon WorkMail organizations. On inbound emails, this can help you reduce email from unwanted senders, route suspicious mail to junk folders, and trigger AWS Lambda functions. On outbound, you can block sending to certain domains, route mail through custom SMTP endpoints, or trigger Lambda functions. Email flow rules can be applied based on specific email addresses, or entire email domains.
 Q: What types of email flow rules can I create?
 For inbound mail, mail flow rules can be created to filter email based on specific email addresses, or entire email domains. Examples include:
 Reject all incoming mail from example.com and its subdomains, generating a bounce message to the sender.
@@ -171,17 +171,19 @@ Bypass the spam check for all incoming email from example.com, delivering the me
 Deliver all messages from example.com to users' junk folders.
 Trigger AWS Lambda function that you define on receiving mail.
 For outbound mail, mail flow rules can be created to filter email or route to an SMTP endpoint or AWS Lambda function. Examples include:
-Reject all outgoing mail from example.com to example2.com, generating an non-deliverable report (NDR) to the sender.
+Reject all outgoing mail from example.com to example2.com, generating a non-deliverable report (NDR) to the sender.
 Reject all outgoing mail to example.com silently.
 Route all mail from example.com that is going to a domain other than example.com through a custom SMTP endpoint that you define.
 Trigger AWS Lambda function that you define on all outgoing mail.
 Q:What types of email data are passed to the Lambda function?
 The Lambda function will receive the message id, sender, recipient, and subject of an email.
 Q: Can I retrieve more information about an email message from within my Lambda?
-Yes, you can retrieve the full content of the email message using WorkMail’s SDKs.
+Yes, you can retrieve the full content of the email message using WorkMailMessageFlow’s SDKs.
 See the Admin Guide for more information.
 Q: What format does the email content come in when retrieving it from my Lambda?
-The WorkMail SDK will return the raw MIME content of the message that is being processed. You can use common MIME-processing libraries, such as JavaMail for Java or email.parser for Python to convert this to a structured format for easier parsing.
+The WorkMailMessageFlow SDK will return the raw MIME content of the message that is being processed. You can use common MIME-processing libraries, such as JavaMail for Java or email.parser for Python to convert this to a structured format for easier parsing.
+Q: Can I update content of an email message using a Lambda function?
+Yes, you can update the content of an email message, before it is sent out or delivered in, using WorkMailMessageFlow’s SDKs in your Lambda function. For the changes to take effect, the Lambda action of your mail flow rules should be configured to run your Lambda synchronously. See Updating message content with AWS Lambda for more information.
 Q: Can I stop or re-route an email using a Lambda function?
 Yes, you can configure a Lambda action to run your Lambda synchronously and return response from your Lambda to control flow of an email to stop. See
 synchronous Lambda action for more information about Configuring Synchronous Run Lambda Action.
@@ -201,7 +203,7 @@ Yes. To learn more about limits related to email flow rules, please see AWS Serv
 Q: How long does a rule need to take effect?
 Rules take effect immediately after creation.
 Q: Is there any additional charge for defining email flow rules?
-No, there is no additional charge for using email flow rules.
+No, there is no additional charge for using email flow rules. Though, if you are using Lambda action, then Lambda execution charges will be billed separately.
 Security
 Q: How is data transmitted to Amazon WorkMail?
 All data in transit is encrypted using industry-standard SSL. Our web application, and mobile and desktop clients transmit data to Amazon WorkMail using SSL.

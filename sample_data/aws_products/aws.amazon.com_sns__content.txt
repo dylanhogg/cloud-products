@@ -27,9 +27,9 @@ AWS Services Used: Amazon SNS, Amazon SQS
 AWS Services Used: Amazon SNS, Amazon SQS, Amazon EC2, Amazon S3.
 AWS Services Used: Amazon SNS, Amazon Route 53, Amazon CloudFront, Amazon S3, Amazon EC2, Amazon CloudWatch, Amazon RDS, AWS CloudFormation
 PlayOn! Sports is one of the leading high school sports media companies in the US. They operate a comprehensive technology platform, enabling high-quality, low-cost productions of live sports events. Their serverless video processing pipeline illustrates the fanout messaging pattern and options for its inclusion in a serverless architecture, using Amazon SNS and AWS Lambda.
-Read the blog >>
+Read the blog
 The NASA Image and Video Library provides easy access to more than 140,000 still images, audio recordings, and videos—documenting NASA’s more than half a century of achievements in exploring the vast unknown. The architecture includes Amazon SNS to trigger the processing pipelines when new content is updated, and Amazon SQS to decouple incoming jobs from pipeline processors.
-Read the case study >>
+Read the case study
 Change Healthcare uses AWS services, such as Amazon EC2, Amazon S3, Amazon SQS, and Amazon SNS to handle millions of confidential transactions daily from its clients, while maintaining full compliance with healthcare industry regulations, including HIPAA.
 The FCBarcelona web platform boasts over 6,000 pages and over 12,000 digitized photographs. It is available in six languages and consolidates up-to-date information for five elite professional teams. The solution relies on Amazon SNS for several platform notifications.
 Featured blog posts

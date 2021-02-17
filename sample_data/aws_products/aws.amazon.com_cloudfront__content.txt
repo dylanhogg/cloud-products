@@ -42,7 +42,7 @@ PBS uses Amazon CloudFront for its video streaming. Learn more.
 The startup uses Amazon CloudFront for fast content delivery and for fast software builds deployments. Learn more.
 Supercell uses Amazon CloudFront to deliver dynamic web content around the world, using edge locations for improved latency. Learn more.
 "We selected Amazon CloudFront for the superior performances in terms of video start time, throughput, and the lower rebuffering rate." Yann Verry, System and Network Manager at Groupe M6. Learn more.
-Seven Networks used Amazon' Content Delivery Network (CDN) for the live video streaming of the Australian Open to millions. Learn more. >>
+Seven Networks used Amazon' Content Delivery Network (CDN) for the live video streaming of the Australian Open to millions. Learn more.
 'Like the famous song says, CloudFront is "Harder, Better, Faster, Stronger”!' Marco Vigano, Digital CTO at Condé Nast Italia. Learn more.
 Explore the case studies
 Blog posts & articles

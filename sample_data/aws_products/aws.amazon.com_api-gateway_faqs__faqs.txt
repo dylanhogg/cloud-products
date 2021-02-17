@@ -86,7 +86,7 @@ Q: How can I avoid creating redundant copies of error messages and other documen
 In addition to offering standards-conformant API documentation support, API Gateway additionally supports documentation inheritance, making it simple to define a documentation string once and then use it in multiple places. Inheritance simplifies the process of defining API documentation, and can be converted to the standard representation when exporting the API as a Swagger file.
 Q: Can I restrict access to private APIs to a specific Amazon VPC or VPC endpoint?
 Yes, you can apply a Resource Policy to an API to restrict access to a specific Amazon VPC or VPC endpoint. You can also give an Amazon VPC or VPC endpoint from a different account access to the Private API using a Resource Policy.
-back to top >>
+back to top
 Security and Authorization
 Q: How do I authorize access to my APIs?
 With Amazon API Gateway, you can optionally set your API methods to require authorization. When setting up a method to require authorization you can leverage AWS Signature Version 4 or Lambda authorizers to support your own bearer token auth strategy.

@@ -116,3 +116,5 @@ Computer vision
 Autonomous driving
 Lyft Level 5 standardized on SageMaker for training and reduced model training times from days to under a couple of hours.
 Get started with Amazon SageMaker
+Resources for Amazon SageMaker
+Get started with Amazon SageMaker in minutes (29:18)

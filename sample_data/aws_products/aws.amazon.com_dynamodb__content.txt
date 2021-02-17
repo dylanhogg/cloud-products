@@ -17,6 +17,7 @@ Applications
 Serverless Web Apps
 Build powerful web applications that automatically scale up and down. You don't need to maintain servers, and your applications have automated high availability.
 Reference architecture: Sample code
+Close
 Mobile Backends
 Use DynamoDB and AWS AppSync to build interactive mobile and web apps with real-time updates, offline data access, and data sync with built-in conflict resolution.
 Microservices

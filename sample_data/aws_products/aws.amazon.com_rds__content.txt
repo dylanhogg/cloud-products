@@ -20,7 +20,7 @@ Amazon RDS makes it easy to control network access to your database. Amazon RDS 
 Inexpensive
 You pay very low rates and only for the resources you actually consume. In addition, you benefit from the option of On-Demand pricing with no up-front or long-term commitments, or even lower hourly rates via our Reserved Instance pricing.
 Featured RDS customers
-View all Amazon RDS case studies >>
+View all Amazon RDS case studies
 Featured RDS Partners
 Apps Associate is an APN Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives. Join our webinar to hear how Apps Associates helps customers move to Amazon Aurora.
 Rackpace is an APN Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements. Read the ebook to learn how Rackspace helped TotalTrax automate processes and meet increasing demand.

@@ -4,6 +4,7 @@ Get started with AWS Elemental MediaStore
 Live Chat
 AWS Elemental MediaStore is an AWS storage service optimized for media. It gives you the performance, consistency, and low latency required to deliver live streaming video content. AWS Elemental MediaStore acts as the origin store in your video workflow. Its high performance capabilities meet the needs of the most demanding media delivery workloads, combined with long-term, cost-effective storage.
 AWS Elemental MediaStore Explained
+Close
 Watch Now: AWS Elemental MediaStore Explained (50 sec)
 How it works
 Benefits

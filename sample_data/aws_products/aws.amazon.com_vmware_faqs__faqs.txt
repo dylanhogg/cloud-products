@@ -36,7 +36,7 @@ A key differentiator is the maturity of the VMware Cloud on AWS service. The ser
 How can I get more information?
 Please contact us.
 Learn more about VMware Cloud on AWS
-Click Here >>
+Click Here
 Ready to get started?
 Sign up
 Have more questions?

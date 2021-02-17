@@ -20,9 +20,9 @@ Interactive performance even for large datasets
 With Amazon Athena, you don't have to worry about having enough compute resources to get fast, interactive query performance. Amazon Athena automatically executes queries in parallel, so most results come back within seconds.
 Customers
 Movable Ink uses Amazon Athena to query seven years’ worth of historical data and get results in moments, with the flexibility to explore data for deeper insights.
-Read the case study >>
+Read the case study
 Atlassian built a self-service data lake using Amazon Athena and other AWS Analytics services.
-Watch the video >>
+Watch the video
 OLX reduced costs and improved time to market by deploying Athena across their organization.
 Partners
 Upsolver is a data lake ETL service. It provides a visual, SQL-based interface for creating real-time tables in Athena with little engineering overhead and according to performance best practices. Upsolver's ETL also enables updates/deletes to tables in Athena for common CDC and compliance use cases.
