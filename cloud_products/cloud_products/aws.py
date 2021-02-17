@@ -24,6 +24,7 @@ class AwsCrawler(base.Crawler):
         new_line = unicodedata.normalize("NFKD", new_line)  # Normalise &nbsp etc.
         new_line = re.sub(r"^Q\.", "Q:", new_line.strip())  # Some AWS faq pages are inconsistent with Qn prefix.
         new_line = re.sub(r"^Q\:[ ]+", "Q: ", new_line.strip())  # Normalise spacing.
+        new_line = re.sub(r">>$", "", new_line.strip())  # Remove trailing >>
         new_line = new_line.translate({ord(i): None for i in remove_chars})  # Remove chars using translate().
         return new_line.strip()
 
