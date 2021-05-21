@@ -6,10 +6,11 @@ def run_full_aws_crawler():
     from cloud_products.aws import AwsCrawler
 
     crawler = AwsCrawler()
-    products = AwsCrawler().get_products()
+    products = crawler.get_products()
     print(f"Found {len(products)} products.")
 
     for product in products:
+        # if "bean" in product.std_name:
         print(f"Saving {product.name} from {product.abs_href}...")
         crawler.save_product(product, output_path, use_cache=False)
         print(f"Saving {product.name} FAQ from {product.abs_href_faq}...")
@@ -72,8 +73,8 @@ if __name__ == "__main__":
     output_path = "./_data/scrape_results/"
 
     if vendor == "aws":
-        run_aws_crawler_examples()
-        # run_full_aws_crawler()
+        # run_aws_crawler_examples()
+        run_full_aws_crawler()
 
     elif vendor == "gcp":
         raise Exception(f"Google Cloud Compute not currently supported")

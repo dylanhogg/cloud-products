@@ -27,6 +27,7 @@ class Crawler:
 
     @staticmethod
     def save(obj, filename) -> None:
+        # TODO: support json formatted output with metadata
         with open(filename, "w") as f:
             f.write(str(obj))
 
