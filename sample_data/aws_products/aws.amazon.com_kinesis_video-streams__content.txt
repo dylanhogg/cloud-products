@@ -24,37 +24,25 @@ Capture, process, and store media streams for playback, analytics, and machine l
 Build applications with ultra-low latency live streaming and two-way real-time communication.
 Use cases
 Smart home
+Smart city
+Industrial automation
 With Amazon Kinesis Video Streams, you can easily stream live video and audio from camera-equipped home devices such as doorbells, baby monitors, webcams, and home surveillance systems to AWS. You can then use the streams to build a variety of smart home applications ranging from simple video playback to intelligent lighting, climate control systems, and security monitoring. You can use WebRTC capabilities for two-way, real-time media streaming and interaction for use cases like talking with the person at your doorbell or remotely controlling your camera-enabled robot vacuum from your mobile phone.
 Example: Interact with a camera-enabled doorbell from your mobile phone
-Smart city
 Many cities have installed large numbers of cameras at traffic lights, parking lots, shopping malls, and just about every public venue, capturing video 24/7. You can use Amazon Kinesis Video Streams to securely and cost-effectively ingest, store, and analyze this massive volume of video data to help solve traffic problems, help prevent crime, dispatch emergency responders, and much more.
 Example: Amber alert system
-Industrial automation
 You can use Amazon Kinesis Video Streams to collect a variety of time-encoded data such as RADAR and LIDAR signals, temperature profiles, and depth data from industrial equipment. You can then analyze the data using your favorite machine learning framework including Apache MxNet, TensorFlow, and OpenCV for industrial automation use cases like predictive maintenance. For example, you can predict the lifetime of a gasket or valve and schedule part replacement in advance, reducing downtime and defects in a manufacturing line.
 Example: Equipment preventive maintenance
-Case studies
+Customers
 Wyze Scales to Support Millions of Connected-Home Devices with Kinesis Video Streams.
 Abode improves service quality and reliability by using Kinesis Video Streams.
 Ecomott shortens time-to-market of a new streaming service with Kinesis Video Streams.
-ABEJA employs real-time video analytics in retail, manufacturing, and healthcare.
 Neosperience Cloud enables frame by frame analysis of live video streams using Kinesis Video Streams and Amazon SageMaker.
-Nirovision increases flexibility and agility by using Amazon Kinesis Video Streams.
-Agent Vi extends its AI-driven video analytics solution to any IP camera.
-Veritone brings artificial intelligence to video analytics.
-See more details
+View more customers
 Blog posts
-Analyze live video at scale in real time using Amazon Kinesis Video Streams and Amazon SageMaker
-by Aditya Krishnan and Jagadeesh Pusapadi
-Video analytics in the cloud and at the edge with AWS DeepLens and Kinesis Video Streams
-by Roy Ben-Alta and Nehal Mehta
-Easily perform facial analysis on live feeds by creating a serverless video analytics environment using Amazon Rekognition Video and Amazon Kinesis Video Streams
-by Ben Snively
-Build automatic analysis of body language using Amazon Kinesis Video Streams and Amazon AI Services by Ned Sahin, Runpeng Liu, Joseph Salisbury, Lillian Bu
-Use facial recognition to deliver high-end consumer experience with Amazon Kinesis Video Streams and Amazon Rekognition Video
-by Nick Corbett
-Amazon Kinesis Video Streams – Serverless Video Ingestion and Storage for Vision-Enabled Apps
-by Jeff Barr
-Read more blogs
+date
+1
+...
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
 Get started with Amazon Kinesis Video Streams
 Read the getting started guide
 Learn how to use Kinesis Video Streams in this step-by-step guide.

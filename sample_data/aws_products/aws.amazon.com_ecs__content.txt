@@ -18,7 +18,7 @@ ECS powers several key services at Amazon and is built on technology developed f
 Secure
 ECS launches your containers in your own Amazon VPC, allowing you to use your VPC security groups and network ACLs. No compute resources are shared with other customers. You can also assign granular access permissions for each of your containers using IAM to restrict access to each service and what resources a container can access. This high level of isolation helps you use ECS to build highly secure applications.
 Reliable
-ECS runs on the best global infrastructure with 69 Availability Zones (AZ) across 22 Regions. AWS provides >2x more regions with multiple availability zones than the next largest cloud provider (22 vs. 8). ECS is backed by the AWS Compute SLA which guarantees a Monthly Uptime Percentage of at least 99.99% for ECS giving you ease of mind.
+ECS runs on the best global infrastructure with 77 Availability Zones (AZ) across 24 Regions. AWS provides >2x more regions with multiple availability zones than the next largest cloud provider (24 vs. 8). ECS is backed by the AWS Compute SLA which guarantees a Monthly Uptime Percentage of at least 99.99% for ECS giving you ease of mind.
 Optimized for cost
 With ECS, you can use Fargate Spot tasks or EC2 Spot instances to realize up to 90% discounts compared to on-demand prices for running stateless and fault tolerant applications. You can use savings plan and realize up to 50% discount for persistent workloads. You can easily run ECS clusters at scale by mixing Spot Instances with On-Demand and Reserved Instances.
 How Amazon ECS works

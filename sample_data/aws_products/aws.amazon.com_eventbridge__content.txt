@@ -1,37 +1,33 @@
 Amazon EventBridge
-Serverless event bus that connects application data from your own apps, SaaS, and AWS services
+Build event-driven applications at scale across AWS, existing systems or SaaS apps
 Get Started with Amazon EventBridge
-Amazon EventBridge is a serverless event bus that makes it easy to connect applications together using data from your own applications, integrated Software-as-a-Service (SaaS) applications, and AWS services. EventBridge delivers a stream of real-time data from event sources, such as Zendesk, Datadog, or Pagerduty, and routes that data to targets like AWS Lambda. You can set up routing rules to determine where to send your data to build application architectures that react in real time to all of your data sources.
-EventBridge makes it easy to build event-driven applications because it takes care of event ingestion and delivery, security, authorization, and error handling for you. As your applications become more interconnected through events, you need to spend more effort to find events and understand their structure in order to write code to react to those events. The Amazon EventBridge schema registry stores event structure - or schema - in a shared central location and maps those schemas to code for Java, Python, and Typescript so it’s easy to use events as objects in your code. You can connect to and interact with the schema registry from the AWS Management Console, APIs, or the SDK Toolkits for Jetbrains (Intellij, PyCharm, Webstorm, Rider) and VS Code.
+Amazon EventBridge is a serverless event bus that makes it easier to build event-driven applications at scale using events generated from your applications, integrated Software-as-a-Service (SaaS) applications, and AWS services. EventBridge delivers a stream of real-time data from event sources such as Zendesk or Shopify to targets like AWS Lambda and other SaaS applications. You can set up routing rules to determine where to send your data to build application architectures that react in real- time to your data sources with event publisher and consumer completely decoupled.
 Intro to Amazon EventBridge (9:13)
 Get started with EventBridge demo videos
 Benefits
-Connect data from SaaS apps
-EventBridge ingests data from supported SaaS applications and routes it to AWS service targets through native integration in the AWS management console. With EventBridge, you can use data from your SaaS apps to trigger workflows for customer support, business operations and more. Learn more about integrated SaaS partners.
-Write less code
-EventBridge makes it easy to connect applications together because you can ingest, filter and deliver events without writing custom code. The EventBridge schema registry stores a collection of easy-to-find event schemas and enables you to download code bindings for those schemas in your IDE so you can represent the event as an strongly-typed object in your code. Schema from your event bus can also be automatically added to the registry through the schema discovery feature.
-Easily build event-driven architectures
-EventBridge simplifies the process of building event-driven architectures. With EventBridge, your event targets don’t need to be aware of event sources because you can filter and publish directly to EventBridge. There is no set up required. Event-driven architectures are loosely coupled and distributed, which improves developer agility as well as application resiliency.
+Build event-driven architectures
+EventBridge simplifies the process of building
+event-driven architectures. With EventBridge, your event targets don’t need to be aware of event sources because you can filter and publish directly to EventBridge. There is no setup required. Improve developer agility as well as application resiliency with loosely coupled event-driven architectures.
+Connect SaaS apps
+EventBridge ingests data from supported SaaS applications and routes it to AWS services and SaaS targets (through API destinations - an HTTP invocation endpoint target for events) without writing custom integration code. You can use EventBridge to connect your SaaS apps, or use events from your SaaS apps to trigger workflows for customer support, business operations, and more. Learn more about integrated SaaS partners.
+Write less custom code
+EventBridge makes it easier to connect applications. You can ingest, filter, transform and deliver events without writing custom code. The EventBridge schema registry stores a collection of easy-to-find event schemas and enables you to download code bindings for those schemas in your IDE so you can represent the event as a strongly-typed object in your code. Automatically add schemas discovered from your event bus to the registry through the schema discovery feature.
 Reduce operational overhead
-With EventBridge, there are no servers to provision, patch, and manage and there is no software to install, maintain, or operate. EventBridge automatically scales based on the number of events ingested, and you pay only for events published by your AWS or SaaS applications. EventBridge has built-in distributed availability and fault-tolerance.
+With EventBridge, there are no servers to provision, patch, and manage. There is no additional software to install, maintain, or operate. EventBridge automatically scales based on the number of events ingested, and you pay only for events published by your AWS or SaaS applications. EventBridge has built-in distributed availability and fault-tolerance. EventBridge also has a native event archive and replay capability that makes it easier to recover from failures or build a new application state from old events.
 How it works
-EventBridge connects applications using events. An event is a signal that a system’s state has changed, such as a change in the status of a customer support ticket. To write code to react to events, you need to know the event’s schema, which includes information such as the title, format, and validation rules for each piece of event data. The EventBridge schema registry stores a collection of easy-to-find schema generated by your organization’s applications, AWS services, or SaaS applications. You can also download code bindings for any schema in the registry in your IDE, which enables you to represent the event as an strongly-typed object in your code.
+EventBridge connects applications using events. An event is a signal that a system’s state has changed, such as a change in the status of a customer support ticket. Customers can integrate their own AWS applications with microservices, SaaS applications and custom applications as event sources which publish events to an event bus. You can define a filtering rule to filter events and route events to AWS service targets and API destinations (via HTTP endpoint). EventBridge schema registry stores schema generated by your organization’s applications, AWS services, or SaaS applications which includes information such as the title, format and validation rules for event data. You can download code bindings for any schema in the registry in your IDE and directly use the strongly-typed object representing the event in your code.
 Use cases
-Customer support
-You can send status changes in customer support tickets to EventBridge and trigger an automated workflow, or use machine learning to train and deploy a sentiment analysis model. For example, you can use Amazon Sagemaker to attach a customer satisfaction score on an original Zendesk ticket.
-Learn more
-Security operations
-You can send security events to EventBridge for communication to relevant user groups across multiple channels. For example, you can include threat detection events in a Whispir communications workflow, or automate the delivery of security system reports with event-based rules.
-Business operations
-You can use EventBridge to access, process, and send operational data from one system to another. For example, you can use EventBridge to connect PagerDuty incidents to an Amazon Redshift data warehouse, so you can analyze the remediation velocity and average operational load on engineering teams.
-Application monitoring
-You can respond rapidly to changes in application performance by using EventBridge to collect real-time streams of application metrics. For example, you can send load volume alerts from Datadog to EventBridge to trigger an AWS Lambda function that scales your EC2 instances to handle the expected load increase.
-Directory registration
-You can automate directory registration processes by sending user information to EventBridge to trigger a workflow. For example, you can send new user creation events from OneLogin to EventBridge, and route them to a Lambda function that makes technical resources available to newly hired engineers.
-Customer data updates
-You can use changes in customer data in your customer relationship management (CRM) system to trigger workflows in other systems. For example, you can send an event to EventBridge when the status of a SugarCRM opportunity changes to “Closed Won,” and trigger a workflow that will provision billing records in an accounting system.
+Re-architect for speed
+Use EventBridge to accelerate modernizing and re-orchestrating your architecture with decoupled services and applications. With EventBridge, there is no need for heavy coordination between event producer and consumer applications or services. You can speed up your organization’s development process by allowing teams to iterate on features without explicit dependencies between systems.
+Monitoring and Auditing
+You can monitor and audit your AWS environments and respond to operational changes in your applications in real-time to prevent infrastructure vulnerabilities. For example, when your resources are accessed by cross-accounts or public accounts, you can configure an Amazon Access Analyzer event to be generated and sent to an AWS Lambda Function using EventBridge to remove the unintended permissions.
+Extend functionality via SaaS integrations
+You can extend the functionality of your applications by easily connecting them to other SaaS applications via EventBridge. For example, you can send custom events to EventBridge when a new user has been created in a free tier and send that event via API Destinations to Zendesk CRM.
+Customize SaaS with AI/ML
+You can enrich your events from SaaS applications using AWS Artificial Intelligence/Machine Learning services and gain valuable insights. For example, you can load your data from Shopify to EventBridge to trigger a workflow and use AI services such as Amazon Comprehend for image tagging of new retail products.
 Check out the product features
 Learn more about Amazon EventBridge features.
+Learn more
 Start building in the console
 Get started building with Amazon EventBridge in the AWS Management Console.
 Sign in

@@ -4,13 +4,16 @@ AWS CodeArtifact is a fully managed artifact repository service that makes it ea
 How much does CodeArtifact cost?
 With CodeArtifact, there are no upfront fees or commitments. You pay only for the software packages stored, the number of requests made, and the data transferred out of an AWS Region. CodeArtifact includes a monthly free tier for storage and requests. For pricing details see the pricing details.
 In which AWS Regions is CodeArtifact available?
-CodeArtifact is available in the following 10 AWS Regions:
+CodeArtifact is available in the following 13 AWS Regions:
 US East (N.Virginia)
 US East (Ohio)
 US West (Oregon)
 EU (Ireland)
+EU (London)
 EU (Frankfurt)
 EU (Stockholm)
+EU (Milan)
+EU (Paris)
 Asia Pacific (Sydney)
 Asia Pacific (Tokyo)
 Asia Pacific (Mumbai)

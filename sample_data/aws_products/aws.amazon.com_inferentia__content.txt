@@ -1,6 +1,7 @@
 AWS Inferentia
 High performance machine learning inference chip, custom designed by AWS
 Learn more about Amazon EC2 Inf1 instances
+Apply for free AWS credits to get started on Amazon EC2 Inf1 instances
 AWS’s vision is to make deep learning pervasive for everyday developers and to democratize access to cutting edge infrastructure made available in a low-cost pay-as-you-go usage model. AWS Inferentia is Amazon's first custom silicon designed to accelerate deep learning workloads and is part of a long-term strategy to deliver on this vision. AWS Inferentia is designed to provide high performance inference in the cloud, to drive down the total cost of inference, and to make it easy for developers to integrate machine learning into their business applications. The AWS Neuron software development kit (SDK), consisting of a compiler, run-time, and profiling tools that help optimize the performance of workloads for AWS Inferentia, enables complex neural net models, created and trained in popular frameworks such as Tensorflow, PyTorch, and MXNet, to be executed using AWS Inferentia-based Amazon EC2 Inf1 instances.
 Amazon Alexa adopts AWS Inferentia to cut cost of ML Inference
 Benefits

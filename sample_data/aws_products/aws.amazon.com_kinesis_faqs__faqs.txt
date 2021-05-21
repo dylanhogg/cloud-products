@@ -111,7 +111,7 @@ Q: When should I use enhanced fan-out? You should use enhanced fan-out if you ha
 Q: Can I have consumers using enhanced fan-out, and others not?
 Yes, you can have multiple consumers using enhanced fan-out and others not using enhanced fan-out at the same time. The use of enhanced fan-out does not impact the limits of shards for traditional GetRecords usage.
 Q: Is there a limit on the number of consumers using enhanced fan-out on a given stream?
-There is a default limit of 20 consumers using enhanced fan-out per data stream. If you need more than 20, please submit a limit increase request though AWS support. Keep in mind that you can have more than 20 total consumers reading from a stream by having 20 consumers using enhanced fan-out and other consumers not using enhanced fan-out at the same time.
+There is a default limit of 20 consumers using enhanced fan-out per data stream. Keep in mind that you can have more than 20 total consumers reading from a stream by having 20 consumers using enhanced fan-out and other consumers not using enhanced fan-out at the same time.
 Q: How do consumers register to use enhanced fan-out and the HTTP/2 SubscribeToShard API?
 We recommend using KCL 2.x, which will automatically register your consumer and use both enhanced fan-out and the HTTP/2 SubscribeToShard API. Otherwise, you can manually register a consumer using the RegisterStreamConsumer API and then you can use the SubscribeToShard API with the name of the consumer you registered.
 Q: Is there a cost associated with the use of enhanced fan-out?

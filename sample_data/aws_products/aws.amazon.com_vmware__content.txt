@@ -3,13 +3,15 @@ Innovate faster, rapidly transition to the cloud, and work securely from any loc
 AWS is VMware's preferred public cloud partner for all vSphere-based workloads. The VMware and AWS partnership delivers a faster, easier, and cost-effective path to the hybrid cloud while allowing customers to modernize applications enabling faster time-to-market and increased innovation. Use your current skills, processes, and governance to deliver secure virtual apps and desktops with our Virtual Desktop Infrastructure (VDI) solutions to enable employees to work securely from any location. New Amazon EC2 i3en.metal instances for VMware CloudTM on AWS, powered by Intel® Xeon® Scalable processors, deliver high networking throughput and lower latency so you can migrate data centers to the cloud for rapid data center evacuation, disaster recovery, and application modernization.
 With over 4 years of joint engineering, VMware and AWS provide organizations with enhanced VMware functionalities integrated in the solution and a single point of contact for support and service integration. This is why VMware Cloud on AWS is our preferred service for all vSphere workloads.
 Now available, Amazon EC2 i3en.metal Instances for VMware CloudTM on AWS, powered by Intel® Xeon® Scalable processors, deliver high networking throughput and lower latency. You can read more here <link will be live on July 15: https://cloud.vmware.com/community/2020/07/15/2-host-i3en-instance > and view the recent interview by theCUBE <live on July 15: https://youtu.be/NPM9yTmjrh4> to learn how these instances optimize data-intensive workloads requiring high random I/O access such as relational databases and workloads that require end to end security.
+VMware Cloud on AWS: a rapid path to the cloud
 Contact Us
 Live and On-Demand Webinars
+How Regulated Industries Can Address Cloud Migration Challenges and Innovate Faster
+Register now
+AWS Online Tech Talks: Simplify Your Cloud Transformation with VMware Cloud on AWS
 AWS and IDC Panel: Achieve Faster Migration, IT Efficiency, and Positive ROI with VMware CloudTM on AWS
-February 17, 2021, 10 am PST
-Register
-Deliver Uptime All the Time: Ensure Business Continuity with VMware CloudTM on AWS
 View On-Demand
+Deliver Uptime All the Time: Ensure Business Continuity with VMware CloudTM on AWS
 Take the Next Step in Your VMware CloudTM on AWS Journey: Modernize Applications
 How to Exit Your Datacenter and Modernize VMware Workloads on AWS
 Modernize On-Premises Databases with Amazon RDS on VMware
@@ -39,9 +41,11 @@ VMware Cloud on AWS enables organizations to optimize the costs of operating a c
 Enhanced availability
 VMware Cloud on AWS helps accelerate migration of VMware vSphere-based workloads to the highly available and scalable AWS Cloud. The service enables VMware-based workloads to run directly on the next-generation Nitro system-based Amazon EC2 bare metal infrastructure and provisioned in a single-tenant, isolated Amazon VPC. This approach allows organizations to take immediate advantage of the scalability, availability, security, and global reach of the AWS Cloud.
 From Our Customers
+Lotte migrates its on-premises virtual desktop environment to VMware Cloud on AWS, supporting 2,500 desktops
+Lotte is a well-known confectionery manufacturer producing an extensive range of products under the slogan “Sweetheart of Your Mouth.” Having used a virtual desktop environment (VDI) since 2011, the company decided to migrate its environment to VMware Cloud on Amazon Web Services (AWS) when upgrading from Windows 7 to 10. Lotte extended its environment to provide 2,500 virtual desktops in total and plans to build a digital transformation (DX) platform running on AWS for its core business systems as part of cloud-first approach.
+View the case study
 William Hill streamlines operations and reduces costs using VMware Cloud on AWS
 Facing the challenge of continuously increasing customer demand and the desire to get new products to market faster motivated William Hill, one of the largest gaming companies, to migrate their on-premises data centers to the cloud. VMware Cloud on AWS has enabled William Hill to close portions of their seemingly ever-expanding, on-premises data centers, as well as develop a new mindset and cost-effective approach to conducting and growing the business.
-View the case study
 PennyMac scales VDI environment with VMware CloudTM on AWS
 PennyMac, a top national mortgage lender, is committed to providing each and every customer with the right home loan and superior service long after closing. In this video, learn how PennyMac used VMware CloudTM on AWS to migrate their VDI environment to AWS.
 Watch video
@@ -49,6 +53,9 @@ S&P Global Ratings Uses AWS to Speed Application Migration, Drive Innovation
 The world’s leading provider of independent credit ratings, S&P Global Ratings has helped people across the globe make better financial decisions for more than 150 years. Learn more about how S&P Global Ratings used VMware Cloud on AWS to migrate their on-premises environments to AWS.
 VMware Cloud on AWS Helps New Jersey School District Ensure Continuity and Seamless Virtual Education
 VMware, an AWS Public Sector Partner, helps West Windsor-Plainsboro Regional School District deliver uninterrupted virtual education to its 10,000 students, save 50–75 percent on hardware replacement costs, and recover data in 10 minutes. The district deployed VMware Cloud on AWS to provide seamless access to critical learning applications for students and teachers.
+Johnson Winter & Slattery Speaks About 5 Top Tips for Running VMware Cloud on AWS
+Johnson Winter & Slattery, a national law firm in Australia, successfully adopted a hybrid approach with VMware Cloud on AWS, and extended to AWS native services.
+View the on-demand customer presentation
 ZOZO Technologies uses VMware Cloud on AWS to process 3x as much traffic as usual in winter sale
 ZOZO Technologies is the platform developer of ZOZOTOWN, the largest online fashion store in Japan. With the infrastructure supporting ZOZOTOWN built around an on-premises environment, coping with the winter sale, which generates the highest amount of traffic each year, was a challenge. The company therefore expanded its existing environment with VMware Cloud on AWS, which has excellent compatibility with conventional infrastructure, and moved to a pay-as-you-go system. Adding around 100 bare metal instances for the 2019 winter sale enabled the system to process three times the amount of traffic as usual, providing efficient infrastructure and preventing lost sales.
 View the Customer Case Study

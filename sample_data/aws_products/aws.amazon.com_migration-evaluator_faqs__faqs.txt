@@ -1,22 +1,26 @@
 General
 Q: Are agents required?
 No. Customers can either choose to leverage the agentless collector for automated on-premises data collection, or alternatively provide existing inventory and utilization values via flat-files. Customers choosing the collector are required to deploy one Windows Server virtual machine within their network. Standard protocols used include: Microsoft’s WMI (for Hyper-V and Windows bare metal servers), SNMP, VMware’s vSphere, and Microsoft’s T-SQL (for SQL Server). No agents are deployed on the customer’s hypervisors or other servers.
-Q: Which regions does the service support?
-Migration Evaluator (Formerly TSO Logic) supports modelling to all public regions excluding Mainland China (Ningxia or Beijing) with Solution Architects and Program Managers in North America, Europe and Australia. The service is hosted in US East (Northern Virginia).
+Q: Where is Migration Evaluator available?
+Migration Evaluator is available worldwide. This means you have access to support from Migrations Solution Architects in North America, Europe and Australia. Customer data is hosted in US East (Northern Virginia).
+Q: Which costs are reported in Migration Evaluator Quick Insights?
+Quick Insights shows the projected Amazon EBS, Amazon EC2 and operating system license costs if they were to be repurchased from AWS based on a one year time frame with no upfront cost. All costs are in USD and modeled for US East (Northern Virginia).
+Q: What if I need more data insights after receiving Migration Evaluator Quick Insights?
+Simply ask your assigned Migrations Solution Architect and they will will create a Business Case report based on your business drivers. The report includes additional cost models, Microsoft SQL license analysis, or exports of the match results.
+Q: Which AWS regions can the Migration Evaluator Business Case report be used to model costs?
+Migration Evaluator Business Case supports modelling to all public regions excluding Mainland China (Ningxia or Beijing).
 Q: Does the analysis include the option to use existing Microsoft licenses?
 Yes. If the customer has existing Microsoft SQL Server or Window Server licenses, Migration Evaluator can model “bring your own license” in the business case to ensure that these savings—which can make up two thirds of cloud costs for some applications—are captured. Migration Evaluator can model to dedicated hosts, dedicated instance or shared instances.
 Q: Is the data secure?
 Yes. The data collected by the collector is stored in a locally encrypted database instance, re-encrypted using a customer specific certificate, and sent via HTTPS to an encrypted Amazon S3 bucket provided by Migration Evaluator. All files uploaded from existing tools, or to supplement collection, are also stored in an encrypted Amazon S3 bucket. All Amazon S3 buckets leverage AES-256 Server-Side Encryption with AWS Key Management Service (SSE-KMS).
-Q: Do you support customers running infrastructure out of North America?
-Yes. Migration Evaluator supports customers around the globe via either a customer provided export of inventory or deploying the agentless collector. Collector customers may leverage either nightly data synchronization or the Inventory and Usage export. Once inventory and utilization has been discovered, all data is hosted within US East (Northern Virginia) for analysis.
 Q: Will the solution work if there is only access to the virtualization stack?
 Yes. Migration Evaluator can recommend matches between on-premises and AWS with data obtained from VMware or Hyper-V. Migration Evaluator does not support Citrix XenServer.
 Q: What does Migration Evaluator support? What does Migration Evaluator not support?
 Migration Evaluator supports servers on x86 architecture along with the customer’s attached block storage. The software finds Amazon EC2 matches based on the provisioning, software licenses and utilization. Migration Evaluator currently does not support modelling of Solaris, AIX, or other non-x86 devices and is not designed for monitoring or reporting on storage appliances, mainframes or network devices such as routers.
 Q: Can the solution display VMs and instances on a per-application basis?
-Yes. The solution can display application groupings so long as this information is provided by tagging, naming convention or an export from an inventory management tool. Migration Evaluator uses this information to create workload groupings by business function, such as application groupings, environment groupings, etc.
-Q: Does the solution do application dependency mapping from a network level?
-No. Application dependency mapping is not included in this offering. We rely on ecosystem partners who share the data with us programmatically for cloud matching.
+Yes. The Migration Evaluator Business Case deliverable can display application groupings so long as this information is provided by tagging, naming convention or an export from an inventory management tool. Migration Evaluator uses this information to create workload groupings by business function, such as application groupings, environment groupings, etc.
+Q: Does the solution do application dependency mapping?
+No. Application dependency mapping can be done from within AWS Migration Hub. Application groups created within in AWS Migration Hub will included in the Migration Evaluation analysis.
 Partner
 Q: How can partners request Migration Evaluator on behalf of a customer?
 For partners who would like to leverage Migration Evaluator for a customer opportunity, please submit your request through the APN Portal. Instructions on how to request can be found in our Submission Quick Guide by searching for “Migration Evaluator”.  Q: How can partners request a demo account?

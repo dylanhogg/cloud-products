@@ -1,4 +1,8 @@
 General
+Q: What are the main differences between AWS Application Migration Service and AWS Server Migration Service?
+AWS MGN utilizes continuous, block-level replication and enables short cut over windows measured in minutes. AWS SMS utilizes incremental, snapshot-based replication and enables-cutover windows measured in hours.
+Currently, AWS MGN does not support agent less replication while AWS SMS does. If you cannot or do not want to install an agent on your servers, consider using AWS SMS.
+Learn more about when to choose AWS Application Migration Service.
 Q: How do I get started with AWS Server Migration Service?
 Use the wizard in the AWS Server Migration Service dashboard of the AWS Management Console. Visit the Getting Started Guide for more details, including how to replicate a server.
 Q: What is the output of AWS Server Migration Service?
@@ -73,7 +77,7 @@ Multi-Server Migration
 Q: What is multi-server migration in AWS Server Migration Service?
 AWS Server Migration Service now offers multi-server migration support that makes it easier and cost effective to migrate applications from on-premises datacenters to Amazon EC2. Multi-server migration provides you the ability to migrate entire application stacks as opposed to migrating each server individually. You can group servers into applications, replicate the entire application together, and monitor its migration status centrally from the console. You can also easily launch and configure the migrated application with an auto-generated CloudFormation Template.
 Q: How does multi-server support work in AWS Server Migration Service?
-You can group on-premises servers into an application with one or more sub-groups, specify a replication frequency, provide configuration scripts, and a landing zone where the replicated application should be launched. Server Migration Service will orchestrate migration of all the underlying servers that are part of the application groups, wait for all of the AMIs to be available, and create a Cloud Formation Template that can be launched in the landing zone. Once you launch the application using the auto-generated CloudFormation Template, Server Migration Service will configure it based on your specified configuration scripts.
+You can group on-premises servers into an application with one or more sub-groups, specify a replication frequency, provide configuration scripts, and a landing zone where the replicated application should be launched. Server Migration Service will orchestrate migration of all the underlying servers that are part of the application groups, wait for all of the AMIs to be available, and create a CloudFormation Template that can be launched in the landing zone. Once you launch the application using the auto-generated CloudFormation Template, Server Migration Service will configure it based on your specified configuration scripts.
 Q: I already use AWS Server Migration Service. How does this capability benefit me?
 With multi-server migration, you no longer have to write custom tooling to coordinate the migrations of multiple servers that make up your application—you can migrate all of your servers together as a single unit. You have the ability to launch all of the servers automatically through a CloudFormation Template and keep it continuously updated with the latest AMIs produced for each replication run. You can start using the multi-server migration without any new setup.
 Q: How do I get started with using multi-server migration in Server Migration Service?

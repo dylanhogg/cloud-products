@@ -2,22 +2,22 @@ Amazon CodeGuru
 Automate code reviews and optimize application performance with ML-powered recommendations
 Get started with Amazon CodeGuru
 Find your most expensive lines of code and improve code quality
-Amazon CodeGuru is a developer tool that provides intelligent recommendations to improve your code quality and identify an application’s most expensive lines of code. Integrate CodeGuru into your existing software development workflow to automate code reviews during application development, continuously monitor application performance in production, provide recommendations and visual clues for improving code quality and application performance, and reduce overall cost.
-CodeGuru Reviewer uses machine learning to identify critical issues, security vulnerabilities, and hard-to-find bugs during application development to improve code quality. Learn more
+Amazon CodeGuru is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code. Integrate CodeGuru into your existing software development workflow to automate code reviews during application development, continuously monitor application performance in production, provide recommendations and visual clues for improving code quality and application performance, and reduce overall cost.
+CodeGuru Reviewer uses machine learning and automated reasoning to identify critical issues, security vulnerabilities, and hard-to-find bugs during application development and provides recommendations to improve code quality. Learn more
 CodeGuru Profiler pinpoints an application’s most expensive lines of code by helping developers understand the runtime behavior of their applications, identify and remove code inefficiencies, improve performance, and significantly decrease compute costs. Learn more
 Introduction to Amazon CodeGuru (2:20)
 How it works
 Integrate CodeGuru Reviewer and Profiler to your development pipeline to improve code quality and optimize performance for applications
 Amazon CodeGuru Reviewer
-CodeGuru Reviewer finds issues in Java and Python (available in preview) code and offers recommendations on how to remediate them. Trained on decades of knowledge and experience, CodeGuru Reviewer uses machine learning, AWS and security best practices, and hard-learned lessons across millions of code reviews for thousands of open-source and Amazon repositories.
-To begin reviewing code, you can associate existing code repositories on GitHub, GitHub Enterprise, Bitbucket, or AWS CodeCommit with CodeGuru.
+Trained on decades of knowledge and experience, CodeGuru Reviewer uses machine learning and automated reasoning, AWS and security best practices, and hard-learned lessons across millions of code reviews on thousands of open-source and Amazon repositories to automate code reviews. It detects defects and vulnerabilities that are difficult to find in Java and Python code and offers recommendations on how to remediate them.
+To begin reviewing code, you can associate your existing code repositories on GitHub, GitHub Enterprise, Bitbucket, or AWS CodeCommit in the CodeGuru console.
 Benefits
 Catch code problems before they hit production
-For code reviews, developers commit their code to GitHub, GitHub Enterprise, Bitbucket Cloud, and AWS CodeCommit and add CodeGuru Reviewer as one of the code reviewers, with no other changes to the normal development process. CodeGuru Reviewer analyzes existing code bases in the repository, identifies hard-to-find bugs and critical issues with high accuracy, provides intelligent suggestions on how to remediate them, and creates a baseline for successive code reviews.
+For code reviews, developers commit their code to GitHub, GitHub Enterprise, Bitbucket Cloud, and AWS CodeCommit and add CodeGuru Reviewer as one of the code reviewers, with no other changes to their development process. CodeGuru Reviewer analyzes existing code bases in the repository, identifies hard-to-find bugs and critical issues with high accuracy, provides intelligent suggestions on how to remediate them, and creates a baseline for successive code reviews.
 Fix security vulnerabilities
-CodeGuru Reviewer Security Detector uses machine learning and AWS’s years of security experience to improve your code security. It identifies security vulnerabilities in the top 10 OWASP categories and helps your code follow best practices for KMS, EC2 APIs and common Java crypto and TLS/SSL libraries. When the security detector discovers an issue, it provides a recommendation for remediation along with an explanation for why it suggests the code improvement, thereby enabling security engineers to focus on architectural and application-specific security best practices.
+CodeGuru Reviewer Security Detector leverages automated reasoning and AWS’s years of security experience to improve your code security. It enables you to build security directly into your application development processes and ensures that your code follows best practices for KMS, EC2 APIs and common Java crypto and TLS/SSL libraries. When the security detector discovers an issue, a recommendation for remediation is provided along with an explanation for why the code improvement is suggested, thereby enabling Security Engineers to focus on architectural and application-specific security best-practices.
 Proactively improve code quality with continuous monitoring
-For every pull request initiated, CodeGuru Reviewer automatically analyzes the incremental code changes and posts recommendations directly on the pull request. Additionally, it supports full repository or code base scan for periodic code maintainability, and code due diligence initiatives to ensure that your code quality is consistent.
+For every pull request initiated, CodeGuru Reviewer automatically analyzes the incremental code changes and posts recommendations directly on the pull request. Additionally, it supports full repository or code base scan for periodic code  maintainability, and code due diligence initiatives to ensure that your code quality is consistent. A fixed monthly price includes two full repository scans and all incremental code reviews.
 Click to enlarge
 Amazon CodeGuru Profiler
 CodeGuru Profiler optimizes performance for applications running in production and identifies the most expensive lines of code. It is always searching for application performance optimizations, recommending ways to fix them to reduce CPU utilization, cut compute costs, and improve application performance.
@@ -28,10 +28,19 @@ Discover anomalies and common issues in your application performance
 CodeGuru Profiler automatically detects anomalies in performance of critical methods in the application stack that start consuming more CPU or show increased latency—with updated anomaly detection reports every five minutes. This early detection and notification prevents the escalation of the issue in production and gives you enough time to fix it before it impacts the availability of the service and the experience of your customers.
 Catch your most expensive line of code today
 The more efficient your code and application is, the less costly it is to run. CodeGuru Profiler provides visualizations and recommendations on how to fix performance issues, helping you reduce operational costs by up to 50% for any application running in production. It also shows the estimated cost of running inefficient code, so developers can prioritize remediation.
-To learn more about CodeGuru visit the Amazon CodeGuru developer forum.
+To learn more about CodeGuru visit the Amazon CodeGuru Developer Forum.
 Close
 Customer success
-"Teams at more than 170,000 companies rely on Atlassian products to make teamwork easier, and help them organize, discuss, and complete their work. At Atlassian, many of our services have 100s of check-ins per deployment. While code reviews from our development team do a great job of preventing bugs from reaching production, it’s not always possible to predict how systems will behave under stress or manage complex data shapes, especially as we have multiple deployments per day."
+“We have about 300+ microservices right now that are being reviewed and managed by CodeGuru Reviewer. Amazon CodeGuru Profiler analyzes the application runtime performance and using machine learning, provides recommendations on ways that could speed up the application. So, we don't have to try to have our developers figuring out what is the best way to configure from a performance perspective.”
+Rich Benner, CIO, Wheel Pros
+Watch the video to learn how Presidio and Wheel Pros have leveraged Amazon CodeGuru to modernize their data center
+“Amazon CodeGuru helps Cognizant development teams deliver mission critical software for our customer's digital transformation programs. Incorporating CodeGuru in our development workflows improves and automates code reviews, helps our DevOps teams proactively identify and fix functional and non-functional issues and ensures that the deployments exceeds the performance, security and compliance requirements of our customers across industries and regions.”
+Todd Carey, Global Head, Cognizant AWS Business Group
+“With CodeGuru, we have built automated code reviews directly into our pipelines, which means my team can deploy code faster and with more confidence. We use CodeGuru Reviewer’s recommendations based on ML and automated reasoning, to focus on fixing and improving the code, instead of manually finding flaws. The addition of Python has made CodeGuru even more accessible for us."
+Edwn Nikoi, Technical Manager, IT Consortium
+“CodeGuru Reviewer has helped us create a feedback loop for our developers and improved the overall quality of our code. The new pricing model makes it much easier for us to budget and operationalize adding it to our software development processes. We can now scale our code reviews based on our project size and deployment schedules.”
+Michael Rush, Software Development Manager at Digital Fusion
+“At Atlassian, many of our services have hundreds of check-ins per deployment. While code reviews from our development team do a great job of preventing bugs from reaching production, it’s not always possible to predict how systems will behave under stress or manage complex data shapes, especially as we have multiple deployments per day. When we detect anomalies in production, we have been able to reduce the investigation time from days to hours and sometimes minutes thanks to Amazon CodeGuru’s continuous profiling feature. Our developers now focus more of their energy on delivering differentiated capabilities and less time investigating problems in our production environment.”
 Zak Islam, Head of Engineering, Tech Teams, Atlassian
 Learn how Atlassian profiles services in production with CodeGuru Profiler
 "Part of application development is the creation of performant systems as well as the feedback and continuous improvement of existing systems. This starts with a strong architectural foundation but often ends in the details of the application code. When our team at EagleDream is digging into these details there are a variety of tools at our disposal, and using both static and dynamic analysis is helpful. We’ve found that the runtime analysis offered by the Amazon CodeGuru Profiler is one of the simplest and fastest to get running, and generates insights into the application code that are easy to remediate. Using this tool we’ve been able to quickly hone in on portions of an application that represent bottlenecks that would have otherwise been difficult to spot, then develop changes that can be implemented and tested with a very fast feedback loop. This allows us to continuously deliver and improve our own workloads and the workloads of our customers, making them more performant while saving on cost at the same time."
@@ -41,21 +50,22 @@ Read how EagleDream optimizes their applications with CodeGuru Profiler
 Rahul Subramaniam, CEO, DevFactory
 Learn how DevFactory builds better applications with CodeGuru
 Blogs and articles
+Improving your Java applications using Amazon CodeGuru Profiler
+15 MAR 2021
+Omar Kahil and Kevin Dixson
+Improving AWS Java applications with Amazon CodeGuru Reviewer
+08 FEB 2021
+Rajdeep Mukherjee, Neela Sawant, and Srinivasan Sengamedu SHS
+Resource leak detection in Amazon CodeGuru Reviewer
+13 JAN 2021
+Pranav Garg and Srinivasan Sengamedu SHS
 Raising code quality for Python applications using Amazon CodeGuru
 04 DEC 2020
 Ran Fu, Pierre Marieu, and Neela Sawant
-Tightening application security with Amazon CodeGuru
-01 DEC 2020
-Brian Farnhill
-Incorporating security in code-reviews using Amazon CodeGuru Reviewer
-Nikunj Vaidya
-RENGA Inc. automates code reviews with Amazon CodeGuru
-10 SEP 2020
-Kazuma Ohara and Yumiko Kanasugi
 Explore other related services
 Amazon DevOps Guru
 DevOps Guru gives developers and operators a simpler way to measure and improve an application’s operational performance and availability.
-Get started in preview
+Get started now
 Check out Amazon CodeGuru features
 Visit the features page.
 Learn more

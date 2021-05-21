@@ -28,7 +28,9 @@ AWS Command Line Interface (AWS CLI), the
 AWS SDKs, or the AWS CodeCommit
 APIs.
 Q: How do I update files in my repository?
-You can edit your files directly from the CodeCommit console or you can use Git to work with the repository. For example Git commands, you can use the&nbsp;git clone&nbsp;command to make a local copy of the AWS CodeCommit repository. Make changes to the local files and use the git commit command when you’re ready to save the changes. Finally, use the
+You can edit your files directly from the CodeCommit console or you can use Git to work with the repository. For example Git commands, you can use the
+git clone command to make a local copy of the AWS CodeCommit repository. Make changes to the local files and use the
+git commit command when you’re ready to save the changes. Finally, use the
 git push command to upload the changes to the AWS CodeCommit repository. For step-by-step instructions, see
 Q: How do I import my existing repository to AWS CodeCommit?
 You can use Git to import any existing Git repository to AWS CodeCommit. For other repositories, such as Subversion and Perforce, you can use a Git importer to first migrate it to a Git repository. For step by step instructions on importing Git repositories, see
@@ -44,7 +46,11 @@ Limits.
 Q: What is the maximum size for a single file that I can store in CodeCommit?
 A single file in a repository cannot be more than 2 GB in size.
 Q: How do I backup my repository?
-If you have a local copy of the repository from doing a full&nbsp;git clone, you can use that to restore data. If you want additional backups, there are multiple ways to do so. One way is to install Git on your backup server and run a scheduled job that uses the git clonecommand to take regular snapshots of your repository. You can use git pull instead of git clone if you want to copy only the incremental changes. Note that these operations may incur an additional user and/or request charges based on how you setup the backup server and the polling frequency.
+If you have a local copy of the repository from doing a full
+git clone, you can use that to restore data. If you want additional backups, there are multiple ways to do so. One way is to install Git on your backup server and run a scheduled job that uses the
+git clone command to take regular snapshots of your repository. You can use
+git pull instead of
+git clone if you want to copy only the incremental changes. Note that these operations may incur an additional user and/or request charges based on how you setup the backup server and the polling frequency.
 Q: How do I restore a deleted AWS CodeCommit repository?
 Deleting an AWS CodeCommit repository is a destructive one-way operation that cannot be undone. To restore a deleted repository, you will need to create the repository again and use either a backup or a local copy from a full clone to upload the data. We recommend using IAM policies along with MFA-protection to restrict users who can delete repositories. For more details, see the Can I use AWS Identity and Access Management (IAM) to manage access to AWS CodeCommit? question in the Security section of the FAQ.
 Q: How do I manage code reviews with AWS CodeCommit?
@@ -61,7 +67,11 @@ Yes. You can review recent CodeCommit events, including Git operations and API c
 Security
 Q: Can I use AWS Identity and Access Management (IAM) to manage access to AWS CodeCommit?
 Yes. AWS CodeCommit supports
-resource-level permissions. For each AWS CodeCommit repository, you can specify which users can perform which actions. You can also specify AWS multi-factor authentication (MFA) for a CodeCommit action. This allows you to add an extra level of protection for destructive actions such as deleting repositories. In addition to the AWS CodeCommit APIs, you can also specify git pull and git push as actions to control access from Git clients. For example, you can create a read-only user for a repository by allowing that user access to git pull but not git push on the repository. For more information on using IAM with AWS CodeCommit, see
+resource-level permissions. For each AWS CodeCommit repository, you can specify which users can perform which actions. You can also specify AWS multi-factor authentication (MFA) for a CodeCommit action. This allows you to add an extra level of protection for destructive actions such as deleting repositories. In addition to the AWS CodeCommit APIs, you can also specify
+git pull and
+git push as actions to control access from Git clients. For example, you can create a read-only user for a repository by allowing that user access to
+git pull but not
+git push on the repository. For more information on using IAM with AWS CodeCommit, see
 Authentication and Access Control for AWS CodeCommit. For more information on authenticating API access using MFA, see
 Configuring MFA-Protected API Access.
 Q: What communication protocols are supported by AWS CodeCommit?

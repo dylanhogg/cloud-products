@@ -18,7 +18,7 @@ Using a global anycast network of DNS servers around the world, Amazon Route 53 
 Cost-effective
 Amazon Route 53 passes on the benefits of AWS’s scale to you.  You pay only for the resources you use, such as the number of queries that the service answers for each of your domains, hosted zones for managing domains through the service, and optional features such as traffic policies and health checks, all at a low cost and without minimum usage commitments or any up-front fees.
 Secure
-By integrating Amazon Route 53 with AWS Identity and Access Management (IAM), you can grant unique credentials and manage permissions for every user within your AWS account and specify who has access to which parts of the Amazon Route 53 service.
+By integrating Amazon Route 53 with AWS Identity and Access Management (IAM), you can grant unique credentials and manage permissions for every user within your AWS account and specify who has access to which parts of the Amazon Route 53 service. When you enable Amazon Route 53 Resolver DNS firewall, you can configure it to inspect outbound DNS requests against a list of known malicious domains.
 Scalable
 Route 53 is designed to automatically scale to handle very large query volumes without any intervention from you.
 Simplify the hybrid cloud

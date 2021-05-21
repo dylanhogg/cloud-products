@@ -5,7 +5,7 @@ Visit our documentation to learn more.
 Download Amazon Corretto Now
 Download Amazon Corretto 8
 Download Amazon Corretto 11
-Download Amazon Corretto 15
+Download Amazon Corretto 16
 Benefits
 Backed by Amazon
 Amazon Corretto comes with no-cost long-term support from Amazon, so you can upgrade versions only when you need to. Amazon is committed to Corretto, running it internally on thousands of production services.

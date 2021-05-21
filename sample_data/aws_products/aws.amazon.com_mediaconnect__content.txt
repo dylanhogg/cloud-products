@@ -4,6 +4,9 @@ Get started with AWS Elemental MediaConnect
 Live Chat
 AWS Elemental MediaConnect is a high-quality transport service for live video. Today, broadcasters and content owners rely on satellite networks or fiber connections to send their high-value content into the cloud or to transmit it to partners for distribution. Both satellite and fiber approaches are expensive, require long lead times to set up, and lack the flexibility to adapt to changing requirements. To be more nimble, some customers have tried to use solutions that transmit live video on top of IP infrastructure, but have struggled with reliability and security.
 Now you can get the reliability and security of satellite and fiber combined with the flexibility, agility, and economics of IP-based networks using AWS Elemental MediaConnect. MediaConnect enables you to build mission-critical live video workflows in a fraction of the time and cost of satellite or fiber services. You can use MediaConnect to ingest live video from a remote event site (like a stadium), share video with a partner (like a cable TV distributor), or replicate a video stream for processing (like an over-the-top service). MediaConnect combines reliable video transport, highly secure stream sharing, and real-time network traffic and video monitoring that allow you to focus on your content, not your transport infrastructure.
+For the highest-quality, lowest-latency workflows, MediaConnect supports
+AWS Cloud Digital Interface (AWS CDI) for transporting uncompressed video between applications in AWS. You can also use JPEG XS encode and decode in MediaConnect to transport high-quality video to and from the AWS Cloud. For hybrid broadcast control, live production, and other uncompressed live video workflows, you can build cloud-based applications that work seamlessly with on-premises infrastructure, including
+AWS Elemental Live for JPEG XS encoding and decoding.
 AWS Elemental MediaConnect Explained
 Close
 Watch Now: AWS Elemental MediaConnect Explained (1min)
@@ -11,11 +14,15 @@ Benefits
 Reliably transport video
 MediaConnect adds a video-specific quality-of-service layer over standard IP transport, enabling uninterrupted, high-quality delivery. This makes your live video workflows more reliable, even over less dependable networks.
 Securely share live video streams
-MediaConnect lets you secure your live video using industry-standard encryption, and only share content with authorized customers. This gives you control over the distribution of your content.
+MediaConnect lets you secure your live video using industry-standard encryption, so only customers you authorize can access the content. This gives you control over the distribution of your video.
 Easily manage high-value live broadcasts
 MediaConnect provides real-time visibility into more than 15 critical metrics of your video stream quality, automatically adjusting settings to optimize performance. Broadcast-standard alerts identify issues with transport streams, so you can maintain confidence that your video is delivered without disruption.
+Connect remote production applications in the cloud
+MediaConnect supports remote production architectures by using AWS CDI flows to connect components such as production switchers, graphics engines, multiviewers, and playout servers running on different Amazon Elastic Compute Cloud (Amazon EC2) instances. MediaConnect bridges these components together without sacrificing latency or video quality. MediaConnect also supports JPEG XS so you can connect your on-premises cameras and monitor walls to your Amazon EC2 remote production architecture.
+Build for high availability
+MediaConnect provides resilience at the signal level through technologies such as automatic repeat request (ARQ) and at the flow level by employing SMPTE 2022-7 and hot/hot failover. MediaConnect also supports placement at the Availability Zone (AZ) level so it’s easy to build live video workflows without any single points of failure.
 Lower your costs by 30 percent or more
-MediaConnect uses your IP infrastructure or AWS Direct Connect to enable cost-effective, high-quality live video to the AWS Cloud. Instead of long-term commitments to satellite transponders and fixed fiber networks, MediaConnect provides a pay-as-you-go transport alternative, saving you 30% or more compared to a typical satellite primary distribution use case with 70 destinations.
+MediaConnect uses your IP infrastructure or AWS Direct Connect to enable cost-effective, high-quality live video transport between on-premises and the AWS Cloud. Instead of long-term commitments to satellite transponders and fixed fiber networks, MediaConnect provides a pay-as-you-go transport alternative, saving you 30% or more compared to a typical satellite primary distribution use case with 70 destinations.
 How it works
 Check out the product features
 Learn more about AWS Elemental MediaConnect features and read the FAQ.

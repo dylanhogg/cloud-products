@@ -1,18 +1,18 @@
 Migration Evaluator
 Build a data-driven business case for AWS
 Start building your business case
-Creating business cases on your own can be a time-consuming process and does not always identify the most cost-effective deployment and purchasing options. Migration Evaluator (Formerly TSO Logic) quickly provides a business case to make sound AWS planning and migration decisions. With Migration Evaluator, your organization gets access to AWS expertise, visibility into the costs associated with multiple migration strategies, and insights on how reusing existing software licensing reduces costs further.
-A business case is the first step in the AWS migration journey. Beginning with on-premises inventory discovery, you can choose to upload exports from 3rd party tools or install a complimentary agentless collector to monitor Windows, Linux and SQL Server footprints. Migration Evaluator includes a team of program managers and solution architects to capture your migration objective and use analytics to narrow down the subset of migration patterns best suited to your business needs. The results are captured in a transparent business case which aligns business and technology stakeholders to provide a prescriptive next step in your migration journey.
-Migration Evaluator (Formerly TSO Logic): How it works (1:43)
+Creating a business case on your own can be a time-consuming process and does not always identify the most cost-effective options. A business case is the first step in your migration journey. With Migration Evaluator (Formerly TSO Logic), you can gain access to insights and accelerate decision-making for migration to AWS at no cost. Following data collection, you will quickly receive an assessment including a projected cost estimate and savings of running your on-premises workloads in the AWS Cloud.
+After receiving your initial assessment, your organization can work with the Migration Evaluator team to create a directional business case if additional insights are needed. The team will capture your migration objective and use analytics to narrow down the migration patterns best suited to your business needs. Your organization gets access to AWS expertise, visibility into the costs associated with multiple migration strategies, and insights on how reusing existing software licensing reduces costs further. Results are captured in a transparent business case report to further align business and technology stakeholders, while providing a prescriptive next step in your migration journey.
+Migration Evaluator: How it works (1:43)
 Benefits
 Simplifies discovery
-Migration Evaluator discovers where on-premises instances are overprovisioned and where alternate AWS placements can meet or exceed those requirements at a lower cost.
+Migration Evaluator discovers on-premises instances that are overprovisioned, and suggests alternate AWS instances that meet or exceed those requirements at a lower cost.
 Optimizes cloud planning
 Easily identify which current Microsoft licenses can move to cloud and the cost comparison of Bring Your Own License (BYOL) vs License Included (LI) options.
-Fast tracks business cases
-Migration Evaluator delivers a business case that has been proven to reduce costs by up to 50%.
+Fast Tracks Migration
+Migration Evaluator delivers assessments that have been proven to reduce costs by up to 50%.
 How it works
-Our service analyzes an enterprise’s compute footprint, including server configuration, utilization, annual costs to operate, eligibility for bring-your-own-license, and hundreds of other parameters. It then statistically models utilization patterns, matching each workload with optimized placements in the Amazon Elastic Cloud Compute and Amazon Elastic Block Store. Finally, it outputs a business case with a comparison of the current-state against multiple future-state configurations showing the flexibility of AWS.
+Beginning with on-premises inventory discovery, you can choose to upload exports from AWS Application Discovery Service, 3rd party tools or install a complimentary agentless collector to monitor Windows, Linux and SQL Server footprints. Our service analyzes your organization’s compute footprint, including server configuration, utilization, annual costs to operate, eligibility for bring-your-own-license, and hundreds of other parameters. It then statistically models utilization patterns, matching each workload with optimized placements in the Amazon Elastic Cloud Compute and Amazon Elastic Block Store. Initially, it outputs a summary of the projected costs to re-host at AWS based on usage patterns, and the breakdown of costs by infrastructure and software licenses. If additional insights are requested, a business case is developed with a comparison of the current-state against multiple future-state configurations showing the flexibility of AWS.
 Featured customers
 Koch Global Services
 "Migration Evaluator (Formerly TSO Logic) helped us forecast 48% savings when running on AWS versus on-premises."

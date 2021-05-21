@@ -36,8 +36,8 @@ Accelerate digital transformation
 Read how BMW increases developer velocity by using AWS AppSync to build scalable and universal APIs.
 Live Location Tracking
 Read about how HyperTrack uses AWS for real-time data processing for live location tracking at scale.
-In-Store Customer Service
-ALDO uses AWS AppSync. Learn more about how they improved the shopping experience of footwear customers.
+Streaming Service
+Read how streaming service Peacock launched a new streaming service in 12 months and included AWS Appsync.
 Learn more about AWS AppSync features
 Visit the features page
 Ready to build?

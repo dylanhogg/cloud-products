@@ -327,6 +327,19 @@ Q: Does regional support for Route 53 Resolver mean that all of Amazon Route 53 
 No. Amazon Route 53 public and private DNS, traffic flow, health checks, and domain name registration are all global services.
 Q: How do I get started with Route 53 Resolver?
 Visit the Amazon Route 53 developer guide for details on getting started. You can also configure Resolver from within the Amazon Route 53 console.
+Route 53 Resolver DNS Firewall
+Q: What is Amazon Route 53 Resolver DNS Firewall?
+A: Amazon Route 53 Resolver DNS Firewall is a feature that allows you to quickly deploy DNS protections across all of your Amazon Virtual Private Clouds (VPCs). The Route 53 Resolver DNS Firewall allows you to block queries made for known malicious domains (i.e. create “denylists”) and to allow queries for trusted domains (create “allowlists”) when using the Route 53 Resolver for recursive DNS Resolution. You can also quickly get started with protections against common DNS threats by using AWS Managed Domain Lists. Amazon Route 53 Resolver DNS Firewall works together with AWS Firewall Manager so you can build policies based on DNS Firewall rules, and then centrally apply those policies across your VPCs and accounts.
+Q: When should I use Route 53 Resolver DNS Firewall?
+A: If you want to be able to filter the domain names that can be queried over DNS from within your VPCs, then DNS Firewall is for you. It gives you flexibility in choosing the configuration that works best for your organization’s security posture in two ways: (1) If you have strict DNS exfiltration requirements and want to deny all outbound DNS queries for domains that aren’t on your lists of approved domains, you can create such rules for a “walled-garden” approach to DNS security. (2) If your organization prefers to allow all outbound DNS lookups within your accounts by default and only requires the ability to block DNS requests for known malicious domains, you can use DNS Firewall to create denylists, which include all the malicious domain names your organization is aware of. DNS Firewall also comes with AWS Managed Domain Lists that help you protect against suspicious domains and Command-and-Control (C&C) bots.
+Q: How does Amazon Route 53 Resolver DNS Firewall differ from other firewall offerings on AWS and the AWS Marketplace?
+A: Route 53 Resolver DNS Firewall complements existing network and application security services on AWS by providing control and visibility to Route 53 Resolver DNS traffic (e.g. AmazonProvidedDNS) for your entire VPC. Depending on your use case, you may choose to implement DNS Firewall along your existing security controls, such as AWS Network Firewall, Amazon VPC Security Groups, AWS Web Application Firewall rules, or AWS Marketplace appliances.
+Q: Can Amazon Route 53 Resolver DNS Firewall manage security across multiple AWS accounts?
+A: Yes. Route 53 Resolver DNS Firewall is a regional feature and secures Route 53 Resolver DNS network traffic at an organization and account level. For maintaining policy and governance across multiple accounts, you should use AWS Firewall Manager.
+Q: How much does Amazon Route 53 Resolver DNS Firewall cost?
+Pricing is based on the number of domain names stored within your firewall and the number of DNS queries inspected. Please visit Amazon Route 53 Pricing for more information.
+Q: Which AWS tools can I use to log and monitor my Amazon Route 53 Resolver DNS Firewall activity?
+A: You can log your DNS Firewall activity to an Amazon S3 bucket or Amazon CloudWatch log groups for further analysis and investigation. You can also use Amazon Kinesis Firehose to send your logs to a third-party provider.
 Learn more about Amazon Route 53 pricing
 Simple pricing to only pay for what you need.
 Learn more

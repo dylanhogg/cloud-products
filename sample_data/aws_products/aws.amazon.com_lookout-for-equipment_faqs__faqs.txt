@@ -29,7 +29,7 @@ A: You can get started by creating an AWS account at aws.amazon.com and accessin
 Q: What file types does Lookout for Equipment accept?
 A: Lookout for Equipment works with CSV files.
 Q: What regions is Lookout for Equipment available?
-A: Lookout for Equipment will be available in US west, Dublin, Ireland and Seoul, South Korea,
+A: Lookout for Equipment is available in US East (N. Virginia), EU (Ireland), and Asia Pacific (Seoul).
 Q: What are the key use cases supported by Amazon Lookout for Equipment?
 A: Lookout for Equipment is made for industrial process equipment that operate continuously and with low variability in operating conditions. Some good examples include
 Compressors

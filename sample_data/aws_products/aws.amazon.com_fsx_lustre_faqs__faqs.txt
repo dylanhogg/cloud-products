@@ -133,6 +133,8 @@ Backups aren’t supported on scratch file systems because these file systems ar
 Backups aren’t supported on file systems linked to an Amazon S3 bucket because in this case the S3 bucket serves as the primary storage location for your full data set – the file system does not necessarily contain the full data set at any given time. With these file systems, use the FSx API to export new or changed files from the file system to your S3 bucket.
 Q: How do I protect my FSx for Lustre resources using AWS Backup?
 A: You first enable Amazon FSx as a protected service in AWS Backup. You can then configure backups of your Amazon FSx resources via the AWS Backup console, API or CLI. You can create both scheduled and on-demand backups of Amazon FSx resources via AWS Backup and restore these backups as new Amazon FSx file systems. Amazon FSx file systems can be added to backup plans in the same way as other AWS resources, either by specifying the ARN or by tagging the Amazon FSx file system for protection in the backup plan. Learn more in the AWS Backup documentation.
+Q: How do I copy backups of my Amazon FSx file systems across AWS Regions and AWS accounts?
+A: You can configure your backup plans on AWS Backup to periodically create and copy backups of your Amazon FSx file systems to other AWS Regions, other AWS accounts, or both, with your desired frequency and retention policy. For cross-account backup copies, you use your AWS Organizations management account to designate source and destination accounts.
 Pricing and billing
 Q: How will I be charged and billed for my use of Amazon FSx for Lustre?
 A: You pay only for the resources you use. See the Amazon FSx for Lustre pricing page for details.

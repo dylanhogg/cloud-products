@@ -9,6 +9,8 @@ Q: What can I do with Lightsail?
 You can get preconfigured VPS plans that include everything to easily deploy and manage your application. Lightsail is best suited to projects that require a few virtual private servers and users who prefer a simple management interface. Common use cases for Lightsail include running websites, web applications, blogs, e-commerce sites, simple software, and more.
 Q: What is a Lightsail plan?
 Also referred to as a bundle, a Lightsail plan includes a virtual server with a fixed amount of memory (RAM) and compute (vCPUs), SSD-based storage (disks), and a free data transfer allowance. Lightsail plans also offer static IP addresses (5 per account) and DNS management (3 domain zones per account). Lightsail plans are charged on an hourly, on-demand basis, so you only pay for a plan when you're using it.
+Q: Are Lightsail plans the same across AWS Regions?
+As Lightsail expands its availability across more Regions, we’re evolving our infrastructure to provide a better overall customer experience. As a result, plans in certain Regions will have different specifications, such as an additional vCPU, compared to plans in other Regions.
 Q: What is a Lightsail instance?
 A Lightsail instance is a virtual private server (VPS) that lives in the AWS Cloud. Use your Lightsail instances to store your data, run your code, and build web-based applications or websites. Your instances can connect to each other and to other AWS resources through both public (Internet) and private (VPC) networking. You can create, manage, and connect easily to instances right from the Lightsail console.
 Q: What software can I run on my instance?
@@ -56,7 +58,7 @@ You can connect your Lightsail instances to VPC resources in your AWS account pr
 Note that you need to have a default VPC set up in your AWS account in order for VPC peering with Lightsail to work. AWS accounts created before December 2013 do not have a default VPC, and you will need to set one up. Find out more about setting up your default VPC here.
 Q: In which regions is Lightsail available?
 Lightsail is currently available in all the Availability Zones in the following AWS Regions:
-US East (N. Virginia) US East (Ohio) US West (Oregon) Canada (Central) Europe (Frankfurt) Europe (Ireland) Europe (London) Europe (Paris) Asia Pacific (Mumbai) Asia Pacific (Singapore) Asia Pacific (Sydney) Asia Pacific (Tokyo) Asia Pacific (Seoul)
+US East (N. Virginia) US East (Ohio) US West (Oregon) Canada (Central) Europe (Frankfurt) Europe (Ireland) Europe (London) Europe (Paris) Europe (Stockholm) Asia Pacific (Mumbai) Asia Pacific (Singapore) Asia Pacific (Sydney) Asia Pacific (Tokyo) Asia Pacific (Seoul)
 Q: What are Availability Zones?
 Availability Zones are collections of data centers that run on physically distinct, independent infrastructure and are engineered to be highly reliable. Common points of failure such as generators and cooling equipment are not shared between Availability Zones. Additionally, Availability Zones are physically separate, so that even extremely uncommon disasters such as fires, tornados, or flooding can affect only a single Availability Zone.
 Q: What are the Lightsail service quotas?
@@ -119,6 +121,7 @@ Europe (Frankfurt): $0.09 USD/GB
 Europe (Ireland): $0.09 USD/GB
 Europe (London): $0.09 USD/GB
 Europe (Paris): $0.09 USD/GB
+Europe (Stockholm): $0.09 USD/GB
 Asia Pacific (Mumbai): $0.13 USD/GB
 Asia Pacific (Singapore): $0.12 USD/GB
 Asia Pacific (Sydney): $0.17 USD/GB

@@ -17,7 +17,7 @@ You can create EKS Distro clusters in AWS on Amazon EC2 and on your own hardware
 Q: What is included in EKS Distro?
 EKS Distro will include opensource (upstream) Kubernetes components and third-party tools including configuration database, network, and storage components necessary for cluster creation. These include Kubernetes Control Plane components (eg. kube-controller-manager, etcd, and CoreDNS), Kubernetes Node components (eg kubelet, Kubernetes CSI, and CNI), and command line clients (eg. kubectl and etcdctl).
 Q: What versions of Kubernetes will EKS Distro support at launch?
-EKS Distro supports Kubernetes 1.18.x, 1.17.9, 1.16.13, and 1.15.11, the same versions of Kubernetes and point releases Amazon EKS uses.
+EKS Distro supports the same versions of Kubernetes and point releases as Amazon EKS.
 Q: What patches will we include with EKS Distro?
 EKS Distro will include all of the upstream patches used by Amazon EKS including fixes which Amazon has contributed back to the community.
 Q: Will EKS Distro include AWS components that communicate with AWS services (Ex: aws-cloudprovider, aws-kms-encryption-provider, aws-iam-authenticator)?

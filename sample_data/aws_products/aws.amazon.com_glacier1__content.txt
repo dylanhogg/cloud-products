@@ -44,7 +44,7 @@ Blog posts & articles
 WHAT'S NEW AWS Announces the General Availability of the Amazon S3 Glacier Deep Archive Storage Class in all Commercial AWS Regions and AWS GovCloud (US) 27 MAR 2019
 Learn more
 AWS ARCHITECTURE BLOG S3 & S3 Glacier Launch Announcements for Archival Workloads by Matt Sidley | 26 NOV 2018
-Get started with the Amazon S3
+Get started with Amazon S3
 Sign up for an AWS account
 Instantly get access to the
 AWS Free Tier.

@@ -86,17 +86,6 @@ AWS Step Functions Adds Support for Nested Workflows
 AWS Step Functions now allows you to orchestrate more complex processes by composing modular, reusable workflows.
 See all announcements
 Recent blog posts
-New—Compute, Database, Messaging, Analytics and Machine Learning Integration for AWS Step Functions
-Jeff Barr
-November 29, 2018
-Building Simpler Genomics Workflows on AWS Step Functions
-Ryan Ulaszek and Aaron Friedman
-Implementing Serverless Subtitles
-Maxime Thomas
-October 19, 2018
-Bringing Business Intelligence to Healthcare Organizations with Tableau on AWS
-Aaron Friedman
-November 1, 2018
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

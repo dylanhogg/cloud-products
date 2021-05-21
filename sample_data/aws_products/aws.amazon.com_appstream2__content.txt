@@ -1,35 +1,31 @@
 Amazon AppStream 2.0
-Securely deliver desktop applications to any computer
+Cloud native non-persistent desktop and application virtualization
 Get started with Amazon AppStream 2.0
 Try sample applications at no cost
-Amazon AppStream 2.0 is a fully managed non-persistent application and desktop streaming service. You centrally manage your desktop applications on AppStream 2.0 and securely deliver them to any computer. You can easily scale to any number of users across the globe without acquiring, provisioning, and operating hardware or infrastructure. AppStream 2.0 is built on AWS, so you benefit from a data center and network architecture designed for the most security-sensitive organizations. Each end user has a fluid and responsive experience because your applications run on virtual machines optimized for specific use cases and each streaming sessions automatically adjust to network conditions.
+Amazon AppStream 2.0 is a fully managed non-persistent desktop and application virtualization service that allows your users to securely access the data, applications, and resources they need, anywhere, anytime, from any supported device. With AppStream 2.0, you can easily scale your applications and desktops to any number of users across the globe without acquiring, provisioning, and operating hardware or infrastructure. AppStream 2.0 is built on AWS, so you benefit from a data center and network architecture designed for the most security-sensitive organizations. Each end user has a fluid and responsive experience because your applications run on virtual machines optimized for specific use cases and each streaming sessions automatically adjusts to network conditions.
 Analyst whitepaper
 Accelerate Cloud Adoption  With Application Streaming
 A commissioned study conducted by  Forrester Consulting on behalf of AWS
 Read your whitepaper
 Benefits
-Deliver desktop applications to any computer
-Users can access the desktop applications they need at any time. AppStream 2.0 streams your applications from AWS to any computer, including Chromebooks, Macs, and PCs.
-Scale without infrastructure
-AppStream 2.0 is fully managed on AWS and globally available with pay-as-you-go pricing. You can easily scale your application streaming to any number of users across the globe without acquiring, provisioning, and operating hardware or infrastructure.
-Secure applications and data
-Applications and data are not stored on users' computers. Your applications are streamed as encrypted pixels and access data secured within your network. AppStream 2.0 runs on AWS, so you benefit from a data center and network architecture built for the most security-sensitive organizations.
-Provide a fluid and responsive user experience
-Applications are highly responsive because they run on virtual machines and the NICE DCV protocol automatically adjust each streaming session to network conditions for a fluid user experience. Your users can run multiple applications and easily switch and interact with them through an application centric view or a standard desktop experience. Users can copy and paste between applications and local machine, quickly upload or download files, and print to local or network printers. They can also listen to audio output from applications, and control the bandwidth and fidelity for the experience.
-Centrally manage applications
-Each user accesses the same version of your applications. You centrally manage your applications on AppStream 2.0 and can stop managing installations and updates on each user's computer.
-Integrate with your IT
-AppStream 2.0 connects to your Active Directory, network, cloud storage, and file shares. Users access applications using their existing credentials and your existing security policies manage access. Extensive APIs integrate AppStream 2.0 with your IT solutions.
+Increase Agility
+Being ready to change where and how your workforce gets the job done is more important than ever. Amazon AppStream 2.0 is a fully managed service, so you can scale up and down in minutes as your business needs change. AppStream 2.0 runs your applications and desktops in AWS Regions and AWS Availability Zones around the globe, and are accessable from almost any device so your end users can get the job done anywhere, anytime.
+Increase Security
+Reducing the risk of company data leaking is critical in a more mobile and remote environment. With AppStream 2.0, applications and data are not stored on users' computers. Your applications are streamed as encrypted pixels and access data secured within your network. AppStream 2.0 runs on AWS, so you benefit from a data center and network architecture built for the most security-sensitive organizations.
+Optimize Cost
+In a changing economy, every dollar counts. AppStream 2.0 eliminates the need to over-buy desktop and laptop resources by providing on-demand access to cloud desktops that include a range of compute, memory, and storage options to meet your users' performance needs. AppStream 2.0 offers pay-as-you-go pricing options so you can adapt to changing business needs without minimum monthly fees, long-term commitments, or upfront license charges.
+Increase Reliability
+End users can only be productive when they can access their applications. AppStream 2.0 is built on the AWS Cloud and our global network of AWS Regions and AWS Availability Zones, and runs on AWS EC2 instances with built-in auto scale load balancing. We take on the undifferentiated work of keeping infrastructure up and running and deliver a 99.9% uptime SLA.
 How it works
 Use cases
-3D design and engineering
-Running 3D design and engineering applications on AppStream 2.0 lets users work without workstations and accelerates engineering workflows. Learn more
-Software vendors
-AppStream 2.0 delivers trials, demos, and training of your applications with no downloads or installations. You can also develop a full software-as-a-service (SaaS) offering without rewriting your application. Learn more
-Enterprises
-AppStream 2.0 simplifies application delivery by securely running your desktop applications in the cloud and delivering the same version of each application to your users. Learn more
-Education
-AppStream 2.0 lets students access the applications they need on any computer, whether they're in the classroom, the library, a cafe, or at home. Learn more
+Contact Center Agents
+Contact center agents are the front line for the customer experience and organizations increasingly have some or all of their agents working from home. Amazon AppStream 2.0 enables organizations to allow these agents to work from anywhere securely, while protecting corporate IP by ensuring it is never at rest on end user devices.
+Online Trials, Demos, Training
+With AppStream 2.0, you can provide software trials on demand with no local installs or special hardware required. You can enable your sales team to deliver sales demos for your software from any device. Similarly, you can deliver training and certification workshops for your software with no physical lab or class time.
+Remote Students and Labs
+With AppStream 2.0, students access the applications they need for class through any computer. AppStream 2.0 makes it easy to manage applications for your class. Simply install your applications on AppStream 2.0 the same way you would on any Windows computer. Then, configure your application with a few clicks, and your students can start learning.
+3D Design and Engineering
+With AppStream 2.0, your users can access CAD, CAM, and CAE applications such as SOLIDWORKS, Siemens NX, MathWorks MATLAB, or AVEVA Everything 3D on any computer. Each user's experience is fluid and responsive because your applications run on virtual machines (VMs) optimized for their use cases, and the NICE DCV protocol automatically adjusts each streaming session to network conditions.
 Customer stories
 GE Renewable Energy harnesses the earth’s most abundant resources to power the world’s biggest economies and the most remote communities. Amazon AppStream 2.0 let GE’s IT team simplify their application management process by giving their global business units the ability to securely manage their own applications.
 "With Amazon AppStream 2.0, we don’t operate any infrastructure, and scale on-demand to any number of users. And, we’re no longer the single team maintaining applications for each business unit. We simply configure a golden image, and let each team manage their application on it. This saves us days of work every month as we grow our deployment from hundreds to thousands of users.“

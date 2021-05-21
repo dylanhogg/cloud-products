@@ -1,10 +1,19 @@
 Amazon Rekognition
 Automate your image and video analysis with machine learning.
 Get Started with Amazon Rekognition
+Contact Us
 Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use. With Amazon Rekognition, you can identify objects, people, text, scenes, and activities in images and videos, as well as detect any inappropriate content. Amazon Rekognition also provides highly accurate facial analysis and facial search capabilities that you can use to detect, analyze, and compare faces for a wide variety of user verification, people counting, and public safety use cases.
 With Amazon Rekognition Custom Labels, you can identify the objects and scenes in images that are specific to your business needs. For example, you can build a model to classify specific machine parts on your assembly line or to detect unhealthy plants. Amazon Rekognition Custom Labels takes care of the heavy lifting of model development for you, so no machine learning experience is required. You simply need to supply images of objects or scenes you want to identify, and the service handles the rest.
-What is Amazon Rekognition? (1:42)
-Customers
+5,000 images free
+per month for 12 months with the AWS Free Tier
+Get started for free
+Benefits
+Automate visual analysis tasks at scale
+With Amazon Rekognition, you can tackle tasks that cannot be performed manually such as analyzing millions of images and videos within minutes. You can also increase workforce productivity and minimize errors by augmenting cumbersome, repetitive human visual review tasks with machine learning.
+Get started without ML expertise
+With Amazon Rekognition, you can quickly add a wide range of pre-trained computer vision APIs to your applications within hours, without the need to collect data and build computer vision models from scratch. If you have unique requirements, you can use AutoML to automatically train & host custom ML models by uploading as few as ten labeled images.
+Reduce ML infrastructure costs
+Amazon Rekognition is a fully managed service that can automatically scale up and down based on your business needs. You don’t need to build and manage your own ML infrastructure. You can quickly deliver reliable, scalable, and secure applications powered by computer vision and pay only for the images and videos that you analyze.
 Key features
 Labels
 With Amazon Rekognition, you can identify thousands of objects (such as bike, telephone, building), and scenes (such as parking lot, beach, city). When analyzing video, you can also identify specific activities such as "delivering a package" or "playing soccer". Learn more
@@ -22,21 +31,6 @@ Celebrity recognition
 You can quickly identify well known people in your video and image libraries to catalog footage and photos for marketing, advertising, and media industry use cases. Learn more
 Personal Protective Equipment (PPE) detection
 With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to automatically detect if persons in images are wearing Personal Protective Equipment (PPE) such as face covers (face masks), hand covers (gloves), and head covers (helmets) and whether the protective equipment covers the corresponding body part (nose for face covers, head for head covers, and hands for hand covers). Learn more
-Customer success
-“In today’s media landscape, the volume of unstructured content that organizations manage is growing exponentially. Using traditional tools users can have difficulty in searching through the thousands of media assets in order to locate a specific element they are looking for. By using the new feature in Amazon Rekognition, Custom Labels, we are able to automatically generate metadata tags tailored to specific use cases for our business and provide searchable facets for our content creation teams. This significantly improves the speed in which we can search for content and more importantly it enables us to automatically tag elements that required manual efforts before. These tools allow our production teams to leverage this data directly and provides enhanced products to our customers across all of our media platforms.“
-Brad Boim, Senior Director, Post Production & Asset Management, NFL Media
-CBS Corporation is a mass media company that creates and distributes industry-leading content across a variety of platforms globally. CBS owns the most-watched television network in the U.S. and one of the world’s largest libraries of entertainment content, making its brand — “the Eye” — one of the most recognized in business.
-"At CBS, we place significant efforts to ensure we moderate inappropriate content within our programming as to not offend our global viewers or violate government regulations. This is supported by investments in manual methods to execute near real-time screening and editing of hundreds of hours of content every month. To scale our internal processes, we are looking to Amazon Rekognition to automate the moderation of our video content while leveraging the new feature of Custom Labels to further refine moderation models. This will enable us to automate the tagging of sensitive content such as nudity, obscene gestures, and violence, and speed up processing from hours to minutes."
-Jamie Duemo, Senior Vice President, MultiPlatform Distribution - CBS Operations and Engineering
-Influential is a premier AI powered influencer marketplace. Influential eliminates the pain point of identifying influencers by leveraging AI and machine learning to suggest influencers through actionable insights and predictive intelligence.
-"In addition to our in-house AI/ML algorithms, we partner with third parties to enrich our datasets in order to better facilitate influencer sourcing. Amazon Rekognition object and scene detection allows us to better segment our influencer population into specific verticals and topics based on what media they post alongside their social media content. By extending our search capabilities beyond just text, we allow for better training of our Brand Match Score, which when combined with Rekognition’s user-friendly tags & labels increase our hit-rate on user queries by over 200%."
-Piotr Tomasik, CTO - Influential
-Marinus Analytics provides law enforcement with tools, founded in artificial intelligence, to turn big data into actionable intelligence. The Marinus flagship software, Traffic Jam, is a suite of tools for use by law enforcement agencies on sex trafficking investigations.
-“Law enforcement needs sophisticated tools to foster victim-oriented policing in the age of the Internet. Law enforcement knew that runaway children are among the most likely to be trafficked. Before using Amazon Rekognition, their only recourse was to manually sift through online data to try to find them; this was time-intensive or not possible. Now with Traffic Jam’s FaceSearch, powered by Amazon Rekognition, investigators are able to take effective action by searching through millions of records in seconds to find victims.”
-Emily Kennedy, CEO and Founder - Marinus Analytics
-Aella Credit provides instant loans to individuals with a verifiable source of income in emerging markets using biometric, employer, and mobile phone data.
-“Identity verification and validation have been a major challenge in emerging markets. The ability to properly identify users is a key hindrance in building credit for billions of people in emerging markets. Using Amazon Rekognition for identity verification on our mobile application has reduced verification errors significantly and given us the ability to scale. We can now detect and verify an individual’s identity in real time without any human intervention, thereby allowing faster access to our products. We tried various well-advertised solutions, but none of the popular alternatives could accurately map out various skin tones. Amazon Rekognition helped us effectively recognize faces of our customers in our markets. It also helped us with KYC in discovering overlapping profiles and duplicate datasets."
-Wale Akanbi, CTO & Co-Founder - Aella Credit
 Use cases
 Media Analysis
 Streamline media analysis tasks by automating the detection of black frames, end credits, shot changes, and color bars. By automating these tasks, you can reduce the time, effort, and costs associated with workflows like video ad insertion, content operations, and content production. Learn more
@@ -50,15 +44,24 @@ Workplace Safety
 Automate Personal Protective Equipment (PPE) detection at scale to improve workplace safety practices and to better comply with occupational safety and health regulations. With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to detect if persons in images are wearing PPE such as face covers, hand covers, and head covers. Learn more
 Identify products, landmarks and brands
 App developers can use Amazon Rekognition Custom Labels to identify specific items in social media and photo apps. For example, you could train a custom model to identify famous landmarks in a city to provide tourists with information about its history, operating hours, and ticket prices by simply taking a photo.
+Customer success
+PBS uses object detection to streamline media content operations.
+Watch video
+Pinterest uses text detection for content moderation.
+Aella Credit uses face detection and comparison to verify an applicant’s identity.
+Thorn uses face search to help identify child sex-trafficking victims faster.
+ICFES uses face detection and comparison to maintain exam integrity for 75,000 students.
+San Diego Gas & Electric uses Custom Labels to detect transformer damage using drone footage.
+To learn more, visit Amazon Rekognition customers.
 Blogs
 date
 1
 ...
-Learn more about Amazon Rekognition
-Visit the features page
-Ready to build?
-Get started with Amazon Rekognition
-Have more questions?
-Contact us
-Need to report abuse?
-Go here
+Explore Amazon Rekognition pricing
+Learn more about Amazon Rekognition pricing by visiting the pricing page.
+Learn more
+Get the facts on facial recognition
+Learn more about facial recognition and how to report abuse.
+Start building in the console
+Get started building with Amazon Rekognition in the AWS console.
+Sign in

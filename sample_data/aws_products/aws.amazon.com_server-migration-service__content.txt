@@ -1,6 +1,13 @@
 AWS Server Migration Service
 Migrate your on-premises workloads to AWS
 Get started with AWS Server Migration Service
+New! AWS Application Migration Service
+Introducing AWS Application Migration Service
+AWS Application Migration Service (AWS MGN) is the primary migration service recommended for lift-and-shift migrations to AWS. Customers currently using Server Migration Service (SMS) are encouraged to switch to Application Migration Service for future migrations.
+AWS Application Migration Service simplifies and expedites your migration to the cloud. It allows you to quickly realize the benefits of migrating applications to the cloud without changes and with minimal downtime.
+With AWS Application Migration Service, you can migrate your applications from physical infrastructure, VMware vSphere, Microsoft Hyper-V, Amazon Elastic Compute Cloud (AmazonEC2), Amazon Virtual Private Cloud (Amazon VPC), and other clouds to AWS.
+Learn more about when to choose AWS Application Migration Service.
+Need an Agentless Service?
 AWS Server Migration Service (SMS) is an agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS. AWS SMS allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations.
 Learn how to migrate applications using AWS Server Migration Service (47:17)
 Benefits

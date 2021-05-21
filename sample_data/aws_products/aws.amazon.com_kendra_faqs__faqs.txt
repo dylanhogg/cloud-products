@@ -18,7 +18,7 @@ A: Kendra does not yet support questions for which the answers require cross-doc
 Q: How do developers get up and running with Amazon Kendra?
 A: The Kendra console provides the easiest way to get started. You can point Kendra at unstructured and semi-structured documents like FAQs stored in S3. After ingestion, you can start testing Kendra by typing queries directly in the “search” section of the console. You can then deploy Kendra search in your own application with a few lines of code, or by copying code samples provided in the console.
 Q: How can I customize Amazon Kendra to better fit my company’s domain or business specialty?
-A: Kendra offers domain specific expertise for IT, pharma, insurance, energy, industrial, financial services, legal, media and entertainment, travel and hospitality, health, human resources, news, telecommunications, and automotive. You can further fine tune and extend Kendra's domain-specific understanding by providing your own synonym lists (coming soon). You just upload a file with your specific terminology and Kendra will use these synonyms to enrich user searches.
+A: Kendra offers domain specific expertise for IT, pharma, insurance, energy, industrial, financial services, legal, media and entertainment, travel and hospitality, health, human resources, news, telecommunications, and automotive. You can further fine tune and extend Kendra's domain-specific understanding by providing your own synonym lists. You just upload a file with your specific terminology and Kendra will use these synonyms to enrich user searches.
 Q: What file types does Amazon Kendra support?
 A: Kendra supports unstructured and semi-structured data in .html, MS Office (.doc, .ppt), PDF, and text formats.
 Q: How does Amazon Kendra handle incremental data updates?
@@ -28,7 +28,7 @@ A: Kendra supports US English.
 Q: What code changes do I need to make to use Amazon Kendra?
 A: Ingesting content does not require coding when using the native connectors. You can also write your own custom connectors to integrate with other data sources, using the Kendra SDK. You can easily deploy search in your application with a few lines of code, or copying short code samples from the console to replicate specific functionality. The SDK provides full control and flexibility of the end user experience.
 Q: In what regions is Amazon Kendra available?
-A: Amazon Kendra is currently available in the following AWS regions: Northern Virginia, Oregon, and Ireland. See the AWS Region Table for more details.
+A: Amazon Kendra is currently available in the following AWS regions: Northern Virginia, Oregon, Asia Pacific (Sydney), and Ireland. See the AWS Regional Services page for more details.
 Q: Can I add custom connectors?
 A. Customers can write their own connectors from scratch using the Kendra ingestion API. Amazon Kendra has a search expert partner ecosystem that can help build connectors currently not available from AWS. Please contact us for more details on our partner network.
 Q: How does Amazon Kendra handle security?

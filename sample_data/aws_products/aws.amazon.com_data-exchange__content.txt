@@ -14,6 +14,11 @@ Efficiently access data in the cloud
 AWS Data Exchange removes the friction of finding, licensing, and using data sets. Without AWS Data Exchange, you might spend days or even weeks licensing data and moving it where you need it to power your analytics. AWS Data Exchange simplifies access to data — eliminating the need to receive physical media, manage FTP credentials, or integrate with different APIs from multiple providers. When providers publish updates to their data sets, you will receive a notification so you can automatically consume new data as it’s published.
 Easily analyze new data
 AWS Data Exchange enables you to immediately use data you subscribe to with the full portfolio of AWS analytics services, like big data processing with Amazon EMR, data warehousing with Amazon Redshift, ad-hoc query with Amazon Athena, data integration and ETL with AWS Glue, and building data lakes with AWS Lake Formation. You can quickly copy data to Amazon S3 and immediately transform and process it, analyze it, or build machine learning models on it.
+Data Discovery
+Can’t find the data you need to make a decision? Let us know!
+Connect with the AWS Data Exchange Data Discovery team at awsdataexchange-datadesk@amazon.com
+Our team will contact you via email to understand your use case and identify the data product(s) on AWS Data Exchange that fit your needs. If the data you're are looking for isn’t available on AWS Data Exchange, we will work with existing data providers to provide data that matches your needs and use cases. You can expect to hear from us within 2 business days.
+AWS Data Exchange is always looking to recruit new data providers. If you'd like to access a provider that you don't see in the catalog today, please let us know and our team will contact that provider on your behalf.
 Use cases
 Financial services
 Banks, insurers, and asset managers can use AWS Data Exchange to subscribe to products containing market data, news archives, compensation benchmarks, industry profiles, company sentiments, and more. These customers can seamlessly integrate the data they subscribe to with their own data to power the portfolio risk modeling, trading strategies, and advisory services they are migrating to the cloud. Customers can also combine these traditional financial data sources with alternative (non-financial) data sets such as places of interest visitation and aggregated demographics data.
@@ -22,6 +27,10 @@ Consumer & retail companies can use AWS Data Exchange to find and subscribe to a
 Healthcare & life sciences
 Pharmaceutical companies, healthcare providers, and health insurers can better plan clinical trials, build insurance plans, research new drugs, and improve patient lives by combining their own data with products they subscribe to on AWS Data Exchange. Some relevant products contain data on drug switching patterns, fitness benchmarks, life expectancy benchmarks, aggregated claims data, and more.
 Customers
+"Using AWS Data Exchange allows us to easily consume and use
+Arabesque S-Ray data in the Investics Cloud Ecosystem (ICE), our AWS- based investment data and analytics ecosystem. With ICE, we stitch together the robust ESG data from Arabesque S-Ray, with client portfolio information, and our investment analysis data to provide asset, portfolio and sector-level sustainability metrics. We then use AWS Data Exchange to distribute the final product, Investics DARTS, to AWS customers. Institutional asset managers and asset owners can license
+Investics DARTS data via AWS Data Exchange and programmatically receive daily updates, enabling them to easily monitor ESG compliance and performance metrics on their entire investment portfolio."
+William Pryor, President of Investics
 “The application of new and ever more powerful technologies across the drug discovery and development continuum is generating and requiring access to unprecedented volumes and variety of data. At Merck we recognize that seamless and effective management of large, complex and diverse data streams is essential to gaining the insights necessary to translate breakthrough science into medicines that deliver meaningful benefit to patients.”
 Michael Klobuchar, Senior Vice President Operations – Merck Research Laboratories
 “By integrating the AWS Data Exchange API into ConvergeHEALTH Miner, we’re giving our customers a quick and easy way to find, subscribe to, and use data from third parties alongside the data they’re already generating and analyzing in the cloud. AWS Data Exchange is unlocking a number of data sources that have traditionally been locked in siloes spanning multiple organizations, and gives healthcare stakeholders a scalable and secure service to create new collaborative business models to reimagine how they approach research, clinical trials, pharmacovigilance, population health, and reimbursement.”
@@ -30,8 +39,14 @@ Brett Davis, Principal at Deloitte Consulting & General Manager – ConvergeHEAL
 Steve Patterson, Managing Director, Data Management and Analytics – Huron Consulting
 “AWS Data Exchange is a treasure trove for the System Level Design group. Not only did it help me expand the scope of our group research significantly, but it also made my teaching more engaging and more relevant to addressing societal problems of great interest.”
 Radu Marculescu, Lead of the System Level Design Group – UT Austin
+“ESG data is being integrated into a widening array of business processes. Rather than delivering data one client at a time, CSRHub can leverage ADX to reach these new markets and quickly integrate its data into their management systems.”
+Bahar Gidwani, Cofounder and CTO, CSRHub
+Yum! Brands, Inc., based in Louisville, Kentucky, has over 50,000 restaurants in more than 150 countries and territories primarily operating the company’s brands – KFC, Pizza Hut and Taco Bell – global leaders of the chicken, pizza and Mexican-style food categories. The Company’s family of brands also includes The Habit Burger Grill, a fast-casual restaurant concept specializing in made-to-order chargrilled burgers, sandwiches and more. Our teams across the globe are in constant need of hyper local and accurate data to power our site selection and other geospatial use cases. Working with Foursquare and AWS Data Exchange has enabled us to seamlessly procure the exact Point-of-Interest data set we needed across dozens of markets. And all delivered to us directly in the cloud, alongside our data analytics and tools.
+Nikhil Jain, Senior Director of Decision Sciences, Yum! Brands
 "By leveraging AWS Data Exchange and Weather Trends data, we can be confident that our wines will arrive in perfect condition, tasting no different to our customers than when our best-in-class wine team tasted it at the winery."
 Andrew Walleck – COO, Wine Access
+“Pressing population health problems of today require not only modern analytic techniques, but also access to new trustworthy sources of data. Working with AWS Data Exchange enabled us to apply our advanced machine learning and comparative effectiveness techniques to contemporary sources of data our clinical researchers have not used before. These innovations have led to several novel studies and grant applications with new partners.”
+Dr. Michael Pencina PhD, Vice Dean for Data Science and Information Technology - Duke University School of Medicine
 Data product examples
 Reuters Newswire Archive (30 days)
 Insurance Agencies and Brokerages (US) - Industry Marketing File

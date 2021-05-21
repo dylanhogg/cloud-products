@@ -65,7 +65,9 @@ Media metadata stores
 User data stores
 Digital rights management data stores
 Learn more about media & entertainment with AWS
-A+E Networks migrates to AWS, and it costs less than a latte to run their Access app for 1 day on a serverless architecture using Amazon DynamoDB.
+How Disney+ scales globally on Amazon DynamoDB
+The Content Discovery team behind Disney+ uses DynamoDB global tables to scale and deliver popular features such as Continue Watching, Watchlist, and Personalized Recommendations.
+Watch the AWS re:Invent 2020 session
 User content metadata stores
 Relationship graph data stores
 Metadata caches
@@ -73,15 +75,18 @@ Ride-tracking data stores
 User, vehicle, and driver data stores
 User vocabulary data stores
 Watch this video on Twitch to learn more
-Duolingo Stores 31 Billion Items in DynamoDB to Deliver Lessons Globally
+Dropbox cuts costs with cold metadata store using Amazon DynamoDB and S3
+Dropbox migrated to AWS and saved millions of dollars in expansion costs.
 Customers
+Disney
+Disney+ uses Amazon DynamoDB to ingest content, metadata, and billions of customer actions each day, which enables viewers to add content to their Watch Lists, and start watching a video and pick it up on a different device, or make recommendations for what to watch next.
+Read the press release
+Samsung Electronics uses Amazon DynamoDB for their petabyte-sized mobile app backups, resulting in consistent high performance and cost savings.
+Watch the video
+The Pokémon Company migrated global configuration and Time to Live (TTL) data to Amazon DynamoDB, resulting in a 90 percent reduction in bot login attempts.
 Nike
 Nike Digital migrated their large clusters of Cassandra to a fully managed Amazon DynamoDB, allowing more resources for better customer experience.
-Watch the video
-The U.S. Census Bureau uses DynamoDB to scale response collection on mobile or desktop, allowing people to participate in its decennial count online for the first time.
-The Pokémon Company migrated global configuration and Time to Live (TTL) data to Amazon DynamoDB, resulting in a 90 percent reduction in bot login attempts.
-Samsung Electronics uses Amazon DynamoDB for their petabyte-sized mobile app backups, resulting in consistent high performance and cost savings.
-A+E Networks migrates to AWS, and it costs less than a latte to run their cloud-native Access app for 1 day on a serverless architecture using Amazon DynamoDB.
+A+E Networks migrated to AWS, and it costs them less than a latte to run their cloud-native Access app for one day on a serverless architecture that uses DynamoDB.
 Netflix uses DynamoDB to run A/B testing that builds personalized streaming experiences for their 125+ million customers.
 Capital One uses DynamoDB to reduce latency for their mobile applications by moving their mainframe transactions to a serverless architecture for unbound scale.
 FanFight migrated its fantasy sports app to DynamoDB, allowing it to reduce costs by 50%, scale up to 1 million writes per second, and increase per-day revenue 4x.
@@ -94,17 +99,18 @@ Rockset's direct integration with DynamoDB, through DynamoDB Streams, enables th
 Expedia built a rich, high-performance streaming system using DynamoDB to deliver fast, on-demand access to reference data sets for analytics.
 Snap migrated their largest storage workload, Snapchat Stories, to DynamoDB and improved performance while reducing costs.
 GE Aviation rearchitected their plotting and data-query application for cost savings, scalability, and performance using Amazon DynamoDB.
-Amazon workflow engines run on DynamoDB for millisecond response times, allowing customers to get their orders faster.
+Caresyntax's operational analytics solution for surgical facilities uses several AWS database services, including Amazon DynamoDB for managing the availability of reporting parameters.
+Download PDF of case study
 Oath deployed GDPR compliance for their applications globally and leveraged Amazon DynamoDB global tables to enable data synchronization.
-GumGum moved to Amazon DynamoDB from Apache Cassandra for better performance, cost savings, and maintenance reductions.
-See the slides
+Amazon workflow engines run on DynamoDB for millisecond response times, allowing customers to get their orders faster.
 Redfin runs its business analytics operation on AWS, which allows it to innovate quickly with a small staff while managing billions of property records.
 Show less
+Get started with DynamoDB on the AWS Free Tier
 Check out the product features
 Learn more about performance at scale, serverless, and enterprise-ready features.
 Sign up for a free account
 Sign up and access the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with Amazon DynamoDB in the AWS Management Console.
+Get started building with DynamoDB in the AWS Management Console.
 Sign in

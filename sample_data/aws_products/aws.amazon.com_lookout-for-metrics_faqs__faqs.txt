@@ -19,11 +19,11 @@ A: Lookout for Metrics uses data in a CSV or JSON format.
 Q: What data sources are supported by Amazon Lookout for Metrics?
 A: Amazon Lookout for Metrics easily connects to popular data stores such as Amazon Simple Storage (S3), Amazon Redshift, AWS CloudWatch, Amazon RDS (all supported database engines), and commonly use SaaS applications including Salesforce, Marketo, Zendesk, ServiceNow, Infor Nexus, Google Analytics, Dynatrace, Datadog, Amplitude, Veeva Systems, Singular, Amazon Simple Notification Service (SNS) AWS Lambda, Slack, PagerDuty, Datadog, Webhooks.
 Q: What regions is Amazon Lookout for Metrics available in?
-A: Lookout for Metrics is available in US East (N. Virginia), US West (Oregon), US East (Ohio), EU (Ireland), Asia Pacific (Tokyo).
+A: Lookout for Metrics is available in US East (N. Virginia), US West (Oregon), US East (Ohio), EU (Ireland), EU (Frankfurt), EU (Stockholm), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney).
 Q: How is Amazon Lookout for Metrics priced?
-A: There is no cost to participating in the preview.
+A: With Amazon Lookout for Metrics, you only pay for what you use. There is no up-front commitment or minimum fee. Amazon Lookout for Metrics automatically analyzes the metrics you care about, detects anomalies in those metrics, sends automated alerts, and can help you determine the severity of anomalies and their root cause. Please refer to the pricing page for more details and examples.
 Q: How do customers get started with Amazon Lookout for Metrics?
-A: Click here to sign up for the preview and provide the requested information.
+A: You can get started here.
 Check out the product pricing
 Explore the pricing of Amazon Lookout for Metrics
 Learn more

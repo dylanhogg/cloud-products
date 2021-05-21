@@ -35,9 +35,9 @@ September 24th 2020
 January 19th 2021
 April 20th 2021
 16
-March 16th 2021 (expected)
-July 20th 2021 (expected)
-October 19th 2021 (expected)
+March 16th 2021
+July 20th 2021
+October 19th 2021
 17
 September 21st 2021 (expected)
 TBD
@@ -49,18 +49,18 @@ Q: Can I use Corretto as a drop-in replacement for other JDKs?
 A: Corretto is designed as a drop-in replacement for all Java SE distributions unless you are using features not available in OpenJDK. Once Corretto binaries are installed on a host and correctly invoked to run your Java applications (e.g., using the alternatives command on Linux), existing command-line options, tuning parameters, monitoring, and anything else in place will continue to work as before.
 Q: What operating systems does Corretto 8 support?
 A: Corretto 8 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
-Windows builds are supported on versions 7, 8, 10, Server 2008, Server 2012, Server 2016 and Server 2019.
+Windows builds are supported on versions 7, 8, 10, Server 2008 R2, Server 2012, Server 2016 and Server 2019.
 Mac OS X builds are supported on 10.10 (Yosemite) and later.
 Linux (glibc) builds are supported on Red Hat Enterprise Linux 6+, CentOS 6+, Ubuntu Linux 14+, Debian Linux 8+, Amazon Linux AMI, and SuSE 12+.
 Linux (musl-libc) builds are supported on Alpine Linux 3.12+
 Q: What operating systems does Corretto 11 support?
 A: Corretto 11 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
-Windows builds are supported on versions 7, 8, 10, Server 2008, Server 2012, and Server 2016.
+Windows builds are supported on versions 7, 8, 10, Server 2008 R2, Server 2012, Server 2016, and Server 2019.
 Mac OS X builds are supported on 10.13 (High Sierra) and later.
 Linux (musl-libc) builds are supported on Alpine Linux 3.12+.
 Linux Arm (glibc) builds are supported on Linux ARMv7+ with glibc 2.25+.
-Q: What operating systems does Corretto 15 support?
-A: Corretto 15 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS.
+Q: What operating systems does Corretto **16** support?
+A: Corretto 16 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS.
 Licensing and Open Source
 Q: What are Corretto's license terms?
 A: Corretto is released under the same open source license as OpenJDK, which is licensed under the GNU Public License version 2 with the Class Path Exception (GPLv2 with CPE). You can use Corretto as you would use OpenJDK.

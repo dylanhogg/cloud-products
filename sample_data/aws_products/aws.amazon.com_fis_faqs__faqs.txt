@@ -1,15 +1,17 @@
 AWS Fault Injection Simulator
 Overview
 Features
+Pricing
 FAQs
 Products
 Developer Tools
 AWS Fault Injection Simulator FAQs
 General
+Q: What is AWS Fault Injection Simulator (FIS)?
+AWS Fault Injection Simulator is a fully managed service for running fault injection experiments on AWS that makes it easier to improve an application’s performance, observability, and resiliency. Fault injection experiments are used in chaos engineering, which is the practice of stressing an application in testing or production environments by creating disruptive events, such as sudden increase in CPU or memory consumption, observing how the system responds, and implementing improvements.
 Q: What is Chaos Engineering?
 Chaos engineering is the process of stressing an application in testing or production environments by creating disruptive events, such as server outages or API throttling, observing how the system responds, and implementing improvements. Chaos engineering helps teams create the real-world conditions needed to uncover the hidden issues, monitoring blind spots, and performance bottlenecks that are difficult to find in distributed systems. It starts with analyzing the steady-state behavior, building an experiment hypothesis (e.g., terminating x number of instances will lead to x% more retries), executing the experiment by injecting fault actions, monitoring roll back conditions, and addressing the weaknesses.
-Q: What is AWS Fault Injection Simulator (FIS)?
-FIS simplifies the process of setting up and running controlled chaos engineering experiments across a range of AWS services so you can build confidence in your application behavior.  Q: Does AWS FIS require an agent?
+Q: Does AWS FIS require an agent?
 Many action types do not require any agents to be installed in your resources. However, instance level faults including increased CPU utilization and memory utilization, require the SSM agent.
 Q: Why should I use AWS FIS?
 You should use FIS to discover an application’s weaknesses at scale in order to improve performance, observability, and resiliency. FIS delivers real-world fault injection experience from a centralized console, eliminating the need for you to manage complex tooling. FIS’s flexible experiment template allows you to incorporate various fault types into a single experiment and to design custom experiments to simulate complex outage scenarios. FIS provides built-in safety mechanisms in the form of stop conditions, which stop an experiment before it runs out of control.
@@ -17,6 +19,30 @@ Q: Can I use AWS FIS as part of my CD pipeline?
 Yes, you can integrate FIS into your continuous delivery pipeline. This will enable you to repeatedly test the impact of fault actions as part of your software delivery process
 Q: How do the faults injected by AWS FIS compare to real world conditions?
 FIS fault inject actions create conditions which are nearly identical to what happens in the real world. For example, the action to increase CPU utilization actually consumes CPU resources. The action to throttle API requests throttles those requests at the control plane level so the experience is the same as any other throttling. Unlike the real world, with FIS you have the control to stop an experiment at any time and, where possible, specify roll back actions that execute once an action duration is complete.
-Explore product features
-Visit AWS Fault Injection Simulator Features page.
+Q: What are the core concepts of running an experiment?
+FIS experiment contains one or more sets of Target, Fault Injection Actions, Post Action, and Stop Condition. You start the FIS experiment with fault injection action(s) and AWS target(s). As your application resiliency improves, you expand the scope of the experiment to include additional AWS resources and fault injection actions. Once you have defined the experiment, you can schedule it to run at specific times.
+Q: What are the core concepts of target resources?
+Targets are AWS resources that are selected for the specific fault injection experiment. For example, tags, instance-id, cluster-id, VPC, etc. Targets can be specific AWS resource or random AWS resource(s).
+Q: What are the core concepts of fault injection actions?
+One example of fault injection action in FIS is generating a high CPU load on an EC2 instance. Each FIS action accepts a unique set of properties. This example of CPU load on EC2 instance, the property would be the % value of the load. Different FIS actions have different property values. FIS actions also helps you control the timeline and duration of the experiment. For each action, you can specify the StartTime and duration of the experiment. For example, you can design your experiment to include CPULoad action that increases the CPU load to 75% to start at StartTime of 0 seconds and run for 60 seconds.
+Q: Is there anything I need to do before using AWS FIS?
+There are several things you need to think about before using FIS. First, you need to identify the target deployment for the experiment. If this is your first experiment, you should consider starting in a pre-production or test environment. As your fault injection experiment matures, you can introduce fault injection to continuously assess resilience in the production environment. Second, you need to define the steady-state behavior and identify important technical (e.g., latency, CPU load) and business metrics (e.g., failed logins per minute, number of retries, page load speed). Next, you need to form a hypothesis of what you expect from the experiment. Your hypothesis is defined as “if is performed <business or technical metric impact should not exceed >.” For example, your hypothesis for an authentication service could say, “if, network latency increases by 10%, there would be less than 1% increase in login failures”. After the experiment, you evaluate if the application resiliency is in line with your business and technical expectation.
+Q: How do I start using AWS FIS?
+You can use the FIS console or AWS CLI to define, manage and control the experiment. You start by creating an experiment that includes one or more actions that you want to execute on one or more targets. You can define everything through the experiment template, including targets, actions, alarm and stop conditions. Then, you can start the experiment. Each start-experiment returns a unique execution-id. You can use the execution-id parameter to track the status of a specific run.
+Q: How do I check the status of AWS FIS experiment?
+You can use the management console or AWS CLI to check the status of the experiment. With list-experiment-executions, you list all experiment executions. With get-experiment-execution, you get the details of a specific execution. When you query the details of a specific run, you get the specific actions and their respective result. With CloudTrail, you can log and continuously monitor the executed actions.
+Q: How can I stop the experiment?
+You execute stop-experiment in the FIS console, or through CLI via stop-experiment. Additionally, you can leverage CloudWatch enable-alarm-actions to stop an experiment.
+Q: What type of faults can I inject using AWS FIS?
+FIS enables you to execute pre-defined fault injection experiments across compute, database, network, and more. You can find the full list of fault injections here.
+Q: How can I monitor the impact of a AWS FIS experiment?
+The FIS console enables you to monitor the progress of an experiment, and retrieve the status of each executed actions. Additionally, you can use CloudWatch monitoring and dashboards to monitor the state of your AWS resources. FIS generates CloudTrail logs for all actions that it takes on your AWS resources during an experiment, providing you full visibility and auditing on actions taken in your account.
+Documentation
+Learn more about AWS Fault Injection Simulator with the Developer Guide.
 Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building on the console
+Get started building with AWS Fault Injection Simulator in the AWS Management Console.
+Sign in

@@ -60,7 +60,7 @@ Intel Gen9 Graphics Engine
 Supports
 Intel® MovidiusTM Neural Compute Stick and Intel® RealSenseTM depth sensor
 Order your AWS DeepLens 2019 Edition Today
-Available to purchase for $249
+Offer: Starting today, while supplies last, developers can purchase AWS DeepLens for a limited time discounted price of $224.10 (10% off MSRP).
 Buy Now
 Features
 Getting Started

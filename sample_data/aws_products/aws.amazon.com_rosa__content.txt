@@ -1,6 +1,5 @@
-Red Hat OpenShift Service on AWS (Preview)
+Red Hat OpenShift Service on AWS
 Managed OpenShift in the cloud
-Register your interest
 Red Hat OpenShift Service on AWS (ROSA) provides an integrated experience to use OpenShift. If you are already familiar with OpenShift, you can accelerate your application development process by leveraging familiar OpenShift APIs and tools for deployments on AWS. With ROSA, you can use the wide range of AWS compute, database, analytics, machine learning, networking, mobile, and other services to build secure and scalable applications faster. ROSA comes with pay-as-you-go hourly and annual billing, a 99.95% SLA, and joint support from AWS and Red Hat.
 ROSA makes it easier for you to focus on deploying applications and accelerating innovation by moving the cluster lifecycle management to Red Hat and AWS. With ROSA, you can run containerized applications with your existing OpenShift workflows and reduce the complexity of management.
 Benefits
@@ -10,9 +9,36 @@ Deliver high-quality applications faster
 Remove barriers to development and build high-quality applications faster with OpenShift's self-service provisioning, automatic security enforcement, and consistent deployment. Accelerate change iterations with automated development pipelines, templates, and performance monitoring.
 Flexible, cost-efficient pricing
 Scale as per your business needs and pay as you go with flexible pricing with an on-demand hourly or annual billing model.
+Red Hat OpenShift Service on AWS Partners
+These AWS Partners are well-versed in developing, designing, and operating complex container solutions with Red Hat OpenShift and AWS services.
+"Accenture Cloud First, including the Accenture AWS Business Group (AABG) and its IBM Red Hat team, has an extensive background in the strategy,  design, and implementation of holistic container solutions. Their deep skills and broad experience in building and running large-scale and mission-critical Red Hat OpenShift clusters, both on-premises and deployed to the cloud, positions Accenture for effective collaboration with AWS and Red Hat. The launch of ROSA as a fully managed service is the next step in the evolution of OpenShift. It means that Accenture can focus on delivering the benefits of modern applications for our clients, leveraging the cloud managed services provided by AWS and Red Hat."
+Andy Tay, global lead of the Accenture AWS Business Group, Accenture
+Contact
+"Cedrus is proud to support Red Hat OpenShift Service on AWS (ROSA). As an AWS Advanced Consulting Partner and a Red Hat Apex Partner, we are excited to work collaboratively with customers to help them discover the art of the possible with application and container modernization strategies anchored by efficiencies Red Hat and AWS have created with ROSA."
+Mike Chadwick, SVP of Business Development and Sales, Cedrus
+Learn more |
+"With Red Hat OpenShift Service on AWS (ROSA), Cognizant customers can now have an integrated experience with their workloads running on the OpenShift platform on AWS. Cognizant’s OpenShift on AWS offering now includes ROSA as a landing zone for customers who would like to delegate the responsibility of the infrastructure and platform services while they focus on their core business needs."
+Raghuraman Chandrasekharan, AVP, Service Delivery and AWS Business Group lead, Cognizant
+“Agile and flexible platforms allow organizations to accelerate product innovation with advanced deployment strategies adapted to current and future business models. IBM is partnering with Amazon Web Services to create that platform based on ROSA (Red Hat OpenShift on AWS) and leveraging IBM’s Application Modernization program. IBM’s AWS team of service experts created a pattern-based migration and modernization approach for industry-specific business challenges with well-defined architectural reference frameworks, optimized for Red Hat and AWS. IBM and ROSA provide cost optimization through AWS and open-source adoptions, improved application portability, and enhanced engineering practices through the use of DevSecOps. IBM’s partnership with AWS has created an industry-leading platform with world-class services for all application modernization initiatives.”
+Joel Plavin, Vice President, Red Hat Services, Global Business Services, IBM
+“We’re excited to partner with Red Hat and AWS to offer this unique service offering to our clients. ROSA provides another option for our containers offerings and will bring added value to our clients’ application modernization and migration projects.”
+Vishal Rajpal, Area Vice President, Cloud Platform Services, Perficient
+Learn more | Contact
+"As a Red Hat and AWS Partner, many of our clients already leverage OpenShift on AWS for critical software modernization. ROSA speeds deployments and frees up teams to more easily manage deployments directly from the AWS Console."
+Jiani Zhang, President of Alliances and Industrial, Persistent
+"We see customers who already have containerized with OpenShift are ready to move their applications and its associated platform to ROSA. It is an enabler that will help accelerate innovation with seamless integration with various AWS Native Services. It can potentially increase the efficiency of operating the entire stack and will provide a consistent experience to business users. This is a step forward towards building modern applications that are on the RedHat suite of products and once this is adopted, there is a huge potential for customers to realize the benefits and accelerate their cloud adoption."
+Vivek Gupta, Vice President and Global Head of Cloud Services, Tech Mahindra
+"Red Hat OpenShift Service on AWS enables an advanced easy-to-use production ready container platform that our customers strive for. ROSA’s scalability, and durability combined with cost-efficient pricing frees organizations to focus on delivering their services faster with operational confidence built in."
+Jay Mozo, Director of Transformation, TEKsystems Global Services   Learn more | Contact
+“AWS has created an integrated experience for our customers moving to the cloud that aligns their infrastructure and application consumption models with the creation of the Red Hat OpenShift Service on AWS (ROSA). Providing customers, a fully managed OpenShift service coupled with out of the box integration with AWS infrastructure enables consumption-based pricing for newly created cloud-native designs as well as legacy migration with little to no upfront costs while having a fully managed and supported production environment by Red Hat and AWS. ROSA is creating the next-generation cloud-native applications that truly support a “scale-to-zero” cost model. ”
+Joe Dickman, Senior VP, Vizuri
+“With our deep partnerships with both AWS and Redhat we are very excited with the launch of ROSA capability which will help us to drive hybrid cloud  conversation with cloud transformation deals for our customer and create a winning proposition for Wipro and AWS.”
+Ramachandran Padmanabhan, Vice President, Cloud Applications, Wipro
 Visit the OpenShift website to learn more about Red Hat OpenShift Service on AWS
 Blogs and articles
+Red Hat OpenShift Service on AWS now GA
+Martin Beeby 24 MARCH 2021
 Announcing Red Hat OpenShift Service on AWS
 Bob Wise and Raja Jadeja 16 NOVEMBER 2020
-AWS and Red Hat extend collaboration: announcing a new managed Red Hat OpenShift service on AWS
+AWS and Red Hat extend collaboration: Announcing a new managed Red Hat OpenShift Service on AWS
 Bob Wise and Massimo Re Ferre 14 MAY 2020

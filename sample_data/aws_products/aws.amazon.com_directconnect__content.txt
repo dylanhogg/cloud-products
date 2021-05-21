@@ -1,22 +1,31 @@
 AWS Direct Connect
 Get started with AWS Direct Connect
-AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can establish private connectivity between AWS and your datacenter, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth throughput, and provide a more consistent network experience than Internet-based connections.
-AWS Direct Connect lets you establish a dedicated network connection between your network and one of the AWS Direct Connect locations. Using industry standard 802.1q VLANs, this dedicated connection can be partitioned into multiple virtual interfaces. This allows you to use the same connection to access public resources such as objects stored in Amazon S3 using public IP address space, and private resources such as Amazon EC2 instances running within an Amazon Virtual Private Cloud (VPC) using private IP space, while maintaining network separation between the public and private environments. Virtual interfaces can be reconfigured at any time to meet your changing needs.
-AWS Direct Connect for Broadcast Playout
+AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you establish a private connection between AWS and your datacenter, office, or colocation environment. This can increase bandwidth throughput and provide a more consistent network experience than internet-based connections.
+AWS Direct Connect is compatible with all AWS services accessible over the Internet, and is available in speeds starting at 50 Mbps and scaling up to 100 Gbps.
+AWS Direct Connect & hybrid network architecture (32.52)
 Benefits
-Reduces Your Bandwidth Costs
-If you have bandwidth-heavy workloads that you wish to run in AWS, AWS Direct Connect reduces your network costs into and out of AWS in two ways. First, by transferring data to and from AWS directly, you can reduce your bandwidth commitment to your Internet service provider. Second, all data transferred over your dedicated connection is charged at the reduced AWS Direct Connect data transfer rate rather than Internet data transfer rates.
-Consistent Network Performance
-Network latency over the Internet can vary given that the Internet is constantly changing how data gets from point A to B. With AWS Direct Connect, you choose the data that utilizes the dedicated connection and how that data is routed which can provide a more consistent network experience over Internet-based connections.
-Compatible with all AWS Services
-AWS Direct Connect is a network service, and works with all AWS services that are accessible over the Internet, such as Amazon Simple Storage Service (Amazon S3), Elastic Compute Cloud (Amazon EC2), and Amazon Virtual Private Cloud (Amazon VPC).
-Private Connectivity to your Amazon VPC
-You can use AWS Direct Connect to establish a private virtual interface from your on-premise network directly to your Amazon VPC, providing you with a private, high bandwidth network connection between your network and your VPC. With multiple virtual interfaces, you can even establish private connectivity to multiple VPCs while maintaining network isolation.
-Elastic
-AWS Direct Connect makes it easy to scale your connection to meet your needs. AWS Direct Connect provides 1 Gbps and 10 Gbps connections, and you can easily provision multiple connections if you need more capacity. You can also use AWS Direct Connect instead of establishing a VPN connection over the Internet to your Amazon VPC, avoiding the need to utilize VPN hardware that frequently can’t support data transfer rates above 4 Gbps.
-Simple
-You can sign up for AWS Direct Connect service quickly and easily using the AWS Management Console. The console provides a single view to efficiently manage all your connections and virtual interfaces. You can also download customized router templates for your networking equipment after configuring one or more virtual interfaces.
-How it works
+Consistent network performance
+AWS Direct Connect links to all your AWS resources, transferring data directly from your datacenter, office, or colocation environment into and from AWS. With AWS Direct Connect, you choose the data that utilizes the private connection and how that data is routed, which can provide a more consistent network experience than internet-based connections.
+Protect data in transit
+Ensure communication between your data center, branch office, or colocation facility is protected by taking advantage of Direct Connect encryption options. 10 Gbps and 100 Gbps connections offer native IEEE 802.1AE (MACsec) point-to-point encryption at select locations. AWS Site-to-Site VPN connections using IPsec (IP security) are also available and can be used with any AWS Direct Connect connection.
+Lower your bandwidth costs
+For bandwidth-heavy workloads, AWS Direct Connect may reduce your network costs into and out of AWS. By transferring data to and from AWS directly, you may be able to reduce your bandwidth commitment to your internet service provider. And, all data transferred over your dedicated connection is charged at the reduced AWS Direct Connect data transfer rate rather than internet data transfer rates.
+Flexible connection options
+Multiple connection speeds and delivery options are available in order to support a wide range of connectivity scenarios. Dedicated Connections create a link to AWS using a 1 Gbps, 10 Gbps, or 100 Gbps Ethernet port. Hosted connections are provided by AWS Direct Connect Partners using pre-established network links between themselves and AWS and are available from 50 Mbps up to 10 Gbps.
+Getting started with AWS Direct Connect
+AWS Direct Connect locations worldwide
+With 108 Direct Connect locations around the world, and more than 50 Direct Connect delivery partners, you can establish links between your on-premises network and AWS Direct Connect locations no matter where you are located.
+Find a location
+Use cases
+Hybrid connectivity
+AWS Direct Connect helps you build hybrid environments that satisfy regulatory requirements that require the use of private connectivity. These types of hybrid environments allow you to combine the elasticity and economic benefits of AWS and continue to utilize your existing infrastructure.
+Real-time applications
+Applications that use real-time data feeds benefit from using AWS Direct Connect. Applications such as voice and video perform best when network latency remains constant. Network latency over the internet can vary given that the internet is constantly changing how data gets from point A to point B. With AWS Direct Connect, you control how your data is routed, which can provide a more consistent network experience over Internet-based connections.
+Working with Large Data Sets
+Transferring large data sets over the internet can be slow when your business critical network traffic must compete for bandwidth with other network traffic. To decrease the amount of time required to transfer your data, you could increase the bandwidth to your internet service provider, which frequently requires a costly contract renewal and a minimum commitment. With AWS Direct Connect, you can transfer your business critical data directly from your datacenter, office, or colocation environment into and from AWS bypassing your internet service provider and removing network congestion.
+Customer stories
+“CrowdStrike is excited to use AWS’s encrypted Direct Connect solution. We use Direct Connect extensively and continue to be impressed with the responsiveness of AWS, and their ability to rapidly deliver features and resources for our hybrid cloud network. Direct Connect's MACsec support increases the number of ways we can raise the security bar for our customers.”
+- Alan Hannan, Vice President of Engineering at CrowdStrike
 Learn more about AWS Direct Connect
 Visit the features page
 Ready to build?

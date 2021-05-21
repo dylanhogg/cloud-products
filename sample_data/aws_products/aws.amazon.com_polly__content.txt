@@ -32,7 +32,7 @@ Mizuki
 Takumi
 こんにちは、外国語を話せますか? 世界にはたくさんの言語があります。
 Korean
-Seoyeon
+Seoyeon (Standard)  Seoyeon (Neural)
 안녕하세요? 외국어를 구사하십니까? 이 세상에는 수많은 언어들이 있답니다.
 Mandarin Chinese
 Zhiyu

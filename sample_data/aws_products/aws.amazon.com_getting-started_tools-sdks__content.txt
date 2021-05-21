@@ -8,13 +8,18 @@ Java
 Go
 Node.js
 C++
-Mobile SDKs
+Front-End Web & Mobile SDKs
+Web
+React
+Angular
+Vue
+Next.js
+Mobile
 Android
 iOS
 React Native
-Mobile Web
-Unity
-Xamarin
+Ionic
+Flutter
 IoT Device SDKs
 Embedded C
 Arduino Yún
@@ -27,6 +32,7 @@ Visual Studio
 Visual Studio Code
 Azure DevOps
 Rider
+WebStorm
 Command Line Tools
 AWS CLI
 PowerShell Tools

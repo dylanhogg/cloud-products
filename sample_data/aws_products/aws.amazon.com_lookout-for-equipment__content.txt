@@ -1,9 +1,9 @@
 Amazon Lookout for Equipment
-(Preview)
 Detect abnormal equipment behavior by analyzing sensor data
-Sign up for the preview
-Amazon Lookout for Equipment uses the data from your sensors to detect abnormal equipment behavior, so you can take action before machine failures occur and avoid unplanned downtime.
-Installing sensors and the necessary infrastructure for data connectivity, storage, analytics, and alerting are the foundational elements for enabling predictive maintenance. However, many companies use rudimentary data analytics and simple modeling approaches that are often ineffective at detecting issues early enough to avoid downtime. Successfully implementing predictive maintenance depends on you using the data collected from all of your machine sensors, under your unique operating conditions, and then applying sophisticated machine learning (ML) techniques to detect abnormal machine conditions as early as possible.  Amazon Lookout for Equipment analyzes the data from your sensors, such as pressure, flow rate, RPMs, temperature, and power to automatically train a specific ML model based on just your data, for your equipment – with no ML expertise required. Lookout for Equipment uses your unique ML model to analyze incoming sensor data in real-time and accurately identify early warning signs that could lead to machine failures. This means you can detect equipment abnormalities with speed and precision, quickly diagnose issues, take action to reduce expensive downtime, and reduce false alerts.
+Get Started with Amazon Lookout for Equipment
+Successfully implementing predictive maintenance requires using the specific data collected from all of your machine sensors, under your unique operating conditions and then applying machine learning (ML) to enable highly accurate predictions. However, implementing an ML solution for your equipment can be difficult and time-consuming.
+Amazon Lookout for Equipment analyzes the data from the sensors on your equipment (e.g. pressure in a generator, flow rate of a compressor, revolutions per minute of fans), to automatically train a machine learning model based on just your data, for your equipment – with no ML expertise required. Lookout for Equipment uses your unique ML model to analyze incoming sensor data in real-time and accurately identify early warning signs that could lead to machine failures. This means you can detect equipment abnormalities with speed and precision, quickly diagnose issues, take action to reduce expensive downtime, and reduce false alerts.
+What is Amazon Lookout for Equipment? (1:43)
 Benefits
 High accuracy results
 Amazon Lookout for Equipment uses data from your existing sensors to build a custom ML model specific to your equipment. It handles data from up to 300 sensors in one model, along with historical logs, to give you accurate alerts when your equipment behaves abnormally.
@@ -22,18 +22,38 @@ Analyze sensor data from generators such as flow rates, temperature, pressure, a
 Analyze historical maintenance data and sensor data from compressors such as RPMs, inlet/outlet flow rates, temperature, pressure, and vibration to identify abnormal machinery behavior.
 For equipment like wind turbines, you can analyze sensor data like power, pitch blade angle, RPMs, wind speed, and generator temperature to quickly identify issues before they occur.
 Customers
-OSIsoft
-OSIsoft is a manufacturer of application software for real-time data management, called the PI System.
-"Today, there are more than 2 billion sensor-based data streams inside OSIsoft PI Systems, and thousands of customers relying on the PI System daily to run their operations. These customers are constantly looking for methods to easily serve up insights for improving their competitiveness. OSIsoft products can be integrated with AWS services to help customers unlock additional value from their data. Amazon Lookout for Equipment expands the scope of services and insights available to customers by delivering automated machine learning built specifically for equipment monitoring."
-Michael Graves, Director of Strategic Alliances at OSIsoft
-GS EPS
-GS EPS is a South Korean industrial conglomerate, and a leader in the field of energy, retail, construction, and service.
-“We have been generating data across our assets for over a decade now but have only been using physics and rules based methods to gain insights into our data. Amazon Lookout for Equipment is enabling our plant operation teams to build models on our equipment with no ML expertise required. We are leading the transformation of our organization into a data-driven work culture with AWS and Amazon Lookout for Equipment.”
-Kang Bum Lee, Executive Vice President of GS EPS
-Doosan Infracore
-Doosan Infracore is a leading global manufacturer of heavy duty equipment and engines.
-"Leveraging AI is critical in advancing Doosan’s next generation equipment, so we have partnered with AWS to develop use cases where automated and scalable machine learning could be leveraged. Based on this, we are excited to continue to work with AWS to leverage Amazon Lookout for Equipment analytics in our next generation IOT platform.”
-Cho Jaeyeon, Vice President of Doosan Infracore Strategy
+Siemens Energy
+Siemens Energy offers products, solutions, and services across the entire energy value chain. Siemens Energy supports its customers on their way to a more sustainable future – no matter how far along the journey they are.
+“Siemens Energy works with our customers to improve performance, reliability, and safety through our existing business lines enhanced with digital service solutions. Digitalization is a key driver for a sustainable energy future. With Amazon Lookout for Equipment, we see an opportunity to combine AWS machine learning with Siemens Energy subject matter expertise to give improved visibility into the systems and equipment across the entirety of a customer’s operation. Amazon Lookout for Equipment's automated machine learning workflow makes it easy to build and deploy models across a variety of assets types with no data science knowledge required. Siemens Energy values AWS as a trusted partner accelerating our continued development of the Omnivise suite of digital solutions.”
+Amogh Bhonde, Sr. Vice President Digital Solutions - Siemens Energy
+Koch Ag & Energy Solutions
+Koch Ag & Energy Solutions, LLC and its affiliates (KAES), subsidiaries of Koch Industries, are global providers of value-added solutions for the agriculture, energy and chemical markets.
+"Today we are streaming thousands of sensors into AWS and want to leverage this data to help reduce maintenance and downtime for our operations. However, being able to model equipment behavior and diagnose issues from these sensors requires significant investment in time and resources, which has been a hurdle for scaling across our assets. Amazon Lookout for Equipment accelerates and reduces the heavy lift of generating insights through a highly scalable automated machine learning service that minimizes the touchpoints in a data science workflow. "
+Dave Kroening, IT Leader - Koch Ag and Energy Solutions
+Cepsa
+Cepsa is a global energy and chemical company operating end-to-end in every stage of the oil and gas value chain. Cepsa also manufactures products from raw materials of plant origin and is driving a new strategy to become a reference in the energy transition.
+"At Cepsa, digital transformation is focused on people. In that regard, our professionals are the engine behind our transformation. With Amazon Lookout for Equipment, we are bringing machine learning insights to the experts that know the equipment best -- reliability & maintenance engineers -- allowing them to make more informed decisions to drive higher uptime and lower operational costs. Solutions like predictive maintenance for equipment traditionally involve manual and complex data science such as choosing the right algorithms and parameters, but Amazon Lookout for Equipment automates these processes so that engineers can focus on solving the most critical challenges that impact their business."
+Alberto Gascón, Head of Advanced Analytics - Cepsa
+See more Amazon Lookout for Equipment customers
+Partners
+Hitachi Vantara
+Hitachi Vantara, a wholly owned subsidiary of Hitachi Ltd, combines best-in-class IT infrastructure, data management, and analytics, with expertise in AI, industrial solutions, and digital transformation. Hitachi Vantara aims to become the world's preferred digital innovation partner by unlocking the "good" in data that benefits customers.
+"
+Hitachi Vantara has direct experience with manufacturing products and software for heavy industries as well as operational technology (OT) domain knowledge, IT-OT system integration expertise, and IIoT solution capabilities. Hitachi Vantara's Lumada Manufacturing Insights solution plans to leverage Amazon Lookout for Equipment as part of its comprehensive industrial analytics workbench solution offering, where customers can streamline ML workflows, perform model management, and execute the models in the analytics run-time environment. This allows our customers to accelerate new applications of ML and improve total cost of ownership of asset health solutions."
+Sid Verma, GM Manufacturing Practice - Hitachi Vantara
+Partner Profile | Contact
+Seeq
+Seeq is an advanced analytics solution that enables engineers and subject matter experts in process manufacturing organizations to rapidly investigate and share insights from data in historians, IIoT platforms, AWS services, and manufacturing and business systems.
+"W
+e are pleased to be announcing our work with AWS to develop solutions that deliver diagnostic, monitoring, and predictive analytics powered by big data and machine learning innovations. Using Seeq with Amazon Lookout for Equipment will help organizations turn data into insights that deliver continuous improvement and
+sustainability objectives."
+Megan Buntain, Director of Cloud Partnerships - Seeq Corporation
+Partner Profile |
+Contact
+TensorIoT
+TensorIoT is an AWS Advanced Consulting Partner delivering complete end-to-end products and solutions in IoT, data engineering, machine learning, and artificial intelligence. Using Amazon Lookout for Equipment will add another layer of success to customer solutions.
+"TensorIoT builds solutions with AWS services to accelerate integration of machine learning into products and processes across industrial operations. Leveraging Amazon Lookout for Equipment can help reduce the heavy lift of implementing machine learning by automatically developing, managing, and supporting the continuous improvement of anomaly detection models. This minimizes the number of manual touchpoints needed, and allows engineers to turn insights into operational improvements. Simply put, Lookout for Equipment allows companies to innovate faster."
+Charles Burden, VP of Consulting - TensorIoT
 Choose the cloud provider with proven experience in industrial operations
 From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
 Learn more about AWS for Industrial

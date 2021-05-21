@@ -1,7 +1,10 @@
 Amazon Cognito
 Simple and Secure User Sign-Up, Sign-In, and Access Control
-Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
 Sign up now
+Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect.
+50,000 active users free
+per month with the AWS Free Tier
+Get started for free
 Spend your time creating great apps.
 Let Amazon Cognito handle authentication.
 Secure and scalable user directory

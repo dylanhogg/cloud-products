@@ -64,22 +64,22 @@ Q: Does RoboMaker simulation run charge based on wall clock time or simulation t
 A: Your simulation job can run faster, slower than real time, or at real time. RoboMaker simulation charges based on wall clock time so the speed of the simulation time doesn’t impact how you are charged. See the Pricing Page for details.
 Cloud Extensions for ROS
 Q: What are RoboMaker cloud extensions for ROS?
-A: RoboMaker provides cloud extensions for ROS so that you can offload to the cloud the more resource-intensive computing processes that are typically required for intelligent robotics applications and free up local compute resources. RoboMaker provides each of these cloud service extensions as open source ROS packages, so you can build functions on your robot by taking advantage of cloud APIs, all in a familiar software framework.
+A: RoboMaker provides cloud extensions for ROS so that you can offload to the cloud the more resource-intensive computing processes that are typically required for intelligent robotics applications and free up local compute resources. RoboMaker provides each of these cloud service extensions as open source ROS packages, so you can build functions on your robot by taking advantage of cloud APIs, all in a familiar software framework. ROS Cloud Extensions are currently supported for ROS Melodic only.
 Q: What are the supported cloud extensions?
 A: Currently supported cloud extensions are Amazon CloudWatch Logs, Amazon CloudWatch Metrics, Amazon Polly, Amazon Lex, Amazon Kinesis Videos Streams, Amazon Rekognition, and Amazon S3. For more details, see the Resource page or Documentation.
 Q: Am I charged for using RoboMaker cloud extensions?
 A: RoboMaker cloud extensions are open source under Apache 2.0 license and free of charge. You will, however, be charged separately when you invoke corresponding services such as Amazon Rekognition or Amazon Kinesis Video Streams from these extensions. See the Pricing Page for details.
-Fleet Management
-Q: What is RoboMaker fleet management?
-A: RoboMaker fleet management allows you to create robots, register robots to a fleet, and then deploy a robot application into a fleet.
-Q: What minimum hardware specifications are required for using RoboMaker fleet management?
-A: RoboMaker fleet management is built on top of AWS Greengrass and has the same minimum hardware specifications requirement as AWS IoT Greengrass. See the corresponding AWS IoT Greengrass FAQ for details.
-Q: How do I associate a physical robot with RoboMaker fleet management?
+Application Deployment
+Q: What is RoboMaker application deployment?
+A: RoboMaker application deployment allows you to create robots, register robots to a fleet, and then deploy a robot application into a fleet.
+Q: What minimum hardware specifications are required for using RoboMaker application deployment?
+A: RoboMaker application deployment is built on top of AWS Greengrass and has the same minimum hardware specifications requirement as AWS IoT Greengrass. See the corresponding AWS IoT Greengrass FAQ for details.
+Q: How do I associate a physical robot with RoboMaker application deployment?
 A: You first create a robot from the RoboMaker console and then download corresponding certificates for that robot and AWS Greengrass-based agent. You then follow steps to install the agent and certificate on your physical robot. Once installed and connected, your physical robot is associated with the robot you created in RoboMaker console.
 Q: What is a fleet?
-A: A fleet is a group of robots. You can freely register or deregister existing robots to a fleet. A deployment job in RoboMaker fleet management is defined for a particular fleet, and each robot can only belong to one fleet.
-Q: How am I charged for using RoboMaker fleet management?
-A: RoboMaker fleet management is integrated with Greengrass and you are charged standard AWS Greengrass pricing. There is no additional charge for using RoboMaker fleet management. See the Pricing Page for details.
+A: A fleet is a group of robots. You can freely register or deregister existing robots to a fleet. A deployment job in RoboMaker application deployment is defined for a particular fleet, and each robot can only belong to one fleet.
+Q: How am I charged for using RoboMaker application deployment?
+A: RoboMaker application deployment is integrated with Greengrass and you are charged standard AWS Greengrass pricing. There is no additional charge for using RoboMaker application deployment. See the Pricing Page for details.
 Development Environment
 Q: What is RoboMaker development environment?
 A: RoboMaker development environment is a customized integrated development environment (IDE) in AWS Cloud9 for robotics development. This IDE comes with ROS pre-installed and includes sample applications. It is also integrated with other RoboMaker capabilities such as simulation so that you can use these capabilities from the interface of the IDE.

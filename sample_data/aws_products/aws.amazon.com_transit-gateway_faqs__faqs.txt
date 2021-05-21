@@ -1,10 +1,10 @@
 General
 Q: In which AWS Regions is AWS Transit Gateway available?
-A: AWS Transit Gateway is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (Northern California), AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), South America (São Paulo), Africa (Cape Town), EU (Ireland), EU (Stockholm), EU (London), EU (Frankfurt), EU (Paris), EU (Milan), Middle East (Bahrain), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Seoul), Asia Pacific (Sydney), Asia Pacific (Beijing), Asia Pacific (Ningxia) AWS Regions with support for other regions coming soon.
+A: AWS Transit Gateway is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (Northern California), AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), South America (São Paulo), Africa (Cape Town), EU (Ireland), EU (Stockholm), EU (London), EU (Frankfurt), EU (Paris), EU (Milan), Middle East (Bahrain), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Tokyo), Asia Pacific (Singapore),  Asia Pacific (Seoul), Asia Pacific (Sydney), Asia Pacific (Beijing), Asia Pacific (Ningxia) AWS Regions with support for other regions coming soon.
 Transit Gateway inter-Region Peering support is available for gateways in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), EU (Ireland), EU (Frankfurt), EU (Paris), EU (London), EU (Stockholm), EU (Milan), Middle East (Bahrain), Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), and South America (Sao Paulo) AWS Regions.
-Transit Gateway Multicast support is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), EU (Ireland), EU (London), EU (Frankfurt), EU (Stockholm), EU (Paris), EU (Milano), South America (Sao Paulo), South Africa (CapeTown), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Asia Pacific (Seoul), Asia Pacific (Singapore), Middle East (Bahrain), Asia Pacific (Beijing) and Asia Pacific (Ningxia) AWS Regions.
-IGMP support for Transit Gateway Multicast is available in US East (N. Virginia), US West (Oregon), US West (N. California), and EU (Ireland) AWS regions with support for other regions coming soon.
-Transit Gateway Connect is available in US East (N. Virginia), US West (N. California, Oregon), and Europe (Ireland) AWS Regions with support for other regions coming soon.
+Transit Gateway Multicast support is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), AWS GovCloud (US-East), AWS GovCloud (US-West), Canada (Central), EU (Ireland), EU (London), EU (Frankfurt), EU (Stockholm), EU (Paris), EU (Milano), South America (Sao Paulo), South Africa (CapeTown), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Middle East (Bahrain), Asia Pacific (Beijing) and Asia Pacific (Ningxia) AWS Regions.
+IGMP support for Transit Gateway Multicast is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), Europe (Ireland), Europe (London), Europe (Paris), Europe (Frankfurt), Europe (Stockholm), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Mumbai), Canada (Central), and South America (São Paulo) AWS Regions.
+Transit Gateway Connect is available in US East (N. Virginia), US East (Ohio), US West (Oregon), US West (N. California), Europe (Ireland), Europe (London), Europe (Paris), Europe (Frankfurt), Europe (Stockholm), Europe (Milan), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Asia Pacific (Beijing), Asia Pacific (Ningxia), Canada (Central), South America (São Paulo), Africa (Cape Town), Middle East (Bahrain), AWS GovCloud (US-East), and AWS GovCloud (US-West) Regions.
 Q: How do I control which Amazon VPCs can communicate with each other?
 A: You can segment your network by creating multiple route tables in an AWS Transit Gateway and associate Amazon VPCs and VPNs to them. This will allow you to create isolated networks inside an AWS Transit Gateway similar to virtual routing and forwarding (VRFs) in traditional networks. The AWS Transit Gateway will have a default route table. The use of multiple route tables is optional.
 Q: How does routing work in AWS Transit Gateway?
@@ -32,37 +32,12 @@ A: Yes, the BGP sessions are established over the GRE tunnel.
 Q: Can I associate a route table to the Connect attachment?
 A: Yes, similar to any other Transit Gateway attachments, you can associate route table to the Connect attachment. This route table can be same/different to that of the VPC or AWS Direct Connect (underlying transport mechanism) attachment’s associated route table.
 Performance and limits
-Q: What are the service limits that I need to keep in mind while using AWS Transit Gateways?
-A: The table below list the different service limits:
-Limit
-Default
-Number of AWS Transit Gateway attachments
-5,000
-Maximum bandwidth per VPN tunnel*
-1.25 Gbps
-Maximum bandwidth (burst) per VPC, Direct Connect gateway, or peered Transit Gateway connection
-50 Gbps
-Number of AWS Transit Gateways per Region per account
-5
-Number of AWS Transit Gateway attachments per VPC
-Number of routes
-10,000
-Number of Direct Connect gateways per AWS Transit Gateway
-20
-Number of Transit Gateway Connect peers (GRE tunnels) per Transit Gateway Connect attachment
-4
-Maximum (burst) bandwidth per Transit Gateway Connect peer (GRE tunnel)
-5 Gbps (up to 20 Gbps in total per Connect attachment)
-Dynamic routes advertised from a virtual router appliance to a Transit Gateway Connect peer
-100
-Routes advertised from a Connect peer on a Transit Gateway to a virtual router appliance
-1,000
-*Each VPN connection has two tunnels and each tunnel supports a maximum throughput of up to 1.25 Gbps. You can use equal-cost multi-path routing (ECMP) to get higher VPN bandwidth by aggregating multiple VPN tunnels across multiple VPN connections.
-*Each Transit Gateway Connect peer (GRE tunnel) support a maximum throughput of up to 5 Gbps. You can create up to 4 Connect peers per Connect attachment (up to 20 Gbps in total bandwidth per Connect attachment), as long as the underlying transport (VPC or Direct Connect) attachment supports the required bandwidth. You can use equal-cost multi-path routing (ECMP) to get higher bandwidth by scaling horizontally across multiple Connect Peers of the same Connect Attachment or across multiple Connect Attachments on the same transit gateway. The transit gateway cannot ECMP between the BGP peerings of the same Connect Peer.
+Q: What are the default limits or quotas for AWS Transit Gateway?
+A: Details on limits and quotas can be found in our documentation.
+Should you need to exceed these limits, please create a support case.
 Security and compliance
 Q: With which compliance programs does AWS Transit Gateway conform?
 A: AWS Transit Gateway inherits compliance from Amazon Virtual Private Cloud (Amazon VPC) and meets the standards for PCI DSS Level 1, ISO 9001, ISO 27001, ISO 27017, ISO 27018, SOC 1, SOC 2, SOC 3, FedRAMP Moderate, FedRAMP High and HIPAA eligibility.
-For more information, visit our compliance page.
 Feature interoperability
 Q: Does AWS Transit Gateway support IPv6?
 A: Yes, AWS Transit Gateway supports attaching Amazon VPCs with IPv6 CIDRs.

@@ -87,7 +87,7 @@ Q: How does AWS Auto Scaling discover what resources can scale?
 AWS Auto Scaling will scan your selected AWS CloudFormation stack or resources with the specified tags to identify the supported AWS resource types that can be scaled. Please note that currently, ECS services cannot be discovered using tags.
 Availability and Pricing
 Q: Which regions is AWS Auto Scaling available in?
-AWS Auto Scaling is available in Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Sydney), Canada (Central), US West (Northern California), Europe (London), Europe (Frankfurt), US East (Virginia), US East (Ohio), US West (Oregon), EU (Ireland), and Asia Pacific (Singapore).
+AWS Auto Scaling is available in Asia Pacific (Mumbai), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Sydney), Canada (Central), US West (Northern California), Europe (London), Europe (Frankfurt), EU (Paris), EU (Milan), US East (Virginia), US East (Ohio), US West (Oregon), EU (Ireland), and Asia Pacific (Singapore).
 Q: How much does AWS Auto Scaling cost?
 Similar to Auto Scaling on individual AWS resources, AWS Auto Scaling is free to use. AWS Auto Scaling is enabled by Amazon CloudWatch, so service fees apply for CloudWatch and your application resources (such as Amazon EC2 instances, Elastic Load Balancing load balancers, etc.).
 Learn more about AWS Auto Scaling pricing

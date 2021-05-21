@@ -15,7 +15,7 @@ With Amazon Elasticsearch Service, you pay only for the resources you consume. Y
 How it works
 Use cases
 Application monitoring
-Store, analyze, and correlate application and infrastructure log data to find and fix issues faster and improve application performance. You can receive automated alerts if your application is underperforming, enabling you to proactively address any issues. An online travel company, for example, can use Amazon Elasticsearch Service to analyze logs from its applications to identify and resolve performance bottlenecks or availability issues, ensuring streamlined booking experience.
+Store, analyze, and correlate application and infrastructure log data to find and fix issues faster and improve application performance. Enable trace data analysis for your distributed applications to quickly identify performance issues. You can receive automated alerts if your application is underperforming, enabling you to proactively address any issues. An online travel company, for example, can use Amazon Elasticsearch Service to analyze logs from its applications to identify and resolve performance bottlenecks or availability issues, ensuring streamlined booking experience.
 Security information and event management (SIEM)
 Centralize and analyze logs from disparate applications and systems across your network for real-time threat detection and incident management. A telecom company, for example, can use Amazon Elasticsearch Service with Kibana to quickly index, search, and visualize logs from its routers, applications, and other devices to find and prevent security threats such as data breaches, unauthorized login attempts, DoS attacks, and fraud.
 Search

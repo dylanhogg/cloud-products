@@ -1,7 +1,7 @@
 Amazon AppFlow
-Securely integrate apps and automate data flows at any scale, without code
+Automate data flows by securely integrating third party applications and AWS services, without code
 Get Started with Amazon AppFlow
-Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Marketo, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks. With AppFlow, you can run data flows at nearly any scale at the frequency you choose - on a schedule, in response to a business event, or on demand. You can configure data transformation capabilities like filtering and validation to generate rich, ready-to-use data as part of the flow itself, without additional steps. AppFlow automatically encrypts data in motion, and allows users to restrict data from flowing over the public Internet for SaaS applications that are integrated with AWS PrivateLink, reducing exposure to security threats.
+Amazon AppFlow is a fully managed integration service that enables you to securely transfer data between Software-as-a-Service (SaaS) applications like Salesforce, Zendesk, Slack, and ServiceNow, and AWS services like Amazon S3 and Amazon Redshift, in just a few clicks. With AppFlow, you can run data flows at enterprise scale at the frequency you choose - on a schedule, in response to a business event, or on demand. You can configure data transformation capabilities like filtering and validation to generate rich, ready-to-use data as part of the flow itself, without additional steps. AppFlow automatically encrypts data in motion, and allows users to restrict data from flowing over the public Internet for SaaS applications that are integrated with AWS PrivateLink, reducing exposure to security threats.
 Intro to Amazon AppFlow (3:33)
 Benefits
 Integrate with a few clicks
@@ -18,6 +18,9 @@ Customer Stories
 Sandeep Garg, Solutions Architect, Expedia Group
 “Amazon AppFlow helps our data analytics team in simplifying configuration, allowing us to accelerate data-driven integrations and build data science applications at a much faster pace, which ultimately helps us enhance our customer satisfaction.”
 Balaji Apparsamy, VP Data and Analytics, Unum Group
+“Trantor’s Amazon AppFlow-based solution to sync SaaS data with Amazon RDS has helped our customers increase the data synchronization frequency by 10 times, while reducing operational overhead and cost spent on third-party tools by 30 percent.”
+Sanjul Saxena, VP – Professional Services at Trantor
+Read more
 Use cases
 Customer 360
 You can use AppFlow to get 360-degree visibility of customer journey by integrating marketing, customer support, and sales data. For example, analyze the revenue impact of different marketing channels by synchronizing the revenue data from Salesforce with marketing data from Marketo.

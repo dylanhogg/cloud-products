@@ -34,6 +34,3 @@ Enter the Management Console
 Log in to your account with your username and password and access to the management console on any device
 Start building with AWS
 Test out services and build your production solution quickly and easily once you're ready
-Help us make this page better
-Tell us what you love about this page, or what we could be doing better.
-Provide Page Feedback

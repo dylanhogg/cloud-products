@@ -18,7 +18,7 @@ date
 1
 ...
 What's new posts
-AWS App Mesh partners
+AWS App Mesh Partners
 Check out the product features
 Learn more about AWS App Mesh
 Learn more

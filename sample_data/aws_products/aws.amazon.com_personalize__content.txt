@@ -63,10 +63,13 @@ Highlight new content offerings
 Help users find fresh, new content based on their unique tastes and preferences.
 Enhance genre based recommendations
 Add individualized recommendations to genre based on content carousels and lists.
+Customer Stories
+Learn why Discovery turned to Amazon Personalize to enable tailored content suggestions for their Discovery+ streaming platform users.
+Discovery is Enhancing the Customer Experience with Amazon Personalize
 Learn how Pulselive use Amazon Personalize to increase video views by 20%, highlight new content offerings, and build subscriber base.
 "We were thrilled by our first foray into the world of ML with Amazon Personalize. We found the entire process of integrating a trained model into our workflow was incredibly simple"
-"With Amazon Personalize, we were able to deliver the best possible contests recommendations based on user's playing history and also used it to upsell and cross other similar contests. This feature helped us
-improve the average number of contest joins per user by 12% and also improved the average transaction value of gameplay by 8%.”
+"With Amazon Personalize, we were able to deliver the best possible contests recommendations based on user's playing history and also used it to upsell and cross other similar contests. This feature helped us improve the average number of contest joins per user by 12% and also improved the average transaction value of gameplay by 8%.”
+How FanFight uses Amazon AI & ML services to create personalized content for its users
 Learn more about Amazon Personalize customer success
 Blog posts & articles
 Amazon Personalize can now create up to 50% better recommendations for fast changing catalogs of new product and content

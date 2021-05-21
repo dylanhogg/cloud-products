@@ -1,8 +1,10 @@
 AWS Lambda
 Run code without thinking about servers or clusters. Only pay for what you use.
 Get started with AWS Lambda
-AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. You can set up your code to automatically trigger from 140 AWS services or call it directly from any web or mobile app. You can write Lambda functions in your favorite language (Node.js, Python, Go, Java, and more) and use both serverless and container tools, such as AWS SAM or Docker CLI, to build, test, and deploy your functions.
-Getting started with AWS Lambda (3:00)
+AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. With Lambda, you can run code for virtually any type of application or backend service - all with zero administration. Just upload your code as a ZIP file or container image, and Lambda automatically and precisely allocates compute execution power and runs your code based on the incoming request or event, for any scale of traffic. You can set up your code to automatically trigger from over 200 AWS services and SaaS applications or call it directly from any web or mobile app. You can write Lambda functions in your favorite language (Node.js, Python, Go, Java, and more) and use both serverless and container tools, such as AWS SAM or Docker CLI, to build, test, and deploy your functions.
+1 million requests free
+per month with the AWS Free Tier
+Get started for free
 Benefits
 No servers to manage
 AWS Lambda automatically runs your code without requiring you to provision or manage infrastructure. Just write the code and upload it to Lambda either as a ZIP file or container image.
@@ -44,7 +46,7 @@ Read the blog
 iRobot, a leading global consumer robot company, is building the next generation of connected devices for the smart home using a serverless architecture.
 Read more
 Benchling, a life science software company, created a technique that researchers use to modify parts of a genome with extreme precision using serverless architecture.
-Thomson Reuters uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
+Thomson Reuters, a leading provider of business information services, uses AWS Lambda to process up to 4,000 events per second for its usage analytics service, and it took five months to deploy into production.
 See more case studies
 Sign up for an AWS account
 Instantly get access to the

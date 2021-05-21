@@ -64,17 +64,17 @@ Q: What is the difference between the MIT open source license and the (previousl
 Both licenses allow the software to be used for free, even in commercial products, and neither license imposes any obligations when distributing binary (executable) copies. The MIT license provides simplified wording and allows for more permissive use of our source code. With the MIT license, you can still develop and sell commercial products using FreeRTOS (including the kernel) but you are no longer obliged to open source modifications to our source code, meaning you own all the changes you make. The only requirements under MIT is that the copyright notice and permission notice shall be included in all copies or substantial portions of the software (source files).
 FreeRTOS Long Term Support
 Q: Which libraries are covered under FreeRTOS Long Term Support (LTS)?
-FreeRTOS 202012.00 LTS covers the following libraries: FreeRTOS kernel, FreeRTOS+TCP, coreMQTT, coreHTTP, corePKCS11, coreJSON, and AWS IoT Device Shadow.
+FreeRTOS 202012.01 LTS covers the following libraries: FreeRTOS kernel, FreeRTOS+TCP, coreMQTT, coreHTTP, corePKCS11, coreJSON, AWS IoT OTA, AWS IoT Jobs, AWS IoT Device Defender, and AWS IoT Device Shadow.
 Q: What is the support period for FreeRTOS LTS libraries?
-The support period for FreeRTOS LTS libraries is two years. FreeRTOS 202012.00 LTS libraries will not have any feature development (although we expect to add incremental libraries a few months after the first LTS release), and will include security updates and bug fixes that AWS determines as critical, at least until December 31, 2022.
+The support period for FreeRTOS LTS libraries is two years. FreeRTOS 202012.01 LTS libraries will not have any feature development (although we expect to add incremental libraries a few months after the first LTS release), and will include security updates and bug fixes that AWS determines as critical, at least until March 31, 2023.
 Q: Where do I obtain the FreeRTOS LTS libraries?
-You can get the FreeRTOS LTS libraries by cloning the FreeRTOS 202012.00 LTS hub repository in GitHub, cloning individual LTS libraries, or by downloading the FreeRTOS 202012.00 LTS zip file from FreeRTOS.org.
+You can get the FreeRTOS LTS libraries by cloning the FreeRTOS 202012.01 LTS hub repository in GitHub, cloning individual LTS libraries, or by downloading the FreeRTOS 202012.01 LTS zip file from FreeRTOS.org.
 Q: How do I integrate FreeRTOS LTS libraries into my project?
 There are several ways you can get started: 1. You can update individual libraries to LTS libraries by cloning them from their corresponding repositories. For example, you can update your project to the FreeRTOS LTS MQTT library by downloading code from the coreMQTT GitHub repository. 2. You can download an IoT Reference Integration from FreeRTOS.org, and update the submodule pointers to the FreeRTOS LTS version. 3. You can clone the latest FreeRTOS version in GitHub, and update the submodule pointers to the FreeRTOS LTS version.
 Q: How do I find information on and download the FreeRTOS LTS patches?
-You can visit the ‘FreeRTOS LTS Patches’ section in the LTS Libraries page on FreeRTOS.org for the latest information, or subscribe to GitHub notifications for the FreeRTOS 202012.00 LTS repository. FreeRTOS LTS releases use a date-based versioning scheme (YYYYMM) followed by a patch sequential number (.XX). For example, FreeRTOS 202012.02 LTS means the second patch to the December-2020 FreeRTOS LTS release. You can get the latest patch from GitHub by using the associated download link.
+You can visit the ‘FreeRTOS LTS Patches’ section in the LTS Libraries page on FreeRTOS.org for the latest information, or subscribe to GitHub notifications for the FreeRTOS 202012.01 LTS repository. FreeRTOS LTS releases use a date-based versioning scheme (YYYYMM) followed by a patch sequential number (.XX). For example, FreeRTOS 202012.02 LTS means the second patch to the December-2020 FreeRTOS LTS release. You can get the latest patch from GitHub by using the associated download link.
 Q: What is the software license for FreeRTOS LTS?
-FreeRTOS 202012.00 LTS libraries are distributed free under the MIT open source license.
+FreeRTOS 202012.01 LTS libraries are distributed free under the MIT open source license.
 Q: Do I have to pay to use FreeRTOS LTS libraries?
 No. FreeRTOS LTS libraries are free for all users under the MIT open source license.
 Q: Who is releasing and supporting FreeRTOS LTS?

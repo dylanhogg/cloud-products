@@ -2,7 +2,7 @@ General
 Q: What is Amazon Elasticsearch Service?
 Amazon Elasticsearch Service is a managed service that makes it easy to deploy, operate, and scale Elasticsearch clusters in the AWS Cloud.
 Q: Which Elasticsearch version does Amazon Elasticsearch Service support?
-Amazon Elasticsearch Service currently supports Elasticsearch versions 7.9, 7.8, 7.7, 7.4, 7.1, 6.8, 6.7, 6.5, 6.4, 6.3, 6.2, 6.0, 5.6, 5.5, 5.3, 5.1, 2.3, and 1.5.
+Amazon Elasticsearch Service currently supports Elasticsearch versions 7.10, 7.9, 7.8, 7.7, 7.4, 7.1, 6.8, 6.7, 6.5, 6.4, 6.3, 6.2, 6.0, 5.6, 5.5, 5.3, 5.1, 2.3, and 1.5. For more details refer our documentation.
 Q: What is an Amazon Elasticsearch Service domain?
 Amazon Elasticsearch Service domains are Elasticsearch clusters created using the Amazon Elasticsearch Service console, CLI, or API. Each domain is an Elasticsearch cluster in the cloud with the compute and storage resources you specify. You can create and delete domains, define infrastructure attributes, and control access and security. You can run one or more Amazon Elasticsearch Service domains.
 Q: What does Amazon Elasticsearch Service manage on my behalf?
@@ -40,8 +40,8 @@ Q: What storage options are available with Amazon Elasticsearch Service?
 You can choose between local on-instance storage or EBS volumes. During domain creation, if you select EBS storage, you can increase and decrease the size of the storage volume as necessary.
 Q: What types of EBS volumes does Amazon Elasticsearch Service support?
 You can choose between Magnetic, General Purpose, and Provisioned IOPS EBS volumes.
-Q: Is there a limit on the amount of EBS storage that can be allocated to an Amazon Elasticsearch Service domain?
-Yes. Amazon Elasticsearch Service supports one EBS volume (max size of 1.5 TB) per instance associated with a domain. With the default maximum of 20 data nodes allowed per Amazon Elasticsearch Service domain, you can allocate about 30 TB of EBS storage to a single domain. You can request a service limit increase up to 200 instances per domain by creating a case with the AWS Support Center. With 200 instances, you can allocate about 300 TB of EBS storage to a single domain.
+Q: Is there a limit on the amount of storage that can be allocated to an Amazon Elasticsearch Service domain?
+Yes. Amazon Elasticsearch Service deploys storage based the choice of instance and/or the size of the associated EBS volume. The maximum storage per node is 15 TB with the i3.16xlarge instances. With the default maximum of 40 data nodes allowed per Amazon Elasticsearch Service domain, you can allocate about 600 TB of storage to a single domain. You can request a service limit increase up to 200 instances per domain by creating a case with the AWS Support Center. With 200 instances, you can allocate about 3 PB of storage to a single domain.
 Q: How are dedicated master instances distributed across AZs?
 If you deploy your data instances in a single AZ, your dedicated master instances are also deployed in the same AZ. However, if you deploy your data instances across two or three AZs, Amazon Elasticsearch Service automatically distributes the dedicated master instances across three AZs. The exception to this rule occurs if a region only has two AZs or if you select an older-generation instance type for the master instances that is not available in all AZs. For more details, refer our documentation.
 Q: What is the recommended AZ configuration for production workloads?
@@ -127,7 +127,7 @@ Yes. slow logs can be enabled for all versions of Elasticsearch supported by Ama
 Q: Will the cluster have any down time when logging is turned on or off?
 No. There will not be any down-time. Every time the log status is updated, we will deploy a new cluster in the background and replace the existing cluster with the new one. This process will not cause any down time. However, since a new cluster is deployed the update to the log status will not be instantaneous.
 Q: Which Elasticsearch versions does the in-place upgrade feature support?
-Amazon Elasticsearch Service currently supports in-place version upgrade for domains with Elasticsearch versions 5.x and above. The target versions that we support for the upgrade are 5.6, 6.3, 6.4, 6.5, 6.7, 6.8, 7.1, 7.4, 7.7, 7.8 and 7.9. For more details, refer to our documentation.
+Amazon Elasticsearch Service currently supports in-place version upgrade for domains with Elasticsearch versions 5.x and above. The target versions that we support for the upgrade are 5.6, 6.3, 6.4, 6.5, 6.7, 6.8, 7.1, 7.4, 7.7, 7.8, 7.9, and 7.10. For more details refer our documentation.
 Q: My domain runs a version of Elasticsearch older than 5.x. How do I upgrade those domains?
 Please refer to our documentation for details on migrating from various Elasticsearch versions.
 Q: Will my domain be offline while the in-place upgrade is in progress?
@@ -246,6 +246,17 @@ Q: What are the performance characteristics of UltraWarm?
 UltraWarm delivers an interactive experience in Kibana by implementing granular Elasticsearch I/O caching, prefetching, and query engine optimizations to provide similar performance to high-density instances using local storage.
 Q: How can I start using UltraWarm?
 To get started with UltraWarm, create a new Amazon Elasticsearch Service domain with UltraWarm enabled via the console, CLI, or APIs. Once your domain is created you can move data from hot to UltraWarm using the Elasticsearch APIs. Learn more.
+Cold storage
+Q: What is cold storage?
+Cold storage is a fully-managed lowest cost storage tier for Amazon Elasticsearch Service that makes it easy for you to securely store and analyze your historical logs on-demand. Cold storage enables you to fully detach storage from compute when they are not actively performing analysis of their data and allows you to keep your data readily available at low cost. Cold storage data is available within the Amazon Elasticsearch Service domain via your UltraWarm nodes. Cold storage seamlessly integrates with Elasticsearch (version 7.9, 7.10) and Kibana (version 7.9, 7.10) and enables you to analyze data using the same tools that Amazon Elasticsearch Service provides today.
+Q: Why should I use cold storage?
+Cold storage enables you to cost effectively expand the data you want to analyze on Amazon Elasticsearch Service and gain valuable insights on data that previously may have been deleted or archived. Cold storage is a great fit if you have the need to do research or forensic analysis on your older data and you want to use all of the capabilities of Amazon Elasticsearch Service to do so, at an affordable price. Cold storage is built for scale and is backed by Amazon S3. Find and discover the data you need, attach it to the UltraWarm nodes in your cluster, and make it available for analysis in seconds. Attached cold data is subject to the existing fine-grained access control policies that limit access at the index, document, and field level.
+Q: How does cold storage relate to/work with Amazon Elasticsearch Service?
+With cold storage, Amazon Elasticsearch Service supports three integrated storage tiers: hot, UltraWarm, and cold. The hot tier is used for indexing, updating, and providing the fastest access to data. UltraWarm provides a seamless extension of the hot tier by providing compute nodes that provide a highly performant interactive experience for data that is durably stored in Amazon S3 and needs to be persistently available, currently supporting up to 3PB of data in a single domain. With cold storage, you can now detach indices from UltraWarm while not in use and free up compute to help lower costs. With the new cold storage APIs and Kibana interface, you can discover indices based on index patterns and data timestamps to easily find what you need for analysis. That data can then be attached to the domain and ready for analysis in seconds. When you are done with analysis, simply detaching the data then frees up your compute again.
+Q: How much data can I store in cold storage?
+Cold storage is built for scale. While the storage limits for hot and warm data remain at 3PB, you can store any amount of data in cold storage.
+Q: What are the performance characteristics of cold storage?
+Cold storage builds on UltraWarm, which provides specialized nodes that store data in Amazon S3 and uses a sophisticated caching solution to provide an interactive experience. Cold data must first be attached to the UltraWarm nodes of your Amazon Elasticsearch Service domain. Once attached, queries on this data are powered by existing UltraWarm nodes offering the same performance as your warm data. Attaching cold indices to your domain takes seconds if there is sufficient UltraWarm capacity available for the requested data. If you need additional capacity, UltraWarm data nodes must be added, which can take up to a few minutes.
 Open Distro for Elasticsearch
 Q: How does Open Distro for Elasticsearch relate to the Amazon Elasticsearch Service?
 Open Distro for Elasticsearch is committed to ensuring that there is an innovative, 100% open source distribution of Elasticsearch that is available to everyone. We use Open Distro for Elasticsearch to involve the community in much of the new feature development for the Amazon Elasticsearch Service. This gives customers the ability to provide feedback and contribute ahead of the open source features being made available on the service. Open Distro for Elasticsearch features supported on the service include security, alerting, SQL, and more. To learn more about Open Distro for Elasticsearch or get involved please visit the Open Distro website.
@@ -276,6 +287,17 @@ Q: Can domains in two different AWS regions participate in cross-cluster search?
 No.
 Q: How can I start using cross-cluster search?
 To get started with cross-cluster search, follow the documentation here
+Trace Analytics
+Q: What is Trace Analytics?
+Trace Analytics is a new feature of Amazon Elasticsearch Service that enables developers and IT operators to find and fix performance problems in distributed applications, which leads to faster problem resolution times. Trace Analytics is built using OpenTelemetry, a Cloud Native Computing Foundation (CNCF) project that provides a single set of APIs, libraries, agents, and collector services to capture distributed traces and metrics, which enables customers to leverage Trace Analytics without having to re-instrument their applications. Trace Analytics is powered by the Open Distro for Elasticsearch project, which is open source and freely available for everyone to download and use.
+Q: Why should I use Trace Analytics?
+Developers and IT Ops need Trace Analytics to find and fix performance problems in their distributed applications. By adding trace data to the existing log analytics capabilities of Amazon Elasticsearch Service, customers can use the same service to both isolate the source of performance problems and diagnose their root cause. In addition, with the support for the OpenTelemetry standard, Trace Analytics supports integration with Jaeger and Zipkin SDKs, two popular open source distributed tracing systems, which allows developers to continue using these SDKs and not have to re-instrument their applications.
+Q: How does Trace Analytics relate to/work with Amazon Elasticsearch Service?
+Trace Analytics is an integrated feature of Amazon Elasticsearch Service. It is available to all customers at no extra charge. Trace Analytics has a Kibana-based user interface for visualizing and exploring trace data and is integrated with key features of Amazon ES such as anomaly detection, alerting, fine-grained access control, and enterprise security. Trace Analytics complements customers’ usage of Amazon Elasticsearch Service for search and analysis of log data when resolving application performance problems.
+Q: What data sources does Trace Analytics support?
+Trace Analytics today supports the collection of trace data from application libraries and SDKs that are compatible with the open source OpenTelemetry Collector, including Jaeger, Zipkin, and X-Ray SDKs. Trace Analytics also integrates with AWS Distro for OpenTelemetry, which is a distribution of OpenTelemetry APIs, SDKs, and agents/collectors. It is a performant and secure distribution of OpenTelemetry components that has been tested for production use and is supported by AWS. Customers can use AWS Distro for OpenTelemetry to collect traces and metrics for multiple monitoring solutions, including Amazon Elasticsearch Service and AWS X-Ray for trace data and Amazon CloudWatch for metrics.
+Q: How can I start using Trace Analytics?
+To get started with Trace Analytics, follow the documentation here.
 Learn more about Amazon Elasticsearch Service pricing
 Visit the pricing page
 Ready to build?

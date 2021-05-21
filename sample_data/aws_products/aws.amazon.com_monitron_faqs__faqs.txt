@@ -6,7 +6,7 @@ A: To get started with Amazon Monitron, purchase sensors and gateways on amazon.
 Q: How does Monitron relate to/work with other AWS products?
 A: Amazon Monitron is built on AWS Internet-of-Things (IOT) and machine learning (ML) technologies. No development or integration effort is required to use Amazon Monitron. Behind the scenes, Amazon Monitron uses multiple AWS services such as Lambda, S3, and DynamoDB.
 Q: In which AWS regions is Amazon Monitron available?
-A: Amazon Monitron is available in US East (N. Virginia) and will be available in additional regions soon. You can buy Amazon Monitron Starter Kits, Sensors and Gateways on amazon.com and Amazon Business. These devices are available for purchase in US, UK and EU.
+A: Amazon Monitron service is available in US East (N. Virginia) and Europe (Ireland), and will be available in additional regions soon. You can buy Amazon Monitron Starter Kits, Sensors and Gateways on amazon.com and Amazon Business. These devices are certified for use in US, UK and EU.
 Q: Are there restrictions on the number of sites or sensors I can deploy with Amazon Monitron?
 A: No, there are no restrictions on the number of sites or sensors. Like every AWS service, Amazon Monitron has limits which can be found here.
 Q: Does Amazon Monitron get more accurate over time?
@@ -58,7 +58,7 @@ A: Amazon Monitron Sensors can be attached to the equipment using adhesive, whic
 Q: How many sensors can 1 gateway connect with?
 A: Amazon Monitron sensors connect with Amazon Monitron gateway over Bluetooth Low Energy (BLE). Practically, the number of sensors that can connect with 1 gateway will be mainly determined by the range of BLE. The expected BLE range is 20-30 meters. Based on our experience, 10-20 sensors on average can connect with 1 gateway in an industrial setup.
 Q: Can I order Amazon Monitron to a country where Amazon Monitron is not available and connect it to a supported Region?
-A: Amazon Monitron Starter Kits, Sensors, and Gateways are certified for use in US, UK and EU. You can use Amazon Monitron devices in these geographies together with the supported cloud region of US East (N. Virginia). We do not deliver Amazon Monitron devices outside of these geographies.
+A: Amazon Monitron Starter Kits, Sensors, and Gateways are certified for use in US, UK and EU. You can use Amazon Monitron devices in these geographies together with the supported cloud region of US East (N. Virginia) and Europe (Ireland). We do not deliver Amazon Monitron devices outside of US, UK and EU.
 Q: Can I use Amazon Monitron when it is not connected to the AWS Region or in a disconnected environment?
 A: Amazon Monitron Sensors and Gateways, and their use with the Amazon Monitron cloud service rely on connectivity over internet to the AWS Region. Amazon Monitron Sensors and Gateways are not designed for disconnected operations or environments with no connectivity. We recommend that customers have highly available internet connectivity.
 Q: Can I reuse my existing servers to run Amazon Monitron on premises?

@@ -17,9 +17,14 @@ Cloud-native backup
 AWS Backup provides a centralized console to automate and manage backups across AWS services. AWS Backup supports Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, Amazon FSx, Amazon EC2, and AWS Storage Gateway, to enable you to backup key data stores, such as your storage volumes, databases, and file systems.
 Hybrid backup
 AWS Backup integrates with AWS Storage Gateway, a hybrid storage service that enables your on-premises applications to seamlessly use AWS Cloud storage. You can use AWS Backup to back up your application data stored in AWS Storage Gateway volumes. Backups of AWS Storage Gateway volumes are securely stored in the AWS Cloud and are compatible with Amazon EBS, allowing you to restore your volumes to the AWS Cloud or to your on-premises environment. This integration also allows you to apply the same backup policies to both your AWS Cloud resources and your on-premises data stored on AWS Storage Gateway volumes.
-Blogs
+Backup Blogs
+To read more AWS Backup blogs, visit the AWS Storage blog channel.
+What's New with Backup
+Date
+1
+...
 Check out the AWS Backup features
-AWS Backup is designed to centralize and automate back up tasks across AWS services. These capabilities make it possible.
+AWS Backup is designed to centralize and automate backup tasks across AWS services. These capabilities make it possible.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

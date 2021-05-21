@@ -56,6 +56,23 @@ Q: How do I get started with OpsCenter?
 You can use the AWS Systems Manager console to turn on OpsCenter in just a few clicks.
 Q: Does OpsCenter require the use of the AWS Systems Manager Agent?
 Getting started with OpsCenter doesn’t require the use of the Systems Manager Agent.
+Incident Manager
+Q: What is Incident Manager?
+Incident Manager helps you prepare for incidents with automated response plans. Response plans execute runbook actions, track incident updates, and enable chat-based collaboration while automatically notifying the appropriate people to respond.
+Q: What is a Response plan?
+A response plan describes the contacts to notify – such as an application team’s on-call – and a set of procedures to follow to investigate and mitigate in response to an alarm (or set of alarms). The steps in the procedure, which can be manual or automated, are represented as a Systems Manager Automation document.
+Q: What is an Incident?
+An incident is any unplanned interruption or reduction in quality of services. Response plans control how incidents are automatically started based on Amazon CloudWatch alarms or Amazon Eventbridge events. You can also start incidents manually in Incident Manager.
+Q: What is an Analysis?
+An analysis is the post-incident document of record tied to the incident (or set of incidents). An analysis consists of several sections: a textual summary, the timeline of key events and metrics, a set of questions to guide authors through the post-incident analysis process, and a list of operational action items for improvement.
+Q: How does Incident Manager deliver messages about an incident?
+Incident Manager uses the configured response plan to notify the desired contacts in order (escalating to the next contact as needed). A contact can represent a device – such as a shared phone number – or a person with a list of devices in order. Incident Manager supports SMS, Voice calls, email, and Slack notifications (via AWS Chatbot).
+Q: How does Incident Manager work with other AWS services?
+With Incident Manager, you can automatically take action when a critical issue is detected by an Amazon CloudWatch alarm or Amazon Eventbridge event. Incident Manager immediately executes pre-configured response plans to engage responders via SMS and phone calls, links designated chat channels using AWS Chatbot, and executes AWS Systems Manager Automation runbooks. The Incident Manager console integrates with AWS Systems Manager OpsCenter to help you track incidents and post-incident action items from a central place that also synchronizes with popular third-party incident management tools such as Jira Service Desk and ServiceNow.
+Q: How do I get started with Incident Manager?
+To get started, select Incident Manager from the AWS Console or navigate to AWS Systems Manager to find it in the left navigation pane under Operations Management.
+Q: Can I use Incident Manager across accounts and AWS Regions?
+Yes. Incident Manager uses Resource Access Manager to share incidents, response plans, and contacts across member accounts. Member accounts can be individually selected or identified using AWS Organizations. Incident Manager also provides cross-region replication of incidents to achieve higher availability.
 CloudWatch Dashboards
 Q: What are Amazon CloudWatch Dashboards? With Amazon CloudWatch Dashboards, you can create reusable dashboards that allow you to monitor your AWS resources in one location. Metric data is kept for a period of fifteen months enabling you to view up-to-the-minute data and also historical data.
 Q: How are Amazon CloudWatch Dashboards integrated with AWS Systems Manager? Your existing CloudWatch Dashboards are now available directly through AWS Systems Manager. You can also create new CloudWatch Dashboards directly from Systems Manager. Using CloudWatch Dashboards, you can build your own custom operational dashboards to reflect the health of an application component, an application tier, or general areas of operational ownership.

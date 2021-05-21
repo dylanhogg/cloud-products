@@ -14,6 +14,8 @@ What’s the difference between Amazon Interactive Video Service and Kinesis Vid
 Amazon Interactive Video Service is a simple-to-use managed service that takes care of ingest, playback, and everything in between. Amazon Kinesis Video makes it easy to securely stream videos from connected devices to AWS for real-time and batch-driven machine learning, video playback, analytics, and other processing. It enables customers to build machine vision-based applications that power smart homes, smart cities, industrial automation, security monitoring, and more.
 How much does it cost to use Amazon Interactive Video Service?
 Amazon Interactive Video Service pricing is based on the duration of live video sent to Amazon IVS (hours input) and the duration of video delivered to viewer (hours output). For more details, visit the pricing page.
+Can I use Amazon Interactive Video Service for video-on-demand (VOD) content?
+Amazon Interactive Video Service creates live streams. You can save your live video content to an Amazon Simple Storage Service (Amazon S3) bucket. Saved video files are available for editing or streaming as video-on-demand (VOD) content.  Recordings saved in Amazon S3 incur standard costs for storage and requests. There is no additional cost for enabling the feature on Amazon IVS channels.
 What AWS regions is Amazon Interactive Video Service available in?
 The Amazon IVS console and APIs for control and creation of streams are available in the US East (N. Virginia), US West (Oregon), and Europe (Ireland) regions. Video ingestion and delivery are available around the globe over a separate managed network of infrastructure that is optimized for live video.
 What is the end-to-end latency for an Amazon Interactive Video Service stream?

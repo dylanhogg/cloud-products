@@ -18,6 +18,17 @@ Automate Management of On-Premises Databases
 Amazon RDS on VMware reduces operational overhead for database management in your on-premises VMware data centers, by automating administrative tasks including software installation, patching, monitoring, and backups. RDS on VMware includes a software package for your VMware vSphere environment that provides easy provisioning, automatic monitoring, and simple manageability of your databases, enabled through a dedicated VPN tunnel connecting to the AWS Region.
 “We have 100s of SQL Server and MySQL databases running on VMware vSphere, and although virtualization has reduced our operational costs, we still have to do a lot of heavy lifting in database management, including installations, patching, upgrades, backups, etc. With Amazon RDS on VMware, we finally have a solution that will automate many aspects of database administration, and make it easier and faster for our users to provision databases on demand. Plus, our administrators can now spend more time on value-added work that improves our platform.”
 Alex Kuo, Senior Director - Trend Micro
+Resources
+Migration playbooks, walkthroughs, user guides, and step-by-step guides to assist in your transition to database freedom with AWS.
+Video
+Webinar on-demand
+Modernize on-premises databases with Amazon RDS on VMware
+Whitepaper
+Simplify on-premises database management with Amazon RDS on VMware
+eBook
+Blog
+Getting started with Amazon RDS managed databases in your on-premises VMware environment
+Migrating an on-premises SQL Server database to Amazon RDS on VMware using SQL Server native backup and restore
 Check out the service features
 Learn about RDS on VMware's capabilities
 Learn more

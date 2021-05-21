@@ -37,5 +37,6 @@ Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
-Sign up for the preview
-Get started building with Amazon Managed Service for Grafana.
+Start building on the console
+Get started building with Amazon Managed Service for Grafana in the AWS Management Console.
+Sign in

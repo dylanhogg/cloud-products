@@ -1,25 +1,37 @@
 TensorFlow on AWS
-Deep learning in the cloud made simple.
-Try Amazon SageMaker
-TensorFlowTM enables developers to quickly and easily get started with deep learning in the cloud. The framework has broad support in the industry and has become a popular choice for deep learning research and application development, particularly in areas such as computer vision, natural language understanding and speech translation.
-You can get started on AWS with a fully-managed TensorFlow experience with Amazon SageMaker, a platform to build, train, and deploy machine learning models at scale. Or, you can use the AWS Deep Learning AMIs to build custom environments and workflows with TensorFlow and other popular frameworks including Apache MXNet, PyTorch, Caffe, Caffe2, Chainer, Gluon, Keras, and Microsoft Cognitive Toolkit.
-85% of TensorFlow projects in the cloud happen on AWS.
-Learn more
+Overview
+Getting Started
+Deep Learning with TensorFlow
+Deep learning on AWS made simple
+Get Started with TensorFlow on Amazon SageMaker
+TensorFlow is one of many deep learning frameworks available to researchers and developers to enhance their applications with machine learning. AWS provides broad support for TensorFlow, enabling customers to develop and serve their own models across computer vision, natural language processing, speech translation, and more.
+You can get started with TensorFlow on AWS using Amazon SageMaker, a fully managed machine learning service that makes it easy and cost-effective to build, train, and deploy TensorFlow models at scale. If you prefer to manage the infrastructure yourself, you can use the AWS Deep Learning AMIs or the AWS Deep Learning Containers, which come built from source and optimized for performance with the latest version of TensorFlow to quickly deploy custom machine learning environments.
 Benefits
 Visualization
 TensorFlow comes with a full suite of visualization tools that make it easy to understand, debug, and optimize applications. With support for a variety of styles – from images and audio to histograms and graphs – you can train massive deep neural networks quickly and easily.
-Mobile Development
-TensorFlow Mobile features a reduced code footprint and mathematical tools to facilitate smaller model sizes. Suitable for Android, TensorFlow Mobile is also ideal for situations where network access is intermittent or expensive.
 Documentation
 With TensorFlow, you get access to extensive documentation and tutorials that can help accelerate your AI development. TensorFlow also has a large and extremely active community of users who regularly contribute code and resolve issues on GitHub.
+Customer Testimonials
+Aerobotics, a South African agri-tech startup, provides farmers with data and intelligence through the Aeroview platform, which utilizes machine learning to extract information from aerial drone images. Using Amazon SageMaker and TensorFlow, Aerobotics was able to improve their training speed by 24 times per sample.
+Read the blog
+Fannie Mae uses Amazon SageMaker with TensorFlow for its home appraisal model to generate accurate property valuations, which helps reduce mortgage risk.
+Watch video to learn more
+Mobileye, an Intel company, uses TensorFlow with Amazon SageMaker to develop and deliver driver assistance and autonomous vehicle solutions. Using Amazon SageMake Pipe Mode, data is streamed from Amazon S3 to training instances with the TensorFlow dataset API to allow multiple training instances to pull from the same set of decoupled training data.
 Customers using TensorFlow on AWS
 Many organizations are benefiting from the ease-of-use and flexibility of getting started using TensorFlow on AWS.
 Click to see more customers
 Show less
-Amazon SageMaker for machine learning
-Learn more about Amazon SageMaker
-Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
-Ready to build?
-Try the AWS Deep Learning AMIs
-Have more questions?
-Contact us
+Blogs and articles
+Blog: Building a customized recommender system in Amazon SageMaker August 2020 by Ray Li
+Blog: Deploying Tensorflow Openpose on AWS Inferentia based Amazon EC2 Inf1 instances July 2020 by Fabio Nonato de Paula and Haichen Li
+Blog: Train ALBERT for natural language processing with TensorFlow on Amazon SageMaker May 2020 by Jared Nielsen, Aditya Bindal, and Derya Cavdar
+Blog: A quick guide to distributed training with TensorFlow and Horovod on Amazon SageMaker Jan 2020 by Shashank Prasanna
+Learn how to get started with PyTorch on AWS
+Visit the getting started page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building in the AWS Management Console.
+Sign in

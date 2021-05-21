@@ -54,10 +54,9 @@ Instances without public IP addresses can route their traffic through a NAT gate
 For VPCs with a hardware VPN connection or Direct Connect connection, instances can route their Internet traffic down the virtual private gateway to your existing datacenter. From there, it can access the Internet via your existing egress points and network security/monitoring devices.
 Q: Can I connect to my VPC using a software VPN?
 Yes. You may use a third-party software VPN to create a site to site or remote access VPN connection with your VPC via the Internet gateway.
-Q: Does traffic go over the internet when two instances communicate using public IP addresses?
-Traffic between two EC2 instances or between an EC2 instance and any AWS regional endpoint in the same AWS Region stays within the AWS network, even when it goes over public IP addresses.
-Traffic between EC2 instances in different AWS Regions stays within the AWS network, if there is an Inter-Region VPC Peering connection between the VPCs where the two instances reside.
-Traffic between EC2 instances in different AWS Regions where there is no Inter-Region VPC Peering connection between the VPCs where these instances reside, is not guaranteed to stay within the AWS network.
+Q: Does traffic go over the internet when two instances communicate using public IP addresses, or when instances communicate with a public AWS service endpoint?
+No. When using public address space, all communication between instances and services hosted in AWS use AWS's private network. Packets that originate from the AWS network with a destination on the AWS network stay on the AWS global network, except traffic to or from AWS China Regions.
+In addition, all data flowing across the AWS global network that interconnects our data centers and Regions is automatically encrypted at the physical layer before it leaves our secured facilities. Additional encryption layers exist as well; for example, all VPC cross-region peering traffic, and customer or service-to-service Transport Layer Security (TLS) connections.
 Q: How does an AWS Site-to-Site VPN connection work with Amazon VPC?
 An AWS Site-to-Site VPN connection connects your VPC to your datacenter. Amazon supports Internet Protocol Security (IPSec) VPN connections. Data transferred between your VPC and datacenter routes over an encrypted VPN connection to help maintain the confidentiality and integrity of data in transit. An internet gateway is not required to establish an AWS Site-to-Site VPN connection.
 IP Addressing
@@ -122,6 +121,14 @@ Q: Can Amazon EC2 instances within a VPC communicate with Amazon S3?
 Yes. There are multiple options for your resources within a VPC to communicate with Amazon S3. You can use VPC Endpoint for S3, which makes sure all traffic remains within Amazon's network and enables you to apply additional access policies to your Amazon S3 traffic. You can use an Internet gateway to enable Internet access from your VPC and instances in the VPC can communicate with Amazon S3. You can also make all traffic to Amazon S3 traverse the Direct Connect or VPN connection, egress from your datacenter, and then re-enter the public AWS network.
 Q: Can I monitor the network traffic in my VPC?
 Yes. You can use Amazon VPC traffic mirroring and Amazon VPC flow logs features to monitor the network traffic in your Amazon VPC.
+Q: What is Amazon VPC flow logs?
+VPC flow logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your VPC. Flow logs data can be published to either Amazon CloudWatch Logs or Amazon S3. You can monitor your VPC flow logs to gain operational visibility about your network dependencies and traffic patterns, detect anomalies and prevent data leakage, or troubleshoot network connectivity and configuration issues. The enriched metadata in flow logs help you gain additional insights about who initiated your TCP connections, and the actual packet-level source and destination for traffic flowing through intermediate layers such as the NAT Gateway. You can also archive your flow logs to meet compliance requirements. To learn more about Amazon VPC flow logs, please refer to the documentation.
+Q: How can I use VPC flow logs?
+You can create a flow log for a VPC, a subnet, or a network interface. If you create a flow log for a subnet or VPC, each network interface in that subnet or VPC is monitored. While creating a flow log subscription, you can choose the metadata fields you wish to capture, the maximum aggregation interval, and your preferred log destination. You can also choose to capture all traffic or only accepted or rejected traffic. You can use tools like CloudWatch Log Insights or CloudWatch Contributor Insights to analyze your VPC flow logs delivered to CloudWatch Logs. You can use tools like Amazon Athena or AWS QuickSight to query and visualize your VPC flow logs delivered to Amazon S3. You can also build a custom downstream application to analyze your logs or use partner solutions such as Splunk, Datadog, Sumo Logic, Cisco StealthWatch, Checkpoint CloudGuard, New Relic etc.
+Q: Does using Flow Logs impact my network latency or performance?
+Flow log data is collected outside of the path of your network traffic, and therefore does not affect network throughput or latency. You can create or delete flow logs without any risk of impact to network performance.
+Q: How much VPC flow logs cost?
+Data ingestion and archival charges for vended logs apply when you publish flow logs to CloudWatch Logs or to Amazon S3. For more information and examples, see Amazon CloudWatch Pricing. You can also track charges from publishing flow logs using cost allocation tags.
 VPC Traffic Mirroring
 Q: What is Amazon VPC traffic mirroring?
 Amazon VPC traffic mirroring makes it easy for customers to replicate network traffic to and from an Amazon EC2 instance and forward it to out-of-band security and monitoring appliances for use-cases such as content inspection, threat monitoring, and troubleshooting. These appliances can be deployed on an individual EC2 instance or a fleet of instances behind a Network Load Balancer (NLB) with User Datagram Protocol (UDP) listener.
@@ -301,7 +308,7 @@ Your BYOIP prefix will show as an IP pool in your account. You can create Elasti
 Q: What happens if I release a BYOIP Elastic IP?
 When you release a BYOIP Elastic IP it goes back to the BYOIP IP pool from which it was allocated.
 Q: In which AWS Regions is BYOIP available?
-The feature is currently available in the US-East (N.Virginia), US-East (Ohio), US-West (Oregon), EU (Dublin), EU (London), EU (Frankfurt), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Singapore) and South America (Sao Paulo) AWS Regions.
+The feature is currently available in the US-East (N.Virginia), US-East (Ohio), US West (N. California), US-West (Oregon), EU (Dublin), EU (London), EU (Frankfurt), Canada (Central), Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Singapore), South America (Sao Paulo), GovCloud (US-East), and GovCloud (US-West) AWS Regions.
 Q: Can a BYOIP prefix be shared with multiple VPCs in the same account?
 Yes. You can use the BYOIP prefix with any number of VPCs in the same account.
 Q: How many IP ranges can I bring via BYOIP?

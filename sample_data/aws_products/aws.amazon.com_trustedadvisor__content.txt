@@ -1,9 +1,10 @@
 AWS Trusted Advisor
-Reduce costs, increase performance, and improve security
+Reduce costs, improve performance, improve security
 Try Trusted Advisor
 Select a support plan
-AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices. Trusted Advisor checks help optimize your AWS infrastructure, increase security and performance, reduce your overall costs, and monitor service limits. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor on a regular basis to help keep your solutions provisioned optimally.
-AWS Basic Support and AWS Developer Support customers get access to 6 security checks (S3 Bucket Permissions, Security Groups - Specific Ports Unrestricted, IAM Use, MFA on Root Account, EBS Public Snapshots, RDS Public Snapshots) and 50 service limit checks. AWS Business Support and AWS Enterprise Support customers get access to all 115 Trusted Advisor checks (14 cost optimization, 17 security, 24 fault tolerance, 10 performance, and 50 service limits) and recommendations. For a complete list of checks and descriptions, explore Trusted Advisor Best Practices.
+AWS Trusted Advisor is a fully managed service that provides you guidance to follow AWS best practices. Trusted Advisor helps optimize your AWS infrastructure, improve security and performance, reduce the overall costs, and monitor service limits. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor regularly to help keep your solutions provisioned optimally.
+AWS Basic Support and AWS Developer Support customers get access to core security checks and service limit checks. AWS Business Support and AWS Enterprise Support customers get access to all Trusted Advisor checks and recommendations, including cost optimization, security, fault tolerance, performance, and service limits. For a complete list of checks and descriptions, explore Trusted Advisor Best Practices.
+How to start using AWS Trusted Advisor (11:45)
 Benefits
 AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories.
 Cost optimization

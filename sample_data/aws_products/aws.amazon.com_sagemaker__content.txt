@@ -75,7 +75,7 @@ reduction in data labeling costs
 new capabilities added since launch
 22
 compliance programs (PCI, HIPAA, SOC 1/2/3, FedRAMP, ISO, and more)
-Amazon SageMaker supports the leading machine learning frameworks
+Amazon SageMaker supports the leading machine learning frameworks and toolkits
 Key features to prepare data, and build, train, and deploy ML models
 Improve productivity using the first fully integrated development environment (IDE) for ML
 Amazon SageMaker Studio provides a single, web-based visual interface where you can perform all ML development steps required to prepare data, and build, train, and deploy models.
@@ -116,5 +116,3 @@ Computer vision
 Autonomous driving
 Lyft Level 5 standardized on SageMaker for training and reduced model training times from days to under a couple of hours.
 Get started with Amazon SageMaker
-Resources for Amazon SageMaker
-Get started with Amazon SageMaker in minutes (29:18)

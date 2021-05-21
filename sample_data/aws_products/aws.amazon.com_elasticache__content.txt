@@ -40,10 +40,8 @@ Learn more
 In-home fitness company Peloton relies on Amazon ElastiCache for Redis to power its on-demand, live leaderboard. Peloton’s leaderboard requires high elasticity, low latency, and real-time processing to deliver customizable rider data for the community of users riding together virtually from the comfort of their home.
 "Managed services like ElastiCache let us focus on the core of our business. Our operations team consists of only two full time engineers. Running a site like Airbnb with such a small team would be impossible without services like ElastiCache. Spinning up and maintaining nodes in our cluster is fast and easy."
 Tobi Knaup, Technical Lead – Airbnb
-Watch Airbnb's journey from self-managed Redis to ElastiCache for Redis
-"ElastiCache for Redis online resharding will allow us to easily scale our Redis clusters horizontally as we grow, greatly simplifying the management of our many Redis clusters, empowering us to scale quickly while also reducing cost across our caching layers, and continue to grow with minimal changes to our current services”.
-Max Blaze, Staff Operations Engineer - Duolingo
-MLBAM uses Amazon ElastiCache to temporarily store game information in memory caches instead of on hard drives, which enables fast retrieval of the data for analysis tasks.
+AWS purpose-built databases deliver the agility and elasticity A+E Networks needed to modernize while drastically reducing database overhead costs. Learn how A+E uses Amazon ElastiCache in its serverless database strategy.
+Tinder migrated to Amazon ElastiCache for Redis to improve the scalability and stability of its dating app that powers more than 30 billion matches. With this fully managed service, Tinder's team can focus more on innovation and less on monitoring and automating its caching strategy.
 Sign up
 Get access to the
 Amazon ElastiCache Free Tier.

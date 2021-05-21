@@ -42,28 +42,36 @@ Fully managed infrastructure
 AWS Outposts is fully managed and supported by AWS. Your Outpost is delivered, installed, monitored, patched, and updated by AWS. With Outposts you can reduce the time, resources, operational risk, and maintenance downtime required for managing IT infrastructure.
 How it works
 Customer reference
-"With Outposts, I can develop applications, deploy them on the same infrastructure on-premises, and managed with the same tools, providing the same view end-to-end to both our care providers and IT administrators, with over 70,000 servers and distributed across 1,200 locations.”
-Rich Ridolfo, Sr. Director, Operations
-Philips: AWS Outposts Customer Testimonial (1:33)
+DISH Network Corporation is a connectivity company. Since 1980, it has served as a disruptive force, driving innovation and value on behalf of consumers.
+“As a new carrier, leveraging AWS and its extensive network of partners enables us to differentiate ourselves by operating our 5G network with a high degree of automation, utilizing the talent of AWS-trained developers and helping our customers bring new 5G applications to market faster than ever before.”
+Charlie Ergen, DISH co-founder and chairman
+Reinventing Cloud Native 5G Networks with AWS and DISH (3:25)
+DXC Technology, the number one provider of core insurance systems, helps insurers build a digital future while transforming their legacy businesses.
+“At DXC, we pride ourselves in delivering innovative insurance solutions. We tested DXC’s Assure Digital Platform on AWS Outposts and are pleased with the consistent performance results for managed on-premises workloads. DXC is excited to bring a truly consistent hybrid cloud experience on-premises with AWS Outposts for our customers who need to meet stringent data residency requirements and a more flexible cloud journey."
+Brian Bacsu, Digital Insurance Platform Engineering and Operations, DXC Technology
+First Abu Dhabi Bank is the largest bank in UAE offering corporate, investment, and personal banking services.
+"First Abu Dhabi Bank (FAB) is the UAE’s largest bank and one of the world’s largest and safest financial institutions, offering corporate, investment, and personal banking services. It was important to us to deliver digital banking services, including e-wallet and mobile payments, to our customers, whilst keeping customer data secure and resident in the UAE. Multiple AWS Outposts in the UAE allow us to provide business continuity whilst leveraging the same API’s and services running locally as in the AWS Region, to accelerate the pace of our innovation.”
+Yuri Misnik, Group Chief Technology Officer, FAB
 Morningstar is a leading provider of independent investment research around the globe.
 “Our independent data, research, and solutions empower investor success by delivering insights and experiences that are essential to investing. As we continue to modernize our data collection and software, we want to create a containerized hybrid infrastructure and easily deploy using AWS services. With AWS Outposts, we can build once and run applications on-premises and easily migrate our applications to an AWS Region where possible. Ultimately, this allows us to accelerate the adoption of cloud technologies within our development teams, keep up with accelerating business and customer needs, and support our long-term journey to the cloud.”
 James Rhodes, Chief Technology Officer, Morningstar
 Morningstar: AWS Outposts Customer Testimonial (2:28)
-First Abu Dhabi Bank is the largest bank in UAE offering corporate, investment, and personal banking services.
-"First Abu Dhabi Bank (FAB) is the UAE’s largest bank and one of the world’s largest and safest financial institutions, offering corporate, investment, and personal banking services. It was important to us to deliver digital banking services, including e-wallet and mobile payments, to our customers, whilst keeping customer data secure and resident in the UAE. Multiple AWS Outposts in the UAE allow us to provide business continuity whilst leveraging the same API’s and services running locally as in the AWS Region, to accelerate the pace of our innovation.”
-Yuri Misnik, Group Chief Technology Officer, FAB
-Tipico, a leading gaming operator offers safe, secure digital and mobile betting entertainment.
-"Tipico is one of the biggest sports betting and online gaming platforms in the German-speaking market and in Europe. Running our complete workload in Europe on AWS since 2018, we expanded to the US market and opened our first hub in New Jersey in 2019. To comply with US regulations and as established by the New Jersey Division of Gaming Enforcement, we migrated our services to AWS Outposts. Outposts lets us ensure compliance with the residency standards, while leveraging the same expertise, common code, and APIs that we had created in the public AWS cloud. This lets us accelerate introduction of new feature offerings, be more nimble, and adapt quickly to market changes."
-Thorsten Hanf, Head of Enterprise Operations, Tipico
-DXC Technology, the number one provider of core insurance systems, helps insurers build a digital future while transforming their legacy businesses.
-“At DXC, we pride ourselves in delivering innovative insurance solutions. We tested DXC’s Assure Digital Platform on AWS Outposts and are pleased with the consistent performance results for managed on-premises workloads. DXC is excited to bring a truly consistent hybrid cloud experience on-premises with AWS Outposts for our customers who need to meet stringent data residency requirements and a more flexible cloud journey."
-Brian Bacsu, Digital Insurance Platform Engineering and Operations, DXC Technology
 NOS is the biggest communications and entertainment group in Portugal.
 “This relationship reflects NOS’ commitment to offer the most innovative and advanced services to the Portuguese business community. No one has any doubt that cloud computing is one of the main drivers of the digital transformation of companies. This is the start of a range of initiatives with AWS that will allow NOS to develop and consolidate its positioning as a benchmark supplier of Cloud and Edge Computing solutions to the B2B market.”
 Manuel Ramalho Eanes, Board Director of NOS
+Riot Games was founded in 2006 to develop, publish, and support the most player-focused games in the world.
+“Using AWS Outposts, we were able to reduce Valorant latency by 5-10 ms for players in strategic regions during the COVID-19 epidemic. Rapidly lowering latency for hard to reach areas without the need to deploy and manage hardware was a huge win."
+Zach Blitz, Head of Infrastructure, Riot Games
+Riot Games: AWS Outposts Customer Testimonial (1:43)
+"With Outposts, I can develop applications, deploy them on the same infrastructure on-premises, and managed with the same tools, providing the same view end-to-end to both our care providers and IT administrators, with over 70,000 servers and distributed across 1,200 locations.”
+Rich Ridolfo, Sr. Director, Operations
+Philips: AWS Outposts Customer Testimonial (1:33)
+Tipico, a leading gaming operator offers safe, secure digital and mobile betting entertainment.
+"Tipico is one of the biggest sports betting and online gaming platforms in the German-speaking market and in Europe. Running our complete workload in Europe on AWS since 2018, we expanded to the US market and opened our first hub in New Jersey in 2019. To comply with US regulations and as established by the New Jersey Division of Gaming Enforcement, we migrated our services to AWS Outposts. Outposts lets us ensure compliance with the residency standards, while leveraging the same expertise, common code, and APIs that we had created in the public AWS cloud. This lets us accelerate introduction of new feature offerings, be more nimble, and adapt quickly to market changes."
+Thorsten Hanf, Head of Enterprise Operations, Tipico
+Read case study
 "WWT is a technology solutions provider serving the needs of enterprise, public sector, and global service providers , including many of the world's best-known brands. Many of our customers require hybrid cloud as part of their overall cloud strategy. AWS Outposts allows us to build solutions for these customers as it addresses their specific use case requirements around data residency, application latency, local processing, and application modernization. Utilizing our highly adaptable Advanced Technology Center (ATC), customers can quickly test different solution architectures using AWS Outposts, to validate their designs before implementing in production."
 Walton Smith, Director, WWT
-Read case study
 Contact us
 Learn more about AWS Outposts by contacting us directly
 Sign up for a free account

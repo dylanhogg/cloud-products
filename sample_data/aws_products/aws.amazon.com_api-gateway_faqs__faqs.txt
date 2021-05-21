@@ -130,7 +130,7 @@ Throttling ensures that API traffic is controlled to help your backend services 
 Q: At which levels can Amazon API Gateway throttle inbound API traffic?
 Throttling rate limits can be set at the method level. You can edit the throttling limits in your method settings through the Amazon API Gateway APIs or in the Amazon API Gateway console.
 Q: How are throttling rules applied?
-First, API Gateway checks against your AWS account limit. If the traffic is below the set account limit, API Gateway checks the limit you have set on a stage or method. If the traffic is below the stage limit, then API Gateway applies the usage plans limits you set on a per-API key basis.
+API Gateway throttling related settings are applied in the following order: 1) per-client per-method throttling limits that you set for an API stage in a usage plan, 2) per-client throttling limits that you set in a usage plan, 3) default per-method limits and individual per-method limits that you set in API stage settings, 4) account-level throttling per region.
 Q: Does Amazon API Gateway provide API result caching?
 Yes. You can add caching to API calls by provisioning an API Gateway cache and specifying its size in gigabytes. The cache is provisioned for a specific stage of your APIs. This improves performance and reduces the traffic sent to your back end. Cache settings allow you to control the way the cache key is built and the time-to-live (TTL) of the data stored for each method. API Gateway also exposes management APIs that help you invalidate the cache for each stage. Caching is available for REST APIs in API Gateway.
 Q: What happens if a large number of end users try to invoke my API simultaneously?

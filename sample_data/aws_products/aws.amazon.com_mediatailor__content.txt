@@ -1,31 +1,45 @@
 AWS Elemental MediaTailor
-Easily personalize and monetize video content with server-side ad insertion
+Linear channel assembly and personalized ad-insertion
 Get started with AWS Elemental MediaTailor
 Live Chat
-AWS Elemental MediaTailor lets video providers insert individually targeted advertising into their video streams without sacrificing broadcast-level quality-of-service. With AWS Elemental MediaTailor, viewers of your live or on-demand video each receive a stream that combines your content with ads personalized to them. But unlike other personalized ad solutions, with AWS Elemental MediaTailor your entire stream – video and ads – is delivered with broadcast-grade video quality to improve the experience for your viewers. AWS Elemental MediaTailor delivers automated reporting based on both client and server-side ad delivery metrics, making it easy to accurately measure ad impressions and viewer behavior. You can easily monetize unexpected high-demand viewing events with no up-front costs using AWS Elemental MediaTailor. It also improves ad delivery rates, helping you make more money from every video, and it works with a wider variety of content delivery networks, ad decision servers, and client devices.
+AWS Elemental MediaTailor is a channel assembly and personalized ad insertion service for video providers to create linear OTT (internet delivered) channels using existing video content and monetize those channels, or other live streams and VOD content, with personalized advertising. With MediaTailor, virtual linear channels are created without the expense, complexity, and management of real-time live encoding, and live streams maintain a TV-like experience across multiscreen video applications. Advertisements are seamlessly stitched into the content and can be tailored to individual viewers, maximizing monetization opportunities for every ad break and mitigating ad blocking. The service works with any content delivery network to provide dependable, scalable channel assembly and ad personalization.
 AWS Elemental MediaTailor Explained
 Close
 Watch Now: AWS Elemental MediaTailor Explained (45 sec)
-How it works
 Benefits
-Easily deliver targeted ads to any platform
-AWS Elemental MediaTailor makes it easy to personalize ads for users across different devices from a single ad monetization service. Targeting criteria can be set up to fetch personalized ad content from the ad decision server which makes the determination about which ads to send based on viewer, time, and content. Support for popular ad insertion protocols gives you the flexibility to serve individual ads or groups of ads based on your specific business needs.
-Improve viewing experiences
-Inserting advertising into content streams as viewers play them allows you to match the quality and format of your advertising to your video content stream. Unlike other approaches to ad insertion that can cause ads to play with variable quality, AWS Elemental MediaTailor ensures the video quality of both your ads and of your core content are the same. This gives your viewers an experience that is superior to other streaming video ad solutions.
-Increase the accuracy of ad view reporting
-AWS Elemental MediaTailor lets you increase the accuracy of ad tracking by capturing data directly from the viewing device, reducing the effects of ad blocking software and adhering to established advertising industry standards. Other approaches often fail to accurately capture viewing behavior due to ad blocking software, lack of support for certain devices, or dependence on inadequate third-party tools for tracking. With AWS Elemental MediaTailor, ad impressions and viewing behavior are accurately measured across web, iOS, Android, and other connected viewing devices, helping you more effectively measure the revenue impact of every ad delivered.
+Efficient linear channel creation and distribution
+Create live streams with low running cost by using existing encoded content. Provide viewers with better quality video using advanced codecs for higher quality with less bits to reduce distribution costs.
+Engage audiences with relevant content
+Increase engagement with your audiences by delivering content and ads that are relevant with personalized ad insertions. Serve individual ads or groups of ads based on your specific business needs.
+Seamless experience across different devices
+Give viewers a seamless, TV-like viewing experience without buffering between program content and ad breaks. Deliver consistent quality playback for your viewers with ad content transcoded to match the program content, so the quality and resolution of your streams remain smooth and predictable.
+Increase effectiveness of monetization
+Get a faster and better return on investment (ROI) with assembled live channels that have a low running cost, and personalized ads that provide a higher return for each ad impression. Your viewers are also more likely to watch ads to the end if they are relevant to their interests.
+Accurate ad view reporting
+Get accurate reporting from player and/or server side logs to capture ad view metrics without losing revenue from missing data or lost impressions. All content for streams, including ad content is delivered from one location, which reduces the effectiveness of ad-blockers.
+Flexible standards-based solution
+Build exactly what you need using standards-based live streams and personalized ad-insertions that works with any content delivery networks (CDN) and a range of protocols and players.
+How it works
+Channel Assembly with ad insertion
+Personalized ad insertion
 Customer stories
 Seven Media West
 Amazon Video
-“Working with an agile partner like AWS Elemental that moves as fast as we do and comes up with new technologies and experiments all the time, allows us not only to survive but to lead the market.”
-Darren Kerry, Director Digital Technology and OTT, Seven West Media
+Arc Publishing
+"Channel Assembly is a landmark development in content delivery in that it allows anyone with a VOD library to get a live channel up and running near-instantly in a cost efficient way, and we’re excited to start using it to start deploying it via MediaTailor alongside our other AWS Media Services,”
+Scott Favelle, Technology Director, Seven West Media
 About Seven Media West
 Seven West Media is one of Australia’s leading integrated media companies, with a presence in broadcast television, magazine and newspaper publishing, and online.
 Customer Snapshot: Seven Media West
-“We used the AWS Elemental MediaTailor service, which allows us to deliver targeted ads that are seamlessly inserted into the main content, for a great viewer experience. I am confident that AWS Elemental Media Services are the path to use the cloud for live streaming at scale.”
-BA Winston, Global Head of Video Playback and Delivery for Amazon Video
+“We used the AWS Elemental MediaTailor service, which allows us to deliver targeted ads that are seamlessly inserted into the main content, for a great viewer experience. I am confident that AWS Media Services are the path to use the cloud for live streaming at scale.”
+BA Winston, Global Head of Video Playback and Delivery, Amazon Video
 About Amazon Video
-Amazon Prime Video is streaming 11 NFL games this season—including 10 Thursday Night Football match-ups and a special Christmas Day game—to tens of millions of customers in more than 200 countries and territories.
+Amazon Prime Video is streaming 11 NFL games in the 2020 season—including 10 Thursday Night Football match-ups and a special Christmas Day game—to tens of millions of customers in more than 200 countries and territories.
+“Modern audiences demand greater autonomy over the type of content they watch and when they watch it, and Channel Assembly is helping us rise to the occasion. When we decided to introduce our new Virtual Channels capability into Arc’s video Content Management System (CMS), we knew partnering with AWS’ Media Services was the best way to get to market quickly.
+Channel Assembly will allow us to deliver a unique feature set for composing video-on-demand and live video content into novel live steams and events with individual viewer personalization capabilities and distribute across platforms. Channel Assembly handles the heavy lifting of generating conformant HLS and DASH playlists that work well across these platforms, while our team stays focused on building the tools that make it easy for video producers to create new virtual channels in minutes.”
+Matthew Monahan, Arc Publishing’s VP of Product.
+About Arc Publishing
+Arc Publishing is a software-as-a-service (SaaS) platform that enables any media company to take advantage of the scalable, flexible publishing platform The Washington Post built for its own newsroom.
 Get started with AWS Elemental MediaTailor in the console
 Set up and log into your AWS account
 Launch the AWS Elemental MediaTailor console

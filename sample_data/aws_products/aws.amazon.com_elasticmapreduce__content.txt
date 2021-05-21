@@ -7,7 +7,7 @@ Discover how Apache Hudi simplifies pipelines for change data capture (CDC) and 
 An introduction to Amazon EMR (3:00)
 Benefits
 Easy to use
-Analysts, data engineers, and data scientists can use EMR Notebooks to collaborate and interactively explore, process, and visualize data. Simply specify the version of EMR applications and type of compute you want to use. EMR takes care of provisioning, configuring, and tuning clusters so that you can focus on running analytics.
+You can use EMR Studio, an integrated development environment (IDE), to easily develop, visualize, and debug data engineering and data science applications written in R, Python, Scala, and PySpark. EMR Studio uses AWS Single Sign-On and allows you to log in directly with your corporate credentials. It provides fully managed Jupyter Notebooks and collaboration with peers using code repositories such as GitHub and BitBucket.
 Low cost
 EMR pricing is simple and predictable: You pay a per-instance rate for every second used, with a one-minute minimum charge. You can launch a 10-node EMR cluster for as little as $0.15 per hour. You can save 50-80% on the cost of the instances by selecting Amazon EC2 Spot for transient workloads and Reserved Instances for long-running workloads. You can also use Savings Plans.
 Elastic
@@ -23,7 +23,7 @@ Amazon EMR on Amazon EC2
 You can deploy EMR on Amazon EC2 and take advantage of On-Demand, Reserved, and Spot Instances. EMR manages provisioning, management, and scaling of the EC2 instances. AWS offers more instance options than any other cloud provider, allowing you to choose the instance that gives you the best performance or cost for your workload.
 Learn more
 Amazon EMR on Amazon EKS
-You can run big data jobs on demand on Amazon Elastic Kubernetes Service (EKS), without needing to provision EMR clusters, to improve resource utilization and simplify infrastructure management. Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. With Amazon EMR on EKS, you can share compute and memory resources across all of your applications and use a single set of Kubernetes tools to centrally monitor and manage your infrastructure.
+You can use EMR to run Apache Spark jobs on demand on Amazon Elastic Kubernetes Service (EKS), without needing to provision EMR clusters, to improve resource utilization and simplify infrastructure management. Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. With Amazon EMR on EKS, you can share compute and memory resources across all of your applications and use a single set of Kubernetes tools to centrally monitor and manage your infrastructure.
 Amazon EMR on AWS Outposts
 Amazon EMR is available on AWS Outposts, allowing you to set up, deploy, manage, and scale EMR in your on-premises environments, just as you would in the cloud. AWS Outposts brings AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
 Use cases

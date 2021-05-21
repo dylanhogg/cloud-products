@@ -236,13 +236,13 @@ Getting started
 Q: When should I use Gateway Load Balancer, as opposed to Network Load Balancer or Application Load Balancer?
 You should use Gateway Load Balancer when deploying inline virtual appliances where network traffic is not destined for the Gateway Load Balancer itself. Gateway Load Balancer transparently passes all Layer 3 traffic through third-party virtual appliances, and is invisible to the source and destination of the traffic. For more details on how these load balancers compare, see the features comparison page.
 Q: Where is Gateway Load Balancer available?
-Gateway Load Balancer is available in the us-east-1 (N. Virginia, except in zone us1-az3), us-west-2 (Oregon), eu-west-1 (Ireland), ap-southeast-2 (Sydney), and sa-east-1 (Sao Paulo) Regions.
+Gateway Load Balancer is available in the following regions: US East (N. Virginia) - except in zone us1-az3, US East (Ohio), US West (Oregon), US West (N. California), Canada (Central), South America (Sao Paulo), EU (Ireland), EU (Frankfurt), EU (Stockholm), EU (London), EU (Paris), EU (Milan), Africa (Cape Town), Middle East (Bahrain), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Hong Kong), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Osaka), China (Beijing), China (Ningxia).
 Q: Is Gateway Load Balancer deployed per Region or per Availability Zone?
 Gateway Load Balancer runs within one Availability Zone.
 Q: Does Gateway Load Balancer perform TLS termination?
 Gateway Load Balancer does not perform TLS termination and does not maintain any application state. These functions are performed by the third-party virtual appliances it directs traffic to, and receives traffic from.
 Q: Does Gateway Load Balancer maintain application state?
-Gateway Load Balancer does not maintain application state, but it maintains stickiness of flows to a specific appliance using 5-tuple or 3-tuple.
+Gateway Load Balancer does not maintain application state, but it maintains stickiness of flows to a specific appliance using 5-tuple (for TCP/UDP flows) or 3-tuple (for non-TCP/UDP flows).
 Q: How does Gateway Load Balancer handle the failure of one virtual appliance instance in a single Availability Zone?
 When a single virtual appliance instance fails, Gateway Load Balancer removes it from the routing list and reroutes traffic to a healthy appliance instance.
 Q: How does Gateway Load Balancer handle the failure of all virtual appliances within a single Availability Zone?

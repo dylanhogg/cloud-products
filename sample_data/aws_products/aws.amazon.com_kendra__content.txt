@@ -3,7 +3,9 @@ Highly accurate intelligent search service powered by machine learning.
 Get started with Amazon Kendra for Free
 Amazon Kendra is an intelligent search service powered by machine learning. Kendra reimagines enterprise search for your websites and applications so your employees and customers can easily find the content they are looking for, even when it’s scattered across multiple locations and content repositories within your organization.
 Using Amazon Kendra, you can stop searching through troves of unstructured data and discover the right answers to your questions, when you need them. Amazon Kendra is a fully managed service, so there are no servers to provision, and no machine learning models to build, train, or deploy.
-What is Amazon Kendra? (1:26)
+750 hours free
+for 30 days with the AWS Free Tier
+Get started for free
 Get better answers upfront using natural language
 Use natural language questions in addition to just simple keywords to get the answers you’re looking for. Kendra will return an exact answer from within a document, whether that is a text snippet, FAQ, or PDF document. Instead of sifting through long lists of documents to find specific answers, Kendra also provides suggested answers upfront. See the difference between the search experience before and after Kendra.
 Benefits
@@ -18,7 +20,7 @@ Deploy with just a few clicks
 Setup is quick, giving you faster access to Kendra’s intelligent search capabilities compared to setup times associated with conventional search solutions. With just a few clicks, you can easily configure an index, connect relevant data sources, and begin using Amazon Kendra to search for answers across your organization.
 Use cases
 Improve customer interactions
-Whether it’s through QnA chatbots, agent-assist, or customer web serach, Amazon Kendra better understands what your customers are asking to provide more relevant answers and better experiences.
+Whether it’s through Q&A chatbots, agent-assist, or customer web search, Amazon Kendra better understands what your customers are asking to provide more relevant answers and intuitive experiences.
 Accelerate research and development
 Scientists and developers leading new research and innovation need access to information from prior work that’s buried within their corporate data stores. With faster, more accurate search, these groups waste less time searching and more time innovating.
 Minimize regulatory and compliance risks

@@ -12,6 +12,11 @@ AWS Network Firewall has a highly flexible rules engine that supports thousands 
 Consistent policy management across VPCs and accounts
 AWS Network Firewall works with AWS Firewall Manager so you can centrally manage security policies across existing accounts and VPCs. With AWS Firewall Manager, you can also ensure mandatory security policies are automatically enforced on newly created accounts and VPCs. AWS Network Firewall provides real-time firewall activity monitoring through Amazon CloudWatch metrics.
 How it works
+What's new
+date
+1
+...
+Please see the AWS What's New page for recent launches.
 Technical use cases
 Inspect VPC to VPC traffic
 AWS Network Firewall inspects and helps control VPC-to-VPC traffic to logically separate networks hosting sensitive applications or line-of-business workloads. With stateful visibility at the network and application layers, AWS Network Firewall can provide fine-grained network security controls for interconnected VPCs using AWS Transit Gateway.

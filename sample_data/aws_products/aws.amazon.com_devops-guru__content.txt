@@ -1,43 +1,43 @@
 Amazon DevOps Guru
 ML-powered cloud operations service to improve application availability
-Get started with the preview of Amazon DevOps Guru
+Get started with Amazon DevOps Guru
 Amazon DevOps Guru is a Machine Learning (ML) powered service that makes it easy to improve an application’s operational performance and availability. DevOps Guru detects behaviors that deviate from normal operating patterns so you can identify operational issues long before they impact your customers.
 DevOps Guru uses machine learning models informed by years of Amazon.com and AWS operational excellence to identify anomalous application behavior (e.g. increased latency, error rates, resource constraints, etc.) and surface critical issues that could cause potential outages or service disruptions. When DevOps Guru identifies a critical issue, it automatically sends an alert and provides a summary of related anomalies, the likely root cause, and context about when and where the issue occurred. When possible DevOps Guru, also provides recommendations on how to remediate the issue.
-DevOps Guru automatically ingests operational data from your AWS applications and provides a single dashboard to visualize issues in your operational data. You can get started with DevOps Guru to improve application availability and reliability with no manual setup or machine learning expertise.
-Amazon DevOps Guru Dashboard
-Click to enlarge
-Close
+DevOps Guru automatically ingests operational data from your AWS applications and provides a single dashboard to visualize issues in your operational data. You can get started with DevOps Guru by selecting coverage from your CloudFormation stacks or your AWS account to improve application availability and reliability with no manual setup or machine learning expertise.
+What is Amazon DevOps Guru?
 Benefits
 Automatically detect operational issues
-Using machine learning, Amazon DevOps Guru automatically collects and analyzes data such as application metrics, logs, and events and identifying behaviors that deviate from normal operating patterns. It automatically detects and alerts on operational issues and risks, such as impending resource exhaustion, code and configuration changes that may cause outages, memory leaks, under-provisioned compute capacity, and database I/O overutilization.
+Using machine learning, Amazon DevOps Guru automatically collects and analyzes data such as application metrics, logs, and events and behaviors that deviate from normal operating patterns. It automatically detects and alerts on operational issues and risks, such as impending resource exhaustion, code and configuration changes that may cause outages, memory leaks, under-provisioned compute capacity, and database I/O overutilization.
 Resolve issues quickly with ML-powered insights
-Amazon DevOps Guru helps reduce the time to identify and resolve the root cause of issues by by correlating anomalous behavior and operational events. When an issue occurs, DevOps Guru generates insights with a summary of related anomalies, contextual information about the issue and, when possible, it provides actionable recommendations for remediation.
+Amazon DevOps Guru helps reduce the time to identify and resolve the root cause of issues by correlating anomalous behavior and operational events. When an issue occurs, DevOps Guru generates insights with a summary of related anomalies, contextual information about the issue and, when possible, it provides actionable recommendations for remediation.
 Easily scale and maintain availability
 Amazon DevOps Guru saves you the time and effort involved in manually updating static rules and alarms so you can effectively monitor complex and evolving applications. When you migrate or adopt new AWS services, DevOps Guru automatically analyzes their metrics, logs, and events. Then it produces insights, helping you easily adapt to changing behavior and evolving system architecture.
 Reduce noise and alarm fatigue
 AmazonDevOps Guru helps Developers and IT operators reduce alarm noise and overcome alarm fatigue by using pre-trained machine learning models to correlate and group related anomalies and surface the most critical alerts. With DevOps Guru, you can reduce the need to manage multiple monitoring tools and alarms, which means you can focus on the root cause of the issue and remediation.
 How it works
-Amazon DevOps Guru Preview
+Gain Operational Insights with Amazon DevOps Guru
 Get started today
 Use cases
-Operational audits
-You can use Amazon DevOps Guru to get a quick summary of all the operationally significant events that have been, identified, sorted by their severity. Using the System Health Dashboard you can search for issues in specific applications, identify trends, and decide where developers should spend their time and resources.
-Proactive resource exhaustion planning
-Build predictive alarming for exhaustible resources such as memory, CPU, and disk space. Amazon DevOps Guru forecasts when resource utilization will exceed the provisioned capacity, and informs you by creating a notification in the dashboard, helping you avoid an impending outage.
-Preventative maintenance
-With Amazon DevOps Guru you can prevent incidents before they occur. DevOps Guru flags medium and low-severity findings that might not be critical, but if left alone worsen over time and affect the availability of your application. This helps you prioritize, and avoid unforeseen downtime. For example, DevOps Guru notifies you about hitting the limits of your auto scaling groups, changes in latency patterns, or increased API call volume. DevOps Guru also identifies AWS best practices to help you increase the overall availability of your application.
+Improve operational performance and availability
+With Amazon DevOps Guru you can prevent operational incidents before they occur. DevOps Guru surfaces medium and low-severity findings that might not be critical, but if left alone affect the reliability of your application over time. For example, DevOps Guru notifies you about hitting the limits of your auto scaling groups, changes in latency patterns, or increased API call volume so that you can address issues before they become critical.
+Dynamically discover new resources and metrics
+As your application evolves and new supported resources are added, DevOps Guru learns patterns for each new metric and alerts you with early warnings of operational issues. You no longer have to update or fix misconfigured alarms as DevOps Guru ingests metrics from these resources and classifies them automatically.
+Reduce Mean-time-to- recovery (MTTR)
+You can diagnose and remediate issues quickly by leveraging DevOps Guru’s operational insights. These insights help you reduce downtime using relevant information on impacted resources, related anomalies, and provides recommendations on how to remediate them, using contextual data such as logs and relevant events.
+Proactive resource management
+With DevOps Guru you can identify when your exhaustible resources such as memory, CPU, and disk space will exceed the provisioned capacity. DevOps Guru continuously ingests and analyzes your resources and applications that run on AWS, and helps you avoid an impending outage by creating a low noise notification in the dashboard.
 Customers
-“We run thousands of EC2 instances and I am always looking for ways to reduce the time my team spends on resolving operational issues. We are excited to use Amazon DevOps Guru and leverage its ML-powered insights to help us identify, correlate and remediate operational issues. This will help my team save hours and reduce our mean time to recovery (MTTR).”
-- Valentino Volonghi CTO, NextRoll
-"My team follows an ops-for-life motto, and we are always on the lookout for ways to automate our manual activities. With Amazon DevOps Guru, we hope to realize that goal and let AIOps take over many of our day-to-day tasks, so my team can focus on IT innovation. We are now not only meeting the needs of the business but able to exceed them since we have more time to focus on what matters most – delivering value for our organization and our customers."
-- Andrew Shieh SmugMug’s Operations Director
-“Customer experience is vital to us. Dealing with multiple sources of alerts for availability, performance, and change requests can be a challenge when trying to prevent and mitigate incidents impacting our customers. We are excited to use Amazon DevOps Guru and leverage its ML-powered insights to provide clear paths for action. This allows us to mitigate issues quickly and avoid events that impact customers. The integration with PagerDuty is a bonus, as we can have recommendations delivered to the right people timely and efficiently.”
+“We are always looking for ways to reduce the amount of time our teams spend on resolving operational issues, and we are now using Amazon DevOps Guru and leveraging its ML-powered insights to help us identify, correlate, and remediate operational issues quickly. With the insights Amazon DevOps Guru provides, our teams can now quickly find issues without having to start from scratch trying to root cause problems. Our IT team has significantly reduced our mean time to recovery (MTTR), and they are saving hours upon hours of time resolving issues—all the while ensuring our customers have the best end-user experience possible.”
+- Anchal Gupta Senior Technical Lead, DevOps
+“Customer experience and satisfaction are our top priorities. When multiple sources of alerts and monitoring events are received, it can be challenging and time-consuming to filter through the noise to identify customer-impacting incidents. With Amazon DevOps Guru, we are able to leverage its ML-powered insights to provide clear paths for action to reduce—and in many cases eliminate—the impact issues have on our customers. The Amazon DevOps Guru integration with PagerDuty also provides a direct path to quickly and efficiently deliver recommendations to the right people at the right time, and we anticipate significantly reduced operational downtime as a result.”
 - Steve Thoennes  Director Infrastructure Hosting Portfolio
+“We have over a dozen AWS accounts and tens of thousands of resources to monitor. Even with Infrastructure as Code and creating dynamic alerts  for these services, it is difficult to manage and correlate metrics to quickly resolve issues. With Amazon DevOps Guru, we are confident that the alerts and notifications we receive  are accurate from the machine learning powered metrics correlated across multiple services. Integrating Amazon DevOps Guru only took minutes to implement,  and it was a breeze to integrate with our thousands of AWS CloudFormation stacks. Amazon DevOps Guru has provided insights that  help us focus our infrastructure roadmap.”
+- Jared Williams Director of DevOps
 Partners
-"Atlassian is proud to support Amazon on the launch of DevOps Guru and help empower teams to deploy code and operate services with confidence. With our new Opsgenie and Jira Service Management integration, the right teams can be immediately notified the instant DevOps Guru predicts a potential issue, or determines an incident has occurred. DevOps Guru provides a new dimension of insight, and Atlassian ensures the fastest response."
+"Atlassian is excited that our customers are implementing an AIOps strategy using Amazon DevOps Guru to manage the operational performance of their cloud applications. With our new Opsgenie and Jira Service Management integration, the right teams are notified the instant Amazon DevOps Guru discovers a potential issue and prioritizes it by the severity of the incident using machine learning (ML). This integration ensures that every team can quickly respond to, resolve using ML-powered recommendations, and learn from every incident.”
 - Emel Dogrusoz Head of Product, Opsgenie
 Read how you can deliver operational insights directly to your on-call team by integrating Amazon DevOps Guru with Atlassian Opsgenie
-"PagerDuty was built to drive the move to a DevOps culture by automating the entire incident response lifecycle with resolution. We’re excited to continue this commitment to DevOps with our latest integration with Amazon DevOps Guru. Leveraging Amazon’s decades of operational excellence and DevOps Guru’s machine learning capabilities, PagerDuty provides even more real-time signal-to-action capabilities to our joint customers. Through PagerDuty’s ingestion of DevOps Guru’s Amazon Simple Notification Service (SNS) notifications, AWS customers can take real-time action on operational issues before they become customer-impacting outages.”
+"PagerDuty is further deepening our partnership with AWS with a new integration with Amazon DevOps Guru. PagerDuty's digital operations management platform was built to drive a shift to DevOps culture and we are delighted to continue this commitment with this integration. Harnessing DevOps Guru's machine learning capabilities, PagerDuty provides even more real-time signal-to-action capabilities to our joint customers. Through PagerDuty’s ingestion of Amazon DevOps Guru's Amazon SNS, AWS customers can take real-time action on operational issues before they become customer-impacting outages.”
 - Jonathan Rende  SVP of Product
 Learn more about delivering ML-powered operational insights to your on-call teams via PagerDuty and Amazon DevOps Guru
 Blog posts & articles
@@ -55,8 +55,9 @@ February 2020
 Caner Turkmen, Ravi Turlapati & Tim Januschowski
 Read Blog
 Automate code reviews Catch code problems faster and earlier with Amazon CodeGuru
+Explore now
 Check out the product features
-Easily build sophisticated personalization capabilities into your applications
+Easily improve your application’s operational performance and availability
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

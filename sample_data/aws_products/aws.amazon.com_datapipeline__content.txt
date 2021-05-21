@@ -26,7 +26,3 @@ Transparent
 You have full control over the computational resources that execute your business logic, making it easy to enhance or debug your logic. Additionally, full execution logs are automatically delivered to Amazon S3, giving you a persistent, detailed record of what has happened in your pipeline.
 Start Using AWS Data Pipeline
 Get Started
-GET STARTED WITH AWS
-Learn how to start using AWS in minutes
-AWS FREE TIER
-Gain free, hands-on experience with AWS for 12 months

@@ -23,7 +23,7 @@ On-device text-to-speech solutions require significant computing resources, nota
 Q: How do I get started with Amazon Polly?
 Simply login to your AWS account and navigate to the Amazon Polly console (which is a part of the AWS Console). You can then use the console to type in any text and listen to generated speech or save it as an audio file.
 Q: In which regions is the service available?
-Please refer to the AWS Global Infrastructure Region Table for all regions supporting Amazon Polly’s Standard voices. Neural voices are supported in the following subset of these regions: Northern Virginia, Oregon, Tokyo, London, Frankfurt, Singapore, Sydney, and Dublin.
+Please refer to the AWS Regional Services List for all regions supporting Amazon Polly’s Standard voices. Neural voices are supported in the following subset of these regions: US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), EU (London), EU (Frankfurt), EU (Ireland) and AWS GovCloud (US-West).
 Q: Which programming languages are supported?
 Amazon Polly supports all the programming languages included in the AWS SDK (Java, Node.js, .NET, PHP, Python, Ruby, Go, and C++) and AWS Mobile SDK (iOS/Android). Amazon Polly also supports an HTTP API so you can implement your own access layer.
 Q: Which audio formats are supported?

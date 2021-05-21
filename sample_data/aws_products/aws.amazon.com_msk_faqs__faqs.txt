@@ -9,8 +9,8 @@ Streaming data is a continuous stream of small records or events (a record or ev
 Learn more about streaming data.
 Q: What are Apache Kafka’s primary capabilities?
 Apache Kafka has three key capabilities:
-Apache Kafka stores streaming data in a fault-tolerant way as a continuous series of records and preserves the order in which the records were produced.
-Apache Kafka acts as a buffer between data producers and data consumers. Apache Kafka allows many data producers (e.g. websites, IoT devices, Amazon EC2 instances) to continuously publish streaming data and categorize this data using Apache Kafka topics. Multiple data consumers (e.g. machine learning applications, Lambda functions) read from these topics at their own rate, similar to a message queue or enterprise messaging system.
+Apache Kafka stores streaming data in a fault-tolerant way as a continuous series of records and preserves the order in which the records were produced.Apache Kafka acts as a buffer between data producers and data consumers.
+Apache Kafka allows many data producers (e.g. websites, IoT devices, Amazon EC2 instances) to continuously publish streaming data and categorize this data using Apache Kafka topics. Multiple data consumers (e.g. machine learning applications, Lambda functions) read from these topics at their own rate, similar to a message queue or enterprise messaging system.
 Data consumers process data from Apache Kafka topics on a first-in-first-out basis, preserving the order data was produced.
 Q: What are the key concepts of Apache Kafka?
 Apache Kafka stores records in topics. Data producers write records to topics and consumers read records from topics. Each record in Apache Kafka consists of a key, a value, and a timestamp. Apache Kafka partitions topics and replicates these partitions across multiple nodes called brokers. Apache Kafka runs as a cluster on one or more brokers, and brokers can be located in multiple AWS availability zones to create a highly available cluster. Apache Kafka relies on
@@ -39,8 +39,7 @@ Auto Data Balancer, and Uber
 uReplicator.
 Migrating to Amazon MSK
 Q: Can I migrate data within my existing Apache Kafka cluster to Amazon MSK?
-Yes, you can use third-party tools or open source tools like MirrorMaker that come with open source Apache Kafka to replicate data from clusters into an Amazon MSK cluster. You can also use an Apache Flink application to replicate data between topics as shown
-in this example that runs in a fully managed service, Amazon Kinesis Data Analytics.
+Yes, you can use third-party tools or open source tools like MirrorMaker that come with open source Apache Kafka to replicate data from clusters into an Amazon MSK cluster. Here is an Amazon MSK migration lab to help you complete a migration.
 Version upgrades
 Q: Are Apache Kafka version upgrades supported?
 Yes, Amazon MSK supports fully managed in-place Apache Kafka version upgrades. To learn more about upgrading your Apache Kafka version and high availability best practices, see the
@@ -99,14 +98,17 @@ AWS KMS keys to encrypt storage volumes.
 Q: Is data encrypted in-transit between brokers within an Amazon MSK cluster?
 Yes, by default new clusters have encryption in-transit enabled via TLS for inter-broker communication. You can opt-out of using encryption in-transit when a cluster is created.
 Q: Is data encrypted in-transit between my Apache Kafka clients and the Amazon MSK service?
-Yes, by default in-transit encryption is set to TLS only for clusters created from the CLI or AWS Console. Additional configuration is required for clients to communicate with clusters using TLS encryption. You can change the default encryption setting by selecting the TLS/plaintext or plaintext settings. Read More:
+Yes, by default in-transit encryption is set to TLS only for clusters created from the CLI or AWS Console. Additional configuration is required for clients to communicate with clusters using TLS encryption. You can change the default encryption setting by selecting the TLS/plaintext or plaintext settings. Read More: about
 MSK Encryption
 Q: Is data encrypted in-transit as it moves between brokers and Apache ZooKeeper nodes in an Amazon MSK cluster?
 Yes, Amazon MSK clusters running Apache Kafka version 2.5.1 or greater support TLS in-transit encryption between Kafka brokers and ZooKeeper nodes.
-Authentication and authorization
-Q: How can I restrict the scope of connectivity to an Amazon MSK cluster across multiple clients in my VPC? Amazon MSK supports TLS certificate authentication (CA) and SASL/SCRAM authentication. You can use these methods to authenticate client connections to an Amazon MSK cluster. With TLS certificate authentication, you deploy private CAs within the AWS Certificate Manager service to an MSK cluster. When TLS client authentication is enabled, only clients presenting TLS certificates generated from the previously loaded private CAs can authenticate with the cluster. With SASL/SCRAM authentication, you create and store credentials in AWS Secrets Manager. When SASL/SCRAM authentication is enabled, only clients presenting the correct username and password stored in AWS Secrets Manager can authenticate with the cluster.
-Q: How does authorization work in Amazon MSK? Apache Kafka uses access control lists (ACLs) for authorization and Amazon MSK supports the use of ACLs. To enable ACLs you must enable client authentication using either TLS certificates or SASL/SCRAM.
-Q: How can I authenticate and authorize a client at the same time? If you are using TLS authentication, you can use the Dname of clients TLS certificates as the principal of the ACL to authorize client requests. If you are using SASL/SCRAM, you can use the username as the principal of the ACL to authorize client requests.
+Access Management
+Q: How do I control cluster authentication and Apache Kafka API authorization? Amazon MSK offers three options for controlling authentication (AuthN) and authorization (AuthZ). 1) IAM Access Control for both AuthN/Z (recommended), 2) TLS certificate authentication (CA) for AuthN and access control lists for AuthZ, and 3) SASL/SCRAM for AuthN and access control lists for AuthZ. Amazon MSK recommends using IAM Access Control. It’s the easiest to use and because it defaults to least privilege access, the most secure option.
+Q: How does authorization work in Amazon MSK? If you are using IAM Access Control, Amazon MSK uses the policies you write and its own authorizer to authorize actions. If you are using TLS certificate authentication or SASL/SCRAM, Apache Kafka uses access control lists (ACLs) for authorization. To enable ACLs you must enable client authentication using either TLS certificates or SASL/SCRAM.
+Q: How can I authenticate and authorize a client at the same time? If you are using IAM Access Control, Amazon MSK will authenticate and authorize for you without any additional set up. If you are using TLS authentication, you can use the Dname of clients TLS certificates as the principal of the ACL to authorize client requests. If you are using SASL/SCRAM, you can use the username as the principal of the ACL to authorize client requests.
+Q: How do I control service API actions? You can control service API actions using AWS IAM.
+Q: Can I enable IAM Access Control for an existing cluster? No, however a feature that would allow you to update your authentication settings is coming soon.
+Q: Can I use IAM Access Control outside of Amazon MSK? No, IAM Access Control is only available for Amazon MSK clusters.
 Monitoring, metrics, logging, tagging
 Q: How do I monitor the performance of my clusters or topics?
 You can monitor the performance of your clusters using the Amazon MSK console, Amazon CloudWatch console, or you can access JMX and host metrics using Open Monitoring with Prometheus, an open source monitoring solution.
@@ -136,6 +138,8 @@ Kinesis Data Firehose pricing pages.
 Q: What is the logging level for broker logs? Amazon MSK provides INFO level logs for all brokers within a cluster.
 Q: How do I access Apache ZooKeeper Logs?
 You can request Apache ZooKeeper logs through a support ticket.
+Q: Can I log the use of Apache Kafka resource APIs, like create topic?
+Yes, if you use IAM Access Control, the use of Apache Kafka resource APIs is logged to AWS CloudTrail.
 Apache ZooKeeper
 Q: What is Apache ZooKeeper?
 From
@@ -150,11 +154,14 @@ Amazon MSK integrates with:
 Amazon VPC for network isolation and security
 Amazon CloudWatch for metrics
 Amazon KMS for storage volume encryption
-Amazon IAM for authentication of cluster APIs
+Amazon IAM for authentication and authorization of Apache Kafka and service APIs.
+AWS Lambda for MSK event sourcing
+AWS IoT for IoT event sourcing
+AWS Glue Schema Registry for controlling the evolution of schemas used by Apache Kafka applications
 AWS CloudTrail for AWS API logs
 AWS Certificate Manager for Private CAs used for client TLS authentication
 AWS CloudFormation for describing and provisioning Amazon MSK clusters using code
-Amazon Kinesis Data Analytics for fully managed Apache Flink applications
+Amazon Kinesis Data Analytics for fully managed Apache Flink applications that process streaming data
 AWS Secrets Manager for client credentials used for SASL/SCRAM authentication
 Scaling
 Q: How can I scale up storage in my cluster?
@@ -163,8 +170,8 @@ Q: How can I automatically expand storage in my cluster?  You can create an auto
 Q: Can I scale the number of brokers in an existing cluster?
 Yes. You can scale out, or increase, the number of brokers for existing Amazon MSK clusters.
 Q: Can I scale the broker size in an existing cluster? Yes. You can choose to scale to a smaller or larger broker type on your Amazon MSK clusters.
-Q: How do I balance partitions across brokers? You can use Cruise Control for balancing partitions and heat management. Alternatively, you can use the Kafka Admin API kafka-reassign-partitions.sh to reassign partitions across brokers. See the
-Cruise Control documentation for more information.
+Q: How do I balance partitions across brokers?
+You can use Cruise Control for automatically rebalancing partitions to manage I/O heat. See the  Cruise Control documentation for more information. Alternatively, you can use the Kafka Admin API kafka-reassign-partitions.sh to reassign partitions across brokers.
 Pricing and availability
 Q: How does Amazon MSK pricing work?
 Pricing is based is per Apache Kafka broker-hour, and per provisioned storage-hour. AWS data transfer rates apply for data transfer in and out of Amazon MSK. For more information, visit our

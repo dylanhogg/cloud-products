@@ -1,7 +1,7 @@
 AWS Panorama
 (Preview)
 Improve your operations with computer vision at the edge
-Sign up for the preview
+Sign up for the AWS Panorama Appliance Developer Kit Preview
 AWS Panorama is a machine learning Appliance and Software Development Kit (SDK) that allows organizations to bring computer vision (CV) to on-premises cameras to make predictions locally with high accuracy and low latency. With AWS Panorama, you can automate tasks that have traditionally required human inspection to improve visibility into potential issues. For example, you can use AWS Panorama to evaluate manufacturing quality, identify bottlenecks in industrial processes, and monitor workplace safety and security - even in environments with limited or no internet connectivity.
 The AWS Panorama Appliance is a hardware device that allows you to add CV to your internet protocol (IP) cameras that weren’t built to accommodate computer vision. AWS Panorama Appliance turns your existing cameras into smart cameras that can run CV models on multiple concurrent video streams.
 The AWS Panorama Device SDK is a software kit that enables third-party manufacturers to build new cameras that run more meaningful CV models at the edge for tasks like object detection or activity recognition. AWS Panorama-compatible cameras work out of the box with AWS machine learning services.
@@ -23,7 +23,7 @@ Get started quickly with AWS Panorama Partners
 Access AWS Partner Network (APN) partners with expertise in CV to discover advanced solutions, build innovative technologies, and scale your CV applications. AWS Panorama APN Partners have demonstrated their ability to integrate AWS Panorama, build AWS Panorama compatible CV applications, and provide AWS Panorama enabled devices that bring the benefits of AWS Panorama to customers across a variety of camera form factors. Learn more
 Benefits
 Add ML to your existing cameras
-Plug the AWS Panorama Appliance in, connect it to your network, and the device will automatically discover your existing fleet of IP cameras. The AWS Panorama Appliance also seamlessly works alongside your existing video management systems (VMS).
+Plug in the AWS Panorama Appliance, and the device will connect to your existing fleet of IP cameras on your network. The AWS Panorama Appliance also seamlessly works alongside your existing video management systems (VMS).
 Make decisions in real time
 You can analyze video feeds within milliseconds from a single management interface across a variety of locations. This enables real-time visibility into operations and fast decision making with AWS Panorama enabled devices or the AWS Panorama Appliance.
 Enable CV in limited connectivity environments
@@ -38,8 +38,8 @@ Turn your existing onsite cameras into powerful edge devices with the AWS Panora
 The AWS Panorama Appliance is easy to set up
 Step 1: Unbox
 Say hello to AWS Panorama Appliance!
-Step 2: Plug in and detect devices
-Log in to your AWS account, and install one or more AWS Panorama Appliance devices on the same network as your on-premises cameras. Provision your AWS Panorama Appliance for connection to the AWS Cloud and for automatic discovery of network cameras that support the ONVIF standard.
+Step 2: Plug in and connect to devices
+Log in to your AWS account, and install one or more AWS Panorama Appliance devices on the same network as your on-premises cameras. Provision your AWS Panorama Appliance for connection to the AWS Cloud and to connect to network cameras that support the ONVIF standard.
 Step 3: Run CV on camera streams
 You can use your own custom CV applications on the Appliance, or download third party CV applications for use cases such as retail analytics, license plate recognition, and detecting faults in an assembly line. The inference results can be displayed on a monitor, or sent through MQTT messaging to a variety of local or cloud-based endpoints or systems.
 The AWS Panorama Appliance has one HDMI port for connecting to a video monitor to see inference output, and two GigE Ethernet ports to provide redundancy, to connect to two subnets, or for load balancing. The device is about a half rack unit wide, meaning two units can be placed side by side on a standard rack shelf on a server rack and fastened to the rack using the included screws.
