@@ -1,0 +1,26 @@
+Products
+Containers
+AWS Copilot
+AWS Copilot FAQs
+General
+Q: What is AWS Copilot?
+The AWS Copilot CLI is a tool for developers to build, release, and operate production ready containerized applications on Amazon ECS and AWS Fargate. Copilot takes best practices, from infrastructure to continuous delivery, and makes them available to customers from the comfort of their command line. Whether you are setting up a single-service application or several micro-services application, Copilot enables you to use service patterns like a load balanced web service to provision infrastructure, deploy to multiple environments like testing or production, and even use an AWS CodePipeline release pipeline for automated deployments. You can also monitor the health of your service by viewing your service's status or logs, scale up or down production services, and spin up a new environment for automated testing. To add additional resources and operate the environment outside the CLI, customers can export the environment to AWS CloudFormation.
+Q: Why should I use AWS Copilot?
+AWS Copilot helps customers focus on building their applications rather than setting up their infrastructure. With one command, AWS Copilot will provision all the infrastructure customers need to run production-ready containerized services on Amazon ECS and AWS Fargate.
+AWS Copilot provides an easy to use experience for developers using containers to get started deploying to AWS. You don’t need to install and leverage multiple tools, configure your deployment step by step deployment pipeline, nor create a bunch of AWS resources and stitch them together just to deploy a common architecture such as a load balanced web application. This single CLI creates the step by step pipeline on your behalf, creates resources, and guides you in deploying containerized applications to the cloud. It is your entry point to building, managing, and running containers on Amazon ECS.
+Q: How does AWS Copilot relate to other AWS services?
+AWS Copilot will create other resources on behalf of the user. Aside from ECS clusters, tasks, services (for EC2 and Fargate launch types) these resources include load balancers, VPC, and ECR registries. These resources are configured based on our opinionated best practices by default but can be changed if required.
+Q: Are my existing ECS and Fargate services available in the CLI?
+Currently only services created through the CLI are available to manage. We are working on the capability to migrate existing AWS resources including clusters, tasks, and VPCs to be usable in the CLI.
+Q: Is AWS Copilot open source and is there any cost associated with using it?
+AWS Copilot is distributed by Amazon under an Open Source license at no cost to you. It is licensed under the terms of the Apache 2.0 license as noted in the AWS Copilot repository. Amazon does not charge for its use or distribution. Customers only pay for the resources they create through the CLI which can include Fargate tasks, Amazon VPC, or AWS CodePipeline, each of which are billed at those resources' pricing.
+Q: What is the list of commands provided by Copilot and what do they do?
+A full list of commands and what they do is available on the AWS Copilot wiki. The wiki has the up to date documentation as per the latest release of AWS Copilot.
+Q: Is AWS Copilot a standalone AWS service?
+No, currently AWS Copilot is a CLI that deploys applications to AWS Fargate on Amazon ECS. Deployments to the EC2 launch type are coming soon.
+Q: What should I do if I need help with AWS Copilot?
+Open an issue and connect with us on the AWS Copilot GitHub page. You are welcome to report any bugs, issues, or feature requests and see what else is on the roadmap for AWS Copilot.
+Q: How do I contribute to AWS Copilot?
+We encourage anyone to contribute by opening a pull request to AWS Copilot on our open source GitHub repository. See our contributing guide here.
+Q: What operating systems is AWS Copilot supported for?
+We are available on Linux, Windows, and MacOS through package manager tools; see the installation instructions here.

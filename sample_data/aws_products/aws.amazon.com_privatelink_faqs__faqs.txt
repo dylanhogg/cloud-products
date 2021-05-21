@@ -1,0 +1,94 @@
+General questions
+Q: What is AWS PrivateLink?
+A: AWS PrivateLink enables customers to access services hosted on AWS in a highly available and scalable manner, while keeping all the network traffic within the AWS network. Service users can privately access services powered by PrivateLink from their Amazon Virtual Private Cloud (VPC) or their on-premises, without using public IPs, and without requiring traffic to traverse across the Internet. Service owners can register their Network Load Balancers to PrivateLink services in order to provide their services to other AWS customers.
+Show less
+Q: How can I use PrivateLink?
+A: As a service user, you will need to create interface type VPC endpoints for services that are powered by PrivateLink. These service endpoints will appear as Elastic Network Interfaces (ENIs) with private IPs in your VPCs. Once these endpoints are created, any traffic destined to these IPs will get privately routed to the corresponding AWS services.
+As a service owner, you can onboard your service to AWS PrivateLink by establishing a Network Load Balancer (NLB) to front your service and create a PrivateLink service to register with the NLB. Your customers will be able to establish endpoints within their VPC to connect to your service after you whitelisted their accounts and IAM roles.
+Q: Is PrivateLink enabled by a specific type of endpoint?
+A: VPC endpoints enable you to privately connect your VPC to services hosted on AWS without requiring an Internet gateway, a NAT device, VPN, or firewall proxies. Endpoints are horizontally scalable and highly available virtual devices that allow communication between instances in your VPC and AWS services. Amazon VPC offers two different types of endpoints: gateway type endpoints and interface type endpoints.
+Interface type endpoints provide private connectivity to services powered by PrivateLink. These services may be AWS services, your own services or SaaS solutions. Interface type endpoints also support connectivity over Direct Connect. Please refer to VPC Pricing for the price of interface type endpoints.
+Gateway type endpoints are available only for AWS services including S3 and DynamoDB, and cannot enable PrivateLink. These endpoints will add an entry to the route table you select and route the traffic to the supported services through Amazon’s private network.
+Q: What are the benefits of using a VPC endpoint with AWS PrivateLink?
+A: VPC endpoints provide secure access to a specific service, with several benefits to the end user:
+VPC endpoints provide access to a specific service without the need of using any other gateways – no need to use an Internet gateway, a NAT gateway, a VPN connection, or a VPC peering connection, reducing the risks of exposing your resources to the Internet or to other outside networks.
+Your traffic remains within Amazon's private network, reducing the risks of exposing your traffic to the Internet.
+When accessing Amazon services over VPC endpoints, you can restrict the access through a VPC endpoint to specific users, actions, and/or resources.
+You can limit access to resources provided by an Amazon service to traffic originating from a specific VPC or through a specific VPC endpoint.
+Q: Can I privately access services powered by AWS PrivateLink over AWS Direct Connect?
+A: Yes. The application in your premises can connect to the service endpoints in Amazon VPC over AWS Direct Connect. The service endpoints will automatically direct the traffic to AWS services powered by AWS PrivateLink.
+Q: How do I discover which services are available today?
+A: You can search for available services using the VPC console or the AWS CLI/SDK. Then you can request access to a service by creating a VPC endpoint and begin using it.
+Billing
+Q: How will I be charged and billed for my use of AWS PrivateLink?
+A: The pricing schedule for PrivateLink has information about charges and billing: https://aws.amazon.com/privatelink/pricing/. If you choose to create an Interface type VPC endpoint in your VPC, you are charged for each hour that your VPC endpoint is provisioned in each Availability Zone. Data processing charges apply for each Gigabyte processed through the VPC endpoint regardless of the traffic’s source or destination. Each partial VPC endpoint-hour consumed is billed as a full hour. If you no longer wish to be charged for a VPC endpoint, delete your VPC endpoints using the AWS Management Console, command line interface (CLI), or API.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Q: Who pays the data transfer costs for the traffic going via the interface-based VPC endpoint?
+The concept of data transfer costs is similar to that of data transfer costs for EC2 instances. Since an interface-based VPC endpoint is an ENI in the subnet, data transfer charges depend on the source of the traffic. If the traffic to this interface is coming from a resource across AZ, EC2 cross-AZ data transfer charges apply to the consumer end. Customers in the consumer VPC can use AZ-specific DNS endpoint to make sure the traffic stays within the same AZ if they have provisioned each AZ available in their account.
+Connectivity
+Q: How scalable is AWS PrivateLink?
+A: While VPC peering is limited to 125 VPC connections, AWS PrivateLink has virtually unlimited scale. Each VPC endpoint connects an EC2 instance to a specific AWS or AWS-based service. You can add as many endpoints as you need, depending on the number of VPCs and services that you need to connect to. There is no cost to the number of endpoints you are deploying for PrivateLink.
+Q: How many VPC endpoints can I create in a single VPC?
+A: You can create up to 100 VPC endpoints per VPC. If you need more than this, contact us and we will work on a solution with you.
+Q: How do I use AWS PrivateLink and VPC endpoints to acccess a service?
+A: You can create a VPC endpoint in your VPC and specify the service you want to use. The VPC endpoint has a DNS name that resolves to local IP addresses in your VPC. When you route traffic to this DNS name, the traffic is routed through the VPC endpoint and to the service.
+Q: How much bandwidth can I use through a VPC endpoint?
+A: Each VPC endpoint can support 10Gbps continuous bandwidth per Availability Zone by default, after which additional capacity will be added automatically based on your usage. Endpoint scaling is fully-managed to ensure that traffic to your endpoint is not affected.
+Q: Can I connect multiple services to a single VPC endpoint?
+A: No. A VPC endpoint connects directly to a single service. You can however create new VPC endpoints to connect the EC2 instance to other services and the number of VPC endpoints that you can create is not limited. There is no cost to creating additional VPC endpoints.
+Q: Since VPC endpoints have their own DNS names, do I need to update my code to start using VPC endpoints?
+A: If you are using the latest version of AWS CLI/SDK, you do not need to update your code. The CLI/SDK will automatically discover your VPC endpoints and use them by default. If you are using old version CLI/SDKs, you will need to specify the DNS name as the endpoint parameter in the CLI/SDK. If you need to specify the endpoint, you can discover the DNS name by querying the EC2 metadata service.
+Q: Can I use a service’s public endpoint (DNS name) to access my VPC endpoints?
+A: No, we may support this in future updates but currently only support private endpoint names.
+Q: Can I access VPC endpoints from my on-prem network over Direct Connect?
+Q: Can I access VPC endpoints from my on-premises network over Direct Connect?
+A: Yes, you can access VPC endpoints over Direct Connect. A VPC endpoint’s DNS records are publicly resolvable, but will return the private IP address within the associated VPC.
+Using Network Load Balancer
+Q: What is the process to use Network Load Balancer to share my service between VPCs?
+A: You need to register your service and associate this service with your Network Load Balancers. When registering your service, you have the option to choose your service name and to grant permissions for accounts/organizational units to view and create VPC endpoints to your service. You can complete this process using the VPC console or the AWS CLI/SDK. You can also manage the service to Network Load Balancer associations using the Network Load Balancer console. Once you have registered the service, you need to associate it with your Network Load Balancer. At this point, end users can create VPC endpoints to connect to your service.
+Q: What will be the service name when I register a VPC endpoint service?
+A: By default, your service will receive a name in the format of “com.amazonaws.<region>.vpc-endpoint-services.service-<serial number>”.  Your end user’s VPC endpoints will have DNS names like “vpce-1111.service-1234.vpc-endpoint-services.us-east-1.amazonaws.com”.
+Q: Can I use my own names when registering a service, e.g. foo.example.com?
+A: Yes, you can use a DNS name that you control to register your service. For example, if you are the owner of foo.example.com, you can use “com.example.foo” as your service name (conventionally, we have been reversing DNS names to create service names). VPC endpoints for this service will have DNS names like “vpce-11111111.foo.example.com”. You need to specify this name when registering the service and the system will approve the registration after verifying your control.
+Q: If I use my own DNS names for my services, who will create these vpce-*.foo.example.com DNS names for the end users’ VPC endpoints?
+A: We recommend delegating the DNS zone (foo.example.com) to Amazon so we can manage the names on your behalf. If you cannot delegate this zone, then you need to create the DNS names for end users and create a CNAME or ALIAS (Route 53) record for the DNS name, pointing the record at the default provided name.
+Q: How do I make sure my customers can establish HTTPS connections to my service over VPC endpoints?
+A: You will need to update your certificates to support wild card DNS names following the name pattern of VPC endpoints. If your service is using Amazon’s DNS names, we will provide you a certificate using Amazon Certificate Management service (ACM). If your service is using your own DNS names, you will need to update the certificate yourself.
+Q: Can I whitelist accounts or organization units for access to my service over VPC endpoints?
+A: Yes. By default, a VPC endpoint service is private and only permitted accounts and/or organizational units can access this service over VPC endpoints. You can manage these permissions using the VPC console or AWS CLI/SDK. You can also make your service public, which permits all EC2 accounts to view your service and to create VPC endpoints for accessing your service.
+Q: Can I suspend or terminate the service to a customer if he’s accessing my service over a VPC endpoint?
+A: Yes. As the owner of a service, you can suspend or terminate the connection between a VPC endpoint and your service at any time, which will stop the traffic immediately. A suspended VPC endpoint can be resumed later, while a terminated VPC endpoint cannot be resumed.
+Q: Can I associate multiple Network Load Balancers with a service?
+A: Yes. You can associate multiple Network Load Balancers with a service. For example, if you want to deploy using a green-blue deployment style, you can add the new Network Load Balancer to the service and then remove the original Network Load Balancer from the service.
+Q: Can I associate multiple services to one Network Load Balancer?
+A: No. A VPC endpoint provides access to one service, and nothing else. Hosting multiple services on a single Network Load Balancer may break this commitment.
+Q: Can I receive information on the source of each request when I share my service using a Network Load Balancer?
+A. Yes, you can request the Network Load Balancers to pass you the source VPC endpoint ID and the original source IP addresses.
+Q: How many VPC endpoints can each service (each Network Load Balancer) support?
+A: There is no limit on how many endpoints each service or each Network Load Balancer can support.
+Security and filtering
+Q: How secure is an AWS PrivateLink connection?
+A: The security of AWS PrivateLink relies on three factors: the path, the policies, and mode of communication.
+The path between a VPC endpoint and an AWS or AWS-based service stays within AWS and does not traverse the Internet. It therefore remains out of reach of Internet breaches.
+When you are using VPC endpoints with AWS services, you can also create endpoint policies, which restrict access to requests that come from the VPC or the VPC endpoint.
+Data being exchanged over an AWS PrivateLink is also encrypted. The service consumer always initiates the service (it is a one-way service), and that the service provider only provides service to whitelisted customers.
+Q: Can I associate security groups with VPC endpoints?
+A: No. At this time you cannot associate security groups with VPC endpoints. However, you can use security groups on your instances to control the access. You can also use VPC endpoint policies and network ACLs to control the traffic of VPC endpoints.
+Additional questions
+Q: Can I use the AWS Management Console to control and manage AWS PrivateLink?
+A: Yes. You can use the AWS Management Console to manage Amazon VPC objects such as VPC endpoints and AWS PrivateLink connections.
+Q: Can I obtain AWS Support with VPC endpoints and AWS PrivateLink?
+A: Yes. Click here for more information on AWS Support.
+Q: What Amazon CloudWatch metrics are available for the interface-based VPC Endpoint?
+A: Currently, no Amazon CloudWatch metric is available for the interface-based VPC Endpoint.
+Learn more about AWS PrivateLink pricing
+Visit the pricing page
+Find services available over AWS PrivateLink
+Visit AWS Marketplace
+Ready to build?
+Get started with AWS
+Have more questions?
+Contact us
+Page Content
+Network Load Balancer
