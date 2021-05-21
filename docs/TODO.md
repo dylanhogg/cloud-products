@@ -1,12 +1,35 @@
 # TODO
 
 1) Add Github build and release actions to pypi
-1) Improve tox / flake8 / black setup
 1) Manifest file fixes & check manifest is ok: https://github.com/mgedmin/check-manifest
 1) Ensure pypi source is compilable
-1) Fix extras_require and test_requiremetns etc
+1) Fix extras_require and test_requiremetns etc (e.g. pandas)
 1) Run static type checking with https://mypy.readthedocs.io/en/stable/
 1) Compare output with: https://d1.awsstatic.com/whitepapers/aws-overview.pdf 
+1) Fix faq crawling for non-standard links:
+    FAQ page did not exist: https://aws.amazon.com/aws-cost-management/aws-budgets/faq/
+    FAQ page did not exist: https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/faq/
+    FAQ page did not exist: https://aws.amazon.com/aws-cost-management/aws-cost-explorer/faq/
+    FAQ page did not exist: https://aws.amazon.com/aws-cost-management/reserved-instance-reporting/faq/
+    FAQ page did not exist: https://aws.amazon.com/cli/faq/
+    FAQ page did not exist: https://aws.amazon.com/cloudendure-disaster-recovery/faq/
+    FAQ page did not exist: https://aws.amazon.com/cloudendure-migration/faq/
+    FAQ page did not exist: https://aws.amazon.com/elastic-inference/faq/
+    FAQ page did not exist: https://aws.amazon.com/elemental-appliances-software/faq/
+    FAQ page did not exist: https://aws.amazon.com/getting-started/tools-sdks/faq/
+    FAQ page did not exist: https://aws.amazon.com/glacier1/faq/
+    FAQ page did not exist: https://aws.amazon.com/inferentia/faq/
+    FAQ page did not exist: https://aws.amazon.com/iot/button/faq/
+    FAQ page did not exist: https://aws.amazon.com/machine-learning/amis/faq/
+    FAQ page did not exist: https://aws.amazon.com/mxnet/faq/
+    FAQ page did not exist: https://aws.amazon.com/premiumsupport/phd/faq/
+    FAQ page did not exist: https://aws.amazon.com/privatelink/faq/
+    FAQ page did not exist: https://aws.amazon.com/pytorch/faq/
+    FAQ page did not exist: https://aws.amazon.com/rds/aurora/serverless/faq/
+    FAQ page did not exist: https://aws.amazon.com/sagemaker/data-wrangler/faq/
+    FAQ page did not exist: https://aws.amazon.com/serverlessrepo/faq/
+    FAQ page did not exist: https://aws.amazon.com/tensorflow/faq/
+    FAQ page did not exist: https://aws.amazon.com/trustedadvisor/faq/
 
 
 # NOTES
