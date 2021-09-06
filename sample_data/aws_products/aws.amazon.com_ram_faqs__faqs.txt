@@ -3,25 +3,25 @@ Security, Identity & Compliance
 AWS Resource Access Manager
 AWS Resource Access Manager FAQs
 Q: What is AWS Resource Access Manager?
-A: AWS Resource Access Manager (RAM) provides you the ability to securely share your resources across AWS accounts or within your Organization. You can now centrally procure resources and use RAM to share resources with other accounts, eliminating the need to provision and manage resources in every account. When you share a resource with another account, that account is granted access to the resource and any policies and permissions in that account will apply to the shared resource.
-Q: What types of AWS resources can I share using RAM?
-The list of resources you can share with RAM are listed in the shareable resources section of the RAM user guide.
-Q: How can I get started with RAM?
-A: You can get started with RAM by creating a Resource Share using the API/CLI or the AWS Management Console. You can easily share resources by adding resources and accounts to a Resource Share. A Resource Share grants accounts access to resources.
+A: AWS Resource Access Manager (RAM) helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs) in AWS Organizations, and with IAM roles and IAM users for supported resource types. You can use AWS RAM to share resources with other AWS accounts. This eliminates the need to provision and manage resources in every account. When you share a resource with another account, that account is granted access to the resource and any policies and permissions in that account apply to the shared resource.
+Q: What types of AWS resources can I share using AWS RAM?
+A: For information about the resource types that you can share by using AWS RAM, see shareable AWS resources in the AWS Resource Access Manager User Guide.
+Q: How can I get started with AWS RAM?
+A: You can get started with AWS RAM by creating a resource share using the AWS RAM Console, AWS RAM APIs, AWS CLI, or AWS SDKs. You can easily share resources by adding resources to a resource share, choosing a managed permission to associate with each resource type, and specifying whom you want to have access to the resources.
 Q: Who can I share resources with?
-A: You can share resources with any AWS account, and if you are part of AWS Organizations, then you can also share resources with Organizational Units (OUs) or your entire Organization. If you share resources with accounts that are outside of your Organization, then those accounts will receive an invitation to the Resource Share and can start using the shared resources upon accepting the invitation.
+A: You can share resources with any AWS account. If you are part of an organization in AWS Organizations and sharing within your organization is enabled, you can also share resources with OUs or your entire organization. For supported resource types, you can also share resources with IAM roles and IAM users. If you share resources with accounts that are outside of your organization, those accounts receive an invitation to join the resource share. After they accept the invitation, they can start using the shared resources.
+Q: What is an AWS RAM managed permission?
+A: AWS RAM managed permissions define what actions can be performed on shared resources. When you create a resource share, you associate a managed permission with each resource type in the resource share. Every resource type has a default managed permission. Some resource types provide additional managed permissions from which you can select. For example, when you share the AWS Certificate Manager Private Certificate Authority (ACM PCA) resource type, you can enable specific team members to issue client certificates without granting them the privileges to revoke the certificate. You can then share the same ACM PCA resource with an administrator using a managed permission with privileges to revoke the certificate. This follows the best practice of granting least privilege, or the minimum permissions required for access to shared resources.
 Q: How can I view resources that have been shared with my account?
-A: You can view resources that have been shared with your account in the RAM console or by using the RAM APIs. The resources that have been shared with your account will also appear in the respective resource console pages and the respective List/Describe APIs for those resource types. For example, when an AWS Deliverator Rule is shared with an account then that rule will appear on the Deliverator page of the Amazon Route53 console along with the other rules owned by that account and the shared rule will also be returned in the response of the ListDelivertorRules API.
-Q: Will I incur any charges for sharing my resources with other accounts?
-No. You can share resources at no additional cost.
-Q: Can I tag a Resource Share?
-Yes, you can tag a Resource Share at the time of creation or any time after creation.
+A: You can view resources that are shared with your account in the AWS RAM console or by using the AWS RAM APIs, AWS CLI, or AWS SDKs. The resources that are shared with your account also appear in the respective resource console pages and the respective List/Describe APIs for those resource types. For example, when an Amazon Route 53 Resolver rule is shared with an account, that rule appears on the Resolver page of the Amazon Route53 console along with the other rules owned by that AWS account. In addition, if you use the Amazon Route 53 ListResolverRules API action, the shared rule is also returned in the response.
+Q: Will I incur any charges for sharing my resources with other AWS accounts?
+A: No. You can share resources at no additional cost.
 Q: How can I control access to resources shared with me?
-You can specify IAM policies to control access to resources shared with you.
+A: You can specify IAM policies to control access to resources shared with you.
 Q: Can I stop sharing a resource?
-Yes, you can stop sharing a resource by removing it from the Resource Share or by deleting the Resource Share.
-Q: How can I know about changes to Resource Shares?
-All calls to RAM APIs are logged in AWS CloudTrail. In addition, CloudWatch Events are triggered whenever there are changes to Resource Shares. Please click here to learn more about AWS CloudTrail and here to learn about AWS CloudWatch.
+A: Yes, you can stop sharing a resource by removing it from the resource share or by deleting the resource share.
+Q: How can I monitor changes to resource shares?
+A: All calls to AWS RAM APIs are logged in AWS CloudTrail. In addition, Amazon CloudWatch Events are triggered whenever there are changes to resource shares. For more information, see Logging and monitoring in AWS RAM, in the AWS Resource Access Manager User Guide.
 Check out documentation
 Read the documentation to learn more about AWS Resource Access Manager
 Learn more

@@ -18,7 +18,7 @@ Yes. Amazon Connect is so simple to set-up and use, with only a few clicks you c
 Q: Do I need to bring my own telephony provider to use Amazon Connect?
 No. Telephony services are included with Amazon Connect, which is designed to scale to meet your telephony needs.
 Q: Does Amazon Connect support high quality audio?
-Yes. With Amazon Connect, calls are made over the Internet from a computing device like a PC, using the Amazon Connect softphone. The Amazon Connect softphone delivers high-quality 16kHz audio and, is resistant to packet loss to ensure a high quality call experience.
+Yes. With Amazon Connect, calls are made over the Internet from a computing device like a PC, using the Amazon Connect softphone. The Amazon Connect softphone delivers high-quality 16kHz audio and, is resistant to packet loss to ensure a high-quality call experience.
 Q: Does Amazon Connect support call recordings?
 Yes. Amazon Connect enables you to store call recordings of customer interactions in Amazon S3. Interactions are not recorded unless an agent is connected. If multiple agents are connected, each will have an associated call recording.
 Q: What types of work can contact center managers and agents prioritize, assign, and track using task management?
@@ -38,7 +38,7 @@ Yes. Contact Lens for Amazon Connect is a set of machine learning (ML) capabilit
 Using AWS machine learning natural language processing (NLP) and speech-to-text, Contact Lens for Amazon Connect transcribes contact center calls to create a fully searchable archive and surface valuable customer insights.
 Contact flows
 Q: What is a Contact flow?
-Contact flows define the experience your customers have when they interact with your contact center. These are similar in concept to Interactive Voice Response (IVR). Contact flows are comprised of blocks, with each block defining a step or interaction in your contact center. For example, there are blocks to play a prompt, get input from a customer, branch based on customer input, or invoke a AWS Lambda function or and Amazon Lex bot.
+Contact flows define the experience your customers have when they interact with your contact center. These are similar in concept to Interactive Voice Response (IVR). Contact flows are comprised of blocks, with each block defining a step or interaction in your contact center. For example, there are blocks to play a prompt, get input from a customer, branch based on customer input, or invoke an AWS Lambda function or and Amazon Lex bot.
 Q: How do I edit Amazon Connect Contact flows?
 Amazon Connect provides a Contact flow editor that lets you drag-and-drop blocks onto the designer canvas, and then use connectors to connect the blocks in the flow. You can configure the settings for each block after adding it to the designer.
 Q: Does Amazon Connect offer text-to-speech in Contact flows?
@@ -46,12 +46,12 @@ Yes. Amazon Connect has built in text-to-speech leveraging Amazon Polly. You can
 Q: How do I use Amazon Lex chatbots with Amazon Connect?
 You can use an Amazon Lex chatbot in your Amazon Connect contact flow to interact with callers. Callers can provide input to the chatbot by either speaking an utterance or pressing digits on their keypads. Amazon Lex interprets the spoken utterance or dual-tone multi-frequency signaling (DTMF) digits entered on a keypad, and uses them to understand the caller’s intent, or for collecting slot information like a zip code or account number.
 Q: What are contact attributes in Amazon Connect?
-Contact attributes are pieces of data about a contact that you can use to personalize the customer experience, make routing decisions about contacts as they progress through your contact center orretrieve real-time metrics about the queues and agents in your contact center to dynamically route contacts based on queue and agent availability.
+Contact attributes are pieces of data about a contact that you can use to personalize the customer experience, make routing decisions about contacts as they progress through your contact center retrieve real-time metrics about the queues and agents in your contact center to dynamically route contacts based on queue and agent availability.
 For more information, see Contact Attributes in the Amazon Connect documentation.
 Skills-based routing
 Q: Does Amazon Connect support skills-based routing?
 Yes. Contacts can be routed based on availability, agent skill set, customer sentiment, or past history.
-Q: Do you have to recreate routing rules and profiles for each channel (e.g. voice and chat)?
+Q: Do you have to recreate routing rules and profiles for each channel (e.g., voice and chat)?
 No. You can build once and use across channels. Amazon Connect has a single user interface, configuration, workflow, and routing engine for calls and chat.
 Q: Can I adjust the priority of contacts in queue?
 Yes. You can adjust priority of contacts in the queue using the set routing priority block in an Amazon Connect Contact flow.

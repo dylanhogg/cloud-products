@@ -36,7 +36,7 @@ Customers
 Wyze Scales to Support Millions of Connected-Home Devices with Kinesis Video Streams.
 Abode improves service quality and reliability by using Kinesis Video Streams.
 Ecomott shortens time-to-market of a new streaming service with Kinesis Video Streams.
-Neosperience Cloud enables frame by frame analysis of live video streams using Kinesis Video Streams and Amazon SageMaker.
+Puppod builds gamified pet monitoring experience using Kinesis Video Streams.
 View more customers
 Blog posts
 date

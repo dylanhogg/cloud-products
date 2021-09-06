@@ -1,8 +1,10 @@
 Amazon Simple Queue Service
 Fully managed message queues for microservices, distributed systems, and serverless applications
 Get started for free
-Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. SQS eliminates the complexity and overhead associated with managing and operating message oriented middleware, and empowers developers to focus on differentiating work. Using SQS, you can send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. Get started with SQS in minutes using the AWS console, Command Line Interface or SDK of your choice, and three simple commands.
+Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications. SQS eliminates the complexity and overhead associated with managing and operating message-oriented middleware, and empowers developers to focus on differentiating work. Using SQS, you can send, store, and receive messages between software components at any volume, without losing messages or requiring other services to be available. Get started with SQS in minutes using the AWS console, Command Line Interface or SDK of your choice, and three simple commands.
 SQS offers two types of message queues. Standard queues offer maximum throughput, best-effort ordering, and at-least-once delivery. SQS FIFO queues are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
+1 million requests free
+with the AWS Free Tier
 Benefits
 Eliminate administrative overhead
 AWS manages all ongoing operations and underlying infrastructure needed to provide a highly available and scalable message queuing service. With SQS, there is no upfront cost, no need to acquire, install, and configure messaging software, and no time-consuming build-out and maintenance of supporting infrastructure. SQS queues are dynamically created and scale automatically so you can build and grow applications quickly and efficiently.
@@ -13,17 +15,17 @@ You can use Amazon SQS to exchange sensitive data between applications using ser
 Scale elastically and cost-effectively
 Amazon SQS leverages the AWS cloud to dynamically scale based on demand. SQS scales elastically with your application so you don’t have to worry about capacity planning and pre-provisioning. There is no limit to the number of messages per queue, and standard queues provide nearly unlimited throughput. Costs are based on usage which provides significant cost saving versus the “always-on” model of self-managed messaging middleware.
 Case studies
-AWS Services Used: IoT Device Management, Amazon ECS, & Amazon SQS.
+AWS Services Used: IoT Device Management, Amazon ECS, & Amazon SQS
 AWS Services Used: Amazon SNS & Amazon SQS
-AWS Services Used: Amazon SQS, Amazon S3, Amazon DynamoDB, Amazon RDS, & AWS Elastic Beanstalk.
+AWS Services Used: Amazon SQS, Amazon S3, Amazon DynamoDB, Amazon RDS, & AWS Elastic Beanstalk
 AWS Services Used: Amazon SQS
 Petroleum retailers in Australia are improving the performance and safety of their service stations with an AWS IoT–enabled solution called Fuelsuite from EMS. EMS specializes in solutions that provide petrol retailers with performance data gathered from sensors located around petrol stations. Fuelsuite uses AWS IoT Device Management to control the edge devices collecting petrol station data, processes the data with Amazon EC2, and schedules messages to and from the edge devices by using Amazon SQS.
 The NASA Image and Video Library provides easy access to more than 140,000 still images, audio recordings, and videos—documenting NASA’s more than half a century of achievements in exploring the vast unknown. The architecture includes Amazon SQS to decouple incoming jobs from pipeline processes and Amazon Simple Notification Service to trigger the processing pipeline when new content is updated.
 The BMW Group is using AWS for its connected car application that collects sensor data from BMW 7 Series cars to give drivers dynamically updated map information. BMW built its new car-as-a-sensor (CARASSO) service in only six months leveraging Amazon SQS, Amazon S3, Amazon DynamoDB, Amazon RDS, and AWS Elastic Beanstalk.
 Capital One is modernizing their retail message queuing by migrating from self-managed message-oriented middleware systems to Amazon SQS. Capital One is using SQS to migrate several core banking applications to the cloud to ensure high availability and cost efficiency while simplifying administrative complexity and overhead.
-AWS Services Used: Amazon EC2, Amazon S3, Amazon SQS, Amazon SNS & more.
-AWS Services Used: Amazon SQS & Amazon SNS.
-AWS Services Used: Amazon EC2 & Amazon SQS.
+AWS Services Used: Amazon EC2, Amazon S3, Amazon SQS, Amazon SNS & more
+AWS Services Used: Amazon SQS & Amazon SNS
+AWS Services Used: Amazon EC2 & Amazon SQS
 Change Healthcare uses AWS services like Amazon EC2, Amazon S3, Amazon SQS, and Amazon SNS to handle millions of confidential transactions daily from its clients while maintaining with full compliance with healthcare industry regulations, including HIPAA.
 redBus is expanding their AWS solution to include Amazon SQS and SNS for monitoring, alerts, and intercommunication. “Amazon SQS is an especially good solution for enabling messaging between external applications and our applications.” - Charan Padmaraju, redBus CTO
 Oyster.com uses Amazon Web Services to store and process images for their website. The team uses Amazon EC2 and Amazon SQS in an integrated workflow to generate the sizes they need for each photo. SQS communicates the photos that need to be processed and the status of the jobs.

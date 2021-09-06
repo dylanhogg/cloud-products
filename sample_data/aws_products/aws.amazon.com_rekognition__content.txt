@@ -31,6 +31,8 @@ Celebrity recognition
 You can quickly identify well known people in your video and image libraries to catalog footage and photos for marketing, advertising, and media industry use cases. Learn more
 Personal Protective Equipment (PPE) detection
 With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to automatically detect if persons in images are wearing Personal Protective Equipment (PPE) such as face covers (face masks), hand covers (gloves), and head covers (helmets) and whether the protective equipment covers the corresponding body part (nose for face covers, head for head covers, and hands for hand covers). Learn more
+Video segment detection
+With Amazon Rekognition Video, you can automatically detect key segments in videos, such as silent black frames, credits, shot boundaries, and SMPTE color bars. This enables you to save human effort and scale archive modernization by streamlining file-based workflows for quality control, ad insertion, and content preparation. Learn more
 Use cases
 Media Analysis
 Streamline media analysis tasks by automating the detection of black frames, end credits, shot changes, and color bars. By automating these tasks, you can reduce the time, effort, and costs associated with workflows like video ad insertion, content operations, and content production. Learn more

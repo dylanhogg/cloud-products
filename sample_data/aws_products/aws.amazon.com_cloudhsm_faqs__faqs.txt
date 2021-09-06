@@ -51,7 +51,7 @@ High availability is provided automatically when you have at least two HSMs in y
 Q: How many HSMs can be contained in a CloudHSM Cluster?
 A single CloudHSM Cluster can contain up to 28 HSMs, subject to account service limits. You can learn more about service limits and how to request a limit increase in our online documentation.
 Q: Can I back up the contents of a CloudHSM?
-Your CloudHSM Cluster is backed up on a daily basis by AWS. Keys can also be exported (“wrapped”) out of your cluster and stored on-premises as long as they were not generated as “non-exportable”. No other backup options are available at this time, though we expect to provide a more comprehensive on-premises backup capability soon.
+Your CloudHSM Cluster is backed up on a daily basis by AWS. Keys can also be exported (“wrapped”) out of your cluster and stored on-premises as long as they were not generated as “non-exportable”.
 Q: Is there an SLA for CloudHSM?
 Yes, you can find the service level agreement (SLA) for AWS CloudHSM here.
 Security

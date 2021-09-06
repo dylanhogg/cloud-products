@@ -1,49 +1,40 @@
+« Internet of Things
 AWS IoT Greengrass
-Bring local compute, messaging, data management, sync, and ML inference capabilities to edge devices
+Build intelligent IoT devices faster
 Get Started with AWS IoT Greengrass
-AWS IoT Greengrass is an Internet of Things (IoT) open source edge runtime and cloud service that helps you build, deploy, and manage device software. Customers use AWS IoT Greengrass for their IoT applications on millions of devices in homes, factories, vehicles, and businesses. You can program your devices to act locally on the data they generate, execute predictions based on machine learning models, filter and aggregate device data, and only transmit necessary information to the cloud.
-AWS IoT Greengrass lets you quickly and easily build intelligent device software. AWS IoT Greengrass enables local processing, messaging, data management, ML inference, and offers pre-built components to accelerate application development. AWS IoT Greengrass also provides a secure way to seamlessly connect your edge devices to any AWS service as well as to third-party services.
-Once software development is complete, AWS IoT Greengrass enables you to remotely manage and operate software on your devices in the field without needing a firmware update. AWS IoT Greengrass helps keep your devices up-to-date and makes them smarter over time.
-What is AWS IoT Greengrass? (1:51)
-Benefits
-Build intelligent devices faster
-With AWS IoT Greengrass, you can use a variety of programming languages, development environments, and open source software to develop, test, and launch your IoT applications on the hardware of your choice. You have the option to use execution environments such as AWS Lambda functions, Docker containers, or native OS processes for your applications. Further, AWS IoT Greengrass allows you to add or remove pre-built software components to meet the needs of your IoT use case, so you can control the footprint of your device software.
-Deploy device software at scale
-With AWS IoT Greengrass, you can develop code on a local device or in the cloud, and then remotely deploy and manage your software seamlessly on millions of devices without needing a firmware update. You can also organize your devices in groups and deploy and manage device software and configuration to a subset of devices or to all devices at once, simplifying the management and operations of your device fleets.
-Operate offline
-AWS IoT Greengrass devices are able to act locally on the data they generate, respond quickly to local events, and reduce latency. AWS IoT Greengrass also lets connected devices operate even with intermittent connectivity to the cloud. Devices can collect, process, and export data streams, even when they are offline. When the device reconnects, AWS IoT Greengrass synchronizes the data on the device with cloud services such as Amazon Simple Storage Service (Amazon S3), Amazon Kinesis, AWS IoT Core, or AWS IoT Analytics.
-Secure your device communications
-AWS IoT Greengrass authenticates and encrypts device data for both local and cloud communications so that data is never exchanged between devices and the cloud without proven identity. You can also leverage hardware-secured end-to-end encryption for messages sent between an AWS IoT Greengrass Core and the AWS cloud, and messages between an AWS IoT Greengrass Core and other local devices using the AWS IoT Device SDK.
-Reduce the cost of running IoT applications
-You can get rich insights at a lower cost by programming your device to filter or aggregate data locally and only transmit the data you need for your applications to the cloud. This reduces the amount of raw data transmitted to the cloud, minimizing cost and increasing the quality of the data you send to the cloud.
-Validate your AWS IoT Greengrass devices
-AWS IoT Device Tester for AWS IoT Greengrass is a test automation tool that makes testing your choice of devices easy. You can use the AWS IoT Device Tester to confidently self-test if your devices will run AWS IoT Greengrass and interoperate with AWS IoT services. You can use the AWS Partner Device Catalog to browse and buy devices that have been qualified by AWS to work optimally with AWS IoT Greengrass.
+Contact Sales
+1,000 devices free
+now through December 31, 2021. See details.
+Build faster using pre-built or custom modular components, which you can easily add or remove from devices to control your device software footprint.
+Deploy and manage device software and configuration remotely and at scale without firmware updates.
+Bring cloud processing and logic locally to edge devices and operate even with intermittent connection.
+Program your devices to transmit only high-value data, making it easy to deliver rich insights at a lower cost.
 How it works
-AWS IoT Greengrass lets you build IoT solutions that enable devices to connect to the cloud or locally to other devices. Devices that run Linux, including distributions such as Ubuntu and Raspbian, and support Arm or x86 architectures can host the AWS IoT Greengrass Core. The AWS IoT Greengrass Core enables the local execution of AWS Lambda code, Docker containers, or native OS processes. AWS IoT Greengrass Core can run on individual IoT devices or it can act as a hub that communicates with other devices that are running FreeRTOS or using the AWS IoT Device SDK.
+AWS IoT Greengrass is an open-source edge runtime and cloud service for building, deploying, and managing device software.
 IoT devices can vary in size, ranging from smaller microcontroller-based devices to large appliances. AWS IoT Greengrass Core devices, AWS IoT Device SDK-enabled devices, and FreeRTOS devices can be configured to communicate with one another. If the AWS IoT Greengrass Core device loses connectivity to the cloud, connected devices can continue to communicate with each other over the local network.
 AWS IoT Greengrass provides pre-built components so you can easily extend edge device functionality without writing code. AWS IoT Greengrass components enable you to add features, and quickly connect to AWS services or third-party applications at the edge.
-Featured customers
-Ecofit
-Ecofit uses AWS IoT Greengrass to gather gym equipment data to better maintain equipment and extend life of assets.
-Cradlewise
-Cradlewise uses AWS IoT Greengrass to ensure its smart crib can keep devices operating in offline mode.
-Featured partners
-"At ADLINK, the scope of our partner offerings is key to building the best solution to solve each customer’s specific business problem. Container support for AWS IoT Greengrass is an exciting leap forward for our customers to deploy diverse workloads on AWS IoT Greengrass without rewriting code and continue to develop new applications in languages and environments familiar to development teams."
-Toby McClean, VP, IoT Solutions & Technology Innovation - ADLINK
-"Docker and AWS are collaborating on our shared vision of how workloads can be more easily deployed to edge devices. Docker's industry-leading container technology including Docker Desktop and Docker Hub are integral to advancing developer workflows for modern apps and IoT solutions. Our customers can now deploy and run Docker containers seamlessly on AWS IoT Greengrass devices, enabling development teams to ship apps faster and accelerate the migration of apps from the data center to the cloud, and now to edge devices."
-David Messina, EVP Strategic Alliances - Docker
-Check out the device tester
-Self-test if your devices will run AWS IoT Greengrass and interoperate with AWS IoT services.
-Learn more
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS IoT Greengrass in the AWS Console.
-Sign in
-Learn more about AWS IoT Greengrass
-Visit the features page
-Ready to build?
-Get started with AWS IoT Greengrass
-Have more questions?
-Contact us
+Use cases
+Run at the edge
+AWS IoT Greengrass makes it easy to bring intelligence to edge devices, such as for anomaly detection in precision agriculture or powering autonomous devices.
+Manage apps
+Deploy new or legacy apps across fleets using any language, packaging technology, or runtime.
+Control fleets
+Manage and operate device fleets in the field locally or remotely using MQTT or other protocols.
+Process locally
+Collect, aggregate, filter, and send data locally. Manage and control what data goes to the cloud for optimized analytics and storage.
+Customers
+Yanmar grew more crops in its intelligent greenhouses
+Seafloor Systems saved four hours of labor per robot build
+WeissBeerger decreased beer waste by 45 percent
+DTEK uses real-time data to proactively solve equipment problems
+How to get started
+Find out how AWS IoT Greengrass works
+Learn more about building, deploying, and managing device software.
+Explore AWS IoT Greengrass
+Engage with an IoT expert
+From development to enterprise-level programs, get the right support at the right time.
+Connect with an expert
+Sign up for the free trial
+Get AWS IoT Greengrass at no charge for the first 1,000 devices, through December 31, 2021.
+Learn more about pricing
+Explore more of AWS

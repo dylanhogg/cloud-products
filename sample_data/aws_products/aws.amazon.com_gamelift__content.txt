@@ -2,9 +2,12 @@ Amazon GameLift
 Enhance multiplayer experiences with dedicated cloud servers
 Get started with Amazon GameLift
 FEATURE UPDATE NOW GENERALLY AVAILABLE
-GameLift now available in six new regions
-Reach players closer to their actual regional locations with the addition of six new regions (from 15 to 21), while getting up and running faster from simpler fleet management. Read the blog announcement
+GameLift now available in Amazon Web Services China (Ningxia) Region, operated by NWCD
+Reach players closer to their actual regional locations with the addition of Amazon Web Services China (Ningxia) Region, operated by NWCD. Read the what's new post
 Amazon GameLift is a dedicated game server hosting solution that deploys, operates, and scales cloud servers for multiplayer games. Whether you’re looking for a fully managed solution, or just the feature you need, GameLift leverages the power of AWS to deliver the best latency possible, low player wait times, and maximum cost savings.
+125 hours Amazon GameLift on-demand instance usage free
+per month for 12 months with the AWS Free Tier
+Get started for free
 “We can quickly provision large amounts of server capacity, ensuring we have servers ready to go for anyone around the world. We don’t have to add additional staff to manage infrastructure, and this helps improve the bottom line not just from overhead, but also from server hosting by tapping into unused EC2 Spot instances at a discount when compared to On-Demand pricing.” - Stephen Detwiler, Co-Founder and CTO, N3TWORK
 Learn how they use GameLift
 "By easily integrating Amazon GameLift FleetIQ and Amazon EC2 SPOT instances with our in-house matchmaker, we can maintain complete control to provide players with well matched, low latency game sessions, all while optimizing costs. Since implementing GameLift FleetIQ and SPOT, servers automatically scale with fluctuating player demand, and preliminary estimates already show cost savings of 20% - 40% in comparison to on-demand instances.” -Nicolae Georgescu, Studio Online Lead, Gameloft
@@ -12,7 +15,7 @@ Learn how they use GameLift
 Benefits
 45 ms
 global median latency
-GameLift provides dedicated, reliable game servers for seamless gameplay experiences with minimal latency while maximizing cost savings. Leveraging EC2 compute capacity, 21 regions, and 60 instance types, GameLift offers the most elastic, global scalable service for computing.  Learn more
+GameLift provides dedicated, reliable game servers for seamless gameplay experiences with minimal latency while maximizing cost savings. Leveraging EC2 compute capacity, 22 regions, and 60 instance types, GameLift offers the most elastic, global scalable service for computing.  Learn more
 Up to 70% savings
 compared to existing on-premises deployments
 Autoscale with FlexMatch to meet player demand and connect up to 200 players in a single game session on the lowest latency server instance available. With GameLift you can experience up to 70% cost-savings compared to existing on-premises deployments. Learn more

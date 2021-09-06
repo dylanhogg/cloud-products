@@ -1,49 +1,33 @@
 Amazon Elastic Container Service
 Highly secure, reliable, and scalable way to run containers
 Get started with Amazon ECS
-Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service. Customers such as Duolingo, Samsung, GE, and Cookpad use ECS to run their most sensitive and mission critical applications because of its security, reliability, and scalability.
-ECS is a great choice to run containers for several reasons. First, you can choose to run your ECS clusters using AWS Fargate, which is serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design. Second, ECS is used extensively within Amazon to power services such as Amazon SageMaker, AWS Batch, Amazon Lex, and Amazon.com’s recommendation engine, ensuring ECS is tested extensively for security, reliability, and availability.
-Additionally, because ECS has been a foundational pillar for key Amazon services, it can natively integrate with other services such as Amazon Route 53, Secrets Manager, AWS Identity and Access Management (IAM), and Amazon CloudWatch providing you a familiar experience to deploy and scale your containers. ECS is also able to quickly integrate with other AWS services to bring new capabilities to ECS. For example, ECS allows your applications the flexibility to use a mix of Amazon EC2 and AWS Fargate with Spot and On-Demand pricing options. ECS also integrates with AWS App Mesh, which is a service mesh, to bring rich observability, traffic controls and security features to your applications. ECS has grown rapidly since launch and is currently launching 5X more containers every hour than EC2 launches instances.
-Coming soon: Amazon ECS Anywhere
-Amazon ECS Anywhere will enable you to run containers on-premises using your own infrastructure.
-How it works
-Request info
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. It deeply integrates with the rest of the AWS platform to provide a secure and easy-to-use solution for running container workloads in the cloud and now on your infrastructure with Amazon ECS Anywhere.
+Amazon ECS leverages serverless technology from AWS Fargate to deliver autonomous container operations, which reduces the time spent on configuration, patching, and security. Instead of worrying about managing the control plane, add-ons, and nodes, Amazon ECS enables you to rapidly build applications and grow your business.
+Amazon ECS: Core Concepts
 Benefits
-Serverless option
-ECS supports Fargate to provide serverless compute for containers. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
-Application first with Capacity Providers
-ECS capacity providers help you to focus on building and managing applications instead of infrastructure. With capacity provider the demands of your application determines the compute capacity allocated to it and you get the flexibility to use a mix of EC2 and Fargate with Spot and On-Demand pricing options for your applications.
-Performance at scale
-ECS powers several key services at Amazon and is built on technology developed from many years of experience running highly scalable services. You can rapidly launch thousands of containers using ECS with no additional complexity.
-Secure
-ECS launches your containers in your own Amazon VPC, allowing you to use your VPC security groups and network ACLs. No compute resources are shared with other customers. You can also assign granular access permissions for each of your containers using IAM to restrict access to each service and what resources a container can access. This high level of isolation helps you use ECS to build highly secure applications.
-Reliable
-ECS runs on the best global infrastructure with 77 Availability Zones (AZ) across 24 Regions. AWS provides >2x more regions with multiple availability zones than the next largest cloud provider (24 vs. 8). ECS is backed by the AWS Compute SLA which guarantees a Monthly Uptime Percentage of at least 99.99% for ECS giving you ease of mind.
-Optimized for cost
-With ECS, you can use Fargate Spot tasks or EC2 Spot instances to realize up to 90% discounts compared to on-demand prices for running stateless and fault tolerant applications. You can use savings plan and realize up to 50% discount for persistent workloads. You can easily run ECS clusters at scale by mixing Spot Instances with On-Demand and Reserved Instances.
+Use your existing tools
+No control plane or nodes to manage
+Lower your compute costs
+Meet security and regulatory requirements
+Amazon ECS is the easiest way to rapidly launch thousands of containers across AWS’ broad range of compute options, using your preferred CI/CD and automation tools.
+Amazon ECS is serverless by default with AWS Fargate, which means you’ll spend less time on operations because there’s no control plane or nodes to manage, and no instances to patch and scale.
+You only pay for the resources you configure. Amazon ECS can autonomously handle the provisioning and auto-scaling, which can help lower your compute costs by up to 50%.
+Amazon ECS integrates natively with AWS management and governance solutions to meet the security and compliance standards for virtually every regulatory agency around the globe.
 How Amazon ECS works
-Use cases
-Hybrid Deployment
-You can use ECS on Outposts to run containerized applications that require particularly low latencies to on-premises systems. AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs, and tools to virtually any connected site. With ECS on Outposts, you can manage containers on-premises with the same ease as you manage your containers in the cloud.
-Machine Learning
-You can use AWS Deep Learning Containers for training and serving models in TensorFlow, PyTorch, and MXNet on ECS. You can also accelerate deep learning inference workloads in ECS by using Amazon Elastic Inference (EI).
-Batch Processing
-You can run sequential or parallel batch workloads on ECS using AWS Batch. AWS Batch enables you to easily and efficiently run hundreds of thousands of batch computing jobs by dynamically provisioning the optimal quantity and type of compute resources based on the volume and specific resource requirements of the batch jobs submitted.
-Web Applications
-You can build web applications that automatically scale up and down and run in a highly available configuration across multiple Availability Zones. By running on ECS, your web applications benefit from the performance, scale, reliability, and availability of the AWS. Additionally, your services get out-of-the-box integrations with AWS networking and security services, such as Application Load Balancers for load distribution of your web application and VPC for networking.
+Featured Customers
+Affirm executes thousands of daily tasks with Amazon ECS and AWS Fargate
+Samsung improves performance and service reliability, while reducing their container orchestration costs
+Duolingo relies on Amazon ECS to support 300M+ mobile app users
+With Amazon ECS, Expedia Group has seen 10x increase in shipped features
+Read more customer stories
 Customers Using Amazon ECS
-Ubisoft uses Amazon ECS to provide seamless multiplayer gaming
-GoPro uses Amazon ECS to reduce its compute footprint by 70%
-TIBCO uses ECS to reduce deployment time & its compute footprint by 40%
-Remind improved their service response time using Amazon ECS
-See all customer stories
 What's new
 date
 1
 ...
 Blog posts & articles
-Learn more about Amazon ECS
-Visit the features page
+Learn more about containers on AWS
+Visit the containers page
 Ready to build?
 Have more questions?
 Contact us

@@ -4,7 +4,9 @@ Get started with Amazon Personalize
 Amazon Personalize enables developers to build applications with the same machine learning (ML) technology used by Amazon.com for real-time personalized recommendations – no ML expertise required.
 Amazon Personalize makes it easy for developers to build applications capable of delivering a wide array of personalization experiences, including specific product recommendations, personalized product re-ranking, and customized direct marketing. Amazon Personalize is a fully managed machine learning service that goes beyond rigid static rule based recommendation systems and trains, tunes, and deploys custom ML models to deliver highly customized recommendations to customers across industries such as retail and media and entertainment.
 Amazon Personalize provisions the necessary infrastructure and manages the entire ML pipeline, including processing the data, identifying features, using the best algorithms, and training, optimizing, and hosting the models. You will receive results via an Application Programming Interface (API) and only pay for what you use, with no minimum fees or upfront commitments. All data is encrypted to be private and secure, and is only used to create recommendations for your users.
-Improve customer engagement and conversion with Amazon Personalize (1:30)
+2 months free
+with the AWS Free Tier
+Get started for free
 “With Amazon Personalize, we were able to quickly design and launch a recommendation engine for Intuit’s Mint budget tracker and planner app. Using customer profile and behavioral data, with machine learning, the service helps deliver the right financial offer to the right customer at the right time, based on their spending habits, lifestyle, and goals.”
 Qiang Zhu, Director of Data Science
 Intuit

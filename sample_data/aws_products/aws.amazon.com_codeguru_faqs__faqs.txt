@@ -37,6 +37,13 @@ Q: What type of issues are detected by Amazon CodeGuru Reviewer Security Detecto
 CodeGuru Reviewer can help you with five categories of the code security issues: (1) AWS API Security Best Practices help you follow the security best practices when using APIs of various AWS services, such as AWS EC2 and KMS (2) Java Crypto Library Best Practices help you check common Java cryptography libraries, such as Javax.Crypto.Cipher, to ensure that they are initialized and called correctly (3) Secure Web Applications help you check web app related security issues, such as cross-site scripting, LDAP injection, and path traversal injection (4) AWS Security Best Practices bring internal security expertise, such as AWS Crypto recommendations, to your use cases.
 Q: Does Amazon CodeGuru Reviewer Security Detector analyze all the code in my repository?
 Yes, CodeGuru Reviewer Security Detector analyzes build artifacts and all Java source code in a repository to provide security recommendations.
+Amazon CodeGuru Reviewer CI/CD Integrations
+Q: What CI/CD providers does CodeGuru support?
+CodeGuru supports GitHub Actions for CI/CD integration.
+Q: How does integrating CodeGuru into my CI/CD pipeline help improve my code?
+By integrating CodeGuru Reviewer into your CI/CD pipeline, you can easily automate the code review process for both code quality and security recommendations. You can configure it to run on pull/merge requests, push, or scheduled runs of your pipeline. The integration ensures you never miss a recommendation and are continuously monitoring the quality of your code and potential security vulnerabilities.
+Q: How do I set up CI/CD integration with GitHub?
+You can view the CodeGuru Reviewer GitHub Action on the GitHub Marketplace by clicking here. Follow the instructions on the marketplace page to integrate CodeGuru into you GitHub CI workflow. Visit our documentation for additional details.
 Amazon CodeGuru Profiler
 Q: What is Amazon CodeGuru Profiler?
 Amazon CodeGuru Profiler helps developers and IT Operators easily understand the runtime behavior of their applications, improve performance, and decrease infrastructure costs. Amazon CodeGuru Profiler analyzes the application runtime profile and provides intelligent recommendations and visualizations that guide developers on how to improve the performance of the most relevant parts of their code.

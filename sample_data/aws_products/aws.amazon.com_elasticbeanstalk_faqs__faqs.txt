@@ -35,14 +35,14 @@ Adjust application server settings (e.g., JVM settings) and pass environment var
 Run other application components, such as a memory caching service, side-by-side in Amazon EC2
 Access log files without logging in to the application servers
 Q: What are the Cloud resources powering my AWS Elastic Beanstalk application?
-AWS Elastic Beanstalk uses proven AWS features and services, such as Amazon EC2, Amazon RDS, Elastic Load Balancing, Auto Scaling, Amazon S3, and Amazon SNS, to create an environment that runs your application. The current version of AWS Elastic Beanstalk uses the Amazon Linux AMI or the Windows Server 2012 R2 AMI.
+AWS Elastic Beanstalk uses proven AWS features and services, such as Amazon EC2, Amazon RDS, Elastic Load Balancing, Auto Scaling, Amazon S3, and Amazon SNS, to create an environment that runs your application. The current version of AWS Elastic Beanstalk uses the Amazon Linux AMI or the Windows Server 2019.
 Q: What kinds of applications are supported by AWS Elastic Beanstalk?
 AWS Elastic Beanstalk supports Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker, and is ideal for web applications. However, due to Elastic Beanstalk’s open architecture, non-web applications can also be deployed using Elastic Beanstalk. We expect to support additional application types and programming languages in the future. See Supported Platforms to learn more.
 Q: Which operating systems does AWS Elastic Beanstalk use?
 AWS Elastic Beanstalk runs on the Amazon Linux AMI and the Windows Server AMI. Both AMIs are supported and maintained by Amazon Web Services and are designed to provide a stable, secure, and high-performance execution environment for Amazon EC2 Cloud computing.
 Getting Started
 Q: How do I sign up for AWS Elastic Beanstalk?
-To sign up for AWS Elastic Beanstalk, choose the Sign Up Now button on the Elastic Beanstalk detail page. You must have an Amazon Web Services account to access this service; if you do not already have one, you will be prompted to create one when you begin the Elastic Beanstalk process. After signing up, please refer to the&nbsp;AWS Elastic Beanstalk Getting Started Guide.
+To sign up for AWS Elastic Beanstalk, choose the Sign Up Now button on the Elastic Beanstalk detail page. You must have an Amazon Web Services account to access this service; if you do not already have one, you will be prompted to create one when you begin the Elastic Beanstalk process. After signing up, please refer to the AWS Elastic Beanstalk Getting Started Guide.
 Q: Why am I asked to verify my phone number when signing up for AWS Elastic Beanstalk?
 AWS Elastic Beanstalk registration requires you to have a valid phone number and email address on file with AWS in case we ever need to contact you. Verifying your phone number takes only a few minutes and involves receiving an automated phone call during the registration process and entering a PIN number using the phone key pad.
 Q: How do I get started after I have signed up?

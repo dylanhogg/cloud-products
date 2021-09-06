@@ -7,7 +7,7 @@ Q: Are there sample AWS CDK applications that I can use as a starting point? Yes
 Q: Why do I need a JavaScript runtime installed to use AWS CDK? AWS builds the business logic of AWS Construct Library packages in TypeScript, and provides mappings into each of the supported programming languages. This allows us to ensure that AWS CDK constructs behavior is consistent language to language, and allows us to offer a comprehensive set of construct packages that are available in all languages. The code you write in your AWS CDK project is all native in the programming language you prefer, and the JavaScript runtime is an implementation detail to your programming experience. You can reference to the jsii project at https://github.com/aws/jsii.
 Q: Where can I find the AWS CDK source code? The AWS CDK code is open source and is available through GitHub at https://github.com/awslabs/aws-cdk.
 Q: How can I contribute? We are developing AWS CDK in the open and welcome anyone who wants to contribute to our code base. You can learn more at https://github.com/awslabs/aws-cdk/blob/master/CONTRIBUTING.md.
-Q: What programming languages does AWS CDK support? AWS CDK is generally available in JavaScript, TypeScript, Python, Java, and C#. We are planning AWS CDK bindings for other languages in the future, so vote for your favorite on GitHub.
+Q: What programming languages does AWS CDK support? AWS CDK is generally available in JavaScript, TypeScript, Python, Java, C#, and Go (in Developer Preview). We are planning AWS CDK bindings for other languages in the future, so vote for your favorite on GitHub.
 Q: In which regions can I use AWS CDK? AWS CDK is available to define and deploy AWS resources in all public regions. Since AWS CDK leverages the CloudFormation service, refer to Regional Products and Services for details about specific resource availability per AWS Region.
 Q: Are there any resource limits or restrictions applied to AWS CDK? Since AWS CDK leverages CloudFormation, AWS CDK applications are subject to the same limits imposed by the CloudFormation service.
 Q: What is the relationship between AWS CDK and AWS Solutions Constructs? AWS Solutions Constructs is an open-source library extension of the AWS CDK. AWS Solutions Constructs provide customers with a collection of vetted, multi-service architecture patterns built using the best practices established by the AWS Well-Architected Framework. AWS Solutions Constructs requires installation of the AWS CDK as a prerequisite; for instructions how to add AWS Solutions Constructs to your AWS CDK environment, please see our development guide.
@@ -24,7 +24,7 @@ Cost
 Q: Under what license is AWS CDK distributed? AWS CDK is distributed under the Apache License, Version 2.0. See LICENSE and NOTICE for more information.
 Q: How much does AWS CDK cost? There is no additional charge for AWS CDK. You pay for AWS resources (such as Amazon EC2 instances, Elastic Load Balancing load balancers, etc.) created using AWS CDK in the same way as if you created them manually. You only pay for what you use, as you use it; there are no minimum fees and no required upfront commitments.
 Check out the product features
-Vist the AWS CDK features page
+Visit the AWS CDK features page
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

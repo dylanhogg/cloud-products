@@ -4,7 +4,10 @@ Get started with Amazon DevOps Guru
 Amazon DevOps Guru is a Machine Learning (ML) powered service that makes it easy to improve an application’s operational performance and availability. DevOps Guru detects behaviors that deviate from normal operating patterns so you can identify operational issues long before they impact your customers.
 DevOps Guru uses machine learning models informed by years of Amazon.com and AWS operational excellence to identify anomalous application behavior (e.g. increased latency, error rates, resource constraints, etc.) and surface critical issues that could cause potential outages or service disruptions. When DevOps Guru identifies a critical issue, it automatically sends an alert and provides a summary of related anomalies, the likely root cause, and context about when and where the issue occurred. When possible DevOps Guru, also provides recommendations on how to remediate the issue.
 DevOps Guru automatically ingests operational data from your AWS applications and provides a single dashboard to visualize issues in your operational data. You can get started with DevOps Guru by selecting coverage from your CloudFormation stacks or your AWS account to improve application availability and reliability with no manual setup or machine learning expertise.
-What is Amazon DevOps Guru?
+7,200 AWS resource hours free
+each for resource group A and B
+per month for 3 months with the AWS Free Tier
+Get started for free
 Benefits
 Automatically detect operational issues
 Using machine learning, Amazon DevOps Guru automatically collects and analyzes data such as application metrics, logs, and events and behaviors that deviate from normal operating patterns. It automatically detects and alerts on operational issues and risks, such as impending resource exhaustion, code and configuration changes that may cause outages, memory leaks, under-provisioned compute capacity, and database I/O overutilization.

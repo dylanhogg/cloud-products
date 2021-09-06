@@ -1,4 +1,3 @@
-General
 Q: What is Amazon FSx for Windows File Server?
 A: Amazon FSx for Windows File Server provides fully managed, highly reliable, and scalable file storage that is accessible over the industry-standard Service Message Block (SMB) protocol. It is built on Windows Server, delivering a wide range of administrative features such as user quotas, end-user file restore, and Microsoft Active Directory (AD) integration.
 To support a wide spectrum of workloads, Amazon FSx provides high levels of throughput and IOPS, and consistent sub-millisecond latencies.
@@ -20,10 +19,10 @@ A: Amazon FSx is a fully-managed service, so all of the file storage infrastruct
 To create, view, tag, and delete file systems and backups, you can use the AWS Management Console, the AWS command-line interface (CLI), or the Amazon FSx API (and various language-specific SDKs). To administer file systems, including managing file shares, active user sessions and open files, shadow copies, user quotas, and Data Deduplication, you can use the Amazon FSx remote management CLI via PowerShell.
 Q: How do I migrate my existing file data into an Amazon FSx file system?
 A: If you’d like to migrate your existing files to Amazon FSx for Windows File Server file systems, we recommend the use of AWS DataSync, an online data transfer service designed to simplify, automate, and accelerate copying large amounts of data to and from AWS storage services. DataSync copies data over the internet or AWS Direct Connect. As a fully managed service, DataSync removes much of the need to modify applications, develop scripts, or manage infrastructure. For more information, see Migrating Existing Files to Amazon FSx for Windows File Server Using AWS DataSync guide.
-A secondary option is Windows’s Robust File Copy (RoboCopy) to copy your files (both the data and the full set of metadata like ownership and Access Control Lists) directly to Amazon FSx. The RoboCopy tool performs the copy in entirety (including all metadata like ACLs, ownership, and time stamps), efficiently (with parallel copy) and reliably (by recovering from interruptions like network outages).
-Once you have moved your file and folder data, Amazon FSx offers programmatic share management support to help you easily migrate your file share configuration. Learn more about migrating your existing file shares in the documentation guide.
+A secondary option is Windows’s Robust File Copy (RoboCopy) to copy your files directly to Amazon FSx.
+Once you have moved your file and folder data, Amazon FSx offers programmatic share management support to help you easily migrate your file share configuration. You must include security ACLs (SACLs) in your data migration to keep using your existing audit controls for file access auditing. Learn more about migrating your existing file shares in the documentation guide.
 Q: How do I monitor my file system’s activity?
-A: You can monitor storage capacity and file system activity using Amazon CloudWatch, and monitor all Amazon FSx API calls using AWS CloudTrail.
+A: You can monitor storage capacity and file system activity using Amazon CloudWatch, monitor all Amazon FSx API calls using AWS CloudTrail, and monitor end user actions with file access auditing using Amazon CloudWatch Logs and Amazon Kinesis Data Firehose.
 Q: What workloads is Amazon FSx for Windows File Server designed for?
 A: Amazon FSx was designed for a broad set of use cases that require Windows shared file storage, like CRM, ERP, custom or .NET applications, home directories, data analytics, media and entertainment workflows, web serving and content management, software build environments, and Microsoft SQL Server.
 Q: How do I use Amazon FSx with Microsoft SQL Server?
@@ -44,6 +43,7 @@ Q: What regions is Amazon FSx for Windows File Server available in?
 A: Please refer to Regional Products and Services for details of Amazon FSx for Windows File Server service availability by region.
 Q: Does Amazon FSx offer a Service Level Agreement (SLA)?
 A: Yes. The Amazon FSx SLA provides for a service credit if a customer's monthly uptime percentage is below our service commitment in any billing cycle.
+General
 Scale and performance
 Q: What performance does FSx for Windows File Server provide?
 A: Amazon FSx provides consistent sub-millisecond latencies with SSD storage, and single-digit millisecond latencies with HDD storage for file operations. For all file systems, including those with HDD storage, Amazon FSx provides a fast (in-memory) cache on the file server, so you can get high performance and sub-millisecond latencies for actively accessed data irrespective of storage type.
@@ -86,6 +86,11 @@ You specify the Amazon Virtual Private Cloud (VPC) in which your file system is 
 You control who can administer your file system and backup resources (create, delete, etc.) using AWS IAM.
 Q: Does Amazon FSx for Windows File Server support data encryption?
 A: Yes. Amazon FSx for Windows File Server always encrypts your file system data and your backups at-rest using keys you manage through AWS Key Management Service (KMS). Amazon FSx encrypts data-in-transit using SMB Kerberos session keys, when you access your file system from clients that support SMB 3.0 (and higher). You can also choose to enforce in-transit encryption on all connections to your file system by limiting access to only those clients that support SMB 3.0 and higher to help meet compliance needs.
+Q: How do I audit end user access to my files and folders?
+A: When creating a file system from the AWS Management Console, file access auditing is turned on by default. If you're migrating existing file data that already has audit controls (SACLs) set up, there's nothing more for you to do to take advantage of file access auditing.
+You can turn on files access auditing at any time (during or after creation of a file system) via the AWS Management Console or the Amazon FSx CLI or API, and also change the destination for publishing user access events: logging to CloudWatch Logs or streaming to Kinesis Data Firehose.
+You can also set up or change audit controls (i.e., which access types by which users or groups to publish audit events for) at any time for individual files and folders using Windows audit controls via Windows File Explorer or PowerShell.
+Once the events are available in the destination, you have the option to view and search the logs on the CloudWatch Console, query the logs using CloudWatch Logs Insights, archive log data, trigger Lambda functions to take reactive actions (e.g., notify security teams of unauthorized access attempts), or perform post-processing on partner solutions such as Splunk and Datadog.
 Q: What compliance programs does Amazon FSx support?
 A: AWS has the longest-running compliance program in the cloud and is committed to helping customers navigate their requirements. Amazon FSx has been assessed to meet global and industry security standards. It complies with PCI DSS, ISO 9001, 27001, 27017, and 27018), and SOC 1, 2, and 3, in addition to being HIPAA eligible. That makes it easier for you to verify our security and meet your own obligations. For more information and resources, visit our compliance pages. You can also go to the Services in Scope by Compliance Program page to see a full list of services and certifications.
 Availability and durability
@@ -121,6 +126,8 @@ Q: How do I protect Amazon FSx resources using AWS Backup?
 A: You first enable Amazon FSx as a protected service in AWS Backup. You can then configure backups of your Amazon FSx resources via the AWS Backup console, API or CLI. You can create both scheduled and on-demand backups of Amazon FSx resources via AWS Backup and restore these backups as new Amazon FSx file systems. Amazon FSx file systems can be added to backup plans in the same way as other AWS resources, either by specifying the ARN or by tagging the Amazon FSx file system for protection in the backup plan. To learn more, visit the AWS Backup documentation.
 Q: How do I copy backups of my Amazon FSx file systems across AWS Regions and AWS accounts?
 A: You can configure your backup plans on AWS Backup to periodically create and copy backups of your Amazon FSx file systems to other AWS Regions, other AWS accounts, or both, with your desired frequency and retention policy. For cross-account backup copies, you use your AWS Organizations management account to designate source and destination accounts.
+Q: How can I automatically replicate my FSx for Windows File Server file system to another file system?
+You can use AWS DataSync to schedule the periodic replication of your Amazon FSx for Windows File Server file system to a second file system. This capability is available for both same-region and cross-region replications. To learn more, see Data Transfer between AWS Storage services.
 Optimizing Total Cost of Ownership (TCO)
 Q: What storage options does Amazon FSx support for my file system? How should I choose?
 A: Amazon FSx provides two types of storage – Hard Disk Drives (HDD) and Solid State Drives (SSD) – to allow you to optimize cost/performance to meet your workload needs. HDD storage is designed for a broad spectrum of workloads, including home directories, user and departmental shares, and content management systems. SSD storage is designed for the highest-performance and most latency-sensitive workloads, including databases, media processing workloads, and data analytics applications.

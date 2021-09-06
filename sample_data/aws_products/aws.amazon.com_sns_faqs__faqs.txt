@@ -37,7 +37,7 @@ Please refer to the Amazon SNS Features page for additional details on pricing a
 Q: How will I be charged and billed for my use of Amazon SNS?
 There are no set-up fees to begin using the service. At the end of the month, your credit card will automatically be charged for that month’s usage. You can view your charges for the current billing period at any time on the Amazon Web Services web site by logging into your Amazon Web Services account and clicking “Account Activity” under “Your Web Services Account”.
 Q: When does billing of my Amazon SNS use begin and end?
-Your Amazon SNS billing cycle begins on the first day of each month and ends on the last day of each month. Your monthly charges will be totalled at the end of each month.
+Your Amazon SNS billing cycle begins on the first day of each month and ends on the last day of each month. Your monthly charges will be totaled at the end of each month.
 Q: Do your prices include taxes?
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
 Features and functionality
@@ -46,7 +46,7 @@ Topic names are limited to 256 characters. Alphanumeric characters plus hyphens 
 The following is the ARN for a topic named “mytopic” created by a user with the AWS account ID “123456789012” and hosted in the US East region:
 arn:aws:sns:us-east-1:1234567890123456:mytopic Note: Users should NOT attempt to build the topic ARN from its separate components – they should always use the name returned from the API call to create the topic.
 Q: What are the available operations for Amazon SNS and who can perform these operations?
-Amazon SNS provides a set of simple APIs to enable event notifications for topic owners, subscribers and publishers.
+Amazon SNS provides a set of simple APIs to enable event notifications for topic owners, subscribers, and publishers.
 Owner operations:
 CreateTopic – Create a new topic.
 DeleteTopic – Delete a previously created topic.
@@ -80,7 +80,7 @@ Please refer to the Amazon SNS Getting Started Guide for an overview of setting 
 Q: Can a single topic support subscriptions over multiple protocols/transports?
 Subscribers to an Amazon SNS topic can receive notifications on any transport supported by the topic. A topic can support subscriptions and notification deliveries over multiple transports.
 Q: Can subscribers selectively receive only a subset of messages published to a topic?
-Yes, you can use message filtering on Amazon Simple Notification Service (SNS) to build simpler and more streamlined pub/sub architectures. Message filtering enables Amazon SNS topic subscribers to selectively receive only a subset of the messages they are interested in, as opposed to receiving all messages published to a topic. To monitor the usage of SNS subscription filter policies, use Amazon CloudWatch metrics, which are automatically collected for you. You can also use the AWS::SNS::Subscription resource type in AWS CloudFormation templates to quickly deploy solutions that use SNS message filtering. For more details, try our 10-minute tutorial, Filter Messages Published to Topics, or see the Filter Messages with Amazon SNS section in our documentation.”
+Yes, you can use message filtering on Amazon Simple Notification Service (SNS) to build simpler and more streamlined pub/sub architectures. Message filtering enables Amazon SNS topic subscribers to selectively receive only a subset of the messages they are interested in, as opposed to receiving all messages published to a topic. To monitor the usage of SNS subscription filter policies, use Amazon CloudWatch metrics, which are automatically collected for you. You can also use the AWS::SNS::Subscription resource type in AWS CloudFormation templates to quickly deploy solutions that use SNS message filtering. For more details, try our 10-minute tutorial, Filter Messages Published to Topics, or see the Filter Messages with Amazon SNS section in our documentation.
 Q: Can Amazon SNS be used with other AWS services?
 Amazon SNS can be used with other AWS services such as Amazon SQS, Amazon EC2 and Amazon S3. Here is an example of how an order processing workflow system uses Amazon SNS with Amazon EC2, SQS, and SimpleDB. In this workflow system, messages are sent between application components whenever a transaction occurs or an order advances through the order processing pipeline. When a customer initially places an order, the transaction is first recorded in Amazon SimpleDB and an application running on Amazon EC2 forwards the order request to a payment processor which debits the customer’s credit card or bank account. Once approved, an order confirmation message is published to an Amazon SNS topic. In this case, the topic has various subscribers over Email/HTTP – merchant, customer and supply chain partners – and notifications sent by Amazon SNS for that topic can instantly update all of them that payment processing was successful. Notifications can also be used to orchestrate an order processing system running on EC2, where notifications sent over HTTP can trigger real-time processing in related components such as an inventory system or a shipping service. By integrating Amazon SNS with Amazon SQS, all notifications delivered are also persisted in an Amazon SQS queue where they are processed by an auditing application at a future time.
 Q: Is Amazon SNS available in all regions where AWS services are available?
@@ -89,7 +89,7 @@ Q: How soon can customers recreate topics with previously used topic names?
 Topic names should typically be available for reuse approximately 30-60 seconds after the previous topic with the same name has been deleted. The exact time will depend on the number of subscriptions which were active on the topic – topics with a few subscribers will be available instantly for reuse, topics with larger subscriber lists may take longer.
 FIFO topics
 Q: What are SNS FIFO topics?
-Similar to standard SNS topics, SNS FIFO topics allow users to publish a message to a topic, so it can be delivered to a series of subscribing endpoints. When the delivery of those messages to subscribers must be in order (first-in-first-out), and once only, and you want SNS to take care of it, SNS FIFO topics is the way to go. Amazon SNS FIFO topics deliver ordered messages to Amazon Simple Queue Service (Amazon SQS) FIFO queues to provide consistent end-to-end message ordering for distributed applications. You can now reduce the effort required to process your high throughput, consistently ordered transactions, and simplify your messaging architecture. Example use cases include bank transaction logs, stock tickers, flight trackers, price updates, news broadcasting, and inventory management.
+Similar to standard SNS topics, SNS FIFO topics allow users to publish a message to a topic, so it can be delivered to a series of subscribing endpoints. When the delivery of those messages to subscribers must be in order (first-in-first-out), and once only, and you want SNS to take care of it, SNS FIFO topics is the way to go. Amazon SNS FIFO topics deliver ordered messages to Amazon Simple Queue Service (Amazon SQS) FIFO queues to provide consistent end-to-end message ordering for distributed applications. You can now reduce the effort required to process your high throughput, consistently ordered transactions and simplify your messaging architecture. Example use cases include bank transaction logs, stock tickers, flight trackers, price updates, news broadcasting, and inventory management.
 Q: When should I use SNS FIFO topics and when should I use Kinesis Data Streams?
 Both SNS FIFO topics and Kinesis Streams enable you to build applications that require strictly ordered, many-to-many messaging. SNS FIFO topics can further unlock application integration use cases that require large ordered fan-out, up to 100 subscribers. Kinesis Streams, on the other hand, supports ordered fan-out up to 5 subscribers and is often used for analytics and anomaly detection use cases.
 Transports
@@ -125,7 +125,7 @@ Q: How would a user subscribe for notifications to be delivered over SMS?
 Please refer to the 'SMS Related Question' section below.
 Security
 Q: How can users secure the messages sent to my topics?
-All API calls made to Amazon SNS are validated for the user’s AWS Id and the signature. In addition, we recommend that users secure their data over the wire by connecting to our secure SSL end-points.
+All API calls made to Amazon SNS are validated for the user’s AWS ID and the signature. In addition, we recommend that users secure their data over the wire by connecting to our secure SSL end-points.
 Q: Who can create a topic?
 Topics can only be created by users with valid AWS IDs who have signed up for Amazon SNS. The easiest way to create a topic is to use the AWS Management Console. It can also be created through the CreateTopic API. The AWS Management Console is available at: http://aws.amazon.com/console
 Q: Can multiple users publish to a single topic?
@@ -217,7 +217,7 @@ Amazon SNS supports more than 200 countries, and we keep growing our reach. Plea
 Q: Which AWS regions support Worldwide SMS?
 Please refer to the SNS Supported Regions and Countries page of the Amazon SNS documentation for the latest list of regions where applications using Amazon SNS to send SMS can be hosted in.
 Q: Do the AWS phone numbers change?
-Yes. Amazon SNS will preferentially use the configured dedicated numbers of an account in priority order of short codes before long codes. If no, dedicated numbers are configured one of the numbers from a shared set will be used.
+Yes. Amazon SNS will preferentially use the configured dedicated numbers of an account in priority order of short codes before long codes. If no dedicated numbers are configured one of the numbers from a shared set will be used.
 Q: Why do some devices on the same carrier receive messages from different phone numbers?
 Amazon SNS will preferentially use the configured dedicated numbers of an account in priority order of short codes before long codes. If no, dedicated numbers are configured one of the numbers from a shared set will be used.
 Q: What is the phone number format for sending messages to other countries?
@@ -255,6 +255,68 @@ Q: Does Amazon SNS provide delivery receipts for SMS messages?
 Our Delivery Status feature provides information based on delivery receipts received from the destination carrier. For more information on the Delivery Status feature and how to use it, please refer to our documentation.
 Q: Does SMS support delivery to VoIP services like Google Voice or Hangouts?
 Yes. Amazon SNS does support delivery to VoIP services that can receive SMS messages.
+10-Digit Long Codes (10DLC)
+Q: What is 10DLC?
+A. 10DLC is a 10-digit long code that you can use as an origination identity when sending text messages (SMS) to consumers in the US. It supports a maximum throughput of 100 text messages per second (TPS). AWS doesn't determine the throughput allocated to you. Instead, US carriers allocate throughput to you when you register for the 10DLC. To use 10DLC numbers, carriers require that you provide information about your company and your use cases (also called 10DLC campaigns).
+You must register your company and 10DLC campaigns in the Amazon Pinpoint console. Once your registration is complete, and an active 10DLC is available on your account, you can use this number as an origination identity and send SMS using Amazon SNS. Amazon supports the registration process through The Campaign Registry (TCR), a third party central entity that carriers use to validate brand information and 10DLC campaign details.
+Q: How long does it take to register a 10DLC campaign?
+A: In some cases, registration can occur immediately. For example, if you've previously registered with The Campaign Registry (TCR), they might already have your information. However, it can take a week or longer to receive approval for some campaigns. After your company and 10DLC campaigns are approved by TCR, you can purchase a 10DLC number and associate it with your campaigns. After you purchase a 10DLC number, it may take up to a week for activation. For more information, see 10DLC in the Amazon SNS Developer Guide.
+Q: Can I procure an unregistered P2P long code to send A2P SMS to US phone numbers?
+A. No. As of February 16, 2021, you cannot purchase SMS-enabled unregistered person-to-person (P2P) long codes from AWS. Starting June 1, 2021, Amazon SNS no longer supports sending application-to-person (A2P) SMS messages over unregistered US long codes to US destinations. Instead, you can purchase and use short codes, 10DLC, and/or toll-free numbers as originating identities for US destinations. For more information, see Origination numbers in the Amazon SNS Developer Guide.
+Q: Should I delete the existing unregistered US long codes in my AWS account?
+A. Yes. On June 1, 2021, carriers will no longer deliver messages sent via unregistered long codes to US destinations. If you do not need them for other purposes (for example, voice telephony using other AWS products), delete them from your account. To send SMS, you can convert existing unregistered long codes to 10DLC numbers by associating them with a 10DLC campaign. For more information, see Associating a long code with a 10DLC campaign in the Amazon SNS Developer Guide. Amazon SNS uses Amazon Pinpoint for managing 10DLC campaigns.
+Q: I only use Amazon SNS or Amazon Cognito. Should I still use Amazon Pinpoint to register my 10DLC campaign?
+A. Yes. You must use Amazon Pinpoint to register 10DLC brands and campaigns. When you complete the registration process and your 10DLC number is activated, Amazon SNS and Amazon Cognito automatically use the 10DLC in your account as the origination ID when sending SMS.
+Q: Can I continue to use my long code when it is being migrated to a 10DLC number?
+A. Yes. You can continue using the long code as an origination ID, when it is converted into a 10DLC number. It is important that the 10DLC process is completed before June 1, 2021, as unregistered long codes cannot be used after that date.
+Q: What is a 10DLC campaign? What information do I need to provide to create one?
+A. A 10DLC campaign represents a use case for which you are sending a text message to your customers. For example, you might send a notification when a customer’s bill is due. Before you send the SMS, you need to register your use cases for sending text messages, and associate a 10DLC number with a 10DLC campaign. For more information, see Registering a 10DLC campaign in the Amazon SNS Developer Guide. Amazon SNS uses Amazon Pinpoint for managing 10DLC campaigns.
+Q: When sending SMS, how does Amazon SNS choose from the origination identities associated with my AWS account?
+A: When you publish messages to Amazon SNS, you can choose one of the registered origination identities by setting the AWS.MM.SMS.OriginationNumber attribute. AWS recommends that you specify the origination identity when publishing messages.
+When you do not specify an origination identity when publishing the message to Amazon SNS, the following applies:
+If you have only one 10DLC number configured in your account for that AWS region, then all your SMS messages will be sent to US destinations using that 10DLC number.
+If you have multiple origination identities associated with your AWS account, Amazon SNS will choose an origination identity based on the following order: short code, 10DLC, toll-free number.
+For information on how to specify an origination identity, see Publishing to a mobile phone, in the Amazon SNS Developer Guide.
+Q: Can I use multiple 10DLC numbers for one campaign?
+A: Yes. You can associate multiple 10DLC numbers with a single campaign. However, you cannot use the same 10DLC number across multiple campaigns.
+Q: I registered my 10DLC company and campaign successfully. However, the associated 10DLC number is stuck in a ‘Pending’ state. What do I do?
+A. When the 10DLC number is in pending state, AWS is working to activate your number on the 10DLC campaign. To activate a number, a valid and active 10DLC brand and 10DLC campaign are required. Activation can take a week or longer to complete. If the 10DLC number has been in pending state for more than a week, raise support case via AWS Support console.
+Q: Can I use AWS API actions to request 10DLC numbers instead of using the Amazon Pinpoint console?
+A. No. Currently, you can only request 10DLC numbers via the Amazon Pinpoint console. Amazon SNS uses Amazon Pinpoint for managing 10DLC campaigns.
+Q: How can I use 10DLC across different AWS regions in my AWS account?
+A. 10DLC company and 10DLC campaign registration is specific to an AWS account. However, a 10DLC number is specific to an AWS region. You can have multiple 10DLC numbers in an AWS region referring to the same 10DLC campaign.
+Q: Can I get an 10DLC number with a specific area code?
+A. No. Currently, AWS does not support choosing 10DLC numbers.
+Q: Can I use 10DLC numbers as originating identities for sending SMS outside the US?
+A. No. You can only use 10DLC numbers to send SMS messages to US destinations.
+Q: Can I use 10DLC numbers for sending voice messages?
+A. Yes. To use 10DLC numbers to send voice messages, select voice capability when provisioning these numbers. Note that Amazon SNS does not support voice messages. However, you can use these numbers in other AWS services.
+Q: Can I use variables in my 10DLC campaign sample messages?
+A. Yes. To use variable content in your sample messages, you can use placeholders in the template that you provide when you register the 10DLC campaign. For example, suppose you want the message to read, "Hi John. Your OTP is 1234." In this case, you would write the template as follows: "Hi {#var1}. Your OTP is {#var2}."
+Q: Is there a way to capture metrics for each 10DLC campaign?
+A. Currently, there is no metric in Amazon SNS to track messages sent per 10DLC campaign or phone number. For more information, see Monitoring SMS activity, in the Amazon SNS Developer Guide.
+Q: Can I migrate 10DLC registrations from one AWS account to another? How long does it take?
+A. Yes. To migrate 10DLC registrations between the AWS accounts that you own, create a Service quota Increase support case in the AWS Support Center. You can expect a response within two weeks.
+Q: I registered my company directly with The Campaign Registry (TCR) portal. Can I use the same registration for my AWS account?
+A. No. To send SMS using Amazon SNS, you must register your brand and 10DLC campaigns with AWS, using the Amazon Pinpoint console. For more information, see Getting started with 10DLC, in the Amazon SNS Developer Guide.
+Q: I send SMS messages using Amazon SNS from multiple AWS regions. How do I register a 10DLC number in the AWS region I operate in?
+A. 10DLC numbers are specific to an AWS region. 10DLC company and campaigns are valid across AWS regions, in the same AWS account. You can register your brand and campaigns in one AWS region, and procure new 10DLC numbers for those 10DLC campaigns, for use in other AWS regions as needed.
+Q: What happens when I send SMS messages at a higher rate than my 10DLC campaign throughput quota?
+A. When you exceed your throughput quota, your AWS account experiences throttling errors. The throughput quota is broken down as follows:
+Account level delivery rate of SMS, as specified in Amazon SNS endpoints and quotas in the AWS General Reference.
+Throughput quota based on 10DLC campaign capabilities, as described in 10DLC in the Amazon SNS Developer Guide.
+Q: How can I register my company in two different AWS accounts?
+A: 10DLC companies and campaigns reside within a single AWS account. If you have multiple accounts, you can associate those other accounts with your main account in order to use your 10DLC numbers from any of those accounts. For more information, see 10DLC cross-account access in the Amazon SNS Developer Guide. Amazon SNS uses Amazon Pinpoint for managing 10DLC campaigns.
+Q: Can I use tiny URLs for 10DLC messages?
+A: No. Carriers don't allow the use of tiny URLs that services like bit.ly provide. AWS recommends that you use full URLs, matching your company's domain. Alternatively, you can use URL shortening services that provide custom and/or vanity domains and are obviously related to the brand sending the messages. Be sure to provide these URL examples in the sample messages during 10DLC campaign registration.
+Q: We use Amazon SNS to send SMS, and we do not set the 'OriginationNumber' attribute. How will Amazon SNS know which 10DLC campaign to use in the event we have more than one campaign in our AWS account?
+A. If you have multiple 10DLC campaigns in your AWS account, AWS recommends that you use the ‘OriginationNumber’ parameter while sending messages via Amazon SNS to use the correct 10DLC campaign. If you don't specify this parameter, Amazon SNS chooses the origination identity for you.
+Amazon SNS chooses an origination identity type in the following order of priority: short code, 10DLC, toll-free number. If you have more than one number of a particular origination ID type, Amazon SNS selects one at random within the selected origination ID type.
+Q: I use Amazon Cognito to send SMS messages for phone number verification, OTP, and MFA. How can I use a specific 10DLC campaign?
+A. Amazon Cognito calls Amazon SNS on your behalf to send SMS. If you have only one 10DLC number and campaign registered in your AWS account, Amazon SNS uses that number when sending SMS on your behalf.
+If you have more than one 10DLC number configured in an AWS region, you can use Amazon Cognito’s Custom SMS Sender Lambda trigger to choose the origination number to use when sending SMS using Amazon SNS. For more information, see Custom SMS Sender Lambda Trigger in the Amazon Cognito Developer Guide.
+Q: How can I send SMS using Amazon SNS via 10DLC numbers from AWS regions that are not supported by Amazon Pinpoint?
+A. After a number is configured in an AWS region, you can continue to use Amazon SNS in that region. You can register a 10DLC in an AWS region, and create a service quota increase support case, requesting the transfer of this number to another AWS region of your choice. For more information, see Requesting 10DLC numbers, toll-free numbers, and P2P long codes for SMS messaging in the Amazon SNS Developer Guide.
 SMS pricing
 Q: How much do you charge for sending SMS messages?
 The price you pay for sending SMS messages varies based on the recipient's country or region, and may also vary based on the recipient's mobile carrier. You can find the latest rates on the SMS Pricing page.
@@ -378,7 +440,7 @@ We currently do not allow an AWS account owner to subscribe an AWS Lambda functi
 Q: Is there a quota to the number of AWS Lambda functions that I can subscribe to an Amazon SNS topic?
 Amazon SNS treats AWS Lambda functions like any other destination. By default, SNS offers 10 million subscriptions per topic. To request a higher quota, please contact us.
 Q: What data can I pass to my AWS Lambda function?
-When an AWS Lambda function is invoked as a result of an Amazon SNS message delivery, the AWS Lambda function receives data such as the Message ID, the topic ARN, the message payload and message attributes via an SNS Event. For more information on the event structure passed to the AWS Lambda function please read our blog.
+When an AWS Lambda function is invoked as a result of an Amazon SNS message delivery, the AWS Lambda function receives data such as the Message ID, the topic ARN, the message payload, and message attributes via an SNS Event. For more information on the event structure passed to the AWS Lambda function please read our blog.
 Q: Can I track delivery status for message delivery attempts to AWS Lambda functions?
 To track the success or failure status of message deliveries, you need to activate the Delivery Status feature of Amazon SNS. For more information about how to activate this feature please read our blog.
 Q: What regions is AWS Lambda available in?

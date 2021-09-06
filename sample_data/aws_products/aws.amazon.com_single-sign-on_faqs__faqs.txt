@@ -1,6 +1,6 @@
 General
 What is AWS Single Sign-On (AWS SSO)?
-AWS SSO is an AWS service that enables you to makes it easy to centrally manage access to multiple AWS accounts and business applications and provide users with single sign-on access to all their assigned accounts and applications from one place. With AWS SSO, you can easily manage SSO access and user permissions to all of your accounts in AWS Organizations centrally. AWS SSO allows you to create and manage user identities in AWS SSO’s identity store, or easily connect to your existing identity source, including Microsoft Active Directory, Okta Universal Directory, and Azure Active Directory (Azure AD).
+AWS Single Sign-On (AWS SSO) is where you create, or connect, your workforce identities in AWS once and manage access centrally across your AWS organization. You can choose to manage access just to your AWS accounts or cloud applications. You can create user identities directly in AWS SSO, or you can bring them from your Microsoft Active Directory or a standards-based identity provider, such as Okta Universal Directory or Azure AD. With AWS SSO, you get a unified administration experience to define, customize, and assign fine-grained access. Your workforce users get a user portal to access all of their assigned AWS accounts or cloud applications. AWS SSO can be flexibly configured to run alongside or replace AWS account access management via AWS IAM.
 What are the benefits of AWS SSO?
 You can use AWS SSO to quickly and easily assign and manage your employees’ access to multiple AWS accounts, SAML-enabled cloud applications (such as Salesforce, Microsoft 365, and Box), and custom-built in-house applications, all from a central place. Employees can be more productive by signing in with their existing corporate Active Directory credentials or credentials that you configure in AWS SSO to access their applications from their personalized user portal. Now, employees won’t need to remember multiple sets of credentials and access URLs to cloud applications, and new employees can be productive starting on day one. After you’ve added users to the appropriate group in your directory, they will automatically gain access to accounts and applications that are enabled for members of that group. You'll get better visibility into cloud application use because you can monitor and audit sign-in activity centrally from AWS CloudTrail.
 What problems does AWS SSO solve?
@@ -14,7 +14,7 @@ Who should use AWS SSO?
 AWS SSO is for administrators who manage multiple AWS accounts and business applications, want to centralize user access management to these cloud services, and want to provide employees a single location to access these accounts and applications without them having to remember yet another password.
 How do I start using AWS SSO?
 As a new AWS SSO customer, you:
-Sign in to the AWS Management Console of the master account in your AWS account and navigate to the AWS SSO console.
+Sign in to the AWS Management Console of the management account in your AWS account and navigate to the AWS SSO console.
 Select the directory you use for storing the identities of your users and groups from the AWS SSO console. AWS SSO provides you a directory by default that you can use to manage users and groups in AWS SSO. You can also change directory to connect to a Microsoft AD directory by clicking through a list of Managed Microsoft AD and AD Connector instances that AWS SSO discovers in your account automatically. If you want to connect to a Microsoft AD directory, see Getting Started with AWS Directory Service.
 Grant users SSO access to AWS accounts in your organization by selecting the AWS accounts from a list populated by AWS SSO, and then selecting users or groups from your directory and the permissions you want to grant them.
 Give users access to business cloud applications by:
@@ -24,7 +24,7 @@ Selecting the users or groups that should be able to access this application.
 Give your users the AWS SSO sign-in web address that was generated when you configured the directory so that they can sign in to AWS SSO and access accounts and business applications.
 How much does AWS SSO cost?
 AWS SSO is offered at no extra charge.
-In which AWS regions is AWS SSO is available?
+In which AWS regions is AWS SSO available?
 See the AWS Region Table for AWS SSO availability by Region.
 Identity Sources and Applications Support
 What identity sources can I use with AWS SSO?

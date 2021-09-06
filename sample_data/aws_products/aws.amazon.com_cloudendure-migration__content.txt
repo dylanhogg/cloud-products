@@ -6,10 +6,11 @@ AWS Application Migration Service (AWS MGN) allows you to quickly realize the be
 AWS Application Migration Service minimizes time-intensive, error-prone manual processes by automatically converting your source servers from physical, virtual, or cloud infrastructure to run natively on AWS. It further simplifies your migration by enabling you to use the same automated process for a wide range of applications.
 And by launching non-disruptive tests before migrating, you can be confident that your most critical applications such as SAP, Oracle, and SQL Server will work seamlessly on AWS.
 When to use AWS Application Migration Service
-AWS Application Migration Service is the primary migration service recommended for lift-and-shift migrations to AWS. Customers currently using CloudEndure Migration or Server Migration Service (SMS) are encouraged to switch to AWS Application Migration Service for future migrations. Learn more
+AWS Application Migration Service (AWS MGN) is the primary migration service recommended for lift-and-shift migrations to AWS. Customers considering CloudEndure Migration or AWS Server Migration Service (AWS SMS) are encouraged to use AWS Application Migration Service for future migrations. Learn more
+90 days free
+with the AWS Free Tier
+Get started for free
 Introduction to AWS Application Migration Service
-Looking for CloudEndure Migration?
-AWS Application Migration Service is based on CloudEndure Migration and improves on it by integrating with the AWS Management Console. Use CloudEndure Migration
 Benefits
 Access to advanced technology
 Simplify operations and get better insights with AWS Application Migration Service’s integration with AWS Identity and Access Management (IAM), Amazon CloudWatch, AWS CloudTrail, and other AWS services.
@@ -18,13 +19,22 @@ With AWS Application Migration Service, you can maintain normal business operati
 Reduced costs
 AWS Application Migration Service reduces overall migration costs as there is no need to invest in multiple migration solutions, specialized cloud development, or application-specific skills. This is because it can be used to migrate any application from any source infrastructure that runs supported operating systems (OS).
 How it works
-Agent Installation Implementation begins by installing the AWS Replication Agent on your source servers. Once it’s installed, you can view and define replication settings. AWS Application Migration Service uses these settings to create and manage a Staging Area Subnet with lightweight Amazon EC2 instances that act as Replication Servers and low-cost staging Amazon EBS volumes.
+Agent Installation Implementation begins by installing the AWS Replication Agent on your source servers. Once it’s installed, you can view and define replication settings. AWS Application Migration Service (AWS MGN) uses these settings to create and manage a Staging Area Subnet with lightweight Amazon EC2 instances that act as Replication Servers and low-cost staging Amazon EBS volumes.
 Continuous Replication Replication Servers receive data from the agent running on your source servers and write this data to the staging Amazon EBS volumes. Your replicated data is compressed and encrypted in transit, and can be encrypted at rest using EBS encryption. AWS Application Migration Service keeps your source servers up to date on AWS using continuous, block-level data replication. It uses your defined launch settings to launch instances when you conduct non-disruptive tests or perform a cutover.
-Testing and Cutover  When you launch Test or Cutover instances, AWS  Application Migration Service automatically converts your source servers to boot and run natively on AWS. After confirming that your launched instances are operating properly on AWS, you can decommission your source servers. You can then choose to modernize your applications by leveraging additional AWS services and capabilities.
+Testing and Cutover  When you launch Test or Cutover instances, AWS Application Migration Service automatically converts your source servers to boot and run natively on AWS. After confirming that your launched instances are operating properly on AWS, you can decommission your source servers. You can then choose to modernize your applications by leveraging additional AWS services and capabilities.
 Read the technical documentation
+Featured customers
+“There was no performance impact or service disruption during the entire sync process.”
+- Maurice Lui, IT Manager at Bosa Development
+In order to consolidate and upgrade their legacy IT infrastructure, Bosa Development turned to AWS. Together with AWS Advanced Consulting Partner OpsGuru, a Carbon60 Company, they decided on a “lift-and-shift first” migration approach. The OpsGuru team leveraged AWS Application Migration Service (CloudEndure Migration) to rapidly re-host Bosa Development’s Microsoft File Server workloads into Amazon EC2 instances. Then, once the data was fully available on AWS, the team utilized Amazon FSx to host the consolidated data. This highly effective method of initial workload migration followed by modernization enabled Bosa Development to start benefiting from improved service availability, resilience, scalability, and security within just a few months.
+Learn more
+“People didn’t think the move could be executed in such a short timeframe, especially given constraints around coronavirus. But we executed the migration as planned.”
+- Tiina Flytström, Head of Infrastructure and Cybersecurity, Finnair
+Finnair achieved substantial cost savings by exiting two data centers and migrating 70 applications previously hosted on approximately 400 servers to AWS. By using AWS Application Migration Service and AWS CloudEndure Migration Factory Solution, Finnair was able to quickly lift and shift its Windows and Linux based applications with minimal disruption. The migration was completed within just seven months. In addition to migrating quickly and without disruption, while rapidly cutting costs, the migration has also provided the airline with the benefits of a future-ready and agile infrastructure.
+Blog posts and articles
+No items returned.
 Accelerate your migration
 Learn how to accelerate your large-scale migration to AWS with the AWS Migration Acceleration Program.
-Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up

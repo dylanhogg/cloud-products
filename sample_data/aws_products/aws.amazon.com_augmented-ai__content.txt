@@ -3,7 +3,9 @@ Easily implement human review of machine learning predictions
 Get started with Amazon A2I
 Some machine learning applications need human oversight to ensure accuracy with sensitive data, to help provide continuous improvements and, retrain models with updated predictions. However, in these situations, you’re often forced to choose between a machine learning only or human only system. Companies are looking for the best of both worlds -- integrating machine learning systems into your workflow while keeping a human eye on the results to guarantee a needed precision.
 Amazon Augmented AI is a machine learning service which makes it easy to build the workflows required for human review. Amazon A2I brings human review to all developers, removing the undifferentiated heavy lifting associated with building human review systems or managing large numbers of human reviewers whether it runs on AWS or not.
-What is Amazon Augmented AI? (1:31)
+500 objects free
+for the first 12 months with the AWS Free Tier
+Get started for free
 Use cases
 Healthcare
 Medical insurance claims, intake forms, prescriptions and many other healthcare documents have valuable information locked inside which needs to be extracted quickly and with precision. You can now use Amazon A2I and Amazon Textract to process documents, extract the data and have a human review the critical data. This saves time and money with document processing and allows for a human to review any nuanced or sensitive data or audit predictions on an on-going basis.

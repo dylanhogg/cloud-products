@@ -43,18 +43,21 @@ Asia Pacific (Hong Kong)
 ap-east-1
 Asia Pacific (Mumbai)
 ap-south-1
+Asia Pacific (Osaka)
+ap-northeast-3
 AWS GovCloud (US-West)
 us-gov-west-1
 AWS GovCloud (US-East)
 us-gov-east-1
-Q: In which countries will Outposts be available?
-A: Outposts can be shipped to and installed in the following countries
+Q: In which countries and territories will Outposts be available?
+A: Outposts can be shipped to and installed in the following countries and territories.
 NA - US, Canada, Mexico
-EMEA - All EU countries, United Kingdom (UK), Switzerland, Norway, Bahrain, United Arab Emirates (UAE), and Kingdom of Saudi Arabia (KSA), Israel, South Africa
-APAC - Australia, New Zealand, Japan, South Korea, Hong Kong Special Administrative Region, Macau, Taiwan, Singapore, Indonesia, Malaysia, Thailand, Philippines, Brunei, India
-SA - Brazil, Colombia
+EMEA - All EU countries, United Kingdom (UK), Switzerland, Norway, Bahrain, United Arab Emirates (UAE), Kingdom of Saudi Arabia (KSA)*, Israel, South Africa, Gibraltar
+APAC - Australia, New Zealand, Japan, South Korea, Hong Kong Special Administrative Region, Macau, Taiwan, Singapore, Indonesia, Malaysia, Thailand, the Philippines, Brunei, India
+SA - Brazil, Colombia**, Argentina***, Chile, Peru
 CA - Puerto Rico
-Support for more countries coming soon.
+Support for more countries and territories are coming soon.
+* Outposts availability in KSA is pending authorization. ** Outposts is available in Bogota and Valle del Cauca with support for additional departments coming soon. *** Outposts is available in Buenos Aires and Santa Fe provinces with support for additional provinces coming soon.
 Q: Can I order an Outpost to a country where Outposts has not launched and link it back to a supported Region?
 A: No, we can deliver and install Outposts only in countries where Outposts can be delivered and supported.
 Q: Can I use Outposts when it is not connected to the AWS Region or in a disconnected environment?
@@ -68,10 +71,10 @@ A: No, AWS Outposts provides fully integrated AWS designed configurations with b
 Outposts 1U and 2U form factors
 Q: What are AWS Outposts 1U and 2U form factors?
 A: AWS Outposts 1U and 2U form factors are rack-mountable servers that will provide local compute and networking services to edge locations that have limited space or smaller capacity requirements. Outposts servers can be installed by onsite personnel or with an AWS preferred third-party contractor. You can use the same AWS APIs, control plane, and tools that you’re familiar with to manage servers across hundreds or thousands of on-premises locations.
-The 1U form factor is suitable for 19-inch wide, 24-inch deep cabinets and uses an AWS Graviton2 processor to provide 64 vCPUs, 128 GiB memory, and 4 TB of local NVMe storage. The 2U form factor is suitable for standard 19-inch wide, 36-inch deep cabinets, and uses an Intel processor to provide up to 128 vCPUs, 512 GiB memory, and 8TB of local NVMe storage, with optional accelerators like AWS Inferentia or GPUs.
+The 1U form factor is suitable for 19-inch wide, 24-inch deep cabinets and uses an AWS Graviton2 processor to provide 64 vCPUs, 128 GiB memory, and 4 TB of local NVMe storage. The 2U form factor is suitable for standard 19-inch wide, 36-inch deep cabinets, and uses an Intel processor to provide up to 128 vCPUs, 256 GiB memory, and 4 TB of local NVMe.
 Q: How will customers deploy and manage applications on AWS Outposts servers?
-A: Customers will deploy and manage applications on servers using the same tools they use for workloads running on Outposts racks or in the AWS Region. Customers will launch resources by targeting the unique identifier (Outpost ID) that is associated with one or more servers. Outposts servers will support local EC2 for compute, ECS and EKS for containers, and VPC for networking.
-Customers will be able to scale from a single server up to 6 servers to increase the compute and storage capacity required for larger workloads. For higher availability, customers will be able to configure redundancy across devices.
+A: Customers will deploy and manage applications on servers using the same tools they use for workloads running on Outposts racks or in the AWS Region. Customers will launch resources by targeting the unique identifier (Outpost ID) that is associated with virtualized capacity on a server. Outposts servers will support local EC2 for compute, ECS and EKS for containers, and VPC for networking.
+For higher availability, customers will be able to configure redundancy across devices.
 For fleet management, Outposts servers will generate the same capacity and network monitoring metrics as Outposts racks. As customers scale across many sites, they will group devices and target deployments by using resource tags to associate devices within their fleet as they would for resources running in the AWS Region. Customers will use deployment management tools, like CloudFormation, CodeDeploy, and Terraform.
 Q: How can I learn more?
 A: AWS Outposts 1U and 2U form factors will be available in 2021. You can learn more by signing up, here.
@@ -101,13 +104,11 @@ Q: Are there any prerequisites for deploying an Outpost at my location?
 A: Your site must support the basic power, networking and space requirements to host an Outpost. Outposts need 5-15 kVA, can support 1/10/40/100 Gbps uplinks, and space for a 42U rack (80” X 24” X 48” dimensions). As Outposts require reliable network connectivity to the AWS Region, you should plan for a public internet connection. Customers must have Enterprise Support, which provides 24x7 remote support within 15 mins.
 Security & compliance
 Q: Do the same compliance certifications for AWS Services today apply for services on Outposts?
-A: AWS Outposts itself is HIPAA eligible, PCI, SOC, and ISO compliant, and we expect to add more compliance certifications in coming months. You can see the latest certification status for AWS Services on Outposts on our Services in Scope page. AWS Services on Outposts like RDS or Elasticache Redis that have achieved certifications like PCI are also considered certified on Outposts. As AWS Outposts runs at the customer’s data center, under the AWS Shared Responsibility model customers own the responsibility for physical security and access controls around the Outpost for compliance certification.
+A: AWS Outposts itself is HIPAA eligible, PCI, SOC, ISMAP, IRAP and FINMA compliant, ISO and CSA STAR certified, and we expect to add more compliance certifications in coming months. You can see the latest certification status for AWS Services on Outposts on our Services in Scope page. AWS Services on Outposts like RDS or Elasticache Redis that have achieved certifications like PCI are also considered certified on Outposts. As AWS Outposts runs at the customer’s data center, under the AWS Shared Responsibility model customers own the responsibility for physical security and access controls around the Outpost for compliance certification.
 Q: Is AWS Outposts GxP Compatible?
 A: Yes, AWS Outposts is GxP compatible. AWS Outposts extend AWS services to AWS-managed infrastructure that is physically located at a customer site. Outposts capacity can be accessed locally over a local gateway that is mapped to the customer’s local network, in addition to having a connection path back to the AWS Region. You can learn more about using the AWS Cloud, including Outposts, for GxP systems here. GxP-regulated life sciences organizations using AWS services are responsible for designing and verifying their GxP compliance.
 Q: Who is responsible for the physical security of the Outposts at my datacenter?
 A: AWS provides services that allow data to be encrypted at rest and in-transit and other granular security controls and auditing mechanisms. In addition, customer data is wrapped to a physical Nitro Security Key. Destroying the device is equivalent to destroying the data.  As part of the shared responsibility model, customers are responsible for attesting to physical security and access controls around the Outpost, as well as environmental requirements for facility, networking, and power as published here. Prior to returning the Outpost hardware, the Nitro Security Key will be removed to ensure customer content is crypto shredded.
-Q: Is AWS Outposts FedRAMP certified?
-A: Yes. AWS Outposts is FedRAMP certified Moderate and High in all US-based AWS Regions where Outposts is available. For more details, please refer to the AWS Regional Services List.
 Support & maintenance
 Q: How does AWS maintain AWS Outposts infrastructure?
 A: When your Outpost is installed and is visible in the AWS Management Console, AWS will monitor it as part of the public Region and will automatically execute software upgrades and patches.

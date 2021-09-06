@@ -28,7 +28,7 @@ AWS Command Line Interface (AWS CLI), the
 AWS SDKs, or the AWS CodeCommit
 APIs.
 Q: How do I update files in my repository?
-You can edit your files directly from the CodeCommit console or you can use Git to work with the repository. For example Git commands, you can use the
+You can edit your files directly from the CodeCommit console or you can use Git to work with the repository. For example, Git commands, you can use the
 git clone command to make a local copy of the AWS CodeCommit repository. Make changes to the local files and use the
 git commit command when you’re ready to save the changes. Finally, use the
 git push command to upload the changes to the AWS CodeCommit repository. For step-by-step instructions, see
@@ -50,7 +50,7 @@ If you have a local copy of the repository from doing a full
 git clone, you can use that to restore data. If you want additional backups, there are multiple ways to do so. One way is to install Git on your backup server and run a scheduled job that uses the
 git clone command to take regular snapshots of your repository. You can use
 git pull instead of
-git clone if you want to copy only the incremental changes. Note that these operations may incur an additional user and/or request charges based on how you setup the backup server and the polling frequency.
+git clone if you want to copy only the incremental changes. Note that these operations may incur additional user and/or request charges based on how you set up the backup server and the polling frequency.
 Q: How do I restore a deleted AWS CodeCommit repository?
 Deleting an AWS CodeCommit repository is a destructive one-way operation that cannot be undone. To restore a deleted repository, you will need to create the repository again and use either a backup or a local copy from a full clone to upload the data. We recommend using IAM policies along with MFA-protection to restrict users who can delete repositories. For more details, see the Can I use AWS Identity and Access Management (IAM) to manage access to AWS CodeCommit? question in the Security section of the FAQ.
 Q: How do I manage code reviews with AWS CodeCommit?

@@ -269,8 +269,8 @@ Q: How many EBS volumes can be attached to C5 instances?
 C5 instances support a maximum for 27 EBS volumes for all Operating systems. The limit is shared with ENI attachments which can be found here http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html. For example: since every instance has at least 1 ENI, if you have 3 additional ENI attachments on the c4.2xlarge, you can attach 24 EBS volumes to that instance.
 Q: What is the underlying hypervisor on C5 instances?
 C5 instances use a new EC2 hypervisor that is based on core KVM technology.
-Q: Why does the total memory reported by the operating system not match the advertised memory of the C5 instance type?
-In C5, portions of the total memory for an instance are reserved from use by the Operating System including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
+Q: Why does the total memory reported by the operating system not exactly match the advertised memory on instance types?
+Portions of the EC2 instance memory are reserved and used by the virtual BIOS for video RAM, DMI, and ACPI. In addition, for instances that are powered by the AWS Nitro Hypervisor, a small percentage of the instance memory is reserved by the Amazon EC2 Nitro Hypervisor to manage virtualization.
 General Purpose instances
 Q: What are Amazon EC2 Mac instances?
 Amazon EC2 Mac instances are a family that features the macOS operating system, powered by Apple Mac mini hardware, and built on the AWS Nitro System.
@@ -283,9 +283,9 @@ Amazon EC2 T4g instances are the next-generation of general purpose burstable in
 Q: What are some of the ideal use cases for T4g instances?
 T4g instances deliver up to 40% better price performance over T3 instances for a wide variety of burstable general purpose workloads such as micro-services, low-latency interactive applications, small and medium databases, virtual desktops, development environments, code repositories, and business-critical applications. Customers deploying applications built on open source software across the T instance family will find the T4g instances an appealing option to realize the best price performance within the instance family. Arm developers can also build their applications directly on native Arm hardware as opposed to cross-compilation or emulation.
 Q: Who is eligible for T4g free-trial?
-All existing and new customers with an AWS account can take advantage of the T4g free-trial. T4g free-trial is available for limited time, until June 30, 2021. The start and end time of free-trial are as per Coordinated Universal Time (UTC). T4g free-trial will be available in addition to the existing AWS Free-Tier on t2.micro/t3.micro. Customers who have exhausted their t2.micro (or t3.micro, depending on the region) free-tier usage can still benefit from T4g free-trial.
+All existing and new customers with an AWS account can take advantage of the T4g free-trial. T4g free-trial is available for limited time, until December 31, 2021. The start and end time of free-trial are as per Coordinated Universal Time (UTC). T4g free-trial will be available in addition to the existing AWS Free-Tier on t2.micro/t3.micro. Customers who have exhausted their t2.micro (or t3.micro, depending on the region) free-tier usage can still benefit from T4g free-trial.
 Q: How can customers get access to the T4g free-trial?
-Until June 30, 2021, all AWS customers will be automatically enrolled in the T4g free trial.
+Until December 31, 2021, all AWS customers will be automatically enrolled in the T4g free trial.
 During the free-trial period, customers who run a t4g.micro instance will automatically get 750 free hours per month deducted from their bill during each month. The 750 hours are calculated in aggregate across all regions in which the t4g.micro instances are used.
 Q: What is the regional availability of T4g free-trial?
 The T4g free trial is currently available across the AWS US East (N. Virginia, Ohio), US West (N. California, Oregon), Canada (Central), South America (Sao Paulo), Asia Pacific (Mumbai, Singapore, Seoul, Sydney, Tokyo), and Europe (Frankfurt, Ireland, London) regions. It is not currently is not available in Europe (Stockholm), Asia Pacific (Hong Kong), China (Beijing), and China (Ningxia) regions. As part of the free trial, customers can run t4g.micro instances across one or multiple regions of choice from a single cumulative bucket of 750 free hours per month till June 30th, 2021. For example, a customer can run t4g.micro in Oregon for 300 hours for a month and run another t4g.micro in Tokyo for 450 hours that same month. This would add up to 750 hours/month of free-trial limit.
@@ -298,7 +298,7 @@ No, customers who use consolidated billing to consolidate payment across multipl
 Q: Will customers get charged for surplus CPU credits as a part of T4g free-trial?
 Customers will not have to pay for surplus CPU credits when they exceed the instances allocated credits during the 750 free hours of T4g free-trial program. At the end of free-trial or for any usage beyond the 750 free hours per month, all regular billing charges including surplus credits charges will apply. For details on how CPU credits work, please refer to documentation.
 Q: At the end of free trial, how will a customer be billed for t4g.micro instance?
-Starting July 1, 2021, customers running on t4g.micro will be automatically switched from the free-trial plan to on demand pricing plan (or RI/SV plan if purchased) and accumulated credits will be set to zero. Customers will receive email notification 7 days prior to end of free-trial period automatically that the free-trial period will be ending in 7 days. Starting April 1st 2021, if RI plan is purchased, the RI plans will apply. Otherwise, customers will be charged regular on-demand pricing for t4g.micro. For customer that have the T4g Instance Savings Plan or a Compute Savings Plan, t4g.micro instance billing will apply Savings Plan discount on their OD pricing.
+Starting January 1, 2022, customers running on t4g.micro will be automatically switched from the free-trial plan to on demand pricing plan (or RI/SV plan if purchased) and accumulated credits will be set to zero. Customers will receive email notification 7 days prior to end of free-trial period automatically that the free-trial period will be ending in 7 days. Starting January 1, 2022, if RI plan is purchased, the RI plans will apply. Otherwise, customers will be charged regular on-demand pricing for t4g.micro. For customer that have the T4g Instance Savings Plan or a Compute Savings Plan, t4g.micro instance billing will apply Savings Plan discount on their OD pricing.
 Q: What are Amazon EC2 M6g instances?
 Amazon EC2 M6g instances are the next-generation of general-purpose instances powered by Arm-based AWS Graviton2 Processors. M6g instances deliver up to 40% better price/performance over M5 instances. They are built on the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.
 Q: What are the specifications of the new AWS Graviton2 Processors?
@@ -312,8 +312,6 @@ M6g instances are EBS-optimized by default and offer up to 19,000 Mbps of dedica
 Q: Which network interface is supported on M6g instances?
 M6g instances support ENA based Enhanced Networking. With ENA, M6g instances can deliver up to 25 Gbps of network bandwidth between instances when launched within a Placement Group.
 Q: Will customers need to modify their applications and workloads to be able to run on the M6g instances?
-Q: Will there be more compute choices offered with the M6 instance families?
-Yes, we plan to offer Intel and AMD CPU powered instances in the future as part of the M6 instance families.
 Q: What are Amazon EC2 A1 instances?
 Amazon EC2 A1 instances are general purpose instances powered by the first-generation AWS Graviton Processors that are custom designed by AWS.
 Q: What are the specifications of the first-generation AWS Graviton Processors?
@@ -334,34 +332,33 @@ Q: Which network interface is supported on A1 instances?
 A1 instances support ENA based Enhanced Networking. With ENA, A1 instances can deliver up to 10 Gbps of network bandwidth between instances when launched within a Placement Group.
 Q: Do A1 instances support the AWS Nitro System?
 Yes, A1 instances are powered by the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.
-Q: Why does the total memory reported by Linux not match the advertised memory of the A1 instance type?
-In A1 instances, portions of the total memory for an instance are reserved from use by the operating system including areas used by the virtual UEFI for things like ACPI tables.
-Q: What are the key use cases for Amazon EC2 M5 Instances?
-M5 instances offer a good choice for running development and test environments, web, mobile and gaming applications, analytics applications, and business critical applications including ERP, HR, CRM, and collaboration apps. Customers who are interested in running their data intensive workloads (e.g. HPC, or SOLR clusters) on instances with a higher memory footprint will also find M5 to be a good fit. Workloads that heavily use single and double precision floating point operations and vector processing such as video processing workloads and need higher memory can benefit substantially from the AVX-512 instructions that M5 supports.
 Q: Why should customers choose EC2 M5 Instances over EC2 M4 Instances?
 Compared with EC2 M4 Instances, the new EC2 M5 Instances deliver customers greater compute and storage performance, larger instance sizes for less cost, consistency and security. The biggest benefit of EC2 M5 Instances is based on its usage of the latest generation of Intel Xeon Scalable processors (Skylake-SP or Cascade Lake), which deliver up to 20% improvement in price/performance compared to M4. With AVX-512 support in M5 vs. the older AVX2 in M4, customers will gain 2x higher performance in workloads requiring floating point operations. M5 instances offer up to 25 Gbps of network bandwidth and up to 10 Gbps of dedicated bandwidth to Amazon EBS. M5 instances also feature significantly higher networking and Amazon EBS performance on smaller instance sizes with EBS burst capability.
-Q: How does support for Intel AVX-512 benefit EC2 M5 and M5d Instance customers?
-Intel Advanced Vector Extension 512 (AVX-512) is a set of new CPU instructions available on the latest Intel Xeon Scalable processor family, that can accelerate performance for workloads and usages such as scientific simulations, financial analytics, artificial intelligence, machine learning/deep learning, 3D modeling and analysis, image and video processing, cryptography and data compression, among others. Intel AVX-512 offers exceptional processing of encryption algorithms, helping to reduce the performance overhead for cryptography, which means EC2 M5 and M5d customers can deploy more secure data and services into distributed environments without compromising performance.
+Q: Why should customers choose M6i instances over M5 instances?
+Amazon M6i instances are powered by 3rd generation Intel Xeon Scalable processors (code named Ice Lake) with an all-core turbo frequency of 3.5 GHz, offer up to 15% better compute price performance over M5 instances, and always-on memory encryption using Intel Total Memory Encryption (TME). Amazon EC2 M6i instances are the first to use a lower-case “i” to indicate they are Intel-powered instances. M6i instances provide a new instance size (m6i.32xlarge) with 128 vCPUs and 512 GiB of memory, 33% more than the largest M5 instance. They also provide up to 20% higher memory bandwidth per vCPU compared to M5 instances, allowing customers to efficiently perform real-time analysis for data-intensive AI/ML, gaming, and High Performance Computing (HPC) applications. M6i also give customers up to 50 Gbps of networking speed and 40 Gbps of bandwidth to the Amazon Elastic Block Store, twice that of M5 instances. M6i also allows customers to use Elastic Fabric Adapter on the 32xlarge size, enabling low latency and high scale inter-node communication. For optimal networking performance on these new instances, please upgrade your Elastic Network Adapter (ENA) drivers to version 3. For more information, see this article on how to enable and configure enhanced networking on EC2 instances.
+Q: How does support for Intel AVX-512 benefit customers who use the EC2 M5 family or the M6i family?
+Intel Advanced Vector Extensions 512 (AVX-512) is a set of new CPU instructions available on the latest Intel Xeon Scalable processor family, that can accelerate performance for workloads and usages such as scientific simulations, financial analytics, artificial intelligence, machine learning/deep learning, 3D modeling and analysis, image and video processing, cryptography and data compression, among others. Intel AVX-512 offers exceptional processing of encryption algorithms, helping to reduce the performance overhead for cryptography, which means customers who use the EC2 M5 family or M6i family can deploy more secure data and services into distributed environments without compromising performance.
 Q: What are the various processor options available to M5 customers?
 The M5 and M5d instance types use a 3.1 GHz Intel Xeon Platinum 8000 series processor. The M5a and M5ad instance types use a 2.5 GHz AMD EPYC 7000 series processor.
 Q: What are the various storage options available to M5 customers?
 The M5 and M5a instance types leverage EBS volumes for storage. The M5d and M5ad instance types support up to 3.6TB (4 x 900GB) of local NVMe storage.
-Q: When should I use the different M5 instance types?
-Customers should consider using the M5a and M5ad instance types if they are looking to save money on price when their workloads do not fully utilize the compute resources of their chosen instance, resulting in them paying for performance that they don’t actually need. For workloads that require the highest processor performance or high floating-point performance capabilities, including vectorized computing with AVX-512 instructions, then we suggest you use the M5 or M5d instance types.
 Q: Which network interface is supported on M5 instances?
 M5, M5a, M5d, and M5ad instances support only ENA based Enhanced Networking and will not support netback. With ENA, M5 and M5d instances can deliver up to 25 Gbps of network bandwidth between instances and the M5a and M5ad instance types can support up to 20Gbps of network bandwidth between instances.
 Q: Which operating systems/AMIs are supported on M5 Instances?
 EBS backed HVM AMIs with support for ENA networking and booting from NVMe-based storage can be used with M5 instances. The following AMIs are supported on M5, M5a, M5ad, and M5d:
 For optimal local NVMe-based SSD storage performance on M5d, Linux kernel version 4.9+ is recommended.
+Q: Which operating systems/AMIs are supported on M6i instances?
+M6i instances will support the following AMIs:
+Amazon Linux 2 or newer
+Ubuntu 16.04 or newer
+Red Hat Enterprise Linux (RHEL) 7 or newer
+Windows Server 2008 R2 or newer
+Debian 8 or newer and FreeBSD 10-RELEASE or newer
+Similar to other Nitro instances, EBS backed HVM AMIs launched on M6i instances also require NVMe 1.0e and ENA driver installed at instance launch.
 Q: What interface connects EBS storage to my M5 instances?
 M5, M5a, M5ad, and M5d instances use EBS volumes for storage, are EBS-optimized by default, and offer up to 10 Gbps throughput to both encrypted and unencrypted EBS volumes. M5 instances access EBS volumes via PCI attached NVM Express (NVMe) interfaces. NVMe is an efficient and scalable storage interface commonly used for flash based SSDs such as local NVMe storage provided with I3 and I3en instances. Though the NVMe interface may provide lower latency compared to Xen paravirtualized block devices, when used to access EBS volumes the volume type, size, and provisioned IOPS (if applicable) will determine the overall latency and throughput characteristics of the volume. When NVMe is used to provide EBS volumes, they are attached and detached by PCI hotplug.
 Q: How many EBS volumes can be attached to M5 instances?
 M5 and M5a instances support a maximum for 27 EBS volumes for all Operating systems. The limit is shared with ENI attachments which can be found here http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html. For example: since every instance has at least 1 ENI, if you have 3 additional ENI attachments on the m5.2xlarge, you can attach 24 EBS volumes to that instance.
-Q: What is the underlying hypervisor on M5 instances?
-M5, M5a, M5ad, and M5d instances use a new lightweight
-Nitro Hypervisor that is based on core KVM technology.
-Q: Why does the total memory reported by the operating system not match the advertised memory of the M5 instance type?
-In M5, M5a, M5ad, and M5d, portions of the total memory for an instance are reserved from use by the operating system including areas used by the virtual BIOS for things like ACPI tables and for devices like the virtual video RAM.
 Q: What are M5zn instances?
 M5zn instances are a variant of the M5 general purpose instances that are powered by the fastest Intel Xeon Scalable processor in the cloud, with an all-core turbo frequency of up to 4.5 GHz, along with 100 Gbps networking and support for Amazon EFA. M5zn instances are an ideal fit for workloads such as gaming, financial applications, simulation modeling applications such as those used in the automotive, aerospace, energy, and telecommunication industries, and other High Performance Computing applications.
 Q: How are M5zn instances different than z1d instances?
@@ -617,7 +614,7 @@ Q: Where can I learn more about EFS?
 You can visit the Amazon EFS FAQ page.
 NVMe Instance storage
 Q: Which instance types offer NVMe instance storage?
-Today, I3en, I3, C6gd, C5d, C5ad, M6gd, M5d, M5dn, M5ad, R6gd, R5d, R5dn, R5ad, z1d, P3dn, G4dn, and F1, X1, X1e instances offer NVMe instance storage.
+Today, I3en, I3, C6gd, C5d, C5ad, M6gd, M5d, M5dn, M5ad, R6gd, R5d, R5dn, R5ad, z1d, P3dn, G4dn, and F1 instances offer NVMe instance storage.
 Q: Is data stored on Amazon EC2 NVMe instance storage encrypted?
 Yes, all data is encrypted in an AWS Nitro hardware module prior to being written on the locally attached SSDs offered via NVMe instance storage.
 Q: What encryption algorithm is used to encrypt Amazon EC2 NVMe instance storage?
@@ -738,7 +735,7 @@ We do not support keeping an instance hibernated for more than 60 days. You need
 Q: What are the prerequisites to hibernate an instance?
 To use hibernation, the root volume must be an encrypted EBS volume. The instance needs to be configured to receive the ACPID signal for hibernation (or use the Amazon published AMIs that are configured for hibernation). Additionally, your instance should have sufficient space available on your EBS root volume to write data from memory.
 Q: Which instances and operating systems support hibernation?
-Hibernation is currently supported across C3, C4, C5, I3, M3, M4, M5, M5a, M5ad, R3, R4, R5, R5a, R5ad, T2, T3, and T3a instances running Amazon Linux, Amazon Linux 2, Ubuntu and Windows. For Windows, Hibernation is supported for instances up to 16 GB of RAM. For other operating systems, Hibernation is supported for instances with less than 150 GB of RAM. To review the list of supported OS versions, refer to the user guide.
+Hibernation is currently supported across C3, C4, C5, C5d, I3, M3, M4, M5, M5a, M5ad, M5d, R3, R4, R5, R5a, R5ad, R5d, T2, T3, and T3a instances running Amazon Linux, Amazon Linux 2, Ubuntu and Windows. For Windows, Hibernation is supported for instances up to 16 GB of RAM. For other operating systems, Hibernation is supported for instances with less than 150 GB of RAM. To review the list of supported OS versions, refer to the user guide.
 Q: Should I use specific Amazon Machine Image (AMIs) if I want to hibernate my instance?
 You can use any AMI that is configured to support hibernation. You can use AWS published AMIs that support hibernation by default. Alternatively, you can create a custom image from an instance after following the hibernation pre-requisite checklist and configuring your instance appropriately.
 Q: What if my EBS root volume is not large enough to store memory state (RAM) for hibernate?
@@ -815,7 +812,7 @@ Instance usages are billed for any time your instances are in a "running" state.
 Q: If I have two instances in different availability zones, how will I be charged for regional data transfer?
 Each instance is charged for its data in and data out at corresponding Data Transfer rates. Therefore, if data is transferred between these two instances, it is charged at "Data Transfer Out from EC2 to Another AWS Region" for the first instance and at "Data Transfer In from Another AWS Region" for the second instance. Please refer to this page for detailed data transfer.
 Q: If I have two instances in different regions, how will I be charged for data transfer?
-Data transfer between two instances in AWS regions is charged at Inter-Region data transfer rates. Therefore, if data is transferred between these two instances, it is charged at Internet Data Transfer Out for the first instance and at Internet Data Transfer In for the second instance.
+Each instance is charged for its data in and data out at Inter-Region Data Transfer rates. Therefore, if data is transferred between these two instances, it is charged at Inter-Region Data Transfer Out for the first instance and at Inter-Region Data Transfer In for the second instance.
 Q: How will my monthly bill show per-second versus per-hour?
 Although EC2 charges in your monthly bill will now be calculated based on a per second basis, for consistency, the monthly EC2 bill will show cumulative usage for each instance that ran in a given month in decimal hours. An example would be an instance running for 1 hour 10 minutes and 4 seconds would look like 1.1677. Read this blog for an example of the detailed billing report.
 Q: Do your prices include taxes?

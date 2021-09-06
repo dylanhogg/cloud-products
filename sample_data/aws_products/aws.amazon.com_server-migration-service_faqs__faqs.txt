@@ -71,7 +71,7 @@ Q: Can I see the VM inventory of Hyper-V and VMware environments separately?
 Yes, on the ‘servers’ page on the AWS SMS console, you can filter by VM manager in the search bar to show only the VMs imported from Hyper-V or VMware environments.
 Q: How can I distinguish Hyper-V VMs from VMware VMs during migration?
 Yes, on the ‘replication jobs’ page on the AWS SMS console, you can filter by VM manager in the search bar to show only the progress of SMS replication jobs for VMs from Hyper-V or VMware environments.
-Q: an I track the progress of Hyper-V and VMware VMs migration simultaneously?
+Q: Can I track the progress of Hyper-V and VMware VMs migration simultaneously?
 Yes. Customers can track the progress of Hyper-V and VMware VM migration in a single pane of glass under the ‘Replication Jobs’ page on the AWS SMS console.
 Multi-Server Migration
 Q: What is multi-server migration in AWS Server Migration Service?

@@ -1,11 +1,13 @@
 AWS AppSync
 Accelerate application development with scalable GraphQL APIs
 Get Started with AWS AppSync
+250k API requests free
+per month for 12 months with the AWS Free Tier
 Organizations choose to build APIs with GraphQL because it helps them develop applications faster, by giving front-end developers the ability to query multiple databases, microservices, and APIs with a single GraphQL endpoint.  AWS AppSync is a fully managed service that makes it easy to develop GraphQL APIs by handling the heavy lifting of securely connecting to data sources like AWS DynamoDB, Lambda, and more. Adding caches to improve performance, subscriptions to support real-time updates, and client-side data stores that keep off-line clients in sync are just as easy. Once deployed, AWS AppSync automatically scales your GraphQL API execution engine up and down to meet API request volumes.
-Simplify Data Access with GraphQL APIs (1:23)
+Simplify data access with GraphQL APIs (1:23)
 Benefits
 Simple & secure data access
-Power your applications with the right data, from one or more data sources with a single network request using GraphQL. AWS AppSync makes it easy to secure your app data using multiple concurrent authentication modes and allows you to define security, caching and fine grained access control at the data definition level directly from your GraphQL schema.
+Power your applications with the right data, from one or more data sources with a single network request using GraphQL. AWS AppSync makes it easy to secure your app data using multiple concurrent authentication modes and allows you to define security, caching and fine-grained access control at the data definition level directly from your GraphQL schema.
 Built-in real-time & offline capabilities
 With managed GraphQL subscriptions, AWS AppSync can push real-time data updates over Websockets to millions of clients. For mobile and web applications, AppSync also provides local data access when devices go offline, and data synchronization with customizable conflict resolution, when they are back online.
 No servers to manage

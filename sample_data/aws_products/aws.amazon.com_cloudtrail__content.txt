@@ -2,10 +2,12 @@ AWS CloudTrail
 Track user activity and API usage
 Get started with AWS CloudTrail
 AWS CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account. With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services. This event history simplifies security analysis, resource change tracking, and troubleshooting. In addition, you can use CloudTrail to detect unusual activity in your AWS accounts. These capabilities help simplify operational analysis and troubleshooting.
-AWS CloudTrail: Simplify Security Analysis, Resource Change Tracking, and Troubleshooting (1:30)
+1 trail that delivers a copy of management events for free
+with the AWS Free Tier
+Get started for free
 Benefits
 Simplified compliance
-With AWS CloudTrail, simplify your compliance audits by automatically recording and storing event logs for actions made within your AWS account. Integration with Amazon CloudWatch Logs provides a convenient way to search through log data, identify out-of-compliance events, accelerate incident investigations, and expedite responses to auditor requests.
+With AWS CloudTrail, you can simplify your compliance audits by automatically recording and storing event logs for actions made within your AWS account. Integration with Amazon CloudWatch Logs provides a convenient way to search through log data, identify out-of-compliance events, accelerate incident investigations, and expedite responses to auditor requests.
 Visibility into user and resource activity
 AWS CloudTrail increases visibility into your user and resource activity by recording AWS Management Console actions and API calls. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred.
 Security analysis and troubleshooting

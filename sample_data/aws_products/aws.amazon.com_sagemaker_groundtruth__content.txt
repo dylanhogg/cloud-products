@@ -2,6 +2,9 @@ Amazon SageMaker Ground Truth
 Easily label training data for machine learning at scale
 Get started with Amazon SageMaker Ground Truth
 Amazon SageMaker Ground Truth is a fully managed data labeling service that makes it easy to build highly accurate training datasets for machine learning. Get started with labeling your data in minutes through the SageMaker Ground Truth console using custom or built-in data labeling workflows. These workflows support a variety of use cases including 3D point clouds, video, images, and text. As part of the workflows, labelers have access to assistive labeling features such as automatic 3D cuboid snapping, removal of distortion in 2D images, and auto-segment tools to reduce the time required to label datasets. In addition, Ground Truth offers automatic data labeling which uses a machine learning model to label your data.
+500 objects labeled free
+for the first 2 months with the AWS Free Tier
+Get started for free
 How it works
 Benefits
 Improve data label accuracy

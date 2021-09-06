@@ -2,7 +2,9 @@ AWS CodePipeline
 Automate continuous delivery pipelines for fast and reliable updates
 Get started with AWS CodePipeline
 AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates. You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin. With AWS CodePipeline, you only pay for what you use. There are no upfront fees or long-term commitments.
-Introduction to AWS CodePipeline (3:05)
+1 active pipeline free
+per month with the AWS Free Tier
+Get started for free
 Benefits
 Rapid delivery
 AWS CodePipeline automates your software release process, allowing you to rapidly release new features to your users. With CodePipeline, you can quickly iterate on feedback and get new features to your users faster.

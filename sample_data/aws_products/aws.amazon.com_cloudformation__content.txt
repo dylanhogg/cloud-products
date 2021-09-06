@@ -2,7 +2,9 @@ AWS Cloud​Formation
 Speed up cloud provisioning with infrastructure as code
 Get started with CloudFormation
 AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. A CloudFormation template describes your desired resources and their dependencies so you can launch and configure them together as a stack. You can use a template to create, update, and delete an entire stack as a single unit, as often as you need to, instead of managing resources individually. You can manage and provision stacks across multiple AWS accounts and AWS Regions.
-Introduction to AWS CloudFormation (3:01)
+1,000 handler operations free
+per month with the AWS Free Tier
+Get started for free
 Benefits
 Automate best practices
 With CloudFormation, you can apply DevOps and GitOps best practices using widely adopted processes such as starting with a git repository and deploying through a CI/CD pipeline. You can also simplify auditing changes and trigger automated deployments with pipeline integrations such as GitHub Actions and AWS CodePipeline.
@@ -11,9 +13,11 @@ Manage resource scaling by sharing CloudFormation templates to be used across yo
 Integrate with other AWS services
 To further automate resource management across your organization, you can integrate CloudFormation with other AWS services, including AWS Identity and Access Management (IAM) for access control, AWS Config for compliance, and AWS Service Catalog for turnkey application distribution and additional governance controls. Integrations with CodePipeline and other builder tools let you implement the latest DevOps best practices and improve automation, testing, and controls.
 Manage third-party and private resources
-Model, provision, and manage third-party application resources (such as monitoring, team productivity, incident management, CI/CD, and version control applications) alongside your AWS resources. Use the open source CloudFormation CLI to build your own CloudFormation resource providers – native AWS types published as open source.
-Extend CloudFormation with the community
-The AWS CloudFormation GitHub organization offers open source projects that extend CloudFormation’s capabilities. The CloudFormation Registry and CloudFormation CLI let you define and create resource providers to automate the creation of resources safely and systematically. Using CloudFormation GitHub projects, you can do things like check CloudFormation templates for policy compliance (using cfn-guard), or validate use of best practices (using cfn-lint).
+Model, provision, and manage third-party public or private application resources (such as monitoring, team productivity, incident management, CI/CD, and version control applications) alongside your AWS resources. Use the open source CloudFormation CLI to build your own CloudFormation resource types – native AWS types published as open source.
+Contribute to CloudFormation with the community
+The AWS CloudFormation GitHub organization offers open source projects that build on CloudFormation’s capabilities. The CloudFormation Registry and CloudFormation CLI let you define and create resource providers to automate the creation of cloud infrastructure safely and systematically. Using CloudFormation GitHub projects, you can do things like check CloudFormation templates for policy compliance (using cfn-guard), or validate use of best practices (using cfn-lint).
+Extend CloudFormation with third-party resource types
+Discover, provision, and manage third-party resources published by AWS Partner Network (APN) Partners and the developer community in the CloudFormation Public Registry. The Public Registry provides a searchable and managed catalog of extensions that help you simplify building your cloud infrastructure.
 How it works
 Featured customers
 Deloitte’s ConvergeHEALTH Miner solution is a suite of tools and services that help accelerate data gathering, analysis, and management across the healthcare research lifecycle... Miner leverages a wide range of AWS services. They used AWS CloudFormation and AWS Service Catalog to get Miner to clients faster using infrastructure as code. Deloitte chose AWS CloudFormation templates to code the infrastructure, which it can then deploy in one click using AWS Service Catalog.

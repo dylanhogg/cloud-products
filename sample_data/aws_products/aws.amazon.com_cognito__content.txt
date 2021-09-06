@@ -14,7 +14,7 @@ Social and enterprise identity federation
 With Amazon Cognito, your users can sign in through social identity providers such as Apple, Google, Facebook, and Amazon, and through enterprise identity providers such as SAML and OpenID Connect.
 Read more about federation
 Standards-based authentication
-Amazon Cognito User Pools is a standards-based Identity Provider and supports identity and access management standards, such as Oauth 2.0, SAML 2.0, and OpenID Connect.
+Amazon Cognito User Pools is a standards-based Identity Provider and supports identity and access management standards, such as OAuth 2.0, SAML 2.0, and OpenID Connect.
 Read more about standards-based authentication
 Security for your apps and users
 Amazon Cognito supports multi-factor authentication and encryption of data-at-rest and in-transit. Amazon Cognito is HIPAA eligible and PCI DSS, SOC, ISO/IEC 27001, ISO/IEC 27017, ISO/IEC 27018, and ISO 9001 compliant.
@@ -90,7 +90,7 @@ Auth.signIn(username, password)
 .catch(err => console.log(err));
 Trusted by developers
 Pay only for what you use. No minimums.
-If you are using Amazon Cognito Identity to create a User Pool, you pay based on your monthly active users (MAUs) only. A user is counted as a MAU if, within a calendar month, there is an identity operation related to that user, such as sign-up, sign-in, token refresh, or password change. You are not charged for subsequent sessions or for inactive users within that calendar month.
+If you are using Amazon Cognito Identity to create a User Pool, you pay based on your monthly active users (MAUs) only. A user is counted as a MAU if, within a calendar month, there is an identity operation related to that user, such as sign-up, sign-in, token refresh, password change, or a user account attribute is updated. You are not charged for subsequent sessions or for inactive users within that calendar month. You are not charged for subsequent sessions or for inactive users within that calendar month.
 Pricing Tier (MAUs)
 Price per MAU
 First 50,000

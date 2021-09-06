@@ -25,7 +25,7 @@ Enabling AWS Firewall Manager
 Q: What are the prerequisites for AWS Firewall Manager?
 There are three mandatory pre-requisites and one optional pre-requisite to use AWS Firewall Manager.
 AWS Organizations - Your accounts must be part of AWS Organizations and have enabled all features. See AWS Organizations documentation for more details.
-Set the AWS Firewall Manager Administrator Account - Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. See the documentation guide for more information.
+Set the AWS Firewall Manager Administrator Account - Firewall Manager must be associated with the management account of your AWS organization or associated with a member account that has the appropriate permissions. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. See the documentation guide for more information.
 Enable AWS Config on accounts - Enable AWS Config for each member account in your organization. See AWS Config documentation.
 Enable AWS Resource Access Manager (Optional) - To enable Firewall Manager to centrally configure AWS Network Firewalls or associate Amazon Route 53 Resolver DNS Firewall rules across accounts and VPCs, you must first enable sharing of resources using AWS Resource Access Manager.
 Q: How do I use AWS Firewall Manager?

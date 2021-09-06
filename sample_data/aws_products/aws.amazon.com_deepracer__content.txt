@@ -2,6 +2,9 @@ Developers, start your engines
 Developers of all skill levels can get hands on with machine learning through a cloud based 3D racing simulator, fully autonomous 1/18th scale race car driven by reinforcement learning, and global racing league.
 Build a model
 Buy Now
+10 hours free
+for 30 days with the AWS Free Tier
+Get started for free
 In pole position to learn reinforcement learning
 AWS DeepRacer gives you an interesting and fun way to get started with reinforcement learning (RL). RL is an advanced machine learning (ML) technique that takes a very different approach to training models than other machine learning methods. Its super power is that it learns very complex behaviors without requiring any labeled training data, and can make short term decisions while optimizing for a longer term goal.
 Simulator
@@ -35,6 +38,10 @@ Enterprise Events
 Race with your colleagues
 AWS DeepRacer Enterprise events are the fastest way to get your company rolling on their machine learning journey.
 Get started with an AWS DeepRacer Event
+NEW | AWS DeepRacer LIVE races
+host your own worldwide race broadcast
+With new AWS DeepRacer LIVE races anyone can set up a race in minutes and stream it live. Invite your friends and colleagues to submit their models to compete in real time with easy to use hosting tools for streaming your race in console and on Twitch.
+Host a LIVE race
 The rubber meets the road
 AWS DeepRacer is an autonomous 1/18th scale race car designed to test RL models by racing on a physical track. Using cameras to view the track and a reinforcement model to control throttle and steering, the car shows how a model trained in a simulated environment can be transferred to the real-world.
 Buy DeepRacer

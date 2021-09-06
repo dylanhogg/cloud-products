@@ -1,14 +1,14 @@
 General
 Q: What is Amazon Lightsail?
-Amazon Lightsail is a virtual private server (VPS) and is the easiest way to get started with AWS for developers, small businesses, students, and other users who need a solution to build and host their applications on cloud. Lightsail provides developers compute, storage, and networking capacity and capabilities to deploy and manage websites and web applications in the cloud. Lightsail includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc. – for a low, predictable monthly price.
+Amazon Lightsail is a virtual private server (VPS) provider and is the easiest way to get started with AWS for developers, small businesses, students, and other users who need a solution to build and host their applications on cloud. Lightsail provides developers compute, storage, and networking capacity and capabilities to deploy and manage websites and web applications in the cloud. Lightsail includes everything you need to launch your project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management etc. – for a low, predictable monthly price.
 Q: What is a Virtual Private Server?
-A virtual private server or VPS is a popular platform to host websites and web applications. It provides users with private, virtual servers and cloud services at an affordable, cheap price. VPS hosting allows users to run websites and web applications in a highly secure and available environment, while being cost effective.
+A virtual private server, also known as an "instance", allows users to run websites and web applications in a highly secure and available environment, while being cost effective.
 Q: What are the benefits of a VPS?
-There are many benefits to using a virtual private server. A few benefits include: affordability, scalability, security, and customizable resources.
+There are many benefits to using a virtual private server, including affordability, scalability, security, and customizable resources.
 Q: What can I do with Lightsail?
-You can get preconfigured VPS plans that include everything to easily deploy and manage your application. Lightsail is best suited to projects that require a few virtual private servers and users who prefer a simple management interface. Common use cases for Lightsail include running websites, web applications, blogs, e-commerce sites, simple software, and more.
-Q: What is a Lightsail plan?
-Also referred to as a bundle, a Lightsail plan includes a virtual server with a fixed amount of memory (RAM) and compute (vCPUs), SSD-based storage (disks), and a free data transfer allowance. Lightsail plans also offer static IP addresses (5 per account) and DNS management (3 domain zones per account). Lightsail plans are charged on an hourly, on-demand basis, so you only pay for a plan when you're using it.
+You can choose among several preconfigured VPS plans that include everything you need to easily deploy and manage your application. Lightsail is best suited for projects that require a few virtual private servers and users who prefer a simple management interface. Common use cases for Lightsail include running websites, web applications, blogs, e-commerce sites, simple software, and more.
+Q: What is a Lightsail instance plan?
+Also referred to as a bundle, a Lightsail plan includes a virtual private server with a fixed amount of memory (RAM) and compute (vCPUs), SSD-based storage (disks), and a data transfer allowance. Lightsail plans also offer static IP addresses (5 per account) and DNS management (3 domain zones per account). Lightsail plans are charged on an hourly, on-demand basis, so you only pay for a plan when you're using it.
 Q: Are Lightsail plans the same across AWS Regions?
 As Lightsail expands its availability across more Regions, we’re evolving our infrastructure to provide a better overall customer experience. As a result, plans in certain Regions will have different specifications, such as an additional vCPU, compared to plans in other Regions.
 Q: What is a Lightsail instance?
@@ -96,6 +96,8 @@ Lightsail tags are key-value pairs, allowing you to organize resources such as i
 Q: Does Amazon Lightsail support monitoring and alerting?
 Yes. With Amazon Lightsail you can collect metrics on various resources, including instances, load balancers and databases. For any individual resource you can setup to two alarms thresholds for each metric. If the alarm threshold is breached you will receive a notification in the Lightsail console, and, optionally, you can choose to receive an email message and/or SMS message. There is no additional charge for the alerting and monitoring feature in Lightsail, however, you may incur charges from your mobile carrier for SMS messaging.
 Billing and account management
+Q: What is Lightsail's free tier?
+For a limited time, Lightsail is extending its free tier to include three months free on select bundles. The offer applies to new or existing AWS accounts who started Lightsail usage on or after 7/8/2021. Offer only applies to one bundle per account. Standard charges apply after first 750 hours of usage of the selected bundle each month. Check out the pricing page to learn more.
 Q: What do Lightsail plans cost?
 Lightsail plans are billed on an on-demand hourly rate, so you pay only for what you use. For every Lightsail plan you use, we charge you the fixed hourly price, up to the maximum monthly plan cost. The least expensive Lightsail plan starts at $0.0047 USD/hour ($3.50 USD/month). Lightsail plans that include a Windows Server license start at $0.01075 USD/hour ($8 USD/month).
 Q: When am I getting charged for a plan?
@@ -162,8 +164,7 @@ Lightsail load balancers cost $18 per month.
 Q: What does certificate management cost?
 Lightsail certificates and certificate management are free with use of a Lightsail load balancer.
 Q: Can I try Lightsail for free?
-Yes! Whether you're an existing or new AWS customer, you get 750 hours of free usage of the 512 MB Lightsail plan for free. You also can try Lightsail plans that include a Windows Server license for free using the same plan size.
-You can use your 750 hours of usage across as many instances as you like. For example, you can run a single Lightsail instance for a whole month, or 10 Lightsail instances for 75 hours. The free trial offer is only applicable to usage within the first calendar month from when you sign up to use Lightsail.
+Yes! For a limited time new Amazon Lightsail customers get up to three months free on select bundles. This offer only applies to new accounts created after 7/8/21. See the pricing page for more information.
 Q: How can I manage my AWS account?
 Lightsail is an AWS service and runs on the AWS trusted and proven cloud infrastructure. You use the same AWS account and credentials to log in to Lightsail and the AWS Management Console.
 You can manage your AWS account, including changing your AWS account password, user name, contact information, or billing information from the AWS Billing and Cost Management console.
@@ -322,7 +323,7 @@ Q: Can I change the power and scale of my service based on demand?
 Yes, container service power and scale can be changed at any time even after the service is created.
 Q: Can I customize the name of the HTTPS endpoint created by Lightsail container service?
 Lightsail provides a HTTPS endpoint for every container service in the format “<service-name>.<random-guid>.<aws-region-name>.cs.amazonlightsail.com. Only the service name can be customized. Alternately, you can use a custom domain name. For more information, see Enabling and managing custom domains for your Amazon Lightsail container services.  Q: Can I use custom domains for the HTTPS endpoint of a Lightsail container service?
-Yes. You can create and attach an SSL/TLS certificate with custom domain names to your container service from within Lightsail. The certificates need to be domain validated. If you manage your domain via Lightsail DNS, you can create CNAME records mapping to your container services. Creating an A-record for a container service while using Lightsail DNS zones is not currently supported. Alternately, you can use a DNS provider who supports adding ALIAS records, mapping your apex domain to the Lightsail container service default hostname. For more information, see Enabling and managing custom domains for your Amazon Lightsail container services.
+Yes. You can create and attach SSL/TLS certificates with custom domain names to your container service in Lightsail. The certificates need to be domain validated. After the certificate is attached, if you manage your domain via Lightsail DNS, you can easily add A/AAAA/CNAME records to route traffic for your domain to your container services. Alternately, you can use a DNS hosting provider who supports adding ALIAS records, to map the apex of your domain to the public domain (public DNS) of your Lightsail container service. For more information, see Enabling and managing custom domains for your Amazon Lightsail container service.
 Q: What do Lightsail container services cost?
 Lightsail container services are billed on an on-demand hourly rate, so you pay only for what you use. For every Lightsail container service you use, we charge you the fixed hourly price, up to the maximum monthly service price. Maximum monthly service price can be calculated by multiplying the base price of the power of your service with the scale of your service. For example, a service of Micro power and scale of 2 will cost a maximum of $10*2=$20/month. The least expensive Lightsail container service starts at $0.0094 USD/hour ($7 USD/month). Additional data transfer charges may apply for usage above the free-quota of 500 GB per month for each service.
 Q: Will I be charged for the whole month even if I run my container service for a few days?
@@ -342,6 +343,42 @@ Q: Can I configure the public endpoint of my container service to redirect HTTP 
 Lightsail container service public endpoints automatically redirect all HTTP requests to HTTPS to ensure that your content is served securely.
 Q: Do container services support monitoring and alerting?
 Container services provide metrics for CPU utilization and memory utilization across the nodes of your service. Alerting based on these metrics is currently not supported.
-Try Lightsail free for 1 month!
+Object storage
+Q: What can I do with Lightsail object storage?
+Lightsail now provides you with the ability to store your static content such as images, videos or HTML files in an object storage that can be used for your websites and applications. Lightsail object storage can be associated to your Lightsail CDN distribution with a few simple clicks, making it quick and easy to accelerate the delivery of your content to a global audience. It can also be used as a low cost, secure backup solution.
+Q: What does Lightsail object storage cost?
+Lightsail object storage has three different fixed-priced bundles in all AWS Regions where Lightsail is available. The first bundle is $1 per month and is free for the first 12 months. This bundle includes 5 GB storage capacity and 25 GB data transfer. The second bundle is $3 per month and includes 100 GB storage capacity and 250 GB data transfer. Lastly, the third bundle is $5 per month and includes 250 GB of storage capacity and 500 GB of data transfer. Lightsail object storage includes unlimited data transfer into your bucket, as the bundled data transfer allowance is used only for data transfer out from your bucket.
+Q: Does Lightsail object storage have overage charges?
+When you exceed the monthly storage capacity or data transfer allowance of your object storage plan, you will get charged for the additional amount. For more information, see the Lightsail pricing page.
+Q: How does my data transfer allowance work with object storage?
+You can consume your data transfer allowance by transfering data into and out of Lightsail object storage, except for the following:
+Data transferred into Lightsail object storage from the internet
+Data transfer between Lightsail object storage resources
+Data transferred out from Lightsail object storage to another Lightsail resource in the same region (including to a different account in the same AWS Region)
+Data transferred out from Lightsail object storage to a Lightsail CDN distribution
+Q: Can I change the plan associated with my Lightsail bucket?
+Yes, you can change your Lightsail object storage plan one time within your monthly AWS billing cycle.
+Q: Can I copy objects from Lightsail object storage to Amazon S3?
+Yes, copying from Lightsail object storage to Amazon S3 is supported. Documentation on the proper AWS CLI command can be found
+here
+Q: How do I get started with Lightsail object storage?
+To use Lightsail object storage, you must first create a bucket that is used to store your data. For more information, see
+Creating buckets in Amazon Lightsail. After your bucket is up and running, you can start adding objects to your bucket by uploading files using the Lighsail console or by configuring your application to put content like logs or other application data in the bucket. Alternatively, you can also get started with Lightsail object storage through the use of AWS Command Line Interface (AWS CLI).
+Q: Can I block public access to my bucket?
+Lightsail buckets and objects are set to private by default, meaning that only users with appropriate permissions have access to the bucket and objects. A user can change this default setting and either make individual objects public and read only in a private bucket or opt to make the entire bucket public and read only. When a user makes a bucket or object public, anyone in the world can read its content.
+Q: How do I provide programmatic access to my bucket?
+You can use either access keys or roles for programmatic access to your bucket. First, select the bucket you want to programmatically connect to in the Lightsail console. Second, under the “Permissions” tab, create an access key or assign a role to your Lightsail instance and then configure your website or application code to use your bucket. This behavior may vary depending on how you plan to use object storage with your website or application. See more documentation
+here.
+Q: How do I share a bucket with other AWS accounts?
+Lightsail makes cross-account sharing easy by allowing you to share access to your bucket with the AWS account ID you specify in the “Cross-account access” in the Lightsail console. After you specify an AWS account ID, that account will have read-only access to the bucket.
+Q: What is versioning?
+Versioning allows you to preserve, retrieve, and restore every version of every object storage in your bucket, providing an additional level of protection from accidental overwrites and deletes. See more documentation on enabling versioning
+Q: How do I associate my Lightsail bucket to my Lightsail CDN distribution?
+Lightsail object storage can be associated to Lightsail CDN distributions with a few simple clicks, making it quick and easy to accelerate the delivery of your content to a global audience. To do so, create a Lightsail CDN distribution and simply select the Lightsail bucket as the origin of your Lightsail CDN distribution. See more documentation
+Q: Is there a limit to the number of Lightsail object storage bundles I can create?
+You can create up to 20 Lightsail object storage bundles per account. There is no limit to the number of objects that you can store in a bucket.
+Q: Does Lightsail object storage support monitoring and alerting?
+With Lightsail object storage, customers can easily view metrics on the total used space within a bucket and number of objects within the bucket. Alerting based on these metrics is also supported.
+Try Lightsail free for 3 months!
 Get started with Lightsail
 Page Content

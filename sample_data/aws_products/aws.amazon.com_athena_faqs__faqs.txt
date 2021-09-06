@@ -32,33 +32,6 @@ Yes. Step-by-Step guide can be found
 Q: What regions is Amazon Athena available in?
 Please refer to
 Regional Products and Services for details of Amazon Athena service availability by region.
-Preview features
-Q: What preview features are available in Athena?
-You can now invoke your SageMaker machine learning (ML) models in an Athena SQL query to run inference. The ability to use ML models in SQL queries makes complex tasks such anomaly detection, customer cohort analysis and sales predictions as simple as writing a SQL query.
-Learn more.
-With User-Defined Functions (UDFs), you can now write your own functions in Java and invoke them in your Athena SQL query.
-Q: How do I test the preview features?
-All Athena queries originating from the Workgroup
-AmazonAthenaPreviewFunctionality will be considered preview test queries. You can create and set up a new Workgroup
-AmazonAthenaPreviewFunctionality using Athena APIs or Athena UX. To create the new Workgroup,
-follow the steps here.
-The following notes are important for using preview features. Please do not edit the Workgroup name. You can edit other Workgroup properties such as Enable CloudWatch metrics and Enable Requester Pays. You can use the Athena Console, JDBC/ODBC drivers or APIs to submit your test queries. Please make sure to specify the Workgroup:
-AmazonAthenaPreviewFunctionality when you submit test queries. Preview functionality is available only in us-east-1 region, us-west-2, ap-south-1, eu-west-1 regions. If you use Athena in any other region and submit queries using Workgroup:
-AmazonAthenaPreviewFunctionality, your query will fail. Cross AWS region calls are not supported in the preview mode.
-Q: Is it safe to use Athena preview features in my production account?
-We recommend to not onboard your production workload to the preview Workgroup
-AmazonAthenaPreviewFunctionality. Query performance may vary between the preview Workgroup and the other workgroups in your account. Additionally, we may add new features and bug fixes to the preview Workgroup that may not be backwards compatible.
-Q: How can I submit my queries?
-You can submit your queries using the Athena Console,
-Athena APIs, or using the
-Athena preview JDBC driver with any off-the-shelf query and result visualization tools such as SQL WorkBench.
-Q: How do I provide feedback on preview feature functionality?
-Your feedback is important to us. Please email us your feedback to athena-feedback@amazon.com.
-Q: Are there any charges to test preview features?
-During the preview, you are not charged for the data scanned from federated data sources. However, you are charged standard Athena rates for data scanned from Amazon S3. Additionally, you are charged standard rates for the AWS services that you use with Athena, such as Amazon S3, AWS Lambda, AWS Glue, Amazon SageMaker, and AWS Serverless Application Repository. For example, you are charged S3 rates for storage, requests, and inter-region data transfer. By default, query results are stored in an S3 bucket of your choice and are also billed at standard Amazon S3 rates. If you use AWS Lambda, you are charged based on the number of requests for your functions and the duration, the time it takes for your code to execute.
-Q: What happens when the preview ends?
-All queries submitted using the Workgroup
-AmazonAthenaPreviewFunctionality will fail. You can continue to submit queries from other Workgroups. If you do not specify any workgroup, the query automatically executes using the default Primary Workgroup. Please note that the preview of any feature may end at any time.
 When to use Athena vs other big data services
 Q: What is the difference between Amazon Athena, Amazon EMR, and Amazon Redshift?
 Query services like Amazon Athena, data warehouses like Amazon Redshift, and sophisticated data processing frameworks like Amazon EMR, all address different needs and use cases. You just need to choose the right tool for the job. Amazon Redshift provides the fastest query performance for enterprise reporting and business intelligence workloads, particularly those involving extremely complex SQL with multiple joins and sub-queries. Amazon EMR makes it simple and cost effective to run highly distributed processing frameworks such as Hadoop, Spark, and Presto when compared to on-premises deployments. Amazon EMR is flexible - you can run custom applications and code, and define specific compute, memory, storage, and application parameters to optimize your analytic requirements. Amazon Athena provides the easiest way to run ad-hoc queries for data in S3 without the need to setup or manage any servers.
@@ -74,7 +47,7 @@ Q: Can I use Amazon Athena to query data that I process using Amazon EMR?
 Yes, Amazon Athena supports many of the same data formats as Amazon EMR. Athena’s data catalog is Hive metastore compatible. If you're using EMR and already have a Hive metastore, you simply execute your DDL statements on Amazon Athena, and then you can start querying your data right away without impacting your Amazon EMR jobs.
 Q: How does federated query in Athena relate to other AWS services?
 Federated query in Athena allows you to run SQL queries across variety of relational, non-relational, and custom data sources. You get a unified way to run SQL queries across various data stores.
-Q: How does machine learning in Athena relate to other AWS services? [preview]
+Q: How does machine learning in Athena relate to other AWS services?
 Athena SQL queries can invoke ML models deployed on Amazon SageMaker. You can specify the Amazon S3 location where they want to store results of these Athena SQL queries.
 Creating tables, data formats and partitions
 Q: How do I create tables and schemas for my data on Amazon S3?
@@ -90,7 +63,7 @@ Q: Can I run any Hive Query on Athena?
 Amazon Athena uses Hive only for DDL (Data Definition Language) and for creation/modification and deletion of tables and/or partitions. Please
 click here for a complete list of statements supported. Athena uses Presto when you run SQL queries on Amazon S3. You can run ANSI-Compliant SQL SELECT statements to query your data in Amazon S3.
 Q: What is a SerDe?
-SerDe stands for Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats. Hive DLL statements require you to specify a SerDe, so that the system knows how to interpret the data that you’re pointing to. Amazon Athena uses SerDes to interpret the data read from Amazon S3. The concept of SerDes in Athena is the same as the concept used in Hive. Amazon Athena supports the following SerDes:
+SerDe stands for Serializer/Deserializer, which are libraries that tell Hive how to interpret data formats. Hive DDL statements require you to specify a SerDe, so that the system knows how to interpret the data that you’re pointing to. Amazon Athena uses SerDes to interpret the data read from Amazon S3. The concept of SerDes in Athena is the same as the concept used in Hive. Amazon Athena supports the following SerDes:
 Apache Web Logs: "org.apache.hadoop.hive.serde2.RegexSerDe"
 CSV: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
 TSV: "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe"
@@ -125,10 +98,10 @@ Q: How do I access the functions supported by Amazon Athena?
 here to learn more about functions supported by Amazon Athena.
 Q: How do I improve the performance of my query?
 You can improve the performance of your query by compressing, partitioning, or converting your data into columnar formats. Amazon Athena supports open source columnar data formats such as Apache Parquet and Apache ORC. Converting your data into a compressed, columnar format lowers your cost and improves query performance by enabling Athena to scan less data from S3 when executing your query.
-Q: Does Athena support User Defined Functions (UDFs)? [preview]
-Amazon Athena now supports user-defined functions (UDFs) to enable you to write custom scalar functions and invoke them in SQL queries. While Athena provides built-in functions, UDFs enables you to perform custom processing such as compressing and decompressing data, redacting sensitive data, or applying customized decryption.
-You can write their UDFs in Java using the Athena Query Federation SDK. When a UDF is used in a SQL query submitted to Athena, it is invoked and executed on AWS Lambda. UDFs can be used in both SELECT and FILTER clauses of a SQL query. You can invoke multiple UDFs in the same query.
-Q: What is the user experience when writing a UDF? [preview]
+Q: Does Athena support User Defined Functions (UDFs)?
+Amazon Athena supports user-defined functions (UDFs) to enable you to write custom scalar functions and invoke them in SQL queries. While Athena provides built-in functions, UDFs enables you to perform custom processing such as compressing and decompressing data, redacting sensitive data, or applying customized decryption.
+You can write UDFs in Java using the Athena Query Federation SDK. When a UDF is used in a SQL query submitted to Athena, it is invoked and executed on AWS Lambda. UDFs can be used in both SELECT and FILTER clauses of a SQL query. You can invoke multiple UDFs in the same query.
+Q: What is the user experience when writing a UDF?
 You can use the Athena Query Federation SDK to write your UDF. UDF examples are
 provided here. You can upload your function to AWS Lambda and then invoke it in your Athena query.
 Click here to get started.
@@ -153,25 +126,23 @@ our documentation.
 Q: Can I use federated query capabilities for ETL? What is the workflow?
 All Athena query results are stored in an Amazon S3 location that you set. You can use Athena’s federated query capabilities to execute a query that scans data sources of your choice and store the result in S3 in one SQL query. Common SQL constructs such as JOINs, Filter clauses, etc. are supported. Additionally, you can also define your own functions using Athena’s UDF functionality to pre- or post-process your result dataset.
 Q: Are you going to release SDK support in programming languages other than JAVA?
-Please let us know what programming languages you want support for by emailing athena-feedback@amazon.com
-Q: What are the known limitations of the Query Federation SDK?
-At the Preview launch, Query Federation SDK only supports Reads and JAVA-based Lambda functions.
-Machine learning (in preview)
-Q: What use cases does Athena support for embedded ML? (preview)
-Athena use-cases for ML span across different industries, as in the following examples. Financial risk data analysts can run what-if analysis and Monte Carlo simulations. Business analysts might run linear regression or forecasting models to predict future values to help them create richer and forward-looking business dashboards that forecast revenues. Marketing analysts could use k-means clustering models to help determine their different customer segments. Security analysts could use logistic regression models (bivariant and multivariant) to find anomalies and detect security incidents from various logs.
-Q: What ML models can be used with Athena? (preview)
+Please let us know what programming languages you want support for by emailing athena-feedback@amazon.com.
+Machine learning
+Q: What use cases does Athena support for embedded ML?
+Athena use-cases for ML span across different industries, as in the following examples. Financial risk data analysts can run what-if analysis and Monte Carlo simulations. Business analysts might run linear regression or forecasting models to predict future values to help them create richer and forward-looking business dashboards that forecast revenues. Marketing analysts could use k-means clustering models to help determine their different customer segments. Security analysts could use logistic regression models to find anomalies and detect security incidents from logs.
+Q: What ML models can be used with Athena?
 Athena can invoke any ML model that is deployed on Amazon SageMaker. You have the flexibility to train your own model using your proprietary data, or use a model that is pre-trained and deployed on SageMaker. For example, cluster analysis would likely be trained on your own data, because you want to categorize new records into the same categories you used for previous records. On the other hand, for predicting real world sports events, you could use a publicly available model, since the training data used would be in the public domain already. Domain-specific or industry-specific predictions will typically be trained on your own data in SageMaker, while undifferentiated ML needs may use external models.
-Q: Can I train my ML model using Athena? (preview)
+Q: Can I train my ML model using Athena?
 You cannot train and deploy your ML models on SageMaker using Athena. You can train your ML model, or use an existing pre-trained model that is deployed on SageMaker using Athena. Documentation detailing
 training steps on SageMaker is here.
-Q: Can I run inference on models deployed on other services such as Comprehend, Forecasting or Models deployed on my own EC2 cluster? (preview)
+Q: Can I run inference on models deployed on other services such as Comprehend, Forecasting or Models deployed on my own EC2 cluster?
 Athena only supports invoking ML models deployed on SageMaker. We welcome feedback on what other services you want to use with Athena. Please email us your feedback to: athena-feedback@amazon.com.
-Q: What are the performance implications of using Athena queries for SageMaker inference? (preview)
+Q: What are the performance implications of using Athena queries for SageMaker inference?
 We are constantly adding operational performance improvements to our features and services. To optimize performance of your Athena ML queries, we batch rows when invoking your SageMaker ML model for inference. At this time, we do not support user provided row batch size overrides.
-Q: What features does Athena ML support? (preview)
-Athena offers ML inference (prediction) capabilities wrapped by a SQL interface. You can also call an Athena user-defined function (UDFs, also included in the Preview) to invoke pre- or post-processing logic on your result set. Inputs can include any column, record or table, and multiple calls can be batched together for higher scalability. You can run inference in the Select phase or in the Filter phase. To learn more, please
+Q: What features does Athena ML support?
+Athena offers ML inference (prediction) capabilities wrapped by a SQL interface. You can also call an Athena user-defined function (UDF) to invoke pre- or post-processing logic on your result set. Inputs can include any column, record or table, and multiple calls can be batched together for higher scalability. You can run inference in the Select phase or in the Filter phase. To learn more, please
 visit our documentation.
-Q: What ML models can I use? (preview)
+Q: What ML models can I use?
 Amazon SageMaker supports a variety of ML algorithms. You can also create your proprietary ML model and deploy it on Amazon SageMaker. For example, cluster analysis would likely be trained on your own data, because you want to categorize new records into the same categories you used for previous records. On the other hand, for predicting real world sports events, you could use a publicly available model, since the training data used would be in the public domain.
 We expect that domain-specific or industry-specific predictions will typically be trained on your own data in SageMaker, while undifferentiated ML needs such as machine translation will use external models.
 Security & availability

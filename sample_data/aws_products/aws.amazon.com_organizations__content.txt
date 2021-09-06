@@ -3,7 +3,9 @@ Centrally manage and govern your environment as you scale your AWS resources
 Get started with AWS Organizations
 AWS Organizations helps you centrally manage and govern your environment as you grow and scale your AWS resources. Using AWS Organizations, you can programmatically create new AWS accounts and allocate resources, group accounts to organize your workflows, apply policies to accounts or groups for governance, and simplify billing by using a single payment method for all of your accounts.
 In addition, AWS Organizations is integrated with other AWS services so you can define central configurations, security mechanisms, audit requirements, and resource sharing across accounts in your organization. AWS Organizations is available to all AWS customers at no additional charge.
-Introducing AWS Organizations (1:56)
+Manage your environment
+with the AWS Free Tier
+Get started for free
 Benefits
 Quickly scale your workloads
 AWS Organizations helps you quickly scale your environment by allowing you to programmatically create new AWS accounts. An AWS account is a container for your resources. Using multiple accounts gives you built-in security boundaries. It also empowers your teams by providing them designated accounts, and you can automatically provision resources and permissions using AWS CloudFormation StackSets.
@@ -28,6 +30,17 @@ Provide tools and access for your security teams while encouraging development
 You can use AWS Organizations to create a Security group and provide them read-only access to all of your resources to identify and mitigate security concerns. In addition, you can provide them permissions to manage Amazon GuardDuty so they can actively monitor and mitigate threats to your workloads, and IAM Access Analyzer to quickly identify unintended access to your resources.
 Share common resources across accounts
 AWS Organizations makes it easy for you to share critical central resources across your accounts. For example, you can share your central AWS Directory Service Managed Microsoft Active Directory so that applications can access your central identity store. Use AWS Service Catalog to share IT services hosted in designated accounts so users can quickly discover and deploy approved services. Additionally, you can ensure application resources are created on your Amazon Virtual Private Cloud (VPC) subnets by centrally defining them once and sharing them across your organization using AWS Resource Access Manager.
+Customers
+“Using AWS Organizations, we’re able to accelerate development by giving teams their own environments in separate accounts, allowing them to progress simultaneously without impacting other teams or pipelines. We’re able to group accounts by business units using organizational units, and we can support three common development stages for applications. As a result, we were able to accelerate projects onboarded to cloud by 5X, reduce number of IAM permission tickets by 10X, and experienced 3X fewer stability issues. This is all made possible using simple APIs from AWS Organizations.”
+Gaurav Jain, Director, Cloud Platform - FactSet
+“Using AWS Organizations, GoDaddy is able to implement consistent security guardrails across accounts, while giving our application teams the flexibility to build at their own accelerated pace. For example, we utilize AWS Config at the organization level to monitor and collect infrastructure configuration details. We can view and maintain costs as teams develop new applications, and provision specific development environments by giving teams accounts for sandbox, test, and production stages. We’ve built custom applications that help developers confidently deploy resources to GoDaddy compliance standards, and can easily distribute them to accounts using the AWS Service Catalog integration."
+Ketan Patel, Senior Director, Software Development - GoDaddy
+“GE uses AWS Identity Services to support their global enterprise and allow their businesses to operate securely in the cloud. AWS Organizations and Service Control Policies (SCP) provide top-down governance and allows for the delegation of identity based and resource-based policy administration to each business unit. This model allows the businesses to move independently and operate at scale to solve today’s industrial challenges.”
+Matthew Green, Senior Director Cloud Architecture - GE
+“We made it easier for our finance department to track cloud costs using AWS Organizations, as it provided them with a single bill and allowed us to qualify for volume discounts and lower pricing from AWS savings plans. In addition, using AWS SSO with AWS Organizations allowed us to centralize authentication to our Identity provider (IdP), which has been a massive improvement on a daily basis for our employees so they don't have different sets of credentials for accessing multiple AWS accounts. Our infrastructure security team was also able to centralize access management, resulting in an increase in platform security and a decrease in operational costs."
+Rocco Zanni, CTO - Spreaker
+“We started using AWS Organizations to manage the accounts for our multi-account environment and simplify our billing. We have also greatly simplified our access management with the AWS SSO integration. AWS Organizations enables us to isolate workloads with similar risk profiles within their own account, to identify ownership of accounts via account tags, and enforce controls with Service Control Policies that cannot be overridden by the administrators of the member accounts. We now deliver new accounts quickly and securely freeing our developers to focus on business solutions.”
+Jaime Villegas, Head of Corporative Services - Bancolombia
 Recent publications and articles
 Date
 More...

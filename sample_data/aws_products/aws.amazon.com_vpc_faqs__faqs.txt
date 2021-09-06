@@ -209,6 +209,37 @@ Q: I really want a default VPC for my existing EC2 account. Is that possible?
 Yes, however, we can only enable an existing account for a default VPC if you have no EC2-Classic resources for that account in that region. Additionally, you must terminate all non-VPC provisioned Elastic Load Balancers, Amazon RDS, Amazon ElastiCache, and Amazon Redshift resources in that region. After your account has been configured for a default VPC, all future resource launches, including instances launched via Auto Scaling, will be placed in your default VPC. To request your existing account be setup with a default VPC, please go to Account and Billing -> Service: Account -> Category: Convert EC2 Classic to VPC and raise a request. We will review your request, your existing AWS services and EC2-Classic presence and guide you through the next steps.
 Q: How are IAM accounts impacted by default VPC?
 If your AWS account has a default VPC, any IAM accounts associated with your AWS account use the same default VPC as your AWS account.
+EC2 Classic
+Q: What is EC2-Classic?
+EC2-Classic is a flat network that we launched with EC2 in the summer of 2006. With EC2-Classic, your instances run in a single, flat network that you share with other customers. Over time, inspired by our customers’ evolving needs, we launched Amazon Virtual Private Cloud (VPC) in 2009 to allow you to run instances in a virtual private cloud that's logically isolated to your AWS account. Today, while majority of our customers use Amazon VPC, we have a few customers who still use EC2-Classic.
+Q: What’s changing?
+We are retiring Amazon EC2-Classic on August 15, 2022 and we need you to migrate any EC2 instances and other AWS resources running on EC2-Classic to Amazon VPC before this date. The following section provides more information on the EC2-Class retirement as well as tools and resources to assist you in migration.
+Q: How is my account impacted by the retirement of EC2-Classic?
+You are affected by this change only if you have EC2-Classic enabled on your account in any of the AWS regions. You can use the console or the describe-account-attributes command to check whether you have EC2-Classic enabled for an AWS region; please refer to this document for more details.  If you do not have any active AWS resources running on EC2-Classic in any region, we request you to turn off EC2-Classic from your account for that region. Turning off EC2-Classic in a region allows you to launch Default VPC there. To do so go to the AWS Support Center at console.aws.amazon.com/support, choose “Create case” and then “Account and billing support”, for “Type” choose “Account”, for “Category” choose “Convert EC2 Classic to VPC”, fill in the other details as required, and choose “Submit”.  We will automatically turn off EC2-Classic from your account on October 30, 2021 for any AWS region where you have not had any AWS resources (EC2 Instances, Amazon Relational Database, AWS Elastic Beanstalk, Amazon Redshift, AWS Data Pipeline, Amazon EMR, AWS OpsWorks) on EC2-Classic since January 1, 2021.  On the other hand, if you have AWS resources running on EC2-Classic, we request you to plan their migration to Amazon VPC as soon as possible. You will not be able to launch any instances or AWS services on EC2-Classic platform beyond August 15, 2022. Any workloads or services in running state will gradually loose access to all AWS services on EC2-Classic as we retire them beginning August 16, 2022.
+You can find the migration guides for your AWS resources in subsequent question.
+Q: What are the benefits of moving from EC2-Classic to Amazon VPC?
+Amazon VPC gives you complete control over your virtual network environment on AWS, logically isolated to your AWS account. In the EC2-Classic environment, your workloads are sharing a single flat network with other customers. The Amazon VPC environment offers many other advantages over the EC2-Classic environment including the ability to select your own IP address space, public and private subnet configuration, and management of route tables and network gateways. All services and instances currently available in EC2-Classic have comparable services available in the Amazon VPC environment. Amazon VPC also offers a much wider and latest generation of instances than EC2-Classic. Further information about Amazon VPC is available in this link.
+Q: How do I migrate from EC2-Classic to VPC?
+To help you migrate your resources, we have published playbooks and built solutions that you will find below. To migrate, you must recreate your EC2-Classic resources in your VPC. First, you can use this script to identify all resources provisioned in EC2-Classic across all regions in an account. You can then use the migration guide for the relevant AWS resources from below:
+Instances and Security Groups
+Classic Load Balancer
+Amazon Relational Database Service
+AWS Elastic Beanstalk
+Amazon Redshift for migration of DC1 Clusters and for other node types
+AWS Data Pipeline
+Amazon EMR
+AWS OpsWorks
+Besides the above migration guides, we are also offering a highly automated lift-and-shift (rehost) solution, AWS Application Migration Service (AWS MGN), that simplifies, expedites, and reduces the cost of migrating applications. You can find relevant resources about AWS MGN here:
+Getting started with AWS Application Migration Service
+AWS Application Migration Service on-demand technical training
+Documentation to dive deep into AWS Application Migration Service Features and Functionalities
+Service Architecture and Network Architecture video
+For simple individual EC2 instance migrations from EC2-Classic to VPC, besides AWS MGN or the Instances Migration Guide, you can also use the “AWSSupport-MigrateEC2 ClassicToVPC“ runbook from ”AWS Systems Manager > Automation“. This runbooks automates the steps that are required to migrate an instance from EC2-Classic to VPC by creating an AMI of the instance in EC2-Classic, creating a new instance from the AMI in VPC, and optionally terminating the EC2-Classic instance.
+If you have any questions or concerns, you can contact the AWS Support Team via AWS Premium Support.  Please Note: If you have AWS resources running on EC2-Classic in multiple AWS regions, we recommend that you turn off EC2-Classic for each of those regions as soon as you have migrated all your resources to VPC in them.
+Q: What are the important dates I should be aware of?
+We will take the following two actions ahead of the August 15, 2022 retirement date:
+We will stop issuing 3-year reserved instances (RI) and 1-year RI for the EC2-Classic environment on Oct 30, 2021. RIs already in place on the EC2-Classic environment will not be affected at this time. RIs that are set to expire after 8/15/2022 will need to be modified to use the Amazon VPC environment for the remaining period of the lease. For information on how to modify your RIs, please visit our document.
+On Aug 15, 2022, we will no longer allow the creation of new instances (Spot or on-demand) or other AWS services in the EC2-Classic environment. Any workloads or services in running state will gradually loose access to all AWS services on EC2-Classic as we retire them beginning August 16, 2022.
 Elastic Network Interfaces
 Q: Can I attach or detach one or more network interfaces to an EC2 instance while it’s running?
 Q: Can I have more than two network interfaces attached to my EC2 instance?

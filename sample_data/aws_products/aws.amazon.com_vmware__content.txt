@@ -41,6 +41,9 @@ VMware Cloud on AWS enables organizations to optimize the costs of operating a c
 Enhanced availability
 VMware Cloud on AWS helps accelerate migration of VMware vSphere-based workloads to the highly available and scalable AWS Cloud. The service enables VMware-based workloads to run directly on the next-generation Nitro system-based Amazon EC2 bare metal infrastructure and provisioned in a single-tenant, isolated Amazon VPC. This approach allows organizations to take immediate advantage of the scalability, availability, security, and global reach of the AWS Cloud.
 From Our Customers
+How VMware Cloud on AWS helped Sterling National Bank securely move to the cloud and transform its banking as a service business
+Sterling National Bank chose VMware Cloud on AWS as the fastest path the cloud. Sterling wanted to continue its journey to modernize on behalf of its customers, but was running out of capacity in its datacenters and could no longer modernize on-premises without significant cost. The bank needed to find an option that would allow it to quickly and easily move its highly customized banking applications to the cloud so it could continue to innovate and create more personalized digital services for its customers.
+Watch video
 Lotte migrates its on-premises virtual desktop environment to VMware Cloud on AWS, supporting 2,500 desktops
 Lotte is a well-known confectionery manufacturer producing an extensive range of products under the slogan “Sweetheart of Your Mouth.” Having used a virtual desktop environment (VDI) since 2011, the company decided to migrate its environment to VMware Cloud on Amazon Web Services (AWS) when upgrading from Windows 7 to 10. Lotte extended its environment to provide 2,500 virtual desktops in total and plans to build a digital transformation (DX) platform running on AWS for its core business systems as part of cloud-first approach.
 View the case study
@@ -48,7 +51,6 @@ William Hill streamlines operations and reduces costs using VMware Cloud on AWS
 Facing the challenge of continuously increasing customer demand and the desire to get new products to market faster motivated William Hill, one of the largest gaming companies, to migrate their on-premises data centers to the cloud. VMware Cloud on AWS has enabled William Hill to close portions of their seemingly ever-expanding, on-premises data centers, as well as develop a new mindset and cost-effective approach to conducting and growing the business.
 PennyMac scales VDI environment with VMware CloudTM on AWS
 PennyMac, a top national mortgage lender, is committed to providing each and every customer with the right home loan and superior service long after closing. In this video, learn how PennyMac used VMware CloudTM on AWS to migrate their VDI environment to AWS.
-Watch video
 S&P Global Ratings Uses AWS to Speed Application Migration, Drive Innovation
 The world’s leading provider of independent credit ratings, S&P Global Ratings has helped people across the globe make better financial decisions for more than 150 years. Learn more about how S&P Global Ratings used VMware Cloud on AWS to migrate their on-premises environments to AWS.
 VMware Cloud on AWS Helps New Jersey School District Ensure Continuity and Seamless Virtual Education

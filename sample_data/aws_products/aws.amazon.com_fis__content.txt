@@ -17,7 +17,7 @@ AWS Fault Injection Simulator is designed to run disruptive real-world scenarios
 How it works
 Use cases
 Periodic Game Days
-A game day is the process of rehearsing ahead of an event by creating the anticipated conditions and observing how effectively the team and system respond. An event could be an unusually high traffic day, a new launch, a failure, or something else. You can use AWS Fault Injection Simulator to run a game day by creating the event conditions and monitoring the performance of your system.
+A game day is the process of rehearsing ahead of an event by creating potential failure conditions and observing how effectively the team and system respond. A failure condition could be API throttling, latency, or something else. You can use AWS Fault Injection Simulator to run a game day by creating the event conditions and monitoring the performance of your system.
 Continuous Delivery Pipeline Integration
 You can integrate AWS Fault Injection Simulator into your continuous delivery pipeline. This will enable you to repeatedly test the impact of fault actions as part of your software delivery process.
 Customer success stories

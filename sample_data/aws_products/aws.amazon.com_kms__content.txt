@@ -2,9 +2,9 @@ AWS Key Management Service (KMS)
 Easily create and control the keys used to encrypt or digitally sign your data
 Get started with AWS Key Management Service
 AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS services and in your applications. AWS KMS is a secure and resilient service that uses hardware security modules that have been validated under FIPS 140-2, or are in the process of being validated, to protect your keys. AWS KMS is integrated with AWS CloudTrail to provide you with logs of all key usage to help meet your regulatory and compliance needs.
-Try AWS Key Management Service
-AWS Free Tier includes 20,000 free AWS Key Management Service requests each month.
-Try AWS Key Management Service Free
+20,000 requests free
+per month with the AWS Free Tier
+Get started for free
 Benefits
 Fully managed
 You control access to your encrypted data by defining permissions to use keys while AWS KMS enforces your permissions and handles the durability and physical security of your keys.

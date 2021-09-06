@@ -1,53 +1,162 @@
 General
 Q: What is Amazon EMR?
-Amazon EMR is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. It utilizes a hosted Hadoop framework running on the web-scale infrastructure of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Simple Storage Service (Amazon S3).
-Q: What can I do with Amazon EMR?
-Using Amazon EMR, you can instantly provision as much or as little capacity as you like to perform data-intensive tasks for applications such as web indexing, data mining, log file analysis, machine learning, financial analysis, scientific simulation, and bioinformatics research. Amazon EMR lets you focus on crunching or analyzing your data without having to worry about time-consuming set-up, management or tuning of clusters running open source big data applications or the compute capacity upon which they sit.
-Amazon EMR is ideal for problems that necessitate the fast and efficient processing of large amounts of data. The web service interfaces allow you to build processing workflows, and programmatically monitor progress of running clusters. In addition, you can use the simple web interface of the AWS Management Console to launch your clusters and monitor processing-intensive computation on clusters of Amazon EC2 instances.
-Q: Who can use Amazon EMR?
-Anyone who requires simple access to powerful data analysis can use Amazon EMR. You don’t need any software development experience to experiment with several sample applications available in the Developer Guide and on the AWS Big Data Blog.
-Q: What can I do with Amazon EMR that I could not do before?
-Amazon EMR significantly reduces the complexity of the time-consuming set-up, management and tuning of Hadoop clusters or the compute capacity upon which they sit. You can instantly spin up large Hadoop clusters which will start processing within minutes, not hours or days. When your cluster finishes its processing, unless you specify otherwise, it will be automatically terminated so you are not paying for resources you no longer need.
-Using this service you can quickly perform data-intensive tasks for applications such as web indexing, data mining, log file analysis, machine learning, financial analysis, scientific simulation, and bioinformatics research.
-As a software developer, you can also develop and run your own more sophisticated applications, allowing you to add functionality such as scheduling, workflows, monitoring, or other features.
-Q: What is Apache Spark?
-Apache SparkTM is an open-source, distributed processing system used for big data workloads. It utilizes in-memory caching, and optimized query execution for fast analytic queries against data of any size. Amazon EMR is the best place to deploy Apache Spark in the cloud, because it combines the integration and testing rigor of commercial Spark distributions with the scale, simplicity, and cost effectiveness of the cloud. It allows you to launch Spark clusters in minutes without needing to do node provisioning, cluster setup, Spark configuration, or cluster tuning. EMR features Amazon EMR runtime for Apache Spark, a performance-optimized runtime environment for Apache Spark that is active by default on Amazon EMR clusters. Amazon EMR runtime for Apache Spark can be over 3x faster than clusters without the EMR runtime, and has 100% API compatibility with standard Apache Spark. Learn more about Spark and Spark on Amazon EMR.
-Q: What is Presto?
-Presto is an open source, distributed SQL query engine, designed from the ground up for fast analytic queries against data of any size. With Amazon EMR, you can launch Presto clusters in minutes without needing to do node provisioning, cluster setup, Presto configuration, or cluster tuning. EMR enables you to provision one, hundreds, or thousands of compute instances in minutes. Presto has two community projects –PrestoDB and PrestoSQL. Amazon EMR supports both projects. Learn more about Presto and Presto on Amazon EMR.
-Clusters
-Launching | Managing | Tagging
-Q: What is an Amazon EMR cluster?
-Amazon EMR historically referred to an Amazon EMR cluster (and all processing steps assigned to it) as a "cluster". Every cluster has a unique identifier that starts with "j-".
-Q: What is a cluster step?
-A cluster step is a user-defined unit of processing, mapping roughly to one algorithm that manipulates the data. A step is a Hadoop MapReduce application implemented as a Java jar or a streaming program written in Java, Ruby, Perl, Python, PHP, R, or C++. For example, to count the frequency with which words appear in a document, and output them sorted by the count, the first step would be a MapReduce application which counts the occurrences of each word, and the second step would be a MapReduce application which sorts the output from the first step based on the counts.
-Q: What are different cluster states?
-STARTING – The cluster provisions, starts, and configures EC2 instances. BOOTSTRAPPING – Bootstrap actions are being executed on the cluster. RUNNING – A step for the cluster is currently being run. WAITING – The cluster is currently active, but has no steps to run. TERMINATING - The cluster is in the process of shutting down. TERMINATED - The cluster was shut down without error. TERMINATED_WITH_ERRORS - The cluster was shut down with errors.
-Q: What are different step states?
-PENDING – The step is waiting to be run. RUNNING – The step is currently running. COMPLETED – The step completed successfully. CANCELLED – The step was cancelled before running because an earlier step failed or cluster was terminated before it could run. FAILED – The step failed while running.
-Launching a cluster
-Q: How can I access Amazon EMR?
-You can access Amazon EMR by using the EMR Studio, AWS Management Console, Command Line Tools, SDKS, or the EMR API.
-Q: How can I launch a cluster?
-You can launch a cluster through the AWS Management Console by filling out a simple cluster request form. In the request form, you specify the name of your cluster, the location in Amazon S3 of your input data, your processing application, your desired data output location, and the number and type of Amazon EC2 instances you’d like to use. Optionally, you can specify a location to store your cluster log files and SSH Key to login to your cluster while it is running. Alternatively, you can launch a cluster using the RunJobFlow API or using the ‘create’ command in the Command Line Tools. For launching a cluster with EMR Studio, refer to the EMR Studio section below.
+Amazon EMR is the industry-leading cloud big data platform for data processing, interactive analysis, and machine learning using open source frameworks such as Apache Spark, Apache Hive, and Presto. With EMR you can run petabyte-scale analysis at less than half of the cost of traditional on-premises solutions and over 1.7x faster than standard Apache Spark.
+Q: Why should I use Amazon EMR?
+Amazon EMR lets you focus on transforming and analyzing your data without having to worry about managing compute capacity or open-source applications, and saves you money. Using EMR, you can instantly provision as much or as little capacity as you like on Amazon EC2 and set up scaling rules to manage changing compute demand. You can set up CloudWatch alerts to notify you of changes in your infrastructure and take actions immediately. If you use Kubernetes, you can also use EMR to submit your workloads to Amazon EKS clusters.. Whether you use EC2 or EKS, you benefit from EMR’s optimized runtimes which speed your analysis and save both time and money.
+Q: How can I deploy and manage Amazon EMR?
+You can deploy your workloads to EMR using Amazon EC2, Amazon Elastic Kubernetes Service (EKS), or on-premises AWS Outposts. You can run and manage your workloads withthe EMR Console, API, SDK or CLI and orchestrate them using Amazon Managed Workflows for Apache Airflow (MWAA) or AWS Step Functions. For an interactive experience you can use EMR Studio or SageMaker Studio.
 Q: How can I get started with Amazon EMR?
-To sign up for Amazon EMR, click the “Sign Up Now” button on the Amazon EMR detail page http://aws.amazon.com/emr. You must be signed up for Amazon EC2 and Amazon S3 to access Amazon EMR; if you are not already signed up for these services, you will be prompted to do so during the Amazon EMR sign-up process. After signing up, please refer to the Amazon EMR documentation, which includes our Getting Started Guide – the best place to get going with the service.
-Q: How can I terminate a cluster?
-At any time, you can terminate a cluster via the AWS Management Console by selecting a cluster and clicking the “Terminate” button. Alternatively, you can use the TerminateJobFlows API. If you terminate a running cluster, any results that have not been persisted to Amazon S3 will be lost and all Amazon EC2 instances will be shut down.
-Q: Does Amazon EMR support multiple simultaneous cluster?
-Yes. At any time, you can create a new cluster, even if you’re already running one or more clusters.
-Q: How many clusters can I run simultaneously?
-You can start as many clusters as you like. When you get started, you are limited to 20 instances across all your clusters. If you need more instances, complete the Amazon EC2 instance request form. Once your Amazon EC2 limit is raised, the new limit will be automatically applied to your Amazon EMR clusters.
+To sign up for Amazon EMR, click the “Sign Up Now” button on the Amazon EMR detail page http://aws.amazon.com/emr. You must be signed up for Amazon EC2 and Amazon S3 to access Amazon EMR; if you are not already signed up for these services, you will be prompted to do so during the Amazon EMR sign-up process. After signing up, please refer to the
+Amazon EMR documentation, which includes our Getting Started Guide – the best place to get going with the service.
+Q: How reliable is Amazon EMR? Please refer to our
+Service Level Agreement.
+Developing & debugging
+Q: Where can I find code samples?
+Check out the sample code in these Articles and Tutorials. If you use EMR Studio, you can explore the features using a set of notebook examples.
+Q: How do I develop a data processing application?
+You can develop, visualize and debug data science and data engineering applications written in R, Python, Scala, and PySpark in Amazon EMR Studio. You can also develop a data processing job on your desktop, for example, using Eclipse, Spyder, PyCharm, or RStudio, and run it on Amazon EMR. Additionally, you can select JupyterHub or Zeppelin in the software configuration when spinning up a new cluster and develop your application on Amazon EMR using one or more instances.
+Q: What is the benefit of using the Command Line Tools or APIs vs. AWS Management Console?
+The Command Line Tools or APIs provide the ability to programmatically launch and monitor progress of running clusters, to create additional custom functionality around clusters (such as sequences with multiple processing steps, scheduling, workflow, or monitoring), or to build value-added tools or applications for other Amazon EMR customers. In contrast, the AWS Management Console provides an easy-to-use graphical interface for launching and monitoring your clusters directly from a web browser.
+Q: Can I add steps to a cluster that is already running?
+Yes. Once the job is running, you can optionally add more steps to it via the AddJobFlowSteps API. The AddJobFlowSteps API will add new steps to the end of the current step sequence. You may want to use this API to implement conditional logic in your cluster or for debugging.
+Q: Can I be notified when my cluster is finished?
+You can sign up for up Amazon SNS and have the cluster post to your SNS topic when it is finished. You can also view your cluster progress on the AWS Management Console or you can use the Command Line, SDK, or APIs to get a status on the cluster.
+Q: Can I terminate my cluster when my steps are finished?
+Yes. You can terminate your cluster automatically when all your steps finish by turning the auto-terminate flag on.
+Q: What OS versions are supported with Amazon EMR?
+Amazon EMR 5.30.0 and later, and the Amazon EMR 6.x series are based on Amazon Linux 2. You can also specify a custom AMI that you create based on the Amazon Linux 2. This allows you to perform sophisticated pre-configuration for virtually any application. For more information, see Using a Custom AMI.
+Q: Does Amazon EMR support third-party software packages?
+Yes. You can use Bootstrap Actions to install third-party software packages on your cluster. You can also upload statically compiled executables using the Hadoop distributed cache mechanism. EMR 6.x supports Hadoop 3, which allows the YARN NodeManager to launch containers either directly on the EMR cluster host or inside a Docker container. Please see our documentation to learn more.
+Q: What tools are available to me for debugging?
+There are several tools you can use to gather information about your cluster to help determine what went wrong. If you use Amazon EMR studio, you can launch tools like Spark UI and YARN Timeline Service to simplify debugging. From the Amazon EMR Console, you can get off-cluster access to persistent application user interfaces for Apache Spark, Tez UI and the YARN timeline server, several on-cluster application user interfaces, and a summary view of application history in the Amazon EMR console for all YARN applications. You can also connect to your Master Node Using SSH and view cluster instances via these the web interfaces . For more information, see our documentation.
+EMR Studio
+Q: What is EMR Studio?
+EMR Studio is an integrated development environment (IDE) that makes it easy for data scientists and data engineers to develop, visualize, and debug data engineering and data science applications written in R, Python, Scala, and PySpark.
+It is a fully managed application with single sign-on, fully managed Jupyter Notebooks, automated infrastructure provisioning, and the ability to debug jobs without logging into the AWS Console or cluster. Data scientists and analysts can install custom kernels and libraries, collaborate with peers using code repositories like GitHub and BitBucket, or execute parameterized notebooks as part of scheduled workflows using orchestration services like Apache Airflow, AWS Step Functions, and Amazon Managed Workflows for Apache Airflow. You can read orchestrating analytics jobs on Amazon EMR notesbooks using Amazon MWAA to learn more. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. Administrators can setup EMR Studio for analysts to run their applications on existing EMR clusters or create new clusters using pre-defined AWS CloudFormation templates for EMR.
+Q: What can I do with EMR Studio?
+With EMR Studio, you can log in directly to fully managed Jupyter notebooks using your corporate credentials without logging into the AWS console, start notebooks in seconds, get onboarded with sample notebooks, and perform your data exploration. You can also customize your environment by loading custom kernels and python libraries from notebooks. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. You can collaborate with peers by sharing notebooks via GitHub and other repositories. You can also run Notebooks directly as continuous integration and deployment pipelines. You can pass different parameter values to a notebook. You can also chain notebooks, and integrate notebooks into scheduled workflows using workflow orchestration services like Apache Airflow. Further, you can debug clusters and jobs using as few clicks as possible with native applications interfaces such as the Spark UI and the YARN Timeline service.
+Q: How is EMR Studio different from EMR Notebooks?
+There are five main differences.
+There is no need to access AWS Management Console for EMR Studio. EMR Studio is hosted outside of the AWS Management Console. This is useful if you do not provide data scientists or data engineers access to the AWS Management Console.
+You can use enterprise credentials from your identity provider using AWS Single Sign-On (SSO) to log in to EMR Studio.
+EMR Studio brings you a notebook first experience. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. Running code on a cluster is as simple as attaching the notebook to an existing cluster or provisioning a new one.
+EMR Studio has a simplified user interface and abstracts hardware configurations. For example, you can setup cluster templates once and use the templates to start new clusters.
+EMR Studio enables a simplified debugging experience so that you can access the native application user interfaces in one place using as few clicks as possible.
+Q: How is EMR Studio different from SageMaker Studio?
+You can use both EMR Studio and SageMaker Studio with Amazon EMR. EMR Studio provides an integrated development environment (IDE) that makes it easy for you to develop, visualize, and debug data engineering and data science applications written in R, Python, Scala, and PySpark. Amazon SageMaker Studio provides a single, web-based visual interface where you can perform all machine learning development steps. SageMaker Studio gives you complete access, control, and visibility into each step required to build, train, and deploy models. You can quickly upload data, create new notebooks, train and tune models, move back and forth between steps to adjust experiments, compare results, and deploy models to production all in one place, making you much more productive.
+Q: How do I get started with EMR Studio?
+Your administrator must first set up an EMR Studio. When you receive a unique sign-on URL for your Amazon EMR Studio from your administrator, you can log in to the Studio directly using your corporate credentials.
+Q: Do I need to log in to the AWS Management Console to use EMR Studio?
+No. After your administrator sets up an EMR Studio and provides the Studio access URL, your team can log in using corporate credentials. There’s no need to log in to the AWS Management Console. In an EMR Studio, your team can perform tasks and access resources configured by your administrator.
+Q: What identity providers are supported for the single sign-on experience in EMR Studio?
+AWS Single Sign-On (SSO) is the single sign-on service provider for EMR Studio. The list of identity providers supported by AWS SSO can be found in our documentation.
+Q: What is a Workspace in EMR Studio?
+Workspaces help you organize Jupyter Notebooks. All notebooks in a Workspace are saved to the same Amazon S3 location and run on the same cluster. You can also link a code repository like a GitHub repository to all notebooks in a workspace. You can create and configure a Workspace before attaching it to a cluster, but you should connect to a cluster before running a notebook.
+Q: In EMR Studio, can I create a workspace or open a workspace without a cluster?
+Yes, you can create or open a workspace without attaching it to a cluster. Only when you need to execute, you should connect them to a cluster. EMR Studio kernels and applications are executed on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark.
+Q: Can I install custom libraries to use in my notebook code?
+All Spark queries run on your EMR cluster, so you need to install all runtime libraries that your Spark application uses on the cluster. You can easily install notebook-scoped libraries within a notebook cell. You can also install Jupyter Notebook kernels and Python libraries on a cluster master node either within a notebook cell or while connected using SSH to the master node of the cluster. For more information, see documentation. Additionally, you can use a bootstrap action or a custom AMI to install required libraries when you create a cluster. For more information, see Create Bootstrap Actions to Install Additional Software and Using a Custom AMI in the Amazon EMR Management Guide.
+Q: Where are the notebooks saved?
+Workspace together with notebook files in the workspace are saved automatically at regular intervals to the ipynb file format in the Amazon S3 location that you specify when you create the workspace. The notebook file has the same name as your notebook in the Amzon EMR Studio.
+Q: How do I use version control with my notebook? Can I use repositories like GitHub?
+You can associate Git-based repositories with your Amazon EMR Studio notebooks to save your notebooks in a version controlled environment.
+Q: In EMR Studio, what compute resources can I run notebooks on?
+With EMR Studio, you can run notebook code on Amazon EMR running on Amazon Elastic Compute Cloud (Amazon EC2) or Amazon EMR on Amazon Elastic Kubernetes Service (Amazon EKS). You can attach notebooks to either existing or new clusters. You can create EMR clusters in two ways in EMR Studio: create a cluster using a pre-configured cluster template via AWS Service Catalog, create a cluster by specifying cluster name, number of instances, and instance type.
+Q: Can I re-attach a workspace with a different compute resource in EMR Studio?
+Yes, you can open your workspace, choose EMR Clusters icon on the left, push Detach button, and then select a cluster from the Select cluster drop down list, and push Attach button.
+Q: Where do I find all my workspaces in EMR Studio?
+In EMR Studio, you may choose Workspaces tab on the left and view all workspaces created by you and other users in the same AWS account.
+Q: What are the IAM policies needed to use EMR Studio?
+Each EMR studio needs permissions to interoperate with other AWS services. To give your EMR Studios the necessary permissions, your administrators need to create an EMR Studio service role with the provided policies. They also need to specify a user role for EMR Studio that defines Studio-level permissions. When they add users and groups from AWS Single Sign-On (AWS SSO) to EMR Studio, they can assign a session policy to a user or group to apply fine-grained permission controls. Session policies help administrators refine user permissions without the need to create multiple IAM roles. For more information about session policies, see Policies and Permissions in the AWS Identity and Access Management User Guide.
+Q: Is there any limitations on EMR clusters I can attach my workspace to in EMR Studio?
+Yes. High Availability (Multi-master) clusters, Kerberized clusters, and AWS Lake Formation clusters are currently not supported.
+Q: What is the cost of using Amazon EMR Studio?
+Amazon EMR Studio is provided at no additional charge to you. Applicable charges for Amazon Simple Storage Service storage and for Amazon EMR clusters apply when you use EMR Studio. For more information about pricing options and details, see Amazon EMR pricing.
+EMR Notebooks
+Q: What are EMR Notebooks?
+We recommend that new customers use Amazon EMR Studio, not EMR Notebooks. EMR Notebooks provide a managed environment, based on Jupyter Notebook, that allows data scientists, analysts, and developers to prepare and visualize data, collaborate with peers, build applications, and perform interactive analysis using EMR clusters. Although we recommend that new customers use EMR Studio, EMR Notebooks is supported for compatibility.
+Q: What can I do with EMR Notebooks?
+You can use EMR Notebooks to build Apache Spark applications and run interactive queries on your EMR cluster with minimal effort. Multiple users can create serverless notebooks directly from the console, attach them to an existing shared EMR cluster, or provision a cluster directly from the console and immediately start experimenting with Spark. You can detach notebooks and re-attach them to new clusters. Notebooks are auto-saved to S3 buckets, and you can retrieve saved notebooks from the console to resume work. EMR Notebooks are prepackaged with the libraries found in the Anaconda repository, allowing you to import and use these libraries in your notebooks code and use them to manipulate data and visualize results. Further, EMR notebooks have integrated Spark monitoring capabilities that you can use to monitor the progress of your Spark jobs and debug code from within the notebook.
+Q: How do I get started with EMR Notebooks?
+To get started with EMR Notebooks, open the EMR console and choose Notebooks in the navigation pane. From there, just choose Create Notebook, enter a name for your notebook, choose an EMR cluster or instantly create a new one, provide a service role for the notebook to use, and choose an S3 bucket where you want to save your notebook files and then click on Create Notebook. After the notebook shows a Ready status, choose Open to start the notebook editor.
+Q: What EMR release versions are supported with EMR Notebooks?  EMR Notebooks can be attached to EMR clusters running EMR release 5.18.0 or later.
+Q: What is the cost of using EMR Notebooks?
+EMR notebooks are provided at no additional charge to you. You will be charged as usual for the attached EMR clusters in your account. You and find out more about the pricing for your cluster by visiting https://aws.amazon.com/emr/pricing/
+Managing data
+Q: How do I get my data into Amazon S3?
+Amazon EMR provides several ways to get data onto a cluster. The most common way is to upload the data to Amazon S3 and use the built-in features of Amazon EMR to load the data onto your cluster. You can use the Distributed Cache feature of Hadoop to transfer files from a distributed file system to the local file system. For more details, see documentation. Alternatively, if you are migrating data from on premises to the cloud, you can use one of the Cloud Data Migration services from AWS.
+Q: How do I get logs for terminated clusters?
+Hadoop system logs as well as user logs will be placed in the Amazon S3 bucket which you specify when creating a cluster. Persistent application UIs are run off-cluster, Spark History Server, Tez UI and YARN timeline servers logs are available for 30 days after an application terminates.
+Q: Do you compress logs?
+No. At this time Amazon EMR does not compress logs as it moves them to Amazon S3.
+Q: Can I load my data from the internet or somewhere other than Amazon S3?
+Yes. You can use AWS Direct Connect to establish a private dedicated network connection to AWS. If you have large amounts of data, you can use AWS Import/Export. For more details refer to our documentation.
+Billing
+Q: Can Amazon EMR estimate how long it will take to process my input data?
+No. As each cluster and input data is different, we cannot estimate your job duration.
+Q: How much does Amazon EMR cost?
+Amazon EMR pricing is simple and predictable: you pay a per-second rate for every second you use, with a one-minute minimum. You can estimate your bill using the AWS Pricing Calculator. Usage for other Amazon Web Services including Amazon EC2 is billed separately from Amazon EMR.
+Q: When does billing of my Amazon EMR cluster begin and end?
+Amazon EMR billing commences when the cluster is ready to execute steps. Amazon EMR billing ends when you request to shut down the cluster. For more details on when Amazon EC2 begins and ends billing, please refer to the Amazon EC2 Billing FAQ.
+Q: Where can I track my Amazon EMR, Amazon EC2 and Amazon S3 usage?
+You can track your usage in the Billing & Cost Management Console.
+Q: How do you calculate the Normalized Instance Hours displayed on the console ?
+On the AWS Management Console, every cluster has a Normalized Instance Hours column that displays the approximate number of compute hours the cluster has used, rounded up to the nearest hour.
+Normalized Instance Hours are hours of compute time based on the standard of 1 hour of m1.small usage = 1 hour normalized compute time. You can view our documentation to see a list of different sizes within an instance family, and the corresponding normalization factor per hour.
+For example, if you run a 10-node r3.8xlarge cluster for an hour, the total number of Normalized Instance Hours displayed on the console will be 640 (10 (number of nodes) x 64 (normalization factor) x 1 (number of hours that the cluster ran) = 640).
+This is an approximate number and should not be used for billing purposes. Please refer to the Billing & Cost Management Console for billable Amazon EMR usage.
+Q: Does Amazon EMR support Amazon EC2 On-Demand, Spot, and Reserved Instances?
+Yes. Amazon EMR seamlessly supports On-Demand, Spot, and Reserved Instances. Click here to learn more about Amazon EC2 Reserved Instances. Click here to learn more about Amazon EC2 Spot Instances. Click here to learn more about Amazon EC2 Capacity Reservations.
+Q: Do your prices include taxes?
+Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+Security and Data Access Control
+Q: How do I prevent other people from viewing my data during cluster execution?
+Amazon EMR starts your instances in two Amazon EC2 security groups, one for the master and another for the other cluster nodes. The master security group has a port open for communication with the service. It also has the SSH port open to allow you to SSH into the instances, using the key specified at startup. The other nodes start in a separate security group, which only allows interaction with the master instance. By default both security groups are set up to not allow access from external sources including Amazon EC2 instances belonging to other customers. Since these are security groups within your account, you can reconfigure them using the standard EC2 tools or dashboard. Click here to learn more about EC2 security groups. Additionally, you can configure Amazon EMR block public access in each region that you use to prevent cluster creation if a rule allows public access on any port that you don't add to a list of exceptions.
+Q: How secure is my data?
+Amazon S3 provides authentication mechanisms to ensure that stored data is secured against unauthorized access. Unless the customer who is uploading the data specifies otherwise, only that customer can access the data. Amazon EMR customers can also choose to send data to Amazon S3 using the HTTPS protocol for secure transmission. In addition, Amazon EMR always uses HTTPS to send data between Amazon S3 and Amazon EC2. For added security, customers may encrypt the input data before they upload it to Amazon S3 (using any common data encryption tool); they then need to add a decryption step to the beginning of their cluster when Amazon EMR fetches the data from Amazon S3.
+Q: Can I get a history of all EMR API calls made on my account for security or compliance auditing?
+Yes. AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The AWS API call history produced by CloudTrail enables security analysis, resource change tracking, and compliance auditing. Learn more about CloudTrail at the AWS CloudTrail detail page, and turn it on via CloudTrail's AWS Management Console.
+Q: How do I control what EMR users can access in Amazon S3?
+By default, Amazon EMR application processes use EC2 instance profiles when they call other AWS services. For multi-tenant clusters, Amazon EMR offers three options to manage user access to Amazon S3 data.
+Integration with AWS Lake Formation allows you to define and manage fine-grained authorization policies in AWS Lake Formation to access databases, tables, and columns in AWS Glue Data Catalog. You can enforce the authorization policies on jobs submitted through Amazon EMR Notebooks and Apache Zeppelin for interactive EMR Spark workloads, and send auditing events to AWS CloudTrail. By enabling this integration, you also enable federated Single Sign-On to EMR Notebooks or Apache Zeppelin from enterprise identity systems compatible with Security Assertion Markup Language (SAML) 2.0.
+Native integration with Apache Ranger allows you to set up a new or an existing Apache Ranger server to define and manage fine-grained authorization policies for users to access databases, tables, and columns of Amazon S3 data via Hive Metastore. Apache Ranger is an open-source tool to enable, monitor, and manage comprehensive data security across the Hadoop platform.  This native integration allows you to define three types of authorization policies on the Apache Ranger Policy Admin server. You can set table, column, and row level authorization for Hive, table and column level authorization for Spark, and prefix and object level authorization for Amazon S3. Amazon EMR automatically installs and configures the corresponding Apache Ranger plugins on the cluster. These Ranger plugins sync up with the Policy Admin server for authorization polices, enforce data access control, and send auditing events to Amazon CloudWatch Logs.
+Amazon EMR User Role Mapper allows you to leverage AWS IAM permissions to manage accesses to AWS resources. You can create mappings between users (or groups) and custom IAM roles. A user or group can only access the data permitted by the custom IAM role. This feature is currently available through AWS Labs.
+Regions and Availability Zones
+Q: How does Amazon EMR make use of Availability Zones?
+Amazon EMR launches all nodes for a given cluster in the same Amazon EC2 Availability Zone. Running a cluster in the same zone improves performance of the jobs flows. By default, Amazon EMR chooses the Availability Zone with the most available resources in which to run your cluster. However, you can specify another Availability Zone if required. You also have the option to optimize your allocation for lowest-priced on demand instances, optimal spot capacity, or use On-Demand Capacity Reservations.
+Q: In what Regions is this Amazon EMR available?
+For a list of the supported Amazon EMR AWS regions, please visit the AWS Region Table for all AWS global infrastructure.
+Q: Is Amazon EMR supported in AWS Local Zones?
+EMR supports launching clusters in the Los Angeles AWS Local Zone. You can use EMR in the US West (Oregon) region to launch clusters into subnets associated with the Los Angeles AWS Local Zone.
+Q: Which Region should I select to run my clusters?
+When creating a cluster, typically you should select the Region where your data is located.
+Q: Can I use EU data in a cluster running in the US region and vice versa?
+Yes, you can. If you transfer data from one region to the other you will be charged bandwidth charges. For bandwidth pricing information, please visit the pricing section on the EC2 detail page.
+Q: What is different about the AWS GovCloud (US) region?
+The AWS GovCloud (US) region is designed for US government agencies and customers. It adheres to US ITAR requirements. In GovCloud, EMR does not support spot instances or the enable-debugging feature. The EMR Management Console is not yet available in GovCloud.
+Deployment options
+Amazon EMR on Amazon EC2 | Amazon EMR on Amazon EKS | Amazon EMR on AWS Outposts
+Amazon EMR on Amazon EC2
+Launching | Managing | Tagging
+Q: What is an Amazon EMR Cluster? A cluster is a collection of Amazon Elastic Compute Cloud (Amazon EC2) instances. Each instance in the cluster is called a node and has a role within the cluster, referred to as the node type. Amazon EMR also installs different software components on each node type, giving each node a role in a distributed application like Apache Hadoop. Every cluster has a unique identifier that starts with "j-".
+Q: What are node types in a cluster? An Amazon EMR cluster has three types of nodes:
+Master node: A node that manages the cluster by running software components to coordinate the distribution of data and tasks among other nodes for processing. The master node tracks the status of tasks and monitors the health of the cluster. Every cluster has a master node, and it's possible to create a single-node cluster with only the master node.
+Core node: A node with software components that run tasks and store data in the Hadoop Distributed File System (HDFS) on your cluster. Multi-node clusters have at least one core node.
+Task node: A node with software components that only runs tasks and does not store data in HDFS. Task nodes are optional.
+Q: What is a cluster step? A cluster step is a user-defined unit of processing, mapping roughly to one algorithm that manipulates the data. A step is a Hadoop MapReduce application implemented as a Java jar or a streaming program written in Java, Ruby, Perl, Python, PHP, R, or C++. For example, to count the frequency with which words appear in a document, and output them sorted by the count, the first step would be a MapReduce application which counts the occurrences of each word, and the second step would be a MapReduce application which sorts the output from the first step based on the counts.
+Q: What are different cluster states? STARTING – The cluster starts by configuring EC2 instances. BOOTSTRAPPING – Bootstrap actions are being executed on the cluster. RUNNING – A step for the cluster is currently being run. WAITING – The cluster is currently active, but has no steps to run. TERMINATING - The cluster is in the process of shutting down. TERMINATED - The cluster was shut down without error. TERMINATED_WITH_ERRORS - The cluster was shut down with errors.
+Q: What are different step states? PENDING – The step is waiting to be run. RUNNING – The step is currently running. COMPLETED – The step completed successfully. CANCELLED – The step was cancelled before running because an earlier step failed or cluster was terminated before it could run. FAILED – The step failed while running.
+Launching a cluster
+Q: How can I launch a cluster? You can launch a cluster through the AWS Management Console by filling out a simple cluster request form. In the request form, you specify the name of your cluster, the location in Amazon S3 of your input data, your processing application, your desired data output location, and the number and type of Amazon EC2 instances you’d like to use. Optionally, you can specify a location to store your cluster log files and SSH Key to login to your cluster while it is running. Alternatively, you can launch a cluster using the RunJobFlow API or using the ‘create’ command in the Command Line Tools. For launching a cluster with EMR Studio, refer to the EMR Studio section above..
+Q: How can I terminate a cluster? At any time, you can terminate a cluster via the AWS Management Console by selecting a cluster and clicking the “Terminate” button. Alternatively, you can use the TerminateJobFlows API. If you terminate a running cluster, any results that have not been persisted to Amazon S3 will be lost and all Amazon EC2 instances will be shut down.
+Q: Does Amazon EMR support multiple simultaneous cluster? You can start as many clusters as you like. When you get started, you are limited to 20 instances across all your clusters. If you need more instances, complete the Amazon EC2 instance request form. Once your Amazon EC2 limit is raised, the new limit will be automatically applied to your Amazon EMR clusters.
 Managing a cluster
 Q: How does Amazon EMR use Amazon EC2 and Amazon S3?
 You can upload your input data and a data processing application into Amazon S3. Amazon EMR then launches a number of Amazon EC2 instances that you specified. The service begins the cluster execution while pulling the input data from Amazon S3 using S3 URI scheme into the launched Amazon EC2 instances. Once the cluster is finished, Amazon EMR transfers the output data to Amazon S3, where you can then retrieve it or use as input in another cluster.
 Q: How is a computation done in Amazon EMR?
 Amazon EMR uses the Hadoop data processing engine to conduct computations implemented in the MapReduce programming model. The customer implements their algorithm in terms of map() and reduce() functions. The service starts a customer-specified number of Amazon EC2 instances, comprised of one master and multiple other nodes. Amazon EMR runs Hadoop software on these instances. The master node divides input data into blocks, and distributes the processing of the blocks to the other nodes. Each node then runs the map function on the data it has been allocated, generating intermediate data. The intermediate data is then sorted and partitioned and sent to processes which apply the reducer function to it locally on the nodes. Finally, the output from the reducer tasks is collected in files. A single “cluster” may involve a sequence of such MapReduce steps.
-Q: How reliable is Amazon EMR?
-Please refer to our Service Level Agreement.
 Q: Which Amazon EC2 instance types does Amazon EMR support?
 See the EMR pricing page for details on latest available instance types and pricing per region.
-Q: How do I select the right Amazon EC2 instance type?
-Use the guidance in this section to help you determine the instance types, purchasing options, and amount of storage to provision for each node type in an EMR cluster.
 Q: How long will it take to run my cluster?
 The time to run your cluster will depend on several factors including the type of your cluster, the amount of input data, and the number and type of Amazon EC2 instances you choose for your cluster.
 Q: If the master node in a cluster goes down, can Amazon EMR recover it?
@@ -93,181 +202,6 @@ aws:elasticmapreduce:job-flow-id=j-12345678
 Key = job-flow-id ; Value = [JobFlowID]
 Q: Can I edit tags directly on the Amazon EC2 instances?
 Yes, you can add or remove tags directly on Amazon EC2 instances that are part of an Amazon EMR cluster. However, we do not recommend doing this, because Amazon EMR’s tagging system will not sync the changes you make to an associated Amazon EC2 instance directly. We recommend that tags for Amazon EMR clusters be added and removed from the Amazon EMR console, CLI, or API to ensure that the cluster and its associated Amazon EC2 instances have the correct tags.
-Developing & debugging
-Developing | Debugging
-Developing
-Q: Where can I find code samples?
-Check out the sample code in these Articles and Tutorials.
-Q: How do I develop a data processing application?
-You can develop a data processing job on your desktop, for example, using Eclipse or NetBeans plug-ins such as IBM MapReduce Tools for Eclipse (http://www.alphaworks.ibm.com/tech/mapreducetools). These tools make it easy to develop and debug MapReduce jobs and test them locally on your machine. Additionally, you can develop your cluster directly on Amazon EMR using one or more instances.
-Q: What is the benefit of using the Command Line Tools or APIs vs. AWS Management Console?
-The Command Line Tools or APIs provide the ability to programmatically launch and monitor progress of running clusters, to create additional custom functionality around clusters (such as sequences with multiple processing steps, scheduling, workflow, or monitoring), or to build value-added tools or applications for other Amazon EMR customers. In contrast, the AWS Management Console provides an easy-to-use graphical interface for launching and monitoring your clusters directly from a web browser.
-Q: Can I add steps to a cluster that is already running?
-Yes. Once the job is running, you can optionally add more steps to it via the AddJobFlowSteps API. The AddJobFlowSteps API will add new steps to the end of the current step sequence. You may want to use this API to implement conditional logic in your cluster or for debugging.
-Q: Can I run a persistent cluster?
-Yes. Amazon EMR clusters that are started with termination-protection flag turned on, will continue to run until explicitly terminated. This allows customers to add steps to a cluster on demand. You may want to use this to debug your application without having to repeatedly wait for cluster startup. You may also use a persistent cluster to run a long-running data warehouse cluster. This can be combined with data warehouse and analytics packages that runs on top of Hadoop such as Hive and Pig.
-Q: Can I be notified when my cluster is finished?
-You can sign up for up Amazon SNS and have the cluster post to your SNS topic when it is finished. You can also view your cluster progress on the AWS Management Console or you can use the Command Line, SDK, or APIs get a status on the cluster.
-Q: Can I terminate my cluster when my steps are finished?
-Yes. You can terminate your cluster automatically when all your steps finish by turning the auto-terminate flag on.
-Q: What programming languages does Amazon EMR support?
-You can use Java to implement Hadoop custom jars. Alternatively, you may use other languages including Perl, Python, Ruby, C++, PHP, and R via Hadoop Streaming. Please refer to the Developer’s Guide for instructions on using Hadoop Streaming.
-Q: What OS versions are supported with Amazon EMR?
-Amazon EMR creates cluster instances using an Amazon Linux Amazon Machine Image (AMI) that is optimized for Amazon EMR. The AMI contains the Amazon Linux operating system, other software, and configurations required for each instance to host your cluster applications. The end-of-life for Amazon Linux AMI is on December 31, 2020. EMR AMIs are based on Amazon Linux 2 starting with 5.30.0 and 6.0.0. As an alternative, you can specify a custom AMI that you create based on the Amazon Linux AMI. This allows you to perform sophisticated pre-configuration for virtually any application. For more information, see Using a Custom AMI.
-Q: Can I view the Hadoop UI while my cluster is running?
-Yes. Please refer to the Hadoop UI section in the Developer’s Guide for instructions on how to access the Hadoop UI.
-Q: Does Amazon EMR support third-party software packages?
-Yes. The recommended way to install third-party software packages on your cluster is to use Bootstrap Actions. Alternatively you can package any third party libraries directly into your Mapper or Reducer executable. You can also upload statically compiled executables using the Hadoop distributed cache mechanism. EMR 6.x supports Hadoop 3, which allows the YARN NodeManager to launch containers either directly on the EMR cluster host or inside a Docker container. Please see our documentation to learn more.
-Q: Which Hadoop versions does Amazon EMR support?
-For the latest versions supported by Amazon EMR, please refer to the documentation.
-Q: Does Amazon contribute Hadoop improvements to the open source community?
-Yes. Amazon EMR is active with the open source community and contributes many fixes back to the Hadoop open source community.
-Q: Does Amazon EMR update the version of Hadoop it supports?
-Amazon EMR periodically updates its supported version of Hadoop based on the Hadoop releases by the community. Amazon EMR may choose to skip some Hadoop releases.
-Q: How quickly does Amazon EMR retire support for old Hadoop versions?
-Amazon EMR service retires support for old Hadoop versions several months after deprecation. However, Amazon EMR APIs are backward compatible, so if you build tools on top of these APIs, they will work even when Amazon EMR updates the Hadoop version it’s using.
-Debugging
-Q: What tools are available to me for debugging?
-There are several tools you can use to gather information about your cluster to help determine what went wrong. Some require that you initialize them when you launch the cluster; others are available for every cluster. You can get Tools to Display Cluster Details, Tools to View Log Files and Tools to Monitor Cluster Performance. For more information, see documentation.
-Q: How can I get access to the web interfaces available for individual applications on my cluster?
-You can connect to your Master Node Using SSH. Hadoop also publishes user interfaces as web sites hosted on the core and task nodes. These web sites are also only available on local web servers on the nodes. Here are the web interfaces that you can view on cluster instances.
-Q: Can I get easy access to Application History without SSH’ing into the cluster?
-Yes. You have several options to get off-cluster access to persistent application user interfaces for Apache Spark, Tez UI and the YARN timeline server, several on-cluster application user interfaces, and a summary view of application history in the EMR console for all YARN applications. For more details, refer documentation.
-EMR Notebooks
-Q: What are EMR Notebooks?
-EMR Notebooks provide a managed environment, based on Jupyter Notebook, that allows data scientists, analysts, and developers to prepare and visualize data, collaborate with peers, build applications, and perform interactive analysis using EMR clusters.
-Q: What can I do with EMR Notebooks?
-You can use EMR Notebooks to build Apache Spark applications and run interactive queries on your EMR cluster with minimal effort. Multiple users can create serverless notebooks directly from the console, attach them to an existing shared EMR cluster, or provision a cluster directly from the console and immediately start experimenting with Spark. You can detach notebooks and re-attach them to new clusters. Notebooks are auto-saved to S3 buckets, and you can retrieve saved notebooks from the console to resume work. EMR Notebooks are prepackaged with the libraries found in the Anaconda repository, allowing you to import and use these libraries in your notebooks code and use them to manipulate data and visualize results. Further, EMR notebooks have integrated Spark monitoring capabilities that you can use to monitor the progress of your Spark jobs and debug code from within the notebook.
-Q: How do I get started with EMR Notebooks?
-To get started with EMR Notebooks, open the EMR console and choose Notebooks in the navigation pane. From there, just choose Create Notebook, enter a name for your notebook, choose an EMR cluster or instantly create a new one, provide a service role for the notebook to use, and choose an S3 bucket where you want to save your notebook files and then click on Create Notebook. After the notebook shows a Ready status, choose Open to start the notebook editor.
-Q: Can I open EMR Notebooks without logging into the AWS Management Console?
-No, to create or open a notebook and run queries on your EMR cluster you need to log into the AWS Management Console. The notebook files are saved to your S3 bucket in ipynb format and can be downloaded and opened locally from your machine.
-Q: What programming languages does EMR Notebooks support?
-EMR notebook supports PySpark, SparkR, SparkSQL, Spark (Scala), and Python kernels.
-Q: What libraries are available with EMR Notebooks?
-Libraries found in the open-source Anaconda repositories are available to import in your code. You can import these libraries and use it locally within notebooks.
-Q: Can I install custom libraries to use in my notebook code?  All Spark queries run on your EMR cluster, so you need to install all runtime libraries that your Spark application uses on the cluster. You can use a bootstrap action or a custom AMI to install required libraries when you create a cluster. For more information, see Create Bootstrap Actions to Install Additional Software and Using a Custom AMI in the Amazon EMR Management Guide. Installing libraries from within the notebook editor is not supported.
-Q: What are the service limits associated with EMR Notebooks?
-Notebooks use the master node of your EMR cluster to run queries. The size of the master instance limits the number of notebooks that you can attach to a cluster. Once you exceed the limit, you must stop an active notebook before you can start another.
-Q: How do I stop my notebook?  You can use the EMR console. Choose Notebooks, select the notebook from the list, and choose Stop. This terminates the notebook session and makes it unavailable to open in the notebook editor. You can choose Start to restart the notebook.
-Q: How do I delete my notebook?  You can use the EMR console. Choose Notebooks, select the notebook from the list, and choose Delete. Deleting a notebook only removes it from the listing in the console. The notebook file persists in the Amazon S3 location that you specified when you created the notebook.
-Q: How do I run queries and execute code from a notebook?
-Spark queries that you run within a notebook execute on the EMR cluster that you choose when you create the notebook. The programming language kernel that you select from within the notebook editor interacts with the Livy server installed on your EMR cluster to create a Spark session, and all your queries run on the cluster. The output from the Spark application are communicated back to the kernel using Livy and can be seen within the notebook.
-Before executing code within the notebook editor, you need to be sure that the notebook has a status of Ready. This status means that the interface between the applications on the cluster and the notebook editor are prepared to run queries and execute code. To open the editor, select the notebook from the Notebooks list, and then choose Open to start the notebook editor in a new browser tab. In the notebook editor, from the Kernel list, select the programming language kernel for your queries. After the kernel starts and is ready, you can run code as you usually would in a Jupyter notebook - for example, clicking the Run button in a single cell, choosing Run All from the Cell menu, and so on.
-Q: What EMR release versions are supported with EMR Notebooks?  EMR Notebooks can be attached to EMR clusters running EMR release 5.18.0 or later.
-Q: Can I create a notebook or open the notebook editor without an EMR cluster?
-No, to create or open your EMR Notebook from the console you need to attach it to a running EMR cluster for the duration of your notebook session. You can quickly create a compatible EMR cluster when you create the notebook or before you restart it. You can always down a previously created notebook file in the ipynb format from the S3 location you chose when you created the notebook.
-Q: Can I leave my notebook session running indefinitely?
-No. If a notebook is idle for an extended time, the notebook is stopped. If the notebook editor is still open, code that you run in the editor fails. You can start a notebook again from the EMR console and then re-open the notebook editor.
-Q: What happens if I close the notebook editor while it‘s running some code on the cluster?  Closing the notebook editor will not impact any code running on the cluster, but if you don’t re-open the notebook editor for an extended time, the notebook will be stopped, and you will not get any output back into the notebook. You can re-start this notebook and resume your work by clicking on the notebook link.
-Q: Does the EMR cluster shut down if it is no longer attached to a notebook?
-No. You need to terminate the cluster to shut it down.
-Q: What other Apache Hadoop applications can I use with EMR Notebooks?
-EMR Notebooks currently supports Spark in the Hadoop ecosystem.
-Q: Can I use a notebook with different EMR clusters?  Yes, you can change EMR clusters. Notebooks must be stopped before you can change clusters. You can then select the cluster from the Notebooks list, choose View Details, choose Change cluster to select a running cluster or create a new one, and then choose Change cluster and start the notebook.
-Q: Where are the notebooks saved?  Notebook files are saved automatically at regular intervals to the ipynb file format in the Amazon S3 location that you specify when you create the notebook. The notebook file has the same name as your notebook in the EMR console. You can also save the notebook manually at any time using the Save and Checkpoint feature within the notebook editor. This creates an ipynb file with the same name in a sub-folder named checkpoint. The most recent checkpoint file overwrites previous checkpoint files. The Save as feature in the notebook editor is not available.
-Q: How do I use version control with my notebook? Can I use repositories like GitHub?
-You can associate Git-based repositories with your Amazon EMR notebooks to save your notebooks in a version controlled environment.
-Q: How do I use my saved notebooks?  To work with a saved notebook, click on the notebook from the Notebooks list using the EMR console.
-Q: Can I integrate my corporate Active Directory with EMR Notebooks?
-EMR Notebooks can be accessed only through the AWS Management Console for EMR. You can federate users from your Active Directory (AD) to the AWS Management for a single sign-on experience. Please visit Enabling federation to AWS using Active Directory, ADFS and SAML 2.0 for more information
-Q: What are the IAM policies needed to use the notebooks?
-Users must have an identity-based policy statement that gives permissions to create and use EMR Notebooks. In addition to the user policy, EMR Notebooks uses a service role to access other AWS resources and perform actions. For more information, see Security for EMR Notebooks in the Amazon EMR Release Guide.
-Q: How does the notebook communicate with the master node of my EMR cluster and what security is available for that?
-The EMR master node uses Livy to interact with the notebook editor. Each EMR Notebook uses Amazon EC2 security groups to control the network traffic between the Livy server on the master node and an EMR notebook. The default security group rules limit network traffic so that only Livy traffic can pass between notebook editors and master nodes on clusters that notebooks use. You can provide custom security groups with customized inbound and outbound rules for each notebook, and each cluster, to further restrict allowed communication between specific notebooks and clusters from the notebook console page or provide permissions in the notebook service role to have the notebook service create the security groups on your behalf. For more information, see Specifying EC2 Security Groups in the Amazon EMR Release Guide.
-Q: As an Admin, how do I control access to the EMR cluster for notebook users?  You can limit the Amazon EMR clusters that a user can query with a notebook by using tags on the cluster. If a user has the permissions to create a notebook, they can attach to any Amazon EMR cluster unless access is restricted through the use of tags. For more information, see EMR Notebook tags in the Amazon EMR Release Guide.
-Q: Can multiple users open the same notebook concurrently?
-No, only one user can open a notebook at a time. To view the current user, select the notebook from the Notebooks list, choose View details, and you can see the user name and IAM Amazon Resource Name (ARN) of the user who last modified the notebook as Last modified by. For more information on ARNs see Amazon Resource Names in AWS General Reference.
-Q: How do I restrict the ability of users to edit or delete my notebook?
-You can control access to your notebooks using notebook tags together with identity-based IAM policies. By default, a tag associated with the user creating the notebook is added automatically to the notebook. For more information, see Using Notebook Tags to Control IAM User Access in the EMR Management Guide.
-Q: Can I attach my notebook to a Kerberos enabled EMR cluster?  No, kerberized EMR clusters are currently not supported.
-Q: Can I terminate a cluster if a notebook is using it?  Yes. If the notebook editor is still open, code that you run in the editor fails and the notebook will be stopped after sometime.
-Q: What is the cost of using EMR Notebooks?
-EMR notebooks are provided at no additional charge to you. You will be charged as usual for the attached EMR clusters in your account. You and find out more about the pricing for your cluster by visiting https://aws.amazon.com/emr/pricing/
-EMR Studio
-Q: What is EMR Studio?
-EMR Studio is an integrated development environment (IDE) that makes it easy for data scientists and data engineers to develop, visualize, and debug data engineering and data science applications written in R, Python, Scala, and PySpark.
-It is a fully managed application with single sign-on, fully managed Jupyter Notebooks, automated infrastructure provisioning, and the ability to debug jobs without logging into the AWS Console or cluster. Data scientists and analysts can install custom kernels and libraries, collaborate with peers using code repositories like GitHub and BitBucket, or execute parameterized notebooks as part of scheduled workflows using orchestration services like Apache Airflow, AWS Step Functions, and Amazon Managed Workflows for Apache Airflow. You can read orchestrating analytics jobs on Amazon EMR notesbooks using Amazon MWAA to learn more. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. Administrators can setup EMR Studio for analysts to run their applications on existing EMR clusters or create new clusters using pre-defined AWS CloudFormation templates for EMR.
-Q: What can I do with EMR Studio?
-With EMR Studio, you can log in directly to fully managed Jupyter notebooks using your corporate credentials without logging into the AWS console, start notebooks in seconds, get onboarded with sample notebooks, and perform your data exploration. You can also customize your environment by loading custom kernels and python libraries from notebooks. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. You can collaborate with peers by sharing notebooks via GitHub and other repositories. You can also run Notebooks directly as continuous integration and deployment pipelines. You can pass different parameter values to a notebook. You can also chain notebooks, and integrate notebooks into scheduled workflows using workflow orchestration services like Apache Airflow. Further, you can debug clusters and jobs using as few clicks as possible with native applications interfaces such as the Spark UI and the YARN Timeline service.
-Q: How is EMR Studio different from EMR Notebooks?
-There are five main differences.
-There is no need to access AWS Management Console for EMR Studio. EMR Studio is hosted outside of the AWS Management Console. This is useful if you do not provide data scientists or data engineers access to the AWS Management Console.
-You can use enterprise credentials from your identity provider using AWS Single Sign-On (SSO) to log in to EMR Studio.
-EMR Studio brings you a notebook first experience. EMR Studio kernels and applications run on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark. Running code on a cluster is as simple as attaching the notebook to an existing cluster or provisioning a new one.
-EMR Studio has a simplified user interface and abstracts hardware configurations. For example, you can setup cluster templates once and use the templates to start new clusters.
-EMR Studio enables a simplified debugging experience so that you can access the native application user interfaces in one place using as few clicks as possible.
-Q: How is EMR Studio different from SageMaker Studio?
-You can use both EMR Studio and SageMaker Studio with Amazon EMR. EMR Studio provides an integrated development environment (IDE) that makes it easy for you to develop, visualize, and debug data engineering and data science applications written in R, Python, Scala, and PySpark. Amazon SageMaker Studio provides a single, web-based visual interface where you can perform all machine learning development steps. SageMaker Studio gives you complete access, control, and visibility into each step required to build, train, and deploy models. You can quickly upload data, create new notebooks, train and tune models, move back and forth between steps to adjust experiments, compare results, and deploy models to production all in one place, making you much more productive.
-Q: How do I get started with EMR Studio?
-Your administrator must first set up an EMR Studio. When you receive a unique sign-on URL for your Amazon EMR Studio from your administrator, you can log in to the Studio directly using your corporate credentials.
-Q: Do I need to log in to the AWS Management Console to use EMR Studio?
-No. After your administrator sets up an EMR Studio and provides the Studio access URL, your team can log in using corporate credentials. There’s no need to log in to the AWS Management Console. In an EMR Studio, your team can perform tasks and access resources configured by your administrator.
-Q: What identity providers are supported for the single sign-on experience in EMR Studio?
-AWS Single Sign-On (SSO) is the single sign-on service provider for EMR Studio. The list of identity providers supported by AWS SSO can be found in our documentation.
-Q: What is a Workspace in EMR Studio?
-Workspaces help you organize Jupyter Notebooks. All notebooks in a Workspace are saved to the same Amazon S3 location and run on the same cluster. You can also link a code repository like a GitHub repository to all notebooks in a workspace. You can create and configure a Workspace before attaching it to a cluster, but you should connect to a cluster before running a notebook.
-Q: In EMR Studio, can I create a workspace or open a workspace without a cluster?
-Yes, you can create or open a workspace without attaching it to a cluster. Only when you need to execute, you should connect them to a cluster. EMR Studio kernels and applications are executed on EMR clusters, so you get the benefit of distributed data processing using the performance optimized Amazon EMR runtime for Apache Spark.
-Q: In EMR Studio, what compute resources can I run notebooks on?
-With EMR Studio, you can run notebook code on Amazon EMR running on Amazon Elastic Compute Cloud (Amazon EC2) or Amazon EMR on Amazon Elastic Kubernetes Service (Amazon EKS). You can attach notebooks to either existing or new clusters. You can create EMR clusters in two ways in EMR Studio: create a cluster using a pre-configured cluster template via AWS Service Catalog, create a cluster by specifying cluster name, number of instances, and instance type.
-Q: Can I re-attach a workspace with a different compute resource in EMR Studio?
-Yes, you can open your workspace, choose EMR Clusters icon on the left, push Detach button, and then select a cluster from the Select cluster drop down list, and push Attach button.
-Q: Where do I find all my workspaces in EMR Studio?
-In EMR Studio, you may choose Workspaces tab on the left and view all workspaces created by you and other users in the same AWS account.
-Q: What are the IAM policies needed to use EMR Studio?
-Each EMR studio needs permissions to interoperate with other AWS services. To give your EMR Studios the necessary permissions, your administrators need to create an EMR Studio service role with the provided policies. They also need to specify a user role for EMR Studio that defines Studio-level permissions. When they add users and groups from AWS Single Sign-On (AWS SSO) to EMR Studio, they can assign a session policy to a user or group to apply fine-grained permission controls. Session policies help administrators refine user permissions without the need to create multiple IAM roles. For more information about session policies, see Policies and Permissions in the AWS Identity and Access Management User Guide.
-Q: Is there any limitations on EMR clusters I can attach my workspace to in EMR Studio?
-Yes. High Availability (Multi-master) clusters, Kerberized clusters, and AWS Lake Formation clusters are currently not supported.
-Managing data
-Q: How do I get my data into Amazon S3?
-Amazon EMR provides several ways to get data onto a cluster. The most common way is to upload the data to Amazon S3 and use the built-in features of Amazon EMR to load the data onto your cluster. You can use the Distributed Cache feature of Hadoop to transfer files from a distributed file system to the local file system. For more details, see documentation. Alternatively, if you are migrating data from on premises to the cloud, you can use one of the Cloud Data Migration services from AWS.
-Q: How do I get logs for terminated clusters?
-Hadoop system logs as well as user logs will be placed in the Amazon S3 bucket which you specify when creating a cluster. Persistent application UIs are run off-cluster, Spark History Server, Tez UI and YARN timeline servers logs are available for 30 days after an application terminates.
-Q: Do you compress logs?
-No. At this time Amazon EMR does not compress logs as it moves them to Amazon S3.
-Q: Can I load my data from the internet or somewhere other than Amazon S3?
-Yes. You can use AWS Direct Connect to establish a private dedicated network connection to AWS. If you have large amounts of data, you can use AWS Import/Export. For more details refer to our documentation.
-Billing
-Q: Can Amazon EMR estimate how long it will take to process my input data?
-No. As each cluster and input data is different, we cannot estimate your job duration.
-Q: How much does Amazon EMR cost?
-Amazon EMR pricing is simple and predictable: you pay a per-second rate for every second you use, with a one-minute minimum. You can estimate your bill using the AWS Pricing Calculator. Usage for other Amazon Web Services including Amazon EC2 is billed separately from Amazon EMR.
-Q: When does billing of my Amazon EMR cluster begin and end?
-Amazon EMR billing commences when the cluster is ready to execute steps. Amazon EMR billing ends when you request to shut down the cluster. For more details on when Amazon EC2 begins and ends billing, please refer to the Amazon EC2 Billing FAQ.
-Q: Where can I track my Amazon EMR, Amazon EC2 and Amazon S3 usage?
-You can track your usage in the Billing & Cost Management Console.
-Q: How do you calculate the Normalized Instance Hours displayed on the console ?
-On the AWS Management Console, every cluster has a Normalized Instance Hours column that displays the approximate number of compute hours the cluster has used, rounded up to the nearest hour.
-Normalized Instance Hours are hours of compute time based on the standard of 1 hour of m1.small usage = 1 hour normalized compute time. You can view our documentation to see a list of different sizes within an instance family, and the corresponding normalization factor per hour.
-For example, if you run a 10-node r3.8xlarge cluster for an hour, the total number of Normalized Instance Hours displayed on the console will be 640 (10 (number of nodes) x 64 (normalization factor) x 1 (number of hours that the cluster ran) = 640).
-This is an approximate number and should not be used for billing purposes. Please refer to the Billing & Cost Management Console for billable Amazon EMR usage.
-Q: Does Amazon EMR support Amazon EC2 On-Demand, Spot, and Reserved Instances?
-Yes. Amazon EMR seamlessly supports On-Demand, Spot, and Reserved Instances. Click here to learn more about Amazon EC2 Reserved Instances. Click here to learn more about Amazon EC2 Spot Instances.
-Q: Do your prices include taxes?
-Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
-Security
-Q: How do I prevent other people from viewing my data during cluster execution?
-Amazon EMR starts your instances in two Amazon EC2 security groups, one for the master and another for the other cluster nodes. The master security group has a port open for communication with the service. It also has the SSH port open to allow you to SSH into the instances, using the key specified at startup. The other nodes start in a separate security group, which only allows interaction with the master instance. By default both security groups are set up to not allow access from external sources including Amazon EC2 instances belonging to other customers. Since these are security groups within your account, you can reconfigure them using the standard EC2 tools or dashboard. Click here to learn more about EC2 security groups.
-Q: How secure is my data?
-Amazon S3 provides authentication mechanisms to ensure that stored data is secured against unauthorized access. Unless the customer who is uploading the data specifies otherwise, only that customer can access the data. Amazon EMR customers can also choose to send data to Amazon S3 using the HTTPS protocol for secure transmission. In addition, Amazon EMR always uses HTTPS to send data between Amazon S3 and Amazon EC2. For added security, customers may encrypt the input data before they upload it to Amazon S3 (using any common data encryption tool); they then need to add a decryption step to the beginning of their cluster when Amazon EMR fetches the data from Amazon S3.
-Q: Can I get a history of all EMR API calls made on my account for security or compliance auditing?
-Yes. AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The AWS API call history produced by CloudTrail enables security analysis, resource change tracking, and compliance auditing. Learn more about CloudTrail at the AWS CloudTrail detail page, and turn it on via CloudTrail's AWS Management Console.
-Regions and Availability Zones
-Q: How does Amazon EMR make use of Availability Zones?
-Amazon EMR launches all nodes for a given cluster in the same Amazon EC2 Availability Zone. Running a cluster in the same zone improves performance of the jobs flows because it provides a higher data access rate. By default, Amazon EMR chooses the Availability Zone with the most available resources in which to run your cluster. However, you can specify another Availability Zone if required.
-Q: In what Regions is this Amazon EMR available?
-For a list of the supported Amazon EMR AWS regions, please visit the AWS Region Table for all AWS global infrastructure.
-Q: Is Amazon EMR supported in AWS Local Zones?
-EMR supports launching clusters in the Los Angeles AWS Local Zone. You can use EMR in the US West (Oregon) region to launch clusters into subnets associated with the Los Angeles AWS Local Zone.
-Q: Which Region should I select to run my clusters?
-When creating a cluster, typically you should select the Region where your data is located.
-Q: Can I use EU data in a cluster running in the US region and vice versa?
-Yes, you can. If you transfer data from one region to the other you will be charged bandwidth charges. For bandwidth pricing information, please visit the pricing section on the EC2 detail page.
-Q: What is different about the AWS GovCloud (US) region?
-The AWS GovCloud (US) region is designed for US government agencies and customers. It adheres to US ITAR requirements. In GovCloud, EMR does not support spot instances or the enable-debugging feature. The EMR Management Console is not yet available in GovCloud.
-Deployment options
-Amazon EMR on Amazon EKS | Amazon EMR on AWS Outposts
 Amazon EMR on Amazon EKS
 Q: What is Amazon EMR on Amazon EKS? Amazon EMR on Amazon EKS is a deployment model of Amazon EMR that enables customers to easily and cost-effectively process vast amounts of data. It utilizes hosted analytics frameworks running on the flexible Amazon EKS managed service in containers, with the web-scale infrastructure of Amazon Elastic Compute Cloud (Amazon EC2), AWS Fargate, and Amazon Simple Storage Service (Amazon S3).
 Q: Why should I use Amazon EMR on Amazon EKS? Amazon EMR on Amazon EKS decouples the analytics job from the services and infrastructure that are processing the job by using a container-based approach. You can focus more on developing your application and less on operating the infrastructure as EMR on EKS dynamically configures the infrastructure based on the compute, memory, and application dependencies of the job. Infrastructure teams can centrally manage a common compute platform to consolidate EMR workloads with other container-based applications. Multiple teams, organizations, or business units can simultaneously and independently run their analytics processes on the shared infrastructure while maintaining isolation enabled by Amazon EKS and AWS Identity and Access Management (IAM).
@@ -333,6 +267,19 @@ Q: What template values can I specify?
 You can specify both Pod Level Fields (including Volumes, Pod Affinity, Init Containers, Node Selector) and Spark Main Container level fields (including EnvFrom, Working Directory, Lifecycle, Container Volume Mounts). The full list of allowed values is provided in our documentation.
 Q: Where can I find more information about Pod Templates?
 Amazon EKS already supports Pod Templates and for more information about Amazon EMR on EKS’ support for Pod Templates, refer to our documentation and the Apache Spark Pod Template documentation.
+Q: Why should I use Custom Images with EMR on EKS?
+Without Custom Images, managing application dependencies with EMR on EKS required you to reference them at runtime from an external storage service such as Amazon S3. Now, with custom image support, you can create a self-contained docker image with the application and its’ dependent libraries. You no longer need to maintain, update or version externally stored libraries and your big data applications can be developed using the same DevOps processes that your other containerized applications are using. Just point at your image and run it.
+Q: What is a custom image?
+A Custom Image is an EMR on EKS provided docker image (“base image”) that contains the EMR runtime and connectors to other AWS services that you modify to include application dependencies or additional packages that your application requires. The new image can be stored in either Amazon Elastic Container Registry (ECR) or your own Docker container registry.
+Q: What are some use-cases for Custom Images?
+Customers can create a base image, add their corporate standard libraries, and then store it in Amazon Elastic Container Registry (Amazon ECR). Other customers can customize the image to include their application specific dependencies. The resulting immutable image can be vulnerability scanned, deployed to test and production environments. Examples of dependencies you can add include Java SDK, Python, or R libraries, you can add them to the image directly, just as with other containerized applications.
+Q: What is included in the base image?
+The same
+performance optimized Spark Runtime and components are included in the base image as you get when you submit a job without a custom image.
+Q: When should I specify a different Custom Image for my Spark drivers and Spark executors? You can specify separate images for your Spark drivers and executors when you want include different dependencies or libraries. Removing libraries that are not required in both images can result in a smaller image size and thus reduce job start time. You can specify a single image for both drivers and executors (spark.kubernetes.container.image) or specify a different image for drivers (spark.kubernetes.driver.container.image) and executors (spark.kubernetes.executor.container.image).
+Q: Where can I find more information about Custom Images? For more information about Amazon EMR on EKS’ support for Custom Images, refer to our documentation or the
+Apache Spark Documentation.
+Q: Is there an additional charge for Custom Images? There is no charge for using the Custom Images feature.
 Amazon EMR on AWS Outposts
 Q: What is AWS Outposts?
 AWS Outposts brings native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility. Using EMR on Outposts, you can deploy, manage, and scale EMR clusters on-premises, just as you would in the cloud.
@@ -385,6 +332,10 @@ Q: What happens when I remove an attached volume from a running cluster?
 Removing an attached volume from a running cluster will be treated as a node failure. Amazon EMR will replace the node and the EBS volume with each of the same.
 EMR workloads
 Hive | Hudi | Impala | Pig | HBase
+Q: What is Apache Spark?
+Apache SparkTM is an open-source, distributed processing system used for big data workloads. It utilizes in-memory caching, and optimized query execution for fast analytic queries against data of any size. Amazon EMR is the best place to deploy Apache Spark in the cloud, because it combines the integration and testing rigor of commercial Spark distributions with the scale, simplicity, and cost effectiveness of the cloud. It allows you to launch Spark clusters in minutes without needing to do node provisioning, cluster setup, Spark configuration, or cluster tuning. EMR features Amazon EMR runtime for Apache Spark, a performance-optimized runtime environment for Apache Spark that is active by default on Amazon EMR clusters. Amazon EMR runtime for Apache Spark can be over 3x faster than clusters without the EMR runtime, and has 100% API compatibility with standard Apache Spark. Learn more about Spark and Spark on Amazon EMR.
+Q: What is Presto?
+Presto is an open source, distributed SQL query engine, designed from the ground up for fast analytic queries against data of any size. With Amazon EMR, you can launch Presto clusters in minutes without needing to do node provisioning, cluster setup, Presto configuration, or cluster tuning. EMR enables you to provision one, hundreds, or thousands of compute instances in minutes. Presto has two community projects –PrestoDB and PrestoSQL. Amazon EMR supports both projects. Learn more about Presto and Presto on Amazon EMR.
 Using Hive
 Q: What is Apache Hive?
 Hive is an open source data warehouse and analytics package that runs on top of Hadoop. Hive is operated by a SQL-based language called Hive QL that allows users to structure, summarize, and query data sources stored in Amazon S3. Hive QL goes beyond standard SQL, adding first-class support for map/reduce functions and complex extensible user-defined data types like Json and Thrift. This capability allows processing of complex and even unstructured data sources such as text documents and log files. Hive allows user extensions via user-defined functions written in Java and deployed via storage in Amazon S3. You can learn more about Apache Hive here.
@@ -592,6 +543,12 @@ Q: How do I maximize the read throughput from Kinesis stream to EMR?
 Throughput from Kinesis stream increases with instance size used and record size in the Kinesis stream. We recommend that you use m1.xlarge and above for both master and core nodes for this feature.
 Service Level Agreement
 Q: What is Amazon EMR Service Level Agreement?
+Please refer to our Service Level Agreement.
+Q: What does your Amazon EMR Service Level Agreement provide?
+AWS will use commercially reasonable efforts to make each Amazon EMR Service available with a Monthly Uptime Percentage for each AWS region, in each case during any monthly billing cycle, of at least 99.9% (the “Service Commitment”).
+Q: What happens if you don’t meet your Service Commitment? In the event any of the Amazon EMR Services do not meet the Service Commitment, you will be eligible to receive a Service Credit.
+Q: How do I know if I qualify for a Service Credit? How do I claim one? To receive Service Credits, you will need to submit a claim by
+opening a case in the AWS Support Center. To understand the eligibility and claim format, please see https://aws.amazon.com/emr/sla/
 Learn more about Amazon EMR pricing
 Visit the pricing page
 Ready to build?

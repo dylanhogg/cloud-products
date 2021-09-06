@@ -19,7 +19,7 @@ A: No. Lookout for Equipment is an automated Machine Learning product. The servi
 Q: Does Lookout for Equipment get smarter over time?
 A: Since Lookout for Equipment is an automated machine learning tool, it can get smarter over time as Lookout for Equipment can be used to retrain a model with new data. This can be done either as new unseen failures occur or as a model drifts over time.
 Q: Can Lookout for Equipment be used for real time analysis?
-A: Yes. Lookout for Equipment is designed for real time analysis. First, a user needs to set up to publish sensor readings to Amazon S3. Then, with scheduled inferencing, a user can set a schedule ranging from one minute to one hour. As data arrives in Amazon S3, Lookout for Equipment will grab the new data at the desired schedule, run inferencing on the data, and then deposit the results into another S3 bucket.
+A: Yes. Lookout for Equipment is designed for real time analysis. First, a user needs to set up to publish sensor readings to Amazon S3. Then, with scheduled inferencing, a user can set a schedule ranging from five minutes to one hour. As data arrives in Amazon S3, Lookout for Equipment will grab the new data at the desired schedule, run inferencing on the data, and then deposit the results into another S3 bucket.
 Q: Are there restrictions on the number of sensors I can use to build a model?
 A: Lookout for Equipment currently allows up to a maximum of 300 sensors (tags) for one model.
 Q: What kind of use cases does Lookout for Equipment support? What use cases are not supported?

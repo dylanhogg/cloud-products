@@ -4,7 +4,7 @@ A: Elastic Load Balancing supports three types of load balancers. You can select
 Q: Can I privately access Elastic Load Balancing APIs from my Amazon Virtual Private Cloud (VPC) without using public IPs?
 A: Yes, you can privately access Elastic Load Balancing APIs from your Amazon Virtual Private Cloud (VPC) by creating VPC endpoints. With VPC endpoints, the routing between the VPC and Elastic Load Balancing APIs is handled by the AWS network without the need for an Internet gateway, NAT gateway, or VPN connection. The latest generation of VPC Endpoints used by Elastic Load Balancing are powered by AWS PrivateLink, an AWS technology enabling the private connectivity between AWS services using Elastic Network Interfaces (ENI) with private IPs in your VPCs. To learn more about AWS PrivateLink, visit the AWS PrivateLink documentation.
 Q: Is there an SLA for load balancers?
-A: Yes, Elastic Load Balancing guarantees a monthly availability of at least 99.99% for your load balancers (Classic, Application or Network). To learn more about the SLA and know if you are qualified for a credit, visit here.
+A: Yes, Elastic Load Balancing guarantees a monthly availability of at least 99.99% for your load balancers (Classic, Application, Network or Gateway). To learn more about the SLA and know if you are qualified for a credit, visit here.
 Application Load Balancer
 Q: Which operating systems does an Application Load Balancer support?
 A: An Application Load Balancer supports targets with any operating system currently supported by the Amazon EC2 service.
@@ -234,28 +234,57 @@ A: Yes. You can use Application and Network each for 15 LCUs and Classic for 15 
 Gateway Load Balancer
 Getting started
 Q: When should I use Gateway Load Balancer, as opposed to Network Load Balancer or Application Load Balancer?
-You should use Gateway Load Balancer when deploying inline virtual appliances where network traffic is not destined for the Gateway Load Balancer itself. Gateway Load Balancer transparently passes all Layer 3 traffic through third-party virtual appliances, and is invisible to the source and destination of the traffic. For more details on how these load balancers compare, see the features comparison page.
+A: You should use Gateway Load Balancer when deploying inline virtual appliances where network traffic is not destined for the Gateway Load Balancer itself. Gateway Load Balancer transparently passes all Layer 3 traffic through third-party virtual appliances, and is invisible to the source and destination of the traffic. For more details on how these load balancers compare, see the features comparison page.
 Q: Where is Gateway Load Balancer available?
-Gateway Load Balancer is available in the following regions: US East (N. Virginia) - except in zone us1-az3, US East (Ohio), US West (Oregon), US West (N. California), Canada (Central), South America (Sao Paulo), EU (Ireland), EU (Frankfurt), EU (Stockholm), EU (London), EU (Paris), EU (Milan), Africa (Cape Town), Middle East (Bahrain), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Hong Kong), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Osaka), China (Beijing), China (Ningxia).
+A: Gateway Load Balancer is available in the following regions: US East (N. Virginia) - except in zone us1-az3, US East (Ohio), US West (Oregon), US West (N. California), Canada (Central), South America (Sao Paulo), EU (Ireland), EU (Frankfurt), EU (Stockholm), EU (London), EU (Paris), EU (Milan), Africa (Cape Town), Middle East (Bahrain), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Hong Kong), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Osaka), China (Beijing), China (Ningxia), AWS GovCloud (US-East) and AWS GovCloud (US-West).
 Q: Is Gateway Load Balancer deployed per Region or per Availability Zone?
-Gateway Load Balancer runs within one Availability Zone.
-Q: Does Gateway Load Balancer perform TLS termination?
-Gateway Load Balancer does not perform TLS termination and does not maintain any application state. These functions are performed by the third-party virtual appliances it directs traffic to, and receives traffic from.
+A: Gateway Load Balancer is a regional service. When creating a Gateway Load Balancer, user needs to specify the Availability Zone subnets. The API or Console command then creates one Gateway Load Balancer stack for every Availability Zone. The combined Gateway Load Balancer stacks are represented by one unique regional Amazon Resource Names (ARN). You cannot add or remove availability zones for a Gateway Load Balancer after you create it. You can create multiple Gateway Load Balancers in an VPC and in regions.
+Q: What are the key features available with the Gateway Load Balancer?
+A: Gateway Load Balancer provides both Layer 3 gateway and Layer 4 load balancing capabilities. It is a transparent bump-in-the-wire device that does not change any part of the packet. It is architected to handle millions of requests/second, volatile traffic patterns, and introduces extremely low latency. See Gateway Load Balancer features in this table.
+Q: Does Gateway Load Balancer perform TLS termination or encryption/decryption?
+A: Gateway Load Balancer is a transparent bump-in-the-wire device, and hence it does not perform TLS termination or encryption/decryption. These functions are performed by the third-party virtual appliances (aka targets) that sit behind the Gateway Load Balancer.
 Q: Does Gateway Load Balancer maintain application state?
-Gateway Load Balancer does not maintain application state, but it maintains stickiness of flows to a specific appliance using 5-tuple (for TCP/UDP flows) or 3-tuple (for non-TCP/UDP flows).
-Q: How does Gateway Load Balancer handle the failure of one virtual appliance instance in a single Availability Zone?
-When a single virtual appliance instance fails, Gateway Load Balancer removes it from the routing list and reroutes traffic to a healthy appliance instance.
-Q: How does Gateway Load Balancer handle the failure of all virtual appliances within a single Availability Zone?
-If all virtual appliances within and Availability Zone fail, Gateway Load Balancer will drop the network traffic. We recommend deploying Gateway Load Balancers in multiple Availability Zones for greater availability. If all appliances fail in one Availability Zone, scripts can be used to either add new appliances, or direct traffic to a Gateway Load Balancer in a different Availability Zone.
+A: Gateway Load Balancer is not a proxy and does not maintain application state, but it maintains stickiness of flows to a specific target appliance 5-tuple (Source IP, Destination IP, Protocol, Source Port, Destination Port).
+Q: How does Gateway Load Balancer define a flow?
+A: Gateway Load Balancer defines a flow as a combination of a 5-tuple that comprises of Source IP, Destination IP, Protocol, Source Port, and Destination Port. Using the 5-tuple hash, Gateway Load Balancer makes sure that both directions of a flow (i.e., source to destination, and destination to source) are consistently forwarded to the same target. The flow is considered active as long as traffic is flowing and until the idle timeout is reached. Once the timeout threshold is reached, the load balancer will forget the affinity, and incoming traffic packet will be considered as a new flow and may be load-balanced to a new target.
+Note that the 5-tuple hash can affect TCP based applications that use separate streams or port numbers for control and data, such as FTP, Microsoft RDP, Windows RPC and SSL VPN. Control and data flows of such applications can land on different target appliances and can cause traffic disruption.
+Q: What is the idle timeout supported by Gateway Load Balancer?
+A: Gateway Load Balancer idle timeout for TCP connections is 350 seconds. The idle timeout for non-TCP flows is 120 seconds. These timeouts are fixed and cannot be changed.
+Q: How does Gateway Load Balancer handle the failure of one target instance in a single Availability Zone?
+A: Please see this Gateway Load Balancer section for details.
+Q: How does Gateway Load Balancer handle the failure of all target appliances within a single Availability Zone?
+A: If all targets within an Availability Zone fail, Gateway Load Balancer will drop the network traffic. We recommend deploying Gateway Load Balancers in multiple Availability Zones for greater availability. If all targets fail in one Availability Zone, scripts can be used to either add new targets, or direct traffic to a Gateway Load Balancer in a different Availability Zone.
 Q: Can I configure an appliance to be a target for more than one Gateway Load Balancer?
-Yes, multiple Gateway Load Balancers can point to same set of virtual appliances.
+A: Yes, multiple Gateway Load Balancers can point to same set of target virtual appliances.
+Q: What type of listener can I create for my Gateway Load Balancer?
+A: Gateway Load Balancer is a transparent bump-in-the-wire device and listens to all types of IP traffic (including TCP, UDP, ICMP, GRE, ESP and others). Hence only IP listener is created on a Gateway Load Balancer.
+Q: Are there limits on the resources for my Gateway Load Balancer?
+A: Yes, please refer to Gateway Load Balancer limits documentation for more information.
+Q: Can I use the AWS Management Console to set up my Gateway Load Balancer?
+A: Yes, you can use the AWS Management Console, AWS CLI, or the API to set up a Gateway Load Balancer.
+Q: Can I create my Gateway Load Balancer in a single Availability Zone?
+A: Yes, you can create your Gateway Load Balancer in a single availability zone by providing a single subnet when you create the load balancer. However, we recommend using multiple availability zones for improved availability. You cannot add or remove availability zones for a Gateway Load Balancer after you create it.  Q: How do I enable cross-zone load balancing in Gateway Load Balancer?
+A: By default, cross-zone load balancing is disabled. You can enable cross-zone loading balancing only after creating your Gateway Load Balancer. You achieve this by editing the load balancing attributes section and then by selecting the cross-zone load balancing support checkbox.  Q: Am I charged for AWS data-transfer when I enable cross-zone load balancing in Gateway Load Balancer?
+A: Yes, you will be charged for data transfer between Availability Zones with Gateway Load Balancer when cross-zone load balancing is enabled. Check the charges in the data-transfer section at Amazon EC2 On-Demand Pricing page.  Q: Is there any impact of cross-zone load balancing on Gateway Load Balancer limits?
+A: Yes. Gateway Load Balancer currently supports 300 targets per Availability Zone. For example, if you created Gateway Load Balancer in 3 Availability-Zones, you can have up to 900 targets registered. If cross-zone load balancing is on, then the maximum number of targets reduces from 300 per Availability Zone to 300 per Gateway Load Balancer.
+Gateway Load Balancer Pricing FAQs
+Q: How does Gateway Load Balancer pricing work?
+A: You are charged for each hour or partial hour that a Gateway Load Balancer is running and the number of Load Balancer Capacity Units (LCU) used by Gateway Load Balancer per hour.
+A: An LCU is an Elastic Load Balancing metric for determining how you pay for a Gateway Load Balancer. An LCU defines the maximum resource consumed in any one of the dimensions (new connections/flows, active connections/flows, and bandwidth) the Gateway Load Balancer processes your traffic.
+Q: What is the LCU metrics for the Gateway Load Balancer?
+600 new flows (or connections) per second.
+60,000 active flows (or connections) (sampled per minute).
+A: No, you are charged only on one of the three dimensions (the highest for the hour).
+Q: Is new flows (or connections) per second same as requests/sec?
+Q: How do I know the number of LCUs a Gateway Load Balancer is using?
+A: You can track usage of all three dimensions of a LCU via Amazon CloudWatch.
 Gateway Load Balancer Endpoints
 Q: Why do I need a Gateway Load Balancer Endpoint?
-In order to be valuable, virtual appliances need to introduce as little additional latency as possible, and traffic flowing to and from the virtual appliance must follow a secure connection. Gateway Load Balancer Endpoints create the secured, low-latency, connections necessary to meet these requirements.
-Q: How do Gateway Load Balancer Endpoints work?
-Gateway Load Balancer Endpoints are a new type of VPC endpoint that uses PrivateLink technology. As network traffic flows from a source (an Internet Gateway, a VPC, etc.) to the Gateway Load Balancer, and back, a Gateway Load Balancer Endpoint ensures private connectivity between the two. All traffic flows over the AWS network and data is never exposed to the internet, increasing both security and performance.
+Gateway Load Balancer Endpoints are a new type of VPC endpoint that uses PrivateLink technology. Gateway Load Balancer Endpoints allow users to consolidate appliances (such as firewalls) in a separate VPC, allow separation of costs/budgets with service provider and service consumer model, allow separation of admin roles and IAM permissions, allow overlapping IP CIDRs in service consumer VPC, and simplify traffic forwarding with Gateway Load Balancer Endpoint ID instead of managing IP addresses in route tables.
 Q: How do Gateway Load Balancer Endpoints help with centralization?
-Using a Gateway Load Balancer Endpoint, appliances can reside in different AWS accounts and VPCs. This allows appliances to be centralized in one location for easier management and reduced operational overhead.
+Using a Gateway Load Balancer Endpoint, appliances can reside in different AWS accounts and VPCs. This allows appliances to be centralized in one location for easier management, separation of costs and reduced operational overhead.
+Q: How do Gateway Load Balancer Endpoints work?
+Gateway Load Balancer Endpoints are a new type of VPC endpoint that uses PrivateLink technology. As network traffic flows from a source (an Internet Gateway, a VPC, etc.) to the Gateway Load Balancer, and back, a Gateway Load Balancer Endpoint ensures private connectivity between the two. All traffic flows over the AWS network and data are never exposed to the internet, increasing both security and performance.
 Q: How are PrivateLink Interface endpoints different than Gateway Load Balancer Endpoints?
 A PrivateLink Interface endpoint is paired with a Network Load Balancer (NLB) in order to distribute TCP and UDP traffic that is destined for the web applications. In contrast, Gateway Load Balancer Endpoints are used with Gateway Load Balancers to connect the source and destination of traffic. Traffic flows from the Gateway Load Balancer Endpoint to the Gateway Load Balancer, through the virtual appliances, and back to the destination over secured PrivateLink connections.
 Classic Load Balancer

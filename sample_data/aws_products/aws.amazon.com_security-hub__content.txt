@@ -1,29 +1,34 @@
+« Security, Identity & Compliace
 AWS Security Hub
-Centrally view and manage security alerts and automate security checks
-Start your free trial of AWS Security Hub
-AWS Security Hub gives you a comprehensive view of your security alerts and security posture across your AWS accounts. There are a range of powerful security tools at your disposal, from firewalls and endpoint protection to vulnerability and compliance scanners. But oftentimes this leaves your team switching back-and-forth between these tools to deal with hundreds, and sometimes thousands, of security alerts every day. With Security Hub, you now have a single place that aggregates, organizes, and prioritizes your security alerts, or findings, from multiple AWS services, such as Amazon GuardDuty, Amazon Inspector, Amazon Macie, AWS Identity and Access Management (IAM) Access Analyzer, AWS Systems Manager, and AWS Firewall Manager, as well as from AWS Partner Network (APN) solutions. AWS Security Hub continuously monitors your environment using automated security checks based on the AWS best practices and industry standards that your organization follows. You can also take action on these security findings by investigating them in Amazon Detective or by using Amazon CloudWatch Event rules to send the findings to ticketing, chat, Security Information and Event Management (SIEM), Security Orchestration Automation and Response (SOAR), and incident management tools or to custom remediation playbooks. Get started with AWS Security Hub in just a few clicks in the Management Console and once enabled, Security Hub will begin aggregating and prioritizing findings and conducting security checks.
-Introduction to AWS Security Hub (2:34)
-Benefits
-Save time with aggregated findings
-AWS Security Hub reduces the effort of collecting and prioritizing security findings across accounts, from AWS services, and AWS partner tools. The service ingests data using a standard findings format, eliminating the need for time-consuming data conversion efforts. It then correlates findings across providers to prioritize the most important findings.
-Improve security posture with automated checks
-With Security Hub, you can run automated, continuous security checks based on industry standards and best practices, such as the Center for Internet Security (CIS) AWS Foundations Benchmark and Payment Card Industry Data Security Standard (PCI DSS). These checks provide a security score and identify specific accounts and resources that require attention.
-Quickly take actions on findings
-Integrated dashboards bring together your security findings across accounts to show you the current security and compliance status. Now you can easily spot trends, identify potential issues, and take the necessary next steps. For example, you can send findings to ticketing, chat, email, or automated remediation systems using integration with Amazon CloudWatch Events.
+Automate AWS security checks and centralize security alerts
+Get Started with AWS Security Hub
+Automated security controls
+Start your 30-day free trial
+with the AWS Free Tier
+Detect deviations from security best practices with a single click.
+Automatically aggregate security findings in a standardized data format from AWS and partner services.
+Accelerate mean time to resolution with automated response and remediation actions.
 How it works
-Blog posts and articles
-Date
-More...
-Featured customers
-Partners
-Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps. See a full list of AWS Security Hub integration partners
-Meet the AWS APN Partners who have integrated into AWS Security Hub to provide customers with additional information and insights to understand their security posture and recommended remediation steps.  Click here to see a full list of our AWS Security Hub integration partners.
+AWS Security Hub is a cloud security posture management service that performs security best practice checks, aggregates alerts, and enables automated remediation.
+Use cases
+Align workloads to AWS Foundational Security Best Practices
+Reduce your risk with automated checks based on a collection of security controls curated by experts.
+Map workloads to security and compliance frameworks
+Simplify compliance management with built in mapping capabilities for common frameworks like CIS, PCI DSS, and more.
+Accelerate response time by ensuring that AWS findings are routed to the right people.
+AWS Security Hub has automated integrations with chat, ticketing, incident management, GRC, and SIEM tools.
+Customers
+AppsFlyer uses AWS Security Hub to approach security proactively
+ERGO maintains 95% CIS compliance with AWS Security Hub
+Swiss Post gets instant alerts with AWS Security Hub
+How to get started
+Find out how AWS Security Hub works
+Learn more about the features and capabilities AWS Security Hub offers.
 Explore AWS Security Hub features
-Security Hub offers aggregated findings across AWS services and partner solutions, pre-configured and custom security insights, and multi-account support.
-Learn more
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS Security Hub in the AWS Console.
-Sign in
+Get started with AWS Security Hub for free
+Try AWS Security Hub at no charge with a 30-day free trial.
+Start your free trial
+Connect with an expert
+Get help meeting your compliance and security needs.
+Explore support options
+Explore more of AWS

@@ -35,11 +35,12 @@ Usable HDD Storage
 42 TB
 100 PB
 Usable SSD Storage
-No
+14 TB
 1 TB
 7.68 TB
+No
 Usable vCPUs
-2 vCPUs
+4 vCPUs
 40 vCPUs
 52 vCPUs
 N/A

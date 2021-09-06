@@ -6,7 +6,7 @@ Designed from the ground up to be omnichannel, Amazon Connect provides a seamles
 What is Amazon Connect?
 Benefits
 Make changes in minutes not months
-Amazon Connect is so simple to set-up and use, you can increase your speed of innovation. With only a few clicks, you can set up an omnichannel contact center and agents can begin talking and messaging with customers right away. Making changes is easy with an intuitive UI that allows you to create voice and chat contact flows, or agent tasks without any coding, rather than custom development that can take months and cost millions of dollars.
+Amazon Connect is so simple to set up and use, you can increase your speed of innovation. With only a few clicks, you can set up an omnichannel contact center and agents can begin talking and messaging with customers right away. Making changes is easy with an intuitive UI that allows you to create voice and chat contact flows, or agent tasks without any coding, rather than custom development that can take months and cost millions of dollars.
 Save up to 80% compared to traditional contact center solutions
 Amazon Connect costs less than legacy contact center systems. With Amazon Connect you pay only for what you use, plus any associated telephony and messaging charges. With Amazon Connect there are no minimum monthly fees, long-term commitments, upfront license charges, and pricing is not based on peak capacity, agent seats, or maintenance. Learn how our customers are saving.
 Easily scale to meet unpredictable demand
@@ -24,7 +24,7 @@ Amazon Connect has the same skills-based contact routing, queuing, analytics, an
 Learn about Amazon Connect graphical UI
 Learn about Amazon Connect analytics
 Built-in intelligence
-Amazon Connect is AI and ML enabled by default, allows you to automate interactions, understand customer sentiment, and authenticate callers to improve customer service. Natural interactive voice response (IVR) and interactive chatbots make engagement fast and easy for your customers. Contact Lens for Amazon Connect helps you understand your customers better and in real-time with full speech-to-text search, sentiment, trend analysis, and alerts. And Amazon Voice ID uses machine learning to provide real-time caller authentication to make voice interactions faster and more secure.
+Amazon Connect is AI and ML enabled by default, allowing you to automate interactions, understand customer sentiment, and authenticate callers to improve customer service. Natural interactive voice response (IVR) and interactive chatbots make engagement fast and easy for your customers. Contact Lens for Amazon Connect helps you understand your customers better and in real-time with full speech-to-text search, sentiment, trend analysis, and alerts. And Amazon Connect Voice ID uses machine learning to provide real-time caller authentication to make voice interactions faster and more secure.
 Learn about Contact Lens for Amazon Connect
 Learn about Amazon Connect Voice ID
 Unified customer data

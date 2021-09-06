@@ -1,6 +1,6 @@
 General
 Q: What is AWS Identity and Access Management (IAM)?
-You can use AWS IAM to securely control individual and group access to your AWS resources. You can create and manage user identities ("IAM users") and grant
+You can use IAM to securely control individual and group access to your AWS resources. You can create and manage user identities ("IAM users") and grant
 permissions for those IAM users to access your resources. You can also grant permissions for users outside of AWS (
 federated users).
 Q: How do I get started with IAM?
@@ -311,20 +311,20 @@ AWS API users: You can enforce MFA authentication by adding MFA restrictions to 
 Q: How do I help protect my AWS resources with MFA?  Follow two easy steps:
 1. Get a MFA device. You have three options:
 Purchase a hardware YubiKey security key from Yubico, a third-party provider.
-Purchase a hardware device from Gemalto, a third-party provider.
+Purchase a hardware device from Thales, a third-party provider.
 Install a virtual MFA–compatible application on a device such as your smartphone.
 Visit the
 AWS MFA page for details about how to acquire a hardware or virtual MFA device.
-2. After you have a MFA device, you must activate it in the IAM console. You can also use the AWS CLI to activate virtual MFA and hardware MFA (Gemalto device) for an IAM user. Note: AWS CLI does not currently support activation of U2F security keys.
-Q: Is there a fee associated with using AWS MFA? AWS does not charge any additional fees for using AWS MFA with your AWS account. However, if you want to use a physical MFA device then you will need to purchase the MFA device that is compatible with AWS MFA either from Gemalto or Yubico, third party providers. For more details, please visit Yubico or Gemalto’s website.
+2. After you have a MFA device, you must activate it in the IAM console. You can also use the AWS CLI to activate virtual MFA and hardware MFA (Thales device) for an IAM user. Note: AWS CLI does not currently support activation of U2F security keys.
+Q: Is there a fee associated with using AWS MFA? AWS does not charge any additional fees for using AWS MFA with your AWS account. However, if you want to use a physical MFA device then you will need to purchase the MFA device that is compatible with AWS MFA either from Thales or Yubico, third party providers. For more details, please visit Yubico or Thales' website.
 Q: Can I have multiple MFA devices active for my AWS account?  Yes. Each IAM user can have its own MFA device. However, each identity (IAM user or root account) can be associated with only one MFA device.
 Q: Can I use my U2F security key with multiple AWS accounts?
 Yes. AWS allows you to use the same U2F security key with several root and IAM users across multiple accounts.
-Q: Can I use virtual, hardware, or SMS MFA with multiple AWS accounts?  No. The MFA device or mobile phone number associated to virtual, hardware, and SMS MFA is bound to an individual AWS identity (IAM user or root account). If you have a TOTP-compatible application installed on your smartphone, you can create multiple virtual MFA devices on the same smartphone. Each one of the virtual MFA devices is bound to a single identity, just like hardware MFA (Gemalto) device. If you dissociate (deactivate) the MFA device, you can then reuse it with a different AWS identity. The MFA device associated to hardware MFA cannot currently be used by more than one identity simultaneously.
-Q: I already have a hardware MFA device (Gemalto) from my place of work or from another service I use, can I re-use this device with AWS MFA?  No. AWS MFA relies on knowing a unique secret associated with your hardware MFA (Gemalto) device in order to support its use. Because of security constraints that mandate such secrets never be shared between multiple parties, AWS MFA cannot support the use of your existing Gemalto device. Only a compatible hardware MFA device purchased from Gemalto can be used with AWS MFA. You can re-use an existing U2F security key with AWS MFA, as U2F security keys do not share any secrets between multiple parties.
+Q: Can I use virtual, hardware, or SMS MFA with multiple AWS accounts?  No. The MFA device or mobile phone number associated to virtual, hardware, and SMS MFA is bound to an individual AWS identity (IAM user or root account). If you have a TOTP-compatible application installed on your smartphone, you can create multiple virtual MFA devices on the same smartphone. Each one of the virtual MFA devices is bound to a single identity, just like hardware MFA (Thales) device. If you dissociate (deactivate) the MFA device, you can then reuse it with a different AWS identity. The MFA device associated to hardware MFA cannot currently be used by more than one identity simultaneously.
+Q: I already have a hardware MFA device (Thales) from my place of work or from another service I use, can I re-use this device with AWS MFA?  No. AWS MFA relies on knowing a unique secret associated with your hardware MFA (Thales) device in order to support its use. Because of security constraints that mandate such secrets never be shared between multiple parties, AWS MFA cannot support the use of your existing Thales device. Only a compatible hardware MFA device purchased from Thales can be used with AWS MFA. You can re-use an existing U2F security key with AWS MFA, as U2F security keys do not share any secrets between multiple parties.
 Purchasing an MFA Device
-Q: I’m having a problem with an order for a MFA device using the third-party provider’s website. Where can I get help?  Yubico or Gemalto's customer service can assist you.
-Q: I received a defective or damaged MFA device from the third party provider. Where can I get help?  Yubico or Gemalto's customer service can assist you.
+Q: I’m having a problem with an order for a MFA device using the third-party provider’s website. Where can I get help?  Yubico or Thales' customer service can assist you.
+Q: I received a defective or damaged MFA device from the third party provider. Where can I get help?  Yubico or Thales' customer service can assist you.
 Q: I just received a MFA device from the third party provider. What should I do?  You simply need to activate the MFA device to enable AWS MFA for your AWS account. See the IAM console to perform this task.
 Provisioning a Virtual MFA Device
 Q: What is a virtual MFA device?  A virtual MFA device is an entry created in a TOTP compatible software application that can generate six-digit authentication codes. The software application can run on any compatible computing device, such as a smartphone.
@@ -371,7 +371,7 @@ If you are still encountering issues, contact us for help.
 Q: My MFA device is lost, damaged, stolen, or not working, and now I can’t sign in to the AWS Management Console. What should I do? If your MFA device is associated with an AWS root account:
 You can reset your MFA device on the AWS Management Console by first signing in with your password and then verifying the email address and phone number associated with your root account.
 If your MFA device is lost, damaged, stolen or not working, you can sign in using alternative factors of authentication, deactivate the MFA device, and activate a new MFA device. As a security best practice, we recommend that you change your root account’s password.
-If you need a new MFA device, you can purchase a new MFA device from a third-party provider, Yubico or Gemalto, or provision a new virtual MFA device under your account by using the IAM console.
+If you need a new MFA device, you can purchase a new MFA device from a third-party provider, Yubico or Thales, or provision a new virtual MFA device under your account by using the IAM console.
 If you have tried the preceding approaches and are still having trouble signing in, contact AWS Support.
 Q: How do I disable AWS MFA?
 To disable AWS MFA for your AWS account, you can deactivate your MFA device using the Security Credentials page. To disable AWS MFA for your IAM users, you need to use the IAM console or the AWS CLI.
@@ -397,7 +397,7 @@ Q: How does MFA-protected API access interact with existing MFA use cases such a
 Q: Does MFA-protected API access work in the GovCloud (US) region?  Yes.
 Q: Does MFA-protected API access work for federated users?  Customers cannot use MFA-protected API access to control access for federated users. The GetFederatedSession API does not accept MFA parameters. Since federated users can’t authenticate with AWS MFA devices, they are unable to access resources designated using MFA-protected API access.
 Pricing
-Q: What will I be charged for using AWS IAM?
+Q: What will I be charged for using IAM?
 IAM is a feature of your AWS account offered at no additional charge. You will be charged only for the use of other AWS services by your users.
 Billing
 Q: Does AWS Billing provide aggregated usage and cost breakdowns by user?
@@ -426,10 +426,10 @@ Yes, by default your AWS account has initial quotas set for all IAM-related enti
 Limitations on IAM Entities and Objects.
 These quotas are subject to change. If you require an increase, you can access the
 Service Limit Increase form via the Contact Us page, and choose IAM Groups and Users from the Limit Type drop-down list.
-Discover how to get started with AWS IAM
+Discover how to get started with IAM
 Visit the getting started page
 Ready to build?
-Get started with AWS IAM
+Get started with IAM
 Have more questions?
 Contact us
 Page Content

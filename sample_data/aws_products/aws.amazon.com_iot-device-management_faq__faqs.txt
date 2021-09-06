@@ -36,7 +36,7 @@ Web applications created through Fleet Hub integrate with existing enterprise id
 Q: How can I view data logs and take corrective action?
 Once in the application, end users can search their device fleets and view near real-time device state information such as connection status, firmware version, country code, or battery level. They can also set customizable views of a specific device or fleet to interactively view real-time state information including: 1/ key information gathered from logs, 2/ key device properties (e.g. device type, installed application versions, last connection status), and 3/ end user account overview for a specific device. Once an issue is identified, users can take corrective actions through one of the many AWS IoT Device Management features and AWS IoT service capabilities, such as to push an OTA (“over the air”) update via Jobs or opening a Secure Tunnel to reconfigure a device.
 Q: In which regions is Fleet Hub available?
-Fleet Hub is available in US East (Northern Virginia) during preview. However, you will be able to access devices in any AWS region by enabling Fleet Indexing for that region.
+Fleet Hub is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), and Europe (London).
 Q: How do I get started?
 Getting started is easy – visit https://console.aws.amazon.com/iotdm and start managing your IoT devices via our console today. Upload your IoT devices with a single click, query your devices based upon device properties, and manage your firmware updates all in a single location.
 Q: How much does AWS IoT Device Management cost?

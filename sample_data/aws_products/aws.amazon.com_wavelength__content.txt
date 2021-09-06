@@ -1,9 +1,9 @@
 AWS Wavelength
 Deliver ultra-low latency applications for 5G devices
 Get started with Wavelength Zones
-Join our bi-weekly Twitch series
+Register for our Twitch Sessions
 AWS Wavelength is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength Zones are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers’ (CSP) datacenters at the edge of the 5G network, so application traffic from 5G devices can reach application servers running in Wavelength Zones without leaving the telecommunications network. This avoids the latency that would result from application traffic having to traverse multiple hops across the Internet to reach their destination, enabling customers to take full advantage of the latency and bandwidth benefits offered by modern 5G networks.
-AWS Wavelength Zones are available in ten cities across the U.S. with Verizon, in Tokyo and Osaka, Japan with KDDI, and in Daejeon, South Korea with SKT.
+AWS Wavelength Zones are available in ten cities across the U.S. on Verizon’s 5G network, in Tokyo and Osaka, Japan on the KDDI 5G network, in Daejeon, South Korea on SK Telecom’s 5G network, and in London on the Vodafone 5G network.
 AWS Wavelength - Edge Computing for 5G Networks (2:09)
 Benefits
 New business opportunities

@@ -18,17 +18,17 @@ Q: How much data does AWS Compute Optimizer analyze to generate recommendations?
 AWS Compute Optimizer analyzes metrics from the past 14 days to generate recommendations.
 EC2 instance recommendations
 Q: What types of EC2 instance recommendations does AWS Compute Optimizer support?
-AWS Compute Optimizer supports EC2 instance type and size recommendations for standalone EC2 instances of M, C, R, T, and X instance families.
+AWS Compute Optimizer supports EC2 instance type and size recommendations for standalone EC2 instances of M, C, R, T, X, I, D, H, and z instance families.
 Q: What data does AWS Compute Optimizer use for my EC2 instance recommendations?
-AWS Compute Optimizer needs at least 30 consecutive hours of metrics before it makes recommendations for standalone EC2 instances. AWS Compute Optimizer analyzes default CloudWatch metrics for EC2 instances, such as CPU utilization and network I/O metrics.
+AWS Compute Optimizer analyzes default CloudWatch metrics, such as CPU utilization, network packets per second, local storage throughput, and local storage IOPS when generating EC2 instance type recommendations.
 Q: Does AWS Compute Optimizer analyze my EC2 instance memory metrics?
 If you use CloudWatch agent to publish memory utilization, AWS Compute Optimizer automatically analyzes memory metrics published by the CloudWatch Agent in the “CWAgent” namespace.
 Q: What happens if I don’t have memory metrics available for my EC2 instances?
 If metrics for a hardware resource, such as memory, are not available, AWS Compute Optimizer will attempt to avoid making a recommendation that downsizes that dimension.
 Q: How does AWS Compute Optimizer determine performance risk for recommended EC2 instance options?
-Performance risk indicates the likelihood of the recommended option does not meet the performance requirements of your workload. The higher the performance risk is, the more effort you may need to spend to validate whether the recommended EC2 instance type meets the performance requirements of your workload.
+Performance risk indicates the likelihood of the instance type not meeting the resources needs for your workload. Compute Optimizer calculates an individual performance risk score for each resource dimension of the recommended instance, including CPU, memory, EBS throughput, EBS IOPS, disk throughput, network throughput, and network PPS. For each resource dimension, the performance risk score is computed as the proportion of time over the historical lookback period where capacity may be constrained in the given resource dimension. The performance risk of the recommended instance is calculated as the maximum performance risk score across the analyzed resource specifications.
 Q: How does AWS Compute Optimizer help me to understand recommended EC2 instance options?
-AWS Compute Optimizer projects the would-be CPU and memory utilization of your EC2 instance had you used the recommended option, so that you can understand how your workload would have performed on the recommended options.
+AWS Compute Optimizer projects the would-be CPU and memory utilization of your EC2 instance had you used the recommended option, so that you can understand how your workload would have performed on the recommended options. AWS Compute Optimizer also lists the configuration differences between the current instance and the recommended instance type, so you can understand the updates you may need to apply to migrate your workloads from current instance to the recommended instance type.
 Q: Does AWS Compute Optimizer consider EC2 instance pricing information when delivering recommendations?
 After AWS Compute Optimizer identifies a list of optimal AWS resources for your workload, it incorporates a variety of pricing dimensions, such as on-demand pricing, along with expected performance risk to rank the recommendations. AWS Compute Optimizer does not consider transient pricing factors, such as spot pricing.
 Auto scaling group recommendations

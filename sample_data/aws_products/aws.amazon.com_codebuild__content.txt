@@ -2,7 +2,10 @@ AWS CodeBuild
 Build and test code with continuous scaling. Pay only for the build time you use.
 Get started with AWS CodeBuild
 AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue. You can get started quickly by using prepackaged build environments, or you can create custom build environments that use your own build tools. With CodeBuild, you are charged by the minute for the compute resources you use.
-AWS CodeBuild Overview
+100 build minutes free
+of build.general1.small compute type usage
+per month with the AWS Free Tier
+Get started for free
 Benefits
 Fully managed build service
 AWS CodeBuild eliminates the need to set up, patch, update, and manage your own build servers and software. There is no software to install or manage.

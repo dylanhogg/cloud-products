@@ -2,7 +2,9 @@ AWS Service Catalog
 Create, organize, and govern your curated catalog of AWS products
 Get started with AWS Service Catalog
 AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage deployed IT services and your applications, resources, and metadata. This helps you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved IT services they need. With AWS Service Catalog AppRegistry, organizations can understand the application context of their AWS resources. You can define and manage your applications and their metadata, to keep track of cost, performance, security, compliance and operational status at the application level.
-AWS Service Catalog - Getting Started (1:34)
+1,000 API calls free
+per month with the AWS Free Tier
+Get started for free
 Benefits
 Ensure compliance with corporate standards
 AWS Service Catalog provides a single location where organizations can centrally manage catalogs of IT services. With AWS Service Catalog you can control which IT services and versions are available, what is configured in each of the available service, and who gets permission access by individual, group, department or cost center.

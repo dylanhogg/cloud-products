@@ -16,13 +16,14 @@ Add data filters and validations - Add optional data filters like only including
 Finish - Click Create Flow and your data will begin to flow based on the triggers you set. You can review and troubleshoot data flows any time by looking back at your dashboard.
 AppFlow transfers data between the data source and the data target, runs the selected transformations, and monitors the processing. AppFlow integrates with underlying AWS services for automation, security, and monitoring, including AWS PrivateLink, AWS KMS, and Amazon CloudTrail.
 Q: Which AWS services are supported by Amazon AppFlow?
-Supported services at launch include Amazon S3 and Amazon RedShift and we’re continuing to add more all the time.
+Supported AWS services include Amazon S3, Amazon RedShift, Amazon Connector Customer Profiles, Amazon Lookout for Metrics, and Amazon Honeycode, and we’re continuing to add more all the time.
 Q: What are some examples of Flows that I can configure using Amazon AppFlow?
 AppFlow gives you the flexibility to configure their own Flows. Some examples of flows include:
 Create a copy of a Salesforce object (i.e. opportunity, case, campaign) in Amazon S3.
-Send case tickets from Zendesk into an Amazon Redshift table
+Send case tickets from Zendesk into an Amazon Redshift table.
+Hydrate an Amazon S3 data lake with transactional data from SAP S/4HANA ERP.
 Push records from a CSV file in Amazon S3 into a Salesforce account, contact, or lead object.
-Transfer results such as lead scores and account churn risk scores from Amazon S3 to Salesforce
+Transfer results such as lead scores and account churn risk scores from Amazon S3 to Salesforce.
 Q: What are the trigger mechanisms available for flows?
 You can run flows on demand, based on business events, or on a schedule:
 On Demand: Run data flows on demand, as soon as you click “Run Flow” to do bulk transfers or tests,
@@ -35,7 +36,7 @@ SaaS Integrations
 Q: Public APIs are available for my SaaS application today; what additional value does AppFlow bring?
 While developers can use public APIs from SaaS applications to pull or push data, AppFlow helps customers to save time by allowing anyone who prefers not to write code and learn the API documentation of all the different SaaS applications to implement a range of common integration tasks. AppFlow is a fully managed API integration service that replaces custom connectors. It provisions compute, storage, and networking resources to orchestrate and execute the flows; manages API authorization with the SaaS application and manages the life-cycle of access tokens and API keys; and processes data as part of the flow.
 Q: Which SaaS integrations are supported as sources and destinations?
-AppFlow supports sources such as Amazon S3, Salesforce, Marketo, Zendesk, and Slack, as well as many others. It supports Amazon S3, Amazon RedShift, Salesforce, and Snowflake as destinations for flows. To learn more, visit the AppFlow integrations page.
+AppFlow supports sources such as Amazon S3, Salesforce, SAP, Marketo, Zendesk, and Slack, as well as many others. It supports Amazon S3, Amazon RedShift, Salesforce, and Snowflake as destinations for flows. To learn more, visit the AppFlow integrations page.
 Q: I’d like AppFlow to support another SaaS integration. How can I make that request?
 Please contact us to let us know the name of the SaaS vendor as well as your use case.
 Q: I’m a SaaS vendor and I’d like to integrate with AppFlow. What do I do next?
@@ -53,7 +54,7 @@ AWS DataSync is intended to move large amounts of data between on-premises data 
 Q: When should I use AppFlow or Amazon EventBridge?
 Amazon EventBridge enables developers to build event driven applications that interact with SaaS applications and AWS services. SaaS applications that have integrated with EventBridge emit events to the customer’s event bus, which can then be routed to targets such as Amazon EC2 instances or Lambda functions for processing. AppFlow supports bi-directional transfer of data between SaaS applications and AWS services that may be initiated by humans using a UI, a schedule, or events - all with a point and click interface.
 Q: Can AppFlow be deployed through CloudFormation templates?
-No, but support is planned.
+AWS CloudFormation support for Amazon AppFlow is available in all regions where Amazon AppFlow is available. To learn more about how to use AWS CloudFormation to provision and manage Amazon AppFlow resources, visit our documentation.
 Q: Does AppFlow support CloudTrail?
 Yes. To receive a history of AppFlow API calls made on your account, you simply turn on CloudTrail in the AWS Management Console.
 Learn more about pricing

@@ -1,38 +1,20 @@
 AWS Trusted Advisor
 Reduce costs, improve performance, improve security
-Try Trusted Advisor
-Select a support plan
-AWS Trusted Advisor is a fully managed service that provides you guidance to follow AWS best practices. Trusted Advisor helps optimize your AWS infrastructure, improve security and performance, reduce the overall costs, and monitor service limits. Whether establishing new workflows, developing applications, or as part of ongoing improvement, take advantage of the recommendations provided by Trusted Advisor regularly to help keep your solutions provisioned optimally.
-AWS Basic Support and AWS Developer Support customers get access to core security checks and service limit checks. AWS Business Support and AWS Enterprise Support customers get access to all Trusted Advisor checks and recommendations, including cost optimization, security, fault tolerance, performance, and service limits. For a complete list of checks and descriptions, explore Trusted Advisor Best Practices.
+Get Started with AWS Trusted Advisor
+Step by Step Guide
+AWS Trusted Advisors provides recommendations that help you follow AWS best practices. Trusted Advisor evaluates your account by using checks. These checks identify ways to optimize your AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. You can then follow the check recommendations to optimize your services and resources.
+AWS Basic Support and AWS Developer Support customers can access core security checks and all checks for service quotas. AWS Business Support and AWS Enterprise Support customers can access all checks, including cost optimization, security, fault tolerance, performance, and service quotas. For a complete list of checks and descriptions, see the Trusted Advisor Best Practices.
 How to start using AWS Trusted Advisor (11:45)
 Benefits
-AWS Trusted Advisor analyzes your AWS environment and provides best practice recommendations in five categories.
+Checks from Trusted Advisor analyzes your AWS environment and recommends best practices.
 Cost optimization
-AWS Trusted Advisor can save you money on AWS by eliminating unused and idle resources or by making commitments to reserved capacity.
+Trusted Advisor can help you save cost, such as recommending you to delete unused or idle resources, or use reserved capacity.
 Performance
-AWS Trusted Advisor can improve the performance of your service by checking your service limits, ensuring you take advantage of provisioned throughput, and monitoring for overutilized instances.
+Trusted Advisor can improve the performance of your services by ensuring you to take advantage of provisioned throughput, and monitoring for overutilized Amazon EC2 instances.
 Security
-AWS Trusted Advisor can improve the security of your application by closing gaps, enabling various AWS security features, and examining your permissions.
+Trusted Advisor can improve the security of your application by recommending you to enable AWS security features, and review your permissions.
 Fault tolerance
-AWS Trusted Advisor can increase the availability and redundancy of your AWS application by take advantage of auto scaling, health checks, multi AZ, and backup capabilities.
-Service limits
-AWS Trusted Advisor checks for service usage that is more than 80% of the service limit. Values are based on a snapshot, so your current usage might differ. Limit and usage data can take up to 24 hours to reflect any changes.
-Features
-AWS Trusted Advisor provides a suite of features for you to customize recommendations and to proactively monitor your AWS resources. For more information, please see the Trusted Advisor FAQs.
-Email notifications
-The Trusted Advisor notification feature helps you stay up-to-date with a summary of status across your checks. You will be notified by weekly email when you opt in for this feature. A refresh of checks is required to ensure up-to-date summary of check status in your email notification.
-Recent changes
-You can track recent changes or check status in the AWS Management Console dashboard. The most recent changes appear at the top of the list to bring them to your attention. Available with AWS Business Support and AWS Enterprise Support.
-Exclude items
-The "exclude items" allows you to customize the Trusted Advisor report. You can exclude items from the check result if they are not relevant; the excluded items appear separately, and you can restore (include) them at any time.
-Action links
-Items in a Trusted Advisor report have hyperlinks to the console, where you can take action on the Trusted Advisor recommendations.
-Access management
-You can use AWS Identity and Access Management (IAM) to control access to specific checks or check categories.
-AWS Support API
-You can refresh and retrieve Trusted Advisor results programmatically using AWS Support API. Available with AWS Business Support and AWS Enterprise Support.
-Refresh
-You can refresh individual checks or refresh all the checks at once by clicking the Refresh All button in the top-right corner of the summary dashboard. The minimum refresh interval varies based on the check.
-Amazon CloudWatch integration
-You can use Amazon CloudWatch Events to detect and react to changes in the status of Trusted Advisor checks. Available with AWS Business Support and AWS Enterprise Support.
+Trusted Advisor can increase the availability of your AWS application by recommending you  to take advantage of auto scaling, health checks, multi-AZ Regions, and backup capabilities.
+Service quotas
+Service quotas, also referred to as Service limits, are the maximum number of service resources or operations that apply to an account or a Region. Trusted Advisor can notify you if you use more than 80% of a service quota. You can then follow recommendations to delete resources or request a quota increase. Check results are based on a snapshot, so your current usage might vary.
 How it works

@@ -2,7 +2,9 @@ AWS Control Tower
 The easiest way to set up and govern a secure multi-account AWS environment
 Get started with AWS Control Tower
 If you're a customer with multiple AWS accounts and teams, cloud setup and governance can be complex and time consuming, slowing down the very innovation you’re trying to speed up. AWS Control Tower provides the easiest way to set up and govern a secure, multi-account AWS environment, called a landing zone. AWS Control Tower creates your landing zone using AWS Organizations, bringing ongoing account management and governance as well as implementation best practices based on AWS’s experience working with thousands of customers as they move to the cloud. With AWS Control Tower, builders can provision new AWS accounts in a few clicks, while you have peace of mind knowing that your accounts conform to company-wide policies. AWS customers can implement AWS Control Tower, extend governance into new or existing accounts, and gain visibility into their compliance status quickly. If you are building a new AWS environment, starting out on your journey to AWS or starting a new cloud initiative, Control Tower will help you get started quickly with governance and best practices built-in.
-What is AWS Control Tower? (1:35)
+Always free
+with the AWS Free Tier
+Get started for free
 Benefits
 Quickly setup and configure a new AWS environment
 Automate the setup of your multi-account AWS environment with just a few clicks. The setup employs blueprints, which capture AWS best practices for configuring AWS security and management services to govern your environment. Blueprints are available to provide identity management, federate access to accounts, centralize logging, establish cross-account security audits, define workflows for provisioning accounts, and implement account baselines with network configurations.

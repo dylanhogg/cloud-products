@@ -1,44 +1,33 @@
+« Containers
 AWS Fargate
 Serverless compute for containers
-Get started with AWS Fargate
-AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS). Fargate makes it easy for you to focus on building your applications. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
-Fargate allocates the right amount of compute, eliminating the need to choose instances and scale cluster capacity. You only pay for the resources required to run your containers, so there is no over-provisioning and paying for additional servers. Fargate runs each task or pod in its own kernel providing the tasks and pods their own isolated compute environment. This enables your application to have workload isolation and improved security by design. This is why customers such as Vanguard, Accenture, Foursquare, and Ancestry have chosen to run their mission critical applications on Fargate.
-National Australia Bank (NAB) is one of the largest financial institutions in Australia and offers a wide array of personal banking financial solutions to its customers.
-“By removing the need for infrastructure management, we expect AWS Fargate for Amazon EKS to reduce our development costs on new projects by 75%. Over the next 12 months, migrating to AWS Fargate for Amazon EKS will enable 100 NAB service teams with a managed microservices-based platform to break down 50 monolithic applications into modern architectures.”
-Steve Day, EGM of Infrastructure Cloud and Workplace, NAB
-Benefits
-Deploy and manage applications, not infrastructure
-With Fargate, you can focus on building and operating your applications whether you are running it with ECS or EKS. You only interact with and pay for your containers, and you avoid the operational overhead of scaling, patching, securing, and managing servers. Fargate ensures that the infrastructure your containers run on is always up-to-date with the required patches.
-Right-sized resources with flexible pricing options
-Fargate launches and scales the compute to closely match the resource requirements you specify for the container. With Fargate, there is no over-provisioning and paying for additional servers. You can also get Spot and Compute Savings Plan pricing options with Fargate just like with Amazon EC2 instances. Compared to On-Demand prices, Fargate Spot provides up to 70% discount for interrupt-tolerant applications, and Compute Savings Plan offers up to 50% discount on committed spend for persistent workloads.
-Secure isolation by design
-Individual ECS tasks or EKS pods each run in their own dedicated kernel runtime environment and do not share CPU, memory, storage, or network resources with other tasks and pods. This ensures workload isolation and improved security for each task or pod.
-Rich observability of applications
-With Fargate, you get out-of-box observability through built-in integrations with other AWS services including Amazon CloudWatch Container Insights. Fargate allows you to gather metrics and logs for monitoring your applications through an extensive selection of third party tools with open interfaces.
+Get Started with AWS Fargate
+Contact Sales
+Deploy and manage your applications, not infrastructure. Fargate removes the operational overhead of scaling, patching, securing, and managing servers.
+Monitor your applications via built-in integrations with AWS services like Amazon CloudWatch Container Insights. Gather metrics and logs with third-party tools.
+Improve security through workload isolation by design. ECS tasks and EKS pods run in their own dedicated runtime environment.
+Only pay for what you use. Fargate scales the compute to closely match your specified resource requirements. With Fargate, there is no over-provisioning and paying for additional servers.
 How it works
-What's New
-date
-1
-...
-See all announcements
-Customers using AWS Fargate
-How Turner migrated to Fargate for its containerized apps
-Datree achieved operational efficiency with Fargate
-Machine Learning with AWS Fargate and AWS CodePipeline
-Catalytic's parallelized bioinformatics on Fargate
-How KPMG deployed microservices to Fargate
-Highly Available Grafana running on AWS Fargate
-Aaptiv improving continuous integration with AWS Fargate
-Samsung built a secure developer portal with Fargate
-Talroo used AWS Fargate to improve application scaling
-Harry's reduced operational overhead with Fargate
-How 99designs used Fargate for their containerized apps
-Veritone built real-time AI with AWS Fargate
-Skywatch uses Fargate to process satellite data
-Other customers using AWS Fargate
-Blog posts & articles
-Learn more about AWS Fargate pricing
-Visit the pricing page
-Ready to build?
-Have more questions?
+AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+Use cases
+Web applications, APIs, and microservices
+Build and deploy your applications, APIs, and microservices architectures with the speed and immutability of containers. Fargate removes the need to own, run, and manage the lifecycle of a compute infrastructure so that you can focus on what matters most: your applications.
+Run and scale containerized workloads
+Use Fargate with Amazon ECS or Amazon EKS to easily run and scale your containerized data processing workloads.
+Support AI and ML training applications
+Create an AI and ML development environment that is flexible and portable. With Fargate, achieve the scalability you need to boost server capacity without over-provisioning— to train, test, and deploy your machine learning (ML) models.
+Customers
+Learn how Vanguard boosted investor value with Amazon ECS and AWS Fargate
+Find out how startup Qoala powered a microinsurance expansion using AWS Fargate
+Discover how Samsung built a secure developer portal using AWS Fargate and Amazon ECR
+How to get started
+Learn more about AWS container services
+Find out why top companies run their mission critical containerized applications on AWS.
+Explore the Containers page
+Connect with an expert
+Get sales support or technical support for AWS Fargate now.
 Contact us
+Start building in the console
+Explore AWS Fargate in the AWS Management Console.
+Sign in
+Explore more of AWS

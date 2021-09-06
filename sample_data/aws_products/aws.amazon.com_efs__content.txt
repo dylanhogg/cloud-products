@@ -1,78 +1,39 @@
+« Storage
 Amazon Elastic File System
 Simple, serverless, set-and-forget, elastic file system
-Get started with Amazon EFS
-Request more information
-Amazon Elastic File System (Amazon EFS) provides a simple, serverless, set-and-forget, elastic file system that lets you share file data without provisioning or managing storage. It can be used with AWS Cloud services and on-premises resources, and is built to scale on demand to petabytes without disrupting applications. With Amazon EFS, you can grow and shrink your file systems automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth.
-Amazon EFS offers you the choice of creating file systems using Standard or One Zone storage classes. Standard storage classes store data within and across multiple availability zones (AZ). One Zone storage classes store data redundantly within a single AZ, at a 47% lower price compared to file systems using Standard storage classes, for workloads that don’t require multi-AZ resilience.
-Amazon EFS offers four storage classes: two Standard storage classes, Amazon EFS Standard and Amazon EFS Standard-Infrequent Access (EFS Standard-IA), and two One Zone storage classes, Amazon EFS One Zone, and Amazon EFS One Zone-Infrequent Access (EFS One Zone-IA).
-While workload patterns vary, customers typically find that 80% of files are infrequently accessed (and suitable for infrequent access storage classes), and 20% are actively used (suitable for EFS Standard and EFS One Zone storage classes), resulting in an effective storage cost as low as $0.043/GB-month1 for file systems with One Zone storage classes, and $0.08/GB-month2 for file systems with Standard storage classes. Amazon EFS transparently serves files from both frequently accessed and infrequent accessed storage classes in a common file system namespace. See Pricing Table
-Amazon EFS is designed to provide massively parallel shared access to thousands of Amazon EC2 instances, and AWS containers and serverless compute services including Amazon Elastic Container Service (ECS), Amazon Elastic Kubernetes Service (EKS), AWS Fargate, and AWS Lambda, enabling your applications to achieve high levels of aggregate throughput and IOPS with consistent low latencies.
-Amazon EFS is well suited to support a broad spectrum of use cases from home directories to business-critical applications. See Use Cases
-1 pricing in US East (N. Virginia) region, assumes 80% of your storage in EFS One Zone-IA 2 pricing in US East (N. Virginia) region, assumes 80% of your storage in EFS Standard-IA
-Amazon EFS overview (2:13)
-What is Cloud File Storage?
-Learn more about cloud file storage and how it compares to other cloud storage solutions.
-When to Choose Amazon EFS
-Cloud storage options provide a simple and scalable way to store, access, and share data over the Internet. Here, we compare Amazon EFS to other AWS Cloud storage offerings, helping you understand when to choose Amazon EFS.
-Benefits
-POSIX-compliant shared file storage
-Amazon EFS provides secure access for thousands of connections for Amazon EC2 instances and on-premises servers, as well as AWS compute services, including ECS, EKS, AWS Fargate, and AWS Lambda, simultaneously using a traditional file permissions model, file locking capabilities, and hierarchical directory structure via the NFSv4 protocol. Amazon EC2 instances can access your file system across AZs, regions, and VPCs, while on-premises servers can access using AWS Direct Connect or AWS VPN.
-Scalable performance
-Amazon EFS is designed to provide the throughput, IOPS, and low latency needed for Linux workloads. Throughput and IOPS scale as a file system grows and can burst to higher throughput levels for short periods of time to support the unpredictable performance needs of file workloads. For the most demanding workloads, Amazon EFS can support performance over 10 GB/sec and more than 500,000 IOPS.
-Dynamic elasticity
-Amazon EFS automatically and instantly scales your file system storage capacity up or down as you add or remove files without disrupting your applications, dynamically providing the storage capacity you need as you need it. You simply create your file system and start adding files with no need to provision storage in advance.
-Fully managed
-Amazon EFS is a fully managed service providing shared file system storage for Linux workloads. It provides a simple interface allowing you to create and configure file systems quickly and manages the file storage infrastructure for you, removing the complexity of deploying, patching, and maintaining the underpinnings of a file system.
-Cost-effective
-With Amazon EFS storage, you pay only for what you use. There is no need to provision storage in advance and there are no minimum commitments or up-front fees. With EFS Lifecycle Management, you can automatically move files accessed less frequently to a cost-optimized storage class, reducing file storage costs by up to 92%. With Amazon EFS One Zone storage classes, customers with workloads that do not require the multi-AZ resilience of Standard storage classes can choose additional savings of 47% by storing their data in a single-AZ. You can also use AWS Budgets to monitor your file system costs. Learn more
-Security and compliance
-Amazon EFS allows you to securely access your files using your existing security infrastructure. Control access to your Amazon EFS file systems with POSIX permissions, Amazon VPC, and AWS IAM. Secure your data by encrypting your data at rest and in transit. Amazon EFS also meets many eligibility and compliance requirements to help you meet your regulatory needs. Click here for a list of compliance programs in scope for Amazon EFS.
+Get started with Amazon Elastic File System
+Learn about Amazon EFS for Modern Apps
+5 GB of standard storage
+for 12 months with the AWS Free Tier
+Create and configure shared file systems simply and quickly for AWS compute services—no provisioning, deploying, patching, or maintenance required.
+Scale your file system automatically as files are added, removed, and burst to higher throughput levels when necessary.
+Pay only for the storage you use and reduce costs up to 92% by automatically moving infrequently accessed files.
+Securely and reliably access your files with a fully managed, set-and-forget file system designed for high availability and 99.999999999% (11 9s) durability.
 How it works
+Amazon Elastic File System (EFS) automatically grows and shrinks as you add and remove files with no need for management or provisioning.
 Use cases
-Containers and serverless persistent file storage
-Amazon EFS enables customers to persist data and state from their containers and serverless functions, providing fully managed, elastic, highly-available, scalable, and high-performance, cloud-native shared file systems. These same attributes are shared by Amazon Elastic Container Service (Amazon ECS), Amazon Kubernetes Service (Amazon EKS), AWS Fargate, and AWS Lambda, so developers don’t need to design for these traits, the services are simply ready for modern application development with data persistence. Amazon EFS allows data to be persisted separately from compute, and enables applications to have cross-AZ availability and durability. Amazon EFS provides a shared persistence layer that allows stateful applications to elastically scale up and down, such as for DevOps, web serving, web content systems, media processing, machine learning, analytics, search index, and stateful microservices applications.
-Learn more
-Move to managed file systems
-Amazon EFS provides the scalability, elasticity, availability, and durability to be the file store for enterprise applications and for applications delivered as a service. Its standard file system interface, file system permissions, and directory hierarchy make it easy to migrate enterprise applications from on-premises to the AWS cloud, and to build new ones. Move your business critical, Linux-based applications to managed file systems with Amazon EFS, while lowering your total cost of ownership (TCO).
-Analytics & machine learning
-Amazon EFS provides the ease of use, scale, performance, and consistency needed for machine learning and big data analytics workloads. Data scientists can use EFS to create personalized environments, with home directories storing notebook files, training data, and model artifacts. Amazon SageMaker integrates with EFS for training jobs, allowing data scientists to iterate quickly.
-Web serving & content management
-Amazon EFS provides a durable, high throughput file system for content management systems and web serving applications that store and serve information for a range of applications like websites, online publications, and archives. Since Amazon EFS adheres to the expected file system directory structure, file naming conventions, and permissions that web developers are accustomed to, it can easily integrate with web applications.
-Application testing & development
-Amazon EFS provides your development environments a common storage repository that gives you the ability to share code and other files in a secure and organized way. You can provision, duplicate, scale, or archive your test, development, and production environments with a few clicks, enabling your organization to be more agile and responsive to customer needs. Amazon EFS delivers a scalable and highly available solution that is ideal for testing and development workloads.
-Media & entertainment
-Media workflows like video editing, studio production, broadcast processing, sound design, and rendering often depend on shared storage to manipulate large files. Amazon EFS provides a strong data consistency model with high throughput and shared file access which can cut the time it takes to perform these jobs and consolidate multiple local file repositories into a single location for all users.
-Database backups
-Amazon EFS presents a standard file system that can be easily mounted with NFSv4 from database servers. This provides an ideal platform to create portable database backups using native application tools or enterprise backup applications. Many businesses want to take advantage of the flexibility of storing database backups in the cloud either for temporary protection during updates or for development and test.
-Discover Financial Services invests in big data and analytics as varied tools and platforms are used across the organization. Its internal data science workbench called Air9, built on AWS, enables environments where data scientists can collaborate more easily. By shifting from an open source storage system to Amazon EFS, Discover Financial Services reduced storage costs by 50%, simplifying management, and increasing scalability.
-Ancestry is a global leader in family history and consumer genomics. The AncestryDNA science team decided to move to Amazon Web Services (AWS) for the scalability and flexibility of the cloud. Using Amazon EFS, Ancestry enables multiple scientists to perform genomics research, automatically scales compute and storage resources up or down, and onboards new scientists faster and easier.
-Case studies
-Alpha Vertex uses EFS for financial modeling with machine learning
-Atlassian uses EFS with Jira Data Center for scalable shared storage
-Bambuser used EFS to move servers to the cloud for low latency videos
-With EFS, BBC migrated its on-premises Red Button interactive TV service to the AWS Cloud.
-Be Software simplifies storage and cuts costs using AWS Cloud and EFS
-Butterfly Network brings medical imaging to more people using Amazon EFS
-Celgene chooses Amazon EFS to store file data for all of its R&D workloads
-Creative Market is able to save 95% using EFS on their marketplace platform
-Custora uses EFS with auto-scaling to prototype new solutions faster
-Digital ReLab uses EFS to reduce total cost of ownership by 40%
-With AWS, GivenGain has been able to grow its customers by 400%
-HERE Technologies uses Amazon EFS to reduce set-up from 12 weeks to 1
-LoanLogics kickstarts its all-in move to the cloud with AWS storage
-Monsanto uses EFS to manage their petabyte-scale analytics solution
-Seeking Alpha migrated from on-premises to AWS and EFS
-ShootProof Uses Amazon EFS to Deliver Photos Five Times Faster
-Spokeo uses EFS to serve pages faster to their customers
-Swisstopo uses EFS to deliver fast map content to millions of users
-Blog posts
-1
-...
-Learn with tutorials
-Learn more about Amazon EFS with our getting started tutorials.
+Simplify DevOps
+Share code and other files in a secure, organized way to increase DevOps agility and respond faster to customer feedback.    Learn more about simplifying DevOps
+Modernize application development
+Persist and share data from your AWS containers and serverless applications with zero management required.    Learn more about application development
+Enhance content management systems
+Simplify persistent storage for modern content management system (CMS) workloads. Get your products and services to market faster, more reliably, and securely at a lower cost.
+Learn more about enhancing content management systems
+Accelerate data science
+Easy to use and scale, with the performance and consistency needed for machine learning (ML) and big data analytics workloads.    Learn more about big data workloads
+Customers
+Discover Financial Services reduced storage costs by 50% while simplifying management
+Ancestry onboards new scientists quickly and easily
+Acquia dynamically scaled its customer environments and lowered its TCO
+Celgene stores EFS files for R&D workloads and critical app data
+How to get started
+Get started with a tutorial
+Learn more about Amazon EFS with our hands-on tutorials.
+Start learning
+Try the AWS Free Tier
+Learn the fundamentals for free while building on AWS.
 Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with Amazon EFS in the AWS Management Console.
-Sign in
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

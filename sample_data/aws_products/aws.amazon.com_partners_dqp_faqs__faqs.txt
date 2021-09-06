@@ -28,8 +28,8 @@ How do I get technical support related to the qualification/validation process o
 For technical questions related to the device validation process, including the AWS IoT Device Tester tool, you may use AWS support options such as the AWS online forums and AWS Support. Additional paid-for support services to assist partners in device qualification related efforts such as porting or validation readiness are also available from third-party service providers.
 How do I provide hardware for device qualification, and will I get the device I provided back?
 If hardware is required to complete a technical validation, we will contact you after you have submitted your device for listing to arrange the shipping details. Unless mutually agreed upon, we will return submitted hardware to you when it is no longer needed for qualification related purposes.
-How do I get help for questions related to access and use of the Device Listing Portal on APN Partner Central?
-Please contact the APN Support team via email for questions related to the Device Listing Portal user experience on APN Partner Central, including issues and general feedback.
+How do I get help for questions related to access and use of the Device Listing Portal on AWS Partner Central?
+Please contact the APN Support team via email for questions related to the Device Listing Portal user experience on AWS Partner Central, including issues and general feedback.
 Learn more about the AWS Partner Device Catalog
 Visit the AWS Partner Device Catalog
 Page Content

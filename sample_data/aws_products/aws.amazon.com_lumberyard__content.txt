@@ -1,16 +1,16 @@
 Amazon Lumberyard
+Now in Developer Preview – Open 3D Engine
+As we began building the successor to Lumberyard, we wanted to give developers the ability to access technology, contribute, and grow it. With that comes the Linux Foundation and their Open 3D Foundation, with AWS seeding the foundation with the Open 3D Engine (O3DE) – a AAA-capable, cross platform open source game engine available under an Apache 2.0 license.
+Read our blog
 Free. Powerful. Fully Customizable.
-We believe game developers deserve another choice. That’s why we’re building Lumberyard: a game engine with no royalties or seat fees, frictionless integration with Twitch and AWS, plus much more on the horizon.
-Get Lumberyard
 Build Bigger.
 Lumberyard is architected for performance, modularity, and productivity. Reduce time to quality and maximize ambition, across PC, console, and mobile.
 Build a Fanbase.
 Engage and grow your community inside and outside of your game, and build games as fun to watch as they are to play, with Lumberyard's Twitch integration.
 Build Free.
 Lumberyard is free and includes full source. There are no seat fees, subscription fees, or requirements to share revenue. Only pay for the AWS services you choose to use.
-Ready to Get Started with Lumberyard?
-Quickly learn essential Lumberyard tools and workflows while building a game prototype in the Getting Started Guide video series.
-Getting Started with Lumberyard
+Learn about O3DE
+We aimed to build an engine that could stand the test of time in an open source world.
 Watch Now
 More Tutorials
 We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
@@ -29,15 +29,15 @@ Introduction to Building Games on AWS using Amazon Lumberyard
 Learn about Amazon Lumberyard features and explore various AWS solutions that can be integrated into games built with Lumberyard.
 Start Free Training
 From the Blog
+July 6, 2021
+The Story of AWS and Open 3D Engine
+The Linux Foundation just announced Open 3D Foundation, with AWS seeding the foundation with the Open 3D Engine (O3DE) – a AAA-capable, cross platform open source game engine available under an Apache 2.0 license.
 May 19, 2021
 Announcing Amazon Lumberyard 1.28
 Amazon Lumberyard 1.28 Beta is now available for download, bringing you a range of updates including updated Twitch Gem, an improved setup and installation experience, plus various smaller improvements, and over 40 bug fixes.
 December 11, 2020
 Announcing Amazon Lumberyard 1.27
 Lumberyard 1.27 is now available for download, bringing you a range of updates including usability with optimized work flows throughout the user interface, support for new and improved physics features, and even more customization options for developers on major platforms.
-October 5, 2020
-Announcing Amazon Lumberyard 1.26
-Let's usher in a new season of game development with the release of Amazon Lumberyard Beta 1.26! This release brings you improvements to Dynamic Terrain and Landscape Canvas, general availability of the PhysX Gem, updated Amazon GameLift support, usability improvements to the White Box Tool, and more.
 Around the Web
 March 9, 2019
 Carbonated Games teases mobile shooter on Amazon Lumberyard
@@ -47,8 +47,6 @@ Denis Dyack is coming back from the dead with Deadhaus Sonata
 I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
 In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as Gamelift and Amazon Web Services.
 Built with Lumberyard
-"We decided that Amazon would be the best partner going forward for the future of Star Citizen."
-Chris Roberts, Cloud Imperium Games
 Learn more about what makes Lumberyard unique
 Visit the features page
 Ready to build with Lumberyard?

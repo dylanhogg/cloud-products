@@ -1,29 +1,31 @@
 General
 Q: What is AWS Fargate?
-AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS). Fargate makes it easy for you to focus on building your applications. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
+AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS). AWS Fargate makes it easy to focus on building your applications. Fargate eliminates the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
 Show less
 Q: Why should I use AWS Fargate?
-AWS Fargate enables you to focus on your applications. You define your application content, networking, storage, and scaling requirements. There is no provisioning, patching, cluster capacity management, or any infrastructure management required.
+AWS Fargate enables you to focus on your applications. You define your application content, networking, storage, and scaling requirements. There is no provisioning, patching, cluster capacity management, or infrastructure management required.
 Q: What use cases does AWS Fargate support?
-AWS Fargate supports all of the common container use cases, for example microservices architecture applications, batch processing, machine learning applications, and migrating on premise applications to the cloud.
-Q: What do I pay for using AWS Fargate?
+AWS Fargate supports all of the common container use cases including microservices architecture applications, batch processing, machine learning applications, and migrating on-premises applications to the cloud.
 Q: What is the pricing of AWS Fargate?
-With AWS Fargate, you pay only for the amount of vCPU and memory resources that your request for your containerized applications requests. The price per vCPU (region US East, N. Virginia) is $0.000011244 per second ($0.04048 per hour) and per GB memory is $0.000001235 per second ($0.004445 per hour). You pay only for what you use.
-vCPU and memory resources are calculated from the time your container images are pulled until the Amazon ECS task or EKS pod terminates, rounded up to the nearest second. A minimum charge of 1 minute applies.
+With AWS Fargate, you pay only for the amount of vCPU, memory, and storage resources consumed by your containerized applications.
+vCPU and memory resources are calculated from the time your container images are pulled until the Amazon ECS task or EKS pod terminates, rounded up to the nearest second. A minimum charge of 1 minute applies. 20 GB of ephemeral storage is available for all Fargate Tasks and Pods by default—you only pay for any additional storage that you configure.
 Fargate supports Spot and Compute Savings Plan pricing options just like with Amazon EC2 instances. You can find additional details on the pricing page.
 Q: How does AWS Fargate work with Amazon ECS and Amazon EKS?
-Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and Amazon EKS is fully managed Kubernetes Service. Both ECS and EKS use containers provisioned by Fargate to automatically scale, load balance, and manage scheduling of your containers for availability, providing an easier way to build and operate containerized applications.
+Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and Amazon Elastic Kubernetes Service (EKS) is a fully managed Kubernetes service. Both ECS and EKS use containers provisioned by Fargate to automatically scale, load balance, and optimize container availability through managed scheduling, providing an easier way to build and operate containerized applications.
 Q: How should I choose when to use AWS Fargate?
-Choose AWS Fargate to launch their containers without having to provision or manage EC2 instances. If you require greater control of your EC2 instances to support compliance and governance requirements or broader customization options, then use ECS or EKS without Fargate. Use EC2 for GPU workloads, which are not supported on Fargate today.
-Q: Are there any differences in feature support for Fargate support on ECS and EKS?
-Our goal is to keep the features consistent across the two orchestrators. However, at a given time, there could be some gaps due to feature deployment timelines. For example, currently EKS support for Fargate is not available for certain AWS services such as Amazon CloudWatch Container Insights. You can find additional details in documentation.
+Choose AWS Fargate for its isolation model and security. You should also select Fargate if you want to launch containers without having to provision or manage EC2 instances. If you require greater control of your EC2 instances or broader customization options, then use ECS or EKS without Fargate. Use EC2 for GPU workloads, which are not supported on Fargate today.
+Q: Are there any differences in feature support for AWS Fargate support on Amazon ECS and Amazon EKS?
+Our goal is to keep the features consistent across the two orchestrators. However, at a given time, there could be some gaps due to feature deployment timelines.
 Security and Compliance
+Q: To which compliance programs does AWS Fargate conform?
 Q: With which compliance programs does AWS Fargate conform?
 AWS Fargate meets the standards for PCI DSS Level 1, ISO 9001, ISO 27001, ISO 27017, ISO 27018, SOC 1, SOC 2, SOC 3, and HIPAA eligibility.
 For more information, visit our compliance pages.
+Q: Can I use AWS Fargate for Protected Health Information (PHI) and other HIPAA-regulated workloads?
 Q: Can I use AWS Fargate for Protected Health Information (PHI) and other HIPAA regulated workloads?
 Yes. AWS Fargate is HIPAA-eligible. If you have an executed Business Associate Addendum (BAA) with AWS, you can process encrypted Protected Health Information (PHI) using Docker containers deployed onto Fargate.
 For more information, please visit our page on HIPAA compliance. If you plan to process, store, or transmit PHI and do not have an executed BAA from AWS, please contact us for more information.
+Q: Can I use AWS Fargate for US Government-regulated workloads or for processing sensitive Controlled Unclassified Information (CUI)?
 Q: Can I use AWS Fargate for US Government-regulated workloads or processing sensitive Controlled Unclassified Information (CUI)?
 Yes. Fargate is available in AWS GovCloud (US) Regions. AWS GovCloud (US) is Amazon's isolated cloud infrastructure and services designed to address specific regulatory and compliance requirements of US Government agencies, as well as contractors, educational institutions, and other US customers that run sensitive workloads in the cloud. For a full list of AWS Regions where Fargate is available, please visit our Region table.
 For more information, visit our page on AWS GovCloud.
@@ -31,7 +33,8 @@ Service Level Agreement (SLA)
 Q: What does the AWS Fargate SLA guarantee?
 Our Compute SLA guarantees a Monthly Uptime Percentage of at least 99.99% for AWS Fargate.
 Q: How do I know if I qualify for a SLA Service Credit?
-You are eligible for a SLA credit for AWS Fargate under the Compute SLA if more than one Availability Zone in which you are running a task, within the same region has a Monthly Uptime Percentage of less than 99.99% during any monthly billing cycle.
+Q: How do I know if I qualify for an SLA Service Credit?
+You are eligible for an AWS Fargate SLA credit under the Compute SLA if more than one Availability Zone in which you are running a task, within the same region, has a Monthly Uptime Percentage of less than 99.99% during any monthly billing cycle.
 For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the Compute SLA details page.
 Get started using AWS Fargate
 Visit the Amazon ECS console

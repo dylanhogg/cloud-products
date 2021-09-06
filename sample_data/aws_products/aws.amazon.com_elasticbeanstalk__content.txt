@@ -26,7 +26,7 @@ Featured customers
 "Ebury can scale to meet the demands of its customer base without increasing the size of its infrastructure team.
 "Rachio uses AWS Elastic Beanstalk to deploy and manage its website, web apps, and API infrastructure.
 "AWS has allowed us to build a web app at large scale."
-"Samsung decided to deploy it's new Samsung Printing Apps center app store on AWS".
+"Samsung decided to deploy its new Samsung Printing Apps center app store on AWS".
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the AWS Management Console.

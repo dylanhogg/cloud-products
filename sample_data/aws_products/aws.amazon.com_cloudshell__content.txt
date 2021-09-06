@@ -6,8 +6,8 @@ AWS CloudShell - Access a Linux terminal in your browser with a single click (2:
 Benefits
 No extra credentials to manage
 CloudShell inherits the credentials of the user signed in to the AWS Management Console, so there's no need to spend extra effort managing credentials locally.
-Always up to date
-CloudShell provides a fully managed Amazon Linux 2 environment that has the latest versions of popular tools already installed and updated. You don't need to patch the environment or update the pre-installed tools.
+Automatically updated
+CloudShell provides a fully managed Amazon Linux 2 environment that has the recent versions of popular tools already installed and updated. You don't need to patch the environment or update the pre-installed tools.
 No cost
 CloudShell provides you with a browser-based shell to run scripts and commands. It includes 1 GB of persistent storage per Region at no extra cost to you. You only pay for the AWS resources you use with CloudShell to create and run your applications.
 Customizable

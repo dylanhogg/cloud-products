@@ -3,7 +3,9 @@ Detect abnormal equipment behavior by analyzing sensor data
 Get Started with Amazon Lookout for Equipment
 Successfully implementing predictive maintenance requires using the specific data collected from all of your machine sensors, under your unique operating conditions and then applying machine learning (ML) to enable highly accurate predictions. However, implementing an ML solution for your equipment can be difficult and time-consuming.
 Amazon Lookout for Equipment analyzes the data from the sensors on your equipment (e.g. pressure in a generator, flow rate of a compressor, revolutions per minute of fans), to automatically train a machine learning model based on just your data, for your equipment – with no ML expertise required. Lookout for Equipment uses your unique ML model to analyze incoming sensor data in real-time and accurately identify early warning signs that could lead to machine failures. This means you can detect equipment abnormalities with speed and precision, quickly diagnose issues, take action to reduce expensive downtime, and reduce false alerts.
-What is Amazon Lookout for Equipment? (1:43)
+1 month free
+with the AWS Free Tier
+Get started for free
 Benefits
 High accuracy results
 Amazon Lookout for Equipment uses data from your existing sensors to build a custom ML model specific to your equipment. It handles data from up to 300 sensors in one model, along with historical logs, to give you accurate alerts when your equipment behaves abnormally.

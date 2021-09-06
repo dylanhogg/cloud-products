@@ -11,7 +11,7 @@ VPC Flow Log and DNS Log analysis – GuardDuty continuously analyzes VPC Flow L
 There are no upfront charges and you pay only for the data analyzed.
 See Amazon GuardDuty pricing for details and pricing examples.
 Q: Does the estimated cost in the Amazon GuardDuty payer account show the total aggregated costs for linked accounts, or just that individual payer account?
-The estimated cost represents only the cost for the individual payer account. In the case of the Master account, you will only see the estimated cost for the Master account.
+The estimated cost represents only the cost for the individual payer account. In the case of the Administrator account, you will only see the estimated cost for the Administrator account.
 Q: Is there a free trial?
 Yes, any new account to Amazon GuardDuty can try the service for 30-days at no cost. You will have access to the full feature set and detections during the free trial. GuardDuty will display the volume of data processed and estimated daily average service charges for your account. This makes it easy for you to experience Amazon GuardDuty at no cost and forecast the cost of the service beyond the free trial.
 Q: What is the difference between Amazon GuardDuty and Amazon Macie?
@@ -28,7 +28,7 @@ Enabling GuardDuty
 Q: How do I enable Amazon GuardDuty?
 Amazon GuardDuty can be enabled with a few clicks in the AWS Management console. Once enabled, GuardDuty immediately starts analyzing continuous streams of account and network activity in near real-time and at scale. There are no additional security software, sensors, or network appliances to deploy or manage. Threat intelligence is pre-integrated into the service and are continuously updated and maintained.
 Q: Can I manage multiple accounts with Amazon GuardDuty?
-Yes, Amazon GuardDuty has a multiple account feature that allows you to associate and manage multiple AWS accounts from a single master account. When used, all security findings are aggregated to the administrator or Amazon GuardDuty master account for review and remediation. Amazon CloudWatch Events are also aggregated to the Amazon GuardDuty master account when using this configuration.
+Yes, Amazon GuardDuty has a multiple account feature that allows you to associate and manage multiple AWS accounts from a single administrator account. When used, all security findings are aggregated to the administrator or Amazon GuardDuty administrator account for review and remediation. Amazon CloudWatch Events are also aggregated to the Amazon GuardDuty administrator account when using this configuration.
 Q: What data sources does Amazon GuardDuty analyze?
 Amazon GuardDuty analyzes AWS CloudTrail, VPC Flow Logs, and AWS DNS logs. The service is optimized to consume large volumes of data for near real-time processing of security detections. GuardDuty gives you access to built-in detection techniques that are developed and optimized for the cloud and maintained and continuously improved upon by AWS Security.
 Q: How quickly does GuardDuty start working?

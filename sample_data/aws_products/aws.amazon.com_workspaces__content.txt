@@ -4,7 +4,7 @@ Get started with Amazon WorkSpaces
 Download the WorkSpaces Client
 Amazon WorkSpaces is a fully managed, persistent desktop virtualization service that enables your users to access the data, applications, and resources they need, anywhere, anytime, from any supported device. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. Amazon WorkSpaces is deployed within an Amazon Virtual Private Cloud (VPC), and no user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
 50 users free
-through July 31st, 2021 with the AWS Free Tier
+through October 31, 2021 with the AWS Free Tier
 Get started for free
 Benefits
 Increase Agility

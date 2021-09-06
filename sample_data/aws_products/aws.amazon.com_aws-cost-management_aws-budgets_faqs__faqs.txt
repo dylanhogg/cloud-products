@@ -1,0 +1,24 @@
+General AWS Budgets FAQs
+Q: What is AWS Budgets and how does it work?
+Using AWS Budgets, you can set a budget that alerts you when you exceed (or are forecasted to exceed) your budgeted cost or usage amount. You can also set alerts based on your RI or Savings Plans Utilization and Coverage using AWS Budgets.
+Learn more about AWS Budgets here, or reference the Monitoring your Usage and Costs user guide.
+Q: What kinds of dimensions can be used to create a budget?
+AWS Budgets gives you access to a number of filtering dimensions (i.e., AWS Service, Availability Zone, and Member Account), and allows you to create budgets that are tracked on a monthly, quarterly, or yearly cadence. Learn more about budgets dimensions and filters here.
+Q: How many budgets can I create?
+You can create up to 20,000 budgets. If you would like to increase your limit, please reach out to Customer Support. Learn more about AWS Budgets Limits and Restrictions.
+Q: How many alerts and subscribers can I add for each budget?
+For each budget, you are allowed to create up to five alerts. Each alert can be sent to 10 email subscribers and/or be published to an SNS topic.
+AWS Budgets Pricing FAQs
+Q: Is there a cost associated with using AWS Budgets?
+Budgets without actions are free. You can create 2 actions-enabled budgets for free. Any additional active budgets accrue a cost that can be reviewed here.
+Ready to get started?
+Control your AWS costs
+Learn how to control your AWS costs using the AWS Free Tier and AWS Budgets.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start experimenting with AWS Budgets.
+Sign up
+Start building in the console
+Get started with AWS Budgets in the AWS Console.
+Get started
+Page Content

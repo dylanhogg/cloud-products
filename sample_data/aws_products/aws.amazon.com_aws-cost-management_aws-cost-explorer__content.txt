@@ -12,7 +12,7 @@ Set a custom time period, and determine whether you would like to view your data
 Filter/Group your data
 Dig deeper into your data by taking advantage of filtering and grouping functionality, using a variety of available dimensions.
 Forecast future costs and usage
-Use forecasting to get a better idea of your what your costs and usage may look like in the future, so that you can plan ahead.
+Use forecasting to get a better idea of what your costs and usage may look like in the future, so that you can plan ahead.
 Save your progress
 Once you arrive at a helpful view, save your progress as a new report that you can refer back to in the future.
 Build custom applications

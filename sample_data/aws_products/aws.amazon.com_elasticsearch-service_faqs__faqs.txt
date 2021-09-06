@@ -155,7 +155,7 @@ Depending on the amount of data and the size of the cluster, upgrades can take a
 Q: Can I just upgrade the domain quickly without retaining any of the data?
 No. With in-place version upgrade, all the data in your cluster is also restored as part of the upgrade process. If you only wish to upgrade the domain alone, you can take a snapshot of your data, delete all your indexes from the domain and then trigger an in-place version upgrade. Alternatively, you can create a separate domain with the newer version and then restore your data to that domain.
 Q: Can I downgrade to previous version if I’m not comfortable with the new version?
-No. If you need to downgrade to an older version, you must take a snapshot of your upgraded domain and restore it to a domain that uses the older Elasticsearch version.
+No. If you need to downgrade to an older version, contact AWS Support to restore the automatic, pre-upgrade snapshot on a new domain. If you took a manual snapshot of the original domain, you can perform this step yourself.
 Security
 Q: How can I secure my Amazon Elasticsearch Service domain?
 Amazon Elasticsearch Service provides multiple security features and is HIPAA eligible and compliant with PCI DSS, SOC, ISO, and FedRamp standards, so that you can meet your security and compliance needs. Access to Amazon Elasticsearch Service management APIs for operations such as creating and scaling domains are controlled with AWS Identity and Access Management (IAM) policies.
@@ -279,6 +279,7 @@ i2, i3 family
 r3, r4, r5 family
 m4, m5 family
 c4, c5, family
+Graviton family
 Q: What are the instance types that do not support cross-cluster search?
 Cross-cluster search is not supported on the t2 and m3 family instances due to technical limitation.
 Q: Can domains in two different AWS accounts participate in cross-cluster search?

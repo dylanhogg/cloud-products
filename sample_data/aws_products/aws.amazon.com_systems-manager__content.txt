@@ -2,7 +2,9 @@ AWS Systems Manager
 Gain operational insights and take action on AWS resources
 Get started with AWS Systems Manager
 AWS Systems Manager is the operations hub for AWS. Systems Manager provides a unified user interface so you can track and resolve operational issues across your AWS applications and resources from a central place. With Systems Manager, you can automate operational tasks for Amazon EC2 instances or Amazon RDS instances. You can also group resources by application, view operational data for monitoring and troubleshooting, implement pre-approved change work flows, and audit operational changes for your groups of resources. Systems Manager simplifies resource and application management, shortens the time to detect and resolve operational problems, and makes it easier to operate and manage your infrastructure at scale.
-What is AWS Systems Manager? (1:42)
+12 features free
+with the AWS Free Tier
+Get started for free
 Benefits
 Shorten the time to resolve operational issues
 AWS Systems Manager helps you quickly view operational data for groups of resources, so you can quickly identify any issues that might impact applications that use those resources. You can group your resources by applications, application layers, production versus development environments, or anything else you choose. Systems Manager presents the operational data for your resource groups in a single, easy-to-read dashboard so you don't have to navigate to other AWS consoles. For example, if you have an application that uses Amazon EC2, Amazon EKS, Amazon S3, and Amazon RDS, you can use Systems Manager to create a resource group for the application and easily see the software installed on your Amazon EC2 instances, any changes in your Amazon S3 objects, or database instances that have stopped.

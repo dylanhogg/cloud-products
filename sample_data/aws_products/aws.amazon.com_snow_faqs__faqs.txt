@@ -26,6 +26,8 @@ Learn more about migrating to AWS here
 Learn more about which data migration tool is right for you
 Q: What AWS Regions are supported?
 Snow Family services are available for use in specific AWS Regions. See the Regional Service Availability pages, for more information.
+Q: What safety and compliance guidelines should I be aware of?
+Download the AWS Snow Family Safety and Compliance Guideline for best practices and compliance statements based on your region.
 Learn more about AWS Snow Family
 Visit the Snow Family page
 Ready to build?

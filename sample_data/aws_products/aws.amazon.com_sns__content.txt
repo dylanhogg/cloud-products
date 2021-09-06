@@ -3,10 +3,11 @@ Fully managed pub/sub messaging, SMS, email, and mobile push notifications
 Get started for free
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing, and Amazon Kinesis Data Firehose. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
-TUTORIAL:  Learn how to use SNS in minutes
+1 million requests free
+with the AWS Free Tier
 Benefits
 Modernize and decouple your applications
-Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
+Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy, and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
 Send messages directly to millions of users
 Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP). Amazon SNS provides redundancy across multiple SMS providers and allows you to push mobile notifications using a single endpoint for all platforms.
 Reliably deliver messages
@@ -24,7 +25,7 @@ Mobile Push
 Case studies
 AWS Services Used: Amazon SNS, AWS Lambda
 AWS Services Used: Amazon SNS, Amazon SQS
-AWS Services Used: Amazon SNS, Amazon SQS, Amazon EC2, Amazon S3.
+AWS Services Used: Amazon SNS, Amazon SQS, Amazon EC2, Amazon S3
 AWS Services Used: Amazon SNS, Amazon Route 53, Amazon CloudFront, Amazon S3, Amazon EC2, Amazon CloudWatch, Amazon RDS, AWS CloudFormation
 PlayOn! Sports is one of the leading high school sports media companies in the US. They operate a comprehensive technology platform, enabling high-quality, low-cost productions of live sports events. Their serverless video processing pipeline illustrates the fanout messaging pattern and options for its inclusion in a serverless architecture, using Amazon SNS and AWS Lambda.
 Read the blog

@@ -2,7 +2,10 @@ Elastic Load Balancing
 Distribute network traffic to improve the scalability of your applications
 Get started with Elastic Load Balancing
 Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, IP addresses, Lambda functions, and virtual appliances. It can handle the varying load of your application traffic in a single Availability Zone or across multiple Availability Zones. Elastic Load Balancing offers four types of load balancers that all feature the high availability, automatic scaling, and robust security necessary to make your applications fault tolerant.
-AWS re:Invent 2019: Get the most from Elastic Load Balancing for different workloads (53:59)
+750 hours free
+between Classic and Application load balancers
+per month with the AWS Free Tier
+Get started for free
 Application Load Balancer
 Application Load Balancer is best suited for load balancing of HTTP and HTTPS traffic and provides advanced request routing targeted at the delivery of modern application architectures, including microservices and containers. Application Load Balancer routes traffic to targets within Amazon VPC based on the content of the request.
 Learn more
@@ -32,10 +35,6 @@ Building a hybrid cloud
 Elastic Load Balancing offers the ability to load balance across AWS and on-premises resources, using a single load balancer. You can achieve this by registering all of your resources to the same target group and associating the target group with a load balancer. Alternatively, you can use DNS-based weighted load balancing across AWS and on-premises resources across two load balancers, with one load balancer for AWS and another for on-premises resources.
 Scaling third-party virtual appliances
 When migrating to the cloud, some customers look to retain their existing appliances, and the skills and processes they have built around them. Using Gateway Load Balancer, customers deploy appliances from their preferred vendor while taking advantage of the scale and flexibility of running in the cloud.
-Customers
-Code.org is a nonprofit dedicated to expanding access to computer science in schools and increasing participation by women and underrepresented minorities. Its annual Hour of Code event aims to engage students in coding and computer science.
-“For most students, the Hour of CodeTM is their first opportunity to program a computer. This experience needs to be fast and flawless for Code.org to achieve its mission to reach and engage underserved classrooms. Application Load Balancer is critical to the success of the event, ensuring high availability, scalability, and elasticity as traffic increases 400% the morning the event starts.”
-Marina Taylor - VP of Product, Code.org
 Blog posts and articles
 Date
 1

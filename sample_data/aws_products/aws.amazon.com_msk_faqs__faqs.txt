@@ -174,8 +174,7 @@ Q: How do I balance partitions across brokers?
 You can use Cruise Control for automatically rebalancing partitions to manage I/O heat. See the  Cruise Control documentation for more information. Alternatively, you can use the Kafka Admin API kafka-reassign-partitions.sh to reassign partitions across brokers.
 Pricing and availability
 Q: How does Amazon MSK pricing work?
-Pricing is based is per Apache Kafka broker-hour, and per provisioned storage-hour. AWS data transfer rates apply for data transfer in and out of Amazon MSK. For more information, visit our
-pricing page.
+Pricing is per broker-hour and per GB-month of storage provisioned. AWS data transfer rates apply for data transfer in and out of Amazon MSK. For more information, visit our pricing page.
 Q: Do I pay for data transfer as a result of data replication?
 No, all in-cluster data transfer is included with the service at no additional charge.
 Q: What AWS regions offer Amazon MSK?

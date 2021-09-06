@@ -22,8 +22,8 @@ You pay very low rates and only for the resources you actually consume. In addit
 Featured RDS customers
 View all Amazon RDS case studies
 Featured RDS Partners
-Apps Associate is an APN Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives. Join our webinar to hear how Apps Associates helps customers move to Amazon Aurora.
-Rackpace is an APN Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements. Read the ebook to learn how Rackspace helped TotalTrax automate processes and meet increasing demand.
+Apps Associate is an AWS Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives. Join our webinar to hear how Apps Associates helps customers move to Amazon Aurora.
+Rackpace is an AWS Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements. Read the ebook to learn how Rackspace helped TotalTrax automate processes and meet increasing demand.
 Use cases
 Web and mobile applications
 Web and mobile applications that are built to operate at very large scale need a database with high throughput, massive storage scalability, and high availability. Amazon RDS fulfills the needs of such highly demanding applications with room for future growth. Since Amazon RDS does not have any licensing constraints, it perfectly fits the variable usage pattern of these applications.

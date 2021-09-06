@@ -4,6 +4,9 @@ Get started with AWS Application Discovery Service
 AWS Application Discovery Service helps enterprise customers plan migration projects by gathering information about their on-premises data centers.
 Planning data center migrations can involve thousands of workloads that are often deeply interdependent. Server utilization data and dependency mapping are important early first steps in the migration process. AWS Application Discovery Service collects and presents configuration, usage, and behavior data from your servers to help you better understand your workloads.
 The collected data is retained in encrypted format in an AWS Application Discovery Service data store. You can export this data as a CSV file and use it to estimate the Total Cost of Ownership (TCO) of running on AWS and to plan your migration to AWS. In addition, this data is also available in AWS Migration Hub, where you can migrate the discovered servers and track their progress as they get migrated to AWS.
+1,000 applications free
+per account with the AWS Free Tier
+Get started for free
 Benefits
 Reliable Discovery for Migration Planning
 AWS Application Discovery Service collects server specification information, performance data, and details of running processes and network connections. This data can be used to perform a detailed cost estimate in advance of migrating to AWS, or to group servers into applications for planning purposes.

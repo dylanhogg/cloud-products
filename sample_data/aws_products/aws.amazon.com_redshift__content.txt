@@ -5,14 +5,14 @@ Get Started
 Analyze all of your data
 No other data warehouse makes it as easy to gain new insights from all your data. With Redshift, you can query and combine exabytes of structured and semi-structured data across your data warehouse, operational database, and data lake using standard SQL. Redshift lets you easily save the results of your queries back to your S3 data lake using open formats, like Apache Parquet, so that you can do additional analytics from other analytics services like Amazon EMR, Amazon Athena, and Amazon SageMaker.
 Learn more about taking the lake house approach by integrating with your Amazon S3 data lake
-"By leveraging Redshift's ability to query data directly in our Amazon S3 data lake, we have been able to easily integrate new data sources in hours, not days or weeks.  This has not only reduced our time to insight, but helped us control our infrastructure costs."
-- Elliott Cordo
-VP of Data Analytics, Equinox Fitness
+750 dc.2large node hours free
+for the first 2 months with the AWS Free Tier
+Get started for free
 UP TO 3X
 BETTER PRICE PERFORMANCE
 Performance at any scale
-Amazon Redshift has up to 3x better price-performance than other enterprise cloud data warehouses, and the price-performance advantage improves as your data warehouse grows from gigabytes to exabytes.
-Amazon Redshift’s architecture has been completely reinvented to take advantage of AWS designed-hardware and machine learning (ML) to deliver the best price performance at any scale. This includes using the AWS Nitro System to accelerate data compression and encryption, ML techniques to analyze queries, and graph optimization algorithms to automatically organize and store data for faster query results.
+Amazon Redshift has up to 3x better price-performance than other cloud data warehouses, and the price-performance advantage improves as your data warehouse grows from gigabytes to exabytes.
+Amazon Redshift takes advantage of AWS designed-hardware and machine learning (ML) to deliver the best price performance at any scale. This includes using the AWS Nitro System to accelerate data compression and encryption, ML techniques to analyze queries, and graph optimization algorithms to automatically organize and store data for faster query results.
 Learn more about the latest performance benchmarks
 Experience the next generation of Redshift with AQUA (Advanced Query Accelerator)
 AQUA is a new distributed and hardware accelerated cache that allows Redshift queries to run up to 10x faster than other enterprise cloud data warehouses by automatically boosting certain operations. AQUA accelerates scan, filtering, and aggregation operations today, and will accelerate more operations in the future.
@@ -23,6 +23,9 @@ Learn more about Redshift customers
 "Because of the performance and scale Redshift provides, we have increased our manufacturing efficiency and reduced the time needed to gather and prepare data for regulatory submissions by a factor of five."
 - Jim Silva
 Director Business Partner, Pfizer Inc.
+"By leveraging Redshift's ability to query data directly in our Amazon S3 data lake, we have been able to easily integrate new data sources in hours, not days or weeks.  This has not only reduced our time to insight, but helped us control our infrastructure costs."
+- Elliott Cordo
+VP of Data Analytics, Equinox Fitness
 Migrate your on-premises data warehouse to Amazon Redshift
 Learn more about modernizing your data warehouse.
 Jack in the Box migrated off of Oracle and Microsoft SQL Server to Amazon Relational Database Service (RDS) and Amazon Redshift
