@@ -15,8 +15,9 @@ from urllib.parse import urljoin, urlparse
 class AwsCrawler(base.Crawler):
     def __init__(self):
         self.base_url = "https://aws.amazon.com"
-        self.seed_url = self.base_url + "/products/"
+        #self.seed_url = self.base_url + "/products/"
         # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
+        # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all&awsm.page-aws-products-all=2"
         super(AwsCrawler, self).__init__()
 
     @staticmethod
@@ -74,7 +75,7 @@ class AwsCrawler(base.Crawler):
         Get child pages from seed url.
         """
         results = []
-        tags = soup.find_all("li", attrs={"class": "aws-card-item"})
+        tags = soup.find_all("div", attrs={"class": "m-card-container"})
 
         # Example html snippet, 21 Feb 2019:
         # <div class="lb-content-item">
@@ -84,17 +85,20 @@ class AwsCrawler(base.Crawler):
         crawled = []
         for tag in tags:
             a = tag.find("a")
-            if a["href"].startswith("http"):
-                # Ignore beta products linking to external addresses
-                continue
+            # if a["href"].startswith("http"):
+            #     # Ignore beta products linking to external addresses
+            #     # 2022: all start with http??
+            #     continue
 
             rel_href = urlparse(a["href"]).path
             abs_href = urljoin(base_url, rel_href)
             abs_href_faq = urljoin(base_url, rel_href + "faqs/")
             code = rel_href.replace("/", "").strip().lower()
-            name = a.contents[0].strip()
+            name = a.find("div", attrs={"class": "m-headline"}).text.strip()
             std_name = name.lower().replace("amazon", "aws")
-            desc = a.contents[1].text.strip()
+            desc = a.find("div", attrs={"class": "m-desc"}).text.strip()
+            # category = a.find("div", attrs={"class": "m-category"}).text.strip()  # TODO: new
+            # flag = a.find("div", attrs={"class": "m-flag"}).text.strip()  # TODO: new
             product = Product(name, std_name, code, rel_href, abs_href, abs_href_faq, base_url, seed_url, desc)
 
             if std_name in crawled:
@@ -145,7 +149,7 @@ class AwsCrawler(base.Crawler):
     options = Options()
     options.headless = True
 
-    def get_products(self, cache_path=None, use_cache=True) -> List[Product]:
+    def get_products(self, cache_path=None, use_cache=True, override_seed_url=None) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
 
@@ -157,7 +161,12 @@ class AwsCrawler(base.Crawler):
 
         loaded_from_cache = False  # TODO: caching again
         driver.maximize_window()
-        driver.get(self.seed_url)
+
+        if override_seed_url:
+            driver.get(override_seed_url)
+        else:
+            raise Exception("TEMP: self.seed_url removed")
+            # driver.get(self.seed_url)
 
         wait = self.WebDriverWait(driver, 40)
         wait.until(self.expected_conditions.visibility_of_element_located((self.By.CSS_SELECTOR, ".m-card-main")))  # TODO: review class m-card-main
@@ -168,15 +177,16 @@ class AwsCrawler(base.Crawler):
         driver.quit()  # TODO: reuse driver for other pages
 
         # TODO: fix this and use paging...
-        print(seed_soup)
+        # print(seed_soup)
 
-        if "alexa" in source.lower():
-            print("FOUND ALEXA!")
-        else:
-            print("X NO ALEXA :(")
+        # if "alexa" in source.lower():
+        #     print("FOUND ALEXA!")
+        # else:
+        #     print("X NO ALEXA :(")
 
         # Parse product links from seed index page
-        child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
+        # child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
+        child_pages = self._get_child_pages(seed_soup, self.base_url, override_seed_url)  # TODO: handle override_seed_url
 
         return sorted(child_pages)
 
