@@ -1,0 +1,40 @@
+« Management and Governance
+AWS Resilience Hub
+Prepare and protect your applications from disruptions
+Get started with AWS Resilience Hub
+Try for free
+Continuously validate and track application resilience to reduce outages.
+Evaluate resilience targets (Recovery Time Objective and Recovery Point Objective).
+Identify and resolve issues before they occur in production.
+Optimize business continuity while reducing recovery costs.
+How it works
+AWS Resilience Hub provides a central place to define, validate, and track the resilience of your applications on AWS.
+Close
+Click to enlarge
+Features
+Describe
+Describe your applications using AWS CloudFormation, including cross-region and cross-account stacks. Applications can also be defined using Resource Groups or chosen from applications that are already defined in the Service Catalog AppRegistry.
+Define
+Define the resilience policies for your applications. These policies include RTO and RPO targets for applications, infrastructure, Availability Zone, and Region disruptions.
+Assess
+AWS Resilience Hub’s assessment uses best practices from the AWS Well-Architected Framework to analyze the components of an application and uncover potential resilience weaknesses. These can be caused by incomplete infrastructure setup, misconfigurations, or situations where additional configuration improvements are needed.
+Recommend
+AWS Resilience Hub provides actionable recommendations to improve resilience. The resilience assessment also generates code snippets that help you create recovery procedures as AWS Systems Manager documents for your applications, referred to as Standard Operating Procedures (SOPs). AWS Resilience Hub generates a list of recommended Amazon CloudWatch monitors and alarms to help the operator quickly identify any change to the application’s resilience posture once deployed.
+Validate
+After the application and SOPs have been updated to incorporate recommendations from the resilience assessment, you can use AWS Resilience Hub to test and verify that your application can meet its resilience targets before releasing it into production. AWS Resilience Hub is integrated with AWS Fault Injection Simulator (FIS), a chaos engineering service, to provide fault-injection simulations of real-world failures to validate that the application recovers within the defined resilience targets. This can include network errors or too many open connections to a database. AWS Resilience Hub also provides APIs so you can integrate its resilience assessment and testing into your CI/CD pipelines for ongoing resilience validation. Integrating resilience validation into CI/CD pipelines helps ensure that changes to the application’s underlying infrastructure do not compromise resilience.
+View and track
+AWS Resilience Hub provides a comprehensive view of your overall application portfolio resilience status through its dashboard. To help you track the resilience of applications, AWS Resilience Hub aggregates and organizes resilience events (e.g., unavailable database or failed resilience validation), alerts, and insights from services like Amazon CloudWatch, and AWS Fault Injection Simulator. AWS Resilience Hub also generates a resilience score, a scale that indicates the level of implementation for recommended resilience tests, alarms and recovery SOPs. This score can be used to measure resilience improvements over time.
+Use cases
+Uncover potential weaknesses
+Uses fault-injection simulations of real-world failures to help validate the effectiveness of recovery standard operating procedures (SOP) and alarms.
+Protect mission-critical applications
+Provides actionable recommendations to improve resilience and helps you create recovery procedures.
+Help meet contractual and regulatory requirements
+Keeps an audit trail of events during planned and unplanned outages, helping meet compliance and regulatory requirements.
+How to get started
+Sign into your account
+Try AWS Resilience Hub for free
+Visit the free tier page
+Learn more about pricing
+Visit the Pricing page
+Explore more of AWS

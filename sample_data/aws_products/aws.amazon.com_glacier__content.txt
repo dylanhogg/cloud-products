@@ -1,0 +1,81 @@
+Products
+Storage
+Amazon S3
+Storage Classes
+Amazon S3 Glacier storage classes
+Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access
+Get started with Amazon S3
+The Amazon S3 Glacier storage classes are purpose-built for data archiving, providing you with the highest performance, most retrieval flexibility, and the lowest cost archive storage in the cloud. All S3 Glacier storage classes provide virtually unlimited scalability and are designed for 99.999999999% (11 nines) of data durability. The S3 Glacier storage classes deliver options for the fastest access to your archive data and the lowest-cost archive storage in the cloud.
+You can choose from three archive storage classes optimized for different access patterns and storage duration. For archive data that needs immediate access, such as medical images, news media assets, or genomics data, choose the S3 Glacier Instant Retrieval storage class, an archive storage class that delivers the lowest cost storage with milliseconds retrieval. For archive data that does not require immediate access but needs the flexibility to retrieve large sets of data at no cost, such as backup or disaster recovery use cases, choose S3 Glacier Flexible Retrieval (formerly S3 Glacier), with retrieval in minutes or free bulk retrievals in 5-12 hours. To save even more on long-lived archive storage such as compliance archives and digital media preservation, choose S3 Glacier Deep Archive, the lowest cost storage in the cloud with data retrieval within twelve hours.
+Introduction to the Amazon S3 Glacier Storage Classes (1:30)
+S3 Glacier storage classes getting started tutorial
+Benefits
+Retrievals as quick as milliseconds
+The Amazon S3 Glacier storage classes provide retrieval options from milliseconds to hours to fit your performance needs. The S3 Glacier Instant Retrieval storage class delivers milliseconds retrieval for archives that need immediate access, such as medical images or news media assets. S3 Glacier Flexible Retrieval provides three retrieval options: expedited retrievals that typically complete in 1–5 minutes, standard retrievals that typically complete in 3–5 hours, and free bulk retrievals that return large amounts of data typically in 5–12 hours. The Amazon S3 Glacier Deep Archive storage class provides two retrieval options ranging from 12-48 hours.
+Learn more about Amazon S3 Glacier retrieval options
+Learn more about Amazon S3 Glacier Deep Archive retrieval options
+Unmatched durability and scalability
+The Amazon S3 Glacier storage classes run on the world’s largest global cloud infrastructure with virtually unlimited scalability and are designed for 99.999999999% (11 nines) of durability. Data is redundantly stored across multiple Availability Zones that are physically separated within an AWS Region.
+Learn more about the AWS Global Cloud Infrastructure
+Most comprehensive security and compliance capabilities
+The S3 Glacier storage classes offer sophisticated integration with AWS CloudTrail to log, monitor, and retain storage API call activities for auditing, and they support three different forms of encryption. These storage classes also support security standards and compliance certifications, including SEC Rule 17a-4, PCI-DSS, HIPAA/HITECH, FedRAMP, EU GDPR, and FISMA. Amazon S3 Object Lock enables WORM storage capabilities, helping satisfy compliance requirements for virtually every regulatory agency around the globe.
+Learn more about AWS Security
+Learn more about AWS Compliance
+Lowest cost
+All S3 Glacier storage classes are designed to be the lowest-cost storage for specific access patterns, allowing you to archive large amounts of data at a very low cost. This makes it feasible to retain all the data you want for use cases like data lakes, analytics, Internet of Things (IoT), machine learning, compliance, and media asset archiving. You pay only for what you need, with no minimum commitments or upfront fees.
+Learn more about Amazon S3 pricing details
+Most supported by partners, vendors, and AWS services
+In addition to integration with most AWS services, Amazon S3 object storage services include tens of thousands of consulting, systems integrator, and independent software vendor partners, with more joining every month. AWS Partner Network partners have adapted their services and software to work with Amazon S3 storage classes for solutions such as backup and recovery, archiving, and disaster recovery. No other cloud provider has more partners with solutions that are pre-integrated to work with their service.
+Learn more about AWS Storage Partners
+Consistent across your data lifecycle
+All the S3 Glacier storage classes are available in all AWS Regions, use the standard S3 APIs, and support all S3 features—such as S3 Storage Lens to view storage usage and activity metrics, Server-Side Encryption for object data, S3 Object Lock to prevent accidental deletion, and AWS PrivateLink to access S3 through a private endpoint in a VPC. You can also use S3 Lifecyle to transition data to any of the S3 storage classes to lower costs as data becomes infrequently or rarely accessed.
+How it works - The S3 Glacier storage classes
+Overview
+Amazon S3 Glacier Instant Retrieval storage class
+Amazon S3 Glacier Flexible Retrieval storage class
+Amazon S3 Glacier Deep Archive storage class
+The Amazon S3 Glacier storage classes are purpose-built for data archiving, providing you with the highest performance, most retrieval flexibility, and the lowest cost archive storage in the cloud. You can now choose from three archive storage classes optimized for different access patterns and storage duration.
+S3 Glacier Instant Retrieval delivers the lowest cost storage, up to 68% lower cost (than S3 Standard-Infrequent Access), for long-lived data that is accessed once per quarter and requires millisecond retrieval. It is designed for rarely accessed data that still needs immediate access in performance-sensitive use cases like image hosting, online file-sharing applications, medical imaging and health records, news media assets, and satellite and aerial imaging. S3 Glacier Instant Retrieval offers the high durability, high throughput, and similar low latency of S3 Standard-IA, with a lower per-GB storage price and slightly higher per-GB retrieval price. S3 Glacier Instant Retrieval is designed for 99.999999999% (11 9s) of data durability and 99.9% availability by redundantly storing data across multiple physically separated AWS Availability Zones in a given year.
+S3 Glacier Flexible Retrieval delivers low-cost storage, up to 10% lower cost (than S3 Glacier Instant Retrieval), for archive data that is accessed 1-2 times per year and is retrieved asynchronously. S3 Glacier Flexible Retrieval (formerly S3 Glacier) is the ideal storage class for archive data that does not require immediate access but needs the flexibility to retrieve large sets of data at no cost, such as backup or disaster recovery use cases. S3 Glacier Flexible Retrieval delivers the most flexible retrieval options that balance cost with access times ranging from minutes to hours and with free bulk retrievals. It is an ideal solution for backup, disaster recovery, offsite data storage needs, and for when some data needs to occasionally retrieved in minutes, and you don’t want to worry about costs. S3 Glacier Flexible Retrieval is designed for 99.999999999% (11 9s) of data durability and 99.99% availability by redundantly storing data across multiple physically separated AWS Availability Zones in a given year.
+S3 Glacier Deep Archive delivers the lowest cost storage, up to 75% lower cost (than S3 Glacier), for long-lived archive data that is accessed less than once per year and is retrieved asynchronously. At just $0.00099 per GB-month (or $1 per TB-month), S3 Glacier Deep Archive offers the lowest cost storage in the cloud, at prices significantly lower than storing and maintaining data in on-premises tape or archiving data off-site. S3 Glacier Deep Archive is a cost-effective and easy-to-manage alternative to tape. It is designed for customers — particularly those in the financial services, healthcare, media and entertainment and public sector — that retain data sets for 7-10 years or longer to meet customer needs and regulatory compliance requirements. S3 Glacier Deep Archive is designed for 99.999999999% (11 9s) of data durability and 99.99% availability by redundantly storing data across multiple physically separated AWS Availability Zones in a given year.
+Use cases
+Media asset workflows
+Media and entertainment assets such as video and news footage require durable storage and can grow to many petabytes over time. Much of this data needs to be available immediately for breaking news events, video rendering, or content development. The Amazon S3 Glacier Instant Retrieval storage class allows you to archive older media content affordably while still making it available in milliseconds when it’s needed. To save even more on storage costs for media archives that don’t require milliseconds access, you can use S3 Glacier or S3 Glacier Deep Archive.
+Healthcare information archiving
+Hospital systems need to retain petabytes of patient records (such as LIS, PACS, and EHR) for decades to meet regulatory requirements. The Amazon S3 Glacier and S3 Glacier Deep Archive storage classes help you reliably archive patient record data securely at a very low cost. The Amazon S3 Glacier Instant Retrieval storage class is ideal for medical images or genomics, where milliseconds retrieval is required.
+Regulatory, compliance, and business policy archiving
+Many enterprises like financial services and healthcare must retain regulatory and compliance archives for extended durations. Amazon S3 Object Lock helps you set compliance controls to meet your objectives, such as SEC Rule 17a-4(f). Company policies can also require record retention of several years or indefinitely for data such as finance, tax, HR, or email records that can use S3 Glacier storage classes for a long-term content archive.
+Scientific data storage
+Research organizations generate, analyze, and archive vast amounts of data, such as for genomics or to train machine learning models. With Amazon S3 Glacier Instant Retrieval storage class, you avoid the complexities of hardware and facility management and capacity planning, with the lowest-cost storage and milliseconds retrieval.
+Digital preservation
+Libraries and government agencies face data integrity challenges in their digital preservation efforts. Unlike traditional systems, which can require laborious data verification and manual repair, Amazon S3 performs regular, systematic data integrity checks and is built to be automatically self-healing. Using S3 Lifecyle, you can transition data to lower-cost storage classes to optimize your savings.
+Long-term backup retention
+As part of backup plans, businesses store large data backups for many years on expensive on-premises storage systems. The S3 Glacier storage classes deliver the lowest-cost archive storage for these backups, while also making the data available when needed.
+Tape replacement
+On-premises or offsite tape libraries can lower storage costs but require large upfront investments and specialized maintenance. The Amazon S3 Glacier storage classes have no upfront costs and eliminate the cost and burden of maintenance, while providing faster access than on-premises tape archives.
+Case studies
+Rock & Roll Hall of Fame preserves rock music history and modernizes on AWS.
+Read the case study
+Qube Cinema cuts costs by 80% with archival on Amazon S3 Glacier.
+Reuters builds easily accessible large-scale news archives on Amazon S3 Glacier.
+Read the blog
+BandLab decreases costs and improves availability using Amazon S3 Glacier.
+Joyn readies exclusive content for audiences with Amazon S3 Intelligent-Tiering and Amazon S3 Glacier.
+Amazon S3 Glacier blogs
+There are no Amazon S3 blogs available at this time, please visit AWS blogs to view all storage blog content.
+To read more Amazon S3 Glacier blogs, visit AWS Storage blogs.
+Get started with Amazon S3 Glacier storage classes
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Learn with hands-on tutorials
+Begin storing your archive datasets in the Amazon S3 Glacier storage classes.
+View tutorial
+Start building with Amazon S3 Glacier storage classes
+Dig into the Amazon S3 user guide to get started.
+Read documentation
+Learn more about Amazon S3 features
+Visit the features page
+Get started with Amazon S3 Glacier
+Have more questions?
+Contact us

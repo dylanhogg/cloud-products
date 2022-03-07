@@ -1,0 +1,28 @@
+General AWS Cost Explorer FAQs
+Q: What are the benefits of using AWS Cost Explorer?
+AWS Cost Explorer lets you explore your AWS costs and usage at both a high level and at a detailed level of analysis, and empowering you to dive deeper using a number of filtering dimensions (e.g., AWS Service, Region, Member Account, etc.) AWS Cost Explorer also gives you access to a set of default reports to help you get started, while also allowing you to create custom reports from scratch.
+For more information about the breadth of AWS Cost Explorer features, please click here or refer to the Managing your Usage and Costs user guide.
+Q: What kinds of default reports are available?
+AWS Cost Explorer provides a set of default reports to help you get familiar with the available filtering dimensions and types analyses that can be done using AWS Cost Explorer. These reports include a breakdown of your top 5 cost-accruing AWS services, and an analysis of your overall Amazon EC2 usage, an analysis of the total costs of your member accounts, and the Reserved Instance Utilization and Coverage reports.
+To access these default reports, please access Cost Explorer.
+For more information about the RI Utilization report and the RI Coverage reports, please reference the Reserved Instance Reporting FAQ section.
+Q: Can I create and save custom AWS Cost Explorer reports?
+Yes. You can currently save up to 50 custom AWS Cost Explorer reports.
+Q: What can I do with the AWS Cost Explorer API?
+The AWS Cost Explorer API is the low-latency, ad-hoc query service that powers AWS Cost Explorer, and is accessible via a command-line interface and supported AWS SDKs. Using the AWS Cost Explorer API, you can build custom, interactive cost management applications without having to set up and maintain any additional infrastructure.
+The AWS Cost Explorer API incurs a charge of $.01 per request. Please note that if your result set is paginated each page counts as a separate request.
+To learn more about the AWS Cost Explorer API, please reference the technical documentation.
+Q: When should I use AWS Compute Optimizer and when should I use AWS Cost Explorer?
+You should use AWS Cost Explorer if you want to identify under-utilized EC2 instances that may be downsized on an instance by instance basis within the same instance family, and you want to understand the potential impact on your AWS bill by taking into account your RIs and Savings Plans. Cost Explorer offers recommendations for all commercial regions (outside of China) and supports the A, T, M, C, R, X, Z, I, D, H instance families.
+You should use AWS Compute Optimizer if you want to look at instance type recommendations beyond downsizing within an instance family. You can use AWS Compute Optimizer to get downsizing recommendations within or across instance families, upsizing recommendations to remove performance bottlenecks, and recommendations for EC2 instances that are parts of an Auto Scaling group. AWS Compute Optimizer provides you additional capabilities to enhance recommendation quality and the user experience, such as using machine learning to identify workload types and automatically choose workload-specific recommendation methodology for them. You should also use AWS Compute Optimizer if you want to understand the performance risks and how your workload would perform on various EC2 instance options to evaluate the price-performance trade-off for your workloads. AWS Compute Optimizer is available in US East (N. Virginia), US East (Ohio), US West (Oregon), EU (Ireland), and South America (Sao Paulo), and supports the M, C, R, T and X instance families.
+Ready to get started?
+Control your AWS costs
+Learn how to control your AWS costs using the AWS Free Tier and AWS Budgets.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start experimenting with AWS.
+Sign up
+Get started with Cost Explorer
+Easily understand your AWS costs and usage.
+Get started
+Page Content

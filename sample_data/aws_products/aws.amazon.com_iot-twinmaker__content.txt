@@ -1,0 +1,35 @@
+« AWS IoT
+AWS IoT TwinMaker (Preview)
+Optimize operations by easily creating digital twins of real-world systems
+Get started with AWS IoT TwinMaker
+Contact us
+50 million API calls per month
+for 12 months with the AWS Free Tier
+Use your existing IoT, video, and enterprise application data where it already lives—without needing to reingest or move the data to another location.
+Save time with an automatically generated knowledge graph that binds your data sources to virtual replicas of physical systems to accurately model real-world environments.
+Get an immersive 3D view of your systems and operations to optimize efficiency, increase production, and improve performance.
+How it works
+AWS IoT TwinMaker makes it easier for developers to create digital twins of real-world systems such as buildings, factories, industrial equipment, and production lines. AWS IoT TwinMaker provides the tools you need to build digital twins to help you optimize building operations, increase production output, and improve equipment performance. With the ability to use existing data from multiple sources, create virtual representations of any physical environment, and combine existing 3D models with real-world data, you can now harness digital twins to create a holistic view of your operations faster and with less effort.
+Close
+Click to enlarge
+Use cases
+Improve field operations in manufacturing plants
+Quickly pinpoint and address equipment and process anomalies from the plant floor to improve worker productivity and efficiency.
+Increase equipment uptime in remote facilities
+Remotely diagnose equipment issues with immediate access to all relevant operational data to enable faster decision-making.
+Enhance the tenant experience in commercial buildings
+Monitor live and historical temperature, occupancy, and air-quality data within rooms and open spaces to improve occupant comfort.
+Customers
+Invista uses AWS IoT TwinMaker to improve productivity and efficiency in field operations
+Carrier will monitor operational data for smart buildings with AWS IoT TwinMaker
+How to get started
+Find out how AWS IoT TwinMaker works
+Learn more about how to connect your data, model your physical environment, compose 3D scenes, and more.
+Discover AWS IoT TwinMaker features
+Check out our partners
+Discover AWS IoT TwinMaker Partner capabilities and how they can help address your needs.
+Learn more about AWS IoT TwinMaker Partners
+Get started with a tutorial
+Learn how to start creating and using digital twins with AWS IoT TwinMaker.
+Check out a tutorial
+Explore more of AWS

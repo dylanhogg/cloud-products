@@ -1,0 +1,47 @@
+Amazon Nimble Studio
+Overview
+Features
+Pricing
+Getting Started
+FAQs
+Products
+Media Services
+Amazon Nimble Studio FAQs
+Q: Why should I use Amazon Nimble Studio?
+Nimble Studio provides a managed service, which is built on the AWS infrastructure, ensuring performant computing power and security of your data with the following additional benefits:
+Elastic production: Nimble Studio allows studios to scale artists' workstations, storage, and rendering needs based on demand, enabling studios to take on larger and more demanding projects. Nimble Studio also provides the flexibility to scale back down when projects are completed.
+Quick to set up and use: Create a cloud-based studio fast, using a simple onboarding process. Add storage capacity and render farm capabilities to suit your needs, then add users to your studio and start assigning resources to kick off your project in an instant. Nimble Studio also provides "bring your own license" (BYOL) support, as well as access to AWS Thinkbox Usage Based Licensing (UBL), so you can choose how you want to manage software licenses.
+Collaboration and increased velocity: Nimble Studio's globally accessible data storage empowers studios to leverage artists globally and share assets quickly.
+Q: How does Nimble Studio relate to other AWS services?
+Nimble Studio is built on AWS, offering the reliability and performance of Amazon Elastic Compute Cloud (EC2) for compute, AWS FSx for storage, AWS Single Sign-On (SSO), AWS Managed Directory Service for user management, and AWS Thinkbox Deadline for render farm management. Customers can bring their own storage. Nimble Studio is open and compatible with most storage solutions that support the NFS/SMB protocol, such as WekaIO, Qumulo, and Pixit. For high-performance remote display, the service utilizes AWS NICE DCV and provisions EC2 G4dn GPU instances as required by studios.
+Q: What does the customer experience look like?
+Customers can create content using popular digital content creation (DCC) and render software such as Autodesk Maya, Arnold, Foundry Nuke, and Redshift, along with open-source tools such as Blender and Krita.
+Administrators: In just a few clicks, you can complete sign-up via self-serve onboarding workflow and create your new virtual studio. Choose a name for your new studio or firm, add your desired storage and render farm, invite team members, and import existing assets or data (if required). You can also bring your own pre-existing cloud storage solutions or render farms to help migrate your current workflows and infrastructure into Nimble Studio. Creators: When creators (artists) are added to a project, they begin working on a task by launching a virtual workstation from the Studio Portal in Nimble Studio. In the background, Nimble Studio mounts the files needed for the task with all of the software required for the artist to do their work. For tasks requiring simulation, rendering, or complex computations, Nimble Studio integrates with a render farm. The out-of-the-box experience uses AWS Thinkbox Deadline, which manages the cloud-based render farm.
+Q: How does working in the cloud compare to on-premises infrastructure?
+Nimble Studio uses high performance, scalable AWS storage and virtual workstations to ensure users can deliver complex, high-quality content without worrying about the burden of on-prem infrastructure requirements. Thanks to cloud-based data access, you can start working on assigned tasks instantly and deliver results faster. Unlike on-premises infrastructure, cloud-based virtual workstations and render infrastructure is scalable, allowing customers to provision instances with higher vCPUs or RAM when required.
+Q: What choice of OS or supported applications can I use on Nimble Studio?
+Nimble Studio supports Windows (Windows Server 2019) and Linux (Amazon Linux 2, CentOS) and supports software from independent software vendors (ISVs) such as Adobe, Autodesk, Foundry, Redshift, and SideFX. You can also bring your own Amazon Machine Image (AMI) to configure and customize your software based on project needs.
+Q: How does Nimble Studio handle storage requirements for virtual studios?
+You can take advantage of Amazon FSx, or bring your own cloud storage solutions such as WekaIO or Qumulo and mount them to the virtual workstations. This provides cost-effective, high-performance, scalable storage for compute workloads mounted to virtual workstations and the render farm. The BYO approach offers an easier migration path by allowing you to replicate your current on-premises data management. To add additional storage capacity atop your BYO solution, Nimble Studio provides the ability to provision FSx storage in your AWS account, and the ability to use it within your virtual studio.
+Q: What are the specifications for the virtual workstations?
+Nimble Studio includes support for virtual workstations that run on EC2 G4dn instances. With NVIDIA RTX technology and the ability to assign instance sizes specific to your artists' tasks, G4dn instances are ideal for the demanding workflows required for content creation. You can leverage instances such as g4dn.xlarge (4 vCPU's, 16GB memory) and scale to instances with 64 vCPUs and 256GB of memory, in order to handle large data sets and simulation workflows.
+Q: How do I ensure my data is secure?
+Security at AWS is the highest priority. Data is encrypted at rest and in transit, using either service-owned keys or customer-managed Customer Master Keys (CMK), including encryption of all traffic on AWS global and regional networks. Data is additionally protected by studio administrators who control IAM permissions for project access. Administrators can also access AWS CloudWatch logs to audit Nimble Studio usage.
+Additionally, AWS has a shared responsibility model with our customers. AWS manages and controls the components, from the host operating system and virtualization layer down to the physical security of the facilities in which the services operate, and AWS customers are responsible for building and configuring secure applications. We provide a wide variety of best practices documents, encryption tools, and other guidance our customers can leverage in delivering application-level security measures. In addition, AWS Partners offer hundreds of tools and features to help customers meet their security objectives, ranging from network security, configuration management, access control, and data encryption.
+Q: How do I control remote artist access while ensuring the studio's data is secure?
+Nimble Studio relies on AWS SSO and AWS Managed Directory Service to control user access. Account administrators and project owners can share projects, add or remove artists, and control download access from users streaming workstations. You can use Active Directory connected to Nimble Studio through AWS SSO to manage user file system permissions.
+Q: How do I get my data/assets in or out of Nimble Studio?
+You can use services such as AWS Data Sync or AWS Snowball devices to import or export data to and from Amazon Simple Storage Service (S3), and access that data in Nimble Studio via FSx.
+Q: What is the rendering workflow, and do I have access to manage my jobs?
+Nimble Studio provides access to Thinkbox Deadline inside the streaming workstation, enabling artists to use their digital content creation (DCC) tools to submit render jobs to the farm. Administrators can use the Deadline Monitor to maintain full render farm control through the customers' streaming workstations. Customers who connect their pre-existing render farms to Nimble Studio can submit jobs through virtual workstations and DCC application plugins.  Q: How do customers onboard users to a project?
+Once Nimble Studio is set up, administrators create users in Active Directory and grant access to Nimble Studio with AWS SSO. Once active, the studio admin shares studio resources access with users and assigns roles to control permissions.  Q: What customer support can I expect?
+AWS Support provides a mix of tools, technology, people, and programs designed to help you proactively optimize performance, lower costs, and innovate faster. Learn more about AWS Support.
+Getting started with Amazon Nimble Studio
+Visit the Amazon Nimble Studio Getting started page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Nimble Studio in the AWS Management Console.
+Sign in

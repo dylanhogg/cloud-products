@@ -1,0 +1,533 @@
+General
+Q: What is Amazon Web Services Support (AWS Support)?
+AWS Support gives customers help on technical issues and additional guidance to operate their infrastructures in the cloud. Customers can choose a tier that meets their specific requirements, continuing the AWS tradition of providing the building blocks of success without bundling or long term commitments.
+AWS Support is one-on-one, fast-response support from experienced technical support engineers. The service helps customers use AWS's products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.
+Q: How are the enhanced AWS Support tiers different from Basic Support?
+AWS Basic Support offers all AWS customers access to our Resource Center, Service Health Dashboard, Product FAQs, Discussion Forums, and Support for Health Checks – at no additional charge. Customers who desire a deeper level of support can subscribe to AWS Support at the Developer, Business, Enterprise On-Ramp, or Enterprise level.
+Customers who choose AWS Support gain one-on-one, fast-response support from AWS engineers. The service helps customers use AWS's products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.
+Q: What types of issues are supported?
+Your AWS Support covers development and production issues for AWS products and services, along with other key stack components.
+"How to" questions about AWS service and features
+Best practices to help you successfully integrate, deploy, and manage applications in the cloud
+Troubleshooting API and AWS SDK issues
+Troubleshooting operational or systemic problems with AWS resources
+Issues with our Management Console or other AWS tools
+Problems detected by Health Checks
+A number of third-party applications such as OS, web servers, email, databases, and storage configuration
+AWS Support does not include:
+Code development
+Debugging custom software
+Performing system administration tasks
+Q: What level of architecture support is provided by Support?
+The level of architecture support provided varies by support level. Higher service levels provided progressively more support for the customer use case and application specifics.
+Developer: Building Blocks Guidance on how to use all AWS products, features, and services together. Includes guidance on best practices and generalized architectural advice.
+Business: Use Case Guidance Guidance on what AWS products, features, and services to use to best support your specific use cases. Includes guidance on optimizing AWS products and configuration to meet your specific needs.
+Enterprise On-Ramp: Application Architecture Consultative partnership supporting specific use cases and applications. Includes design reviews and architectural guidance. Enterprise On-Ramp customers support team includes a pool of Technical Account Managers.
+Enterprise: Application Architecture Consultative partnership supporting specific use cases and applications. Includes design reviews and architectural guidance. Enterprise-level customers support team includes a designated Technical Account Manager, and access to an AWS Solutions Architect.
+Q: I only use one or two services. Can I purchase support for just the one(s) I'm using?
+No. Our Support offering covers the entire AWS service portfolio. As many of our customers are using multiple infrastructure web services together within the same application, we’ve designed AWS Support with this in mind. We’ve found that the majority of support issues, among users of multiple services, relate to how multiple services are being used together. Our goal is to support your application as seamlessly as possible.
+Q: How many support cases can I initiate with AWS Support?
+As many as you need. Basic Support plan customers are restricted to customer support and service limit increase cases.
+Q: How many users can open technical support cases?
+The Business, Enterprise On-Ramp, and Enterprise Support plans allow an unlimited number of users to open technical support cases (supported by AWS Identity and Access Management (IAM)). The Developer Support plan allows one user to open technical support cases. Customers with the Basic Support plan cannot open technical support cases.
+Q: How quickly will you get back to me?
+Our first-contact response times are based on your chosen severity level for each case. We will use all reasonable efforts to provide responses within these time frames:
+Developer Plan (Business hours*)
+Business Plan (24x7)
+Enterprise On-Ramp  Plan (24x7)
+Enterprise Plan (24x7)
+General  guidance
+24 hours or less
+System impaired
+12 hours or less
+Production system impaired
+4 hours or less
+Production system down
+1 hour or less
+Business-critical system down
+30 minutes or less
+15 minutes or less
+*Business hours are generally defined as 8:00 AM to 6:00 PM in the customer country as set in My Account console, excluding holidays and weekends. These times may vary in countries with multiple time zones.
+Q: How quickly will you fix my issue?
+That depends on your issue. The problems that application or service developers encounter vary widely, making it difficult to predict issue resolution times. We can say, however, that we'll work closely with you to resolve your issue as quickly as possible.
+Q: How do I contact you?
+If you have a paid Support plan, you can open a web support case from Support Center. If you have Business, Enterprise On-Ramp, or Enterprise-level Support, you can request that AWS contact you at any convenient phone number or start a conversation with one of our engineers via chat.
+You can also see your options for contacting Support on the Contact Us page.
+Q: How and when does Support provide real time assistance during chat and phone support cases?
+If customers encounter issues after following our step-by-step documentation, they can provide details such as screen prints and logs through a Support case. For high-severity issues, Business-level, Enterprise On-Ramp level, and Enterprise-level customers can chat with or call Support to receive help in real time. In some scenarios, Support provides detailed guidance through email. If necessary, Support will use our screen-sharing tool to remotely view the customer's screens to identify and troubleshoot problems. This tool is view-only—Support cannot act on behalf of customers within the screen-share session. Note, however, that the screen-share tool is not intended to assist with guiding customers through steps that are already documented. If a customer can’t use our screen sharing tool, AWS Support will try to use the screen share tool of the customer’s choice. For security considerations, some tools might not be supported. Developer-level customers can contact Cloud Support Engineers by email; however, screen share is not part of the support offered on their plan.
+Support for Health Checks
+Support for Health Checks monitors some of the status checks that are displayed in the Amazon EC2 console. When one of these checks does not pass, all customers have the option to open a high-severity Technical Support case. For more information, see Support for Health Checks.
+Q: I'm not in the US. Can I sign up for AWS Support?
+Yes, AWS Support is a global organization. Any AWS customer may sign up for and use AWS Support.
+Q: Do you speak my language?
+AWS Support is available in English, Japanese, and Mandarin Chinese.
+Q: How do I access Japanese Support?
+To access Japanese Support, subscribers should select Japanese as their language preference from the dropdown at the top right of any AWS web page. Once your language preference is set to Japanese, all Support inquiries will be sent to our Japanese Support team.
+Q: Who should use AWS Support?
+We recommend all AWS customers use AWS Support to ensure a seamless experience leveraging AWS infrastructure services. We have created multiple tiers to fit your unique technical needs and budget.
+Q: How do I offer support for my end customers' AWS-related issues?
+If an issue is related to your AWS account, we'll be happy to help you. For problems with a resource provisioned under their own accounts, your customers will need to contact us directly. Due to security and privacy concerns we can only discuss specific details with the account holder of the resource in question. You many also inquire about becoming an AWS Partner, which offers different end-customer support options. For more information, see AWS Partner Network.
+Q: I use an application someone else built on Amazon Web Services. Can I use AWS Support?
+If the application uses resources provisioned under your AWS account, you can use AWS Support. First, we'll help you to determine whether the issue lies with an AWS resource or with the third-party application. Depending on that outcome, we'll either work to resolve your issue or let you know to contact the application developer for continued troubleshooting.
+Q: How can I get started with AWS Support?
+You can add AWS Support during the sign up process for any AWS product. Or simply select an AWS Support Plan.
+Q: How much does AWS Support cost?
+AWS Support offers differing levels of service to align with your needs and budget, including our Developer, Business, Enterprise On-Ramp, and Enterprise Support plans. See our pricing table for more details.
+Q: Why does my AWS Support bill spike when I purchase EC2 and RDS Reserved Instances and ElasticCache Reserved Cache Nodes?
+When you prepay for compute needs with Amazon Elastic Compute Cloud (Amazon EC2) Reserved Instances, Amazon Relational Database Service (Amazon RDS) Reserved Instances, Amazon Redshift Reserved Instances, or Amazon ElastiCache Reserved Cache Nodes and are enrolled in a paid AWS Support plan, the one-time (upfront) charges for the prepaid resources are included in the calculation of your AWS Support charges in the month you purchase the resources. In addition, any hourly usage charges for reserved resources are included in the calculation of your AWS Support charges each month.
+If you have existing reserved resources when you sign up for a Support plan, the one-time (upfront) charges for the reserved resources, prorated over the term of the reservation, are included in the price calculation for the first month of AWS Support. For example, if you purchase a three-year reserved instance on January 1 and sign up for the Business support plan on October 1 of the same year, 75% of the upfront fee you paid in January is included in the calculation of Support costs for October.
+Q: How will I be charged and billed for my use of AWS Support?
+Upon signup, you will be billed a minimum monthly service charge for the first calendar month (prorated).
+In subsequent months if your usage-based charges exceed the minimum monthly service charge, you'll be billed for the difference at the end of the month. End of the month bills, being dated on the first of the following month, will thus reflect both the current month's usage-based charges.
+Reserved resource customers (EC2 and RDS Reserved Instances and ElastiCache Reserved Cache Nodes) should expect their prepaid amounts to be included in the usage-based component during the month they are purchased.
+Q: How do I cancel my AWS Support subscription?
+To cancel a paid Support plan, switch to the Basic support plan:
+Sign in to your AWS account with your root account credentials Go to https://console.aws.amazon.com/support/plans/home On the Support plans page, choose Change plan On the Change support plan page, select the Basic plan, and then choose Change plan
+Q: Can I sign up for AWS Support, receive assistance, and then cancel the subscription? If so, will I be charged a prorated amount?
+You are obligated to pay for a minimum of one month of support each time you register to receive the service. While you may see a prorated refund when you cancel the service, your account will be charged again at the end of the month to account for the minimum subscription fee. We reserve the right to refuse to provide AWS Support to any customer that frequently registers for and terminates the service.
+Q: What is Infrastructure Event Management (IEM)?
+AWS Infrastructure Event Management is a short term engagement with AWS Support, available as part of the Enterprise-level Support product offering, available one-per-year for Enterprise On-Ramp Support product offering, and available for additional purchase for Business-level Support subscribers. AWS Infrastructure Event Management will partner with your technical and project resources to gain a deep understanding of your use case and provide architectural and scaling guidance for an event. Common use case examples for AWS Event Management include advertising launches, new product launches, and infrastructure migrations to AWS.
+Q: How does Chat support work?
+Chat is just another way, in addition to phone or email, to gain access to Technical Support engineers. By choosing the chat support icon in the Support Center, a chat session will be initiated through your browser. This provides a real-time, one-on-one interaction with our support engineers and allows additional information and links to be shared for faster issue resolution.
+Offering support via chat is new for AWS, but not for Amazon.com. We have taken the same chat capabilities currently in use by retail customers and made it available for AWS technical support. Business, Enterprise On-Ramp, and Enterprise-level customers can access chat capabilities within the Support Center. Support users can also launch a chat session from an individual case or the Contact Us section of the AWS website.
+Q: What are the best practices for fault tolerance?
+Customers frequently ask us if there is anything they should be doing to prepare for a major event that could affect a single Availability Zone. Our response to this question is that customers should follow general best practices related to managing highly available deployments (e.g., having a backup strategy, distributing resources across Availability Zones). The following links provide a good starting point:
+Are you taking advantage of distributing compute resources across multiple AZs?
+How to build fault tolerant applications on AWS?
+What can I do to improve my monitoring and watch for unexpected behavior or errors?
+What are the storage best practices in EC2?
+What should I do if my instance is no longer responding?
+How do I troubleshoot instances with Failed Status Checks?
+AWS Trusted Advisor - Scan your AWS environment for optimization recommendations
+Q: How do I configure Identity and Access Management (IAM) for support?
+For details on how you can configure your IAM users to allow/deny access to AWS Support resources, see Accessing AWS Support.
+Q: How long is case history retained?
+Case history information is available for 12 months after creation.
+Q: Can I get a history of AWS Support API calls made on my account for security analysis and operational troubleshooting purposes?
+Yes. To receive a history of AWS Support API calls made on your account, you can enable CloudTrail in the AWS Management Console. For more information, see Logging AWS Support API Calls with AWS CloudTrail.
+Q: What is Support for Health Checks?
+Support for Health Checks monitors some of the status checks that are displayed in the Amazon EC2 console. When one of these checks does not pass, all customers have the option to open a high-severity Technical Support case. Support for Health Checks covers certain checks for Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Elastic Block Store (Amazon EBS).
+Q: Which AWS services provide access to support through Support for Health Checks?
+Support for Health Checks currently covers three health check scenarios: EC2 system status, EBS disabled I/O, and EBS stuck in attaching.
+Q: How can I get support if an EC2 instance fails the system status check?
+If an EC2 system status check fails for more than 20 minutes, a button appears that allows any AWS customer to open a case. Most of the details about your case are auto-populated, such as instance name, region, and customer information, but you can add additional context with a free-form text description.
+Note: Support for Health Checks covers only the EC2 system status check, not the EC2 instance status check. For troubleshooting ideas, see Troubleshooting Instances with Failed Status Checks.
+Q: How can I get support if an EBS volume is stuck in attaching or has disabled I/O?
+An EBS volume that has a health status of disabled I/O or is stuck in attaching displays a Troubleshoot Now button. You are presented with a number of self-remediation options that could potentially fix the problem without the need to contact support. If the EBS volume is still failing the health check after you have followed all applicable steps, choose Contact Support to open a case.
+Q: What is the response time for my Support for Health Checks support case?
+A Support for Health Checks case opened through the console is a high-severity case.
+Q: How do I check the status of my case after it has been opened?
+After you submit a case, the button changes from Contact Support to View Case. To view the case status, choose View Case.
+Q: Do I have to open a case for each instance that is unresponsive?
+You can, but you don’t need to. You can include additional context and instance names in the text description submitted with your initial case.
+Q: Why must an EC2 instance fail the system status check for 20 minutes? Why not just allow customers to open a case immediately?
+Most system status issues are resolved by automated processes in less than 20 minutes and do not require any action on the part of the customer. If the instance is still failing the check after 20 minutes, then opening a case brings the situation to the attention of our technical support team for assistance.
+Q: Can any of my Identity and Access Management (IAM) users open a case?
+Any user can create and manage a Support case for Health Checks case using their root account credentials. IAM users associated with accounts that have a Business, Enterprise On-Ramp, or Enterprise Support plan can also create and manage a Support for Health Checks case.
+AWS Trusted Advisor
+Overview | Reserved Instance optimization check
+Overview
+Q: What is AWS Trusted Advisor?
+AWS Trusted Advisor is an application that draws upon best practices learned from AWS’s aggregated operational history of serving hundreds of thousands of AWS customers. Trusted Advisor inspects your AWS environment and makes recommendations for saving money, improving system performance, or closing security gaps.
+Q: How do I access Trusted Advisor?
+Trusted Advisor is available in the AWS Management Console. You can access the Trusted Advisor console directly at https://console.aws.amazon.com/trustedadvisor/.
+Q: What does Trusted Advisor check?
+Trusted Advisor includes an expanding list of checks in the categories of cost optimization, security, fault tolerance, performance, and service limits. For a complete list of checks and descriptions, explore AWS Trusted Advisor Best Practices.
+Q: How does the Trusted Advisor notification feature work?
+The Trusted Advisor notification feature helps you stay up-to-date with your AWS resource deployment. You will be notified by weekly email when you opt in for this service. A refresh of checks is required to ensure up-to-date summary of check status in email notification. Automated weekly refresh of checks is performed for accounts with AWS Business Support, AWS Enterprise On-Ramp, and AWS Enterprise Support. Accounts with AWS Developer Support and AWS Basic Support will need to login to the AWS Management Console to trigger check refresh.
+What is in the notification? The notification email includes the summary of saving estimates and your check status, especially highlighting changes of check status.
+How do I sign up for the notification? This is an opt-in service, so do make sure to set up the notification in your dashboard. You can choose which contacts receive notification on the Preferences pane of the Trusted Advisor console.
+Who can get this notification? You can indicate up to three recipients for the weekly status updates and savings estimates.
+What language will the notification be in? The notification is available in English and Japanese.
+How often will I get notified, and when? You will receive a weekly notification email, typically on Thursday or Friday, and it will reflect your resource configuration over the past week (7 days).
+Can I unsubscribe from the notifications if I do not want to receive the email anymore? Yes. You can change the setting in your dashboard by clearing all the check boxes and then selecting "Save Preferences".
+How much does it cost? It's free. Get started today!
+Q: How does the "Recent Changes" feature work?
+Trusted Advisor tracks the recent changes to your resource status on the console dashboard. The most recent changes over the past 30 days appear at the top. The system will track seven updates per page, and you can go to different pages to view all recent changes by clicking the forward or the backward arrow displayed on the top-right corner of the "Recent Changes" area.
+Q: How does the "Exclude Items" function work?
+If you don’t want to be notified about the status of a particular resource, you can choose to exclude (suppress) the reporting for that resource. You would normally do this after you have inspected the results of a check and decide not to make any changes to the AWS resource or setting that Trusted Advisor is flagging.
+To exclude items, check the box to the left of the resource items, and then choose "Exclude and Refresh". Excluded items appear in a separate view. You can restore (include) them at any time by selecting the items in the excluded items list and then choosing "Include and Refresh".
+The "Exclude and Refresh" function is available only at the resource level, not at the check level. We recommend that you examine each resource alert before excluding it to make sure that you can still see the overall status of your deployment without overlooking a certain area. For an example, see AWS Trusted Advisor for Everyone in the AWS Blog.
+Q: What is an action link?
+Most items in a Trusted Advisor report have hyperlinks to the AWS Management Console, where you can take action on the Trusted Advisor recommendations. Action links are included for all services that support them.
+For example, the Amazon EBS Snapshots check lists Amazon EBS volumes whose snapshots are missing or more than seven days old. In each row of the report, the volume ID is a hyperlink to that volume in the Amazon EC2 console, where you can take action to create a snapshot with just a couple of clicks.
+Q: How do I manage the access to the Trusted Advisor console? What is the IAM policy?
+For the Trusted Advisor console, access is controlled by IAM policies that use the trustedadvisor namespace, and access options include viewing and refreshing individual checks or categories of checks. For more information, see Manage access for AWS Trusted Advisor.
+Q: How do I access AWS Trusted Advisor via API?
+You can retrieve and refresh Trusted Advisor results programmatically. For more information, see AWS Support API Reference.
+Q: How often can I refresh my Trusted Advisor result?
+The minimum refresh interval varies based on the check. You can refresh individual checks or refresh all the checks at once by choosing "Refresh All" in the top-right corner of the summary dashboard. When you visit the Trusted Advisor dashboard, any checks that have not been refreshed in the last 24 hours are automatically refreshed; this can take a few minutes. The date and time of the last refresh is displayed to the right of the check title. In addition, for customers with Business, Enterprise On-Ramp, or Enterprise Support plans, the Trusted Advisor data is automatically refreshed weekly.
+Q: How do Trusted Advisor activities affect my AWS CloudTrail logs?
+AWS CloudTrail logs Trusted Advisor activities from the API and console. For example, you can use the API to programmatically refresh a check or manually refresh a check in the Trusted Advisor console. CloudTrail records this activity and you can view details about the event in your logs. Automatic refreshes performed by Trusted Advisor also appear in CloudTrail logs.
+For more information about CloudTrail logging for the Trusted Advisor API, see Logging AWS Support API Calls with AWS CloudTrail. For information about CloudTrail logging for the Trusted Advisor console, see Logging AWS Trusted Advisor console actions with AWS CloudTrail.
+Q: Which Trusted Advisor checks and features are available to all AWS customers?
+AWS Basic Support and AWS Developer Support customers get access to 6 security checks (S3 Bucket Permissions, Security Groups - Specific Ports Unrestricted, IAM Use, MFA on Root Account, EBS Public Snapshots, RDS Public Snapshots) and 50 service limit checks. AWS Business Support, AWS Enterprise On-Ramp, and AWS Enterprise Support customers get access to all 115 Trusted Advisor checks (14 cost optimization, 17 security, 24 fault tolerance, 10 performance, and 50 service limits) and recommendations. For a complete list of checks and descriptions, explore Trusted Advisor Best Practices.
+All customers also have access to some Trusted Advisor features, including the weekly Trusted Advisor notification, the Action Links, the Exclude Items, and the Access Management features.
+Q: Why are my CloudWatch event rules and metric alarms for the EC2 On-Demand Instances check not working?
+If your account has been opted in to vCPU-based On-Demand Instance limits, you must adjust your metric alarms and event rules to account for the vCPU-based instance limits. To see if you are using vCPU-based On-Demand Instances, visit the Limits page on Amazon EC2 console.
+Q: What service limits do you check?
+You can find the limits that Trusted Advisor checks in AWS Trusted Advisor Best Practices. For information about limits, see AWS Service Quotas.
+Q: Why is it safe to ignore or suppress red flags from the "Security Groups - Specific Ports Unrestricted" and "Security Groups - Unrestricted Access" security checks for security groups created by AWS Directory Services?
+AWS Directory Services is a managed service that automatically creates an AWS security group in your VPC with network rules for traffic in and out of AWS managed domain controllers. The default inbound rules allow traffic from any source (0.0.0.0/0) to ports required by Active Directory. These rules do not introduce security vulnerabilities, as traffic to the domain controllers is limited to traffic from your VPC, other peered VPCs, or networks connected using AWS Direct Connect, AWS Transit Gateway or Virtual Private Network. In addition, the ENIs the security group is attached to do not and cannot have Elastic IPs attached to them, limiting inbound traffic to local VPC and VPC routed traffic. Security groups created by AWS Directory Services can be recognized by the security group name (always in the format “directory-id_controllers” (e.g. d-1234567890_controllers) or the security group description (always in the format “AWS created security group for directory-id directory controllers”).
+Reserved Instance optimization check
+Q: What data set are you using to make a Reserved Instance recommendation?
+Your Reserved Instance recommendations are provided by Cost Explorer, which calculates recommendations based on your on-demand usage over the past 30 days.
+Q: Does the recommendation consider volume discounts?
+No, reservation recommendations are based on public pricing.
+Q: I just purchased a new Reserved Instance. Why isn’t it showing up in the recommendation?
+Since these recommendations are based on previous on-demand usage, newly purchased reservations do not show until the corresponding usage shows up in your billing data. Recommendations may be inaccurate if reservations have been purchased during the past 30 days.
+Q: How do you calculate the optimized number of Reserved Instances?
+Reservation recommendations are calculated based on your on-demand usage over the past 30 days. These recommendations are calculated by identifying the reservation purchases which would result in the lowest possible bill you could have achieved over this period. These recommendations target the lowest possible bill, and not any particular utilization or coverage threshold.
+Q: Do you include other Reserved Instance types in the recommendation?
+This check covers recommendations based on Standard Reserved Instances with partial upfront payment option. For other variations including convertible reserved instances or alternate payments options, please refer to Cost Explorer’s Reservation Recommendations.
+Q: Why are there separate sections for 1 year and 3 year Reserved Instances?
+Customers have a choice between buying 1 year and 3 year term Reserved Instances from AWS. This check assumes you will purchase Reserved Instances for either 1 year or 3 year terms, not both. As a result, recommendations for purchasing additional 1 year or 3 year term Reserved Instances are not additive across both term lengths, so recommendations are called out separately.
+To illustrate: In a recommendation for three additional 1 year Reserved Instances or four additional 3 year Reserved Instances, we are recommending the purchase of three or four Reserved Instances respectively, not a total of seven additional Reserved Instances.
+Q: Are all instance types included in the recommendation?
+Yes, all instances types are included that have corresponding reservations available.
+Q: I use a spot instance. Do you include spot rates in the calculation?
+No, spot usage is not eligible to be covered by reservations and is excluded from these recommendations.
+Q: I have third-party Reserved Instances from the Reserved Instance Marketplace. Do you include those in the results?
+Recommendation for Reserved Instance purchase is made based on billing usage not covered by all available Reserved Instances, including those purchased from the Marketplace. Cost savings are calculated based on public pricing and do not take into account the availability of reserved instances available on the RI Marketplace.
+Q: Does the recommendations include any money I made if I sell my existing Reserved Instance to purchase the recommended Partial Upfront Reserved Instances?
+No, these recommendations are only purchase recommendations based on public pricing and on demand usage. They do not take into account any potential sales of existing RIs on the RI Marketplace or the conversion of existing underutilized Reservations.
+Q: What defines the alert criteria for this check?
+This check is flagged yellow when optimizing the use of partial upfront RIs can help reduce costs.
+Q: What is the recommended action when the check goes yellow?
+See the Cost Explorer page for more detailed and customized recommendations.
+Additionally, refer to the Amazon Elastic Compute Cloud User Guide for Linux Instances to understand purchased Reserved Instances and the available options.
+Q: Where can I learn more about Reserved Instances?
+Information on RIs and how they can save you money can be found on the Amazon EC2 Reserved Instances page.
+Q: What does each field in the check result mean?
+Region - The AWS Region of the recommended reservation.
+Instance Type - The type of instance that AWS recommends.
+Platform - The platform of the recommended reservation. The platform is the specific combination of operating system, license model, and software on an instance.
+Recommended Number of RIs to Purchase - The number of RIs that AWS recommends that you purchase.
+Expected Average RI Utilization - The expected average utilization of the your RIs.
+Estimated Savings with Recommendation (Monthly) - How much AWS estimates that this specific recommendation could save you in a month.
+Upfront Cost of Ris - How much purchasing this instance costs you upfront.
+Estimated cost of RIs (Monthly) - How much the RIs will cost on a monthly basis after purchase.
+Estimated On-Demand Cost Post Recommended RI Purchase (Monthly) - How much AWS estimates that you will spend per month on On-Demand Instances after purchasing the recommended RIs.
+Estimated Break Even (Months) - How long AWS estimates that it takes for this instance to start saving you money, in months.
+Lookback Period (Days) - How many days of previous usage that AWS considers when making this recommendation.
+Term (Years) - The term of the reservation that you want recommendations for, in years.
+Q: Why do I see a blue question mark for this recommendation on the Trusted Advisor Console?
+Either you are not subscribed to Cost Explorer or you are logged into a linked account and not the payer account. Visit consolidated billing for additional information on payer and linked accounts.
+Q: How often can I refresh this check?
+The results of the recommendations are dependent on Cost Explorer which updates less frequently than Trusted Advisor. Refreshing every 6 hours ensures you see the most current data available.
+AWS Personal Health Dashboard
+Q: How is AWS Personal Health Dashboard different from the AWS Service Health Dashboard?
+The Service Health Dashboard is a good way to view the overall status of each AWS service, but provides little in terms of how the health of those services is impacting your resources. AWS Personal Health Dashboard provides a personalized view of the health of the specific services that are powering your workloads and applications. What’s more, Personal Health Dashboard proactively notifies you when AWS experiences any events that may affect you, helping provide quick visibility and guidance to help you minimize the impact of events in progress, and plan for any scheduled changes, such as AWS hardware maintenance.
+Q: What actions should I take based on the status of AWS Personal Health Dashboard?
+You will be able to view details about the event that is impacting your environment. AWS Personal Health Dashboard will continue to update the event regularly until the event ends and provide remediation guidance.
+Q: What language will the notification be in?
+All notifications will be available only in English. We will add support for other languages over time.
+Q: What notifications channels are available?
+AWS Personal Health Dashboard supports API, email, and CloudWatch Events (SQS, SNS, Lambda, Kinesis). Personal Health Dashboard also supports showing alerts in AWS Management Console navigation bar.
+Q: How do I sign up for notifications?
+You can navigate to the CloudWatch Events console and write custom rules to filter events of interest. These rules can be wired to targets such as SNS, SQS, Lambda or Kinesis that will be invoked when you rule pattern matches AWS Personal Health Dashboard events on the CloudWatch Events bus.
+Q: Can I customize AWS Personal Health Dashboard?
+Yes. You can customize Personal Health Dashboard through setting up notification preferences for the various types of events. You can also create custom remediation actions that are triggered in response to events. Set this up by visiting the CloudWatch Events console.
+Q: Can AWS Personal Health Dashboard automate any actions I take today to recover from known events?
+AWS Personal Health Dashboard will not take any actions on your behalf on your AWS environment. It will provide you the tooling required to wire up custom actions defined by you. The Personal Health Dashboard events will be published on the CloudWatch Events channel. You can write rules to capture these events and wire them to a Lambda functions. AWS Personal Health Dashboard also provides best practices and ‘how-to’ guides that help you define your automated run-books.
+Q: Can I create custom actions with Lambda?
+Yes, you can define custom actions in Lambda, and use CloudWatch Events to trigger Lambda actions in response to events.
+Q: Can I run diagnostics in AWS Personal Health Dashboard?
+No. At this time running diagnostics directly inside AWS Personal Health Dashboard is not available. However, you could attach a diagnostics automation script that will be executed by Lambda when an event occurs if wired appropriately.
+Q: Will customers have API access to events on AWS Personal Health Dashboard?
+Yes. The AWS Personal Health Dashboard event repository will be accessible with the Health API to customers who are on Business, Enterprise On-Ramp, and Enterprise Support plans. Learn more about the AWS Health API.
+Q: How does AWS Personal Health Dashboard work with Amazon CloudWatch?
+CloudWatch and AWS Personal Health Dashboard can coexist to provide additional value beyond what just one service can provide by itself. Where you can create CloudWatch metrics and set alarms for the services available within the console, the Personal Health Dashboard provides notifications and information regarding issues that impact the underlying AWS infrastructure.
+Cloudwatch alarms will provide information typically related to a symptom without providing insight into what may be the root cause. For example, for EBS you might create metrics to monitor VolumeReadBytes, VolumeWriteBytes, VolumeReadOps, VolumeWriteOps, VolumeQueueLength, etc. When a metric breaches, you are notified but receive little to help determine if the problem is related to your application, or with perhaps with the AWS infrastructure, such as an EBS lost volume.
+With AWS Personal Health Dashboard, you receive a notification with detailed information regarding the underlying issue, as well as remediation guidance that allows you to identify the root of the issue and quickly troubleshoot to resolve.
+AWS Personal Health Dashboard complements CloudWatch by providing insights into operational issues caused by AWS. You could overlay Personal Health Dashboard events alongside CloudWatch metrics to draw more insight into what actually triggered the alarms. Additionally, AWS Personal Health Dashboard can inform you when CloudWatch itself is facing service issues.
+Operations support
+Q: How many Cloud Operations Reviews are Enterprise On-Ramp and Enterprise Support customers entitled to?
+Every Enterprise On-Ramp customer is entitled to one Cloud Operations review per year.
+Every Enterprise Support customer is entitled to one Cloud Operations review. Additional reviews may be available based on customer need.
+Q: How do I get started with my Cloud Operations Review?
+Enterprise On-Ramp customers can contact the pool of Technical Account Managers to initiate a Cloud Operations Review.
+Enterprise Support customers can contact their Technical Account Manager to initiate a Cloud Operations Review.
+Third-party software
+Q: What third-party software is supported?
+AWS Support Business, Enterprise On-Ramp, and Enterprise levels include limited support for common operating systems and common application stack components. AWS Support engineers can assist with the setup, configuration, and troubleshooting of the following third-party platforms and applications:
+Operating systems on EC2 instances:
+Ubuntu Linux and Debian
+Red Hat Enterprise Linux, Fedora, and Fedora CoreOS
+SUSE Linux (SLES and openSUSE)
+CentOS Linux
+Microsoft Windows Server 2012
+Microsoft Windows Server 2012 R2
+Microsoft Windows Server 2016
+Microsoft Windows Server 2019
+Infrastructure components:
+Sendmail and Postfix MTAs
+OpenVPN and RRAS
+SSH, SFTP, and FTP
+LVM and Software RAID
+Web servers:
+Apache
+IIS
+Nginx
+Databases:
+MySQL
+Microsoft SQL Server
+PostgreSQL
+Oracle
+Q: What if you can’t resolve my third-party software issue?
+In the case that we are not able to resolve your issue we will collaborate with, or refer you to, the appropriate vendor support for that product. In some cases you may need to have a support relationship with the vendor to receive support from them.
+Q: What are some of the most common reasons a customer might require third-party software support?
+AWS Support can assist with installation, configuration, and troubleshooting of third-party software on the supported list. For other more advanced topics such as performance tuning, troubleshooting of custom code or scripts, security questions, etc. it may be necessary to contact the third-party software provider directly. While AWS Support will make every effort to assist, any assistance beyond installation, configuration, and basic troubleshooting of supported third-party software will be on a best-effort basis only.
+AWS account closure
+Q: How do I close my AWS account?
+Before closing your account, be sure to back up any applications and data that you need to retain. AWS may not be able to retrieve your account data after your account is closed. After completing your backup, visit your Account Settings page and choose "Close Account". This will close your AWS account and unsubscribe you from all AWS services. You will not be able to access AWS services or launch new resources when your account is closed.
+If you manage multiple AWS accounts under the same company name that you would like to close, you can contact your account representative or open an account and billing support case for assistance. If you have additional questions or requirements associated with closing your AWS accounts, your account representative or AWS Customer Service can help.
+Q: I received an error message when I tried to close my AWS account. What do I need to do?
+If you receive an error message when trying to close your account, you can contact your account representative or open an account and billing support case for assistance.
+Q: Will I be billed after I close my account?
+Usage and billing stops accruing when your account is closed. You will be billed for any usage that has accrued up until the time you closed your account, and your final charges will be billed at the beginning of the following month.
+Cross-account support
+Q: What is cross-account support?
+Cross-account support is when a customer opens a premium support case from one account (e.g. account 12345678910) and requests assistance for resources owned by another account (e.g. an instance in account 98765432109).
+Q: Why is cross-account support not performed?
+Support engineers have no way to determine the access that someone (acting under a user or role in one account) has been granted to resources owned by another account. Due to security and privacy concerns we can only discuss specific details with the account holder of the resource in question.
+Q: I have access to all relevant accounts, how do I log a support request for a shared resource?
+Please open a support case from the resource-owning account. If there is a requirement to access the resource from a second account, please open a new support case from the second account as well. Then ask your support engineer to link the two cases, referencing the two case IDs.
+Q: Does membership of AWS Organizations (or Consolidated Billing) allow me to log a cross-account support request?
+No. Accounts can be separated in an Organization to isolate resources and permissions among individuals. If you are not restricted to a specific account, please see the previous FAQ.
+Q: Is there any exception to allow for cross-account support?
+Enterprise support customers can reach out to their TAM to discuss their options.
+Common AWS Concierge customer questions
+Account management
+Q: How do I securely control access to my AWS services and resources?
+We recommend that you use AWS Identity and Access Management (IAM), which enables you to securely control access to AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups and use permissions to allow and deny access to AWS resources. IAM enables security best practices by allowing you to grant unique security credentials to users and groups to specify which AWS service APIs and resources they can access.
+IAM access can be revoked if a user leaves the company or project, helping to ensure that root credentials are not exposed or compromised. For security and team functionality, IAM users are essential to using the full potential of your AWS account. For more information on IAM and controlling access to your billing information, see AWS Identity and Access Management (IAM) and Controlling Access to Your Billing Information.
+Consolidated billing
+Q: What is consolidated billing?
+Consolidated billing is a feature that allows you to consolidate payment for multiple AWS accounts in your organization by designating one of them to be the payer account.
+With consolidated billing, you can see a combined view of AWS charges incurred by all accounts, as well as get a detailed cost report for each individual AWS accounts associated with your payer account. Consolidated billing is offered at no additional charge and allows for all accounts under the consolidated group to be treated as one account, which assists with achieving volume discounts more rapidly.
+See Pay Bills for Multiple Accounts with Consolidated Billing in the AWS Billing and Cost Management User Guide.
+Q: How can I use my AWS bill to evaluate costs?
+AWS provides a number of different ways to explore your AWS monthly bill and to allocate costs by account, resource ID, or customer-defined tags.
+To get a snapshot of your billing data, you can use the Billing and Cost Management console, the monthly cost allocation report, and the monthly billing report.
+For a more detailed view, you can also use these resources:
+Detailed billing report with resources and tags. This report allows you to get hourly detail on all AWS usage and to view tags for specific resources as needed. The tags are fully customizable on most AWS resources, and you can add or remove tags as needed. For more information, see Understand Your Usage with Detailed Billing Reports.
+Cost Explorer. The Cost Explorer in the AWS Billing console relies on the data from the detailed billing report and provides an interactive graphical user interface for viewing and analyzing your expenditures. For more information, see Manage Your Spend Data with Cost Explorer.
+Q: What are blended rates?
+For billing purposes, AWS treats all the accounts in a Consolidated Billing family as if they're one account. Blended rates appear on your bill as an average price for variable usage across an account family. This allows you to take advantage of two features that are designed to ensure that you pay the lowest available price for AWS products and services:
+Pricing tiers: Pricing tiers reward higher usage with lower unit prices for services
+Capacity reservations: Rates are discounted when you purchase some services in advance for a specific period of time.
+You can always see the precise account usage, along with the unblended rates, in the detailed billing reports.
+For more information, see Understanding Blended Rates in the AWS Billing and Cost Management User Guide.
+Q: Why don't I see the same figures in the Billing and Cost Management console as I see in the detailed billing report?
+The Billing and Cost Management console and the detailed billing report provide different information based on blended and unblended rates. For more information, see Understanding Blended Rates or contact us through the AWS Support Center.
+Q: How do I tell which accounts benefited from Reserved Instance pricing?
+The Detailed Billing Report shows the linked accounts that benefited from a Reserved Instance on your consolidated bill. The costs of the Reserved Instances can be unblended to show how the discount was distributed. Reserved Instance utilization reports also show the total cost savings (including upfront Reserved Instance costs) across a Consolidated Bill.
+Reporting
+Q: How do I use the AWS Billing and Cost Management console?
+The AWS Billing and Cost Management Console is a service that you use to pay your AWS bill, monitor costs, and visualize your AWS spend. There are many ways to use this tool for your account.
+For more information, see What Is AWS Billing and Cost Management?
+Q: How do I use Cost Explorer?
+You can use Cost Explorer to visualize patterns in your spending on AWS resources over time. You can quickly identify areas that need further inquiry, and you can see trends that you can use to understand spend and to predict future costs.
+For more information, see Manage Your Spend Data with Cost Explorer.
+Q: How do I use the Amazon EC2 instance usage reports?
+You can use the instance usage reports to view your instance usage and cost trends. You can see your usage data in either instance hours or cost. You can choose to see hourly, daily, and monthly aggregates of your usage data. You can filter or group the report by region, Availability Zone, instance type, AWS account, platform, tenancy, purchase option, or tag. After you configure a report, you can bookmark it so that it's easy to get back to later.
+For more information, see Instance Usage Report.
+Q: How do I use the Reserved Instance utilization report?
+The Reserved Instance utilization report describes the utilization over time of each group (or bucket) of Amazon EC2 Reserved Instances that you own. Each bucket has a unique combination of region, Availability Zone, instance type, tenancy, offering type, and platform. You can specify the time range that the report covers, from a single day to weeks, months, a year, or three years.
+For more information, see Reserved Instance Utilization Reports.
+Reserved Instances
+Q: How do I tell if my Reserved Instances are being used?
+Three tools are available to determine Reserved Instance utilization:
+Detailed billing report. This report shows hourly detail of all charges for an account or consolidated bill. Near the bottom of the report are line items that explain Reserved Instance utilization in an aggregated format (xxx hours purchased; xxx hours used). To configure your account for this report, see Getting Set Up for Usage Reports.
+Reserved Instance utilization report. This report is accessible from the Billing and Cost Management console and shows a high-level overview of utilization. For more information, see Reserved Instance Utilization Reports.
+Billing and Cost Management console. The "Bills" pane of the console shows Reserved Instance utilization in the highest level. This view provides the least detailed view of Reserved Instance utilization.
+Q: How do I see how Reserved Instances are applied across my entire Consolidated Bill?
+The detailed billing report shows the hourly detail of all charges on an account or consolidated bill. Near the bottom of the report, line items explain Reserved Instance utilization in an aggregated format (xxx hours purchased; xxx hours used). To configure your account for this report, see Getting Set Up for Usage Reports.
+Q: How do I tell if and why a Reserved Instance is underutilized?
+In addition to the three tools listed in How do I tell if my Reserved Instances are being used, AWS Trusted Advisor provides best practices (or checks) in four categories: Cost Optimization, Security, Fault Tolerance, and Performance. The Cost Optimization section includes a check for Amazon EC2 Reserved Instances Optimization. For more information about the Trusted Advisor check, see Reserved Instance Optimization Check Questions.
+General billing
+Q: Which accounts are charged sales tax and why?
+Tax is normally calculated at the linked account level. Each account must add its own tax exemption. For more information on US sales taxes and VAT taxes, see the following:
+VAT customers
+US Tax customers
+AWS Tax Help
+AWS Billing FAQ (additional tax information)
+Limit increases
+Q: How do I submit an urgent limit increase request?
+Submit limit increase requests in the AWS Support Center. Choose "Create case", select "Service Limit Increase", and then select an item from the"Limit Type" list.
+We aim for a quick turnaround time with all limit increases. If your request is urgent, complete the details of the request and then select the "Phone" contact method for 24/7 service. Provide the agent with the support case ID, and we will follow up immediately with the relevant teams.
+Resellers
+Q: How do we bill our end customers based on the detailed billing report?
+AWS does not support the billing of reseller end customers because each reseller uses unique pricing and billing structures. We do recommend that resellers not use blended rates for billing—these figures are averages and are not meant to reflect actual billed rates. The detailed billing report can show unblended costs for each account on a consolidated bill, which is more helpful for the purpose of billing end customers.
+Regional Pricing
+Q: What is regional pricing?
+Regional pricing is a revised pricing scheme for specific countries. AWS reserves the right to define the countries that qualify for regional pricing. Below is the list of countries  that currently qualify for regional pricing: India, mainland China and select LATAM countries [Guadeloupe, US Virgin Islands, Colombia, Honduras, Dominican Republic, Anguilla, Aruba, Guyana, Peru, Barbados, Puerto Rico, Trinidad and Tobago, Belize, Martinique, Dominica, Saint Vincent and Grenadines, Bermuda, Cayman Islands, Jamaica, Turks and Caicos Islands, Costa Rica, Curacao , Chile, Saint Kitts and Nevis, British Virgin Islands, Ecuador, Nicaragua, Uruguay, Venezuela (Bolivarian Republic), Grenada, Montserrat, Bolivia, Bahamas, Netherlands Antilles, Paraguay, Panama, Mexico, Haiti, American Samoa, Guatemala, El Salvador, Antigua and Barbuda, Brazil, Suriname, Saint Lucia, Argentina, French Guiana, Bonaire].
+Q: How does AWS determine the location of an account?
+The location of an account is determined by the customer tax settings as described here.
+Q: How is billing for regional pricing calculated?
+The billing for regional pricing is calculated in similar way to the ES billing methodology as described here.
+Q: What determines eligibility for regional pricing?
+Customers will qualify for the regional pricing if all of their accounts subscribed to Enterprise Support are located in any combination of the qualifying countries. A customer is still eligible for regional pricing even if the customer has multiple accounts in different countries as long as all the countries are all on the list of specified countries. There are four main criteria for determining eligibility for regional pricing:
+The customer must be on Enterprise Support public pricing.
+Qualifying accounts must be on the same billing profile.
+All the qualifying accounts must have been in the specified region countries for at least 25 days within the calendar month.
+All the qualifying customer accounts must be in specified region countries on the last day of the month.
+Q: What do I need to do to qualify for the regional pricing?
+Customers do not need to take any action to qualify for the regional pricing. AWS premium support billing will evaluate the location of the customer’s accounts to determine eligibility and apply the regional pricing automatically.
+Q: What happens if I move any of my accounts outside of the qualified regions?
+The eligibility for regional pricing is evaluated every month. If a customer who was previously on regional pricing moves any of their accounts to a country outside of the qualified countries, then the customer will not be eligible for regional pricing for that month. If the customer however moves the account back to the qualified countries then the customer will qualify for the regional pricing the following month provided the evaluation criteria above are met.
+Q: Is there any condition that precludes a customer from benefiting from the regional pricing?
+Customers will be precluded from benefiting from regional pricing for a period of 12 months if they are found to have previously qualified for regional pricing but breached the eligibility criteria at least three times in the previous twelve months.
+End of support (EOS) for Microsoft products
+Q: What is Microsoft End of Support (EOS)?
+Microsoft Lifecycle Policy offers 10 years of support (5 years for Mainstream Support and 5 years for Extended Support) for Business and Developer products (such as SQL Server and Windows Server). As per the policy, after the end of the Extended Support period there will be no patches or security updates.
+Q: How does EOS affect my existing instances on Amazon Web Services (AWS)?
+There is no direct impact to existing instances. Customers can continue to start, run, and stop instances.
+Microsoft will not provide patches for EOS products, unless customers purchase Extended Security Updates.
+Q: Can I launch new instances that include EOS software from my Custom Amazon Machine Images (AMIs)?
+Yes.
+Q: Can I import images that contain EOS software into AWS using AWS tools?
+Yes, customers can continue to import images to AWS using VM Import/Export (VMIE), Server Migration Service (SMS), or CloudEndure.
+Q: How does EOS affect Managed AWS Windows AMIs?
+There is no direct impact to existing AMIs registered in customer accounts.
+AWS will not publish or distribute Managed AWS Windows AMIs that contain EOS software to AWS Management Console, Quick Start, or AWS Marketplace.
+Customers with dependencies on Managed AWS Windows AMIs impacted by EOS should consider their options, including creating Custom AMI(s) within their AWS account(s) to enable new instance launches. Learn more about custom AMI creation here.
+Q: Can I create additional Custom AMIs from existing Custom AMIs in my account that contain EOS software?
+Q: What are my options for running Microsoft software that is approaching EOS?
+AWS customers running EOS software on EC2 instances have several options:
+Remain on EOS software: Customers may decide to remain on EOS software. There will be no impact to existing instances, or to custom AMIs.
+Automated upgrade: For customers with SQL Server 2008 R2 and Windows Server 2008 R2, AWS Systems Manager automates the performance of non-destructive in-place upgrades. SQL Server 2008 R2 customers can upgrade to SQL Server 2012 R2 and again to SQL Server 2016 (BYOL only). Windows Server 2008 R2 customers can upgrade to Windows Server 2012 R2. For customers with a License Included (LI) version of Windows Server or SQL Server, there is no additional licensing cost to upgrade. For more information, please click here.
+Manual in-place upgrade for Microsoft Windows Server:
+License Included: Customers using Amazon License Included for Windows Server can perform in-place upgrades for their Windows instances. For more information, click here.
+BYOL: Customers using the BYOL model can perform a manual in-place upgrade for Windows Server following the steps referenced in the License Included option above, using their own Media.
+Manual in-place upgrade for Microsoft SQL Server:
+License Included: AWS customers using License Included SQL Server can perform in-place upgrades on running instances. Please contact AWS support for additional assistance and detail on upgrade paths.
+BYOL: Customers using the BYOL model can perform a manual in-place upgrade for SQL Server using their Media. For more information, click here.
+Explore other platform options. AWS is committed to offering its customers the most flexibility in the cloud. AWS customers interested in the benefits of migrating certain SQL Server or Windows workloads to a different platform can contact their AWS account teams for more information.
+For more information on all of Amazon’s products and Services, click here.
+Q: Can I purchase Extended Security Updates to cover instances that run on AWS, utilizing Microsoft EOS software?
+Yes, Extended Security Updates are available directly from Microsoft or a Microsoft licensing partner. Read more about Microsoft's Extended Security Updates here.
+Customers should consider all their options for EOS, see “What are my options for running Microsoft software that is approaching EOS?” for more information.
+Windows Server 2003
+Extended Security Updates available for Amazon License Included? No.
+Extended Security Updates available for Bring Your Own License (BYOL)? No.
+Windows Server 2008/2008 R2
+Extended Security Updates available for Amazon License Included? Yes.
+Extended Security Updates available for Bring Your Own License (BYOL)? Yes; active Software Assurance (SA) required.
+SQL Server 2005
+SQL Server 2008/2008 R2
+Q: Which Microsoft products sold by Amazon are approaching EOS, and when will Microsoft cease support?
+Note: Information reflects publicly available Microsoft EOS dates as of April 4th, 2019.
+Microsoft Windows Server:
+Windows Server 2003 - July 14th, 2015 (EOS already reached)
+Windows Server 2008 - January 14th, 2020
+Windows Server 2008 R2 – January 14th, 2020
+Microsoft SQL Server:
+SQL Server 2005 – April 12th, 2016 (EOS already reached)
+SQL Server 2008 – July 9th, 2019
+SQL Server 2008 R2 – July 9th, 2019
+More information on Microsoft's Application Lifecycle can be found here.
+Q: What Amazon products and services are affected by EOS and when will changes be made?
+Starting July 1st, 2019 Microsoft requires AWS to no longer publish and distribute License Included Managed AWS Windows AMIs (available in AWS Management Console and Quick Start), media, and services that use or contain Microsoft EOS products. Products that have reached end of support in prior years are also subject to these restrictions. The following products and services are affected:
+Managed AWS Windows AMIs:
+AWS will no longer publish and distribute Managed AWS Windows AMIs that contain EOS software to AWS Management Console, Quick Start or AWS Marketplace.
+Windows Server 2003 - July 1st, 2019
+Windows Server 2008 R2 - January 14th, 2020
+SQL Server 2005 – July 1st, 2019
+SQL Server 2008 - July 9th, 2019
+SQL Server 2008 R2 - July 9th, 2019
+Amazon Relational Database Service (RDS):
+RDS will automatically upgrade customer databases that remain on SQL Server 2008 to SQL Server 2012 starting on June 1, 2019. We recommend customers test this upgrade prior to this date to ensure compatibility.
+RDS customers can upgrade their Database version at any time. Learn more about upgrading your SQL Server 2008 R2 database in RDS here.
+Amazon WorkSpaces:
+WorkSpaces will stop offering License Included public bundles of Windows 7 Experience powered by Windows Server 2008 R2 after January 14th 2020.
+WorkSpaces launched from License Included public bundles with Windows 7 Desktop Experience will no longer be able to be launched or rebuilt after January 14th 2020.
+There is no impact for WorkSpaces created from BYOL bundles. Customers can continue to launch/rebuild those instances.
+Customers who have created custom License Included bundles powered by Windows Server 2008 R2 will be able to use their custom bundles to launch or rebuild WorkSpaces after EOS.
+Microsoft will not provide patches for EOS products unless customers purchase Extended Security Updates.
+Q: Does the change to Microsoft’s EOS software distribution policy only apply to AWS?
+Microsoft has advised that this change will apply to all hyperscale cloud providers.
+Remain on EOS software: Customers may decide to remain on EOS software. There will be no impact to existing instances, or to custom AMIs. Customers who are interested in purchasing Extended Security Updates from Microsoft should review the answer to the question, “Can I purchase Extended Security Updates from Microsoft to cover EOS instances that run on AWS?”.
+Q: What are other AWS Customers doing?
+AWS customers such as Sysco, Hess, Ancestry, and Expedia have successfully migrated and modernized their Windows workloads on AWS. Read more about what AWS customers are doing here.
+Q: What are the cost implications of moving to a supported Microsoft Operating System or SQL Server version?
+License Included: There is no additional licensing costs to move to a newer version of the software when using Amazon's License Included options, for example:
+Microsoft Windows Server 2019 is the same price as Microsoft Windows Server 2003/2008/2008 R2.
+Microsoft SQL Server 2017 (by edition) is the same price as Microsoft SQL Server 2005/2008/2008 R2 (by edition).
+BYOL: Customers with active Software Assurance (SA) can upgrade to a newer version at no cost. Customers without SA can purchase a new license from Microsoft.
+Q: If I experience a technical issue running a product that has reached Microsoft EOS, will AWS Support assist me?
+Yes, customers with AWS Support plans will be able to engage AWS Support for technical issues.
+Note: As per Microsoft's policy, after the end of the Extended Support, Microsoft will no longer provide patches or security updates unless Extended Security updates has been purchased.
+Find more information on AWS Support plans here.
+Q: If I have further questions around the use of Microsoft EOS on AWS, whom should I contact?
+Please email aws.EOS.Microsoft@amazon.com.
+Q: Specifically, which License Included Managed AWS Windows AMIs are affected and when does this take effect?
+July 1st, 2019
+Windows_Server-2003-R2_SP2-English-32Bit-Base-*
+Windows_Server-2003-R2_SP2-English-64Bit-Base-*
+Windows_Server-2003-R2_SP2-English-64Bit-SQL_2005_SP4_Express-*
+Windows_Server-2003-R2_SP2-English-64Bit-SQL_2005_SP4_Standard-*
+Windows_Server-2003-R2_SP2-Language_Packs-32Bit-Base-*
+Windows_Server-2003-R2_SP2-Language_Packs-64Bit-Base-*
+Windows_Server-2003-R2_SP2-Language_Packs-64Bit-SQL_2005_SP4_Express-*
+Windows_Server-2003-R2_SP2-Language_Packs-64Bit-SQL_2005_SP4_Standard-*
+July 9th, 2019
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2008_R2_SP3_Express-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2008_R2_SP3_Standard-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2008_R2_SP3_Web-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-SQL_2008_R2_SP3_Express-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-SQL_2008_R2_SP3_Standard-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-SQL_2008_R2_SP3_Web-*
+Windows_Server-2008-R2_SP1-Language_Packs-64Bit-SQL_2008_R2_SP3_Express-*
+Windows_Server-2008-R2_SP1-Language_Packs-64Bit-SQL_2008_R2_SP3_Standard-*
+Windows_Server-2008-SP2-English-64Bit-SQL_2008_SP4_Express-*
+Windows_Server-2008-SP2-English-64Bit-SQL_2008_SP4_Standard-*
+Windows_Server-2012-RTM-English-64Bit-SQL_2008_R2_SP3_Express-*
+Windows_Server-2012-RTM-English-64Bit-SQL_2008_R2_SP3_Standard-*
+Windows_Server-2012-RTM-English-64Bit-SQL_2008_R2_SP3_Web-*
+Windows_Server-2012-RTM-Japanese-64Bit-SQL_2008_R2_SP3_Express-*
+Windows_Server-2012-RTM-Japanese-64Bit-SQL_2008_R2_SP3_Standard-*
+January 14th, 2020
+Windows_Server-2008-R2_SP1-Chinese_Hong_Kong_SAR-64Bit-Base-*
+Windows_Server-2008-R2_SP1-Chinese_PRC-64Bit-Base-*
+Windows_Server-2008-R2_SP1-English-64Bit-Base-*
+Windows_Server-2008-R2_SP1-English-64Bit-Core-*
+Windows_Server-2008-R2_SP1-English-64Bit-Core_SQL_2012_SP4_Standard-*
+Windows_Server-2008-R2_SP1-English-64Bit
+SharePoint_2010_SP2_Foundation-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2012_RTM_SP2_Enterprise-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2012_SP4_Enterprise-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2012_SP4_Express-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2012_SP4_Standard-*
+Windows_Server-2008-R2_SP1-English-64Bit-SQL_2012_SP4_Web-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-Base-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-SQL_2012_SP4_Express-*
+Windows_Server-2008-R2_SP1-Japanese-64Bit-SQL_2012_SP4_Standard-*
+Windows_Server-2008-R2_SP1-Korean-64Bit-Base-*
+Windows_Server-2008-R2_SP1-Language_Packs-64Bit-Base-*
+Windows_Server-2008-R2_SP1-Portuguese_Brazil-64Bit-Base-*
+Windows_Server-2008-R2_SP1-Portuguese_Brazil-64Bit-Core-*
+Windows_Server-2008-SP2-English-32Bit-Base-*
+Windows_Server-2008-SP2-English-64Bit-Base-*
+Windows_Server-2008-SP2-Portuguese_Brazil-32Bit-Base-*
+Windows_Server-2008-SP2-Portuguese_Brazil-64Bit-Base-*
+Glossary
+AMI (Amazon Machine Image): Is a template for the root volume for the instance (for example, an operating system, an application server, and applications), manages launch permissions that control which AWS accounts can use the AMI to launch instances. Contains a block device mapping that specifies the volumes to attach to the instance when it's launched.
+AWS (Amazon Web Services): offers a broad set of global compute, storage, database, analytics, application, and deployment services that help organizations move faster, lower IT costs, and scale applications.
+AWS Management Console: access and manage Amazon Web Services through a simple and intuitive web-based user interface.
+BYOL (Bring Your Own License): is a process you can use to deploy software that you have previously licensed on physically dedicated AWS hardware. If you BYOL, you do not pay for instances with licensing included in the cost. Instead, you pay the same rate as EC2 instances with Amazon Linux pricing. When you BYOL, you are responsible for managing your own licenses.
+CloudEndure: offers reliable business continuity solutions that minimize data loss and downtime due to human errors, network failures, external threats, or any other disruptions. Our Disaster Recovery and Migration solutions are powered by innovative workload mobility technology, which continuously replicates applications from any physical, virtual, or cloud-based infrastructure into Amazon Web Services (AWS). As such, CloudEndure is uniquely qualified to support large-scale, heterogeneous environments with diverse applications and infrastructure.
+Custom AMI: is an AMI created in your account either built from an imported image or captured from an existing instance. For example, you can launch an instance from an existing AMI, customize the instance, and then save this updated configuration as a custom AMI. Instances launched from this new custom AMI include the customizations that you made when you created the AMI.
+EC2 (Amazon Elastic Compute Cloud): provides scalable computing capacity in the Amazon Web Services (AWS) cloud.
+EOS (End of support): is a term used to reference Microsoft ending support for a product, in accordance with their Product Lifecycle policy.
+Hyperscale: refers to the facilities and provisioning required in distributed computing environments to efficiently scale from a few servers to thousands of servers. Hyperscale computing is usually used in environments such as big data and cloud computing.
+In-Place Upgrade: upgrades the operating system files while your personal settings and files are intact.
+Instance (EC2 Instance): is a virtual server in the AWS cloud. Its configuration at launch is a copy of the AMI that you specified when you launched the instance.
+LI (License Included): refers to the use of Amazon's Microsoft Licensing Agreement for Windows Server and SQL Server.
+VMIE (AWS VM Import/Export): is an AWS Service used to import Operating System Images to AWS EC2 in an offline mode.
+RDS (Amazon Relational Database Service): is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks.
+SA (Software Assurance): is a comprehensive program offered by Microsoft to help deploy, manage, and use Microsoft products efficiently.
+SMS (AWS Server Migration Service): is an AWS Service used to import Operating System Images to AWS EC2 in an online mode.
+WorkSpaces (Amazon Workspaces): is a managed, secure cloud desktop service. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe.
+Premium Support FAQs

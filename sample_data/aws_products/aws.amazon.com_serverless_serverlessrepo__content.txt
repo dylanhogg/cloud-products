@@ -1,0 +1,86 @@
+AWS Serverless Application Repository
+Discover, deploy, and publish serverless applications
+Browse all applications
+The AWS Serverless Application Repository is a managed repository for serverless applications. It enables teams, organizations, and individual developers to store and share reusable applications, and easily assemble and deploy serverless architectures in powerful new ways. Using the Serverless Application Repository, you don't need to clone, build, package, or publish source code to AWS before deploying it. Instead, you can use pre-built applications from the Serverless Application Repository in your serverless architectures, helping you and your teams reduce duplicated work, ensure organizational best practices, and get to market faster. Integration with AWS Identity and Access Management (IAM) provides resource-level control of each application, enabling you to publicly share applications with everyone or privately share them with specific AWS accounts. To share an application you've built, publish it to the AWS Serverless Application Repository.
+Each application is packaged with an AWS Serverless Application Model (SAM) template that defines the AWS resources used. Publicly shared applications also include a link to the application’s source code. There is no additional charge to use the Serverless Application Repository - you only pay for the AWS resources used in the applications you deploy.
+How it works: Deploying applications
+BENEFITS
+Develop More Powerful Apps
+Quickly assemble serverless architectures in powerful new ways. Discover and share reusable serverless application patterns, privately or publicly, and compose new serverless architectures using the simplified syntax of AWS SAM.
+Easily Manage Applications
+Use pre-built applications in your serverless deployments, eliminating the need to clone, build, package, and publish source code to AWS before deploying it. It also supports SAM and semantic versioning to enable simple application management.
+Reuse, Don't Rebuild
+Develop and publish serverless applications once, store them in the Serverless Application Repository, and use them privately across teams or with the greater community to reduce duplicated efforts and accelerate development workflows.
+Ensure Best Practices
+Find and distribute serverless applications for common use cases. Build organizational best practices into your serverless architectures to help ensure consistency across teams—use permissions to share applications with specific AWS accounts.
+Featured Apps: Alexa Skills, IoT, Machine Learning
+Alexa Anagram
+Ask Alexa to list anagrams for a word. It will respond with the count and anagrams for the requested word
+Published by: evanchiu
+Alexa Salesforce Notes - Sample
+Demonstrates how to build a private Alexa skill to access Salesforce data
+Published by: Alexa for Business
+Rekognition - SQS
+Trigger a Lambda function to perform image analysis using SQS as an event source
+Published by: Kashif Imran & Ganesh Shankaran
+IoT Twilio Bridge
+A bridge between AWS IoT and Twilio for your devices to send messages to Twilio
+Published by: TensorIoT
+Ready to publish your own serverless applications?
+Connect with developers and customers everywhere by publishing your serverless applications. Learn more
+Featured Apps: Data Transformation and Media Processing
+Image Moderation Chatbot
+Automatically remove messages containing inappropriate images from channels of popular chat apps
+Published by: robperc
+Document Generator
+Create and modify documents, PDFs, and books
+Published by: ryfeus
+NYC Parks Events Crawler
+Crawl the NYC Parks' Events site, generate a scoped view of its data, and store it in a DynamoDB table
+Published by: Chris Munns
+Retweet Leaderboard
+Process events from a Twitter event source app to update a leaderboard in real time
+Published by: jlhood
+Featured Apps: Logging, Monitoring, and Security
+Feed Logger
+Automatically log the body of a web result at a set frequency
+Published by: Ranek Kiil
+API Save Lambda DynamoDB
+A Lambda function with API Gateway integration that saves request data to a DynamoDB table. Written in CORS
+Published by: Aleksandar Simovic
+FunctionShield - Protected Function
+Enforce strict security controls on your Lambda function runtime
+Published by: PureSec
+Application Cost Monitoring
+Provides granular AWS spend tracking
+Published by: ServerlessOps
+Featured Apps: Notification, Authentication, and Location
+Contact Us Form
+Use API Gateway, Lambda, and SNS to create a Serverless "Contact Us" form for a static website
+Published by: Randy Findley
+Billing Reports
+Deliver the latest AWS costs breakdown to your Slack channel
+Published by: Octo Technology Australia
+Serverless Cognito
+Authenticate your users through Cognito, Lambda, and API Gateway
+Published by: Marek Kuczynski
+Toll Cost
+Calculate tolls for international driving routes
+Published by: HERE Technologies
+Featured Publishers
+Just getting started with serverless applications?
+Serverless applications don't require you to provision, scale, or manage any servers. You can build them for virtually any type of application or backend service, and everything required to run and scale your application with high availability is handled for you. Learn more
+Apps to Get Started: Say Hello, World
+Hello, World - Python 3
+A starter AWS Lambda function
+Published by: AWS
+Greengrass Hello World - Node.js
+Deploy this Lambda function to a Greengrass core where it will send a hello world message to a topic
+Simple Mobile Backend
+A simple mobile backend (read/write to DynamoDB)
+Lambda Test Harness
+Provides a simple framework for conducting various tests of your Lambda functions
+Want to see your applications in the AWS Serverless Application Repository?
+Learn how to publish an app
+Have more questions?
+Contact us

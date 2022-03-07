@@ -1,0 +1,45 @@
+Network components
+Q: What are the components of AWS Cloud WAN?
+There are several components to the Cloud WAN service, including:
+Global Network: A single network that acts as the high-level container for your network objects. A Global Network can contain both AWS Transit Gateways and other Cloud WAN Core Networks. These are shown in the AWS Network Manager console.
+Core Network: The part of your global network managed by AWS. This includes Regional connection points and attachments, such as VPNs and Amazon Virtual Private Clouds (VPCs). Your Core Network operates in the AWS Regions defined in your core network policy document.
+Core Network Policy (CNP): A single document that defines the global configuration of your Core Network. The Core Network Policy document defines how your VPCs, virtual private networks (VPNs), and existing AWS Transit Gateways connect to your network. The CNP also defines the routing policy and how traffic should be segmented across the network. Configure the CNP document using the AWS Management Console or Cloud WAN APIs.
+Attachments: Attachments are any connections or resources you want to add to your Core Network. Supported attachments include Amazon Virtual Private Clouds (VPCs), VPNs, and Transit Gateway connect.
+Core Network Edge (CNE): The Regional connection point managed by AWS in each Region, as defined in the CNP. Every attachment connects to a Core Network Edge. The CNE uses similar technology to AWS Transit Gateway, but is managed by AWS. Concepts like attachments, routing, and protocol support are very similar.
+Network segments: Segments are dedicated routing domains, which means only attachments within the same segment can communicate by default. You can define segment actions that share routes across segments in the Core Network Policy. In a traditional network, a segment is like a globally consistent Virtual Routing and Forwarding (VRF) table, or a layer 3 IP VPN over an MPLS network.
+Q: What is a wide-area network (WAN)?
+A wide-area network refers to the networking infrastructure that connects your branch offices, data centers, and cloud resources together. It’s called a wide-area network because it spans beyond a single building or large campus to include multiple locations spread across a specific geographic area, or even the world.
+Q: Does AWS act as my "first mile" or "last mile" provider to connect my on-premises locations to AWS?
+No, you need to make connections between the local service providers used at your on-premises locations.
+Network segmentation
+Q: When should I use network segmentation?
+Network segments allow you to divide your global network into separate, isolated networks. For example, a bank might create one segment for payment card transactions and another for general network traffic. By preventing communication between the networks, segmentation provides an additional layer of security and control.
+Core network policy
+Q: What is an AWS Cloud WAN Core Network Policy (CNP) used for?
+Cloud WAN Core Network Policy is created using a declarative language (expressed in JSON) that expresses how you want to control network traffic across your network segments and AWS Regions. With network policies, you describe your intent for access control and traffic routing, and Cloud WAN handles the configuration details. Some examples of what you can create with policies include creating a segment for shared services (e.g. service directories, authentication services), enabling or disabling internet access from a network segment, automatically assigning VPCs to segments based on tags, and defining a subset of AWS Regions where a segment is available.
+Q: What is defined in the network policy?
+The network policy has the following sections:
+Network configuration: You define the AWS Regions where you want connectivity. You can also add or remove Regions with the network policy. For each AWS Region you define in the policy, Cloud WAN will create a Core Network Edge (CNE) router.
+Segments: You can name your segments and define whether attachments can communicate within the segment, whether resources asking for access require approval, and explicit route filters. Each attachment connects to one segment.
+Attachment rules: You can choose to map attachments to segments by explicitly mapping a resource (such as a vpc-id) to a segment, or by using the tags on the attachment.
+Segment actions: Once you map attachments to segments, you can choose how routes are shared between segments. For example, you may want to share access to a VPN across multiple segments or allow access between two types of branch offices. You can also configure centralized internet routing for a segment or route traffic between segments through a firewall.
+Interoperability
+Q: Can I use AWS Cloud WAN with my existing WAN?
+Yes. Cloud WAN works with existing networks, allowing you to augment your existing WAN and incrementally move it to Cloud WAN. Here are a couple of ways you can use Cloud WAN alongside your existing WAN:
+Attach on-premises sites to Cloud WAN Global Networks: Continue to use your existing WAN and connect your on-premises sites to Cloud WAN. You choose to move incrementally, shifting parts of your network over to Cloud WAN by defining routing logic on your on-premises routers or gateways. You can also choose to make Cloud WAN your primary WAN and use your existing WAN as backup, or the other way around.
+Configure SD-WAN to use Cloud WAN as underlying network transport: Your SD-WAN devices can use Cloud WAN alongside your existing connections to create an overlay network. You can define policies for SD-WAN devices to route traffic over Cloud WAN while keeping other traffic on your existing WAN. For example, you can keep voice traffic over your existing WAN connections and allow all other traffic to use Cloud WAN.
+Q: When should I build networks with Cloud WAN versus AWS Transit Gateway?
+Both Transit Gateway and Cloud WAN allow centralized connectivity between VPCs and on-premises locations. Transit Gateway is a Regional network connectivity hub and is optimal for customers that operate in a few AWS Regions, want to manage their own peering and routing configuration, or prefer to use their own automation.
+Cloud WAN is a managed wide area network (WAN) that unifies your data center, branch, and AWS networks. While you can create your own global network by interconnecting multiple Transit Gateways across Regions, Cloud WAN provides built-in automation, segmentation, and configuration management features designed specifically for building and operating global networks. Cloud WAN has added features such as automated VPC attachments, integrated performance monitoring, and centralized configuration.
+Q: When should I use SiteLink and when should I use AWS Cloud WAN?
+Depending on your use case, you might choose one, the other, or both. Cloud WAN, currently in preview, can create and manage networks of VPCs across multiple Regions. SiteLink, on the other hand, connects DX locations together, bypassing AWS Regions to improve performance. Direct Connect is one of multiple connectivity options that you will be able to use with a Cloud WAN network in the future.
+Getting started
+Q: How do I get started with AWS Cloud WAN?
+To get started with Cloud WAN, visit the Cloud WAN section of the AWS Management Console for more details.
+Learn about AWS Cloud WAN features
+Visit the features page
+Ready to build?
+Get started with AWS Cloud WAN
+Have more questions?
+Contact us
+FAQS

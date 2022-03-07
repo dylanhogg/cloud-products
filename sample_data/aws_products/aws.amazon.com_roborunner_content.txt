@@ -1,0 +1,29 @@
+« Internet of Things
+AWS IoT RoboRunner
+Build applications that help robot fleets work together seamlessly
+Contact Sales
+Increase output and reduce operating costs with seamless collaboration between robots from different vendors.
+Use a common application architecture to quickly and securely integrate different robot types and vendors with work management systems.
+Reduce the complexity of building applications for task orchestration, shared space management, and robot collaboration.
+How it works
+AWS IoT RoboRunner provides infrastructure for integrating robots with work management systems and building robotics fleet management applications.
+Close
+Click to enlarge
+Use cases
+Enable robot interoperability
+Integrate different robot types with a scalable and flexible robotics automation infrastructure that helps you improve operational efficiency.
+Optimize robot collaboration
+Accelerate material handling processes and operational flow by optimizing robot collaboration and enabling end-to-end process automation.
+Manage robots through a single system
+Improve automation efficiency by optimizing task allocation across a diverse fleet of robots, adjusting for real-time issues through a single system view.
+How to get started
+Discover how AWS IoT RoboRunner works
+Learn more about building robot fleet management applications.
+Explore AWS IoT RoboRunner features
+Connect with an expert
+Connect with an AWS expert to learn more about AWS IoT RoboRunner.
+Contact us
+Try the AWS Free Tier
+Pay nothing or try for free while learning the fundamentals and building on AWS.
+Sign up for a free account
+Explore more of AWS

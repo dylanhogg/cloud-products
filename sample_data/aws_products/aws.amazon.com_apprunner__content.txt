@@ -1,0 +1,36 @@
+AWS App Runner
+Production web applications at scale made easy for developers
+Get started with AWS App Runner
+AWS App Runner is a fully managed service that makes it easy for developers to quickly deploy containerized web applications and APIs, at scale and with no prior infrastructure experience required. Start with your source code or a container image. App Runner builds and deploys the web application automatically, load balances traffic with encryption, scales to meet your traffic needs, and makes it easy for your services to communicate with other AWS services and applications that run in a private Amazon VPC. With App Runner, rather than thinking about servers or scaling, you have more time to focus on your applications.
+AWS App Runner (1:24)
+Benefits
+Easy to use
+With App Runner, you can build and run secure web scale applications in just a few clicks with no prior containers or infrastructure experience required. You don’t need knowledge about server configuration, networking, load balancing, or deployment pipelines.
+Scales with traffic
+App Runner makes it easy and cost effective to run your applications at web scale with high availability. App Runner seamlessly scales up resources in response to your traffic, and automatically scales down to your configured number of provisioned container instances to eliminate cold starts and ensure consistently low latency.
+Saves time
+App Runner resources and infrastructure components are fully managed by AWS and benefit from our security and operational best practices. This enables you to meet your infrastructure and compliance requirements while staying completely focused on your application.
+Ensure a compliant environment
+With Amazon VPC support on App Runner, you can easily connect to database, cache, and message queue services on AWS to support your applications on App Runner. No public subnets are required—helping you protect resources in your VPC.
+How it works
+Use cases
+Frontend and backend web applications
+Use App Runner to build and run API services, backend web services, websites, and more. App Runner supports container images as well as runtimes and web frameworks including Node.js and Python.
+Microservices and APIs
+With App Runner, you can run thousands of microservices simultaneously. This enables you to flexibly scale each component of your application and fosters increased agility and innovation. Loose coupling also decreases risks to application resiliency.
+Rapid production deployments
+App Runner leverages AWS best practices and technologies for deploying and running containerized web applications at scale. This leads to a drastic reduction in your time to market for new applications and features.
+Check out the features
+Learn more about AWS App Runner features.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS App Runner in the AWS Management Console.
+Sign in
+Learn more about containers on AWS
+Visit the containers page
+Ready to build?
+Have more questions?
+Contact us

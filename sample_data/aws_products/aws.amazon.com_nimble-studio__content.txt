@@ -1,0 +1,37 @@
+Amazon Nimble Studio
+Accelerate content creation in the cloud
+Get Started with Amazon Nimble Studio
+Amazon Nimble Studio empowers creative studios to produce visual effects, animation, and interactive content entirely in the cloud, from storyboard sketch to final deliverable. Rapidly onboard and collaborate with artists globally and create content faster with access to virtual workstations, high-speed storage, and scalable rendering across AWS’s global infrastructure.
+Introducing Amazon Nimble Studio (2:12)
+Benefits
+Accelerate your cloud transition
+Get your content production pipeline up and running in hours instead of weeks. Nimble Studio's automation and pre-built Amazon Machine Images (AMIs) make it easy to set up your virtual workstations, storage, and render farm, all with an artist-friendly user interface (UI).
+Scale with project demand
+Nimble Studio automatically configures AWS services, scaling your studio to suit business needs across single or multiple locations. Add more artists to graphics-intensive projects with virtual workstations, utilize high-speed storage with Amazon FSx, and orchestrate compute resources on an integrated cloud-based render farm using EC2 Spot Instances.
+Access the global talent you need
+Onboard remote artists in minutes. Utilize the latest software and hardware technology, to provide the best possible performance for your artists and studio. With availability in major content creation markets, you can look for and hire the best talent.
+Simplified workstation pricing
+Setting up virtual streaming workstations involves multiple cost considerations. Nimble Studio offers a simplified pricing structure including the instance, Elastic Block Store (EBS), and egress charges to take the guesswork out of the total cost of ownership (TCO).
+Seamless collaboration
+The Nimble Studio portal simplifies granting user permissions, sharing project data, and adding new team members. Using the NICE DCV remote display protocol, stream pixels instead of data to keep your project data in the cloud and to streamline artist collaboration.
+Build with the highest standard for data security
+Build on the most secure global infrastructure, knowing you always own your data, including the ability to encrypt it, move it, and manage retention. AWS automatically encrypts all data flowing across the AWS global network at the physical layer before it leaves our secured facilities.
+How it works
+Use cases
+Visual Effects (VFX)
+Whether you’re creating lifelike creatures, immersive environments, or complex simulations, Nimble Studio provides the robust infrastructure you need for even the most complex VFX work.
+Animation
+From animated shorts and commercials to full-length feature films, Nimble Studio provides a content creation pipeline that scales with your needs.
+Interactive Content
+Create 2D or 3D assets for virtual production or product design. Import assets into game engines or use them on websites to create interactive experiences.
+Partners
+Partner Profile
+Check out product features
+Learn more about Amazon Nimble Studio
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon Nimble Studio in the AWS Management Console.
+Sign in

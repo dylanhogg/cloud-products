@@ -1,0 +1,96 @@
+General
+Q: What is AWS Launch Wizard?
+A: AWS Launch Wizard is a console-based service to quickly and easily size, configure, and deploy third-party applications on AWS without the need to identify and provision individual AWS resources.
+Q: Why should I use AWS Launch Wizard?
+A: AWS Launch Wizard offers you an easy way to deploy enterprise applications and optimize costs. Instead of selecting and configuring separate infrastructure services, you go through a few steps in AWS Launch Wizard and it deploys a ready-to-use application on your behalf. It reduces the time you need to spend on investigating how to provision, cost and configure your application on AWS. AWS Launch Wizard determines the right instance type, EBS volumes, and other resources to match your application requirements such as performance, memory, and bandwidth. You also have the ability to modify the recommended defaults, and see an updated cost assessment. AWS Launch Wizard provides you with custom CloudFormation templates that can serve as a baseline for your subsequent application deployments.
+Q: Which third-party applications does AWS Launch Wizard support?
+A: AWS Launch Wizard supports SQL Server deployments on Microsoft Windows and Linux, Active Directory, and SAP.
+Q: How much does AWS Launch Wizard cost?
+A: There is no additional charge for using AWS Launch Wizard. You only pay for AWS resources that are provisioned for running your application, such as Amazon EC2 instances and EBS volumes.
+Q: Can I use AWS Launch Wizard to modify application resources after deployment?
+A: No. If you need to modify resources post-deployment, you can use the service console for that resource. For example, to modify EC2 instances, you would use the EC2 Console.
+Q: If I modify application resources after deployment, would AWS Launch Wizard detect those changes?
+A: No. AWS Launch Wizard is a provisioning tool and does not manage the application lifecycle beyond the initial deployment. To make changes or track the status of resources after they have been provisioned, you can use other AWS services such as AWS Systems Manager and the EC2 Console.
+Q: Can I delete the resources provisioned through AWS Launch Wizard after deployment?
+A: Yes. You have the option to delete your provisioned resources from the summary screen on AWS Launch Wizard.
+Q: How do I patch and monitor the application post deployment?
+A: You can patch the application resources through AWS Systems Manager and monitor it through Amazon CloudWatch.
+Q: How do I discover applications that I have deployed through AWS Launch Wizard in the past?
+A: Each time you launch AWS Launch Wizard, it shows you a historical list of applications that you deployed using AWS Launch Wizard. When you click on an existing application, the wizard takes you to its summary page, which contains access information such as IP address and resource group name.
+Q: What IAM role do I require for using AWS Launch Wizard?
+A: For the very first access on an account, you will need a one-time setup of the IAM user policy as described in the documentation. Then you can continue to use these user credentials to log in to the Launch Wizard.
+Q: What IAM policy does AWS Launch Wizard carry during deployment?
+A: AWS Launch Wizard assumes the IAM role to create, describe, tag, modify, or delete resources on your behalf during deployment.
+Q: How is AWS Launch Wizard different from AWS CloudFormation?
+A: AWS Launch Wizard leverages AWS CloudFormation and provides a deployment option to customers who prefer guided UI-driven experience. AWS Launch Wizard provides you a guided point-and-click experience to deploy applications. You answer a few high-level questions about your application requirements on the console, and then AWS Launch Wizard handles the end-to-end sizing, cost estimation, provisioning and configuration of your application. CloudFormation allows you to programmatically deploy resources on AWS by manual code creation.
+Q: How is AWS Launch Wizard different from AWS Quick Starts?
+A: AWS Quick Starts are deployment accelerators that reduce hundreds of manual procedures into a select few that allow you to quickly create deployments through a command line interface. AWS Launch Wizard offers you a complete UI-driven guided experience for deploying production-ready applications on AWS with added benefits of resource sizing, customizable deployments, application configuration and cost estimation.
+Q: Does AWS Launch Wizard provide estimates of the AWS services that it launches?
+A: AWS Launch Wizard provides estimates for the EC2 instances and the EBS volumes that are launched based on the configuration that users selects. These costs are estimates based on on-demand pricing and do not include support and any applicable AWS marketplace costs.
+Microsoft SQL Server
+Q: How do I get started with AWS Launch Wizard for SQL Server?
+A: You can use AWS Launch Wizard in the following three steps:
+Step 1: Launch AWS Launch Wizard from https://aws.amazon.com/launchwizard or from the AWS console. Select SQL Server from the options menu.
+Step 2: Enter your SQL Server specifications, such as application name, SQL Server version, number of nodes, throughput, high-availability cluster etc. You also need to specify your Active Directory and Amazon Virtual Private Cloud (Amazon VPC) preferences.
+Step 3: AWS Launch Wizard recommends the most appropriate resources based on your input specifications and shows you an estimated cost. You can edit these resources to suit your preferences and get an updated cost estimate. Once you finalize the resources, AWS Launch Wizard deploys them and configures your application.
+Post deployment, you can use the EC2 Console to access your deployed resources. Similarly, you can manage your application through AWS Systems Manager, monitor it through Amazon CloudWatch, and govern IT policies through AWS Service Catalog.
+Q: Can I bring my own SQL Server licenses (BYOL) for deployments through AWS Launch Wizard?
+A: Yes. AWS Launch Wizard enables you to bring your own SQL Server licenses through the use of custom Amazon Machine Images (AMIs).
+Q: How can I track the SQL Server licenses that I am deploying through AWS Launch Wizard?
+A: You can use AWS License Manager to manage licenses in AWS and on-premises servers from software vendors such as Microsoft. AWS License Manager lets administrators create customized licensing rules that emulate the terms of their licensing agreements, and then enforces these rules when an instance of EC2 gets launched from AWS Launch Wizard.
+Q: Does the SQL Server Always On availability group application deployed through AWS Launch Wizard get joined to my Active Directory (AD) domain?
+A: Yes. When deploying SQL Server Always On through AWS Launch Wizard, we ask for your AWS Managed Microsoft AD domain credentials and domain. With these credentials, we can enable you to join the application to your AWS Managed AD account. If you don’t have an existing AWS Managed Microsoft AD account, Launch Wizard provides you with the option to create one during deployment. You can also join your domain for SQL Server deployments to your on-premises Active Directory.
+SAP Applications
+Q: How do I get started with AWS Launch Wizard for SAP applications?
+Step 1: Launch AWS Launch Wizard from https://aws.amazon.com/launchwizard or from the AWS console. Select the SAP application from the options menu.
+Step 2: Provide name, description, and infrastructure settings for the deployment. Additionally, there is an option to save the Infrastructure settings for identical deployments, saving users time and effort in entering these setting every time
+Step 3: Select the SAP application type to deploy between "Netweaver stack on HANA database" and "HANA Database" and provide General SAP system settings that are applicable for any deployment model
+Step 4: Choose between "Single ", "Distributed" and "High Availability:" deployment patterns for the previously chosen SAP application and provide configuration settings for SAP applications
+Step 5: Review all the settings provided in previous steps and confirm for deployment to begin
+Q: What type of SAP deployments does AWS Launch Wizard support?
+A: AWS Launch Wizard currently supports the deployment of AWS resources for the following SAP systems and patterns:
+SAP HANA database on a single EC2 instance. Launch and configure single EC2 instance to run SAP HANA and optionally deploy HANA software using SAP software provided by the customer.
+SAP Netweaver stack on HANA system on a single EC2 instance. Launch and configure single EC2 instance for running SAP Netweaver based applications on HANA database and optionally deploy HANA software using SAP software provided by the customer.
+HANA Multi-Node deployment. Launch and configure multiple EC2 instances for running HANA database in scale-out architecture with 1 master and multiple worker nodes. User can optionally choose to deploy HANA software by providing access to it.
+HANA High Availability deployment. Launch and configure a pair of HANA systems configured as primary/secondary across two availability zones in a High Availability pattern
+Netweaver Distributed Instance Deployment. Launch and configure multiple EC2 instances to run Primary Application Server, HANA Database in single and multi-node configuration and multiple App servers with in a Single AZ. This pattern allows to scale SAP application and DB tiers based on application requirements.
+Netweaver High Availability Deployment. Launch and configure EC2 instances for SAP ABAP central services (ASCS), Enqueue replication server (ERS), HANA database, primary, and additional application servers across multiple availability zones for running SAP system in a High Availability pattern. HANA database can be deployed and configured with SLES/RHEL HA if user provides HANA software.
+Q: What type of databases does AWS Launch Wizard for SAP support?
+A: AWS Launch Wizard for SAP supports SAP HANA database by provisioning SAP HANA infrastructure (Amazon EC2 instances + file systems) and offering pre-installation of SAP HANA databases software that customer provides.
+Q: Does AWS Launch Wizard help me install my SAP software for applications and databases?
+A: AWS Launch Wizard helps customers to provision the infrastructure and operating system (OS), which includes resources like Amazon EC2 instances, configure and setup network access using AWS Security Groups, OS settings recommended by SAP, file systems, OS level users, AWS SAP Data provider and AWS systems manager. It is the customer’s responsibility to purchase and install their own SAP software. One exception is for the SAP HANA database. In this scenario, AWS Launch Wizard installs the HANA software if customers provide the software via an S3 bucket.
+Q: In which AWS Regions is AWS Launch Wizard for SAP available?
+A: AWS Launch Wizard allows customers to deploy SAP workloads in 20 regions including US East (N. Virginia, Ohio), EU (Frankfurt, Ireland, London, Paris, Stockholm and Milan), South America (Sao Paulo), US West (N. California, Oregon), Canada (Central), Asia Pacific (Mumbai, Seoul, Tokyo, Hong Kong, Singapore, and Sydney), Middle East (Bahrain), and Africa (Cape Town). AWS Launch Wizard is also available in GovCloud (US-West) and GovCloud (US-East) Regions, AWS Regions designed to host sensitive data and regulated workloads in the cloud for customers who have U.S. federal, state, and local government compliance requirements.
+Q: Does AWS Launch Wizard help with right instances for SAP applications?
+A: As part of the instance provision for SAP based on the specification that user provides in terms of vCPU/Memory or SAPS, AWS Launch Wizard recommends SAP certified instances for the SAP component (ASCS or ERS or APP or HANA DB) and configures the SAP components on it.
+Q: Can the Infrastructure settings be saved and re-purposed for future deployment?
+A: AWS Launch Wizard provides ability to enter and save infrastructure settings including VPC's, Subnets, key-pair, security groups, external connectivity info and SAP landscape settings so they can be reused for future deployments.
+Q: Does Launch Wizard help with setup of file systems for SAP Transport Management?
+A: AWS Launch Wizard supports Creating/attaching an Amazon EFS file system based on whether the user plans to configure a particular SAP system as domain controller or configure it as part of previously deployed domain controller or standalone system to make SAP transport setup seamless as part of the software deployment that happens in later phase.
+Q: Can I bring my own Image to deploy SAP system using Launch Wizard?
+A: AWS Launch Wizard provides ability for customers to bring their own Amazon Machine Image (AMI) built with their hardening process for the supported OS versions.
+Q: What OS versions does Launch Wizard support?
+A: AWS Launch Wizard supports Suse Enterprise Linux - 12SP4, 15, 15 for SAP and RedHat 7.5 and 7.6 HA US versions.
+Q: Does Launch Wizard provide a capability to delete the saved infrastructure configurations?
+A: AWS Launch Wizard Deployment screen - "Saved Infrastructure Configurations" provides a listing of previously created infrastructure configurations and delete the old/obsolete ones
+Q: In what scenarios will there be multiple configurations?
+A: AWS Launch Wizard "Configuration Name" can be used as a template to save infrastructure and SAP system settings that will be applied to SAP systems that have similar role in the landscape. For example, a "SAP-Production" configuration can be created to save all relevant setting for Production systems.
+Microsoft Active Directory
+Q: How does AWS Launch Wizard deploy Active Directory infrastructure?
+AWS Launch Wizard applies AWS Well-Architected Framework to guide you through setting up a new Active Directory infrastructure, or adding domain controllers to an existing infrastructure, either in AWS Cloud or on premises. The deployment environment includes existing VPCs, security groups, and AWS Identity and Access Management (IAM) roles. You can set up a new Active Directory infrastructure with two to three domain controllers, or you can add up to three domain controllers to your existing Active Directory infrastructure for each AWS Region. Launch Wizard reduces the time that it takes to set up an Active Directory infrastructure and deploy self-managed domain controllers to the cloud or on premises.
+Q: How is AWS Launch Wizard for Active Directory different from AWS Directory Services?
+AWS Directory Service lets you run Microsoft Active Directory (AD) as a managed service, without the hassle of managing your own AD infrastructure. However, for cases where you have to run your own AD infrastructure, you can use AWS Launch Wizard to simplify the deployment process.
+Q: How do I get started with AWS Launch Wizard for Active Directory?
+Step 1: Launch AWS Launch Wizard from https://aws.amazon.com/launchwizard or from the AWS console. Select Active Directory from the options menu.
+Step 2: Enter your domain controller requirements such as number of nodes and connectivity information.
+Step 3: AWS Launch Wizard recommends the most appropriate resources based on your input specifications and shows you an estimated cost of running your AD infrastructure. You can edit these resources to suit your preferences and get an updated cost estimate. When you approve, AWS Launch Wizard provisions and configures the selected resources in a few hours to create fully-functioning, production-ready domain controllers.
+Learn how to get started
+Learn how to get started with AWS Launch Wizard. Visit the Documentation Page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Launch Wizard in the AWS Management Console.
+Sign in
+Page Content

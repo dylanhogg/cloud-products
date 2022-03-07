@@ -1,0 +1,46 @@
+Amazon FSx
+Launch, run, and scale feature-rich and highly-performant file systems with just a few clicks
+Amazon FSx makes it easy and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud. It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities. Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower TCO. And as a fully managed service, it handles hardware provisioning, patching, and backups -- freeing you up to focus on your applications, your end users, and your business.  You can choose between four widely-used file systems: NetApp ONTAP, OpenZFS, Windows File Server, and Lustre.
+Amazon FSx file systems
+Amazon FSx for NetApp ONTAP
+Fully managed shared storage built on NetApp’s popular ONTAP file system.
+Amazon FSx for OpenZFS
+Fully managed shared storage built on the popular OpenZFS file system.
+Amazon FSx for Windows File Server
+Fully managed shared storage built on Windows Server.
+Amazon FSx for Lustre
+Fully managed shared storage built on the world’s most popular high-performance file system.
+Amazon FSx lets you choose between four widely-used file systems: NetApp ONTAP, OpenZFS, Windows File Server, and Lustre. This choice is typically based on your familiarity with a given file system or by matching the file system's feature sets, performance profiles, and data management capabilities to the requirements of your workload.
+Help Me Choose an Amazon FSx File System
+Benefits
+Fully featured and fully managed
+Amazon FSx makes it easy to provide broadly-accessible and highly-performant file storage that enables a wide variety of use cases.  Amazon FSx file systems support industry-standard protocols that offer connectivity to Linux, Windows, and macOS users and applications. Amazon FSx also delivers sub-millisecond latencies and high throughput to meet the performance needs of your most demanding workloads.  By combining the capabilities of widely-used file systems with the simplicity of a fully managed AWS service, Amazon FSx helps you migrate legacy applications and build rich new applications more easily.
+Hybrid-enabled
+Amazon FSx makes it easy to do more with your data.  You can migrate and synchronize data from on premises to AWS and make it immediately available to a broad set of integrated AWS services.  You can provide storage to global users by storing data in the cloud with low-latency local access provided by Amazon FSx File Gateway and NetApp ONTAP’s Global File Cache.
+Highly available and protected
+To ensure high availability and durability, Amazon FSx automatically replicates your data within or across AWS Availability Zones to protect it from component failure, continuously monitors for hardware failures, and automatically replaces infrastructure components or switches to a stand-by file server in the event of a failure.  To meet your data protection requirements, Amazon FSx lets you replicate your file systems across AWS Regions and also integrates with AWS Backup for centralized backup management and additional levels of compliance.  For enhanced security, Amazon FSx automatically encrypts your data at-rest using AWS Key Management Service (AWS KMS) and also supports encryption of data in-transit.
+Cost effective
+Amazon FSx lets you optimize your price and performance to support a broad spectrum of use cases, from small user shares to the most demanding compute-intensive workloads.  Amazon FSx offers SSD or HDD storage options and lets you provision and scale throughput performance independently from storage capacity.  You can choose from Single-AZ or Multi-AZ deployment options based on your high availability requirements. Amazon FSx file systems support a rich set of storage efficiency features including data deduplication, compression, and usage quotas.
+Use Cases
+Migrate your workloads to the cloud
+Many organizations rely on the file system features and administrative tooling provided by their existing, on-premises storage technologies. By offering the same like-for-like capabilities and performance, Amazon FSx makes it easy to adopt the agility and scalability of cloud storage for file shares, database, and application workloads without modifying your application code or how you manage your data.
+Increase development and test agility
+By combining infrastructure-as-code, flexible compute bursting, and Amazon FSx storage, you can quickly spin up development and test environments on demand and rapidly iterate to shorten release cycles. You can also replicate your configuration and resources with cost-efficient, zero-capacity clones - making it faster and easier to develop and test new applications.
+Build bleeding-edge machine learning, analytics, and HPC applications
+Many machine learning, analytics, and HPC applications require highly performant and scalable file storage to support large clusters of compute resources and huge volumes of data. Depending on the file system you choose, Amazon FSx provides a range of cost-effective deployment options that can deliver millions of IOPS with sub-millisecond to ensure that storage never becomes bottleneck for these demanding workloads.
+Accelerate Media & Entertainment workloads
+Media & Entertainment workloads require high-performance storage that is broadly accessible by end users who create and edit media from a variety of operating systems and by compute-intensive rendering and transcoding jobs.  Amazon FSx storage offers the scalability to deliver your media projects on time and within budget and the flexibility to connect from your Linux, Windows, and macOS environments.
+Simplify business continuity
+Managing backups and long-term data retention on premises can be complex, time consuming, and costly. Amazon FSx lets you easily and securely backup, archive, or replicate your on-premises file storage to AWS in order to meet regulatory, data retention, or disaster recovery requirements.
+Learn how to get started
+Learn more about Amazon FSx for OpenZFS.
+Learn more
+Learn about Amazon FSx for NetApp ONTAP.
+Learn more about Amazon FSx for Lustre.
+Learn more about Amazon FSx for Windows File Server.
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon FSx in the AWS Console.
+Sign in

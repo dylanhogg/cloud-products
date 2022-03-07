@@ -1,0 +1,42 @@
+General
+Q: What is AWS Mainframe Modernization?
+AWS Mainframe Modernization is an elastic mainframe service and set of development tools for migrating and modernizing mainframe and legacy workloads. Using Mainframe Modernization, system integrators can help discover your mainframe and legacy workloads, assess and analyze migration readiness, and plan migration and modernization projects. Once planning is complete, you can use Mainframe Modernization built-in development tools to re-platform or refactor your mainframe and legacy workloads, test workload performance and functionality, and migrate your data to AWS.
+The Mainframe Modernization Managed Runtime environment lets you easily manage the production environment for mainframe and legacy workloads. At launch, Mainframe Modernization will support two transformation patterns: replatforming and automated refactoring. Select your best-fit migration pattern based on business objectives.
+Q: Why should I use AWS Mainframe Modernization?
+Using Mainframe Modernization, system integrators can accelerate your mainframe and legacy workload migration. Mainframe Modernization toolchains automate the migration work, including tasks such as mainframe code recompilation, transformation, and testing.
+In addition, you can deploy replatformed workloads on the Mainframe Modernization mainframe-compatible runtime environment to benefit from highly available, managed runtime and affordable, pay-as-you-go pricing with no upfront costs. Regardless of the transformation pattern you choose, workloads are generated using the most updated operational, security, and architectural best practices.
+Q: How does AWS Mainframe Modernization work with other AWS services?
+Applications refactored or replatformed with Mainframe Modernization can take advantage of a wide selection of AWS services, from compute and database services to messaging, security, storage, and more. Specifically, Mainframe Modernization integrates with Amazon CloudWatch alarms and other operational services as suggested in AWS best practices. You can also deploy migrated applications using AWS CloudFormation templates or AWS Cloud Development Kit (CDK) scripts, and use AWS Identity and Access Management (IAM) to securely manage users and role-based access to AWS resources. AWS Migration Hub Refactor Spaces can be used with Mainframe Modernization to manage multi-account refactor environments that have simplified networking and routing between the mainframe and new services.
+Q: Will AWS Mainframe Modernization help replatform my legacy workload and run it on AWS?
+Yes. Replatforming is one of the migration patterns Mainframe Modernization supports. The legacy application is recompiled by the Mainframe Modernization Developer tool and deployed into the Mainframe Modernization Managed Runtime as an Amazon Elastic Compute Cloud (EC2) –based runtime environment.
+Q: Can I use AWS Mainframe Modernization to refactor an application that I’ve previously replatformed?
+Yes. When you want to move quickly, you can first elect to replatform onto AWS. Once this is completed, you can continue your modernization journey by refactoring the replatformed application.
+Q: Where is AWS Mainframe Migration available?
+AWS Mainframe Modernization is available in preview today in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), EU (Frankfurt), and South America (São Paulo) with availability in additional AWS Regions in the coming months.
+Migration and modernization
+Q: What migration patterns does AWS Mainframe Modernization support?
+At launch, Mainframe Modernization supports two main migration patterns: 1) automated refactoring to transform COBOL mainframe code into Java, and 2) replatforming with middleware emulation to a mainframe-compatible runtime environment. The goal of replatforming is to reduce code changes as much as possible to decrease risk and accelerate migration timelines. Both patterns facilitate service decomposition toward creating macroservices or microservices, and you can use both patterns on a single project based on business objectives.
+Q: What types of legacy workloads does AWS Mainframe Modernization support?
+Mainframe Modernization offers replatforming and refactoring support for a wide variety of legacy systems such as COBOL, Programming Language One (PL/1), Job Control Language (JCL), Customer Information Control System (CICS), and many others.
+Licensing and support
+Q: What target database systems can my modernized application use?
+Our default recommendation is to use Amazon Aurora with PostgreSQL compatibility. However, depending on the migration pattern and legacy application, you can use various AWS databases such as Amazon RDS for PostgreSQL or self-managed databases running on Amazon EC2.
+Q: Can I use other middleware emulators with AWS Mainframe Modernization?
+No. At launch, Mainframe Modernization currently supports only the Micro Focus middleware emulator.
+Q: Can I use other automatic refactoring tools with AWS Mainframe Modernization?
+No. At launch, Mainframe Modernization currently supports only the Blu Age automatic refactoring tools.
+Getting started
+Q: How do I get started with AWS Mainframe Modernization?
+To get started with Mainframe Modernization, navigate to the AWS Management Console within your AWS account and select the Mainframe Modernization link. Detailed documentation and videos are available in the AWS Mainframe Modernization documentation.
+Q: Can I customize the results of the modernization?
+Yes. Depending on the pattern, you can restyle or change to a new user interface (UI) that obeys your company standards, colors, and other rules. You can also change what the refactored code looks like to obey various corporate IT rules and standards.
+Learn more about pricing
+Explore pricing options for AWS Mainframe Modernization.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Mainframe Modernization in the AWS Management Console.
+Sign in
+Page Content

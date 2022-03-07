@@ -1,0 +1,30 @@
+AWS VPN
+Extend your on-premises networks to the cloud and securely access them from anywhere
+Get started with AWS VPN
+Download AWS Client VPN for Desktop
+Better Security and Performance with AWS VPN Innovations - AWS Online Tech Talks (35:39)
+AWS Virtual Private Network solutions establish secure connections between your on-premises networks, remote offices, client devices, and the AWS global network. AWS VPN is comprised of two services: AWS Site-to-Site VPN and AWS Client VPN. Each service provides a highly-available, managed, and elastic cloud VPN solution to protect your network traffic.
+AWS Site-to-Site VPN creates encrypted tunnels between your network and your Amazon Virtual Private Clouds or AWS Transit Gateways. For managing remote access, AWS Client VPN connects your users to AWS or on-premises resources using a VPN software client.
+AWS Client VPN
+AWS Client VPN is a fully-managed, elastic VPN service that automatically scales up or down based on user demand. Because it is a cloud VPN solution, you don’t need to install and manage hardware or software-based solutions, or try to estimate how many remote users to support at one time.
+Learn more
+AWS Site-to-Site VPN
+AWS Site-to-Site VPN creates a secure connection between your data center or branch office and your AWS cloud resources. For globally distributed applications, the Accelerated Site-to-Site VPN option provides even greater performance by working with AWS Global Accelerator.
+AWS Client VPN is used by your remote workforce to securely access resources within both AWS and your on-premises networks.
+How it works
+AWS Site-to-Site VPN creates encrypted connections between your locations (such as data centers and remote offices) and your AWS cloud resources.
+Blogs
+Date (Newest to Oldest)
+1
+...
+No blog posts have been found at this time. Please see the AWS Blog for other resources.
+What's new
+Please see the AWS What's New page for recent launches.
+Check out the product features
+Discover what AWS VPN can do.
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS VPN in the AWS Console.
+Get started

@@ -1,0 +1,34 @@
+General
+Q: What is Amazon Elastic Inference?
+A: Amazon Elastic Inference (Amazon EI) is an accelerated compute service that allows you to attach just the right amount of GPU-powered inference acceleration to any Amazon EC2 or Amazon SageMaker instance type or Amazon ECS task. This means you can now choose the instance type that is best suited to the overall compute, memory, and storage needs of your application, and then separately configure the amount of inference acceleration that you need.
+Q: What are Amazon Elastic inference accelerators?
+A: Amazon Elastic inference accelerators are GPU-powered hardware devices that are designed to work with any EC2 instance, Sagemaker instance, or ECS task to accelerate deep learning inference workloads at a low cost. When you launch an EC2 instance or an ECS task with Amazon Elastic Inference, an accelerator is provisioned and attached to the instance over the network. Deep learning tools and frameworks like TensorFlow Serving, Apache MXNet and PyTorch that are enabled for Amazon Elastic Inference, can automatically detect and offload model computation to the attached accelerator.
+Q: What is the difference between the Amazon Elastic inference accelerator family types?
+A: The EIA2 accelerators have twice the GPU memory of equivalent EIA1 accelerators. You can determine your GPU memory needs based on your model and tensor input sizes and choose the right accelerator family and type for your needs.
+Configuring
+Q: How do I provision Amazon Elastic Inference accelerators?
+A: You can configure Amazon SageMaker endpoints or Amazon EC2 instances or Amazon ECS tasks with Amazon Elastic Inference accelerators using the AWS management console, AWS command line interface (CLI), or the AWS SDK. There are two requirements for launching EC2 instances with accelerators. First, you will need to provision an AWS PrivateLink VPC Endpoint for the subnets where you plan to launch accelerators. Second, as you launch an instance, you need to provide an instance role with a policy that allows users accessing the instance to connect to accelerators. When you configure an instance to launch with Amazon EI, an accelerator is provisioned in the same Availability Zone behind the VPC endpoint.
+Q: What model formats does Amazon Elastic Inference support?
+A: Amazon Elastic Inference supports models trained using TensorFlow, Apache MXNet, PyTorch, and ONNX models.
+Q: Can I deploy models on Amazon Elastic Inference using TensorFlow, Apache MXNet or PyTorch frameworks?
+A: Yes, you can use AWS-enhanced TensorFlow Serving, Apache MXNet and PyTorch libraries to deploy models and make inference calls.
+Q: How do I get access to AWS optimized frameworks?
+A: The AWS Deep Learning AMIs include the latest releases of TensorFlow Serving, Apache MXNet and PyTorch that are optimized for use with Amazon Elastic Inference accelerators. You can also obtain the libraries via Amazon S3 to build your own AMIs or container images. Please see our documentation (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-inference.html) for more information.
+Q: Can I use CUDA with Amazon Elastic Inference accelerators?
+A: No. You can only use either the AWS-enhanced TensorFlow Serving, Apache MXNet or PyTorch libraries as an interface to Amazon Elastic Inference accelerators.
+Pricing and billing
+Q: How am I charged for Amazon Elastic Inference?
+A: You pay only for the Amazon Elastic Inference accelerator hours you use. For more details, see the pricing page.
+Q: Will I incur charges for AWS PrivateLink VPC Endpoints for the Amazon Elastic Inference service?
+A: No. You will not incur charges for VPC Endpoints to the Amazon Elastic Inference service, as long as you have at least one instance configured with an accelerator, running in an Availability Zone where a VPC endpoint is provisioned.
+Learn more about pricing
+See the Amazon Elastic Inference pricing page for detailed pricing information.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started with Amazon Elastic Inference on Amazon SageMaker or Amazon EC2.
+Sign in
+Page Content
+Pricing

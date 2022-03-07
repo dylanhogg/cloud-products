@@ -1,0 +1,32 @@
+« AWS IoT
+AWS IoT FleetWise (Preview)
+Easily collect, transform, and transfer vehicle data to the cloud in near-real time
+Get started with AWS IoT FleetWise
+Connect with an IoT expert
+Access standardized fleet-wide vehicle data without the need to develop custom data collection systems.
+Reduce costs and enable more efficient data transfer with intelligent filtering that sends the exact data you need to the cloud.
+Surface vehicle health data in near-real time to detect and mitigate issues faster, help prevent potential recalls, and remotely assist customers.
+How it works
+AWS IoT FleetWise makes it easy and cost effective for automakers to collect, transform, and transfer vehicle data to the cloud in near-real time and use it to build applications with analytics and machine learning that improve vehicle quality, safety, and autonomy.
+Close
+Click to enlarge
+Use cases
+Train computer vision models
+Train autonomous vehicles (AVs) and advanced driver assistance systems (ADAS) with camera data collected from a fleet of production vehicles.
+Help minimize warranty claims and recalls
+Use near real-time data to proactively detect and mitigate fleet-wide quality issues.
+Improve EV range estimates
+Improve electric vehicle (EV) battery range estimates with crowdsourced environmental data, such as weather and driving conditions, from nearby vehicles.
+Notify drivers of changing road conditions
+Collect select data from nearby vehicles and use it to notify drivers of changing road conditions, such as lane closures or construction.
+How to get started
+Find out how AWS IoT FleetWise works
+Learn more about rules-based data collection, vehicle modeling, and more.
+View the features page
+Explore AWS IoT FleetWise pricing
+Pay only for services used with no upfront commitments or fees.
+Learn more about pricing
+Connect with an expert
+Get the support you need.
+Explore support options
+Explore more of AWS

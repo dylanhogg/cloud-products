@@ -1,0 +1,24 @@
+General
+Q: What is Amazon HealthLake? Amazon Healthlake is a HIPAA-eligible service enabling healthcare and life sciences companies to securely store and transform their data into a consistent and queryable fashion, and further analyze this data in the cloud, at petabyte scale. Using the HealthLake APIs, health organizations can easily copy health data, such as imaging medical reports or patient notes, from on-premises systems to a secure data lake in the cloud. HealthLake uses machine learning (ML) models to automatically understand and extract meaningful medical information from the raw data, such as medications, procedures, and diagnoses. HealthLake organizes and indexes information and stores it in the Fast Healthcare Interoperability Resources (FHIR) industry standard format to provide a complete view of each patient's medical history.
+Q: How do I get started with Amazon HealthLake? To start using the Amazon HealthLake, sign in to the AWS Management Console and navigate to “Amazon HealthLake” in the AI/ML category.
+Q: In which AWS Regions is Amazon HealthLake available? Amazon Healthlake is available in the U.S. East (N. Virginia), U.S. West (Oregon), and U.S. East (Ohio) regions in the AWS Console.
+Q: Which medical entities and ontologies are tagged in Amazon HealthLake? Please see our developer documentation.
+Q: How does Amazon HealthLake integrate with other AWS services? Amazon HealthLake integrates with AWS analytics services. For example, see how Amazon QuickSight can deploy interactive dashboards to analyze your population data in this blog. HealthLake also integrates with ML services like Amazon SageMaker for developers and data scientists to build, train, and deploy their own predictive analytics using machine learning models. For example, see how you can build disease predictive models using Amazon SageMaker with Amazon HealthLake normalized data. Clinicians can also use web or mobile application dashboards to view the results of custom or pre-built models. Using Amazon Neptune and Amazon Kendra, you can also build an ML-enabled cognitive search application where clinical evidence is tagged, indexed, and structured to provide evidence-based information on topics like transmission, risk factors, therapeutics, and incubation.
+Fast Healthcare Interoperability Resources
+Q: What is FHIR? Fast Healthcare Interoperability Resources (FHIR) is a standard for exchanging healthcare information electronically. The standard was created by the Health Level Seven International or HL7 healthcare standards organization. To learn more, see the FHIR overview on the HL7 FHIR website.
+Q: How do I convert my current data to FHIR? Currently, Amazon HealthLake ingests data in FHIR R4 format. If your source systems are not configured to transmit data in the FHIR format, use an AWS partner to convert legacy healthcare data formats into FHIR.
+Q: What FHIR resources does Amazon HealthLake support? To see a list of FHIR resources that are supported, see our developer documentation.
+Security & compliance
+Q: Is Amazon Healthlake HIPAA-eligible? Amazon HealthLake is a HIPAA Eligible Service. You can find a list of AWS HIPAA Eligible Services here. For more information about AWS, U.S. Health Insurance Portability and Accountability Act of 1996 (HIPAA), and using AWS services to process, store, and transmit protected health information (PHI), see our HIPAA Compliance Overview.
+Q: What security and privacy measures does Amazon HealthLake have in place? Amazon HealthLake is a HIPAA-eligible service that meets rigorous security and access control standards to ensure patients’ sensitive health data is protected and meets regulatory compliance. Customer data is encrypted at all times, in transit and at rest. Data is encrypted using Customer-Managed Keys (CMK). Also, per FHIR specification, if a customer deletes a piece of data, it will be only be hidden from analysis and results; it is not deleted from the service, and is only versioned. Amazon HealthLake is GDPR-compliant.
+Q: Do I need a Business Associate Addendum (BAA) before I can use Amazon HealthLake? Amazon HealthLake is a HIPAA eligible service. If you are storing Protected Health Information on AWS, you are required to have a BAA. You can quickly enter into a BAA online using the AWS Artifacts click through found here.
+Learn more about pricing
+Visit the Amazon HealthLake pricing page.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon HealthLake in the AWS Management Console.
+Sign in
+Page Content

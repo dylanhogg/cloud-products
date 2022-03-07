@@ -1,0 +1,85 @@
+Getting started
+Q: What can I do with the AWS IoT Button?
+You can use the button to count items, track usage, call or text and alert someone, start and stop a process or Internet-connected device. To count and track usage, you can store the clicks in Amazon DynamoDB.  Follow this tutorial to create a DynamoDB rule using the AWS IoT rules engine. You can alert someone using Amazon SNS. Follow this tutorial to create an SNS rule using the AWS IoT rules engine. You can start and stop a process, call an external API endpoint, or connect to an Internet-connected device using AWS Lambda. Follow this tutorial to create a Lambda rule using the AWS IoT rules engine.
+Q: How do I configure the button to use at home or office Wi-Fi?
+Gather the following information: 1. Last 8 digits of the button’s Digital Serial Number (DSN) – printed at the bottom of the device. 2. The Wi-Fi SSID and password you want the device to use. 3. Your legacy iot:Data endpoint as described here. (Note: The ATS endpoint cannot be used).
+Perform these steps: 1. Press and hold the button for five seconds until the LED starts flashing blue. 2. Use your phone or computer to connect to the Button ConfigureMe - XXXX Wi-Fi network. Use the last 8 digits of the serial number of your device as the WPA2-PSK password. 3. In a browser, navigate to http://192.168.0.1/index.html. 4. Enter information as prompted.
+Q: Will the AWS IoT Button work anywhere?
+The button will work wherever there is Wi-Fi (2.4 Ghz). It is designed to work in a home or office environment, but is not ideal for spaces with a congested Wi-Fi spectrum like expo halls, lunch rooms, keynote rooms, or hallways. If it can connect to the Internet, it will work.
+What’s in the payload sent from the device when you press it?
+The payload contains the device serial number, the measured battery voltage, and a click type.
+The following JSON template shows what is sent in the payload.
+{
+"serialNumber": "GXXXXXXXXXXXXXXXXX",
+"batteryVoltage": "mV",
+"clickType": "SINGLE | DOUBLE | LONG"
+}
+A LONG clickType is sent if the first press lasts longer than 1.5 seconds. SINGLE and DOUBLE clickType payloads are sent for short clicks.
+Q: What do the LED color patterns mean?
+Color
+Status
+Blinking White
+Connecting to Wi-Fi, getting IP address, connecting to AWS IoT.
+Solid Green
+Successfully connected to Wi-Fi and published a message to AWS IoT.
+Blinking Blue
+Soft AP mode.
+Solid Orange
+No Wi-Fi configured.
+Red
+Error. (See the Troubleshooting Guide for more information.)
+Q: How long will the battery last?
+The battery on the 2nd Gen AWS IoT Button will last for approximately 2,000 clicks. When the device battery runs out of charge, there is no way to recharge or replace the battery.
+Q: Do you have examples of Lambda functions I can use?
+You can use any of the blueprints in the AWS Lambda console.
+Q: Do I need an AWS account as well as an Amazon.com account to use this device?
+Yes. You need an AWS account to set up this device. An AWS account is different from an Amazon.com account. You need an Amazon.com account to purchase the button.
+Q: How much is it going to cost?
+With AWS, you pay only for the services you use, for as long as you use them, and with no long-term contracts. The button will use the AWS IoT service and any other service you consume. If you qualify for the free tier, there will be no additional charge. Otherwise, each service has separate pricing. You will be charged separately based on your usage.
+Q: I have built a unique IoT project.  Where can I post it?
+We have worked with Hackster and they have created an AWS IoT Button page on Hackster.io, hackster.io/amazonwebservices/products/aws-iot-button. Feel free to post your project with details on how others can build what you have built.
+Q: What’s the difference between an AWS IoT Button and an AWS IoT 1-Click compatible device?
+The AWS IoT Button connects to AWS IoT Core and can be configured as described above. AWS IoT 1-Click is a service that supports multiple devices including the AWS IoT Enterprise Button which can be configured using the AWS IoT 1-Click Mobile app. For information about the AWS IoT 1-Click service and devices it supports: AWS IoT 1-Click
+Troubleshooting
+Q: I am having trouble provisioning the certificate and private key on my button.  What should I do?
+In the AWS Lambda Event Source wizard, if you are using Firefox, Chrome, or Opera, click the link to download the certificate and private key. If you are using Safari or Internet Explorer, right-click and choose Save As to download the certificate and the private key files to your computer.
+For security reasons, AWS does not store the AWS IoT certificate and private key. If you do not download them to your computer, they will be lost. You can create a new certificate and private key or follow the steps in the AWS Lambda Event Source wizard if the current certificate does not work.
+Q: I followed the blueprint wizard, but when I press the button, I get a green light. I don’t get an email.
+It’s possible that your Lambda function does not have the right permissions to create resources in SNS. To confirm, go to the CloudWatch logs of the Lambda function you just created with the wizard. Add the required SNS permissions (sns:createTopic, sns:Publish, sns:subscribe, sns:listSubscriptions) to your execution role of the function.
+In other cases, when you are not using the wizard, whenever you get a green light and nothing happens, follow these steps for debugging:
+Test using the MQTT Client in the AWS IoT console. Subscribe to the “iotbutton/+” topic and see whether you receive a message when clicked.
+In the AWS IoT console, under Settings, enable CloudWatch Logs, and then examine “AWSIoTLogs” in the Amazon CloudWatch console to see if the rule was fired.
+For other services like AWS Lambda, examine the logs specific to the function in the CloudWatch logs to find the error.
+Q: My button cannot connect and blinks a red pattern.
+This indicates an error has occurred. Use this blinking sequence guide to troubleshoot the issue:
+Blinking Pattern
+Error
+Short short short
+There was an error connecting to the configured wireless network.
+Short short long
+There was an error obtaining an IP address from the network.
+Short long short
+There was an error performing the host name lookup. This can be the result of not being able to reach the DNS server or an incorrectly configured AWS IoT endpoint subdomain.
+Short long long
+Cannot connect to AWS IoT. This can be an issue with the network, but is most likely not an issue with the certificates.
+Long short short
+Cannot establish a secure connection with the server. This error is most likely due to an unknown or inactive certificate.
+Long short long
+Received HTTP 403 Forbidden. This can happen if your button's certificate is deactivated or expired.
+Long long short
+There is a problem sending to or receiving from AWS IoT. This is most likely just a networking error.
+Long long long
+Received an unknown HTTP response from AWS IoT.
+Solid red
+A fatal internal error occurred. Your only option is to retry.
+Q: I am having trouble getting the device into setup mode. I have pressed the button for 5+ seconds but don’t see flashing blue.
+If this happens, release the button, wait a few seconds and then try again. If you still have no luck, short press the button and verify you see an orange light. If you don’t see an orange light, get in touch with customer services by creating a support case here.
+Q: I am an IAM user with restricted access.
+You must provide iot:* permissions in your IAM user policy. I am having problems not addressed in this guide. Don't worry. We are here for you. If you cannot connect the button to AWS, click here to create a support case. The AWS Customer Service team will contact you. Feel free to post your technical service-related questions on the AWS IoT forum or AWS Lambda forum.
+Learn more about the AWS IoT Button
+AWS IoT Button
+Ready to get started?
+Sign up
+Have more questions?
+Contact us
+Page Content

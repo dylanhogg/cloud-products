@@ -1,0 +1,36 @@
+« Machine Learning
+Amazon HealthLake
+Securely store, transform, query, and analyze health data in minutes
+Get Started with Amazon HealthLake
+Contact Sales
+Extract meaning from unstructured data with natural language processing (NLP) for easy search and querying.
+Make predictions with health data using Amazon SageMaker machine learning (ML) models and Amazon QuickSight analytics.
+Support interoperable standards such as the Fast Healthcare Interoperability Resources (FHIR) format.
+Create a complete and chronological view of patient health data, including prescriptions, procedures, and diagnoses.
+How it works
+Amazon HealthLake is a HIPAA-eligible service offering healthcare and life sciences companies a complete view of individual or patient population health data for query and analytics at scale.
+Use cases
+Manage population health
+Analyze population health trends, predict outcomes, and manage costs with advanced analytics tools and ML models.   Learn more about population health applications
+Improve care quality
+Identify opportunities to close gaps in care and apply preventative treatment with a complete timeline view of patient medical histories.   Learn more about predictive disease modeling
+Optimize hospital efficiency
+Apply advanced analytics and ML to newly structured data to optimize appointment scheduling, reduce unnecessary procedures, and predict hospital bed availability.  Learn more about cognitive search
+Customers
+Rush University Medical Center improved its COVID-19 response with HealthLake
+Cortica uses HealthLake for autism treatment research
+MEDHOST created a compliant FHIR data store
+Partners
+Amazon HealthLake Partners can help you get started quickly with a range of Amazon HealthLake applications and services. If your data is not yet in the Fast Healthcare Interoperability Resources (FHIR) standard, you can work with AWS Partners who have built validated Amazon HealthLake connectors to transform existing healthcare data in to the FHIR format and move it in to HealthLake.
+See more about our partners including Diameter Health, HealthLX, Intersystems, and Redox.
+How to get started
+Amazon HealthLake workshop
+Walk through how to create a Data Store and much more.
+Check out the workshop
+Explore HealthLake pricing
+Pay as you go with no upfront costs.
+Learn more about Healthlake pricing
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

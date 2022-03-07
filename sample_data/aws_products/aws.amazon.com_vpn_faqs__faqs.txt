@@ -1,0 +1,244 @@
+AWS VPN is comprised of two services: AWS Site-to-Site VPN and AWS Client VPN. AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site to your Amazon Virtual Private Cloud (Amazon VPC). AWS Client VPN enables you to securely connect users to AWS or on-premises networks.
+General questions
+Q: What is a Client VPN endpoint?
+A: The Client VPN endpoint is a regional construct that you configure to use the service. The VPN sessions of the end users terminate at the Client VPN endpoint. As part of configuring the Client VPN endpoint, you specify the authentication details, server certificate information, client IP address allocation, logging, and VPN options.
+Q: What is a target network?
+A: A target network, is a network that you associate to the Client VPN endpoint that enables secure access to your AWS resources as well as access to on-premises. Currently, the target network is a subnet in your Amazon VPC.
+Billing
+Q: What defines billable VPN connection-hours?
+A: VPN connection-hours are billed for any time your VPN connections are in the "available" state. You can determine the state of a VPN connection via the AWS Management Console, CLI, or API. If you no longer wish to use your VPN connection, you simply terminate the VPN connection to avoid being billed for additional VPN connection-hours.
+Q: Do your prices include taxes?
+A: Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. For customers with a Japanese billing address, use of AWS services is subject to Japanese Consumption Tax. Learn more.
+AWS Site-to-Site VPN setup and management
+Q: Can I use the AWS Management Console to control and manage AWS Site-to-Site VPN?
+A: Yes. You can use the AWS Management Console to manage IPSec VPN connections, such as AWS Site-to-Site VPN.
+Q: What are the default limits or quota on Site-to-Site VPNs?
+A: Details on AWS Site-to-Site VPN limits and quota can be found in our documentation.
+AWS Site-to-Site VPN connectivity
+Q: What are the VPN connectivity options for my VPC?
+A: You may connect your VPC to your corporate data center using a Hardware VPN connection via the virtual private gateway.
+Q: How do instances without public IP addresses access the Internet?
+A: Instances without public IP addresses can access the Internet in one of two ways:
+Instances without public IP addresses can route their traffic through a network address translation (NAT) gateway or a NAT instance to access the internet. These instances use the public IP address of the NAT gateway or NAT instance to traverse the internet. The NAT gateway or NAT instance allows outbound communication but doesn’t allow machines on the internet to initiate a connection to the privately addressed instances.
+For VPCs with a hardware VPN connection or Direct Connect connection, instances can route their Internet traffic down the virtual private gateway to your existing datacenter. From there, it can access the Internet via your existing egress points and network security/monitoring devices.
+Q: How does an AWS Site-to-Site VPN connection work with Amazon VPC?
+A: An AWS Site-to-Site VPN connection connects your VPC to your datacenter. Amazon supports Internet Protocol security (IPsec) VPN connections. Data transferred between your VPC and datacenter routes over an encrypted VPN connection to help maintain the confidentiality and integrity of data in transit. An Internet gateway is not required to establish a Site-to-Site VPN connection.
+Q: What is IPSec?
+A: IPsec is a protocol suite for securing Internet Protocol (IP) communications by authenticating and encrypting each IP packet of a data stream.
+Q: Which customer gateway devices can I use to connect to Amazon VPC?
+A: You can create two types of AWS Site-to-Site VPN connections: statically routed VPN connections and dynamically-routed VPN connections. Customer gateway devices supporting statically-routed VPN connections must be able to:
+Establish IKE Security Association using Pre-Shared Keys
+Establish IPsec Security Associations in Tunnel mode
+Utilize the AES 128-bit, 256-bit, 128-bit-GCM-16, or 256-GCM-16 encryption function
+Utilize the SHA-1, SHA-2 (256), SHA2 (384) or SHA2 (512) hashing function
+Utilize Diffie-Hellman (DH) Perfect Forward Secrecy in "Group 2" mode, or one of the additional DH groups we support
+Perform packet fragmentation prior to encryption
+In addition to the above capabilities, devices supporting dynamically-routed Site-to-Site VPN connections must be able to:
+Establish Border Gateway Protocol (BGP) peering
+Bind tunnels to logical interfaces (route-based VPN)
+Utilize IPsec Dead Peer Detection
+Q: Which Diffie-Hellman groups do you support?
+A; We support the following Diffie-Hellman (DH) groups in Phase 1 and Phase 2.
+Phase 1 DH groups 2, 14-24.
+Phase 2 DH groups 2, 5, 14-24.
+Q: What algorithms does AWS propose when an IKE rekey is needed?
+A: By default, then VPN endpoint on AWS side will propose AES-128, SHA-1 and DH group 2. If you would like a specific proposal for rekey, we recommend that you use Modify VPN Tunnel Options to restrict the tunnel options to the specific VPN parameters you require.
+Q: What customer gateway devices are known to work with Amazon VPC?
+A: In The network administrator guide, you will find a list of the devices meeting the aforementioned requirements, that are known to work with hardware VPN connections, and that will support in the command line tools for automatic generation of configuration files appropriate for your device.
+Q: If my device is not listed, where can I go for more information about using it with Amazon VPC?
+A: We recommend checking the Amazon VPC forum as other customers may be already using your device.
+Q: What is the approximate maximum throughput of a Site-to-Site VPN connection?
+A: Each AWS Site-to-Site VPN connection has two tunnels and each tunnel supports a maximum throughput of up to 1.25 Gbps. If your VPN connection is to a Virtual Private Gateway, aggregated throughput limits would apply.
+Q: Is there an aggregated throughput limit for Virtual Private Gateway?
+A: Virtual Private Gateway has an aggregate throughput limit per connection type. Multiple VPN connections to the same Virtual Private Gateway are bound by an aggregate throughput limit from AWS to on-premises of up to 1.25 Gbps. For AWS Direct Connect connection on a Virtual Private Gateway, the throughput is bound by the Direct Connect physical port itself. To connect to multiple VPCs and and achieve higher throughput limits, use AWS Transit Gateway.
+Q: What factors affect the throughput of my VPN connection?
+A: VPN connection throughput can depend on multiple factors, such as the capability of your customer gateway, the capacity of your connection, average packet size, the protocol being used, TCP vs. UDP, and the network latency between your customer gateway and the virtual private gateway.
+Q: What is the approximate maximum packets per second of a Site-to-Site VPN connection?
+A: Each AWS Site-to-Site VPN connection has two tunnels and each tunnel supports a maximum packets per second of up to 140,000.
+Q: What tools are available to me to help troubleshoot my Site-to-Site VPN configuration?
+A: The DescribeVPNConnection API displays the status of the VPN connection, including the state ("up"/"down") of each VPN tunnel and corresponding error messages if either tunnel is "down". This information is also displayed in the AWS Management Console.
+Q: How do I connect a VPC to my corporate datacenter?
+A: Establishing a hardware VPN connection between your existing network and Amazon VPC allows you to interact with Amazon EC2 instances within a VPC as if they were within your existing network. AWS does not perform network address translation (NAT) on Amazon EC2 instances within a VPC accessed via a hardware VPN connection.
+Q: Can I NAT my customer gateway behind a router or firewall?
+A: You will use the public IP address of your NAT device.
+Q: What IP address do I use for my customer gateway address?
+Q: How do I disable NAT-T on my connection?
+A: You will need to disable NAT-T on your device. If you don’t plan on using NAT-T and it is not disabled on your device, we will attempt to establish a tunnel over UDP port 4500. If that port is not open the tunnel will not establish.
+Q: I would like to have multiple customer gateways behind a NAT, what do I need to do to configure that?
+Q: How many IPsec security associations can be established concurrently per tunnel?
+A: The AWS VPN service is a route-based solution, so when using a route-based configuration you will not run into SA limitations. If, however, you are using a policy-based solution you will need to limit to a single SA, as the service is a route-based solution.
+Q: Can I advertise my VPC public IP address range to the internet and route the traffic through my datacenter, via the Site-to-Site VPN, and to my VPC?
+A: Yes, you can route traffic via the VPN connection and advertise the address range from your home network.
+Q: What is the maximum number of routes that my VPN connection will advertise to my customer gateway device?
+A: Your VPN connection will advertise a maximum of 1,000 routes to the customer gateway device. For VPNs on a Virtual Private Gateway, advertised route sources include VPC routes, other VPN routes, and routes from DX Virtual Interfaces. For VPNs on an AWS Transit Gateway, advertised routes come from the route table associated to the VPN attachment. If more than 1,000 routes are attempted to be sent, only a subset of 1,000 will be advertised.
+Q: What is the maximum number of routes that can be advertised to my VPN connection from my customer gateway device?
+A: You can advertise a maximum of 100 routes to your Site-to-Site VPN connection on a virtual private gateway from your customer gateway device or a maximum of 1000 routes to your Site-to-Site VPN connection on an AWS Transit Gateway. For a VPN connection with Static routes, you will not be able to add more than 100 static routes. For a VPN connection with BGP, the BGP session will reset if you attempt to advertise more than the maximum for the gateway type.
+Q: Do VPN connections support IPv6 traffic?
+A: Yes. VPN connections to an AWS Transit Gateway can support either IPv4 or IPv6 traffic which can be selected while creating a new VPN connection. To select IPv6 for VPN traffic, set the VPN tunnel option for Inside IP Version to IPv6. Note that tunnel endpoint and Customer Gateway IP addresses are IPv4 only.
+Q: Which side of the VPN tunnel initiates the Internet Key Exchange (IKE) session?
+A: By default your Customer Gateway (CGW) must initiate IKE. Alternatively, the AWS VPN endpoints can initiate by enabling the appropriate options.
+AWS Accelerated Site-to-Site VPN
+Q: Why should I use Accelerated Site-to-Site VPN?
+A: VPN connections face inconsistent availability and performance as traffic traverses through multiple public networks on the internet before reaching the VPN endpoint in AWS. These public networks can be congested. Each hop can introduce availability and performance risks. Accelerated Site-to-Site VPN makes user experience more consistent by using the highly available and congestion-free AWS global network.
+Q: How can I create an Accelerated Site-to-Site VPN?
+A: When creating a VPN connection, set the option “Enable Acceleration” to ‘true’.
+Q: How do I find out whether my existing VPN connection is an Accelerated Site-to-Site VPN?
+A: In the description of your VPN connection, the value for “Enable Acceleration” should be set to ‘true’.
+Q: How can I convert my existing Site-to-Site VPN to an Accelerated Site-to-Site VPN?
+A: Create a new Accelerated Site-to-Site VPN, update your customer gateway device to connect to this new VPN connection, and then delete your existing VPN connection. You will get new tunnel endpoint internet protocol (IP) addresses since accelerated VPNs use separate IP address ranges from non-accelerated VPN connections.
+Q: Is Accelerated Site-to-Site VPN supported for both virtual gateway and AWS Transit Gateway?
+A: Only Transit Gateway supports Accelerated Site-to-Site VPN. A Transit Gateway should be specified when creating a VPN connection. The VPN endpoint on the AWS side is created on the Transit Gateway.
+Q: Does an Accelerated Site-to-Site VPN connection offer two tunnels for high availability?
+A: Yes, each VPN connection offers two tunnels for high availability.
+Q: Are there any protocol differences between Accelerated and non-Accelerated Site-to-Site VPN tunnels?
+A: NAT-T is required and is enabled by default for Accelerated Site-to-Site VPN connections. Other that that, Accelerated and non-Accelerated VPN tunnels support the same IP security (IPSec) and internet key exchange (IKE) protocols, and also offer the same bandwidth, tunnel options, routing options, and authentication types.
+Q: Does Accelerated Site-to-Site VPN offer two network zones for high availability?
+A: Yes, we select AWS Global Accelerator global internet protocol addresses (IPs) from independent network zones for the two tunnel endpoints.
+Q: Is Accelerated Site-to-Site VPN an option in AWS Global Accelerator?
+A: No, Accelerated Site-to-Site VPN can only by created through AWS Site-to-Site VPN. Accelerated Site-to-Site VPNs cannot be created through the AWS Global Accelerator console or API.
+Q: Can I use Accelerated VPN over public AWS Direct Connect virtual interfaces?
+A: No, Accelerated Site-to-Site VPN over public Direct Connect virtual interfaces is not available. In most cases there is no acceleration benefit of Accelerated Site-to-Site VPN when used over public Direct Connect.
+Q: In which AWS Regions is Accelerated Site-to-Site VPN available?
+A: Accelerated Site-to-Site VPN available is currently available in these AWS Regions: US West (Oregon), US West (N. California), US East (Ohio), US East (N. Virginia), South America (Sao Paulo), Middle East (Bahrain), Europe (Stockholm), Europe (Paris), Europe (Milan), Europe (London), Europe (Ireland), Europe (Frankfurt), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Hong Kong), Africa (Cape Town).
+AWS Client VPN setup and management
+Q: How do I setup AWS Client VPN?
+A: The IT administrator creates a Client VPN endpoint, associates a target network to that endpoint and sets up the access policies to allow end user connectivity. The IT administrator distributes the client VPN configuration file to the end users. End users will need to download an OpenVPN client and use the client VPN configuration file to create their VPN session.
+Q: What should an end user do to setup a connection?
+A: The end user should download an OpenVPN client to their device. Next, the user will import the AWS Client VPN configuration file to the OpenVPN client and initiate a VPN connection.
+AWS Client VPN connectivity
+Q: How do I enable connectivity to other networks?
+A: You can enable connectivity to other networks like peered Amazon VPCs, on-premises networks via virtual gateway or AWS services, such as S3, via endpoints, networks via AWS PrivateLink or other resources via internet gateway. To enable connectivity, add a route to the specific network in the Client VPN route table, and add authorization rule enabling access to the specific network.
+Q: Can the Client VPN endpoint belong to a different account from the associated subnet?
+A: No, the subnet being associated has to be in the same account as Client VPN endpoint.
+Q: Can I access resources in a VPC within a different region different from the region in which I setup the TLS session, using a Private IP address?
+A: You can achieve this by following the two steps: First, set up a cross-region peering connection between your destination VPC (in the different region) and the Client VPN associated VPC. Second, you should add a route and access rule for the destination VPC in the Client VPN endpoint. Your users can now access the resources in the destination VPC that is in a different region from your Client VPN endpoint.
+Q: What transport protocols are supported by Client VPN?
+A: You can choose either TCP or UDP for the VPN session.
+Q: Does AWS Client VPN support split tunnel?
+A: Yes. You may choose to create an endpoint with split tunnel enabled or disabled. If you've previously created an endpoint with split tunnel disabled, you may choose to modify it it to enable split tunnel. If split tunnel is enabled, traffic destined for routes configured on the endpoint will be routed via the VPN tunnel. All other traffic will be routed via your local network interface. If split tunnel is disabled, all the traffic from the device will traverse through the VPN tunnel.
+AWS Client VPN authentication and authorization
+Q: What authentication mechanisms does AWS Client VPN support?
+A: AWS Client VPN supports authentication with Active Directory using AWS Directory Services, Certificate-based authentication, and Federated Authentication using SAML-2.0.
+Q: Can I use an on-premises Active Directory service to authenticate users?
+A: Yes. AWS Client VPN integrates with AWS Directory Service that will allow you to connect to on-premises Active Directory.
+Q: Does AWS Client VPN support mutual authentication?
+A: Yes, AWS Client VPN supports mutual authentication. When mutual authentication is enabled, customer have to upload the root certificate used to issue the client certificate on the server.
+Q: Can I blacklist client certificates?
+A: Yes, AWS Client VPN supports statically-configured Certificate Revocation List (CRL).
+Q: Does AWS Client VPN support the ability for a customer to bring their own certificate?
+A: Yes. You should upload the certificate, root certification authority (CA) certificate, and the private key of the server. These are uploaded to AWS Certificate Manager.
+Q: Does AWS Client VPN integrate with AWS Certificate Manager (ACM) to generate server certificates?
+A: Yes. You can use ACM as a subordinate CA chained to an external root CA. ACM then generates the server certificate. In this scenario, ACM also does the server certificate rotation.
+Q: Does AWS Client VPN support posture assessment?
+A: No. AWS Client VPN does not support posture assessment. Other AWS services, such as Amazon Inspectors, support posture assessment.
+Q: Does AWS Client VPN support Multi-Factor Authentication (MFA)?
+A: Yes, AWS Client VPN supports MFA through Active Directory using AWS Directory Services, and through external Identity Providers (Okta, for example).
+Q: How does AWS Client VPN support authorization?
+A: You configure authorization rules that limit the users who can access a network. For a specified destination network, you can configure the Active Directory group/Identity Provider group that is allowed access. Only users that belong to this Active Directory group/Identity Provider group can access the specified network.
+Q: Does AWS Client VPN support security group?
+A: Client VPN supports security group. You can specify security group for the group of associations. When a subnet is associated, we will automatically apply the default security group of the VPC of the subnet.
+Q: How do I use security group to restrict access to my applications for only Client VPN connections?
+A: For your application, you can specify to allow access only from the security groups that were applied to the associated subnet. Now you limit access to only users connected via Client VPN.
+Q: In Federated Authentication, can I modify the IDP metadata document?
+A: Yes, you can upload a new metadata document in the IAM identity provider associated with the Client VPN endpoint. Updated metadata are reflected in 2 to 4 hours.
+Q: Can I use a 3rd party OpenVPN client to connect to a Client VPN Endpoint configured with federated authentication?
+A: No, you must use the AWS Client VPN software client to connect to the endpoint.
+AWS Client VPN visibility and monitoring
+Q: What logs are supported for AWS Client VPN?
+A: Client VPN exports the connection log as a best effort to CloudWatch logs. These logs are exported periodically at 15 minute intervals. The connection logs include details on created and terminated connection requests.
+Q: Does Client VPN support Amazon VPC Flow Logs in the endpoint?
+A: No. You can use Amazon VPC Flow Logs in the associated VPC.
+Q: Can I monitor active connections?
+A: Yes, using the CLI or console, you can view the current active connections for an endpoint and terminate active connections.
+Q: Can I monitor by endpoint using CloudWatch?
+A: Yes. Using CloudWatch monitor you can see Ingress and Egress bytes and Active connections for each Client VPN Endpoint.
+VPN clients
+Q: How do I deploy the free software client for AWS Client VPN?
+A: The software client for AWS Client VPN is compatible with existing AWS Client VPN configurations. The client supports adding profiles using the OpenVPN configuration file generated by the AWS Client VPN service. Once the profile is created, the client will connect to your endpoint based on your settings.
+Q: What is the additional price to use the software client of AWS Client VPN?
+A: The software client is provided free of charge. You will only be billed for AWS Client VPN service usage.
+Q: What type of devices and operating system versions are supported?
+A: The desktop client currently supports 64-bit Windows 10, macOS (Mojave, Catalina, and Big Sur), and Ubuntu Linux (18.04 and 20.04) devices.
+Q: Do my connection profiles synchronize between all of my devices?
+A: No, but IT administrators can provide configuration files for their software client deployment to pre-configure settings.
+Q: Do I need admin permission on my device to run the software client of AWS Client VPN?
+A: Yes. You need admin access to install the app on both Windows and Mac. After that point, admin access is not required.
+Q: What VPN protocol is used by the client of AWS Client VPN?
+A: AWS Client VPN, including the software client, supports the OpenVPN protocol.
+Q: Will all the features supported by AWS Client VPN service be supported using the software client?
+A: Yes. The client supports all the features provided by the AWS Client VPN service.
+Q: Does the software client of AWS Client VPN allow LAN access when connected?
+A: Yes, you can access your local area network when connected to AWS VPN Client.
+Q: What authentication capabilities does the software client support?
+A: The AWS Client VPN software client supports all authentication mechanisms offered by the AWS Client VPN service — authentication with Active Directory using AWS Directory Services, Certificate-based authentication, and Federated Authentication using SAML-2.0.
+Q: What type of client logging will be supported by AWS Client VPN?
+A: When a user attempts to connect, the details of the connection setup are logged. Connection attempts are saved up to 30 days with a maximum file size of 90 MB.
+Q: Can I mix the software client of AWS Client VPN and standards based OpenVPN clients connecting to AWS Client VPN endpoint?
+A: Yes, assuming that the authentication type defined on the AWS Client VPN endpoint is supported by the standards-based OpenVPN client.
+Q: Where can I download the software client of AWS Client VPN?
+A: You can download the generic client without any customizations from the AWS Client VPN product page. IT administrators may choose to host the download within their own system.
+Q: Can I run multiple types of VPN clients on one device?
+A: We do not recommend running multiple VPN clients on a device. This can cause conflicts or the VPN clients can interfere with each other and cause unsuccessful connections. That said, the AWS Client VPN can be installed alongside another VPN client.
+Virtual private gateway
+Q: What is this feature?
+A: For any new virtual gateways, configurable Private Autonomous System Number (ASN) allows customers to set the ASN on the Amazon side of the BGP session for VPNs and AWS Direct Connect private VIFs.
+Q: What is the cost of using this feature?
+A: There is no additional charge for this feature.
+Q: How can I configure/assign my ASN to be advertised as Amazon side ASN?
+A: You can configure/assign an ASN to be advertised as the Amazon side ASN during creation of the new Virtual Private Gateway (virtual gateway). You can create a virtual gateway using the VPC console or a EC2/CreateVpnGateway API call.
+Q: What ASN did Amazon assign prior to this feature?
+A: Amazon assigned the following ASNs: EU West (Dublin) 9059; Asia Pacific (Singapore) 17493 and Asia Pacific (Tokyo) 10124. All other regions were assigned an ASN of 7224; these ASNs are referred as “legacy public ASN” of the region.
+Q: Can I use any ASN – public and private?
+A: You can assign any private ASN to the Amazon side. You can assign the "legacy public ASN" of the region until June 30th 2018, you cannot assign any other public ASN. After June 30th 2018, Amazon will provide an ASN of 64512.
+Q: Why can’t I assign a public ASN for the Amazon half of the BGP session?
+A: Amazon is not validating ownership of the ASNs, therefore, we’re limiting the Amazon-side ASN to private ASNs. We want to protect customers from BGP spoofing.
+Q: What ASN can I choose?
+A: You can choose any private ASN. Ranges for 16-bit private ASNs include 64512 to 65534. You can also provide 32-bit ASNs between 4200000000 and 4294967294.
+Amazon will provide a default ASN for the virtual gateway if you don’t choose one. Until June 30th 2018, Amazon will continue to provide the “legacy public ASN” of the region. After June 30th 2018, Amazon will provide an ASN of 64512.
+Q: What will happen if I try to assign a public ASN to the Amazon half of the BGP session?
+A: We will ask you to re-enter a private ASN once you attempt to create the virtual gateway, unless it is the "legacy public ASN" of the region.
+Q: If I don’t provide an ASN for the Amazon half of the BGP session, what ASN can I expect Amazon to assign to me?
+A: Amazon will provide an ASN for the virtual gateway if you don’t choose one. Until June 30th 2018, Amazon will continue to provide the “legacy public ASN” of the region. After June 30th 2018, Amazon will provide an ASN of 64512.
+Q: Where can I view the Amazon side ASN?
+A: You can view the Amazon side ASN in the virtual gateway page of VPC console and in the response of EC2/DescribeVpnGateways API.
+Q: If I have a public ASN, will it work with a private ASN on the AWS side?
+A: Yes, you can configure the Amazon side of the BGP session with a private ASN and your side with a public ASN.
+Q: I have private VIFs already configured and want to set a different Amazon side ASN for the BGP session on an existing VIF. How can I make this change?
+A: You will need to create a new virtual gateway with desired ASN, and create a new VIF with the newly created virtual gateway. Your device configuration also needs to change appropriately.
+Q: I have VPN connections already configured and want to modify the Amazon side ASN for the BGP session of these VPNs. How can I make this change?
+A: You will need to create a new virtual gateway with the desired ASN, and recreate your VPN connections between your Customer Gateways and the newly created virtual gateway.
+Q: I already have a virtual gateway and a private VIF/VPN connection configured using an Amazon assigned public ASN of 7224. If Amazon automatically generates the ASN for the new private virtual gateway, what Amazon side ASN will I be assigned?
+A: Amazon will assign 64512 to the Amazon side ASN for the new virtual gateway.
+Q: I have a virtual gateway and a private VIF/VPN connection configured using an Amazon assigned public ASN. I want to use the same Amazon assigned public ASN for the new private VIF/VPN connection I’m creating. How do I do this?
+A: You can configure/assign an ASN to be advertised as the Amazon side ASN during creation of the new Virtual Private Gateway (virtual gateway). You can create virtual gateway using console or EC2/CreateVpnGateway API call. As noted earlier, until June 30th 2018, Amazon will continue to provide the “legacy public ASN” of the region. After June 30th 2018, Amazon will provide an ASN of 64512.
+Q: I have a virtual gateway and a private VIF/VPN connection configured using an Amazon assigned public ASN of 7224. If Amazon auto generates the ASN for the new private VIF/VPN connection using the same virtual gateway, what Amazon side ASN will I be assigned?
+A: Amazon will assign 7224 to the Amazon side ASN for the new VIF/VPN connection. The Amazon side ASN for your new private VIF/VPN connection is inherited from your existing virtual gateway and defaults to that ASN.
+Q: I’m attaching multiple private VIFs to a single virtual gateway. Can each VIF have a separate Amazon side ASN?
+A: No, you can assign/configure separate Amazon side ASN for each virtual gateway, not each VIF. Amazon side ASN for VIF is inherited from the Amazon side ASN of the attached virtual gateway.
+Q: I’m creating multiple VPN connections to a single virtual gateway. Can each VPN connection have a separate Amazon side ASN?
+A: No, you can assign/configure separate Amazon side ASN for each virtual gateway, not each VPN connection. Amazon side ASN for VPN connection is inherited from the Amazon side ASN of the virtual gateway.
+Q: Where can I select my own ASN?
+A: When creating a virtual gateway in the VPC console, uncheck the box asking if you want an auto-generated Amazon BGP ASN and provide your own private ASN for the Amazon half of the BGP session. Once virtual gateway is configured with Amazon side ASN, the private VIFs or VPN connections created using the virtual gateway will use your Amazon side ASN.
+Q: I use CloudHub today. Will I have to adjust my configurations in the future?
+A: You will not have to make any changes.
+Q: I want to select a 32-bit ASN. What is the range of 32-bit private ASNs?
+A: We will support 32-bit ASNs from 4200000000 to 4294967294.
+Q: Once the virtual gateway is created, can I change or modify the Amazon side ASN?
+A: No, you cannot modify the Amazon side ASN after creation. You can delete the virtual gateway and recreate a new virtual gateway with the desired ASN.
+Q: Is there a new API to configure/assign the Amazon side ASN?
+A: No. You can do this with the same API as before (EC2/CreateVpnGateway). We just added a new parameter (amazonSideAsn) to this API.
+Q: Is there a new API to view the Amazon side ASN?
+A: No. You can view the Amazon side ASN with the same EC2/DescribeVpnGateways API. We just added a new parameter (amazonSideAsn) to this API.
+Learn more about pricing
+Simple pricing so it's easy to know what is right for you.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS VPN in the AWS Console.
+Get started
+Page Content
+General Questions
+AWS Client VPN authentication & authorization
+AWS Client VPN visibility & monitoring
