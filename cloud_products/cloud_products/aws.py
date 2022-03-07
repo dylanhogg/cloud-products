@@ -16,6 +16,7 @@ class AwsCrawler(base.Crawler):
     def __init__(self):
         self.base_url = "https://aws.amazon.com"
         self.seed_url = self.base_url + "/products/"
+        # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
         super(AwsCrawler, self).__init__()
 
     @staticmethod
@@ -73,7 +74,7 @@ class AwsCrawler(base.Crawler):
         Get child pages from seed url.
         """
         results = []
-        tags = soup.find_all("div", attrs={"class": "lb-content-item"})
+        tags = soup.find_all("li", attrs={"class": "aws-card-item"})
 
         # Example html snippet, 21 Feb 2019:
         # <div class="lb-content-item">
@@ -131,12 +132,48 @@ class AwsCrawler(base.Crawler):
 
         return self.dedupe_list(lines) if dedupe else lines
 
+    # WIP: Try selenium for new dynamic product listing content that BS doesn't get anymore.
+    from selenium import webdriver
+    from selenium.webdriver.firefox.service import Service
+    from webdriver_manager.firefox import GeckoDriverManager
+
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions
+
+    from selenium.webdriver.firefox.options import Options
+    options = Options()
+    options.headless = True
+
     def get_products(self, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
 
         # Scrape seed index page
-        (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)
+        # (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)  # NOTE: old method
+
+        driver = self.webdriver.Firefox(options=self.options, service=self.Service(self.GeckoDriverManager().install()))
+        driver.set_window_size(1120, 550)
+
+        loaded_from_cache = False  # TODO: caching again
+        driver.maximize_window()
+        driver.get(self.seed_url)
+
+        wait = self.WebDriverWait(driver, 40)
+        wait.until(self.expected_conditions.visibility_of_element_located((self.By.CSS_SELECTOR, ".m-card-main")))  # TODO: review class m-card-main
+
+        source = driver.page_source
+        seed_soup = BeautifulSoup(source, "html.parser")
+
+        driver.quit()  # TODO: reuse driver for other pages
+
+        # TODO: fix this and use paging...
+        print(seed_soup)
+
+        if "alexa" in source.lower():
+            print("FOUND ALEXA!")
+        else:
+            print("X NO ALEXA :(")
 
         # Parse product links from seed index page
         child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
