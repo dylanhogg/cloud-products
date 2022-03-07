@@ -5,17 +5,19 @@ Get Started with AWS Fargate
 Contact Sales
 Deploy and manage your applications, not infrastructure. Fargate removes the operational overhead of scaling, patching, securing, and managing servers.
 Monitor your applications via built-in integrations with AWS services like Amazon CloudWatch Container Insights. Gather metrics and logs with third-party tools.
-Improve security through workload isolation by design. ECS tasks and EKS pods run in their own dedicated runtime environment.
+Improve security through workload isolation by design. Amazon ECS tasks and Amazon EKS pods run in their own dedicated runtime environment.
 Only pay for what you use. Fargate scales the compute to closely match your specified resource requirements. With Fargate, there is no over-provisioning and paying for additional servers.
 How it works
 AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers. AWS Fargate is compatible with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
 Use cases
-Web applications, APIs, and microservices
+Web apps, APIs, and microservices
 Build and deploy your applications, APIs, and microservices architectures with the speed and immutability of containers. Fargate removes the need to own, run, and manage the lifecycle of a compute infrastructure so that you can focus on what matters most: your applications.
-Run and scale containerized workloads
-Use Fargate with Amazon ECS or Amazon EKS to easily run and scale your containerized data processing workloads.
+Run and scale container workloads
+Use Fargate with Amazon ECS or Amazon EKS to easily run and scale your containerized data processing workloads. Fargate also enables you to migrate and run your Amazon ECS Windows containers without refactoring or rearchitecting your legacy applications.
 Support AI and ML training applications
-Create an AI and ML development environment that is flexible and portable. With Fargate, achieve the scalability you need to boost server capacity without over-provisioning— to train, test, and deploy your machine learning (ML) models.
+Create an AI and ML development environment that is flexible and portable. With Fargate, achieve the scalability you need to boost server capacity without over-provisioning—to train, test, and deploy your machine learning (ML) models.
+Optimize Costs
+With AWS Fargate there are no upfront expenses, pay for only the resources used. Further optimize with Compute Savings Plans and Fargate Spot, then use Graviton2 powered Fargate for up to 40% price performance improvements.
 Customers
 Learn how Vanguard boosted investor value with Amazon ECS and AWS Fargate
 Find out how startup Qoala powered a microinsurance expansion using AWS Fargate

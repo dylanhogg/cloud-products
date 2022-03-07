@@ -1,32 +1,35 @@
-Amazon Elasticsearch Service
-Fully managed, scalable, and secure Elasticsearch service
-Get started
-Amazon Elasticsearch Service is a fully managed service that makes it easy for you to deploy, secure, and run Elasticsearch cost effectively at scale. You can build, monitor, and troubleshoot your applications using the tools you love, at the scale you need. The service provides support for open source Elasticsearch APIs, managed Kibana, integration with Logstash and other AWS services, and built-in alerting and SQL querying. Amazon Elasticsearch Service lets you pay only for what you use – there are no upfront costs or usage requirements. With Amazon Elasticsearch Service, you get the ELK stack you need, without the operational overhead.
-Amazon Elasticsearch Service (2:16)
-Benefits
-Easy to deploy and manage
-With Amazon Elasticsearch Service you can deploy your Elasticsearch cluster in minutes. The service simplifies management tasks such as hardware provisioning, software installation and patching, failure recovery, backups, and monitoring. To monitor your clusters, Amazon Elasticsearch service includes built-in event monitoring and alerting so you can get notified on changes to your data to proactively address any issues.
-Highly scalable and available
-Amazon Elasticsearch Service lets you store up to 3 PB of data in a single cluster, enabling you to run large log analytics workloads via a single Kibana interface. You can easily scale your cluster up or down via a single API call or a few clicks in the AWS console. Amazon Elasticsearch Service is designed to be highly available using multi-AZ deployments, which allows you to replicate data between three Availability Zones in the same region.
-Highly secure
-For your data in Elasticsearch Service, you can achieve network isolation with Amazon VPC, encrypt data at-rest and in-transit using keys you create and control through AWS KMS, and manage authentication and access control with Amazon Cognito and AWS IAM policies. Amazon Elasticsearch Service is also HIPAA eligible, and compliant with PCI DSS, SOC, ISO, and FedRamp standards to help you meet industry-specific or regulatory requirements.
-Cost-effective
-With Amazon Elasticsearch Service, you pay only for the resources you consume. You can select on-demand pricing with no upfront costs or long-term commitments, or achieve significant cost savings via our Reserved Instance pricing. As a fully managed service, Amazon Elasticsearch Service further lowers your total cost of operations by eliminating the need for a dedicated team of Elasticsearch experts to monitor and manage your clusters.
+« Analytics
+Amazon OpenSearch Service
+Search, visualize, and analyze up to petabytes of text and unstructured data
+Get Started with Amazon OpenSearch Service
+Up to 750 hours per month
+on t2 and t3 small.search instances with the AWS Free Tier
+Operate OpenSearch with the leading contributor of the community-driven, open source software.
+Quickly search and analyze your unstructured and semi-structured data to easily find what you need.
+Eliminate operational overhead and reduce cost with automated provisioning, software installation, patching, storage tiering, and more.
+Use machine learning (ML) to detect anomalies in real time, autotune your clusters, and personalize your search results.
 How it works
+Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more. OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch. Amazon OpenSearch Service is the successor to Amazon Elasticsearch Service, and offers the latest versions of OpenSearch, support for 19 versions of Elasticsearch (1.5 to 7.10 versions), as well as visualization capabilities powered by OpenSearch Dashboards and Kibana (1.5 to 7.10 versions).
 Use cases
-Application monitoring
-Store, analyze, and correlate application and infrastructure log data to find and fix issues faster and improve application performance. Enable trace data analysis for your distributed applications to quickly identify performance issues. You can receive automated alerts if your application is underperforming, enabling you to proactively address any issues. An online travel company, for example, can use Amazon Elasticsearch Service to analyze logs from its applications to identify and resolve performance bottlenecks or availability issues, ensuring streamlined booking experience.
-Security information and event management (SIEM)
-Centralize and analyze logs from disparate applications and systems across your network for real-time threat detection and incident management. A telecom company, for example, can use Amazon Elasticsearch Service with Kibana to quickly index, search, and visualize logs from its routers, applications, and other devices to find and prevent security threats such as data breaches, unauthorized login attempts, DoS attacks, and fraud.
-Search
-Provide a fast, personalized search experience for your applications, websites, and data lake catalogs, allowing your users to quickly find relevant data. For example, a real estate business can use Amazon Elasticsearch Service to help its consumers find homes in their desired location, in a certain price range from among millions of real-estate properties. You get access to all of Elasticsearch’s search APIs, supporting natural language search, auto-completion, faceted search, and location-aware search.
-Infrastructure monitoring
-Collect logs and metrics from your servers, routers, switches, and virtualized machines to get a comprehensive visibility into your infrastructure, reducing mean time to detect (MTTD) and resolve (MTTR) issues and lowering system downtime. A gaming company, for example, can use Amazon Elasticsearch Service to monitor and analyze server logs to identify any server performance issues that could lead to application downtime.
+Monitor and debug applications and infrastructure
+Easily store and analyze data for comprehensive visibility into your system performance with observability logs, metrics, and traces. Set up automated alerts when your system underperforms and find root cause for availability issues.
+Manage security and event information
+Centralize and analyze logs from disparate applications and systems across your network for real-time threat detection and incident management.
+Enable seamless, personalized search
+Help users quickly find relevant data with a fast, personalized search experience within your applications, websites, and data lake catalogs.
 Customers
-Read more customer stories
-Learn more about Amazon Elasticsearch Service
+Learn how AutoDesk monitors and fixes software problems
+Learn how Compass simplified and modernized property searches
+Pearson identifies security events and behavior patterns to protect data
+Pinterest uses an observability solution to monitor and issue alerts
+How to get started
+What is OpenSearch?
+OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch.
+Learn more
+Learn more about Amazon OpenSearch Service
+Explore security capabilities, storage tiering, and more.
 Visit the features page
-Ready to build?
-Get started with Amazon Elasticsearch Service
-Have more questions?
-Contact us
+Connect with migration experts
+Get the expert advice, tooling, and financial incentives you need to easily migrate.
+Explore support options
+Explore more of AWS

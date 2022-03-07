@@ -20,7 +20,7 @@ Q: How do I create a Lightsail instance?
 After logging in to Lightsail, you can use the Lightsail console, command line interface (CLI), or API to create and manage instances.
 The first time you log in to the console, choose Create Instance. The create instance page is where you can choose the software, location, and name for your instance. Once you choose Create, your new instance will spin up automatically within minutes.
 Q: Does Lightsail offer an API?
-Yes. Everything you do in the Lightsail console is backed by a publically available API. Learn how to install and use the Lightsail CLI and API.
+Yes. Everything you do in the Lightsail console is backed by a publicly available API. Learn how to install and use the Lightsail CLI and API.
 Q: How do I sign up for Lightsail?
 To start using Lightsail, choose Get Started and log in. You use your Amazon Web Services account to access Lightsail; if you don't already have one, you'll be prompted to create one.
 Lightsail resources
@@ -92,7 +92,7 @@ Q: How can I tag my Lightsail snapshots?
 The Lightsail console automatically tags manual snapshots with the same tags as its parent resource. However, tags are not automatically copied over from a resource to its automatic snapshots. If you use the Lightsail API to create a snapshot, you can choose the tags for the snapshot yourself.
 Important: Database snapshots tags are not currently included in billing reports (cost allocation tags).
 Q: What is the difference between key-value and key-only Tags?
-Lightsail tags are key-value pairs, allowing you to organize resources such as instances across different categories, e.g. project:Blog, project:Game, project:Test. This allows you full conttol across all use cases such as resource organization, bill reporting, and access management. The Lightsail console also allows you to tag your resources with key-only tags for quick filtering in the console.
+Lightsail tags are key-value pairs, allowing you to organize resources such as instances across different categories, e.g. project:Blog, project:Game, project:Test. This allows you full control across all use cases such as resource organization, bill reporting, and access management. The Lightsail console also allows you to tag your resources with key-only tags for quick filtering in the console.
 Q: Does Amazon Lightsail support monitoring and alerting?
 Yes. With Amazon Lightsail you can collect metrics on various resources, including instances, load balancers and databases. For any individual resource you can setup to two alarms thresholds for each metric. If the alarm threshold is breached you will receive a notification in the Lightsail console, and, optionally, you can choose to receive an email message and/or SMS message. There is no additional charge for the alerting and monitoring feature in Lightsail, however, you may incur charges from your mobile carrier for SMS messaging.
 Billing and account management
@@ -206,7 +206,6 @@ Q: How do Lightsail load balancers route traffic to my target instances?
 Lightsail load balancers direct traffic to your healthy target instances based on a round robin algorithm.
 Q: How does Lightsail know if my target instances are healthy?
 During load balancer creation, you will be asked to specify a path (a common file or webpage URL) for Lightsail to ping. If the target instance can be reached using this path, then Lightsail will route traffic there. If one of your target instances is unresponsive, Lightsail will not route traffic to that instance. You can update the Health check path if needed in the load balancer management screens.
-Lightsail tags are key-value pairs, allowing you to organize resources such as instances across different categories, e.g. project:Blog, project:Game, project:Test. This allows you full control across all use cases such as resource organization, bill reporting, and access management. The Lightsail console also allows you to tag your resources with key-only tags for quick filtering in the console.
 Q: Can I assign one instance to multiple load balancers?
 Yes, Lightsail supports adding instances as target instances for more than one load balancer, if desired.
 Q: What happens to my target instances when I delete my load balancer?
@@ -363,7 +362,7 @@ Yes, copying from Lightsail object storage to Amazon S3 is supported. Documentat
 here
 Q: How do I get started with Lightsail object storage?
 To use Lightsail object storage, you must first create a bucket that is used to store your data. For more information, see
-Creating buckets in Amazon Lightsail. After your bucket is up and running, you can start adding objects to your bucket by uploading files using the Lighsail console or by configuring your application to put content like logs or other application data in the bucket. Alternatively, you can also get started with Lightsail object storage through the use of AWS Command Line Interface (AWS CLI).
+Creating buckets in Amazon Lightsail. After your bucket is up and running, you can start adding objects to your bucket by uploading files using the Lightsail console or by configuring your application to put content like logs or other application data in the bucket. Alternatively, you can also get started with Lightsail object storage through the use of AWS Command Line Interface (AWS CLI).
 Q: Can I block public access to my bucket?
 Lightsail buckets and objects are set to private by default, meaning that only users with appropriate permissions have access to the bucket and objects. A user can change this default setting and either make individual objects public and read only in a private bucket or opt to make the entire bucket public and read only. When a user makes a bucket or object public, anyone in the world can read its content.
 Q: How do I provide programmatic access to my bucket?

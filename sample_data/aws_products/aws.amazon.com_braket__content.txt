@@ -2,11 +2,11 @@
 Amazon Braket
 Accelerate quantum computing research
 Get Started with Amazon Braket
-Contact Sales
-1 free hour of simulation time
-per month for a year with AWS Free Tier
+1 free hour of simulation time per month
+for a year with AWS Free Tier
 Easily work with different types of quantum computers and circuit simulators using a consistent set of development tools.
 Build quantum projects on a trusted cloud with simple pricing and management controls for both quantum and classical workloads.
+Run hybrid quantum-classical algorithms faster with priority access to quantum computers and no classical infrastructure to manage.
 Innovate quickly with expert guidance and tech support, or collaborate with consultants in the Amazon Quantum Solutions Lab.
 How it works
 Amazon Braket is a fully managed quantum computing service designed to help speed up scientific research and software development for quantum computing.
@@ -18,30 +18,31 @@ Push the boundaries of quantum hardware research with easy access to trapped ion
 Build quantum software faster
 Bring software for quantum computing to market rapidly with Amazon Braket’s software development kit (SDK), simple pricing, and workflow management.
 Explore industry applications
-Prepare your business for advances in quantum hardware and learn how to apply the technology to optimization, chemistry, simulation, and other hard computational problems.
+Prepare your business for quantum hardware advances and learn how to apply the technology to optimization, chemistry, simulation, and other hard computational problems.
+Customers
+Fidelity created quantum proofs-of-concept for financial asset management
+Pasqal built their QUBEC computational software to run chemistry simulations
+Aioi Insurance Services tests quantum neural network to assess risk
+The Italian National Institute for Nuclear Physics accelerates quantum research
 Quantum Hardware Technologies
 Quantum annealers
 Quantum annealing uses a physical process to find a low energy configuration that encodes the solution of an optimization problem. Amazon Braket provides access to quantum annealing technology based on superconducting qubits from D-Wave.
 Learn more about quantum annealers
-Gate-based ion traps processors
-Trapped ion quantum computers implement qubits using electronic states of charged atoms called Ions. The ions are confined and suspended in free space using electromagnetic fields. Amazon Braket provides access to ion trap quantum computers from IonQ.
-Learn more gate-based ion traps processors
+Gate-based ion-trap processors
+Trapped-ion quantum computers implement qubits using electronic states of charged atoms called ions. The ions are confined and suspended in free space using electromagnetic fields. Amazon Braket provides access to ion-trap quantum computers from IonQ.
+Learn more about gate-based ion-trap processors
 Gate-based superconducting processors
 Superconducting qubits are built with superconducting electric circuits operating at cryogenic temperature. Amazon Braket provides access to quantum hardware based on superconducting qubits from Rigetti.
-Learn more about gate-based superconducting processors
-Customers
-Fidelity Center for Applied Technology created quantum proofs-of-concept for financial asset management
-Qu & Co built their QUBEC computational software to run chemistry simulations
-Aioi Insurance Services tested a quantum neural network to assess risk
-The Italian National Institute for Nuclear Physics accelerates quantum research
+Learn more about Rigetti gate-based superconducting processors
+Learn more about OQC gate-based superconducting processors
 How to get started
 Try the AWS Free Tier
-Gain hands-on experience with Amazon Braket simulators through the AWS Free Tier for 12 months.
+Get a year of hands-on experience with Amazon Braket simulators and the AWS Free Tier.
 Sign up
 Connect with an expert
 Get help from the Quantum Solutions Lab for complex computational problems.
 Contact us
 Get credits for research
-Start your academic quantum research on Amazon Braket with support from AWS’s Cloud Credit for Research Program.
+Start your academic quantum research on Amazon Braket with support from the AWS Cloud Credit for Research Program.
 Apply for credits
 Explore more of AWS

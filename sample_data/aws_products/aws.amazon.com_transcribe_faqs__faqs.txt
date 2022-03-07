@@ -2,7 +2,7 @@ General
 Q: What is Amazon Transcribe?
 Amazon Transcribe is an AWS service that makes it easy for customers to convert speech-to-text. Using Automatic Speech Recognition (ASR) technology, customers can choose to use Amazon Transcribe for a variety of business applications, including transcription of voice-based customer service calls, generation of subtitles on audio/video content, and conduct (text based) content analysis on audio/video content.
 Q: How does Amazon Transcribe interact with other AWS products?
-Amazon Transcribe converts audio input into text, which opens the door for various text analytics applications on voice input. For instance, by using Amazon Comprehend on the converted text data from Amazon Transcribe, customers can perform sentiment analysis or extract entities and key phrases. Similarly, by integrating with Amazon Translate and Amazon Polly, customers can accept voice input in one language, translate it into another and generate voice output, effectively enabling multi-lingual conversations. It is also possible to integrate Amazon Transcribe with Amazon Elasticsearch to index and perform text based search across audio/video library.
+Amazon Transcribe converts audio input into text, which opens the door for various text analytics applications on voice input. For instance, by using Amazon Comprehend on the converted text data from Amazon Transcribe, customers can perform sentiment analysis or extract entities and key phrases. Similarly, by integrating with Amazon Translate and Amazon Polly, customers can accept voice input in one language, translate it into another and generate voice output, effectively enabling multi-lingual conversations. It is also possible to integrate Amazon Transcribe with Amazon Kendra or Amazon Opensearch (successor to Amazon Elasticsearch Service) to index and perform text based search across audio/video library. To learn more, checkout the MediaSearch or Content Analysis solution.
 Q: What else should I know before using Amazon Transcribe service?
 Amazon Transcribe service is designed to handle a wide range of speech and acoustic characteristics, including variations in volume, pitch, and speaking rate. The quality and content of the audio signal (including but not limited to factors such as background noise, overlapping speakers, accented speech, or switches between languages within a single audio file) may affect the accuracy of service output. We are constantly updating the service to improve its ability to accommodate additional acoustic variation and content types.
 Using Amazon Transcribe
@@ -40,20 +40,24 @@ Q: What happens if I use the wrong IPA? If I am uncertain, am I better off not i
 The system will use the pronunciation you provide; this should increase the likelihood of the word being recognized correctly if the pronunciation is correct and matches what was spoken. If you are not certain you are generating correct IPA, please run a comparison by processing your audio files with a vocabulary that contains your IPA pronunciations, and with a vocabulary that only contains the words (and, optionally, display-as forms). If you do not provide any pronunciations the service will use an approximation, which may or may not work better than your input.
 Q: When using DisplayAs forms, can I display character sets unrelated to the original language being transcribed? (e.g. output “Street” as “街道“).
 Yes. While phrases may only use a restricted set of characters for the specific language, UTF-8 characters apart from \t (TAB) are permitted in the DisplayAs column.
-Q: Is Automatic content redaction available with both batch and streaming APIs for Transcribe?
-No, it is only available for batch APIs at this time.
-Q: What languages are supported for Automatic content redaction?
-US-English (en-US) is supported at this time.
+Q: Is Automatic content redaction or personally identifiable information (PII) redaction available with both batch and streaming APIs for Transcribe?
+Yes, Amazon Transcribe supports automatic content redaction or PII redaction for both batch and streaming APIs.
+Q: What languages are supported for Automatic content redaction / PII identification and redaction?
+Please refer to the Amazon Transcribe documentation for information on the language availability of automatic content redaction / PII redaction.
 Q: Does Automatic content redaction also redact sensitive personal information from the source audio?
 No, this feature does not remove sensitive personal information from the source audio. You can however redact personal information from the source audio yourself using the start and end timestamps that are provided in the redacted transcripts for each instance of an identified PII utterance.
 Q: Can I use Automatic content redaction for redacting personal information from the existing text transcripts?
-No, Automatic content redaction only works on audio file as an input.
+No, Automatic content redaction only works on audio as an input.
 Q: What else should I know before using Automatic content redaction?
 Automatic content redaction is designed to identify and remove personally identifiable information (PII), but due to the predictive nature of machine learning, it may not identify and remove all instances of PII in a transcript generated by the service. You should review any output provided by Automatic content redaction to ensure it meets your needs.
+Q: Are there any differences between Automatic content redaction for streaming and batch APIs?
+Yes there are two additional capabilities supported by Automatic content redaction for the streaming API which are not supported by the batch API. You can decide to only identify PII and not redact when using content redaction with streaming API. Also you have the ability to identify or redact specific PII types with streaming API. For example, you can redact just the social security number and credit card information and keep other PII like names and email addresses.
+Q: Which AWS regions is automatic content redaction or PII redaction available?
+Please refer to the Transcribe documentation for information on the availability of automatic content redaction and PII redaction for batch and streaming APIs in the AWS regions.
 Q: Which APIs support Automatic language identification?
-Automatic language Identification is currently supported for batch APIs.
+Automatic language Identification is currently supported for batch and streaming APIs.
 Q: What languages can Amazon Transcribe automatically identify?
-Amazon Transcribe can identify any of the languages supported by the batch API .
+Amazon Transcribe can identify any of the languages supported by the batch and streaming APIs.
 Q: Does Amazon Transcribe identify multiple languages in the same audio file?
 Amazon Transcribe only identifies the dominant language in an audio file.
 Q: Is there any way to restrict the list of languages to choose from for Automatic language identification?
@@ -119,11 +123,11 @@ Q: What else should I know before using the Amazon Transcribe Medical service?
 Amazon Transcribe Medical is not a substitute for professional medical advice, diagnosis, or treatment. You and your end users are responsible for exercising your and their own discretion, experience, and judgment in determining the correctness, completeness, timeliness, and suitability of any information provided by Amazon Transcribe Medical. You and your end users are solely responsible for any decisions, advice, actions, and/or inactions based on the use of Amazon Transcribe Medical.
 Amazon Transcribe Medical may not accurately identify protected health information in all circumstances, and does not meet the requirements for de-identification of protected health information in accordance with HIPAA. You are responsible for reviewing any output provided by Amazon Transcribe Medical to ensure it meets your needs.
 Custom Language Models
-Q: What functionality does Custom Language Models provide today?
-Custom Language Models (CLM) currently supports US English transcription. It is available as part of the Amazon Transcribe batch audio processing API. CLM does not simultaneously support the additional use of Custom Vocabulary.
+Q: What functionality does custom language models provide today?
+You can use custom language models (CLM) to train and develop language models that are domain-specific. CLM currently supports Australian English, British English, Hindi, US English and US Spanish for batch transcriptions and US English for streaming transcriptions. CLM supports the simultaneous use of custom vocabulary for batch transcriptions.
 Q: How much and what type of training data do I need? How do I obtain the data? Does the data need to have a specific format?
 The text data should be relevant to the audio that will be transcribed using the custom model; it should contain as many of the domain-specific words, phrases, and word combinations as possible. We recommend using at least 100k and at most 10M words of running text. Text data resources can be obtained from any in-house or public sources (e.g., using text from customers’ websites). We recommend each plain text file contain 200,000 words or more, but not exceeding 1GB in overall file size. The text should be in UTF-8, and use one sentence per line. Each sentence should contain punctuation. Users are responsible for spell-checking, removing formatting characters, and validating the encoding.
-Q: How do I use Custom Language Models (CLM)?
+Q: How do I use custom language models (CLM)?
 To train a custom language model, customers simply supply the text data in an Amazon S3 bucket. Users can then use the Amazon Transcribe service console to load and process the data to train a custom language model. Training is fully automated and requires minimal intervention from the user. When the final custom model is ready, it is made available in the customer’s AWS account for transcribing domain-specific audio files. Moreover, customers can train multiple custom models to use for a variety of different use cases.
 Q: Are improvements guaranteed? Is it worth expending the effort of collecting text data?
 Improvements are not guaranteed – the change in performance will depend on how closely the text data matches the audio, and on the amount of data provided. More data is generally better, but most importantly, the data should cover words and word sequences that are expected to occur in the audio files you intend to transcribe. Improvements to transcription accuracy will depend on the quality of the training data as well as the use case. In some scenarios, general benchmarking indicates as much as 10% to 15% relative accuracy improvement.
@@ -131,7 +135,7 @@ Q: How long does model training take? When will I be able to use it?
 Model training usually takes between 6 and 10 hours. The length of training time depends on how large the data set is. The custom model will be available directly after training has been completed.
 Q: How will I be able to use the model? How will I know whether it works better than the generic model provided by Amazon Transcribe?
 The model will be made available in a customer’s account under a model ID assigned by the customer prior to the training process. In order to use the model, a flag with the model ID needs to be added to the transcription request. Customers should test the model on their audio files and compare the output against results obtained from the generic engine.
-Q: How many Custom Language Models can I train? Can I have multiple models enabled concurrently for my account?
+Q: How many custom language models can I train? Can I have multiple models enabled concurrently for my account?
 You may concurrently train up to 5 different models at any given time per AWS account. For each account, you can store a maximum of 10 models by default. If more are required, service limit increases can be made here.
 Q: Are custom acoustic models supported?
 No. Custom acoustic models are not supported. Custom language models are built off of text data that is relevant to your use case or domain.

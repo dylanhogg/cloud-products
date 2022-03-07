@@ -1,42 +1,45 @@
 AWS Chatbot
 ChatOps for AWS
 Try AWS Chatbot
-AWS Chatbot is an interactive agent that makes it easy to monitor and interact with your AWS resources in your Slack channels and Amazon Chime chat rooms. With AWS Chatbot you can receive alerts, run commands to return diagnostic information, invoke AWS Lambda functions, and create AWS support cases.  AWS Chatbot manages the integration between AWS services and your Slack channels or Amazon Chime chat rooms helping you to get started with ChatOps fast. With just a few clicks you can start receiving notifications and issuing commands in your chosen channels or chat rooms, so your team doesn’t have to switch contexts to collaborate. AWS Chatbot makes it easier for your team to stay updated, collaborate, and respond faster to operational events, security findings, CI/CD workflows, budget, and other alerts for applications running in your AWS accounts.
-AWS Chatbot Overview
+AWS Chatbot is an interactive agent that makes it easy to monitor, operate, and troubleshoot your AWS workloads in your chat channels. With AWS Chatbot, you can receive alerts, run commands to retrieve diagnostic information, configure AWS resources, and initiate workflows.
+With just a few clicks, you can receive AWS notifications and run AWS Command Line Interface (CLI) commands from your chat channels in a secure and efficient manner. AWS Chatbot manages the integration and security permissions between the AWS services and your Slack channels or Amazon Chime chatrooms. AWS Chatbot makes it easier for your team to stay updated, collaborate, and respond quickly to incidents, security findings, and other alerts for applications running in your AWS environment. Your team can run commands to safely configure AWS resources, resolve incidents, and run tasks from Slack channels without switching context to other AWS management tools.
+AWS Chatbot Overview (2:10)
 Benefits
 Notification in real time
-AWS Chatbot sends pre-selected, event-triggered alerts to your Slack channels or Amazon Chime chat rooms, keeping your team informed and aware of the operational incidents or other events that they care most about.
+AWS Chatbot delivers preselected, event-triggered alerts to your Slack channels or Amazon Chime chatrooms, keeping your team informed and aware of operational incidents or other events that they care most about.
 Faster response
-AWS Chatbot enables you to issue commands from your Slack channels, facilitating collaboration and helping your team quickly respond to events.
+AWS Chatbot lets you issue commands from your Slack channels, facilitates collaboration, and helps your team quickly respond to events, operate workloads, and resolve issues without switching context to other AWS management tools.
 Quick setup
-Setting up AWS Chatbot in your Slack channels or Amazon Chime chat rooms is easy and takes only a few minutes.
+It takes you less than five minutes to set up AWS Chatbot from the AWS Chatbot console in your Slack channels or Amazon Chime chatrooms.
 Easily define permissions
-AWS Chatbot enables you to set permissions for individual Slack channels and Amazon Chime chat rooms quickly and pre-defined permission templates make it easy to tailor for your organization’s needs.
-Amazon Lex Build your own voice and text-based chatbots to communicate with your customers.
-Learn More
+With AWS Chatbot, you can quickly set permissions for individual Slack channels and Amazon Chime chatrooms. Account-level settings, predefined permission templates, and guardrail policies make it easy to tailor to your organization’s security and compliance needs.
 How it works
 Notifications
 Commands
-Demo Video
-AWS re:Invent 2019 Launchpad | AWS Chatbot
+Product showcase
+AWS On Air - Mutative Commands in AWS Chatbot (20:25)
 Customers
+Glide Publishing Platform
+Glide Publishing Platform is a publisher-ready, cloud-native content management system (CMS) for publishers created by publishing industry professionals. Glide removes content management obstacles and frees customers to focus on the content excellence.
+GPP incorporated AWS Chatbot in their DevOps workflows to manage customers’ sandbox environments from Slack. Glide’s customers can now provision and delete sandbox environments on demand from Slack by running AWS CLI commands. This provides Glide’s customers flexibility in managing their CMS projects and control their infrastructure costs.
+“AWS Chatbot has enabled us to run CLI commands safely from Slack to manage AWS resources from Slack. This saves us time, provides visibility to the team, and our customers benefit from the lower total cost of ownership (TCO).”
+Nedim Dedic, CTO - Glide Publishing Platform
 LIFULL
 LIFULL Co., Ltd., is a real estate-related information service and the parent company behind LIFULL HOME’S, one of Japan's largest real estate portal sites. Its businesses cover a range of different services including business support services for real estate developers, customer relationship management assistance for rental operators, local real estate information, and management of search websites for nursing homes. With a wide range of services, it is important for LIFULL’s development teams to be able to collaborate and aggregate information quickly and easily.
 LIFULL chose to integrate AWS Chatbot within its Slack channels because its benefits could be realized immediately, upon setup. LIFULL now uses AWS Chatbot to aggregate various notifications such as application deployments and infrastructure provisioning through its Slack channels. Since notification destinations can be easily specified, LIFULL has been able to ensure that application notifications are distributed to each Slack channel, as appropriate, so that developers get only the information that matters to them.
 “With AWS Chatbot, we’ve aggregated various notifications such as application deployments, infrastructure provisioning, and performance monitoring directly into Slack so our team can quickly take action directly from where they’re already working. Not only does this speed up our development time, but it improves the overall development experience for the team.”
 Kentaro Suzuki, Solution Architect - LIFULL Co., Ltd.
 Blog posts
-Introducing AWS Chatbot: ChatOps for AWS
-Ilya Bezdelev July 24, 2019
-Read now
-Launch: AWS Budgets Integration with AWS Chatbot
-Erin Carlson and Matt Cowsert July 31, 2019
-Running AWS commands from Slack using AWS Chatbot
-Ilya Bezdelev November, 25 2019
+date
+1
+...
+There are no blogs available at this time, please visit AWS blogs to view all blog content.
+What's new
+There are no what's new posts available at this time, please visit the What's New with AWS page to view all What's new posts.
 Check out the product features
 Learn more about the key features of AWS Chatbot.
 Learn more
 Get started with AWS Chatbot.
-Get Started
+Get started
 Review documentation
 Learn more about AWS Chatbot with the developer guide.

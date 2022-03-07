@@ -1,19 +1,24 @@
 AWS Migration Hub
-Simplify and accelerate migrations to AWS
+The one destination for migration and modernization
 Get started with AWS Migration Hub
-AWS Migration Hub provides a single location to track the progress of application migrations across multiple AWS and partner solutions. Using Migration Hub allows you to choose the AWS and partner migration tools that best fit your needs, while providing visibility into the status of migrations across your portfolio of applications. Migration Hub also provides key metrics and progress for individual applications, regardless of which tools are being used to migrate them. This allows you to quickly get progress updates across all of your migrations, easily identify and troubleshoot any issues, and reduce the overall time and effort spent on your migration projects.
-AWS Migration Hub provides a single place to monitor migrations in any AWS region where your migration tools are available. There is no additional cost for using Migration Hub. You only pay for the cost of the individual migration tools you use, and any resources being consumed on AWS.
-Track application migrations free
+AWS Migration Hub is the one destination for cloud migration and modernization, giving you the tools you need to accelerate and simplify your journey with AWS. Perhaps you’re making the case for cloud within your organization, or creating a data-driven inventory of existing IT assets. Maybe you’re planning, running, and tracking a portfolio of applications migrating to AWS. Or you might be modernizing applications already running on AWS. In all of these cases, Migration Hub can help with your cloud transformation journey.
+AWS Migration Hub provides a single place to store IT asset inventory data while tracking migrations to any AWS Region. After migration, use Migration Hub to accelerate the transformation of your applications to native AWS.
+Migration Hub is available to all AWS customers at no additional charge. You pay only for the cost of the migration tools you use, if any, and any resources being consumed on AWS. When using Refactor Spaces, you pay only for what you use plus other AWS resources Migration Hub orchestrates with costs associated.
+Track application migrations for free
 with the AWS Free Tier
 Get started for free
 Benefits
 Centralized tracking
 Migrations involve many components that need to be tracked such as the status of servers or databases being migrated, and these are typically tracked across different tools. AWS Migration Hub helps address this by providing a central location to track the status of all these components, making it easier to view overall migration progress and reducing the time spent determining current status and next steps.
 Migration flexibility
-AWS Migration Hub provides the flexibility to use the migration tools that work best for your organization. Whether you use AWS migration tools like AWS Application Migration Service, AWS Server Migration Service, AWS Database Migration Service, or partner tools like ATADATA, Migration Hub makes it easy for you to track migrations from all of those tools.
-Improved visibility
-AWS Migration Hub helps plan your migrations by allowing you to group related servers and resources that should be migrated together. Once grouped into a single application, you can easily track the progress of these resources through their entire migration lifecycle to help ensure they all migrate successfully.
+AWS Migration Hub provides the flexibility to use the migration tools that work best for your organization. Whether you use AWS Application Migration Service, AWS Database Migration Service, or partner tools such as ATADATA, Migration Hub makes it easy for you to track migrations across multiple migration tools.
+Discovery, assessment, and planning
+AWS Migration Hub assists in all phases of migration and modernization readiness. It simplifies the discovery of existing applications and infrastructure and their dependencies, assessment of an application’s ability to be migrated and modernized, and recommendations for modernization strategies.
+Fast-track application refactor
+AWS Migration Hub helps you fast-track refactoring applications, simplify development and operations, and manage existing apps and microservices as a single application. Migration Hub eliminates the undifferentiated work of building and operating AWS infrastructure for incremental refactoring. It reduces the business risk of evolving applications into microservices or extending existing applications that can’t be modified with new features written in microservices.
 How it works
+Close
+Click to enlarge
 Featured customers that use Migration Hub
 Supported services and tools
 AWS Database Migration Service

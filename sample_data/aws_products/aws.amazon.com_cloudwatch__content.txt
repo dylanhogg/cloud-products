@@ -1,57 +1,49 @@
+« Management and Governance
 Amazon CloudWatch
 Observability of your AWS resources and applications on AWS and on-premises
 Get started with CloudWatch
-Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications, and services that run on AWS and on-premises servers. You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to keep your applications running smoothly.
+Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), IT managers, and product owners. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, and optimize resource utilization. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events. You get a unified view of operational health and gain complete visibility of your AWS resources, applications, and services running on AWS and on-premises. You can use CloudWatch to detect anomalous behavior in your environments, set alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to keep your applications running smoothly.
 10 custom metrics and alarms free
 with the AWS Free Tier
 Get started for free
 Benefits
-Observability on a single platform across applications and infrastructure
-Modern applications such as those running on microservices architectures generate large volumes of data in the form of metrics, logs, and events. Amazon CloudWatch enables you to collect, access, and correlate this data on a single platform from across all your AWS resources, applications, and services that run on AWS and on-premises servers, helping you break down data silos so you can easily gain system-wide visibility and quickly resolve issues.
-Easiest way to collect metrics in AWS and on-premises
-Monitoring your AWS resources and applications is easy with CloudWatch. It natively integrates with more than 70 AWS services such as Amazon EC2, Amazon DynamoDB, Amazon S3, Amazon ECS, Amazon EKS, and AWS Lambda, and automatically publishes detailed 1-minute metrics and custom metrics with up to 1-second granularity so you can dive deep into your logs for additional context. You can also use CloudWatch in hybrid cloud architectures by using the CloudWatch Agent or API to monitor your on-premises resources.
+Use a single platform for observability
+Modern applications, such as those running on microservices architectures, generate large volumes of data in the form of metrics, logs, and events. Amazon CloudWatch allows you to collect, access, and correlate this data on a single platform from across all your AWS resources, applications, and services running on AWS and on-premises, helping you break down data silos to gain system-wide visibility and quickly resolve issues.
+Collect metrics on AWS and on premises
+Monitoring your AWS resources and applications is easy with CloudWatch. It natively integrates with more than 70 AWS services, such as Amazon EC2, Amazon DynamoDB, Amazon S3, Amazon ECS, Amazon EKS, and AWS Lambda. It automatically publishes detailed one-minute metrics and custom metrics with up to one-second granularity so you can dive deep into your logs for additional context. You can also use CloudWatch in hybrid environments by using the CloudWatch Agent or API to monitor your on-premises resources.
 Improve operational performance and resource optimization
-Amazon CloudWatch enables you to set alarms and automate actions based on either predefined thresholds, or on machine learning algorithms that identify anomalous behavior in your metrics. For example, it can start Amazon EC2 Auto Scaling automatically, or stop an instance to reduce billing overages. You can also use CloudWatch Events for serverless to trigger workflows with services like AWS Lambda, Amazon SNS, and AWS CloudFormation.
+Set alarms and automate actions based on predefined thresholds or on machine learning (ML) algorithms that identify anomalous behavior in your metrics. For example, you can start Amazon EC2 Auto Scaling automatically or stop an instance to reduce billing overages. You can also use CloudWatch Events for serverless to trigger workflows with services like AWS Lambda, Amazon SNS, and AWS CloudFormation.
 Get operational visibility and insight
-To optimize performance and resource utilization, you need a unified operational view, real-time granular data, and historical reference. CloudWatch provides automatic dashboards, data with 1-second granularity, and up to 15 months of metrics storage and retention. You can also perform metric math on your data to derive operational and utilization insights; for example, you can aggregate usage across an entire fleet of EC2 instances.
+To optimize performance and resource utilization, you need a unified operational view, real-time granular data, and historical reference. CloudWatch provides automatic dashboards, data with one-second granularity, and up to 15 months of metrics storage and retention. You can also perform metric math on your data to derive operational and utilization insights; for example, you can aggregate usage across an entire fleet of EC2 instances.
 Derive actionable insights from logs
-CloudWatch enables you to explore, analyze, and visualize your logs so you can troubleshoot operational problems with ease. With CloudWatch Logs Insights, you only pay for the queries you run. It scales with your log volume and query complexity giving you answers in seconds. In addition, you can publish log-based metrics, create alarms, and correlate logs and metrics together in CloudWatch Dashboards for complete operational visibility.
+Explore, analyze, and visualize your logs so you can troubleshoot operational problems with ease. With CloudWatch Logs Insights, you pay only for the queries you run. It scales with your log volume and query complexity, giving you answers in seconds. In addition, you can publish log-based metrics, create alarms, and correlate logs and metrics together in CloudWatch Dashboards for complete operational visibility.
 How it works
-CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, and visualizes it using automated dashboards so you can get a unified view of your AWS resources, applications, and services that run in AWS and on-premises. You can correlate your metrics and logs to better understand the health and performance of your resources. You can also create alarms based on metric value thresholds you specify, or that can watch for anomalous metric behavior based on machine learning algorithms. To take action quickly, you can set up automated actions to notify you if an alarm is triggered and automatically start auto scaling, for example, to help reduce mean-time-to-resolution. You can also dive deep and analyze your metrics, logs, and traces, to better understand how to improve application performance.
+CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, and visualizes it using automated dashboards so you can get a unified view of your AWS resources, applications, and services that run on AWS and on premises. You can visualize the experience of your application end users and validate design choices through experimentation. Correlate your metrics and logs to better understand the health and performance of your resources. Create alarms based on metric value thresholds you specify, or alarms that can watch for anomalous metric behavior based on ML algorithms. For example, set up automated actions to notify you if an alarm is triggered and automatically start auto scaling to help reduce mean time to resolution (MTTR). You can also dive deep and analyze your metrics, logs, and traces to better understand how to improve application performance.
 Use cases
-Infrastructure monitoring and troubleshooting
-Monitor key metrics and logs, visualize your application and infrastructure stack, create alarms, and correlate metrics and logs to understand and resolve root cause of performance issues in your AWS resources. This includes monitoring your container ecosystem across Amazon ECS, AWS Fargate, Amazon EKS, and Kubernetes.
-Mean-time-to-resolution improvement
-CloudWatch helps you correlate, visualize, and analyze metrics and logs, so you can act quickly to resolve issues, and combine them with trace data from AWS X-Ray for end-to-end observability. You can also analyze user requests to help speed up troubleshooting and debugging, and reduce overall mean-time-to-resolution (MTTR).
-Proactive resource optimization
-CloudWatch alarms watch your metric values against thresholds that either you specify, or that CloudWatch creates for you using machine learning models to detect anomalous behavior. If an alarm is triggered, CloudWatch can take action automatically to enable Amazon EC2 Auto Scaling or stop an instance, for example, so you can automate capacity and resource planning.
-Application monitoring
-Monitor your applications that run on AWS (on Amazon EC2, containers, and serverless) or on-premises. CloudWatch collects data at every layer of the performance stack, including metrics and logs on automatic dashboards.
-Log analytics
-Explore, analyze, and visualize your logs to address operational issues and improve applications performance. You can perform queries to help you quickly and effectively respond to operational issues. If an issue occurs, you can start querying immediately using a purpose-built query language to rapidly identify potential causes.
+Monitor and troubleshoot infrastructure
+Monitor key metrics and logs, visualize your application and infrastructure stack, create alarms, and correlate data to understand and resolve the root cause of performance issues in your AWS resources. This includes monitoring your container ecosystem across Amazon ECS, AWS Fargate, Amazon EKS, and Kubernetes.
+Improve mean time to resolution
+Correlate, visualize, and analyze metrics and logs so you can resolve issues quickly, and combine them with trace data from AWS X-Ray for full observability. You can also analyze user requests to speed up troubleshooting and debugging, and reduce overall MTTR.
+Optimize resources proactively
+CloudWatch alarms watch your metric values against thresholds that you specify or that it creates using ML models to detect anomalous behavior. If an alarm is triggered, CloudWatch can act automatically to enable Amazon EC2 Auto Scaling or stop an instance, so you can automate capacity and resource planning.
+Monitor applications
+Monitor your end user’s digital experience and your applications that run on AWS (on Amazon EC2, containers, and serverless)  and on-premises. CloudWatch collects data at every layer of the performance stack, from your frontend to your infrastructure. You can use ServiceLens to identify performance bottlenecks in your applications and isolate them using the correlated metrics, logs, and traces. Add canaries for SLA/SLO monitoring of endpoints and UI workflows. Collect client-side data on application performance in near real time to identify and debug issues that impact end users. Experiment with features across the full application stack, measure against performance and business metrics, and launch features safely.
+Use observability analytics
+Analyze millions of operational logs and metrics in near real time to identify trends and patterns in your application performance, and use these insights to reduce MTTR. Use fast and interactive operational queries to create powerful visualizations, helping you monitor and pinpoint issues quickly.
 “We use a microservices-based architecture. Amazon CloudWatch was an instant solution as it required no infrastructure setup or maintenance. CloudWatch has no issues handling our scale and removed the operational burden of integrating and managing multiple tools. The most important benefit for us is the decrease in MTTR (mean time to repair), as our DevOps team can quickly find issues across our container infrastructure.”
 - Vitaliy Geraymovych, Co-founder and Vice President, Engineering, CloudPassage
 Customers
 Customers use Amazon CloudWatch to improve operational performance, optimize resource allocation, and reduce MTTR. To learn more about how organizations use Amazon CloudWatch, visit our customers page.
-Mapbox uses Amazon CloudWatch to ingest multiple data sources and monitor key workloads.
+EBSCO uses Amazon CloudWatch Synthetics to simulate user journeys to monitor uptime availability of its applications, proactively identify issues, and easily debug them.
 Read customer reference
+Mapbox uses Amazon CloudWatch to ingest multiple data sources and monitor key workloads.
 Pushpay uses Amazon CloudWatch Logs Insights to query logs and reduce operational complexity.
 Rackspace uses Amazon CloudWatch Agent to monitor their virtual machines.
 SendGrid uses Amazon CloudWatch natively without needing a self-managed stack or third-party vendor.
 CloudPassage uses Amazon CloudWatch for its microservices-based architecture to reduce mean time to repair.
-ConnectWise uses Amazon CloudWatch to monitor containers, latency, web server requests, and incoming load-balancer requests.
 Latest blog posts
 More...
 There are no Amazon CloudWatch blogs available at this time, please visit the AWS Blog page.
-New - Amazon CloudWatch Logs Insights - Fast, Interactive Log Analytics
-by Jeff Bar
-Nov 27, 2018
-Read more
-How to better monitor your custom application metrics using Amazon CloudWatch Agent
-by Helen Lin
-Oct 15, 2018
-Building an Amazon CloudWatch dashboard outside of the AWS Management Console by Stephen McCurry Oct 2, 2018
-Building serverless pipelines with Amazon CloudWatch Events by Forrest Brazeal May 02, 2019
 Get started with AWS
 Sign up for an AWS account
 Instantly get access to the

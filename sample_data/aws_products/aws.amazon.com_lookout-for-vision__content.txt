@@ -4,11 +4,11 @@ Spot product defects using computer vision to automate quality inspection
 Get started with Amazon Lookout for Vision
 10 free training hours per month
 for 3 months with AWS Free Tier
-Easily create an ML model to spot anomalies from your live process line with as few as 30 images.
+Easily create a machine learning (ML) model to spot anomalies from your live process line with as few as 30 images.
 Identify visual anomalies in real time to reduce and prevent defects and improve production quality.
-Prevent unplanned downtime and reduce operational costs, using visual inspection data to spot potential issues and take corrective action.
+Prevent unplanned downtime and reduce operational costs by using visual inspection data to spot potential issues and take corrective action.
 How it works
-Amazon Lookout for Vision is a machine learning (ML) service that uses computer vision (CV) to spot defects in manufactured products at scale.
+Amazon Lookout for Vision is an ML service that uses computer vision to spot defects in manufactured products at scale.
 Use cases
 Detect part damage
 Spot damage to a product’s surface quality, color, and shape during the fabrication and assembly process.
@@ -29,4 +29,5 @@ Get the right support to implement Amazon Lookout for Vision.
 Discover support options
 Find out how Lookout for Vision Works
 Learn about the defect detection process.
+Visit the features page
 Explore more of AWS

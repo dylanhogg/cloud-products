@@ -1,55 +1,37 @@
+« End User Computing
 Amazon WorkSpaces
-Cloud native persistent desktop virtualization
+Secure, reliable, and scalable access to persistent desktops from any location
 Get started with Amazon WorkSpaces
-Download the WorkSpaces Client
-Amazon WorkSpaces is a fully managed, persistent desktop virtualization service that enables your users to access the data, applications, and resources they need, anywhere, anytime, from any supported device. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and quickly scale to provide thousands of desktops to workers across the globe. Amazon WorkSpaces is deployed within an Amazon Virtual Private Cloud (VPC), and no user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
-50 users free
-through October 31, 2021 with the AWS Free Tier
-Get started for free
-Benefits
-Increase Agility
-Being ready to change where and how your workforce gets the job done is more important than ever. WorkSpaces is a fully managed service, so you can scale up and down in minutes as your needs change. WorkSpaces runs in AWS Regions and AWS Availability Zones around the globe, and on almost any device so your end users can get the job done anywhere, anytime.
-Increase Security
-Reducing the risk of corporate data leaking is even more critical in a mobile and remote environment. Amazon WorkSpaces is deployed within an Amazon Virtual Private Network (VPC), provides each end user with access to persistent, encrypted storage volumes in the AWS Cloud, and is integrated with AWS Key Management Service (KMS). No user data is stored on the local device. This helps improve the security of user data and reduces your overall risk surface area.
-Optimize Cost
-In a changing economy, every dollar counts. Amazon WorkSpaces eliminates the need to over-buy desktop and laptop resources by providing on-demand access to cloud desktops that include a range of compute, memory, and storage options to meet your users' performance needs. WorkSpaces offers pay-as-you-go pricing options so you can adapt to changing business needs without minimum monthly fees, long-term commitments, or upfront license charges.
-Increase Reliability
-End users can only be productive when they can access their applications. Amazon WorkSpaces is built on the AWS Cloud and our global network of AWS Regions and AWS Availability Zones, and runs on AWS EC2 instances with built-in auto scale load balancing. We take on the undifferentiated work of keeping infrastructure up and running and deliver a 99.9% uptime SLA.
+Talk with an Amazon WorkSpaces specialist
+Empower your remote workforce and react quickly to changing conditions with access to applications and desktops from anywhere.
+Strengthen security by storing user data on AWS instead of vulnerable endpoint devices.
+Optimize costs with on-demand, pay-as-you-go scaling with a range of compute, memory, and storage options.
+Reduce downtime with fully managed application delivery and highly reliable AWS infrastructure designed for 99.9% uptime.
+How it works
+Amazon WorkSpaces is a fully managed desktop virtualization service for Windows and Linux that enables you to access resources from any supported device.
+Close
+Click to enlarge
 Use cases
-Contingent Workforce
-Many organizations are turning to contingent workers to increase agility, save money, and capitalize on opportunities to grow. Amazon WorkSpaces enables you to deploy Windows and Linux desktops quickly so you can onboard and support new workers without buying and shipping additional devices. And when contingent contracts are over it is just as easy to scale back. With Amazon WorkSpaces, you can improve security by ensuring sensitive corporate data is never at rest on the contingent worker's device.
-Remote Work
-Many organizations are making a permanent shift to a more flexible and more remote workforce, including more 'work from home' options. Amazon WorkSpaces enables you to give these workers fully functional Windows and Linux desktops in minutes, while increasing security by keeping data off of the end user's device, and increasing reliability with the power of the AWS Cloud.
-Mergers and Acquisitions
-Companies going through mergers and acquisition must quickly on-board large numbers of employees with fast, easy, secure access to company applications and data. They must do so across a diverse set of devices without spending much money or going through lengthy complex integrations. With Amazon WorkSpaces, IT teams quickly can provision and decommission secure WorkSpaces to keep up with changing organizational structures.
-Contact Center Agents
-Contact center agents are the front line for the customer experience and organizations increasingly have some or all of their agents working from home. Amazon WorkSpaces enables organizations to allow these agents to work from anywhere securely, while protecting sensitive corporate data by ensuring it is never at rest on end user devices.
-Customer stories
-The Amazon Client Engineering team manages and supports IT services within Amazon and is responsible for managing the company's devices. As Amazon brings on new subsidiaries, it saves money that would previously have been used for physical infrastructure.
-“We save millions of dollars for every subsidiary we onboard, because Amazon WorkSpaces can be deployed in many different regions and the solution circumvents the need for physical logistics like shipping hardware and the buildout of network connections. Overall, Amazon WorkSpaces is expected to contribute to an annual savings of more than $17 million for Amazon across all use cases.”
-– Andrew Blackard, Manager, Client Engineering, Amazon IT
-GrubHub, Inc. is a billion dollar food-service online and mobile platform featuring the largest and most comprehensive network of restaurant partners in the US. As an essential business to support local restaurants, GrubHub leveraged Amazon WorkSpaces to ensure business continuity and support the safety of our employees by moving all departments to a Work From Home (WFH) model.
-"Amazon WorkSpaces easily accommodated our real-time customer communication and contact channels allowing 100% of our workforce and new employees to be WFH, accelerating our BYOD (Bring Your Own Device) strategy. GrubHub now has the flexibility to control cost and scale this virtual desktop environment to meet the current needs and future needs of our customers, restaurant partners, and drivers for whatever comes next."
-- Justinian Fortenberry, Chief Information Security Officer
-MAXIMUS partners with state, federal, and local governments to provide communities with critical health and human service programs. MAXIMUS used Amazon WorkSpaces to replace their on-premises VDI infrastructure and accelerate their adoption to the cloud.
-“MAXIMUS uses VDI for several different types of projects, including call centers and for remote users. MAXIMUS is currently going through a move to AWS for all IT services, so it was natural that we utilize WorkSpaces to replace our VDI infrastructure. We were having many issues with VDI backend server support, workstations, and many complaints from users about software configurations. With WorkSpaces, we were able to release ourselves from all of the backend maintenance and concentrate on the user experience.”
-- Jason Winters, Principal Architect, MAXIMUS, IT.
-Blog posts & articles
-date
-1
-...
-Get started with AWS
-Sign up for an AWS account
-Instantly get access to the
-AWS Free Tier.
-Learn with 10-minute Tutorials
-Explore and learn with
-simple tutorials.
-Start building with AWS
-Begin building with step-by-step guides to help you launch your
-AWS project.
-Learn more about Amazon WorkSpaces
-Visit the features page
-Ready to build?
-Have more questions?
-Contact us
+Onboard contingent workers
+Easily assign and remove desktops for contractors while keeping your sensitive data secure in the cloud.
+Facilitate remote work
+Enable work-from-home and remote workers to access fully functional Windows and Linux desktops from any location.
+Run powerful desktops
+Provide high-performance desktops for developers and engineers to store and access proprietary models, designs, and code.
+Let contact center agents work from anywhere
+Enable contact center agents to work from anywhere with a secure, easy-to-use agent experience.
+Customers
+Endemol Shine Nederland supports content creators and lowers costs
+GrubHub connects remote, BYOD workers with customers
+Maximus improves health and human service experiences
+FOX moves to remote work swiftly with Amazon WorkSpaces
+How to get started
+Explore Amazon WorkSpaces pricing
+Choose your ideal pricing structure.
+Learn more about pricing
+Embark on your journey.
+Check out the setup guide
+Connect with an expert
+Reach AWS experts in your industry.
+Chat with an expert in your field
+Explore more of AWS

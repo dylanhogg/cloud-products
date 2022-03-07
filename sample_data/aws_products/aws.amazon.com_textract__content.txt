@@ -1,44 +1,34 @@
+« Machine Learning
 Amazon Textract
-Easily extract printed text, handwriting, and data from any document
-Get started with Amazon Textract
-Amazon Textract is a machine learning service that automatically extracts text, handwriting and data from scanned documents that goes beyond simple optical character recognition (OCR) to identify, understand, and extract data from forms and tables. Today, many companies manually extract data from scanned documents like PDFs, images, tables and forms, or through simple OCR software that requires manual configuration which often times requires reconfiguration when the form changes. To overcome these manual and expensive processes, Textract uses machine learning to read and process any type of document, accurately extracting text, handwriting, tables and other data without any manual effort. You can quickly automate document processing and take action on the information extracted whether it be automating loans processing or extracting information from invoices and receipts. Textract can extract the data in minutes vs. hours or days. Additionally, you can add in human reviews with Amazon Augmented AI to provide oversight of your models and perform reviews for sensitive data.
-1,000 pages free
-per month with the AWS Free Tier
-Get started for free
-Benefits
-Extract structured & unstructured data
-Amazon Textract uses artificial intelligence to read as a human would, extracting text, layouts, tables, forms, and structured data with context and without configuration, training, or custom code.
-Go beyond simple Optical Character Recognition (OCR)
-Amazon Textract uses OCR technology to identify form labels and values and extracts information from tables without compromising the structure at a low cost. You only pay for what you use and there are no upfront commitments or long-term contracts.
-Choose data security and compliance
-Amazon Textract is compliant in Service Organization Control (SOC), International Organization for Standardization (ISO) as well as PCI, HIPAA and GDPR which means customers can get deep insights into the security processes and controls that protect customer data. In addition, Textract supports Amazon Virtual Private Cloud (VPC) endpoints via AWS Privatelink and KMS, enabling customers to avoid using the public internet and encrypt their data.
-Easily implement human reviews
-Amazon Textract is directly integrated with Amazon Augmented AI (Amazon A2I) so you can easily implement human review of text extracted from documents. You can build in human reviews to manage nuanced or sensitive workflows that require human oversight to get high confidence predictions or to audit predictions on an on-going basis.
+Automatically extract printed text, handwriting, and data from any document
+Get Started with Amazon Textract
+Analyze up to 1,000 pages per month free for 3 months
+with the AWS Free Tier
+Extract text and structured data such as tables and forms from documents using artificial intelligence (AI)—no configuration or templates necessary.
+Go beyond simple optical character recognition (OCR) by extracting relationships, structure, and text from documents.
+Improve security and compliance through robust data privacy, encryption, security controls, and support compliance standards such as HIPAA, GDPR, and more.
+Easily implement human reviews with Amazon Augmented AI (A2I) to manage nuanced or sensitive workflows and audit predictions.
+How it works
+Amazon Textract is a machine learning (ML) service that automatically extracts text, handwriting, and data from scanned documents. It goes beyond simple optical character recognition (OCR) to identify, understand, and extract data from forms and tables. Today, many companies manually extract data from scanned documents such as PDFs, images, tables, and forms, or through simple OCR software that requires manual configuration (which often must be updated when the form changes). To overcome these manual and expensive processes, Textract uses ML to read and process any type of document, accurately extracting text, handwriting, tables, and other data with no manual effort. You can quickly automate document processing and act on the information extracted, whether you’re automating loans processing or extracting information from invoices and receipts. Textract can extract the data in minutes instead of hours or days. Additionally, you can add human reviews with Amazon Augmented AI to provide oversight of your models and check sensitive data.
 Use cases
-Financial Services
-Financial forms like mortgage applications, W-2s, invoices, and more can contain critical business information like mortgage rates, applicant names, invoice totals, and important tax information which needs to be extracted and analyzed. With Amazon Textract, you can extract information from scanned documents, PDFs, and images containing tables and forms, and process applications in minutes to provide your customers a quick response.
-Healthcare and Life Sciences
-Amazon Textract can scan thousands of healthcare and insurance forms, extract the information from within those forms and keep the information organized and in its original context, saving you from manually reviewing the output. Better serve your patients and insurers by extracting important patient data from health intake forms, insurance claims, and pre-authorization forms.
-Public Sector
-Processing government related forms like small business loans, federal tax forms or business applications takes thousands of manual hours to extract the relevant and important data. Amazon Textract can extract all the data from these documents whether they are scanned images, PDFs or scanned documents using Optical Character Recognition (OCR). Textract not only identifies each character, word and letter, but also the contents of form fields and information stored in tables with high accuracy.
-Customer success
-Foresight Group is a strategically diverse family-owned business, building a legacy for the future. With a core focus on Shipping, Offshore Drilling, Ports & Gas Infrastructure and India focused Private Equity Investments, the Group has over the decades morphed into a global business conglomerate.
-We wanted to automate our invoicing processing in SAP. Currently we process invoices manually which takes anywhere from 15-20 minutes per invoice. The AP team member takes an attachment from an email, manually extracts the data from the invoice, and enters the data into multiple accounting systems. At the beginning we were skeptical with the automation. However, a partner, InfraBeat, evaluated several OCR solutions. Deciding on Amazon Textract, InfraBeat proposed an SAP IRPA with Amazon Textract solution to achieve a high level of accuracy and minimal adjustments to their logic. We always want high accuracy when it comes to data extraction and the results from Amazon Textract were above our expectations, consistent across many different layouts, with 90% accuracy across all invoices.”
-Group IT, Foresight Group
-Change Healthcare is a leading independent healthcare technology company that provides data and analytics-driven solutions to improve clinical, financial and patient engagement outcomes in the U.S. healthcare system.
-"At Change Healthcare, we believe that we can make healthcare affordable and accessible to all by improving the timeliness and quality of financial and administrative decisions. This can be achieved by the power of machine learning technology to understand more from our data. But unlocking the potential of this information can often be difficult as it's siloed in tables and forms that traditional optical character recognition hasn't been able to analyze. Amazon Textract further advances document understanding with the ability to retrieve structured data in addition to text, and now with the service becoming HIPAA compliant, we'll be able to liberate the information from millions of documents and create even more value for patients, payers, and providers.”
-Nick Giannasi, EVP and Chief AI Officer - Change Healthcare
-Filevine is the operating core for legal professionals, including cloud-based case & matter management, document management, and deep reporting analytics. From its launch in 2015, Filevine focused on rapid innovation and award-winning design, earning the highest ratings from independent review sites.
-"Millions of matters and case files are handled in Filevine every day. We chose Amazon Web Services because we wanted to deliver best-in-class document search solutions for our customers. Amazon Textract is fast, accurate, and scalable - it helps Filevine meet the exacting requirements of the world’s largest and most sophisticated legal organizations. With Filevine and Amazon, finding the proverbial needle in the haystack has never been easier for legal professionals."
-Ryan Anderson, Chief Executive Officer - Filevine
-Intuit is a provider of innovative financial management solutions, including TurboTax and QuickBooks, to approximately 50 million customers worldwide.
-“Intuit’s document understanding technology uses AI to eliminate manual data entry for our consumer, small business, and self-employed customers. For millions of Americans who rely on TurboTax every year, this technology simplifies tax filing by saving them from the tedious, time-consuming task of entering data from financial documents. Textract is an important element of Intuit’s document understanding capability, improving data extraction accuracy by analyzing text in the context of complex financial forms.”
-Krithika Swaminathan, VP of AI - Intuit
-Check out Amazon Textract features
-Discover more Amazon Textract features.
-Learn more
+Financial services
+Accurately extract critical business data such as mortgage rates, applicant names, and invoice totals across a variety of financial forms to process loan and mortgage applications in minutes.
+Healthcare and life sciences
+Better serve your patients and insurers by extracting important patient data from health intake forms, insurance claims, and pre-authorization forms. Keep data organized and in its original context, and eliminate manual review of output.
+Public sector
+Easily extract relevant data from government-related forms such as small business loans, federal tax forms, and business applications with a high degree of accuracy.
+Customers
+BDO automates financial document processing with help from AWS Partner Auxilis
+Anthem uses ML to extract data and automatically index and classify documents
+Filevine delivers superior document search solutions for customers
+How to get started
+Find out how Amazon Textract works
+Read about OCR, form extraction, table extraction, and more.
+Explore Amazon Textract features
+Try the AWS Free Tier
+Start using Amazon Textract for free today.
 Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with Amazon Textract in the AWS Management Console.
+Explore Amazon Textract
+Get started building with Amazon Textract in the AWS Management Console
+Get started in the console
+Explore more of AWS

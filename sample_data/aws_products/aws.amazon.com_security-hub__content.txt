@@ -1,8 +1,7 @@
-« Security, Identity & Compliace
+« Security, Identity & Compliance
 AWS Security Hub
 Automate AWS security checks and centralize security alerts
 Get Started with AWS Security Hub
-Automated security controls
 Start your 30-day free trial
 with the AWS Free Tier
 Detect deviations from security best practices with a single click.
@@ -11,15 +10,17 @@ Accelerate mean time to resolution with automated response and remediation actio
 How it works
 AWS Security Hub is a cloud security posture management service that performs security best practice checks, aggregates alerts, and enables automated remediation.
 Use cases
-Align workloads to AWS Foundational Security Best Practices
-Reduce your risk with automated checks based on a collection of security controls curated by experts.
-Map workloads to security and compliance frameworks
-Simplify compliance management with built in mapping capabilities for common frameworks like CIS, PCI DSS, and more.
-Accelerate response time by ensuring that AWS findings are routed to the right people.
-AWS Security Hub has automated integrations with chat, ticketing, incident management, GRC, and SIEM tools.
+Conduct Cloud Security Posture Management (CSPM)
+Reduce your risk with automated checks based on a collection of security controls curated by experts and simplify compliance management with built in mapping capabilities for common frameworks like CIS, PCI DSS, and more.
+Initiate Security Orchestration, Automation, and Response (SOAR) workflows
+Automatically enrich findings, remediate them, or send them to ticketing systems with Security Hub’s integration with EventBridge.
+Save time and money by simplifying integrations
+Simplify and streamline data ingestion into your Security Information and Event Management (SIEM), ticketing, and other tools by consolidating the integrations between AWS services and your downstream tooling and by normalizing your findings.
+Correlate your security findings to discover new insights
+Better prioritize the response and remediation efforts of your central security teams and DevSecOps teams by searching, correlating, and aggregating diverse security findings by accounts and resources.
 Customers
-AppsFlyer uses AWS Security Hub to approach security proactively
-ERGO maintains 95% CIS compliance with AWS Security Hub
+Southwest Airlines invests in its security posture using AWS Security Hub
+Siemens Strengthens Security and Enhances Productivity Using AWS
 Swiss Post gets instant alerts with AWS Security Hub
 How to get started
 Find out how AWS Security Hub works

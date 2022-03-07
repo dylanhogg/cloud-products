@@ -12,6 +12,11 @@ Performance at scale
 Consistent, single-digit-millisecond response times at any scale. Build applications with virtually unlimited throughput and storage that can serve thousands of requests per second without the need for capacity planning. You can monitor performance by using Amazon CloudWatch to help keep your applications running smoothly.
 Highly available and secure
 Amazon Keyspaces offers a 99.99% availability SLA within an AWS Region. Tables are encrypted by default and replicated three times in multiple AWS Availability Zones for high availability. You can create continuous table backups with hundreds of terabytes of data with no performance impact to your application, and recover to any point in time in the preceding 35 days.
+Featured customers
+PricewaterhouseCoopers launches Check-In contact tracing application within three months by using Amazon Keyspaces
+“Building Check-In with AWS technologies was instrumental to the product’s success. We were able to rapidly scale up to meet the market demand while keeping data protection and privacy at the forefront of our strategy.”
+— David Sapin, Principal, PwC
+Read the blog post
 Use cases
 Build applications that require low latency
 Process data at high speeds for applications that require single-digit-millisecond latency, such as industrial equipment maintenance, trade monitoring, fleet management, and route optimization.

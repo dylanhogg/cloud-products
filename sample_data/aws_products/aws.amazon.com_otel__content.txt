@@ -1,11 +1,11 @@
-AWS Distro for OpenTelemetry (Preview)
+AWS Distro for OpenTelemetry
 Secure, production-ready open source distribution with predictable performance
-Get Started with AWS Distro for OpenTelemetry in Preview
+Get Started with AWS Distro for OpenTelemetry
 AWS Distro for OpenTelemetry is a secure, production-ready, AWS-supported distribution of the OpenTelemetry project. Part of the Cloud Native Computing Foundation, OpenTelemetry provides open source APIs, libraries, and agents to collect distributed traces and metrics for application monitoring. With AWS Distro for OpenTelemetry, you can instrument your applications just once to send correlated metrics and traces to multiple AWS and Partner monitoring solutions. Use auto-instrumentation agents to collect traces without changing your code. AWS Distro for OpenTelemetry also collects metadata from your AWS resources and managed services, so you can correlate application performance data with underlying infrastructure data, reducing the mean time to problem resolution. Use AWS Distro for OpenTelemetry to instrument your applications running on Amazon Elastic Compute Cloud (EC2), Amazon Elastic Container Service (ECS), and Amazon Elastic Kubernetes Service (EKS) on EC2, AWS Fargate, and AWS Lambda, as well as on-premises.
 Capturing trace data with the AWS Distro for OpenTelemetry (7:00)
 Benefits
 Instrument once for multiple monitoring destinations
-AWS Distro for OpenTelemetry lets you instrument your applications just once, instead of running multiple SDKs and agents to collect metrics and traces. You can then send those metrics and traces to multiple AWS monitoring solutions including Amazon CloudWatch and AWS X-Ray, as well as third-party monitoring solutions from AWS Partners.
+AWS Distro for OpenTelemetry lets you instrument your applications just once, instead of running multiple SDKs and agents to collect metrics and traces. You can then send those metrics and traces to multiple AWS monitoring solutions including Amazon CloudWatch, Amazon Managed Service for Prometheus, and AWS X-Ray, as well as third-party monitoring solutions from AWS Partners.
 Extend visibility and triage faster
 AWS Distro for OpenTelemetry lets you collect and correlate metrics and traces, along with contextual information and metadata about where the application is running. Increased visibility into your AWS resources speeds up performance troubleshooting and reduces mean time to resolution.
 Run OpenTelemetry with predictable performance
@@ -18,8 +18,8 @@ Rely on AWS support
 AWS Support tools and technology, people and programs, help you optimize performance, lower costs, and innovate faster. Leverage AWS Premium Support for proactive guidance on how to scale your workloads and optimize the health of your cloud operations in addition to break-fix and problem resolution.
 How it works
 Use cases
-Send metrics and traces to AWS and third-party Partner monitoring services
-Instrument applications once, then collect and send correlated metrics and traces to one or more AWS monitoring services such as Amazon CloudWatch, AWS X-Ray, and Amazon Elasticsearch Service, as well as third-party Partner monitoring solutions. Add or update a monitoring destination with simple configuration changes, without having to re-instrument code. Supported languages include Java, JavaScript, Go, and Python, with more planned.
+Send metrics and traces to AWS and third-party monitoring services
+Instrument applications once, then collect and send correlated metrics and traces to one or more AWS monitoring services such as Amazon CloudWatch, Amazon Managed Service for Prometheus, AWS X-Ray, and Amazon OpenSearch Service, as well as third-party monitoring solutions. Add or update a monitoring destination with simple configuration changes, without having to re-instrument code. Supported languages include Java, JavaScript, Go, and Python, with more planned.
 Automate collection of traces
 Automatically collect trace data for Java applications such as web applications built with Spring Boot, and servlet-based microservices. The auto-instrumentation agent in AWS Distro for OpenTelemetry captures all downstream requests made with Apache HTTP clients, AWS SDK clients, and JDBC-based SQL clients. It also works automatically in multi-threaded applications.
 Collect metadata on application resources

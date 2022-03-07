@@ -1,9 +1,9 @@
 Overview
 Q: What are the benefits of Amazon SQS over homegrown or packaged message queuing systems?
-Amazon SQS provides several advantages over building your own software for managing message queues or using commercial or open-source message queuing systems that require significant up-front time for development and configuration.
+Amazon SQS provides several advantages over building your own software for managing message queues or using commercial or open-source message queuing systems that require significant upfront time for development and configuration.
 These alternatives require ongoing hardware maintenance and system administration resources. The complexity of configuring and managing these systems is compounded by the need for redundant storage of messages that ensures messages are not lost if hardware fails.
 In contrast, Amazon SQS requires no administrative overhead and little configuration. Amazon SQS works on a massive scale, processing billions of messages per day. You can scale the amount of traffic you send to Amazon SQS up or down without any configuration. Amazon SQS also provides extremely high message durability, giving you and your stakeholders added confidence.
-Q: How is Amazon SQS different from Amazon SNS?
+Q: How is Amazon SQS different from Amazon Simple Notification Service (SNS)?
 Amazon SNS allows applications to send time-critical messages to multiple subscribers through a “push” mechanism, eliminating the need to periodically check or “poll” for updates. Amazon SQS is a message queue service used by distributed applications to exchange messages through a polling model, and can be used to decouple sending and receiving components.
 Q: How is Amazon SQS different from Amazon MQ?
 If you're using messaging with existing applications, and want to move your messaging to the cloud quickly and easily, we recommend you consider Amazon MQ. It supports industry-standard APIs and protocols so you can switch from any standards-based message broker to Amazon MQ without rewriting the messaging code in your applications. If you are building brand new applications in the cloud, we recommend you consider Amazon SQS and Amazon SNS. Amazon SQS and SNS are lightweight, fully managed message queue and topic services that scale almost infinitely and provide simple, easy-to-use APIs.
@@ -18,11 +18,11 @@ Amazon SQS offers a reliable, highly-scalable hosted queue for storing messages 
 Amazon Kinesis Streams allows real-time processing of streaming big data and the ability to read and replay records to multiple Amazon Kinesis Applications. The Amazon Kinesis Client Library (KCL) delivers all records for a given partition key to the same record processor, making it easier to build multiple applications that read from the same Amazon Kinesis stream (for example, to perform counting, aggregation, and filtering).
 For more information, see the Amazon Kinesis Documentation.
 Q: Does Amazon use Amazon SQS for its own applications?
-Yes. Developers at Amazon use Amazon SQS for a variety of applications that process large numbers of messages every day. Key business processes in both Amazon.com and Amazon Web Services use Amazon SQS.
+Yes. Developers at Amazon use Amazon SQS for a variety of applications that process large numbers of messages every day. Key business processes in both Amazon.com and AWS use Amazon SQS.
 Billing
 Q: How much does Amazon SQS cost?
 You pay only for what you use, and there is no minimum fee.
-The cost of Amazon SQS is calculated per request, plus data transfer charges for data transferred out of Amazon SQS (unless data is transferred to Amazon EC2 instances or to AWS Lambda functions within the same region). For detailed pricing breakdowns per queue type and region, see Amazon SQS Pricing.
+The cost of Amazon SQS is calculated per request, plus data transfer charges for data transferred out of Amazon SQS (unless data is transferred to Amazon Elastic Compute Cloud (EC2) instances or to AWS Lambda functions within the same region). For detailed pricing breakdowns per queue type and region, see Amazon SQS Pricing.
 Q: What can I do with the Amazon SQS Free Tier?
 The Amazon SQS Free Tier provides you with 1 million requests per month at no charge.
 Many small-scale applications are able to operate entirely within the limits of the Free Tier. However, data transfer charges might still apply. For more information, see Amazon SQS Pricing.
@@ -44,7 +44,7 @@ Except as noted otherwise, our prices don't include any applicable taxes and dut
 For customers with a Japanese billing address, the use of AWS in any region is subject to Japanese Consumption Tax. For more information, see the Amazon Web Services Consumption Tax FAQ.
 Features, functionality, and interfaces
 Q: Can I use Amazon SQS with other AWS services?
-Yes. You can make your applications more flexible and scalable by using Amazon SQS with compute services such as Amazon EC2, Amazon EC2 Container Service (Amazon ECS), and AWS Lambda, as well as with storage and database services such as Amazon Simple Storage Service (Amazon S3) and Amazon DynamoDB.
+Yes. You can make your applications more flexible and scalable by using Amazon SQS with compute services such as Amazon EC2, Amazon Elastic Container Service (ECS), and AWS Lambda, as well as with storage and database services such as Amazon Simple Storage Service (Amazon S3) and Amazon DynamoDB.
 Q: How can I interact with Amazon SQS?
 You can access Amazon SQS using the AWS Management Console, which helps you create Amazon SQS queues and send messages easily.
 Amazon SQS also provides a web services API. It is also integrated with the AWS SDKs, allowing you to work in the programming language of your choice.
@@ -60,9 +60,10 @@ All messages have a global unique ID that Amazon SQS returns when the message is
 When you receive a message from the message queue, the response includes a receipt handle that you must provide when deleting the message.
 For more information, see Queue and Message Identifiers in the Amazon SQS Developer Guide.
 Q: How does Amazon SQS handle messages that can't be processed?
-In Amazon SQS, you can use the API or the console to configure dead letter queues, which are queues that receive messages from other source queues.
-If you make a queue into a dead letter queue, it receives messages after a maximum number of processing attempts cannot be completed. You can use dead letter queues to isolate messages that can't be processed for later analysis.
-For more information, see "Can I use a dead letter queue with FIFO queues?" on this page and Using Amazon SQS Dead Letter Queues in the Amazon SQS Developer Guide.
+In Amazon SQS, you can use the API or the console to configure dead letter queues, which receive messages from other source queues. When configuring a dead letter queue, you are required to set appropriate permissions for the dead letter queue redrive using RedriveAllowPolicy.
+RedriveAllowPolicy includes the parameters for the dead-letter queue redrive permission. It defines which source queues can specify dead-letter queues as a JSON object.
+Once you make a dead letter queue, it receives messages after a maximum number of processing attempts cannot be completed. You can use dead letter queues to isolate messages that can't be processed for later analysis.
+For more information, see Using Amazon SQS Dead Letter Queues in the Amazon SQS Developer Guide.
 Q: What is a visibility timeout?
 The visibility timeout is a period of time during which Amazon SQS prevents other consuming components from receiving and processing a message. For more information, see Visibility Timeout in the Amazon SQS Developer Guide.
 Q: Does Amazon SQS support message metadata?
@@ -85,7 +86,7 @@ Amazon SQS long polling results in higher performance at reduced cost in the maj
 For example, if your application uses a single thread to poll multiple queues, switching from short polling to long polling will probably not work, because the single thread will wait for the long-poll timeout on any empty queues, delaying the processing of any queues that might contain messages.
 In such an application, it is a good practice to use a single thread to process only one queue, allowing the application to take advantage of the benefits that Amazon SQS long polling provides.
 Q: What value should I use for my long-poll timeout?
-In general, you should use maximum 20 seconds for a long-poll timeout. Because higher long-poll timeout values reduce the number of empty ReceiveMessageResponse instances returned, try to set your long-poll timeout as high as possible.
+In general, you should use a maximum of 20 seconds for a long-poll timeout. Because higher long-poll timeout values reduce the number of empty ReceiveMessageResponse instances returned, try to set your long-poll timeout as high as possible.
 If the 20-second maximum doesn't work for your application (see the example in the previous question), set a shorter long-poll timeout, as low as 1 second.
 All AWS SDKs work with 20-second long polls by default. If you don't use an AWS SDK to access Amazon SQS, or if you configured your AWS SDK to specifically have a shorter timeout, you might need to modify your Amazon SQS client to allow longer requests or to use a shorter long-poll timeout.
 Q: What is the AmazonSQSBufferedAsyncClient for Java?
@@ -147,8 +148,6 @@ Yes. One or more producers can send messages to a FIFO queue. Messages are store
 If multiple producers send messages in parallel, without waiting for the success response from SendMessage or SendMessageBatch actions, the order between producers might not be preserved. The response of SendMessage or SendMessageBatch actions contains the final ordering sequence that FIFO queues use to place messages in the queue, so your multiple-parallel-producer code can determine the final order of messages in the queue.
 Q: Do Amazon SQS FIFO queues support multiple consumers?
 By design, Amazon SQS FIFO queues don't serve messages from the same message group to more than one consumer at a time. However, if your FIFO queue has multiple message groups, you can take advantage of parallel consumers, allowing Amazon SQS to serve messages from different message groups to different consumers.
-Q: Can I use a dead letter queue with FIFO queues?
-Yes. However, you must use a FIFO dead letter queue with a FIFO queue. (Similarly, you can use only a standard dead letter queue with a standard queue.)
 Q: What is the throughput quota for an Amazon SQS FIFO queue?
 By default, FIFO queues support up to 3,000 messages per second with batching or up to 300 messages per second (300 send, receive, or delete operations per second) without batching. If you require higher throughput, you can enable high throughput mode for FIFO on the Amazon SQS console, which will support up to 30,000 messages per second with batching, or up to 3,000 messages per second without batching.
 Q: Are there any limits specific to FIFO queue attributes?
@@ -162,22 +161,22 @@ Amazon SQS has its own resource-based permissions system that uses policies writ
 Amazon SQS supports the HTTP over SSL (HTTPS) and Transport Layer Security (TLS) protocols. Most clients can automatically negotiate to use newer versions of TLS without any code or configuration change. Amazon SQS supports versions 1.0, 1.1, and 1.2 of the Transport Layer Security (TLS) protocol in all regions.
 Q: Why are there separate ReceiveMessage and DeleteMessage operations?
 When Amazon SQS returns a message to you, the message stays in the message queue whether or not you actually receive the message. You're responsible for deleting the message and the deletion request acknowledges that you’re done processing the message.
-If you don’t delete the message, Amazon SQS will deliver it again on when it receives another receive request. For more information, see Visibility Timeout in the Amazon SQS Developer Guide.
+If you don’t delete the message, Amazon SQS will deliver it again when it receives another receive request. For more information, see Visibility Timeout in the Amazon SQS Developer Guide.
 Q: Can a deleted message be received again?
 No. FIFO queues never introduce duplicate messages.
 For standard queues, under rare circumstances, you might receive a previously-deleted message a second time.
 Q: What happens if I issue a DeleteMessage request on a previously-deleted message?
 When you issue a DeleteMessage request on a previously-deleted message, Amazon SQS returns a success response.
 Server-Side encryption (SSE)
-Q: What are the benefits of server-side encryption (SSE) for Amazon SQS?
-Server-side encryption (SSE) lets you transmit sensitive data in encrypted queues. SSE protects the contents of messages in Amazon SQS queues using keys managed in the AWS Key Management Service (AWS KMS). SSE encrypts messages as soon as Amazon SQS receives them. The messages are stored in encrypted form and Amazon SQS decrypts messages only when they are sent to an authorized consumer.
-For more information, see Protecting Data Using Server-Side Encryption (SSE) and AWS KMS in the Amazon SQS Developer Guide
+Q: What are the benefits of SSE for Amazon SQS?
+SSE lets you transmit sensitive data in encrypted queues. SSE protects the contents of messages in Amazon SQS queues using keys managed in the AWS Key Management Service (AWS KMS). SSE encrypts messages as soon as Amazon SQS receives them. The messages are stored in encrypted form and Amazon SQS decrypts messages only when they are sent to an authorized consumer.
+For more information, see Protecting Data Using Server-Side Encryption (SSE) and AWS KMS in the Amazon SQS Developer Guide.
 Q: Can I use SNS, Cloud Watch Events and S3 Events with encrypted queues?
 Yes. To do this you need to enable compatibility between AWS services (eg. Amazon CloudWatch Events, Amazon S3, and Amazon SNS), and Queues with SSE. For detailed instructions see the Compatibility section of the SQS Developer Guide.
 Q: What regions are queues with SSE available in?
 Server-side encryption (SSE) for Amazon SQS is available in all AWS regions where Amazon SQS is available. See here for details on Amazon SQS region availability.
 Q: How do I enable SSE for a new or existing Amazon SQS queue?
-To enable SSE for a new or existing queue using the Amazon SQS API, specify the customer master key (CMK) ID: the alias, alias ARN, key ID, or key ARN of the an AWS-managed CMK or a custom CMK by setting the KmsMasterKeyId attribute of the CreateQueue or SetQueueAttributes action.
+To enable SSE for a new or existing queue using the Amazon SQS API, specify the customer master key (CMK) ID: the alias, alias ARN, key ID, or key ARN of an AWS-managed CMK or a custom CMK by setting the KmsMasterKeyId attribute of the CreateQueue or SetQueueAttributes action.
 For detailed instructions, see Creating an Amazon SQS Queue with Server-Side Encryption and Configuring Server-Side Encryption (SSE) for an Existing Amazon SQS Queue in the Amazon SQS Developer Guide.
 Q: What Amazon SQS queue types can use SSE?
 Both standard and FIFO queues support SSE.
@@ -209,8 +208,7 @@ The existence of a large backlog (a larger backlog requires more AWS KMS calls).
 For example, let's assume the following:
 You set your data key reuse period to 5 minutes (300 seconds).
 Your KMS account has a default AWS KMS TPS quota of 100 TPS.
-You use an Amazon SQS queue without a backlog and with 1 IAM user for
-SendMessage or ReceiveMessage actions to all queues.
+You use an Amazon SQS queue without a backlog and with 1 IAM user for SendMessage or ReceiveMessage actions to all queues.
 In this case, you can calculate the theoretical maximum of Amazon SQS queues with SSE as follows:
 300 seconds × 100 TPS / 1 IAM user = 30,000 queues
 Q: How can I estimate my AWS KMS usage costs?
@@ -247,7 +245,7 @@ Amazon SQS messages can contain up to 256 KB of text data, including XML, JSON a
 #x9 | #xA | #xD | [#x20 to #xD7FF] | [#xE000 to #xFFFD] | [#x10000 to #x10FFFF]
 For more information, see the XML 1.0 Specification.
 Q: How large can Amazon SQS message queues be?
-A single Amazon SQS message queue can contain an unlimited number of messages. However, there is a 120,000 quota for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
+A single Amazon SQS message queue can contain an unlimited number of messages. However, there is a quota of 120,000 for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
 Q: How many message queues can I create?
 You can create any number of message queues.
 Q: Is there a size limit on the name of Amazon SQS message queues?
@@ -286,6 +284,18 @@ Amazon SQS pricing is the same for all regions, except China (Beijing). For more
 Q: What is the pricing structure between various regions?
 You can transfer data between Amazon SQS and Amazon EC2 or AWS Lambda free of charge within a single region.
 When you transfer data between Amazon SQS and Amazon EC2 or AWS Lambda in different regions, you will be charged the normal data transfer rate. For more information, see Amazon SQS Pricing.
+Dead-letter queues
+Q: What are dead-letter queues?
+A dead-letter queue is an Amazon SQS queue to which a source queue can send messages if the source queue’s consumer application is unable to consume the messages successfully. Dead-letter queues make it easier for you to handle message consumption failures and manage the life cycle of unconsumed messages. You can configure an alarm for any messages delivered to a dead-letter queue, examine logs for exceptions that might have caused them to be delivered to the queue, and analyze message contents to diagnose consumer application issues. Once you recover your consumer application, you can redrive the messages from your dead-letter queue to the source queue.
+Q: How do dead-letter queues work?
+When you create your source queue, Amazon SQS allows you to specify a dead-letter queue (DLQ) and the condition under which SQS should move messages to the DLQ. The condition is the number of times a consumer can receive a message from the queue, defined as maxReceiveCount. This configuration of a dead-letter queue with a source queue and the maxReceiveCount is known as the redrive policy. When the ReceiveCount for a message exceeds the maxReceiveCount for a queue, Amazon SQS is designed to move the message to a dead-letter queue (with its original message ID). For example, if the source queue has a redrive policy with maxReceiveCount set to five, and the consumer of the source queue receives a message six times without successfully consuming it, SQS moves the message to the dead-letter queue.
+The redrive policy manages the first half of the life cycle of unconsumed messages by moving them from a source queue to a dead-letter queue. Now the dead-letter queue redrive to source queue efficiently completes the cycle by moving those messages back to their source queue, as shown below.
+Close
+Click to enlarge
+Q: How does the dead-letter queue redrive to source queue work?
+First, it allows you to investigate a sample of messages available in the dead-letter queue by showing message attributes and related metadata. Then, once you have investigated the messages, you can move them back to their source queue(s). You can also select the redrive velocity to configure the rate at which Amazon SQS will move the messages from the dead-letter queue to the source queue.
+Q: Can I use a dead letter queue with FIFO queues?
+Yes. However, you must use a FIFO dead letter queue with a FIFO queue. (Similarly, you can use only a standard dead letter queue with a standard queue.)
 Learn more about Amazon SQS pricing
 Visit the pricing page
 Ready to build?

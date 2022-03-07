@@ -1,36 +1,20 @@
 AWS Management Console
-Everything you need to access and manage the AWS cloud — in one web interface.
-Create a Free Account
-Already have an account? Sign in
-The AWS Management Console brings the unmatched breadth and depth of AWS right to your computer or mobile phone with a secure, easy-to-access, web-based portal. Discover new services, manage your entire account, build new applications, and learn how to do even more with AWS.
-Get started fast with the AWS Management Console. All you need is an AWS account and a supported web browser.
+Everything you need to access and manage the AWS cloud — in one web interface
+Log back in
 Console Overview
-Discover and experiment with over 150 AWS services, many of which have free trials
-Build your cloud-based applications in any AWS data center throughout the world
-Manage and monitor users, service usage, health, and monthly billing
-Get in-console help from AWS Support
+Discover and experiment with over 150 AWS services, many of which you can try for free.
+Build your cloud-based applications in any AWS data center throughout the world.
+Manage and monitor users, service usage, health, and monthly billing.
+Get in-console help from AWS Support.
 Additional Resources
 Learn about AWS Pricing
 Find SDKs, Command Line Tools, and more tools to access AWS
 Frequently asked questions
-What can you do with the AWS Management Console?
-The console makes it easy to find new AWS services, configure services, view service usage, and so much more. From updating user groups to building applications to troubleshooting issues, with the Console, you can take action quickly.
-Search and try out any AWS service
-The Console offers over 180 services you can configure, test, and launch to get hands-on experience with AWS. Using the Unified Search feature, find services, features, AWS Marketplace products, and AWS Documentation all from within the Console. There’s also a resource library featuring articles and tips from AWS experts, Getting Started tutorials, on-demand webinars, reference deployment templates, and more.
-Learn more
-Build and scale powerful applications
-Use the Console and its API, CLI, CloudFormation templates, and other toolkits to build scalable architectures in any AWS data center around the world. You can customize your experience by pinning favorites and organize projects with resource groups and the tag editor. Plus, you’re only one click away from the AWS Marketplace where you’ll find hundreds of popular software products that run on AWS.
-Manage and monitor your account
-Oversee all administrative aspects of your AWS account from your desktop or mobile device. You can view your usage and monthly spending by service, set up AWS IAM users and groups, configure permissions, and manage security credentials. You can also quickly troubleshoot issues through visual monitoring. If you need extra help, submit a support ticket right from the Console to connect with an AWS expert.
-Accessing the AWS Management Console
-Requirements
-All you need is an existing AWS account and a supported browser. See our FAQs for a complete list of supported browsers and platforms.
-Mobile App
-With the AWS Console mobile app, you can quickly and easily view your existing resources, including CloudWatch alarms, and perform operational tasks from your mobile device. Download our mobile app from Amazon Appstore, Google Play, or iTunes.
-Get Started
-Sign up for an AWS account
-Creating an AWS account is free and gives you immediate access to the AWS Free Tier
-Enter the Management Console
-Log in to your account with your username and password and access to the management console on any device
-Start building with AWS
-Test out services and build your production solution quickly and easily once you're ready
+Need more help?
+Get additional help with support plans, sales, and the AWS Partner Network.
+Select a Support Plan
+AWS Support plans provide a mix of tools, programs, and access to expertise to help you succeed with AWS.
+Contact Sales
+Speak with an AWS Sales representative today, to help find the right solution for you.
+Find a Partner
+Find AWS certified consulting and technology partners to help you get started.

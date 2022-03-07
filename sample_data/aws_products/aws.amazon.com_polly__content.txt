@@ -10,10 +10,6 @@ Language
 Voices (female)
 Voices (male)
 Sample Text
-English
-Joanna (Standard) Joanna (Neural)
-Matthew (Standard)  Matthew (Neural)
-Hello. Do you speak a foreign language? One language is never enough.
 Brazilian Portuguese
 Vitória
 Ricardo
@@ -22,13 +18,17 @@ Danish
 Naja
 Mads
 Hej. Taler du et fremmed sprog? Et sprog er aldrig nok.
+English
+Joanna (Standard) Joanna (Neural)
+Matthew (Standard)  Matthew (Neural)
+Hello. Do you speak a foreign language? One language is never enough.
 French
-Léa
+Léa (Standard)  Léa (Neural)
 Mathieu
 Bonjour. Parlez-vous une autre langue que le français? Une langue n'est jamais assez.
 Japanese
 Mizuki
-Takumi
+Takumi (Standard)  Takumi (Neural)
 こんにちは、外国語を話せますか? 世界にはたくさんの言語があります。
 Korean
 Seoyeon (Standard)  Seoyeon (Neural)
@@ -40,7 +40,7 @@ Spanish
 Penélope
 Miguel
 Hola. ¿Hablas algún idioma extranjero? Un solo idioma no es suficiente.
-Check our full list of Amazon Polly voices and supported languages here.
+Check our full list of Amazon Polly voices and supported languages here
 Benefits
 Natural sounding voices
 Amazon Polly provides dozens of languages and a wide selection of natural-sounding male and female voices. Amazon Polly's fluid pronunciation of text enables you to deliver high-quality voice output for a global audience.
@@ -53,23 +53,23 @@ Modify Amazon Polly voices to best suit your needs – Amazon Polly supports lex
 Low cost
 Amazon Polly’s pay-as-you-go pricing, low cost per character converted, and unlimited replays make it a cost-effective way to voice your applications.
 Use cases
-Content Creation
+Content creation
 Audio can be used as a complementary media to written and/or visual communication. By voicing your content, you can provide your audience with an alternative way to consume information and meet the needs of a larger pool of readers. Amazon Polly can generate speech in dozens of languages, making it easy to add speech to applications with a global audience, such as RSS feeds, websites, or videos.
 Example: Convert an article to speech and download as MP3
 “Amazon Polly gives GoAnimate users the ability to immediately give voice to the characters they animate using our platform. This is especially helpful in scenarios where live voice-over is either resource or time prohibitive, such as when developing a video in many languages or within pre-production to speed the approval process. The speech is integrated seamlessly with our rich set of pre-animated assets, which reinforces GoAnimate’s ease-of-use and affords our customers both efficiency and speed to market.”
-– Alvin Hung, CEO and founder, GoAnimate
+Alvin Hung, CEO and Founder - GoAnimate
 Refer to case study
 E-learning
 Amazon Polly enables developers to provide their applications with an enhanced visual experience such as speech-synchronized facial animation or karaoke-style word highlighting. Amazon Polly makes it easy to request an additional stream of metadata with information about when particular sentences, words and sounds are being pronounced. Using this metadata stream alongside the synthesized speech audio stream, customers can animate avatars and highlight text as it is currently spoken text in their app.
 Example: Play speech and highlight spoken text
 “I can't think of many use cases where accurate pronunciation is more important than when you're learning a new language. We have found that the Amazon Polly voices are not just high in quality, but are as good as natural human speech for teaching a language.”
-– Severin Hacker, CTO, Duolingo
+Severin Hacker, CTO - Duolingo
 Read their blog post
 Telephony
 With Amazon Polly, your contact centers can engage customers with natural sounding voices. You can cache and replay Amazon Polly’s speech output to prompt callers through interactive voice response (IVR) systems, such as Amazon Connect. Additionally, you can leverage Amazon Polly’s API to deliver automated real-time information such as service status, account and billing inquiries, addresses, and contact information.
 Example: Text-to-speech for telephony systems
 “Bandwidth built a small, reliable, and fast TTS application that is backed by Amazon Polly. We are now using high-quality voices at low cost. The developer effort required to build this new service was surprisingly minimal.”
-– Yiannis Philipopoulos, Sr. Software Developer, Bandwidth
+Yiannis Philipopoulos, Sr. Software Developer - Bandwidth
 Learn more about Amazon Polly
 Visit the features page
 Ready to build?

@@ -1,8 +1,9 @@
 Amazon Relational Database Service (RDS)
 Set up, operate, and scale a relational database in the cloud with just a few clicks.
 Get started with Amazon RDS
-Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.
-Amazon RDS is available on several database instance types - optimized for memory, performance or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. You can use the AWS Database Migration Service to easily migrate or replicate your existing databases to Amazon RDS.
+Contact an Amazon RDS specialist
+Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks, such as hardware provisioning, database setup, patching, and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security, and compatibility they need.
+Amazon RDS is available on several database instance types - optimized for memory, performance, or I/O - and provides you with six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. You can use the AWS Database Migration Service to easily migrate or replicate your existing databases to Amazon RDS.
 Understanding Amazon Relational Database Service (1:53)
 Amazon RDS database engines
 Benefits
@@ -18,27 +19,27 @@ Amazon RDS supports the most demanding database applications. You can choose bet
 Secure
 Amazon RDS makes it easy to control network access to your database. Amazon RDS also lets you run your database instances in Amazon Virtual Private Cloud (Amazon VPC), which enables you to isolate your database instances and to connect to your existing IT infrastructure through an industry-standard encrypted IPsec VPN. Many Amazon RDS engine types offer encryption at rest and encryption in transit.
 Inexpensive
-You pay very low rates and only for the resources you actually consume. In addition, you benefit from the option of On-Demand pricing with no up-front or long-term commitments, or even lower hourly rates via our Reserved Instance pricing.
+You pay very low rates and only for the resources you actually consume. In addition, you benefit from the option of On-Demand pricing with no up-front or long-term commitments or even lower hourly rates via our Reserved Instance pricing.
 Featured RDS customers
 View all Amazon RDS case studies
 Featured RDS Partners
-Apps Associate is an AWS Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher-value initiatives. Join our webinar to hear how Apps Associates helps customers move to Amazon Aurora.
+Apps Associate is an AWS Partner and Oracle expert who can migrate enterprise workloads to the cloud, freeing customers to focus on higher value initiatives. Join our webinar to hear how Apps Associates helps customers move to Amazon Aurora.
 Rackpace is an AWS Partner that can help you implement modern application development best practices with Amazon Aurora so you can keep pace with customer and business requirements. Read the ebook to learn how Rackspace helped TotalTrax automate processes and meet increasing demand.
 Use cases
 Web and mobile applications
 Web and mobile applications that are built to operate at very large scale need a database with high throughput, massive storage scalability, and high availability. Amazon RDS fulfills the needs of such highly demanding applications with room for future growth. Since Amazon RDS does not have any licensing constraints, it perfectly fits the variable usage pattern of these applications.
-Airbnb chose Amazon RDS because it simplifies much of the time-consuming administrative tasks typically associated with databases. Airbnb uses Multi-Availability Zone (Multi-AZ) deployment to further automate its database replication and augment data durability. Airbnb was able to complete its entire database migration to Amazon RDS with only 15 minutes of downtime.
+Airbnb chose Amazon RDS because it simplifies much of the time-consuming administrative tasks typically associated with databases. Airbnb uses Multi-Availability Zone (Multi-AZ) deployments to further automate its database replication and augment data durability. Airbnb was able to complete its entire database migration to Amazon RDS with only 15 minutes of downtime.
 Ecommerce applications
 Amazon RDS offers small and large ecommerce businesses a flexible, secured, highly scalable, and low-cost database solution for online sales and retailing. Amazon RDS provides a managed database offering helping ecommerce companies meet PCI compliance and focus on building high quality customer experiences without worrying about managing the underlying database.
-To avoid the complexities of building a new production database from scratch, Instacart turned to Amazon RDS for their new same-day grocery delivery service. The company can now add millions of new items to its database every month and its engineering team can focus on developing new features and improving the overall customer experience.
+To avoid the complexities of building a new production database from scratch, Instacart turned to Amazon RDS for its new same-day grocery delivery service. The company can now add millions of new items to its database every month and its engineering team can focus on developing new features and improving the overall customer experience.
 Mobile and online games
 Mobile and Online games need a database platform with high throughput and availability. Amazon RDS manages the database infrastructure so game developers don’t have to worry about provisioning, scaling, or monitoring database servers. Amazon RDS provides familiar database engines that can rapidly grow capacity to meet user demand.
-Bandai Namco Studios uses Amazon RDS to provide better performance, lower costs, better security, and greater availability for their arcade, social and mobile games. Bandai Namco saw the benefit in terms of reductions in overhead, especially when it came to adding, modifying, and removing server resources.
+Bandai Namco Studios uses Amazon RDS to provide better performance, lower costs, better security, and greater availability for its arcade, social and mobile games. Bandai Namco saw the benefit in terms of reductions in overhead, especially when it came to adding, modifying, and removing server resources.
 Check out the product features
 Explore key features of Amazon RDS
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started with the  Amazon RDS Management Console.
+Get started with the Amazon RDS Management Console.
 Sign in

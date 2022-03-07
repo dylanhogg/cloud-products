@@ -1,49 +1,36 @@
-Amazon Elastic Kubernetes Service
-The most trusted way to run Kubernetes
-Start using Amazon EKS
-Amazon Elastic Kubernetes Service (Amazon EKS) gives you the flexibility to start, run, and scale Kubernetes applications in the AWS Cloud or on-premises. Amazon EKS helps you provide highly available and secure clusters and automates key tasks such as patching, node provisioning, and updates. Customers such as Intel, Snap, Intuit, GoDaddy, and Autodesk trust EKS to run their most sensitive and mission-critical applications.
-EKS runs upstream Kubernetes and is certified Kubernetes conformant for a predictable experience. You can easily migrate any standard Kubernetes application to EKS without needing to refactor your code.
-EKS makes it easy to standardize operations across every environment. You can run fully managed EKS clusters on AWS. You can have an open source, proven distribution of Kubernetes wherever you want for consistent operations with Amazon EKS Distro. You can host and operate your Kubernetes clusters on-premises and at the edge with AWS Outposts and AWS Wavelength, and have a consistent cluster management experience with Amazon EKS Anywhere (coming in 2021).
-Important Links with Amazon EKS
-Here's a list of resources you may find helpful:
-Blog Highlight- Version Lifecycle Read more here
-EKS Workshop Try it yourself
-Latest Feature Releases Learn More
-Benefits
-Improve availability and observability
-EKS runs the Kubernetes control plane across multiple Availability Zones, automatically detects and replaces unhealthy control plane nodes, and provides on-demand, zero downtime upgrades and patching. EKS offers a 99.95% uptime SLA. At the same time, the EKS console provides observability of your Kubernetes clusters so you can identify and resolve issues faster.
-Provision and scale your resources efficiently
-With EKS managed node groups, you don’t need to separately provision compute capacity to scale your Kubernetes applications. You can also choose AWS Fargate to automatically provision on-demand serverless compute for your applications. For even more cost savings, EKS nodes on Amazon EC2 Spot Instances reduce your cost for more efficiency.
-Get a more secure Kubernetes environment
-EKS automatically applies the latest security patches to your cluster’s control plane. AWS works closely with the community to address critical security issues and help ensure that every EKS cluster is secure.
+« Compute
+Amazon Elastic Kubernetes Service (EKS)
+The most trusted way to start, run, and scale Kubernetes
+Get started with Amazon EKS
+Explore multiple ways to configure VPC, ALB, EC2 Kubernetes worker nodes, and Amazon EKS.
+Reduce costs with efficient compute resource provisioning and automatic Kubernetes application scaling.
+Ensure a more secure Kubernetes environment with security patches automatically applied to your cluster’s control plane.
 How it works
+Amazon Elastic Kubernetes Service (Amazon EKS) is a managed container service to run and scale Kubernetes applications in the cloud or on-premises.
 Deploy applications with Amazon EKS in the cloud
 Deploy applications with Amazon EKS Anywhere
 Deploy applications with your own tools
 Use cases
-Hybrid Deployment
-With EKS, you can more easily manage your Kubernetes clusters and applications across hybrid environments. Amazon EKS Anywhere (coming 2021) lets you run Kubernetes in your own data centers and on AWS. Amazon EKS Anywhere uses Amazon EKS Distro, the same Kubernetes distribution deployed by Amazon EKS in the cloud. You can put your EKS-run applications closer to the edge with AWS Local Zones and AWS Wavelength. You can also use EKS on AWS Outposts, a fully managed service that extends AWS infrastructure, AWS services, APIs, and tools to virtually any connected site.
-Machine Learning
-You can use Kubeflow with EKS to model your machine learning workflows and efficiently run distributed training jobs using the latest EC2 GPU-powered instances, including AWS Inferentia. You can also use AWS Deep Learning Containers for running training and inferences using Kubeflow.
-Batch Processing
-You can run sequential or parallel batch workloads on your EKS cluster using the Kubernetes Jobs API. Using EKS, you can plan, schedule, and execute your batch computing workloads across the full range of AWS compute services and features, such as Amazon EC2, Fargate, and Spot Instances.
-Big Data
-Amazon EMR integrates with EKS, so you can run Apache Spark, Hadoop, and other big data applications directly on Kubernetes. This automates the provisioning and management of resources for data processing, analytics, and machine learning.
-Web Applications
-You can build web applications that automatically scale up and down and run in a highly available configuration across multiple Availability Zones. By running on EKS, your web applications benefit from the performance, scale, reliability, and availability of AWS. Additionally, your services get out-of-the-box integrations with AWS networking and security services, such as Application Load Balancers for load distribution of your web application, and VPC for networking.
-Companies adopting Amazon EKS
-Show more
-Show less
-What's new
-date
-1
-...
-See all announcements
-Blog posts & articles
-No blog posts have been found at this time. Please see the AWS Blog for other resources.
-Learn more about containers on AWS
-Visit the containers page
-Ready to build?
-Get started with Amazon EKS
-Have more questions?
-Contact us
+Deploy across hybrid environments
+Manage your Kubernetes clusters and applications in hybrid environments and run Kubernetes in your data centers.   Learn more about Amazon EKS Anywhere
+Model machine learning (ML) workflows
+Efficiently run distributed training jobs using the latest Amazon Elastic Compute Cloud (EC2) GPU-powered instances, including Inferentia, and deploy training and inferences using Kubeflow.
+Learn more about AWS Deep Learning Containers
+Build and run web applications
+Create applications that automatically scale up and down and run in a highly available configuration across multiple Availability Zones (AZs) with out-of-the-box networking and security integrations.
+Learn more about EKS networking and security
+Customers
+Snap Inc uses Amazon EKS to manage a range of services
+Babylon Health operates a secure, scalable health system with AWS Fargate on Amazon EKS
+HSBC runs mission-critical containerized applications on Amazon EKS
+How to get started
+Start building with the online workshop
+Explore multiple ways to configure VPC, ALB, and EC2 Kubernetes workers, and Amazon EKS.
+Start the workshop
+Connect with an expert
+From sales inquiries to ongoing operation, get the right support at the right time.
+Explore support options
+Learn about customers using Amazon EKS
+See how global companies are using EKS to run sensitive, mission-critical applications
+Visit the customers page
+Explore more of AWS

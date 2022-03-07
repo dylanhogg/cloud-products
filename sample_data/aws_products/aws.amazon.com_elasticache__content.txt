@@ -1,62 +1,34 @@
+« Databases
 Amazon ElastiCache
-Fully managed in-memory data store, compatible with Redis or Memcached. Power real-time applications with sub-millisecond latency.
-Get started with Amazon ElastiCache
-Contact Us
-Amazon ElastiCache allows you to seamlessly set up, run, and scale popular open-source compatible in-memory data stores in the cloud. Build data-intensive apps or boost the performance of your existing databases by retrieving data from high throughput and low latency in-memory data stores. Amazon ElastiCache is a popular choice for real-time use cases like Caching, Session Stores, Gaming, Geospatial Services, Real-Time Analytics, and Queuing.
-Amazon ElastiCache offers fully managed Redis, voted the most loved database by developers in the Stack Overflow 2020 Developer Survey, and Memcached for your most demanding applications that require sub-millisecond response times.
-Extreme Performance at Cloud Scale (56:53)
-Benefits
-Extreme performance
-Amazon ElastiCache works as an in-memory data store and cache to support the most demanding applications requiring sub-millisecond response times. By utilizing an end-to-end optimized stack running on customer dedicated nodes, Amazon ElastiCache provides secure, blazing fast performance.
-Fully managed
-You no longer need to perform management tasks such as hardware provisioning, software patching, setup, configuration, monitoring, failure recovery, and backups. ElastiCache continuously monitors your clusters to keep your workloads up and running so that you can focus on higher value application development.
-Scalable
-Amazon ElastiCache can scale-out, scale-in, and scale-up to meet fluctuating application demands. Write and memory scaling is supported with sharding. Replicas provide read scaling.
-Amazon ElastiCache Engines
-Amazon ElastiCache for Redis
-Building real-time apps across versatile use cases like gaming, geospatial service, caching, session stores, or queuing, with advanced data structures, replication, and point-in-time snapshot support.
-Learn more about Amazon ElastiCache for Redis
-Amazon ElastiCache for Memcached
-Building a simple, scalable caching layer for your data-intensive apps.
-Learn more about Amazon ElastiCache for Memcached
+Unlock microsecond latency and scale with in-memory caching
+Get Started with Amazon ElastiCache
+750 hours free
+For 12 months with the AWS Free Tier
+Boost application performance, reducing latency to microseconds.
+Scale with just a few clicks to meet the needs of your most demanding, internet-scale applications.
+Reduce costs and eliminate the operational overhead of self-managed caching.
+Build with your choice of Redis or Memcached, two popular open-source caching technologies.
 How it works
+Amazon ElastiCache is a fully managed, in-memory caching service supporting flexible, real-time use cases. You can use ElastiCache for caching, which accelerates application and database performance, or as a primary data store for use cases that don't require durability like session stores, gaming leaderboards, streaming, and analytics. ElastiCache is compatible with Redis and Memcached.
 Use cases
-Amazon ElastiCache makes it easy to setup, manage, and scale in-memory data stores in the cloud and power real-time transactional and analytical processing use cases such as caching, session store, machine learning, and real-time analytics.
-Caching
-Session store
-Machine Learning (AI/ML)
-Real-time analytics
-Amazon ElastiCache can be used as a highly available in-memory cache to decrease access latency, increase throughput and ease the load off your relational or NoSQL database, with sub-millisecond response times for either Redis or Memcached engines. Additionally, ElastiCache for Redis can deliver query results caching, persistent session caching, and full-page caching.
-Learn how to build a caching application with ElastiCache for Redis
-Amazon ElastiCache can be used as a session store to manage session information for both Redis and Memcached. This session management is commonly required for online applications, including games, e-commerce websites and social media platforms.
-Learn how to use ElastiCache for Redis as a session store
-Amazon ElastiCache for Redis gives you a fast in-memory data store to help you build and deploy machine learning models quickly. Use ElastiCache for Redis in use cases such as fraud detection in gaming and financial services, real-time bidding in Ad tech, and matchmaking in dating and ride sharing to process live data and make decisions within tens of milliseconds.
-Learn how Coffee Meets Bagel uses ElastiCache for real-time machine learning-based recommendations
-Use Amazon ElastiCache for Redis with streaming solutions such as Apache Kafka and Amazon Kinesis as an in-memory data store to ingest, process, and analyze real-time data with sub-millisecond latency. ElastiCache can be used for real-time analytics uses cases such as social media, ad targeting, personalization, IoT and time-series data analytics.
-Learn how you can design an IoT solution that captures sensor information and persists in Amazon ElastiCache for Redis
+Accelerate application performance
+Access data with microsecond latency and high throughput for lightning-fast application performance.
+Ease backend database load
+Cache your data to reduce pressure on your backend database, enabling higher application scalability and reducing operational burden.
+Build low-latency data stores
+Use ElastiCache to store non-durable datasets in memory and support real-time applications with microsecond latency.
 Customers
-Learn how The Pokémon Company moved user caching to Amazon ElastiCache, taking advantage of both Redis and Memcached. Redis queues tasks for new users, so they can be prompted to complete post-authentication tasks such as accepting terms and conditions. Memcached helps keep tickets live so that existing users’ sessions are not interrupted when new users join.
-Learn more
-In-home fitness company Peloton relies on Amazon ElastiCache for Redis to power its on-demand, live leaderboard. Peloton’s leaderboard requires high elasticity, low latency, and real-time processing to deliver customizable rider data for the community of users riding together virtually from the comfort of their home.
-"Managed services like ElastiCache let us focus on the core of our business. Our operations team consists of only two full time engineers. Running a site like Airbnb with such a small team would be impossible without services like ElastiCache. Spinning up and maintaining nodes in our cluster is fast and easy."
-Tobi Knaup, Technical Lead – Airbnb
-AWS purpose-built databases deliver the agility and elasticity A+E Networks needed to modernize while drastically reducing database overhead costs. Learn how A+E uses Amazon ElastiCache in its serverless database strategy.
-Tinder migrated to Amazon ElastiCache for Redis to improve the scalability and stability of its dating app that powers more than 30 billion matches. With this fully managed service, Tinder's team can focus more on innovation and less on monitoring and automating its caching strategy.
-Sign up
-Get access to the
-Amazon ElastiCache Free Tier.
+The Pokémon Company migrated its user cache with zero downtime
+A+E Networks serves data with sub-millisecond response times
+Tinder uses ElastiCache to power over 30 billion matches
+How to get started
 Learn with simple tutorials
-Explore how to
-create a Redis cluster.
+Explore how to create a subnet group and cluster, and connect to a node.
+Find out how
 Start building
-Begin building with help from the
-user guide.
-More ElastiCache resources
-Amazon ElastiCache FAQs
-Amazon ElastiCache Maintenance
-Amazon ElastiCache Resources
-Amazon ElastiCache Blog
-Take the free Introduction to Amazon ElastiCache course
-Ready to build?
-Have more questions?
-Contact us
+Check out the ElastiCache for Redis and Memcached user guides to get started.
+Read the documentation
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

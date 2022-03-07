@@ -10,19 +10,19 @@ Collect and process industrial data locally, and build hybrid industrial applica
 How it works
 AWS IoT SiteWise is a managed service that simplifies collecting, organizing, and analyzing industrial equipment data.
 Use cases
-Improve manufacturing operations
-Monitor performance metrics from manufacturing lines, assembly robots, and factory equipment to discover and act on opportunities for improvement.
 Increase production efficiencies
 Organize sensor data streams from multiple production lines and facilities to drive efficiencies across locations.
+Improve manufacturing operations
+Monitor performance metrics from manufacturing lines, assembly robots, and factory equipment to discover and act on opportunities for improvement.
 Optimize asset maintenance
-Prevent, detect, and resolve equipment issues faster through remote asset monitoring using historical and near real-time data.
+Prevent, detect, and resolve equipment issues faster through remote asset monitoring using historical and near-real-time data.
 Customers
-Volkswagen Group connecting data across 124 factories
+Volkswagen Group connects data across 124 factories
 Bayer Crop Science enables sustainable agriculture for farmers
 Genie analyzes data to improve product quality
 How to get started
 Find out how AWS IoT SiteWise works
-Learn more about asset monitoring, asset metrics, data ingestion, gateway management, and more.
+Learn more about asset monitoring and metrics, data ingestion, gateway management, and more.
 Check out AWS IoT SiteWise features
 Explore AWS IoT SiteWise pricing
 Pay as you go with no minimum fees or mandatory service usage.

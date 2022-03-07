@@ -2,18 +2,18 @@
 Amazon Elastic Block Store (EBS)
 Easy to use, high performance block storage at any scale
 Get Started with Amazon EBS
-Learn more about Amazon EBS
-30 GB of any combination of storage
+30 GB of storage
 for 12 months with the AWS Free Tier
 Scale fast for your most demanding, high-performance workloads, including mission-critical applications such as SAP, Oracle, and Microsoft products.
-Easily deploy, manage, encrypt, and protect Amazon EBS volumes. Elastic Volumes capability lets you tune performance without disruption.
 Protect against failures with 99.999% availability, including replication within Availablity Zone (AZs), and 99.999% durability with io2 Block Express volumes.
-Select the storage that best fits your workload. Volumes range from cost-effective low dollar-per-gigabyte to high performance with the fastest IOPS and throughput.
+Select the storage that best fits your workload. Volumes range from cost-effective dollar-per-GB to high performance with the fastest IOPS and throughput.
 How it works
-Amazon Elastic Block Store (EBS) is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (EC2).
+Amazon Elastic Block Store (Amazon EBS) is an easy-to-use, scalable, high-performance block-storage service designed for Amazon Elastic Compute Cloud (Amazon EC2).
+Close
+Click to enlarge
 Use cases
-Build your SAN in the Cloud for IO intensive applications
-Migrate mid-range, on-premises SAN workloads to the cloud. Attach high performance and availability block storage for mission-critical applications.
+Build your SAN in the cloud for I/O intensive applications
+Migrate mid-range, on-premises storage area network (SAN) workloads to the cloud. Attach high-performance and high-availability block storage for mission-critical applications.
 Run relational or NoSQL databases
 Deploy and scale your choice of databases, including SAP HANA, Oracle, Microsoft SQL Server, MySQL, Cassandra, and MongoDB.
 Right-size your big data analytics engines

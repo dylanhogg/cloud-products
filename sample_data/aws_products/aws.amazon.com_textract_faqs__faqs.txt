@@ -12,7 +12,7 @@ Text Extraction for Document Classification
 Q: What type of text can Amazon Textract detect and extract?
 A: Amazon Textract can detect printed text and handwriting from the Standard English alphabet and ASCII symbols. Textract can also extract printed text in Spanish, Italian, French, Portuguese and German. Amazon Textract also extracts explicitly labeled data, implied data, and line items from itemized list of goods or services from almost any invoice or receipt without any templates or configuration. For example, customers can use Amazon Textract to extract the vendor name from the Amazon logo at the top of an invoice even though it is not labeled “Vendor: Amazon”. In other cases, if the table of line items does not include column headers, Amazon Textract infers what the column headers are meant to be based on the table content.
 Q: What document formats does Amazon Textract support?
-A: Amazon Textract currently supports PNG, JPEG, and PDF formats. For synchronous APIs, you can submit images either as an S3 object or as a byte array. For asynchronous APIs, you can submit S3 objects.
+A: Amazon Textract currently supports PNG, JPEG, TIFF, and PDF formats. For synchronous APIs, you can submit images either as an S3 object or as a byte array. For asynchronous APIs, you can submit S3 objects. If your document is already in one of the file formats that Amazon Textract supports (PDF, TIFF, JPG, PNG), don't convert or downsample it before uploading it to Amazon Textract.
 Q: How do I get started with Amazon Textract?
 A: To get started with Amazon Textract, you can click the “Get Started with Amazon Textract”, button on the Amazon Textract page. You must have an Amazon Web Services account; if you do not already have one, you will be prompted to create one during the process. Once you are signed in to your AWS account, try out Amazon Textract with your own images or PDF documents using the Amazon Textract Management Console. You can also download the Amazon Textract SDKs to start creating your own applications. Please refer to our step-by-step Getting Started Guide for more information.
 Q: What APIs does Amazon Textract offer?
@@ -31,7 +31,7 @@ Q: Does Amazon Textract work with AWS CloudTrail?
 A: Yes. Amazon Textract supports logging of the following actions as CloudTrail events - DetectDocumentText, AnalyzeDocument, StartDocumentTextDetection, StartDocumentAnalysis, GetDocumentTextDetection, and GetDocumentAnalysis. For more details, please see Logging Amazon Textract API Calls with AWS CloudTrail.
 Billing
 Q: How does Amazon Textract count the number of pages processed?
-A: An image (PNG or JPEG) counts as a single page. For PDFs, each page in the document is counted as a page processed.
+A: An image (PNG, TIFF, or JPEG) counts as a single page. For PDFs, each page in the document is counted as a page processed.
 Q: Which APIs am I charged for with Amazon Textract?
 A: Refer to the Amazon Textract pricing page to learn more about pricing.
 Q: How much does Amazon Textract cost?

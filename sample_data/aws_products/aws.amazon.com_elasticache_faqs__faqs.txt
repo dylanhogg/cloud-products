@@ -26,6 +26,7 @@ Online Cluster Resizing
 Encryption
 Compliance
 Global Datastore
+Data Tiering
 Q: What is Amazon ElastiCache?
 Amazon ElastiCache is a web service that makes it easy to deploy and run Memcached or Redis protocol-compliant server nodes in the cloud. Amazon ElastiCache improves the performance of web applications by allowing you to retrieve information from a fast, managed, in-memory system, instead of relying entirely on slower disk-based databases. The service simplifies and offloads the management, monitoring and operation of in-memory environments, enabling your engineering resources to focus on developing applications. Using Amazon ElastiCache, you can not only improve load and response times to user actions and queries, but also reduce the cost associated with scaling web applications.
 Amazon ElastiCache automates common administrative tasks required to operate a distributed in-memory key-value environment. Using Amazon ElastiCache, you can add a caching or in-memory layer to your application architecture in a matter of minutes via a few clicks of the AWS Management Console. Once a cluster is provisioned, Amazon ElastiCache automatically detects and replaces failed nodes, providing a resilient system that mitigates the risk of overloaded databases, which slow website and application load times. Through integration with Amazon CloudWatch monitoring, Amazon ElastiCache provides enhanced visibility into key performance metrics associated with your nodes. Amazon ElastiCache is protocol-compliant with Memcached and Redis, so code, applications, and popular tools that you use today with your existing Memcached or Redis environments will work seamlessly with the service. With the support for clustered configuration in Amazon ElastiCache, you get the benefits of fast, scalable and easy to use managed service that can meet the needs of your most demanding applications. As with all Amazon Web Services, there are no up-front investments required, and you pay only for the resources you use.
@@ -40,7 +41,7 @@ Amazon ElastiCache manages the work involved in setting up a distributed in-memo
 Q: What are Amazon ElastiCache nodes, shards and clusters?
 A node is the smallest building block of an Amazon ElastiCache deployment. It is a fixed-size chunk of secure, network-attached RAM. Each node runs an instance of the Memcached or Redis protocol-compliant service and has its own DNS name and port. Multiple types of nodes are supported, each with varying amount of associated memory. A Redis shard is a subset of the cluster’s keyspace, that can include a primary node and zero or more read-replicas. For more details on Redis deployments see the Redis section below. The shards add up to form a cluster.
 Q: Which engines does Amazon ElastiCache support?
-Amazon ElastiCache offers fully managed Redis, voted the most loved database by developers in the Stack Overflow 2020 Developer Survey, and Memcached for your most demanding applications that require sub-millisecond response times.
+Amazon ElastiCache offers fully managed Redis, voted the most loved database by developers in the Stack Overflow Developer Survey for 5 years in a row, and Memcached for your most demanding applications that require sub-millisecond response times.
 Q: How do I get started with Amazon ElastiCache?
 If you are not already signed up for Amazon ElastiCache, you can click the "Get started" button on the Amazon ElastiCache page and complete the sign-up process. You must have an Amazon Web Services account; if you do not already have one, you will be prompted to create one when you begin the Amazon ElastiCache sign-up process. After you are signed up for ElastiCache, please refer to the Amazon ElastiCache documentation, which includes the Getting Started Guide for Amazon ElastiCache for Redis or Amazon ElastiCache for Memcached.
 Once you have familiarized yourself with Amazon ElastiCache, you can launch a cluster within minutes by using the AWS Management Console or Amazon ElastiCache APIs.
@@ -92,6 +93,16 @@ cache.t2.medium: 3.22 GiB
 cache.t3.micro: 0.5 GiB
 cache.t3.small: 1.37 GiB
 cache.t3.medium: 3.09 GiB
+cache.t4g.micro: 0.5 GiB
+cache.t4g.small: 1.37 GiB
+cache.t4g.medium: 3.09 GiB
+Current Generation Nodes with data tiering:
+cache.r6gd.xlarge: 26.32 GiB memory, 99.33 GiB SSD
+cache.r6gd.2xlarge: 52.82 GiB memory, 199.07 GiB SSD
+cache.r6gd.4xlarge: 105.81 GiB memory, 398.14 GiB SSD
+cache.r6gd.8xlarge: 209.55 GiB memory, 796.28 GiB SSD
+cache.r6gd.12xlarge: 317.77 GiB memory, 1194.42 GiB SSD
+cache.r6gd.16xlarge: 419.1 GiB memory, 1592.56 GiB SSD
 Previous Generation Nodes:
 cache.m1.small: 1.3 GiB
 cache.m1.medium: 3.35 GiB
@@ -272,7 +283,7 @@ You can upgrade your existing Memcached cluster by using the Modify process. Whe
 Q: What is Amazon ElastiCache for Redis?
 Amazon ElastiCache for Redis is a web service that makes it easy to deploy and run Redis protocol-compliant server nodes in the cloud. The service enables the management, monitoring, and operation of Redis nodes; creation, deletion, and modification of the nodes can be carried out through the Amazon ElastiCache console, the command line interface (CLI), or the web service APIs. Amazon ElastiCache for Redis supports high-availability configurations, including Redis cluster-mode enabled and cluster-mode disabled with auto-failover from primary to replica.
 Q: Is Amazon ElastiCache for Redis protocol-compliant with open source Redis?
-Yes, Amazon ElastiCache for Redis is protocol-compliant with open source Redis. Code, applications, drivers and tools a customer uses today with their existing standalone Redis data store will continue to work with Amazon ElastiCache for Redis and no code changes will be required for existing Redis deployments migrating to Amazon ElastiCache for Redis unless noted. We currently support Redis 6.0.5, 5.0.6, 5.0.5, 5.0.4, 5.0.3, 5.0.0, 4.0.10, 3.2.10, 3.2.6, 3.2.4, 2.8.24, 2.8.23, 2.8.22, 2.8.21, 2.8.19, 2.8.6, and 2.6.13.
+Yes, Amazon ElastiCache for Redis is designed to be protocol-compliant with open source Redis. Code, applications, drivers and tools a customer uses today with their existing standalone Redis data store will continue to work with Amazon ElastiCache for Redis and no code changes will be required for existing Redis deployments migrating to Amazon ElastiCache for Redis unless noted. We currently support Redis 6.2.5, 6.0.5, 5.0.6, 5.0.5, 5.0.4, 5.0.3, 5.0.0, 4.0.10, 3.2.10, 3.2.6, 3.2.4, 2.8.24, 2.8.23, 2.8.22, 2.8.21, 2.8.19, 2.8.6, and 2.6.13.
 Q: How much does Amazon ElastiCache for Redis cost?
 Please see our pricing page for current pricing information.
 Q: What are Amazon ElastiCache for Redis nodes, clusters, and replication groups?
@@ -502,6 +513,16 @@ cache.t2.small
 cache.t2.micro
 cache.t3.medium
 cache.t3.small
+cache.t4g.micro
+cache.t4g.small
+cache.t4g.medium
+Current Generation Cache Nodes with data tiering:
+cache.r6gd.xlarge
+cache.r6gd.2xlarge
+cache.r6gd.4xlarge
+cache.r6gd.8xlarge
+cache.r6gd.12xlarge
+cache.r6gd.16xlarge
 cache.m1.small
 cache.m1.medium
 cache.m1.large
@@ -538,7 +559,7 @@ Q: Is the pricing for clustered configuration different from non-clustered confi
 No. Amazon ElastiCache for Redis provides the flexibility of clustered and non-clustered configuration at the same price. Customers can now enjoy enhanced engine functionality within Amazon ElastiCache for Redis and use full feature support for clustered configuration and scalability at the same price.
 Q: What is Multi-AZ for ElastiCache for Redis Cluster?
 Each shard of an ElastiCache for Redis cluster consists of a primary and up to five read replicas. Redis asynchronously replicates the data from the primary to the read replicas. During certain types of planned maintenance, or in the unlikely event of ElastiCache node failure or Availability Zone failure, Amazon ElastiCache will automatically detect the failure of a primary, select a read-replica, and promote it to become the new primary.
-ElastiCache for Redis Cluster provides enhancements and management for Redis 3.x and onwards environments. When running an unmanaged Redis environment, in a case of primary node failure, the cluster relies on a majority of masters to determine and execute a failover. If such majority doesn’t exist, the cluster will go into failed state, rejecting any further reads and writes. This could lead to major availability impact on the application, as well as requiring human intervention to manually salvage the cluster. ElastiCache for Redis Multi-AZ capability is built to handle any failover case for Redis Cluster with robustness and efficiency.
+ElastiCache for Redis Cluster provides enhancements and management for Redis 3.x and onwards environments. When running an unmanaged Redis environment, in a case of primary node failure, the cluster relies on a majority of masters to determine and start a failover. If such majority doesn’t exist, the cluster will go into failed state, rejecting any further reads and writes. This could lead to major availability impact on the application, as well as requiring human intervention to manually salvage the cluster. ElastiCache for Redis Multi-AZ capability is built to handle any failover case for Redis Cluster with robustness and efficiency.
 Q: How is Multi-AZ in ElastiCache for Redis Cluster different than in ElastiCache for Redis versions 2.8.x?
 Redis 3.x and onwards work with intelligent clients that store a node map with all the cluster nodes’ endpoints. During a failover, the client updates the node map with the IP endpoint for the new primary. This provides up to 4x faster failover time than with ElastiCache for Redis 2.8.x.
 Q: How does Multi-AZ work for Redis Cluster?
@@ -602,7 +623,7 @@ Encryption in-transit, encryption at-rest, and Redis AUTH and Managed Role-Based
 Q: Is there an Amazon ElastiCache for Redis client that I need to use when using encryption in-transit, or at-rest?
 No. Encryption in-transit requires clients to support TLS. Most of the popular Redis clients (such as Lettuce, Predis, go-Redis) provide support for TLS with some configuration settings. You have to make sure that your Redis client of choice is configured to support TLS and continue to use Amazon ElastiCache for Redis as before.
 Q: Can I enable encryption in-transit and encryption at-rest on my existing Amazon ElastiCache for Redis clusters?
-No. Encryption in-transit and encryption at-rest support is only available for new clusters and is not supported on existing Amazon ElastiCache for Redis clusters. Amazon ElastiCache for Redis versions 6.0.5, 5.0.0, 4.0.10, and 3.2.6 support these features.  Q: Is there any action needed to renew certificates?
+No. Encryption in-transit and encryption at-rest support is only available for new clusters and is not supported on existing Amazon ElastiCache for Redis clusters. Amazon ElastiCache for Redis versions 6.2.5, 6.0.5, 5.0.0, 4.0.10, and 3.2.6 support these features.  Q: Is there any action needed to renew certificates?
 No. Amazon ElastiCache manages certification expiration and renewal behind the scene. No user action is necessary for ongoing certificate maintenance.
 Q: Can I use my certificates for encryption?
 No. Currently, Amazon ElastiCache does not provide the ability for you to use your certificates. Amazon ElastiCache manages certificates transparently for you.
@@ -646,3 +667,17 @@ Q: What Recovery Point Objective (RPO) and Recovery Time Objective (RTO) can I e
 Amazon ElastiCache doesn’t provide an SLA for RPO and RTO. The RPO varies based on replication lag between regions, and depends on network latency between regions and cross-region network traffic congestion. The RPO of Global Datastore is typically under one second, so the data written in primary region is available in secondary regions within one second. The RTO of Global Datastore for Redis is typically under a minute. Once a failover to a secondary cluster is initiated, Amazon ElastiCache typically promotes the secondary to full read/write capabilities in under a minute.
 Q: What is the pricing for Global Datastore for Redis?
 Amazon ElastiCache does not charge any premium to use Global Datastore for Redis. You pay for the primary and secondary clusters in your Global Datastore, and the cross-region data transfer traffic.
+Q: What is data tiering for ElastiCache for Redis?
+Data tiering provides a new price-performance option for Redis workloads by utilizing lower-cost solid state drives (SSDs) in each cluster node in addition to storing data in memory. It is ideal for workloads that access up to 20% of their overall dataset regularly, and for applications that can tolerate additional latency when accessing data on SSD. Amazon ElastiCache R6gd nodes with memory and solid state drives have nearly 5x more total storage capacity and can help customers achieve over 60% savings in price when running at maximum utilization compared to ElastiCache R6g nodes with memory only."
+Q: How does data tiering for ElastiCache for Redis work?
+Data tiering works by automatically and transparently moving the least recently used items from memory to locally attached NVMe SSDs when available memory capacity is completely consumed. When an item that moves to SSD is subsequently accessed, ElastiCache moves it back to memory asynchronously before serving the request.
+Q: What performance can I expect when using clusters with data tiering?
+Data tiering is designed to have minimal impact on application performance. Assuming 500-byte String values, you can expect an additional 300μs latency on average for requests to data stored on SSD compared to requests to data in memory.
+Q: Which engine versions support data tiering?
+ElastiCache for Redis supports data tiering for Redis versions 6.2 and above.
+Q: Which node types support data tiering?
+ElastiCache for Redis supports data tiering on Redis clusters using R6gd nodes.
+Q: Which ElastiCache features are supported for clusters using data tiering?
+All Redis commands and most ElastiCache features are supported when using data tiering. For a list of features that are not supported on clusters using data tiering, see the documentation.
+Q: What is the price for data tiering for ElastiCache for Redis?
+There are no additional costs for using data tiering besides the node’s hourly cost. Nodes with data tiering are available with on-demand pricing and as reserved nodes. For pricing, see the ElastiCache pricing page.

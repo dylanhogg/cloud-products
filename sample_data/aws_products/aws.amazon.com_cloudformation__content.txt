@@ -1,63 +1,33 @@
-AWS Cloud​Formation
+« Management Tools
+AWS CloudFormation
 Speed up cloud provisioning with infrastructure as code
-Get started with CloudFormation
-AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. A CloudFormation template describes your desired resources and their dependencies so you can launch and configure them together as a stack. You can use a template to create, update, and delete an entire stack as a single unit, as often as you need to, instead of managing resources individually. You can manage and provision stacks across multiple AWS accounts and AWS Regions.
-1,000 handler operations free
-per month with the AWS Free Tier
-Get started for free
-Benefits
-Automate best practices
-With CloudFormation, you can apply DevOps and GitOps best practices using widely adopted processes such as starting with a git repository and deploying through a CI/CD pipeline. You can also simplify auditing changes and trigger automated deployments with pipeline integrations such as GitHub Actions and AWS CodePipeline.
-Scale your infrastructure worldwide
-Manage resource scaling by sharing CloudFormation templates to be used across your organization, to meet safety, compliance, and configuration standards across all AWS accounts and regions. Templates and parameters enable easy scaling so you can share best practices and company policies. Additionally, CloudFormation StackSets enables you to create, update, or delete stacks across multiple AWS accounts and Regions, with a single operation.
-Integrate with other AWS services
-To further automate resource management across your organization, you can integrate CloudFormation with other AWS services, including AWS Identity and Access Management (IAM) for access control, AWS Config for compliance, and AWS Service Catalog for turnkey application distribution and additional governance controls. Integrations with CodePipeline and other builder tools let you implement the latest DevOps best practices and improve automation, testing, and controls.
-Manage third-party and private resources
-Model, provision, and manage third-party public or private application resources (such as monitoring, team productivity, incident management, CI/CD, and version control applications) alongside your AWS resources. Use the open source CloudFormation CLI to build your own CloudFormation resource types – native AWS types published as open source.
-Contribute to CloudFormation with the community
-The AWS CloudFormation GitHub organization offers open source projects that build on CloudFormation’s capabilities. The CloudFormation Registry and CloudFormation CLI let you define and create resource providers to automate the creation of cloud infrastructure safely and systematically. Using CloudFormation GitHub projects, you can do things like check CloudFormation templates for policy compliance (using cfn-guard), or validate use of best practices (using cfn-lint).
-Extend CloudFormation with third-party resource types
-Discover, provision, and manage third-party resources published by AWS Partner Network (APN) Partners and the developer community in the CloudFormation Public Registry. The Public Registry provides a searchable and managed catalog of extensions that help you simplify building your cloud infrastructure.
+Get Started with CloudFormation
+1,000 handler operations
+per month per account with the AWS Free Tier
+Scale your infrastructure worldwide and manage resources across all AWS accounts and regions through a single operation.
+Extend and manage your infrastructure to include cloud resources published in the CloudFormation Registry, the developer community, and your library.
+Automate resource management across your organization with AWS service integrations offering turnkey application distribution and governance controls.
 How it works
-Featured customers
-Deloitte’s ConvergeHEALTH Miner solution is a suite of tools and services that help accelerate data gathering, analysis, and management across the healthcare research lifecycle... Miner leverages a wide range of AWS services. They used AWS CloudFormation and AWS Service Catalog to get Miner to clients faster using infrastructure as code. Deloitte chose AWS CloudFormation templates to code the infrastructure, which it can then deploy in one click using AWS Service Catalog.
-Learn more
-All of the company’s networks are designed, built, and maintained through AWS CloudFormation templates. “This gives us the luxury of version-controlling our network, and it allows for seamless, exact network duplication for on-demand development and staging environments,” says Witoff.
-Expedia uses AWS CloudFormation with Chef to deploy its entire front and backend stack into its AWS environment.
-“We are very happy with AWS CloudFormation, because it means we are able to use ‘one-click’ deployment of our whole infrastructure.”
-Featured Blog posts & articles
-Write preventive compliance rules for AWS CloudFormation templates the cfn-guard way
-Aug 04, 2020 Luis Colon, Raisa Hashem, and Josh Joy
-Read more
-Automated CloudFormation Testing Pipeline with TaskCat and CodePipeline
-Sep 04, 2020
-Raleigh Hansen and Dan Le
-Deploy AWS CloudFormation stacks with GitHub Actions
-Jul 27, 2020
-Sebastian Doell
-New: Use AWS CloudFormation StackSets for Multiple Accounts in an AWS Organization
-Feb 12, 2020
-Sébastien Stormacq
-Using AWS CloudFormation to deploy software into Amazon EKS clusters
-Feb 20, 2020
-Troy Ameigh
-1
-...
-No blog posts have been found at this time. Please see the AWS Blog for other resources.
-Visit the Management & Governance Blog to read more about CloudFormation and other AWS Management & Governance services.
-What's new
-See all announcements
-Check out the product features
-Learn more about the modeling and provisioning capabilities of AWS CloudFormation.
+AWS CloudFormation lets you model, provision, and manage AWS and third-party resources by treating infrastructure as code.
+Use cases
+Manage infrastructure with DevOps
+Automate, test, and deploy infrastructure templates with continuous integration and delivery (CI/CD) automations.
+Scale production stacks
+Run anything from a single Amazon Elastic Compute Cloud (EC2) instance to a complex multi-region application.
+Share best practices
+Define an Amazon Virtual Private Cloud (VPC) subnet or provisioning services like AWS OpsWorks or Amazon Elastic Container Service (ECS) with ease.
+Customers
+GoDaddy simplifies 100+ daily compute rotations
+Futbol Club Barcelona enables ‘one-click’ infrastructure deployment
+Expedia develops highly available apps at speed
+How to get started
+Try the AWS Free Tier
+Pay nothing while you learn the basics of AWS CloudFormation.
 Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS CloudFormation in the AWS Console.
-Sign in
-Learn more about AWS CloudFormation
-Visit the AWS CloudFormation features page
-Ready to build?
-Get started with AWS CloudFormation
-Have more questions?
-Contact us
+Connect with an expert
+Get the right support for using AWS CloudFormation.
+Explore support options
+Find out how CloudFormation works
+Learn how to treat infrastructure as code.
+Explore CloudFormation features
+Explore more of AWS

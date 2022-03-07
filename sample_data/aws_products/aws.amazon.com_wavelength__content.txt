@@ -1,53 +1,32 @@
+« Compute
 AWS Wavelength
-Deliver ultra-low latency applications for 5G devices
-Get started with Wavelength Zones
-Register for our Twitch Sessions
-AWS Wavelength is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength Zones are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers’ (CSP) datacenters at the edge of the 5G network, so application traffic from 5G devices can reach application servers running in Wavelength Zones without leaving the telecommunications network. This avoids the latency that would result from application traffic having to traverse multiple hops across the Internet to reach their destination, enabling customers to take full advantage of the latency and bandwidth benefits offered by modern 5G networks.
-AWS Wavelength Zones are available in ten cities across the U.S. on Verizon’s 5G network, in Tokyo and Osaka, Japan on the KDDI 5G network, in Daejeon, South Korea on SK Telecom’s 5G network, and in London on the Vodafone 5G network.
-AWS Wavelength - Edge Computing for 5G Networks (2:09)
-Benefits
-New business opportunities
-With instant access to a broad range of cloud services at the 5G edge, startups, enterprises, and ISVs across all industries can explore new business opportunities driven by innovative 5G applications, like industrial automation, smart cities, ML-assisted diagnostics, or autonomous vehicles that need ultra-low latency access to end users or end-devices
-Consistent AWS experience
-Wavelength offers a consistent experience across multiple 5G networks around the world. Developers can build the next generation of ultra-low latency applications using the same familiar, and powerful, AWS services, APIs, and tools they already use today, and get the same AWS benefits, like elasticity, high-availability, and pay-as-you-go pricing.
-Flexible and scalable
-Applications can be deployed to multiple Wavelength Zones across different CSPs with no additional changes or service agreements – simplifying the operations and management processes and enabling large scale deployments.  A high-bandwidth, secure connection to the parent AWS Region allows developers to seamlessly connect to the full range of services in the AWS Region through the same APIs and tool sets.
-Global 5G network
-Wavelength will be available within CSP networks such as Verizon, Vodafone, KDDI, and SK Telecom in places like the United States, Europe, Japan, and Korea to enable you to deliver ultra-low latency applications to your global base of end-users and connected devices.
+Deliver ultra-low-latency applications for 5G devices
+Get Started with Wavelength Zones
+Contact Sales
+Build next-generation applications without any learning curve using familiar AWS services, APIs, and tools.
+Develop applications once and scale deployments to multiple Wavelength Zones across global 5G networks.
+Leverage proven AWS infrastructure and services to accelerate innovative 5G edge application development.
 How it works
-Getting started is easy, you simply log-in to the AWS Management Console and enable the Wavelength Zones you want to use for your account.
-Use Cases
-AWS Wavelength enables 5G applications that deliver interactive and immersive experiences, like game streaming, virtual reality, and in-venue experiences for live events. Wavelength also enables offload of data processing tasks from 5G devices to the network edge to conserve resources like power, memory and bandwidth that makes applications like autonomous vehicles and smart factories possible.
-Connected Vehicles
-AWS Wavelength enables real-time monitoring of data from sensors for secure connectivity, in-car telematics, and autonomous driving.
-Interactive Live Video Streams
-Wavelength provides the ultra-low latency needed to live stream high-resolution video and high-fidelity audio, as well as to embed interactive experiences into live video streams.
-AR/VR
-Wavelength helps AR/VR applications reduce the Motion to Photon (MTP) latencies to the <20 ms benchmark needed to offer a realistic customer experience.
-Smart Factories
-AWS Wavelength enables industrial automation applications to use ML inference at the edge to analyze images and videos to detect quality issues on fast moving assembly lines.
-Real-time gaming
-With AWS Wavelength, the most demanding games can be made available on end devices that have limited processing power by streaming these games from game servers in Wavelength Zones.
-ML-assisted Diagnostics for Healthcare
-AI/ML driven video analytics and image matching applications executed on compute resources in Wavelength Zones help doctors speed up diagnosis of observed conditions, such as recognizing polyps during procedures.
-Customer stories
-"What's critical is the ability to quickly scale computational resources with low latency and high throughput for timely delivery of security services while preserving the privacy of the system. Our C-V2X pilot with ultra-low latency access to AWS Wavelength allows for timely message filtering that only shares relevant and trusted information for improved road safety and enhanced mobility among vehicles.”
-Rick Kreifeldt, Senior Vice President, LG America R&D Lab
-“With critical GPU workloads rendered from AWS Wavelength coupled with 5G’s bandwidth, we can achieve the low latency and increased connectivity to deliver a pathway to truly connected factories, where data flows seamlessly between machines and cloud to enable AI powered real time decisioning at the edge.”
-Shanky Viswanathan,  CTO Communication, Media and Information Service Business Group
-Watch the customer case study
-“The superior experiences we provide require ultra-low latency connections to users and their devices. Only AWS Wavelength on carrier’s 5G edge can provide us that,” said Wesley Kuo, CEO of Ubitus. “Our GameCloud platform recently used GPU instances on Wavelength to render and stream game titles directly to end-users with ultra-low latency. As a result, users can instantly play games, interact real-time with continuous game experiences without any downloads or installation, and users can pick up exactly where they left off as they move from device to device.”
-Wesley Kuo, CEO
-“Today the business of live events is very cumbersome, very infrastructure intensive, and high cost. What we’re doing with Verizon 5G and AWS Wavelength Zone is streamlining that process, we’re changing the economics, we’re changing how you go about doing it, and how you go about experiencing it. This is the first time in the world that anybody has tested 4K workflows or even lower bitrate media workflows live on 5G. The latency benefit from 5G MEC is amazing. Typical satellite workflows are plus seven seconds plus. To get sub-second and very, very low second latency changes how you do live events, changes sports betting, changes news, it really changes everything.”
-Gordon Brooks, Executive Chairman and CEO
-See more customer stories here
-Partners
-KDDI's au 5G network combined with AWS cloud services enables customers to realize real-time feedback by leveraging our high speed, large volume and low latency capabilities and to create new value for their businesses.
-SKT's 5GX Edge service provides an environment for implementing ultra-high-speed, ultra-low-latency, and ultra-wideband services with complete security by introducing AWS' cloud services into the communication infrastructure based on SKT's nationwide 5G coverage.
-Learn more
-Verizon 5G Edge brings together Verizon’s 5G Ultra-Wideband network and AWS cloud services to enable developers and enterprise customers to build large-scale, latency-sensitive applications at the edge.
-Vodafone Business Distributed Edge brings together the power of AWS Cloud and Vodafone’s 4G and 5G network, making incredible next-generation user experiences a reality.
-Check out the product features
-Sign up to learn more
-Sign up
-Check out the FAQs
+AWS Wavelength embeds AWS compute and storage services within 5G networks, providing mobile edge computing infrastructure for developing, deploying, and scaling ultra-low-latency applications.
+Use cases
+Build media and entertainment applications
+Deliver high-resolution live video streaming, high-fidelity audio, and augmented/virtual reality (AR/VR) applications.
+Accelerate ML inference at the edge
+Run artificial intelligence (AI) and machine learning (ML) driven video and image analytics at the edge to accelerate 5G applications in medical diagnostics, retail, and smart factory settings.
+Develop connected vehicle applications
+Create advanced driver assistance, autonomous driving, and in-vehicle entertainment experiences with near-real-time connectivity between vehicles and the cloud.
+Customers
+Zixi powers its software-defined video platform (SDVP) with AWS Wavelength
+Learn how Sportable brings real-time insights to rugby games
+Harman uses AWS Wavelength to develop connected vehicle experiences
+How to get started
+Find out how AWS Wavelength works
+Learn more about compute, storage, networking, and more using AWS Wavelength.
+Explore AWS Wavelength features
+Explore hands-on training
+Learn how to build and deliver ultra-low-latency applications on 5G networks.
+Check out AWS Wavelength resources
+Connect with an expert
+Get the right support for AWS Wavelength at the right time.
+Explore support options
+Explore more of AWS

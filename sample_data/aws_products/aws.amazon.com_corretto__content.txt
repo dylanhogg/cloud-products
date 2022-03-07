@@ -2,10 +2,9 @@ Amazon Corretto
 No-cost, multiplatform, production-ready distribution of OpenJDK
 Amazon Corretto is a no-cost, multiplatform, production-ready distribution of the Open Java Development Kit (OpenJDK). Corretto comes with long-term support that will include performance enhancements and security fixes. Amazon runs Corretto internally on thousands of production services and Corretto is certified as compatible with the Java SE standard. With Corretto, you can develop and run Java applications on popular operating systems, including Linux, Windows, and macOS.
 Visit our documentation to learn more.
-Download Amazon Corretto Now
-Download Amazon Corretto 8
+Download Amazon Corretto 17
 Download Amazon Corretto 11
-Download Amazon Corretto 16
+Download Amazon Corretto 8
 Benefits
 Backed by Amazon
 Amazon Corretto comes with no-cost long-term support from Amazon, so you can upgrade versions only when you need to. Amazon is committed to Corretto, running it internally on thousands of production services.
@@ -15,18 +14,17 @@ Multiplatform Support
 Amazon Corretto lets you run the same environment in the cloud, on premises, and on your local machine. Corretto 8 supports Linux, Windows, macOS, and Docker and Corretto 11 supports Linux, Windows and macOS.
 No Cost
 Amazon Corretto is available for download and use at no cost. There are no additional paid features or restrictions.
-Installation Guides for Corretto 8
+Installation Guides for Corretto 17
 Linux
 Microsoft Windows
 macOS
 Docker
 Installation Guides for Corretto 11
+Installation Guides for Corretto 8
 Blog posts
-Amazon Corretto 8 Now Generally Available
-Arun Gupta
-1/31/2019
-Introducing Amazon Corretto, a No-Cost Distribution of OpenJDK with LTS
-Arun Gupta 11/14/2018
+Published Date
+1
+...
 Videos
 Online Tech Talk: Introducing Amazon Corretto
 Introducing Amazon Corretto at Devoxx

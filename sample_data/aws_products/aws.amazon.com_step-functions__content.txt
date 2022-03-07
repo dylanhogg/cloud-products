@@ -1,28 +1,27 @@
 AWS Step Functions
 Visual workflows for modern applications
 Get Started for Free
-AWS Step Functions is a low-code visual workflow service used to orchestrate AWS services, automate business processes, and build serverless applications. Workflows manage failures, retries, parallelization, service integrations, and observability so developers can focus on higher-value business logic.
-4,000 state transitions free
-per month with the AWS Free Tier
+AWS Step Functions is a low-code, visual workflow service that developers use to build distributed applications, automate IT and business processes, and build data and machine learning pipelines using AWS services. Workflows manage failures, retries, parallelization, service integrations, and observability so developers can focus on higher-value business logic.
+Build workflows with 200+ AWS services and 9,000 API actions
 Get started for free
 Benefits
 Build and deploy rapidly
-Get started with a simple drag-and-drop interface. With Step Functions, you can express complex business logic as low-code, event-driven workflows that connect services, systems or people within minutes.
+Get started quickly with Workflow Studio, a simple drag-and-drop interface. With Step Functions, you can express complex business logic as low-code, event-driven workflows that connect services, systems or people within minutes.
 Write less integration code
-Compose AWS resources including Lambda, ECS, Fargate, Batch, DynamoDB, SNS, SQS, SageMaker, EventBridge, or EMR into resilient business workflows, data pipelines, or applications.
+Compose AWS resources from over 200 services including Lambda, ECS, Fargate, Batch, DynamoDB, SNS, SQS, SageMaker, EventBridge, or EMR into resilient business workflows, data pipelines, or applications.
 Build fault-tolerant and stateful workflows
-Step Functions manages state, checkpoints, and restarts for you to make sure that your workflows execute in order and as expected. Built-in try/catch, retry, and rollback capabilities deal with errors and exceptions automatically based on your defined business logic.
-Designed for any use case
+Step Functions manages state, checkpoints, and restarts for you to make sure that your workflows run in order and as expected. Built-in try/catch, retry, and rollback capabilities deal with errors and exceptions automatically based on your defined business logic.
+Designed for reliability and scale
 Step Functions offers two workflow types - Standard or Express - that can be used depending on your specific use case.  Standard Workflows are used to manage long-running workloads.  Express Workflows support high-volume event processing workloads.
 How it works
+Step Functions Workflow Studio
 Overview
 Error-Handing Pattern
 Branching & Human Interaction Patterns
-Chaining Pattern
 Saga Pattern
 Use cases
 Automate Extract, Transform, and Load (ETL) process
-Ensure that long-running, multiple ETL jobs execute in order and complete successfully, instead of manually orchestrating those jobs or maintaining a separate application.
+Ensure that long-running, multiple ETL jobs run in order and complete successfully, instead of manually orchestrating those jobs or maintaining a separate application.
 Prepare Data for Machine Learning (ML)
 To enable machine learning, source data must be collected, processed, and normalized so that ML modelling systems like Amazon SageMaker can train on that data. Step Functions makes it easier to sequence the steps it takes to automate your ML pipeline.
 Orchestrate microservices

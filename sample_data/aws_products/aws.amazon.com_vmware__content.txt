@@ -4,7 +4,8 @@ AWS is VMware's preferred public cloud partner for all vSphere-based workloads. 
 With over 4 years of joint engineering, VMware and AWS provide organizations with enhanced VMware functionalities integrated in the solution and a single point of contact for support and service integration. This is why VMware Cloud on AWS is our preferred service for all vSphere workloads.
 Now available, Amazon EC2 i3en.metal Instances for VMware CloudTM on AWS, powered by Intel® Xeon® Scalable processors, deliver high networking throughput and lower latency. You can read more here <link will be live on July 15: https://cloud.vmware.com/community/2020/07/15/2-host-i3en-instance > and view the recent interview by theCUBE <live on July 15: https://youtu.be/NPM9yTmjrh4> to learn how these instances optimize data-intensive workloads requiring high random I/O access such as relational databases and workloads that require end to end security.
 VMware Cloud on AWS: a rapid path to the cloud
-Contact Us
+Sign up
+Contact us
 Live and On-Demand Webinars
 How Regulated Industries Can Address Cloud Migration Challenges and Innovate Faster
 Register now
@@ -79,6 +80,4 @@ Increase value of enterprise applications by leveraging AWS services for integra
 Learn More about VMware Cloud on AWS
 Learn more
 Ready to get started?
-Sign up
 Have more questions?
-Contact us

@@ -1,9 +1,10 @@
 Amazon GameLift
 Enhance multiplayer experiences with dedicated cloud servers
 Get started with Amazon GameLift
-FEATURE UPDATE NOW GENERALLY AVAILABLE
-GameLift now available in Amazon Web Services China (Ningxia) Region, operated by NWCD
-Reach players closer to their actual regional locations with the addition of Amazon Web Services China (Ningxia) Region, operated by NWCD. Read the what's new post
+FEATURED NEWS AND UPDATES
+New region and AWS Graviton2 support now available for Amazon GameLift
+AWS Asia Pacific (Osaka) Region now available for GameLift and GameLift FleetIQ now supports next-generation AWS Graviton2 processors.
+Find out more in the blog
 Amazon GameLift is a dedicated game server hosting solution that deploys, operates, and scales cloud servers for multiplayer games. Whether you’re looking for a fully managed solution, or just the feature you need, GameLift leverages the power of AWS to deliver the best latency possible, low player wait times, and maximum cost savings.
 125 hours Amazon GameLift on-demand instance usage free
 per month for 12 months with the AWS Free Tier
@@ -67,16 +68,17 @@ Metalhead Software goes all-in on AWS to see Super Mega Baseball 3 hit a home ru
 Read the blog post
 "Amazon GameLift has been great for us... We can focus on building great games and let Amazon GameLift handle all of the time-consuming elements of managing great servers."
 Related content
+AWS announces General Availability of the Amazon GameLift Plug-in for Unity with CloudFormation Templates
+September 20, 2021
+Learn more
 Amazon GameLift hits the ground running in the new year with a batch of feature updates
 Feb 9, 2021
-Learn more
 VentureBeat: Amazon Web Services’ insights into gaming for 2021
 Jan 21, 2021
 AWS announces AMD EPYCTM processor-based instance support for Amazon GameLift
 Dec 2, 2020
 AWS announces General Availability of Amazon GameLift feature update
 Nov 24, 2020
-Aug 27, 2020
 Online Course - GameLift Primer
 This course provides an in-depth look at Amazon GameLift.
 Check out the product features

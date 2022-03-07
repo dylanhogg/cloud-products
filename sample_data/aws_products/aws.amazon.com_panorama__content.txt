@@ -1,86 +1,34 @@
+« Machine Learning
 AWS Panorama
-(Preview)
 Improve your operations with computer vision at the edge
-Sign up for the AWS Panorama Appliance Developer Kit Preview
-AWS Panorama is a machine learning Appliance and Software Development Kit (SDK) that allows organizations to bring computer vision (CV) to on-premises cameras to make predictions locally with high accuracy and low latency. With AWS Panorama, you can automate tasks that have traditionally required human inspection to improve visibility into potential issues. For example, you can use AWS Panorama to evaluate manufacturing quality, identify bottlenecks in industrial processes, and monitor workplace safety and security - even in environments with limited or no internet connectivity.
-The AWS Panorama Appliance is a hardware device that allows you to add CV to your internet protocol (IP) cameras that weren’t built to accommodate computer vision. AWS Panorama Appliance turns your existing cameras into smart cameras that can run CV models on multiple concurrent video streams.
-The AWS Panorama Device SDK is a software kit that enables third-party manufacturers to build new cameras that run more meaningful CV models at the edge for tasks like object detection or activity recognition. AWS Panorama-compatible cameras work out of the box with AWS machine learning services.
-Manufacturing quality control
-AWS Panorama enables CV at the edge to detect manufacturing defects and deliver alerts so you can take immediate corrective action. With AWS Panorama, you can identify and resolve issues faster to help improve product quality and decrease costs.
-Reimagined retail insights
-With AWS Panorama, you can leverage CV to uncover insights about your retail environment to improve operations and customer experience. For example you can use AWS Panorama to count customers, generate heat maps, and calculate the length of queues.
-Site safety
-Industrial sites can use AWS Panorama to identify when workers or vehicles are straying into dangerous, off-limit zones. It can integrate with your safety systems to sound an alert to the individual on the ground, or even send a signal that shuts off machinery.
-Supply chain efficiency
-AWS Panorama can provide critical input to supply chain operations by tracking throughput, recognizing bar codes or labels of parts or completed products, and optimizing freight operations in transport yards.
-AWS Panorama Appliance
-Add computer vision to your existing onsite cameras with no modification by using the powerful AWS Panorama Appliance. You can analyze video feeds from multiple cameras in parallel, generating highly accurate predictions within milliseconds. The Appliance is dust proof and water resistant, giving you the flexibility to install it in different environments without compromising functionality. Learn more
-AWS customers and partners can get started building and testing CV applications with the AWS Panorama Appliance Developer Kit by signing up for the preview. Sign up for the preview
-AWS Panorama SDK
-Device manufacturers including ADLINK Technology, Axis Communications, Basler AG, Lenovo, STANLEY Security, and VIVOTEK are using the Panorama SDK and APIs to build new Panorama-enabled cameras and appliances, taking advantage of leading silicon solutions from NVIDIA and Ambarella. AWS Panorama enabled devices work out of the box with AWS ML services and software and can be managed, monitored, and updated in the AWS management console.
-Learn more
-Get started quickly with AWS Panorama Partners
-Access AWS Partner Network (APN) partners with expertise in CV to discover advanced solutions, build innovative technologies, and scale your CV applications. AWS Panorama APN Partners have demonstrated their ability to integrate AWS Panorama, build AWS Panorama compatible CV applications, and provide AWS Panorama enabled devices that bring the benefits of AWS Panorama to customers across a variety of camera form factors. Learn more
-Benefits
-Add ML to your existing cameras
-Plug in the AWS Panorama Appliance, and the device will connect to your existing fleet of IP cameras on your network. The AWS Panorama Appliance also seamlessly works alongside your existing video management systems (VMS).
-Make decisions in real time
-You can analyze video feeds within milliseconds from a single management interface across a variety of locations. This enables real-time visibility into operations and fast decision making with AWS Panorama enabled devices or the AWS Panorama Appliance.
-Enable CV in limited connectivity environments
-AWS Panorama removes the heavy lifting from each step of computer vision-based process improvements by integrating with familiar AWS services, such as Amazon SageMaker, to build and train your CV models. This enables you to run those CV models directly on the device (at the edge) and allows you to access real-time predictions in remote and isolated places where network connectivity can be slow, expensive, or intermittent.
-Meet data privacy and governance requirements
-AWS Panorama is ideal for organizations with data governance rules that require on-premises processing and storage of video. By acting locally on the data (at the edge) the images remain onsite, enabling compliance with data privacy and governance requirements.
-Get started quickly with CV applications
-CV applications combine ML models and business logic to address a specific use case. AWS Panorama gives you the flexibility to build your own CV applications or choose from a range of production-ready CV applications, like PPE detection, retail queue length, or crowd counting, from AWS and third-party developers.
-Fast development in a familiar programming environment
-AWS Panorama integrates seamlessly with familiar AWS Services and tools, such as Amazon SageMaker, AWS Lambda, and Amazon CloudWatch, enabling faster development.
-Turn your existing onsite cameras into powerful edge devices with the AWS Panorama Appliance.
-The AWS Panorama Appliance is easy to set up
-Step 1: Unbox
-Say hello to AWS Panorama Appliance!
-Step 2: Plug in and connect to devices
-Log in to your AWS account, and install one or more AWS Panorama Appliance devices on the same network as your on-premises cameras. Provision your AWS Panorama Appliance for connection to the AWS Cloud and to connect to network cameras that support the ONVIF standard.
-Step 3: Run CV on camera streams
-You can use your own custom CV applications on the Appliance, or download third party CV applications for use cases such as retail analytics, license plate recognition, and detecting faults in an assembly line. The inference results can be displayed on a monitor, or sent through MQTT messaging to a variety of local or cloud-based endpoints or systems.
-The AWS Panorama Appliance has one HDMI port for connecting to a video monitor to see inference output, and two GigE Ethernet ports to provide redundancy, to connect to two subnets, or for load balancing. The device is about a half rack unit wide, meaning two units can be placed side by side on a standard rack shelf on a server rack and fastened to the rack using the included screws.
-The AWS Panorama Appliance is ruggedized and IP62 rated (i.e. dust proof and water resistant), making it suitable for operating in harsh environmental conditions.   The AWS Panorama Appliance will be available soon. Until then, get started now building and testing your applications with the AWS Panorama Appliance Developer Kit, by signing up for the preview here.
+Get Started with AWS Panorama
+Connect with an AWS Partner
+Add computer vision (CV) to your existing fleet of cameras with the AWS Panorama Appliance, which integrates seamlessly with your local area network.
+Make predictions locally with high accuracy and low latency from a single management interface, where you can analyze video feeds in milliseconds.
+Process video feeds at the edge, enabling you to control where your data is stored and operate with limited internet bandwidth.
+How it works
+AWS Panorama is a machine learning (ML) appliance and software development kit (SDK) that brings CV to on-premises internet protocol (IP) cameras.
+Close
+Click to enlarge
+Use cases
+Optimize in-store experiences
+Generate heat maps of customer foot traffic to uncover insights about your store layouts and product placement.
+Improve restaurant operations
+Ensure order accuracy, predict wait times, and streamline curbside operations to boost customer satisfaction.
+Gather supply chain inputs
+Easily track throughput, optimize freight operations, and recognize objects such as labels, barcodes, parts, or products.
 Customers
-“We plan to use AWS Panorama to deploy different computer vision applications at our stores and experiment over time to strengthen our customer experience and value proposition.”
-Ian White, Senior Vice President, Strategic Marketing and Innovation
-“We see possibilities for computer vision to keep our workers safe in a number of ways, from monitoring social distancing, to setting up dynamic exclusion zones, and detecting oil leaks. AWS Panorama offers an innovative approach to delivering these solutions on a single hardware platform with an intuitive user experience.”   Grant Matthews, Chief Technology Officer, BP America
-“We want to use computer vision to assess the size of trucks coming to our granaries to determine the optimal loading dock for each truck. AWS Panorama enables this with a managed service and edge appliance for deploying and managing a variety of computer vision applications.”
-Victor Caldas, Computer Vision Capability Lead, Cargill
-“Many unique components go into each guitar and each instrument is carefully crafted. With AWS Panorama and help from the Amazon Machine Learning Solutions Lab, we can have real-time visibility into metrics for the first time such as how long it takes to manufacture different types of guitars, and how much time each process requires. We can use these metrics to spot bottlenecks, optimize efficiency, and improve overall operations.”
-Michael Spandau, SVP Global IT, Fender
-View the full quotes on the Customers page
-AWS Panorama partners
-To get started with AWS Panorama quickly, you can work with the AWS Partner Network (APN) to build AWS Panorama based CV applications that meet your unique business use case needs. CV Model and Application Partners can help you build CV models and applications for your specific use cases, System Integrator and Consulting Partners can accelerate your CV journey by helping you explore and implement solutions, Distribution and Integration Partners can assist you with device purchase and system integration, and Smart Device Partners will give you even more device options for your unique use cases.
-Learn more about AWS Panorama partner offerings
-CV model and application partners
-Access a growing library of pre-built CV models and applications that run on AWS Panorama for specific CV use cases such as PPE detection, social distance monitoring, license plate detection, and more from Bigmate, Clarifai, CVEDIA, Indus.ai, Pilot AI, Siemens Mobility, and TIBCO Software.
-“Bigmate is focused on critical risk management solutions that leverage computer vision to help organizations improve workplace health and safety. Whether it's keeping your people out of the way of hazardous equipment or ensuring they have the proper personal protective equipment (PPE), with AWS Panorama we can rapidly deploy a suite of apps using your existing CCTV cameras that provide real-time notifications to avoid critical events while providing you the data you need to drive a safety first culture." - Brett Orr, General Manager, Bigmate
-TensorIoT harnesses computer vision to deliver cutting-edge solutions for businesses, from increasing understanding of customer traffic in a retail space to protecting customers and employees. Whether deploying retail insight solutions to give a better understanding of customer behaviors and optimizing store operations, or offering customers peace of mind with safety monitoring through our SafetyVisor solution, AWS Panorama empowers our solutions so that your business vision stays 20-20." - Ravikumar Raghunathan, CEO, TensorIoT
-System integrator and consulting partners
-Integrate AWS Panorama into your line-of-business applications, and accelerate your journey, from use case exploration, to proof of concept, to full-scale production deployments, with AWS Panorama system integration and consulting service partners Accenture, Capgemini, Slalom, TensorIoT, Quantiphi, Provectus, and LTI.
-“Organizations are facing unprecedented demand to transform and secure their physical spaces. With Accenture’s Rhythm.IO, we're focused on helping customers create maximal situational awareness and safer environments, whether for shopping, travel, or public safety; by fusing together operational data and multi-sensor inputs with computer vision insights from AWS Panorama.” - Matthew Lancaster, Managing Director, Accenture
-Distribution and integration partners
-Purchase and install AWS Panorama Appliances through some of the leading security and camera installation partners, Convergint Technologies and STANLEY Security.
-"Convergint Technologies is a global, service-based systems integrator whose top priority is service in every way – service to customers, colleagues, and community. Our focus on the customer has made us the world's largest security systems integrator. We work with top artificial intelligence partners to provide customers with the latest innovations to improve safety and security. We're excited to partner with AWS and offer Panorama and the Panorama Appliance in our portfolio of solutions. With Panorama, Convergint's customers can leverage their existing infrastructure investments and increase the return on those investments with better outcomes driven by deep learning and intelligent analytics." - Eric Yunag, VP Technology & Innovation, Convergint Technologies
-“At STANLEY Security, we’re committed to helping the world progress through innovative solutions that enable a safer, healthier and more efficient world. As the global leader in integrated security, we are building business insight models, with AI and machine learning, that allow us to become more predictive and prescriptive for our customers. Our partnership with AWS accelerates these efforts as we build on AWS Panorama’s edge computer vision capabilities to provide our customers with new insights and analytics to effectively and efficiently assess risks and opportunities.”, - Robert Raff, Global President, Stanley Security
-AWS Panorama Device SDK partners
-Soon, you’ll be able to choose from a variety of AWS Panorama enabled devices to suit your unique use cases with partners such as ADLINK Technology, Axis Communications, Basler AG, Lenovo, STANLEY Security, and VIVOTEK who are using the AWS Panorama Device SDK to build AWS Panorama enabled cameras and devices. AWS Panorama supports the NVIDIA Jetson product family and Ambarella CV 2x product line.
-“We're excited to collaborate to accelerate computer vision innovation with AWS Panorama and explore the advantages of the Axis Camera Application Platform (ACAP), our open application platform that offers users an expanded ecosystem, an accelerated development process and ultimately more innovative, scalable and reliable network solutions." - Johan Paulsson, CTO, Axis Communications AB
-"Basler is looking forward to continuing our technology collaborations in machine learning with AWS in 2021. We will be expanding our solution portfolio to include AWS Panorama to allow customers to develop AI-based IoT applications on an optimized vision system from the edge to the cloud. We will be integrating AWS Panorama with our AI Vision Solution Kit, reducing the complexity and need for additional expertise in embedded hardware and software components, providing developers with a new and efficient approach to rapid prototyping, and enabling them to leverage the ecosystem of AWS Panorama computer vision application providers and systems integrators." - Arndt Bake, Chief Marketing Officer, Basler AG
-“Ambarella is in mass production today with CVflow AI vision processors for the enterprise, embedded, and automotive markets. We’re excited to partner with AWS to enable the AWS Panorama service on next generation smart cameras and embedded systems for our customers. The ability to effortlessly deploy computer vision applications to Ambarella SoC-powered devices in a secure, optimized fashion is a powerful tool that makes it possible for our customers to rapidly bring the next generation of AI-enabled products to market.” - Fermi Wang, CEO of Ambarella
-“The world’s first computer created for AI, robotics and edge computing, Jetson AGX Xavier delivers the massive computing performance to handle demanding vision and perception workloads at the edge. Our collaboration with AWS on the Panorama Appliance Development Kit powered by the NVIDIA Jetson platform accelerates time to market for enterprises and developers by providing a fully managed service to deploy computer vision from cloud to edge in an easily extensible and programmable manner.” - Deepu Talla, Vice President and General Manager of Edge Computing, NVIDIA
-Choose the cloud provider with proven experience in industrial operations
-From accelerating design to optimizing operations, to reinventing supply chains, AWS helps leading industrial customers transform their business with the most comprehensive set of cloud services and solutions, and an extensive partner network, while taking advantage of the highest standards for privacy and data security. Learn about how Volkswagen Group, Carrier, INVISTA, Vector and Georgia-Pacific are all building on AWS.
-Learn more about AWS for Industrial
-Check out the product features
-Visit the AWS Panorama features page.
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS Panorama in the AWS Management Console.
-Sign in
+The Port of Vancouver uses AWS Panorama to improve supply chain visibility
+Tyson Foods developed automated quality assurance solutions for its packaging lines
+Cincinnati International Airport automatically monitors congestion to keep traffic flowing
+How to get started
+Explore customer stories
+Find out how companies worldwide are using AWS Panorama to improve customer satisfaction and optimize operations.
+Read the stories
+Check out our partners
+Learn more on AWS Panorama Partner capabilities and how they can help address your company's use case.
+Learn more about AWS Panorama Partners
+Learn how AWS Panorama works
+Find out how to deploy CV applications at the edge, enable IP cameras, and more.
+Discover AWS Panorama features
+Explore more of AWS

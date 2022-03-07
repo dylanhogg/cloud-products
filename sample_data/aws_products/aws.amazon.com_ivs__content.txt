@@ -10,22 +10,28 @@ Get started for free
 Benefits
 Simple-to-use live video streaming
 Create and configure live streams with just a few clicks, and start streaming in seconds. Send video to Amazon IVS, and the service manages everything needed to get your live stream to your viewers.
-Build an engaging audience experience
-Amazon IVS streams are designed to provide low-latency live video “out of the box.” Latency that can be less than three seconds means you can build engaging and interactive experiences alongside live video.
 Optimized for live streaming
 Built on the same live streaming technology that powers Twitch, Amazon IVS provides an enhanced quality of service and experience by receiving and delivering streams over managed global infrastructure that is optimized for live video ingest, processing, and delivery.
+Build an engaging audience experience
+Amazon IVS streams are designed to provide low-latency live video “out of the box.” Latency that can be less than three seconds means you can build engaging and interactive experiences alongside live video.
 Easy integration into websites and apps
 Get live streams into your iOS, Android, and web apps, quickly and easily with the Amazon IVS player and broadcast SDKs. The SDKs give your streamers and audiences a consistent experience and low-latency live streams across different platforms, without compromising video quality or increasing buffering.
+Amazon IVS Explained (77 secs)
+Close
 How it works
 Customer stories
-“With Amazon IVS as our backbone, we have a service that can scale with our needs. Right now, we have a straightforward live streaming experience that’s easy for our subscribers to use. It’s great for sharing events from any Wi-Fi connected event, which keeps people connected when they can’t share in-person experiences.”
+"Through Amazon IVS, we saw an opportunity to provide a simplified live streaming experience to our customers with an easy-to-use workflow.”
 Rahul Iyengar, Senior Director of Software Engineering at GoPro
-“Amazon IVS provides the leading edge of live video technology transformations and maintains high availability systems, all while reducing the operational burden of managing complex, distributed live video networks. With it, we can focus more on enhancing user-oriented functions and interactivity to ensure we're providing an irreplaceable experience."
-Daisuke Mizuta, producer of Pococha at DeNA
-“Blackboard serves millions of users in countries in every region around the globe. As instructional techniques evolve and we continue to grow, we’re exploring how we can improve our interactive video experiences for all users, which is where Amazon IVS is changing the game. In one day, we were able to quickly integrate IVS into our teaching and learning workflow. It handles a majority of the work on the back end, freeing up more time for our team focus on creating and building standout experiences.”
+Read the blog post
+“What Amazon IVS does is it brings the creator and their fans closer together — it closes that feedback loop."
+Peter Sankauskas, CTO and VP of Engineering at Happs
+"Amazon IVS is a solid service with a big infrastructure, so we can stream into many countries that we wouldn’t have been able to stream into before.”
+Armando Garcia Mendoza, Principal Engineer at Hopin
+Read the case study
+“We have a long history of collaborating with AWS and were confident in Amazon IVS technology, which is built on the proven infrastructure of Twitch.”
 Scott Hurrey, Staff Engineering at Blackboard
-"Amazon IVS has allowed us to simplify our product scalability while at the same time delivering innovation to our end users. The ability to use timed metadata now allows us to improvise quickly and build interactive experiences inside our product. For our solution, low latency has always been the key and getting less than 5 seconds of glass to glass latency on a consistent basis makes our product more attractive. Amazon IVS is the perfect fit for our product and users”
-Moinuddin Hyder, VP Product & Commercials at Panya
+“As Amazon IVS is able to deliver both high video quality and broadcast stability to our platform, we can allocate our resources to focus on important work for our core business.”
+Daisuke Mizuta, producer of Pococha at DeNA
 “The ease of use and simplicity of Amazon IVS allows us to focus on delivering innovation rather than worrying about video infrastructure. We have been able to quickly integrate video conferencing tools with Amazon IVS to provide our customers an interactive broadcast solution”
 Luke Hubbard, CTO of ScreenCloud
 Use cases

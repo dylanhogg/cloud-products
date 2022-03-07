@@ -13,6 +13,10 @@ Fast Tracks Migration
 Migration Evaluator delivers assessments that have been proven to reduce costs by up to 50%.
 How it works
 Beginning with on-premises inventory discovery, you can choose to upload exports from AWS Application Discovery Service, 3rd party tools or install a complimentary agentless collector to monitor Windows, Linux and SQL Server footprints. Our service analyzes your organization’s compute footprint, including server configuration, utilization, annual costs to operate, eligibility for bring-your-own-license, and hundreds of other parameters. It then statistically models utilization patterns, matching each workload with optimized placements in the Amazon Elastic Cloud Compute and Amazon Elastic Block Store. Initially, it outputs a summary of the projected costs to re-host at AWS based on usage patterns, and the breakdown of costs by infrastructure and software licenses. If additional insights are requested, a business case is developed with a comparison of the current-state against multiple future-state configurations showing the flexibility of AWS.
+Use cases
+Auction.com
+Accomplishing an Efficient Cloud Modernization Journey Using Migration Evaluator
+Auction.com understands the imperative of adapting to rapidly changing real estate market dynamics. The online real estate marketplace requires an environment that can adapt to business-impacting events, such as policy changes or economic crises. To enhance its agility and scalability, Auction.com embarked on a cloud journey to migrate and modernize its infrastructure on Amazon Web Services (AWS).   Learn more about Auction.com
 Featured customers
 Koch Global Services
 "Migration Evaluator (Formerly TSO Logic) helped us forecast 48% savings when running on AWS versus on-premises."

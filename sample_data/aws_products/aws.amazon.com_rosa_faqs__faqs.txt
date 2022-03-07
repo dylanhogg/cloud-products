@@ -1,49 +1,47 @@
-Products
-Containers
-Red Hat OpenShift Service on AWS
-Red Hat OpenShift Service on AWS FAQs
-What is Red Hat OpenShift Service on AWS?
+General
+Q: What is Red Hat OpenShift Service on AWS?
 Red Hat OpenShift Service on AWS (ROSA) is a service operated by Red Hat and jointly supported with AWS to provide fully managed Red Hat OpenShift. ROSA provides pay-as-you-go (hourly and annual) billing on a single invoice through AWS, and the option to contact Red Hat or AWS for support. Enterprise developers familiar with deploying their applications with OpenShift on-premises will be able to more quickly build and deploy applications in the AWS public cloud, and take advantage of AWS Service Broker support for a more integrated experience when deploying applications with dependencies on AWS cloud-native services.
-Why should I use Red Hat OpenShift Service on AWS?
+Q: Why should I use Red Hat OpenShift Service on AWS?
 Red Hat OpenShift Service on AWS makes it simple to create and operate Red Hat OpenShift clusters on AWS. You can leverage an integrated experience for cluster creation, scalability, and unified billing model with support for hourly or annual, on-demand pricing. ROSA provides an integration with AWS APIs to support cluster creation and a fully integrated offering. For applications already containerized on-premises on OpenShift Container Platform, ROSA provides a familiar API surface and keeps the deployment toolchain the same so you can focus on refactoring the data model, not the entire application stack.
-What problems does Red Hat OpenShift Service on AWS solve?
+Q: What problems does Red Hat OpenShift Service on AWS solve?
 You need intuitive self-service functionality for getting started, cluster creation, scale-up, and deployment, and an integrated billing and licensing model with support for hourly, on-demand usage to make AWS an economic choice. If you are intending to migrate your application to the cloud, you are probably looking for the fastest and easiest path to exit your datacenters, and the confidence that dependencies are supported. You want a service that provides a managed experience for undifferentiated tasks, and flexible, self-service functionality to support deployment and management operations. If you are migrating from OpenShift on-premises, you are otherwise required to redesign your applications to take advantage of the scalability of AWS managed containers services and a cloud-native architecture.
-How does Red Hat OpenShift Service on AWS help me?
+Q: How does Red Hat OpenShift Service on AWS help me?
 It enables you to choose AWS as the cloud provider for your on-premises OpenShift containerized applications by providing an on-ramp for cloud migration and the confidence to choose AWS based on a joint management and support model by Amazon and Red Hat. You can accelerate datacenter exits with a native service that provides the same orchestrator, API surface, and deployment tooling that you are already using. Moreover, you get an hourly billing model for OpenShift licensing to fully realize the financial benefits of a cloud-native service.
-Is this the same as a Marketplace listed solution?
+Q: Is this the same as a Marketplace listed solution?
 No, this is a joint service that uses Marketplace for billing and metering.
-How does this help other software providers?
+Q: How does this help other software providers?
 Partners get the ability to provide opinionated experiences and focus on niche requirements to serve customers that need, for example, an integrated service and managed offering, an end-to-end out of the box solution, or industry specific requirements.
-What does Red Hat say about Red Hat OpenShift Service on AWS?
+Q: What does Red Hat say about Red Hat OpenShift Service on AWS?
 Visit the OpenShift website to learn more about ROSA.
-PRODUCT
-How is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Container Platform?
+Product
+Q: How is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Container Platform?
 Red Hat OpenShift Service on AWS delivers fully-managed Red Hat OpenShift Container Platform, optimized for performance, scalability, and security. Red Hat OpenShift Service on AWS is hosted on Amazon Web Services public cloud and jointly managed by Red Hat and AWS. Some options and administrative functions may be restricted or unavailable. A Red Hat OpenShift Container Platform subscription entitles you to host and manage the software on your own infrastructure.
-How Is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Dedicated?
+Q: How Is Red Hat OpenShift Service on AWS different from Red Hat OpenShift Dedicated?
 Red Hat OpenShift Service on AWS is a fully managed implementation of OpenShift Container Platform deployed and operated on AWS, jointly managed and supported by both Red Hat and AWS.
-What does Red Hat OpenShift Service on AWS include?
+Q: What does Red Hat OpenShift Service on AWS include?
 Each Red Hat OpenShift Service on AWS cluster comes with a fully-managed control plane and compute nodes. Installation, management, maintenance and upgrades are performed by Red Hat SRE with joint Red Hat and Amazon support. Cluster services (such as logging, metrics, monitoring) are available as well.
-Is there any element in Red Hat OpenShift Service on AWS shared with other customers? Or is everything independent?
+Q: Is there any element in Red Hat OpenShift Service on AWS shared with other customers? Or is everything independent?
 Each Red Hat OpenShift Service on AWS cluster is dedicated to a given customer and lives within the customer's subscription.
-Will Red Hat OpenShift Service on AWS integrate with other AWS services?
+Q: Will Red Hat OpenShift Service on AWS integrate with other AWS services?
 Yes. Red Hat OpenShift Service on AWS will integrate with a range of AWS compute, database, analytics, machine learning, networking, mobile, and various application services which will enable customers to benefit from the robust portfolio of AWS services which scale on-demand across the globe. These AWS native services will be directly accessible to quickly deploy and scale services through the same management interface.
-PURCHASING
-Where is Red Hat OpenShift Service on AWS available?
-Red Hat OpenShift Service on AWS is now available in GA in the following regions: Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), Europe (Stockholm), Europe (Ireland), Europe (London), Europe (Paris), South America (São Paulo), US East (N. Virginia), US East (Ohio), US West (N. California), and US West (Oregon).
-How can I purchase Red Hat OpenShift Service on AWS?
+Purchasing
+Q: Where is Red Hat OpenShift Service on AWS available?
+Red Hat OpenShift Service on AWS is now available in GA in the following regions: Asia Pacific (Tokyo), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), Europe (Stockholm), Europe (Ireland), Europe (London), Europe (Paris), South America (São Paulo), US East (N. Virginia), US East (Ohio), US West (N. California), and US West (Oregon).
+Q: How can I purchase Red Hat OpenShift Service on AWS?
 Customers can acquire the service directly from the AWS console on their own. As with other AWS services, such as EC2, customers will just spin up OpenShift clusters and will be charged based on their consumption. Customers can also contact their Red Hat or AWS representative.
-Will I receive an invoice from Red Hat or AWS?
+Q: Will I receive an invoice from Red Hat or AWS?
 You will receive a single invoice from AWS.
-CUSTOMIZATION
-Which Amazon regions are supported?
-See supported resources for a list of global regions where Red Hat OpenShift Service on AWS is supported. Link: https://docs.openshift.com/container-platform/4.6/installing/installing_aws/installing-aws-account.html#installation-aws-regions_installing-aws-account
-What virtual machine sizes can I use?
+Customization
+Q: Which Amazon regions are supported?
+See supported resources for a list of global regions where Red Hat OpenShift Service on AWS is supported.
+Q: What virtual machine sizes can I use?
 See Red Hat OpenShift Service on AWS virtual machine sizes for a list of virtual machine sizes you can use with a Red Hat OpenShift Service on AWS cluster. Currently this list includes m5.xlarge, m5.2xlarge, m5.4xlarge, r5.xlarge, r5.2xlarge, r5.4xlarge, c5.2xlarge, and c5.4xlarge instances.
-Which Red Hat OpenShift Container Platform rights do we have? Cluster-admin? Project-admin?
+Q: Which Red Hat OpenShift Container Platform rights do we have? Cluster-admin? Project-admin?
 You are granted Cluster Admin rights on the clusters you create.
-Can I add RHEL workers to my cluster?
+Q: Can I add RHEL workers to my cluster?
 No. In order to maintain our ability to provide seamless updates to your clusters, only Red HatEnterprise Linux CoreOS (RHCOS) workers are supported by Red Hat OpenShift Service on AWS.
-What authentication mechanisms are supported?
+Q: What authentication mechanisms are supported?
 See supported mechanisms here.
-Can I change the instance types of the worker nodes, mixing high CPU, high IOPS and GPU capable instances?
+Q: Can I change the instance types of the worker nodes, mixing high CPU, high IOPS and GPU capable instances?
 Yes you can select a mixture of C5, M5, and R5 instance types for worker nodes; GPU based instances are not yet supported.
+FAQ sections

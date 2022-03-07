@@ -2,22 +2,22 @@ Amazon Simple Notification Service
 Fully managed pub/sub messaging, SMS, email, and mobile push notifications
 Get started for free
 Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
-The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems including Amazon SQS queues, AWS Lambda functions and HTTPS endpoints, for parallel processing, and Amazon Kinesis Data Firehose. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications. Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including Amazon SQS queues, AWS Lambda functions, HTTPS endpoints, and Amazon Kinesis Data Firehose, for parallel processing. The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 1 million requests free
 with the AWS Free Tier
 Benefits
-Modernize and decouple your applications
-Amazon SNS enables you to modernize your applications and decouple them into smaller, independent components that are easier to develop, deploy, and maintain. Leveraging a pub/sub event-driven architecture for your application improves performance, reliability, and allows each component to scale independently.
-Send messages directly to millions of users
-Amazon SNS enables you to send messages or notifications directly to users with SMS text messages to over 200 countries, mobile push on Apple, Android, and other platforms or email (SMTP). Amazon SNS provides redundancy across multiple SMS providers and allows you to push mobile notifications using a single endpoint for all platforms.
-Reliably deliver messages
-Amazon SNS uses a number of strategies that work together to provide message durability. To start, published messages are stored across multiple, geographically-separated servers and data centers. If a subscribed endpoint isn't available, Amazon SNS executes a message delivery retry policy. To preserve any messages that aren't delivered before the delivery retry policy ends, you can create a dead-letter queue. You can also subscribe Amazon Kinesis Data Firehose delivery streams to SNS topics, which allows messages to be sent to durable endpoints such as Amazon S3 buckets or Amazon Redshift tables.
-Automatically scale your workload
-Amazon SNS leverages the proven AWS cloud to dynamically scale with your application. Amazon SNS is a fully managed service, taking care of the heavy lifting related to capacity planning, provisioning, monitoring, and patching. The service is designed to handle high-throughput, bursty traffic patterns and enables you to send millions of messages per second.
+Simplify and reduce costs with message filtering and batching
+Amazon SNS helps you simplify your application architecture and reduce costs. With message batching, publisher systems can send up to 10 messages in a single API request. With message filtering, subscriber systems receive only the messages that they are interested in. To learn more, see Message Filtering and Message Batching.
 Ensure accuracy with message ordering and deduplication
-Amazon SNS FIFO topics work with Amazon SQS FIFO queues to ensure messages are delivered in a strictly ordered manner and are only processed once (deduplicated). This enables you to maintain consistency when processing transactions across a single or multiple independent services where it’s critical that messages are in the correct order. It also allows you to offload the effort of writing custom code for ordering and message deduplication.
-Simplify your architecture with Message Filtering
-Amazon SNS helps you simplify your pub/sub messaging architecture by offloading the message filtering logic from your subscriber systems, and message routing logic from your publisher systems. With Amazon SNS message filtering, subscribing endpoints receive only the messages of interest, instead of all messages published to the topic. Amazon CloudWatch gives visibility into your filtering activity, and AWS CloudFormation allows you to deploy subscription filter policies in an automated and secure manner.
+Amazon SNS FIFO topics work with Amazon SQS FIFO queues to ensure messages are delivered in a strictly-ordered manner and are only processed once. This enables you to maintain accuracy and consistency when processing transactions across a single or multiple independent services. To learn more, see Message Ordering and Message Deduplication.
+Increase security with message encryption and privacy
+Amazon SNS provides encrypted topics to protect your messages from unauthorized access. The encryption uses a 256-bit AES-GCM algorithm and a customer master key (CMK) issued with AWS Key Management Service (KMS). Amazon SNS also supports VPC endpoints via AWS PrivateLink, so you can privately publish messages to Amazon SNS topics, from an Amazon Virtual Private Cloud (VPC) subnet, without traversing the Internet. To learn more, see Message Encryption and Traffic Privacy.
+Increase durability with message archiving, delivery retries, and DLQ
+Amazon SNS stores each message published across geographically-separated data centers. If a subscribed system isn't available, Amazon SNS executes a message delivery retry policy. To preserve any messages that can't be delivered before the delivery retry policy ends, Amazon SNS can move them to dead-letter queues (DLQ). Amazon SNS can also archive messages in Amazon S3 via Amazon Kinesis Data Firehose subscriptions. To learn more, see Message Archiving, Delivery Retries, and DLQ.
+Capture and fan out events from AWS services
+Amazon SNS is an event-driven hub that has native integration with a wide variety of AWS event sources and destinations. Amazon SNS can capture and fan out events from more than 60 AWS services, from a number of AWS categories, such as Analytics, Compute, Containers, Databases, IoT, Machine Learning, Security, Serverless, and Storage. To learn more, see Event Sources and Event Destinations.
+Send A2P notifications via SMS, mobile push, and email
+Amazon SNS enables you to send notifications directly to your customers. Amazon SNS supports SMS text messaging to over 200 countries, mobile push notifications to Amazon, Android, Apple, Baidu, and Microsoft devices, and also email notifications. Amazon SNS provides redundancy across multiple SMS providers, and enables you to send mobile push notifications using a single API for all mobile platforms. To learn more, see SMS, Mobile Push Notifications, and Email Notifications.
 How it works
 Pub/Sub
 SMS
@@ -33,15 +33,24 @@ The NASA Image and Video Library provides easy access to more than 140,000 still
 Read the case study
 Change Healthcare uses AWS services, such as Amazon EC2, Amazon S3, Amazon SQS, and Amazon SNS to handle millions of confidential transactions daily from its clients, while maintaining full compliance with healthcare industry regulations, including HIPAA.
 The FCBarcelona web platform boasts over 6,000 pages and over 12,000 digitized photographs. It is available in six languages and consolidates up-to-date information for five elite professional teams. The solution relies on Amazon SNS for several platform notifications.
-Featured blog posts
-Building event-driven architectures with Amazon SNS FIFO
-James Beswick
-Oct 22, 2020
-Designing durable serverless apps with DLQs for Amazon SNS, Amazon SQS, AWS Lambda Rachel Richardson and Otavio Ferreira Nov 15, 2019
-Enriching Event-Driven Architectures with AWS Event Fork Pipelines Rachel Richardson and Otavio Ferreira  Mar 25, 2019
-Encrypting messages published to Amazon SNS with AWS KMS
-Michelle Mercier and Otavio Ferreira
-Nov 15, 2018
+Blog posts
+Featured SNS A2A blog posts
+Publishing messages in batch to Amazon SNS topics
+by Heeki Park, 11/18/2021
+Get Started with Amazon S3 Event Driven Design Patterns
+by Micah Walter, Aditya Pendyala, and Divyesh Sah, 09/27/2021
+Introducing message archiving and analytics for Amazon SNS
+by James Beswick, 01/12/2021
+Introducing Amazon SNS FIFO – First-In-First-Out Pub/Sub Messaging
+by Danilo Poccia, 10/22/2020
+Featured SNS A2P blog posts
+Token-based authentication for iOS applications with Amazon SNS
+by Talia Nassi, 11/09/2021
+Introducing the SMS sandbox for Amazon SNS
+by James Beswick, 06/01/2021
+Provisioning and using 10DLC origination numbers with Amazon SNS
+by Benjamin Smith, 06/01/2021
+Related blog posts
 More...
 No blog posts have been found at this time. Please see the AWS Blog for other resources.
 What's new with Amazon SNS

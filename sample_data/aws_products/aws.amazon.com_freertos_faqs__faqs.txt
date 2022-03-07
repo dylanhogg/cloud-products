@@ -186,6 +186,71 @@ Q: Where can I report a security concern?
 To report a security issue, please visit Vulnerability Reporting for AWS.
 Q: How can I update my FreeRTOS devices with the latest security patches?
 We recommend that you use the over-the-air (OTA) update feature of FreeRTOS to send security patches to your FreeRTOS devices. Within the AWS IoT Device Management console, you can provide a firmware image, select the devices to update, and create the FreeRTOS OTA job update. The code signing feature will verify the signed image on the device to ensure your device code is not compromised during deployment and updates. For more information on the OTA update feature, refer to the FreeRTOS user guide.
+FreeRTOS Extended Maintenance Plan
+Q: What is FreeRTOS Extended Maintenance Plan?
+FreeRTOS Extended Maintenance Plan (EMP) provides you with security patches and critical bug fixes on your chosen FreeRTOS Long Term Support (LTS) version for up to 10 years beyond the expiry of the initial LTS period. With FreeRTOS EMP, your FreeRTOS-based long-lived devices can rely on a version that has feature stability and receives security updates during the term of your subscription. You receive timely notification of upcoming patches on FreeRTOS libraries, so you can plan the deployment of security patches on your Internet of Things (IoT) devices. Before the end of the current LTS period, you will be able to subscribe to Extended Maintenance using your AWS account, and renew the subscription annually to cover the product lifecycle or until you’re ready to transition to a new FreeRTOS release. FreeRTOS EMP applies to libraries that are part of FreeRTOS LTS.
+Q: Why should I use FreeRTOS EMP?
+FreeRTOS EMP helps you maintain your FreeRTOS-based devices during the term of your subscription. You save operating system upgrade costs and reduce the risks of not being able to update devices in time. It provides security patches and critical bug fixes on feature-stable FreeRTOS LTS versions, so you don’t need to incur development, testing, and QA costs to migrate to the latest FreeRTOS release. Updating devices involves project planning, release readiness testing, and over-the-air (OTA) update scheduling to deploy critical fixes. FreeRTOS EMP reduces the risk of delayed deployment by providing timely notification of upcoming patches and support with integration issues.
+Q: What are the main features of FreeRTOS EMP?
+Feature
+Description
+Why is it important?
+Feature stability
+Get FreeRTOS libraries that maintain the same set of features for years
+Save upgrade costs by using a stable FreeRTOS codebase for your product lifecycle
+API stability
+Get FreeRTOS libraries that have stable APIs for years
+Critical fixes
+Receive security patches and critical bug* fixes on your chosen FreeRTOS libraries
+Security patches help keep your IoT devices secure for the product lifecycle
+Notification of patches
+Receive timely notification upcoming patches
+Timely awareness of security patches helps you proactively plan the deployment of patches
+Flexible subscription plan
+Extend maintenance by a year or longer
+Continue to renew your annual subscription for a longer period to keep the same version for the entire device lifecycle, or for a shorter period to buy time before upgrading to the latest FreeRTOS version
+* A critical bug is a defect determined by AWS to impact the functionality of the affected library and has no reasonable workaround.
+AWS will provide technical support to FreeRTOS EMP customers via AWS Support. AWS Support is not included in FreeRTOS EMP subscriptions. You can track issues (for example, issues related to AWS accounts, billing, or bugs) or get access to technical experts (on issues such as patch integration) based on your AWS Support plan.
+Q: What is the subscription cost?
+FreeRTOS EMP has a flexible subscription option that can be extended annually for up to 10 years. You can extend your subscriptions for a duration that aligns with your device lifecycle or application requirements. See the Pricing page for more details.
+Q: Do I have to commit to 10 years of FreeRTOS EMP?
+No. FreeRTOS EMP has a flexible annual subscription plan. You can continue to renew your subscriptions annually for a duration (up to 10 years) that aligns with your device lifecycle or application requirements.
+Q: When will AWS notify customers of security updates and critical bug fixes?
+Under NDA, AWS will notify you via official AWS Security channels of an upcoming patch and its timelines (if AWS is reasonably able to do so and deems it appropriate). Patches will be sent to your private repository within three business days of successfully implementing and getting AWS Security approval for our mitigation. If the libraries are also part of the current FreeRTOS LTS release, patches will be publicly available in the FreeRTOS LTS GitHub repository.
+Q: Which FreeRTOS LTS versions does FreeRTOS EMP cover?
+FreeRTOS EMP will be available for the current and all previous FreeRTOS LTS releases. Subscriptions can be renewed annually for up to 10 years from the end of the chosen LTS version’s support period. For example, a subscription for FreeRTOS 202012.01 LTS, whose LTS period ends March 2023, may be renewed annually until March 2033.
+Q: What are my rights with FreeRTOS EMP libraries?
+FreeRTOS EMP consists of an initial base code (LTS version) and subsequent patches for security vulnerabilities and critical bug fixes. FreeRTOS base code continues to be licensed under the MIT open source license, but the patches are licensed as "AWS Content" under the agreement governing customer use of the services and are confidential information of AWS under NDA. You must keep patches confidential under the terms of your NDA until the patches are incorporated by AWS into the publicly available FreeRTOS libraries. Although you cannot distribute or otherwise disclose patches, you may use and modify patches in connection with your permitted use of AWS services.
+Q: Can I get FreeRTOS EMP beyond the 10 years?
+Contact AWS Sales if you are interested in longer terms.
+Q: Do I need to buy separate subscriptions for different products or product lines?
+It depends. Each FreeRTOS LTS version will have its own subscription. If you buy a multiple product subscription, you pay for only one subscription when you use the same FreeRTOS LTS version for multiple end products. If you buy a single product subscription, you can use your subscription for only one end product (see next FAQ for the definition of a product).
+Q: What is a customer product?
+A customer product is the result of a manufacturing process and is in the market under a specific name or order code. Two customer products are separate if they have significant hardware and/or functional differences, have different product names, or have different types, models or variants. The use of FreeRTOS in more than one customer product will require the purchase of an additional, separate license for each customer product or the purchase of a multiproduct license.
+Q: Where can I get technical support?
+AWS will provide technical support for FreeRTOS EMP customers via separate subscriptions to AWS Support. AWS Support is not included in FreeRTOS EMP subscriptions. You can track issues or speak to technical experts based on your AWS Support plan. See details on AWS Support plans here.
+Q: Where can I get support for billing questions?
+You can get support for your billing questions via AWS Support.
+Q: Can I subscribe to FreeRTOS EMP if I’m not using other AWS services?
+Yes. You can use the FreeRTOS EMP libraries to suit your specific application need. However, you must have or sign up for an AWS account to subscribe to FreeRTOS EMP.
+Q: What is included in the FreeRTOS EMP patches?
+FreeRTOS EMP patches include security updates and bug fixes that AWS determines to be critical for libraries in your FreeRTOS EMP project.
+Q: What is a critical bug?
+A critical bug is a defect determined by AWS to impact the functionality of the affected library and has no reasonable workaround. We will determine the need for a fix based on the impact of the defect (e.g. vulnerability, inoperability, or impaired functionality) on a case-by-case basis.
+Q: Will AWS provide fixes for critical bugs resulting from my modifications on the LTS libraries?
+No. AWS will provide fixes and support for the baseline LTS library source code only.
+Q: When does an AWS Support escalation occur?
+An escalation takes place when AWS Support transfers a technical support case to the FreeRTOS engineering team for a resolution.
+Q: What happens if I exceed the AWS Support escalations to the FreeRTOS engineering team?
+You can escalate four (for single product subscriptions) and six (for multiple product subscriptions) AWS Support cases per year at no additional charge. After that, you may incur charges (evaluated case by case) in addition to the AWS Support fees. In case of charges, AWS will request your confirmation to proceed and charge at a rate of $3,100 per Software Development Engineer per week (without proration).
+Q: Can I cancel my FreeRTOS EMP subscriptions?
+Yes, FreeRTOS EMP subscriptions (once available) can be canceled anytime during the subscription period.
+Q: Can I sign up for FreeRTOS EMP, receive the libraries and patches, and then cancel the subscription? If so, will I be charged a prorated amount?
+You are obligated to pay for a minimum of one year of subscription each time you register to receive the service. We reserve the right to refuse to provide FreeRTOS EMP support to any customer that frequently registers for and terminates the service.
+Q: What happens if I let my subscriptions lapse?
+Renewing your subscriptions annually to match your product lifecycle helps you better manage the security of your devices throughout their lifecycle. The security teams at AWS are continuously working to identify potential security vulnerabilities in FreeRTOS libraries, which helps you become aware of security issues timely and proactively plan for the deployment of patches. If there is a lapse in your subscription, you will incur a one-time fee and other costs that might affect your total cost of the subscription. See the Pricing page for details.
+Q: How long will AWS provide Extended Maintenance for an LTS version?
+You can continue to renew your Extended Maintenance subscriptions annually for up to 10 years. You may terminate your subscription at any time. AWS may terminate Extended Maintenance for any version of LTS as permitted under the agreement governing your use of AWS services, including upon at least 12 months' notice for any reason. Upon any termination of Extended Maintenance for an LTS version, your subscription to Extended Maintenance for such LTS version will also terminate.
 Learn more about FreeRTOS
 Visit the FreeRTOS overview page
 Ready to get started?

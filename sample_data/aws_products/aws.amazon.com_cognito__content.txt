@@ -7,8 +7,8 @@ per month with the AWS Free Tier
 Get started for free
 Spend your time creating great apps.
 Let Amazon Cognito handle authentication.
-Secure and scalable user directory
-Amazon Cognito User Pools provide a secure user directory that scales to hundreds of millions of users. As a fully managed service, User Pools are easy to set up without any worries about standing up server infrastructure.
+Secure and scalable identity store
+Amazon Cognito User Pools provide a secure identity store that scales to millions of users. Cognito User Pools can be more easily set up without provisioning any infrastructure, and all members of the user pool have a directory profile that you can manage through a Software Development Kit (SDK).
 Read more about Cognito User Pools
 Social and enterprise identity federation
 With Amazon Cognito, your users can sign in through social identity providers such as Apple, Google, Facebook, and Amazon, and through enterprise identity providers such as SAML and OpenID Connect.
@@ -90,7 +90,7 @@ Auth.signIn(username, password)
 .catch(err => console.log(err));
 Trusted by developers
 Pay only for what you use. No minimums.
-If you are using Amazon Cognito Identity to create a User Pool, you pay based on your monthly active users (MAUs) only. A user is counted as a MAU if, within a calendar month, there is an identity operation related to that user, such as sign-up, sign-in, token refresh, password change, or a user account attribute is updated. You are not charged for subsequent sessions or for inactive users within that calendar month. You are not charged for subsequent sessions or for inactive users within that calendar month.
+If you are using Amazon Cognito Identity to create a User Pool, you pay based on your monthly active users (MAUs) only. A user is counted as a MAU if, within a calendar month, there is an identity operation related to that user, such as sign-up, sign-in, token refresh, password change, or a user account attribute is updated. You are not charged for subsequent sessions or for inactive users within that calendar month.
 Pricing Tier (MAUs)
 Price per MAU
 First 50,000

@@ -1,34 +1,31 @@
 AWS RoboMaker
-Simulate and deploy robotic applications at cloud scale
-Get started
-Robots are being used more widely in society for purposes that are increasing in sophistication such as complex assembly, picking and packing, last-mile delivery, environmental monitoring, search and rescue, and assisted surgery. Within the autonomous mobile robot (AMR) and autonomous ground vehicle (AGV) market segments, robots are being used for commercial logistics and consumer cleaning, delivery, and companionship.
-These jobs require higher compute capabilities and often the orchestration of the deployment and operations of large fleets of robots. To function effectively, the robots require the integration of technologies such as image recognition, sensing, artificial intelligence, machine learning, and reinforcement learning in ways new to the field of robotics. Developing, simulating, and deploying smart robotics applications is difficult and time consuming. Now, with AWS RoboMaker, it is easy to enable a robot running ROS to navigate, communicate, comprehend, stream data, and learn. Tasks that once could either not be done or took months can now be done in hours or days.
-What is AWS RoboMaker? (2:08)
-Benefits and Customer Results
-AWS RoboMaker is the most complete cloud solution for robotic developers to simulate, test and securely deploy robotic applications at scale. RoboMaker provides a fully-managed, scalable infrastructure for simulation that customers use for multi-robot simulation and CI/CD integration with regression testing in simulation. In addition, AWS RoboMaker provides an IDE, application deployment capabilities, ROS extensions, and seamless integration with various Amazon and AWS services to empower customers to innovate and provide best-of-class robotic solutions. RoboMaker's managed ROS and Gazebo software stacks free up engineering resources and enable you to start building quickly.
-Get started quickly
-AWS RoboMaker includes sample robotics applications to help you get started quickly. These provide the starting point for the voice command, recognition, monitoring, and application deployment capabilities that are typically required for intelligent robotics applications. Sample applications come with robotics application code and simulation application code. The sample simulation applications come with pre-built worlds such as indoor rooms, retail stores, and racing tracks so you can get started in minutes.
-Build intelligent robots
-Easily integrate powerful machine learning, voice recognition, and language processing capabilities to your robotics applications with a suite of AWS services for building end to end solutions. RoboMaker provides extensions for cloud services like Amazon Kinesis (video stream), Amazon Rekognition (image and video analysis), Amazon Lex (speech recognition), Amazon Polly (speech generation), and Amazon CloudWatch (logging and monitoring) to developers who are using Robot Operating System, or ROS.
-Simulation and Application Deployment Capabilities
-Using AWS RoboMaker application deployment, you can roll out software updates to a fleet of robots and with RoboMaker simulation capabilities you can easily simulate and virtually test robotics applications. Using the CloudWatch metrics and logs extension for ROS, you can monitor these robots throughout their lifecycle to understand CPU, speed, memory, battery, and more. When a robot needs an update, you can use RoboMaker simulation for regression testing before deploying the fix or new feature through RoboMaker application deployment.
-Increase code quality and release velocity while improving test coverage. With AWS RoboMaker, iRobot now runs more than 40 automated tests on each code commit and more than 500 automated tests for each release candidate.
-Using AWS RoboMaker, Bastian Solutions easily built a Gazebo simulation environment with more than 35 robots in a fleet to test multi-robot orchestration.
-With AWS RoboMaker, Takenaka is able to generate maps for multiple building layouts and deploy to construction site robots without needing to operate, test and train to robots locally first.
-AWS Robotics Blog
-Featured blog
-Building a ROS-Application CI Pipeline with AWS RoboMaker
-Jeremy Wallace and Andrew Lafranchise
-February 21, 2020
-Fleet and multi-robot simulations in AWS RoboMaker
-Vamshi Konduri
-February 25, 2020
-No blog posts have been found at this time. Please see the AWS Blog for other resources.
-Check out the features
-Learn more about AWS RoboMaker features.
-Learn more
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS RoboMaker.
+Run, scale, and automate robotics simulation
+Free Tier: Get Started for free
+Contact Sales
+Run large-scale and parallel simulations with a single API call.
+Cost-effectively scale and automate simulation workloads.
+Easily create user-defined, randomized 3D virtual environments.
+How it works
+AWS RoboMaker is a cloud-based simulation service that enables robotics developers to run, scale, and automate simulation without managing any infrastructure.
+Use cases
+Automated regression testing
+Automate testing within a continuous integration and continuous delivery (CI/CD) pipeline.
+Train reinforcement learning models
+Train reinforcement learning models with high volumes of iterative trials.
+Multi-robot testing
+Connect multiple concurrent simulations to your fleet management software for testing.
+Customers
+Learn how iRobot implemented a CI/CD testing pipeline in simulation
+Learn how Woodside trains and deploys reinforcement learning agents to their robots
+Learn how Roomie uses AWS RoboMaker to scale custom robotics development
+How to get started
+Find out how AWS RoboMaker works
+Learn more about building and running simulations.
+Explore AWS RoboMaker features
+Explore hands-on training
+Learn how to get started with simulation in AWS RoboMaker.
+Check out educational resources
+Connect with an expert
+Connect with an AWS expert to onboard your simulation workloads to AWS RoboMaker.
+Contact us
+Explore more of AWS

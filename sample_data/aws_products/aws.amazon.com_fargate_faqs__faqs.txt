@@ -14,8 +14,17 @@ Q: How does AWS Fargate work with Amazon ECS and Amazon EKS?
 Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and Amazon Elastic Kubernetes Service (EKS) is a fully managed Kubernetes service. Both ECS and EKS use containers provisioned by Fargate to automatically scale, load balance, and optimize container availability through managed scheduling, providing an easier way to build and operate containerized applications.
 Q: How should I choose when to use AWS Fargate?
 Choose AWS Fargate for its isolation model and security. You should also select Fargate if you want to launch containers without having to provision or manage EC2 instances. If you require greater control of your EC2 instances or broader customization options, then use ECS or EKS without Fargate. Use EC2 for GPU workloads, which are not supported on Fargate today.
-Q: Are there any differences in feature support for AWS Fargate support on Amazon ECS and Amazon EKS?
-Our goal is to keep the features consistent across the two orchestrators. However, at a given time, there could be some gaps due to feature deployment timelines.
+Q: Can I run my Arm-based applications on AWS Fargate?
+Yes. AWS Fargate allows you to run your Arm-based applications by using Arm-compatible container images or multi-architecture container images in Amazon Elastic Container Registry (Amazon ECR). You can simply specify the CPU Architecture as ARM64 in your Amazon ECS Task Definition to target AWS Fargate powered by Arm-based AWS Graviton2 Processors.
+Q: Why should I use AWS Fargate powered by Graviton2 processors?
+AWS Graviton2 processors are custom built by Amazon Web Services using 64-bit Arm Neoverse cores to deliver the best price performance for your cloud workloads. AWS Fargate powered by AWS Graviton2 processors delivers up to 40% improved price/performance at 20% lower cost over comparable Intel x86-based Fargate for a variety of workloads such as application servers, web services, high-performance computing, and media processing. You get the same serverless benefits of AWS Fargate while optimizing performance and cost for running your containerized workloads.
+Q: Can I run my Amazon ECS Windows containers on AWS Fargate?
+Yes. AWS Fargate offers a serverless approach for running your Windows containers. It removes the need to provision and manage servers and lets you specify and pay for resources per application. Fargate provides task-level isolation and handles the necessary patching and updating to help provide a secure compute environment.
+Q: Can I use my existing Microsoft Windows License with AWS Fargate?
+Can I use my existing Microsoft Windows License with AWS Fargate?
+Since Fargate is a serverless compute engine, customers do not need to manage the underlying compute instances running in Fargate. Therefore, Fargate will manage the Windows OS licenses for you and the cost of doing so is built into the Fargate pricing.
+Q: Which Windows Server versions are supported with with AWS Fargate?
+Fargate supports Windows Server 2019 Long-Term Servicing Channel (LTSC) release on Fargate Windows Platform Version 1.0.0 or later.
 Security and Compliance
 Q: To which compliance programs does AWS Fargate conform?
 Q: With which compliance programs does AWS Fargate conform?

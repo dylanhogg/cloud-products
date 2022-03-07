@@ -20,12 +20,18 @@ Q: Can DynamoDB be used by applications running on any operating system?
 Yes. DynamoDB is a fully managed cloud service that you access via API. Applications running on any operating system (such as Linux, Windows, iOS, Android, Solaris, AIX, and HP-UX) can use DynamoDB. We recommend using the AWS SDKs to get started with DynamoDB.
 Planning
 Q: How am I charged for my use of DynamoDB?
-Each DynamoDB table has provisioned read-throughput and write-throughput associated with it. You are billed by the hour for that throughput capacity if you exceed the free tier. Note that you are charged by the hour for the throughput capacity, whether or not you are sending requests to your table. If you would like to change your table’s provisioned throughput capacity, you can do so using the AWS Management Console, the UpdateTable API, or the PutScalingPolicy API for auto scaling. Also, DynamoDB charges for data storage as well as the standard internet data transfer fees.
+Each DynamoDB table has provisioned read-throughput and write-throughput associated with it. You are billed by the hour for that throughput capacity. Note that you are charged by the hour for the throughput capacity, whether or not you are sending requests to your table. If you would like to change your table’s provisioned throughput capacity, you can do so using the AWS Management Console, the UpdateTable API, or the PutScalingPolicy API for auto scaling. Also, DynamoDB charges for data storage as well as the standard internet data transfer fees.
 To learn more about DynamoDB pricing, see the DynamoDB pricing page.
 Q: What is the maximum throughput I can provision for a single DynamoDB table?
 Maximum throughput per DynamoDB table is practically unlimited. For information about the limits in place, see Limits in DynamoDB. If you want to request a limit increase, contact Amazon.
 Q: What is the minimum throughput I can provision for a single DynamoDB table?
 The smallest provisioned throughput you can request is 1 write capacity unit and 1 read capacity unit for both auto scaling and manual throughput provisioning. Such provisioning falls within the free tier which allows for 25 units of write capacity and 25 units of read capacity. The free tier applies at the account level, not the table level. In other words, if you add up the provisioned capacity of all your tables, and if the total capacity is no more than 25 units of write capacity and 25 units of read capacity, your provisioned capacity would fall into the free tier.
+Q: What are DynamoDB table classes?
+DynamoDB offers two table classes designed to help you optimize for cost. The DynamoDB Standard table class is the default, and recommended for the vast majority of workloads. The DynamoDB Standard-Infrequent Access (DynamoDB Standard-IA) table class is optimized for tables that store data that is accessed infrequently, where storage is the dominant cost. Each table is associated with a table class and each table class offers a different pricing for data storage as well as read and write requests. You can select the most cost-effective table class based on your table's storage requirements and data access patterns.
+Q: When should I use DynamoDB Standard-IA?
+DynamoDB Standard-IA helps you reduce your DynamoDB total costs for tables that store infrequently accessed data such as applications’ logs, old social media posts, e-commerce order history, and past gaming achievements. If storage is your dominant table cost— storage cost exceeds 50 percent of the cost of throughput (reads and writes) consistently—then the DynamoDB Standard-IA table class is the most economical choice for you. Learn more about DynamoDB Standard-IA pricing in the DynamoDB pricing page.
+Q: How do DynamoDB Standard-IA tables work with existing DynamoDB features and integrate with other AWS services?
+DynamoDB Standard-IA tables are no different than DynamoDB Standard tables in supporting all existing DynamoDB features including global tables, secondary indexes, on-demand backups, point-in-time recovery (PITR), and Amazon DynamoDB Accelerator (DAX). DynamoDB Standard-IA tables also have built-in integration with other AWS services in the same way as DynamoDB Standard tables. For example, you can monitor the performance of your DynamoDB Standard-IA tables using Amazon CloudWatch, use AWS CloudFormation templates to provision and manage your DynamoDB Standard-IA tables, stream your change data records to Amazon Kinesis Data Streams, and export your DynamoDB Standard-IA tables data to Amazon Simple Storage Service (Amazon S3).
 How it works
 Q: Data models and APIs
 For more information about data models and APIs, see Amazon DynamoDB: How It Works.
@@ -34,7 +40,7 @@ For information about scalability, availability, and durability, see Amazon Dyna
 Q: Auto scaling
 For information about DynamoDB auto scaling, see Managing Throughput Capacity Automatically with DynamoDB Auto Scaling.
 Q: Security and control
-For information about DynamoDB security and control, see Authentication and Access Control for Amazon DynamoDB.
+For information about DynamoDB security and control, see Identity and Access Management in Amazon DynamoDB.
 Get started with Amazon DynamoDB on the AWS Free Tier
 Visit the pricing page
 See Amazon DynamoDB pricing.
