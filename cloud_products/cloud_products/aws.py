@@ -16,7 +16,7 @@ from urllib.parse import urljoin, urlparse
 class AwsCrawler(base.Crawler):
     def __init__(self):
         self.base_url = "https://aws.amazon.com"
-        #self.seed_url = self.base_url + "/products/"
+        # self.seed_url = self.base_url + "/products/"
         # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
         # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all&awsm.page-aws-products-all=2"
         super(AwsCrawler, self).__init__()
@@ -143,10 +143,12 @@ class AwsCrawler(base.Crawler):
 
         assert isinstance(page, int), "page must be an integer"
 
-        seed_url_formatter = ("https://aws.amazon.com/products/" 
-                              "?aws-products-all.sort-by=item.additionalFields.productNameLowercase" 
-                              "&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all" 
-                              "&awsm.page-aws-products-all={page}")
+        seed_url_formatter = (
+            "https://aws.amazon.com/products/"
+            "?aws-products-all.sort-by=item.additionalFields.productNameLowercase"
+            "&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
+            "&awsm.page-aws-products-all={page}"
+        )
         override_seed_url = seed_url_formatter.format(page=page)
 
         browser = Browser()
