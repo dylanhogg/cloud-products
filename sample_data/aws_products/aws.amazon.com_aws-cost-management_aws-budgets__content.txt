@@ -12,10 +12,9 @@ Stay informed with alerts and reports
 Set up event-driven alert notifications for when actual or forecasted cost or usage exceeds your budget limit, or when your RI and Savings Plans' coverage or utilization drops below your threshold. You can also choose to be informed on a daily, weekly, or monthly basis with pre-scheduled Budgets Reports.
 Granular budget time periods
 Create annual, quarterly, monthly, or even daily budgets depending on your business needs. This allows you to take timely actions to prevent cost or usage overage, or inefficient utilization or resource coverage of your Reserved Instances and Savings Plans.
-FEATURED RESOURCE
-Getting Started with AWS Budget Actions
-Get started with AWS Budget Actions to respond to cost and usage in your accounts when a budget target has been exceeded.
-Read the blog
+Introducing auto-adjusting budgets
+Dynamically set your budget amount based on historical cost or usage over a time range that you specify
+Learn more ›
 Use Cases
 Monitor
 Monitor your AWS cost and usage, or RI and Savings Plans’ coverage and utilization. Set up your preferred budget period of day, month, quarter or year, and create specific budget limits that meet your business needs.
@@ -23,19 +22,14 @@ Report
 Stay informed of how actual or forecasted cost and usage, or actual RI and Savings Plans’ coverage and utilization, progresses towards your budget threshold, with scheduled reports without needing to log into the AWS console.
 Respond
 Set up custom actions, such as Identity and Access Management (IAM) policies, Service Control Policies (SCPs), or target running instances (EC2 or RDS) that can be executed automatically or via a workflow approval process, when a budget target has been exceeded.
-Featured Resources
-Blog Post
-Getting Started with AWS Budgets
-Learn how to set custom budgets that alert you when you exceed (or are forecasted to exceed) the thresholds that you set. Read more
-AWS Daily Cost and Usage Reports
-The daily budgeting time range allows you to take timely actions to prevent potential cost overruns. Read more
-AWS Budgets Reports
-Keep an eye on your cost, usage, coverage and utilization of RIs and Savings Plans by opting in to AWS Budget Reports. Learn more
-Latest AWS Cost Management Blogs
-1
-...
-No blog posts have been found at this time. Please see AWS Blog for other resources.
-Read more at the AWS Cost Management Blog
+How do I
+DOCUMENTATION
+Establish Best Practices for AWS Budgets
+Use these best practices to optimize how Budgets can track and take action on your AWS cost and usage.
+BLOG
+Use AWS Daily Cost and Usage Budgets
+Learn how daily cost and usage granularity allows you to catch overspend faster than ever.
+Read the blog ›
 Ready to get started?
 Check out the product features
 Learn more about features for cost management, cost optimization, and more.

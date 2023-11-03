@@ -40,7 +40,7 @@ Q: What kinds of applications are supported by AWS Elastic Beanstalk?
 AWS Elastic Beanstalk supports Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker, and is ideal for web applications. However, due to Elastic Beanstalk’s open architecture, non-web applications can also be deployed using Elastic Beanstalk. We expect to support additional application types and programming languages in the future. See Supported Platforms to learn more.
 Q: Which operating systems does AWS Elastic Beanstalk use?
 AWS Elastic Beanstalk runs on the Amazon Linux AMI and the Windows Server AMI. Both AMIs are supported and maintained by Amazon Web Services and are designed to provide a stable, secure, and high-performance execution environment for Amazon EC2 Cloud computing.
-Getting Started
+Getting started
 Q: How do I sign up for AWS Elastic Beanstalk?
 To sign up for AWS Elastic Beanstalk, choose the Sign Up Now button on the Elastic Beanstalk detail page. You must have an Amazon Web Services account to access this service; if you do not already have one, you will be prompted to create one when you begin the Elastic Beanstalk process. After signing up, please refer to the AWS Elastic Beanstalk Getting Started Guide.
 Q: Why am I asked to verify my phone number when signing up for AWS Elastic Beanstalk?
@@ -49,7 +49,7 @@ Q: How do I get started after I have signed up?
 The best way to get started with AWS Elastic Beanstalk is to work through the AWS Elastic Beanstalk Getting Started Guide, part of our technical documentation. Within a few minutes, you will be able to deploy and use a sample application or upload your own application.
 Q: Is there a sample application that I can use to check out AWS Elastic Beanstalk?
 Yes. AWS Elastic Beanstalk includes a sample application that you can use to test drive the offering and explore its functionality.
-Databases and Storage
+Databases and storage
 Q: Does AWS Elastic Beanstalk store anything in Amazon S3?
 Yes. AWS Elastic Beanstalk stores your application files and, optionally, server log files in Amazon S3. If you are using the AWS Management Console, the AWS Toolkit for Visual Studio, or AWS Toolkit for Eclipse, an Amazon S3 bucket will be created in your account for you and the files you upload will be automatically copied from your local client to Amazon S3. Optionally, you may configure Elastic Beanstalk to copy your server log files every hour to Amazon S3. You do this by editing the environment configuration settings.
 Q: Can I use Amazon S3 to store application data, like images?
@@ -87,7 +87,7 @@ Q: Can an IAM user call the AWS Elastic Beanstalk API?
 Yes. An IAM user can use their access key and secret key to perform operations using the Elastic Beanstalk API.
 Q: Can an IAM user use the AWS Elastic Beanstalk command line interface?
 Yes. An IAM user can use their access key and secret key to perform operations using the AWS Elastic Beanstalk command line interface (CLI).
-Managed Platform Updates
+Managed platform updates
 Q: How can I keep the underlying platform of the environment running my application automatically up-to-date?
 You can opt-in to having your AWS Elastic Beanstalk environments automatically updated to the latest version of the underlying platform running your application during a specified maintenance window. Elastic Beanstalk regularly releases new versions of supported platforms (Java, PHP, Ruby, Node.js, Python, .NET, Go, and Docker) with operating system, web and application server, and language and framework updates.
 Q: How can I get started with managed platform updates?
@@ -124,6 +124,17 @@ Q: Where can I find details of all the managed platform updates that have been p
 Details for every managed platform update are available on the events page and are tagged with an event type of “MAINTENANCE.”
 Q: How often are platform version updates released?
 The number of version releases in a given year varies based on the frequency and content of releases and patches from the language/framework’s vendor or core team, and the outcome of a thorough vetting of these releases and patches by our platform engineering team.
+AWS Graviton support
+Q: How do I deploy a new workload with the Graviton processor from the Elastic Beanstalk console?
+To deploy your application with arm64-based processors on the Elastic Beanstalk console, you can select processor architecture and instance type from capacity tab in Configure more options settings.
+Q: How do I deploy a new workload with the Graviton processor from the AWS CLI, Elastic Beanstalk CLI, or infrastructure as code services?
+To deploy your application using the Elastic Beanstalk CLI, AWS CLI, CFN, or AWS CDK, refer to Elastic Beanstalk Developer Guide.
+Q: Do I need to recompile my workload before migrating to Graviton?
+If your workload is on an interpreted programming language such as Node.js, Python, Tomcat, PHP, or Ruby, you do not need to recompile your workload to use Graviton. If you are using Go or .Net Core for your workload, you need to update the build command for the arm64 instance type. You also need to recompile binary dependencies or use an arm64 compatible release of binary dependencies. If you are using Docker, your Docker image must be multi-architecture and support deploying to both x86 and arm64.
+Q: Which platform branches are supported by Graviton on Elastic Beanstalk?
+Elastic Beanstalk supports Graviton on 64bit Amazon Linux 2 for a variety of platform and branches. See the documentation for a full list.
+Q: What are the use cases where I can use the Graviton processor?
+You can easily transition your workload to Graviton and take advantage of performance and cost benefits in the following use cases: Linux-based workloads built primarily on open-source technologies; containerized and microservices-based applications such as Docker and MC Docker; applications written in portable programming languages such as Java, Python, .NET Core, node.js, and PHP; Compiled C/C++, Rust, or Go applications; .NET Core (v3.1+) workloads running on Linux; multi-threaded workloads;non-uniform memory access (NUMA) sensitive workloads; and arm64-native software development and testing.
 Billing
 Q: How much does AWS Elastic Beanstalk cost?
 There is no additional charge for AWS Elastic Beanstalk–you pay only for the AWS resources actually used to store and run your application.

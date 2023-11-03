@@ -1,0 +1,30 @@
+« Networking and Content Delivery
+AWS Private 5G
+Easily deploy, manage, and scale a private cellular network
+Sign up for preview access
+Contact Sales
+Connect thousands of devices and machines with the low latency and high bandwidth of a private 5G network.
+Get your network up and running in days with no long planning cycles, no complex integrations, and automated setup.
+Secure your network with granular access controls for all connected devices, integrated with existing IT policies.
+Scale your network capacity on demand or add devices with a few clicks, and pay only for the capacity and throughput you use.
+How it works
+AWS Private 5G is a managed service that makes it easy to deploy, operate, and scale your own private cellular network, with all required hardware and software provided by AWS.
+Introduction to AWS Private 5G (1:56)
+Why Private 5G?
+Cellular technology such as 4G/LTE and 5G augments existing networks with higher bandwidth, lower latency, and reliable long-range coverage to an increasing number of devices. With AWS Private 5G, you can build private cellular networks to take advantage of the technological benefits of 5G while maintaining the security and granular application and device controls of a private network.
+Cellular technology such as 4G/LTE and 5G augments existing networks with higher bandwidth, lower latency, and reliable long-range coverage to an increasing number of devices. With AWS Private 5G, you can build private cellular networks to take advantage of the technology benefits of 5G while maintaining the security and granular application and device controls of a private network.
+Use cases
+Run a smart manufacturing facility
+Connect devices, sensors, machines, and legacy equipment within manufacturing facilities to track assembly line production in real time with reliable data linkage across connected machines.
+Enable business-critical applications
+Support a range of low-latency use cases such as augmented and virtual reality (AR/VR) applications for design engineering, image analysis during medical procedures, and autonomous guided vehicles at fulfillment centers.
+Deliver reliable campus connectivity
+Provide high-quality, reliable connectivity at event venues, college campuses, and enterprise facilities. Support data and video communications, security, logistics, and more.
+How to get started
+Learn why you should consider a private 5G solution
+Learn how AWS Private 5G networks combines the reliability, latency, and bandwidth benefits of 5G with the management control of a private network.
+Download the Infographic
+Sign up for a preview of AWS Private 5G
+Be among the first to try AWS Private 5G. Please submit some additional information so we can evaluate your request and contact you with the next steps.
+Sign up now
+Explore more of AWS

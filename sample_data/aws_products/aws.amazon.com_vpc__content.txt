@@ -1,29 +1,29 @@
 « Network & Content Delivery
-Amazon Virtual Private Cloud (VPC)
+Amazon Virtual Private Cloud (Amazon VPC)
 Define and launch AWS resources in a logically isolated virtual network
 Get Started with Amazon VPC
 Learn more about Amazon VPC
-Secure and monitor network connections, screen traffic, and restrict access to instances inside your virtual network.
-Spend less time setting up, managing, and validating your virtual network, and concentrate on building the applications that run within it.
-Customize your virtual networking environment by choosing your own IP Address range, creating subnets, and configuring route tables.
+Secure and monitor connections, screen traffic, and restrict instance access inside your virtual network.
+Spend less time setting up, managing, and validating your virtual network.
+Customize your virtual network by choosing your own IP address range, creating subnets, and configuring route tables.
 How it works
-Amazon Virtual Private Cloud (VPC) gives you complete control over your virtual networking environment including resource placement, connectivity, and security. The first step is to create your VPC. Then you can add resources to it, such as Amazon Elastic Compute Cloud (EC2) and Amazon Relational Database Service (RDS) instances. Finally, you can define how your VPCs communicate with each other, across accounts, Availability Zones (AZs), or Regions. In this case network traffic is being shared between two VPCs within each region.
+Amazon Virtual Private Cloud (Amazon VPC) gives you full control over your virtual networking environment, including resource placement, connectivity, and security. Get started by setting up your VPC in the AWS service console. Next, add resources to it such as Amazon Elastic Compute Cloud (EC2) and Amazon Relational Database Service (RDS) instances. Finally, define how your VPCs communicate with each other across accounts, Availability Zones, or AWS Regions. In the example below, network traffic is being shared between two VPCs within each Region.
 Close
 Click to enlarge
 Use cases
 Launch a simple website or blog
-Gain additional layers of privacy and security, and create rules for inbound and outbound connections.
+Improve your web application security posture by enforcing rules on inbound and outbound connections.
 Host multi-tier web applications
-Host multi-tier web applications and strictly enforce access and security restrictions between your web servers, application servers, and databases.
+Define network connectivity and restrictions between your web servers, application servers, and databases.
 Create hybrid connections
-Satisfy the specific requirements of all your applications—whether you’re connecting to AWS services in the cloud or on premises.
+Build and manage a compatible VPC network across your AWS services and on premises.
 Customers
 Tableau uses AWS to scale faster and increase SaaS resiliency
-Atlassian reduces Bitbucket response times by up to 45%
+Atlassian reduces Bitbucket response times by up to 45% on AWS
 SHI uses VPC to connect shipping networks and route data traffic
 How to get started
 Find out how Amazon VPC works
-Learn more about traffic mirroring, security groups, Ingress routing, and more.
+Learn more about traffic mirroring, security groups, ingress routing, and more.
 Visit the features page
 Start building
 Automatically provision AWS resources in a ready-to-use default VPC.

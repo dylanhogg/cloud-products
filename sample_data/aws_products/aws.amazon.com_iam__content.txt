@@ -1,51 +1,22 @@
 AWS Identity and Access Management (IAM)
-Securely manage access to AWS services and resources
-Get started with AWS IAM
-AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources.
-IAM is a feature of your AWS account offered at no additional charge. You will be charged only for use of other AWS services by your users.
-To get started using IAM, or if you have already registered with AWS, go to the AWS Management Console and get started with these IAM Best Practices.
-AWS IAM Overview (2:15)
+Apply fine-grained permissions to AWS services and resources
+Get started with IAM
+AWS Identity and Access Management (IAM) provides fine-grained access control across all of AWS. With IAM, you can specify who can access which services and resources, and under which conditions. With IAM policies, you manage permissions to your workforce and systems to ensure least-privilege permissions.
+IAM is an AWS service that is offered at no additional charge. To get started using IAM or if you have already registered with AWS, go to the IAM console.
 Use cases
-Fine-grained access control to AWS resources
-IAM enables your users to control access to AWS service APIs and to specific resources. IAM also enables you to add specific conditions such as time of day to control how a user can use AWS, their originating IP address, whether they are using SSL, or whether they have authenticated with a multi-factor authentication device.
-Multi-factor authentication for highly privileged users
-Protect your AWS environment by using AWS MFA, a security feature available at no extra cost that augments user name and password credentials. MFA requires users to prove physical possession of a hardware MFA token or MFA-enabled mobile device by providing a valid MFA code.
-Analyze access
-IAM helps you analyze access across your AWS environment. Your security teams and administrators can quickly validate that your policies only provide the intended public and cross-account access to your resources. You can also easily identify and refine your policies to allow access to only the services being used. This helps you to better adhere to the principle of least privilege.
-Integrate with your corporate directory
-IAM can be used to grant your employees and applications federated access to the AWS Management Console and AWS service APIs, using your existing identity systems such as Microsoft Active Directory. You can use any identity management solution that supports SAML 2.0, or feel free to use one of our federation samples (AWS Console SSO or API federation).
+With IAM, you can manage AWS permissions for workforce users and workloads. For workforce users, we recommend that you use AWS Single Sign-On (AWS SSO) to manage access to AWS accounts and permissions within those accounts. AWS SSO makes it easier to provision and manage IAM roles and policies across your AWS organization. For workload permissions, use IAM roles and policies, and grant only the required access for your workloads.
+Apply fine-grained access control
+Grant access to specific AWS service APIs and resources by using IAM policies. You also can define specific conditions in which access is granted, such as granting access to identities from a specific AWS organization or access through a specific AWS service.
+Establish permissions guardrails and data perimeters across your AWS organization
+With AWS Organizations, you can use service control policies (SCPs) to establish permissions guardrails that all IAM users and roles in an organization’s accounts adhere to. Whether you’re just getting started with SCPs or have existing SCPs, you can use IAM access advisor to help you restrict permissions confidently.
+Achieve least-privilege permissions with IAM Access Analyzer
+Achieving least privilege is a continuous cycle to grant the right fine-grained permissions as your requirements evolve. IAM Access Analyzer helps you streamline permissions management as you set, verify, and refine permissions.
+Automatically scale fine-grained permissions with ABAC
+Attribute-based access control (ABAC) is an authorization strategy for creating fine-grained permissions based on user attributes, such as department, job role, and team name. With ABAC, you can reduce the number of distinct permissions you need for creating fine-grained controls in your AWS account.
 How it works
-IAM assists in creating roles and permissions
-AWS IAM allows you to:
-Manage IAM users and their access – You can create users in IAM, assign them individual security credentials (in other words, access keys, passwords, and multi-factor authentication devices), or request temporary security credentials to provide users access to AWS services and resources. You can manage permissions in order to control which operations a user can perform.
-Manage IAM roles and their permissions – You can create roles in IAM and manage permissions to control which operations can be performed by the entity, or AWS service, that assumes the role. You can also define which entity is allowed to assume the role. In addition, you can use service-linked roles to delegate permissions to AWS services that create and manage AWS resources on your behalf.
-Manage federated users and their permissions – You can enable identity federation to allow existing identities (users, groups, and roles) in your enterprise to access the AWS Management Console, call AWS APIs, and access resources, without the need to create an IAM user for each identity. Use any identity management solution that supports SAML 2.0, or use one of our federation samples (AWS Console SSO or API federation).
-Best practices
-AWS has a list of best practices to help IT professionals and developers manage access to AWS resources.
-Users – Create individual users.
-Groups – Manage permissions with groups.
-Permissions – Grant least privilege.
-Auditing – Turn on AWS CloudTrail.
-Password – Configure a strong password policy.
-MFA – Enable MFA for privileged users.
-Roles – Use IAM roles for Amazon EC2 instances.
-Sharing – Use IAM roles to share access.
-Rotate – Rotate security credentials regularly.
-Conditions – Restrict privileged access further with conditions.
-Root – Reduce or remove use of root.
-Become an IAM policy master in 60 minutes or less (55:35)
-Get started with AWS
-Sign up for an AWS account
-Instantly get access to the
-AWS Free Tier.
-Learn with 10-minute Tutorials
-Explore and learn with
-simple tutorials.
-Start building with AWS
-Begin building with step-by-step guides to help you launch your
-AWS project.
-Learn more about AWS IAM
-Visit the features page
+With IAM, you define who can access what by specifying fine-grained permissions. IAM then enforces those permissions for every request. Access is denied by default and access is granted only when permissions specify an "Allow."
+Learn more about IAM
+Visit the IAM Features page
 Ready to build?
 Have more questions?
 Contact us

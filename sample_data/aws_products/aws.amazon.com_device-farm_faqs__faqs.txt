@@ -21,7 +21,7 @@ AWS Device Farm supports files up to 4 GB.
 Q: Do I need to instrument my app or supply source code?
 No instrumentation or source code is required to use the built-in tests. Android apps can be submitted as is. iOS apps should be built with “iOS Device” as the target instead of a simulator.
 Q: Do you store my app, tests, and other files on your servers? For how long?
-Apps and files you upload are automatically removed after 30 days. Test results, screenshots, and videos are stored for 15 months. You can also choose to delete files and results at any time through the AWS Device Farm console or API.
+Apps and test packages are automatically removed after 30 days. Logs, video recordings, and other artifacts are stored for 400 days. You can also choose to delete files and results at any time through the AWS Device Farm console or API.
 Q: How do you clean up devices after my testing is completed?
 After test execution completes, we perform a series of cleanup tasks on each device, including uninstallation of your app. If we cannot verify uninstallation of your app or any of the other cleanup steps, the device will be removed and will no longer be available.
 While we continue to add additional cleanup steps and improve the cleanup process, it is possible for data to persist between sessions in some cases, especially if you make use of the device system outside the context of your app. For this reason, and because AWS Device Farm captures video and logs of activity taking place during your use of each device, it is recommended that you avoid providing or entering sensitive information such as account info (E.g., Google Account, Apple ID), personal information, and other security-sensitive details during your automated test and remote access sessions.
@@ -87,7 +87,7 @@ Yes, you can provide a locale (for example, “en_US”) to override the default
 Q: How long does it take before my test starts?
 Tests are immediately queued for execution and usually start within minutes. If one or more devices are not available, test execution for those devices will remain queued until they become available. Testing on the other devices in your test run will continue.
 Q: What is the maximum test time allowed?
-The maximum time allowed is 60 minutes. If you need a longer timeout, please contact us.
+The maximum time allowed is 150 minutes.
 Q: Does AWS Device Farm provide a way to run tests and get results through an API?
 Yes. We have a plug-in for the Jenkins continuous integration environment and a Gradle plugin compatible with Android Studio. AWS Device Farm also provides programmatic support for all console features, including setting up a test and downloading test results through an API. For more information, see the AWS Device Farm API Reference. In addition to the API, you can access AWS Device Farm from the AWS SDKs.
 Reviewing results

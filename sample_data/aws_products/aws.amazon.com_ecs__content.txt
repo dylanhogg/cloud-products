@@ -1,33 +1,37 @@
-Amazon Elastic Container Service
-Highly secure, reliable, and scalable way to run containers
-Get started with Amazon ECS
-Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. It deeply integrates with the rest of the AWS platform to provide a secure and easy-to-use solution for running container workloads in the cloud and now on your infrastructure with Amazon ECS Anywhere.
-Amazon ECS leverages serverless technology from AWS Fargate to deliver autonomous container operations, which reduces the time spent on configuration, patching, and security. Instead of worrying about managing the control plane, add-ons, and nodes, Amazon ECS enables you to rapidly build applications and grow your business.
-Amazon ECS: Core Concepts
-Benefits
-Use your existing tools
-No control plane or nodes to manage
-Lower your compute costs
-Meet security and regulatory requirements
-Amazon ECS is the easiest way to rapidly launch thousands of containers across AWS’ broad range of compute options, using your preferred CI/CD and automation tools.
-Amazon ECS is serverless by default with AWS Fargate, which means you’ll spend less time on operations because there’s no control plane or nodes to manage, and no instances to patch and scale.
-You only pay for the resources you configure. Amazon ECS can autonomously handle the provisioning and auto-scaling, which can help lower your compute costs by up to 50%.
-Amazon ECS integrates natively with AWS management and governance solutions to meet the security and compliance standards for virtually every regulatory agency around the globe.
-How Amazon ECS works
-Featured Customers
-Affirm executes thousands of daily tasks with Amazon ECS and AWS Fargate
-Samsung improves performance and service reliability, while reducing their container orchestration costs
-Duolingo relies on Amazon ECS to support 300M+ mobile app users
-With Amazon ECS, Expedia Group has seen 10x increase in shipped features
-Read more customer stories
-Customers Using Amazon ECS
-What's new
-date
-1
-...
-Blog posts & articles
-Learn more about containers on AWS
-Visit the containers page
-Ready to build?
-Have more questions?
-Contact us
+« Compute
+Amazon Elastic Container Service (Amazon ECS)
+Run highly secure, reliable, and scalable containers
+Get Started with Amazon ECS
+Sign up for an Amazon ECS workshop
+Launch thousands of containers across the cloud using your preferred continuous integration and delivery (CI/CD) and automation tools.
+Optimize your time with AWS Fargate serverless compute for containers, which eliminates the need to configure and manage control plane, nodes, and instances.
+Save up to 50 percent on compute costs with autonomous provisioning, auto-scaling, and pay-as-you-go pricing.
+Integrate seamlessly with AWS management and governance solutions, standardized for compliance with virtually every regulatory agency around the globe.
+How it works
+Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+Introduction to Amazon ECS (1:37)
+Introduction to Amazon ECS
+Amazon ECS is a fully managed container orchestration service that helps you easily deploy, manage, and scale containerized applications. It deeply integrates with the rest of the AWS platform to provide a secure and easy-to-use solution for running container workloads in the cloud and now on your infrastructure with Amazon ECS Anywhere.
+Use cases
+Deploy in a hybrid environment
+Build container-based applications on-premises or in the cloud with Amazon ECS Anywhere and enjoy consistent tooling, management, workload scheduling, and monitoring across environments.
+Support batch processing
+Plan, schedule, and execute batch computing workloads across the full range of AWS services, including Amazon Elastic Compute Cloud (EC2), Fargate, and Amazon EC2 Spot Instances.
+Scale web applications
+Automatically scale and run web applications in multiple Availability Zones with the performance, scale, reliability, and availability of AWS.
+Customers
+RaySearch develops software to advance cancer treatment
+The Vanguard Group reduced unit costs by 50% with ECS
+AQR Capital Management launched an app in minutes on ECS
+Expedia Group sees 10x increase in shipped features with Amazon ECS
+How to get started
+Find out how Amazon ECS works
+Learn more about hybrid deployment, batch processing, and building web applications with Amazon ECS.
+Explore Amazon ECS features
+Explore hands-on training
+Learn how to deploy Docker containers, use containerized microservices, and more with Amazon ECS.
+Check out tutorials and guides
+Connect with an expert
+Get the right support at the right time in your cloud adoption journey.
+Explore support options
+Explore more of AWS

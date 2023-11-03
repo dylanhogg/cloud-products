@@ -1,5 +1,5 @@
 Products
-Mobile Services
+Front-End Web & Mobile
 AWS AppSync
 AWS AppSync FAQs
 Q: What is AWS AppSync?
@@ -49,6 +49,8 @@ You can use any HTTP or GraphQL client to connect to a GraphQL API on AppSync. W
 For DynamoDB data sources, use the DataStore category in the Amplify client. It provides the best developer experience and built-in conflict detection and resolution.
 For non-DynamoDB data sources in scenarios where you have no offline requirements, use the API (GraphQL) category in the Amplify client.
 For non-DynamoDB data sources in scenarios where you have offline requirements, use the AppSync SDK.
+Q: Can I use my own domain name to access my AppSync GraphQL endpoint?
+AWS AppSync enables customers to use custom domain names with their AWS AppSync API to access their GraphQl endpoint and real-time endpoint. To create a custom domain name in AppSync, you simply provide a domain name you own and indicate a valid AWS Certificate Manager (ACM) certificate that covers your domain. Once the custom domain name is created, you can associate the domain name with any available AppSync API in your account. After you have updated your DNS record to map to to the AppSync-provided domain name, you can configure your applications to use the new GraphQL and real-time endpoints. You can change the API association on your custom domain at any time without having to update your applications. When AppSync receives a request on the custom domain endpoint, it routes it to the associated API for handling.
 Learn more about AWS AppSync Customers
 Visit the customer page
 Ready to get started?

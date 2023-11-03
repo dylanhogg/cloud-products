@@ -2,14 +2,14 @@
 AWS IoT Greengrass
 Build intelligent IoT devices faster
 Get Started with AWS IoT Greengrass
-Contact Sales
-1,000 devices free
-now through December 31, 2021. See details.
-Build faster using pre-built or custom modular components, which you can easily add or remove from devices to control your device software footprint.
+Build faster using pre-built or custom modular components, which you can easily add or remove to control your device software footprint.
 Deploy and manage device software and configuration remotely and at scale without firmware updates.
 Bring cloud processing and logic locally to edge devices and operate even with intermittent connection.
 Program your devices to transmit only high-value data, making it easy to deliver rich insights at a lower cost.
 How it works
+Build, deploy, and manage device software
+AWS IoT Greengrass device connectivity
+Add features and connect to AWS services
 AWS IoT Greengrass is an open-source edge runtime and cloud service for building, deploying, and managing device software.
 IoT devices can vary in size, ranging from smaller microcontroller-based devices to large appliances. AWS IoT Greengrass Core devices, AWS IoT Device SDK-enabled devices, and FreeRTOS devices can be configured to communicate with one another. If the AWS IoT Greengrass Core device loses connectivity to the cloud, connected devices can continue to communicate with each other over the local network.
 AWS IoT Greengrass provides pre-built components so you can easily extend edge device functionality without writing code. AWS IoT Greengrass components enable you to add features, and quickly connect to AWS services or third-party applications at the edge.
@@ -35,6 +35,6 @@ Engage with an IoT expert
 From development to enterprise-level programs, get the right support at the right time.
 Connect with an expert
 Sign up for the free trial
-Get AWS IoT Greengrass at no charge for the first 1,000 devices, through December 31, 2021.
+The AWS Free Tier includes the first three AWS IoT Greengrass Core devices that connect during each month, free for one year.
 Learn more about pricing
 Explore more of AWS

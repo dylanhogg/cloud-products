@@ -1,120 +1,118 @@
 General
-Q: What is Amazon Elasticsearch Service?
-Amazon Elasticsearch Service is a managed service that makes it easy to deploy, operate, and scale Elasticsearch clusters in the AWS Cloud.
-Q: Which Elasticsearch version does Amazon Elasticsearch Service support?
-Amazon Elasticsearch Service currently supports Elasticsearch versions 7.10, 7.9, 7.8, 7.7, 7.4, 7.1, 6.8, 6.7, 6.5, 6.4, 6.3, 6.2, 6.0, 5.6, 5.5, 5.3, 5.1, 2.3, and 1.5. For more details refer our documentation.
-Q: What is an Amazon Elasticsearch Service domain?
-Amazon Elasticsearch Service domains are Elasticsearch clusters created using the Amazon Elasticsearch Service console, CLI, or API. Each domain is an Elasticsearch cluster in the cloud with the compute and storage resources you specify. You can create and delete domains, define infrastructure attributes, and control access and security. You can run one or more Amazon Elasticsearch Service domains.
-Q: What does Amazon Elasticsearch Service manage on my behalf?
-Amazon Elasticsearch Service manages the work involved in setting up a domain, from provisioning infrastructure capacity in the network environment you request to installing the Elasticsearch software. Once your domain is running, Amazon Elasticsearch Service automates common administrative tasks, such as performing backups, monitoring instances and patching software. Amazon Elasticsearch Service integrates with Amazon CloudWatch to produce metrics that provide information about the state of the domains. Amazon Elasticsearch Service also offers options to modify your domain instance and storage settings to simplify the task of tailoring your domain based to your application needs.
-Q: Does Amazon Elasticsearch Service support the open source Elasticsearch APIs?
-Amazon Elasticsearch Service supports most of the commonly used Elasticsearch APIs, so the code, applications, and popular tools that you're already using with your current Elasticsearch environments work seamlessly. For a full list of supported Elasticsearch operations, see our documentation.
-Q: What are the Availability Zone (AZ) deployment options available on Amazon Elasticsearch Service?
-Amazon Elasticsearch Service offers customers the option to deploy their instances across one, two, or three AZs. Customers running development or test workloads can pick the single AZ option. Those running production-grade workloads should use two or three AZs. Three AZ deployments are strongly recommended for workloads with higher availability requirements.
+Q: What is Amazon OpenSearch Service (successor to Amazon Elasticsearch Service)?
+Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more. OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch. Amazon OpenSearch Service offers the latest versions of OpenSearch, support for 19 versions of Elasticsearch (1.5 to 7.10 versions), and visualization capabilities powered by OpenSearch Dashboards and Kibana (1.5 to 7.10 versions).
+Q: Which OpenSearch and Elasticsearch versions does Amazon OpenSearch Service support?
+Amazon OpenSearch Service offers the latest versions of OpenSearch and support for 19 versions of Elasticsearch (1.5 to 7.10 versions). For more details refer our documentation.
+Q: What is an Amazon OpenSearch Service domain?
+Amazon OpenSearch Service domains are Elasticsearch (1.5 to 7.10) or OpenSearch clusters created using the Amazon OpenSearch Service console, CLI, or API. Each domain is an OpenSearch or Elasticsearch cluster in the cloud with the compute and storage resources you specify. You can create and delete domains, define infrastructure attributes, and control access and security. You can run one or more Amazon OpenSearch Service domains.
+Q: What does Amazon OpenSearch Service manage on my behalf?
+Amazon OpenSearch Service manages the work involved in setting up a domain, from provisioning infrastructure capacity in the network environment you request to installing the OpenSearch or Elasticsearch software. Once your domain is running, Amazon OpenSearch Service automates common administrative tasks, such as performing backups, monitoring instances and patching software. Amazon OpenSearch Service integrates with Amazon CloudWatch to produce metrics that provide information about the state of the domains. Amazon OpenSearch Service also offers options to modify your domain instance and storage settings to simplify the task of tailoring your domain based to your application needs.
+Q: Does Amazon OpenSearch Service support the open-source Elasticsearch and OpenSearch APIs?
+Amazon OpenSearch Service supports most of the commonly used OpenSearch and Elasticsearch APIs, so the code, applications, and popular tools that you're already using with your Elasticsearch (up to version 7.10) or OpenSearch environments work seamlessly. For a full list of supported operations, see our documentation.
+Q: What are the Availability Zone (AZ) deployment options available on Amazon OpenSearch Service?
+Amazon OpenSearch Service offers customers the option to deploy their instances across one, two, or three AZs. Customers running development or test workloads can pick the single AZ option. Those running production-grade workloads should use two or three AZs. Three AZ deployments are strongly recommended for workloads with higher availability requirements.
 Note: The three AZ option is only available in regions where there are three or more AZs.
-Q: In which regions does Amazon Elasticsearch Service offer three AZ deployments?
-Amazon Elasticsearch Service supports three AZ deployments in following regions: US East (N. Virginia, Ohio), US West (Oregon), AWS GovCloud (US-Gov-East, US-Gov-West), Canada (Central), South America (Sao Paulo), EU (Ireland, London, Frankfurt, Paris, Stockholm, Milan), Asia Pacific (Singapore, Sydney, Tokyo, Seoul, Mumbai, Hong Kong), Middle East (Bahrain), China (Ningxia – operated by NWCD) and Africa (Cape Town).
+Q: In which regions does Amazon OpenSearch Service offer three AZ deployments?
+Amazon OpenSearch Service supports three AZ deployments in following regions: US East (N. Virginia, Ohio), US West (Oregon), AWS GovCloud (US-Gov-East, US-Gov-West), Canada (Central), South America (Sao Paulo), EU (Ireland, London, Frankfurt, Paris, Stockholm, Milan), Asia Pacific (Singapore, Sydney, Tokyo, Seoul, Mumbai, Hong Kong), Middle East (Bahrain), China (Ningxia – operated by NWCD), and Africa (Cape Town).
 Setup and configuration
-Q: Can I create and modify my Amazon Elasticsearch Service domain through the Amazon Elasticsearch Service console?
-Yes. You can create a new Amazon Elasticsearch Service domain with the Domain Creation Wizard in the console with just a few clicks. While creating a new domain you can specify the number of instances, instance types, and EBS volumes you want allocated to your domain. You can also modify or delete existing Amazon Elasticsearch Service domains using the console.
-Q: Does Amazon Elasticsearch Service support Amazon VPC?
-Yes, Amazon Elasticsearch Service is integrated with Amazon VPC. When choosing VPC access, IP addresses from your VPC are attached to your Amazon Elasticsearch Service domain and all network traffic stays within the AWS network and is not accessible to the Internet. Moreover, you can use security groups and IAM policies to restrict access to your Amazon Elasticsearch Service domains.
-Q: Can I use CloudFormation Templates to provision Amazon Elasticsearch Service domains?
-Yes. AWS CloudFormation supports Amazon Elasticsearch Service. For more information, see the CloudFormation Template Reference documentation.
-Q: Does Amazon Elasticsearch Service support configuring dedicated master nodes?
+Q: Can I create and modify my Amazon OpenSearch Service domain through the Amazon OpenSearch Service console?
+Yes. You can create a new Amazon OpenSearch Service domain with the Domain Creation Wizard in the console with just a few clicks. While creating a new domain you can specify the number of instances, instance types, and EBS volumes you want allocated to your domain. You can also modify or delete existing Amazon OpenSearch Service domains using the console.
+Q: Does Amazon OpenSearch Service support Amazon VPC?
+Yes, Amazon OpenSearch Service is integrated with Amazon VPC. When choosing VPC access, IP addresses from your VPC are attached to your Amazon OpenSearch Service domain and all network traffic stays within the AWS network and is not accessible to the Internet. Moreover, you can use security groups and IAM policies to restrict access to your Amazon OpenSearch Service domains.
+Q: Can I use CloudFormation Templates to provision Amazon OpenSearch Service domains?
+Yes. AWS CloudFormation supports Amazon OpenSearch Service. For more information, see the CloudFormation Template Reference documentation.
+Q: Does Amazon OpenSearch Service support configuring dedicated master nodes?
 Yes. You can configure dedicated master nodes for your domains. When choosing a dedicated master configuration, you can specify the instance type and instance count.
-Q: Can I create multiple Elasticsearch indices within a single Amazon Elasticsearch Service domain?
-Yes. You can create multiple Elasticsearch indices within the same Amazon Elasticsearch Service domain. Elasticsearch automatically distributes the indices and any associated replicas between the instances allocated to the domain.
-Q: How do I ingest data into my Amazon Elasticsearch Service domain?
-Amazon Elasticsearch Service supports three options for data ingestion:
-For large data volumes, we recommend Amazon Kinesis Firehose, a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. It can also transform, batch and compress the data before loading it.
-Amazon Elasticsearch Service supports integration with Logstash. You can configure your Amazon Elasticsearch Service domain as the data store for all logs arriving from your Logstash implementation.
-You can use native Elasticsearch APIs, such as the index and bulk APIs, to load data into your domain.
-Q: Does Amazon Elasticsearch Service support integration with Logstash?
-Yes. Amazon Elasticsearch Service supports integration with Logstash. You can set up your Amazon Elasticsearch Service domain as the backend store for all logs coming through your Logstash implementation. You can set up access control on your Amazon Elasticsearch Service domain to either use request signing to authenticate calls from your Logstash implementation, or use resource based IAM policies to include IP addresses of instances running your Logstash implementation.
-Q: Does Amazon Elasticsearch Service support integration with Kibana?
-Yes. Amazon Elasticsearch Service includes a built-in Kibana install that is deployed with your Amazon Elasticsearch Service domain.
-Q: Can I create custom reports with the Kibana installation included with Amazon Elasticsearch Service?
-Yes. Kibana supports creating and saving custom reports through the user interface. For more information on using Kibana, refer to Kibana documentation.
-Q: What storage options are available with Amazon Elasticsearch Service?
+Q: Can I create multiple Elasticsearch or OpenSearch indices within a single Amazon OpenSearch Service domain?
+Yes. You can create multiple Elasticsearch or OpenSearch indices within the same Amazon OpenSearch Service domain. Elasticsearch and OpenSearch automatically distribute the indices and any associated replicas between the instances allocated to the domain.
+Q: How do I ingest data into my Amazon OpenSearch Service domain?
+Amazon OpenSearch Service supports three options for data ingestion:
+For large data volumes, we recommend Amazon Kinesis Data Firehose, a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. It can also transform, batch and compress the data before loading it.
+Amazon OpenSearch Service supports integration with Logstash. You can configure your Amazon OpenSearch Service domain as the data store for all logs arriving from your Logstash implementation.
+You can use native Elasticsearch (up to version 7.10) or OpenSearch APIs, such as the index and bulk APIs, to load data into your domain.
+Q: Does Amazon OpenSearch Service support integration with Logstash?
+Yes. Amazon OpenSearch Service supports integration with Logstash. You can set up your Amazon OpenSearch Service domain as the backend store for all logs coming through your Logstash implementation. You can set up access control on your Amazon OpenSearch Service domain to either use request signing to authenticate calls from your Logstash implementation, or use resource based IAM policies to include IP addresses of instances running your Logstash implementation.
+Q: Does Amazon OpenSearch Service support integration with Kibana?
+Yes. Amazon OpenSearch Service offers visualization capabilities powered by OpenSearch Dashboards and Kibana (1.5 to 7.10 versions).
+Q: What storage options are available with Amazon OpenSearch Service?
 You can choose between local on-instance storage or EBS volumes. During domain creation, if you select EBS storage, you can increase and decrease the size of the storage volume as necessary.
-Q: What types of EBS volumes does Amazon Elasticsearch Service support?
+Q: What types of EBS volumes does Amazon OpenSearch Service support?
 You can choose between Magnetic, General Purpose, and Provisioned IOPS EBS volumes.
-Q: Is there a limit on the amount of storage that can be allocated to an Amazon Elasticsearch Service domain?
-Yes. Amazon Elasticsearch Service deploys storage based the choice of instance and/or the size of the associated EBS volume. The maximum storage per node is 15 TB with the i3.16xlarge instances. With the default maximum of 40 data nodes allowed per Amazon Elasticsearch Service domain, you can allocate about 600 TB of storage to a single domain. You can request a service limit increase up to 200 instances per domain by creating a case with the AWS Support Center. With 200 instances, you can allocate about 3 PB of storage to a single domain.
+Q: Is there a limit on the amount of storage that can be allocated to an Amazon OpenSearch Service domain?
+Yes. Amazon OpenSearch Service deploys storage based the choice of instance and/or the size of the associated EBS volume. The maximum storage per node is 15 TB with the i3.16xlarge instances. With the default maximum of 40 data nodes allowed per Amazon OpenSearch Service domain, you can allocate about 600 TB of storage to a single domain. You can request a service limit increase up to 200 instances per domain by creating a case with the AWS Support Center. With 200 instances, you can allocate about 3 PB of storage to a single domain.
 Q: How are dedicated master instances distributed across AZs?
-If you deploy your data instances in a single AZ, your dedicated master instances are also deployed in the same AZ. However, if you deploy your data instances across two or three AZs, Amazon Elasticsearch Service automatically distributes the dedicated master instances across three AZs. The exception to this rule occurs if a region only has two AZs or if you select an older-generation instance type for the master instances that is not available in all AZs. For more details, refer our documentation.
+If you deploy your data instances in a single AZ, your dedicated master instances are also deployed in the same AZ. However, if you deploy your data instances across two or three AZs, Amazon OpenSearch Service automatically distributes the dedicated master instances across three AZs. The exception to this rule occurs if a region only has two AZs or if you select an older-generation instance type for the master instances that is not available in all AZs. For more details, refer our documentation.
 Q: What is the recommended AZ configuration for production workloads?
 For production workloads, we recommend deploying your data instances across three AZs since it offers better availability. Also, we recommend provisioning instances in multiples of three for equal distribution across AZs. In regions where three AZs are not available, we recommend using a two AZ deployment with an even number of data instances. In all cases, we recommend provisioning three dedicated master instances.
 Q: How can I configure my domain for three AZ deployment?
 You can enable three AZ deployment for both existing and new domains using the AWS console, CLI or SDKs. For more details, refer our documentation.
 Q: Is there a fee for enabling three AZ deployment?
-No. Amazon Elasticsearch Service does not charge anything for enabling three AZ deployment. You only pay for the number of instances in your domain, not the number of AZs to which they are deployed.
+No. Amazon OpenSearch Service does not charge anything for enabling three AZ deployment. You only pay for the number of instances in your domain, not the number of AZs to which they are deployed.
 Q: I no longer see the “zone awareness” option in my console. Is my domain no longer zone aware?
 All domains configured for multiple AZs will have zone awareness enabled to ensure shards are distributed across Availability Zones. In the console, you can now explicitly choose two or three AZ deployments. Domains previously configured with “Zone Awareness” will continue to be deployed across two AZs unless they are reconfigured. For more details, refer our documentation.
-Q: How does Amazon Elasticsearch Service handle instance failures and AZ disruptions?
-If one or more instances in an AZ are unreachable or not functional, Amazon Elasticsearch Service automatically tries to bring up new instances in the same AZ to replace the affected instances. In the rare event that new instances cannot be brought up in the AZ, Amazon Elasticsearch Service brings up new instances in the other available AZs if the domain has been configured to deploy instances across multiple AZs. Once the AZ issue resolves, Amazon Elasticsearch Service rebalances the instances such that they are equally distributed across the AZs configured for the domain. For more details refer our documentation.
+Q: How does Amazon OpenSearch Service handle instance failures and AZ disruptions?
+If one or more instances in an AZ are unreachable or not functional, Amazon OpenSearch Service automatically tries to bring up new instances in the same AZ to replace the affected instances. In the rare event that new instances cannot be brought up in the AZ, Amazon OpenSearch Service brings up new instances in the other available AZs if the domain has been configured to deploy instances across multiple AZs. Once the AZ issue resolves, Amazon OpenSearch Service rebalances the instances such that they are equally distributed across the AZs configured for the domain. For more details refer our documentation.
 Q: If I have only one replica for the indices in my domain, should I use two or three AZs?
-Even when you configure one replica, we recommend three AZs. If an AZ disruption occurs in a three AZ domain, you only lose one-third of your capacity but if the disruption occurs in a two AZ domain, you lose half your capacity, which can be more disruptive. Also, in a three AZ domain, when an AZ is disrupted, Amazon Elasticsearch Service can fall back to the two remaining AZs, and still support cross-AZ replication . In a two AZ domain, you lose cross-AZ replication if one AZ is disrupted, which can further reduce availability. For more details refer our documentation.
+Even when you configure one replica, we recommend three AZs. If an AZ disruption occurs in a three AZ domain, you only lose one-third of your capacity but if the disruption occurs in a two AZ domain, you lose half your capacity, which can be more disruptive. Also, in a three AZ domain, when an AZ is disrupted, Amazon OpenSearch Service can fall back to the two remaining AZs, and still support cross-AZ replication . In a two AZ domain, you lose cross-AZ replication if one AZ is disrupted, which can further reduce availability. For more details refer our documentation.
 Q: How do I leverage three AZ deployment for my VPC domain?
 The number of AZs your domain is deployed to corresponds to the number of subnets you have configured for your VPC domain. You need to configure at least three subnets in your VPC domain to enable three AZ deployment. For more details on configuring VPC, refer our documentation.
 Administration
-Q: Can programs running on servers in my own data center access my Amazon Elasticsearch Service domains?
-Yes. The programs with public Internet access can access Amazon Elasticsearch Service domains through a public endpoint. If your data center is already connected to Amazon VPC through Direct Connect or SSH tunneling, you can also use VPC access. In both cases, you can configure IAM policies and security groups to allow programs running on servers outside of AWS to access your Amazon Elasticsearch Service domains. Click here for more information about signed requests.
-Q: How can I migrate data from my existing Elasticsearch cluster to a new Amazon Elasticsearch Service domain?
-To migrate data from an existing Elasticsearch cluster you should create a snapshot of an existing Elasticsearch cluster, and store the snapshot in your Amazon S3 bucket. Then you can create a new Amazon Elasticsearch Service domain and load data from the snapshot into the newly created Amazon Elasticsearch Service domain using the Elasticsearch restore API.
-Q: How can I scale an Amazon Elasticsearch Service domain?
-Amazon Elasticsearch Service allows you to control the scaling of your Amazon Elasticsearch Service domains using the console, API, and CLI. You can scale your Amazon Elasticsearch Service domain by adding, removing, or modifying instances or storage volumes depending on your application needs. Amazon Elasticsearch Service is integrated with Amazon CloudWatch to provide metrics about the state of your Amazon Elasticsearch Service domains to enable you to make appropriate scaling decisions for your domains.
-Q: Does scaling my Amazon Elasticsearch Service domain require downtime?
-No. Scaling your Amazon Elasticsearch Service domain by adding or modifying instances, and storage volumes is an online operation that does not require any downtime.
-Q: Does Amazon Elasticsearch Service support cross-zone replication?
-Yes. If you enable replicas for your Elasticsearch indices and use multiple Availability Zones, Amazon Elasticsearch Service automatically distributes your primary and replica shards across instances in different AZs.
-Q: Does Amazon Elasticsearch Service expose any performance metrics through Amazon CloudWatch?
-Yes. Amazon Elasticsearch Service exposes several performance metrics through Amazon CloudWatch including number of nodes, cluster health, searchable documents, EBS metrics (if applicable), CPU, memory and disk utilization for data and master nodes. Please refer to the service documentation for a full listing of available CloudWatch metrics.
-Q: I wish to perform security analysis or operational troubleshooting of my Amazon Elasticsearch Service deployment. Can I get a history of all the Amazon Elasticsearch Service API calls made on my account?
+Q: Can programs running on servers in my own data center access my Amazon OpenSearch Service domains?
+Yes. The programs with public Internet access can access Amazon OpenSearch Service domains through a public endpoint. If your data center is already connected to Amazon VPC through Direct Connect or SSH tunneling, you can also use VPC access. In both cases, you can configure IAM policies and security groups to allow programs running on servers outside of AWS to access your Amazon OpenSearch Service domains. Click here for more information about signed requests.
+Q: How can I migrate data from my existing OpenSearch/Elasticsearch cluster to a new Amazon OpenSearch Service domain?
+To migrate data from an existing Elasticsearch or OpenSearch cluster, you should create a snapshot of an existing cluster, and store the snapshot in your Amazon S3 bucket. Then you can create a new Amazon OpenSearch Service domain and load data from the snapshot into the newly created Amazon OpenSearch Service domain using the restore API.
+Q: How can I scale an Amazon OpenSearch Service domain?
+Amazon OpenSearch Service allows you to control the scaling of your Amazon OpenSearch Service domains using the console, API, and CLI. You can scale your Amazon OpenSearch Service domain by adding, removing, or modifying instances or storage volumes depending on your application needs. Amazon OpenSearch Service is integrated with Amazon CloudWatch to provide metrics about the state of your Amazon OpenSearch Service domains to enable you to make appropriate scaling decisions for your domains.
+Q: Does scaling my Amazon OpenSearch Service domain require downtime?
+No. Scaling your Amazon OpenSearch Service domain by adding or modifying instances, and storage volumes is an online operation that does not require any downtime.
+Q: Does Amazon OpenSearch Service support cross-zone replication?
+Yes. If you enable replicas for your OpenSearch/Elasticsearch indices and use multiple Availability Zones, Amazon OpenSearch Service automatically distributes your primary and replica shards across instances in different AZs.
+Q: Does Amazon OpenSearch Service expose any performance metrics through Amazon CloudWatch?
+Yes. Amazon OpenSearch Service exposes several performance metrics through Amazon CloudWatch including number of nodes, cluster health, searchable documents, EBS metrics (if applicable), CPU, memory and disk utilization for data and master nodes. Please refer to the service documentation for a full listing of available CloudWatch metrics.
+Q: I wish to perform security analysis or operational troubleshooting of my Amazon OpenSearch Service deployment. Can I get a history of all the Amazon OpenSearch Service API calls made on my account?
 Yes. AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The AWS API call history produced by AWS CloudTrail enables security analysis, resource change tracking, and compliance auditing. Learn more about AWS CloudTrail at the AWS CloudTrail detail page, and turn it on via CloudTrail's AWS Management Console home page.
 Q: What is a snapshot?
-A snapshot is a copy of your Amazon Elasticsearch Service domain at a moment in time.
+A snapshot is a copy of your Amazon OpenSearch Service domain at a moment in time.
 Q: Why would I need snapshots?
-Creating snapshots can be useful in case of data loss caused by node failure, as well as the unlikely event of a hardware failure. You can use snapshots to recover your Amazon Elasticsearch Service domain with preloaded data or to create a new Amazon Elasticsearch Service domain with preloaded data. Another common reason to use backups is for archiving purposes. Snapshots are stored in Amazon S3.
-Q: Does Amazon Elasticsearch Service provide automated snapshots?
-Yes. By default, Amazon Elasticsearch Service automatically creates hourly snapshots of each Amazon Elasticsearch Service domain and retains them for 14 days.
-Q: How long are the automated daily hourly snapshots stored by Amazon Elasticsearch Service?
-Amazon Elasticsearch Service will retain the last 14 days’ worth of automated hourly snapshots.
+Creating snapshots can be useful in case of data loss caused by node failure, as well as the unlikely event of a hardware failure. You can use snapshots to recover your Amazon OpenSearch Service domain with preloaded data or to create a new Amazon OpenSearch Service domain with preloaded data. Another common reason to use backups is for archiving purposes. Snapshots are stored in Amazon S3.
+Q: Does Amazon OpenSearch Service provide automated snapshots?
+Yes. By default, Amazon OpenSearch Service automatically creates hourly snapshots of each Amazon OpenSearch Service domain and retains them for 14 days.
+Q: How long are the automated daily hourly snapshots stored by Amazon OpenSearch Service?
+Amazon OpenSearch Service will retain the last 14 days’ worth of automated hourly snapshots.
 Q: Is there a charge for the automated daily hourly snapshots?
-There is no additional charge for the automated hourly snapshots. The snapshots are stored for free in an Amazon Elasticsearch Service S3 bucket and will be made available for node recovery purposes.
-Q: Can I create additional snapshots of my Amazon Elasticsearch Service domains as needed?
-Yes. You can use the Elasticsearch snapshot API to create additional manual snapshots in addition to the daily-automated snapshots created by Amazon Elasticsearch Service. The manual snapshots are stored in your S3 bucket and will incur relevant Amazon S3 usage charges.
+There is no additional charge for the automated hourly snapshots. The snapshots are stored for free in an Amazon OpenSearch Service S3 bucket and will be made available for node recovery purposes.
+Q: Can I create additional snapshots of my Amazon OpenSearch Service domains as needed?
+Yes. You can use the snapshot API to create additional manual snapshots in addition to the daily-automated snapshots created by Amazon OpenSearch Service. The manual snapshots are stored in your S3 bucket and will incur relevant Amazon S3 usage charges.
 Q: Can snapshots created by the manual snapshot process be used to recover a domain in the event of a failure?
-Yes. Customers can create a new Amazon Elasticsearch Service domain and load data from the snapshot into the newly created Amazon Elasticsearch Service domain using the Elasticsearch restore API.
-Q: What happens to my snapshots when I delete my Amazon Elasticsearch Service domain?
-The daily snapshots retained by Amazon Elasticsearch Service will be deleted as part of domain deletion. Before deleting a domain, you should consider creating a snapshot of the domain in your own S3 buckets using the manual snapshot process. The snapshots stored in your S3 bucket will not be affected if you delete your Amazon Elasticsearch Service domain.
-Q: What types of Elasticsearch logs are exposed by Amazon Elasticsearch Service?
-Amazon Elasticsearch Service exposes three Elasticsearch logs through Amazon CloudWatch Logs: error logs, search slow logs, and index slow logs. These logs are useful for troubleshooting performance and stability issues with one’s domain.
+Yes. Customers can create a new Amazon OpenSearch Service domain and load data from the snapshot into the newly created Amazon OpenSearch Service domain using the OpenSearch/Elasticsearch restore API.
+Q: What happens to my snapshots when I delete my Amazon OpenSearch Service domain?
+The daily snapshots retained by Amazon OpenSearch Service will be deleted as part of domain deletion. Before deleting a domain, you should consider creating a snapshot of the domain in your own S3 buckets using the manual snapshot process. The snapshots stored in your S3 bucket will not be affected if you delete your Amazon OpenSearch Service domain.
+Q: What types of OpenSearch/Elasticsearch logs are exposed by Amazon OpenSearch Service?
+Amazon OpenSearch Service exposes three Elasticsearch or OpenSearch logs through Amazon CloudWatch Logs: error logs, search slow logs, and index slow logs. These logs are useful for troubleshooting performance and stability issues with one’s domain.
 Q: What are slow logs?
-Slow logs are log files that help track the performance of various stages in an operation. Elasticsearch exposes two kinds of slow logs:
+Slow logs are log files that help track the performance of various stages in an operation. OpenSearch and Elasticsearch exposes two kinds of slow logs:
 Index Slow Logs – These logs provide insights into the indexing process and can be used to fine-tune the index setup.
-Search Slow Logs – These logs provide insights into how fast or slow queries and fetches are performing. These logs help fine tune the performance of any kind of search operation on Elasticsearch.
-For complete details on Elasticsearch slow logs, please refer to Elasticsearch documentation.
-Q: How can I enable slow logs on Amazon Elasticsearch Service?
+Search Slow Logs – These logs provide insights into how fast or slow queries and fetches are performing. These logs help fine tune the performance of any kind of search operation on OpenSearch or Elasticsearch.
+For complete details on slow logs, please refer to OpenSearch documentation.
+Q: How can I enable slow logs on Amazon OpenSearch Service?
 Slows logs can be enabled via the click of a button from the Console or via our CLI and APIs. For more details please refer to our documentation.
 Q: Can I only enable slow logs for specific indices?
 Yes. You can update the settings for a specific index to enable or disable slow logs for it. For more details refer to our documentation.
-Q: Does turning on slow logs in Amazon Elasticsearch Service automatically enable logging for all indexes?
-No. Turning on slow logs in Amazon Elasticsearch Service enables the option to publish the generated logs to Amazon CloudWatch Logs for indices in the given domain. However, in order to generate the logs you have to update the settings for one or more indices to start the logging process. For more details on setting the index configuration for enabling slow logs, please refer to our documentation.
-Q: If I turn off the slow logs in Amazon Elasticsearch Service, does it mean that log files are no longer being generated?
+Q: Does turning on slow logs in Amazon OpenSearch Service automatically enable logging for all indexes?
+No. Turning on slow logs in Amazon OpenSearch Service enables the option to publish the generated logs to Amazon CloudWatch Logs for indices in the given domain. However, in order to generate the logs you have to update the settings for one or more indices to start the logging process. For more details on setting the index configuration for enabling slow logs, please refer to our documentation.
+Q: If I turn off the slow logs in Amazon OpenSearch Service, does it mean that log files are no longer being generated?
 No. The generation of log files are dependent on the index settings. To turn off generation of the log files you have to update the index configuration. For more details on setting the index configuration for enabling slow logs, see our documentation.
 Q: Can I change the granularity of logging?
-You can only change the granularity of logging for slow logs. Elasticsearch exposes multiple levels of logging for slow logs. You need to set the appropriate level in the configuration of your index. For more details on setting the index configuration for enabling slow logs, please refer to Elasticsearch documentation.
+You can only change the granularity of logging for slow logs. OpenSearch and Elasticsearch expose multiple levels of logging for slow logs. You need to set the appropriate level in the configuration of your index. For more details on setting the index configuration for enabling slow logs, please refer to OpenSearch documentation.
 Q: Will enabling slow logs or error logs cost me anything?
-When slow logs or error logs are enabled, Amazon Elasticsearch Service starts publishing the generated logs to CloudWatch Logs. Amazon Elasticsearch Service does not charge anything for enabling the logs. However, standard CloudWatch charges will apply.
-Q: What kinds of error logs are exposed by Amazon Elasticsearch Service?
-Elasticsearch uses Apache Log4j 2 and its built-in log levels (from least to most severe) of TRACE, DEBUG, INFO, WARN, ERROR, and FATAL. If you enable error logs, Amazon Elasticsearch Service publishes log lines of WARN, ERROR, and FATAL, and select errors from the DEBUG level to CloudWatch. For more details, refer our documentation.
-Q: How can I enable error logs on Amazon Elasticsearch Service?
+When slow logs or error logs are enabled, Amazon OpenSearch Service starts publishing the generated logs to CloudWatch Logs. Amazon OpenSearch Service does not charge anything for enabling the logs. However, standard CloudWatch charges will apply.
+Q: What kinds of error logs are exposed by Amazon OpenSearch Service?
+OpenSearch uses Apache Log4j 2 and its built-in log levels (from least to most severe) of TRACE, DEBUG, INFO, WARN, ERROR, and FATAL. If you enable error logs, Amazon OpenSearch Service publishes log lines of WARN, ERROR, and FATAL, and select errors from the DEBUG level to CloudWatch. For more details, refer our documentation.
+Q: How can I enable error logs on Amazon OpenSearch Service?
 Error logs can be enabled via the click of a button from the AWS Console or via our CLI and APIs. For more details please refer to our documentation.
 Q: Can I enable error logs for only specific indices?
 No, error logs are exposed for the entire domain. That is, once enabled, log entries from all indices in the domain will be made available.
-Q: Are error logs available for all versions of Elasticsearch supported by Amazon Elasticsearch Service?
+Q: Are error logs available for all versions of Elasticsearch supported by Amazon OpenSearch Service?
 No, error logs are available only for Elasticsearch versions 5.x and above.
 Q: Is there any limit on the size of each log entry?
 Yes. Each log entry made into CloudWatch will be limited to 255,000 characters. If your log entry is bigger than that, it will be truncated to 255,000 characters.
@@ -122,28 +120,28 @@ Q: What is the recommended best practice for using slow logs?
 Slow logs are only needed when you want to troubleshoot your indexes or fine-tune performance. The recommended approach is to only enable logging for those indexes for which you need additional performance insights. Also, once the investigation is done, you should turn off logging so that you don’t incur any additional costs on account of it. For more details, see our documentation.
 Q: How can I consume logs from CloudWatch Logs?
 CloudWatch offers multiple ways to consume logs. You can view log data, export it to S3, or process it in real time. To learn more, see the CloudWatch Logs developer guide.
-Q: Are slow logs available for all versions of Elasticsearch supported by Amazon Elasticsearch Service?
-Yes. slow logs can be enabled for all versions of Elasticsearch supported by Amazon Elasticsearch Service. However, there are slight differences in the way log settings can be specified for each version of Elasticsearch. Please refer to our documentation for more details.
+Q: Are slow logs available for all versions of OpenSearch and Elasticsearch supported by Amazon OpenSearch Service?
+Yes, slow logs can be enabled for all versions of OpenSearch and Elasticsearch supported by Amazon OpenSearch Service. However, there are slight differences in the way log settings can be specified for each version of Elasticsearch. Please refer to our documentation for more details.
 Q: Will the cluster have any down time when logging is turned on or off?
 No. There will not be any down-time. Every time the log status is updated, we will deploy a new cluster in the background and replace the existing cluster with the new one. This process will not cause any down time. However, since a new cluster is deployed the update to the log status will not be instantaneous.
-Q: Which Elasticsearch versions does the in-place upgrade feature support?
-Amazon Elasticsearch Service currently supports in-place version upgrade for domains with Elasticsearch versions 5.x and above. The target versions that we support for the upgrade are 5.6, 6.3, 6.4, 6.5, 6.7, 6.8, 7.1, 7.4, 7.7, 7.8, 7.9, and 7.10. For more details refer our documentation.
+Q: Which Elasticsearch and OpenSearch versions does the in-place upgrade feature support?
+Amazon OpenSearch Service currently supports in-place version upgrade for domains with any OpenSearch version or Elasticsearch versions 5.x and above. The target versions that we support for the upgrade are 5.6, 6.3, 6.4, 6.5, 6.7, 6.8, 7.1, 7.4, 7.7, 7.8, 7.9, and 7.10. For more details refer our documentation.
 Q: My domain runs a version of Elasticsearch older than 5.x. How do I upgrade those domains?
 Please refer to our documentation for details on migrating from various Elasticsearch versions.
 Q: Will my domain be offline while the in-place upgrade is in progress?
 No. Your domain remains available throughout the upgrade process. However, part of the upgrade process involves relocating shards, which can impact domain performance. We recommend upgrading when the load on your domain is low.
 Q: How can I check if my domain’s Elasticsearch version can be upgraded?
 In-place version upgrade is available only for domains running Elasticsearch 5.x and above. If your domain is of version 5.x or above, you can run the upgrade eligibility check to validate whether your domain can be upgraded to the desired version. Please refer to our documentation to learn more.
-Q: What are the tests done by Amazon Elasticsearch Service to validate my domains upgrade eligibility?
+Q: What are the tests done by Amazon OpenSearch Service to validate my domains upgrade eligibility?
 For detailed list of the tests we run to validate upgrade eligibility, please refer to our documentation.
 Q: Can I update my domain configuration while the version upgrade is in progress?
 No. Once the in-place version upgrade has been triggered, you cannot make changes to your domain configuration until the upgrade completes or fails. You can continue reading and writing data while the upgrade is in progress. Also, you can delete the domain, in which case the upgrade is terminated and the domain deleted.
 Q: What happens to the automated system snapshot when the in-place version upgrade is in progress?
 The version upgrade process automatically takes a snapshot of the system and only starts the actual upgrade if the snapshot succeeds. If the upgrade is in progress when the automated snapshot’s start time is reached, the automated snapshot is skipped for that day and continued on the next day.
-Q: How does Amazon Elasticsearch Service safeguard against issues that can crop up during version upgrades?
-Amazon Elasticsearch Service runs a set of tests before triggering the upgrade to check for known issues that can block the upgrade. If no issues are encountered, the service takes a snapshot of the domain and starts the upgrade process if the snapshot is successful. The upgrade is not triggered if there are any issues encountered with any of the steps.
+Q: How does Amazon OpenSearch Service safeguard against issues that can crop up during version upgrades?
+Amazon OpenSearch Service runs a set of tests before triggering the upgrade to check for known issues that can block the upgrade. If no issues are encountered, the service takes a snapshot of the domain and starts the upgrade process if the snapshot is successful. The upgrade is not triggered if there are any issues encountered with any of the steps.
 Q: What happens if the system encounters issues while performing the in-place version upgrade?
-If encountered issues are minor and fixable, Amazon Elasticsearch Service automatically tries to address them and unblock the upgrade. However, if an issue blocks the upgrade, the service reverts back to the snapshot that was taken before the upgrade and logs the error. For more details on viewing the logs from the upgrade progress, please refer to our documentation.
+If encountered issues are minor and fixable, Amazon OpenSearch Service automatically tries to address them and unblock the upgrade. However, if an issue blocks the upgrade, the service reverts back to the snapshot that was taken before the upgrade and logs the error. For more details on viewing the logs from the upgrade progress, please refer to our documentation.
 Q: Can I view the history of upgrades on my domain?
 Yes. You can view the upgrade logs from the AWS console or request them using the CLI or SDKs. Please refer to our documentation for more details.
 Q: Can I pause or cancel the version upgrade after it has been triggered?
@@ -157,33 +155,33 @@ No. With in-place version upgrade, all the data in your cluster is also restored
 Q: Can I downgrade to previous version if I’m not comfortable with the new version?
 No. If you need to downgrade to an older version, contact AWS Support to restore the automatic, pre-upgrade snapshot on a new domain. If you took a manual snapshot of the original domain, you can perform this step yourself.
 Security
-Q: How can I secure my Amazon Elasticsearch Service domain?
-Amazon Elasticsearch Service provides multiple security features and is HIPAA eligible and compliant with PCI DSS, SOC, ISO, and FedRamp standards, so that you can meet your security and compliance needs. Access to Amazon Elasticsearch Service management APIs for operations such as creating and scaling domains are controlled with AWS Identity and Access Management (IAM) policies.
-Amazon Elasticsearch Service domains can be configured to be accessible with an endpoint within your VPC or a public endpoint accessible to the internet. Network access for VPC endpoints is controlled with security groups and for public endpoints access can be granted or restricted by IP address.
-In addition to network-based access control, Amazon Elasticsearch Service provides user authentication via IAM and basic authentication using username and password. Authorization can be granted at the domain level (via Domain Access Policies) as well as at the index, document, and field level (via the fine-grained access control feature powered by Open Distro for Elasticsearch). Additionally the fine-grained access control feature extends Kibana with read-only views and secure multi-tenant support.
-Amazon Elasticsearch Service also supports an integration with Amazon Cognito, to allow your end-users to log-in to Kibana through enterprise identity providers such as Microsoft Active Directory using SAML 2.0, Amazon Cognito User Pools, and more. Once you sign-in, Amazon Cognito establishes a session using the appropriate IAM principal, which provides access to the Amazon Elasticsearch Service domain. These IAM principals are then available to be used with the fine-grained access control feature powered by Open Distro for Elasticsearch.
-Q: How does security authentication and authorization work in Amazon Elasticsearch Service?
-Amazon Elasticsearch Service security has three main layers: Network, Domain access policies, and fine-grained access control. The first security layer is the network, which determines whether requests reach a domain. We support public access via the internet or VPC access limited to specific security groups in your VPC. The domain access policy is the second security layer. After a request reaches a domain endpoint, the Domain Access Policy allows or denies the request access to a given URL. The Domain Access Policy accepts or rejects requests at the edge of the domain, before they reach Elasticsearch itself. The third and final security layer is fine-grained access control. After a Domain Access Policy allows a request to reach a domain endpoint, fine-grained access control evaluates the user credentials and either authenticates the user or denies the request. If fine-grained access control authenticates the user, it fetches all roles mapped to that user and uses the complete set of permissions to determine what data the user has access to.
-Q: Does Amazon Elasticsearch Service support encryption?
-Yes, Amazon Elasticsearch Service supports encryption at rest through AWS Key Management Service (KMS), node-to-node encryption over TLS, and the ability to require clients to communicate of HTTPS. Encryption at rest encrypts shards, log files, swap files, and automated S3 snapshots. You can use AWS-managed keys or choose one of your own. Node-to-node encryption enables TLS for all communications between nodes. Amazon Elasticsearch Service automatically deploys and rotates certificates throughout the life of the domain. If you require you clients to communicate over HTTPS, you also have the ability to specify the minimum TLS version.
-Q: If I set up VPC access for my Amazon Elasticsearch Service domain, how can I access Kibana?
-When VPC access is enabled, the endpoint for Amazon Elasticsearch Service is only accessible within the customer VPC. To use your laptop to access Kibana from outside the VPC, you need to connect the laptop to the VPC using VPN or VPC Direct Connect.
+Q: How can I secure my Amazon OpenSearch Service domain?
+Amazon OpenSearch Service provides multiple security features and is HIPAA eligible and compliant with PCI DSS, SOC, ISO, and FedRamp standards, so that you can meet your security and compliance needs. Access to Amazon OpenSearch Service management APIs for operations such as creating and scaling domains are controlled with AWS Identity and Access Management (IAM) policies.
+Amazon OpenSearch Service domains can be configured to be accessible with an endpoint within your VPC or a public endpoint accessible to the internet. Network access for VPC endpoints is controlled with security groups and for public endpoints access can be granted or restricted by IP address.
+In addition to network-based access control, Amazon OpenSearch Service provides user authentication via IAM and basic authentication using username and password. Authorization can be granted at the domain level (via Domain Access Policies) as well as at the index, document, and field level (via the fine-grained access control feature powered by OpenSearch). Additionally the fine-grained access control feature extends OpenSearch Dashboards and Kibana with read-only views and secure multi-tenant support.
+Amazon OpenSearch Service also supports an integration with Amazon Cognito, to allow your end-users to log-in to OpenSearch Dashboards and Kibana through enterprise identity providers such as Microsoft Active Directory using SAML 2.0, Amazon Cognito User Pools, and more. Once you sign-in, Amazon Cognito establishes a session using the appropriate IAM principal, which provides access to the Amazon OpenSearch Service domain. These IAM principals are then available to be used with the fine-grained access control feature powered by OpenSearch.
+Q: How does security authentication and authorization work in Amazon OpenSearch Service?
+Amazon OpenSearch Service security has three main layers: Network, Domain access policies, and fine-grained access control. The first security layer is the network, which determines whether requests reach a domain. We support public access via the internet or VPC access limited to specific security groups in your VPC. The domain access policy is the second security layer. After a request reaches a domain endpoint, the Domain Access Policy allows or denies the request access to a given URL. The Domain Access Policy accepts or rejects requests at the edge of the domain, before they reach OpenSearch/Elasticsearch itself. The third and final security layer is fine-grained access control. After a Domain Access Policy allows a request to reach a domain endpoint, fine-grained access control evaluates the user credentials and either authenticates the user or denies the request. If fine-grained access control authenticates the user, it fetches all roles mapped to that user and uses the complete set of permissions to determine what data the user has access to.
+Q: Does Amazon OpenSearch Service support encryption?
+Yes, Amazon OpenSearch Service supports encryption at rest through AWS Key Management Service (KMS), node-to-node encryption over TLS, and the ability to require clients to communicate of HTTPS. Encryption at rest encrypts shards, log files, swap files, and automated S3 snapshots. You can use AWS-managed keys or choose one of your own. Node-to-node encryption enables TLS for all communications between nodes. Amazon OpenSearch Service automatically deploys and rotates certificates throughout the life of the domain. If you require you clients to communicate over HTTPS, you also have the ability to specify the minimum TLS version.
+Q: If I set up VPC access for my Amazon OpenSearch Service domain, how can I access OpenSearch Dashboards and Kibana?
+When VPC access is enabled, the endpoint for Amazon OpenSearch Service is only accessible within the customer VPC. To use your laptop to access OpenSearch Dashboards and Kibana from outside the VPC, you need to connect the laptop to the VPC using VPN or VPC Direct Connect.
 Pricing
 On-Demand Instance pricing
-Q: How will I be charged and billed for my use of Amazon Elasticsearch Service?
+Q: How will I be charged and billed for my use of Amazon OpenSearch Service?
 You pay only for what you use, and there are no minimum or setup fees. You are billed based on:
-Amazon Elasticsearch Service instance hours – Based on the class (e.g. Standard Small, Large, Extra Large) of the Amazon Elasticsearch Service instance consumed. Partial Amazon Elasticsearch Service instance hours consumed are billed as full hours.
-Storage (per GB per month) – Amazon EBS Storage capacity you have provisioned to your Amazon Elasticsearch Service instance. If you scale your provisioned storage capacity within the month, your bill will be pro-rated.
-Provisioned IOPS per month – Amazon EBS Provisioned IOPS rate, regardless of IOPS consumed (for Amazon Elasticsearch Service Provisioned IOPS (SSD) Storage only).
+Amazon OpenSearch Service instance hours – Based on the class (e.g. Standard Small, Large, Extra Large) of the Amazon OpenSearch Service instance consumed. Partial Amazon OpenSearch Service instance hours consumed are billed as full hours.
+Storage (per GB per month) – Amazon EBS Storage capacity you have provisioned to your Amazon OpenSearch Service instance. If you scale your provisioned storage capacity within the month, your bill will be pro-rated.
+Provisioned IOPS per month – Amazon EBS Provisioned IOPS rate, regardless of IOPS consumed (for Amazon OpenSearch Service Provisioned IOPS (SSD) Storage only).
 Data transfer – Regular AWS data transfer charges apply.
-Please refer to the Amazon Elasticsearch Service pricing page for detailed pricing information.
-Q: When does billing of my Amazon Elasticsearch Service domain begin and end?
-Billing commences for an Amazon Elasticsearch Service instance as soon as the instance is available. Billing continues until the Amazon Elasticsearch Service instance terminates, which would occur upon deletion or in the event of instance failure.
-Q: What defines billable instance hours for Amazon Elasticsearch Service?
-Amazon Elasticsearch Service instance hours are billed for each hour your instance is running in an available state. If you no longer wish to be charged for your Amazon Elasticsearch Service instance, you must delete the domain to avoid being billed for additional instance hours. Partial Amazon Elasticsearch Service instance hours consumed are billed as full hours.
+Please refer to the Amazon OpenSearch Service pricing page for detailed pricing information.
+Q: When does billing of my Amazon OpenSearch Service domain begin and end?
+Billing commences for an Amazon OpenSearch Service instance as soon as the instance is available. Billing continues until the Amazon OpenSearch Service instance terminates, which would occur upon deletion or in the event of instance failure.
+Q: What defines billable instance hours for Amazon OpenSearch Service?
+Amazon OpenSearch Service instance hours are billed for each hour your instance is running in an available state. If you no longer wish to be charged for your Amazon OpenSearch Service instance, you must delete the domain to avoid being billed for additional instance hours. Partial Amazon OpenSearch Service instance hours consumed are billed as full hours.
 Reserved Instance pricing
 Q: What is a Reserved Instance (RI)?
-Amazon Elasticsearch Service Reserved Instances give you the option to reserve an instance for a one- or three-year term, and in turn receive significant savings compared to the On-Demand Instance pricing.
+Amazon OpenSearch Service Reserved Instances give you the option to reserve an instance for a one- or three-year term, and in turn receive significant savings compared to the On-Demand Instance pricing.
 Q: How are Reserved Instances different from On-Demand Instances?
 Functionally, Reserved Instances and On-Demand Instances are exactly the same. The only difference is how your instance(s) are billed. With Reserved Instances, you purchase a one- or three-year reservation and receive a lower effective hourly usage rate (compared to On-Demand Instances) for the duration of the term. Unless you purchase Reserved Instances in a Region, all instances in that Region are billed at On-Demand Instance hourly rates.
 Q: What are the payment options for Reserved Instances?
@@ -192,84 +190,80 @@ No Upfront Reserved Instances (NURI) – NURIs offer significant savings compare
 Partial Upfront Reserved Instances (PURI) – PURIs offer higher savings than NURIs. You pay for a portion of the total cost upfront, and the remainder over the course of the term. This option balances payments between upfront and hourly.
 All Upfront Reserved Instances (AURI) – AURIs offer the highest savings of all of the Reserved Instance payment options. You pay for the entire reservation with one upfront payment, and pay nothing on an hourly basis.
 Q: How do I purchase Reserved Instances?
-You purchase Reserved Instances in the "Reserved Instance" section of the AWS Management Console for Amazon Elasticsearch Service. Alternatively, you can use the Amazon Elasticsearch Service API or AWS Command Line Interface to list and purchase Reserved Instances.
-Once you purchase a Reserved Instance, you can use it just like an On-Demand Instance. As long as the purchased reservation is active, Amazon Elasticsearch Service applies the reduced hourly rate to it.
+You purchase Reserved Instances in the "Reserved Instance" section of the AWS Management Console for Amazon OpenSearch Service. Alternatively, you can use the Amazon OpenSearch Service API or AWS Command Line Interface to list and purchase Reserved Instances.
+Once you purchase a Reserved Instance, you can use it just like an On-Demand Instance. As long as the purchased reservation is active, Amazon OpenSearch Service applies the reduced hourly rate to it.
 Q: Are Reserved Instances specific to an Availability Zone?
-Amazon Elasticsearch Service Reserved Instances are purchased for a Region rather than for a specific Availability Zone. After you purchase a Reserved Instance for a Region, the discount applies to matching usage in any Availability Zone within that Region.
+Amazon OpenSearch Service Reserved Instances are purchased for a Region rather than for a specific Availability Zone. After you purchase a Reserved Instance for a Region, the discount applies to matching usage in any Availability Zone within that Region.
 Q: How many Reserved Instances can I purchase?
 You can procure up to 100 Reserved Instances in a single purchase. If you need more Reserved Instances, you need to place more purchase requests.
 Q: Do Reserved Instances include a capacity reservation?
-Amazon Elasticsearch Service Reserved Instances are purchased for a Region rather than for a specific Availability Zone. Hence, they are not capacity reservations. Even if capacity is limited in one Availability Zone, Reserved Instances can still be purchased in the Region. The discount applies to matching usage in any Availability Zone within that Region.
+Amazon OpenSearch Service Reserved Instances are purchased for a Region rather than for a specific Availability Zone. Hence, they are not capacity reservations. Even if capacity is limited in one Availability Zone, Reserved Instances can still be purchased in the Region. The discount applies to matching usage in any Availability Zone within that Region.
 Q: What if I have an existing On-Demand Instance that I’d like to convert to a Reserved Instance?
-Simply purchase a Reserved Instance of the same type as the existing On-Demand Instance. If the Reserved Instance purchase succeeds, Amazon Elasticsearch Service automatically applies the new hourly usage charge for the duration of your reservation.
+Simply purchase a Reserved Instance of the same type as the existing On-Demand Instance. If the Reserved Instance purchase succeeds, Amazon OpenSearch Service automatically applies the new hourly usage charge for the duration of your reservation.
 Q: If I sign up for a Reserved Instance, when does the term begin? What happens to my Reserved Instance when the term ends?
 Pricing changes and the reservation term associated with your Reserved Instance become active after your request is received and the payment authorization is processed. If the one-time payment (if applicable) or new hourly rate (if applicable) cannot be successfully authorized by the next billing period, the discounted price does not take effect and your term does not begin. You can follow the status of your reservation using the console, API, or CLI. For more details, refer our documentation.
 When your Reserved Instance term expires, your Reserved Instance reverts to the appropriate On-Demand Instance hourly usage rate for your instance class and Region.
 Q: How do I control which instances are billed at the Reserved Instance rate?
-When computing your bill, our system automatically applies your reservation(s) such that all eligible instances are charged at the lower hourly Reserved Instance rate. Amazon Elasticsearch Service does not distinguish between On-Demand and Reserved Instances while operating Elasticsearch Service domains.
+When computing your bill, our system automatically applies your reservation(s) such that all eligible instances are charged at the lower hourly Reserved Instance rate. Amazon OpenSearch Service does not distinguish between On-Demand and Reserved Instances while operating Amazon OpenSearch Service domains.
 Q: If I scale my Reserved Instance up or down, what happens to my reservation?
-Each Reserved Instance is associated with the instance type and Region that you picked for it. If you change the instance type in the Region where you have the Reserved Instance, you will not receive discounted pricing. You must ensure that your reservation matches the instance type you plan to use. For more details, please refer to Amazon Elasticsearch Service Reserved Instance Documentation.
+Each Reserved Instance is associated with the instance type and Region that you picked for it. If you change the instance type in the Region where you have the Reserved Instance, you will not receive discounted pricing. You must ensure that your reservation matches the instance type you plan to use. For more details, please refer to Amazon OpenSearch Service Reserved Instance Documentation.
 Q: Can I move a Reserved Instance from one Region or Availability Zone to another?
 Each Reserved Instance is associated with a specific Region, which is fixed for the lifetime of the reservation and cannot be changed. Each Reserved Instance can, however, be used in any of the Availability Zones within the associated Region.
 Q: Are Reserved Instances applicable if use multiple Availability Zones?
 A Reserved Instance is for an AWS Region and can be used in any of the Availability Zones in that Region.
 Q: Are Reserved Instances available for both Master nodes and Data nodes?
-Yes. Amazon Elasticsearch Service does not differentiate between Master and Data nodes when applying Reserved Instance discounts.
+Yes. Amazon OpenSearch Service does not differentiate between Master and Data nodes when applying Reserved Instance discounts.
 Q: Can I cancel a Reserved Instance?
 No, you cannot cancel your Reserved Instances, and the one-time payment (if applicable) and discounted hourly usage rate (if applicable) are not refundable. Also, you cannot transfer the Reserved Instance to another account. You must pay for every hour during your Reserved Instance’s term, regardless of your usage.
 Q: If I purchase a Reserved Instance from a payer (master) account, is it accessible to all the member accounts?
 Yes. Reserved Instance pricing and application follows the policies defined for consolidated billing on AWS. More details can be found here.
-Q: If AWS reduces prices of On-Demand Instances for Amazon Elasticsearch Service, will the amount I pay for my current Reserved Instances change?
+Q: If AWS reduces prices of On-Demand Instances for Amazon OpenSearch Service, will the amount I pay for my current Reserved Instances change?
 No. The price you pay for already-purchased Reserved Instances does not change for the term of the reservation.
 Q: Can I sell my Reserved Instances on the Reserved Instance Marketplace?
-No. Reserved Instances purchased on Amazon Elasticsearch Service cannot be sold on the Reserved Instance Marketplace.
+No. Reserved Instances purchased on Amazon OpenSearch Service cannot be sold on the Reserved Instance Marketplace.
 Q: Are volume discounts available for Reserved Instance purchase?
-No. We do not offer volume discounts for Amazon Elasticsearch Service Reserved Instances.
+No. We do not offer volume discounts for Amazon OpenSearch Service Reserved Instances.
 Service Level Agreement
-Q: What does the Amazon Elasticsearch Service SLA guarantee?
-Our Amazon Elasticsearch Service SLA guarantees a Monthly Uptime Percentage of at least 99.9% for Amazon Elasticsearch Service.
+Q: What does the Amazon OpenSearch Service SLA guarantee?
+Our Amazon OpenSearch Service SLA guarantees a Monthly Uptime Percentage of at least 99.9% for Amazon OpenSearch Service.
 Q: How do I know if I qualify for a SLA Service Credit?
-You are eligible for a SLA credit for Amazon Elasticsearch Service under the Amazon Elasticsearch Service SLA if multi-AZ domains on Amazon Elasticsearch Service have a Monthly Uptime Percentage of less than 99.9% during any monthly billing cycle.
-For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the Amazon Elasticsearch Service SLA details page.
+You are eligible for a SLA credit for Amazon OpenSearch Service under the Amazon OpenSearch Service SLA if multi-AZ domains on Amazon OpenSearch Service have a Monthly Uptime Percentage of less than 99.9% during any monthly billing cycle.
+For full details on all of the terms and conditions of the SLA, as well as details on how to submit a claim, please see the Amazon OpenSearch Service SLA details page.
 UltraWarm
 Q: What is UltraWarm?
-UltraWarm is a fully-managed, low-cost, warm storage tier for Amazon Elasticsearch Service. It is compatible with Elasticsearch and Kibana, enabling you to analyze data using the same tools that Amazon Elasticsearch Service provides today. UltraWarm seamlessly integrates with Amazon Elasticsearch Service’s existing features such as integrated alerting, SQL querying, and more.
+UltraWarm is a fully-managed, low-cost, warm storage tier for Amazon OpenSearch Service. It is compatible with OpenSearch, Elasticsearch (until version 7.10), OpenSearch Dashboards, and Kibana (until version 7.10), enabling you to analyze data using the same tools that Amazon OpenSearch Service provides today. UltraWarm seamlessly integrates with Amazon OpenSearch Service’s existing features such as integrated alerting, SQL querying, and more.
 Q: Why should I use UltraWarm?
-UltraWarm enables you to cost effectively expand the data you want to analyze on Amazon Elasticsearch Service gaining valuable insights on data that previously may have been deleted or archived. With UltraWarm, you can now economically retain more of your data to interactively analyze it whenever you want.
-Q: How does UltraWarm relate to/work with Amazon Elasticsearch Service?
-Amazon Elasticsearch Service supports two integrated storage tiers, hot and UltraWarm. The hot tier is powered by data nodes which are used for indexing, updating, and providing the fastest access to data. UltraWarm nodes complement the hot tier by providing low cost, read-only tier for older and less-frequently accessed data.
+UltraWarm enables you to cost effectively expand the data you want to analyze on Amazon OpenSearch Service gaining valuable insights on data that previously may have been deleted or archived. With UltraWarm, you can now economically retain more of your data to interactively analyze it whenever you want.
+Q: How does UltraWarm relate to/work with Amazon OpenSearch Service?
+Amazon OpenSearch Service supports two integrated storage tiers, hot and UltraWarm. The hot tier is powered by data nodes which are used for indexing, updating, and providing the fastest access to data. UltraWarm nodes complement the hot tier by providing low cost, read-only tier for older and less-frequently accessed data.
 Q: Why does UltraWarm only need primary data for durability?
 UltraWarm uses Amazon Simple Storage Service (Amazon S3) for storage, which is designed for 99.999999999 percent durability, and removes the need to configure an Elasticsearch replica for your warm data. Additionally, if you have more than one UltraWarm node, in the event of a node failure, the other UltraWarm nodes will automatically access the data as needed.
 Q: How much data can I store in UltraWarm?
 UltraWarm supports up to 3 PB of primary data. UltraWarm is designed to allow you to fully utilize 100% of this storage and because UltraWarm stores data on S3 for durability, you do not need to use additional storage for Elasticsearch replicas.
 Q: What are the performance characteristics of UltraWarm?
-UltraWarm delivers an interactive experience in Kibana by implementing granular Elasticsearch I/O caching, prefetching, and query engine optimizations to provide similar performance to high-density instances using local storage.
+UltraWarm delivers an interactive experience in OpenSearch Dashboards and Kibana by implementing granular I/O caching, prefetching, and query engine optimizations to provide similar performance to high-density instances using local storage.
 Q: How can I start using UltraWarm?
-To get started with UltraWarm, create a new Amazon Elasticsearch Service domain with UltraWarm enabled via the console, CLI, or APIs. Once your domain is created you can move data from hot to UltraWarm using the Elasticsearch APIs. Learn more.
+To get started with UltraWarm, create a new Amazon OpenSearch Service domain with UltraWarm enabled via the console, CLI, or APIs. Once your domain is created you can move data from hot to UltraWarm using the OpenSearch/Elasticsearch APIs. Learn more.
 Cold storage
 Q: What is cold storage?
-Cold storage is a fully-managed lowest cost storage tier for Amazon Elasticsearch Service that makes it easy for you to securely store and analyze your historical logs on-demand. Cold storage enables you to fully detach storage from compute when they are not actively performing analysis of their data and allows you to keep your data readily available at low cost. Cold storage data is available within the Amazon Elasticsearch Service domain via your UltraWarm nodes. Cold storage seamlessly integrates with Elasticsearch (version 7.9, 7.10) and Kibana (version 7.9, 7.10) and enables you to analyze data using the same tools that Amazon Elasticsearch Service provides today.
+Cold storage is a fully-managed lowest cost storage tier for Amazon OpenSearch Service that makes it easy for you to securely store and analyze your historical logs on-demand. Cold storage enables you to fully detach storage from compute when they are not actively performing analysis of their data and allows you to keep your data readily available at low cost. Cold storage data is available within the Amazon OpenSearch Service domain via your UltraWarm nodes. Cold storage seamlessly integrates with OpenSearch and OpenSearch Dashboards, as well as Elasticsearch (version 7.9, 7.10) and Kibana (version 7.9, 7.10). It enables you to analyze data using the same tools that Amazon OpenSearch Service provides today.
 Q: Why should I use cold storage?
-Cold storage enables you to cost effectively expand the data you want to analyze on Amazon Elasticsearch Service and gain valuable insights on data that previously may have been deleted or archived. Cold storage is a great fit if you have the need to do research or forensic analysis on your older data and you want to use all of the capabilities of Amazon Elasticsearch Service to do so, at an affordable price. Cold storage is built for scale and is backed by Amazon S3. Find and discover the data you need, attach it to the UltraWarm nodes in your cluster, and make it available for analysis in seconds. Attached cold data is subject to the existing fine-grained access control policies that limit access at the index, document, and field level.
-Q: How does cold storage relate to/work with Amazon Elasticsearch Service?
-With cold storage, Amazon Elasticsearch Service supports three integrated storage tiers: hot, UltraWarm, and cold. The hot tier is used for indexing, updating, and providing the fastest access to data. UltraWarm provides a seamless extension of the hot tier by providing compute nodes that provide a highly performant interactive experience for data that is durably stored in Amazon S3 and needs to be persistently available, currently supporting up to 3PB of data in a single domain. With cold storage, you can now detach indices from UltraWarm while not in use and free up compute to help lower costs. With the new cold storage APIs and Kibana interface, you can discover indices based on index patterns and data timestamps to easily find what you need for analysis. That data can then be attached to the domain and ready for analysis in seconds. When you are done with analysis, simply detaching the data then frees up your compute again.
+Cold storage enables you to cost effectively expand the data you want to analyze on Amazon OpenSearch Service and gain valuable insights on data that previously may have been deleted or archived. Cold storage is a great fit if you have the need to do research or forensic analysis on your older data and you want to use all of the capabilities of Amazon OpenSearch Service to do so, at an affordable price. Cold storage is built for scale and is backed by Amazon S3. Find and discover the data you need, attach it to the UltraWarm nodes in your cluster, and make it available for analysis in seconds. Attached cold data is subject to the existing fine-grained access control policies that limit access at the index, document, and field level.
+Q: How does cold storage relate to/work with Amazon OpenSearch Service?
+With cold storage, Amazon OpenSearch Service supports three integrated storage tiers: hot, UltraWarm, and cold. The hot tier is used for indexing, updating, and providing the fastest access to data. UltraWarm provides a seamless extension of the hot tier by providing compute nodes that provide a highly performant interactive experience for data that is durably stored in Amazon S3 and needs to be persistently available, currently supporting up to 3PB of data in a single domain. With cold storage, you can now detach indices from UltraWarm while not in use and free up compute to help lower costs. With the new cold storage APIs and OpenSearch Dashboards and Kibana interface, you can discover indices based on index patterns and data timestamps to easily find what you need for analysis. That data can then be attached to the domain and ready for analysis in seconds. When you are done with analysis, simply detaching the data then frees up your compute again.
 Q: How much data can I store in cold storage?
 Cold storage is built for scale. While the storage limits for hot and warm data remain at 3PB, you can store any amount of data in cold storage.
 Q: What are the performance characteristics of cold storage?
-Cold storage builds on UltraWarm, which provides specialized nodes that store data in Amazon S3 and uses a sophisticated caching solution to provide an interactive experience. Cold data must first be attached to the UltraWarm nodes of your Amazon Elasticsearch Service domain. Once attached, queries on this data are powered by existing UltraWarm nodes offering the same performance as your warm data. Attaching cold indices to your domain takes seconds if there is sufficient UltraWarm capacity available for the requested data. If you need additional capacity, UltraWarm data nodes must be added, which can take up to a few minutes.
+Cold storage builds on UltraWarm, which provides specialized nodes that store data in Amazon S3 and uses a sophisticated caching solution to provide an interactive experience. Cold data must first be attached to the UltraWarm nodes of your Amazon OpenSearch Service domain. Once attached, queries on this data are powered by existing UltraWarm nodes offering the same performance as your warm data. Attaching cold indices to your domain takes seconds if there is sufficient UltraWarm capacity available for the requested data. If you need additional capacity, UltraWarm data nodes must be added, which can take up to a few minutes.
 Open Distro for Elasticsearch
-Q: How does Open Distro for Elasticsearch relate to the Amazon Elasticsearch Service?
-Open Distro for Elasticsearch is committed to ensuring that there is an innovative, 100% open source distribution of Elasticsearch that is available to everyone. We use Open Distro for Elasticsearch to involve the community in much of the new feature development for the Amazon Elasticsearch Service. This gives customers the ability to provide feedback and contribute ahead of the open source features being made available on the service. Open Distro for Elasticsearch features supported on the service include security, alerting, SQL, and more. To learn more about Open Distro for Elasticsearch or get involved please visit the Open Distro website.
-Q: Should I consider Open Distro for Elasticsearch “upstream” from the software running on Amazon Elasticsearch Service?
-Yes. We are developing the value added features of Open Distro for Elasticsearch in the open. Once they are generally available in Open Distro for Elasticsearch we will then integrate and roll them out on Amazon Elasticsearch Service.
-Q: Are you going to offer Open Distro for Elasticsearch on Amazon Elasticsearch Service?
-Amazon Elasticsearch Service runs on Open Distro for Elasticsearch. Open Distro for Elasticsearch is a stack of value added plugins and extensions installed with open source Elasticsearch and Kibana. When customers select a version of Elasticsearch on the service, they will get the corresponding version of the supported Open Distro for Elasticsearch features. Some example features include security, alerting, and SQL. To learn more see our supported features page.
+Q: How does Open Distro for Elasticsearch relate to the Amazon OpenSearch Service?
+The OpenSearch project is the new home for Open Distro for Elasticsearch. In offering support for OpenSearch, Amazon OpenSearch Service includes features that were previously available through Open Distro, such as enterprise security, alerting, machine learning, SQL, index state management, and more.
 Cross-Cluster Search
 Q: What is Cross-Cluster Search?
-Cross-cluster-search is an Elasticsearch feature that enables performing queries and aggregation across two connected clusters. It works by setting up a light weight uni-directional connection between participating clusters.
+Cross-cluster-search is an Elasticsearch and OpenSearch feature that enables performing queries and aggregation across two connected clusters. It works by setting up a light weight uni-directional connection between participating clusters.
 Q: What are the minimum requirements for a domain to participate in cross-cluster search?
 Domains participating in a cross-cluster search needs to meet the following criteria:
-Participating domains should be on Elasticsearch version 6.8 and above
+Participating domains should be on OpenSearch or Elasticsearch version 6.8 and above
 Participating domains need to have encryption in transit enabled
 Participating domains need to have Fine Grained Access Control (FGAC) enabled
 Participating domains versions should adhere to the same rules as rolling version upgrade
@@ -288,21 +282,42 @@ Q: Can domains in two different AWS regions participate in cross-cluster search?
 No.
 Q: How can I start using cross-cluster search?
 To get started with cross-cluster search, follow the documentation here
+Cross-Cluster replication
+Q: What is Cross-cluster replication?
+Cross-cluster replication, a new capability that allows Amazon OpenSearch Service customers to automate copying and synchronizing indices from one cluster to another at low latency in same or different AWS Regions.
+Q: What are the minimum requirements for a domain to participate in cross-cluster replication?
+Domains participating in a cross-cluster replications needs to meet the following criteria:
+Participating domains should be on Elasticsearch version 7.10
+Q: Can domains in two different AWS Regions participate in cross-cluster replication?
+Yes. domains in two different AWS Regions can participate in cross-cluster replication.
+Q: Does cross-cluster replication support Ultrawarm and Cold Storage?
+No. Current implementation of cross-cluster replication does not support Ultrawarm or Cold Storage.
+Q: What are the charges for cross-cluster replication?
+Yes. You need to pay standard AWS data transfer charges for the data transferred in and out of Amazon OpenSearch Service.
 Trace Analytics
 Q: What is Trace Analytics?
-Trace Analytics is a new feature of Amazon Elasticsearch Service that enables developers and IT operators to find and fix performance problems in distributed applications, which leads to faster problem resolution times. Trace Analytics is built using OpenTelemetry, a Cloud Native Computing Foundation (CNCF) project that provides a single set of APIs, libraries, agents, and collector services to capture distributed traces and metrics, which enables customers to leverage Trace Analytics without having to re-instrument their applications. Trace Analytics is powered by the Open Distro for Elasticsearch project, which is open source and freely available for everyone to download and use.
+Trace Analytics is a new feature of Amazon OpenSearch Service that enables developers and IT operators to find and fix performance problems in distributed applications, which leads to faster problem resolution times. Trace Analytics is built using OpenTelemetry, a Cloud Native Computing Foundation (CNCF) project that provides a single set of APIs, libraries, agents, and collector services to capture distributed traces and metrics, which enables customers to leverage Trace Analytics without having to re-instrument their applications. Trace Analytics is powered by the OpenSearch, which is open source and freely available for everyone to download and use.
 Q: Why should I use Trace Analytics?
-Developers and IT Ops need Trace Analytics to find and fix performance problems in their distributed applications. By adding trace data to the existing log analytics capabilities of Amazon Elasticsearch Service, customers can use the same service to both isolate the source of performance problems and diagnose their root cause. In addition, with the support for the OpenTelemetry standard, Trace Analytics supports integration with Jaeger and Zipkin SDKs, two popular open source distributed tracing systems, which allows developers to continue using these SDKs and not have to re-instrument their applications.
-Q: How does Trace Analytics relate to/work with Amazon Elasticsearch Service?
-Trace Analytics is an integrated feature of Amazon Elasticsearch Service. It is available to all customers at no extra charge. Trace Analytics has a Kibana-based user interface for visualizing and exploring trace data and is integrated with key features of Amazon ES such as anomaly detection, alerting, fine-grained access control, and enterprise security. Trace Analytics complements customers’ usage of Amazon Elasticsearch Service for search and analysis of log data when resolving application performance problems.
+Developers and IT Ops need Trace Analytics to find and fix performance problems in their distributed applications. By adding trace data to the existing log analytics capabilities of Amazon OpenSearch Service, customers can use the same service to both isolate the source of performance problems and diagnose their root cause. In addition, with the support for the OpenTelemetry standard, Trace Analytics supports integration with Jaeger and Zipkin SDKs, two popular open source distributed tracing systems, which allows developers to continue using these SDKs and not have to re-instrument their applications.
+Q: How does Trace Analytics relate to/work with Amazon OpenSearch Service?
+Trace Analytics is an integrated feature of Amazon OpenSearch Service. It is available to all customers at no extra charge. Trace Analytics has a user interface based on OpenSearch Dashboards and Kibana for visualizing and exploring trace data and is integrated with key features of Amazon OpenSearch Service such as anomaly detection, alerting, fine-grained access control, and enterprise security. Trace Analytics complements customers’ usage of Amazon OpenSearch Service for search and analysis of log data when resolving application performance problems.
 Q: What data sources does Trace Analytics support?
-Trace Analytics today supports the collection of trace data from application libraries and SDKs that are compatible with the open source OpenTelemetry Collector, including Jaeger, Zipkin, and X-Ray SDKs. Trace Analytics also integrates with AWS Distro for OpenTelemetry, which is a distribution of OpenTelemetry APIs, SDKs, and agents/collectors. It is a performant and secure distribution of OpenTelemetry components that has been tested for production use and is supported by AWS. Customers can use AWS Distro for OpenTelemetry to collect traces and metrics for multiple monitoring solutions, including Amazon Elasticsearch Service and AWS X-Ray for trace data and Amazon CloudWatch for metrics.
+Trace Analytics today supports the collection of trace data from application libraries and SDKs that are compatible with the open source OpenTelemetry Collector, including Jaeger, Zipkin, and X-Ray SDKs. Trace Analytics also integrates with AWS Distro for OpenTelemetry, which is a distribution of OpenTelemetry APIs, SDKs, and agents/collectors. It is a performant and secure distribution of OpenTelemetry components that has been tested for production use and is supported by AWS. Customers can use AWS Distro for OpenTelemetry to collect traces and metrics for multiple monitoring solutions, including Amazon OpenSearch Service and AWS X-Ray for trace data and Amazon CloudWatch for metrics.
 Q: How can I start using Trace Analytics?
 To get started with Trace Analytics, follow the documentation here.
-Learn more about Amazon Elasticsearch Service pricing
+Name change
+Q: Why did the name change to Amazon OpenSearch Service from Amazon Elasticsearch Service?
+We announced the OpenSearch project, a community-driven, open source fork of Elasticsearch and Kibana, on April 12, 2021. We committed to making a long-term investment in OpenSearch to ensure users continue to have a secure, high-quality, fully open source search and analytics suite with a rich roadmap of new and innovative functionality. This project includes OpenSearch (derived from Elasticsearch 7.10.2) and OpenSearch Dashboards (derived from Kibana 7.10.2). We launched version 1.0 of OpenSearch on July 12, 2021. As part of our long-term commitment to OpenSearch, we added support for OpenSearch 1.0 on the managed service on September 7, 2021 and changed the name from Amazon Elasticsearch Service to Amazon OpenSearch Service. Along with OpenSearch 1.0, we continue to support legacy Elasticsearch versions until 7.10 on the service. Aside from the name change, you can rest assured that we will continue to deliver the same great experience without any impact to ongoing operations, development methodology, or business use. Learn more about OpenSearch here: https://opensearch.org/.
+Q: Do I, as a customer, have to take any action as part of this name change?
+We have strived to make this name change as seamless as possible for you. There are aspects, such as the new SDK/configuration APIs, that require your action to ensure you derive the best benefits from the service. While the existing SDK will continue to work from a compatibility perspective, any new functionality that requires new configuration APIs will only be implemented in the new SDK. Hence, we recommend that you move to the new SDK. In addition, irrespective of the new SDK, we strongly recommend that you move your existing IAM policies to use the renamed configuration APIs. As of now, your existing IAM policies will continue to work with the old API definition. However, we will move over to the new API-based permission validation and we will eventually require you to use the new APIs in your policies (specifically for the APIs where there is a name change; e.g. CreateElasticsearchDomain to CreateDomain). Please see the documentation for more details.
+Q: Do I have to move to the new SDK to upgrade to OpenSearch 1.0?
+No. From a backward compatibility perspective, we will ensure that your existing setup continues to work with OpenSearch 1.0. However, we recommend that you eventually move to the latest SDK for a cleaner and up-to-date experience, as mentioned above.
+Q: Are there any changes to pricing with this name change?
+No. There are no changes to pricing.
+Learn more about Amazon OpenSearch Service pricing
 Visit the pricing page
 Ready to build?
-Get started with Amazon Elasticsearch Service
+Get started with Amazon OpenSearch Service
 Have more questions?
 Contact us
 FAQs

@@ -4,33 +4,32 @@ Build and run graph applications with highly connected datasets
 Get Started with Amazon Neptune
 Read the documentation
 Build and run identity, knowledge, fraud graph, and other applications with performance, and execute more than 100,000 queries per second.
-Deploy high performance graph applications using popular open-source APIs such as Gremlin and SPARQL, and easily migrate existing applications.
+Deploy high performance graph applications using popular open-source APIs such as Gremlin, openCypher and SPARQL, and easily migrate existing applications.
 Operate graph databases without worrying about hardware provisioning, software patching, setup, configuration, or backups; and pay no upfront licensing costs.
 How it works
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications.
 Close
 Click to enlarge
 Use cases
-Enable faster updates
+Build connections between identities
 Easily build identity graphs for identity resolution solutions such as social graphs, and accelerate updates for ad targeting, personalization, and analytics.  Learn more about identity graphs
 Build knowledge graph applications
-Add topical information to product catalogs, model general information, and enable users to quickly navigate highly connected datasets.
-Learn more about knowledge graphs
+Add topical data to product catalogs, model general information, and help users quickly navigate highly connected datasets.
+Learn more about knowledge graphs on AWS
 Detect fraud patterns
-Build graph queries for identifying fraud patterns in financial and purchase transactions in near-real time.
-Learn more about identifying fraud patterns
+Build graph queries for near-real-time identity fraud pattern detection in financial and purchase transactions.
+Learn more about identifying  fraud patterns with fraud graphs on AWS
 Make predictions on graph data
-Enable easy, fast predictions and improve accuracy by over 50% compared to non-graph methods with Amazon Neptune ML.
-Learn more about Amazon Neptune ML
+Enable easy, fast predictions with machine learning (ML) and improve accuracy by over 50 percent compared to non-graph methods with Amazon Neptune ML.  Learn more about graph prediction with Amazon Neptune ML
 Customers
 COX Automotive built a better 360-degree view of customer data
 ADP cut its human capital management (HCM) solution costs
-Games24x7 accelerated detection player fraud and collusion detection during tournaments
+Games24x7 accelerated detection of player fraud and collusion during tournaments
 Careem uses Amazon Neptune to stop fraud before it's committed
 How to get started
 Find out how Amazon Neptune works
 Learn about performance, scalability, security, and more.
-Explore Amazon Neptune Features
+Explore Amazon Neptune features
 Get started with Amazon Neptune
 Start building with Amazon Neptune on the AWS Management Console
 Sign in

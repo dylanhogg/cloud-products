@@ -65,6 +65,8 @@ Q: Can I use Amazon Polly in connection with websites, programs or other applica
 Yes, subject to your compliance with the Amazon Polly Service Terms, including your obligation to provide any required notices and obtain any required verifiable parental consent under COPPA, you may use Amazon Polly in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13.
 Q: How do I determine whether my website, program, or application is subject to COPPA?
 For information about the requirements of COPPA and guidance for determining whether your website, program, or other application is subject to COPPA, please refer directly to the resources provided and maintained by the United States Federal Trade Commission. This site also contains information regarding how to determine whether a service is directed or targeted, in whole or in part, to children under age 13.
+Q: Who owns Polly recordings?
+As between you and AWS, your Polly output belongs to you. If you input text into Polly that belongs to a third party, we require that you have the rights to do so. For more information, please see our Customer Agreement and how it handles “Your Content”
 Learn more about Amazon Polly pricing
 Visit the pricing page
 Ready to get started?

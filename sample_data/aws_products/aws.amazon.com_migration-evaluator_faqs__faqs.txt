@@ -1,10 +1,10 @@
 General
 Q: Are agents required?
-No. Customers can either choose to leverage the agentless collector for automated on-premises data collection, or alternatively provide existing inventory and utilization values via flat-files. Customers choosing the collector are required to deploy one Windows Server virtual machine within their network. Standard protocols used include: Microsoft’s WMI (for Hyper-V and Windows bare metal servers), SNMP, VMware’s vSphere, and Microsoft’s T-SQL (for SQL Server). No agents are deployed on the customer’s hypervisors or other servers.
+No. Customers can either choose to leverage the agentless collector for automated on-premises data collection, or alternatively provide existing inventory and utilization values via flat-files. Customers choosing the Migration Evaluator collector are required to deploy one Windows Server virtual machine within their network. Standard protocols used include: WMI (for Hyper-V and Windows Server), SNMP, VMware’s vSphere, and T-SQL. No agents are deployed on the customer’s hypervisors or other servers.
 Q: Where is Migration Evaluator available?
 Migration Evaluator is available worldwide. This means you have access to support from Migrations Solution Architects in North America, Europe and Australia. Customer data is hosted in US East (Northern Virginia).
 Q: Which costs are reported in Migration Evaluator Quick Insights?
-Quick Insights shows the projected Amazon EBS, Amazon EC2 and operating system license costs if they were to be repurchased from AWS based on a one year time frame with no upfront cost. All costs are in USD and modeled for US East (Northern Virginia).
+Quick Insights shows the projected Amazon EBS, Amazon EC2 and operating system license costs if they were to be repurchased from AWS based on a one year time frame with no upfront cost.
 Q: What if I need more data insights after receiving Migration Evaluator Quick Insights?
 Simply ask your assigned Migrations Solution Architect and they will will create a Business Case report based on your business drivers. The report includes additional cost models, Microsoft SQL license analysis, or exports of the match results.
 Q: Which AWS regions can the Migration Evaluator Business Case report be used to model costs?

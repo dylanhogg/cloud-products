@@ -1,0 +1,19 @@
+General Reserved Instance (RI) Reporting FAQs
+Q: How can I use AWS Cost Management tools to better understand the costs and usage associated with my Reserved Instances (RIs)?
+There are three main ways to gain insight into the costs and usage associated with your RIs: the default RI reports in Cost Explorer, the reservation-related data in the Cost & Usage Report, and AWS Cost Explorer's RI purchase recommendations.
+Q: What are some of the insights you can glean using the RI reports in Cost Explorer?
+AWS Cost Explorer provides two reports out-of-the-box--the RI Utilization and RI Coverage reports--to help you understand how you are using your RIs. The RI Utilization report visualizes the degree to which you are using your existing resources and helps you identify opportunities to improve your RI cost efficiencies. The RI Coverage report allows you to discover how much of your overall instance usage is covered by RIs, so that you can make informed decisions about when to purchase or modify an RI to ensure maximum coverage.
+Q: What kind of RI-related information can you gain from the Cost & Usage Report?
+The Cost & Usage Report gives you access to a wealth of RI-related information, including the ARN of the Reserved Instance that received the RI discount, the total reserved units in a reservation, and pricing information. This can help you trace your RI discounts, understand how well you are using your RIs, and analyze your savings compared to the On-Demand instance usage prices.
+You can learn more about the Cost & Usage Report here. You can enable the Cost & Usage Report here.
+Ready to get started?
+Check out the product features
+Learn more about features for cost management, cost optimization, and more.
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier and start managing your AWS costs.
+Sign up
+Access RI purchase recommendations
+RI-specific cost management solutions to help you better manage and monitor your Reserved Instances.
+Get started
+Page Content

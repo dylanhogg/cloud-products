@@ -1,0 +1,45 @@
+AWS Launch Wizard
+Easily size, configure, and deploy third party applications on AWS.
+Get Started with AWS Launch Wizard
+AWS Launch Wizard offers a guided way of sizing, configuring, and deploying AWS resources for third party applications, such as Microsoft SQL Server Always On and HANA based SAP systems, without the need to manually identify and provision individual AWS resources. To start, you input your application requirements, including performance, number of nodes, and connectivity on the service console. Launch Wizard then identifies the right AWS resources, such as EC2 instances and EBS volumes, to deploy and run your application. Launch Wizard provides an estimated cost of deployment, and lets you modify your resources to instantly view an updated cost assessment. Once you approve the AWS resources, Launch Wizard automatically provisions and configures the selected resources to create a fully-functioning, production-ready application.
+AWS Launch Wizard also creates CloudFormation templates that can serve as a baseline to accelerate subsequent deployments. Launch Wizard is available to you at no additional charge. You only pay for the AWS resources that are provisioned for running your solution.
+Benefits
+Simplify application deployment
+AWS Launch Wizard makes it easy for you to deploy third-party applications on AWS. When you input the application requirements, Launch Wizard recommends the right AWS resources, and then deploys the selected resources for a production-ready application. This reduces the time spent in provisioning and configuring your key applications.
+Automate AWS resource selection and cost estimation
+AWS Launch Wizard recommends appropriate AWS resources, including EC2 instance types and EBS volumes, to match your application requirements and presents you a cost estimate. You have the ability to modify the recommended resource selections and get an updated cost assessment.
+Save time with repeatable code templates
+AWS Launch Wizard provides you with reusable AWS CloudFormation code templates. These templates can serve as a baseline for your subsequent application deployments. You can save time by reusing these code templates to deploy your applications programmatically, instead of creating them each time you deploy a new application.
+Leverage proven deployment best-practices from AWS
+Resources deployed by AWS Launch Wizard are based on the AWS Well-Architected Framework and application best practices. This means applications deployed using AWS Launch Wizard adhere to AWS best practices, and are optimized for security, reliability, performance efficiency, and cost savings.
+How it works
+Use cases
+Set-up production-ready SQL Server Always On deployments
+With AWS Launch Wizard you can specify your application’s components ranging from SQL Server node settings and AMIs to Virtual Private Cloud (VPC), Active Directory (AD), and EC2 instances to effortlessly create a production-ready deployment.
+Set-up production-ready HANA based SAP systems
+AWS Launch Wizard helps customers choose the right SAP certified EC2 instances based on their performance specifications. Launch Wizard then deploys and configures the instances to run HANA and Netweaver based SAP applications on HANA.
+Test new configurations
+When trying out new configurations for development and test, you can quickly create proof-of-concept (POC) deployments. This helps accelerate roll outs for new production-ready deployments.
+Connect on-premises Active Directory to deployments
+AWS Launch Wizard enables you to connect your deployments to your on-premises Active Directory through AWS Direct Connect. This is ideal if you choose not to run Active Directory on AWS.
+Featured Customers
+"Thanks to the AWS Launch Wizard we create workloads in an automated way, speeding up our delivery time by 75% when provisioning SAP environments. Therefore, we can focus on what really matters; The high availability and disaster recovery strategy of our SAP clients, more than just the provision of environments.”
+- Juan Vargas Sierra, Chief Sales and Marketing Officer, 3hold
+“Lemongrass is an AWS Premier Partner specializing in SAP & Automation. From our experience, we understand that most SAP-Centric organizations invest significant time and money in repetitive deployments of core SAP installations. During our preview testing of AWS Launch Wizard, Lemongrass was able to rapidly & consistently deploy multiple AWS best practice production grade SAP HANA & NetWeaver installations though a simple, console enabled, guided process. Any organization considering SAP deployments in AWS should absolutely ensure that AWS Launch Wizard is on their roadmap.”
+- Ben Lingwood, CTO, Lemongrass
+Resources
+Simplify SQL Server Always On deployments with AWS Launch Wizard and Amazon FSx
+Manan Gupta, Prash Bungale, and Vikram Srinivasan
+Learn more
+New Accelerate SAP Deployments with AWS Launch Wizard
+Jeff Barr
+User Guide: SQL Server
+User Guide : SAP Applications
+Review the FAQ
+Have a question? Review the FAQ page to learn more.
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with AWS Launch Wizard in the AWS Management Console.
+Sign in

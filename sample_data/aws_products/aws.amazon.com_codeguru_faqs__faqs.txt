@@ -24,17 +24,35 @@ Q: Does Amazon CodeGuru Reviewer persist a copy of my code?
 No, Amazon CodeGuru Reviewer does not store your source code.
 Q: How is Amazon CodeGuru Reviewer trained to provide intelligent recommendations?
 Amazon CodeGuru Reviewer is trained using rule mining and supervised machine learning models that use a combination of logistic regression and neural networks.
-For example, during training for deviation from AWS best practices, Amazon CodeGuru Reviewer mines Amazon code bases using search techniques and locality sensitive models for pull requests that include AWS API calls. It looks at code changes intended to improve the quality of the code, and cross-references them against documentation data. The result is the creation of a new set of rules that Reviewer recommends to you as best practices when it reviews your code. During training for resource and sensitive data leaks, it does a full code analysis for all code paths that use the resource or sensitive data, creates a feature set representing those, and then uses those as inputs for logistic regression models and convolutional neural networks (CNNs).
+For example, during training for deviation from AWS best practices, Amazon CodeGuru Reviewer mines Amazon code bases using search techniques and locality sensitive models for pull requests that include AWS API calls. It looks at code changes intended to improve the quality of the code, and cross-references them against documentation data. The result is the creation of a new set of rules that Reviewer recommends to you as best practices when it reviews your code.
+During training for resource and sensitive data leaks, it does a full code analysis for all code paths that use the resource or sensitive data, creates a feature set representing those, and then uses those as inputs for logistic regression models and convolutional neural networks (CNNs).
+For code inconsistencies, the models are trained during either the full or incremental code review. After a customer triggers a review, these models utilize a number of data mining and machine learning techniques to build the dataset, highlight the reason for the code patterns, and make recommendations customized to the customer’s code.
 For both rule-based and machine learning-based models, Amazon CodeGuru Reviewer uses the feedback you provide as labels and iteratively improves the quality of code detectors.
+Q: How are open-source code analysis tools integrated into CodeGuru Reviewer?
+Amazon CodeGuru Reviewer incorporates rules from three sources (1) CodeGuru Reviewer rules are integral to the service and designed to use machine learning and automated reasoning to analyze code for code quality and security issues, (2) a managed version of Bandit, an open source code analysis tool designed to find security issues in Python code, is integrated into CodeGuru Reviewer, and (3) a managed version of Infer, an open source code analysis tool designed to find concurrency and other issues in Java code, is also integrated into CodeGuru Reviewer. CodeGuru Reviewer analyzes your code using rules from all sources (as applicable to the programming language) and has simple pricing that includes all analyses performed.
+Q: How does CodeGuru Reviewer determine whether my open source repository qualifies for the Free Tier?
+In order to qualify for the Free Tier, your code repository must be made publicly available and contain a supported open source license. Amazon CodeGuru Reviewer will automatically detect both of these requirements when you associate and scan your repository. If you believe you were charged incorrectly for an open source repository, please reach out to AWS Support. Supported licenses can be found below:
+2-clause BSD License, 3-clause BSD License
+Common Development and Distribution License
+Eclipse Public License version 2.0
+GNU General Public License version 2 (GPL-2.0)
+GNU General Public License version 3 (GPL-3.0)
+GNU Lesser General Public License version 2.1 (LGPL-2.1)
+GNU Library General Public License, version 2
+Microsoft .NET library
+Microsoft Public License (MS-PL)
+MIT License (MIT)
+MIT No Attribution License (MIT-0)
+Mozilla Public License 2.0
 Amazon CodeGuru Reviewer Security Detector
 Q: What programming languages are supported by Amazon CodeGuru Reviewer Security Detector?
-Amazon CodeGuru Reviewer Security Detector supports Java 8, through Java 11.
+Amazon CodeGuru Reviewer Security Detector supports Java 8 through Java 11 and Python 3 and above.
 Q: Why should I use Amazon CodeGuru Reviewer Security Detector?
 CodeGuru Reviewer Security Detector is like having a security expert on call 24/7 to review your code. It helps identify security best practices before deployment.
 Q: How does Amazon CodeGuru Reviewer Security Detector work?
-CodeGuru Reviewer Security Detector statically analyzes code to build a control-flow graph representing all the possible ways that the code can be executed. Then it detects how data flows through the control-flow graph to discover potential issues that involve sequences of operations that may span across your application, involving multiple methods and classes. For example, the security detector determines if Javax.Crypto.KeyGenerator, a symmetric secret key generator, is initialized before use, even if initialization and use occur in different methods.
+CodeGuru Reviewer Security Detector statically analyzes code to build a control-flow graph representing all the possible ways that the code can be executed. Then it detects how data flows through the control-flow graph to discover potential issues that involve sequences of operations that may span across your application, involving multiple methods and classes. For example, the security detector determines if Javax.Crypto.KeyGenerator or crypto.secrets in Python, both symmetric secret key generators, are initialized before use, even if initialization and use occur in different methods.
 Q: What type of issues are detected by Amazon CodeGuru Reviewer Security Detector?
-CodeGuru Reviewer can help you with five categories of the code security issues: (1) AWS API Security Best Practices help you follow the security best practices when using APIs of various AWS services, such as AWS EC2 and KMS (2) Java Crypto Library Best Practices help you check common Java cryptography libraries, such as Javax.Crypto.Cipher, to ensure that they are initialized and called correctly (3) Secure Web Applications help you check web app related security issues, such as cross-site scripting, LDAP injection, and path traversal injection (4) AWS Security Best Practices bring internal security expertise, such as AWS Crypto recommendations, to your use cases.
+CodeGuru Reviewer can help you with five categories of the code security issues: (1) AWS API Security Best Practices help you follow the security best practices when using APIs of various AWS services, such as AWS EC2 and KMS (2) Java and Python Crypto Library Best Practices help you check common Java cryptography libraries, such as Javax.Crypto.Cipher and the built-in and third party hashing or crypto module (e.g. cryptography) in Python, to ensure that they are initialized and called correctly (3) Secure Web Applications help you check web app related security issues, such as cross-site scripting, LDAP injection, and path traversal injection (4) AWS Security Best Practices bring internal security expertise, such as AWS Crypto recommendations, to your use cases.
 Q: Does Amazon CodeGuru Reviewer Security Detector analyze all the code in my repository?
 Yes, CodeGuru Reviewer Security Detector analyzes build artifacts and all Java source code in a repository to provide security recommendations.
 Amazon CodeGuru Reviewer CI/CD Integrations

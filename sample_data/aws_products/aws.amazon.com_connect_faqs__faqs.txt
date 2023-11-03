@@ -14,7 +14,7 @@ Customers can call into your Amazon Connect contact center using any phone and s
 Q: How do agents interact with Amazon Connect?
 Agents use the Contact Control Panel (CCP) to interact with customers, such as answering calls, placing calls, or setting their status. For agent voice communications, Amazon Connect includes a web-based softphone for incoming and outgoing telephony, or agents can use a traditional telephone service using the PSTN.
 Q: Does Connect support remote contact centers?
-Yes. Amazon Connect is so simple to set-up and use, with only a few clicks you can set up a virtual contact center in minutes. Remote agents can be trained in less than 20 minutes, all they need is an internet connection and a headset to provide the best possible customer service. Click here [link to remote agent landing page] for more information on our Remote Agent Solution.
+Yes. Amazon Connect is so simple to set-up and use, with only a few clicks you can set up a virtual contact center in minutes. Remote agents can be trained in less than 20 minutes, all they need is an internet connection and a headset to provide the best possible customer service. To learn more about how you can set up remote agents quickly, you can read this blog.
 Q: Do I need to bring my own telephony provider to use Amazon Connect?
 No. Telephony services are included with Amazon Connect, which is designed to scale to meet your telephony needs.
 Q: Does Amazon Connect support high quality audio?

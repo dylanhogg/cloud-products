@@ -20,28 +20,20 @@ Release Type
 GA Date
 Last Planned Update
 End of Life
-8
+17
 LTS
-January 31st 2019
-April 2026
-June 2026
+September 16th 2021
+July 2029
+October 2029
 11
 March 15th 2019
 July 2027
 September 2027
-15
-FR
-September 24th 2020
-January 19th 2021
-April 20th 2021
-16
-March 16th 2021
-July 20th 2021
-October 19th 2021
-17
-September 21st 2021 (expected)
-TBD
-LTS: Long-Term Support FR: Feature Release
+8
+January 31st 2019
+April 2026
+June 2026
+LTS: Long-Term Support
 Q: What should I do if I need help with Corretto?
 A: For general questions about installing or running Corretto, please see our documentation. If you have an issue related to OpenJDK, please open an issue with the upstream OpenJDK project. If you have a specific issue with Corretto or feature request that is not applicable to OpenJDK, please open an issue or a feature request in the Corretto GitHub repository. If you already have an AWS Support Plan you can reach out for assistance with Corretto through your plan.
 Using Amazon Corretto
@@ -51,7 +43,7 @@ Q: What operating systems does Corretto 8 support?
 A: Corretto 8 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
 Windows builds are supported on versions 7, 8, 10, Server 2008 R2, Server 2012, Server 2016 and Server 2019.
 Mac OS X builds are supported on 10.10 (Yosemite) and later.
-Linux (glibc) builds are supported on Red Hat Enterprise Linux 6+, CentOS 6+, Ubuntu Linux 14+, Debian Linux 8+, Amazon Linux AMI, and SuSE 12+.
+Linux (glibc) builds are supported on Red Hat Enterprise Linux 6+, CentOS 6+, Ubuntu Linux 14+, Debian Linux 8+, Amazon Linux AMI, and SUSE 12+.
 Linux (musl-libc) builds are supported on Alpine Linux 3.12+
 Q: What operating systems does Corretto 11 support?
 A: Corretto 11 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS. In addition, an official Docker image is hosted on Docker Hub.
@@ -59,8 +51,17 @@ Windows builds are supported on versions 7, 8, 10, Server 2008 R2, Server 2012, 
 Mac OS X builds are supported on 10.13 (High Sierra) and later.
 Linux (musl-libc) builds are supported on Alpine Linux 3.12+.
 Linux Arm (glibc) builds are supported on Linux ARMv7+ with glibc 2.25+.
-Q: What operating systems does Corretto **16** support?
-A: Corretto 16 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS.
+Q: What operating systems does Corretto 17 support?
+A: Corretto 17 installation packages are distributed by Amazon for Linux (glibc), Linux (musl-libc), Windows, and macOS.
+Mac OS X builds are supported on 10.13 (High Sierra) and later, on x64 (Intel) and aarch64 (M1) architectures.
+Linux (glibc) builds are supported on Red Hat Enterprise Linux 6+, CentOS 6+, Ubuntu Linux 14+, Debian Linux 8+, Amazon Linux AMI, and SuSE 12+.
+Q: Why does security scanner show that a docker image has a CVE?
+A: If a security scanner reports that a Corretto-Docker image includes a CVE, the first recommended action is to seek an updated version of this image. Updated Corretto-Docker images are available at this site.
+If no updated image is available, run the appropriate command to update packages for the platform, e.g. run "yum update -y --security" for AmazonLinux or "apk -U upgrade" for Alpine Linux in your Dockerfiles or systems to resolve the issue immediately.
+If no updated package is available, please treat this as a potential security issue and follow the [AWS vulnerability reporting instructions] or email AWS security directly at aws-security@amazon.com.
+It is the responsibility of the base docker image supplier to provide timely security updates to images and packages. AWS only supplies base docker images for Amazon Linux, which are available from the Docker Hub Amazon Linux 2 page and the Amazon Linux 2 ECR Public Gallery. Alpine-based docker images are available from the Docker Hub Alpine Linux page.
+Docker Hub automatically rebuilds Docker images when a new base image is made available, but the Corretto team does not make changes to our Dockerfiles to pull in one-off package updates. If a new base image has not yet been made generally available by a base docker image supplier, please contact that supplier to request that the fix be addressed in a new base docker image distribution.
+Note that there are multiple reasons why a CVE may appear to be present in a docker image, as explained here.
 Licensing and Open Source
 Q: What are Corretto's license terms?
 A: Corretto is released under the same open source license as OpenJDK, which is licensed under the GNU Public License version 2 with the Class Path Exception (GPLv2 with CPE). You can use Corretto as you would use OpenJDK.
@@ -68,6 +69,17 @@ Q: How does Amazon contribute to OpenJDK?
 A: Amazon started contributing to OpenJDK in 2017 and we plan to increase contributions in both number and complexity.
 Q: How can I contribute to Corretto?
 A: Amazon encourages contributions to the OpenJDK project as the way to get code into Corretto. This way the whole OpenJDK community benefits from your changes. If your contribution is specific to Corretto, such as to the build logic, the code is available on GitHub, where we will evaluate issues and pull requests.
+Expired Versions
+15
+FR
+September 24th 2020
+January 19th 2021
+April 20th 2021
+16
+March 16th 2021
+July 20th 2021
+October 19th 2021
+FR: Feature Release
 Read the blog post
 Download Now
 Visit our documentation

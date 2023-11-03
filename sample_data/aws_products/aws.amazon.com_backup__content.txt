@@ -2,7 +2,7 @@ AWS Backup
 Centrally manage and automate backups across AWS services
 Get started with AWS Backup
 Request more information
-AWS Backup enables you to centralize and automate data protection across AWS services. AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale. AWS Backup also helps you support your regulatory compliance or business policies for data protection. Together with AWS Organizations, AWS Backup enables you to centrally deploy data protection policies to configure, manage, and govern your backup activity across your organization’s AWS accounts and resources, including Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon Elastic Block Store (Amazon EBS) volumes, Amazon Relational Database Service (Amazon RDS) databases (including Amazon Aurora clusters), Amazon DynamoDB tables, Amazon Elastic File System (Amazon EFS) file systems, Amazon FSx for Lustre file systems, Amazon FSx for Windows File Server file systems, and AWS Storage Gateway volumes.
+AWS Backup enables you to centralize and automate data protection across AWS services and hybrid workloads. AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale. AWS Backup also helps you support your regulatory compliance or business policies for data protection. Together with AWS Organizations, AWS Backup enables you to centrally deploy data protection policies to configure, manage, and govern your backup activity across your organization’s AWS accounts and resources, including Amazon Elastic Compute Cloud (Amazon EC2) instances, Amazon Elastic Block Store (Amazon EBS) volumes, Amazon Simple Storage Service (Amazon S3) buckets, Amazon Relational Database Service (Amazon RDS) databases (including Amazon Aurora clusters), Amazon DynamoDB tables, Amazon Neptune databases, Amazon DocumentDB (with MongoDB compatibility) databases, Amazon Elastic File System (Amazon EFS) file systems, Amazon FSx for Lustre file systems, Amazon FSx for Windows File Server file systems, and AWS Storage Gateway volumes, and VMware workloads on premises and in VMware CloudTM on AWS.
 Introducing AWS Backup (1:59)
 Benefits
 Centrally manage backups
@@ -10,13 +10,15 @@ Configure backup policies from a central backup console, simplifying backup mana
 Automate backup processes
 Save time and money with AWS Backup’s fully managed, policy-based solution. AWS Backup provides automated backup schedules, retention management, and lifecycle management, removing the need for custom scripts and manual processes. With AWS Backup, you can apply backup policies to your AWS resources by simply tagging them, making it easy to implement your backup strategy across all your AWS resources and ensuring that all your application data is appropriately backed up.
 Improve backup compliance
-Enforce your backup policies, encrypt your backups, and audit and report on backup activity from a centralized console to help meet your backup compliance requirements. Backup policies make it simple to align your backup strategy with your internal or regulatory requirements. AWS Backup secures your backups by encrypting your data in transit and at rest. Consolidated backup activity logs across AWS services makes it easier to perform compliance audits. AWS Backup is PCI and ISO compliant as well as HIPAA eligible.
+Enforce your backup policies, encrypt your backups, protect your backups from manual deletion and prevent changes to your backup lifecycle settings, and audit and report on backup activity from a centralized console to help meet your backup compliance requirements. Backup policies make it simple to align your backup strategy with your internal or regulatory requirements. AWS Backup secures your backups by encrypting your data in transit and at rest. Consolidated backup activity logs across AWS services make it easier to perform compliance audits. AWS Backup is PCI and ISO compliant as well as HIPAA eligible.
 How it works
 Use cases
 Cloud-native backup
-AWS Backup provides a centralized console to automate and manage backups across AWS services. AWS Backup supports Amazon EBS, Amazon RDS, Amazon DynamoDB, Amazon EFS, Amazon FSx, Amazon EC2, and AWS Storage Gateway, to enable you to backup key data stores, such as your storage volumes, databases, and file systems.
-Hybrid backup
-AWS Backup integrates with AWS Storage Gateway, a hybrid storage service that enables your on-premises applications to seamlessly use AWS Cloud storage. You can use AWS Backup to back up your application data stored in AWS Storage Gateway volumes. Backups of AWS Storage Gateway volumes are securely stored in the AWS Cloud and are compatible with Amazon EBS, allowing you to restore your volumes to the AWS Cloud or to your on-premises environment. This integration also allows you to apply the same backup policies to both your AWS Cloud resources and your on-premises data stored on AWS Storage Gateway volumes.
+AWS Backup provides a centralized console to automate and manage backups across AWS services. AWS Backup supports Amazon S3, Amazon EBS, Amazon RDS including Amazon Aurora, Amazon DynamoDB, Amazon Neptune, Amazon DocumentDB, Amazon EFS, Amazon FSx for Lustre and Windows File Server, Amazon EC2, and AWS Storage Gateway—allowing you to back up key data stores, such as your buckets and volumes, databases, and file systems.
+Hybrid data protection
+AWS Backup centralizes data protection management and compliance for your applications running in hybrid environments. Using AWS Backup, you can protect VMware workloads running on premises and in VMware CloudTM on AWS, and data stored on AWS Storage Gateway volumes.
+AWS Backup supports data protection for VMware workloads, on premises and on VMware CloudTM on AWS (VMC). Centrally configure backup policies to protect AWS applications comprising native AWS services, on-premises VMware, and VMware CloudTM on AWS. Restore VMware backups to on-premises data centers and in VMware CloudTM on AWS.
+AWS Backup integrates with AWS Storage Gateway, a hybrid cloud storage service that enables your on-premises applications to seamlessly use AWS storage. You can use AWS Backup to back up your application data stored in AWS Storage Gateway volumes. Backups of AWS Storage Gateway volumes are securely stored on AWS and are compatible with Amazon EBS, allowing you to restore your volumes to AWS or to your on-premises environment. This integration also allows you to apply the same backup policies to both your AWS resources and your on-premises data stored on AWS Storage Gateway volumes.
 Backup Blogs
 To read more AWS Backup blogs, visit the AWS Storage blog channel.
 What's New with Backup
@@ -30,5 +32,5 @@ Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with AWS Backup in the AWS Console.
+Get started building with AWS Backup in the AWS Management Console.
 Sign in

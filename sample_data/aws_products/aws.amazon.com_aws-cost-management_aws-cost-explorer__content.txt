@@ -29,11 +29,14 @@ Savings Plans
 Savings Plans is a flexible pricing model that provides savings of up to 72% on your AWS compute usage. This pricing model offers lower prices on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region, and also applies to AWS Fargate usage.
 AWS Cost Explorer will help you to choose a Savings Plan, and will guide you through the purchase process.
 Get started with Savings Plans
-Latest AWS Cost Management Blogs
-1
-...
-No blog posts have been found at this time. Please see AWS Blog for other resources.
-Read more at the AWS Cost Management Blog
+How do I
+DOCUMENTATION
+Get Started with Cost Explorer
+Visualize, understand, and manage your AWS costs and usage over time.
+Get started ›
+Match Capacity with Demand
+Optimize your cost with Rightsizing Recommendations.
+Read the guide ›
 Ready to get started?
 Check out the product features
 Learn more about features for cost management, cost optimization, and more.

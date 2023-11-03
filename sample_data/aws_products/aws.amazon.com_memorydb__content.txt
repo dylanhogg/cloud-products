@@ -1,0 +1,36 @@
+« Databases
+Amazon MemoryDB for Redis
+Redis-compatible, durable, in-memory database service for ultra-fast performance
+Get started with Amazon MemoryDB for Redis
+750 hours of MemoryDB on t4g.small instances
+for 2 months with AWS Free Tier
+Build applications quickly with Redis, Stack Overflow’s “Most Loved” database for five consecutive years.
+Access data with ultra-fast performance — process more than 13 trillion requests per day and over 160 million requests per second.
+Store data durably with in-memory storage that uses a Multi-AZ transactional log for fast database recovery and restart.
+Scale seamlessly from a few gigabytes to over one hundred terabytes of storage per cluster to meet the needs of your application.
+How it works
+Use cases
+Build web and mobile applications
+Use versatile Redis data structures like streams, lists, and sets to build content data stores, chat and message queues, and geospatial indexes for demanding, data-intensive web and mobile applications that require low latency and high throughput.
+Quickly access customer data for retail
+Deliver personalized customer experiences and manage user profiles, preferences, and inventory tracking and fulfillment with microsecond read and single-digit millisecond write latency.
+Develop online games
+Build player data stores, session history, and leaderboards for gaming applications that require massive scale, low latency, and high concurrency to make real-time updates.
+Stream media and entertainment
+Run high concurrency streaming data feeds to ingest user activity and support millions of requests per day for media and entertainment applications.
+Customers
+Netflix builds microservices architectures to support its platform requirements
+Twilio uses MemoryDB to enable over 105 billion messages a year
+Cimpress simplifies its architecture to enable a faster pace of innovation
+transACT streamlines customer migrations of mission critical applications
+How to get started
+Read about MemoryDB features
+Discover the features page.
+Learn more
+Learn with a tutorial
+Explore how to set up your first MemoryDB cluster.
+Get started
+Start building with MemoryDB
+Check out the MemoryDB user guide to get started.
+Read the documentation
+Explore more of AWS

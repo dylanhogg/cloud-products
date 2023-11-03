@@ -1,0 +1,18 @@
+Amazon FinSpace
+Store, catalog, prepare, and analyze financial industry data in minutes
+Get started with FinSpace
+Request proof-of-concept assistance
+Amazon FinSpace is a data management and analytics service purpose-built for the financial services industry (FSI). FinSpace reduces the time you spend finding and preparing petabytes of financial data to be ready for analysis from months to minutes.
+Financial services organizations analyze data from internal data stores like portfolio, actuarial, and risk management systems as well as petabytes of data from third-party data feeds, such as historical securities prices from stock exchanges. It can take months to find the right data, get permissions to access the data in a compliant way, and prepare it for analysis.
+FinSpace removes the heavy lifting of building and maintaining a data management system for financial analytics. With FinSpace, you collect data and catalog it by relevant business concepts such as asset class, risk classification, or geographic region. FinSpace makes it easy to discover and share data across your organization in accordance with your compliance requirements. You define your data access policies in one place and FinSpace enforces them while keeping audit logs to allow for compliance and activity reporting. FinSpace also includes a library of 100+ functions, like time bars and Bollinger bands, for you to prepare data for analysis.
+Amazon FinSpace (0:50)
+Benefits
+Find data with just a few clicks
+Amazon FinSpace makes it easy to store, catalog, and manage your data according to concepts common in the financial services industry like asset class and instrument type. You can search the FinSpace catalog using familiar phrasing like “options trades for the S&P 500” or “loan delinquency rates” to easily find the data you are looking for.
+Get insights in minutes
+Amazon FinSpace reduces the time it takes to prepare your financial services data by providing over 100 pre-built data preparation functions, including machine learning functions, that are commonly used in the financial services industry. With FinSpace, you can maintain previous versions of your data and track how this data changes over time. You can also load your existing libraries of proprietary and open source functions into FinSpace so you can continue to use them for your data preparation and analysis.
+Ensure regulatory compliance
+Amazon FinSpace helps you meet your regulatory compliance requirements by enforcing data access controls and tracking data usage to generate compliance and activity reports. You define data access controls in FinSpace and they are automatically enforced.
+Eliminate operational overhead
+Amazon FinSpace lets you focus on financial data analysis without having to worry about the operational overhead of building and maintaining the infrastructure needed for financial data management and analytics.
+How it works

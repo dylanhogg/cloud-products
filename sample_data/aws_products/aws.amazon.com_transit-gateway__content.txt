@@ -1,7 +1,7 @@
 AWS Transit Gateway
 Easily connect Amazon VPCs, AWS accounts, and on-premises networks to a single gateway
 Get started with AWS Transit Gateway
-AWS Transit Gateway connects VPCs and on-premises networks through a central hub. This simplifies your network and puts an end to complex peering relationships. It acts as a cloud router – each new connection is only made once.
+AWS Amazon Virtual Private Clouds (VPCs) and on-premises networks through a central hub. This simplifies your network and puts an end to complex peering relationships. It acts as a cloud router – each new connection is only made once.
 As you expand globally, inter-Region peering connects AWS Transit Gateways together using the AWS global network. Your data is automatically encrypted, and never travels over the public internet. And, because of its central position, AWS Transit Gateway Network Manager has a unique view over your entire network, even connecting to Software-Defined Wide Area Network (SD-WAN) devices.
 What is AWS Transit Gateway (01:24)
 Benefits of using AWS Transit Gateway
@@ -41,11 +41,11 @@ Date
 Customers using AWS Transit Gateway
 Read customer testimonials
 Check out the product features
-Discover what you AWS Transit Gateway can do for your network.
+Discover what AWS Transit Gateway can do for your network.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with AWS Transit Gateway in the AWS Console.
+Get started building with AWS Transit Gateway in the AWS Management Console.
 Sign in

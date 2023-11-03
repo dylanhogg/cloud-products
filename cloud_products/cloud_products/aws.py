@@ -1,21 +1,26 @@
-import os
 import logging
+import os
 import re
 import unicodedata
-from cloud_products import base
-from cloud_products.product import Product
 from pathlib import Path
 from typing import List, Tuple
-from urllib.request import urlopen
 from urllib.error import HTTPError
-from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
+from urllib.request import urlopen
+
+from bs4 import BeautifulSoup
+
+from cloud_products import base
+from cloud_products.browser import Browser
+from cloud_products.product import Product
 
 
 class AwsCrawler(base.Crawler):
     def __init__(self):
         self.base_url = "https://aws.amazon.com"
-        self.seed_url = self.base_url + "/products/"
+        # self.seed_url = self.base_url + "/products/"
+        # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
+        # self.seed_url = self.base_url + "/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all&awsm.page-aws-products-all=2"
         super(AwsCrawler, self).__init__()
 
     @staticmethod
@@ -39,9 +44,7 @@ class AwsCrawler(base.Crawler):
 
         text = tags.text
         lines = text.splitlines()
-        lines = list(
-            AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length
-        )
+        lines = [AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length]
         return lines
 
     def _scrape_page(self, url, cache_path, use_cache) -> Tuple[BeautifulSoup, bool]:
@@ -73,7 +76,7 @@ class AwsCrawler(base.Crawler):
         Get child pages from seed url.
         """
         results = []
-        tags = soup.find_all("div", attrs={"class": "lb-content-item"})
+        tags = soup.find_all("div", attrs={"class": "m-card-container"})
 
         # Example html snippet, 21 Feb 2019:
         # <div class="lb-content-item">
@@ -83,17 +86,20 @@ class AwsCrawler(base.Crawler):
         crawled = []
         for tag in tags:
             a = tag.find("a")
-            if a["href"].startswith("http"):
-                # Ignore beta products linking to external addresses
-                continue
+            # if a["href"].startswith("http"):
+            #     # Ignore beta products linking to external addresses
+            #     # 2022: all start with http??
+            #     continue
 
             rel_href = urlparse(a["href"]).path
             abs_href = urljoin(base_url, rel_href)
             abs_href_faq = urljoin(base_url, rel_href + "faqs/")
             code = rel_href.replace("/", "").strip().lower()
-            name = a.contents[0].strip()
+            name = a.find("div", attrs={"class": "m-headline"}).text.strip()
             std_name = name.lower().replace("amazon", "aws")
-            desc = a.contents[1].text.strip()
+            desc = a.find("div", attrs={"class": "m-desc"}).text.strip()
+            # category = a.find("div", attrs={"class": "m-category"}).text.strip()  # TODO: new
+            # flag = a.find("div", attrs={"class": "m-flag"}).text.strip()  # TODO: new
             product = Product(name, std_name, code, rel_href, abs_href, abs_href_faq, base_url, seed_url, desc)
 
             if std_name in crawled:
@@ -131,16 +137,27 @@ class AwsCrawler(base.Crawler):
 
         return self.dedupe_list(lines) if dedupe else lines
 
-    def get_products(self, cache_path=None, use_cache=True) -> List[Product]:
+    def get_products(self, page: int, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
 
-        # Scrape seed index page
-        (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)
+        assert isinstance(page, int), "page must be an integer"
+
+        seed_url_formatter = (
+            "https://aws.amazon.com/products/"
+            "?aws-products-all.sort-by=item.additionalFields.productNameLowercase"
+            "&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all"
+            "&awsm.page-aws-products-all={page}"
+        )
+        override_seed_url = seed_url_formatter.format(page=page)
+
+        browser = Browser()
+        source = browser.get_page_source(page)
+        seed_soup = BeautifulSoup(source, "html.parser")
+        # print(seed_soup)
 
         # Parse product links from seed index page
-        child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
-
+        child_pages = self._get_child_pages(seed_soup, self.base_url, override_seed_url)
         return sorted(child_pages)
 
     def get_products_as_df(self, cache_path=None, use_cache=True):
@@ -148,8 +165,8 @@ class AwsCrawler(base.Crawler):
             # NOTE: pandas is a soft requirement for this package.
             #       This method will fail if pandas isn't installed.
             import pandas as pd
-        except ModuleNotFoundError:
-            raise ModuleNotFoundError("pandas must be installed to use this method. Try `pip install pandas`.")
+        except ModuleNotFoundError as ex:
+            raise ModuleNotFoundError("pandas must be installed to use this method. Try `pip install pandas`.") from ex
 
         products = self.get_products(cache_path=cache_path, use_cache=use_cache)
         product_text = {}

@@ -1,29 +1,35 @@
-Amazon Guard​Duty
-Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring
-Start your free trial of Amazon GuardDuty
-Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts, workloads, and data stored in Amazon S3. With the cloud, the collection and aggregation of account and network activities is simplified, but it can be time consuming for security teams to continuously analyze event log data for potential threats. With GuardDuty, you now have an intelligent and cost-effective option for continuous threat detection in AWS. The service uses machine learning, anomaly detection, and integrated threat intelligence to identify and prioritize potential threats. GuardDuty analyzes tens of billions of events across multiple AWS data sources, such as AWS CloudTrail event logs, Amazon VPC Flow Logs, and DNS logs. With a few clicks in the AWS Management Console, GuardDuty can be enabled with no software or hardware to deploy or maintain. By integrating with Amazon CloudWatch Events, GuardDuty alerts are actionable, easy to aggregate across multiple accounts, and straightforward to push into existing event management and workflow systems.
-Introduction to Amazon GuardDuty (2:26)
-Benefits
-Comprehensive threat identification
-Amazon GuardDuty identifies threats by continuously monitoring the network activity, data access patterns, and account behavior within the AWS environment. GuardDuty comes integrated with up-to-date threat intelligence feeds from AWS, CrowdStrike, and Proofpoint. Threat intelligence coupled with machine learning and behavior models help you detect activity such as crypto-currency mining, credential compromise behavior, unauthorized and unusual data access, communication with known command-and-control servers, or API calls from known malicious IPs.
-Strengthens security through automation
-In addition to detecting threats, Amazon GuardDuty also makes it easy to automate how you respond to threats, reducing your remediation and recovery time. GuardDuty can perform automated remediation actions by leveraging Amazon CloudWatch events and AWS Lambda. GuardDuty security findings are informative and actionable for security operations. The findings include the affected resource’s details and attacker information, such as IP address and geo-location.
-Enterprise scale and central management
-Amazon GuardDuty provides multi-account support using AWS Organizations, so you can enable GuardDuty across all of your existing and new accounts. Your security team can aggregate your organization's findings across accounts into a single GuardDuty administrator account for easier management. The aggregated findings are also available through CloudWatch Events, making it easy to integrate with an existing enterprise event management system.
+« Security, Identity & Compliance
+Amazon GuardDuty
+Protect your AWS accounts with intelligent threat detection
+Watch Amazon GuardDuty Demo
+Start your 30-day free trial
+with the AWS Free Tier
+Achieve organization-wide visibility into possible threats with only a few clicks.
+Expose threats quickly with AWS threat intelligence, behavioral models, and third-party security feeds.
+Mitigate threats early by triggering automated responses.
 How it works
-Blog posts & articles
-No blog posts have been found at this time. Please see the AWS Blog for other resources..
-Featured customers
-Partners
-Meet the AWS APN Partners who have integrated with Amazon GuardDuty. APN Partner products complement the existing AWS services to enable you to deploy a comprehensive security architecture and a more seamless experience across your AWS Cloud and on-premises environment. See a full list of Amazon GuardDuty partners.
-Threat intelligence partners
-See all Amazon GuardDuty partners
+Amazon GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation.
+Close
+Click to enlarge
+Use cases
+Stop unauthorized activity
+Guard against use of compromised credentials, unusual data access in Amazon Simple Storage Service (S3), API calls from known malicious IP addresses, and more.
+Enable continuous monitoring and analysis
+Gain insight into security events with findings that provide context, metadata, and details on impacted resources.
+Simplify forensics
+Quickly determine the root cause of suspicious activities using Amazon GuardDuty’s console integration with Amazon Detective.
+Customers
+Crossbridge Capital uses GuardDuty to adhere to international operating guidelines
+AppsFlyer automates suspicious activity detection on AWS
+Swiss Post gains dynamic security view of environment with GuardDuty
+How to get started
+Watch a brief introductory video
+Learn how easy it is to add and use Amazon GuardDuty to help detect potential security issues in your AWS deployment.
+Check out the video
 Explore Amazon GuardDuty features
-Amazon GuardDuty is a threat detection service that provides you with an accurate and easy way to continuously monitor and protect their AWS accounts and workloads.
+Amazon GuardDuty is a threat detection service that provides you with an accurate and easy way to continuously monitor and protect AWS accounts and workloads.
 Learn more
-Sign up for a 30-day free trial
-Try Amazon GuardDuty for 30-days at no cost. You will receive full access to GuardDuty features and its detection findings during the free trial.
+Begin a 30-day free trial
+Try Amazon GuardDuty for 30 days at no cost. You will receive full access to GuardDuty features and its detection findings during the free trial.
 Free trial
-Start building in the console
-Get started building with Amazon GuardDuty in the AWS Console.
-Sign in
+Explore more of AWS

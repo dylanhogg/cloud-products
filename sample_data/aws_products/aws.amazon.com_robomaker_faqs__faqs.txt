@@ -1,39 +1,24 @@
 Simulation
-Q: What is AWS RoboMaker simulation?
-A: AWS RoboMaker simulation is a fully managed service that enables you to easily create simulation worlds and run simulation jobs without provisioning or managing any infrastructure.
-Q: What can I do with RoboMaker simulation?
-A: There are multiple use cases for RoboMaker simulation. You can use RoboMaker simulation to test robotics applications in an automated manner and to speed up iterative development. You can use it to generate synthetic image or lidar data for algorithm development. You can also use RoboMaker simulation to train machine learning models using reinforcement learning.
-Q: What are the key capabilities of RoboMaker simulation?
-A: RoboMaker simulation has two key capabilities – WorldForge and simulation run. RoboMaker WordForge makes it possible to automatically create hundreds of pre-defined, randomized simulation worlds that replicate real-world conditions without engineering investment or managing world generation infrastructure. Simulation run provides fully managed compute infrastructure for running simulations at any scale.
-Q: What simulation engines does RoboMaker simulation run support?
-A: RoboMaker simulation run supports the open source Gazebo engine by default and WorldForge supports Gazebo compatible world formats. The default physics engine for Gazebo is ODE (Open Dynamics Engine). The default rendering engine for Gazebo is OGRE (Object-Oriented Graphics Rendering Engine).
-Simulation WorldForge
-Q: What is a simulation world?
-A: A simulation world is the virtual model of an environment such as a house. A simulation world is required for running simulations, and it includes the geometry, visual, and physics information of a modeled environment.
-Q: Why do I need WorldForge?
-A: Building a simulation world can be difficult, costly and time consuming, and it also requires specialized skills in 3D modeling and simulation engines. While a few companies have the time and resources to create a single simulation world, building enough worlds to effectively scale simulation for workloads like regression testing and reinforcement learning is prohibitively difficult and costly.
-RoboMaker WordForge makes it possible to automatically create hundreds of pre-defined, randomized simulation worlds that replicate real-world conditions without engineering investment, specialized design skills or managing world generation infrastructure.
-Q: How do I get started with simulation WorldForge?
-A: You get started with simulation WorldForge by creating a world template, either from scratch or from one of the sample templates that RoboMaker provides. With a world template, you can then generate one or more simulation worlds by creating a world generation job. WorldForge is integrated with RoboMaker simulation run so that you can easily use the generated worlds in a RoboMaker simulation job. If you want to export a simulation world for use in a local environment, you can do so by creating a world export job, which exports a specified world to your Amazon S3 bucket as a ROS package and in a .zip format.
-Q: What is a simulation world template?
-A: A simulation world template defines the specifications of simulation worlds. For example, you can define the floorplan, rooms, and furnishings in a world template for generating a set of indoor residential worlds. A world template doesn’t precisely define a single simulation world. Instead, a world template can generate multiple simulation worlds with certain randomness such as random room sizes and furniture. The specifications of a world template defines the boundaries of such randomness.
-Q: What is a world generation job?
-A: A world generation job generates one or more simulation worlds from a world template. When creating a world generation job, you can specify the number of world variations across two dimensions – floor plans and interiors. For example, 2 floor plans with 2 interior variations per floor plan result in 4 (2*2) unique worlds.
-Q: What is a world export job?
-A: A world export job exports a generated world as a ROS package and in a .zip format to your Amazon S3 bucket. You create a world export job when you need to use the generated world with a local environment. If you use the generated worlds with RoboMaker simulation run, export is not required.
-Simulation Run
+Q: What is AWS RoboMaker Simulation?
+A: AWS RoboMaker Simulation is a fully managed service that enables you to easily create simulation worlds and run simulation jobs without provisioning or managing any infrastructure.
+Q: What can I do with RoboMaker Simulation?
+A: There are multiple use cases for RoboMaker Simulation. You can use RoboMaker Simulation to test robotics applications in an automated manner and to speed up iterative development. You can use it to generate synthetic image or lidar data for algorithm development. You can also use RoboMaker Simulation to train machine learning models using reinforcement learning.
+Q: What are the key capabilities of RoboMaker Simulation?
+A: RoboMaker Simulation provides fully managed compute infrastructure for running simulations at any scale. RoboMake Simulation WorldForge makes it possible to automatically create hundreds of pre-defined, randomized simulation worlds that replicate real-world conditions without engineering investment or managing world generation infrastructure.
+Q: What simulation engines does RoboMaker Simulation run support?
+A: RoboMaker Simulation supports any simulation engine of your choice. You can connect your container-based simulation application to Robomaker and run simulations without provisioning, configuring, or managing any infrastructure. The service supports simulation world creation in WorldForge for Gazebo-compatible world formats.
 Q: What is a robot application in RoboMaker?
-A: A robot application in RoboMaker refers to the ROS based application that you will run on a physical robot. You need to build your robot application source code to X86 architecture in order to work with RoboMaker simulation run.
+A: A robot application in RoboMaker refers to the robot middleware (such as ROS) based application that you will run on a physical robot. You need to build your robot application source code to X86 architecture in order to work with RoboMaker Simulation.
 Q: What is a simulation application in RoboMaker?
-A: A simulation application includes a 3D simulation world and Gazebo plugins that control the movement of a robot in a simulation world. The default format of Gazebo simulation world is .sdf. Similar to a robot application, you need to build your simulation application source code to X86 architecture in order to work with RoboMaker simulation run.
-Q: How do I get started with RoboMaker simulation run?
-A: You get started with RoboMaker simulation run by creating a robot application and/or the simulation application. The applications link to your code stored in an Amazon S3 bucket. You can then create a simulation job to execute your simulation application and your robot application on RoboMaker’s fully managed infrastructure.
+A: A simulation application includes a 3D simulation world and simulator plugins that control the movement of a robot in a simulation world. Similar to a robot application, you need to build your simulation application source code to X86 architecture in order to work with RoboMaker Simulation.
+Q: How do I get started with RoboMaker Simulation run?
+A: You get started with RoboMaker Simulation run by creating a robot application and/or the simulation application. The applications link to your code stored in an Amazon S3 bucket. You can then create a simulation job to execute your simulation application and your robot application on RoboMaker’s fully managed infrastructure.
 Q: What is a simulation job?
-A: A simulation job is the main service resource in RoboMaker simulation run. You run your simulation workloads on RoboMaker by creating a simulation job, which automatically provisions and manages the compute infrastructure for you. Learn more about creating a simulation job in our documentation.
+A: A simulation job is the main service resource in RoboMaker Simulation run. You run your simulation workloads on RoboMaker by creating a simulation job, which automatically provisions and manages the compute infrastructure for you. Learn more about creating a simulation job in our documentation.
 Q: What is a simulation job batch?
 A: A simulation job batch is a collection of simulation job requests. You can create a new simulation job batch using AWS RoboMaker's API. A simulation job batch allows you to submit multiple simulation job requests through a single API call and provides queuing capability for all submitted requests.
 Q: What tools do I use to build my robot application and simulation application?
-A: Use the Colcon tool to build and bundle your robot application and simulation application, which includes all necessary dependency packages for successfully executing your applications on the RoboMaker compute infrastructure. See documentation for more details.
+A: You can use the container tools that you are already familiar with to build and package your code into Open Container Initiative (OCI) compliant images and store in Amazon Elastic Conatiner Registry (ECR). You can use those images to create a RoboMaker robot application and simulation application. Alternatively, you can also use the Colcon tool to build and bundle your robot application and simulation application, which includes all necessary dependency packages for successfully executing your applications on the RoboMaker compute infrastructure. See documentation for more details.
 Q: What is application versioning?
 A: RoboMaker supports versioning of robot applications and simulation applications so you can control which implementation your robots and simulations use. A version is a numbered snapshot of your robot application or simulation application you can create for use in different parts of your development workflow, such as development, beta deployment, and production.
 Q: Can I delete a particular version of a robot application or simulation application?
@@ -41,45 +26,41 @@ A: Yes, you can delete a particular version of an application or all the version
 Q: Does RoboMaker store my robot application and simulation application?
 A: No, RoboMaker does not store your robot application or simulation application in the service. You upload your applications to your S3 bucket and refer to the S3 object path during robot application and simulation application creation.
 Q: What tools does RoboMaker simulation run support?
-A: RoboMaker simulation run supports the Gazebo client for interacting with a running simulation job, rviz for visualizing sensor data, rqt for running various GUI tools, and command line for interacting with the running robot application.
-Q: What logging and monitoring features does RoboMaker simulation run have?
-A: RoboMaker simulation run is integrated with Amazon CloudWatch Metrics so you can monitor service metrics such as real-time factors from the CloudWatch console. In addition, you can use the Amazon CloudWatch Metrics package provided by RoboMaker ROS cloud extensions in your robot application to issue real-time metrics such as robot battery level, velocity, and collision during a simulation job run.
-RoboMaker simulation run is also integrated with Amazon CloudWatch Logs. You can have stdout statements in your robot application and RoboMaker simulation will log these messages to your CloudWatch Log group during a simulation run. This feature helps you debug your robot application during application development.
-You can enable RoboMaker simulation run to log rosbag during a simulation job run. The log will be delivered to your S3 bucket. You can use rosbag to analyze and debug message passing of the robot application.
+A: AWS RoboMaker Simulation supports the ability to configure simulation tools to diagnose or interact with simulation jobs. This simulation tool configuration feature provides developers flexibility to use custom simulation tools in place of, or in addition to the default simulation tools (Gazebo, rqt, rviz and terminal access tools) provided by default in RoboMaker.
+Q: What logging and monitoring features does RoboMaker Simulation run have?
+A: RoboMaker Simulation run is integrated with Amazon CloudWatch Metrics so you can monitor service metrics such as real-time factors from the CloudWatch console. In addition, you can use the Amazon CloudWatch Metrics package provided by RoboMaker ROS cloud extensions in your robot application to issue real-time metrics such as robot battery level, velocity, and collision during a simulation job run.
+RoboMaker Simulation run is also integrated with Amazon CloudWatch Logs. You can have stdout statements in your robot application and RoboMaker Simulation will log these messages to your CloudWatch Log group during a simulation run. This feature helps you debug your robot application during application development.
+You can enable RoboMaker Simulation run to log rosbag during a simulation job run. The log will be delivered to your S3 bucket. You can use rosbag to analyze and debug message passing of the robot application.
 Q: What is the failure behavior of a simulation job?
-A: You can configure the failure behavior of your simulation job to be fail or continue. In fail mode, your simulation job will fail, and the underlying infrastructure will be released if there is any failure during the simulation job run. In continue mode, your simulation job will fail, but the underlying infrastructure will be kept if there is any failure during the simulation job run. The continue mode allows you to further troubleshoot a simulation job failure by using the command line tool. In continue mode, RoboMaker simulation charges will continue to incur until you terminate the job.
+A: You can configure the failure behavior of your simulation job to be fail or continue. In fail mode, your simulation job will fail, and the underlying infrastructure will be released if there is any failure during the simulation job run. In continue mode, your simulation job will fail, but the underlying infrastructure will be kept if there is any failure during the simulation job run. The continue mode allows you to further troubleshoot a simulation job failure by using the command line tool. In continue mode, RoboMaker Simulation charges will continue to incur until you terminate the job.
 Q: When do I restart a simulation job?
 A: Restarting a simulation job can be used for quick iterative development. Restarting a simulation job is faster than creating a new simulation job because it doesn’t require resource provisioning and configuration behind the scenes. During robotics application development, you can use the restart simulation job feature to quickly test your code as you iterate through code changes.
 Q: How is restarting a simulation job different from cloning a simulation job?
 A: Restarting a simulation job is used for quick iteration test and the updated simulation job runs on the same infrastructure resources provisioned and managed by RoboMaker. Cloning a simulation job uses the same configurations of the existing job to create a new job. It triggers infrastructure resource provisioning and configuration behind the scenes, which might take a few minutes.
 Q: Why do I need to provide an AWS AWS Identity and Access Management (IAM) role in a simulation job?
-A: The IAM role provides RoboMaker simulation access to the resources you specified in your simulation job. For example, your S3 bucket for RoboMaker to write simulation logs into.
+A: The IAM role provides RoboMaker Simulation access to the resources you specified in your simulation job. For example, your S3 bucket for RoboMaker to write simulation logs into.
 Q: What is simulation duration?
 A: Simulation duration defines how long the simulation job should run until it gets terminated. The duration is based on wall clock time versus simulation time.
 Q: Does my simulation job run in real-time?
-A: RoboMaker simulation attempts to run your simulation job as fast as possible. You can also use the “real-time update rate” and “max step size” settings in your Gazebo world configuration to control how fast the simulation job should run. See the Pricing Page for details.
-Q: How do I get charged for RoboMaker simulation?
+A: RoboMaker Simulation attempts to run your simulation job as fast as possible. You can also use the “real-time update rate” and “max step size” settings in your Gazebo world configuration to control how fast the simulation job should run. See the Pricing Page for details.
+Q: How do I get charged for RoboMaker Simulation?
 A: You are charged for simulation WorldForge based on the number of simulation worlds you generate and export.  You are charged for simulation run based on the duration of your simulation job and the CPU/Memory resources used by your simulation job. See the Pricing Page for details.
-Q: Does RoboMaker simulation run charge based on wall clock time or simulation time?
-A: Your simulation job can run faster, slower than real time, or at real time. RoboMaker simulation charges based on wall clock time so the speed of the simulation time doesn’t impact how you are charged. See the Pricing Page for details.
-Cloud Extensions for ROS
-Q: What are RoboMaker cloud extensions for ROS?
-A: RoboMaker provides cloud extensions for ROS so that you can offload to the cloud the more resource-intensive computing processes that are typically required for intelligent robotics applications and free up local compute resources. RoboMaker provides each of these cloud service extensions as open source ROS packages, so you can build functions on your robot by taking advantage of cloud APIs, all in a familiar software framework. ROS Cloud Extensions are currently supported for ROS Melodic only.
-Q: What are the supported cloud extensions?
-A: Currently supported cloud extensions are Amazon CloudWatch Logs, Amazon CloudWatch Metrics, Amazon Polly, Amazon Lex, Amazon Kinesis Videos Streams, Amazon Rekognition, and Amazon S3. For more details, see the Resource page or Documentation.
-Q: Am I charged for using RoboMaker cloud extensions?
-A: RoboMaker cloud extensions are open source under Apache 2.0 license and free of charge. You will, however, be charged separately when you invoke corresponding services such as Amazon Rekognition or Amazon Kinesis Video Streams from these extensions. See the Pricing Page for details.
-Application Deployment
-Q: What is RoboMaker application deployment?
-A: RoboMaker application deployment allows you to create robots, register robots to a fleet, and then deploy a robot application into a fleet.
-Q: What minimum hardware specifications are required for using RoboMaker application deployment?
-A: RoboMaker application deployment is built on top of AWS Greengrass and has the same minimum hardware specifications requirement as AWS IoT Greengrass. See the corresponding AWS IoT Greengrass FAQ for details.
-Q: How do I associate a physical robot with RoboMaker application deployment?
-A: You first create a robot from the RoboMaker console and then download corresponding certificates for that robot and AWS Greengrass-based agent. You then follow steps to install the agent and certificate on your physical robot. Once installed and connected, your physical robot is associated with the robot you created in RoboMaker console.
-Q: What is a fleet?
-A: A fleet is a group of robots. You can freely register or deregister existing robots to a fleet. A deployment job in RoboMaker application deployment is defined for a particular fleet, and each robot can only belong to one fleet.
-Q: How am I charged for using RoboMaker application deployment?
-A: RoboMaker application deployment is integrated with Greengrass and you are charged standard AWS Greengrass pricing. There is no additional charge for using RoboMaker application deployment. See the Pricing Page for details.
+Q: Does RoboMaker Simulation run charge based on wall clock time or simulation time?
+A: Your simulation job can run faster, slower than real time, or at real time. RoboMaker Simulation charges based on wall clock time so the speed of the simulation time doesn’t impact how you are charged. See the Pricing Page for details.
+Simulation WorldForge
+Q: What is a simulation world?
+A: A simulation world is the virtual model of an environment such as a house. A simulation world is required for running simulations, and it includes the geometry, visual, and physics information of a modeled environment.
+Q: Why do I need WorldForge?
+A: Building a simulation world can be difficult, costly and time consuming, and it also requires specialized skills in 3D modeling and simulation engines. While a few companies have the time and resources to create a single simulation world, building enough worlds to effectively scale simulation for workloads like regression testing and reinforcement learning is prohibitively difficult and costly.
+RoboMaker WordForge makes it possible to automatically create hundreds of pre-defined, randomized simulation worlds that replicate real-world conditions without engineering investment, specialized design skills or managing world generation infrastructure.
+Q: How do I get started with simulation WorldForge?
+A: You get started with simulation WorldForge by creating a world template, either from scratch or from one of the sample templates that RoboMaker provides. With a world template, you can then generate one or more simulation worlds by creating a world generation job. WorldForge is integrated with RoboMaker Simulation run so that you can easily use the generated worlds in a RoboMaker Simulation job. If you want to export a simulation world for use in a local environment, you can do so by creating a world export job, which exports a specified world to your Amazon S3 bucket as a ROS package and in a .zip format.
+Q: What is a simulation world template?
+A: A simulation world template defines the specifications of simulation worlds. For example, you can define the floorplan, rooms, and furnishings in a world template for generating a set of indoor residential worlds. A world template doesn’t precisely define a single simulation world. Instead, a world template can generate multiple simulation worlds with certain randomness such as random room sizes and furniture. The specifications of a world template defines the boundaries of such randomness.
+Q: What is a world generation job?
+A: A world generation job generates one or more simulation worlds from a world template. When creating a world generation job, you can specify the number of world variations across two dimensions – floor plans and interiors. For example, 2 floor plans with 2 interior variations per floor plan result in 4 (2*2) unique worlds.
+Q: What is a world export job?
+A: A world export job exports a generated world as a ROS package and in a .zip format to your Amazon S3 bucket. You create a world export job when you need to use the generated world with a local environment. If you use the generated worlds with RoboMaker Simulation run, export is not required.
 Development Environment
 Q: What is RoboMaker development environment?
 A: RoboMaker development environment is a customized integrated development environment (IDE) in AWS Cloud9 for robotics development. This IDE comes with ROS pre-installed and includes sample applications. It is also integrated with other RoboMaker capabilities such as simulation so that you can use these capabilities from the interface of the IDE.

@@ -3,16 +3,16 @@ On-premises solutions for video processing and delivery
 Contact Sales
 Live Chat
 AWS Elemental Appliances and Software solutions bring advanced video processing and delivery technologies into your data center, co-location space, or on-premises facility. You can deploy AWS Elemental Appliances and Software to encode, package, and deliver video assets on-premises and seamlessly connect with cloud-based video infrastructure. Designed for easy integration with AWS Cloud media solutions, AWS Elemental Appliances and Software support video workloads that need to remain on-premises to accommodate physical camera and router interfaces, managed network delivery, or network bandwidth constraints.
-AWS Elemental Live, Server, and Conductor come in two variants: ready-to-deploy appliances, or AWS-licensed software that you install on your own hardware. AWS Elemental Link is a compact hardware device that sends live video to the cloud for encoding and delivery to viewers.
+AWS Elemental Live, Conductor Live, and Statmux come in two variants: ready-to-deploy appliances, or AWS-licensed software that you install on your own hardware. AWS Elemental Link is a compact hardware device that sends live video to the cloud for encoding and delivery to viewers.
 Watch Now: AWS Elemental Appliances & Software (1min)
 AWS Elemental
 Live
 Convert inputs into live outputs for broadcast and multiscreen video delivery
 Learn more
-Server
-Prepare file-based content for on-demand broadcast and multiscreen delivery
-Conductor
+Conductor Live
 Manage video networks for live and on-demand content
+Statmux
+Process live video channels using statistical multiplexing
 Link
 Connect a live video source to AWS Elemental MediaLive
 Close

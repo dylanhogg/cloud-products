@@ -1,0 +1,23 @@
+AWS Cloud Control API
+Manage AWS and third-party cloud infrastructure with consistent APIs
+Get Started with AWS Cloud Control API
+Contact Sales
+AWS Cloud Control APIs give developers the ability to use a set of standardized CRUDL APIs to manage services in an intuitive and descriptive way.
+AWS Cloud Control API gives developers standardized APIs that work with AWS and third-party cloud resources listed in the AWS CloudFormation Public Registry.
+AWS Cloud Control API provides partners with the ability to programmtically expose new AWS features and services, typically on the day they launch.
+How it works
+AWS Cloud Control API is a set of common application programming interfaces (APIs) that make it easy for developers and partners to manage the lifecycle of AWS and third-party services. Cloud Control API provides five operations for developers to create, read, update, delete, and list (CRUDL) their cloud infrastructure.
+Use cases
+Create, read, update, delete, and list AWS and third-party resources
+AWS Cloud Control API makes it easy for developers to consistently manage hundreds of AWS resources as well as third-party resources using standardized APIs. As an example, you can use Cloud Control API to create any supported cloud resource using a common CreateResource API.
+Expose new AWS resources to customers automatically
+AWS Cloud Control API remains up-to-date with the latest AWS resources, enabling Amazon partners to integrate their own solutions with Cloud Control API just once, and then automatically access the new AWS services and features without assuming additional integration work.
+Provision resources with third-party infrastructure tools
+Cloud Control API provides developers with the ability to provision AWS resources with partner infrastructure tools such as HashiCorp Terraform and Pulumi.
+Partners
+HashiCorp provides cloud infrastructure automation software that enables organizations to provision, secure, connect, and run any infrastructure for any application.
+“AWS Cloud Control API makes it easier for our teams to build solutions to integrate with new and existing AWS services. HashiCorp’s foundational technologies solve the core challenges around infrastructure so that teams can focus on business-critical tasks. Integrating HashiCorp Terraform with AWS Cloud Control API means developers are able to use new AWS features and services as soon as they are available in Cloud Control API, typically on the day of launch.”
+James Bayer, EVP Product - HashiCorp
+“Pulumi’s new AWS Native Provider, powered by the AWS Cloud Control API, gives Pulumi’s users faster access to the latest AWS innovations, typically the day they launch, without any need for us to manually implement support. The full surface area of AWS resources provided by AWS Cloud Control API can now be automated from familiar languages like Python, TypeScript, .NET, and Go, with standard IDEs, package managers, and test frameworks, with high fidelity and great quality. Using this new provider, developers and infrastructure teams can develop and ship modern AWS applications and infrastructure faster and with more confidence than ever before.”
+Joe Duffy, CEO - Pulumi
+Explore more of AWS

@@ -1,37 +1,35 @@
+« Blockchain
 Amazon Quantum Ledger Database (QLDB)
-Fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. Owned by a central trusted authority.
-Get Started
-Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log ‎owned by a central trusted authority. Amazon QLDB can be used to track each and every application data change and maintains a complete and verifiable history of changes over time.
-Ledgers are typically used to record a history of economic and financial activity in an organization. Many organizations build applications with ledger-like functionality because they want to maintain an accurate history of their applications' data, for example, tracking the history of credits and debits in banking transactions, verifying the data lineage of an insurance claim, or tracing movement of an item in a supply chain network. Ledger applications are often implemented using custom audit tables or audit trails created in relational databases. However, building audit functionality with relational databases is time-consuming and prone to human error. It requires custom development, and since relational databases are not inherently immutable, any unintended changes to the data are hard to track and verify. Alternatively, blockchain frameworks, such as Hyperledger Fabric and Ethereum, can also be used as a ledger. However, this adds complexity as you need to set-up an entire blockchain network with multiple nodes, manage its infrastructure, and require the nodes to validate each transaction before it can be added to the ledger.
-Amazon QLDB is a new class of database that eliminates the need to engage in the complex development effort of building your own ledger-like applications. With QLDB, your data’s change history is immutable – it cannot be altered or deleted – and using cryptography, you can easily verify that there have been no unintended modifications to your application’s data. QLDB uses an immutable transactional log, known as a journal, that tracks each application data change and maintains a complete and verifiable history of changes over time. QLDB is easy to use because it provides developers with a familiar SQL-like API, a flexible document data model, and full support for transactions. QLDB’s streaming capability provides a near real-time flow of your data stored within QLDB, allowing you to develop event-driven workflows, real-time analytics, and to replicate data to other AWS services to support advanced analytical processing. QLDB is also serverless, so it automatically scales to support the demands of your application. There are no servers to manage and no read or write limits to configure. With QLDB, you only pay for what you use.
-Get started with Amazon QLDB today!
-Looking to build a blockchain application? Learn more about Amazon Managed Blockchain here.
-Amazon QLDB Animated Video
-Amazon QLDB benefits
-Immutable and Transparent
-Amazon QLDB uses a journal that tracks each application data change and maintains a complete and sequenced history of changes over time. Data on the journal cannot be deleted or modified. The full history of your database can be accessed and you can query and analyze the history to see how your data has changed over time.
-Cryptographically Verifiable
-With Amazon QLDB, you can trust that the history of changes to your application data is accurate. QLDB uses a cryptographic hash function (SHA-256) to generate a secure output file of your data’s change history, known as a digest. The digest acts as a proof of your data’s change history, allowing you to look back and validate the integrity of your data changes.
-Performant and Highly Scalable
-Amazon QLDB is highly scalable and can execute 2 – 3X as many transactions than ledgers in common blockchain frameworks. Blockchain frameworks are decentralized so to execute a transaction, they require a majority of members of the network to reach consensus on the validity of the transaction. On the other hand, QLDB has a centralized design, allowing its transactions to execute without the need for multi-party consensus.
-Serverless
-With Amazon QLDB, you don’t have to worry about provisioning capacity or configuring read and write limits. You create a ledger, define your tables, and QLDB automatically scales to support the demands of your application. To help you gain a better understanding of the operational health of your database, QLDB also allows you to monitor operational metrics for your read and write IOs.
-Easy to Use
-Amazon QLDB’s familiar database capabilities make it easy to use. QLDB supports PartiQL - a new, open source, SQL-compatible query language designed to easily work with all data types and structures. With PartiQL, you can easily query, manage, and update your data with SQL operators. QLDB’s document-oriented data model is flexible, enabling you to easily store and process both structured and semi-structured data. Also, QLDB transactions are ACID compliant and have full serializability- the highest level of isolation.
-Highly Available
-Amazon QLDB is designed for high availability, replicating multiple copies of data within an Availability Zone (AZ) as well as across 3 AZs in an AWS region, without any additional cost or setup. QLDB backs up your data continuously while maintaining consistent performance, allowing it to transparently recover from any instance or physical storage failures.
-Streaming Capability
-Amazon QLDB can stream data directly to Amazon Kinesis Data Streams. This QLDB streaming capability allows you to react quickly to new events (e.g., a change in account balance for a banking ledger application) and easily integrate with downstream services such as AWS Lambda and Amazon Elasticsearch, enabling you to easily develop event-driven workflows and perform real-time and historical data analysis.
+Maintain an immutable, cryptographically verifiable log of data changes
+Get started with Amazon QLDB
+Learn more about pricing
+Track and maintain a sequenced history of every application data change using an immutable and transparent journal.
+Trust the integrity of your data. Built-in cryptographic verification enables third-party validation of data changes.
+Build correct, event-driven systems with QLDB ACID transactions and support for real-time streaming to Amazon Kinesis.
+Start small and pay only for what you use with serverless architecture that provides automatic storage and resource scaling.
 How it works
+Amazon Quantum Ledger Database (QLDB) is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log.
 Use cases
-Finance
-Banks often need a centralized ledger-like application to keep track of critical data, such as credit and debit transactions across customer bank accounts. Instead of building a custom ledger which has complex auditing functionality, banks can use QLDB to easily store an accurate and complete record of all financial transactions.
-Manufacturing
-Manufacturing companies often need to reconcile data between their supply chain systems to track the full manufacturing history of a product. A ledger database can be used to record the history of each transaction, and provide details of every individual batch of the product manufactured at a facility. In case of a product recall, manufacturers can use QLDB to easily trace the history of the entire production and distribution lifecycle of a product.
-Insurance
-Insurance applications often need a way to better track the history of claim transactions. Instead of building complex auditing functionality using relational databases, insurance companies can use QLDB to accurately maintain the history of claims over their entire lifetime, and whenever a potential conflict arises, QLDB can also help cryptographically verify the integrity of the claims data (e.g., whether a claim was submitted accurately), making the application resilient against data entry errors and manipulation.
-HR & Payroll
-HR systems often have to track and maintain a record of an employee’s details such as payroll, bonus, benefits, performance history, and insurance. By implementing a system-of-record application using QLDB, customers can easily maintain a trusted and complete record of the digital history of their employees, in a single place.
-Retail & Supply Chain
-Retailers often need to access information on every stage of a product's supply chain, such as what location did the product come from, how many items of the product were shipped and to whom, who handled the shipment, etc. With QLDB, retail companies can look back and track the full history of inventory and supply chain transactions at every logistical stage of their products.
-Customers and Partners
+Store financial transactions
+Create a complete and accurate record of all financial transactions, such as credit and debit transactions.
+Reconcile supply chain systems
+Record the history of each transaction and provide details of every batch manufactured, shipped, stored, and sold from facility to store.
+Maintain claims history
+Track a claim over its lifetime, and cryptographically verify data integrity to make the application resilient against data entry errors and manipulation.
+Centralize digital records
+Implement a system-of-record application to create a complete, centralized record of employee details such as payroll, bonus, and benefits.
+Customers
+Specright helps its customers manage and share data
+Klarna Bank builds its own banking platform
+DVLA processes data on 48 million drivers in the UK
+Zilliant seamlessly captures cryptographically verifiable audit logs
+How to get started
+Find out how Amazon QLDB works
+Build and support your ledger-like applications with a fully managed service.
+Explore Amazon QLDB features
+Pay only for what you use—no minimum fee or mandatory service usage.
+See pricing options
+Get started with training
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

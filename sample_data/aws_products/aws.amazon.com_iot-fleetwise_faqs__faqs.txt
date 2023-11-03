@@ -1,0 +1,24 @@
+Products
+Internet of Things
+AWS IoT FleetWise
+AWS IoT FleetWise FAQs
+Q: What is AWS IoT FleetWise?
+AWS IoT FleetWise is a managed service that makes it easy to collect vehicle data, transform it, and then transfer it to the cloud to gain insights about your fleet(s) of vehicles. You can use data transferred by AWS IoT FleetWise to build applications that remotely diagnose issues in individual vehicles, analyze vehicle fleet health to help protect against warranty claims and recalls, and use analytics and machine learning to improve autonomous driving and advanced driver assistance systems.
+Q: Why should I use AWS IoT FleetWise?  AWS IoT FleetWise takes the complex variability out of collecting data from vehicle fleets at scale. Once collected, AWS IoT FleetWise data is automatically transformed following a standard vehicle model you define, ensuring your fleet data is consistent and reliable.
+Q: How do I get started with AWS IoT FleetWise?  First, login to the AWS Management Console. Next, check out the documentation for getting started on the resources page. Finally, start building with AWS IoT FleetWise by modeling your vehicle and defining data collection rules.
+Q: What are the hardware requirements for AWS IoT FleetWise Edge?   AWS IoT FleetWise Edge Agent currently supports the NXP S32G vehicle network processors and will continue to add support for additional popular automotive hardware. The same AWS IoT FleetWise Edge Agent can also run on Amazon Elastic Compute Cloud (Amazon EC2) Graviton instances with previously collected vehicle data. For more details, see the “Edge” guide available within the console.
+Q: What happens to the data collected by AWS IoT FleetWise?  Data collected and ingested through AWS IoT FleetWise goes directly into your Amazon Timestream or Amazon Simple Storage Service (S3) repositories, owned by you. You own and control all data collected by AWS IoT FleetWise.
+Q: How does AWS IoT FleetWise vehicle modeling work?  A vehicle model is a digital representation of your vehicle’s sensors and signals. You can make these as simple or as detailed as you wish. Using the virtual vehicle model as a blueprint for AWS IoT FleetWise enables you to organize vehicles by common attributes (such as “number of doors”) into campaigns and set uniform collection parameters across your diverse fleet of vehicles. Vehicle models can help you create and share sensor and signal definitions across multiple providers.
+Q: How do I select data for collection?  Define the vehicle data you wish to collect by writing simple, rules-based statements from the AWS IoT FleetWise console. AWS IoT FleetWise sends these statements to your vehicles remotely, where the AWS IoT FleetWise Edge Agent interprets and collects data according to the statements.
+Q: How do I set up AWS IoT FleetWise to define the data elements to collect from my fleet and specify my fleet?  For detailed information about defining data collection elements and specifying your fleet, see the AWS IoT FleetWise Developer Guide.
+Q: How does AWS IoT FleetWise work with my current cloud environment?  With little to no additional effort, you can extend your existing implementations of AWS services such as AWS IoT Core, Amazon S3, and Amazon Timestream to AWS IoT FleetWise. To discuss integration with your specific architecture or other integration options with AWS IoT FleetWise, contact our sales team.
+Q: Can AWS IoT FleetWise collect automotive camera data as well?  During preview, AWS IoT FleetWise collects and transports traditional CAN-based automotive sensors (e.g., engine temperature, fuel pressure). In the first half of 2022, we will enable support for advanced sensors such as camera or radar sensors.
+Get started with AWS IoT FleetWise
+Get started building with AWS IoT FleetWise in the AWS Management Console.
+Get started
+View product pricing
+Pay only for services used with no upfront commitments or fees.
+View pricing page
+Connect with an expert
+Ask in-depth questions and get live support.
+Contact support

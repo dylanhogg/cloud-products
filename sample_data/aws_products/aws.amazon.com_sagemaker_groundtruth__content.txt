@@ -1,18 +1,38 @@
+Amazon SageMaker Data Labeling
+Create high-quality datasets for training machine learning models
+Get Started with Amazon SageMaker Ground Truth Plus
+Request a pilot
+Amazon SageMaker provides two data labeling offerings, Amazon SageMaker Ground Truth Plus and Amazon SageMaker Ground Truth. Both options allow you to identify raw data, such as images, text files, and videos, and add informative labels to create high-quality training datasets for your machine learning models.
+Amazon SageMaker Ground Truth Plus
+With SageMaker Ground Truth Plus, you can easily create high-quality training datasets without having to build labeling applications or manage labeling workforces on your own. Amazon SageMaker Ground Truth Plus helps reduce data labeling costs by up to 40%. Amazon SageMaker Ground Truth Plus provides an expert workforce that is trained on ML tasks, and can help meet your data security, privacy, and compliance requirements. You simply upload your data, and Amazon SageMaker Ground Truth Plus then creates data labeling workflows and manages workflows on your behalf.
 Amazon SageMaker Ground Truth
-Easily label training data for machine learning at scale
-Get started with Amazon SageMaker Ground Truth
-Amazon SageMaker Ground Truth is a fully managed data labeling service that makes it easy to build highly accurate training datasets for machine learning. Get started with labeling your data in minutes through the SageMaker Ground Truth console using custom or built-in data labeling workflows. These workflows support a variety of use cases including 3D point clouds, video, images, and text. As part of the workflows, labelers have access to assistive labeling features such as automatic 3D cuboid snapping, removal of distortion in 2D images, and auto-segment tools to reduce the time required to label datasets. In addition, Ground Truth offers automatic data labeling which uses a machine learning model to label your data.
-500 objects labeled free
-for the first 2 months with the AWS Free Tier
-Get started for free
+If you want the flexibility to build and manage your data labeling workflows and manage your own data labeling workforce, you can use Amazon SageMaker Ground Truth. SageMaker Ground Truth is a data labeling service that makes it easy to label data and gives you the option to use human annotators through Amazon Mechanical Turk, third-party vendors, or your own private workforce.
 How it works
+Label data with SageMaker Ground Truth Plus
+Label data with SageMaker Ground Truth
+Feature comparison
+Amazon SageMaker Ground Truth Plus helps you to create high-quality training datasets without having to build labeling applications or manage a labeling workforce.
+Amazon SageMaker Ground Truth helps you build and manage your own data labeling workflows and data labeling workforce.
+Category
+Data Labeling Workflows
+Custom or 30+ built-in workflows for text, images, video, and 3D point clouds. You manage your data labeling workflows and data labeling quality
+AWS Experts set up workflows and manage them on your behalf in accordance with your quality and turnaround time requirements.
+User
+Data Scientists and ML Engineers
+Data Scientists, ML Engineers, Data Operations Managers, and Program Managers
+Workforce
+Your choice: third-party vendors, Amazon Mechanical Turk, or your own private workforce
+Expert workforce that can help meet your data security, privacy, and compliance requirements
+ML Labeling Techniques
+Active learning
+Active learning, pre-labeling, and machine validation
 Benefits
-Improve data label accuracy
-SageMaker Ground Truth helps improve the quality of labels through annotation consolidation and audit workflows. Annotation consolidation is the process of collecting label inputs from two or more data labelers and combining them to create a single data label for your machine learning model. With built-in audit and review workflows, workers can perform label verification and make adjustments to improve accuracy.
-Easy to use
-SageMaker Ground Truth provides automated labeling features such as ‘auto-segment’, ‘automatic 3D cuboid snapping’, and ‘sensor fusion with 2D video frames’ through an intuitive user interface in order to reduce the time needed for data labeling tasks while also improving quality. For semantic segmentation, workers must label objects in an image. Using the auto-segment feature, workers can capture the object with 4 clicks vs. hundreds.
-Reduce costs by up to 70%
-SageMaker Ground Truth offers automatic data labeling. Using an active learning model, data is labeled and only routed to humans if the model cannot confidently label it. The human-labeled data is then used to train the machine learning model to improve its' accuracy. As a result, less data is then sent to humans in the next round of labeling which lowers data labeling costs by up to 70%.
-Choose your workforce
-SageMaker Ground Truth provides options to work with labelers inside and outside of your organization. Using SageMaker Ground Truth, you can easily send labeling jobs to your own labelers or you can access a workforce of over 500,000 independent contractors who are already performing machine learning related tasks through Amazon Mechanical Turk. If your data requires confidentiality or special skills, you can use vendors pre-screened by AWS for quality and security procedures, including iVision, CapeStart Inc., Cogito, and iMerit.
+Improve quality of training datasets
+Amazon SageMaker data labeling offerings provide ML labeling techniques that are less prone to manual errors and help improve the quality of training datasets. Amazon SageMaker Ground Truth Plus has a multi-step labeling workflow that includes ML models for pre-labeling, machine validation of human labeling to detect errors and low-quality labels, and assistive labeling features (e.g., 3D cuboid snapping, predict-next in video labeling, and auto-segment tools). If you are managing your own data labeling workflows, SageMaker Ground Truth provides automated labeling features such as auto-segment, automatic 3D cuboid snapping, and sensor fusion with 2D video frames.  In addition, SageMaker Ground Truth provides automatic data labeling which uses active learning and only routes labeled data to humans it the model cannot confidently label it.
+Choose your data labeling workforce
+With Amazon SageMaker data labeling offerings, you can choose your data labeling workforce. With SageMaker Ground Truth Plus, an expert workforce that is trained on ML tasks labels your data in accordance with your quality and turnaround time requirements. With SageMaker Ground Truth, you have options to work with labelers inside and outside of your organization. You can easily send labeling jobs to your own labelers, or you can access a workforce of over 500,000 independent contractors who are already performing ML-related tasks through Amazon Mechanical Turk. If your data requires confidentiality or special skills, you can also use vendors that are pre-screened by AWS for quality and security procedures.
+Increase visibility of data labeling operations
+Amazon SageMaker data labeling offerings enable you to gain transparency into data labeling operations and quality management so you can verify that your quality requirements are being met. SageMaker Ground Truth Plus provides interactive dashboards and user interfaces, so you can monitor progress of training datasets across multiple projects, track project metrics such as daily throughput, inspect labels for quality, and provide feedback on the labeled data.
+Receive high-quality labeled data quickly
+With Amazon SageMaker data labeling offerings, you can receive high-quality labeled data quickly. With SageMaker Ground Truth Plus, you simply upload your data in Amazon S3 along with security, privacy, and compliance requirements. AWS experts will then setup the data labeling workflow and an expert workforce will complete your labeling tasks.
 Get Started

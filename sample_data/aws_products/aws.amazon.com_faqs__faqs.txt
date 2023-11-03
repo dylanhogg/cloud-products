@@ -1,0 +1,254 @@
+AWS FAQs
+Product-related FAQs
+Select from the following list of Product and Technical FAQs. Browse through these FAQs to find answers to commonly raised questions. If you're a new customer of one of the services below, we encourage you to read through the relevant articles.
+Compute
+Amazon EC2 Auto Scaling FAQ
+Amazon EC2 Container Registry FAQ
+Amazon EC2 Container Service FAQ
+Amazon EC2 Windows FAQ
+Amazon EC2 FAQ
+Amazon Elastic Kubernetes Service (EKS) FAQ
+Amazon Lightsail FAQ
+Elastic Load Balancing FAQ
+AWS Batch FAQ
+AWS Elastic Beanstalk FAQ
+AWS Fargate FAQ
+AWS Lambda FAQ
+AWS Outposts FAQ
+AWS Serverless Application Repository FAQ
+VMware Cloud on AWS FAQ
+Storage
+Amazon EBS FAQ
+Amazon EFS FAQ
+Amazon FSx for Lustre FAQ
+Amazon FSx for Windows File Server FAQ
+Amazon S3 FAQ
+Amazon S3 Glacier FAQ
+AWS Backup FAQ
+AWS DataSync FAQ
+AWS Snowball FAQ
+AWS Snowball Edge FAQ
+AWS Snowmobile FAQ
+AWS Storage Gateway FAQ
+AWS Transfer for SFTP FAQ
+Database
+Amazon Aurora FAQ
+Amazon RDS FAQ
+Amazon DynamoDB FAQ
+Amazon ElastiCache FAQ
+Amazon Redshift FAQ
+Amazon Neptune FAQ
+AWS Database Migration Service FAQ
+Amazon DocumentDB (with MongoDB compatibility) FAQs
+Migration
+AWS Migration Hub FAQ
+AWS Application Discovery Service
+AWS Server Migration Service FAQ
+Networking & Content Delivery
+Amazon VPC FAQ
+Amazon CloudFront FAQ
+Amazon Route 53 FAQ
+Amazon API Gateway FAQ
+AWS App Mesh FAQ
+AWS Direct Connect FAQ
+Developer Tools
+AWS CodeStar FAQ
+AWS CodeCommit FAQ
+AWS CodeBuild FAQ
+AWS CodeDeploy FAQ
+AWS CodePipeline FAQ
+AWS Cloud9 FAQ
+AWS X-Ray FAQ
+Management Tools
+Amazon CloudWatch FAQ
+AWS Auto Scaling FAQ
+AWS CloudFormation FAQ
+Amazon CloudTrail FAQ
+Amazon Config FAQ
+AWS OpsWorks FAQ
+Amazon Service Catalog FAQ
+Amazon EC2 Systems Manager FAQ
+AWS Trusted Advisor
+AWS Management Console FAQ
+AWS Managed Services
+Media Services
+Amazon Kinesis Video Streams FAQ
+Amazon Elastic Transcoder FAQ
+AWS Elemental MediaConvert FAQ
+AWS Elemental MediaLive FAQ
+AWS Elemental MediaPackage FAQ
+AWS Elemental MediaStore FAQ
+AWS Elemental MediaTailor FAQ
+Artificial Intelligence
+Amazon Lex FAQ
+Amazon Polly FAQ
+Amazon Rekognition FAQ
+Amazon Machine Learning FAQ
+Satellite
+AWS Ground Station FAQ
+Machine Learning
+Amazon Forecast FAQ
+Amazon Kendra FAQ
+Amazon Personalize FAQ
+Amazon Textract FAQ
+AWS Comprehend FAQ
+AWS DeepLens FAQ
+AWS Lex FAQ
+AWS Polly FAQ
+AWS Rekognition FAQ
+AWS SageMaker FAQ
+AWS Transcribe FAQ
+AWS Translate FAQ
+Analytics
+Amazon Athena FAQ
+Amazon Elastic MapReduce FAQ
+Amazon CloudSearch FAQ
+Amazon Kinesis FAQ
+Amazon MSK FAQ
+Amazon OpenSearch Service FAQ
+Amazon QuickSight FAQ
+AWS Data Pipeline FAQ
+AWS Glue FAQ
+AWS Lake Formation FAQ
+Security, Identity, & Compliance
+AWS Identity and Access Management FAQ
+Amazon Cloud Directory
+Amazon Cognito FAQ
+AWS GuardDuty FAQ
+Amazon Inspector FAQ
+Amazon Macie FAQ
+AWS Certificate Manager FAQ
+AWS CloudHSM FAQ
+AWS Secrets Manager
+AWS Directory Service FAQ
+AWS Key Management Service FAQ
+AWS Organizations FAQ
+AWS Single Sign-On FAQ
+AWS Shield FAQ
+AWS WAF FAQ
+AWS Artifact FAQ
+Mobile Services
+AWS Mobile Hub FAQ
+Amazon Pinpoint FAQ
+AWS AppSync FAQ
+AWS Device Farm FAQ
+Amazon Mobile Analytics FAQ
+Amazon SNS FAQ
+AR & VR
+Amazon Sumerian FAQ
+Application Integration
+Amazon MQ FAQ
+Amazon SQS FAQ
+Amazon SWF FAQ
+AWS AppFlow FAQ
+AWS Step Functions FAQ
+Customer Engagement
+Amazon Connect
+AWS Pinpoint FAQ
+Amazon SES FAQ
+Business Productivity
+Alexa for Business FAQ
+Amazon Chime
+Amazon WorkDocs FAQ
+Amazon WorkMail FAQ
+Desktop & App Streaming
+Amazon WorkSpaces FAQ
+Amazon AppStream FAQ
+Amazon AppStream 2.0 FAQ
+Internet of Things
+AWS IoT Core FAQ
+Amazon FreeRTOS FAQ
+AWS Greengrass FAQ
+AWS IoT 1-Click FAQ
+AWS IoT Analytics FAQ
+AWS IoT Button FAQ
+AWS IoT Device Management FAQ
+Game Development
+Amazon GameLift
+Amazon Lumberyard
+Payments & Billing
+AWS Billing FAQ
+Amazon FPS FAQ
+Amazon DevPay FAQ
+Support
+AWS Support FAQ
+Cloud computing concepts FAQs
+The Cloud Computing Concepts Hub is the centralized place where you can browse or search for informative articles about cloud computing. You'll find easy-to-understand info about broad topics such as "What is machine learning?" and "What is data science?" These articles are intended to help you up-level your understanding of frequently asked cloud computing topics.
+What is a data warehouse?
+What is computer networking?
+What is a VPN?
+What is an API?
+What is web hosting?
+What is VPS (Virtual Private Server)?
+What is VMWare?
+What is version control?
+What is speech to text?
+What is serverless?
+What is root cause analysis?
+What is a relational database?
+What is Redis?
+What is RDS?
+What is Presto?
+What is PostgreSQL?
+What is ElasticSearch?
+What is object storage?
+What is MySQL?
+What is Lambda?
+What is Kubernetes (k8s)?
+What is JSON?
+What is hybrid cloud?
+What is Hive?
+What is Hadoop?
+What is GIT?
+What is face recognition?
+What is EUC (End User Computing)?
+What is ELK?
+What is Docker?
+What is DNS (Domain Name Service)?
+What is IT disaster recovery?
+What is deep learning?
+What is DDOS?
+What is data labeling?
+What is continuous integration?
+What is computer vision?
+What is cloud storage?
+What is cloud migration?
+What is caching?
+What is streaming data?
+What is big data?
+What is audio to text?
+What is an instance?
+What is an ETL?
+What is EC2?
+What is AI?
+What is a full stack developer?
+What is a forecast?
+What is a data lake house?
+What is a cloud call center?
+What is a chatbot?
+What is a CDN?
+What are NoSQL databases?
+What are microservices?
+What is OpenSearch?
+What is MongoDB?
+What is DNS?
+What is DevOps?
+What is a data lake?
+AWS Free Tier Offerings
+View all AWS free tier offerings
+Free Tier Registration FAQs
+Free Tier FAQs
+Free analytics services
+Free cloud object storage
+Compare free cloud servers
+Free cloud server
+Free machine learning services
+Free database services
+Free websites and webapps
+Free cloud storage
+Free end user computing services
+Free cloud migration services
+GET STARTED WITH AWS
+Learn how to start using AWS in minutes
+AWS FREE TIER
+Gain free, hands-on experience with AWS for 12 months

@@ -1,0 +1,33 @@
+AWS Mainframe Modernization (Preview)
+Migrate, modernize, operate, and run mainframe workloads
+Explore AWS Mainframe Modernization
+Check out AWS MAP for Mainframe
+Easily migrate and modernize your applications to eliminate the hardware and staffing costs of traditional mainframes.
+Break up and manage your end-to-end migration with infrastructure, software, and tools to refactor and transform legacy applications.
+Deploy, run, and operate migrated applications in the Mainframe Modernization environment with no upfront costs.
+How it works
+AWS Mainframe Modernization (Preview) is a set of managed tools providing infrastructure and software for migrating, modernizing, and executing mainframe applications.
+Introducing AWS Mainframe Modernization | Amazon Web Services
+What is AWS Mainframe Modernization?
+AWS Mainframe Modernization is a unique platform that allows you to migrate your on-premises mainframe workloads to a managed runtime environment on AWS. Mainframe Modernization enables two popular migration patterns: replatforming and automated refactoring.
+Use cases
+Migrate mainframe workloads
+Migrate faster by refactoring legacy language applications to Java-based services, or re-platforming mainframe applications.
+Learn more about mainframe modernization
+Create a migration plan
+Assess your migration readiness and develop a clear strategy for legacy workloads using call graphs, dependency maps, and source searching.
+Learn more about cloud migration
+Scale DevOps best practices
+Maintain, enhance, execute, and operate enterprise applications following DevOps best practices and reduce time-to-market.
+Learn more about DevOps
+How to get started
+Accelerate migration with AWS MAP for Mainframe
+The AWS Migration Acceleration Program for Mainframe (MAP) offers comprehensive migration support based on experience with thousands of enterprise customers.
+Learn more
+Track progress with AWS Migration Hub
+Track application migration progress across multiple AWS Partners and solutions from a single location, and receive modernization strategy recommendations.
+Explore the service
+Engage Mainframe Migration Competency Partners
+Take advantage of AWS Partners with in-depth  Mainframe Modernization knowledge.
+Explore support options
+Explore more of AWS

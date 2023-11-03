@@ -1,0 +1,50 @@
+General
+What is AWS Cloud Control API?
+AWS Cloud Control API is a new AWS capability that introduces a common set of CRUDL (Create, Read, Update, Delete, and List) APIs to help developers manage their cloud infrastructure in an easy and consistent way. Cloud Control API’s common APIs allows developers to uniformly manage the lifecycle of AWS and third-party services. To learn more, visit the AWS Cloud Control API User Guide.
+Why should I use AWS Cloud Control API?
+You should use Cloud Control API if you want to manage your cloud infrastructure in a simple, consistent, and fast manner using a set of common APIs. Using Cloud Control API, developers have a consistent method to manage supported services throughout their lifecycle, so there are fewer APIs to learn as developers add services to their infrastructure. For instance, developers can create any supported cloud resource using Cloud Control API’s CreateResource API be it an IAM Role, Lambda function, or third-party resources available on the CloudFormation Registry such as a Datadog monitor or a MongoDB Atlas cluster. Developers can move faster by eliminating the need to author, maintain, and set up custom code across distinct service-specific APIs. In addition, you will benefit from uniform API behavior (response elements and errors) while managing your resources. For example, you will find it simple to debug errors during CRUDL operations through uniform error codes surfaced by Cloud Control API that are standardized across the resource types you operate on.
+Question: What type of resource type operations are supported by Cloud Control API?
+Cloud Control API supports all control plane (CRUDL) operations. These operations correspond to creating, reading, updating, deleting, or listing cloud-based resources. For example, these operations let you manage the lifecycle of an AWS Lambda Function. However, control plane operations do not let you operate on the underlying objects stored in the AWS Lambda Function. Those are data plane operations and are not supported by Cloud Control API.
+Question: What is a resource type?
+A resource type allows you to manage the lifecycle of resources such as an AWS Lambda Function. A resource type includes schema (resource properties and handler permissions) and handlers that control API interactions with the underlying AWS or third-party services. These API interactions include create, read, update, delete, or list depending upon the service.
+Question: How does Cloud Control API relate to AWS CloudFormation Registry?
+AWS Cloud Control API supports any AWS resource type (that is either fully mutable or immutable) or third-party resource types as soon as they are available on the CloudFormation Registry. You can discover the schema and handler permissions for Cloud Control API supported resources by browsing the CloudFormation Registry.
+Developer
+How can I benefit by using Cloud Control API?
+As a developer, you may prefer to simplify the way you manage the lifecycle of all your resources. You can leverage Cloud Control APIs uniform resource configuration model with pre-defined format to configure your cloud resources in a standardized manner. In addition, you will benefit from uniform API behavior (response elements and errors) while managing your resources. For example, you will find it simple to debug errors during CRUDL operations through uniform error codes surfaced by Cloud Control API that are independent of the resources you operate on. Using Cloud Control API, you will also find it simple to configure cross-resource dependencies. You will also no longer require to author and maintain custom code across multiple vendor tools and APIs to use AWS and third-party resources together.
+Can I use the service-specific APIs along with Cloud Control API to manage my cloud infrastructure?
+Yes. You can use either the existing service-specific APIs or the common APIs offered by Cloud Control API to manage your cloud infrastructure.
+Are there any prerequisites for setting up Cloud Control API?
+Yes. You will need an AWS account configured with appropriate AWS Identity and Access Management (IAM) user.
+How do I get started on Cloud Control API as a developer?
+After you have completed the prerequisite, you can get started by first configuring your resources in accordance to the Cloud Control API uniform resource model. You can do so by defining the resource attributes (properties or tags). Next, you can use the Cloud Control API Create, Update, Delete APIs using the AWS CLI to pass in those properties to build, configure, and manage your cloud infrastructure. For example, to create an AWS CloudWatch Log resource through the CLI, you can use the Create API by specifying the API parameters as:
+aws cloudcontrol create-resource --type-name AWS::Logs::LogGroup --desired-state "{\"LogGroupName\": \"CloudControlExample\",\"RetentionInDays\":90}"
+You can also use the Cloud Control API List and Describe APIs to discover the resources that are part of your infrastructure and assess its configuration. For example, you can use the Cloud API GetResource API to read the properties of the CloudWatch Log resource you created. For details, refer to the User Guide, which contains tutorials to get started.
+What AWS resource types are supported? How quickly will Cloud Control API support new AWS resource types?
+Cloud Control API supports hundreds of AWS resources. Refer to our documentation, for a full list of supported resources. Cloud API will provide support for future AWS resource types as soon as they are published on the CloudFormation Registry.
+What third-party resources are supported by Cloud Control API?
+Cloud API supports all third-party public or private resource types published in the CloudFormation Registry. Please refer to the announcement.
+Can I publish third-party resource types that can be made available through Cloud Control API?
+Yes. If you plan to use third-party resources in your cloud infrastructure or applications that are not supported by Cloud Control API, then you can model and publish such as third-party resource type by developing the provisioning logic for such a resource type, and ensuring it meets the contract test bar defined by the CloudFormation Registry. Once, your resource type is published on the CloudFormation Registry, you can then access it using Cloud Control API. For more information, please refer to the documentation.
+How would the experience of using Cloud Control API be for developers using partner tools that are onboarded onto Cloud Control API?
+You will benefit from accessing support for all existing and future AWS resources, as soon as they are available on the CloudFormation Registry. New AWS resources are available on the CloudFormation Registry typically on the day of launch.
+How do I raise any issues faced while using Cloud Control API?
+If you face run-time issues, for example CRUDL operation failure, then contact AWS Support. If you face issues pertaining to gaps in AWS resource support or need for feature enhancements for supported AWS resources, then create an issue on the AWS CloudFormation Open Coverage Roadmap.
+Partner
+How can I benefit by onboarding with Cloud Control API?
+As a partner you may want to support all AWS resources in your tool offerings so that our mutual customers can benefit from the latest AWS innovations in a timely manner. By onboarding with Cloud Control API once, you can eliminate the recurring development effort, which can take weeks, to build support for each new AWS resource released. Cloud Control API is up-to-date with the latest AWS resources as soon as they are available on the CloudFormation Registry, enabling partners to integrate their own solutions with Cloud Control API just once, and then automatically access new AWS services and features without additional integration work.
+What type of partner tools can onboard with Cloud Control API?
+Any partner tool that interacts with AWS service-specific control plane APIs to integrate can onboard with Cloud Control API. For example, infrastructure as code (IaC) tools that enable developers to manage their applications in an automated manner can onboard with Cloud Control API. Among IaC tools, HashiCorp Terraform and Pulumi are the Cloud Control API partners. Similarly, configuration management tools or cloud security posture management tools that allow developers to monitor configuration changes on their application to identify compliance and security gaps can also onboard with Cloud Control API.
+How do I get started on Cloud Control API?
+Partners can onboard with Cloud Control API by authoring a one-time integration with Cloud Control API’s CRUDL APIs and resource configuration model (schema).
+I already have integrations with existing AWS resources, why should I onboard with Cloud Control API?
+With one-time onboarding with Cloud Control API, you can save recurring effort to model integrations with new AWS resources.
+Can I publish my own resources for developers to use?
+Yes. You can publish your own resource types to the CloudFormation Public Registry after passing a series of contract tests that specify the required behavior of your resource type. For more information, please refer to the publishing guide.
+Learn more about AWS Cloud Control API pricing
+Visit the pricing page
+Ready to build?
+Sign up for a free account
+Have more questions?
+Contact us
+Page Content

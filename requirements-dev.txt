@@ -2,3 +2,6 @@
 pytest
 black
 flake8
+ruff
+pre-commit
+pip-audit

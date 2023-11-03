@@ -1,0 +1,45 @@
+General
+Q: What is Amazon FinSpace?
+A: Amazon FinSpace is a fully managed data management and analytics service that makes it easy to store, catalog, and prepare financial industry data at scale, which reduces the time it takes for financial services industry (FSI) customers to find and access all types of financial data for analysis from months to minutes.
+Financial services organizations analyze data from internal data stores like portfolio, actuarial, and risk management systems as well as petabytes of data from third-party data feeds, such as historical securities prices from stock exchanges. When performing analysis, it can take months to find the right data, get permissions to access the data in a compliant way, and prepare it for analysis.
+Q: Why should I use FinSpace?
+A: FinSpace simplifies the process of discovering data, gaining permissions to access data, and transforming data to be ready for analysis—thus saving months of prep work done by financial services customers today.
+Financial services organizations rely on hundreds of datasets sourced internally or externally to build investment models, manage risk, and improve customer experience. Today, it is taking analysts longer and longer to test new research ideas because data volumes are increasing, customers want to use more diverse datasets, and compute resources cannot keep up with the latest algorithms and data volumes. FinSpace helps data analysts be more productive and agile by reducing the time they spend searching for data, obtaining access to the data, and acquiring the compute resources needed to match their data volumes.
+Q: How do I get started with FinSpace?
+A: To start using Amazon FinSpace, sign in to the AWS Management Console, navigate to “Amazon FinSpace” in the Analytics category, and then create a FinSpace environment. We have made available a sample dataset, typically used in capital markets, so that it’s easy to evaluate FinSpace’s features and capabilities. Users of the FinSpace web application can drag and drop files from their desktop to load into FinSpace. Developers can use FinSpace’s SDK to ingest data directly from S3.
+Q: In which regions is Amazon FinSpace available?
+A: Please refer to the AWS Region Table for details on Amazon FinSpace service availability by region.
+Q: How does Amazon FinSpace integrate with my existing enterprise data lake (EDL)?
+A: Using FinSpace APIs, you can build integrations with an existing enterprise data lake and ingest data from S3.
+Q: How do I load data into Amazon FinSpace?
+A: You can use Amazon FinSpace’s API to ingest data programmatically into FinSpace. Learn more about Amazon FinSpace’s API in the API reference documentation. You can also drag and drop files directly into the FinSpace web application.
+Q: Does FinSpace support streaming data?
+A: You can collect streaming data into change sets, which you then load into FinSpace using the FinSpace API so that you can perform historical analysis on the data.
+Data Governance and Security
+Q: What security measures does Amazon FinSpace have?
+A: Amazon FinSpace ensures that all data managed within the application is encrypted in transit and at rest. Requests to the FinSpace API and web application are made over a secure (SSL) connection using TLS 1.2. You can integrate with your organization’s identity provider (IdP) using SAML. FinSpace will use an AWS Key Management Service (KMS) customer-managed customer master key (CMK) to encrypt all data stored in Amazon FinSpace. Amazon FinSpace is a single tenant service providing data and network isolation.
+Q: How do I track activity in FinSpace for audit and compliance purposes?
+A: FinSpace automatically tracks application activity such as user logins, dataset and metadata operations, data access, and compute resources so that, at any point in time, you can determine who is accessing which data and how. You can generate and export activity reports using FinSpace Audit Report functionality.
+Q: How does FinSpace make it easy for me to manage data access policies?
+A: In FinSpace, you can define user groups and then assign those groups to datasets, along with the fine grained access control.
+Q: How do I manage data access with FinSpace?
+A: You create a FinSpace environment and load data inside it. You create users for that FinSpace environment. You assign permissions to users to access data by putting them into User groups. Permissions to perform any action in FinSpace are assigned to user groups, not directly to the user. User groups can be assigned to Datasets with fine-grained permissions.
+Q: How do I access data stored in Amazon FinSpace?
+A: You can access data in Amazon FinSpace using the web application, which includes a notebook, or you can use FinSpace APIs to access data through secured S3 access based on your access controls specified in FinSpace.
+Billing
+Q: How am I charged for Amazon FinSpace?
+A: With Amazon FinSpace, you pay for users who have access to the application, the storage you use monthly, and the clusters used to prepare and analyze your data. See the Amazon FinSpace pricing page for details.
+Q: How am I billed for data stored in Amazon FinSpace?
+A: You pay only for the GB of data you load into FinSpace prorated according to the hours that the data is stored.
+Q: How am I billed for users in Amazon FinSpace?
+A: You pay a monthly fee for each user enabled in FinSpace. The monthly charge is prorated according to the hours that the user is enabled.
+Learn more about pricing
+Learn more about the pricing of Amazon FinSpace
+Learn more
+Sign up for a free account
+Instantly get access to the AWS Free Tier.
+Sign up
+Start building in the console
+Get started building with Amazon FinSpace in the AWS Management Console.
+Sign in
+Page Content

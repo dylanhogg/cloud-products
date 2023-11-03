@@ -6,7 +6,7 @@ Traditional BI solutions often require teams of data engineers to spend months b
 Q: What is SPICE?
 Amazon QuickSight is built with "SPICE" – a Super-fast, Parallel, In-memory Calculation Engine. Built from the ground up for the cloud, SPICE uses a combination of columnar storage, in-memory technologies enabled through the latest hardware innovations and machine code generation to run interactive queries on large datasets and get rapid responses. SPICE supports rich calculations to help you derive valuable insights from your analysis without worrying about provisioning or managing infrastructure. Data in SPICE is persisted until it is explicitly deleted by the user. SPICE also automatically replicates data for high availability and enables QuickSight to scale to hundreds of thousands of users who can all simultaneously perform fast interactive analysis across a wide variety of AWS data sources.
 Q: How can I get started with Amazon QuickSight?
-To get started, sign up to Amazon Quicksight and get 1 user and 1GB of SPICE capacity for free. If you’re already signed up, you can access QuickSight at https://quicksight.aws.amazon.com.
+To get started, sign up to Amazon Quicksight, with 4 authors free in trial for 30 days.
 Q: Are there any pre-requisites to use SageMaker inferencing in QuickSight?
 Your privileged QuickSight account administrator needs to first grant QuickSight IAM permissions to make SageMaker API calls on your behalf. To learn more, see documentation on granting QuickSight IAM permissions.
 Authors and Readers
@@ -35,7 +35,7 @@ Data management
 Q: Which data sources does Amazon QuickSight support?
 You can connect to AWS data sources including Amazon RDS, Amazon Aurora, Amazon Redshift, Amazon Athena and Amazon S3. You can also upload Excel spreadsheets or flat files (CSV, TSV, CLF, and ELF), connect to on-premises databases like SQL Server, MySQL and PostgreSQL and import data from SaaS applications like Salesforce.
 Q: Can I connect Amazon QuickSight to my Amazon EC2 or on-premises database?
-Yes. In order to connect Amazon QuickSight to an Amazon EC2 or on-premises database, you need to add the Amazon QuickSight IP range to the authorized list (whitelist) in your hosted database.
+Yes. In order to connect Amazon QuickSight to an Amazon EC2 or on-premises database, you need to add the Amazon QuickSight IP range to the authorized list in your hosted database.
 Q: How do I upload my data files into Amazon QuickSight?
 You can upload XLSX, CSV, TSV, CLF, XLF data files directly from Amazon QuickSight website. You can also upload them to an Amazon S3 bucket and point Amazon QuickSight to the Amazon S3 object.
 Q: How do I access my data in AWS data sources?

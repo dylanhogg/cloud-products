@@ -1,6 +1,7 @@
 import os
 import string
 from typing import List
+
 from bs4 import BeautifulSoup
 
 

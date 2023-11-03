@@ -1,8 +1,10 @@
 import os
 import shutil
-import pytest
-from pathlib import Path
 from itertools import groupby
+from pathlib import Path
+
+import pytest
+
 from cloud_products import aws
 
 cache_path = "./_data/test_cache_path/"

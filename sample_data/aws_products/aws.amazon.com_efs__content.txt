@@ -2,15 +2,14 @@
 Amazon Elastic File System
 Simple, serverless, set-and-forget, elastic file system
 Get started with Amazon Elastic File System
-Learn about Amazon EFS for Modern Apps
 5 GB of standard storage
 for 12 months with the AWS Free Tier
 Create and configure shared file systems simply and quickly for AWS compute services—no provisioning, deploying, patching, or maintenance required.
 Scale your file system automatically as files are added, removed, and burst to higher throughput levels when necessary.
-Pay only for the storage you use and reduce costs up to 92% by automatically moving infrequently accessed files.
-Securely and reliably access your files with a fully managed, set-and-forget file system designed for high availability and 99.999999999% (11 9s) durability.
+Pay only for the storage you use and reduce costs up to 92 percent by automatically moving infrequently accessed files.
+Securely and reliably access your files with a fully managed file system designed for 99.999999999 percent (11 9s) durability and up to 99.99 percent (4 9s) of availability.
 How it works
-Amazon Elastic File System (EFS) automatically grows and shrinks as you add and remove files with no need for management or provisioning.
+Amazon Elastic File System (Amazon EFS) automatically grows and shrinks as you add and remove files with no need for management or provisioning.
 Use cases
 Simplify DevOps
 Share code and other files in a secure, organized way to increase DevOps agility and respond faster to customer feedback.    Learn more about simplifying DevOps
@@ -20,19 +19,19 @@ Enhance content management systems
 Simplify persistent storage for modern content management system (CMS) workloads. Get your products and services to market faster, more reliably, and securely at a lower cost.
 Learn more about enhancing content management systems
 Accelerate data science
-Easy to use and scale, with the performance and consistency needed for machine learning (ML) and big data analytics workloads.    Learn more about big data workloads
+Easy to use and scale, Amazon EFS offers the performance and consistency needed for machine learning (ML) and big data analytics workloads.   Learn more about big data workloads
 Customers
+Johnson & Johnson reduces analysis time by 35% with their data science platform using Amazon EFS
 Discover Financial Services reduced storage costs by 50% while simplifying management
 Ancestry onboards new scientists quickly and easily
-Acquia dynamically scaled its customer environments and lowered its TCO
-Celgene stores EFS files for R&D workloads and critical app data
+Acquia dynamically scaled customer environments and lowered TCO
 How to get started
 Get started with a tutorial
 Learn more about Amazon EFS with our hands-on tutorials.
 Start learning
-Try the AWS Free Tier
-Learn the fundamentals for free while building on AWS.
-Sign up for a free account
+Learn about Amazon EFS for Modern Applications
+Modernize your serverless and containerized applications with shared file data.
+Learn more
 Connect with an expert
 From development to enterprise-level programs, get the right support at the right time.
 Explore support options

@@ -1,4 +1,52 @@
+Amazon SageMaker Ground Truth Plus
 General
+Q: What is Amazon SageMaker Ground Truth Plus?
+A: Amazon SageMaker Ground Truth Plus allows you to easily create high-quality training datasets without having to build labeling applications or manage labeling workforces on your own. Once you provide data along with labeling requirements, SageMaker Ground Truth Plus handles setting up the data labeling workflows and managing them on your behalf, in accordance with your requirements. From there, an expert workforce that is trained on a variety of machine learning (ML) tasks does data labeling. Ground Truth Plus uses ML techniques, including active-learning, pre-labeling, and machine validation. This increases the quality of the output dataset and decreases the data labeling costs. Ground Truth Plus provides transparency into your data labeling operations and quality management. With it, you can review the progress of training datasets across multiple projects, track project metrics, such as daily throughput, inspect labels for quality, and provide feedback on the labeled data. Ground Truth Plus can be used for a variety of use cases, including computer vision, natural language processing, and speech recognition.
+Q: Why should I use Amazon SageMaker Ground Truth Plus?
+A: To train a machine learning (ML) model, data scientists need large, high-quality, labeled datasets. As ML adoption grows, labeling needs increase. This forces data scientists to spend weeks on building data labeling workflows and managing a data labeling workforce. Unfortunately, this slows down innovation and increases cost. To ensure data scientists can spend their time building, training, and deploying ML models, data scientists typically task other in-house teams consisting of data operations managers and program managers to produce high-quality training datasets. However, these teams typically don't have access to skills required to deliver high-quality training datasets, which affects ML results.
+Amazon SageMaker Ground Truth Plus makes it easy for data scientists as well as business managers, such as data operations managers and program managers, to create high-quality training datasets by removing the undifferentiated heavy lifting associated with building data labeling applications and managing the labeling workforce. All you do is share data along with labeling requirements and Ground Truth Plus sets up and manages your data labeling workflow, based on these requirements. From there, an expert workforce that is trained on a variety of ML tasks performs data labeling. You don't even need deep ML expertise or knowledge of workflow design and quality management to use Ground Truth Plus.
+Q: How do I get started with Amazon SageMaker Ground Truth Plus?
+A: To get started with Amazon SageMaker Ground Truth Plus, please complete the project requirement form. Our team will reach out to you to discuss your data labeling project.
+Q: How does Amazon SageMaker Ground Truth Plus help me manage my training datasets?
+A: Amazon SageMaker Ground Truth Plus provides increased transparency into data labeling operations and quality management. For example, SageMaker Ground Truth Plus provides a project view, which you can use to monitor progress of the training dataset across different projects. In addition, a real-time metrics dashboard allows you to track detailed project metrics, including daily throughput. SageMaker Ground Truth Plus also provides a user interface that allows you to inspect labels for quality, and provide real-time feedback. Finally, with streaming mode, you can get same-day or same-hour label turnaround for certain types of workloads.
+Q: How does Amazon SageMaker Ground Truth Plus help with increasing the accuracy of my training datasets?
+Ground Truth Plus uses multiple techniques to increase the accuracy of the training dataset:
+ML Techniques: Ground Truth Plus uses ML techniques, including active learning, pre-labeling and machine validation, which increases the quality of the output dataset and decreases the data labeling costs. A multi-step labeling workflow includes ML models for active learning that allows Ground Truth Plus to reduce costs by selecting which items to label and ML models to pre-label selected data that reduces human effort. Ground Truth Plus uses machine validation to identify potential errors that are then sent for an additional round of human review. This significantly improves label quality by catching human errors.
+Intuitive Labeling Interface: Ground Truth Plus uses assistive labeling features such as (1) Snapping, that snaps an imperfect 3D cuboid to tightly cover the enclosing object. (2) Auto-Segmentation, that completes an object mask with just four extreme points clicks.
+Data Privacy
+Q: How does Amazon SageMaker Ground Truth Plus help protect and secure my data?
+A: By default, Amazon SageMaker Ground Truth Plus encrypts data stored in an Amazon S3 bucket at rest and in transit. In addition, access to your data is controlled using AWS Identity and Access Management (IAM). Your data is stored in an independent AWS account, and an Amazon S3 bucket is created for your project. Amazon SageMaker Ground Truth Plus does not store or make copies of your data outside the AWS environment created for you. AWS logs and audits all access to your data using Amazon S3 access logging and AWS CloudTrail.
+Q: Who has access to my content that is processed and stored by Amazon SageMaker Ground Truth Plus?
+A: Authorized AWS employees and the expert workforce labeling your data will have access to your content processed by Amazon SageMaker Ground Truth Plus. The expert workforce that labels your data will view and label it through the secure SageMaker Ground Truth worker portal. Access through the worker portal allow workers to only view and label the data, they can’t modify or delete your data. Your trust, privacy, and the security is our highest priority. We implement appropriate technical and physical controls, including encryption at rest and in transit, designed to prevent unauthorized access to, or disclosure of, your content.
+Q: Are data (images, text files, videos, etc.) inputs processed by Amazon SageMaker Ground Truth Plus stored, and how are they used by AWS?
+A: Amazon SageMaker Ground Truth Plus stores the raw and processed content only for the duration of your projects and will delete content associated with your data labeling project upon request. Amazon SageMaker Ground Truth Plus uses your content solely to provide and maintain the service. Amazon SageMaker Ground Truth Plus never uses your content or any model trained on that content for the benefit of other customers.
+Q: Is the content processed by Amazon SageMaker Ground Truth Plus moved outside the AWS region where I am using Amazon SageMaker Ground Truth Plus?
+A: Any content processed by Amazon SageMaker Ground Truth Plus is encrypted and stored at rest in the AWS region where you are using Amazon SageMaker Ground Truth Plus. Unless you specify otherwise in any data localization requirements mutually agreed upon through a statement of work, your content may be accessed outside the AWS region your content is stored in to perform the labeling service.
+Q: Can I request deletion of data (images, text files, videos, etc.) stored by Amazon SageMaker Ground Truth Plus?
+A: Yes. You can request deletion of raw and processed data inputs associated with your data labeling project by contacting AWS Support.
+Q: Do I still own my content that is processed and stored by Amazon SageMaker Ground Truth Plus?
+A: Yes. You always retain ownership of your content, and we will only use your content with your consent.
+Q: Can I process personal health information (PHI) data through Amazon SageMaker Ground Truth Plus?
+A: No. Currently, Amazon SageMaker Ground Truth Plus is not a HIPAA eligible service.
+Workforce
+Q: What is an expert workforce in Amazon SageMaker Ground Truth Plus?
+With Ground Truth Plus, labeling is done by a highly skilled, diverse, and elastic workforce that is trained on machine learning tasks that can help meet a wide variety of your needs, including data security, privacy, and compliance. The workforce consists of two tiers, 1/Amazon workforce: consists of workers who are employed and managed by Amazon, wherein Amazon owns the operations, quality and turnaround time SLAs on your behalf. 2/Vendor workforce: consists of workers provided by a curated list of third-party vendors that specialize in providing data labeling services, wherein Amazon owns the quality and turnaround time SLAs on your behalf.
+Q: Who decides which workforce tier will be used for my Amazon SageMaker Ground Truth Plus project?
+You can decide the type of workforce to be used for your project. Unless you instruct us to use a specific workforce, we may use Amazon workforce, Vendor workforce or a combination of both workforces to help meet your project’s quality, turnaround time and security requirements.
+Q: What changes are vendor workforce implementing in light of COVID-19 that I need to be aware of?
+A: In light of COVID-19, some service providers have implemented a remote work policy for the health and safety of their employees.
+Q: What security standards is a vendor workforce required to meet?
+A: Service providers are required to go through a SOC 2 compliance or ISO 27001 certification on an annual basis by an independent third-party auditor.
+The SOC 2 report is a description of the service provider’s control environment based on the American Institute of Certified Public Accountants (AICPA) Trust Services Criteria - Security, Availability, Processing Integrity, Confidentiality, and Privacy.
+The ISO 27001 certification is based on the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), which details requirements for establishing, implementing, maintaining, and continually improving an information security management system (ISMS).
+In addition to independently obtaining SOC 2 or ISO 27001, service providers are required to maintain additional security controls, which are described below, to help keep your data secure.
+Technology Controls: Service providers are required to utilize the appropriate software to block any attempts made to download or copy files/data from their system and prevent unauthorized access to their systems. Service providers are also required to prohibit their workforce from storing or copying customer task-related data.
+Network Security Controls: We require the service provider’s network to be designed to prevent remote access to customer's task-related data. Further, peer-to-peer file sharing software is blocked on the provider's network, and the firewall should be designed in a way to provide high availability.
+Employee Controls: Service providers are required to ensure they have Non-Disclosure Agreements (NDAs) with their employees. Service providers are required to adopt stringent policies to prevent any information leakage and prevent employees from transmitting information by any means: paper, USBs, mobile phones, or any other media.
+Physical Access Controls: Service providers are required to maintain physical access control measures to prevent unauthorized access to their production site. These may include turnstiles with biometric authentication, employee badge identification, etc.
+Q: How does AWS help a vendor workforce meet these security standards?
+A: AWS requests that service providers furnish their SOC 2 or ISO 27001 certification reports before becoming a part of Amazon SageMaker Ground Truth Plus’s vendor workforce. AWS SOC reports and ISO certifications do not cover the vendor workforce.
+Amazon SageMaker Ground Truth
 Q: What is Amazon SageMaker Ground Truth?
 A: Amazon SageMaker Ground Truth makes it easy for you to efficiently and accurately label the datasets required for training machine learning systems. SageMaker Ground Truth can automatically label a portion of the dataset based on the labels done manually by human labelers. You can choose to use a crowdsourced Amazon Mechanical Turk workforce of over 500,000 labelers, your own employees , or one of the third party data labeling service providers listed on AWS Marketplace, pre-screened by Amazon. SageMaker Ground Truth uses innovative algorithms and user experience (UX) techniques to improve the accuracy of human labeling. Over time, the model gets progressively better by continuously learning from the labels created by humans, for increased automatic labeling.
 Q: What is Automated Data Labeling?
@@ -27,10 +75,6 @@ A:  In light of the rapidly evolving impact of COVID-19, some service providers 
 Q: What security standards are Amazon SageMaker Ground Truth data labeling service providers required to meet?
 A:  Data labeling service providers are required to go through SOC 2 compliance and certification on an annual basis. The SOC 2 report is a description of the service provider’s control environment based on the American Institute of Certified Public Accountants (AICPA) Trust Services Criteria - Security, Availability, Processing Integrity, Confidentiality, and Privacy.
 In addition to SOC 2, service providers are required to maintain these additional security controls to help keep customer data secure.
-Technology Controls: Service providers are required to utilize the appropriate software to block any attempts made to download or copy files/data from their system and prevent unauthorized access to their systems. Service providers are also required to prohibit their workforce from storing or copying customer task-related data.
-Network Security Controls: We require the service provider’s network to be designed to prevent remote access to customer's task-related data. Further, peer-to-peer file sharing software is blocked on the provider's network, and the firewall should be designed in a way to provide high availability.
-Employee Controls: Service providers are required to ensure they have Non-Disclosure Agreements (NDAs) with their employees. Service providers are required to adopt stringent policies to prevent any information leakage and prevent employees from transmitting information by any means: paper, USBs, mobile phones, or any other media.
-Physical Access Controls: Service providers are required to maintain physical access control measures to prevent unauthorized access to their production site. These may include turnstiles with biometric authentication, employee badge identification, etc.
 Q: How does AWS help ensure service providers meet these security standards?
 A:  AWS requests that service providers furnish their SOC 2 certification reports prior to being listed in the marketplace and confirms:
 Authenticity (if service provider auditor is certified by the AICPA);
@@ -49,12 +93,13 @@ Q: How much does Amazon SageMaker Ground Truth cost?
 A: Please see the SageMaker Ground Truth pricing page for the current pricing information.
 Q: In which AWS regions is Amazon SageMaker Ground Truth available?
 A: The AWS Region Table lists all the AWS regions where Amazon SageMaker Ground Truth is currently available.
-Learn more about Amazon SageMaker Ground Truth Pricing
-Get started with Amazon SageMaker Ground Truth with no upfront commitments or long-term contracts. For more details, check out the Amazon SageMaker Ground Truth pricing page.
+Learn more about Amazon SageMaker Data Labeling Pricing
+Get started with Amazon SageMaker Data Labeling with no upfront commitments or long-term contracts.
+Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with Amazon SageMaker Ground Truth in the AWS Management Console.
+Get started building with Amazon SageMaker Data Labeling in the AWS Management Console.
 Sign in
-Page Content
+FAQs

@@ -20,9 +20,9 @@ Nothing. Amazon EventBridge uses the same Amazon CloudWatch Events API so all of
 Q: Are you going to deprecate Amazon CloudWatch Events one day?
 No, we are not going to deprecate the API or the service itself. Amazon EventBridge is using the same API, and has added additional features. Over time, the Amazon CloudWatch Events name will be replaced with Amazon EventBridge.
 Q: Which AWS services are integrated as event sources for Amazon EventBridge?
-There are over 90 AWS services available as event sources for EventBridge, including AWS Lambda, Amazon Kinesis, and AWS Fargate. For a full list of AWS service integrations, please see the EventBridge documentation.
+There are over 90 AWS services available as event sources for EventBridge, including AWS Lambda, Amazon Kinesis, AWS Fargate, and Amazon S3. For a full list of AWS service integrations, see the EventBridge documentation.
 Q: Which AWS services are integrated as event targets for Amazon EventBridge?
-There are over 15 AWS services available as event targets for EventBridge including AWS Lambda, Amazon SQS, Amazon SNS, Amazon Kinesis Streams, and Amazon Kinesis Data Firehose. For a full list of AWS service integrations, please see the EventBridge documentation.
+There are over 15 AWS services available as event targets for EventBridge including AWS Lambda, Amazon SQS, Amazon SNS, Amazon Kinesis Streams, and Amazon Kinesis Data Firehose. For a full list of AWS service integrations, see the EventBridge documentation.
 Q: What is EventBridge Archive and Replay Events?
 Event Replay is a new feature for Amazon EventBridge that allows customers to reprocess past events back to an event bus or a specific EventBridge rule. This feature allows developers to debug their applications easily, extend them by hydrating targets with historic events, and recover from errors. Event Replay gives developers peace of mind that they will always have access to any event published to EventBridge.
 Q: What is EventBridge API Destinations?

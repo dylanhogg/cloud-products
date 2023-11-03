@@ -43,11 +43,13 @@ Both the internet and your corporate data center (utilizing both an internet gat
 Other AWS services (via internet gateway, NAT, virtual private gateway, or VPC endpoints)
 Other Amazon VPCs (via VPC peering connections)
 Q: How do I connect my VPC to the Internet?
-Amazon VPC supports the creation of an Internet gateway. This gateway enables Amazon EC2 instances in the VPC to directly access the Internet.
+Amazon VPC supports the creation of an Internet gateway. This gateway enables Amazon EC2 instances in the VPC to directly access the Internet. You can also use an Egress-only internet gateway which is a stateful gateway to provide egress only access for IPv6 traffic from the VPC to the Internet.
 Q: Are there any bandwidth limitations for Internet gateways? Do I need to be concerned about its availability? Can it be a single point of failure?
 No. An Internet gateway is horizontally-scaled, redundant, and highly available. It imposes no bandwidth constraints.
 Q: How do instances in a VPC access the Internet?
-You can use public IP addresses, including Elastic IP addresses (EIPs), to give instances in the VPC the ability to both directly communicate outbound to the Internet and to receive unsolicited inbound traffic from the Internet (e.g., web servers). You can also use the solutions in the next question.
+You can use public IP addresses, including Elastic IP addresses (EIPs) and IPv6 Global Unique addresses (GUA), to give instances in the VPC the ability to both directly communicate outbound to the internet and to receive unsolicited inbound traffic from the internet (e.g., web servers). You can also use the solutions in the next question.
+Q: When is an IP address considered a Public IP address?
+Any IP address that is assigned to an instance or a service hosted in a VPC that can be accessed over the internet is considered a public IP address. Only public IPv4 addresses, including Elastic IP addresses (EIPs) and IPv6 GUA can be routable on the internet. To do so, you would need to first connect the VPC to the internet and then update the route table to make them reachable to/from the internet.
 Q: How do instances without public IP addresses access the Internet
 Instances without public IP addresses can access the Internet in one of two ways:
 Instances without public IP addresses can route their traffic through a NAT gateway or a NAT instance to access the Internet. These instances use the public IP address of the NAT gateway or NAT instance to traverse the Internet. The NAT gateway or NAT instance allows outbound communication but doesn’t allow machines on the Internet to initiate a connection to the privately addressed instances.
@@ -55,21 +57,21 @@ For VPCs with a hardware VPN connection or Direct Connect connection, instances 
 Q: Can I connect to my VPC using a software VPN?
 Yes. You may use a third-party software VPN to create a site to site or remote access VPN connection with your VPC via the Internet gateway.
 Q: Does traffic go over the internet when two instances communicate using public IP addresses, or when instances communicate with a public AWS service endpoint?
-No. When using public address space, all communication between instances and services hosted in AWS use AWS's private network. Packets that originate from the AWS network with a destination on the AWS network stay on the AWS global network, except traffic to or from AWS China Regions.
+No. When using public IP addresses, all communication between instances and services hosted in AWS use AWS's private network. Packets that originate from the AWS network with a destination on the AWS network stay on the AWS global network, except traffic to or from AWS China Regions.
 In addition, all data flowing across the AWS global network that interconnects our data centers and Regions is automatically encrypted at the physical layer before it leaves our secured facilities. Additional encryption layers exist as well; for example, all VPC cross-region peering traffic, and customer or service-to-service Transport Layer Security (TLS) connections.
 Q: How does an AWS Site-to-Site VPN connection work with Amazon VPC?
 An AWS Site-to-Site VPN connection connects your VPC to your datacenter. Amazon supports Internet Protocol Security (IPSec) VPN connections. Data transferred between your VPC and datacenter routes over an encrypted VPN connection to help maintain the confidentiality and integrity of data in transit. An internet gateway is not required to establish an AWS Site-to-Site VPN connection.
 IP Addressing
 Q: What IP address ranges can I use within my Amazon VPC?
-You can use any IPv4 address range, including RFC 1918 or publicly routable IP ranges, for the primary CIDR block. For the secondary CIDR blocks, certain restrictions apply. Publicly routable IP blocks are only reachable via the Virtual Private Gateway and cannot be accessed over the Internet through the Internet gateway. AWS does not advertise customer-owned IP address blocks to the Internet. You can allocate an Amazon-provided IPv6 CIDR block to a VPC by calling the relevant API or via the AWS Management Console.
+You can use any IPv4 address range, including RFC 1918 or publicly routable IP ranges, for the primary CIDR block. For the secondary CIDR blocks, certain restrictions apply. Publicly routable IP blocks are only reachable via the Virtual Private Gateway and cannot be accessed over the Internet through the Internet gateway. AWS does not advertise customer-owned IP address blocks to the Internet. You can allocate an Amazon-provided IPv6 GUA CIDR block to a VPC by calling the relevant API or via the AWS Management Console.
 Q: How do I assign IP address ranges to Amazon VPCs?
 You assign a single Classless Internet Domain Routing (CIDR) IP address range as the primary CIDR block when you create a VPC and can add up to four (4) secondary CIDR blocks after creation of the VPC. Subnets within a VPC are addressed from these CIDR ranges by you. Please note that while you can create multiple VPCs with overlapping IP address ranges, doing so will prohibit you from connecting these VPCs to a common home network via the hardware VPN connection. For this reason we recommend using non-overlapping IP address ranges. You can allocate an Amazon-provided IPv6 CIDR block to your VPC.
 Q: What IP address ranges are assigned to a default Amazon VPC?
 Default VPCs are assigned a CIDR range of 172.31.0.0/16. Default subnets within a default VPC are assigned /20 netblocks within the VPC CIDR range.
 Q: Can I advertise my VPC public IP address range to the internet and route the traffic through my datacenter, via the AWS Site-to-Site VPN, and to my Amazon VPC?
 Yes, you can route traffic via the AWS Site-to-Site VPN connection and advertise the address range from your home network.
-Q: Can I use my public IPv4 addresses in VPC and access them over the Internet?
-Yes, you can bring your public IPv4 addresses into AWS VPC and statically allocate them to subnets and EC2 instances. To access these addresses over the Internet, you will have to advertise them to the Internet from your on-premises network. You will also have to route the traffic over these addresses between your VPC and on-premises network using AWS DX or AWS VPN connection. You can route the traffic from your VPC using the Virtual Private Gateway. Similarly, you can route the traffic from your on-premises network back to your VPC using your routers.
+Q: Can I use my IP addresses in VPC and access them over the Internet?
+Yes, you can bring your public IPv4 addresses and IPv6 GUA addresses into AWS VPC and statically allocate them to subnets and EC2 instances. To access these addresses over the Internet, you will have to advertise them to the Internet from your on-premises network. You will also have to route the traffic over these addresses between your VPC and on-premises network using AWS DX or AWS VPN connection. You can route the traffic from your VPC using the Virtual Private Gateway. Similarly, you can route the traffic from your on-premises network back to your VPC using your routers.
 Q: How large of a VPC can I create?
 Currently, Amazon VPC supports five (5) IP address ranges, one (1) primary and four (4) secondary for IPv4. Each of these ranges can be between /28 (in CIDR notation) and /16 in size. The IP address ranges of your VPC should not overlap with the IP address ranges of your existing network.
 For IPv6, the VPC is a fixed size of /56 (in CIDR notation). A VPC can have both IPv4 and IPv6 CIDR blocks associated to it.
@@ -83,11 +85,11 @@ For IPv6, the subnet size is fixed to be a /64. Only one IPv6 CIDR block can be 
 Q: Can I use all the IP addresses that I assign to a subnet?
 No. Amazon reserves the first four (4) IP addresses and the last one (1) IP address of every subnet for IP networking purposes.
 Q: How do I assign private IP addresses to Amazon EC2 instances within a VPC?
-When you launch an Amazon EC2 instance within a VPC, you may optionally specify the primary private IP address for the instance. If you do not specify the primary private IP address, AWS automatically addresses it from the IP address range you assign to that subnet. You can assign secondary private IP addresses when you launch an instance, when you create an Elastic Network Interface, or any time after the instance has been launched or the interface has been created.
+When you launch an Amazon EC2 instance within a subnet that is not IPv6-only, you may optionally specify the primary private IPv4 address for the instance. If you do not specify the primary private IPv4 address, AWS automatically addresses it from the IPv4 address range you assign to that subnet. You can assign secondary private IPv4 addresses when you launch an instance, when you create an Elastic Network Interface, or any time after the instance has been launched or the interface has been created. In case you launch an Amazon EC2 instance within an IPv6-only subnet, AWS automatically addresses it from the Amazon-provided IPv6 GUA CIDR of that subnet. The instance’s IPv6 GUA will remain private unless you make them reachable to/from the internet with the right security group, NACL, and route table configuration.
 Q: Can I change the private IP addresses of an Amazon EC2 instance while it is running and/or stopped within a VPC?
-Primary private IP addresses are retained for the instance's or interface's lifetime. Secondary private IP addresses can be assigned, unassigned, or moved between interfaces or instances at any time.
+For an instance launched in an IPv4 or dual-stack subnet, the primary private IPv4 address is retained for the instance's or interface's lifetime. Secondary private IPv4 addresses can be assigned, unassigned, or moved between interfaces or instances at any time. For an instance launched in an IPv6-only subnet, the assigned IPv6 GUA which is also the first IP address on the instance's primary network interface can be modified by associating a new IPv6 GUA and removing the existing IPv6 GUA at any time.
 Q: If an Amazon EC2 instance is stopped within a VPC, can I launch another instance with the same IP address in the same VPC?
-No. An IP address assigned to a running instance can only be used again by another instance once that original running instance is in a “terminated” state.
+No. An IPv4 address assigned to a running instance can only be used again by another instance once that original running instance is in a “terminated” state. However, the IPv6 GUA assigned to a running instance can be used again by another instance after it is removed from the first instance.
 Q: Can I assign IP addresses for multiple instances simultaneously?
 No. You can specify the IP address of one instance at a time when launching the instance.
 Q: Can I assign any IP address to an instance?
@@ -158,7 +160,7 @@ Yes. DescribeInstances() will return all running Amazon EC2 instances. You can d
 Q: When I call DescribeVolumes(), do I see all of my Amazon EBS volumes, including those in EC2-Classic and EC2-VPC?
 Yes. DescribeVolumes() will return all your EBS volumes.
 Q: How many Amazon EC2 instances can I use within a VPC?
-You can run any number of Amazon EC2 instances within a VPC, so long as your VPC is appropriately sized to have an IP address assigned to each instance. You are initially limited to launching 20 Amazon EC2 instances at any one time and a maximum VPC size of /16 (65,536 IPs). If you would like to increase these limits, please complete the following form.
+For instances that require IPv4 addressing, you can run any number of Amazon EC2 instances within a VPC, so long as your VPC is appropriately sized to have an IPv4 address assigned to each instance. You are initially limited to launching 20 Amazon EC2 instances at any one time and a maximum VPC size of /16 (65,536 IPs). If you would like to increase these limits, please complete the following form. For IPv6 only instances, the VPC size of /56 provides you the ability to launch virtually unlimited number of Amazon EC2 instances.
 Q: Can I use my existing AMIs in Amazon VPC?
 You can use AMIs in Amazon VPC that are registered within the same region as your VPC. For example, you can use AMIs registered in us-east-1 with a VPC in us-east-1. More information is available in the Amazon EC2 Region and Availability Zone FAQ.
 Q: Can I use my existing Amazon EBS snapshots?
@@ -171,6 +173,12 @@ Q: Can I employ Amazon CloudWatch within Amazon VPC?
 Q: Can I employ Auto Scaling within Amazon VPC?
 Q: Can I launch Amazon EC2 Cluster Instances in a VPC?
 Yes. Cluster instances are supported in Amazon VPC, however, not all instance types are available in all regions and Availability Zones.
+Q: What are instance hostnames?
+When you launch an instance, it is assigned a hostname. There are two options available, an IP based name or a Resource based name, and this parameter is configurable at instance launch. The IP based name uses a form of the Private IPv4 address while the Resource based name uses a form of the instance-id.
+Q: Can I change the instance hostname of my Amazon EC2 instance?
+Yes, you can change the hostname of an instance form IP based to Resource based or vice versa by stopping the instance and then changing the resource based naming options.
+Q: Can I use the instance hostnames as DNS hostnames?
+Yes, the instance hostname can be used as DNS hostnames. For instances launched in an IPv4-only or dual-stack subnet, the IP based name always resolves to the Private IPv4 address on the primary network interface of the instance and this cannot be turned off. Additionally, the Resource based name can be configured to resolve to either the Private IPv4 address on the primary network interface, or the first IPv6 GUA on the primary network interface, or both. For instances launched in an IPv6-only subnet, the the Resource based name will be configured to resolve to the first IPv6 GUA on the primary network interface.
 Default VPCs
 Q: What is a default VPC?
 A default VPC is a logically isolated virtual network in the AWS cloud that is automatically created for your AWS account the first time you provision Amazon EC2 resources. When you launch an instance without specifying a subnet-ID, your instance will be launched in your default VPC.

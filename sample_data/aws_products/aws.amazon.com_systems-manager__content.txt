@@ -1,26 +1,49 @@
+« Management Tools
 AWS Systems Manager
-Gain operational insights and take action on AWS resources
+Gain operational insights into AWS and on-premises resources
 Get started with AWS Systems Manager
-AWS Systems Manager is the operations hub for AWS. Systems Manager provides a unified user interface so you can track and resolve operational issues across your AWS applications and resources from a central place. With Systems Manager, you can automate operational tasks for Amazon EC2 instances or Amazon RDS instances. You can also group resources by application, view operational data for monitoring and troubleshooting, implement pre-approved change work flows, and audit operational changes for your groups of resources. Systems Manager simplifies resource and application management, shortens the time to detect and resolve operational problems, and makes it easier to operate and manage your infrastructure at scale.
-12 features free
-with the AWS Free Tier
-Get started for free
-Benefits
-Shorten the time to resolve operational issues
-AWS Systems Manager helps you quickly view operational data for groups of resources, so you can quickly identify any issues that might impact applications that use those resources. You can group your resources by applications, application layers, production versus development environments, or anything else you choose. Systems Manager presents the operational data for your resource groups in a single, easy-to-read dashboard so you don't have to navigate to other AWS consoles. For example, if you have an application that uses Amazon EC2, Amazon EKS, Amazon S3, and Amazon RDS, you can use Systems Manager to create a resource group for the application and easily see the software installed on your Amazon EC2 instances, any changes in your Amazon S3 objects, or database instances that have stopped.
-Easy to use automation
-Using AWS Systems Manager, you can automate operational tasks to help make your teams more efficient. With automated approval workflows and runbooks with rich text descriptions, you can reduce human error and simplify maintenance and deployment tasks on AWS resources. You can use predefined automation runbooks or build your own to share for common operational tasks such as stopping and restarting an EC2 instance. Systems Manager also has built-in safety controls, allowing you to incrementally roll out new changes and automatically halt the roll-out if errors occur.
-Improve visibility and control
-Using AWS Systems Manager, you can discover applications, view operations data (e.g. deployment status, Amazon CloudWatch alarms, resource configurations, and operational issues), and perform remedial actions in the context of an application. You can request operational changes using predefined approval workflows, and audit each change after it has been completed. You can then view detailed system configurations, operating system patch levels, software installations, application configurations, and other details about your environment through the Systems Manager Explorer and Inventory dashboards. Systems Manager is integrated with AWS Config so you can easily view changes across your resources as they occur over time.
-Manage hybrid environments
-With AWS Systems Manager, you can manage servers running on AWS and in your on-premises data center through a single interface. Systems Manager securely communicates with a lightweight agent installed on your servers to run management tasks. This helps you manage resources for Windows, Linux, and Mac operating systems running on Amazon EC2 or on-premises. Systems Manager offers you a consistent administrator experience across your fleet of servers, making it easier to configure and audit logs, manipulate registry keys, navigate file systems, update user access permissions, and monitor critical metrics.
-Maintain security and compliance
-AWS Systems Manager helps maintain security and compliance by scanning your instances against your patch, configuration, and custom policies. You can define patch baselines, maintain up-to-date anti-virus definitions, and enforce firewall policies. You can also remotely manage your servers at scale without manually logging in to each server. Systems Manager also provides a centralized store to manage your configuration data, whether it's plain text, such as database strings, or secrets, such as passwords. This allows you to separate your secrets and configuration data from code.
-Connect with ITSM/ITOM software
-IT Service Management (ITSM) tools, such as ServiceNow, can connect with AWS Systems Manager to make it easier for ITSM platform users to manage AWS and third-party resources. The AWS Service Management Connector helps ITSM administrators improve governance over provisioned AWS and third-party products.
+13 AWS Systems Manager features
+free with AWS Free Tier
+Improve visibility and control in the cloud, on premises, and at the edge.
+Shorten the time to detect and resolve operational issues.
+Maintain instance compliance against your patch, configuration, and custom policies.
+Automate configuration and ongoing management of your applications and resources.
 How it works
-Learn more about AWS Systems Manager features
-Visit the features page
-Ready to build?
-Have more questions?
-Contact us
+AWS Systems Manager is a secure end-to-end management solution for hybrid cloud environments.
+Close
+Click to enlarge
+Features
+AWS Systems Manager is the operations hub for your AWS applications and resources, and is broken into four core feature groups.
+Operations Management
+Explorer OpsCenter Incident Manager
+Application Management
+Application Manager AppConfig Parameter Store
+Change Management
+Automation  Change Manager Maintenance Windows
+Node Management
+Fleet Manager Session Manager Patch Manager
+Use cases
+Centralize operational data
+Aggregate data in a single console and gain actionable insights across AWS services such as Amazon CloudWatch, AWS CloudTrail, and AWS Config, as well as third-party tools.
+Automatically resolve application issues
+Leverage operational data to easily manage applications and identify issues quickly across associated AWS resource groups.
+Implement best practices
+Automate proactive processes such as patching and resource changes—as well as reactive processes—to quickly diagnose and remediate operational issues before they affect users.
+Remediate security events
+Adapt your security and compliance profile and analyze security events after the fact to prevent a future reoccurrence.
+Customers
+Learn how GE Appliances increased real-time system visibility by 100 percent
+Learn how Experity reduced troubleshooting time
+Learn how Intercom automated patch management to fix broken hosts
+Learn how Neiman Marcus improved its security and compliance posture
+How to get started
+Learn more about AWS Systems Manager
+Learn how to centralize operational data from multiple AWS services and automate tasks across your AWS resources.
+Explore Systems Manager features
+Start using AWS Systems Manager for free
+Try the 13 free features available with the AWS Free Tier.
+Pay nothing to try
+Find out how AWS Systems Manager works
+Learn more about system configurations, maintenance windows, maintaining software compliance, and more.
+Watch introduction videos
+Explore more of AWS

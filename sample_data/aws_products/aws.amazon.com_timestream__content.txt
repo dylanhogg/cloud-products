@@ -5,7 +5,7 @@ Amazon Timestream is a fast, scalable, and serverless time series database servi
 Introduction to Amazon Timestream
 Benefits
 High performance at low cost
-Amazon Timestream offers up to 1,000x faster query performance at as little as 1/10th the cost of relational databases. It provides high throughput ingestion, rapid point-in-time queries through its memory store, and fast analytical queries through its cost optimized magnetic store. You pay only for the data you ingest, store, and query.
+Amazon Timestream is designed to enable interactive and affordable real-time analytics, with up to 1,000 times faster query performance, and as little as 1/10th the cost of relational databases. With product features such as scheduled queries, multi-measure records, and data storage tiering, you can process, store, and analyze your time-series data at a fraction of the cost of existing time-series solutions. Amazon Timestream can help you derive faster and more affordable insights from your data so you can continue to make more data driven business decisions.
 Serverless with auto-scaling
 Amazon Timestream is serverless – there are no servers to manage and no capacity to provision, so you can focus on building your applications. Amazon Timestream gives you the scale to process trillions of events and millions of queries per day. As your application needs change, it automatically scales to adjust capacity.
 Data lifecycle management
@@ -59,6 +59,12 @@ Duane Osburn, Principal Solutions Architect – TensorIoT
 TrendMiner is Software AG's industrial analytics platform for Industry 4.0 operations that democratizes analytics by lowering the barrier of process and asset data analysis.
 “Innovation is what thrills us. Our team is always looking to push the boundaries of self-service analytics. That’s why we are now combining the strengths of Amazon Timestream and TrendMiner to help democratize analytics for time series data. Our team is excited to use Timestream in our upcoming projects with process industry customers.”
 Joan van de Wetering, Managing Director – TrendMiner
+What's New with Timestream
+Date
+1
+...
+Timestream Blogs
+To read more Amazon Timestream blogs, visit the Amazon Database blog channel.
 Learn more about product pricing
 Review pricing information for Amazon Timestream and access additional pricing resources.
 Learn more

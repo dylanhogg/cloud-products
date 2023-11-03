@@ -1,69 +1,55 @@
+« Machine Learning
 Amazon Rekognition
-Automate your image and video analysis with machine learning.
+Automate your image and video analysis with machine learning
 Get Started with Amazon Rekognition
-Contact Us
-Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use. With Amazon Rekognition, you can identify objects, people, text, scenes, and activities in images and videos, as well as detect any inappropriate content. Amazon Rekognition also provides highly accurate facial analysis and facial search capabilities that you can use to detect, analyze, and compare faces for a wide variety of user verification, people counting, and public safety use cases.
-With Amazon Rekognition Custom Labels, you can identify the objects and scenes in images that are specific to your business needs. For example, you can build a model to classify specific machine parts on your assembly line or to detect unhealthy plants. Amazon Rekognition Custom Labels takes care of the heavy lifting of model development for you, so no machine learning experience is required. You simply need to supply images of objects or scenes you want to identify, and the service handles the rest.
-5,000 images free
-per month for 12 months with the AWS Free Tier
-Get started for free
-Benefits
-Automate visual analysis tasks at scale
-With Amazon Rekognition, you can tackle tasks that cannot be performed manually such as analyzing millions of images and videos within minutes. You can also increase workforce productivity and minimize errors by augmenting cumbersome, repetitive human visual review tasks with machine learning.
-Get started without ML expertise
-With Amazon Rekognition, you can quickly add a wide range of pre-trained computer vision APIs to your applications within hours, without the need to collect data and build computer vision models from scratch. If you have unique requirements, you can use AutoML to automatically train & host custom ML models by uploading as few as ten labeled images.
-Reduce ML infrastructure costs
-Amazon Rekognition is a fully managed service that can automatically scale up and down based on your business needs. You don’t need to build and manage your own ML infrastructure. You can quickly deliver reliable, scalable, and secure applications powered by computer vision and pay only for the images and videos that you analyze.
-Key features
-Labels
-With Amazon Rekognition, you can identify thousands of objects (such as bike, telephone, building), and scenes (such as parking lot, beach, city). When analyzing video, you can also identify specific activities such as "delivering a package" or "playing soccer". Learn more
-Custom labels
-With Amazon Rekognition Custom Labels, you can extend the detection capabilities of Amazon Rekognition to extract information from images that is uniquely helpful to your business. For example, you can find your corporate logo in social media, identify your products on store shelves, classify your machine parts in an assembly line, or detect your animated characters in videos. Learn more
+Thousands of images and videos free per month
+for 12 months with the AWS Free Tier
+Quickly add pre-trained or customizable computer vision APIs to your applications without building machine learning (ML) models and infrastructure from scratch.
+Analyze millions of images and videos within minutes and augment human visual review tasks with artificial intelligence (AI).
+Scale up and down based on your business needs with fully managed AI capabilities and pay only for the images and videos you analyze.
+Features
+Amazon Rekognition offers pre-trained and customizable computer vision (CV) capabilities to extract information and insights from your images and videos.
 Content moderation
-Amazon Rekognition helps you identify potentially unsafe or inappropriate content across both image and video assets and provides you with detailed labels that allow you to accurately control what you want to allow based on your needs. Use Amazon A2I to enhance the accuracy of Amazon Rekognition image moderation predictions using human review. Learn more
-Text detection
-In photos and videos, text appears very differently than neat words on a printed page. Amazon Rekognition can read skewed and distorted text to capture information like store names, forced narratives overlaid on media, street signs, and text on product packaging. Learn more
-Face detection and analysis
-With Amazon Rekognition, you can easily detect when faces appear in images and videos and get attributes such as gender, age range, eyes open, glasses, facial hair for each. In video, you can also measure how these face attributes change over time, such as constructing a timeline of the emotions expressed by an actor. Learn more
-Face search and verification
-Amazon Rekognition provides fast and accurate face search, allowing you to identify a person in a photo or video using your private repository of face images. You can also verify identity by analyzing a face image against images you have stored for comparison. Learn more
+Detect potentially unsafe, inappropriate, or unwanted content across images and videos.  Learn more
+Labels
+Detect thousands of objects and scenes, plus activities such as "delivering a package" or  "playing soccer." Learn more
 Celebrity recognition
-You can quickly identify well known people in your video and image libraries to catalog footage and photos for marketing, advertising, and media industry use cases. Learn more
-Personal Protective Equipment (PPE) detection
-With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to automatically detect if persons in images are wearing Personal Protective Equipment (PPE) such as face covers (face masks), hand covers (gloves), and head covers (helmets) and whether the protective equipment covers the corresponding body part (nose for face covers, head for head covers, and hands for hand covers). Learn more
+Identify well-known people to catalog photos and footage for media, marketing, and advertising.  Learn more
+Face compare and search
+Determine the similarity of a face against another picture or from your private image repository.  Learn more
+Custom labels
+Detect custom objects such as brand logos using automated machine learning (AutoML) to train your models with as few as 10 images. Learn more
 Video segment detection
-With Amazon Rekognition Video, you can automatically detect key segments in videos, such as silent black frames, credits, shot boundaries, and SMPTE color bars. This enables you to save human effort and scale archive modernization by streamlining file-based workflows for quality control, ad insertion, and content preparation. Learn more
+Detect key segments in videos, such as black frames, start or end credits, slates, color bars, and shots. Learn more
+Face detection and analysis
+Detect faces appearing in images and videos and recognize attributes such as open eyes, glasses, and facial hair for each. Learn more
+Text detection
+Extract skewed and distorted text from images and videos of street signs, social media posts, and product packaging. Learn more
+Personal Protective Equipment (PPE) detection
+Automatically detect PPE such as helmets, gloves, and masks on persons in images.  Learn more
 Use cases
+Detect inappropriate content
+Quickly and accurately identify unsafe or inappropriate content across image and video assets based on general or business-specific standards and practices.  Content Moderation
+Verify identity online
+Use facial comparison and analysis in your user onboarding and authentication workflows to remotely verify the identity of opted-in users.  Identity Verification
+Streamline media analysis
+Automatically detect key video segments to reduce the time, effort, and costs of video ad insertion, content operations, and content production.
 Media Analysis
-Streamline media analysis tasks by automating the detection of black frames, end credits, shot changes, and color bars. By automating these tasks, you can reduce the time, effort, and costs associated with workflows like video ad insertion, content operations, and content production. Learn more
-Make content searchable
-Amazon Rekognition automatically extracts metadata from your image and video files, capturing objects, faces, text and more. This metadata can be used to easily search your images and videos with keywords, or to find the right assets for content syndication.
-Flag inappropriate content
-With Amazon Rekognition you can automatically flag inappropriate content, such as nudity, graphic violence or weapons, in images and videos. Using the detailed metadata returned, you can create your own rules based on what is considered appropriate for the culture and demographics of your users. Learn more
-Enable digital identity verification
-Using Amazon Rekognition, you can create scalable authentication workflows for automated payments and other identity verification scenarios. Amazon Rekognition lets you easily perform face verification for opted-in users by comparing a photo or selfie with an identifying document such a driver's license.
+Keep workers safe continuously
+Analyze workplace images and video to determine if employees are using PPE according to established guidelines.
 Workplace Safety
-Automate Personal Protective Equipment (PPE) detection at scale to improve workplace safety practices and to better comply with occupational safety and health regulations. With Amazon Rekognition, you can analyze images from your on-premises cameras at scale to detect if persons in images are wearing PPE such as face covers, hand covers, and head covers. Learn more
-Identify products, landmarks and brands
-App developers can use Amazon Rekognition Custom Labels to identify specific items in social media and photo apps. For example, you could train a custom model to identify famous landmarks in a city to provide tourists with information about its history, operating hours, and ticket prices by simply taking a photo.
-Customer success
-PBS uses object detection to streamline media content operations.
-Watch video
-Pinterest uses text detection for content moderation.
-Aella Credit uses face detection and comparison to verify an applicant’s identity.
-Thorn uses face search to help identify child sex-trafficking victims faster.
-ICFES uses face detection and comparison to maintain exam integrity for 75,000 students.
-San Diego Gas & Electric uses Custom Labels to detect transformer damage using drone footage.
-To learn more, visit Amazon Rekognition customers.
-Blogs
-date
-1
-...
+Customers
+Pinterest uses text detection to moderate user uploaded images
+PBS uses object detection to streamline media content operations
+SDG&E uses Rekognition Custom Labels to detect transformer damage from drone footage
+How to get started
+Connect with an expert
+Learn more about how you can integrate deep learning-based image and video analysis in  your applications.
+Contact Sales
+View customer stories
+See how thousands of organizations worldwide are using Amazon Rekognition to add image and video analysis to applications.
+Check out stories
 Explore Amazon Rekognition pricing
-Learn more about Amazon Rekognition pricing by visiting the pricing page.
-Learn more
-Get the facts on facial recognition
-Learn more about facial recognition and how to report abuse.
-Start building in the console
-Get started building with Amazon Rekognition in the AWS console.
-Sign in
+Explore the three types of Amazon Rekognition usage and pricing.
+Find out about pricing
+Explore more of AWS

@@ -1,55 +1,33 @@
 Amazon Lumberyard
-Now in Developer Preview – Open 3D Engine
-As we began building the successor to Lumberyard, we wanted to give developers the ability to access technology, contribute, and grow it. With that comes the Linux Foundation and their Open 3D Foundation, with AWS seeding the foundation with the Open 3D Engine (O3DE) – a AAA-capable, cross platform open source game engine available under an Apache 2.0 license.
-Read our blog
-Free. Powerful. Fully Customizable.
-Build Bigger.
-Lumberyard is architected for performance, modularity, and productivity. Reduce time to quality and maximize ambition, across PC, console, and mobile.
-Build a Fanbase.
-Engage and grow your community inside and outside of your game, and build games as fun to watch as they are to play, with Lumberyard's Twitch integration.
-Build Free.
-Lumberyard is free and includes full source. There are no seat fees, subscription fees, or requirements to share revenue. Only pay for the AWS services you choose to use.
-Learn about O3DE
-We aimed to build an engine that could stand the test of time in an open source world.
-Watch Now
-More Tutorials
-We have tutorials for every level of Lumberyard user -  you'll find something whether you're entry level or expert.
-Learn how to use the editor and more.
-Community
-Learn from the talented Lumberyard community and get in touch with our community managers. We're here to help.
-Talk with them on our forums.
-Documentation
-Get detailed instructions on how to use Lumberyard, check out release notes, and learn from written tutorials.
-Learn more.
-Download Samples
-Discover a collection of sample projects that showcase the possibilities using the tools and features available in Lumberyard.
-See Available Samples.
-Free Training Course
-Introduction to Building Games on AWS using Amazon Lumberyard
-Learn about Amazon Lumberyard features and explore various AWS solutions that can be integrated into games built with Lumberyard.
-Start Free Training
-From the Blog
-July 6, 2021
-The Story of AWS and Open 3D Engine
-The Linux Foundation just announced Open 3D Foundation, with AWS seeding the foundation with the Open 3D Engine (O3DE) – a AAA-capable, cross platform open source game engine available under an Apache 2.0 license.
-May 19, 2021
-Announcing Amazon Lumberyard 1.28
-Amazon Lumberyard 1.28 Beta is now available for download, bringing you a range of updates including updated Twitch Gem, an improved setup and installation experience, plus various smaller improvements, and over 40 bug fixes.
-December 11, 2020
-Announcing Amazon Lumberyard 1.27
-Lumberyard 1.27 is now available for download, bringing you a range of updates including usability with optimized work flows throughout the user interface, support for new and improved physics features, and even more customization options for developers on major platforms.
-Around the Web
-March 9, 2019
-Carbonated Games teases mobile shooter on Amazon Lumberyard
-In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as GameLift and Amazon Web Services.
-February 21, 2019
-Denis Dyack is coming back from the dead with Deadhaus Sonata
-I’m coming back from the dead. We’re using Amazon Lumberyard, and the way we’re using it speaks to a new type of gaming mentality for a new marketplace, which is yielding itself every day.
-In an interview with GamesBeat, Boatman said that the El Segundo, California-based company has gone big with Amazon, using its game tools such as Gamelift and Amazon Web Services.
-Built with Lumberyard
-Learn more about what makes Lumberyard unique
-Visit the features page
-Ready to build with Lumberyard?
-Download Now
-Have more questions?
-Contact us
+Open 3D Engine (O3DE) is here. The successor to Lumberyard, the O3DE Stable 21.11 Release is now available, with a new Windows installer and support for Linux.
+Download O3DE 21.11
+In July, we announced the formation of the Open 3D Foundation and the Open 3D Engine (O3DE), a AAA-capable, cross-platform, open-source game engine available under an Apache 2.0 license. We wanted to give game and simulation developers more choices to collaborate, customize, and control their production pipelines. We're also growing an open-source community with the Linux Foundation and industry partners. The successor to Lumberyard, the O3DE Stable 21.11 Release is now available, with a new Windows installer and support for Linux.
+Read the announcement blog
+Announcing Open 3D Engine (O3DE)
+Benefits
+Build bigger
+O3DE is architected for modularity and flexibility. Swap out subsystems or easily add integrations to give your games and simulations the capabilities they need without the features they don’t.
+Build connected
+Add multiplayer scaling, analytics, cloud storage, and real-time data sources to your game directly from the engine with O3DE’s AWS Integration Gem.
+Build free
+O3DE is free and includes full source. There are no seat fees, subscription fees, or requirements to share revenue. Licensed under Apache 2.0, you have complete control of your engine technology.
+Resources from O3DE
+Download the Latest
+Download the latest O3DE release to see how you can build AAA games, cinema-quality 3D worlds, and high-fidelity simulations without any fees or commercial obligations.
+Download now
+Get Started with O3DE
+These resources include step-by-step materials to help you get set up and start creating with O3DE.
+Learn more
+O3DE Tutorials
+Check out video tutorials, step-by-step written tutorials, and sample documentation that teach you the concepts, features, and tools of O3DE.
+O3DE User Guide
+The O3DE User Guide contains information and guidance for users working on an O3DE project.
+From the blog
+Built for builders: AWS and O3DE Stable 21.11 Release
+Today, we are excited to share that the latest O3DE Stable 21.11 Release is now available for developers and content creators, furthering us on our mission to make free, world-class 3D rendering tools accessible to everyone. Read the blog
+We also make games: Our first AWS O3DE game is now available
+Developers like code. Developers like demos. But game developers, in our experience, REALLY like code and demos. And we’re looking to share some code and demos with you. After all, when you’re starting to create a new game, it can help you when you can see something working, and explore “how they did it.” Read the blog
+Built for Builders: The Story of AWS and Open 3D Engine – Developer Preview
+We hear from game and simulation developers that they want more choices that allow for collaboration, customization, and creative control in their production pipelines. Building 3D tooling from scratch can be cost-prohibitive, take years to develop, and require significant resources to maintain. Read the blog
+Visit the AWS Game Tech blog page
+Join the conversation

@@ -12,7 +12,7 @@ Q: Can I send emails from any email address?
 No. You can only use Amazon SES to send email from addresses or domains that you own.
 To prove that you own an email address or domain, you have to verify it. In each AWS Region, you can verify up to 10,000 email addresses and domains, in any combination. For more information about verifying email addresses and domains, see Verifying Identities in Amazon SES in the Amazon SES Developer Guide.
 Q: Is there a limit on the size of emails Amazon SES can deliver?
-Amazon SES accepts email messages up to 10 MB in size. This includes any images and attachments that are part of the message.
+Amazon SES accepts email messages up to 10 MB in size including any images and attachments that are part of the message. If you need more than the default quota of 10 MB, you may request an increase to the maximum message size not to exceed 40 MB.
 Q: Are there any limits on how many emails I can send?
 Every Amazon SES account has its own set of sending limits. These limits are:
 Sending quota—the maximum number of recipients that you can send email to in a 24-hour period.

@@ -26,8 +26,7 @@ Q: What is an AWS Lambda function?
 The code you run on AWS Lambda is uploaded as a “Lambda function”. Each function has associated configuration information, such as its name, description, entry point, and resource requirements. The code must be written in a “stateless” style i.e. it should assume there is no affinity to the underlying compute infrastructure. Local file system access, child processes, and similar artifacts may not extend beyond the lifetime of the request, and any persistent state should be stored in Amazon S3, Amazon DynamoDB, Amazon EFS, or another Internet-available storage service. Lambda functions can include libraries, even native ones.
 Q: Will AWS Lambda reuse function instances?
 To improve performance, AWS Lambda may choose to retain an instance of your function and reuse it to serve a subsequent request, rather than creating a new copy. To learn more about how Lambda reuses function instances, visit our documentation. Your code should not assume that this will always happen.
-Q: What if I need scratch space on disk for my AWS Lambda function?
-Each Lambda function receives 500MB of non-persistent disk space in its own /tmp directory.
+Q: What if I need scratch space on disk for my AWS Lambda function?  Each Lambda function receives 512 MB of non-persistent disk space in its own /tmp directory.
 Q: Why must AWS Lambda functions be stateless?
 Keeping functions stateless enables AWS Lambda to rapidly launch as many copies of the function as needed to scale to the rate of incoming events. While AWS Lambda’s programming model is stateless, your code can access stateful data by calling other web services, such as Amazon S3 or Amazon DynamoDB.
 Q: Can I use threads and processes in my AWS Lambda function code?
@@ -203,6 +202,29 @@ Q: When should I use Provisioned Concurrency?
 Provisioned Concurrency is ideal for building latency-sensitive applications, such as web or mobile backends, synchronously invoked APIs, and interactive microservices. You can easily configure the appropriate amount of concurrency based on your application's unique demand. You can increase the amount of concurrency during times of high demand and lower it, or turn it off completely, when demand decreases.
 Q: What happens if a function receives invocations above the configured level of Provisioned Concurrency?
 If the concurrency of a function reaches the configured level, subsequent invocations of the function have the latency and scale characteristics of regular Lambda functions. You can restrict your function to only scale up to the configured level. Doing so prevents the function from exceeding the configured level of Provisioned Concurrency. This is a mechanism to prevent undesired variability in your application when demand exceeds the anticipated amount.
+AWS Lambda functions powered by Graviton2 processors
+Q: What are AWS Lambda functions powered by Graviton2 processors?
+AWS Lambda allows you to run your functions on either x86-based or Arm-based processors. AWS Graviton2 processors are custom built by Amazon Web Services using 64-bit Arm Neoverse cores to deliver increased price performance for your cloud workloads. Customers get the same advantages of AWS Lambda, running code without provisioning or managing servers, automatic scaling, high availability, and only paying for the resources you consume.
+Q: Why should I use AWS Lambda functions powered by Graviton2 processors?
+AWS Lambda functions powered by Graviton2, using an Arm-based processor architecture designed by AWS, are designed to deliver up to 34% better price performance compared to functions running on x86 processors, for a variety of serverless workloads, such as web and mobile backends, data, and stream processing. With lower latency, up to 19% better performance, a 20% lower cost, and the highest power-efficiency currently available at AWS, Graviton2 functions can power mission critical serverless applications. Customers can configure both existing and new functions to target the Graviton2 processor. They can deploy functions running on Graviton2 as either zip files or container images.
+Q: How do I configure my functions to run on Graviton2 processors?
+You can configure functions to run on Graviton2 through the AWS Management Console, the AWS Lambda API, the AWS CLI, and AWS CloudFormation by setting the architecture flag to ‘arm64’ for your function.
+Q: How do I deploy my application built using functions powered by Graviton2 processors?
+There is no change between x86-based and Arm-based functions. Simply upload your code via the AWS Management Console, zip file, or container image, and AWS Lambda automatically runs your code when triggered, without requiring you to provision or manage infrastructure.
+Q: Can an application use both functions powered by Graviton2 processors and x86 processors?
+An application can contain functions running on both architectures. AWS Lambda allows you to change the architecture (‘x86_64’ or ‘arm64’) of your function’s current version. Once you create a specific version of your function, the architecture cannot be changed.
+Q: Does AWS Lambda support multi-architecture container images?
+No. Each function version can only use a single container image.
+Q: Can I create AWS Lambda Layers that target functions powered by AWS Graviton2 processors?
+Yes. Layers and extensions can be targeted to ‘x86_64’ or ‘arm64’ compatible architectures. The default architecture for functions and layers is ‘x86_64’.
+Q: What languages and runtimes are supported by Lambda functions running on Graviton2 processors?
+At launch, customers can use Python, Node.js, Java, Ruby, .Net Core, Custom Runtime (provided.al2), and OCI Base images. To learn more, please see the AWS Lambda Runtimes.
+Q: What is the pricing of AWS Lambda functions powered by AWS Graviton2 processors? Does the AWS Lambda free tier apply to functions powered by Graviton2?
+AWS Lambda functions powered by AWS Graviton2 processors are 20% cheaper compared to x86-based Lambda functions. The Lambda free tier applies to AWS Lambda functions powered by x86 and Arm-based architectures.
+Q: How do I choose between running my functions on Graviton2 processors or x86 processors?
+Each workload is unique and we recommend customers test their functions to determine the price performance improvement they might see. To do that, we recommend using the AWS Lambda Power Tuning tool. We recommend starting with web and mobile backends, data, and stream processing when testing your workloads for potential price performance improvements.
+Q: Do I need an Arm-based development machine to create, build, and test functions powered by Graviton2 processors locally?
+Interpreted languages like Python, Java, and Node generally do not require recompilation unless your code references libraries that use architecture specific components. In those cases, you would need to provide the libraries targeted to arm64. For more details, please see the Getting started with AWS Graviton page. Non-interpreted languages will require compiling your code to target arm64. While more modern compilers will produce compiled code for arm64, you will need to deploy it into an arm-based environment to test. To learn more about using Lambda functions with Graviton2, please see the documentation.
 Amazon EFS for AWS Lambda
 Q: What is Amazon EFS for AWS Lambda?
 With Amazon Elastic File System (Amazon EFS) for AWS Lambda, customers can securely read, write and persist large volumes of data at virtually any scale using a fully managed elastic NFS file system that can scale on demand without the need for provisioning or capacity management. Previously, developers added code to their functions to download data from S3 or databases to local temporary storage, limited to 512MB. With EFS for Lambda, developers don't need to write code to download data to temporary storage in order to process it.

@@ -1,37 +1,29 @@
+« Management & Governance
 AWS Proton
-Automated management for container and serverless deployments
+Automate management for container and serverless deployments
 Get started with AWS Proton
-AWS Proton is the first fully managed delivery service for container and serverless applications. Platform engineering teams can use AWS Proton to connect and coordinate all the different tools needed for infrastructure provisioning, code deployments, monitoring, and updates.
-Maintaining hundreds – or sometimes thousands – of microservices with constantly changing infrastructure resources and continuous integration/continuous delivery (CI/CD) configurations is a nearly impossible task for even the most capable platform teams.
-AWS Proton solves this by giving platform teams the tools they need to manage this complexity and enforce consistent standards, while making it easy for developers to deploy their code using containers and serverless technologies.
-What is AWS Proton? (0:47)
-Benefits
-Set guardrails
-AWS Proton enables your developers to adopt and deploy applications using approved stacks that you manage. It delivers the right balance of control and flexibility so that developers can continue to innovate.
-Increase developer productivity
-AWS Proton lets you adopt new technologies like containers and serverless without slowing your developers down. It gives them infrastructure provisioning and code deployment in a single interface, allowing developers to focus on their code.
-Enforce best practices
-When you adopt a new feature or best practice, AWS Proton helps you update out-of-date applications with a single click. With AWS Proton, you can provide consistent architecture across your organization.
+Watch an AWS Proton demo
+Set guardrails with managed, approved stacks to help developers build and deploy applications.
+Empower developer productivity and innovation with infrastructure provisioning and code deployment in a single interface.
+Update applications with a single click to easily maintain a consistent architecture across your organization.
 How it works
-Platform teams use AWS Proton to create a stack that defines everything needed to provision, deploy, and monitor a service, including compute, networking, code pipeline, security, and monitoring. Developers log into the AWS Proton console to use published AWS Proton stacks to automate infrastructure provisioning and quickly deploy their application code. Instead of spending hours setting up infrastructure for every development team, platform or operations teams centrally manage deployments without impacting productivity. When any part of the stack needs updating, the platform team uses AWS Proton to deploy the updates to microservices running out-of-date configurations. AWS Proton helps platform teams deliver the container and serverless experience their developers expect, while enabling them to raise the bar on consistency and control.
+AWS Proton is a fully managed delivery service for deploying container and serverless applications with increased efficiency, consistency, and control.
+Close
+Click to enlarge
 Use cases
-Streamlined management
-Platform teams use AWS Proton to manage and enforce a consistent set of standards for compute, networking, continuous integration/continuous delivery (CI/CD), and security and monitoring in modern container and serverless environments. With AWS Proton, you can see what was deployed and who deployed it. You can identify and update out-of-date infrastructure when updating your templates.
-Managed developer self-service
-AWS Proton enables platform teams to offer a curated self-service interface for developers, using the familiar experience of the AWS Management Console or AWS Command Line Interface (AWS CLI). Using approved stacks, authorized developers in your organization are able to use AWS Proton to create and deploy a new production infrastructure service for their container and serverless applications.
-Infrastructure as code adoption
-AWS Proton uses infrastructure as code to define application stacks and configure resources. It integrates with popular AWS and third-party CI/CD and observability tools, offering a flexible approach to application management. AWS Proton makes it easy to provide your developers with a curated set of building blocks that they can use to accelerate the pace of business innovation.
-Check out AWS Proton features
-Discover AWS Proton features, including template management, the self-service developer interface, usage monitoring, and automated deployments.
-Learn more
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with AWS Proton in the AWS Management Console.
-Sign in
-Learn more about containers on AWS
-Visit the containers page
-Ready to build?
-Have more questions?
-Contact us
+Streamline management
+Gain deployment visibility and set consistent standards for compute, networking, continuous integration and deployment (CI/CD), security, and monitoring.
+Empower self-service development
+Build a curated, self-service interface for developers to create and deploy production infrastructure from approved application stacks.
+Adopt infrastructure as code
+Accelerate developer innovation using infrastructure as code to define application stacks and configure resources.
+How to get started
+Find out how AWS Proton works
+Learn about automated deployments, customer-managed environments, and more.
+Explore AWS Proton features
+Access resources for setting up the AWS Proton console.
+Check out AWS Proton documentation
+Connect with an expert
+Access the right support for implementing AWS Proton.
+Explore support options
+Explore more of AWS

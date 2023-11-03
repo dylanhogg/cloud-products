@@ -1,54 +1,36 @@
+« Machine Learning
 Amazon Comprehend
-Discover insights and relationships in text
-Get started with Amazon Comprehend
-Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover information in unstructured data. Instead of combing through documents, the process is simplified and unseen information is easier to understand.
-The service can identify critical elements in data, including references to language, people, and places, and the text files can be categorized by relevant topics. In real time, you can automatically and accurately detect customer sentiment in your content. This accelerates more informed, real-time decision making to improve customer experiences. Comprehend not only locates any content that contains personally identifiable information, it also redacts and masks that content. Comprehend is fully managed, so you can get up and running quickly, without having to train models from scratch. Start processing millions of documents in minutes by leveraging the power of machine learning.
-5 million characters free
-per month for 12 months with the AWS Free Tier
-Get started for free
-Benefits
-Uncover valuable insights from your text
-Amazon Comprehend can uncover the meaning and relationships in text from customer support incidents, product reviews, social media feeds, news articles, documents, and other sources. For example, you can identify the feature that’s most often mentioned when customers are happy or unhappy about your product.
-Organize documents by topics
-Amazon Comprehend can be trained to label documents with topics or tags defined by you. Natural Language Processing techniques enables the solution to go beyond keyword search or rules-based tagging for more accurate document classification. Deliver personalized content to your customers and provide richer navigation based on these topics.
-Train models on your own data
-Amazon Comprehend can also be used to identify specific terms. You can tailor the classification messages and documents to your organization’s needs, such as social media posts by product. Machine learning expertise is not a requirement to add this customization. It’s as simple as providing the labels and a small set of examples of each.
-Support for general and industry specific text
-Powered by state-of-the-art machine learning models, Amazon Comprehend can identify industry-specific insights from unstructured text and documents, like emails. Amazon Comprehend Medical can identify medical information, such as medication and medical conditions, from a variety of sources (including doctor’s notes), and determine their relationship to each other. It enables easier analysis and provides context, to make extracted terms meaningful.
+Derive and understand valuable insights from text within documents
+Get Started with Amazon Comprehend
+Contact sales
+Uncover valuable insights from text in documents, customer support tickets, product reviews, emails, social media feeds, and more.
+Simplify document processing workflows by extracting text, key phrases, topics, sentiment, and more from documents such as insurance claims.
+Differentiate your business by training a model to classify documents and identify terms, with no machine learning experience required.
+Protect and control who has access to your sensitive data by identifying and redacting Personally Identifiable Information (PII) from documents.
+How it works
+Amazon Comprehend is a natural-language processing (NLP) service that uses machine learning to uncover valuable insights and connections in text.
 Use cases
-Customer analytics
-Accurate search
-Knowledge management
-Support tickets
-Medical cohort analysis
-Call center analytics
-Automatically detect customer sentiment using Amazon Comprehend. Accurately analyze customer interactions, including social media posts, to improve your products and services.
+Mine business and call center analytics
+Detect customer sentiment and analyze customer interactions and automatically categorize inbound support requests. Extract insights from customer surveys to improve your products.
 Index and search product reviews
-Provide a more fulfilling search experience by equipping your search engine to index key phrases, entities, and sentiment. Take search beyond basic keywords to focus on the context of the articles.
-Personalize content on a website
-You can use Amazon Comprehend to organize and categorize documents on your website by topic for easier discovery. Content can be personalized for readers and recommendations provided to related articles.
-Customer support ticket handling
-Automatically categorize inbound customer support documents, such as product reviews, using custom classification. Custom entities can then extract relevant information to solve for customer issues.
-Clinial trial recruitment
-Amazon Comprehend Medical identifies complex medical information found in unstructured text. In oncology, this is used to identify recruit patients to the appropriate clinical trial in a fraction of the time.
-Customer success
-LexisNexis Legal & Professional is a global provider of content and technology solutions for legal and business professionals, serving customers in more than 175 countries, offering over 2 billion searchable archives.
-“We provide legal professionals with insightful research and analytics to help them make informed decisions. Therefore, we are always looking for better ways to discover insights from legal documents. Thanks to Amazon Comprehend's automatic machine learning (ML), we can now build accurate custom entity recognition models without getting into the complexities associated with ML. The entities that we care about the most, such as judge and attorney, can be identified quickly from over 200 million documents at above 92% accuracy.”
-Rick McFarland, Chief Data Officer - LexisNexis
-Chisel AI helps commercial insurance carriers and brokers double their business by automating mundane underwriting and brokering processes.
-The commercial insurance industry operates using processes that are document intensive. Processing these documents requires manual entry, is costly, and prone to human error. We use AWS services to automate and streamline operational workflows, using Amazon Textract and Amazon Comprehend. Using machine learning we have been able to extract policy numbers, expiration dates, and many more insurance industry-specific attributes with reduced manual effort. We leverage Amazon Textract to extract data from documents at scale and Amazon Comprehend to classify and label unstructured content in documents and pull out insurance-specific entities. “Our applications use Amazon Textract and Amazon Comprehend in conjunction with our own proprietary models to automate costly manual processes like document review and insurance application intake. We reduce customer effort, making it faster and easier to buy and sell commercial insurance. We are seeing great results using AWS machine learning.”
-Colin Toal, Chief Technical Officer, Chisel AI
-FINRA is a not-for-profit organization dedicated to investor protection and market integrity. It regulates one critical part of the securities industry – brokerage firms doing business with the public in the United States.
-"FINRA receives millions of documents with unstructured data to support investigative, examination, and compliance processes. Our investigators and examiners had to manually go through documents page by page or run very targeted searches to find what they needed. With Amazon Comprehend, we can quickly extract individuals and organization, match extracted entities to FINRA records, flag individual of interest, and detect similarities with other documents.”
-Dmytro Dolgopolov, Senior Director of Technology - FINRA
-TeraDact Solutions software offers a robust alternative for secure information sharing in a world of ever-increasing compliance and privacy concerns. With its signature Information Identification & Presentation (IIaPTM) capabilities, TeraDact's tools provide the user with a safe information sharing environment.
-“Using Amazon Comprehend for PII redaction with our tokenization system not only helps us reach a larger set of our customers but also helps us overcome the shortcomings of rules-based PII detection which can result in false alarms or missed details. PII detection is critical for businesses and with the power of context-aware NLP models from Comprehend we can uphold the trust customers place in us with their information. Amazon is innovating in ways to help push our business forward by adding new features which are critical to our product suite."
-Chris Schrichte, CEO, TeraDact Solutions, Inc.
-Check out Amazon Comprehend features
-Discover more Amazon Comprehend features.
-Learn more
-Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Sign up
-Start building in the console
-Get started building with Amazon Comprehend in the AWS Management Console.
+Focus on context by equipping your search engine to index key phrases, entities, and sentiment, not just keywords.
+Legal briefs management
+Automate the extraction of insights from packets of legal briefs such as contracts and court records. Further secure your documents by identifying and redacting Personally Identifiable Information (PII).
+Process financial documents
+Classify and extract entities from financial services documents such as insurance claims or mortgage packages or find relationships between financial events in a financial article.
+Customers
+LexisNexis discovers insights from legal documents faster
+Chisel AI automates document-intensive processes
+TeraDact offers users a safe environment for sharing information
+PubNub helps customers grow their business with smarter chat
+How to get started
+Explore Amazon Comprehend pricing
+Explore pricing structures.
+Learn more about pricing
+Get started with Amazon Comprehend
+Embark on your journey today.
+Explore a tutorial
+Connect with an expert
+Browse AWS experts from your industry..
+Explore support options
+Explore more of AWS

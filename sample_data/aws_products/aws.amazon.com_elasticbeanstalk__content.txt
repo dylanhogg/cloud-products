@@ -13,7 +13,7 @@ Elastic Beanstalk provisions and operates the infrastructure and manages the app
 Impossible to outgrow
 Elastic Beanstalk automatically scales your application up and down based on your application's specific need using easily adjustable Auto Scaling settings. For example, you can use CPU utilization metrics to trigger Auto Scaling actions. With Elastic Beanstalk, your application can handle peaks in workload or traffic while minimizing your costs.
 Complete resource control
-You have the freedom to select the AWS resources, such as Amazon EC2 instance type, that are optimal for your application. Additionally, Elastic Beanstalk lets you "open the hood" and retain full control over the AWS resources powering your application. If you decide you want to take over some (or all) of the elements of your infrastructure, you can do so seamlessly by using Elastic Beanstalk's management capabilities.
+You have the freedom to select the AWS resources, such as Amazon EC2 instance type and processor type to run the workload on, that are optimal for your application. You also retain full control over the AWS resources powering your application. If you decide you want to take over some (or all) of the elements of your infrastructure, you can do so seamlessly by using Elastic Beanstalk's management capabilities.
 Featured customers
 "After evaluating various cloud technologies, Zillow chose Amazon Web Services."
 "Prezi moved two of its most critical back-end services to AWS Elastic Beanstalk."

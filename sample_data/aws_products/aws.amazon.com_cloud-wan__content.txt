@@ -1,0 +1,29 @@
+AWS Cloud WAN (Preview)
+Easily build, manage, and monitor global wide area networks
+Get started with AWS Cloud WAN
+Unify your AWS and on-premises networks to reduce complexity.
+Increase security by segmenting your network to isolate sensitive network traffic from everyday data.
+View your entire network on a single dashboard.
+Use the AWS global network to connect your locations and resources.
+How it works
+AWS Cloud WAN provides a central dashboard for making connections between your branch offices, data centers, and Amazon Virtual Private Clouds (VPCs) in just a few clicks. With Cloud WAN, you use network policies to automate network management and security tasks in one location. Cloud WAN generates a complete view of your on-premises and AWS networks to help you monitor network health, security, and performance.
+Close
+Click to enlarge
+Use cases
+Build a global network
+Use your choice of local network providers to connect to AWS, then use the AWS global network to connect your locations and VPCs.
+Easily extend your network
+Save time by automating routine networking tasks, such as adding new connections, branch locations, and Amazon VPCs.
+Visualize your network using a single dashboard
+Track network traffic, view the health of your network, improve performance, and minimize downtime.
+How to get started
+Find out how AWS Cloud WAN works
+Learn more about how Cloud WAN can help merge your cloud and on-premises networks.
+Explore Cloud WAN features
+Start building today
+Start building in the AWS Management Console.
+Connect to the console
+Explore the FAQs
+Learn more about what makes up Cloud WAN.
+Read the FAQs
+Explore more of AWS

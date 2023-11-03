@@ -6,17 +6,23 @@ def run_full_aws_crawler():
     from cloud_products.aws import AwsCrawler
 
     crawler = AwsCrawler()
-    products = crawler.get_products()
-    print(f"Found {len(products)} products.")
+    all_products = []
 
-    for product in products:
-        # if "bean" in product.std_name:
+    page_count = 17  # TODO: get count from page
+    # page_count = 1  # Testing
+    for page in range(1, page_count + 1):
+        page_products = crawler.get_products(page=page)
+        all_products.extend(page_products)
+        print(f"Found {len(page_products)} products on page {page}...")
+    print(f"Found {len(all_products)} TOTAL products.")
+
+    for product in all_products:
         print(f"Saving {product.name} from {product.abs_href}...")
         crawler.save_product(product, output_path, use_cache=False)
         print(f"Saving {product.name} FAQ from {product.abs_href_faq}...")
         crawler.save_faq(product, output_path, use_cache=False)
 
-    print(f"Finished.")
+    print("Finished.")
 
 
 def run_aws_crawler_examples():
@@ -30,6 +36,7 @@ def run_aws_crawler_examples():
     from cloud_products.aws import AwsCrawler
 
     crawler = AwsCrawler()
+    print(crawler)
     product = crawler.get_products()[0]
     lines = crawler.get_product_text(product)
     print(lines[4])
@@ -52,6 +59,7 @@ def run_aws_crawler_examples():
 
     logging.info("Example 5: Convert list of products to Pandas dataframe")
     import pandas as pd
+
     from cloud_products.aws import AwsCrawler
 
     products = AwsCrawler().get_products()
@@ -72,15 +80,20 @@ if __name__ == "__main__":
     vendor = "aws"
     output_path = "./_data/scrape_results/"
 
-    if vendor == "aws":
-        # run_aws_crawler_examples()
+    run_type = "full"
+    # run_type = "examples"
+
+    if vendor == "aws" and run_type == "full":
         run_full_aws_crawler()
 
+    elif vendor == "aws" and run_type != "full":
+        run_aws_crawler_examples()
+
     elif vendor == "gcp":
-        raise Exception(f"Google Cloud Compute not currently supported")
+        raise Exception("Google Cloud Compute not currently supported")
 
     elif vendor == "azure":
-        raise Exception(f"Microsoft Azure not currently supported")
+        raise Exception("Microsoft Azure not currently supported")
 
     else:
         raise Exception(f"Unknown vendor {vendor}")

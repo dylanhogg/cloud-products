@@ -2,7 +2,7 @@ Amazon Personalize
 Create real-time personalized user experiences faster at scale
 Get started with Amazon Personalize
 Amazon Personalize enables developers to build applications with the same machine learning (ML) technology used by Amazon.com for real-time personalized recommendations – no ML expertise required.
-Amazon Personalize makes it easy for developers to build applications capable of delivering a wide array of personalization experiences, including specific product recommendations, personalized product re-ranking, and customized direct marketing. Amazon Personalize is a fully managed machine learning service that goes beyond rigid static rule based recommendation systems and trains, tunes, and deploys custom ML models to deliver highly customized recommendations to customers across industries such as retail and media and entertainment.
+Amazon Personalize makes it easy for developers to build applications capable of delivering a wide array of personalization experiences, including specific product recommendations, personalized product re-ranking, and customized direct marketing. Amazon Personalize is a fully managed machine learning service that goes beyond rigid, static rule-based recommendation systems and trains, tunes, and deploys custom ML models to deliver highly customized recommendations to customers across industries such as retail and media and entertainment.
 Amazon Personalize provisions the necessary infrastructure and manages the entire ML pipeline, including processing the data, identifying features, using the best algorithms, and training, optimizing, and hosting the models. You will receive results via an Application Programming Interface (API) and only pay for what you use, with no minimum fees or upfront commitments. All data is encrypted to be private and secure, and is only used to create recommendations for your users.
 2 months free
 with the AWS Free Tier
@@ -28,13 +28,12 @@ The ML algorithms used by Amazon Personalize create higher quality recommendatio
 Easily implement personalized recommendations in days, not months
 With Amazon Personalize, you can implement a customized personalization recommendation system, powered by ML, in just a few clicks without the burden of building, training, and deploying a “do it yourself” ML solution.
 Personalize every touchpoint along the customer journey
-Amazon Personalize easily integrates into your existing websites, apps, SMS, and email marketing systems to provide a unique customer experience for across all channels and devices eliminating high infrastructure or resource costs. Amazon Personalize provides flexibility for you to use real-time or batch recommendations based on what is most appropriate for your use case, enabling you to deliver a wide variety of personalized experiences to customers at scale.
+Amazon Personalize easily integrates into your existing websites, apps, SMS, and email marketing systems to provide a unique customer experience across all channels and devices, eliminating high infrastructure or resource costs. Amazon Personalize provides flexibility for you to use real-time or batch recommendations based on what is most appropriate for your use case, enabling you to deliver a wide variety of personalized experiences to customers at scale.
 Data privacy and security
 All of your data is encrypted to be private and secure, and is only used to create recommendations for your customers. Data is not shared between customers or with Amazon.com. You can also use one of your own AWS Key Management Service (AWS KMS) keys to gain more control over access to data you encrypt. AWS KMS enables you to maintain control over who can use your customer master keys and gain access to your encrypted data.
-How it works
 Amazon Personalize for Retail
 Deliver unique homepage experiences
-Personalize your users homepage with product recommendations based on their shopping history.
+Personalize your users' homepage with product recommendations based on their shopping history.
 Refine product recommendations
 Recommend similar items on product detail pages to help users easily find what they are looking for.
 Help customers discover products faster
@@ -51,7 +50,7 @@ Learn how StockX is using Amazon Personalize to create pioneering customized exp
 "We’re quickly learning the potency of integrating ML into all facets of the company. Our success led to key decision-makers requesting we integrate Amazon Personalize into more of the StockX experience and expand our ML endeavors. It’s safe to say that personalization is now a first-class citizen here."
 Read blog
 Learn how Lotte Mart is using Amazon Personalize to enable over 600,000 users to save on their in store shopping experience.
-“By using Amazon Personalize, we have seen a 5x increase in response to recommended products compared to our prior big data analytics solution resulting in increased revenue per month. In particular, Amazon Personalize has increased the number of products that the customer has never purchased before up to 40%. The new recommendation service powered by AWS is the first of a much broader roll-out of AI technologies across our organization“
+“By using Amazon Personalize, we have seen a 5x increase in response to recommended products compared to our prior big data analytics solution, resulting in increased revenue per month. In particular, Amazon Personalize has increased the number of products that the customer has never purchased before up to 40%. The new recommendation service powered by AWS is the first of a much broader roll-out of AI technologies across our organization.“
 Amazon Personalize for Media and Entertainment
 Increase content consumption
 Deliver highly relevant, individualized content recommendations for videos, music, e-books, and more.
@@ -68,9 +67,9 @@ Add individualized recommendations to genre based on content carousels and lists
 Customer Stories
 Learn why Discovery turned to Amazon Personalize to enable tailored content suggestions for their Discovery+ streaming platform users.
 Discovery is Enhancing the Customer Experience with Amazon Personalize
-Learn how Pulselive use Amazon Personalize to increase video views by 20%, highlight new content offerings, and build subscriber base.
-"We were thrilled by our first foray into the world of ML with Amazon Personalize. We found the entire process of integrating a trained model into our workflow was incredibly simple"
-"With Amazon Personalize, we were able to deliver the best possible contests recommendations based on user's playing history and also used it to upsell and cross other similar contests. This feature helped us improve the average number of contest joins per user by 12% and also improved the average transaction value of gameplay by 8%.”
+Learn how Pulselive uses Amazon Personalize to increase video views by 20%, highlight new content offerings, and build their subscriber base.
+"We were thrilled by our first foray into the world of ML with Amazon Personalize. We found the entire process of integrating a trained model into our workflow was incredibly simple."
+"With Amazon Personalize, we were able to deliver the best possible contest recommendations based on user's playing history and also used it to upsell and cross other similar contests. This feature helped us improve the average number of contest joins per user by 12% and also improved the average transaction value of gameplay by 8%.”
 How FanFight uses Amazon AI & ML services to create personalized content for its users
 Learn more about Amazon Personalize customer success
 Blog posts & articles
@@ -80,17 +79,17 @@ Selecting the right metadata to build high-performing recommendation models with
 September, 2020
 Andrew Hood and Ion Kleopas
 Amazon Personalize Github samples
-Notebooks and examples on how to onboard and use various features of Amazon Personalize
+Notebooks and examples of how to onboard and use various features of Amazon Personalize
 Go to Github
 Tech Talk: Offer Your Customers Real-Time Personalized Recommendations
 June, 2020 Luis Lopez Soria
 Watch Now
 Check out the product features
-Easily build sophisticated personalization capabilities into your applications
+Easily build sophisticated personalization capabilities into your applications.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.
 Sign up
 Start building in the console
-Get started building with Amazon Personalize in the AWS Console.
+Get started building with Amazon Personalize in the AWS Management Console.
 Get started

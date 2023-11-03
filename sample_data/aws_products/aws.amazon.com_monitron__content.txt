@@ -4,13 +4,12 @@ Reduce unplanned equipment downtime with predictive maintenance and machine lear
 Buy Amazon Monitron Starter Kit
 Get Started with Amazon Monitron
 Detect machine issues before they occur with machine learning (ML), and take action.
-Start monitoring equipment in minutes with easy install and automatic, secure analysis through the Amazon Monitron end-to-end system.
-Improve system accuracy continuously as Amazon Monitron learns from technician feedback entered in the mobile app.
+Start monitoring equipment in minutes with easy installation and automatic, secure analysis through the Amazon Monitron end-to-end system.
+Improve system accuracy continuously as Amazon Monitron learns from technician feedback entered in the mobile and web apps.
 How it works
 Amazon Monitron is an end-to-end system that uses machine learning to detect abnormal conditions in industrial equipment and enable predictive maintenance.
 Use cases
-Monitor and detect potential failures in a broad range of rotating equipment.
-Save on costly repairs and prevent factory equipment downtime with easy-to-install hardware and the power of machine learning (ML).
+Save on costly repairs and prevent factory equipment downtime with easy-to-install hardware and the power of ML.
 Fans
 Bearings
 Compressors
@@ -26,7 +25,7 @@ Find out how Amazon Monitron works
 Learn how Amazon Monitron uses machine learning on temperature and vibration data.
 Explore Amazon Monitron features
 Talk to a support team
-Get answers about how Amazon Monitron can help you predict equipment downtime before it happens.
+Find out how Amazon Monitron can help you predict equipment downtime before it happens.
 Connect with an expert
 Calculate proof-of-concept cost
 Compare what it costs to get started with how much you could save.

@@ -1,21 +1,24 @@
 AWS Well-Architected Tool
 Review your architecture and adopt best practices
 Get started with the AWS Well-Architected Tool
-The AWS Well-Architected Tool helps you review the state of your workloads and compares them to the latest AWS architectural best practices. The tool is based on the AWS Well-Architected Framework, developed to help cloud architects build secure, high-performing, resilient, and efficient application infrastructure. This Framework provides a consistent approach for customers and partners to evaluate architectures, has been used in tens of thousands of workload reviews conducted by the AWS solutions architecture team, and provides guidance to help implement designs that scale with application needs over time.
-To use this free tool, available in the AWS Management Console, just define your workload and answer a set of questions regarding operational excellence, security, reliability, performance efficiency, and cost optimization. The AWS Well-Architected Tool then provides a plan on how to architect for the cloud using established best practices.
-The AWS Well-Architected Tool now offers the ability to mark individual best practices as not applicable during workload reviews. Learn more
+The AWS Well-Architected Tool is designed to help you review the state of your applications and workloads, and it provides a central place for architectural best practices and guidance. The AWS Well-Architected Tool is based on the AWS Well-Architected Framework, which was developed to help cloud architects build secure, high-performing, resilient, and efficient application infrastructures. The Framework has been used in tens of thousands of workload reviews by AWS solutions architects, and it provides a consistent approach for evaluating your cloud architecture and implementing designs that will scale with your application needs over time.
+In addition to the standard guidance provided by the AWS Well-Architected Framework and AWS-developed lenses, the AWS Well-Architected Tool allows you to add specific best practice guidance using custom lenses. By developing your own questions and evaluating your workloads using your organization’s best practices, you can perform reviews based on technology or governance requirements specific to your industry.
+To use the AWS Well-Architected Tool, just define your workload, apply one of the AWS Well-Architected lenses or your own custom lens, and begin your review. The tool then provides an action plan to help you build for the cloud using the defined best practices. The AWS Well-Architected Tool is available at no charge in the AWS Management Console.
+Navigating Best Practices with the AWS Well-Architected Tool (1:34)
 Benefits
 Get free architectural guidance
-The AWS Well-Architected Tool gives you access to knowledge and best practices used by AWS architects, whenever you need it. You answer a series of questions about your workload, and the tool delivers an action plan with step-by-step guidance on how to build better workloads for the cloud.
+Benefit from access to knowledge and best practices used by AWS solutions architects whenever you need it. Answer questions about your application or workload, and the AWS Well-Architected Tool delivers an action plan with step-by-step guidance on areas for improvement.
 Review your workloads consistently
-The AWS Well-Architected Tool offers your organization a single tool and consistent process to help you review and measure your cloud architectures. When you are responsible for multiple workloads across your organization, the tool enables you to monitor their overall status and helps you to understand potential risks. Use the results that the tool provides to identify next steps for improvement, drive architectural decisions, and bring architecture considerations into your corporate governance process.
+Use a single tool and a consistent process to review and measure your cloud architectures. The AWS Well-Architected Tool allows you to monitor the status of multiple workloads across your organization and helps you understand potential risks. With the action plan, you can identify next steps for improvement, drive architectural decisions, and build for the cloud with confidence.
 Identify and implement improvements
-Use the AWS Well-Architected Tool to support continuous improvement throughout the workload lifecycle. The tool makes it easy to save point-in-time milestones and track changes to your workload. Whenever you want, initiate a new review process to help ensure your architecture continues to improve over time.
+Support continuous improvement throughout the workload lifecycle. The AWS Well-Architected Tool makes it easy to save point-in-time milestones and track changes to your workload. Initiate new reviews as desired to help ensure that your architecture improves over time.
+Customize your review
+You can create custom lenses and share them across your entire organization to measure workloads consistently. Specify rules to help you determine which options can result in a high or medium risk, and provide guidance on resolving those risks.
 How it works
 Step 1: Define workload
 Workloads can be simple, such as a static website, or complex, such as microservices architectures with multiple data stores and many components.
 Step 2: Conduct architectural review
-Review your workloads against current AWS best practices by answering a set of foundational questions.
+Review your workloads against AWS best practices by answering a set of foundational questions, with the option to create your own custom lens.
 Step 3: Apply best practices
 The AWS Well-Architected Tool delivers a list of issues found in your workloads and step-by-step guidance to make improvements.
 Customers
@@ -27,11 +30,11 @@ Expedia
 ”
 Raja Nadar, Principal Software Engineer - Expedia
 Cox Automotive
-“I definitely recommend using the Well-Architected Review to help improve your current systems. But I also recommend pulling it far into your process. Introduce it to teams earlier. If you leverage it beyond going through it with a team when they’re done, you can use it as the basis to design the application and design a truly efficient architecture upfront.”
+“I definitely recommend using the Well-Architected Review to help improve your current systems. But I also recommend pulling it far into your process. Introduce it to teams earlier. If you leverage it beyond going through it with a team when they’re done, you can use it as the basis to design the application and design a truly efficient architecture up front.”
 Kevin Thorley, Enterprise Architect - Cox Automotive
 AWS Well-Architected Partner Program
-AWS Well-Architected Partner Program members have in-depth training on the Well-Architected Framework and can help you implement best practices, measure the state of your workloads, and make improvements where assistance is required. Learn more
-Are you an APN Partner interested in joining the AWS Well-Architected Partner Program? Learn how to be discovered via a link in the AWS Well-Architected Tool. Find out more
+AWS Well-Architected Partner Program members have in-depth training on the Well-Architected Framework and can help you implement best practices, measure the state of your workloads, and make improvements where assistance is required.   Learn more
+Are you an APN Partner interested in joining the AWS Well-Architected Partner Program? Learn how to be discovered through a link in the AWS Well-Architected Tool.   Find out more
 Blogs
 1
 ...
@@ -40,7 +43,7 @@ What's New
 date
 Please see the AWS What's New page for recent launches.
 Have questions?
-Visit the AWS Well-Architected Tool faqs page.
+Visit the AWS Well-Architected Tool FAQ page.
 Learn more
 Sign up for a free account
 Instantly get access to the AWS Free Tier.

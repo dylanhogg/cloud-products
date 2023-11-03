@@ -1,31 +1,35 @@
-Amazon Managed Service for Prometheus (Preview)
+Amazon Managed Service for Prometheus
 Highly available, secure, and managed monitoring for your containers
-Get started with Amazon Managed Service for Prometheus (Preview)
-Amazon Managed Service for Prometheus (AMP) is a Prometheus-compatible monitoring service that makes it easy to monitor containerized applications at scale. The Cloud Native Computing Foundation’s Prometheus project is a popular open source monitoring and alerting solution optimized for container environments. With AMP, you can use the open source Prometheus query language (PromQL) to monitor the performance of containerized workloads without having to manage the underlying infrastructure required to manage the ingestion, storage, and querying of operational metrics. AMP automatically scales as your workloads grow or shrink, and is integrated with AWS security services to enable fast and secure access to data. You can collect Prometheus metrics from Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Elastic Container Service (Amazon ECS) environments, using AWS Distro for OpenTelemetry or Prometheus servers as collection agents.
+Start using Amazon Managed Service for Prometheus today
+Amazon Managed Service for Prometheus is a Prometheus-compatible monitoring and alerting service that makes it easy to monitor containerized applications and infrastructure at scale. The Cloud Native Computing Foundation’s Prometheus project is a popular open source monitoring and alerting solution optimized for container environments. With Amazon Managed Service for Prometheus, you can use the open source Prometheus query language (PromQL) to monitor and alert on the performance of containerized workloads, without having to scale and operate the underlying infrastructure. Amazon Managed Service for Prometheus automatically scales the ingestion, storage, alerting, and querying of operational metrics as workloads grow or shrink, and is integrated with AWS security services to enable fast and secure access to data. The service is integrated with Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Elastic Container Service (Amazon ECS), and AWS Distro for OpenTelemetry.
 How to use Amazon Managed Grafana with Amazon Managed Service for Prometheus (3:54)
 Benefits
 The Prometheus you already know
-Use the familiar, flexible Prometheus query language (PromQL) to filter, aggregate, and alarm on metrics, and quickly gain performance visibility for large volumes of metrics labels. AMP supports all metric types: gauge, counter, summary, and histogram.
+Use the familiar, flexible Prometheus query language (PromQL) to filter, aggregate, and alarm on metrics, and quickly gain performance visibility for large volumes of metrics labels. Amazon Managed Service for Prometheus supports all metric types: gauge, counter, summary, and histogram.
 Prometheus at scale. Easily
-AMP automatically scales as your ingestion and query needs grow, handling millions of unique time series metrics from large container deployments while maintaining consistent query response times. AMP offers multi-AZ replication within an AWS Region.
+Amazon Managed Service for Prometheus automatically scales as your ingestion and query needs grow, handling millions of unique time series metrics from large container deployments while maintaining consistent query response times. Amazon Managed Service for Prometheus offers multi-AZ replication within an AWS Region.
 Prometheus with AWS-level security
-AMP integrates with AWS Identity and Access Management for authentication and fine-grained permissions for users and groups. AWS PrivateLink provides easy and secure access to services hosted on AWS, keeping your network traffic within the AWS network. AWS Organizations integration allows for policy control, and API calls are logged to AWS CloudTrail.
-Monitor containers on AWS and on-premises
-You can quickly set up AMP to collect and query metrics from AWS container services, including Amazon EKS and Amazon ECS. AMP also includes an API that makes it easy to securely ingest and query metrics from all of your self-managed Kubernetes clusters, on AWS and on-premises.
+Amazon Managed Service for Prometheus integrates with AWS Identity and Access Management for authentication and fine-grained permissions for users and groups. AWS PrivateLink provides easy and secure access to services hosted on AWS, keeping your network traffic within the AWS network. AWS Organizations integration allows for policy control, and API calls are logged to AWS CloudTrail.
+Monitor and alert on containers running on AWS and on-premises
+You can quickly set up Amazon Managed Service for Prometheus to collect and query metrics from AWS container services including Amazon EKS, Amazon ECS, and AWS Fargate. Amazon Managed Service for Prometheus also includes APIs that enable you to securely ingest, alert on, and query metrics from all your self-managed Kubernetes clusters, on AWS and on-premises.
 Reduce operational costs
-Using AMP, you can remove the undifferentiated heavy lifting of running open source Prometheus at scale. This helps significantly reduce the operational costs of configuring, upgrading, and scaling standalone Prometheus servers.
+Using Amazon Managed Service for Prometheus , you can remove the undifferentiated heavy lifting of running open source Prometheus at scale. This helps significantly reduce the operational costs of configuring, upgrading, and scaling standalone Prometheus servers.
 Maximize impact with AWS observability services
-AMP integrates with AWS Distro for OpenTelemetry as a collection agent for Prometheus metrics, and with Amazon Managed Grafana to create rich, powerful data visualizations. This complements other AWS observability services such as Amazon CloudWatch and Amazon Elasticsearch Service.
+Amazon Managed Service for Prometheus also works with AWS Distro for OpenTelemetry as a collection agent for Prometheus metrics, and with Amazon Managed Grafana to create rich, powerful data visualizations.
 How it works
 Use cases
 Unified container monitoring
-With AMP, you can monitor containers running on Amazon EKS and Amazon ECS, as well as on-premises. Using Amazon Managed Grafana, you can use the monitoring data collected in AMP to create interactive data visualizations for monitoring, alerts, and dashboards across all your container environments, including host- and application-level monitoring.
+Monitor containers running on Amazon EC2, Amazon ECS, and Amazon EKS (on Amazon EC2 and on AWS Fargate), in the cloud as well as in hybrid environments. Use it together with Amazon Managed Grafana for monitoring, alerts, and dashboard views across all your Kubernetes environments, including both host- and application-level monitoring.
 Troubleshooting and root cause analysis
 Use the powerful PromQL language to detect errors and reduce mean time to resolution. Triggered alerts can be interrogated with PromQL to find systemic versus isolated health and performance issues across all of your containers.
 Workload and application metrics monitoring
-AMP makes it easy to collect and send application metrics from multiple AWS and third-party services without having to manually instrument your application. You can choose from 150+ open source exporters in Prometheus’s library of popular application stacks, including Apache Kafka, Redis, Java/JMX, and NGINX.
+With AWS Distro for OpenTelemetry, you can collect metrics from anywhere. Prometheus’ library of open source exporters for many popular application stacks (including Apache Kafka, Redis, Java/JMX, NGINX, and even Minecraft servers) can be used to send those metrics to Amazon Managed Service for Prometheus.
 High-cardinality metrics monitoring
-AMP is well suited for monitoring high-cardinality data such as video streams and network applications. You can also use it with time series data from IoT devices to analyze data based on labels such as location, category, and user.
+Amazon Managed Service for Prometheus is well-suited for monitoring and alerting on high-cardinality data such as video streams and network applications. You can also use it with time series data from IoT devices to slice and dice based on multiple labels such as location, category, and user.
+Twilio is a customer engagement platform that enables software developers to programmatically make and receive phone calls and text messages and perform other communication functions using its web service APIs.
+“We wanted a fully managed monitoring solution that could keep up with the demands of our infrastructure and took advantage of open source tools,” said
+Albert Strasheim, VP of Engineering, Twilio/Segment. “With Amazon Managed Service for Prometheus, we were able to more easily modernize and scale our observability stack and decrease the time our site reliability engineers spent managing observability infrastructure, so they can focus on optimizing the health and performance of our applications.
+View all customers
 Check out the features
 Learn more about Amazon Managed Service for Prometheus features including ingest/collection, monitoring, analysis, and enterprise-ready scaling and security.
 Learn more

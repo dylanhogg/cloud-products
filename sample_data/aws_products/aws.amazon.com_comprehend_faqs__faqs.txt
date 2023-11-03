@@ -49,33 +49,6 @@ Q: Can I use Amazon Comprehend in connection with websites, programs or other ap
 Yes, subject to your compliance with the Amazon Comprehend Service Terms, including your obligation to provide any required notices and obtain any required verifiable parental consent under COPPA, you may use Amazon Comprehend in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13.
 Q: How do I determine whether my website, program, or application is subject to COPPA?
 For information about the requirements of COPPA and guidance for determining whether your website, program, or other application is subject to COPPA, please refer directly to the resources provided and maintained by the United States Federal Trade Commission. This site also contains information regarding how to determine whether a service is directed or targeted, in whole or in part, to children under age 13.
-Amazon Comprehend Medical
-Q: What is Amazon Comprehend Medical?
-Amazon Comprehend Medical is a natural language processing service that makes it easy to use machine learning to extract relevant medical information from unstructured text. Using Amazon Comprehend Medical, you can quickly and accurately gather information, such as medical condition, medication, dosage, strength, and frequency from a variety of sources, like doctors’ notes, clinical trial reports, and patient health records.
-Q: What can I do with Amazon Comprehend Medical?
-Amazon Comprehend Medical uses advanced machine learning models to accurately and quickly identify medical information such as medical conditions, and medication, and determine their relationship to each other, for instance, medication and dosage. You access Comprehend Medical through a simple API call, no machine learning expertise is required, no complicated rules to write, and no models to train.
-You can use the extracted medical information and their relationships to build applications for use cases, like clinical decision support, revenue cycle management (medical coding), and clinical trial management. Because Comprehend Medical is HIPAA eligible and can quickly identify protected health information (PHI), such as name, age, and medical record number, you can also use it to create applications that securely process, maintain, and transmit PHI.
-Please note. When using Amazon Comprehend Medical to identify protected health information, please recall that the service provides confidence scores that indicate the level of confidence in the accuracy of the extracted entities. You should evaluate these confidence scores and identify the right confidence threshold for your use case. For specific compliance use cases, we recommend you use additional human review or other methods to confirm the accuracy of extracted PHI.
-Q: How do I get started with Amazon Comprehend Medical?
-You can get started with Amazon Comprehend Medical from the AWS Management console or using the SDK. Refer to this technical documentation page for details.
-Amazon Comprehend Medical provides a free tier so you can test out the service. Refer to this pricing page.
-Q: Do I have to be a natural language processing (NLP) expert to use Amazon Comprehend Medical?
-No, you don’t need NLP expertise to use Amazon Comprehend Medical. You only need to call Amazon Comprehend’s API, and the service will handle the machine learning required to extract the relevant data from the text.
-Q: Does Amazon Comprehend Medical learn over time?
-Yes, Amazon Comprehend is continuously trained to make it better for your use cases. Amazon Comprehend Medical does not use customer data used with the service to train the models.
-Q: In which AWS regions in Amazon Comprehend Medical available?
-For a list of the supported Amazon Comprehend AWS regions, please visit the AWS Region Table for all AWS global infrastructure.
-Q: What security measures does Amazon Comprehend Medical have?
-Requests to the Amazon Comprehend Medical APIs and console are made over a secure (SSL) connection. You can use AWS Identity and Access Management (AWS IAM) to control which IAM users have access to specific Amazon Comprehend Medical actions and resources.
-Q: What else should I know before using the Amazon Comprehend Medical service?
-Amazon Comprehend Medical is not a substitute for professional medical advice, diagnosis, or treatment. You and your end users are responsible for exercising your and their own discretion, experience, and judgment in determining the correctness, completeness, timeliness, and suitability of any information provided by Amazon Comprehend Medical. You and your end users are solely responsible for any decisions, advice, actions, and/or inactions based on the use of Amazon Comprehend Medical.
-Amazon Comprehend Medical may not accurately identify protected health information in all circumstances, and does not meet the requirements for de-identification of protected health information in accordance with HIPAA. You are responsible for reviewing any output provided by Amazon Comprehend Medical to ensure it meets your needs.
-Q: How is Amazon Comprehend Medical priced?
-Refer to the Amazon Comprehend Medical pricing page to learn more about pricing tiers.
-Q: Is the content processed by Amazon Comprehend Medical used for any purpose other than to provide and maintain the service?
-Amazon Comprehend Medical does not use content processed by the service for any reason other than to provide and maintain the service. Content processed by the service is not used to develop or improve the quality of Amazon Comprehend Medical or other Amazon machine-learning/artificial-intelligence technologies, and will not be stored in any AWS region other than the region in which you are using the service. You always retain ownership of your content and we will only use your content with your consent.
-Q: Can I use Amazon Comprehend Medical in connection with websites, programs or other applications that are directed or targeted to children under age 13 and subject to the Children’s Online Privacy Protection Act (COPPA)?
-Yes, subject to your compliance with the Amazon Comprehend Medical Service Terms, including your obligation to provide any required notices and obtain any required verifiable parental consent under COPPA, you may use Amazon Comprehend Medical in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13.
 Learn more about Amazon Comprehend features
 Visit the features page
 Ready to get started?
@@ -83,4 +56,3 @@ Sign up
 Have more questions?
 Contact us
 FAQs
-Amazon Comprehend

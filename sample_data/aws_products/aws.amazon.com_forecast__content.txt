@@ -1,57 +1,36 @@
+« Machine Learning
 Amazon Forecast
-Accurate time-series forecasting service, based on the same technology used at Amazon.com, no machine learning experience required
+Forecast business outcomes easily and accurately using machine learning
 Get started with Amazon Forecast
-Amazon Forecast is a fully managed service that uses machine learning to deliver highly accurate forecasts.
-Companies today use everything from simple spreadsheets to complex financial planning software to attempt to accurately forecast future business outcomes such as product demand, resource needs, or financial performance. These tools build forecasts by looking at a historical series of data, which is called time series data. For example, such tools may try to predict the future sales of a raincoat by looking only at its previous sales data with the underlying assumption that the future is determined by the past. This approach can struggle to produce accurate forecasts for large sets of data that have irregular trends. Also, it fails to easily combine data series that change over time (such as price, discounts, web traffic, and number of employees) with relevant independent variables like product features and store locations.
-Based on the same technology used at Amazon.com, Amazon Forecast uses machine learning to combine time series data with additional variables to build forecasts. Amazon Forecast requires no machine learning experience to get started. You only need to provide historical data, plus any additional data that you believe may impact your forecasts. For example, the demand for a particular color of a shirt may change with the seasons and store location. This complex relationship is hard to determine on its own, but machine learning is ideally suited to recognize it. Once you provide your data, Amazon Forecast will automatically examine it, identify what is meaningful, and produce a forecasting model capable of making predictions that are up to 50% more accurate than looking at time series data alone.
-Amazon Forecast is a fully managed service, so there are no servers to provision, and no machine learning models to build, train, or deploy. You pay only for what you use, and there are no minimum fees and no upfront commitments.
-2 months free
-with the AWS Free Tier
-Get started for free
-Benefits
-50% more accurate forecasts with machine learning
-Amazon Forecast provides forecasts that are up to 50% more accurate by using machine learning to automatically discover how time series data and other variables like product features and store locations affect each other. You are better able to understand how these complex relationships ultimately affect demand than what looking at time series data alone can deliver. The models that Amazon Forecast builds are unique to your data, which means the predictions are custom fit to your business.
-Reduce forecasting time from months to hours
-With Amazon Forecast, you can achieve forecasting accuracy levels that used to take months of engineering in as little as a few hours. You can import time series data and associated data into Amazon Forecast from your Amazon S3 database. From there, Amazon Forecast automatically loads your data, inspects it, and identifies the key attributes needed for forecasting. Amazon Forecast then trains and optimizes your custom model, and hosts them in a highly available environment where it can be used to generate your business forecasts. By automatically handling the complex machine learning required to build, train, tune, and deploy a forecasting model, Amazon Forecast enables you to create accurate forecasts quickly.
-Create virtually any time series forecast
-Multiple types of time series forecasts are required to run your business, from cash flow to product demand to resource planning. Amazon Forecast allows you to build forecasts for virtually every industry and use case, including retail, logistics, finance, advertising performance, and many more. Using machine learning, Amazon Forecast can work with any historical time series data and use a large library of built-in algorithms to determine the best fit for your particular forecast type automatically.
-Secure your business data and peace of mind
-Every interaction you have with Amazon Forecast is protected by encryption. Any content processed by Amazon Forecast is encrypted with customer keys through Amazon Key Management Service, and encrypted at rest in the AWS Region where you are using the service. Administrators can also control access to Amazon Forecast through an AWS Identity and Access Management (IAM) permissions policy – ensuring that sensitive information is kept secure and confidential.
+Forecast 10,000 time series
+for 2 months with the AWS Free Tier
+Scale operations by forecasting millions of items, using the same technology as Amazon.com.
+Optimize inventory and reduce waste with accurate forecasts at a granular level.
+Improve capital utilization and make long-term decisions with more confidence.
+Increase customer satisfaction with optimal staffing to meet varying demand levels.
 How it works
+Amazon Forecast is a time-series forecasting service based on machine learning (ML) and built for business metrics analysis.
+Close
+Click to enlarge
 Use cases
-Product Demand Planning
-You can use Amazon Forecast to forecast the appropriate inventory levels for your various store locations. You provide Forecast information like historical sales, pricing, store promotions, store locations, and catalog data from your retail management systems in a CSV (comma-separated values) format into Amazon S3 storage. You can then combine that with associated data like website traffic logs, weather, and shipping schedules. Amazon Forecast will use that information to produce a model that can accurately forecast customer demand for products at the individual store level. Export your forecasts in batch in CSV format and import them back into your retail management systems so that you can determine how much inventory to purchase and allocate per store.
-Financial planning
-Accurate financial forecasting like sales revenue predictions is fundamental to every business’ success. Amazon Forecast can forecast key financial metrics such as revenue, expenses, and cash flow across multiple time periods and monetary units. You first upload your historical financial time series data to Amazon S3 storage and then import it to Amazon Forecast. After producing a model, Amazon Forecast will provide you with the expected accuracy of the forecast so that you can determine if more data is required before using the model in production. The service can also visualize forecasts with graphs in the Amazon Forecast Console to help you make informed decisions.
-Resource planning
-Planning for the right level of available resources, such as staffing levels, advertising inventory, and raw material for manufacturing is important to maximize revenue and control costs. For example, a broadcasting company may want to optimize ad inventory regionally. It can import historical viewership data across different program categories and geographic regions, content metadata, and regional demographics into Amazon Forecast. The service will learn from this data and provide accurate local forecasts.
-Customer success
-More Retail
-More Retail is the pioneer in omni-channel Food & Grocery Retail in India and is pursuing its mission to be Indian consumers’ most preferred choice for food and grocery needs. More has 22 hyper markets and 624 super markets across India, supported by a network of 13 distribution centres, 7 fruits and vegetables collection centres and 6 staples processing centres.
-“More is the market leader in the ‘Fresh’ category in food and grocery in India. To run a viable business, More needs to simultaneously manage in-stock availability of fresh produce, while minimizing wastage. To balance these competing priorities, More partnered with AWS and Ganit, a data science consulting company, to build and deploy a demand forecasting and automated ordering system built around Amazon Forecast. We needed to build a very granular forecast at store-item-day level, therefore we prioritized the development effort based on ABC-XYZ framework.
-The store-item combinations were plotted on a 3x3 matrix: ABC axis of sales saliency (A – high, B-Medium, C-low) and XYZ axis of forecastability (X-easier to forecast, Z-difficult to forecast) based on historical pattern. As expected, forecast accuracy of items in ABC-XY buckets was much superior to the Z bucket. However, for combinations in the Z bucket, Amazon DeepAR+ significantly outperformed traditional methods like exponential smoothing yielding an incremental 10% forecast accuracy. This was possible because of Amazon Forecast’s ability to learn other SKUs (XY) patterns and apply to highly volatile items in the Z bucket.
-Using Amazon Forecast, we have been able to increase our forecasting accuracy from 27% to 76% reducing wastage by 20% for the fresh produce category. Amazon Forecast provides a distribution of forecasts which helped us optimize our under and over forecasting costs leading to stock-outs at 3% and improved gross margins. This makes it easier for our store managers to place more accurate purchases orders by looking at the daily forecasts. We are now expanding the model to other categories, iterating with additional related datasets, and adding newer data to Amazon Forecast to continuously improve the model accuracy.”
-Supratim Banerjee, Chief Transformation Officer - More Retail
-Shivaprasad KT, Founder and CEO - Ganit
-Swiggy
-Swiggy is India's largest on demand hyperlocal marketplace with a vision to provide unparalleled convenience across multiple categories (food, groceries) for urban consumers. Headquartered in Bangalore, Swiggy has presence in 500+ cities partnering with over 130K restaurants/stores and operates an on-demand fleet of 200K delivery partners.
-“It is critical for us to quickly react to changes in key business metrics which are segmented spatially (e.g. zone within a city) and temporally (e.g time-of-day). For example, if we can predict changes in key business metrics such as cost per delivery, then we can better manage our associated costs and incentives. AWS Forecast allows us to easily use related data that impacts our business metrics to improve forecasting accuracy. Our initial evaluation of Amazon Forecast to predict our business metrics in the hyperlocal logistics domain looks promising and we plan to leverage it to improve our business metric forecasting accuracy."
-Vijay Seshadri, Distinguished Engineer - Swiggy
-Anaplan
-Anaplan Inc. is a cloud-native enterprise SaaS company helping global enterprises orchestrate business performance. Leaders across industries rely on our platform to connect teams systems and insights from across their organizations to continuously adapt to change transform how they operate and reinvent value creation. Based in San Francisco Anaplan has over 20 offices globally 175 partners and approximately 1500 customers worldwide.
-“Global enterprises use Anaplan’s cloud-native platform to orchestrate performance through continuous predictive forecasting and agile scenario modeling. With the integration of Amazon Forecast into our platform, our customers across finance, supply chain, sales, and HR can leverage further intelligence through embedded machine learning to create nimble, reliable forecasts. We are proud to deliver Anaplan PlanIQ with Amazon Forecast to help our customers forecast with increased accuracy for intelligence-driven decision-making that gives them a competitive edge.”
-Rohit Shrivastava, SVP Product and UX - Anaplan
-Axiom Telecom
-Axiom Telecom is the market leader in telecommunications in Mobile Handset and Technology distribution in the Middle East region with a market share of around 55% and an aspiration to grow above 60%. Today, it distributes telecom products to over 10,000 independent and organized retail customers. The company's operations merge wholesale, retail, value added services, and after-sales of wireless mobile devices such as Nokia, Honor, Sony Ericsson, Motorola, and Samsung. The group has 30 warehouses and a fleet of more than 300 distribution vehicles.
-“Amazon Forecast has allowed us to accurately predict sales and deliver better inventory planning. It is a real win not only for us and our business but also for our customers. Prior to using Amazon Forecast, we heavily relied on a combination of statistical models and manual processes to forecast sales and inventory management. This required a significant resource allocation of time and people to maintain these manual forecasts but also left room for error. With Amazon Forecast we have seen over a 20% increase in demonstrated availability and 15% in stock optimization. Furthermore, we have shifted our teams that were doing manual forecasts to now focus on more value added efforts of extracting insights from the new forecasts to help improve our business outcomes.”
-Wassim Al Khayat - Group Director of Technology and Innovation
-OMNYS
-OMNYS provides ground-breaking solutions, by designing and building Digital Platforms based on System Integration, Web & Mobile Technologies, IoT, Machine Learning and Big Data. Throughout learning of ultimate technologies, R&D, analysis of market needs OMNYS brings innovation to many industries.
-“Amazon Forecast is helping us bring new insights and business value for our client Arneg S.p.A., a global leader in refrigerator manufacturing collecting about 11 million IoT records daily. Using Amazon Forecast, within hours we were able to start building models that would have traditionally taken weeks or months. Our client simply wanted us to extract value from their raw data and with Amazon Forecast we were able to do much more. We built up models to predict energy consumption three days in advance for their refrigerators installed in malls around the world, with a 91% accuracy, and maintenance predictive models to better assess the risk of devices outage, at least up to one day in advance, and consequently reducing the number of emergency calls from their clients. The potential for our client to take these insights to improve how they manage their customer experience is limitless."
-Davide Pozza, CTO - OMNYS
-Check out Amazon Forecast features
-Learn more about how Amazon Forecast generates accurate forecasting models.
+Add ML forecasting to your SaaS solutions
+Enhance software as a service (SaaS) product capabilities with integrated ML-based forecasts to identify complex demand relationships.
+Optimize product demand planning
+Predict inventory needs at individual stores by combining historical sales and demand data with associated web traffic, pricing, product category, weather, and holiday information.
+Manage resources efficiently
+Improve utilization and customer satisfaction with accurate resource requirement forecasting in near-real time.
+Customers
+Anaplan rebuilt its demand planning solution with Amazon Forecast
+More Retail built an automated ordering system with Amazon Forecast
+See how Foxconn reduced cost with increased forecast accuracy
+How to get started
+Try the AWS Free Tier
+Pay nothing or try for free while learning the fundamentals and building on AWS.
 Sign up for a free account
-Instantly get access to the AWS Free Tier.
-Start building in the console
-Get started building with Amazon Forecast in the AWS console.
+Amazon Forecast workshop
+Learn various ways to perform time-series forecasting on AWS.
+Check out the workshop
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

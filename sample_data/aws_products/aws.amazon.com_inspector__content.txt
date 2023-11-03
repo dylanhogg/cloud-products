@@ -1,36 +1,36 @@
+«  Security, Identity & Compliance
 Amazon Inspector
-Automated security assessment service to help improve the security and compliance of applications deployed on AWS
+Automated and continual vulnerability management at scale
 Get started with Amazon Inspector
-Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices. After performing an assessment, Amazon Inspector produces a detailed list of security findings prioritized by level of severity. These findings can be reviewed directly or as part of detailed assessment reports which are available via the Amazon Inspector console or API.
-Amazon Inspector security assessments help you check for unintended network accessibility of your Amazon EC2 instances and for vulnerabilities on those EC2 instances. Amazon Inspector assessments are offered to you as pre-defined rules packages mapped to common security best practices and vulnerability definitions. Examples of built-in rules include checking for access to your EC2 instances from the internet, remote root login being enabled, or vulnerable software versions installed. These rules are regularly updated by AWS security researchers.
-Benefits
-Identify application security issues
-Amazon Inspector helps you to identify security vulnerabilities as well as deviations from security best practices in applications, both before they are deployed, and while they are running in a production environment. This helps improve the overall security posture of your applications deployed on AWS.
-Integrate security into DevOps
-Amazon Inspector is an API-driven service that analyzes network configurations in your AWS account and uses an optional agent for visibility into your Amazon EC2 instances. This makes it easy for you to build Inspector assessments right into your existing DevOps process, decentralizing and automating vulnerability assessments, and empowering your development and operations teams to make security assessments an integral part of the deployment process.
-Increase development agility
-Amazon Inspector helps you reduce the risk of introducing security issues during development and deployment by automating the security assessment of your applications and proactively identifying vulnerabilities. This allows you to develop and iterate on new applications quickly and assess compliance with best practices and policies.
-Leverage AWS security expertise
-The AWS security organization is continuously assessing the AWS environment and updating a knowledge base of security best practices and rules. Amazon Inspector makes this expertise available to you in the form of a service that simplifies the process of establishing and enforcing best practices within your AWS environment.
-Streamline security compliance
-Amazon Inspector gives security teams and auditors visibility into the security testing that is being performed during development of applications on AWS. This streamlines the process of validating and demonstrating that security and compliance standards and best practices are being followed throughout the development process.
-Enforce security standards
-Amazon Inspector allows you to define standards and best practices for your applications and validate adherence to these standards. This simplifies enforcement of your organization’s security standards and best practices, and helps to proactively manage security issues before they impact your production application.
-Featured customers
-“At CapLinked, we are focused on accelerating sensitive financial transactions such as acquisitions, capital raises, audits, and other complex business transactions through a secure cloud based collaboration platform,” said Edward Chen, Chief Infrastructure Security Engineer, CISSP CapLinked. “Helping our customers understand what we do to ensure a high level of protection for their data is paramount. We like that Amazon Inspector is optimized for cloud, with an approach that fits easily into agile deployment models such as continuous integration continuous deployment and auto-scaling, helping security fit into the advancements we have seen in DevOps.”
-Featured partners
-Get started with AWS
-Sign up for an AWS account
-Instantly get access to the
-AWS Free Tier.
-Learn with 10-minute Tutorials
-Explore and learn with
-simple tutorials.
-Start building with AWS
-Begin building with step-by-step guides to help you launch your
-AWS project.
-Learn more about Amazon Inspector
-Visit the pricing page
-Ready to build?
-Have more questions?
-Contact us
+Free 15-day trial for accounts new to Amazon Inspector
+Get started
+Immediately discover and scan AWS workloads for software vulnerabilities and unintended network exposure with a single click.
+Consolidate your vulnerability management solutions for both Amazon EC2 and ECR into one fully managed service.
+Use the highly accurate Inspector risk score to efficiently prioritize your remediation.
+Reduce mean time to remediate (MTTR) vulnerabilities and streamline workflow with Amazon EventBridge and AWS Security Hub integrations.
+How it works
+Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities and unintended network exposure.
+Use cases
+Quickly discover vulnerabilities
+Automatically discover and quickly route vulnerability findings in near real time to the appropriate teams so they can take immediate action.
+Prioritize patch remediation
+Use up-to-date common vulnerabilities and exposures (CVE) information combined with factors such as network accessibility to create context-based risk scores that help you prioritize and address vulnerable resources.
+Meet compliance requirements
+Support compliance requirements and best practices for NIST CSF, PCI DSS, and other regulations with Amazon Inspector scans.
+Identify zero-day vulnerabilities sooner
+Accelerate MTTR by using over 50 sources for vulnerability intelligence to help identify zero-day vulnerabilities quickly.
+Customers
+Uber drastically reduced MTTR using Amazon Inspector
+Volkswagen Financial Services uses Amazon Inspector to streamline vulnerability workflows
+Canva saved time and money by consolidating their EC2 and ECR vulnerability management into one service
+Dropbox HelloSign uses Amazon Inspector to help automate patch management
+How to get started
+Meet Amazon Inspector
+See how Amazon Inspector makes vulnerability management easy and actionable in this short video.
+Watch the video
+Work with Amazon Inspector Partners
+See how AWS Partners provide solutions and services that further enhance the value and experience of Amazon Inspector.
+Learn more
+Start a 15-day free trial
+New to Amazon Inspector? Try it for 15 days for free and begin identifying vulnerabilities and estimating future costs.
+Explore more of AWS

@@ -1,60 +1,38 @@
+« Compute
 Amazon EC2
-Secure and resizable compute capacity to support virtually any workload
-Get started with Amazon EC2
-Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon’s proven computing environment.
-Amazon EC2 offers the broadest and deepest compute platform with choice of processor, storage, networking, operating system, and purchase model. We offer the fastest processors in the cloud and we are the only cloud with 400 Gbps ethernet networking. We have the most powerful GPU instances for machine learning training and graphics workloads, as well as the lowest cost-per-inference instances in the cloud. More SAP, HPC, Machine Learning, and Windows workloads run on AWS than any other cloud. Click here to learn What's New with Amazon EC2.
-Over 400 instances for virtually every business need
-Only cloud provider that supports macOS
-25 regions and
-81 availability zones globally
-Choice of Intel, AMD, and Arm-based processors
-Reliable, scalable, infrastructure on demand
-Increase or decrease capacity within minutes, not hours or days
-SLA commitment of 99.99% availability for each Amazon EC2 region. Each region consists of at least 3 availability zones
-The AWS Region/AZ model has been recognized by Gartner as the recommended approach for running enterprise applications that require high availability
-"Since March, we have seen market volumes increase by 2-3x...We automatically turn on and off up to 100,000 compute nodes in a single day. We would have been unable to handle this surge in volume within our on-premises data center."
-Steve Randich
-Executive Vice President and Chief Information Officer, FINRA
-Secure compute for your applications
-With the AWS Nitro System virtualization resources are offloaded to dedicated hardware and software minimizing the attack surface
-Lockdown security model prohibits administrative access eliminating possibility of human error and tampering
-AWS supports 89 security standards and compliance certifications including PCI-DSS, HIPAA/HITECH, FedRAMP, GDPR, FIPS 140-2, and NIST 800-171, which is meaningfully more than any other cloud provider
-“We looked at many public clouds but AWS scored most highly against our key criteria, which included stability, security, and breadth of services.”
-Lawrence Fong GM IT Solutions, Cathay Pacific
-Flexible options to optimize cost
-With On Demand, pay for only the compute you need. Gain up to 40% better price performance with AWS Graviton2-based instances or 10% lower costs with AMD-based instances.
-Amazon EC2 Spot can reduce costs up to 90% or accelerate performance for fault-tolerant workloads such as big data, containers, web services, and CI/CD.
-AWS Savings Plans offers savings of up to 72% on Amazon EC2 instances usage, regardless of instance family, size, OS, tenancy or AWS Region.
-"We tested the new M6g instances using industry standard LMbench and certain Java benchmarks and saw up to 50% improvement over M5 instances. We’re excited about the introduction of AWS Graviton2-based Amazon EC2 instances."
-Ed Hunter
-Director of Performance and Operating Systems, Netflix
-Easy to migrate and build apps
-Get started quickly through AWS Migration Tools, AWS Managed Services, or Amazon Lightsail
-AWS Professional Services, AWS Support, and AWS Training and Certification help you along the way
-Tens of thousands of APN Partners to help companies build, market, and sell their AWS offerings
-"Management was easy—it was very simple to upload a machine to the platform and simply adjust sizing according to need afterwards."
-Sadao Matsuda SAP IT Manager, VWCO
-Building Blocks
-Amazon EC2 offers the broadest and deepest choice of instances, built on the latest compute, storage, and networking technologies and engineered for high performance and security.
-Faster innovation and increased security with AWS Nitro System
-The AWS Nitro System is the underlying platform for our next generation of EC2 instances that offloads many of the traditional virtualization functions to dedicated hardware and software to deliver high performance, high availability, and high security while also reducing virtualization overhead. The Nitro System is a rich collection of building blocks that can be assembled in many different ways, giving us the flexibility to design and rapidly deliver new EC2 instance types with an ever-broadening selection of compute, storage, memory, and networking options.
-Choice of processors
-A choice of latest generation Intel Xeon, AMD EPYC, and AWS Graviton CPUs enables you to find the best balance of performance and price for your workloads. EC2 instances powered by NVIDIA GPUs and AWS Inferentia are also available for workloads that require accelerated computing such as machine learning, gaming, and graphic intensive applications.
-High performance storage
-Amazon Elastic Block Store (EBS) provides easy to use, high performance block storage for use with Amazon EC2. Amazon EBS is available in a range of volume types that allow you to optimize storage performance and cost for your workloads. Many EC2 instance types also come with options for local NVMe SSD storage for applications that require low latency.
-Enhanced networking
-AWS is the first and only cloud to offer 400 Gbps enhanced Ethernet networking for compute instances. Enhanced networking enables you to get significantly higher packet per second (PPS), lower network jitter, and lower latency. For high performance computing (HPC) applications, Elastic Fabric Adapter is a network interface for Amazon EC2 instances that offers low-latency, high-bandwidth interconnect between compute nodes to help scale applications to thousands of cores.
-Choice of purchasing model
-We offer a choice of multiple purchasing models with On-Demand, Spot Instances, and Savings Plan. With Spot Instances, you can save up to 90% for fault-tolerant workloads. With Savings Plan, you can save up to 72% savings with committed usage and flexibility across EC2, Fargate, and Lambda. You can also optimize your costs with recommendations on instances, built into EC2 with AWS Compute Optimizer or through tools such as Cost Explorer.
-Case Studies
-What’s New
-date
-1
-...
-Check out the EC2 product features
-Learn more about features for instance security, storage, networking, autoscaling, and more
+Secure and resizable compute capacity for virtually any workload
+Get Started with Amazon EC2
+750 hours per month
+for 12 months with the AWS Free Tier
+Access reliable, scalable infrastructure on demand. Scale capacity within minutes with SLA commitment of 99.99% availability.
+Provide secure compute for your applications. Security is built into the foundation of Amazon EC2 with the AWS Nitro System.
+Optimize performance and cost with flexible options like AWS Graviton-based instances, Amazon EC2 Spot instances, and AWS Savings Plans.
+Migrate and build apps with ease using AWS Migration Tools, AWS Managed Services, or Amazon Lightsail. Learn how AWS can help.
+Amazon Elastic Compute Cloud (Amazon EC2) offers the broadest and deepest compute platform, with over 500 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload. We are the first major cloud provider that supports Intel, AMD, and Arm processors, the only cloud with on-demand EC2 Mac instances, and the only cloud with 400 Gbps Ethernet networking. We offer the best price performance for machine learning training, as well as the lowest cost per inference instances in the cloud. More SAP, high performance computing (HPC), ML, and Windows workloads run on AWS than any other cloud.
+Use cases
+Run cloud-native and enterprise applications
+Amazon EC2 delivers secure, reliable, high-performance, and cost-effective compute infrastructure to meet demanding business needs.
+Migrate your business enterprise applications to AWS
+Scale for HPC applications
+Access the on-demand infrastructure and capacity you need to run HPC applications faster and cost-effectively.   Learn more about HPC on AWS
+Develop for Apple platforms
+Build, test, and sign on-demand macOS workloads. Access environments in minutes, dynamically scale capacity as needed, and benefit from AWS’s pay-as-you-go pricing.  Learn more about EC2 Mac instances
+Train and deploy ML applications
+Amazon EC2 delivers the broadest choice of compute, networking (up to 400 Gbps), and storage services purpose-built to optimize price performance for ML projects.
+Learn more about ML  infrastructure
+Customers
+Learn how the The Financial Industry Regulatory Authority uses Amazon EC2
+Find out why Cathay Pacific chose AWS
+Learn how Snap uses Graviton2-based instances
+Explore how Volkswagen innovates using Amazon EC2
+How to get started
+Check out Amazon EC2 features
+Learn more about instance security, storage, networking, autoscaling, and more.
 Learn more
-Get started with EC2
-Follow these steps to to get started with Amazon EC2.
-Dive deep into EC2 resources and tools
-Learn tips and techniques to get the most out of your experience with Amazon EC2.
+Dive deep into Amazon EC2 tools
+Learn tips and techniques to get the most out of your Amazon EC2 experience.
+Visit the Resources page
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS

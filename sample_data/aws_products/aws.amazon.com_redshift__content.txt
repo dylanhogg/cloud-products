@@ -1,54 +1,43 @@
+« Analytics
 Amazon Redshift
-Analyze all of your data with the fastest and most widely used cloud data warehouse
-Talk to a specialist
-Get Started
-Analyze all of your data
-No other data warehouse makes it as easy to gain new insights from all your data. With Redshift, you can query and combine exabytes of structured and semi-structured data across your data warehouse, operational database, and data lake using standard SQL. Redshift lets you easily save the results of your queries back to your S3 data lake using open formats, like Apache Parquet, so that you can do additional analytics from other analytics services like Amazon EMR, Amazon Athena, and Amazon SageMaker.
-Learn more about taking the lake house approach by integrating with your Amazon S3 data lake
-750 dc.2large node hours free
-for the first 2 months with the AWS Free Tier
-Get started for free
-UP TO 3X
-BETTER PRICE PERFORMANCE
-Performance at any scale
-Amazon Redshift has up to 3x better price-performance than other cloud data warehouses, and the price-performance advantage improves as your data warehouse grows from gigabytes to exabytes.
-Amazon Redshift takes advantage of AWS designed-hardware and machine learning (ML) to deliver the best price performance at any scale. This includes using the AWS Nitro System to accelerate data compression and encryption, ML techniques to analyze queries, and graph optimization algorithms to automatically organize and store data for faster query results.
-Learn more about the latest performance benchmarks
-Experience the next generation of Redshift with AQUA (Advanced Query Accelerator)
-AQUA is a new distributed and hardware accelerated cache that allows Redshift queries to run up to 10x faster than other enterprise cloud data warehouses by automatically boosting certain operations. AQUA accelerates scan, filtering, and aggregation operations today, and will accelerate more operations in the future.
-Learn more about AQUA
-Join tens of thousands of Amazon Redshift customers
-Redshift powers analytical workloads for Fortune 500 companies, startups, and everything in between.
-Learn more about Redshift customers
-"Because of the performance and scale Redshift provides, we have increased our manufacturing efficiency and reduced the time needed to gather and prepare data for regulatory submissions by a factor of five."
-- Jim Silva
-Director Business Partner, Pfizer Inc.
-"By leveraging Redshift's ability to query data directly in our Amazon S3 data lake, we have been able to easily integrate new data sources in hours, not days or weeks.  This has not only reduced our time to insight, but helped us control our infrastructure costs."
-- Elliott Cordo
-VP of Data Analytics, Equinox Fitness
-Migrate your on-premises data warehouse to Amazon Redshift
-Learn more about modernizing your data warehouse.
-Jack in the Box migrated off of Oracle and Microsoft SQL Server to Amazon Relational Database Service (RDS) and Amazon Redshift
-Press Release
-Equinox Fitness migrated its on-premises data warehouse to Amazon Redshift.
-Learn more
-21st Century Fox migrated its IBM Netezza on-premises data warehouse to Amazon Redshift.
-Press Release | re:Invent session
+Accelerate your time to insights with fast, easy, and secure cloud data warehousing at scale
+Get started with Amazon Redshift
+Preview Amazon Redshift Serverless
+Try Amazon Redshift with the AWS Free Tier
+Focus on getting to insights from data in seconds with easy analytics for everyone. Don't think about managing your data warehouse infrastructure.
+Analyze all your data across operational databases, data lakes, data warehouses, and third-party data sets.
+Gain up to 3x better price performance than other cloud data warehouses at scale with automation to improve query speed.
+How it works
+Amazon Redshift uses SQL to analyze structured and semi-structured data across data warehouses, operational databases, and data lakes, using AWS-designed hardware and machine learning to deliver the best price performance at any scale.
+Introduction to Data Warehousing on AWS with Amazon Redshift (2:07)
+Introduction to Amazon Redshift
+Tens of thousands of customers today rely on Amazon Redshift to analyze exabytes of data and run complex analytical queries, making it the most widely used cloud data warehouse. Run and scale analytics in seconds on all your data without having to manage your data warehouse infrastructure.
+Amazon Redshift Serverless (Preview)
+Easily run and scale analytics in seconds without provisioning and managing a data warehouse
+Try Amazon Redshift Serverless
 Use cases
-Business intelligence
-Redshift makes it simple and cost effective to run high performance queries on petabytes of semi-structured and structured data so that you can build powerful reports and dashboards using QuickSight or other business intelligence tools.
-Intuit uses Redshift for business intelligence.
-Operational analytics on events
-Bring together structured data from your data warehouse and semi-structured data such as application logs from your S3 data lake to get real-time operational insights on your applications and systems.
-Euclid uses Redshift for analytics.
-Data as a service
-Share data inside and outside your organization for secure and governed collaboration on live data with Redshift data sharing.
-Predictive analytics
-Use SQL to automatically create, train, and deploy Amazon SageMaker models on the data in your data warehouse with Redshift Machine Learning (preview).
-What's New
-date
-1
-...
+Improve financial and demand forecasts
+Automatically create, train, and deploy machine learning models for predictive insights.
+Learn more
+Collaborate and share data
+Securely share data among accounts, organizations, and partners while building applications on top of third-party data.
+Optimize your business intelligence
+Build insight-driven reports and dashboards using Amazon QuickSight, Tableau, Microsoft PowerBI, or other business intelligence tools.
+Increase developer productivity
+Get simplified data access, ingest, and egress from numerous programming languages and platforms without configuring drivers and managing database connections.
+Customers
+NASDAQ scaled from 30 to 70 billion records per day
+MagellanRx reduced ETL time by 70% and operational costs by 20%
+GE improved how customers browse, find, and source data
+Zynga doubled ETL performance to over 5.3 TB of daily game data
+How to get started
+Explore Amazon Redshift pricing
+Redshift on-demand pricing allows you to pay with no upfront costs.
 Learn more about pricing
-See what's new
-Visit our resources page
+Find out how Amazon Redshift works
+Learn more about Federated Query, data lake analytics, Redshift ML, supported node and instance types, and more.
+Learn more about Redshift features
+Connect with an expert
+From development to enterprise-level programs, get the right support at the right time.
+Explore support options
+Explore more of AWS
