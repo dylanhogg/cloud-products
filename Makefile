@@ -48,6 +48,10 @@ ruff-check:
 ruff:
 	source venv/bin/activate ; ruff check . --fix
 
+pre-commit:
+	source venv/bin/activate ; pre-commit run --files cloud_products/*
+	source venv/bin/activate ; pre-commit run --files tests/*
+
 install-test:
 	rm -rf venv_install_test
 	python3 -m venv venv_install_test

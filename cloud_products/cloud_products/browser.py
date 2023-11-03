@@ -1,16 +1,15 @@
-from cloud_products import base
-from cloud_products.product import Product
 from typing import List
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.firefox import GeckoDriverManager
 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
-
-from selenium.webdriver.firefox.options import Options
+from cloud_products import base
+from cloud_products.product import Product
 
 _options = Options()
 _options.add_argument("--headless")

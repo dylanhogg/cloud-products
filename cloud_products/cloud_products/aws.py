@@ -1,16 +1,18 @@
-import os
 import logging
+import os
 import re
 import unicodedata
+from pathlib import Path
+from typing import List, Tuple
+from urllib.error import HTTPError
+from urllib.parse import urljoin, urlparse
+from urllib.request import urlopen
+
+from bs4 import BeautifulSoup
+
 from cloud_products import base
 from cloud_products.browser import Browser
 from cloud_products.product import Product
-from pathlib import Path
-from typing import List, Tuple
-from urllib.request import urlopen
-from urllib.error import HTTPError
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
 
 
 class AwsCrawler(base.Crawler):
@@ -42,9 +44,7 @@ class AwsCrawler(base.Crawler):
 
         text = tags.text
         lines = text.splitlines()
-        lines = list(
-            AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length
-        )
+        lines = [AwsCrawler.normalise_chars(line, remove_chars) for line in lines if len(line.split()) >= min_line_length]
         return lines
 
     def _scrape_page(self, url, cache_path, use_cache) -> Tuple[BeautifulSoup, bool]:
@@ -165,8 +165,8 @@ class AwsCrawler(base.Crawler):
             # NOTE: pandas is a soft requirement for this package.
             #       This method will fail if pandas isn't installed.
             import pandas as pd
-        except ModuleNotFoundError:
-            raise ModuleNotFoundError("pandas must be installed to use this method. Try `pip install pandas`.")
+        except ModuleNotFoundError as ex:
+            raise ModuleNotFoundError("pandas must be installed to use this method. Try `pip install pandas`.") from ex
 
         products = self.get_products(cache_path=cache_path, use_cache=use_cache)
         product_text = {}

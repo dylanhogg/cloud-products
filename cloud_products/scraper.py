@@ -59,6 +59,7 @@ def run_aws_crawler_examples():
 
     logging.info("Example 5: Convert list of products to Pandas dataframe")
     import pandas as pd
+
     from cloud_products.aws import AwsCrawler
 
     products = AwsCrawler().get_products()
