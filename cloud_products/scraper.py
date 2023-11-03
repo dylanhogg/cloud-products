@@ -8,10 +8,10 @@ def run_full_aws_crawler():
     crawler = AwsCrawler()
     all_products = []
 
-    # TEMP: make this better:
-    page_count = 16
+    page_count = 17  # TODO: get count from page
+    # page_count = 1  # Testing
     for page in range(1, page_count + 1):
-        page_products = crawler.get_products(override_seed_url="https://aws.amazon.com/products/?aws-products-all.sort-by=item.additionalFields.productNameLowercase&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all&awsm.page-aws-products-all=" + str(page))
+        page_products = crawler.get_products(page=page)
         all_products.extend(page_products)
         print(f"Found {len(page_products)} products on page {page}...")
     print(f"Found {len(all_products)} TOTAL products.")
@@ -22,7 +22,7 @@ def run_full_aws_crawler():
         print(f"Saving {product.name} FAQ from {product.abs_href_faq}...")
         crawler.save_faq(product, output_path, use_cache=False)
 
-    print(f"Finished.")
+    print("Finished.")
 
 
 def run_aws_crawler_examples():
@@ -89,10 +89,10 @@ if __name__ == "__main__":
         run_aws_crawler_examples()
 
     elif vendor == "gcp":
-        raise Exception(f"Google Cloud Compute not currently supported")
+        raise Exception("Google Cloud Compute not currently supported")
 
     elif vendor == "azure":
-        raise Exception(f"Microsoft Azure not currently supported")
+        raise Exception("Microsoft Azure not currently supported")
 
     else:
         raise Exception(f"Unknown vendor {vendor}")

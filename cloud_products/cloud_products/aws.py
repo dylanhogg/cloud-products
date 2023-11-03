@@ -147,26 +147,33 @@ class AwsCrawler(base.Crawler):
 
     from selenium.webdriver.firefox.options import Options
     options = Options()
-    options.headless = True
+    options.add_argument("--headless")  
 
-    def get_products(self, cache_path=None, use_cache=True, override_seed_url=None) -> List[Product]:
+    def get_products(self, page: int, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
 
-        # Scrape seed index page
-        # (seed_soup, loaded_from_cache) = self._scrape_page(self.seed_url, cache_path, use_cache)  # NOTE: old method
+        assert isinstance(page, int), "page must be an integer"
 
+        seed_url_formatter = ("https://aws.amazon.com/products/" 
+                              "?aws-products-all.sort-by=item.additionalFields.productNameLowercase" 
+                              "&aws-products-all.sort-order=asc&awsf.re%3AInvent=*all&awsf.Free%20Tier%20Type=*all&awsf.tech-category=*all" 
+                              "&awsm.page-aws-products-all={page}")
+        override_seed_url = seed_url_formatter.format(page=page)
+
+        # NEW: selenium method
+        # {"message":"API rate limit exceeded for 101.184.146.239. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
         driver = self.webdriver.Firefox(options=self.options, service=self.Service(self.GeckoDriverManager().install()))
+        # driver = self.webdriver.Firefox(options=self.options)
         driver.set_window_size(1120, 550)
 
         loaded_from_cache = False  # TODO: caching again
         driver.maximize_window()
 
-        if override_seed_url:
-            driver.get(override_seed_url)
-        else:
+        if not override_seed_url:
             raise Exception("TEMP: self.seed_url removed")
-            # driver.get(self.seed_url)
+        
+        driver.get(override_seed_url)
 
         wait = self.WebDriverWait(driver, 40)
         wait.until(self.expected_conditions.visibility_of_element_located((self.By.CSS_SELECTOR, ".m-card-main")))  # TODO: review class m-card-main
@@ -177,12 +184,14 @@ class AwsCrawler(base.Crawler):
         driver.quit()  # TODO: reuse driver for other pages
 
         # TODO: fix this and use paging...
-        # print(seed_soup)
+        print(seed_soup)
 
-        # if "alexa" in source.lower():
-        #     print("FOUND ALEXA!")
-        # else:
-        #     print("X NO ALEXA :(")
+        if "alexa" in source.lower():
+            print("FOUND ALEXA!")
+        else:
+            print("X NO ALEXA :(")
+
+        # /selenium method
 
         # Parse product links from seed index page
         # child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
