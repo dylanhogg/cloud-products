@@ -3,6 +3,7 @@ import logging
 import re
 import unicodedata
 from cloud_products import base
+from cloud_products.browser import Browser
 from cloud_products.product import Product
 from pathlib import Path
 from typing import List, Tuple
@@ -136,19 +137,6 @@ class AwsCrawler(base.Crawler):
 
         return self.dedupe_list(lines) if dedupe else lines
 
-    # WIP: Try selenium for new dynamic product listing content that BS doesn't get anymore.
-    from selenium import webdriver
-    from selenium.webdriver.firefox.service import Service
-    from webdriver_manager.firefox import GeckoDriverManager
-
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.support.ui import WebDriverWait
-    from selenium.webdriver.support import expected_conditions
-
-    from selenium.webdriver.firefox.options import Options
-    options = Options()
-    options.add_argument("--headless")  
-
     def get_products(self, page: int, cache_path=None, use_cache=True) -> List[Product]:
         if cache_path is None:
             cache_path = self.default_cache_path
@@ -161,42 +149,13 @@ class AwsCrawler(base.Crawler):
                               "&awsm.page-aws-products-all={page}")
         override_seed_url = seed_url_formatter.format(page=page)
 
-        # NEW: selenium method
-        # {"message":"API rate limit exceeded for 101.184.146.239. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
-        driver = self.webdriver.Firefox(options=self.options, service=self.Service(self.GeckoDriverManager().install()))
-        # driver = self.webdriver.Firefox(options=self.options)
-        driver.set_window_size(1120, 550)
-
-        loaded_from_cache = False  # TODO: caching again
-        driver.maximize_window()
-
-        if not override_seed_url:
-            raise Exception("TEMP: self.seed_url removed")
-        
-        driver.get(override_seed_url)
-
-        wait = self.WebDriverWait(driver, 40)
-        wait.until(self.expected_conditions.visibility_of_element_located((self.By.CSS_SELECTOR, ".m-card-main")))  # TODO: review class m-card-main
-
-        source = driver.page_source
+        browser = Browser()
+        source = browser.get_page_source(page)
         seed_soup = BeautifulSoup(source, "html.parser")
-
-        driver.quit()  # TODO: reuse driver for other pages
-
-        # TODO: fix this and use paging...
-        print(seed_soup)
-
-        if "alexa" in source.lower():
-            print("FOUND ALEXA!")
-        else:
-            print("X NO ALEXA :(")
-
-        # /selenium method
+        # print(seed_soup)
 
         # Parse product links from seed index page
-        # child_pages = self._get_child_pages(seed_soup, self.base_url, self.seed_url)
-        child_pages = self._get_child_pages(seed_soup, self.base_url, override_seed_url)  # TODO: handle override_seed_url
-
+        child_pages = self._get_child_pages(seed_soup, self.base_url, override_seed_url)
         return sorted(child_pages)
 
     def get_products_as_df(self, cache_path=None, use_cache=True):
