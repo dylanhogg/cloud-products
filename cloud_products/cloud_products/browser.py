@@ -1,15 +1,6 @@
-import os
-import logging
-import re
-import unicodedata
 from cloud_products import base
 from cloud_products.product import Product
-from pathlib import Path
-from typing import List, Tuple
-from urllib.request import urlopen
-from urllib.error import HTTPError
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
+from typing import List
 
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
